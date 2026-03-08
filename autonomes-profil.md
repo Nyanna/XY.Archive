@@ -1,0 +1,117 @@
+# Autonomes neurologisches Profil – Medizinische Zusammenfassung
+
+## Diagnosekontext
+
+Autismus Spektrum Störung (ASD), männlich, geb. 1985. Migräniker mit Stammhirnaura-Prädisposition seit Kindheit, zyklische Migräne seit dem ca. 20. Lebensjahr, 14 Jahre progressiver Verlauf bis zur pharmakologischen Stabilisierung.
+
+---
+
+## Bestätigtes Symptomprofil
+
+### Autonome Baseline
+- Chronische sympathische Hyperaktivierung als Dauerzustand
+- Beeinträchtigte sympathische Vasokonstriktion unter akuter Belastung
+- Niedrige Herzratenvariabilität, Atypische Herzrate in Ruhe
+- Verlangsamter Metabolismus, reduziertes Hungergefühl unter Stress oder Krankheit
+- Dopamin Hypersensivität
+
+### Sensorische Hyperreaktivität
+- Ausgeprägte Geräuschempfindlichkeit, Ultraschall, Subharmonien, Hochfrequenzbereich (15–20 kHz)
+- Vestibulovisueller Konflikt: First-Person-Spiele und 3D-Kino lösen sofort Schwindel, Übelkeit und Migräne aus (100% Triggerrate bei 3D-Kino)
+- Ausgeprägte Propriozeptionsverarbeitung
+
+### Hirnstammreflex (tonische Immobilität)
+- Motorischer Krampf mit gleichzeitigem neuronalem Atemstopp
+- Anspannung der Tensor-tympani-Muskulatur als Frühindikator (willentlich steuerbar)
+- Auslösbar im Halbschlaf bei reduzierter kortikaler Hemmung
+- Erstmalig dokumentiert mit 6 Jahren (Achterbahn) – kongenital, nicht durch Pharmakologie oder kumulative Sensibilisierung erworben. Seitdem konsequent vermieden.
+- Triggerqualität: primär vestibulär, propriozeptiv, nicht ausschließlich
+
+### Schlaf
+- Hypnagoge Bewusstseinszustände mit erhaltener Wahrnehmung
+- Erhöhte Arousalbereitschaft im Schlaf, Atypische Schlafarchitektur
+
+### Gastrointestinal
+- Hypersensitivität viszeraler Afferenzen
+- Appetitunterdrückung unter Stress und Krankheit
+- Ausgeprägte Ketostoffwechsel Konditionierung ohne Funktionsverlust
+
+---
+
+## Medizinisch bekannte Assoziationen
+
+### Autonome Dysfunktion bei ASD
+Studie: Owens, Mathias, Iodice – King's College London / National Hospital for Neurology (2021, Frontiers in Integrative Neuroscience).
+
+71% einer klinischen ASD-Kohorte hatten diagnostizierbare autonome Störungen. Häufigste Diagnosen: Posturales Tachykardiesyndrom (PoTS), vasovagale Synkope, Präsynkope. Kernbefund: gleichzeitige sympathische Hyperaktivierung bei beeinträchtigter sympathischer Vasokonstriktion – das System ist chronisch alarmiert aber unter akuter Belastung nicht effektiv.
+
+### Respiratorische und autonome Dysfunktion bei ASD
+Studie: Ming et al. (2015, Journal of the Neurological Sciences).
+
+Dokumentierte Atemdysrhythmien (Biot-Atmung, Cheyne-Stokes-Atmung) bei ASD-Kindern. Assoziiert mit kardialer Vagushypofunktion und Hirnstammdysfunktion. Niedriger parasympathischer Tonus als Erklärung für chronischen sensorischen Hyperarousal-Zustand.
+
+### Tonische Immobilität beim Menschen
+Dorsaler Vagalkomplex (DVC) als neurales Substrat. Motorische Inhibition, Rigidität, Atemstopp, relative Bewusstlosigkeit bei wahrgenommener Unentrinnbarkeit. Kardiovaskulär: Blutdruck und Herzfrequenz bei kurzen Episoden relativ stabil, bei prolongierten Episoden mögliche Bradykardie. Möglich selbstlimitierend durch CO2-Anstieg im Wachzustand – dieser Mechanismus ist im Halbschlaf verlangsamt.
+
+### Trigeminokardiovaskulärer Reflex (TCR)
+Klassifiziert in der Fachliteratur als phylogenetischer Stammhirnreflex. In der Chirurgie bekannt als perioperativer Notfall bei Trigeminusreizung. Auslösung zwingend: Bradykardie, Hypotonie, Apnoe als definiertes Trias – kein gradueller Effekt sondern Alles-oder-Nichts-Reflex.
+
+Neuroanatomie: Trigeminale Afferenzen → Nucleus tractus solitarius (NTS) → dorsaler Vaguskern → kardiale und respiratorische Efferenz. Der M. tensor tympani wird motorisch vom N. trigeminus V3 innerviert – seine Anspannung ist messbarer Frühindikator derselben Hirnstammaktivierung, nicht Ursache.
+Nach ERC-Leitlinien 2021 ist Atropin überholt und nur noch bei symptomatischer Bradykardie indiziert, nicht bei Asystolie.
+
+**Zwei-Komponenten-Modell des Reflexes:**
+
+Vasovagale Dominanz (externe Manifestation: Erschlaffen) – Blutdruckabfall und Bradykardie primär, Bewusstlosigkeit durch zerebrale Hypoperfusion. Höheres Asystolie-Risiko: der dorsale Vagus kann den Sinusknoten für Sekunden hemmen, unter Metoprolol ohne ausreichende sympathische Gegenregulation.
+
+Trigeminale Dominanz (externe Manifestation: Rigidität) – Apnoe primär durch Hemmung des Nucleus ambiguus, kardiovaskuläre Komponente sekundär. Asystolie möglich aber zeitlich verzögert über Hypoxie-induzierte Myokarddepression.
+
+Die externe Manifestation – Erschlaffen vs. Rigidität – ist durch Selbstbeobachtung nicht unterscheidbar und klinisch relevant für Risikoabschätzung und Ersthelferinstruktion.
+
+### Serieneskalation bei prolongierter Exposition
+
+Der Einzelreflex ist unter Wachbedingungen durch CO2-Anstieg wahrscheinlich selbstlimitierend. Das eigentliche Kollapsrisiko liegt nicht im Einzelereignis sondern in der Sukzession: Prolongierte vestibuläre oder sensorische Exposition erzeugt nicht eine einzelne Episode sondern eine Serie abortiver oder subthreshold Reflexaktivierungen.
+
+Der kritische Mechanismus ist die Erschöpfung der Gegenregulation: Nicht der Reflex selbst sondern die geschwächte sympathische Antwort nach wiederholten Zyklen erhöht das Risiko ventrikulärer Rhythmusstörungen. Diese Schwelle ist individuell nicht bekannt und wurde nicht diagnostisch evaluiert.
+
+### Kumulativer Effekt rezidivierender Stammhirnauren
+Kortikale Spreading Depression mit Hirnstammpropagation hinterlässt Fenster erhöhter Erregbarkeit in NTS, dorsalem Vaguskomplex, Nucleus ambiguus und Locus coeruleus. Rezidivierende Episoden über Jahre senken die Auslöseschwelle dieser Kerne strukturell.
+
+---
+
+## Pharmakologie
+
+### Metoprolol retard 100mg täglich
+
+**Indikation:** Migräneprophylaxe. Selektiver Beta-1-Blocker, primär kardiale Wirkung.
+
+**Protektiver Effekt:** Reduktion der Stammhirnaurenfrequenz von progressiv auf 1–2 pro Jahr. Unterbrechung des degenerativen Kreislaufs: Stammhirnaura → Hirnstammsensibilisierung → niedrigere Reflexschwelle → häufigere Episoden. Metoprolol ist damit nicht nur Migräneprophylaxe sondern aktiver Schutz gegen progressive Hirnstammsensibilisierung. Diese Funktion ist klinisch nicht ersetzbar ohne erhebliches Progressionsrisiko.
+
+**Antagonistische Implikation auf den Sympathikus:** Metoprolol dämpft die kardiale Sympathikusantwort – den einzigen verfügbaren Gegenregulator gegen den dorsalen Vagus-Shutdown. Der Vagusreflex läuft dadurch ungehinderter durch. Die beobachtete Schwellenverschiebung des Reflexes seit Therapiebeginn ist pharmakologisch plausibel erklärbar durch diese Gegenregulationsschwächung.
+
+**Kritische Interaktion:** Bei Bradykardie durch Vagusreflex und gleichzeitiger Metoprolol-Wirkung ist die sympathische Gegenregulation eingeschränkt. In Kombination mit Hypoxie durch Atemstopp (Vagusreflex) und zerebraler Hypoperfusion besteht eine theoretisch plausible Kaskade zu ventrikulären Rhythmusstörungen. Diese Interaktion ist nicht formal untersucht.
+
+---
+
+## Therapeutische Möglichkeiten und Grenzen
+
+### Möglich
+
+**Vestibuläre Desensibilisierung:**
+Graduierte vestibuläre Exposition unter kontrollierten Bedingungen mit Aufsicht. Erhöht die Triggerschwelle des vestibuloautonomen Reflexwegs. Einziger verfügbarer nicht-pharmakologischer Einfluss auf die Reflexschwelle. Klinischer Rahmen mit unmittelbarer medizinischer Erreichbarkeit ist Voraussetzung.
+
+**Atemkontrolle:**
+Langsame Ausatmung aktiviert den ventralen Vagus als Gegenregulator gegen den dorsalen Vagus-Shutdown. Einziges direkt willentliches Eingriffsfenster während einer einsetzenden Episode. Wirksamkeit ist situationsabhängig und nicht bei vollständig eingesetztem Reflex verfügbar.
+
+**Benzodiazepine für Langstreckenflüge (z.B. Lorazepam):**
+Potenziert GABA, dämpft Hirnstammexzitabilität, hebt NTS-Schwellenwert an. Supprimiert den Vagusreflex pharmakologisch. Geeignet für Kontexte ohne Anforderung an volle kognitive Präsenz und physische Handlungsfähigkeit. Im Sitzkontext ohne körperliche Belastung ist die Interaktion mit Metoprolol kardiovaskulär tolerierbar. Nicht geeignet für Aktivitäten die volle Wahrnehmung und Reaktionsfähigkeit erfordern.
+
+---
+
+## Offene diagnostische Fragen
+
+- Kardiovaskuläre Untergrenze des Reflexes unter Metoprolol: nicht evaluiert, Langzeit-EKG mit Provokationsprotokoll wäre das geeignete diagnostische Instrument
+- Dauer und Verlauf prolongierter Episoden im Halbschlaf: nicht dokumentiert
+
+---
+
+*Dokumentiert Februar 2026. Basiert auf 24-jähriger empirischer Selbstbeobachtung und aktueller Forschungsliteratur zu ASD-assoziierter autonomer Dysfunktion.*
