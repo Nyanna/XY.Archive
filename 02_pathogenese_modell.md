@@ -173,12 +173,25 @@ Entscheidend: Ein D2High-Shift ist der einzige identifizierte molekulare Einzelm
 
 #### **Anamnestischer Kontext**
 
-| Zeitraum | Exposition | Applikation |
-| :---- | :---- | :---- |
-| **Frühe Kindheit** | Schwere atopische Dermatitis (Neurodermitis) | Intravenöses Kortison (Prednisolon/Methylprednisolon) |
-| **Kindheit bis Adoleszenz** | Persistierende Neurodermitis + schweres Asthma bronchiale | Langzeit-Glukokortikoidderivate (systemisch und topisch) |
+Das Expositionsprofil zeigt ein absteigendes Muster mit maximaler Frequenz im vulnerabelsten Entwicklungsfenster. Das Präparat war wahrscheinlich Methylprednisolon (Urbason® solubile) — identifiziert durch die charakteristische perineale Parästhesie bei IV-Bolus-Gabe, die für Phosphatester-Formulierungen spezifisch ist und von der behandelnden Ärztin routinemäßig angekündigt wurde. Die IV-Gabe erfolgte über drei unabhängige Behandlungskontexte (stationär, Notarzt, ambulant-hausärztlich), was ein chronisches Behandlungsschema belegt, keine seltene Notfallmaßnahme.
 
-Die Exposition beginnt postnatal in einem kritischen Entwicklungsfenster des dopaminergen Systems. Die nigrostriatale und mesolimbische Reifung erstreckt sich bis ins frühe Schulalter — deutlich länger als die pränatale Anlage der Raphe-Kerne (5.–7. SSW). Dieses Fenster ist für Glukokortikoid-induzierte Langzeitveränderungen maximal vulnerabel.
+| Phase | Zeitraum | Frequenz | Klinischer Kontext | Applikation |
+| :---- | :---- | :---- | :---- | :---- |
+| **Frühe Kindheit** | ~0–6 Jahre | Sehr häufig | Schwere atopische Dermatitis mit Exkoriationen ("blutig gekratzt") — akute Schubintervention | IV-Bolus (wahrscheinlich Methylprednisolon), stationär + Notarzt + hausärztlich |
+| **Spätere Kindheit** | ~6–12 Jahre | Seltener | Atopie besser kontrolliert, Asthmabeginn | IV bei Exazerbationen, ergänzend systemisch und topisch |
+| **Jugend** | ~12–16 Jahre | Saisonal | Saisonales Asthma nicht allein durch Inhalatoren kontrollierbar; systemische Überlast in der Allergiesaison | IV bei saisonalen Exazerbationen, systemische Glukokortikoidderivate |
+
+**Expositionsprofil und Vulnerabilitätsfenster:**
+
+Die Verteilung ist für den D2High-Shift das ungünstigste denkbare Muster: höchste Expositionsfrequenz im kritischsten Entwicklungsfenster.
+
+Die nigrostriatale und mesolimbische Reifung erstreckt sich bis ins frühe Schulalter — deutlich länger als die pränatale Anlage der Raphe-Kerne (5.–7. SSW). In dieser Phase war die Expositionsfrequenz maximal. Die Adoleszenz bildet ein zweites Vulnerabilitätsfenster durch hormonelle Reorganisation der dopaminergen Schaltkreise — die saisonale Re-Exposition bis zum Alter von 16 Jahren fällt in dieses Fenster.
+
+Entscheidend ist das intermittierende Muster in der Jugendphase: Saisonale Re-Exposition verhindert eine Normalisierung des D2High/D2Low-Verhältnisses. Das System wird nicht einmalig exponiert und erholt sich, sondern wird periodisch in den D2High-Shift zurückgedrückt — über ein Jahrzehnt, das beide identifizierten Vulnerabilitätsfenster vollständig abdeckt.
+
+Die kumulative Exposition überschreitet die tierexperimentell etablierten Schwellenwerte für persistente D2High-Verschiebungen erheblich. Die Kombination aus Dauer (>15 Jahre), Frequenz (initial sehr häufig), Applikationsroute (IV-Bolus = maximale ZNS-Bioverfügbarkeit), Potenz (Methylprednisolon: ~5× Glukokortikoid-Potenz von Cortisol) und zeitlicher Überlappung mit beiden Vulnerabilitätsfenstern macht eine persistente Verschiebung wahrscheinlicher als eine Normalisierung.
+
+**Modellkonsistenz der Grunderkrankung:** Die saisonale Überlast in der Jugend — bei der Asthma sich nicht mehr allein über Inhalatoren kontrollieren ließ — ist selbst modellkonsistent. Die Th2-dominante Immunlage (Neurodermitis → Asthma als atopische Marsch) ist serotonerg moduliert (Mastzell-5-HT, intestinales Serotonin). Die Grunderkrankung, die die GC-Behandlung notwendig machte, ist somit kein unabhängiger Faktor, sondern möglicherweise eine frühe Downstream-Manifestation des Raphe-Primärdefekts (vgl. Integration in das Gesamtmodell, unten). Die iatrogene GC-Exposition wäre dann eine sekundäre Komplikation des Primärdefekts — das System verschärft seinen eigenen Schaden.
 
 #### **Mechanismus: Glukokortikoidexposition → persistenter D2High-Shift**
 
