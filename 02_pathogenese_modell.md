@@ -676,6 +676,18 @@ Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase
 
 ## **5\. Klinische Manifestation II: Autonome Dysregulation**
 
+**Terminologische Disambiguierung: Drei afferente Pfade, zwei efferente Zonen, ein Knotenpunkt**
+
+Die klinische Literatur verwendet „vasovagal" als Sammelbezeichnung für alle Reflexe, die über den Vagusnerv Bradykardie und Hypotension erzeugen. Diese Bezeichnung beschreibt den efferenten Schenkel (Vagus → Herz/Gefäße), nicht den auslösenden Stimulus. Drei neuroanatomisch distinkte afferente Pfade konvergieren am selben Hirnstammknotenpunkt (NTS/dorsaler Vaguskern), erzeugen ein ähnliches kardiovaskuläres Bild, haben aber grundlegend unterschiedliche Trigger, Zeitkonstanten und therapeutische Implikationen:
+
+| Pfad | Afferenz | Trigger | Zeitkonstante | Klinischer Kontext |
+| :---- | :---- | :---- | :---- | :---- |
+| **Orthostatisch** | Barorezeptoren (Aortenbogen, Karotissinus) → NTS | Blutpooling durch Gravitation bei aufrechter Haltung | Minuten (langsame Dekompensation) | Tilt-Table-Test, prolongiertes Stehen, Hitze |
+| **Vestibulär-sensorischer Konflikt** | Otolithen/Bogengänge → Vestibulariskerne → NTS | Beschleunigung, Rotation, visuell-vestibulärer Mismatch | Sekunden bis Minuten (abhängig von Expositionsdauer und -intensität) | Karussell, Achterbahn, Turbulenzen, Zugfahrt, 3D-Kino, First-Person-Spiele |
+| **Trigeminal (TCR)** | Trigeminale Afferenzen → NTS | Mechanische/thermische Trigeminusstimulation | Sofort (Alles-oder-Nichts) | Chirurgisch, Nasentamponade, orofaziale Stimulation |
+
+**Kritische Unterscheidung:** Der orthostatische Pfad wird durch die Tilt-Table-Diagnostik und die Tilt-Training-Therapie adressiert. Der vestibuläre Pfad, der im vorliegenden Profil als primärer Trigger identifiziert ist, wird durch den Tilt-Table nur minimal erfasst — die vestibuläre Komponente beim Kippen ist ein kurzer Transient (Otolith-Detektion des Gravitationsvektors), der dominierende Stressor ist die anhaltende orthostatische Blutumverteilung. Die gesamte Tilt-Training-Evidenz bezieht sich daher primär auf Baroreflextoleranz, nicht auf vestibuläre Reflexschwellen. Eine Übertragbarkeit ist neuroanatomisch nicht gesichert.
+
 ### **5.1 Raphe-Kerne und autonomes Nervensystem**
 
 Die Raphe-Kerne projizieren nicht nur aufsteigend, sondern auch absteigend in den Hirnstamm – direkt in den Nucleus tractus solitarii (NTS), den dorsalen Vaguskern und sympathische Präganglien. Serotonin moduliert dort die Grundschwelle autonomer Reflexe.

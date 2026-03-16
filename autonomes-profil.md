@@ -59,13 +59,23 @@ Klassifiziert in der Fachliteratur als phylogenetischer Stammhirnreflex. In der 
 Neuroanatomie: Trigeminale Afferenzen → Nucleus tractus solitarius (NTS) → dorsaler Vaguskern → kardiale und respiratorische Efferenz. Der M. tensor tympani wird motorisch vom N. trigeminus V3 innerviert – seine Anspannung ist messbarer Frühindikator derselben Hirnstammaktivierung, nicht Ursache.
 Nach ERC-Leitlinien 2021 ist Atropin überholt und nur noch bei symptomatischer Bradykardie indiziert, nicht bei Asystolie.
 
-**Zwei-Komponenten-Modell des Reflexes:**
+#### Zwei-Zonen-Modell des vestibulär ausgelösten Reflexes
 
-Vasovagale Dominanz (externe Manifestation: Erschlaffen) – Blutdruckabfall und Bradykardie primär, Bewusstlosigkeit durch zerebrale Hypoperfusion. Höheres Asystolie-Risiko: der dorsale Vagus kann den Sinusknoten für Sekunden hemmen, unter Metoprolol ohne ausreichende sympathische Gegenregulation.
+Der vestibuläre Pfad produziert nicht ein einheitliches Bild, sondern zwei phylogenetisch distinkte Effektormuster, die je nach Stimulus-Interpretation rekrutiert werden:
 
-Trigeminale Dominanz (externe Manifestation: Rigidität) – Apnoe primär durch Hemmung des Nucleus ambiguus, kardiovaskuläre Komponente sekundär. Asystolie möglich aber zeitlich verzögert über Hypoxie-induzierte Myokarddepression.
+| Zone | Phylogenetische Funktion | Efferentes Muster | Trigger-Interpretation | Beobachtbare Manifestation |
+| :---- | :---- | :---- | :---- | :---- |
+| **Tonisch (Schutzreflex)** | Sturzschutz: Muskeltonuserhöhung zur Stabilisierung bei antizipierten Lageänderungen | Rigidität, Muskelkrampf, Atemstopp durch Zwerchfellspasmus, Tensor-tympani-Anspannung | Vestibuläre Überlast oder Inkonsistenz wird als drohender Sturz/Kontrollverlust interpretiert | Krampfen, Erstarren, Apnoe |
+| **Atonisch (Immobilisationsreflex)** | Dorsal-vagaler Shutdown: Tonusverlust als terminale Verteidigungsreaktion bei wahrgenommener Unentrinnbarkeit | Muskelatonie, Dissoziation, Bradykardie, Synkope über dorsalen Vagalkomplex (DVC) | Prolongierte oder unüberwindbare vestibuläre Überlast wird als unentrinnbare Bedrohung interpretiert | Erschlaffen, Bewusstlosigkeit, Dissoziation |
 
-Die externe Manifestation – Erschlaffen vs. Rigidität – ist durch Selbstbeobachtung nicht unterscheidbar und klinisch relevant für Risikoabschätzung und Ersthelferinstruktion.
+**Sequenz:** Die tonische Zone ist typischerweise die initiale Antwort — sie tritt bei niedrigerer Schwelle auf. Hält der vestibuläre Stressor an oder eskaliert, folgt der Übergang in die atonische Zone: Rigidität → Dissoziation → Synkope. Die Intensität und Dauer des Stressors bestimmen, ob der Reflex in der tonischen Zone bleibt (kurzer Schreck, abortive Episode) oder in die atonische Zone eskaliert (prolongierte Exposition, sensorische Überlast).
+
+**Phylogenetische Parallelen:** Die Zwei-Zonen-Struktur entspricht einer konservierten Verteidigungshierarchie:
+
+- Tonisch = Muskelanspannung bei antizipiertem Fall oder plötzlicher Lageänderung. Analog zur Startle-Freeze-Reaktion: Stabilisierung vor Orientierung.
+- Atonisch = Tonische Immobilität bei Unentrinnbarkeit. Analog zur dorsalen Vagusreaktion bei Raubtier-Kontakt: metabolische Sparschaltung, Schmerzunterdrückung, Dissoziation.
+
+Beide Zonen werden über denselben NTS-Knotenpunkt moduliert, aber durch unterschiedliche efferente Populationen vermittelt: Die tonische Komponente involviert primär den Nucleus ambiguus (Apnoe) und spinale Motoneuronen (Rigidität), die atonische Komponente primär den dorsalen Vaguskern (Bradykardie) und den dorsalen Vagalkomplex (Ganzkörper-Tonusverlust).
 
 ### Serieneskalation bei prolongierter Exposition
 
