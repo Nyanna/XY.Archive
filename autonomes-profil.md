@@ -90,6 +90,21 @@ Kortikale Spreading Depression mit Hirnstammpropagation hinterlässt Fenster erh
 
 **Kritische Interaktion:** Bei Bradykardie durch Vagusreflex und gleichzeitiger Metoprolol-Wirkung ist die sympathische Gegenregulation eingeschränkt. In Kombination mit Hypoxie durch Atemstopp (Vagusreflex) und zerebraler Hypoperfusion besteht eine theoretisch plausible Kaskade zu ventrikulären Rhythmusstörungen. Diese Interaktion ist nicht formal untersucht.
 
+### Lisdexamfetamin – Implikation für autonomes Profil
+
+**Schwellenmodulation über zwei Pfade:**
+
+Pfad 1 – Indirekt serotonerge Stabilisierung: Dopaminerge Upstream-Stabilisierung der Raphe → stabilere serotonerge NTS-Schwelle → Reflexschwelle folgt nicht mehr dem Migränezyklus. Effekt ist an Migräneprophylaxe gekoppelt.
+
+Pfad 2 – Direkt noradrenerge Supplementierung: LDX erhöht zentrales noradrenerges Arousal über Locus-coeruleus-Stimulation. Noradrenalin ist der primäre Modulator der präfrontalen Suppressionskapazität (PFC → PAG → NTS). LDX stärkt damit die aktive kortikale Reflexunterdrückung, die unter Metoprolol noradrenerg geschwächt war.
+
+**Interaktion mit Metoprolol-Entfall:** Bei Entfall der Betablockade unter LDX-Stabilisierung konvergieren drei Effekte: stabilere Schwelle, stärkere kortikale Suppression, wiederhergestellte sympathische Gegenregulation. Das Modell sagt eine überproportionale Verbesserung der autonomen Reflexanfälligkeit vorher (siehe Pathogenesemodell 5.4).
+
+**Bedingung:** LDX muss die Migräneprophylaxe unabhängig von Metoprolol aufrechterhalten. Ohne diesen Nachweis ist Metoprolol-Entfall kontraindiziert – rezidivierende Stammhirnauren senken die NTS-Schwelle strukturell und überkompensieren den autonomen Gewinn.
+
+| Evidenzniveau | Modellvorhersage, abgeleitet aus etablierten Einzelmechanismen. Kompoundierung hypothetisch. |
+| :---- | :---- |
+
 ---
 
 ## Therapeutische Möglichkeiten und Grenzen
