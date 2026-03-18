@@ -2,7 +2,7 @@
 ### Methylphenidat (MPH) und Lisdexamfetamin (LDX)
 
 > **Status:** Theoretischer Vorschlag — keine validierte klinische Leitlinie.  
-> Grundlage: Mechanistisches Modell, Literaturbefunde und klinische Plausibilitätsargumentation.  
+> Grundlage: Mechanistisches Modell (vgl. Pathogenetisches Modell v1.3, insbesondere Abschnitte 3.4, 8), Literaturbefunde und klinische Plausibilitätsargumentation.  
 > Ziel: Anstoß zur prospektiven Validierung und Diskussion in Leitliniengremien.
 
 ---
@@ -15,12 +15,20 @@ ADHS ist keine Störung der Frontallappen-Leistung per se, sondern eine Dysfunkt
 
 Die primäre Modulation des thalamokortikalen Rhythmus erfolgt über **serotonerge Bahnen** (Raphe-Kerne → Thalamus). Dopamin ist nachgelagert relevant (Salienz, Motivation), nicht der primäre Wirkort der therapeutischen Stimulanzwirkung.
 
+**Erweiterung: Interozeptive Inkohärenz als Kerndefizit (vgl. Abschnitt 8 des Pathogenetischen Modells)**
+
+Die thalamokortikale Gating-Insuffizienz betrifft nicht nur externe Signale, sondern gleichermaßen die interozeptive Integration. Die aufsteigenden Modulationssysteme (Raphe, Locus coeruleus, VTA, TMN, basales Vorderhirn) setzen bei instabiler Raphe inkonsistente Gain-Parameter an ihre gemeinsamen Zielstrukturen. Die Insula kann aus diesen widersprüchlichen Eingängen keinen kohärenten Zustand ableiten. Das Resultat ist nicht fehlendes Bewusstsein für Körpersignale, sondern das Fehlen eines lesbaren Signals.
+
+Diese Reformulierung hat direkte Konsequenzen für die Titration: **Das therapeutische Ziel ist nicht Symptomreduktion, sondern Wiederherstellung interozeptiver Kohärenz.** „Konzentration" ist eine nachgelagerte Konsequenz kohärenter Zustandssignale, nicht das primäre Behandlungsziel. Ebenso ist „sich nicht mehr wie man selbst fühlen" unter Medikation kein Compliance-Problem, sondern ein präziser interozeptiver Bericht, der ernst genommen werden muss.
+
 ### 1.2 Zwei zu trennende Effekte von Stimulanzien
 
 | Effekt | Mechanismus | Therapeutischer Wert |
 |---|---|---|
-| **Stabilisierungseffekt** | Wiederherstellung der thalamokortikalen Filterfunktion | Hoch — entspricht der organischen Basislinie |
-| **Leistungssteigerungseffekt** | Mesolimbische Dopaminausschüttung, künstlicher Peak | Keiner — pharmakologischer Überschuss |
+| **Synchronisierungseffekt** | Dopaminerge Stabilisierung bringt Modulationssysteme in Phase → kohärente Zustandssignale → thalamokortikale Filterfunktion wiederhergestellt | Hoch — entspricht der organischen Basislinie |
+| **Arousal-/Leistungssteigerungseffekt** | Mesolimbische Dopaminausschüttung, künstlicher Peak | Keiner — pharmakologischer Überschuss |
+
+**Differenzierungstest:** Synchronisierung verbessert *sowohl* Wachheit *als auch* Schlafqualität. Arousal-Steigerung verbessert Wachheit, aber *verschlechtert* Schlafübergänge. Wenn unter Medikation die Abendmüdigkeit kohärenter wird und hypnagoge Dissoziationen abnehmen, ist der Synchronisierungseffekt dominant. Wenn die Einschlaflatenz steigt, dominiert der Arousal-Effekt — die Dosis ist zu hoch oder die Einnahmezeit suboptimal.
 
 **Kritischer Denkfehler im Standardmodell:** Der amphetamininduzierte Leistungspeak existiert bei Neurotypischen *und* ADHS-Betroffenen. Er liegt *oberhalb* der organischen ADHS-Kennlinie. Titration auf diesen Peak ist Titration auf den Drogeneffekt, nicht auf therapeutische Wirkung.
 
@@ -31,6 +39,12 @@ Die klassische invertierte U-Kurve (Arnsten/Goldman-Rakic) ist für ADHS-Betroff
 - Flacheres organisches Optimum
 - Breitere Toleranz für Unterstimulation
 - Steilerer Abfall bei mesolimbischer Überstimulation
+
+### 1.4 Kohärenz vs. Arousal: Warum Koffein kompensiert aber nicht therapiert
+
+Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Adenosin-Antagonismus plus catecholaminerger Push erzeugt Wachheit. Aber Wachheit ist nicht Kohärenz. Koffein erhöht die Amplitude aller Modulationssysteme, ohne sie zu synchronisieren — die Systeme laufen weiter asynchron, nur lauter. Stimulanzien in therapeutischer Dosis erzeugen dagegen Kohärenz auf der Modulationsebene: die Wachheit ist Nebenprodukt davon, dass alle Systeme dasselbe sagen, nicht davon, dass sie alle „an" sind.
+
+**Klinisches Unterscheidungsmerkmal:** Wenn ein Patient unter Stimulanzientherapie seinen Koffeinbedarf reduziert *und gleichzeitig* seine Schlafqualität verbessert, spricht das für Synchronisierung. Wenn der Koffeinbedarf sinkt, aber die Schlafqualität gleich bleibt oder sich verschlechtert, dominiert der Arousal-Effekt.
 
 ---
 
@@ -43,6 +57,7 @@ Symptombasierte Titration (Fremd- und Selbstrating, z. B. ADHD-RS, CGI) ist:
 - Subjektiv und kontextabhängig — strukturell nicht besser als wahrnehmungsbasiertes Reporting
 - Retrospektiv — erfasst keine zeitnahen Zustandsveränderungen
 - Sozial verzerrt — Kinder berichten erwünschte Outcomes
+- Auf das distale Symptom fokussiert — „Konzentration" wird als Kerndefizit gemessen, obwohl es Downstream-Produkt interozeptiver Inkohärenz ist (vgl. 8.5.1)
 
 ### 2.2 Risikoprofil
 
@@ -59,37 +74,58 @@ Jugendliche berichten konsistent, sich unter Medikation *nicht mehr wie sie selb
 - Organische Basislinie bleibt unbekannt und schwer rekalibrierbar
 - Selbstwahrnehmung und Interozeption werden nicht entwickelt, sondern überlagert
 
+Der letzte Punkt ist im Licht von Abschnitt 8 besonders gravierend: Wenn das Kerndefizit interozeptive Inkohärenz ist, und die Medikation in übertherapeutischer Dosis die Interozeption *überlagert* statt sie zu *ermöglichen*, dann verhindert die Behandlung die Entwicklung genau derjenigen Fähigkeit, die sie adressieren soll.
+
 ---
 
 ## 3. Wahrnehmungsbasierte Titration — Grundprinzip
 
 ### 3.1 Zielzustand
 
-Nicht Symptomreduktion, sondern **perceptuelle Stabilisierung**:
+Nicht Symptomreduktion, sondern **interozeptive Kohärenz**: die Wiederherstellung kohärenter Zustandssignale durch Synchronisierung der aufsteigenden Modulationssysteme.
 
-- Reduktion von kognitivem Rauschen und Reizüberflutung
-- Kohärentere Selbstwahrnehmung
-- Affektive Stabilität ohne Aufladung oder Euphorie
+Operationalisierung über drei Dimensionen:
+
+| Dimension | Indikator für therapeutischen Korridor | Indikator für Überschreitung |
+|---|---|---|
+| **Zustandslesbarkeit** | Müdigkeit, Hunger, Anspannung werden als diskrete, handlungsleitende Signale wahrgenommen | Interne Signale werden überdeckt; „ich merke nicht mehr, dass ich müde bin" |
+| **Übergangsqualität** | Schlaf-Wach-Übergänge sind scharf und kohärent; Abendmüdigkeit tritt als konsistentes Gesamtsignal auf | Einschlaflatenz erhöht; Übergänge diffus oder durch Arousal maskiert |
+| **Selbstkongruenz** | Neue interozeptive Klarheit wird als fremd aber integrierbar erlebt; „ich lerne mich kennen" | Erleben wird als nicht-eigen, aufgesetzt oder entfremdet beschrieben; „ich bin nicht mehr ich" |
 
 ### 3.2 Titrationslogik
 
-**Euphorie als Überschreitungsindikator:**  
+**Primärer Indikator: Interozeptive Kohärenz**
+
+Die wirksame Dosis ist die niedrigste Dosis, bei der kohärente Zustandssignale auftreten — messbar an der Qualität interozeptiver Berichte, nicht an Konzentrationstests.
+
+**Sekundärer Indikator: Euphorie als Überschreitungssignal**
+
 Euphorie oder erlebte Leistungssteigerung signalisieren mesolimbische Aktivierung — der therapeutische Korridor wurde verlassen. Die wirksame Dosis liegt *unterhalb* dieses Schwellenwertes.
 
+**Tertiärer Indikator: Schlaf-Wach-Profil als Differenzierungstest**
+
+| Beobachtung | Interpretation |
+|---|---|
+| Wachheit ↑ UND Schlafqualität ↑ | Synchronisierung — therapeutischer Korridor |
+| Wachheit ↑ UND Schlafqualität ↓ oder = | Arousal-Dominanz — Dosis zu hoch oder Einnahmezeit suboptimal |
+| Koffeinbedarf ↓ UND Abendmüdigkeit kohärent | Synchronisierung — Koffein als Kompensation entfällt |
+| Koffeinbedarf ↓ ABER Schlaf unverändert | Arousal-Substitution — kein qualitativer Gewinn |
+
 **Steigerungsprotokoll:**  
-Subgraduelle Dosiserhöhung. Zieldosis ist die niedrigste Dosis mit stabiler Wahrnehmungsqualität ohne euphone Komponente.
+Subgraduelle Dosiserhöhung. Zieldosis ist die niedrigste Dosis mit kohärenter Zustandswahrnehmung ohne euphone Komponente. Die interozeptive Kohärenz tritt vor der Leistungssteigerung auf — wenn sie fehlt, aber „Konzentration" sich verbessert, ist das ein Warnsignal für Arousal-Dominanz.
 
 ### 3.3 Minimax-Argument
 
 Bei vergleichbarer Subjektivität beider Methoden unterscheidet sich das Fehlerprofil fundamental:
 
-| | Symptombasiert | Wahrnehmungsbasiert |
+| | Symptombasiert | Kohärenzbasiert |
 |---|---|---|
-| **Überschreitung nicht erkannt** | Regelfall | Strukturell verhindert |
+| **Überschreitung nicht erkannt** | Regelfall | Strukturell verhindert: Schlaf-Wach-Profil und Selbstkongruenz zeigen Überschreitung bevor Euphorie eintritt |
 | **Unterschreitung** | Gilt als Versagen, treibt Dosiserhöhung | Akzeptables Outcome |
 | **Worst Case** | Überdosierung, Identitätsstörung, Abhängigkeitspotenzial | Suboptimale Symptomreduktion |
+| **Messgröße** | Konzentration (distales Symptom) | Zustandskohärenz (proximaler Mechanismus) |
 
-Bei Kindern und Jugendlichen in entwicklungskritischen Phasen ist das wahrnehmungsbasierte Modell auch ohne überlegene Evidenzlage aufgrund des günstigeren Risikoprofils vorzuziehen.
+Bei Kindern und Jugendlichen in entwicklungskritischen Phasen ist das kohärenzbasierte Modell auch ohne überlegene Evidenzlage aufgrund des günstigeren Risikoprofils vorzuziehen.
 
 ---
 
@@ -100,6 +136,7 @@ Bei Kindern und Jugendlichen in entwicklungskritischen Phasen ist das wahrnehmun
 - Kurze Halbwertszeit erhöht Rebound-Anfälligkeit bei Überdosierung
 - Retardformulierungen bevorzugen um Peakdynamik zu glätten
 - Euphorie tritt bei MPH früher und deutlicher auf als bei LDX — erleichtert Erkennung des Überschreitungspunkts
+- Rebound-Dysphorie als diagnostisches Fenster: Wenn der Rebound mit abruptem Verlust der Zustandslesbarkeit einhergeht (nicht nur „Crash", sondern Rückkehr in diffuse Interozeption), bestätigt das den Synchronisierungsmechanismus
 
 ### 4.2 Lisdexamfetamin (LDX)
 
@@ -107,6 +144,7 @@ Bei Kindern und Jugendlichen in entwicklungskritischen Phasen ist das wahrnehmun
 - Therapeutischer Korridor schwerer abzugrenzen da Euphorie subtiler
 - Effektive therapeutische Dosen liegen potenziell deutlich unter Standarddosierungen (Erfahrungswert: 15 mg als wirksame Stabilisierungsdosis möglich, 10 mg an pharmakologischer Untergrenze)
 - Geringeres Missbrauchspotenzial durch Prodrug-Mechanismus begünstigt vorsichtige Titration
+- **Schlaf-Wach-Profil besonders diagnostisch:** Die flache Kinetik erlaubt Beobachtung der Abendphase — kohärente Abendmüdigkeit unter LDX ist der stärkste Einzelindikator für Synchronisierung vs. Arousal
 
 ---
 
@@ -115,8 +153,8 @@ Bei Kindern und Jugendlichen in entwicklungskritischen Phasen ist das wahrnehmun
 ### 5.1 Kinder (< 12 Jahre)
 
 - Selbstreporting unzuverlässig: kein Referenzrahmen für euphorische vs. stabilisierende Zustände, unreife Interozeption
-- **Externe Hilfsmetriken:** Beobachtung emotionaler Stabilität und Impulsivitätsreduktion als Proxy
-- **Empfehlung:** Interozeptives Training *vor* Medikationsbeginn als Vorbereitung auf späteres Selbstreporting
+- **Externe Kohärenzmetriken:** Beobachtung der Schlaf-Wach-Übergänge durch Eltern (Einschlafqualität, Aufwachklarheit, Abendverhalten); Veränderung des Trink-/Essverhaltens (regulärer Hunger als Kohärenzsignal vs. Appetitsuppression als Arousal-Indikator)
+- **Empfehlung:** Interozeptives Training *vor* Medikationsbeginn als Vorbereitung auf späteres Selbstreporting. Die Fähigkeit, interne Zustände zu benennen, ist nicht selbstverständlich — sie muss entwickelt werden, und Medikation in übertherapeutischer Dosis verhindert diese Entwicklung aktiv (vgl. 2.3)
 - Minimaleffektive Dosis ist hier entwicklungspsychologisch zwingend, nicht nur pharmakologisch wünschenswert
 
 ### 5.2 Jugendliche (12–18 Jahre)
@@ -124,35 +162,102 @@ Bei Kindern und Jugendlichen in entwicklungskritischen Phasen ist das wahrnehmun
 - Selbstreporting grundsätzlich möglich, aber durch soziale Erwünschtheit verzerrt
 - Strukturierte Anleitung zur Unterscheidung von Zustandsqualitäten notwendig
 - Explizite Thematisierung des Selbstgefühls unter Medikation als klinische Routinefrage
+- **Schlüsselfrage:** „Merkst du abends, wann du müde wirst? Ist das ein klares Gefühl oder eher diffus?" — Veränderung dieser Antwort unter Medikation ist diagnostisch wertvoller als Konzentrations-Scores
 
 ### 5.3 Erwachsene
 
-- Wahrnehmungsbasiertes Titrationsprotokoll vollständig anwendbar
+- Kohärenzbasiertes Titrationsprotokoll vollständig anwendbar
 - Vorhandene Erfahrung mit eigenen Zuständen ermöglicht zuverlässiges Reporting
 - Euphorie als Überschreitungsindikator gut kommunizierbar
+- **Spezifisch für Erstmedikation im Erwachsenenalter:** Die Wiederherstellung kohärenter Zustandssignale wird initial als fremd erlebt. Patienten sollten darauf vorbereitet werden, dass „sich anders fühlen" nicht „falsch medikamentiert" bedeutet, sondern ein Übergangszustand der Integration ist (vgl. 8.4.2). Die Qualität dieses Erlebens — bereichernd/integrierbar vs. bedrohlich/entfremdend — ist prognostisch relevant (siehe 5.4)
 
 ### 5.4 ASD-Komorbidität
 
-- Interozeptive Diskriminierung typischerweise eingeschränkt
+- Interozeptive Diskriminierung typischerweise eingeschränkt — aber genau dies ist im Modell nicht Komorbidität, sondern derselbe Mechanismus (vgl. 8.5)
 - Selbstreporting-Qualität variiert stark — individuelle Kalibrierung notwendig
 - Besonders konservative Dosiseskalation empfohlen
+- **Integrationsqualität als Sicherheitsindikator:** Bei intakter thalamischer Identitätskohärenz (vgl. 6.3) werden neue interozeptive Signale als fremd aber eigen integriert. Bei defizitärer thalamischer Integration — erkennbar an Berichten über Fremdheitsgefühle, Kontrollverlust oder Depersonalisation — besteht ein erhöhtes Risiko für psychotische Dekompensation unter Dosiserhöhung. Diese Berichte sind keine Nebenwirkungen im klassischen Sinne, sondern Indikatoren für thalamische Vulnerabilität und absolute Kontraindikation für Dosiserhöhung
+
+### 5.5 Differenzialdiagnose Schizophrenie-Spektrum
+
+Die Reformulierung aus Abschnitt 8.4.2 hat eine sicherheitsrelevante Implikation: Derselbe Synchronisierungsmechanismus, der bei intakter thalamischer Integration therapeutisch wirkt, kann bei defizitärer Integration psychotogen wirken. Stimulanzieninduzierte Psychosen sind in diesem Modell keine idiosynkratische Nebenwirkung, sondern das Produkt von Synchronisierung auf defizitärem Substrat.
+
+**Warnsignale für thalamische Vulnerabilität:**
+
+| Signal | Bewertung |
+|---|---|
+| Neue Interozeption wird als bereichernd, überraschend, „lernbar" beschrieben | Intakte Integration — therapeutischer Korridor |
+| Neue Interozeption wird als fremd, bedrohlich, „nicht ich" beschrieben | Thalamische Vulnerabilität — Dosisreduktion, engmaschiges Monitoring |
+| Berichte über Stimmen, Gedankeneingebung, Kontrollverlust | Psychotische Dekompensation — sofortiger Abbruch |
 
 ---
 
-## 6. Forschungsbedarf
+## 6. Vorschlag eines strukturierten Titrationsinterviews
+
+Die folgenden Fragen operationalisieren die kohärenzbasierte Titration als klinisches Instrument. Sie ersetzen nicht die Standarddiagnostik, sondern ergänzen sie um die proximale Messgröße.
+
+### 6.1 Baseline (vor Medikation)
+
+| Frage | Ziel |
+|---|---|
+| „Wie merken Sie, dass Sie müde werden? Ist das ein klares Gefühl oder eher so, dass Sie es im Nachhinein feststellen?" | Baseline interozeptive Kohärenz — Müdigkeit |
+| „Essen Sie regelmäßig, oder vergessen Sie Mahlzeiten?" | Baseline Hungersignal |
+| „Wie schlafen Sie ein — schnell, langsam, mit vielen Gedanken, mit Bildern?" | Baseline Schlafübergang |
+| „Trinken Sie Kaffee/Mate/Energy Drinks? Wann, wie viel, und hilft es?" | Baseline Selbstmedikation |
+| „Wenn Sie angespannt sind — können Sie sagen, wo genau und was genau sich angespannt anfühlt?" | Baseline Zustandsdiskriminierung |
+
+### 6.2 Unter Medikation (ab Woche 1, bei jedem Termin)
+
+| Frage | Ziel | Therapeutische Implikation |
+|---|---|---|
+| „Merken Sie abends, wann Sie müde werden? Hat sich daran etwas verändert?" | Kohärenz der Abendmüdigkeit | Verbesserung → Synchronisierung; keine Veränderung → Dosis insuffizient oder Arousal-dominant |
+| „Wie schlafen Sie ein — besser, schlechter, anders?" | Schlaf-Wach-Übergangsqualität | Besser → Synchronisierung; schlechter → Arousal-Dominanz → Dosis zu hoch |
+| „Hat sich Ihr Kaffee-/Mate-Bedarf verändert?" | Kompensationsbedarf | Reduktion + besserer Schlaf → Synchronisierung; Reduktion allein → Arousal-Substitution |
+| „Nehmen Sie neue Körpersignale wahr, die Sie vorher nicht kannten?" | Interozeptive Integration | Ja, bereichernd → therapeutischer Korridor; Ja, bedrohlich → Vulnerabilitätssignal |
+| „Fühlen Sie sich wie Sie selbst unter der Medikation?" | Selbstkongruenz | Ja, aber „klarer" → Korridor; Nein, „anders/fremd" → Überschreitung oder Vulnerabilität |
+| „Gibt es Momente von gehobener Stimmung oder das Gefühl, besonders leistungsfähig zu sein?" | Euphorie-Screening | Ja → mesolimbische Aktivierung → Dosis reduzieren |
+
+### 6.3 Verlaufsdokumentation
+
+Die Antworten sollten longitudinal dokumentiert werden. Die diagnostisch relevanteste Veränderung ist die *Trajektorie* der interozeptiven Kohärenz über Wochen:
+
+- **Woche 1–2:** Auftreten neuer Zustandssignale (Fremdheitsphase)
+- **Woche 3–6:** Integration oder Entfremdung (prognostisches Fenster)
+- **Ab Woche 6:** Stabilisierung — Zustandssignale werden als eigen erlebt, Schlaf-Wach-Profil hat sich eingependelt, Koffeinbedarf ist stabil
+
+Wenn in Woche 3–6 keine Integration eintritt, ist die Dosis zu überprüfen (zu hoch → Arousal statt Kohärenz) oder die thalamische Integrationskapazität als limitierender Faktor zu evaluieren.
+
+---
+
+## 7. Substanzspezifische Hinweise zur Kohärenzbeobachtung
+
+### 7.1 Methylphenidat (MPH)
+
+Die kurze Halbwertszeit erzeugt ein diagnostisch nutzbares Phänomen: Der **Rebound** ist nicht nur eine Nebenwirkung, sondern ein **Fenster in den Ausgangszustand**. Wenn der Patient beim Abklingen der Wirkung beschreibt, dass „alles wieder diffus wird" — nicht nur Stimmungstief, sondern Verlust der Zustandslesbarkeit — bestätigt das den Synchronisierungsmechanismus und validiert die Diagnose rückwirkend.
+
+### 7.2 Lisdexamfetamin (LDX)
+
+Die flache Kinetik macht den Rebound weniger dramatisch, aber die **Abendphase** (8–12 h post-dose) besonders informativ. In dieser Phase ist die Wirkung nicht abrupt beendet, sondern graduell absteigend. Die Qualität der Abendmüdigkeit — kohärent vs. diffus — ist damit ein Echtzeit-Indikator für die Synchronisierungstiefe der aktuellen Dosis.
+
+---
+
+## 8. Forschungsbedarf
 
 Folgende Fragen sind für eine evidenzbasierte Weiterentwicklung dieser Leitlinie offen:
 
-1. **Operationalisierung** von "perceptueller Stabilisierung" als messbarer, reproduzierbarer Zielzustand
-2. **Standardisiertes Selbstreporting-Tool** das den therapeutischen Korridor erfasst (nicht Symptomreduktion)
-3. **Validierung des Euphorie-Indikators** über Alters- und Subtypengruppen
-4. **Standardisierte sensorische Übungen** zur Vorbereitung von Kindern auf interozeptives Reporting
-5. **Prospektiver Vergleich** wahrnehmungsbasierter vs. symptombasierter Titration in RCT-Design
-6. **Biomarker** oder physiologische Proxies für thalamokortikale Stabilisierung
+1. **Operationalisierung** von „interozeptiver Kohärenz" als messbarer, reproduzierbarer Zielzustand — das Titrationsinterview (Abschnitt 6) ist ein erster Vorschlag, aber nicht validiert
+2. **Standardisiertes Kohärenz-Assessment** das über Herzschlag-Detektionsaufgaben hinausgeht und die *Qualität* interozeptiver Berichte erfasst (nicht nur Akkuratheit)
+3. **Validierung des Schlaf-Wach-Profils** als Differenzierungstest zwischen Synchronisierung und Arousal — prospektiv, mit Aktigraphie und Schlaftagebuch
+4. **Validierung des Euphorie-Indikators** über Alters- und Subtypengruppen
+5. **Integrationsqualität als Prädiktor:** Prospektive Testung, ob die Qualität der interozeptiven Integration in Woche 3–6 psychotische Dekompensation unter Dosiserhöhung vorhersagt
+6. **Koffein-Reduktion als Proxy:** Korrelation zwischen Reduktion der Koffein-Selbstmedikation und objektivierbarer Schlafqualitätsverbesserung als indirekter Kohärenzmarker
+7. **Standardisierte sensorische Übungen** zur Vorbereitung von Kindern auf interozeptives Reporting
+8. **Prospektiver Vergleich** kohärenzbasierter vs. symptombasierter Titration in RCT-Design
+9. **Biomarker** oder physiologische Proxies für monoaminerge Synchronisierung (Kandidaten: 1/f-Spektralanalyse im EEG, vgl. 3.4.5; Heart Rate Variability als autonomer Kohärenzproxy)
 
 ---
 
-## 7. Ethische Implikation
+## 9. Ethische Implikation
 
 Die Verzögerung einer Publikation dieser Argumente bis zur vollständigen empirischen Validierung ist ethisch nicht vertretbar:
 
@@ -160,7 +265,14 @@ Die Verzögerung einer Publikation dieser Argumente bis zur vollständigen empir
 - Der Schaden durch den Status quo ist in der Literatur bereits belegt
 - Kinder in Entwicklungsphasen sind eine besonders vulnerable Population
 - Die bestehende Evidenzlage reicht für einen theoretischen Kommentar und öffentliche Diskussion aus
+- Die Reformulierung des Kerndefizits (interozeptive Inkohärenz statt Konzentrationsstörung) hat unmittelbare Konsequenzen für die klinische Praxis, auch wenn die volle Validierung aussteht: sie verschiebt den Aufmerksamkeitsfokus des Behandlers von „funktioniert das Kind in der Schule?" auf „kann das Kind seine eigenen Zustände lesen?" — und das ist unabhängig vom mechanistischen Modell ein besseres Behandlungsziel
 
 ---
 
 *Dieses Dokument stellt einen theoretischen Diskussionsbeitrag dar und ersetzt keine individualisierte klinische Entscheidung.*
+
+*Querverweise zum Pathogenetischen Modell v1.3:*
+- *Abschnitt 2.4.0: D2High-Raphe-Mechanismus*
+- *Abschnitt 3.4: Thalamisches Gating und Signal-Rausch-Verhältnis*
+- *Abschnitt 6.3: Thalamische Identitätskohärenz*
+- *Abschnitt 8: Interozeptive Inkohärenz als Downstream monoaminerger Desynchronisierung*
