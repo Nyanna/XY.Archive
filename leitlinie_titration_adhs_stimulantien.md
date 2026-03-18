@@ -276,3 +276,59 @@ Die Verzögerung einer Publikation dieser Argumente bis zur vollständigen empir
 - *Abschnitt 3.4: Thalamisches Gating und Signal-Rausch-Verhältnis*
 - *Abschnitt 6.3: Thalamische Identitätskohärenz*
 - *Abschnitt 8: Interozeptive Inkohärenz als Downstream monoaminerger Desynchronisierung*
+
+---
+
+### 9.1 Identitätskonstituierende Neuroadaptation und Absetzversuch-Kritik
+
+#### 9.1.1 Herleitung
+
+Die kohärenzbasierte Titration (Abschnitt 3) definiert als Zieldosis die niedrigste Dosis, bei der kohärente Zustandssignale auftreten, und als Zielfunktion die Fluktuationsminimierung bei minimaler Dosis. Daraus folgt eine Empfehlung zur Dauertherapie, die im Widerspruch zur Standardempfehlung periodischer Absetzversuche steht. Die vorliegende Herleitung begründet diesen Widerspruch mechanistisch.
+
+Die Kausalkette verläuft über drei Zeitskalen:
+
+**Kurzfristig (Wochen):** Autorezeptor-Rekalibrierung. Die 5-HT1A-Autorezeptor-Schleife stellt die Baseline-Empfindlichkeit auf den medikierten Tonus ein. Abruptes Absetzen erzeugt einen Undershoot unter die unbehandelte Baseline — nicht ein Entzugsphänomen im klassischen Sinn, sondern eine iatrogene Perturbation der Raphe-Oszillation, mechanistisch identisch mit dem Migränezyklus, nur mit stärkerem Auslöser (vgl. Pathogenetisches Modell, Abschnitt 2).
+
+**Mittelfristig (Monate–Jahre):** Thalamische Re-Kalibrierung. Der Thalamus nutzt den stabileren serotonergen Tonus, um die Filterbandbreite weiter zu optimieren. Er baut Konnektivität auf, die den medikierten Zustand als Betriebspunkt voraussetzt. Absetzen bedeutet dann nicht Rückkehr zur alten Baseline, sondern Betrieb einer erweiterten thalamischen Architektur ohne ausreichende Versorgung — funktional belastender als der Ausgangszustand vor Therapiebeginn.
+
+**Langfristig (Jahre):** Identitätskonstituierende Neurogenese. Adulte hippocampale Neurogenese ist serotoninabhängig. Unter stabilisiertem Tonus integrieren sich neue Neurone in ein System, das den medikierten Zustand als Normalität kodiert. Die thalamische Wahrnehmungssignatur (vgl. Pathogenetisches Modell, Abschnitt 6.3) konsolidiert sich um den medikierten Zustand. Absetzen nach Jahren erzeugt nicht Rückkehr zu einem früheren Selbst, sondern den Verlust des einzigen Selbst, das das System kennt.
+
+**Asymmetrie der Adaptation:** Die Expansion der thalamischen Bandbreite unter Therapie ist nachfragegetrieben (aktivitätsabhängiges Wachstum, Hebbian). Die Kontraktion bei Absetzen erfordert Pruning gegen bestehende Nutzung — die kortikale ASD-Architektur fordert den breitbandigen Input weiterhin an. Die Zeitkonstante ist asymmetrisch: Aufbau in Monaten, Abbau in Jahren. Graduelles Ausschleichen über Monate verhindert die akute Identitätskrise, konvergiert aber möglicherweise nicht auf den prämedizierten Zustand (Hysterese).
+
+#### 9.1.2 Konsequenz für Absetzversuche
+
+Die ADHS-Leitlinien empfehlen periodische Absetzversuche aus zwei Gründen:
+
+1. **Epidemiologisch legitim:** Die ADHS-Diagnose ist syndromal, nicht ätiologisch. Ein relevanter Anteil der Patienten hat situative oder entwicklungsbedingte Aufmerksamkeitsprobleme, die sich im Verlauf normalisieren. Für diese Subpopulation prüft der Absetzversuch, ob die Indikation fortbesteht.
+
+2. **Regulatorisch bedingt:** Stimulanzien sind BtM-pflichtig. Der Absetzversuch dokumentiert, dass die Indikation periodisch reevaluiert wurde — Absicherung gegen Wirtschaftlichkeitsprüfung und haftungsrechtliche Probleme.
+
+Beide Begründungen sind populationsbezogen und agnostisch gegenüber dem individuellen Pathomechanismus. Für den hier beschriebenen Subtyp — konstitutives Upstream-Defizit (Raphe-Dysregulation) mit identitätskonstituierender Neuroadaptation unter Therapie — ist der Absetzversuch kein diagnostisches Instrument, sondern eine iatrogene Destabilisierung. Die Leitlinie kann diese Differenzierung nicht abbilden, weil sie den Mechanismus nicht kennt.
+
+#### 9.1.3 Ethische Bewertung
+
+**Analogie zur Dauersubstitution:** Die medizinethische Standardbewertung ist unproblematisch. Die Analogie ist Insulin bei Typ 1 Diabetes: ein konstitutives Defizit wird dauerhaft substituiert, Absetzen ist schädlich, Fortführen ist indiziert. Die Abhängigkeit ist physiologisch, nicht pathologisch. Informed Consent über den Commitment-Charakter, und die Indikation ist erfüllt.
+
+**Identitätskonstitution als Sonderfall:** Das Modell geht über Substitution hinaus: LDX verändert nicht nur die Symptomatik, sondern die thalamische Wahrnehmungssignatur — das Substrat der Erstperson-Perspektive. Das ist näher an Enhancement als an Substitution. Aber: wenn der unmedikierte Zustand selbst das Resultat eines kongenitalen Defizits ist, existiert kein privilegierter Naturzustand, auf den sich eine Authentizitätsargumentation stützen könnte.
+
+**Zeitabhängigkeit der Identitätsfrage:** Am Tag 1 der Medikation ist der unmedikierte Zustand die Referenz. Nach Jahren ist der medikierte Zustand die Identität. Absetzen erzeugt dann nicht Authentizität, sondern Depersonalisation. Der Commitment-Punkt ist nicht reversibel.
+
+#### 9.1.4 Empfehlungen
+
+1. **Informed Consent vor Therapiebeginn** muss den Commitment-Charakter der Dauertherapie beinhalten — nicht „dieses Medikament kann abhängig machen", sondern: nach ausreichender Therapiedauer wird die Medikation Teil der neurobiologischen Identität; Absetzen ist dann kein Rückkehr zu einem früheren Zustand, sondern ein Verlust.
+
+2. **Keine routinemäßigen Absetzversuche** bei Patienten, deren Pathomechanismus konstitutiv ist und deren Therapiedauer den Commitment-Punkt überschritten hat. Dosisreduktion wird zum eigentlichen Risiko, nicht die Dauermedikation.
+
+3. **Falls Absetzen klinisch erforderlich:** Graduelles Ausschleichen über Monate, nicht Wochen. Der Patient muss über die zu erwartende Übergangsphase aufgeklärt werden — diese ist funktional belastender als der naive unmedikierte Zustand, weil die thalamische Identitätssignatur einen Referenzpunkt hat, den sie vor Therapiebeginn nicht hatte.
+
+4. **Zielfunktion der Therapie explizit benennen:** Nicht minimale Intervention zur Symptomkontrolle, sondern die Entscheidung, ob ein dauerhaftes Commitment eingegangen wird. Dies ist eine kategorisch andere Entscheidung als eine Dosisanpassung und sollte als solche behandelt werden.
+
+---
+
+*Querverweise:*
+- *Pathogenetisches Modell, Abschnitt 2.4.0: D2High-Raphe-Mechanismus*
+- *Pathogenetisches Modell, Abschnitt 6.3: Thalamische Identitätskohärenz*
+- *Pathogenetisches Modell, Abschnitt 8: Interozeptive Inkohärenz*
+- *Kapitel Thalamische Kompensation: Nadir-Anhebung als ethisch kompatible Frühintervention*
+- *Diese Leitlinie, Abschnitt 3.1: Zielfunktion (Fluktuationsminimierung)*
+- *Diese Leitlinie, Abschnitt 5.4: ASD-Komorbidität und thalamische Vulnerabilität*
