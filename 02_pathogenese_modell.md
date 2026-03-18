@@ -15,28 +15,36 @@ Version 1.3 – März 2026
 
 ## **Kurzfassung des Modells**
 
-Kernthese Instabile Selbstregulation der Raphe-Kerne (5-HT1A-Autorezeptor-Schleife) als kongenitaler Primärdefekt, moduliert durch eine hypothalamische Circadian-Dysregulation (endogene Periodenlänge ~26 h). Die circadiane Drift wirkt nicht als direkter Trigger, sondern senkt periodisch die Dämpfungskonstante der Raphe-Schleife ab – am Punkt maximaler Desynchronisation (~Tag 6–7) reicht minimale Perturbation zur Kaskadenauslösung. Zusammen produzieren beide Systeme downstream vier klinisch ko-auftretende Phänotypen:
+**Primärdefekt und Amplifikation (Two-Hit-Modell):** Instabile Selbstregulation der Raphe-Kerne (5-HT1A-Autorezeptor-Schleife) als kongenitaler Primärdefekt (Hit 1), amplifiziert durch einen postnatalen iatrogenen D2High-Shift infolge frühkindlicher Glukokortikoidexposition (Hit 2). Die kausale Ordnung ist chronologisch fixiert: Die 5-HT1A-Instabilität besteht pränatal und treibt die thalamische Fehlkalibrierung (22.–26. SSW). Die atopische Grunderkrankung, die zur GC-Behandlung führt, manifestiert sich erst postnatal (Neurodermitis-Diagnose ~9. Lebensmonat) als eigene Downstream-Manifestation des Raphe-Defekts. Der GC-induzierte D2High-Shift baut sich mit zusätzlichem Zeitversatz auf und hebt die Raphe-Oszillationsamplitude in den kaskadenfähigen Bereich. Hit 1 allein ist hinreichend für thalamische Fehlkalibrierung und ASD-Phänotyp, möglicherweise nicht hinreichend für das volle Migränesyndrom. Hit 2 amplifiziert die Oszillation über D2High-vermittelte disproportionale DA→5-HT-Perturbation und ist wahrscheinlich notwendig für die adulte Kaskadenfähigkeit.
+
+**Circadiane Modulation:** Eine hypothalamische Circadian-Dysregulation (endogene Periodenlänge ~26 h) moduliert die Raphe-Instabilität periodisch. Die circadiane Drift wirkt nicht als direkter Trigger, sondern senkt periodisch die Dämpfungskonstante der Raphe-Schleife ab – am Punkt maximaler Desynchronisation (~Tag 6–7) reicht minimale Perturbation zur Kaskadenauslösung.
+
+**Downstream-Phänotypen:** Zusammen produzieren beide Systeme downstream vier klinisch ko-auftretende Phänotypen:
 * Migräne (Zyklusstörung der Raphe-Oszillation)
 * Thalamische Gating-Insuffizienz (fehlkalibrierter Filter durch instabiles fetales Serotoninsignal)
 * ASD-Phänotyp (Hypervigilanz, sensorische Hypersensitivität)
-* Autonome Dysregulation (instabile NTS-Schwelle, vestibuloautonomer Reflex, TCR-Prädisposition) Die phänotypische Varianz entsteht nicht durch vier separate Defekte, sondern durch ein einziges instabiles Regelkreissystem mit unterschiedlichen Downstream-Manifestationen.
+* Autonome Dysregulation (instabile NTS-Schwelle, vestibuloautonomer Reflex, TCR-Prädisposition)
 
-Das Modell integriert Beobachtungen aus einem kontrollierten pharmakologischen Selbstversuch (Methylphenidat, Lisdexamfetamin), langjährige klinische Selbstbeobachtung und systematischen Literaturabgleich. Die therapeutische Implikation ist eine dopaminerge Upstream-Stabilisierung der Raphe-Aktivität durch niedrig dosiertes Lisdexamfetamin als kausaler Ansatz – im Gegensatz zur symptomatischen Kaskaden-Intervention durch Triptane oder CGRP-Antagonisten.
+Die phänotypische Varianz entsteht nicht durch vier separate Defekte, sondern durch ein einziges instabiles Regelkreissystem mit unterschiedlichen Downstream-Manifestationen.
 
+**Thalamische Kompensationstiefe als Verzweigungsvariable:** Eine Erweiterung des Modells (separates Kapitel) leitet aus der Interaktion zwischen Raphe-Kapazität, thalamischer Kalibrierung und kortikaler Konnektivität eine vertikale Relation zwischen ASD, ADS, ADHS und Hochbegabung ab: Die Kompensationstiefe des Thalamus auf das instabile fetale Serotoninsignal bestimmt, welcher phänotypische Zweig resultiert. Diese Ableitung ist die originärste und derzeit am wenigsten empirisch gestützte These des Modells.
+
+**Therapeutische Implikation:** Dopaminerge Upstream-Stabilisierung der Raphe-Aktivität durch niedrig dosiertes Lisdexamfetamin als kausaler Ansatz – im Gegensatz zur symptomatischen Kaskaden-Intervention durch Triptane oder CGRP-Antagonisten. Die D2-Supersensitivität (Hit 2) ist dabei nicht nur Risikofaktor, sondern gleichzeitig therapeutischer Hebel: Sie ermöglicht die Raphe-Kompensation bei Dosen, die bei normalem D2High/D2Low-Verhältnis insuffizient wären (vgl. 2.4.0).
+
+Das Modell integriert Beobachtungen aus einem kontrollierten pharmakologischen Selbstversuch (Methylphenidat, Lisdexamfetamin), langjährige klinische Selbstbeobachtung und systematischen Literaturabgleich.
 ---
 
 ## **1\. Pathogenetischer Verlauf – Übersicht**
 
-Das Modell beschreibt eine kausale Verlaufskette von einem kongenitalen Primärdefekt über entwicklungsbiologische Konsequenzen zu klinischen Manifestationen. Die zeitliche Ordnung ist entscheidend für das Verständnis der Kausalität.
+Das Modell beschreibt eine kausale Verlaufskette von einem kongenitalen Primärdefekt über entwicklungsbiologische Konsequenzen zu klinischen Manifestationen. Die zeitliche Ordnung ist entscheidend für das Verständnis der Kausalität. Das Modell folgt einer Two-Hit-Architektur: Hit 1 (5-HT1A-Instabilität, pränatal) ist hinreichend für die thalamische Fehlkalibrierung; Hit 2 (D2High-Shift durch iatrogene GC-Exposition, postnatal) amplifiziert die Raphe-Oszillation in den kaskadenfähigen Bereich (Details in Abschnitt 2.4.2).
 
 | Phase                             | Beschreibung                                                                                                                                                                                                                                     |
 | :-------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Phase I: Pränatal**             | Genetisch determinierte Instabilität der Raphe-5-HT1A-Autorezeptor-Schleife. Underdämpfte Oszillation des serotonergen Regelkreises ab der 5.–7. SSW.                                                                                            |
-| **Phase II: Fetale Entwicklung**  | Instabiles Serotoninsignal als trophischer Faktor stört thalamokortikale Kalibrierung (22.–26. SSW). Thalamus kalibriert auf breite Signalvarianz statt schmale Filterbandbreite.                                                                |
-| **Phase III: Postnatal/kindlich** | Manifeste Gating-Insuffizienz: Hypervigilanz, sensorische Hypersensitivität, vestibuloautonome Reflexe (TCR ab 6\. Lebensjahr dokumentiert), Habituation bleibt unvollständig.                                                                   |
-| **Phase IV: Chronisch/adullt**    | Periodische Migräne als klinisch sichtbarste Manifestation der Raphe-Oszillation ab 20. Lebensjahr. Quasi-wöchentliche Periodizität durch circadiane Dämpfungsmodulation: endogenes τ ≈ 26 h vs. soziales T = 24 h → progressive Absenkung der Raphe-Dämpfungskonstante → maximale Prädisposition alle ~6–7 Tage, bei der minimale Perturbation zur Kaskadenauslösung genügt. TCR Kompensation durch aktive kortikale Suppression (PFC-NTS-Hemmung), die unter Erschöpfung, Schlafmangel oder Betablockade zusammenbricht. |
+| **Phase I: Pränatal (Hit 1)**     | Genetisch determinierte Instabilität der Raphe-5-HT1A-Autorezeptor-Schleife. Underdämpfte Oszillation des serotonergen Regelkreises ab der 5.–7. SSW.                                                                                            |
+| **Phase II: Fetale Entwicklung**  | Instabiles Serotoninsignal als trophischer Faktor stört thalamokortikale Kalibrierung (22.–26. SSW). Thalamus kalibriert auf breite Signalvarianz statt schmale Filterbandbreite. Dieser Schritt folgt ausschließlich aus Hit 1 — die GC-Exposition hat noch nicht begonnen.                                                                |
+| **Phase III: Postnatal/kindlich** | Manifeste Gating-Insuffizienz: Hypervigilanz, sensorische Hypersensitivität, vestibuloautonome Reflexe (TCR ab 6\. Lebensjahr dokumentiert), Habituation bleibt unvollständig. Parallel: Atopische Grunderkrankung manifestiert sich als Downstream-Produkt des Raphe-Defekts (Neurodermitis-Diagnose ~9. Lebensmonat). Die darauf folgende iatrogene GC-Exposition induziert mit eigenem Zeitversatz den D2High-Shift (Hit 2), der die Raphe-Oszillationsamplitude in den kaskadenfähigen Bereich hebt (vgl. 2.4.2). |
+| **Phase IV: Chronisch/adult**     | Periodische Migräne als klinisch sichtbarste Manifestation der Raphe-Oszillation ab 20. Lebensjahr. Quasi-wöchentliche Periodizität durch circadiane Dämpfungsmodulation: endogenes τ ≈ 26 h vs. soziales T = 24 h → progressive Absenkung der Raphe-Dämpfungskonstante → maximale Prädisposition alle ~6–7 Tage, bei der minimale Perturbation zur Kaskadenauslösung genügt. TCR Kompensation durch aktive kortikale Suppression (PFC-NTS-Hemmung), die unter Erschöpfung, Schlafmangel oder Betablockade zusammenbricht. |
 | **Phase V: Pharmakologisch**      | Dopaminerge Stimulation (Methylphenidat/Lisdexamfetamin) stabilisiert Raphe-Aktivität upstream. Migränefreiheit unter Substanz bei gleichzeitiger Bestätigung der Dopamin-Hypersensitivität durch Wirkung bei Niedrigdosen. Pharmakodynamische Verifikation der Hypersensitivität durch reproduzierbaren vertikalen Blickrichtungsnystagmus unter 15 mg LDX – interpretiert als zerebellär-hirnstammale Integratordekompensation bei langfristig hypodopaminerg-adaptierter Purkinje-Zell-Kalibrierung (siehe 2.4.1).                        |
-
 ---
 
 ## **2\. Primärdefekt: Kongenitale Raphe-Dysregulation**
@@ -216,20 +224,38 @@ Entwicklungszeitliche GC-Exposition primed Gene dauerhaft — darunter explizit 
 
 Postnatal verabreichte Glukokortikoide (Dexamethason, Hydrocortison) führen langfristig zu veränderten Serotonin-Schaltkreisen und Angstverhalten. Bei Schulkindern und Jugendlichen wurden nach neonataler GC-Exposition erhöhte Inzidenzen von Aufmerksamkeitsstörungen, Hyperaktivität und Problemen sozialer Kompetenz beschrieben (Karemaker et al. 2008, PMC3273653). Dies verbindet die GC-Exposition mit dem breiteren serotonergen Phänotyp des vorliegenden Modells.
 
-#### **Integration in das Gesamtmodell: Zwei Zeitfenster, ein Syndrom**
+#### **Integration in das Gesamtmodell: Two-Hit-Architektur**
 
-Das erweiterte Modell postuliert zwei kritische Expositionsfenster mit unterschiedlichen, aber synergistischen Konsequenzen:
+Das Modell postuliert zwei kausal geordnete Hits, nicht zwei gleichrangige Zeitfenster. Die Ordnung ist chronologisch fixiert und empirisch nicht invertierbar:
 
-| Phase | Zeitfenster | Noxe | Konsequenz |
-| :---- | :---- | :---- | :---- |
-| **Phase I (pränatal)** | 5.–7. SSW | Genetische/epigenetische Vulnerabilität | Instabile Raphe-5-HT1A-Autorezeptor-Schleife → Primärdefekt |
-| **Phase II (postnatal)** | Frühe Kindheit bis Adoleszenz | Iatrogene Glukokortikoidexposition (IV + Langzeit) | D2High-Shift → dopaminerge Supersensitivität |
+| Hit | Zeitfenster | Noxe | Konsequenz | Status |
+| :---- | :---- | :---- | :---- | :---- |
+| **Hit 1 (Primärdefekt)** | Pränatal, 5.–7. SSW | Genetische/epigenetische Vulnerabilität | Instabile Raphe-5-HT1A-Autorezeptor-Schleife → fetale thalamische Fehlkalibrierung (22.–26. SSW) | Notwendig und hinreichend für thalamische Gating-Insuffizienz und ASD-Phänotyp |
+| **Hit 2 (Amplifikation)** | Postnatal, frühe Kindheit bis Adoleszenz | Iatrogene Glukokortikoidexposition (IV + Langzeit) | D2High-Shift → dopaminerge Supersensitivität → Amplifikation der Raphe-Oszillation in den kaskadenfähigen Bereich | Notwendig für das volle Migränesyndrom; nicht hinreichend ohne Hit 1 |
 
-Die Verschränkung beider Phasen erzeugt einen sich selbst verstärkenden Mechanismus:
+**Kausale Ordnung — chronologisches Argument:**
 
-Raphe-Primärdefekt → instabiler 5-HT-Tonus pränatal → thalamische Fehlkalibrierung (Abschnitt 3) → *gleichzeitig*: 5-HT-Dysregulation moduliert D2-Konformationsgleichgewicht über 5-HT2A/D2-Heterodimere → Prädisposition für D2High-Shift → frühkindliche GC-Exposition trifft auf bereits prädisponiertes System → D2High-Shift wird fixiert und amplifiziert
+Die Frage, ob die 5-HT1A-Instabilität oder die D2-Asymmetrie der Primärdefekt ist, lässt sich innerhalb des gekoppelten Regelkreises nicht durch Isolation trennen — beide rückkoppeln. Aber die Chronologie erzwingt eine Ordnung:
 
-Die klinische Manifestation — Th2-dominante Immunlage (Neurodermitis, Asthma) — ist dabei selbst serotonerg moduliert (Mastzell-5-HT, intestinales Serotonin). Die Grunderkrankung, die zur GC-Behandlung führte, ist somit kein Zufall, sondern möglicherweise eine frühe Downstream-Manifestation desselben Primärdefekts.
+1. Die thalamische Fehlkalibrierung setzt ein instabiles Serotoninsignal *pränatal* voraus (22.–26. SSW). Zu diesem Zeitpunkt existiert keine GC-Exposition. Wäre D2-Asymmetrie der alleinige Primärdefekt, dürfte keine fetale thalamische Fehlkalibrierung vorliegen — die Raphe wäre pränatal stabil gewesen.
+2. Die Neurodermitis als atopische Erstmanifestation wurde erst im ~9. Lebensmonat diagnostiziert. Sie ist selbst eine Downstream-Manifestation des Raphe-Primärdefekts (Mastzell-5-HT, Th2-Dominanz). Die GC-Behandlung dieser Manifestation beginnt frühestens danach.
+3. Der D2High-Shift tritt in den Tiermodellen nicht sofort ein, sondern baut sich mit eigenem Zeitversatz nach GC-Exposition auf (Seeman 2010, Rodrigues et al. 2011).
+
+Damit liegen zwei unabhängige Verzögerungen in Serie zwischen dem Primärdefekt und dem D2High-Shift: Erst muss der Raphe-Defekt die atopische Manifestation produzieren (Monate), dann muss die GC-Behandlung den D2-Shift induzieren (zusätzlicher Zeitversatz). **Der D2High-Shift ist mindestens zweiter Ordnung: Downstream-Konsequenz einer Behandlung einer Downstream-Manifestation des Primärdefekts.**
+
+Dies schließt D2-Asymmetrie als alleinigen Primärdefekt aus und fixiert sie als Amplifikator. Die 5-HT1A-Autorezeptor-Schleife bleibt kongenitaler Primärdefekt.
+
+**Implikation für alternative Verläufe:** Das Two-Hit-Modell hat eine testbare Vorhersage: Ein Individuum mit identischer 5-HT1A-Vulnerabilität (Hit 1), aber ohne GC-Exposition (kein Hit 2), hätte thalamische Gating-Insuffizienz und ASD-Phänotyp, aber möglicherweise *keine oder deutlich mildere Migräne*. Die Oszillationsamplitude der Raphe wäre underdämpft, aber nicht kaskadenfähig.
+
+**Verschränkungsmechanismus:**
+
+Die beiden Hits interagieren nicht nur sequenziell, sondern synergistisch über eine Prädispositionsschleife:
+
+Raphe-Primärdefekt (Hit 1) → instabiler 5-HT-Tonus pränatal → thalamische Fehlkalibrierung (Abschnitt 3) → *gleichzeitig*: 5-HT-Dysregulation moduliert D2-Konformationsgleichgewicht über 5-HT2A/D2-Heterodimere → Prädisposition für D2High-Shift → frühkindliche GC-Exposition (Hit 2) trifft auf bereits prädisponiertes System → D2High-Shift wird fixiert und amplifiziert
+
+Die klinische Manifestation — Th2-dominante Immunlage (Neurodermitis, Asthma) — ist dabei selbst serotonerg moduliert (Mastzell-5-HT, intestinales Serotonin). Die Grunderkrankung, die zur GC-Behandlung führte, ist somit kein Zufall, sondern eine frühe Downstream-Manifestation desselben Primärdefekts. Die iatrogene GC-Exposition ist damit eine sekundäre Komplikation des Primärdefekts — das System verschärft seinen eigenen Schaden.
+
+**Therapeutische Konsequenz des Two-Hit-Modells:** Die D2-Supersensitivität (Hit 2) ist nicht nur Problemquelle, sondern gleichzeitig therapeutischer Hebel (vgl. 2.4.0). Sie ermöglicht die Raphe-Kompensation bei Dosen, die bei normalem D2High/D2Low-Verhältnis insuffizient wären. Das therapeutische Fenster (vgl. 7.3) ist somit nicht nur durch die Hypersensitivität *begrenzt*, sondern durch sie überhaupt erst *erreichbar*. Hit 2 hat das System beschädigt und gleichzeitig den Zugang zur Therapie eröffnet.
 
 #### **Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
 
