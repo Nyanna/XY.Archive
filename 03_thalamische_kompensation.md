@@ -24,7 +24,7 @@ Die Dämpfungskonstante der 5-HT1A-Autorezeptor-Schleife ist keine singuläre Gr
 
 ### 1.1 Polygenetischer Schwellenwerteffekt vs. struktureller Defekt
 
-Im Standardmodell (Kapitel 2.3 des pathogenetischen Modells) genügt eine ungünstige Kombination normal-varianter Parameter zur Unterschreitung der kritischen Dämpfung – kein einzelner Defekt notwendig.
+Im Standardmodell genügt eine ungünstige Kombination normal-varianter Parameter zur Unterschreitung der kritischen Dämpfung – kein einzelner Defekt notwendig.
 
 Eine klinische Beobachtung erzwingt jedoch eine Differenzierung: Shutdown statt Meltdown als Eskalationsmodus. Ein underdämpfter Oszillator mit knapp unzureichender Dämpfung **überschwingt** – das wäre der explosive Meltdown. Ein System das **kollabiert** (Shutdown) zeigt Kapazitätserschöpfung, nicht Oszillationseskalation.
 
