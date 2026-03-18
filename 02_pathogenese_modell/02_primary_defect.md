@@ -178,20 +178,38 @@ Entwicklungszeitliche GC-Exposition primed Gene dauerhaft — darunter explizit 
 
 Postnatal verabreichte Glukokortikoide (Dexamethason, Hydrocortison) führen langfristig zu veränderten Serotonin-Schaltkreisen und Angstverhalten. Bei Schulkindern und Jugendlichen wurden nach neonataler GC-Exposition erhöhte Inzidenzen von Aufmerksamkeitsstörungen, Hyperaktivität und Problemen sozialer Kompetenz beschrieben (Karemaker et al. 2008, PMC3273653). Dies verbindet die GC-Exposition mit dem breiteren serotonergen Phänotyp des vorliegenden Modells.
 
-#### **Integration in das Gesamtmodell: Zwei Zeitfenster, ein Syndrom**
+#### **Integration in das Gesamtmodell: Two-Hit-Architektur**
 
-Das erweiterte Modell postuliert zwei kritische Expositionsfenster mit unterschiedlichen, aber synergistischen Konsequenzen:
+Das Modell postuliert zwei kausal geordnete Hits, nicht zwei gleichrangige Zeitfenster. Die Ordnung ist chronologisch fixiert und empirisch nicht invertierbar:
 
-| Phase | Zeitfenster | Noxe | Konsequenz |
-| :---- | :---- | :---- | :---- |
-| **Phase I (pränatal)** | 5.–7. SSW | Genetische/epigenetische Vulnerabilität | Instabile Raphe-5-HT1A-Autorezeptor-Schleife → Primärdefekt |
-| **Phase II (postnatal)** | Frühe Kindheit bis Adoleszenz | Iatrogene Glukokortikoidexposition (IV + Langzeit) | D2High-Shift → dopaminerge Supersensitivität |
+| Hit | Zeitfenster | Noxe | Konsequenz | Status |
+| :---- | :---- | :---- | :---- | :---- |
+| **Hit 1 (Primärdefekt)** | Pränatal, 5.–7. SSW | Genetische/epigenetische Vulnerabilität | Instabile Raphe-5-HT1A-Autorezeptor-Schleife → fetale thalamische Fehlkalibrierung (22.–26. SSW) | Notwendig und hinreichend für thalamische Gating-Insuffizienz und ASD-Phänotyp |
+| **Hit 2 (Amplifikation)** | Postnatal, frühe Kindheit bis Adoleszenz | Iatrogene Glukokortikoidexposition (IV + Langzeit) | D2High-Shift → dopaminerge Supersensitivität → Amplifikation der Raphe-Oszillation in den kaskadenfähigen Bereich | Notwendig für das volle Migränesyndrom; nicht hinreichend ohne Hit 1 |
 
-Die Verschränkung beider Phasen erzeugt einen sich selbst verstärkenden Mechanismus:
+**Kausale Ordnung — chronologisches Argument:**
 
-Raphe-Primärdefekt → instabiler 5-HT-Tonus pränatal → thalamische Fehlkalibrierung (Abschnitt 3) → *gleichzeitig*: 5-HT-Dysregulation moduliert D2-Konformationsgleichgewicht über 5-HT2A/D2-Heterodimere → Prädisposition für D2High-Shift → frühkindliche GC-Exposition trifft auf bereits prädisponiertes System → D2High-Shift wird fixiert und amplifiziert
+Die Frage, ob die 5-HT1A-Instabilität oder die D2-Asymmetrie der Primärdefekt ist, lässt sich innerhalb des gekoppelten Regelkreises nicht durch Isolation trennen — beide rückkoppeln. Aber die Chronologie erzwingt eine Ordnung:
 
-Die klinische Manifestation — Th2-dominante Immunlage (Neurodermitis, Asthma) — ist dabei selbst serotonerg moduliert (Mastzell-5-HT, intestinales Serotonin). Die Grunderkrankung, die zur GC-Behandlung führte, ist somit kein Zufall, sondern möglicherweise eine frühe Downstream-Manifestation desselben Primärdefekts.
+1. Die thalamische Fehlkalibrierung setzt ein instabiles Serotoninsignal *pränatal* voraus (22.–26. SSW). Zu diesem Zeitpunkt existiert keine GC-Exposition. Wäre D2-Asymmetrie der alleinige Primärdefekt, dürfte keine fetale thalamische Fehlkalibrierung vorliegen — die Raphe wäre pränatal stabil gewesen.
+2. Die Neurodermitis als atopische Erstmanifestation wurde erst im ~9. Lebensmonat diagnostiziert. Sie ist selbst eine Downstream-Manifestation des Raphe-Primärdefekts (Mastzell-5-HT, Th2-Dominanz). Die GC-Behandlung dieser Manifestation beginnt frühestens danach.
+3. Der D2High-Shift tritt in den Tiermodellen nicht sofort ein, sondern baut sich mit eigenem Zeitversatz nach GC-Exposition auf (Seeman 2010, Rodrigues et al. 2011).
+
+Damit liegen zwei unabhängige Verzögerungen in Serie zwischen dem Primärdefekt und dem D2High-Shift: Erst muss der Raphe-Defekt die atopische Manifestation produzieren (Monate), dann muss die GC-Behandlung den D2-Shift induzieren (zusätzlicher Zeitversatz). **Der D2High-Shift ist mindestens zweiter Ordnung: Downstream-Konsequenz einer Behandlung einer Downstream-Manifestation des Primärdefekts.**
+
+Dies schließt D2-Asymmetrie als alleinigen Primärdefekt aus und fixiert sie als Amplifikator. Die 5-HT1A-Autorezeptor-Schleife bleibt kongenitaler Primärdefekt.
+
+**Implikation für alternative Verläufe:** Das Two-Hit-Modell hat eine testbare Vorhersage: Ein Individuum mit identischer 5-HT1A-Vulnerabilität (Hit 1), aber ohne GC-Exposition (kein Hit 2), hätte thalamische Gating-Insuffizienz und ASD-Phänotyp, aber möglicherweise *keine oder deutlich mildere Migräne*. Die Oszillationsamplitude der Raphe wäre underdämpft, aber nicht kaskadenfähig.
+
+**Verschränkungsmechanismus:**
+
+Die beiden Hits interagieren nicht nur sequenziell, sondern synergistisch über eine Prädispositionsschleife:
+
+Raphe-Primärdefekt (Hit 1) → instabiler 5-HT-Tonus pränatal → thalamische Fehlkalibrierung (Abschnitt 3) → *gleichzeitig*: 5-HT-Dysregulation moduliert D2-Konformationsgleichgewicht über 5-HT2A/D2-Heterodimere → Prädisposition für D2High-Shift → frühkindliche GC-Exposition (Hit 2) trifft auf bereits prädisponiertes System → D2High-Shift wird fixiert und amplifiziert
+
+Die klinische Manifestation — Th2-dominante Immunlage (Neurodermitis, Asthma) — ist dabei selbst serotonerg moduliert (Mastzell-5-HT, intestinales Serotonin). Die Grunderkrankung, die zur GC-Behandlung führte, ist somit kein Zufall, sondern eine frühe Downstream-Manifestation desselben Primärdefekts. Die iatrogene GC-Exposition ist damit eine sekundäre Komplikation des Primärdefekts — das System verschärft seinen eigenen Schaden.
+
+**Therapeutische Konsequenz des Two-Hit-Modells:** Die D2-Supersensitivität (Hit 2) ist nicht nur Problemquelle, sondern gleichzeitig therapeutischer Hebel (vgl. 2.4.0). Sie ermöglicht die Raphe-Kompensation bei Dosen, die bei normalem D2High/D2Low-Verhältnis insuffizient wären. Das therapeutische Fenster (vgl. 7.3) ist somit nicht nur durch die Hypersensitivität *begrenzt*, sondern durch sie überhaupt erst *erreichbar*. Hit 2 hat das System beschädigt und gleichzeitig den Zugang zur Therapie eröffnet.
 
 #### **Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
 
