@@ -1,0 +1,14 @@
+
+---
+
+## **1\. Pathogenetischer Verlauf – Übersicht**
+
+Das Modell beschreibt eine kausale Verlaufskette von einem kongenitalen Primärdefekt über entwicklungsbiologische Konsequenzen zu klinischen Manifestationen. Die zeitliche Ordnung ist entscheidend für das Verständnis der Kausalität.
+
+| Phase                             | Beschreibung                                                                                                                                                                                                                                     |
+| :-------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Phase I: Pränatal**             | Genetisch determinierte Instabilität der Raphe-5-HT1A-Autorezeptor-Schleife. Underdämpfte Oszillation des serotonergen Regelkreises ab der 5.–7. SSW.                                                                                            |
+| **Phase II: Fetale Entwicklung**  | Instabiles Serotoninsignal als trophischer Faktor stört thalamokortikale Kalibrierung (22.–26. SSW). Thalamus kalibriert auf breite Signalvarianz statt schmale Filterbandbreite.                                                                |
+| **Phase III: Postnatal/kindlich** | Manifeste Gating-Insuffizienz: Hypervigilanz, sensorische Hypersensitivität, vestibuloautonome Reflexe (TCR ab 6\. Lebensjahr dokumentiert), Habituation bleibt unvollständig.                                                                   |
+| **Phase IV: Chronisch/adullt**    | Periodische Migräne als klinisch sichtbarste Manifestation der Raphe-Oszillation ab 20. Lebensjahr. Quasi-wöchentliche Periodizität durch circadiane Dämpfungsmodulation: endogenes τ ≈ 26 h vs. soziales T = 24 h → progressive Absenkung der Raphe-Dämpfungskonstante → maximale Prädisposition alle ~6–7 Tage, bei der minimale Perturbation zur Kaskadenauslösung genügt. TCR Kompensation durch aktive kortikale Suppression (PFC-NTS-Hemmung), die unter Erschöpfung, Schlafmangel oder Betablockade zusammenbricht. |
+| **Phase V: Pharmakologisch**      | Dopaminerge Stimulation (Methylphenidat/Lisdexamfetamin) stabilisiert Raphe-Aktivität upstream. Migränefreiheit unter Substanz bei gleichzeitiger Bestätigung der Dopamin-Hypersensitivität durch Wirkung bei Niedrigdosen. Pharmakodynamische Verifikation der Hypersensitivität durch reproduzierbaren vertikalen Blickrichtungsnystagmus unter 15 mg LDX – interpretiert als zerebellär-hirnstammale Integratordekompensation bei langfristig hypodopaminerg-adaptierter Purkinje-Zell-Kalibrierung (siehe 2.4.1).                        |

@@ -1,5 +1,4 @@
 
-
 # **ARBEITSHYPOTHESE**
 
 ## **Pathogenetisches Modell**
@@ -24,6 +23,8 @@ Kernthese Instabile Selbstregulation der Raphe-Kerne (5-HT1A-Autorezeptor-Schlei
 
 Das Modell integriert Beobachtungen aus einem kontrollierten pharmakologischen Selbstversuch (Methylphenidat, Lisdexamfetamin), langjährige klinische Selbstbeobachtung und systematischen Literaturabgleich. Die therapeutische Implikation ist eine dopaminerge Upstream-Stabilisierung der Raphe-Aktivität durch niedrig dosiertes Lisdexamfetamin als kausaler Ansatz – im Gegensatz zur symptomatischen Kaskaden-Intervention durch Triptane oder CGRP-Antagonisten.
 
+---
+
 ## **1\. Pathogenetischer Verlauf – Übersicht**
 
 Das Modell beschreibt eine kausale Verlaufskette von einem kongenitalen Primärdefekt über entwicklungsbiologische Konsequenzen zu klinischen Manifestationen. Die zeitliche Ordnung ist entscheidend für das Verständnis der Kausalität.
@@ -35,6 +36,8 @@ Das Modell beschreibt eine kausale Verlaufskette von einem kongenitalen Primärd
 | **Phase III: Postnatal/kindlich** | Manifeste Gating-Insuffizienz: Hypervigilanz, sensorische Hypersensitivität, vestibuloautonome Reflexe (TCR ab 6\. Lebensjahr dokumentiert), Habituation bleibt unvollständig.                                                                   |
 | **Phase IV: Chronisch/adullt**    | Periodische Migräne als klinisch sichtbarste Manifestation der Raphe-Oszillation ab 20. Lebensjahr. Quasi-wöchentliche Periodizität durch circadiane Dämpfungsmodulation: endogenes τ ≈ 26 h vs. soziales T = 24 h → progressive Absenkung der Raphe-Dämpfungskonstante → maximale Prädisposition alle ~6–7 Tage, bei der minimale Perturbation zur Kaskadenauslösung genügt. TCR Kompensation durch aktive kortikale Suppression (PFC-NTS-Hemmung), die unter Erschöpfung, Schlafmangel oder Betablockade zusammenbricht. |
 | **Phase V: Pharmakologisch**      | Dopaminerge Stimulation (Methylphenidat/Lisdexamfetamin) stabilisiert Raphe-Aktivität upstream. Migränefreiheit unter Substanz bei gleichzeitiger Bestätigung der Dopamin-Hypersensitivität durch Wirkung bei Niedrigdosen. Pharmakodynamische Verifikation der Hypersensitivität durch reproduzierbaren vertikalen Blickrichtungsnystagmus unter 15 mg LDX – interpretiert als zerebellär-hirnstammale Integratordekompensation bei langfristig hypodopaminerg-adaptierter Purkinje-Zell-Kalibrierung (siehe 2.4.1).                        |
+
+---
 
 ## **2\. Primärdefekt: Kongenitale Raphe-Dysregulation**
 
@@ -453,6 +456,8 @@ Der Hypothalamus kontrolliert über den SCN nicht nur den Schlaf-Wach-Rhythmus, 
 | Quasi-wöchentliche Migräneperiodizität durch circadiane Dämpfungsmodulation | Hypothetisch, konsistent mit Beobachtung |
 | Stochastisches Fenstermodell: wandernder Rhythmus durch variable Triggerstärke | Hypothetisch, konsistent mit Beobachtung |
 
+---
+
 ## **3\. Downstream-Pathologie I: Thalamische Fehlkalibrierung**
 
 ### **3.1 Serotonin als fetales Kalibrierungssignal**
@@ -581,6 +586,8 @@ Beide Modelle konvergieren auf dieselbe Kausalkette, beschrieben von unterschied
 | Thalamischer Gain als zentraler Diskriminierungsmechanismus | Plausibel, konsistent mit Datenlage |
 | Dissoziation Gating/Schwelle unter LDX | Einzelfallbeobachtung, mechanistisch konsistent |
 | Subkortikales Rauschen als unbewusste kortikale Last | Hypothetisch, konsistent mit klinischer Beobachtung |
+
+---
 
 ## **4\. Klinische Manifestation I: Migräne als Raphe-Zyklusstörung**
 
@@ -763,6 +770,8 @@ Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unab
 | Evidenzstatus | Gesamte Sektion 5.4 ist eine Modellvorhersage, abgeleitet aus den Mechanismen der Abschnitte 5.1–5.3 und der pharmakologischen Interaktion (7.3). Kein unabhängiger empirischer Nachweis. Die Einzelkomponenten (serotonerge NTS-Modulation, noradrenerge PFC-Suppression, sympathische Gegenregulation unter Betablockade) sind jeweils gesichert; die Kompoundierung ist hypothetisch. |
 | :---- |
 
+---
+
 ## **6\. Klinische Manifestation III: ASD-Phänotyp**
 
 ### **6.1 ASD als Konfigurationsvariante, nicht als separater Defekt**
@@ -831,6 +840,8 @@ Die DA-Raphe-Instabilität (Abschnitt 2.4.3) und die thalamische Identitätsvuln
 | Synergie DA-Raphe + thalamische Vulnerabilität | Hypothetisch, konsistent | Beide Mechanismen unabhängig abgeleitet, Kombination nicht getestet |
 | Korrelation Aversion ↔ Wahrnehmungsveränderungsgrad | Testbare Vorhersage | Nicht überprüft |
 
+---
+
 ## **7\. Pharmakologische Evidenz: Selbstversuch**
 
 ### **7.1 Methylphenidat (Ritalin)**
@@ -867,6 +878,8 @@ Die Dopamin-Hypersensitivität (Migräneliteratur: D2-Rezeptor-Hypersensitivitä
 | **Ziel** | Minimale Dosis, die Raphe-Aktivität stabilisiert ohne thalamisches Gating merklich zu verschieben oder sympathisches System zu überreizen |
 
 **Interaktion mit Metoprolol:** Metoprolol blockiert selektiv β1/β2. Lisdexamfetamin aktiviert das gesamte sympathische System inklusive α-Rezeptoren und zentrale Noradrenalinbahnen, die vom Betablocker nicht erfasst werden. Partiell blockiertes System: kardiovaskuläres Risiko reduziert, zentraler Effekt bleibt erhalten. Metoprolol-Reduktion von 100 auf 50 mg klinisch vertretbar bei paralleler Lisdexamfetamin-Gabe.
+
+---
 
 ## **8\. Evidenzstatus und Limitationen**
 
