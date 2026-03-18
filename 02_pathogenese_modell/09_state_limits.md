@@ -1,7 +1,7 @@
 
 ---
 
-## **8\. Evidenzstatus und Limitationen**
+## **9\. Evidenzstatus und Limitationen**
 
 Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwischen den Bestandteilen. Die folgende Klassifikation dient der klinischen Einordnung.
 
