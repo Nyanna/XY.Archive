@@ -11,7 +11,7 @@ Autismus Spektrum Störung (ASD), männlich, geb. 1985. Migräniker mit Stammhir
 ### Autonome Baseline
 - Chronische sympathische Hyperaktivierung als Dauerzustand
 - Beeinträchtigte sympathische Vasokonstriktion unter akuter Belastung
-- Niedrige Herzratenvariabilität, Atypische Herzrate in Ruhe
+- Niedrige Herzratenvariabilität, Atypische Herzrate in Ruhe, Reduzierte vagale Wachmodulation bei erhaltener vagaler Schlafkapazität
 - Verlangsamter Metabolismus, reduziertes Hungergefühl unter Stress oder Krankheit
 - Dopamin Hypersensivität
 
