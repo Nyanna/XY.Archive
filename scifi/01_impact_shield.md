@@ -26,6 +26,22 @@ The GEIS architecture does not attempt to stop an impactor at a single barrier. 
 
 No single mechanism handles the full threat spectrum. Each of the six mechanisms dominates in a different spatial zone and velocity regime. Their combined effect cannot be analytically computed — it requires hydrocode simulation (CTH, AUTODYN or equivalent). However, each individual mechanism is well-characterized in isolation.
 
+### Scale-Bridging Principle
+
+The underlying design insight is that the electromagnetic interaction provides a coupling mechanism at every length scale — from atomic to macroscopic — and that a single gradient structure can activate all of them simultaneously:
+
+**Sub-nanometer (Coulomb):** The ferroelectric surface field of fractured PZT ceramic (P_s = 0.3 C/m², E ≈ 34 GV/m) stops individual ions within sub-nanometer distances. This is a direct electrostatic barrier operating at atomic scale.
+
+**Micrometer to centimeter (Lorentz):** Eddy currents and Lorentz forces in conductive material — molten iron, hot solid iron above Curie temperature, ionized vapor — provide braking on the continuum scale. The coupling strength is governed by electrical conductivity and field strength, with a skin depth of millimeters to centimeters.
+
+**Centimeter to decimeter (Magnetic cohesion):** The integrity field holds the foam structure together as a quasi-monolithic absorber. This is not a force on the impactor directly, but a modification of the medium's material properties — the field changes what the impactor must work against. The coupling range is the field penetration depth into the foam volume.
+
+**Decimeter to meter (Field geometry):** The gradient of the magnetic field across the full shield thickness creates a spatially varying impedance and confinement profile. The outer foam experiences lateral confinement (radial field component); the inner foam experiences axial stiffening (axial field component). The field geometry shapes the macroscopic response of the entire shield.
+
+All four scales arise from the same fundamental interaction (electromagnetic coupling between charged matter and fields), expressed through different physical mechanisms at each length scale. The GEIS gradient structure provides the material conditions — density, temperature, ionization state, conductivity — under which each scale-specific mechanism becomes dominant, in the spatial zone where it is most effective. No external control selects between mechanisms; the impact itself generates the conditions that activate them progressively.
+
+This architecture is extensible: improvements in field strength, material conductivity, or magnetic moment shift the balance from material-dominated to field-dominated absorption. The current design represents the material-bound end of this spectrum, where all mechanisms require a physical medium for coupling.
+
 ---
 
 ## Six-Mechanism Architecture
