@@ -179,23 +179,23 @@ These are coupled, nonlinear, three-dimensional, multi-phase, time-dependent equ
 
 ### Performance Estimate
 
-The performance advantage over a Whipple shield at comparable areal mass can be estimated by multiplying the individual mechanism contributions:
+The performance advantage over a Whipple shield can be estimated by multiplying the individual mechanism contributions. All factors are mass-normalized (performance per unit areal mass):
 
-| Mechanism | Factor over Whipple | Lower | Upper | Evidence |
+| Mechanism | Factor | Lower | Upper | Evidence |
 |---|---|---|---|---|
 | Foam Multi-Shock (1,3) | ~1.1–1.2× | 1.1 | 1.2 | NASA JSC HITF validated; 6.3 km/s foam ≈ 10 km/s Whipple |
-| Iron vs. Aluminum (1,2) | ~1.3–1.5× | 1.3 | 1.5 | Higher ρ, impedance, latent heats; not HVI-tested for Fe foam |
+| Iron vs. Aluminum (material) | ~0.7–0.8× | 0.7 | 0.8 | **Mass penalty**: Fe is 2.9× denser than Al; per kg, lower latent heat and impedance. This is the cost of enabling EM mechanisms 4–5. |
 | Density Gradient (2) | ~1.2–1.4× | 1.2 | 1.4 | Variable-density panels partially validated at NASA |
 | Integrity Field (5) | ~2–5× | 2.0 | 5.0 | Bending→stretch SEA transition established; EM trigger not tested |
 | MHD all phases (4) | ~1.05–1.3× | 1.05 | 1.3 | Individual mechanisms established; superposition not verified |
 | PZT backstop + filtration (6) | ~1.05–1.1× | 1.05 | 1.1 | PZT physics established; HVI application not tested |
-| **Multiplicative total** | | **≈ 4.3×** | **≈ 15×** | |
+| **Multiplicative total** | | **≈ 2.3×** | **≈ 10×** | |
 
-The lower bound (~4×) assumes each mechanism delivers its minimum expected contribution. The upper bound (~15×) assumes optimistic superposition without interference effects. Both bounds assume the mechanisms operate multiplicatively rather than redundantly — a reasonable assumption given that each dominates in a different velocity regime and spatial zone.
+The iron mass penalty (~0.7–0.8×) is the price for ferromagnetism, high melt conductivity (σ = 7×10⁵ S/m), and the Curie-bridge effect. Without the EM mechanisms, aluminum foam would be superior per unit mass. The iron choice is justified only if Mechanisms 4 and 5 deliver — making their experimental validation the critical path item.
 
-The dominant uncertainty is the integrity field (Mechanism 5): the difference between 2× and 5× in failure mode transition accounts for most of the spread. A single experiment — magnetized vs. demagnetized iron foam under identical impact — would collapse this uncertainty substantially.
+The dominant uncertainty remains the integrity field (Mechanism 5): the difference between 2× and 5× in failure mode transition accounts for most of the spread. A single experiment — magnetized vs. demagnetized iron foam under identical impact — would collapse this uncertainty substantially.
 
-**Conservative estimate for the full GEIS system: 4–5× Whipple at comparable areal mass.** This is a reasoned projection based on individually validated mechanisms, not a verified result. Hydrocode simulation coupling mechanisms 2, 4, and 5 is required for quantitative verification.
+**Conservative estimate for the full GEIS system: 3–5× Whipple at comparable areal mass.** This is a reasoned projection based on individually validated mechanisms, not a verified result. Hydrocode simulation coupling mechanisms 2, 4, and 5 is required for quantitative verification.
 
 ---
 
