@@ -103,24 +103,11 @@ Fermi estimation for a 2 cm Al sphere at 7 km/s (277 kJ total kinetic energy):
 The ferroelectric channel is most effective against dilute, slow plasma (ρ < 0.1 kg/m³, v < 3000 m/s) — precisely the conditions of plasma that has already passed through the granular foam and MHD coupling layer. For dense, fast plasma, the MHD foam is the dominant mechanism.
 
 The absorption scales inversely with fragment size (more surface area) and inversely with plasma density (longer Debye length). The mechanism is self-enhancing in the sense that larger impacts create finer fragments and the trailing plasma is progressively diluted — both factors improve the filtration efficiency for the critical late-phase plasma.
+The ferroelectric plasma filtration mechanism described above operates through Coulomb force on ions via spontaneous polarization field and achieves ~30% plasma absorption.
 
 #### Energy Harvesting (Tertiary Function)
 
 Under sustained micrometeorite bombardment, the piezoelectric response to distributed sub-threshold compression generates small voltage pulses that contribute to sector capacitor recharging. This is a minor energy recovery channel — not a feedback mechanism — providing incremental self-sufficiency under continuous micro-impact conditions.
-
-#### Quantitative Assessment — Piezoelectric Feedback (Non-Viable)
-
-Analysis of the originally proposed piezoelectric feedback loop — in which the piezo-induced current would amplify the permanent magnetic field for enhanced MHD coupling — demonstrates that this mechanism is energetically negligible:
-
-| Model | Piezo contribution | Permanent field reference | Ratio |
-|---|---|---|---|
-| B-field superposition (far-field, Foam) | ~0.1–0.5 mT | ~105 mT | 0.1–0.5% |
-| Direct current into plasma (near-field) | Limited by impedance mismatch (Z_piezo ~ 94 Ω vs R_plasma < 1 Ω) | — | <0.01% energy transfer |
-| Magnetic pressure (lattice model) | P_mag ≈ 0.78 MPa (NdFeB max) | P_Hugoniot ≈ 2,100 MPa | 0.04% |
-
-The fundamental limits are: (a) piezoelectric coupling coefficient k²_eff ≈ 5–15% in composite, (b) impedance mismatch between high-impedance piezo source and low-impedance plasma load, and (c) maximum magnetic pressure B²/(2μ₀) ≈ 0.78 MPa for the strongest permanent magnets, which is ~2,700× below hypervelocity shock pressures. The piezoelectric feedback loop is physically real but energetically irrelevant for MHD enhancement.
-
-The ferroelectric plasma filtration mechanism described above operates through a fundamentally different channel (Coulomb force on ions via spontaneous polarization field, not induced magnetic field) and achieves ~30% plasma absorption — a factor ~1000× more effective than the feedback loop.
 
 - **Placement**: Directly above shield grid — receives spatially distributed, low-peak compression from granular layer rather than localized shock; structural integration with grid enables direct current path for foam magnetization
 
@@ -275,22 +262,7 @@ The passive compound architecture — gradient foam, MHD coupling, ferroelectric
 
 ## Appendix: Quantitative Fermi Estimates
 
-### A. Piezoelectric Feedback Loop — Refutation
-
-Three independent models were evaluated for the originally proposed piezoelectric current feedback mechanism:
-
-**Model 1: B-field superposition (far-field)**
-Piezo-generated current flowing through the conductive foam produces a field of ~0.1–0.5 mT vs. the permanent SmCo field of ~105 mT in the foam. Contribution: 0.1–0.5%. The piezo source impedance (~94–160 Ω capacitive) vastly exceeds the foam/plasma load impedance (<1 Ω), limiting current delivery.
-
-**Model 2: Direct current drive into plasma (near-field)**
-PZT composite at material failure limit (~80 MPa) produces ~3.2 kV open-circuit voltage. At plasma conductivity σ ~ 10³ S/m, plasma resistance is ~0.01 Ω vs. piezo impedance ~94 Ω → only 0.01% of voltage reaches plasma. Peak current ~34 A, negligible Lorentz braking.
-
-**Model 3: Magnetic pressure lattice**
-Maximum magnetic pressure from any permanent magnet: B²/(2μ₀) ≈ 0.78 MPa (NdFeB N52). Hugoniot shock pressure: ~2,100 MPa. Ratio: 0.04%. Additionally, PZT is ferroelectric, not ferromagnetic — it produces electric, not magnetic dipoles.
-
-All three models converge: the piezoelectric feedback loop is energetically irrelevant for MHD enhancement.
-
-### B. Ferroelectric Plasma Filtration — Confirmation
+### A. Ferroelectric Plasma Filtration — Confirmation
 
 **Surface field:** P_s = 0.3 C/m² → E_surface = P_s/ε₀ ≈ 34 GV/m at PZT-vacuum/plasma boundary. Electrostatic pressure: P_s²/(2ε₀) ≈ 5.1 GPa — exceeding the Hugoniot shock pressure (2.1 GPa) by factor 2.4×.
 
@@ -302,7 +274,7 @@ All three models converge: the piezoelectric feedback loop is energetically irre
 
 **Scaling properties:** Smaller fragments → more surface → more absorption. Lower plasma density → longer λ_D → deeper penetration → more absorption per surface element. Both conditions are met for late-phase plasma after foam dissipation.
 
-### C. Magnetic Compatibility of PZT Interface Layer
+### B. Magnetic Compatibility of PZT Interface Layer
 
 PZT ceramic: μᵣ ≈ 1 (non-ferromagnetic) → transparent to SmCo permanent field. Ag-doped conductivity ~10³ S/m at 5 mm thickness: magnetic skin depth ~16 m at 1 kHz → fully transparent to permanent field and HV pulse. No interference with MHD coupling in foam above.
 
