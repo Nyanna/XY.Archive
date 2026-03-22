@@ -84,7 +84,7 @@ Liquid iron (σ = 7×10⁵ S/m) is the dominant MHD contributor: highest conduct
 
 **Function:** Transform the foam from a loose particulate into a quasi-monolithic absorber.
 
-The shield grid (SmCo permanent magnet with integrated tungsten conductors) provides a baseline permanent field (50–200 mT depending on distance from grid). On detection of a >5 cm impactor (~150 ms lead time at 1–2 km range), the grid sector discharges a high-voltage pulse, temporarily increasing the field to 0.3–1.0 T.
+The shield grid (SmCo permanent magnet with integrated tungsten conductors) provides a baseline permanent field (50–200 mT depending on distance from grid). On detection of a >5 cm impactor (~150 ms lead time at 1–2 km range), the grid sector discharges a high-voltage pulse, targeting 300–500 mT in the foam volume (the transition zone between bending- and stretch-dominated collapse; see field strength design below).
 
 The HV pulse effects on the material are threefold:
 
@@ -99,6 +99,16 @@ The HV pulse effects on the material are threefold:
 **Field orientation:** The shield grid, as a magnetized plate beneath the foam, produces a dipole-like field geometry. Near the grid (inner zone): predominantly axial (parallel to impact), increasing shock impedance. Far from the grid (outer zone): predominantly radial (perpendicular to impact), providing lateral confinement. This natural gradient matches the functional requirements: confinement where the foam is light, impedance where the foam is dense.
 
 **Established physics:** Magnetostriction in ferromagnetic materials, eddy current forces, Lorentz pinch in liquid metals. Each mechanism is individually well-characterized. The combined effect under hypervelocity impact conditions is not experimentally verified (TRL 2–3).
+
+**Field strength design:** The relationship between field strength and shield effectiveness is nonlinear with three regimes:
+
+*Below ~50 mT:* Magnetic forces between struts are weaker than their mechanical bending strength. No significant stiffening. Dead zone.
+
+*50–500 mT (transition):* The failure mode transitions from bending-dominated to stretch-dominated collapse. This is a threshold effect, not linear — SEA increases by approximately 5–10× across this range. Each additional mT yields disproportionate benefit. This is the design target for the HV pulse.
+
+*Above ~500 mT (saturation):* Two limits apply simultaneously. Iron saturates magnetically at ~2.1 T — more field produces no additional magnetization or cohesion. And once the foam is fully stretch-dominated, the failure mode is exhausted — the strut tensile strength is the ceiling. Exception: the Lorentz pinch on molten iron (paramagnetic, no saturation) continues to scale with B². This justifies higher fields only where melt retention is critical.
+
+The design implication: the HV pulse should be dimensioned for 300–500 mT in the foam volume — maximum stiffening effect per joule of capacitor energy. The permanent field (50–200 mT) sits in the lower transition zone, providing baseline cohesion and particle aggregation without active energy input.
 
 ### Mechanism 6 — Piezoelectric / Ferroelectric Interface Layer
 
