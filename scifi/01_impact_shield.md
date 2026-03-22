@@ -1,19 +1,10 @@
-# Gradient Electromagnetic Impact Shield (GEIS) — Concept Summary
+# Gradient Electromagnetic Impact Shield (GEIS) — Revised Concept
 
 ## Overview
 
-A by default passive, multi-layer impact protection system for space stations and interstellar vessels. The system integrates mechanical, electromagnetic, ferroelectric, and plasma-physical energy absorption into a single gradient architecture with minimal active components.
+A passive-by-default, gradient-architecture impact protection system for space stations and interstellar vessels. The system integrates six mutually reinforcing dissipation mechanisms into a single density-gradient structure with minimal active components.
 
-The core principle is not penetration resistance but **energy redistribution across independent, mutually reinforcing dissipation channels**, none of which must bear the full impact load alone.
-
----
-
-## Design Philosophy
-
-- No single mechanism handles the full threat spectrum
-- Passive by default — active components engage only for predicted >5 cm impacts
-- Scalable: orbital station, lunar orbit, interstellar coast phase
-- The layer sequence follows a density gradient matched to both material and field geometry — each layer amplifies the effect of its neighbors through passive coupling
+The core principle is **progressive energy redistribution across spatially overlapping channels**, each dominant in a different velocity and phase regime of the decelerating impactor.
 
 ---
 
@@ -25,159 +16,160 @@ The core principle is not penetration resistance but **energy redistribution acr
 | 1–5 cm | Partially trackable | Penetration below Whipple threshold |
 | >5 cm | Trackable | Catastrophic structural failure |
 
-Impact velocity assumed: ~7 km/s relative (LEO debris distribution). Statistical impact direction: predominantly along orbital vector (fore/aft), radial 90° impacts are rare.
+Reference impact: 5 cm Al sphere at 10 km/s relative velocity (E_kin ≈ 8.8 MJ).
 
 ---
 
-## Why the Gradient Architecture is Optimal
+## Design Philosophy
 
-The density gradient creates a self-consistent response profile matched to threat size:
+The GEIS architecture does not attempt to stop an impactor at a single barrier. Instead, it transforms a coherent hypervelocity projectile into a progressively fragmented, dispersed, decelerated, and partially ionized debris field across a density gradient — then exploits the electromagnetic properties of that debris for additional braking in the denser inner layers.
 
-**Large objects (>5 cm)** strike the dense outer layer → fragment and ionize → expanding plasma couples inductively into the mid-layer magnetic field → residual fragments are granularly dissipated → ferroelectric interface layer provides final plasma filtration.
+No single mechanism handles the full threat spectrum. Each of the six mechanisms dominates in a different spatial zone and velocity regime. Their combined effect cannot be analytically computed — it requires hydrocode simulation (CTH, AUTODYN or equivalent). However, each individual mechanism is well-characterized in isolation.
 
-**Small objects (<1 cm)** barely reach the dense layer → are fully absorbed in the lighter gradient zone via granular force-chain dissipation and weak MHD coupling.
+---
 
-**Self-consistent field geometry**: The magnetic field is stronger where the foam density is higher — field geometry and material geometry are inherently matched. No separate optimization required; the gradient serves both mechanical and electromagnetic functions simultaneously.
+## Six-Mechanism Architecture
+
+### Mechanism 1 — Impactor Breakup (Outer Zone, φ ≈ 15–20%)
+
+**Function:** Fragment and disperse the coherent impactor into a debris cloud.
+
+Light, open-cell iron foam at low packing density. The impactor enters a material that cannot resist it monolithically but forces fragmentation through the irregular pore structure. Analogous to a projectile hitting regolith: the projectile wins locally but loses coherence globally. Energy cost per fragment is low; the purpose is geometric — convert one threat into many small threats distributed over a wider cross-section.
+
+**Established physics:** Whipple shield fragmentation is the baseline analogy. The foam structure improves on the discrete Whipple gap by providing continuous fragmentation surfaces rather than a single breakup event.
+
+### Mechanism 2 — Graduated Impedance (Full Depth, φ = 15% → 50–65%)
+
+**Function:** Progressive deceleration through continuous impedance matching.
+
+The density gradient from outer to inner surface creates a continuously increasing shock impedance. Unlike discrete Whipple layers (which produce reflections at each interface), the gradient transmits energy exclusively forward — no wasteful back-reflections. Each density increment acts as a separate fragmentation and deceleration stage.
+
+This is the classical Hugoniot channel. At 10 km/s into Fe foam, the Hugoniot deposits approximately 12.5 MJ/kg at the contact surface, decreasing as the front decelerates. Fermi estimates indicate that 10 cm of gradient foam (φ = 20% → 65%) absorbs 70–90% of a 5 cm/10 km/s impactor's kinetic energy through this mechanism alone.
+
+**Established physics:** Hugoniot shock compression, P-α porous material models (Herrmann 1969). Well-characterized for metallic foams.
+
+### Mechanism 3 — Granular Dispersion Through Controlled Deformation (Full Depth)
+
+**Function:** Sand-like scattering and energy absorption through foam deformation.
+
+The foam is deliberately ductile, not brittle. Under impact, it deforms plastically rather than shattering. This serves two purposes: the deformation itself absorbs energy (specific energy absorption, SEA), and the yielding pore structure scatters debris laterally within the foam volume, distributing the load over a wider cross-section downstream.
+
+The open-cell structure with thin iron struts maximizes surface area per unit mass. This promotes phase transitions (melting, vaporization) at lower specific energy than a solid plate — thinner struts reach melting temperature faster, converting mechanical energy to thermal energy more efficiently.
+
+**Established physics:** Metallic foam SEA is extensively characterized (Ashby et al., Gibson & Ashby). Typical SEA for iron foam at φ = 0.3: approximately 5–10 kJ/kg in bending-dominated collapse, 20–50 kJ/kg in stretch-dominated collapse.
+
+### Mechanism 4 — Electromagnetic Coupling (Middle–Inner Zone, φ ≈ 30–50%)
+
+**Function:** MHD braking on all electrically conductive phases of the debris.
+
+This is the mechanism that distinguishes GEIS from passive armor. The impactor debris, by the time it reaches the mid-section, is a mixture of solid fragments (hot, above Curie temperature), molten iron, iron vapor, and partially ionized plasma. All of these phases are electrically conductive:
+
+| Phase | Temperature | σ [S/m] | Coupling Mechanism |
+|---|---|---|---|
+| Solid (cold, ferromagnetic) | < 770°C | ~10⁷ (bulk) | Ferromagnetic cohesion |
+| Solid (hot, paramagnetic) | 770–1538°C | ~5×10⁵ | Eddy current Lorentz force |
+| Liquid iron | 1538–3134°C | 7×10⁵ | Lorentz drag (strongest channel) |
+| Iron vapor | > 3134°C | ~10³ | Weak drag, confined by surrounding foam |
+| Plasma | > 10,000 K | ~10⁴–10⁵ | Classical MHD |
+
+**Critical insight: There is no gap in the coupling chain.** At every temperature from ambient to plasma, a different electromagnetic mechanism provides braking force. The transition from ferromagnetic cohesion to eddy-current coupling at the Curie point (770°C) is bridged by the HV pulse (see Mechanism 5), which induces currents independent of magnetic ordering.
+
+The MHD effect operates volumetrically — not only at the shock front, but throughout the accumulated debris behind it. The trailing molten and vaporized material moves through the magnetic field of the intact foam layers below and around the impact channel, experiencing continuous Lorentz braking over the full transit time (estimated 50–500 µs depending on impactor size).
+
+Liquid iron (σ = 7×10⁵ S/m) is the dominant MHD contributor: highest conductivity, highest mass fraction (~50–55% at mid-depth for a 10 km/s impact), and — with Lorentz pinch — retained within the channel rather than dispersed laterally.
+
+**Established physics:** MHD braking of conductive fluids in magnetic fields (Shercliff, Davidson). Liquid metal MHD is industrial practice (aluminum casting, steel processing). Spitzer conductivity for ionized gases. The individual coupling mechanisms are well-characterized; their superposition within a hypervelocity impact debris field is not.
+
+### Mechanism 5 — HV Integrity Field (Inner Zone, φ ≈ 40–65%)
+
+**Function:** Transform the foam from a loose particulate into a quasi-monolithic absorber.
+
+The shield grid (SmCo permanent magnet with integrated tungsten conductors) provides a baseline permanent field (50–200 mT depending on distance from grid). On detection of a >5 cm impactor (~150 ms lead time at 1–2 km range), the grid sector discharges a high-voltage pulse, temporarily increasing the field to 0.3–1.0 T.
+
+The HV pulse effects on the material are threefold:
+
+**Failure mode transition:** Without field, foam collapses through strut bending (low-energy failure). With field, magnetically interlocked struts must be stretched or torn rather than bent — approximately 5–10× higher energy per unit deformation.
+
+**Channel confinement:** Lateral displacement of material is suppressed. The impact creates a tunnel rather than a crater. This keeps more foam mass in the interaction volume per unit depth. The cone half-angle decreases from approximately 40° (free foam) to 12–20° (field-stiffened foam), reducing the exit diameter by a factor of 2–3.
+
+**Melt retention via Lorentz pinch:** Molten iron (σ = 7×10⁵ S/m) moving laterally through the magnetic field experiences a J×B force directed inward. This retains the melt within the impact channel as effective braking mass, rather than allowing it to splash outward and be lost.
+
+**Curie bridge:** The HV pulse ensures electromagnetic coupling continuity across the Curie transition at 770°C. Below Curie: ferromagnetic cohesion. Above Curie: eddy currents induced by the pulse provide Lorentz forces independent of magnetic ordering. No gap in material integrity.
+
+**Field orientation:** The shield grid, as a magnetized plate beneath the foam, produces a dipole-like field geometry. Near the grid (inner zone): predominantly axial (parallel to impact), increasing shock impedance. Far from the grid (outer zone): predominantly radial (perpendicular to impact), providing lateral confinement. This natural gradient matches the functional requirements: confinement where the foam is light, impedance where the foam is dense.
+
+**Established physics:** Magnetostriction in ferromagnetic materials, eddy current forces, Lorentz pinch in liquid metals. Each mechanism is individually well-characterized. The combined effect under hypervelocity impact conditions is not experimentally verified (TRL 2–3).
+
+### Mechanism 6 — Piezoelectric / Ferroelectric Interface Layer
+
+**Function:** Dual-mode terminal absorption — mechanical and electromagnetic.
+
+A 5 mm conductive PZT (or BaTiO₃) ceramic layer with silver nanowire or graphene doping (~2% volume fraction, achieving ~10³ S/m) sits directly above the shield grid.
+
+**Structural backstop:** The dense ceramic (7,500 kg/m³, compressive strength 500–800 MPa) provides a rigid rear wall against which the foam is compressed. This prevents the innermost foam from collapsing backward and increases its effective absorption.
+
+**Piezoelectric energy recovery:** Under distributed sub-threshold compression, the piezoelectric response converts mechanical energy to electrical energy (coupling coefficient k²₃₃ ≈ 0.5–0.75 for PZT-5H). This energy feeds directly into the grid capacitor. Relevant primarily for sustained micrometeorite bombardment.
+
+**Ferroelectric plasma filtration (post-fracture):** Where impact pressure exceeds ceramic strength, the PZT fractures into fragments (typically 10–1000 µm). Each fragment surface exposes spontaneous polarization P_s ≈ 0.3 C/m², generating surface electric fields of ~34 GV/m. This field stops residual plasma ions within sub-nanometer distances.
+
+Quantitative estimate for the ferroelectric channel: At a fragment size of ~100 µm, 107 g of PZT produces ~0.8 m² of total internal surface. With Debye screening (λ_D ≈ 4 µm at n_e ~ 10¹⁹ m⁻³) and a 30% geometry factor, this absorbs approximately 30% of residual plasma energy arriving at the interface — roughly 1–2% of total impact energy. The mechanism is self-enhancing: larger impacts create finer fragments (more surface) and the arriving plasma is progressively diluted (longer Debye length), improving filtration efficiency.
+
+**Spatial selectivity:** At the impact center, the ceramic fractures and provides plasma filtration. At the periphery, it remains intact and provides piezoelectric energy recovery. Both modes are useful; the material self-selects the appropriate function based on local load.
+
+**Established physics:** Piezoelectric energy harvesting, ferroelectric surface fields. The ferroelectric plasma filtration mechanism (PZT fragment surface field interaction with hypervelocity impact plasma) represents a novel contribution — no prior literature identified. Experimental verification required (TRL 2).
 
 ---
 
 ## Layer Architecture (Outer to Inner)
 
-### 1. Outer Ionization Layer — Light Granular Foam
-- **Composition**: Iron-particle foam, ~20–25% packing density
-- **Function**: Initial energy distribution via granular force-chain networks; plasma initiation for MHD coupling
-- **Mechanism**: Energy propagates through branching 3D contact networks — no other material class achieves equivalent dissipation efficiency per unit mass. At hypervelocity above ~3 km/s, local ionization initiates plasma coupling with the magnetic field.
-- **Geometry**: Overall conical profile aligned with orbital vector remains structurally sensible — tangential deflection component reduces effective normal impact energy. Not a primary design driver but a useful passive contribution consistent with standard rounded station geometries.
-- **Magnetic cohesion**: Weak permanent field from shield grid aggregates and retains particles within the foam matrix.
-
-### 2. Gradient Transition Zone — MHD Coupling Layer
-- **Composition**: Iron-particle foam, increasing density gradient ~30% → 60–70%
-- **Function**: Primary electromagnetic energy absorption via magnetohydrodynamic coupling
-- **Mechanism**: Impact plasma is electrically conductive; the magnetic field induces Lorentz forces on the expanding plasma front, converting kinetic energy into electromagnetic energy recoverable as induction current in the shield grid
-- **Skin effect**: High-frequency pulse concentrates current at foam surface — maximum coupling efficiency where plasma is still present
-- **Percolation threshold**: Electrical continuity maintained above ~30% packing density; gradient designed to remain above this threshold throughout
-
-### 3. Inner Fragmentation Layer — Dense Metallic Foam
-- **Composition**: Iron-particle foam, ~60–70% packing density
-- **Function**: Fragmentation of residual impactor mass; final mechanical dissipation before ferroelectric interface layer
-- **Mechanism**: Dense matrix arrests remaining fragments and distributes compressive load spatially across the interface layer below
-
-### 4. Interface Layer — Conductive Ferroelectric Ceramic
-- **Composition**: Dense sintered PZT (or BaTiO₃) ceramic with silver nanowire or graphene doping (~2% volume fraction)
-- **Function (primary)**: Conductive interface between shield grid and metallic foam — enables current flow for foam magnetization during both normal operation and active pulse mode
-- **Function (secondary)**: Ferroelectric plasma filtration for impacts that penetrate the MHD foam layer
-- **Function (tertiary)**: Piezoelectric energy harvesting from distributed micro-impact compression — contributes to sector capacitor recharging
-
-#### Conductive Interface Function
-The Ag-nanowire or graphene doping at ~2% achieves ~10³ S/m — sufficient for current coupling between the shield grid and the foam without degrading the ferroelectric properties. At this conductivity and 5 mm thickness, the magnetic skin depth exceeds 16 m at 1 kHz — the layer is fully transparent to the permanent magnetic field and even to the active HV pulse (ms timescale). Being non-ferromagnetic (μᵣ ≈ 1), the PZT ceramic does not interfere with the SmCo field geometry.
-
-#### Ferroelectric Plasma Filtration — Mechanism
-
-PZT ceramic possesses a spontaneous electric polarization P_s ≈ 0.3 C/m². At every ceramic surface exposed to vacuum or plasma, this generates an electric field E = P_s/ε₀ ≈ 34 GV/m and a corresponding electrostatic pressure P = P_s²/(2ε₀) ≈ 5.1 GPa. This field acts directly on charged plasma ions via Coulomb force.
-
-The filtration operates as a last-resort mechanism for impacts that breach the MHD foam:
-
-1. **Schockwave arrives** → breaks PZT ceramic into fragments (typically 10–1000 µm)
-2. **Fragmentation increases surface area**: 100 µm fragments yield ~300× the channel cross-section as total internal surface (~0.8 m² from 107 g ceramic)
-3. **Trailing plasma flows through fragment field** → encounters ferroelectric surface field at every fragment boundary
-4. **Ion braking**: At 34 GV/m, an Fe⁺ ion at 1000 m/s is stopped within sub-nanometer distance. The braking is effectively instantaneous per ion.
-5. **Debye shielding limits penetration depth**: The ferroelectric field penetrates λ_D ≈ 1–40 µm into the plasma (depending on plasma density n_e = 10¹⁷–10²¹ m⁻³). The large total fragment surface area compensates for this shallow penetration.
-
-#### Quantitative Assessment — Ferroelectric Plasma Filtration
-
-Fermi estimation for a 2 cm Al sphere at 7 km/s (277 kJ total kinetic energy):
-
-| Parameter | Value |
-|---|---|
-| Ferroelectric surface pressure P_s²/(2ε₀) | 5.1 GPa |
-| Hugoniot shock pressure (comparison) | ~2.1 GPa |
-| PZT layer mass in impact channel | ~107 g |
-| Fragment size (assumed) | ~100 µm |
-| Total internal fragment surface | ~0.8 m² |
-| Debye length (n_e ~ 10¹⁹ m⁻³, kT ~ 3 eV) | ~4 µm |
-| Absorbed plasma energy (with 30% geometry factor) | ~5,200 J |
-| Plasma kinetic energy at interface (~10% of total) | ~17,000 J |
-| **Absorption ratio (plasma at interface)** | **~30%** |
-| **Absorption ratio (total impact)** | **~1.9%** |
-
-The ferroelectric channel is most effective against dilute, slow plasma (ρ < 0.1 kg/m³, v < 3000 m/s) — precisely the conditions of plasma that has already passed through the granular foam and MHD coupling layer. For dense, fast plasma, the MHD foam is the dominant mechanism.
-
-The absorption scales inversely with fragment size (more surface area) and inversely with plasma density (longer Debye length). The mechanism is self-enhancing in the sense that larger impacts create finer fragments and the trailing plasma is progressively diluted — both factors improve the filtration efficiency for the critical late-phase plasma.
-The ferroelectric plasma filtration mechanism described above operates through Coulomb force on ions via spontaneous polarization field and achieves ~30% plasma absorption.
-
-#### Energy Harvesting (Tertiary Function)
-
-Under sustained micrometeorite bombardment, the piezoelectric response to distributed sub-threshold compression generates small voltage pulses that contribute to sector capacitor recharging. This is a minor energy recovery channel — not a feedback mechanism — providing incremental self-sufficiency under continuous micro-impact conditions.
-
-- **Placement**: Directly above shield grid — receives spatially distributed, low-peak compression from granular layer rather than localized shock; structural integration with grid enables direct current path for foam magnetization
-
-### 5. Shield Grid — Structural Core and Active Component
-- **Material**: SmCo (Samarium-Cobalt) hard magnetic alloy (Curie temperature ~800°C, high coercivity) with integrated tungsten conductor traces
-- **Permanent magnetic function**: Provides baseline field for foam aggregation and MHD coupling during normal operation
-- **Capacitor function**: Grid geometry constitutes a distributed plate capacitor — dielectric between inner and outer conductive surfaces. No separate capacitor bank required.
-- **Sectorization**: Grid divided into independently addressable sectors; only the predicted impact sector activates
-- **High-voltage pulse mode**: On >5 cm impact prediction, permanent field switches off; charged sector discharges as high-voltage pulse — dramatically enhancing plasma deflection and MHD energy absorption
-- **Demagnetization**: No active demagnetization step required — the HV discharge pulse itself generates the local counter-field that demagnetizes the SmCo sector as an intrinsic side effect. Re-magnetization after pulse is not required because the sector is designated for tile replacement after a >5 cm impact.
-- **Thermal management**: Pulse duration is short and spatially localized; SmCo stability at elevated temperature eliminates active cooling requirement. No simultaneous magnetic + high-voltage operation avoids thermal conflict.
+| Layer | Thickness | φ | ρ_eff [kg/m³] | Primary Mechanisms |
+|---|---|---|---|---|
+| Outer foam | ~3 cm | 15–25% | 1,200–2,000 | 1 (breakup), 2 (Hugoniot), 3 (dispersion) |
+| Mid foam | ~4 cm | 25–45% | 2,000–3,500 | 2 (Hugoniot), 3 (dispersion), 4 (MHD) |
+| Inner foam | ~3 cm | 45–65% | 3,500–5,100 | 2 (Hugoniot), 4 (MHD), 5 (integrity field) |
+| PZT interface | 0.5 cm | dense | 7,500 | 6 (piezo/ferroelectric) |
+| Shield grid | 1.0 cm | dense | 8,900 | 5 (field source), capacitor |
+| **Total** | **~11.5 cm** | | | **~400 kg/m²** |
 
 ---
 
 ## Dissipation Channel Hierarchy
 
-The GEIS architecture employs multiple dissipation channels. Their relative contribution varies with impact size and velocity, but follows a consistent hierarchy:
+The relative contribution of each mechanism varies with impact velocity and depth. The hierarchy shifts as the impactor decelerates:
 
-### Primary Channels
+**High velocity (>5 km/s, outer zone):** Hugoniot thermal deposition dominates. Phase changes (melting, vaporization) absorb the majority of energy. MHD begins where ionization and melting create conductivity.
 
-**Thermal and Phase-Change (dominant for >1 cm impacts)**
-Melting and vaporization of foam material absorbs substantial energy. Iron: latent heat of fusion ~247 kJ/kg, latent heat of vaporization ~6,100 kJ/kg. Local vaporization at the impact site represents the single largest absorption channel for significant impacts. This channel alone may exceed the mechanical SEA by an order of magnitude.
+**Medium velocity (1–5 km/s, mid zone):** Mechanical deformation and MHD coupling become proportionally larger. The material is predominantly molten (σ = 7×10⁵ S/m) — peak MHD effectiveness.
 
-**MHD Coupling (dominant for plasma-phase energy)**
-Plasma from the impact is conductive → inductive coupling to the magnetic field → Lorentz forces decelerate plasma expansion → energy is coupled into the field and partially recoverable. This effect arises inherently from the material/field configuration. MHD coupling operates throughout the foam volume and is most effective where the plasma is dilute and fast (ρ < 0.01 kg/m³, v > 3000 m/s). At a permanent field of ~105 mT in the dense foam, the magnetic pressure (~4.4 kPa) is comparable to the dynamic pressure of dilute impact plasma, confirming effective coupling in this regime.
-
-**Ionization and Radiation (significant above ~3 km/s)**
-Hypervelocity impact generates instantaneous local plasma. Energy is consumed by ionization, molecular dissociation, and radiative emission (UV, X-ray at extreme velocities).
-
-### Secondary Channels
-
-**Mechanical (Granular Force-Chain Dissipation)**
-Standard SEA of granular metallic foams. Baseline dissipation, likely the smallest of the primary channels for large impacts but dominant for sub-cm debris.
-
-**Ferroelectric Plasma Filtration (~30% of residual plasma energy)**
-PZT ceramic interface layer acts as a last-line plasma filter through spontaneous polarization surface field (5.1 GPa at ceramic-plasma boundary). Effective against dilute, slow plasma that has already been partially decelerated by the MHD foam. Self-enhancing through fragmentation (increased surface area) and plasma dilution (longer Debye screening length). Quantitative contribution: ~1–2% of total impact energy, ~30% of plasma energy arriving at the interface.
-
-### Tertiary Channels
-
-**Piezoelectric Energy Harvesting**
-Continuous low-level capacitor recharging from micro-impact compression. Not a significant dissipation mechanism but contributes to operational energy self-sufficiency.
-
-### Revised Conclusion
-Thermal phase-change and MHD coupling dominate the energy budget for significant impacts. The ferroelectric interface provides meaningful last-line plasma absorption. Mechanical SEA is the baseline. A quantitative determination of the relative channel weights requires MHD simulation; this is not analytically solvable, but Fermi estimates indicate order-of-magnitude improvement over single-mechanism approaches. **The effective protection threshold shifts significantly upward** — the 5 cm boundary for active intervention may be conservative.
+**Low velocity (<1 km/s, inner zone):** Mechanical crush (enhanced by integrity field) dominates. Residual plasma filtered by PZT layer.
 
 ---
 
-## Real-World Comparison
+## Quantitative Estimates and Their Limitations
 
-**Best conventional composite armor** (ERA + ceramic + steel): ~2–3 MJ/m² at ~50 kg/m².
+### What Can Be Calculated
 
-The GEIS architecture could achieve comparable or higher specific energy absorption at significantly lower areal mass due to the additional thermal, ionization, and electromagnetic channels that conventional armor does not exploit. This assessment is plausible but quantitatively verifiable only through simulation.
+Each mechanism in isolation is amenable to Fermi estimation:
 
-The system is conceptually equivalent to an **electromagnetic deflection field integrated into active armor** — the distinction from conventional approaches being that the EM field is generated passively by the impact itself rather than maintained externally.
+- **Hugoniot energy deposition:** Standard P-α porous material models give ~12.5 MJ/kg at 10 km/s in Fe foam (φ = 0.30). Well-established.
+- **Mechanical SEA:** 5–50 kJ/kg depending on failure mode (bending vs. stretch). Extensively characterized for metallic foams.
+- **MHD Lorentz drag:** σ × v² × B² gives volumetric power density. At σ = 7×10⁵ S/m, v = 1000 m/s, B = 0.5 T: P_MHD = 175 MPa equivalent pressure. Physically real and significant.
+- **Ferroelectric plasma filtration:** ~30% of residual plasma energy at the interface. Calculable from surface field, Debye screening, and fragment geometry.
+- **Piezoelectric recovery:** k²₃₃ × elastic compression energy. Minor channel for large impacts.
 
----
+### What Cannot Be Calculated
 
-## Energy Channels and Recovery
+The **combined, simultaneous** operation of all six mechanisms within a single hypervelocity impact event is not analytically tractable. The coupling terms include:
 
-| Channel | Dominant for | Recoverable |
-|---|---|---|
-| Thermal (melting/vaporization) | >1 cm | No |
-| MHD plasma coupling | 1–5 cm (passive), >5 cm (active) | Partially (induction current) |
-| Ionization and radiation | >3 km/s impacts | No |
-| Granular force-chain dissipation | <1 cm | No |
-| Ferroelectric plasma filtration | Residual plasma after MHD | No |
-| Piezoelectric harvesting | All sizes (micro-compression) | Yes (feeds capacitors) |
-| High-voltage pulse (active mode) | >5 cm | Partial |
+- Hugoniot deposition rate depends on channel geometry, which depends on integrity field, which depends on material phase, which depends on Hugoniot deposition rate
+- MHD braking depends on conductivity distribution, which depends on temperature field, which depends on Hugoniot and MHD braking
+- Channel confinement depends on field strength, which depends on distance from grid and local material state
 
-Piezoelectric recovery from sub-threshold impacts continuously partially recharges sector capacitors — system tends toward energy self-sufficiency under sustained microimpact environment.
+These are coupled, nonlinear, three-dimensional, multi-phase, time-dependent equations. They require numerical simulation (hydrocode + MHD solver). The individual mechanisms are TRL 4–7; their combination is TRL 2–3.
+
+### Performance Estimate
+
+Based on the individual mechanism estimates and qualitative assessment of their superposition, the GEIS architecture is estimated to provide approximately **2× the specific energy absorption of a Whipple shield at comparable areal mass** against impactors in the 1–10 cm range. This estimate is a reasoned projection, not a verified result.
 
 ---
 
@@ -185,99 +177,67 @@ Piezoelectric recovery from sub-threshold impacts continuously partially recharg
 
 | Component | Function | Always Active |
 |---|---|---|
-| Short-range onboard radar | Detection of >5 cm objects at ~1–2 km | Yes |
-| Sector switching logic | Selects and charges relevant grid sector | Triggered |
+| Short-range radar | Detection of >5 cm objects at ~1–2 km | Yes |
+| Sector switching logic | Selects and charges grid sector | Triggered |
 
-1–2 km detection range at 7 km/s provides ~150 ms lead time — sufficient for capacitor charging and sector activation.
-
----
-
-## Operational Modes
-
-| Mode | Magnetic Field | High Voltage | Foam State |
-|---|---|---|---|
-| Normal | Permanent (passive) | Off | Full density |
-| Sub-threshold impact (<5 cm) | Permanent | Off | Local depletion → Maintenance/Tile Repair |
-| Predicted impact (>5 cm) | Off (via HV discharge) | Sector pulse | Tile replacement post-event |
+150 ms lead time at 7 km/s — sufficient for capacitor charging and sector activation.
 
 ---
 
-## Maintenance and Repair — Tile Architecture
+## Maintenance — Tile Architecture
 
-The foam layers and ferroelectric interface are implemented as **standardized replaceable tiles** rather than a continuous bonded surface. This enables:
+The foam layers and PZT interface are implemented as standardized replaceable tiles. The shield grid sectorization maps onto the tile grid.
 
-- **EVA replacement** of impact-damaged sectors without full system shutdown
-- **Onboard repair** of minor foam degradation where tile geometry permits access
-- **Modular resupply** — tiles are manufactured to standard specifications and stocked as consumables
+- EVA replacement of damaged sectors without full shutdown
+- Modular resupply — tiles manufactured to standard specifications
+- After >5 cm impact: affected tile and grid sector replaced as unit
 
-A marginal passive self-organization exists: the permanent magnetic field partially re-aggregates displaced particles within an intact tile after minor sub-threshold impacts. This is a secondary effect and not a design basis — tile replacement remains the primary maintenance concept.
-
-The shield grid sectorization maps directly onto the tile grid, allowing localized deactivation of damaged sectors during repair without compromising adjacent zones.
-
-After a >5 cm impact event, the affected sector grid does not require re-magnetization — the tile and grid sector are replaced as a unit.
+The permanent magnetic field partially re-aggregates displaced particles within intact tiles after minor impacts — a secondary self-repair effect, not a design basis.
 
 ---
 
-## Comparative Assessment
+## Mass Budget and Comparison
 
-| Approach | Mass | Energy | Passive | Threat Coverage | Dissipation Channels |
-|---|---|---|---|---|---|
-| Whipple Shield (current) | Moderate | None | Full | <1 cm | 1 (mechanical) |
-| Active EM deflection (large cloud) | Low | High | No | 1–5 cm | 1 (EM) |
-| Conventional composite armor (ERA) | High (~50 kg/m²) | None | Partial | Ballistic | 2 (mechanical + thermal) |
-| **GEIS (this concept)** | Moderate | Near-zero (idle) | Mostly | <1 cm to >5 cm | 6 (mechanical, thermal, ionization, MHD, ferroelectric, piezo harvesting) |
+| Approach | Areal Mass | Threat Coverage | Active Energy | Mechanisms |
+|---|---|---|---|---|
+| Whipple Shield (ISS) | ~25 kg/m² | <1 cm | None | 1 (fragmentation) |
+| Stuffed Whipple | ~35 kg/m² | <2 cm | None | 1 + intermediate absorption |
+| GEIS (this concept) | ~400 kg/m² | <10 cm | Near-zero idle | 6 (as described) |
+
+GEIS is approximately 16× heavier than ISS Whipple — but addresses threats that Whipple cannot handle at any thickness. The relevant comparison is not mass-per-area but mass-per-threat-level: to stop a 5 cm/10 km/s impactor with passive steel plate alone requires approximately 400 kg/m² — equivalent to GEIS, but without the electromagnetic enhancement or the tile-replaceable architecture.
+
+Mass reduction paths: thinner foam with HV-pulse compensation (7–8 cm instead of 10), steeper density gradient, sectorized coverage (only impact-exposed surfaces fully equipped).
+
+---
+
+## Development Challenges
+
+| Component | Key Challenge | TRL |
+|---|---|---|
+| Density-gradient iron foam | Gradient sintering in vacuum, reproducibility | 4–5 |
+| Granular dissipation in metallic foam | Well-researched domain | 6–7 |
+| Conductive PZT ceramic (Ag/graphene doped) | Achieving ~10³ S/m without degrading P_s, ε_r | 3–4 |
+| SmCo/W composite shield grid as capacitor | Monolithic magnetic + conductive + dielectric integration | 2–3 |
+| Ferroelectric plasma filtration | Experimental verification of PZT surface field on impact plasma | 2 |
+| **Combined multi-mechanism operation** | **Hydrocode + MHD simulation at realistic scales** | **2** |
+| **HV integrity field under impact** | **Material response verification (failure mode transition)** | **2–3** |
+
+The single highest-priority development item is coupled hydrocode/MHD simulation to quantify the interaction between mechanisms 2, 4, and 5.
 
 ---
 
 ## Additional Passive Benefit — Radiation Shielding
 
-The iron foam layers provide moderate shielding against galactic cosmic rays (GCR) and solar particle events (SPE) as an inherent side effect of the material selection. No additional mass penalty — the shielding function is a free contribution of the existing impact protection architecture.
+The iron foam layers provide moderate shielding against galactic cosmic rays (GCR) and solar particle events (SPE) as an inherent side effect. No additional mass penalty.
 
 ---
 
-## Development Challenges (TRL Estimate)
+## Summary
 
-| Component | Key Challenge | TRL |
-|---|---|---|
-| Conductive PZT ceramic with Ag/graphene doping | Achieving ~10³ S/m without degrading ferroelectric properties (P_s, ε_r) | 3–4 |
-| Density-gradient metallic foam | Gradient sintering in vacuum, reproducibility | 4–5 |
-| Defined ionization threshold matrix | Material selection for reproducible hypervelocity ionization | 2–3 |
-| Granular dissipation layer | Well-researched domain | 6–7 |
-| SmCo/W composite shield grid as capacitor | Monolithic integration of magnetic, conductive, and dielectric functions | 2–3 |
-| Ferroelectric plasma filtration verification | Experimental validation of PZT surface field interaction with impact plasma | 2 |
-| Quantitative MHD coupling verification | Simulation of plasma-field interaction at realistic scales | Requires dedicated modeling |
+The GEIS architecture exploits the fact that a hypervelocity impact into metallic foam produces a progression of material states — solid, deformed, molten, vaporized, ionized — each of which couples to a different electromagnetic mechanism. By embedding this progression within a density gradient and a magnetic field gradient, all six dissipation mechanisms activate in the spatial zone where they are most effective, without requiring external control or energy input beyond the initial HV pulse for large impactors.
+
+The individual mechanisms are physically well-established. Their combined performance under hypervelocity impact conditions is the central open question and requires numerical simulation for quantitative verification.
 
 ---
 
-## Scope and Applicability
-
-The passive compound architecture — gradient foam, MHD coupling, ferroelectric plasma filtration, capacitive grid — imposes no operational constraints related to maneuvers or mission profile.
-
-**Suitable for:**
-- Orbital stations (LEO, L-points, lunar orbit)
-- Interstellar and interplanetary vessels during any mission phase
-- Any long-duration crewed or uncrewed platform where sustained passive protection and minimal energy overhead are priorities
-
----
-
-## Appendix: Quantitative Fermi Estimates
-
-### A. Ferroelectric Plasma Filtration — Confirmation
-
-**Surface field:** P_s = 0.3 C/m² → E_surface = P_s/ε₀ ≈ 34 GV/m at PZT-vacuum/plasma boundary. Electrostatic pressure: P_s²/(2ε₀) ≈ 5.1 GPa — exceeding the Hugoniot shock pressure (2.1 GPa) by factor 2.4×.
-
-**Ion braking:** At 34 GV/m, acceleration on Fe⁺ is ~5.8 × 10¹⁶ m/s². Braking length for 1000 m/s ion: sub-nanometer. Every ion entering the ferroelectric field is effectively stopped instantaneously.
-
-**Debye limitation:** Plasma screens the DC field within one Debye length (λ_D ≈ 1–40 µm depending on n_e). The effect operates only at the ceramic-plasma interface.
-
-**Fragment surface multiplication:** 107 g PZT at 100 µm fragment size → ~0.8 m² total surface (300× channel cross-section). At λ_D ≈ 4 µm and 30% geometry factor: ~5,200 J absorbed from ~17,000 J plasma kinetic energy → ~30% absorption of residual plasma.
-
-**Scaling properties:** Smaller fragments → more surface → more absorption. Lower plasma density → longer λ_D → deeper penetration → more absorption per surface element. Both conditions are met for late-phase plasma after foam dissipation.
-
-### B. Magnetic Compatibility of PZT Interface Layer
-
-PZT ceramic: μᵣ ≈ 1 (non-ferromagnetic) → transparent to SmCo permanent field. Ag-doped conductivity ~10³ S/m at 5 mm thickness: magnetic skin depth ~16 m at 1 kHz → fully transparent to permanent field and HV pulse. No interference with MHD coupling in foam above.
-
----
-
-*Concept developed through iterative dialogue. The ferroelectric channel represents a genuinely novel contribution — no prior literature identified for PZT fragment surface field interaction with hypervelocity impact plasma. Full MHD simulation required for quantitative channel weighting.*
+*Concept developed through iterative analysis. The electromagnetic coupling chain across all aggregate states (ferromagnetic → eddy current → Lorentz drag → MHD) and the ferroelectric plasma filtration mechanism represent novel contributions not identified in prior literature.*
