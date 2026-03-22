@@ -236,6 +236,25 @@ Mass reduction paths: thinner foam with HV-pulse compensation (7–8 cm instead 
 
 ---
 
+## Note: Material Optimization Potential
+
+The baseline GEIS design uses pure iron foam — the simplest ferromagnetic realization. The EM coupling strength scales with magnetic moment, electrical conductivity, and specific surface area, all of which are improvable through materials engineering without changing the architecture.
+
+| Optimization | Effect | Factor | Status |
+|---|---|---|---|
+| FeCo alloy (Fe₆₅Co₃₅) | M_s: 1.7→2.4 T, Curie: 770→940°C. Stronger cohesion (F ∝ M²), smaller ferromagnetic gap to melting point. | 1.2–1.5× on Mech. 5 | Standard material in high-performance magnets |
+| CNT/Graphene bridges between ligaments | Solid-foam σ: 10⁴→10⁵–10⁶ S/m. Stronger eddy current braking in solid hot phase (770–1538°C) — the weakest coupling regime in baseline GEIS. No benefit above melt (already σ = 7×10⁵). | 1.1–1.3× on Mech. 4 | CNT-doped metal foams published |
+| Core-shell particles (Fe core, Cu/Ag shell) | High-conductivity shell guarantees coupling continuity at Curie transition. Insurance, not performance gain. | 1.05–1.1× | Established synthesis routes |
+| Nanostructured ligaments (higher specific surface) | Faster melting/ionization per unit mass. Enhances multi-shock thermal effect. Limited by minimum structural strength. | 1.1–1.2× on Mech. 3 | Metal foam nanostructuring published |
+
+**Combined multiplicative improvement: ≈ 1.5–2.5× over baseline GEIS.**
+
+Applied to the baseline performance estimate (2.3–10× Whipple), a material-optimized GEIS could reach **3.5–25× Whipple**. The upper bound is speculative; the lower bound (3.5×) relies on individually established material improvements. The six-mechanism architecture remains unchanged — only the coupling constants increase.
+
+These optimizations represent a second-generation development path. The baseline iron foam design should be validated first; material optimization follows once the mechanism hierarchy is experimentally confirmed.
+
+---
+
 ## Development Challenges
 
 | Component | Key Challenge | TRL | Evidence Base |
