@@ -36,7 +36,7 @@ No single mechanism handles the full threat spectrum. Each of the six mechanisms
 
 Light, open-cell iron foam at low packing density. The impactor enters a material that cannot resist it monolithically but forces fragmentation through the irregular pore structure. Analogous to a projectile hitting regolith: the projectile wins locally but loses coherence globally. Energy cost per fragment is low; the purpose is geometric — convert one threat into many small threats distributed over a wider cross-section.
 
-**Established physics:** Whipple shield fragmentation is the baseline analogy. The foam structure improves on the discrete Whipple gap by providing continuous fragmentation surfaces rather than a single breakup event.
+**Established physics:** Whipple shield fragmentation is the baseline analogy. NASA JSC Hypervelocity Impact Technology Facility (HITF) testing has demonstrated that open-cell metallic foam provides continuous fragmentation surfaces rather than a single breakup event: secondary impacts on individual foam ligaments raise the thermal state of projectile fragments, inducing melting and vaporization at lower impact velocities than traditional Whipple configurations [Ryan et al. 2010, Christiansen et al. 2003–2005]. A multi-shock shield using distributed bumper layers showed molten and vapor deposits at 6.3 km/s comparable to those on a Whipple shield at 10 km/s [Ryan et al. 2010].
 
 ### Mechanism 2 — Graduated Impedance (Full Depth, φ = 15% → 50–65%)
 
@@ -46,7 +46,7 @@ The density gradient from outer to inner surface creates a continuously increasi
 
 This is the classical Hugoniot channel. At 10 km/s into Fe foam, the Hugoniot deposits approximately 12.5 MJ/kg at the contact surface, decreasing as the front decelerates. Fermi estimates indicate that 10 cm of gradient foam (φ = 20% → 65%) absorbs 70–90% of a 5 cm/10 km/s impactor's kinetic energy through this mechanism alone.
 
-**Established physics:** Hugoniot shock compression, P-α porous material models (Herrmann 1969). Well-characterized for metallic foams.
+**Established physics:** Hugoniot shock compression, P-α porous material models (Herrmann 1969). Well-characterized for metallic foams. NASA JSC testing of variable-density foam panels (40 PPI inner / 5 PPI outer Al6101-T6, separated by Nextel/Epoxy intermediate layer) confirmed that graded foam structures provide improved shielding over uniform-density configurations [Ryan et al. 2010]. Hydrocode simulations using CTH (Sandia) and AUTODYN have been validated against these experiments at velocities of 2.2–9.3 km/s and various incidence angles [Ryan et al. 2010, Christiansen et al. 2009].
 
 ### Mechanism 3 — Granular Dispersion Through Controlled Deformation (Full Depth)
 
@@ -56,7 +56,7 @@ The foam is deliberately ductile, not brittle. Under impact, it deforms plastica
 
 The open-cell structure with thin iron struts maximizes surface area per unit mass. This promotes phase transitions (melting, vaporization) at lower specific energy than a solid plate — thinner struts reach melting temperature faster, converting mechanical energy to thermal energy more efficiently.
 
-**Established physics:** Metallic foam SEA is extensively characterized (Ashby et al., Gibson & Ashby). Typical SEA for iron foam at φ = 0.3: approximately 5–10 kJ/kg in bending-dominated collapse, 20–50 kJ/kg in stretch-dominated collapse.
+**Established physics:** Metallic foam SEA is extensively characterized (Ashby et al., Gibson & Ashby). Typical SEA for iron foam at φ = 0.3: approximately 5–10 kJ/kg in bending-dominated collapse, 20–50 kJ/kg in stretch-dominated collapse. NASA HITF testing confirmed that the cellular geometry of open-cell foam induces a multi-shock effect: stress waves propagate only within ligaments and are diffused by the cellular structure, spreading the impact effect over a larger area and enhancing energy dissipation [Xu et al. 2018]. Critically, the tensile spall failure pattern observed in homogeneous materials (from reflected compressive waves) does not occur in foam — the cellular structure eliminates this failure mode entirely [Xu et al. 2018]. NASA testing of foam-modified ISS-representative panels showed a 3–15% performance increase over honeycomb baselines at normal incidence, with greater enhancement at oblique angles [Ryan et al. 2008].
 
 ### Mechanism 4 — Electromagnetic Coupling (Middle–Inner Zone, φ ≈ 30–50%)
 
@@ -165,7 +165,7 @@ The **combined, simultaneous** operation of all six mechanisms within a single h
 - MHD braking depends on conductivity distribution, which depends on temperature field, which depends on Hugoniot and MHD braking
 - Channel confinement depends on field strength, which depends on distance from grid and local material state
 
-These are coupled, nonlinear, three-dimensional, multi-phase, time-dependent equations. They require numerical simulation (hydrocode + MHD solver). The individual mechanisms are TRL 4–7; their combination is TRL 2–3.
+These are coupled, nonlinear, three-dimensional, multi-phase, time-dependent equations. They require numerical simulation (hydrocode + MHD solver). Suitable tools include CTH (Sandia National Laboratories), AUTODYN (Ansys), and LS-DYNA with SPH, all of which have been validated for hypervelocity impact on porous metallic structures [Ryan et al. 2010, Clegg et al. 1998, Xu et al. 2018]. The P-α porous compaction model is implemented in CTH and has been specifically applied to foam impact problems [Sandia 2013]. Extension to coupled MHD would require integration with an electromagnetic solver, which is not standard in current hydrocode practice for MMOD applications. The individual mechanisms are TRL 4–7; their combination is TRL 2–3.
 
 ### Performance Estimate
 
@@ -212,15 +212,16 @@ Mass reduction paths: thinner foam with HV-pulse compensation (7–8 cm instead 
 
 ## Development Challenges
 
-| Component | Key Challenge | TRL |
-|---|---|---|
-| Density-gradient iron foam | Gradient sintering in vacuum, reproducibility | 4–5 |
-| Granular dissipation in metallic foam | Well-researched domain | 6–7 |
-| Conductive PZT ceramic (Ag/graphene doped) | Achieving ~10³ S/m without degrading P_s, ε_r | 3–4 |
-| SmCo/W composite shield grid as capacitor | Monolithic magnetic + conductive + dielectric integration | 2–3 |
-| Ferroelectric plasma filtration | Experimental verification of PZT surface field on impact plasma | 2 |
-| **Combined multi-mechanism operation** | **Hydrocode + MHD simulation at realistic scales** | **2** |
-| **HV integrity field under impact** | **Material response verification (failure mode transition)** | **2–3** |
+| Component | Key Challenge | TRL | Evidence Base |
+|---|---|---|---|
+| Open-cell metallic foam under HVI | Well-characterized | 6–7 | NASA JSC HITF: 150+ tests, BLEs derived [Ryan et al.] |
+| Density-gradient iron foam | Gradient sintering in vacuum, reproducibility | 4–5 | Variable-density panels tested at NASA [Ryan et al. 2010] |
+| Hydrocode simulation of foam HVI | Validated for single-material foam | 5–6 | CTH, AUTODYN, LS-DYNA validated [multiple authors] |
+| Conductive PZT ceramic (Ag/graphene doped) | Achieving ~10³ S/m without degrading P_s, ε_r | 3–4 | Lab-scale demonstrations exist |
+| SmCo/W composite shield grid as capacitor | Monolithic magnetic + conductive + dielectric integration | 2–3 | Individual components exist, integration untested |
+| Ferroelectric plasma filtration | Experimental verification of PZT surface field on impact plasma | 2 | Novel mechanism, no prior literature |
+| **Combined multi-mechanism operation** | **Coupled hydrocode + MHD simulation** | **2** | **Individual mechanisms validated; combination not** |
+| **HV integrity field under HVI** | **Material response verification (failure mode transition)** | **2–3** | **Magnetostriction, eddy currents known; HVI coupling not** |
 
 The single highest-priority development item is coupled hydrocode/MHD simulation to quantify the interaction between mechanisms 2, 4, and 5.
 
@@ -241,3 +242,43 @@ The individual mechanisms are physically well-established. Their combined perfor
 ---
 
 *Concept developed through iterative analysis. The electromagnetic coupling chain across all aggregate states (ferromagnetic → eddy current → Lorentz drag → MHD) and the ferroelectric plasma filtration mechanism represent novel contributions not identified in prior literature.*
+
+---
+
+## References
+
+### NASA Hypervelocity Impact Test Data
+
+- **Ryan, S., Ordonez, E., Christiansen, E.L., Lear, D.M.** (2010). "Hypervelocity Impact Performance of Open Cell Foam Core Sandwich Panel Structures." *Proceedings of the 11th Hypervelocity Impact Symposium.* NASA NTRS 20100005243. — 81 impact tests (2.2–9.3 km/s) at NASA JSC HITF. Demonstrated multi-shock effect in foam ligaments, ballistic limit equations derived. Confirmed melting/vaporization at lower velocities than Whipple.
+
+- **Ryan, S., Christiansen, E.L.** (2008/2010). "Hypervelocity Impact Performance of Open Cell Foam Core Sandwich Panel Structures." NASA NTRS 20090023410. — 70 tests on Al foam core sandwich panels. Effect of pore density, core thickness, facesheet thickness on shielding performance. Empirical BLE derived in standard form for risk analysis.
+
+- **Yasensky, J., Christiansen, E.L.** (2003–2005). "Hypervelocity Impact Evaluation of Metal Foam Core Sandwich Structures." NASA NTRS 20080009574. — Metal foam vs. honeycomb comparison, Al and Ti foams tested at NASA JSC WSTF.
+
+- **Christiansen, E.L. et al.** (2009). "Handbook for Designing MMOD Protection." NASA/TM-2009-214785. — Comprehensive shield design reference: ballistic limit equations, shield types, risk assessment methodology.
+
+### Hydrocode Simulation
+
+- **Piekutowski, A.J., Poormon, K.L.** (1993). "Hypervelocity impact tests and simulations of single Whipple bumper shield concepts at 10 km/s." — CTH validation for hypervelocity impacts on Whipple shields.
+
+- **Clegg, R.A. et al.** (1998). "Numerical Simulation of Hypervelocity Impacts on Aluminum and Nextel/Kevlar Whipple Shields." — AUTODYN-2D/3D validation, SPH technique comparison with experimental data.
+
+- **Xu, Y. et al.** (2018). "A numerical method for the ballistic performance prediction of the sandwiched open cell aluminum foam under hypervelocity impact." *Aerospace Science and Technology.* — Voronoi tessellation foam modeling with SPH in LS-DYNA. Demonstrated stress wave diffusion by cellular structure and absence of tensile spall failure in foam.
+
+- **Sandia National Laboratories.** CTH Eulerian hydrocode with P-α porous compaction model. Validated for hypervelocity impact on porous materials. See also: arxiv 1306.6877 for EOS modeling discussion.
+
+### Porous Material Shock Physics
+
+- **Herrmann, W.** (1969). "Constitutive equation for the dynamic compaction of ductile porous materials." *J. Applied Physics* 40(6). — P-α model for porous Hugoniot.
+
+- **Gibson, L.J., Ashby, M.F.** (1997). *Cellular Solids: Structure and Properties.* Cambridge University Press. — Standard reference for foam mechanics, SEA, failure modes.
+
+### MHD and Liquid Metal Physics
+
+- **Shercliff, J.A.** (1965). *A Textbook of Magnetohydrodynamics.* Pergamon. — Lorentz drag on conductive fluids.
+
+- **Davidson, P.A.** (2001). *An Introduction to Magnetohydrodynamics.* Cambridge University Press. — Liquid metal MHD, Alfvén waves, magnetic Reynolds number.
+
+### Ferroelectric Materials
+
+- No prior literature identified for PZT fragment surface field interaction with hypervelocity impact plasma. This mechanism requires experimental verification.
