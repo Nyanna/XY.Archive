@@ -280,4 +280,4 @@ PZT ceramic: μᵣ ≈ 1 (non-ferromagnetic) → transparent to SmCo permanent f
 
 ---
 
-*Concept developed through iterative dialogue. Quantitative analysis of originally proposed piezoelectric feedback loop demonstrated energetic irrelevance; replaced by ferroelectric plasma filtration mechanism operating through spontaneous polarization surface field. The ferroelectric channel represents a genuinely novel contribution — no prior literature identified for PZT fragment surface field interaction with hypervelocity impact plasma. Full MHD simulation required for quantitative channel weighting.*
+*Concept developed through iterative dialogue. The ferroelectric channel represents a genuinely novel contribution — no prior literature identified for PZT fragment surface field interaction with hypervelocity impact plasma. Full MHD simulation required for quantitative channel weighting.*
