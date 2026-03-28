@@ -39,6 +39,12 @@ Korrigiert um die paarweisen ORs (effektive ADHS-Rate bei AD \~7%; effektive Mig
 
 Die Bandbreite von **90.000–200.000 Betroffenen in Deutschland** ist konservativ. Bei einer schweren Verlaufsform — definiert durch kaskadenfähige Migräne (>4 Tage/Monat), funktionell relevantes ADHS und AD-Anamnese mit substanzieller GC-Exposition — liegt der Anteil bei geschätzt \~20%, also **18.000–40.000 Personen**.
 
+#### **Phänotypische Varianz innerhalb der Kohorte**
+
+Die endogene Periodenlänge τ bestimmt die Schwebungsfrequenz und damit die Migräneperiodizität: T\_beat = (τ × 24) / (τ − 24). Bei τ = 26 h ergibt sich eine \~6,5-Tage-Periodizität; bei τ = 24,5 h beträgt der Zyklus \~49 Tage. Die Mehrheit der Triade-Kohorte hat vermutlich τ näher an 24 h und damit niedrigere Migränefrequenzen als der vorliegende Fall.
+
+Bei längeren Zyklen akkumuliert die circadiane Desynchronisation langsamer. Ob die prämigränöse Phase mit zunehmender Zykluslänge als funktionelle Beeinträchtigung erlebt wird, ist offen — die geringere Desynchronisationsrate pro Tag könnte durch Kompensationsmechanismen vollständig abgefangen werden und als normale Tagesformvariation unauffällig bleiben. Denkbar ist aber auch, dass eine langsame, über Wochen aufgebaute Desynchronisation als diffuse Dysfunktion erlebt wird (Konzentrationsschwankungen, affektive Instabilität), deren Zusammenhang mit der späteren Migräne weder für Betroffene noch für Behandler erkennbar ist. In beiden Fällen bleibt der Upstream-Mechanismus unsichtbar.
+
 #### **Die unsichtbare Brücke: GC-Therapie als iatrogener Pfad**
 
 Die Dopamin-Hypersensitivitäts-Theorie der Migräne (Sicuteri 1977; Akerman & Goadsby 2007) ist etabliert: Migräniker reagieren hypersensitiv auf D2-Agonisten, D2-Antagonisten wirken antimigränös. Hansen et al. (2018) schreiben explizit, die Koinzidenz Migräne/ADHS könnte auf gemeinsamer dopaminerger Dysfunktion beruhen. Niemand in dieser Literatur fragt, *woher* die D2-Hypersensitivität kommt.
