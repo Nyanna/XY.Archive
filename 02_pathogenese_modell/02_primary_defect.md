@@ -425,13 +425,64 @@ Der Hypothalamus kontrolliert über den SCN nicht nur den Schlaf-Wach-Rhythmus, 
 
 **Migräne als circadian prädisponierte Kaskade:** Am Punkt maximaler Desynchronisation konvergieren alle Faktoren – autonome Phasenverschiebung, Schlafarchitekturstörung, Cortisolversatz – auf eine Absenkung der Dämpfungskonstante der Raphe-Schleife. Die ohnehin instabile Oszillation erreicht Amplituden, bei denen der geringste Anstoß die Kaskadenschwelle überschreitet. Der Migräneanfall ist in diesem Modell nicht Folge eines einzelnen Triggers, sondern das Ergebnis einer periodisch erzeugten Maximalpräposition.
 
-#### **2.5.4 Evidenz und Einordnung**
+#### **2.5.4 Kortikale Wachhaltefunktion der Raphe und lokaler Schlaf**
 
-| Aussage | Evidenzniveau |
+Die circadiane Dysregulation wirkt nicht nur über die Raphe-Oszillationsamplitude (2.5.1) und das autonome System (2.5.3) auf die Migräneanfälligkeit, sondern über einen dritten, unabhängigen Pfad: die tonische kortikale Synchronisation.
+
+**Die Raphe als kortikaler Synchronisator:** Serotonerge DRN-Neurone feuern während Wachheit tonisch — konstant, gleichmäßig, stimulusunabhängig. Dieser tonische Tonus hält kortikale Neurone in einem stabilen depolarisierten Zustand knapp unter der Feuerschwelle: nicht erregt, nicht feuend, aber *bereit zu feuern*. Ohne diesen serotonergen Hintergrund-Drive driften einzelne Neurone in Richtung Hyperpolarisation, und wenn genug Neurone in einer Region hyperpolarisieren, kippen sie kollektiv in einen Down-State — lokaler Schlaf bei globalem Wachsein (Vyazovskiy et al., 2011).
+
+**Lokaler Schlaf ist kein Schlaf, sondern Bistabilität:** Regionen im lokalen Schlaf sind nicht still. Sie alternieren unkontrolliert zwischen Up-States (spontane Bursts) und Down-States (neuronale Schweigephasen). Dies erzeugt kortikalen Output, der nicht stimulusgetrieben ist — der Thalamus kann nicht unterscheiden, ob ein kortikales Signal von echter sensorischer Verarbeitung stammt oder von einem spontanen Up-State-Burst. Die thalamokortikale Rückkopplung wird verrauscht (vgl. Abschnitt 4.3.2 für den vollständigen Kaskadenmechanismus).
+
+**Zirkadianer Modulationseffekt:** Am Punkt maximaler Desynchronisation (~Tag 6–7) konvergieren drei Faktoren auf maximale Vulnerabilität für lokalen Schlaf:
+
+| Faktor | Mechanismus bei maximaler Desynchronisation |
 | :---- | :---- |
-| SCN-Raphe bidirektionale Verschaltung | Gesichert (Tiermodelle, Tract-Tracing) |
-| Serotonerge Modulation des SCN-Entrainments | Gesichert (5-HT1A/7-Rezeptoren im SCN) |
-| Hypothalamische Aktivierung in Migräneprodrom | Gesichert (PET-Studien, May et al.) |
-| Endogene τ ≈ 26 h im vorliegenden Profil | Selbstbeobachtung, konsistent über Jahre |
-| Quasi-wöchentliche Migräneperiodizität durch circadiane Dämpfungsmodulation | Hypothetisch, konsistent mit Beobachtung |
-| Stochastisches Fenstermodell: wandernder Rhythmus durch variable Triggerstärke | Hypothetisch, konsistent mit Beobachtung |
+| **Raphe-Tonus** | Serotonerge Tagesaktivität maximal phasenverschoben relativ zur externen Wachzeit → tonischer Drive am schwächsten, wenn er am stärksten gebraucht wird |
+| **Cortisol-Awakening-Response** | CAR-Peak verschoben → kompensatorischer morgendlicher Arousal-Push fehlt oder ist zeitlich falsch platziert → Arousal-Lücke 2 h nach dem Aufwachen maximal |
+| **SWS-Phasenlage** | Tiefschlaf in den falschen Zyklen (vgl. 2.5.5) → nächtliche Adenosin-Clearance suboptimal → Residual-Adenosin erhöht die Anfälligkeit für kortikale Off-States |
+
+Das Ergebnis: Die circadiane Drift erzeugt am Punkt maximaler Phasenopposition nicht nur eine Prädisposition für die Raphe-Kaskade (2.5.1), sondern *gleichzeitig* eine maximale Vulnerabilität für kortikale Desintegration. Regionen ohne externen Arousal-Drive — posteriorer visueller Kortex bei monotoner Tätigkeit, auditorischer Kortex bei gleichförmiger Musik — fallen zuerst in lokale Off-States. Die resultierende thalamokortikale Destabilisierung senkt die CSD-Schwelle über einen Pfad, der von der Raphe-Oszillationsamplitude unabhängig ist (Abschnitt 4.3).
+
+**Differentielle Arousal-Quellen:** Die Beobachtung, dass aufgabengetriebene Aktivität (Arbeit, Gespräch, Problemlösung) die kortikale Kohärenz aufrechterhält, während monotone Phasen zum Zerfall führen, trennt zwei Arousal-Quellen:
+
+| Arousal-Quelle | Mechanismus | Abhängigkeit von Raphe |
+| :---- | :---- | :---- |
+| **Endogen (tonisch)** | Serotonerger Raphe-Tonus, noradrenerger LC-Tonus | Direkt — fällt bei Raphe-Insuffizienz aus |
+| **Exogen (aufgabengetrieben)** | Stimulusgetriebene Depolarisation, frontoparietal-mediiert | Indirekt — funktioniert auch bei schwachem Raphe-Tonus, solange die Aufgabe läuft |
+
+Wenn externe Aufgaben enden — Arbeitsende, Monotonie, Abend — fällt der exogene Drive weg. Was bleibt, ist der endogene Raphe-Tonus. Wenn dieser insuffizient ist, zeigt sich der Grundzustand: asynchrones Patchwork aus wachen und schlafenden kortikalen Regionen. Was subjektiv als „Erschöpfung nach der Arbeit" erlebt wird, ist nicht Konzentrationsermüdung, sondern der Wegfall des einzigen funktionierenden Synchronisators (vgl. Anhang C).
+
+#### **2.5.5 Schlafarchitektur als zirkadianer Marker**
+
+Die SWS-Phasenlage (detailliert in Anhang B) ist ein direkter Ausdruck der in 2.5.1–2.5.4 beschriebenen Raphe-Dysregulation und verbindet die circadiane Ebene mit der messbaren Schlafarchitektur.
+
+**Kernbefund:** Das SWS-Quantum ist mit ~2:07–2:10 h/Nacht konstant und normal. Die Verteilung ist atypisch — SWS in Zyklus 3–4 statt normativ in Zyklus 1–2. Dieses Muster ist invariant gegenüber Betablocker-Status, Gesamtschlafdauer und anderen Variablen.
+
+**Mechanismus:** Die Dissoziation zwischen normalem Quantum und verschobener Phasenlage trennt den homöostatischen Akkumulator (Adenosin-Aufbau, intakt) vom serotonergen Entladungsmechanismus (verzögert). Der Schlafdruck baut sich normal auf, aber die Raphe — deren Tagesaktivität die serotonerge Schwelle für SWS-Initiation setzt — liefert ein unzureichendes oder fehlgetimtes Signal. Die ersten 2–3 Zyklen werden mit Leichtschlaf und REM gefüllt, bevor das System die nötige neurochemische Konfiguration erreicht.
+
+**LDX-Effekt:** Unter Lisdexamfetamin verschiebt sich die SWS-Verteilung nach vorn (erhöhte Wahrscheinlichkeit von SWS in Zyklus 2). Parallel komprimiert sich der subjektive Schlaf-Wach-Rhythmus Richtung 24 h, die Abendmüdigkeit wird früher und klarer wahrnehmbar. Alle drei Beobachtungen — SWS-Vorverschiebung, zirkadiane Kompression, kohärentes Müdigkeitssignal — konvergieren auf denselben Mechanismus: dopaminerge Stabilisierung der Raphe → verbesserte serotonerge Tagesrhythmik → stärkeres Entrainment-Signal an den SCN → normalisierte Schlafarchitektur.
+
+**Konsequenz für die SWS-Clearance:** Verspäteter Tiefschlaf bei vollem Quantum bedeutet: gleiche Menge restaurativer Schlaf, suboptimaler Kontext. Die glymphatische Clearance korreliert mit dem zirkadianen Druckfenster, nicht nur mit SWS per se. SWS in Zyklus 3–4 liegt außerhalb des optimalen Fensters — die Adenosin-Clearance ist weniger effizient, was am Folgetag die Schwelle für lokalen Schlaf senkt (vgl. 2.5.4). Am Punkt maximaler circadianer Desynchronisation ist dieser Effekt kumulativ.
+
+**Diagnostischer Wert:** Die SWS-Phasenlage ist ein nicht-invasiver Marker, der die Raphe-Dysregulation auf einer objektiv messbaren Ebene abbildet — unabhängig von subjektiver Selbstbeobachtung. Die Betablocker-Invarianz des Befunds ist ein negatives Differentialkriterium: Metoprolol (noradrenerg) verschiebt die SWS-Phasenlage nicht, LDX (dopaminerg, indirekt serotonerg über Raphe-Modulation) tut es. Dies stützt die serotonerge Spezifität des Mechanismus. Details und experimentelles Design in Anhang B.
+
+#### **2.5.6 Evidenz und Einordnung**
+
+| Aussage | Evidenzniveau | Quellenbasis |
+| :---- | :---- | :---- |
+| SCN-Raphe bidirektionale Verschaltung | Gesichert | Tiermodelle, Tract-Tracing |
+| Serotonerge Modulation des SCN-Entrainments | Gesichert | 5-HT1A/7-Rezeptoren im SCN |
+| Hypothalamische Aktivierung in Migräneprodrom | Gesichert | PET-Studien (May et al.), repliziert |
+| Lokaler Schlaf bei Wachheit (kortikale Off-State-Intrusion) | Gesichert | Vyazovskiy et al. 2011, Nir et al. 2017, intrakranielle Ableitungen |
+| Slow-Wave-Intrusion korreliert mit Mind Blanking und Aufmerksamkeitsaussetzern | Gesichert | Bernardi et al. 2015, Andrillon et al. 2021 (Nature Communications) |
+| ADHD-Symptome als mögliche Konsequenz lokaler Schlaf-Intrusion | Plausibel | Andrillon et al. 2019 (Frontiers in Neuroscience), Review |
+| Posteriorer Kortex wacht zuletzt auf (frontal-first-Gradient) | Gesichert | Pigorini et al. 2015 (Current Biology), Marzano et al. 2011 |
+| Raphe als tonischer kortikaler Synchronisator | Gesichert | DRN-Feuerkinetik etabliert (Monti 2008), diffuse Projektion anatomisch gesichert |
+| Endogene Periodenlänge τ ≈ 26 h | Einzelfallbeobachtung | Langjährige konsistente Selbstbeobachtung |
+| Quasi-wöchentliche Migräneperiodizität durch circadiane Dämpfungsmodulation | Hypothetisch, konsistent | Eigene Beobachtung + SCN-Raphe-Interaktion als Mechanismus |
+| Stochastisches Fenstermodell (Triggerstärke × Dämpfungszustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
+| Maximale circadiane Desynchronisation → maximale Vulnerabilität für lokalen Schlaf | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus 2.5.1 + 2.5.4: Raphe-Tonus-Minimum konvergiert mit Arousal-Lücke und SWS-Fehlplatzierung |
+| Aufgabengetriebener Arousal als Kompensation für insuffizienten Raphe-Tonus | Hypothetisch, konsistent | Klinische Selbstbeobachtung, konsistent mit Arousal-Quellen-Differenzierung |
+| SWS-Phasenlage (Zyklus 3–4 statt 1–2) als Raphe-Marker | Einzelfallbeobachtung | Tracker-Daten (Mi Band), kein PSG, Details in Anhang B |
+| LDX-Effekt auf SWS-Vorverschiebung und zirkadiane Kompression | Einzelfallbeobachtung | Tracker-Daten + subjektive Beobachtung, mechanistisch konsistent |
+| Betablocker-Invarianz der SWS-Phasenlage als negatives Differentialkriterium | Einzelfallbeobachtung | Tracker-Daten, konsistent mit noradrenerger vs. serotonerger Spezifität |
