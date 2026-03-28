@@ -14,7 +14,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Serotonerge Konvergenz aller Migräneprophylaktika | Gesichert | Pharmakologische Wirkmechanismen etabliert |
 | Migräne als Raphe-Oszillationsstörung | Plausibel, nicht direkt belegt | Extrapoliert aus bekannten Mechanismen, konsistent mit Periodizität |
 | Fetale Raphe-Instabilität → thalamische Fehlkalibrierung | Plausibel, teilweise tierexperimentell gestützt | SERT-KO-Modelle, serotonerge Entwicklungsbiologie |
-| ASD, Migräne, Gating-Insuffizienz als Einheitsdefekt | Hypothetisch, konsistent | Selbstbeobachtung \+ epidemiologische Ko-Inzidenz |
+| ASD, Migräne, Gating-Insuffizienz als Einheitsdefekt | Hypothetisch, konsistent | Selbstbeobachtung + epidemiologische Ko-Inzidenz |
 | Migränefreiheit unter Stimulanzien | Vorläufig klinisch | Retrospektive Studie (n=73), eigene Beobachtung |
 | Upstream-Stabilisierung als Therapiestrategie | Hypothetisch, nie direkt adressiert | Eigene Interpretation existierender Datenpunkte |
 | Hypothalamische Aktivierung in Migräneprodrom | Gesichert | PET-Studien (May et al.), repliziert |
@@ -28,9 +28,25 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Dissoziation thalamisches Gating / basale sensorische Schwelle unter LDX | Einzelfallbeobachtung | Klinische Selbstbeobachtung, mechanistisch konsistent |
 | Subkortikales Rauschen als unbewusste kortikale Last | Hypothetisch, konsistent | Abgeleitet aus Dissoziation Gating/Schwelle + SNR-Literatur |
 | ADHS als SNR-Problem (thalamischer Gain) statt Aufmerksamkeitsdefizit | Plausibel | Eigene Interpretation, gestützt durch Bluschke, Hearne, MBA-Modell |
-| LDX-Stabilisierung hebt autonome Reflexschwelle über serotonergen + noradrenergen Pfad | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus 5.1–5.3 + 7.3                |
-| Kompoundierender Effekt bei Metoprolol-Entfall unter LDX                               | Hypothetisch                          | Modellvorhersage, keine unabhängige Evidenz |
-
+| LDX-Stabilisierung hebt autonome Reflexschwelle über serotonergen + noradrenergen Pfad | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus 5.1–5.3 + 7.3 |
+| Kompoundierender Effekt bei Metoprolol-Entfall unter LDX | Hypothetisch | Modellvorhersage, keine unabhängige Evidenz |
+| Tonischer Raphe-Tonus als kortikaler Synchronisator (Aufrechterhaltung stabiler Depolarisation) | Gesichert (Grundmechanismus) | Neuroanatomie, DRN-Projektionsmuster, Einzelzellableitungen |
+| Lokaler Schlaf: kortikale Off-State-Intrusion bei erhaltener globaler Wachheit | Gesichert | Vyazovskiy et al. 2011 (Nature), intrakranielle Ableitungen |
+| Lokale Slow Waves korrelieren mit Mind Blanking und Mind Wandering, regionsspezifisch | Gesichert | Andrillon et al. 2021 (Nature Comms, n=49), iEEG |
+| Frontal-first, posterior-last Aufwachgradient nach NREM | Gesichert | Pigorini et al. 2025 (Current Biology), Mensen et al. 2026 (bioRxiv) |
+| ADHD-Kernsymptome als Ausdruck lokaler Schlaf-Intrusion | Plausibel | Andrillon et al. 2019 (Front Neurosci), Bernardi et al. 2015, Konzeptpaper |
+| Insuffizienter Raphe-Tonus → asynchrone kortikale Off-State-Intrusion | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus Raphe-Projektionsmuster + lokaler Schlaf-Literatur |
+| SWS-Phasenlage verschoben (Zyklus 3–4 statt 1–2) bei erhaltenem Quantum | Einzelfallbeobachtung | Tracker-Daten (Mi Band), mechanistisch konsistent (Anhang B) |
+| LDX normalisiert SWS-Phasenlage (Verschiebung nach vorn) | Einzelfallbeobachtung | Tracker-Daten, konsistent mit Modellvorhersage (Anhang B) |
+| Kortikale Insuffizienz (lokaler Schlaf) → sekundäre thalamische Destabilisierung über Rückkopplungsschleife | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus thalamokortikaler Rückkopplungsarchitektur + lokaler Schlaf |
+| Nap-Kaskade: lokaler Schlaf → Nap → prolongierte posteriore Sleep Inertia → thalamokortikale Destabilisierung → CSD-Schwellensenkung | Hypothetisch, konsistent | Selbstbeobachtung + Aufwachgradient-Literatur + Rückkopplungsmodell |
+| CSD als kortikaler Reset-Mechanismus (erzwungene Resynchronisation) | Hypothetisch, konsistent | Abgeleitet aus CSD-Mechanismus + klinische Beobachtung (Post-Migräne-Klarheit) |
+| Betablocker-Paradox: Schwellenerhöhung ohne CSD-Reset → chronische Sub-CSD-Destabilisierung | Hypothetisch | Modellvorhersage, konsistent mit klinischer Beobachtung unter Metoprolol |
+| Doppeldämpfung unter Metoprolol: β₁-Blockade (noradrenerg) + fehlender CSD-Reset (strukturell) | Hypothetisch | Modellvorhersage, konsistent mit Selbstbeobachtung |
+| Powernap als kortikale Resynchronisation (globaler Down-State → symmetrische Reaktivierung), nicht als Erholung | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch konsistent mit Schlafphysiologie |
+| Schlaflatenz <2 min als Marker für bereits laufende lokale Schlaf-Intrusion, nicht für gesunden Schlaf | Einzelfallbeobachtung | Selbstbeobachtung, MSLT-Referenz (<5 min = pathologisch) |
+| Maximale circadiane Desynchronisation → maximale lokale Schlaf-Anfälligkeit → Migräne-Zyklusperiodizität | Hypothetisch, konsistent | Verbindung 2.5 (circadiane Drift) + lokaler Schlaf + CSD-Reset-Mechanismus |
+| Arbeit/Aufgabenfokus als externer kortikaler Synchronisator (kompensiert insuffizienten Raphe-Tonus) | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch ableitbar aus stimulusgetriebenem vs. tonischem Arousal |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
@@ -39,3 +55,8 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 * Bluschke A, Broschwitz F, Derber S et al. (2019) The Modulation of Neural Noise Underlies the Effectiveness of Methylphenidate Treatment in ADHD. *Biological Psychiatry: Cognitive Neuroscience and Neuroimaging*, 4(8), 743–750. https://www.sciencedirect.com/science/article/abs/pii/S2451902219300801
 * Hearne LJ, Lin HY, Sanz-Leon P et al. (2021) ADHD symptoms map onto noise-driven structure–function decoupling between hub and peripheral brain regions. *Molecular Psychiatry*, 26, 4036–4045. https://doi.org/10.1038/s41380-019-0554-6
 * Sikström S, Söderlund G (2007) Stimulus-Dependent Dopamine Release in Attention-Deficit/Hyperactivity Disorder. *Psychological Review*, 114(4), 1047–1075. (MBA-Modell)
+* Vyazovskiy VV, Olcese U, Hanlon EC et al. (2011) Local sleep in awake rats. *Nature*, 472, 443–447.
+* Andrillon T, Windt J, Silk T et al. (2019) Does the Mind Wander When the Brain Takes a Break? Local Sleep in Wakefulness, Attentional Lapses and Mind-Wandering. *Frontiers in Neuroscience*, 13, 949.
+* Andrillon T, Burns A, Mackay T et al. (2021) Predicting lapses of attention with sleep-like slow waves. *Nature Communications*, 12, 3657.
+* Pigorini A et al. (2025) Cortical reactivation after NREM sleep follows a frontal-to-posterior gradient. *Current Biology*, 35(7).
+* Mensen A et al. (2026) High-frequency EEG changes during wake-up reflect region-specific reactivation dynamics. *bioRxiv*. doi:10.64898/2026.02.08.704730v1.
