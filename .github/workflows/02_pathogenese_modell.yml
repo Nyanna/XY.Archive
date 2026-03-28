@@ -1,6 +1,7 @@
 name: Build Pathogenese-Modell
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - '02_pathogenese_modell/**'
