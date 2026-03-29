@@ -36,16 +36,19 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Frontal-first, posterior-last Aufwachgradient nach NREM | Gesichert | Pigorini et al. 2025 (Current Biology), Mensen et al. 2026 (bioRxiv) |
 | ADHD-Kernsymptome als Ausdruck lokaler Schlaf-Intrusion | Plausibel | Andrillon et al. 2019 (Front Neurosci), Bernardi et al. 2015, Konzeptpaper |
 | Insuffizienter Raphe-Tonus → asynchrone kortikale Off-State-Intrusion | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus Raphe-Projektionsmuster + lokaler Schlaf-Literatur |
-| SWS-Phasenlage verschoben (Zyklus 3–4 statt 1–2) bei erhaltenem Quantum | Einzelfallbeobachtung | Tracker-Daten (Mi Band), mechanistisch konsistent (Anhang B) |
-| LDX normalisiert SWS-Phasenlage (Verschiebung nach vorn) | Einzelfallbeobachtung | Tracker-Daten, konsistent mit Modellvorhersage (Anhang B) |
+| Räumliche SWS-Fragmentierung bei erhaltenem Quantum (Deep-Episoden/h: 1,6 PRE vs. 1,1 POST, p=0,005; Hierarchie Deep > REM > Light) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3) |
+| LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3, B.5) |
+| Fragmentierte Nächte zeigen höhere Deep-Gesamtdauer (129 vs. 106 min) — Quantität ≠ Qualität | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten (Anhang B.5) |
+| Betablocker-Invarianz der Schlaffragmentierung als negatives Differentialkriterium | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten, PRE unter Metoprolol zeigt identische Fragmentierung (Anhang B.4) |
+| Migräneprophylaxe ohne Upstream-Adressierung = Unterdrückung des Schutzmechanismus | Modellvorhersage | Abgeleitet aus B.6, konsistent mit Betablocker-Phänomenologie (Anhang C) |
 | Kortikale Insuffizienz (lokaler Schlaf) → sekundäre thalamische Destabilisierung über Rückkopplungsschleife | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus thalamokortikaler Rückkopplungsarchitektur + lokaler Schlaf |
 | Nap-Kaskade: lokaler Schlaf → Nap → prolongierte posteriore Sleep Inertia → thalamokortikale Destabilisierung → CSD-Schwellensenkung | Hypothetisch, konsistent, quantitativ gestützt | Selbstbeobachtung + Tracker-Daten (r=0,276, p=0,019, Anhang B.5) |
-| CSD als kortikaler Reset-Mechanismus (erzwungene Resynchronisation) | Hypothetisch, konsistent | Abgeleitet aus CSD-Mechanismus + klinische Beobachtung (Post-Migräne-Klarheit) |
+| CSD als kortikaler Reset-Mechanismus (erzwungene Resynchronisation) | Hypothetisch, konsistent mit drei konvergenten Beobachtungslinien | Post-Migräne-Klarheit + konsolidierter REM; Naratriptan-Gegenprobe (antiproportional zu Traumerinnerung); Betablocker-Paradox (Anhang B.6) |
 | Betablocker-Paradox: Schwellenerhöhung ohne CSD-Reset → chronische Sub-CSD-Destabilisierung | Hypothetisch | Modellvorhersage, konsistent mit klinischer Beobachtung unter Metoprolol |
 | Doppeldämpfung unter Metoprolol: β₁-Blockade (noradrenerg) + fehlender CSD-Reset (strukturell) | Hypothetisch | Modellvorhersage, konsistent mit Selbstbeobachtung |
 | Powernap als kortikale Resynchronisation (globaler Down-State → symmetrische Reaktivierung), nicht als Erholung | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch konsistent mit Schlafphysiologie |
 | Schlaflatenz <2 min als Marker für bereits laufende lokale Schlaf-Intrusion, nicht für gesunden Schlaf | Einzelfallbeobachtung | Selbstbeobachtung, MSLT-Referenz (<5 min = pathologisch) |
-| Maximale circadiane Desynchronisation → maximale lokale Schlaf-Anfälligkeit → Migräne-Zyklusperiodizität | Hypothetisch, konsistent | Verbindung 2.5 (circadiane Drift) + lokaler Schlaf + CSD-Reset-Mechanismus |
+| Maximale circadiane Desynchronisation → maximale lokale Schlaf-Anfälligkeit → Migräne-Zyklusperiodizität | Hypothetisch, konsistent | Verbindung 2.5 (circadiane Drift) + lokaler Schlaf + CSD-Reset-Mechanismus + SWS-Fragmentierung |
 | Arbeit/Aufgabenfokus als externer kortikaler Synchronisator (kompensiert insuffizienten Raphe-Tonus) | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch ableitbar aus stimulusgetriebenem vs. tonischem Arousal |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
