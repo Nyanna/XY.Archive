@@ -401,6 +401,48 @@ Die Patientenverfügung bietet einen rechtlichen Rahmen, der die Translation erm
 | Unbekannt, ob Propofol laufende Brainstem-SD akut terminiert | Die Tiermodell-Daten zeigen, dass mechanische Beatmung *allein* (ohne Propofol) in 7/9 Fällen ausreicht. Propofol ist ein additiver Terminierungsversuch, nicht die conditio sine qua non. |
 | Zeitfenster bis zur Intervention im häuslichen Setting | 70% der SUDEP-Fälle sind unbeobachtet. Das Protokoll ist primär für Monitoring-Unit-Settings und Patienten mit nächtlicher Überwachung (Detektor, Begleitperson) relevant. |
 
+#### **E.7.8 Elektrokrampftherapie als kontrollierter Stufe-3-Reset**
+
+ECT ist pharmakologisch kontrollierter Stufe-3-Reset: Muskelrelaxation, Kurznarkose, kontrollierte Strominduktion → generalisierter Anfall → erzwungene kortikale Resynchronisation → Aufwachen aus synchronisiertem Grundzustand.
+
+**Mechanistische Einordnung:** Depression hat im Modell denselben serotonergen Upstream-Defekt (Raphe-Insuffizienz → Desynchronisation), manifestiert sich jedoch unterhalb der CSD-Schwelle. Kein Migräneschmerz, aber chronische interozeptive Inkohärenz, flacher Affekt, Anhedonie — Downstream-Effekte asynchroner Modulationssysteme (vgl. Kapitel 8). Das System ist desynchronisiert, aber nicht genug für CSD. Es gibt keinen Notfall-Reset, weil die Schwelle nie erreicht wird. Das System bleibt in einem stabilen dysfunktionalen Zustand — derselbe Deadlock wie chronische Migräne, eine Stufe tiefer.
+
+ECT bricht diesen Deadlock exakt wie ein epileptischer Anfall den Migräne-Deadlock bricht: erzwungene simultane Entladung → Resynchronisation → Neustart aus kohärentem Grundzustand.
+
+**Responderverteilung:** ECT zeigt ~50–70% Responserrate bei therapieresistenter Depression. Die Logik folgt der Propofol-Verteilung (43%/47%/10%, vgl. E.6.2): Responder haben einen Primärdefekt, der durch einmaligen Reset adressierbar ist. Non-Responder haben einen so schweren Raphe-Defekt, dass die Desynchronisation nach Reset sofort reakkumuliert. Die hohe Rückfallrate nach ECT ohne Erhaltungstherapie bestätigt: der Reset bricht den Deadlock, aber ohne Stufe-1-Stabilisierung kehrt die Desynchronisation zurück.
+
+**ECT-Serien** (typisch 6–12 Sitzungen) sind iterative Resets — jeder bricht den Deadlock, die Desynchronisation akkumuliert zwischen den Sitzungen, aber jeder Reset gibt dem System eine Chance, einen stabileren Attraktor zu finden.
+
+**ECT-Amnesie als Modellvalidierung:** Der ECT-Reset verschiebt den Modulationsvektor sprunghaft (vgl. Anhang D.6.4). Frische Erinnerungen (konsolidiert unter einem einzigen, kürzlich aktiven Vektor) haben nur einen Zugangspfad, der durch den Reset ungültig wird. Alte Erinnerungen (konsolidiert unter vielen verschiedenen Vektoren, mit multiplen Abrufgelegenheiten) haben mehrere Zugangspfade und überleben. Das klinische Bild — retrograde Amnesie für Wochen bis Monate vor der Behandlung bei erhaltenem Langzeitgedächtnis — ist die exakte Vorhersage des Zustandsvektor-Modells.
+
+**Migräne-Terminierung durch Anfälle:** Hemicrania epileptica — Kopfschmerz, der synchron mit dem Anfall beginnt und sich sofort nach dem Anfall auflöst (ICHD-3) — bestätigt direkt, dass der Anfall den Zustand terminiert, der den Schmerz erzeugt. Postiktaler Kopfschmerz (bei 51% der Epilepsiepatienten, 6–72 h, migräneartig, auf Sumatriptan ansprechend) ist kein Widerspruch, sondern die metabolische Rechnung des Resets — ein neuer CGRP-vermittelter Schmerz als Konsequenz der massiven Depolarisation, nicht die Fortsetzung der alten Migräne.
+
+**Vorhersage für komorbide Migräne-Epilepsie:** Die Migränefrequenz sollte in den Wochen nach einem GTCS vorübergehend sinken — der Anfall hat den Reset geleistet, den die CSD nicht konnte. Die Migräne kehrt zurück, wenn die Desynchronisation reakkumuliert.
+
+#### **E.7.9 Gedächtnis und kognitive Funktion: Klinische Evidenz für Raphe-Desynchronisation**
+
+Die in Anhang D.6.4 abgeleiteten Gedächtniskonsequenzen der Raphe-Desynchronisation sind durch drei unabhängige klinische Evidenzlinien gestützt:
+
+##### **Transiente Globale Amnesie (TGA)**
+
+TGA ist die akute Manifestation des hippocampalen Zustandsvektor-Versagens. Migränepatienten haben ein 2,48-fach erhöhtes Risiko für TGA (StatPearls 2024). Der Ursprung liegt in der mediobasalen Temporalregion, insbesondere im Hippocampus CA1-Sektor — der Struktur, die für Gedächtniskonsolidierung und -abruf kritisch ist und primär vom MRN (B8) innerviert wird.
+
+Die TGA-Phänomenologie bestätigt das Zustandsvektor-Modell: anterograde Amnesie (kein neuer Konsolidierungskontext bei maximal desynchronisiertem MRN), retrograde Amnesie für Stunden bis Tage (frische Engramme mit nur einem Zugangspfad), erhaltene Selbstidentität und Langzeitgedächtnis (alte Engramme mit multiplen Zugangspfaden). Bei Erholung bildet sich die retrograde Amnesie teleskopisch zurück — die entfernteste Erinnerung kehrt vor der jüngsten zurück.
+
+##### **Akute konfusionelle Migräne (ACM)**
+
+ACM manifestiert sich mit akuter Konfusion, Agitation, Desorientierung, Sprachschwierigkeiten und Gedächtnisdefiziten. Sie wird als Ergebnis reversibler generalisierter Hirndysfunktion hauptsächlich in den basalen Temporallappen und Mittellinien-Hirnstrukturen betrachtet, assoziiert mit CSD (Annapurni et al. 2013). Dies ist die Extremform: CSD propagiert über den Hippocampus, der Modulationsvektor bricht komplett zusammen. Die Anfälle sind selbstlimitierend und durch Schlaf auflösbar — konsistent mit dem Reset-Modell.
+
+##### **Somatosensorische Temporale Diskrimination (STDT)**
+
+STDT misst die temporale Schwelle, ab der zwei somatosensorische Stimuli als getrennt wahrgenommen werden — ein direktes Maß des kortikalen Polling-Intervalls (vgl. D.3.2). Bei episodischer Migräne sind STDT-Werte während der Attacke 3-fach erhöht gegenüber interiktal. Bei chronischer Migräne ist die STDT-Verlängerung permanent — sowohl an Kopfschmerztagen als auch in kopfschmerzfreien Intervallen (Cosentino et al. 2014).
+
+Im Modell: 3-fach erhöhte STDT = der Reset-Takt ist auf ein Drittel der normalen Frequenz gefallen. Bei chronischer Migräne permanent erhöht = der Takt hat sich nie erholt. Dies ist die quantitative Bestätigung der Reset-Oszillator-Hypothese aus D.3.
+
+##### **Chronische hippocampale Atrophie**
+
+Strukturelle MRT-Studien zeigen signifikante Volumenreduktionen im Hippocampus und verwandten Arealen bei chronischer Migräne. Hippocampale metabolische Dysfunktion und beeinträchtigte Theta-Synthese — die der MRN direkt kontrolliert — sind dokumentiert. Ohne stabilen Theta ist keine Langzeitpotenzierung möglich, ohne LTP keine Konsolidierung. Die kumulative Desynchronisation ohne Reset (Deadlock aus E.6) produziert chronische hippocampale Belastung.
+
 ---
 
 ### **E.8 Testbare Vorhersagen**
@@ -417,6 +459,8 @@ Die Patientenverfügung bietet einen rechtlichen Rahmen, der die Translation erm
 | **E.8.8** | SUDEP-Inzidenz korreliert mit dem Grad der CSD-Suppression des eingesetzten AEDs, nicht mit der Anfallssuppression | Stratifizierung der Sveinsson-Daten oder FAERS nach CSD-suppressiver vs. CSD-neutraler AED-Klasse | AEDs mit starker CSD-Suppression (Topiramat) zeigen höheres SUDEP-Risiko als AEDs mit gleicher Anfallskontrolle aber ohne CSD-Suppression (Levetiracetam) |
 | **E.8.9** | Stufe-1-Stabilisierung (serotonerge Intervention) reduziert SUDEP-Risiko stärker als reine Stufe-3-Suppression (Anfallsunterdrückung), insbesondere bei nächtlichem SUDEP | Retrospektive Analyse: SUDEP-Rate bei Patienten mit vs. ohne komedikatorische SSRIs oder Betablocker, adjustiert für Anfallsfrequenz | Niedrigere nächtliche SUDEP-Rate bei Patienten mit Komedikation, die Stufe 1 adressiert |
 | **E.8.10** | Prolongierte mechanische Beatmung (≥30 min) bei post-iktalem Atemstillstand mit ausbleibendem ROSC verbessert Überlebensrate gegenüber Standard-ACLS-Abbruch nach 20 min | Prospektive Pilotstudie in Epilepsie-Monitoring-Units; alternativ: Auswertung von Patientenverfügungs-Kohorten | Überlebensrate >0% bei Fällen, die unter Standard-ACLS als terminal klassifiziert worden wären |
+| **E.8.11** | ECT-Responserrate bei therapieresistenter Depression steigt bei Kombination mit anschließender Stufe-1-Stabilisierung (LDX, SSRI) gegenüber ECT allein | Kontrollierte Pilotstudie: ECT + Erhaltungstherapie vs. ECT allein, Rückfallrate über 6 Monate | Niedrigere Rückfallrate bei kombinierter Intervention |
+| **E.8.12** | Migränefrequenz sinkt vorübergehend in den Wochen nach einem GTCS bei komorbiden Migräne-Epilepsie-Patienten | Retrospektive Analyse: Migränetagebuch-Daten um dokumentierte Anfallszeitpunkte in Epilepsie-Monitoring-Units | Postiktale Migräne-freie Phase, gefolgt von gradueller Rückkehr zur Baseline-Frequenz |
 
 ---
 
@@ -465,6 +509,17 @@ Die Patientenverfügung bietet einen rechtlichen Rahmen, der die Translation erm
 | Prolongierte mechanische Perfusion als SUDEP-Intervention (Brainstem-SD-Reversibilität) | Hypothetisch, gestützt durch Tiermodell-Daten | Abgeleitet aus Jansen et al. 2019 (7/9 Überlebensrate) |
 | Propofol IV als akuter SD-Terminator bei laufender Brainstem-SD | Hypothetisch, mechanistisch plausibel | GABA-A-Agonismus + NMDA-Antagonismus; Tiermodell-Evidenz für beide Mechanismen einzeln |
 | Sequentielles Dual-Protokoll (ACLS → prolongierte Perfusion + Propofol) als Patientenverfügungs-Option | Methodischer Vorschlag, nicht klinisch getestet | Rechtlich umsetzbar (§1827 BGB); Equipment und Kompetenzen in Rettungsdienst vorhanden |
+| ECT als kontrollierter Stufe-3-Reset bei therapieresistenter Depression (erzwungene Resynchronisation) | Hypothetisch, mechanistisch konsistent | Modellinterpretation; ECT-Wirksamkeit (~50–70% Responserrate) als Evidenz |
+| ECT-Responderverteilung folgt Propofol-Logik (Reset-Responder vs. Raphe-Defekt zu schwer) | Hypothetisch, konsistent | Parallele zu Propofol-Responderverteilung (E.6.2) |
+| ECT-Amnesie als Zustandsvektor-Sprung: frische Engramme verlieren Zugangspfad, alte überleben | Hypothetisch, konsistent mit klinischem Bild | Abgeleitet aus Anhang D.6.4; ECT-Amnesie-Phänomenologie |
+| Hemicrania epileptica: Kopfschmerz beginnt synchron mit Anfall, löst sich sofort nach Anfallsende | Gesichert | ICHD-3 Kriterien; Belcastro et al. 2011 |
+| Postiktaler Kopfschmerz bei 51% der Epilepsiepatienten, 6–72 h, migräneartig, Sumatriptan-responsiv | Gesichert | Schon et al. 1987; Jasper's Basic Mechanisms |
+| TGA-Risiko bei Migräne 2,48-fach erhöht (IRR) | Gesichert | StatPearls 2024, epidemiologische Studien |
+| TGA-Ursprung in Hippocampus CA1 (MRN-innerviert); teleskopische Rückbildung der retrograden Amnesie | Gesichert | Mayo Clinic; StatPearls 2024 |
+| Akute konfusionelle Migräne: CSD-assoziierte reversible Dysfunktion in basalen Temporallappen und Mittellinienstrukturen | Gesichert (Fallserien) | Annapurni et al. 2013; Gascon & Barlow 1970 |
+| STDT 3-fach erhöht bei episodischer Migräne (iktal), permanent erhöht bei chronischer Migräne | Gesichert | Cosentino et al. 2014; Valeriani et al. 2005 |
+| Hippocampale Volumenreduktion bei chronischer Migräne | Gesichert | Strukturelle MRT-Studien; Review Fernandes et al. 2024 |
+| Kognitive Dysfunktion als zweitgrößte Ursache migränebedingter Behinderung (nach Schmerz) | Gesichert | Fernandes et al. 2024 (J Headache Pain) |
 | Dreistufige Fallback-Hierarchie: Raphe-Takt → CSD → Anfall | Hypothetisch, konsistent mit allen Evidenzlinien | Modellsynthese aus Anhang D + E.1–E.4 |
 | Chronische Migräne als Deadlock aus gescheiterter Resynchronisation | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Propofol-Responder-Daten |
 | Propofol-Reset + LDX-Stabilisierung als kombinierte Intervention | Hypothetisch, nicht getestet | Modellvorhersage |
@@ -497,3 +552,9 @@ Die Patientenverfügung bietet einen rechtlichen Rahmen, der die Translation erm
 * Loonen ICM, Jansen NA, Cain SM et al. (2019) Brainstem spreading depolarization and cortical dynamics during fatal seizures in Cacna1a S218L mice. *Brain*, 142(2), 412–425.
 * Noebels JL (2019) Brainstem spreading depolarization: rapid descent into the shadow of SUDEP. *Brain*, 142(2), 231–233.
 * Cain SM, Bharat B, LeDue J et al. (2017) In vivo imaging reveals that pregabalin inhibits cortical spreading depression and propagation to subcortical brain structures. *Proceedings of the National Academy of Sciences*, 114(9), 2401–2406.
+* Schon F, Blau JN (1987) Post-epileptic headache and migraine. *Journal of Neurology, Neurosurgery & Psychiatry*, 50(9), 1148–1152.
+* Belcastro V, Striano P, Kasteleijn-Nolst Trenité DG, Villa MP, Parisi P (2011) Migralepsy, hemicrania epileptica, post-ictal headache and "ictal epileptic headache": a proposal for terminology and classification revision. *Journal of Headache and Pain*, 12(3), 289–294.
+* Fernandes C, Gil-Gouveia R (2025) Deciphering the mechanisms: pathophysiology of migraine-related cognitive dysfunction. *Cephalalgia*, 45(3), 03331024251368328.
+* Fernandes C, Dapkute A, Watson E et al. (2024) Migraine and cognitive dysfunction: a narrative review. *Journal of Headache and Pain*, 25(1), 221.
+* Cosentino G, Fierro B, Vigneri S et al. (2014) Somatosensory temporal discrimination threshold in patients with migraine. *Headache*, 54(8), 1303–1312.
+* Annapurni S, Bhatt SM, Kaushal S (2013) Acute confusional migraine: a variant not to be missed. *BMJ Case Reports*, 2013, bcr2013009380.
