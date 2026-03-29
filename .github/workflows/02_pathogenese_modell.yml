@@ -6,7 +6,7 @@ on:
     paths:
       - '02_pathogenese_modell/**'
     branches:
-      - main
+      - master
 
 jobs:
   build:
