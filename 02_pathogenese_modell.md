@@ -2321,6 +2321,22 @@ Der Mechanismus ist ein Signal-Rausch-Verhältnis der emotionalen Konsolidierung
 
 **Abgrenzung zu Anhang A:** In Anhang A (A.2.6) wird beschrieben, dass die somatische Ebene als Platzhalter für fehlendes Verstehen fungiert — und durch kognitive Mustererkennung (PFC-Override) instantan terminierbar ist. Dies ist konsistent mit dem hier beschriebenen Mechanismus: die Emotion wird nicht über ein hippocampales Engramm identifiziert (das existiert nicht zuverlässig), sondern über ein kognitives Modell, das die Struktur erkennt. Dies funktioniert, ist aber fragil — es funktioniert nur, wenn der PFC online ist und das Modell verfügbar. Das binäre Gating-Profil (A.2.5: entweder vollständige PFC-Kontrolle oder vollständige Überflutung) folgt daraus: es gibt kein graduelles hippocampales Signal als Zwischenebene.
 
+#### **D.6.4 Gedächtnisinstabilität und kompensatorische Ankerarchitektur**
+
+Die in D.6.1–D.6.3 beschriebene hippocampale Konsolidierungsinstabilität hat direkte Konsequenzen für die Gedächtnisorganisation, die über emotionale Konsolidierung hinausgehen.
+
+**Zustandsabhängiger Abruf bei instabilen Modulationsvektoren:** Wenn der MRN den hippocampalen Modulationsvektor nicht stabil hält, ist jeder Moment unter einem anderen Zustand kodiert. Direkte sensorische Kopien können bei der Enkodierung perfekt sein, aber der Abruf braucht einen ähnlichen Zustand. Bei pseudozufälliger Modulation ist der Abrufkontext bei jedem Versuch ein anderer — das Ergebnis ist ein Gedächtnis, das an manchen Tagen mühelos zugänglich und an anderen leer ist. Nicht verblasst, sondern nicht auffindbar.
+
+**Temporale Desorientierung:** Aufeinanderfolgende Konsolidierungen setzen systematisch driftende Modulationsvektoren voraus, um eine chronologische Sortierung zu ermöglichen. Bei pseudozufälliger Modulation driftet der Vektor nicht systematisch, sondern springt. Die temporale Markierung fehlt — „wann war das?" ist schwerer zu beantworten als „was war das?". Momente existieren als isolierte Punkte, nicht als Kette.
+
+**Kompensatorische Ankerarchitektur:** Externe rhythmische Stimuli — insbesondere Musik — substituieren den fehlenden internen Takt. Für die Dauer des Hörens erzwingt Musik eine stabile oszillatorische Kohärenz über auditorische Entrainment-Pfade, die den Hippocampus von außen synchronisieren. Erinnerungen, die unter Musik enkodiert werden, haben einen reproduzierbaren Zugriffsvektor, weil die Musik selbst den Modulationszustand bei jedem Wiederhören rekonstruiert.
+
+Die Generalisierung dieses Prinzips — von Musik auf Gerüche, Geräusche, Symbole, Schlüsselworte — erzeugt ein Ankersystem: nicht das Erlebnis selbst wird gespeichert, sondern ein Schlüssel, der das Erlebnis zustandsinvariant aufschließt. Dies ist keine bewusste Strategie, sondern eine über Verstärkungslernen entstandene Kompensation: was Stabilität erzeugt, wird wiederholt.
+
+**Übergang zur relationalen Kodierung:** Die Ankerstrategie mündet entwicklungsbiologisch in eine relationale Gedächtnisarchitektur: Relationen (A steht zu B wie C zu D) sind modulationsvektorinvariant, weil sie nicht sensorisch, sondern strukturell kodiert sind. Die kreuzfunktionale Architektur (D.7) ist für diesen Modus optimiert. Der Preis sind hohe Kontextwechselkosten (das relationale Netzwerk muss bei jedem Domänenwechsel disambiguieren) und ein kollabierter Zeitbegriff (Erinnerungen sind über relationale Nähe zugänglich, nicht über temporale Position).
+
+**ECT-Amnesie als Modellvalidierung:** Der ECT-induzierte Modulationsvektor-Sprung (vgl. Anhang E.7.8) invalidiert Zugangspfade frischer Engramme (konsolidiert unter einem einzigen, kürzlich aktiven Vektor), während alte Engramme (konsolidiert unter vielen verschiedenen Vektoren, mit multiplen Abrufgelegenheiten) überleben. Das klinische Bild — retrograde Amnesie für Wochen bis Monate bei erhaltenem Langzeitgedächtnis — ist die exakte Vorhersage des Zustandsvektor-Modells.
+
 ---
 
 ### **D.7 Kognitive Architektur-Implikation: Kreuzfunktionale Kodierung**
@@ -2385,6 +2401,12 @@ Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. 
 | Alexithymie als Konsolidierungsgradient (Signal-Rausch-Verhältnis stabiler/instabiler Fenster) | Hypothetisch, konsistent | Eigenformulierung, konsistent mit Typ-II-Alexithymie-Profil und hippocampaler Mechanik |
 | Kreuzfunktionale Engramm-Architektur als kumulative Konsequenz der Desynchronisation | Hypothetisch, konsistent | Abgeleitet aus state-dependent memory + pseudozufälliger Modulation |
 | Raphe-Takt als Reset-Oszillator (nicht Informationskanal) | Hypothetisch, konsistent | Abgeleitet aus Volumentransmissions-Mechanik + phänomenologischer Korrelation |
+| Zustandsabhängiger Abruf bei instabilen Modulationsvektoren → Gedächtnisinstabilität | Hypothetisch, konsistent mit state-dependent memory-Literatur | Abgeleitet aus D.4 + D.6 |
+| Musik als externer Taktsubstitut für hippocampale Konsolidierung | Hypothetisch, konsistent | Abgeleitet aus auditorischem Entrainment + Modulationsvektor-Instabilität; phänomenologische Bestätigung (Anhang C) |
+| Relationale Kodierung als modulationsvektorinvariante Kompensation | Hypothetisch, konsistent | Abgeleitet aus D.7 (kreuzfunktionale Architektur) + Zustandsinvarianz struktureller Relationen |
+| ECT-Amnesie als Zustandsvektor-Sprung (frische Engramme verlieren Zugangspfad, alte überleben) | Hypothetisch, konsistent mit klinischem Bild | Abgeleitet aus D.6.4; ECT-Amnesie-Literatur als Modellvalidierung |
+| TGA bei Migränepatienten 2,48-fach erhöht | Gesichert | StatPearls 2024, epidemiologische Studien |
+| TGA-Ursprung in mediobasal-temporaler Region (Hippocampus CA1), MRN-innerviert | Gesichert | Mayo Clinic, StatPearls 2024, Neuroanatomie |
 | Fokale kortikale Off-State-Patches aus Raphe-Projektionsarchitektur | **Offen** | Mechanismus nicht hinreichend erklärt; zusätzliche lokale Faktoren erforderlich |
 
 ---
