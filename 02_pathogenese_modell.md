@@ -1486,6 +1486,7 @@ Die Bedeutung dieser Unterscheidung liegt in der partiellen Reversibilität: Ein
 Die Selbstbeobachtung unter kontrollierten Bedingungen reproduzierbar. Sie ist kein Beleg, aber auch nicht zufällig. Für eine belastbare Aussage wäre ein systematisches Beobachtungsprotokoll über mehrere Einnahmen unter vergleichbaren Bedingungen erforderlich – mit konsistenten emotionalen Stimuli (z.B. Musik, Texte, Situationen mit bekannter emotionaler Valenz) und qualitativem Erleben-Protokoll.
 
 Die mechanistische Plausibilität ist gegeben. Die therapeutische Implikation folgt direkt aus dem Gesamtmodell und erfordert keine eigenständige Intervention.
+
 ---
 
 ## **Anhang B: SWS-Phasenlage als Marker für Raphe-Dysregulation**
