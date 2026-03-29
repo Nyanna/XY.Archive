@@ -112,6 +112,50 @@ Erst unter LDX habe ich zum ersten Mal erlebt, was Müdigkeit tatsächlich ist. 
 
 Das war der Moment, in dem ich verstanden habe, dass alles, was ich zwanzig Jahre lang für Müdigkeit gehalten hatte, keine war.
 
+## Einschlafen ohne Signal — eine kompensatorische Technik
+
+Weil ich nie ein natürliches Einschlafsignal hatte, habe ich mir irgendwann beigebracht, den Übergang in den Schlaf willentlich auszulösen. Ich nenne es für mich „Alphawellen induzieren", obwohl ich nicht weiß, ob das neurophysiologisch korrekt ist.
+
+Die Technik funktioniert so: Ich stelle mir diskrete Bilder vor — keine Narration, keine zusammenhängende Geschichte, nur einzelne visuelle Szenen. Dann verlagere ich die Aufmerksamkeit vollständig in diese Bilder und lasse das Körpergefühl los. Nicht aktiv unterdrücken — eher: die Aufmerksamkeit so tief in das visuelle Imagery schieben, dass die somatosensorische Wahrnehmung wegfällt. Dass sie weg ist, merkt man erst, wenn man wieder zurückrutscht — dann fällt man in seinen Körper zurück, spürt plötzlich Gewicht, Lage, Temperatur.
+
+Wenn man das ein paar Mal zyklisch macht — hineinrutschen, zurückfallen, hineinrutschen — bleibt man irgendwann hängen und kommt nicht mehr zurück. Man schläft ein. An die späteren Zyklen erinnert man sich nicht mehr.
+
+Ich habe diese Technik nie gelernt. Ich habe sie gebraucht. Ohne natürliches Einschlafsignal war die Alternative, wach zu liegen und auf den Druck zu warten — oder den Übergang selbst auszulösen.
+
+### Der Krampf an der Schwelle
+
+Beim bewussten Absinken in den hypnagogen Zustand gibt es eine Schwelle, die sich unangenehm anfühlt. Ein Gefühl wie ein Krampfschmerz im Kopf — nicht wirklich Schmerz, nicht wirklich körperlich, aber etwas, das sich dagegen wehrt. Es hindert mich am Hineingleiten, ich wehre mich dagegen und bounce zurück in den Körper. Nach ein paar Zyklen funktioniert es trotzdem — vermutlich weil der Arousal, der den Widerstand antreibt, mit jedem Zyklus sinkt.
+
+Der „Krampf" hat vermutlich eine physische Komponente: den Tensor tympani, einen kleinen Muskel im Mittelohr, der vom Trigeminus (V3) innerviert wird. Ich kann diesen Muskel willentlich anspannen — es erzeugt ein dumpfes Rumpeln im Ohr und ein Druckgefühl im Kopf. Dieselbe Anspannung nutze ich in die andere Richtung: Um aus einem luziden Traum aufzuwachen, spanne ich den Tensor tympani an. Das propriozeptive Signal zieht mich zurück in den Körper.
+
+Das heißt: Der Krampf an der Einschlafschwelle und die Aufwachtechnik aus luziden Träumen sind möglicherweise derselbe Reflex in entgegengesetzter Richtung. Beim Einschlafen löst die willentliche Deafferentation — der plötzliche Wegfall somatosensorischen Inputs — einen protektiven Reflex aus, bei dem sich der Tensor tympani als Teil der trigeminalen Reflexkette mit anspannt. Das System flaggt die Abkopplung als Anomalie und zieht mich zurück. Beim Aufwachen nutze ich dieselbe Anspannung als Anker, um den Übergang bewusst zu steuern.
+
+### Zwischenzustände
+
+Mit derselben Technik lande ich manchmal nicht im normalen Schlaf, sondern in Zuständen, die normalerweise unbewusst durchlaufen werden:
+
+*Luzides Träumen:* Wenn genug metakognitiver Arousal bleibt, erlebe ich den Übergang in REM bewusst, statt ihn zu verschlafen. Selten, aber reproduzierbar.
+
+*Hypnagogie mit Umgebungsmischung:* Ein Zustand, in dem sich reale Umgebungsgeräusche mit Traumcontent mischen. Teile des Kortex verarbeiten noch extern, andere generieren bereits intern — ein halboffener thalamischer Gate.
+
+*Schlafparalyse:* Ich erreiche die REM-Atonie bei erhaltenem Bewusstsein. Halb Traum, halb wach, keine Bewegungskontrolle. Unangenehm, aber erklärbar: Das Bewusstsein ist noch online, wenn die pontine Motorhemmung bereits eingesetzt hat.
+
+All diese Zustände sind Zwischenstationen eines Übergangs, den automatische Systeme überspringen. Wer den Schlaf-Gate manuell bedient, hat Zugang zu den Stufen, die normalerweise unsichtbar durchlaufen werden.
+
+### Der Kontrast unter LDX
+
+Gestern Abend erlebte ich zum ersten Mal etwas, das ich erst jetzt als neu und unterschiedlich erkannte: Abendmüdigkeit. Nicht den Druck, nicht den Schalter, nicht das Wegkippen. Sondern ein kohärentes, eindeutiges Signal, das sagte: *Du bist jetzt müde. Du kannst jetzt schlafen.*
+
+Es war so anders und so bemerkenswert, dass ich nicht ins Bett wollte — das Signal selbst war interessanter als der Schlaf. Das ist die Ironie: Das erste bewusst und kohärente Müdigkeitssignal seid langer zeit, und mein System sagt „das muss ich analysieren" — was genau die Art von Arousal ist, die das Signal überschreibt.
+
+Der Kontrast zum Vorabend war aufschlussreich. Da hatte ich abends Schwarztee getrunken. Ich war aus Vernunft ins Bett gegangen — kein Signal, kein Gradient, nur die erlernte Regel. gestern Abend, ohne Koffein, kam das Signal durch. Zwei aufeinanderfolgende Abende, sonst gleiche Bedingungen.
+
+Die Implikation: Vor LDX hat Koffein einen diffusen Zustand durch einen anderen diffusen Zustand ersetzt — Arousal-Insuffizienz durch exogenen Adenosin-Antagonismus. Es gab kein kohärentes Signal, das man hätte überschreiben können, also gab es auch keinen wahrnehmbaren Effekt. „Kaffee bringt bei mir nichts oder das Gegenteil" war zwanzig Jahre lang meine Selbstbeschreibung. Sie war korrekt — aber nicht weil Koffein nicht wirkte, sondern weil es kein Zielsignal gab, gegen das die Wirkung sichtbar geworden wäre.
+
+Jetzt, mit einem kohärenten Müdigkeitssignal, ist Koffein plötzlich wahrnehmbar: Es überschreibt etwas, das vorher nicht da war. Das ist keine Veränderung der Koffeinpharmakologie. Es ist eine Veränderung der Signalkohärenz, gegen die Koffein wirkt.
+
+Die Einschlaftechnik funktioniert weiterhin. Es gibt zwei kategorial verschiedene Pfade ins Einschlafen — den manuellen Bypass und das natürliche Signal.
+
 ## Was ich anderen sagen würde
 
 Wenn du das liest und dich wiedererkennst — in dem Druck, der keine Müdigkeit ist, in dem Wegdriften, das kein Einschlafen ist, in dem Gefühl, dass Arbeit dich nicht erschöpft sondern zusammenhält, in den Naps, die sich wie Reboots anfühlen — dann bist du möglicherweise nicht faul, nicht unkonzentriert, nicht „einfach müde".
