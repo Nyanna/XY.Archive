@@ -1338,7 +1338,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | SWS-Phasenlage verschoben (Zyklus 3–4 statt 1–2) bei erhaltenem Quantum | Einzelfallbeobachtung | Tracker-Daten (Mi Band), mechanistisch konsistent (Anhang B) |
 | LDX normalisiert SWS-Phasenlage (Verschiebung nach vorn) | Einzelfallbeobachtung | Tracker-Daten, konsistent mit Modellvorhersage (Anhang B) |
 | Kortikale Insuffizienz (lokaler Schlaf) → sekundäre thalamische Destabilisierung über Rückkopplungsschleife | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus thalamokortikaler Rückkopplungsarchitektur + lokaler Schlaf |
-| Nap-Kaskade: lokaler Schlaf → Nap → prolongierte posteriore Sleep Inertia → thalamokortikale Destabilisierung → CSD-Schwellensenkung | Hypothetisch, konsistent | Selbstbeobachtung + Aufwachgradient-Literatur + Rückkopplungsmodell |
+| Nap-Kaskade: lokaler Schlaf → Nap → prolongierte posteriore Sleep Inertia → thalamokortikale Destabilisierung → CSD-Schwellensenkung | Hypothetisch, konsistent, quantitativ gestützt | Selbstbeobachtung + Tracker-Daten (r=0,276, p=0,019, Anhang B.5) |
 | CSD als kortikaler Reset-Mechanismus (erzwungene Resynchronisation) | Hypothetisch, konsistent | Abgeleitet aus CSD-Mechanismus + klinische Beobachtung (Post-Migräne-Klarheit) |
 | Betablocker-Paradox: Schwellenerhöhung ohne CSD-Reset → chronische Sub-CSD-Destabilisierung | Hypothetisch | Modellvorhersage, konsistent mit klinischer Beobachtung unter Metoprolol |
 | Doppeldämpfung unter Metoprolol: β₁-Blockade (noradrenerg) + fehlender CSD-Reset (strukturell) | Hypothetisch | Modellvorhersage, konsistent mit Selbstbeobachtung |
