@@ -100,7 +100,7 @@ Wenn dieses Modell auch nur in der Grundstruktur korrekt ist, dann existiert ein
 | :------ | :----- |
 | **2** | Primärdefekt: Kongenitale Raphe-Dysregulation (2.1–2.4), inkl. D2High-Shift und Two-Hit-Architektur (2.4.2), epidemiologische Stützung (2.4.3). Hypothalamische Circadian-Dysregulation (2.5): Schwebungsfrequenz (2.5.1), stochastisches Fenstermodell (2.5.2), autonomes Mitschwingen (2.5.3), kortikale Wachhaltefunktion der Raphe und lokaler Schlaf (2.5.4), Schlafarchitektur als zirkadianer Marker (2.5.5), Evidenzstatus (2.5.6). |
 | **3** | Downstream-Pathologie I: Thalamische Fehlkalibrierung. Kalibrierungsmechanismus (3.2), Predictive Coding (3.3), Signal-Rausch-Verhältnis und thalamischer Gain (3.4). |
-| **4** | Klinische Manifestation I: Migräne als Raphe-Zyklusstörung. Serotonin als universeller Modulator (4.1), Migränezyklus (4.2), lokaler Schlaf und kortikale Desynchronisation als Migränepfad inkl. Nap-Kaskade (4.3), CSD-Mechanismus (4.4), CSD als kortikaler Reset, Betablocker-Paradox und differentielle Pharmakodynamik (4.5). |
+| **4** | Klinische Manifestation I: Migräne als Raphe-Zyklusstörung. Serotonin als universeller Modulator (4.1), Migränezyklus (4.2), lokaler Schlaf und kortikale Desynchronisation als Migränepfad inkl. Nap-Kaskade (4.3), CSD-Mechanismus (4.4), CSD als kompensatorische Resynchronisation, Betablocker-Paradox und differentielle Pharmakodynamik (4.5). |
 | **5** | Klinische Manifestation II: Autonome Dysregulation. Drei afferente Pfade, vestibuloautonomer Reflex, TCR. |
 | **6** | Thalamische Kompensationstiefe als Verzweigungsvariable. |
 | **7** | Therapie und pharmakologisches Profil. |
