@@ -18,6 +18,12 @@ Morgens, etwa zwei Stunden nach dem Aufstehen, gibt es eine Tiefphase. Ich habe 
 
 Es fühlt sich an wie leichte Dissoziation. Nicht Müdigkeit im klassischen Sinne — ich gähne nicht, meine Augen sind nicht schwer. Es ist eher so, als würde die Auflösung meines Bewusstseins sinken. Weniger Bandbreite. Weniger Kontrast. Wie ein Bildschirm, der von hochauflösend auf Standard zurückschaltet.
 
+## Das verzögerte Aufwachen
+
+Ich kann aufstehen, wenn der Wecker klingelt. Kerzengerade, sofort. Das war nie das Problem.
+
+Das Problem kommt danach. Es gibt eine Phase — ungefähr deckungsgleich mit dem Zwei-Stunden-Loch — in der etwas zurückfällt, das bereits da war. Nicht Schlaftrunkenheit beim Aufwachen, nicht die Schwere, für die andere Kaffee brauchen. Etwas, das erst eintritt, nachdem ich bereits funktional war. Ich hielt es jahrelang für dasselbe wie bei anderen Menschen — das normale Nicht-sofort-auf-Touren-Kommen. Es ist nicht dasselbe. Es kommt zu spät dafür.
+
 ## Der Bewusstseinsdruck
 
 Es gibt ein Gefühl, das ich nur als „Druck auf das Bewusstsein" beschreiben kann. Es ist nicht Kopfschmerz. Es ist nicht Müdigkeit. Es ist, als würde etwas auf die Wahrnehmung selbst drücken. Wie eine Last, die nicht auf dem Körper liegt, sondern auf dem Wachsein.
@@ -32,15 +38,11 @@ Es gibt Momente, in denen ich einfach weg bin. Nicht eingeschlafen — ich sitze
 
 Mit Musik passiert es besonders leicht. Musik ist vorhersagbar, gleichförmig — sie gibt dem Gehirn etwas zu hören, aber nichts zu verarbeiten. Das macht es schlimmer, nicht besser.
 
-Was ich in diesen Momenten wahrnehme, wenn ich es überhaupt wahrnehme: weniger Bewegung im Bild. Weniger Rauschen im Bewusstsein. Ton auf dem linken Ohr leiser — aber nicht wirklich leiser, eher *weniger verarbeitet*. Es ist nicht das Hören, das ausfällt. Es ist das Verarbeiten. Eine Parästhesie des Bewusstseins.
+Was ich in diesen Momenten wahrnehme, wenn ich es überhaupt wahrnehme: weniger Bewegung im Bild. Weniger Rauschen im Bewusstsein. Ton auf dem linken Ohr leiser — aber nicht wirklich leiser, eher *weniger verarbeitet*. Und ein dumpfer Druck hinter dem Auge, als wäre der Sehnerv „locker" — nicht stechend, nicht pochend, eher ein Gefühl von etwas, das nicht richtig antwortet. Es ist nicht das Hören oder Sehen, das ausfällt. Es ist das Verarbeiten. Eine Parästhesie des Bewusstseins.
 
-## Der Druck hinter dem Auge
+## Der Migräneschmerz ist etwas anderes
 
-Ein anderes Gefühl, spezifischer. Druck hinter dem Auge, als wäre der Sehnerv „locker". Nicht stechend, nicht pochend — eher ein dumpfes Gefühl von etwas, das nicht richtig sitzt. Als würde ein Teil des visuellen Systems nicht zuverlässig antworten.
-
-Dieser Druck ist nicht der Migräneschmerz. Den Migräneschmerz kenne ich — er sitzt über den Augen, in der Stirn, und er ist so intensiv, dass ich meine Fingernägel in die Stirn bohren muss. Das ist etwas anderes, etwas Späteres in der Kaskade. Der Druck hinter dem Auge ist subtiler und kommt vorher. Er ist aushaltbar. Er ist ein Warnsignal.
-
-Früher habe ich diesen Unterschied nie bemerkt. Wenn die volle Migräne da war, war alles Schmerz — wo sollte ich differenzieren? Erst als die Migräne seltener wurde, konnte ich den Druck isoliert wahrnehmen. Als würde man erst sehen, dass eine einzelne Lampe flackert, wenn die anderen nicht auch flackern.
+Den Migräneschmerz kenne ich — er sitzt über den Augen, in der Stirn, und er ist so intensiv, dass ich meine Fingernägel in die Stirn bohren muss. Das ist kategorial verschieden von dem dumpfen Druck beim Wegdriften. Der Migräneschmerz ist etwas Späteres in der Kaskade, etwas Eigenes. Früher waren beide gleichzeitig da, ununterscheidbar. Erst als die Migräne seltener wurde, konnte ich das eine vom anderen trennen. Als würde man erst sehen, dass eine einzelne Lampe flackert, wenn die anderen nicht auch flackern.
 
 ## Der Powernap als Bewusstseinsreset
 
@@ -81,6 +83,14 @@ Was mir erst im Rückblick auffällt: Die harten Migräneanfälle wurden seltene
 Das klingt paradox, aber nach einem Migräneanfall fühlte ich mich oft besser als in den Tagen davor. Nicht sofort — direkt danach war ich erschöpft. Aber am nächsten Tag: klar. Scharf. Als hätte jemand die Festplatte defragmentiert. Dieses Gefühl hielt ein paar Tage, dann baute sich der Zustand wieder auf, und nach etwa sechs bis sieben Tagen war ich wieder am Punkt vor dem Anfall.
 
 Sechs bis sieben Tage. Das war mein Rhythmus, jahrelang. Nicht jeden siebten Tag eine Migräne, aber wenn eine kam, dann war es ungefähr eine Woche seit der letzten.
+
+## Die verschwundenen Träume
+
+Als Kind habe ich lebhaft geträumt. Als Jugendlicher habe ich luzides Träumen kultiviert — die Traumwelt war freier als die reale, und ich war lieber dort. Irgendwann in den Migränejahren hat das aufgehört. Nicht schlagartig — es gab Wichtigeres, die Zustände selbst waren interessanter als die Träume, und wenn phasenweise keine kamen, ist das untergegangen. Ich habe den Verlust nicht bemerkt.
+
+Erst unter Betablockern, mit vierzig, fiel mir auf, dass ich gar nicht mehr träumte. Ich hielt es für eine Alterserscheinung. Rückblickend war es chronische REM-Fragmentierung: nicht genug Kohärenz, damit eine Traumerinnerung den Schlaf-Wach-Übergang überlebt. Die seltenen Ausnahmen — intensive Träume nach Migräneanfällen — waren keine Zufälle, sondern der einzige Zustand, in dem der Kortex post-iktal kohärent genug war für konsolidierten REM.
+
+Unter LDX träume ich wieder. Regelmäßig, intensiv, erinnerbar. Der Kontrast zu den letzten Jahren ist so stark, dass er nicht zu übersehen ist. Was ich als Alterserscheinung abgetan hatte, war ein Symptom.
 
 ## Mit LDX
 
