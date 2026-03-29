@@ -1550,7 +1550,9 @@ Die mechanistische Plausibilität ist gegeben. Die therapeutische Implikation fo
 
 ---
 
-## **Anhang B: SWS-Phasenlage als Marker für Raphe-Dysregulation**
+## **Obsoletes Modell: SWS-Phasenlage als Marker für Raphe-Dysregulation**
+
+**Alter Anhang B: SWS-Phasenlage als Marker für Raphe-Dysregulation**
 
 ### Beobachtung
 
