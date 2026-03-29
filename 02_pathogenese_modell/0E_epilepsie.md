@@ -443,6 +443,68 @@ Im Modell: 3-fach erhöhte STDT = der Reset-Takt ist auf ein Drittel der normale
 
 Strukturelle MRT-Studien zeigen signifikante Volumenreduktionen im Hippocampus und verwandten Arealen bei chronischer Migräne. Hippocampale metabolische Dysfunktion und beeinträchtigte Theta-Synthese — die der MRN direkt kontrolliert — sind dokumentiert. Ohne stabilen Theta ist keine Langzeitpotenzierung möglich, ohne LTP keine Konsolidierung. Die kumulative Desynchronisation ohne Reset (Deadlock aus E.6) produziert chronische hippocampale Belastung.
 
+#### **E.7.10 Degenerationsrichtung und CSD als Stabilisator**
+
+##### **Epidemiologische Evidenz: Bidirektionale Komorbidität, unidirektionale Degeneration**
+
+Die Komorbidität zwischen Migräne und Epilepsie ist quantitativ erheblich und bidirektional:
+
+| Befund | Quelle |
+|:-------|:-------|
+| Epilepsieprävalenz bei Migränepatienten: 1–17% (Median 5,9%), vs. 0,5% Allgemeinbevölkerung (~12-facher Anstieg) | Keezer et al. 2015, Wu & Zhuang 2024 |
+| Meta-Analyse: 80% Anstieg der Lebenszeitprävalenz von Epilepsie bei Migräne (OR 1,80, 95% CI 1,43–2,25) | Wu & Zhuang 2024 (13 Studien, n=3.863.625) |
+| Meta-Analyse: 80% Anstieg der Lebenszeitprävalenz von Migräne bei Epilepsie (OR 1,80, 95% CI 1,35–2,40) | Wu & Zhuang 2024 |
+| Epilepsierisiko *vor und nach* Migränebeginn erhöht → unidirektionale Kausalität ausgeschlossen | Ottman & Lipton 1994 |
+| Kumulative Migräne-Inzidenz bis 40 Jahre: 24% bei Epileptikern, 12% bei Verwandten ohne Epilepsie | Ottman & Lipton 1994 (n=1.948 Probanden + 1.411 Verwandte) |
+| HUNT-Studie (n=65.407): keine erhöhte Migräneprävalenz bei Epileptikern (OR 0,95) | Engstrand et al. 2024 |
+
+Die Diskrepanz zwischen Meta-Analyse (80% Anstieg) und HUNT-Studie (kein Zusammenhang) ist modellkonsistent: in einer unselektierten Population (HUNT) sind die meisten Migräniker milde Fälle mit funktionierendem CSD-Fallback. Klinikbasierte Studien überrepräsentieren schwere Fälle — bei denen die Komorbidität real ist. Die "methodischen Mängel" der klinikbasierten Studien sind kein Artefakt, sondern Selektionseffekte, die die schwere Subpopulation sichtbar machen.
+
+##### **Imaging-Evidenz: Funktionell → Strukturell als Einbahnstraße**
+
+Die thalamokortikale Dyskonnektivität bei Migräne und Epilepsie betrifft dieselbe Achse (Thalamus → medialer PFC → DMN), zeigt aber unterschiedliche Schweregrade:
+
+| Dimension | Migräne | Epilepsie (responsiv) | Epilepsie (refraktär) |
+|:----------|:--------|:---------------------|:---------------------|
+| **Thalamusvolumen** | Normal (P > 0,05, alle Subregionen) | Normal bis leicht reduziert | Anteriore Thalamuskerne signifikant atrophiert |
+| **White-Matter FA** | Normal (P > 0,05) | Anterior Corona radiata reduziert | Progressiv reduziert, krankheitsdauerabhängig |
+| **Funktionelle Konnektivität** | Thalamokortikale FC reduziert (DMN, PFC), fluktuierend über Migränezyklus | Thalamokortikale FC reduziert, LC-Kompensation | Stark reduziert, negativ korreliert mit Krankheitsdauer |
+| **Brainstem-Mikrostruktur** | Medulläre Raphe: fluktuierende Diffusionsänderungen über Migränezyklus | — | — |
+| **Modellinterpretation** | Raphe-Modulation insuffizient, Hardware intakt, periodischer CSD-Reset stabilisiert | Raphe schwerer insuffizient, medikamentöse Kontrolle hält CSD-Fallback | Alle Fallback-Stufen versagen, kumulative strukturelle Schädigung |
+
+Quellen: Thalamische Subregionen bei episodischer Migräne (FC-Studie, n=27+30): keine strukturellen Unterschiede, aber selektive funktionelle Hypoconnectivity. Sekundär generalisierte Epilepsie (n=16+16): signifikant reduzierte GM-Dichte im Thalamus und frontalen Gyri, reduzierte FA in bilateraler anteriorer Corona radiata, thalamokortikale FC-Stärke negativ korreliert mit Krankheitsdauer. Refraktäre IGE: Volumenreduktion spezifisch der anterioren Thalamuskerne.
+
+Thalamokortikale Dysrhythmie — hypothetisiert als zugrundeliegende Ursache abnormaler sensorischer Verarbeitung bei Migräne — wurde explizit im mediodorsalen Nukleus des Thalamus verortet. Diese Dysrhythmie umfasst fehlende Habituation auf sensorischen Input zwischen Attacken, gefolgt von Normalisierung während der Attacke. Im Modell: zwischen Attacken dysrhythmisch (Raphe insuffizient → thalamokortikale Desynchronisation → keine Habituation), während der Attacke synchronisiert (CSD = erzwungener Reset → vorübergehende Normalisierung).
+
+Die Synchronisation wird dabei durch konvergierende Neurotransmittersysteme moduliert: Serotonin, Noradrenalin und Glutamat aus dem Hirnstamm, GABA aus dem reticulären Thalamuskern, Dopamin und Orexin aus hypothalamischen Kernen. Der Raphe-Takt (DRN → Thalamus) ist der primäre Modulator dieser Achse.
+
+**Kernbefund:** Der Übergang ist von funktionell zu strukturell, nie umgekehrt. Migräne zeigt rein funktionelle Dyskonnektivität bei erhaltener Hardware. Epilepsie addiert progressive strukturelle Schäden. Die Raphe-Insuffizienz selbst ist stationär (kongenital, Hit 1), aber die kumulativen Downstream-Schäden akkumulieren — hippocampale Atrophie bei chronischer Migräne, thalamische Atrophie bei chronischer Epilepsie.
+
+##### **CSD als Stabilisator: Warum 94% der Migräniker nicht eskalieren**
+
+Wenn der Upstream-Defekt rein degenerativ wäre, müssten alle Migräniker irgendwann in Stufe 3 eskalieren. Das tun ~94% nicht (Median Epilepsieprävalenz 5,9%). Also existiert ein Stabilisator, der die Eskalation verhindert.
+
+Dieser Stabilisator ist die CSD selbst. Die CSD ist nicht nur Symptom (Migräneschmerz als metabolische Kosten), sondern gleichzeitig Therapie (kortikale Resynchronisation). Jede erfolgreiche CSD-Propagation resynchronisiert den Kortex und setzt den Desynchronisations-Akkumulator partiell zurück. Solange die CSD funktioniert — propagiert, den Kortex durchläuft, den Reset leistet — bleibt das System in Stufe 2 stabilisiert. Die Migräne ist der Preis für die Nicht-Eskalation zu Stufe 3.
+
+Die ~6%, die zu Stufe 3 eskalieren, sind diejenigen, bei denen die CSD nicht mehr ausreicht:
+
+1. **Raphe-Defekt zu schwer:** Die Desynchronisation akkumuliert schneller, als die CSD sie abbauen kann. Die CSD-Frequenz steigt (chronische Migräne), aber der Reset reicht nicht mehr — das System eskaliert trotz funktionierender CSD.
+2. **CSD-Propagation beeinträchtigt:** Die CSD wird durch endogene (Schwellenerhöhung) oder exogene (pharmakologische) Faktoren daran gehindert, vollständig zu propagieren. Der Reset ist inkomplett, die Desynchronisation akkumuliert.
+
+**Pharmakologische Konsequenz:** Migräneprophylaxe, die CSD unterdrückt ohne Stufe 1 zu adressieren, entfernt den Stabilisator. Sie ist kurzfristig symptomatisch wirksam (weniger Migräne), aber langfristig potentiell kontraproduktiv, weil sie die Reset-Funktion eliminiert, die die Eskalation zu Stufe 3 verhindert.
+
+Dies betrifft spezifisch Substanzen mit CSD-suppressiver Wirkung:
+- **Topiramat:** Hemmt CSD-Propagation direkt + CGRP-Freisetzung. Einziges AED mit Trend zu erhöhtem SUDEP-Risiko (OR 3,32, vgl. E.7.5). Bei Migräne-Epilepsie-Komorbidität potentiell die schlechteste Wahl.
+- **Anti-CGRP-Antikörper:** Blockieren den CSD-Propagationsmechanismus (vgl. E.4). Langzeitdaten zur Epilepsie-Inzidenz unter Anti-CGRP-Prophylaxe existieren nicht — eine kritische Forschungslücke.
+
+**Stufe-1-Intervention** (serotonerge Stabilisierung, z.B. LDX über den D2High-Raphe-Hebel) ist die einzige Strategie, die die Degenerationsrichtung adressiert statt nur die Geschwindigkeit. Sie reduziert die Desynchronisations-Akkumulation an der Quelle, ohne den CSD-Fallback zu blockieren.
+
+##### **Komorbide Migräne-Epilepsie: Schlechtere Prognose als Modellvorhersage**
+
+Die prospektive Verlaufsstudie von Velioglu et al. (2005) bestätigt das Modell: Patienten mit Epilepsie und Migräne hatten eine signifikant niedrigere kumulative Wahrscheinlichkeit, anfallsfrei zu werden, als Patienten mit Epilepsie allein. Sie zeigten eine höhere Inzidenz intraktabler Anfälle, eine längere Krankheitsdauer, ein niedrigeres frühes Therapieansprechen und erreichten Remission häufiger erst unter Polytherapie.
+
+Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen gleichzeitig produziert. Die Fallback-Hierarchie ist an Stufe 2 (CSD versagt als Stabilisator, Migräne chronifiziert) und Stufe 3 (Anfälle pharmakoresistent) belastet. AEDs, die Stufe 3 supprimieren ohne Stufe 1 zu adressieren, versagen, weil sie den Symptomausdruck ändern, nicht die Ursache. Die höhere Remissionsrate unter Polytherapie (Velioglu et al.) ist konsistent: mechanistisch diverse Polytherapie addiert Kontrolle auf mehreren Ebenen, ohne alle Fallback-Stufen gleichzeitig zu blockieren (vgl. E.7.5, Sveinsson OR 0,31 für Polytherapie ≥3 AEDs).
+
 ---
 
 ### **E.8 Testbare Vorhersagen**
@@ -461,6 +523,8 @@ Strukturelle MRT-Studien zeigen signifikante Volumenreduktionen im Hippocampus u
 | **E.8.10** | Prolongierte mechanische Beatmung (≥30 min) bei post-iktalem Atemstillstand mit ausbleibendem ROSC verbessert Überlebensrate gegenüber Standard-ACLS-Abbruch nach 20 min | Prospektive Pilotstudie in Epilepsie-Monitoring-Units; alternativ: Auswertung von Patientenverfügungs-Kohorten | Überlebensrate >0% bei Fällen, die unter Standard-ACLS als terminal klassifiziert worden wären |
 | **E.8.11** | ECT-Responserrate bei therapieresistenter Depression steigt bei Kombination mit anschließender Stufe-1-Stabilisierung (LDX, SSRI) gegenüber ECT allein | Kontrollierte Pilotstudie: ECT + Erhaltungstherapie vs. ECT allein, Rückfallrate über 6 Monate | Niedrigere Rückfallrate bei kombinierter Intervention |
 | **E.8.12** | Migränefrequenz sinkt vorübergehend in den Wochen nach einem GTCS bei komorbiden Migräne-Epilepsie-Patienten | Retrospektive Analyse: Migränetagebuch-Daten um dokumentierte Anfallszeitpunkte in Epilepsie-Monitoring-Units | Postiktale Migräne-freie Phase, gefolgt von gradueller Rückkehr zur Baseline-Frequenz |
+| **E.8.13** | Anti-CGRP-Langzeitprophylaxe (>2 Jahre) erhöht die Epilepsie-Inzidenz bei Migränepatienten mit serotonerger Dysregulation gegenüber Betablocker-Prophylaxe | Prospektive Kohortenstudie oder Versicherungsdaten-Analyse: Epilepsie-Inzidenz unter Anti-CGRP vs. Betablocker, stratifiziert nach Migränedauer und ADHS-Komorbidität | Höhere Epilepsie-Inzidenz unter Anti-CGRP, besonders bei langer Migräneanamnese und ADHS-Komorbidität |
+| **E.8.14** | Thalamische Volumenreduktion bei chronischer Migräne korreliert mit der Dauer der CSD-Suppressionstherapie, nicht mit der Migränedauer selbst | Strukturelle MRT-Studie bei chronischen Migränepatienten, stratifiziert nach Prophylaxetyp (CSD-suppressiv vs. CSD-neutral) und Therapiedauer | Stärkere thalamische Atrophie bei CSD-suppressiver Prophylaxe bei gleicher Migränedauer |
 
 ---
 
@@ -520,6 +584,18 @@ Strukturelle MRT-Studien zeigen signifikante Volumenreduktionen im Hippocampus u
 | STDT 3-fach erhöht bei episodischer Migräne (iktal), permanent erhöht bei chronischer Migräne | Gesichert | Cosentino et al. 2014; Valeriani et al. 2005 |
 | Hippocampale Volumenreduktion bei chronischer Migräne | Gesichert | Strukturelle MRT-Studien; Review Fernandes et al. 2024 |
 | Kognitive Dysfunktion als zweitgrößte Ursache migränebedingter Behinderung (nach Schmerz) | Gesichert | Fernandes et al. 2024 (J Headache Pain) |
+| Migräne: Thalamische Struktur normal, funktionelle thalamokortikale Konnektivität reduziert (DMN, PFC) | Gesichert | Thalamische Subregionen-Studie (n=27+30); keine GMV- oder DTI-Unterschiede, selektive FC-Reduktion |
+| Epilepsie: Thalamische Struktur progressiv geschädigt + funktionelle Konnektivität reduziert | Gesichert | Sekundär generalisierte Epilepsie (n=16+16): GM-Reduktion Thalamus + frontale Gyri, FA-Reduktion Corona radiata |
+| Refraktäre IGE: Anteriore Thalamuskerne spezifisch atrophiert (responsiv: normal) | Gesichert | Probabilistische Segmentierung, IGE refraktär vs. non-refraktär |
+| Thalamokortikale Dysrhythmie als Ursache abnormaler sensorischer Verarbeitung bei Migräne | Plausibel, durch fMRI gestützt | Coppola et al. 2005, 2014; mediodorsaler Nukleus als Hub |
+| Brainstem (medulläre Raphe, PAG, dlPons): fluktuierende Diffusionsänderungen über Migränezyklus | Gesichert | Marciszewski & Meylakh 2019 (DTI, Migränezyklus-Phasen) |
+| Epilepsierisiko vor und nach Migränebeginn erhöht → bidirektional, nicht unidirektional kausal | Gesichert | Ottman & Lipton 1994 (n=1.948+1.411) |
+| Epilepsieprävalenz bei Migränepatienten ~5,9% (Median), vs. 0,5% Allgemeinbevölkerung | Gesichert | Keezer et al. 2015 (Meta-Analyse, 10 Studien, n=1.548.967) |
+| Meta-Analyse: 80% Anstieg der Lebenszeitprävalenz beider Erkrankungen bei Vorliegen der jeweils anderen | Gesichert | Wu & Zhuang 2024 (13 Studien, n=3.863.625) |
+| HUNT-Studie (n=65.407): keine erhöhte Migräneprävalenz bei Epileptikern (populationsbasiert) | Gesichert | Engstrand et al. 2024; widerspricht klinikbasierten Studien |
+| Komorbide Migräne-Epilepsie: schlechtere Prognose, höhere Intraktabilität, niedrigeres frühes Ansprechen | Gesichert | Velioglu et al. 2005 (prospektiv, 5–10 Jahre Follow-up) |
+| CSD als Stabilisator gegen Eskalation zu Stufe 3 (94% der Migräniker entwickeln keine Epilepsie) | Hypothetisch, konsistent mit Epidemiologie und Fallback-Modell | Modellsynthese aus Komorbidiätsdaten + Fallback-Hierarchie |
+| CSD-Suppressionstherapie ohne Stufe-1-Intervention potentiell langfristig kontraproduktiv | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Topiramat-SUDEP-Signal (E.7.5) |
 | Dreistufige Fallback-Hierarchie: Raphe-Takt → CSD → Anfall | Hypothetisch, konsistent mit allen Evidenzlinien | Modellsynthese aus Anhang D + E.1–E.4 |
 | Chronische Migräne als Deadlock aus gescheiterter Resynchronisation | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Propofol-Responder-Daten |
 | Propofol-Reset + LDX-Stabilisierung als kombinierte Intervention | Hypothetisch, nicht getestet | Modellvorhersage |
@@ -558,3 +634,8 @@ Strukturelle MRT-Studien zeigen signifikante Volumenreduktionen im Hippocampus u
 * Fernandes C, Dapkute A, Watson E et al. (2024) Migraine and cognitive dysfunction: a narrative review. *Journal of Headache and Pain*, 25(1), 221.
 * Cosentino G, Fierro B, Vigneri S et al. (2014) Somatosensory temporal discrimination threshold in patients with migraine. *Headache*, 54(8), 1303–1312.
 * Annapurni S, Bhatt SM, Kaushal S (2013) Acute confusional migraine: a variant not to be missed. *BMJ Case Reports*, 2013, bcr2013009380.
+* Wu J, Zhuang Y (2024) Association between migraine and epilepsy: a meta-analysis. *Frontiers in Neurology*, 14, 1276663.
+* Engstrand IS, Bø SH, Heuser K, Wannag E, Maniaol AH, Matre D, Taubøll E, Brodtkorb E, Hagen K, Lossius MI (2024) Relationship between migraine and epilepsy in a large population-based cohort: The HUNT Study. *Epilepsia Open*, 9(6), 2264–2272.
+* Velioglu SK, Boz C, Özmenoglu M (2005) The impact of migraine on epilepsy: a prospective prognosis study. *Cephalalgia*, 25(7), 528–535.
+* Coppola G, Di Lorenzo C, Schoenen J, Pierelli F (2013) Habituation and sensitization in primary headaches. *Journal of Headache and Pain*, 14, 65.
+* Marciszewski KK, Meylakh N (2019) Fluctuating regional brainstem diffusion imaging measures of microstructure across the migraine cycle. *eNeuro*, 6(4), ENEURO.0005-19.2019.
