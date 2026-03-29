@@ -68,5 +68,5 @@ Wenn dieses Modell auch nur in der Grundstruktur korrekt ist, dann existiert ein
 | **8** | Interozeptive Inkohärenz als Downstream-Effekt monoaminerger Desynchronisierung. Asynchrone Modulationssysteme (8.2), Phänomenologie der Inkohärenz (8.3), dopaminerge Synchronisierung (8.4), Reformulierung des ADHS-Kerndefizits (8.5). |
 | **9** | Evidenzstatus und Limitationen. |
 | **Anhang A** | ASD-Relation: Emotionsverarbeitung und Bindung. |
-| **Anhang B** | SWS-Phasenlage als Marker für Raphe-Dysregulation. |
+| **Anhang B** | Tracker-Datenanalyse: Kortikale Desynchronisation als Marker für Raphe-Dysregulation |
 | **Anhang C** | Phänomenologie eines Bewusstseinsresets: Subjektive Beschreibung von lokalem Schlaf, Bewusstseinsdruck, Nap-als-Reboot und differentiellen Arousal-Quellen als Erfahrungsbericht zum mechanistischen Modell (2.5.4, 4.3). |
