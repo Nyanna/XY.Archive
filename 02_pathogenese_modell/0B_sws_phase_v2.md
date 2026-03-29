@@ -282,18 +282,7 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 | Migräneprophylaxe ohne Upstream-Adressierung = Unterdrückung des Schutzmechanismus | Modellvorhersage | Abgeleitet aus B.6, konsistent mit Betablocker-Phänomenologie |
 | POST-Naps nicht kompensatorisch (null Fragmente in Nap-Nächten) | Deskriptiv | Tracker-Daten |
 
-### **B.10 Revisionsimplikationen für Hauptkapitel**
-
-| Kapitel | Revision | Priorität |
-|:--------|:---------|:----------|
-| **2.5.5** (Schlafarchitektur als zirkadianer Marker) | „Verschobene Phasenlage" ersetzen durch „räumliche Fragmentierung bei erhaltenem Quantum". Mechanismus: nicht verzögerte serotonerge Entladung, sondern insuffiziente globale Synchronisation. Tracker-Metriken als Evidenz referenzieren. | Hoch — Kernmechanismus betroffen |
-| **4.3** (Nap-Kaskade) | Nap-Kaskade und Nachtschlaf-Fragmentierung als denselben Mechanismus unter verschiedenen Arousal-Bedingungen rahmen. Die Nap-Korrelationsdaten (B.5) einbinden. | Mittel — Erweiterung, kein Widerspruch |
-| **4.5** (CSD als Reset) | CSD-Reformulierung als kompensatorische Resynchronisation integrieren. Post-Migräne-Klarheit, Naratriptan-Gegenprobe und Betablocker-Paradox als konvergente Evidenz. | Hoch — neue Interpretation |
-| **8.4** (Dopaminerge Synchronisierung) | Schlafkonsolidierung unter LDX als Evidenz für die allgemeine Synchronisierungsthese. REM-Konsolidierung → Traumerinnerung als subjektiver Kohärenzmarker. | Mittel — Ergänzung |
-| **9** (Evidenz und Limitationen) | Evidenztabelle: „SWS-Phasenlage verschoben" und „LDX normalisiert SWS-Phasenlage" ersetzen durch die statistischen Befunde aus B.3 und B.9. Evidenzniveau von „Einzelfallbeobachtung" auf „Statistisch signifikant (Tracker-Daten, n=79)" anheben. | Hoch — Evidenzstatus ändert sich |
-| **Anhang C** (Phänomenologie) | Unverändert — der phänomenologische Bericht beschreibt, was die Tracker-Daten quantifizieren. Kreuzreferenz auf Anhang B ergänzen. | Niedrig — nur Referenz |
-
-### **B.11 Limitationen**
+### **B.10 Limitationen**
 
 - Consumer-Tracker, keine PSG-Validierung. Die Stadienklassifikation ist intern und nicht reproduzierbar.
 - n=1, kein Kontrolldesign. Die Perioden-Trennung (PRE/POST) ist konfundiert mit Medikamentenwechsel, Jahreszeit und 13-monatiger Trageunterbrechung.
@@ -302,7 +291,7 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 - Die Interpretation des Trackers als „stochastischer Resonanz-Detektor" ist messtheoretisch konsistent, aber nicht extern validiert. Eine PSG-Parallelmessung wäre nötig, um die Tracker-Fragmentierung gegen globale SWA zu kalibrieren.
 - Die CSD-als-Resynchronisation-These ist mechanistisch konsistent und erklärt den klinischen Verlauf, aber nicht direkt testbar ohne iktale EEG-Aufzeichnung mit post-iktaler Schlafarchitektur-Analyse.
 
-### **B.12 Referenzen**
+### **B.11 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.
