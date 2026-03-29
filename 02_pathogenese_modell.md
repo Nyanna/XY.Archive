@@ -563,7 +563,7 @@ Das Ergebnis: Die circadiane Drift erzeugt am Punkt maximaler Phasenopposition n
 
 Wenn externe Aufgaben enden — Arbeitsende, Monotonie, Abend — fällt der exogene Drive weg. Was bleibt, ist der endogene Raphe-Tonus. Wenn dieser insuffizient ist, zeigt sich der Grundzustand: asynchrones Patchwork aus wachen und schlafenden kortikalen Regionen. Was subjektiv als „Erschöpfung nach der Arbeit" erlebt wird, ist nicht Konzentrationsermüdung, sondern der Wegfall des einzigen funktionierenden Synchronisators (vgl. Anhang C).
 
-#### **2.5.5 Schlafarchitektur als zirkadianer Marker**
+#### **2.5.5 Schlafarchitektur als kortikaler Kohärenzmarker**
 
 Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in 2.5.1–2.5.4 beschriebenen Raphe-Dysregulation und verbindet die circadiane Ebene mit der messbaren kortikalen Kohärenz.
 
