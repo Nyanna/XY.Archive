@@ -818,14 +818,19 @@ Die vollständige Kaskade verläuft über mehrere Stunden und ist phänomenologi
 
 **Phase 5 — Metabolische Eskalation:** Anhaltende kortikale Verarbeitungslast bei insuffizienter Kapazität erzeugt die metabolischen Voraussetzungen für CSD: Extrazelluläres K⁺ akkumuliert (jedes Aktionspotential pumpt K⁺ nach außen, Astrozyten-Clearance kommt nicht hinterher), extrazelluläres Glutamat steigt (Wiederaufnahme überlastet), ATP-Reserven sinken. Wenn K⁺ und Glutamat einen Schwellenwert überschreiten, wird die Depolarisation selbsterhaltend — CSD.
 
-**Entscheidende Einsicht:** Die externe Reizüberflutung (Abschnitt 4.2) und die Nap-Kaskade sind derselbe Mechanismus mit verschiedenen Eintrittspunkten. Die thalamokortikale Rückkopplungsschleife destabilisiert sich in beiden Fällen, weil die Verarbeitungslast die Kapazität übersteigt. Der Unterschied liegt in der Ursache der Überlast:
+**Entscheidende Einsicht:** Die externe Reizüberflutung (Abschnitt 4.2), die Nap-Kaskade und die nächtliche Schlaffragmentierung sind derselbe Mechanismus unter verschiedenen Arousal-Bedingungen. Die thalamokortikale Rückkopplungsschleife destabilisiert sich in allen drei Fällen, weil der Kortex keinen global kohärenten Zustand erreicht. Der Unterschied liegt nicht im Mechanismus, sondern in der Kontextbedingung:
 
-| Eintrittsweg | Ursache | Zeitkonstante |
-| :---- | :---- | :---- |
-| **Externe Überlastung** | Zu viel Signal bei normaler Verarbeitungskapazität | Minuten bis Stunden (abhängig von Expositionsdauer und Prädisposition) |
-| **Kortikale Insuffizienz (Nap-Kaskade)** | Normales Signal bei reduzierter Verarbeitungskapazität, plus internes Rauschen aus Up-State-Bursts | Stunden (langsamer Feedback-Loop) |
+| Eintrittsweg                  | Arousal-Bedingung         | Ursache                                                                                                                  | Zeitkonstante                     |
+| ----------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------ | --------------------------------- |
+| **Externe Überlastung**       | Wach, stimulusgetrieben   | Zu viel Signal bei normaler Verarbeitungskapazität                                                                       | Minuten bis Stunden               |
+| **Nap-Kaskade**               | Wach, ohne externen Drive | Normales Signal bei reduzierter Verarbeitungskapazität, plus internes Rauschen aus Up-State-Bursts                       | Stunden (langsamer Feedback-Loop) |
+| **Nächtliche Fragmentierung** | Schlaf                    | Patchy Off-States statt globaler SWS — derselbe räumlich inhomogene Zustand, den der Wachkortex als lokalen Schlaf zeigt | Gesamte Nacht (kumulativ)         |
 
-Am Thalamus ist das Netto-Ergebnis identisch. Die Rückkopplungsschleife destabilisiert sich, die metabolische Last steigt, die CSD-Schwelle wird erreicht.
+Am Thalamus ist das Netto-Ergebnis identisch. In allen drei Kontexten ist der Kortex ein topologisch fragmentiertes Patchwork, das keinen stabilen globalen Zustand erreicht. Was sich ändert, ist das Label: „lokaler Schlaf" bei Wachheit, „Schlaffragmentierung" in der Nacht.
+
+**Quantitative Stützung (Tracker-Daten, Anhang B.5):** Nächte mit höherer Fragmentierung (gemessen als Noise-Fragmente <5 min im Deep-Kanal) führen signifikant häufiger zu kompensatorischen Folge-Naps am nächsten Tag (r=0,276, p=0,019, n=79). Der Befund ist paradox: Fragmentierte Nächte zeigen *höhere* Deep-Gesamtdauer (129 vs. 106 min bei Nächten ohne Folge-Nap). Der Tracker klassifiziert genug Minuten als Deep — die Quantität stimmt, die Qualität nicht. Das Gehirn registriert korrekt, dass kein restaurativer SWS stattfand, und triggert kompensatorisches Schlafverhalten — das dann über die oben beschriebene Nap-Kaskade in Phase 1 einsteigt.
+
+Unter LDX ist dieser Zusammenhang aufgelöst: POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die verbleibenden POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch externe Faktoren motiviert (verkürzte Schlafzeit, spätes Zubettgehen). Die pharmakologische Synchronisation über die Raphe adressiert den Upstream-Defekt: stabilerer serotonerger Tonus → globale kortikale Kohärenz sowohl im Schlaf als auch im Wachzustand → kein kompensatorischer Nap-Bedarf → keine Kaskade.
 
 #### **4.3.5 Trigeminale Sensitisierung als parallele Kaskade**
 
