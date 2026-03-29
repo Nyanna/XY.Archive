@@ -2048,6 +2048,7 @@ Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine
 ---
 
 *Phänomenologische Beschreibung, kein klinisches Dokument. Dient der Selbsterkennung und dem Austausch.*
+
 ---
 
 ## **Anhang D: Raphe-Synchronisationsmechanik — Vom Schrittmacher zur kortikalen Kohärenz**
