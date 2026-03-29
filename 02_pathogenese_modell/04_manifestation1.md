@@ -172,15 +172,37 @@ Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase
 
 **Die metabolische Krise ist nicht der Auslöser der CSD, sondern ihre Konsequenz.** Der Versuch des Organismus, die Energieversorgung zu erhöhen (neurovaskuläre Kopplung), kann den Rückstand nicht vollständig ausgleichen, weil die Geschwindigkeit der Ionenumkehr die Regenerationskapazität übersteigt. Hinter der Wellenfront verbleibt ein metabolisch erschöpfter Kortex in Funktionsstille – klinisch als sensorische und motorische Ausfälle der Aura erfahrbar.
 
-### **4.5 CSD als kortikaler Reset-Mechanismus**
+### **4.5 CSD als kompensatorische Resynchronisation**
 
-#### **4.5.1 Resynchronisation durch Massendepolarisation**
+#### **4.5.1 Reformulierung: Von Pathologie zu Notfallkompensation**
 
-CSD ist nicht nur Pathologie. Sie ist auch ein Reset-Mechanismus. Eine vollständige CSD-Welle depolarisiert den gesamten Kortex einmal durch — jede Region, synchron, von vorne nach hinten. Danach folgt eine Phase kompletter Suppression, dann Repolarisation. Alle Regionen starten gleichzeitig neu. Das Patchwork aus desynchronisierten wachen und schlafenden Arealen wird gelöscht. Die thalamokortikale Schleife rekalibriert sich auf einen sauberen Zustand.
+Die Standardinterpretation der CSD ist pathologisch: ein Fehlereignis, das Schmerz verursacht und Funktion zerstört. Die im vorliegenden Modell entwickelte Analyse — gestützt durch die Tracker-Datenanalyse in Anhang B — legt eine funktionelle Reformulierung nahe:
 
-Funktional ist dies dasselbe, was der in Anhang C beschriebene Bewusstseinsreset durch einen optimal getimten Powernap approximiert — nur brutal und unkontrolliert. Das Ergebnis erklärt die klinische Beobachtung, dass nach einem Migräneanfall ein Zustand eintritt, der *klarer* ist als in den Tagen davor. Nicht trotz der Migräne, sondern durch sie: Der Anfall war der harte Reboot, den die insuffiziente Raphe nicht liefern konnte und den der Powernap nur teilweise approximiert.
+**Konventionell:** Trigger → Schwelle überschritten → CSD → Schmerz → Dysfunktion
 
-#### **4.5.2 Betablocker-Paradox: Schwellenanhebung ohne Reset**
+**Reformuliert:** Progressive kortikale Desynchronisation → Kompensation versagt → CSD als Notfall-Resynchronisation → Schmerz als metabolische Kosten → Kohärenz wiederhergestellt
+
+Eine vollständige CSD-Welle depolarisiert den gesamten Kortex einmal durch — jede Region, synchron, von vorne nach hinten. Danach folgt eine Phase kompletter Suppression, dann Repolarisation. Alle Regionen starten gleichzeitig neu. Das Patchwork aus desynchronisierten wachen und schlafenden Arealen wird gelöscht. Die thalamokortikale Schleife rekalibriert sich auf einen sauberen Zustand.
+
+Funktional ist dies dasselbe, was der in Anhang C beschriebene Bewusstseinsreset durch einen optimal getimten Powernap approximiert — nur brutal und unkontrolliert.
+
+#### **4.5.2 Drei konvergente Evidenzlinien**
+
+**1. Post-Migräne-Klarheit und konsolidierter REM**
+
+Nach einem Migräneanfall tritt ein Zustand ein, der *klarer* ist als in den Tagen davor. Nicht trotz der Migräne, sondern durch sie: Der Anfall war der harte Reboot, den die insuffiziente Raphe nicht liefern konnte und den der Powernap nur teilweise approximiert.
+
+Der Schlaf nach einem Migräneanfall zeigt intensives, erinnerbares Träumen — konsolidierter REM. Die Traumerinnerung ist nicht Folge der längeren Schlafdauer (überproportionaler REM-Anteil bei langem Schlaf wäre eine alternative Erklärung), sondern der CSD-erzwungenen Resynchronisation: Der REM ist konsolidiert, weil der Kortex post-CSD global kohärent ist. Die Traumerinnerung überlebt den Schlaf-Wach-Übergang nur, wenn die letzte REM-Phase konsolidiert genug war — sie ist das sensitivere Instrument als der Tracker (vgl. Anhang B.8).
+
+**2. Naratriptan-Gegenprobe**
+
+Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall → verhindert den Reset → verhindert die REM-Konsolidierung → Traumerinnerung nimmt ab. Die Abnahme bewussten Träumens ist antiproportional zum Naratriptan-Konsum — kausal konsistent. Wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
+
+**3. Betablocker-Paradox**
+
+Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren. (Ausführliche Analyse in 4.5.3.)
+
+#### **4.5.3 Betablocker-Paradox: Schwellenanhebung ohne Reset**
 
 Metoprolol als Migräneprophylaxe hebt die CSD-Schwelle, indem es die autonome Kaskade dämpft — weniger sympathische Entgleisung, weniger trigeminale Sensitisierung, weniger vaskuläre Amplifikation. Das verhindert, dass die Rückkopplungsschleife bis zur CSD eskaliert. Aber es verhindert nicht die zugrundeliegende Desynchronisation. Die Raphe ist immer noch insuffizient, das Patchwork entsteht immer noch, der Thalamus verliert immer noch Kalibrierung.
 
@@ -193,27 +215,37 @@ Metoprolol als Migräneprophylaxe hebt die CSD-Schwelle, indem es die autonome K
 
 Die Analogie: Fieberkrampf verhindern, aber die Infektion nicht behandeln. Das Fieber bleibt niedrig, erreicht nie den Krampf, aber es geht auch nie weg. Statt akuter Krisen eine chronische Hintergrunddestabilisierung.
 
-**Zweite Konsequenz — fehlende synaptische Renormalisierung:** CSD erzwingt eine massive synaptische Renormalisierung — es ist der extremste Fall von dem, was SWS im Kleinen tut (Tononi & Cirelli, Synaptic Homeostasis Hypothesis). Wenn CSD-Resets wegfallen und das SWS-Timing ohnehin verschoben ist (Anhang B), fehlen *beide* Mechanismen der synaptischen Renormalisierung. Langsamer Drift in immer mehr Sub-CSD-Instabilität.
+**Fehlende synaptische Renormalisierung:** CSD erzwingt eine massive synaptische Renormalisierung — es ist der extremste Fall von dem, was SWS im Kleinen tut (Tononi & Cirelli, Synaptic Homeostasis Hypothesis). Wenn CSD-Resets wegfallen und der SWS räumlich fragmentiert ist (Anhang B: Quantität erhalten, Kohärenz defizitär — 3,5× mehr Noise-Fragmente in Nächten mit kompensatorischen Folge-Naps, p=0,019), fehlen *beide* Mechanismen der synaptischen Renormalisierung. Langsamer Drift in immer mehr Sub-CSD-Instabilität.
 
-#### **4.5.3 Differentielle Pharmakodynamik: Metoprolol vs. LDX**
+**Therapeutische Konsequenz:** Reine Migräneprophylaxe ohne Upstream-Adressierung — ob Betablocker, Triptane oder CGRP-Antikörper — unterdrückt den Schutzmechanismus, ohne das Synchronisationsproblem zu lösen. Der Patient wird symptomfrei bei progredient fragmentiertem Kortex.
+
+#### **4.5.4 Differentielle Pharmakodynamik: Metoprolol vs. LDX**
 
 | Dimension | Metoprolol | Lisdexamfetamin |
 | :---- | :---- | :---- |
 | **Wirkmechanismus** | Symptomatische Downstream-Intervention: hebt CSD-Schwelle, dämpft autonome Kaskade | Kausale Upstream-Stabilisierung: dopaminerge Modulation der Raphe → stabiler serotonerger Tonus |
-| **Effekt auf Desynchronisation** | Kein Effekt — Raphe bleibt insuffizient, Patchwork entsteht weiterhin | Beseitigt — tonischer Arousal-Drive hält Kortex synchron |
+| **Effekt auf Desynchronisation** | Kein Effekt — Raphe bleibt insuffizient, Patchwork entsteht weiterhin | Beseitigt — tonischer Arousal-Drive hält Kortex synchron (Tracker-Evidenz: Episodenzahl/Stunde Deep p=0,005, REM p=0,005; Anhang B.3) |
 | **Effekt auf Reset-Bedarf** | Hebt Schwelle → verhindert Reset → chronische Akkumulation | Macht Reset unnötig → keine Akkumulation |
 | **Noradrenerge Dämpfung** | Ja — β₁-Blockade reduziert zentralen noradrenergen Tonus → Bewusstseinsschärfe reduziert | Nein — noradrenerge Wirkung bleibt erhalten bzw. wird verstärkt |
 | **Netto-Bewusstseinseffekt** | Doppelte Dämpfung: (1) pharmakologisch noradrenerg + (2) strukturell durch chronische Sub-CSD-Desynchronisation | Doppelte Enthemmung: (1) noradrenerge Dämpfung wegfällt + (2) Desynchronisation aufgelöst |
 
 Das subjektive Erleben unter Metoprolol — „wie eine leichte Ibuprofen-Dosis für das Bewusstsein" — ist die Summe beider Dämpfungen. Das „klarer und schärfer" unter LDX ist nicht LDX-Euphorie, sondern der Grundzustand ohne die doppelte Bremse.
 
-#### **4.5.4 Zyklische Akkumulation und der 6–7-Tage-Rhythmus**
+LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente thalamische Modulation → globale Zustandsübergänge → konsolidierter SWS und REM ohne CSD-Notwendigkeit. Der Tracker-Befund bestätigt: POST-Nap-Nächte zeigen null Noise-Fragmente — die pharmakologische Synchronisation ersetzt den CSD-Reset (Anhang B.8).
+
+#### **4.5.5 Evolutionäre Einordnung**
+
+Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution *für* die Fähigkeit zur CSD, nicht gegen sie. Der Schmerz ist die metabolische Rechnung, nicht die Funktion.
+
+Die ~6,5-Tage-Periodizität (im vorliegenden Fall) ist dann kein Anfallszyklus, sondern ein Wartungszyklus: Die Desynchronisation akkumuliert, bis der Funktionsverlust gefährlicher ist als die CSD-Kosten.
+
+#### **4.5.6 Zyklische Akkumulation und der 6–7-Tage-Rhythmus**
 
 Der in Abschnitt 2.5.1 beschriebene 26-h-Zyklus interagiert mit dem lokalen Schlaf-Mechanismus: Am Punkt maximaler circadianer Desynchronisation (~Tag 6–7) konvergieren alle Faktoren auf maximale Anfälligkeit für kortikale Desynchronisation:
 
 | Faktor | Beitrag am Punkt maximaler Phasenopposition |
 | :---- | :---- |
-| **SWS-Phasenlage** | Maximal verschoben → minimale nächtliche Renormalisierung (vgl. Anhang B) |
+| **SWS-Kohärenz** | Maximale räumliche Fragmentierung → minimale nächtliche Renormalisierung (vgl. Anhang B) |
 | **Raphe-Tagestonus** | Arbeitet komplett gegen externe Zeitstruktur → minimaler endogener Arousal-Drive während sozialer Wachzeit |
 | **Lokaler Schlaf** | Maximale Anfälligkeit — Regionen ohne externen Drive erfahren maximalen Mismatch zwischen endogener und sozialer Phase |
 | **Sub-CSD-Akkumulation** | Tägliche partielle Destabilisierung akkumuliert über die Woche, weil weder CSD-Reset noch adäquate SWS-Renormalisierung erfolgt |
@@ -221,7 +253,3 @@ Der in Abschnitt 2.5.1 beschriebene 26-h-Zyklus interagiert mit dem lokalen Schl
 Am Punkt maximaler Phasenopposition reicht minimale Perturbation. Der Migräneanfall resynchronisiert das System partiell (CSD als Reset), und der Zyklus beginnt erneut.
 
 **Diagnostische Implikation:** Ein einzelnes Schlaf-EEG ist diagnostisch wertlos für dieses Muster, weil es einen zufälligen Punkt im Zyklus erfasst. Aussagekräftig wäre ein 14-Tage-EEG mit spezifischer Analyse der zyklusweisen N3-Position als Funktion der Tage seit dem letzten Migräneanfall. Kein Standardprotokoll misst dies.
-
----
-
-*Kapitel 4 — Version 1.4, März 2026. Abschnitt 4.3 grundlegend erweitert um lokalen Schlaf, kortikale Desynchronisation und Nap-Kaskade. Abschnitt 4.5 (CSD als Reset, differentielle Pharmakodynamik) neu. Literaturstützen: Vyazovskiy et al. (2011), Andrillon et al. (2019, 2021), Bernardi et al. (2015), Luppi et al. (2025), Marzano et al. (2011).*
