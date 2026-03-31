@@ -1508,11 +1508,11 @@ Das klinisch bekannte limitierte Zeitfenster für Sumatriptan-Wirksamkeit erklä
 
 Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto geringer die Wirksamkeit — nicht weil der Schmerz „stärker" wird, sondern weil der Schmerz den peripheren Kanal verlässt, auf den Sumatriptan wirkt.
 
-### **8.10 Fallstudie: Migräne-Nacht 30./31.03.2026**
+### **8.10 Fallstudie: Migräne-Nacht A**
 
 *Klinisches Beispiel — Einzelfallanalyse auf Basis von Tracker-Daten und Symptomprotokoll*
 
-Die Migräne-Nacht vom 30./31.03.2026 liefert ein dreischichtiges Datenset, das die Mechanismen aus 8.9 in Echtzeit abbildet.
+Die Migräne-Nacht A liefert ein dreischichtiges Datenset, das die Mechanismen aus 8.9 in Echtzeit abbildet.
 
 #### **8.10.1 Drei Schichten der Schlafarchitektur**
 
@@ -1639,10 +1639,9 @@ Die folgenden Fragen sind aus dem bisherigen Modellierungsprozess hervorgegangen
 | Nr. | Frage | These / Hintergrund | Operationalisierung | Status |
 | :---- | :---- | :---- | :---- | :---- |
 | 1 | **Raphe-Depletionshypothese** | LDX stabilisiert die Raphe pro Kern, aber über ~28–30 Tage könnte die 5-HT-Synthese das Ceiling erreichen — Feuerung übersteigt Nachsynthese → Depletion trotz verfügbarem Dopamin | Monitoring über 2–3 weitere Zyklen ohne Metoprolol-Konfundierung | 3 Wochen post-Metoprolol zu kurz für Isolation; 10 Tage zwischen den beiden LDX-Durchbrüchen könnten Rebound, Depletion oder Baseline sein |
-| 2 | **Nystagmus-Lateralisierung als Marker für asymmetrische Raphe-Erschöpfung** | Der vertikale Blickrichtungsnystagmus (dokumentiert in 2.4.1) könnte bei asymmetrischem D2High-Shift zwischen B7/B8 lateralisiert auftreten | Systematische Dokumentation der Nystagmus-Richtung in Relation zum Anfallszyklus | Noch nicht dokumentiert |
-| 3 | **Exakte Inter-Raphe-Kopplung** | Läuft die Inter-Kern-Synchronisation ausschließlich über SCN oder gibt es direkte B7↔B8-Projektionen? Wenn ausschließlich über SCN: LDX kann pro-Kern-Takt stabilisieren, aber den Phasenversatz nicht korrigieren → erklärt den persistierenden ~4-Tage-Zyklus | Literaturrecherche zu direkten DR→MR-Verbindungen | Offen |
-| 4 | **Corpus-callosum-Propagation der tonischen Welle** | Geschwindigkeit und Symmetrie der transhemisphärischen Propagation über das Corpus callosum; Callosotomie-Befund (Auren persistieren, Generalisierung unterbunden) stützt intrahemisphärischen Ursprung | Literaturrecherche zu callosaler CSD/tonischer Wellen-Propagation | Offen |
-| 5 | **Retrobulbärer Druck — Anatomische Zuordnung** | Trigeminale Konvergenz? Orbitale Vaskulatur? Direkte thalamische Repräsentation? Der retrobulbäre Druck ist konsistent das früheste Symptom — aber sein anatomisches Substrat ist unklar | Literaturrecherche zu retrobulbärer Schmerzrepräsentation bei Migräne | Offen |
+| 2 | **Exakte Inter-Raphe-Kopplung** | Läuft die Inter-Kern-Synchronisation ausschließlich über SCN oder gibt es direkte B7↔B8-Projektionen? Wenn ausschließlich über SCN: LDX kann pro-Kern-Takt stabilisieren, aber den Phasenversatz nicht korrigieren → erklärt den persistierenden ~4-Tage-Zyklus | Literaturrecherche zu direkten DR→MR-Verbindungen | Offen |
+| 3 | **Corpus-callosum-Propagation der tonischen Welle** | Geschwindigkeit und Symmetrie der transhemisphärischen Propagation über das Corpus callosum; Callosotomie-Befund (Auren persistieren, Generalisierung unterbunden) stützt intrahemisphärischen Ursprung | Literaturrecherche zu callosaler CSD/tonischer Wellen-Propagation | Offen |
+| 4 | **Retrobulbärer Druck — Anatomische Zuordnung** | Trigeminale Konvergenz? Orbitale Vaskulatur? Direkte thalamische Repräsentation? Der retrobulbäre Druck ist konsistent das früheste Symptom — aber sein anatomisches Substrat ist unklar | Literaturrecherche zu retrobulbärer Schmerzrepräsentation bei Migräne | Offen |
 
 ---
 
@@ -2438,17 +2437,7 @@ Ich habe mir später eine elegante Erklärung ausgedacht — dass ich mein Gedä
 
 Ich habe nichts entschieden. Ich habe einen Weg gefunden, der funktioniert.
 
-## Was ich anderen sagen würde
-
-Wenn du das liest und dich wiedererkennst — in dem Druck, der keine Müdigkeit ist, in dem Wegdriften, das kein Einschlafen ist, in dem Gefühl, dass Arbeit dich nicht erschöpft sondern zusammenhält, in den Naps, die sich wie Reboots anfühlen — dann bist du möglicherweise nicht faul, nicht unkonzentriert, nicht „einfach müde".
-
-Es ist möglich, dass dein Gehirn einen Zustand nicht aufrechterhalten kann, den andere Menschen als selbstverständlich erleben: gleichmäßiges, stabiles Wachsein. Und dass alles, was du tust — die Strategien, die Rituale, die Naps, die Musik, der Kaffee, die Strukturierung deines Tages um Aufgaben herum — unbewusste Kompensation dafür ist.
-
-Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine. Ich hatte einen Grundzustand, der ohne externe Stütze nicht hält. Und ich hatte nie normale Müdigkeit — nur den Schalter zwischen „gehalten" und „nicht mehr gehalten".
-
 ## State-Dependent Memory — Anfallsengramme im Desync
-
-*(31.03.2026)*
 
 Zwanzig Jahre Migräneanfälle. Zwanzig Jahre, in denen ich die gesamte Phänomenologie eines Anfalls durchlebt habe — den Aufbau, die Aura, den Schmerz, die autonomen Symptome, das Danach. Und zwanzig Jahre, in denen ich mich zwischen den Anfällen kaum daran erinnern konnte. Nicht verdrängt. Nicht vergessen. Nicht abrufbar.
 
@@ -2464,19 +2453,15 @@ Unter LDX gibt es ein neues Fenster. Der PFC ist online — klar, metakognitiv k
 
 ## Posteriorer vs. frontaler Schmerz — Propagationstiefe als diagnostisches Kriterium
 
-*(31.03.2026)*
-
 Die übliche Migräne, die ich kenne, sitzt frontal. Supraorbital, über den Augen, V1-Territorium. Intensiv, bohrend, das volle Programm. Das ist die volle CSD-Propagation — die Welle hat den gesamten Weg zurückgelegt, von posterior nach anterior, bis in die frontale Endstrecke.
 
 Heute ist es anders. Der Schmerz sitzt weiter hinten. Posterior, okzipital. Nicht weniger unangenehm, aber an einer anderen Stelle. Und die Interpretation drängt sich auf: Die Propagation ist früher steckengeblieben. Was normalerweise bis nach vorne durchläuft, ist diesmal im hinteren Bereich zum Stehen gekommen. Weniger Ausbreitung, anderer Schmerzort.
 
-Am 26.03 war es ähnlich — auch posterior, auch steckengeblieben. Und das war ohne LDX-Nachdosierung. Das heißt: LDX allein ist nicht der Grund, warum die Propagation stoppt. Etwas anderes begrenzt die Ausbreitung, etwas das an manchen Tagen greift und an anderen nicht.
+Auch vor 10 Tagen war es ähnlich — auch posterior, auch steckengeblieben. Und das war ohne LDX-Nachdosierung. Das heißt: LDX allein ist nicht der Grund, warum die Propagation stoppt. Etwas anderes begrenzt die Ausbreitung, etwas das an manchen Tagen greift und an anderen nicht.
 
 Die Schmerzlokalisation wird damit zum Proxy für die Propagationstiefe. Frontal heißt: volle Propagation, die Welle hat den gesamten Kortex durchlaufen. Posterior heißt: frühzeitig gestoppt, begrenzte Ausbreitung. Nicht besser oder schlechter — aber diagnostisch informativ. Wo der Schmerz sitzt, sagt etwas darüber, wie weit es diesmal gekommen ist.
 
 ## „Wackelndes Gehirn" — subjektive Repräsentation thalamischer Interferenz
-
-*(31.03.2026)*
 
 Der retrobulbäre Druck — dieses Gefühl hinter dem Auge, das ich seit Jahren kenne — geht heute über in etwas anderes. Einen Kopfschmerz, der nicht frontal sitzt und nicht okzipital, sondern in einer Zone, die sich anfühlt wie die Mitte. Die Interferenzzone.
 
@@ -2485,8 +2470,6 @@ Ich kann es am besten beschreiben als „wackelndes Gehirn". Kein scharfer Schme
 Meine Interpretation: Das ist die subjektive Repräsentation der B7/B8-Interferenz im Midline- und intralaminären Thalamus. Zwei asynchrone serotonerge Quellen, die auf denselben Zielkern feuern, und das Ergebnis ist kein kohärentes Signal, sondern ein Interferenzmuster. Das Bewusstsein repräsentiert das als Instabilität — „wackeln" — weil es genau das ist: ein oszillatorischer Konflikt in einem Bereich, der normalerweise stabil sein sollte.
 
 ## Visuelle Phänomenologie — Rauschen statt Skotom
-
-*(31.03.2026)*
 
 Die visuellen Veränderungen während eines Anfalls waren bei mir nie so, wie die Literatur sie beschreibt. Kein Skotom. Keine wandernde Zickzacklinie. Kein Flimmern, das sich langsam über das Gesichtsfeld ausbreitet.
 
@@ -2500,8 +2483,6 @@ Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom
 
 ## PFC-Klarheit unter LDX während des Anfalls — ein Dissoziationsbefund
 
-*(31.03.2026)*
-
 Was mich heute am meisten überrascht: Der PFC war die ganze Zeit geschützt. Trotz schwerer Migräne — posteriorer Schmerz, visuelles Rauschen, autonome Symptome — war alles sehr klar erlebbar. Nicht benebelt, nicht diffus, nicht „durch Watte". Klar. Ich konnte beobachten, benennen, einordnen. Die Metakognition war intakt.
 
 Die autonomen Symptome waren heftig. Intensiver Schüttelfrost, dann Hitzewelle, Übelkeit. Das tonische Feld hat sich offensichtlich lateral und ins Stammhirn ausgebreitet — die vegetativen Zentren waren betroffen. Aber der PFC nicht.
@@ -2509,6 +2490,14 @@ Die autonomen Symptome waren heftig. Intensiver Schüttelfrost, dann Hitzewelle,
 Meine Interpretation: Der PFC ist durch die Single-Source-B7-Innervierung plus die dopaminerge LDX-Stabilisierung geschützt. B7 liefert kohärenten serotonergen Input, LDX stabilisiert die dopaminerge Versorgung — zusammen halten sie den PFC in einem Zustand, den das tonische Interferenzfeld nicht destabilisieren kann. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung im Stammhirn, und gleichzeitig kristallklare frontale Funktion.
 
 Keine Halluzinationen. Keine visuellen Illusionen jenseits des Rauschens. Keine Denkstörung. Das spricht gegen eine fokale CSD im PFC — wenn die Propagation bis in den Frontalkortex reichen würde, wäre die Klarheit nicht möglich. Der PFC war nicht nur geschützt, er war funktional intakt. Ein Fenster mitten in der Migräne.
+
+## Was ich anderen sagen würde
+
+Wenn du das liest und dich wiedererkennst — in dem Druck, der keine Müdigkeit ist, in dem Wegdriften, das kein Einschlafen ist, in dem Gefühl, dass Arbeit dich nicht erschöpft sondern zusammenhält, in den Naps, die sich wie Reboots anfühlen — dann bist du möglicherweise nicht faul, nicht unkonzentriert, nicht „einfach müde".
+
+Es ist möglich, dass dein Gehirn einen Zustand nicht aufrechterhalten kann, den andere Menschen als selbstverständlich erleben: gleichmäßiges, stabiles Wachsein. Und dass alles, was du tust — die Strategien, die Rituale, die Naps, die Musik, der Kaffee, die Strukturierung deines Tages um Aufgaben herum — unbewusste Kompensation dafür ist.
+
+Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine. Ich hatte einen Grundzustand, der ohne externe Stütze nicht hält. Und ich hatte nie normale Müdigkeit — nur den Schalter zwischen „gehalten" und „nicht mehr gehalten".
 
 ---
 
@@ -3371,7 +3360,7 @@ Die prospektive Verlaufsstudie von Velioglu et al. (2005) bestätigt das Modell:
 
 Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen gleichzeitig produziert. Die Fallback-Hierarchie ist an Stufe 2 (CSD versagt als Stabilisator, Migräne chronifiziert) und Stufe 3 (Anfälle pharmakoresistent) belastet. AEDs, die Stufe 3 supprimieren ohne Stufe 1 zu adressieren, versagen, weil sie den Symptomausdruck ändern, nicht die Ursache. Die höhere Remissionsrate unter Polytherapie (Velioglu et al.) ist konsistent: mechanistisch diverse Polytherapie addiert Kontrolle auf mehreren Ebenen, ohne alle Fallback-Stufen gleichzeitig zu blockieren (vgl. E.7.5, Sveinsson OR 0,31 für Polytherapie ≥3 AEDs).
 
-#### **E.7.11 Epileptisches Zündmuster als Terminalphase der tonischen Welle (Ergänzung März 2026)**
+#### **E.7.11 Epileptisches Zündmuster als Terminalphase der tonischen Welle**
 
 ##### **E.7.11.1 Revision: Keine synchrone Massenentladung**
 
@@ -3412,7 +3401,7 @@ Wenn der Callosotomie-Befund korrekt interpretiert wird, folgt eine strukturelle
 
 Bei Callosotomie fehlt diese Synchronisation: beide Hemisphären destabilisieren unabhängig, aber die koordinierte Generalisierung — die den klinisch sichtbaren GTCS produziert — erfordert die interhemisphärische Koppelung über das Corpus callosum.
 
-#### **E.7.13 Vorhersage: Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe (Ergänzung März 2026)**
+#### **E.7.13 Vorhersage: Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe**
 
 ##### **E.7.13.1 Kernhypothese**
 
