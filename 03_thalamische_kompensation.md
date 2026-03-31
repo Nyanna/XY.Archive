@@ -186,6 +186,10 @@ Das ethische Dilemma löst sich durch partielle Intervention. Nicht Normalisieru
 - **Monitoring:** Langzeitbeobachtung der kognitiven Entwicklung und sensorischen Verarbeitung als Titrationsfeedback.
 - **Aufklärung:** Eltern unter Kenntnis beider Verläufe – unbehandelt (Kompensation mit späterer Erschöpfung) und behandelt (reduzierte Extremamplituden bei erhaltenem Profil). Keine Empfehlung, nur Aufklärung über die Tradeoffs.
 
+### 4.6 CYP2D6-Poor-Metabolizer unter Atomoxetin als natürliches Dosisexperiment
+
+CYP2D6-Poor-Metabolizer (PM), die bis zu 10% der kaukasischen Population ausmachen, stellen ein natürliches Experiment für serotonerge Dosiseffekte unter Atomoxetin dar. Bei PM liegt die AUC ca. 10-fach und die Spitzenspiegel ca. 5-fach höher als bei Extensive Metabolizern (EM) – das effektive Rezeptorprofil verschiebt sich dadurch von der primären NET-Blockade in Richtung voller SERT-Blockade. Wenn der serotonerge Vektor des Modells kausal ist, ergibt sich eine testbare Prognose: PM sollten unter Atomoxetin stärkere serotonerge Nebenwirkungen **und** eine stärkere Migräneprophylaxe zeigen als EM bei gleicher Nominaldosis. Dieser Vergleich würde erlauben, den serotonergen Beitrag von Atomoxetin zur Nadir-Anhebung (vgl. 4.3) von der noradrenergen Komponente zu dissoziieren. **Evidenzstatus:** Hypothetisch, testbare Prognose.
+
 ---
 
 ## 5. Evidenzstatus
@@ -216,6 +220,7 @@ Das ethische Dilemma löst sich durch partielle Intervention. Nicht Normalisieru
 | Raphe-Dysregulation als ASD-Ätiologie | Plausibel, stark gestützt | Konvergenz aus 500+ Studien, TPH2-KO-Modelle, Depletion-Daten |
 | Vertikale Ableitung ADS/ADHS/HB aus thalamischer Kompensationstiefe | Hypothetisch, konsistent | Geteilte Genetik + serotonerge Konvergenz; keine direkte Evidenz |
 | Graduierte frühkindliche Titration als ethisch kompatible Intervention | Theoretisch, nicht validiert | Konzeptuell gestützt (Zafeiriou 2009); prospektive Studie erforderlich |
+| CYP2D6-PM unter Atomoxetin als Dissoziationstest für serotonergen Vektor | Hypothetisch, testbar | Pharmakokinetische PM-Daten gesichert; klinischer Vergleich PM vs. EM ausstehend |
 
 | Hauptlimitation: Das Modell ist konsistent und wird durch die Literatur stärker gestützt als erwartet – insbesondere die Kapazitätsthese (TPH2, Tryptophan-Depletion, verminderter Metabolismus) und die thalamokortikale Entwicklungsdynamik. Konsistenz ist dennoch kein Beleg. Die vertikale Ableitung (thalamische Kompensationstiefe als Verzweigungsvariable für ADS/ADHS/HB) ist die originärste Behauptung und bleibt ohne direkte empirische Stützung. Keine der gefundenen Quellen widerspricht dem Modell direkt. |
 | :---- |

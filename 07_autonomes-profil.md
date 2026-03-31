@@ -115,6 +115,24 @@ Pfad 2 – Direkt noradrenerge Supplementierung: LDX erhöht zentrales noradrene
 | Evidenzniveau | Modellvorhersage, abgeleitet aus etablierten Einzelmechanismen. Kompoundierung hypothetisch. |
 | :---- | :---- |
 
+### Guanfacin — Implikation für autonomes Profil
+
+**Bradykardie + Blutdrucksenkung:** Guanfacin als selektiver α2A-Agonist senkt Herzfrequenz und Blutdruck – identische Wirkrichtung wie Metoprolol auf die sympathische Reserve. Die sympathische Gegenregulation ist der einzige verfügbare Antagonist gegen den dorsalen Vagus-Shutdown (vgl. Pathogenetisches Modell 5.3, 5.4). Guanfacin schwächt diesen Gegenregulator über denselben Endpunkt wie Metoprolol: reduzierte kardiale Sympathikusantwort.
+
+**α2A-präsynaptische LC-Suppression:** Guanfacin supprimiert über präsynaptische α2A-Autorezeptoren die Feuerrate des Locus coeruleus (LC). Der Suppressionspfad PFC→PAG→NTS (Pfad 2 des Drei-Pfade-Modells, vgl. Pathogenetisches Modell 5.4) ist noradrenerg-abhängig – die präfrontale Suppressionskapazität gegen den vestibuloautonomen Reflex erfordert intakte noradrenerge PFC-Versorgung durch den LC. LC-Suppression durch Guanfacin schwächt diesen Pfad direkt. Das ist das pharmakologische Äquivalent zur erschöpfungsbedingten Suppression nach wiederholten Reflexzyklen.
+
+**Doppelte Schwächung:** Guanfacin erzeugt eine simultane Schwächung auf zwei Ebenen: peripher (Bradykardie über α2A-vermittelte Herzfrequenzsenkung → reduzierte sympathische Gegenregulation gegen Vagusreflex) und zentral (LC-Suppression → noradrenerge PFC-Versorgung reduziert → PFC→PAG→NTS Suppressionskapazität gegen den Reflex geschwächt). Beide Mechanismen sind unabhängig voneinander wirksam und kompoundieren das Risiko.
+
+**Explizite Gegenindikation im Modellkontext:** Guanfacin ist bei vorbestehender vestibuloautonomer Reflexvulnerabilität kontraindiziert. Die Kombination aus peripherer sympathischer Suppression und zentraler noradrenerger Dämpfung erzeugt dasselbe Risikoprofil wie Metoprolol — mit dem entscheidenden Unterschied, dass Guanfacin zusätzlich die zentrale Suppressionskapazität (Pfad 2) schwächt. Metoprolol wirkt primär peripher; Guanfacin wirkt peripher und zentral. Das Netto-Risikoprofil unter Guanfacin ist damit im Modellkontext ungünstiger als unter Metoprolol, ohne den protektiven Effekt der Migräneprophylaxe zu bieten.
+
+**Querverweise:** vgl. Pathogenetisches Modell 5.3 (Metoprolol-Antagonismus), 5.4 (Drei-Pfade-Modell, kompoundierender Effekt).
+
+| Aussage | Evidenzniveau | Quellenbasis |
+| :--- | :--- | :--- |
+| Guanfacin senkt Herzfrequenz und Blutdruck (α2A-vermittelt) | Gesichert | Zulassungsdaten, Arnsten 2020 |
+| α2A-Agonismus supprimiert LC-Feuerrate | Gesichert | Arnsten 2020 |
+| Doppelte Schwächung (peripher + zentral) bei vestibuloautonomer Vulnerabilität | Hypothetisch, modellabgeleitet | Abgeleitet aus 5.3–5.4 + Guanfacin-Pharmakologie |
+
 ---
 
 ## Therapeutische Möglichkeiten und Grenzen

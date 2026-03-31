@@ -301,6 +301,10 @@ Crawford et al. (2003) demonstrierten, dass die primäre Inhibition der DRN-Feue
 
 Demgegenüber sind SSRIs und 5-HT1A-Agonisten kernblind: Tao et al. (2003) wiesen nach, dass Paroxetin die Feuerrate beider Kerne mit identischer Potenz senkt und dass die ED50 des 5-HT1A-Agonisten 8-OH-DPAT für DRN und MRN nicht unterscheidbar ist.
 
+Ein klinisch relevantes Beispiel für verdeckte kernblinde serotonerge Modulation ist Atomoxetin. Atomoxetin gilt als selektiver Noradrenalin-Wiederaufnahmehemmer (NET-Inhibitor), doch diese Selektivität besteht nur in vitro: Das In-vitro-Selektivitätsverhältnis NET:SERT beträgt ca. 15:1, in vivo jedoch nur noch ca. 3:1. Ding et al. (2014) wiesen mittels PET an Rhesusaffen nach, dass therapeutische Atomoxetin-Dosen eine SERT-Okkupanz von über 85% erreichen — eine Größenordnung, die mit klinisch eingesetzten SSRIs vergleichbar ist. Da die SERT-Blockade den identischen molekularen Mechanismus wie bei SSRIs nutzt, ist die Kernblindheit nach Tao et al. (2003) direkt anwendbar: Atomoxetin erhöht die synaptische 5-HT-Verfügbarkeit in DRN und MRN proportional, ohne differentiellen Effekt auf einen der beiden Kerne. Die In-vitro/In-vivo-Diskrepanz (15:1 vs. 3:1) ist eine methodische Warnung vor unkritischer Übertragung von Bindungsaffinitäten auf die klinische Pharmakodynamik.
+
+Klinische Daten bestätigen die serotonerge Wirkkomponente: Atomoxetin senkt Vollblut-Serotonin um ca. 16% bei Initialdosis und bis zu 40% bei voller Titration — verglichen mit >70% unter SSRIs ein moderater, aber pharmakologisch relevanter Effekt. Konsistent damit berichteten Pan et al. (2022) in einer Meta-Analyse eine Erhöhung der Kopfschmerzinzidenz um 29% unter Atomoxetin gegenüber Placebo — ein Befund, der mit kernblinder serotonerger Perturbation vereinbar ist. In der ADHS-Pharmakologie wird diese serotonerge Wirkkomponente von Atomoxetin bisher nicht systematisch adressiert, obwohl sie die Raphe-Synchronisation in einer Weise perturbiert, die den hier beschriebenen pathogenetischen Mechanismen unterliegt.
+
 #### **D.8.2 Funktionelle Gegenläufigkeit: Belohnung und Aversion**
 
 Ohmura & Nagayasu (2025) dokumentierten in einem systematischen Review, dass DRN und MRN Belohnungs- und Aversionsinformation in entgegengesetzter Richtung verarbeiten. Diese funktionelle Diversität beider Kerne ist nicht durch kernblinde Pharmakologie adressierbar, sondern erfordert kern-selektive Interventionen. Die Autoren schlagen die Identifikation von „druggable genes" vor — Rezeptoren und Transporter mit differentieller Expression zwischen DRN und MRN — als Grundlage für zukünftige kern-selektive Pharmakologie.
@@ -329,6 +333,8 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 | H1-Histamin-Blockade senkt DRN-5-HT, kein Effekt auf MRN | Gesichert | Crawford et al. 2013 |
 | Paroxetin (SSRI) senkt Feuerrate beider Kerne identisch | Gesichert | Tao et al. 2003 |
 | 5-HT1A-Agonist ED50 für DRN und MRN identisch | Gesichert | Tao et al. 2003 |
+| Atomoxetin erreicht in vivo >85% SERT-Okkupanz (PET, Rhesusaffen) | Gesichert | Ding et al. 2014 |
+| Atomoxetin +29% Kopfschmerz vs. Placebo (Meta-Analyse) | Gesichert | Pan et al. 2022 |
 | DRN und MRN verarbeiten Belohnung/Aversion gegenläufig | Gesichert | Ohmura & Nagayasu 2025 |
 | Unidirektionale glutamaterge Verbindung DRN→MRN | Gesichert | Mokler et al. 2009 |
 | Kern-selektive Pharmakologie über „druggable genes" als zukünftiger Ansatz | Hypothetisch, vorgeschlagen | Ohmura & Nagayasu 2025 |

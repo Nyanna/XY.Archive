@@ -232,6 +232,10 @@ Die Purkinje-Zell-Hypersensitivität ist das Korrelat einer chronischen Adaptati
 | **Mechanismus (Integrator/Purkinje)** | Neurophysiologisch etabliert; Verknüpfung mit LDX-Hypersensitivität: plausibel, nicht publiziert |
 | **Rekalibrierungs-Vorhersage** | Hypothetisch; aus Rezeptorbiologie abgeleitet |
 
+Ein weiterer, bislang wenig beachteter Modulationspfad der DRN-Aktivität verläuft über TAAR1 (Trace Amine-Associated Receptor 1), der sowohl im DRN als auch im VTA dicht exprimiert ist (Lindemann et al. 2008). TAAR1-Agonismus moduliert die Desensibilisierungsrate und Agonist-Potenz an 5-HT1A-Autorezeptoren im DRN (Revel et al. 2011, PNAS 108:8485). Die Wirkrichtung ist dabei dosisabhängig bifunktional: Voller TAAR1-Agonismus (RO5256390) supprimiert DRN-5-HT-Neurone, während partieller Agonismus (RO5263397) sie stimuliert (Dremencov et al. 2022, Mol Psychiatry). Pharmakologisch relevant wird dieser Pfad durch den Befund, dass Guanfacin — primär als α2A-Agonist in der ADHS-Therapie eingesetzt — ein potenter hTAAR1-Vollagonist ist (EC50 ≈ 20 nM; Cichero et al. 2023). Guanfacin wäre damit ein unbeabsichtigter Modulator der Raphe-Autorezeptor-Schleife, dessen klinische Effekte auf die 5-HT1A-Dynamik bisher nicht berücksichtigt wurden.
+
+Die In-vivo-Richtung dieser Modulation ist allerdings nicht eindeutig ableitbar und muss als offene Frage explizit dokumentiert werden: Wenn TAAR1-Agonismus die 5-HT1A-Desensibilisierung *stabilisiert*, wäre Guanfacin paradoxerweise ein partieller Raphe-Stabilisator — ein therapeutisch günstiger Nebeneffekt. Wenn er sie hingegen *destabilisiert*, verstärkt Guanfacin den postulierten Primärdefekt der Autorezeptor-Schleife. Unabhängig von der Richtungsklärung zeigt der TAAR1-Pfad, dass die 5-HT1A-Autorezeptor-Schleife von mehreren Seiten pharmakologisch erreichbar ist — nicht nur über SERT-Blockade (die den Kerndefekt nicht adressiert) oder die DA→DRN-Upstream-Modulation, sondern auch über TAAR1-vermittelte Desensibilisierungsmodulation. Dies erweitert das therapeutische Zielspektrum und unterstreicht die Komplexität der Raphe-Homöostase.
+
 ### **2.4.2 D2High-Shift als Spätfolge frühkindlicher Glukokortikoidexposition**
 
 #### **Hintergrund: D2High/D2Low-Konformationsgleichgewicht**
@@ -816,6 +820,37 @@ Beide Modelle konvergieren auf dieselbe Kausalkette, beschrieben von unterschied
 | Topiramat | Indirekte serotonerge Modulation | Multimodal, serotonerge Komponente |
 | Triptane (akut) | 5-HT1B/D-Agonismus | Direkte Kaskaden-Intervention über Serotoninrezeptoren |
 | CGRP-Antagonisten | Einzige Ausnahme | Kaskade, nicht Auslöser – ob CGRP upstream oder parallel zu Serotonin liegt, ist unklar |
+
+#### **Unabhängige Modellstütze: Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation**
+
+**Hintergrund — ADHS-Migräne-Komorbidität:** Pan et al. (2022, *Psychological Medicine* 52:14–25) berichten in einer Meta-Analyse von 12 Studien mit >2,7 Millionen Kindern und Jugendlichen, dass ADHS die Kopfschmerzrate verdoppelt (OR ≈ 2,0). Die Komorbidität betrifft spezifisch **Migräne**, nicht Spannungskopfschmerz — ein Muster, das mit serotonerger Ätiologie konsistent ist, da Spannungskopfschmerz nicht primär serotonerg vermittelt wird.
+
+**Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation (Pan et al. 2022)**
+
+| Substanzklasse | Kopfschmerz vs. Placebo | Studien/Teilnehmer | Modellvorhersage |
+| :--- | :--- | :--- | :--- |
+| **Amphetamine (inkl. LDX)** | Kein Unterschied (OR ≈ 1,0) | 10 RCTs, n = 2.672 | ✓ Upstream-Stabilisierung → keine Verschlechterung |
+| **Atomoxetin** | +29 % (signifikant) | 22 RCTs, n = 3.857 | ✓ SERT-Perturbation ohne Stabilisierung |
+| **Guanfacin** | +43 % (signifikant) | 8 RCTs, n = 1.956 | ✓ LC-Dämpfung + TAAR1→DRN-Suppression |
+| **Methylphenidat** | +24 % | 18 RCTs, n = 3.249 | Gemischt (DRN-Modulation nicht upstream-stabilisierend) |
+
+**Interpretation:**
+
+- **Amphetamine** sind die einzige Substanzklasse mit Upstream-Raphe-Stabilisierung (vgl. 2.4, Dopamin-Upstream-Stabilisierung) — und die einzige ohne Kopfschmerzerhöhung. Die Nulldifferenz gegenüber Placebo bei >2.600 Teilnehmern ist ein starkes negatives Signal.
+- **Atomoxetin** hemmt den Noradrenalin-Transporter, perturbiert aber sekundär das serotonerge System (SERT-Affinität) ohne die stabilisierende Upstream-Komponente der Amphetamine (vgl. Anhang D.8, kernblinde SERT-Modulation). Die +29 % Kopfschmerzerhöhung ist modellkongruent.
+- **Guanfacin** dämpft den Locus coeruleus und unterdrückt über TAAR1→DRN die tonische Raphe-Aktivität. Die +43 % Kopfschmerzerhöhung — die höchste aller Klassen — ist konsistent mit einer Raphe-Suppressionshypothese.
+- **Methylphenidat** zeigt ein gemischtes Bild (+24 %, Signifikanzschwelle nicht sicher unterschritten), was zur unspezifischen DRN-Modulation ohne upstream-stabilisierende Wirkung passt.
+- Die Dreifach-Dissoziation (Amphetamine neutral / Atomoxetin + / Guanfacin ++) ist ein **unbeabsichtigtes natürliches Experiment**, das nicht zur Prüfung des serotonergen Modells designiert wurde, aber dessen Vorhersagen bestätigt.
+- Die Spezifität der Komorbidität für **Migräne** (nicht Spannungskopfschmerz) stützt die serotonerge Ätiologie zusätzlich (vgl. 4.1).
+
+**Einzelfälle als Illustration** (nicht als Evidenz, aber modellkongruent):
+
+- *Atomoxetin-induzierte Migräne-Reaktivierung:* 22-Jähriger, 6 Jahre migränefrei, entwickelt unter Strattera 40 mg fünf Attacken innerhalb weniger Monate (Drugs.com, Patientenbericht). Konsistent mit SERT-Perturbation als Trigger bei prädisponiertem System.
+- *Atomoxetin-induzierter fokaler Anfall mit CSD-kompatiblem Bild:* 18-Jährige mit reversibler Hemianopsie, Aphasie und EEG-Veränderungen unter Atomoxetin (Finta et al. 2021, PMC8206568). Das klinische Bild ist mit Cortical Spreading Depression vereinbar und illustriert, dass noradrenerge/serotonerge Perturbation kortikale Kaskaden triggern kann.
+
+**Evidenzgrading:** Meta-Analyse (Pan et al. 2022) = **gesichert**; Modellinterpretation der Dreifach-Dissoziation = **hypothetisch**; Einzelfälle = **illustrativ**.
+
+**Querverweise:** vgl. 4.1 (Serotonin als universeller Auslöser), vgl. 2.4 (Dopamin-Upstream-Stabilisierung), vgl. Anhang D.8 (kernblinde SERT-Modulation).
 
 #### **Revision der Trigger-Logik (Revision April 2026)**
 
@@ -2890,6 +2925,10 @@ Crawford et al. (2003) demonstrierten, dass die primäre Inhibition der DRN-Feue
 
 Demgegenüber sind SSRIs und 5-HT1A-Agonisten kernblind: Tao et al. (2003) wiesen nach, dass Paroxetin die Feuerrate beider Kerne mit identischer Potenz senkt und dass die ED50 des 5-HT1A-Agonisten 8-OH-DPAT für DRN und MRN nicht unterscheidbar ist.
 
+Ein klinisch relevantes Beispiel für verdeckte kernblinde serotonerge Modulation ist Atomoxetin. Atomoxetin gilt als selektiver Noradrenalin-Wiederaufnahmehemmer (NET-Inhibitor), doch diese Selektivität besteht nur in vitro: Das In-vitro-Selektivitätsverhältnis NET:SERT beträgt ca. 15:1, in vivo jedoch nur noch ca. 3:1. Ding et al. (2014) wiesen mittels PET an Rhesusaffen nach, dass therapeutische Atomoxetin-Dosen eine SERT-Okkupanz von über 85% erreichen — eine Größenordnung, die mit klinisch eingesetzten SSRIs vergleichbar ist. Da die SERT-Blockade den identischen molekularen Mechanismus wie bei SSRIs nutzt, ist die Kernblindheit nach Tao et al. (2003) direkt anwendbar: Atomoxetin erhöht die synaptische 5-HT-Verfügbarkeit in DRN und MRN proportional, ohne differentiellen Effekt auf einen der beiden Kerne. Die In-vitro/In-vivo-Diskrepanz (15:1 vs. 3:1) ist eine methodische Warnung vor unkritischer Übertragung von Bindungsaffinitäten auf die klinische Pharmakodynamik.
+
+Klinische Daten bestätigen die serotonerge Wirkkomponente: Atomoxetin senkt Vollblut-Serotonin um ca. 16% bei Initialdosis und bis zu 40% bei voller Titration — verglichen mit >70% unter SSRIs ein moderater, aber pharmakologisch relevanter Effekt. Konsistent damit berichteten Pan et al. (2022) in einer Meta-Analyse eine Erhöhung der Kopfschmerzinzidenz um 29% unter Atomoxetin gegenüber Placebo — ein Befund, der mit kernblinder serotonerger Perturbation vereinbar ist. In der ADHS-Pharmakologie wird diese serotonerge Wirkkomponente von Atomoxetin bisher nicht systematisch adressiert, obwohl sie die Raphe-Synchronisation in einer Weise perturbiert, die den hier beschriebenen pathogenetischen Mechanismen unterliegt.
+
 #### **D.8.2 Funktionelle Gegenläufigkeit: Belohnung und Aversion**
 
 Ohmura & Nagayasu (2025) dokumentierten in einem systematischen Review, dass DRN und MRN Belohnungs- und Aversionsinformation in entgegengesetzter Richtung verarbeiten. Diese funktionelle Diversität beider Kerne ist nicht durch kernblinde Pharmakologie adressierbar, sondern erfordert kern-selektive Interventionen. Die Autoren schlagen die Identifikation von „druggable genes" vor — Rezeptoren und Transporter mit differentieller Expression zwischen DRN und MRN — als Grundlage für zukünftige kern-selektive Pharmakologie.
@@ -2918,6 +2957,8 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 | H1-Histamin-Blockade senkt DRN-5-HT, kein Effekt auf MRN | Gesichert | Crawford et al. 2013 |
 | Paroxetin (SSRI) senkt Feuerrate beider Kerne identisch | Gesichert | Tao et al. 2003 |
 | 5-HT1A-Agonist ED50 für DRN und MRN identisch | Gesichert | Tao et al. 2003 |
+| Atomoxetin erreicht in vivo >85% SERT-Okkupanz (PET, Rhesusaffen) | Gesichert | Ding et al. 2014 |
+| Atomoxetin +29% Kopfschmerz vs. Placebo (Meta-Analyse) | Gesichert | Pan et al. 2022 |
 | DRN und MRN verarbeiten Belohnung/Aversion gegenläufig | Gesichert | Ohmura & Nagayasu 2025 |
 | Unidirektionale glutamaterge Verbindung DRN→MRN | Gesichert | Mokler et al. 2009 |
 | Kern-selektive Pharmakologie über „druggable genes" als zukünftiger Ansatz | Hypothetisch, vorgeschlagen | Ohmura & Nagayasu 2025 |

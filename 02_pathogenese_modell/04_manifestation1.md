@@ -17,6 +17,37 @@
 | Triptane (akut) | 5-HT1B/D-Agonismus | Direkte Kaskaden-Intervention über Serotoninrezeptoren |
 | CGRP-Antagonisten | Einzige Ausnahme | Kaskade, nicht Auslöser – ob CGRP upstream oder parallel zu Serotonin liegt, ist unklar |
 
+#### **Unabhängige Modellstütze: Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation**
+
+**Hintergrund — ADHS-Migräne-Komorbidität:** Pan et al. (2022, *Psychological Medicine* 52:14–25) berichten in einer Meta-Analyse von 12 Studien mit >2,7 Millionen Kindern und Jugendlichen, dass ADHS die Kopfschmerzrate verdoppelt (OR ≈ 2,0). Die Komorbidität betrifft spezifisch **Migräne**, nicht Spannungskopfschmerz — ein Muster, das mit serotonerger Ätiologie konsistent ist, da Spannungskopfschmerz nicht primär serotonerg vermittelt wird.
+
+**Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation (Pan et al. 2022)**
+
+| Substanzklasse | Kopfschmerz vs. Placebo | Studien/Teilnehmer | Modellvorhersage |
+| :--- | :--- | :--- | :--- |
+| **Amphetamine (inkl. LDX)** | Kein Unterschied (OR ≈ 1,0) | 10 RCTs, n = 2.672 | ✓ Upstream-Stabilisierung → keine Verschlechterung |
+| **Atomoxetin** | +29 % (signifikant) | 22 RCTs, n = 3.857 | ✓ SERT-Perturbation ohne Stabilisierung |
+| **Guanfacin** | +43 % (signifikant) | 8 RCTs, n = 1.956 | ✓ LC-Dämpfung + TAAR1→DRN-Suppression |
+| **Methylphenidat** | +24 % | 18 RCTs, n = 3.249 | Gemischt (DRN-Modulation nicht upstream-stabilisierend) |
+
+**Interpretation:**
+
+- **Amphetamine** sind die einzige Substanzklasse mit Upstream-Raphe-Stabilisierung (vgl. 2.4, Dopamin-Upstream-Stabilisierung) — und die einzige ohne Kopfschmerzerhöhung. Die Nulldifferenz gegenüber Placebo bei >2.600 Teilnehmern ist ein starkes negatives Signal.
+- **Atomoxetin** hemmt den Noradrenalin-Transporter, perturbiert aber sekundär das serotonerge System (SERT-Affinität) ohne die stabilisierende Upstream-Komponente der Amphetamine (vgl. Anhang D.8, kernblinde SERT-Modulation). Die +29 % Kopfschmerzerhöhung ist modellkongruent.
+- **Guanfacin** dämpft den Locus coeruleus und unterdrückt über TAAR1→DRN die tonische Raphe-Aktivität. Die +43 % Kopfschmerzerhöhung — die höchste aller Klassen — ist konsistent mit einer Raphe-Suppressionshypothese.
+- **Methylphenidat** zeigt ein gemischtes Bild (+24 %, Signifikanzschwelle nicht sicher unterschritten), was zur unspezifischen DRN-Modulation ohne upstream-stabilisierende Wirkung passt.
+- Die Dreifach-Dissoziation (Amphetamine neutral / Atomoxetin + / Guanfacin ++) ist ein **unbeabsichtigtes natürliches Experiment**, das nicht zur Prüfung des serotonergen Modells designiert wurde, aber dessen Vorhersagen bestätigt.
+- Die Spezifität der Komorbidität für **Migräne** (nicht Spannungskopfschmerz) stützt die serotonerge Ätiologie zusätzlich (vgl. 4.1).
+
+**Einzelfälle als Illustration** (nicht als Evidenz, aber modellkongruent):
+
+- *Atomoxetin-induzierte Migräne-Reaktivierung:* 22-Jähriger, 6 Jahre migränefrei, entwickelt unter Strattera 40 mg fünf Attacken innerhalb weniger Monate (Drugs.com, Patientenbericht). Konsistent mit SERT-Perturbation als Trigger bei prädisponiertem System.
+- *Atomoxetin-induzierter fokaler Anfall mit CSD-kompatiblem Bild:* 18-Jährige mit reversibler Hemianopsie, Aphasie und EEG-Veränderungen unter Atomoxetin (Finta et al. 2021, PMC8206568). Das klinische Bild ist mit Cortical Spreading Depression vereinbar und illustriert, dass noradrenerge/serotonerge Perturbation kortikale Kaskaden triggern kann.
+
+**Evidenzgrading:** Meta-Analyse (Pan et al. 2022) = **gesichert**; Modellinterpretation der Dreifach-Dissoziation = **hypothetisch**; Einzelfälle = **illustrativ**.
+
+**Querverweise:** vgl. 4.1 (Serotonin als universeller Auslöser), vgl. 2.4 (Dopamin-Upstream-Stabilisierung), vgl. Anhang D.8 (kernblinde SERT-Modulation).
+
 #### **Revision der Trigger-Logik (Revision April 2026)**
 
 > **Korrektur:** Die obige Darstellung impliziert, dass Trigger primär über Raphe-Destabilisierung wirken (Trigger → Raphe destabilisiert → Interferenz → CSD). Diese Kausalrichtung ist falsch. Trigger wirken **nicht** primär über Raphe-Destabilisierung, sondern über **kortikale Taktperturbation auf nicht-serotonergen Kanälen**:

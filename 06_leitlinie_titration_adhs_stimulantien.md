@@ -46,6 +46,57 @@ Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Adenos
 
 **Klinisches Unterscheidungsmerkmal:** Wenn ein Patient unter Stimulanzientherapie seinen Koffeinbedarf reduziert *und gleichzeitig* seine Schlafqualität verbessert, spricht das für Synchronisierung. Wenn der Koffeinbedarf sinkt, aber die Schlafqualität gleich bleibt oder sich verschlechtert, dominiert der Arousal-Effekt.
 
+### 1.5 Nicht-Stimulanzien im Modellkontext: Guanfacin und Atomoxetin
+
+Die Nicht-Stimulanzien Guanfacin und Atomoxetin werden als ADHS-Therapiealternativen eingesetzt, wenn Stimulanzien kontraindiziert sind oder unzureichend wirken. Im Rahmen des vorliegenden Modells ist die entscheidende Frage nicht „Wirken sie auf ADHS-Symptome?", sondern „Adressieren sie die Upstream-Desynchronisierung — und wenn ja, über welchen Pfad?"
+
+#### 1.5.1 Guanfacin
+
+- **α2A-PFC-Stärkung:** Guanfacin hemmt cAMP-PKA-K⁺-Signaling an dendritischen Spines → stärkt rekurrente PFC-Netzwerkkonnektivität (Arnsten 2020). Dieser Mechanismus adressiert Pfad 2 (PFC→PAG→NTS, vgl. 5.4) und verbessert die top-down-Regulationskapazität des PFC selektiv.
+- **TAAR1-Vollagonismus (EC50=20 nM, Cichero et al. 2023):** TAAR1 ist dicht im DRN exprimiert. TAAR1-Agonismus supprimiert DRN-5-HT-Neurone (Revel et al. 2011). Dieser Vektor ist gegenläufig zur Raphe-Stabilisierung — Guanfacin schwächt die serotonerge Raphe-Funktion statt sie zu stärken.
+- **Keine Migräneprophylaxe erwartet:** Nur eine kleine Studie (Elkind et al. 1989) untersuchte α2-Agonisten in der Migräneprophylaxe; α2-Agonisten sind insgesamt „minimally efficacious" (Tfelt-Hansen 2014). Dies ist modellkonsistent: ohne Raphe-Stabilisierung kein migräneprophylaktischer Effekt.
+- **Autonomes Risikoprofil:** Bradykardie + Blutdrucksenkung = identische Richtung wie Metoprolol. LC-Suppression schwächt noradrenerge Arousal-Kapazität. Explizite Gegenindikation bei vestibuloautonomer Reflexvulnerabilität (vgl. autonomes Profil, 5.3–5.4).
+- **Differenzierungstest:** Sedierung statt Kohärenzgewinn — Guanfacin substituiert den PFC-Effekt, ohne die systemische Synchronisierung zu leisten. Die Abendphase zeigt Sedierung ohne kohärente Müdigkeit.
+
+#### 1.5.2 Atomoxetin
+
+- **Kanonischer Mechanismus:** NET-Inhibitor (Ki=5 nM NET). Erhöht NE+DA im PFC (kein DAT dort, NET übernimmt DA-Clearance). PFC-Konnektivität wird gestärkt.
+- **SERT-Okkupanz in vivo:** >85 % bei klinischen Dosen (Ding et al. 2014, PET Rhesus). Die In-vivo-Selektivität NET:SERT beträgt 3:1, nicht 15:1 wie in vitro. Atomoxetin ist damit ein **dualer NET/SERT-Inhibitor**.
+- **SERT-Blockade ist kernblind** (identisch zu SSRIs, vgl. Tao et al. 2003, Anhang D.8) — downstream-puffernd, nicht Raphe-stabilisierend. Die 5-HT-Wiederaufnahmehemmung erhöht den synaptischen 5-HT-Spiegel an allen Projektionsorten gleichförmig, ohne die pathologische Raphe-Oszillation zu adressieren.
+- **NMDA-Blockade (Ludolph et al. 2010):** Möglicher CSD-Schwelleneffekt — könnte die Cortical-Spreading-Depression-Schwelle anheben und damit einen partiellen migräneprophylaktischen Beitrag leisten.
+- **CYP2D6-Polymorphismus:** 10 % der Kaukasier sind Poor Metabolizer → dramatisch höhere AUC → Verschiebung in Richtung voller SERT-Blockade. Die interindividuelle Variabilität ist damit erheblich höher als bei Stimulanzien.
+- **Differenzierungstest:** Unklar — die SERT-Komponente könnte die Schlafarchitektur beeinflussen, aber die Richtung ist nicht vorhersagbar.
+
+#### 1.5.3 Vergleichstabelle
+
+| Dimension | LDX | Guanfacin | Atomoxetin |
+|:---|:---|:---|:---|
+| **Raphe-Stabilisierung** | Ja (upstream, DA→DRN) | Nein (TAAR1 supprimiert DRN) | Partiell (downstream, SERT-Pufferung, kernblind) |
+| **Migräneprophylaxe** | Ja | Nein | Möglich (SERT + NMDA), aber insuffizient |
+| **PFC-Konnektivität** | Ja (NE/DA systemisch) | Ja (α2A-selektiv) | Ja (NET-Block → NE + DA im PFC) |
+| **Interozeptive Kohärenz** | Ja (5-System-Synchronisierung) | Partiell (PFC-selektiv) | Partiell (NE + partiell 5-HT) |
+| **Autonomes Profil** | Neutral bis positiv | Negativ (Bradykardie, sympath. Suppression) | Neutral |
+| **Differenzierungstest Schlaf** | Kohärentere Abendmüdigkeit | Sedierung ohne Kohärenzgewinn | Unklar |
+
+#### 1.5.4 Population-A/B-Differenzierung
+
+Die Unterscheidung zwischen Population A (Raphe-Dysregulation als Upstream-Ursache) und Population B (architektonisches ADHS ohne Raphe-Beteiligung) erzeugt differenzielle Prognosen für die Nicht-Stimulanzien:
+
+- **Population A (Raphe-Dysregulation):** Guanfacin = partielle Symptomreduktion, keine Migränebesserung, autonomes Profil verschlechtert. Atomoxetin = SERT-Pufferung partiell wirksam, Migräne möglicherweise partiell reduziert (NMDA-Komponente).
+- **Population B (architektonisches ADHS):** Guanfacin adressiert den PFC direkt, bessere Effektstärke erwartet. Atomoxetin adressiert den PFC über NET — ebenfalls gut geeignet.
+- **Testbare Prognosen:** Guanfacin-Response ohne Migränebesserung = Population B. Atomoxetin-induzierte Migräne = Population A. Diese Prognosen sind prospektiv testbar und ermöglichen eine Post-hoc-Stratifizierung.
+
+#### 1.5.5 Evidenztabelle
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:---|:---|:---|
+| Guanfacin ist hTAAR1-Vollagonist (EC50=20 nM) | Gesichert | Cichero et al. 2023 |
+| TAAR1-Agonismus supprimiert DRN-5-HT-Neurone | Gesichert | Revel et al. 2011 |
+| Atomoxetin okkupiert >85 % SERT bei klinischen Dosen | Gesichert | Ding et al. 2014 (PET, Rhesus) |
+| Amphetamine zeigen keine Kopfschmerzerhöhung vs. Placebo | Gesichert | Pan et al. 2022 (Meta-Analyse) |
+| Atomoxetin +29 %, Guanfacin +43 % Kopfschmerz vs. Placebo | Gesichert | Pan et al. 2022 |
+| Population-A/B-Differenzierung durch Kopfschmerzresponse | Hypothetisch | Modellableitung |
+
 ---
 
 ## 2. Kritik der symptombasierten Titration
