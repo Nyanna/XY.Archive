@@ -239,6 +239,59 @@ Die kurze Halbwertszeit erzeugt ein diagnostisch nutzbares Phänomen: Der **Rebo
 
 Die flache Kinetik macht den Rebound weniger dramatisch, aber die **Abendphase** (8–12 h post-dose) besonders informativ. In dieser Phase ist die Wirkung nicht abrupt beendet, sondern graduell absteigend. Die Qualität der Abendmüdigkeit — kohärent vs. diffus — ist damit ein Echtzeit-Indikator für die Synchronisierungstiefe der aktuellen Dosis.
 
+### 7.3 Sumatriptan-Therapiefenster — Mechanistische Begründung
+
+> **Status:** Theoretischer Exkurs — kein direkter Bestandteil der Stimulanzientitration, aber mechanistisch relevant für Patienten mit Migräne-Komorbidität unter ADHS-Medikation (vgl. Pathogenetisches Modell, Abschnitt 2: Raphe-Dysregulation als gemeinsame Upstream-Ursache).
+
+Sumatriptan (5-HT1B/1D-Agonist) hat ein **limitiertes Therapiefenster** innerhalb einer Migräneattacke. Dieses Fenster ist keine pharmakologische Eigenheit, sondern die Konsequenz zweier konvergierender Mechanismen:
+
+| Mechanismus | Zeitverlauf | Konsequenz |
+|---|---|---|
+| **Zentrale Sensitivierung** | Minuten bis Stunden nach Attackenbeginn | Die Schmerzverarbeitung wandert von peripher (trigeminovaskuläre Aktivierung) nach zentral (thalamische und kortikale Sensitivierung). Sobald die Zentralisierung eingetreten ist, wird die periphere 5-HT1B/1D-Rezeptorblockade irrelevant — der Schmerzgenerator liegt jetzt oberhalb des Wirkorts. |
+| **5-HT1B/1D-Rezeptordesensitivierung** | Nach erster Agonist-Exposition | Die erste Sumatriptan-Dosis induziert Rezeptorinternalisierung (β-Arrestin-vermittelt). Eine zweite Dosis findet desensitivierte Rezeptoren vor — die pharmakologische Angriffsfläche ist verbraucht. |
+
+**Klinische Konsequenz:** Beide Mechanismen konvergieren auf denselben Schluss — Sumatriptan hat *einen* Versuch pro Attacke. Wenn die erste Dosis nicht greift (zu spät gegeben oder Attacke bereits zentralisiert), ist das Therapiefenster geschlossen. Eine zweite Dosis erhöht die Nebenwirkungslast ohne therapeutischen Zugewinn.
+
+**Dosierungsstrategie:** Früh dosieren, nicht abwarten. Die Wahrscheinlichkeit des Therapieerfolgs korreliert invers mit dem Zeitintervall zwischen Attackenbeginn und Einnahme. Die klinische Regel „Triptan bei den ersten Anzeichen" ist mechanistisch korrekt: sie maximiert die Wahrscheinlichkeit, die Attacke im peripheren Stadium abzufangen, bevor zentrale Sensitivierung und Rezeptordesensitivierung das Fenster schließen.
+
+**Relevanz für das Pathogenetische Modell:** Die zentrale Sensitivierung bei Migräne ist ein Spezialfall des thalamokortikalen Gating-Versagens (vgl. Abschnitt 3.4): der Thalamus verliert die Fähigkeit, trigeminale Afferenzen zu filtern. Die Raphe-Dysregulation, die im ADHS-Modell die Grundstörung darstellt, ist gleichzeitig der primäre Modulator der trigeminalen Schmerzschwelle. Dies erklärt die hohe Komorbiditätsrate und unterstreicht, warum eine stabile Stimulanzientherapie (über Raphe-Stabilisierung) migräneprophylaktisch wirken kann.
+
+### 7.4 LDX-Nachdosierung bei subklinischer Migräne — Einzelfallbeobachtung
+
+> **Status:** Einzelfallbeobachtung — keine Empfehlung. Dokumentation eines klinischen Befunds zur zukünftigen Evaluierung. Nicht systematisch getestet.
+
+**Klinischer Befund:**
+
+| Parameter | Beobachtung |
+|---|---|
+| **Ausgangszustand** | Retrobulbärer Druck + Schlafdruck unter bestehender LDX-Basismedikation |
+| **Autonome Reaktion** | 50-min-Nap (autonomer Resynchronisationsversuch) |
+| **Post-Nap-Zustand** | Unvollständige Resynchronisation — Druck persistiert |
+| **Intervention** | 1–2 mg LDX nachdosiert |
+| **Ergebnis** | Druckgefühl löste sich |
+
+**Interpretation:**
+
+Der Befund ist kompatibel mit einer **subklinischen Migräne**: Die CSD-Schwelle (Cortical Spreading Depression) wurde nicht erreicht, kein voller Kopfschmerz entwickelt sich, aber die trigeminovaskuläre Aktivierung ist unterschwellig vorhanden (retrobulbärer Druck als Teilsymptom). Der Schlafdruck repräsentiert den autonomen Versuch, über Zustandswechsel (Schlaf) die monoaminerge Oszillation zu resynchronisieren — ein Mechanismus, der im Pathogenetischen Modell als Raphe-Reset beschrieben ist (vgl. Abschnitt 2).
+
+**Postulierter Wirkpfad der LDX-Nachdosierung:**
+
+LDX → dopaminerger Tonus ↑ → Selbstregulationskapazität (PFC) ↑ → stabilisiert Raphe top-down → Raphe-Output normalisiert → thalamisches Gating rekalibriert → trigeminovaskuläre Unterschwellenaktivierung terminiert
+
+Der Nap war der autonome Bypass (Bottom-up-Resynchronisation), die Nachdosierung der pharmakologische Bypass (Top-down-Stabilisierung). Dass der Nap allein nicht ausreichte, aber die Kombination aus Nap + Nachdosierung erfolgreich war, spricht für eine Schwellendynamik: der Nap brachte das System nahe an den Resynchronisationspunkt, die Nachdosierung lieferte den fehlenden dopaminergen Beitrag.
+
+**D2High-Nachweis:**
+
+Die Tatsache, dass 1–2 mg LDX einen *spürbaren klinischen Effekt* erzeugten, ist selbst der stärkste verfügbare Hinweis auf **Rezeptor-Supersensitivität (D2High-Zustand)** (vgl. Pathogenetisches Modell, Abschnitt 2.4.0). Eine normale Rezeptordichte und -affinität reagiert auf diese Dosis nicht messbar. Der Effekt bei dieser Mikrodosis ist nur erklärbar, wenn die postsynaptischen D2-Rezeptoren im hochaffinen Zustand vorliegen — exakt die Vorhersage des D2High-Raphe-Modells.
+
+**Einschränkungen und Vorsichtsmaßnahmen:**
+
+- Dies ist eine **OPTION**, keine Empfehlung — Dokumentation eines Einzelfallbefunds
+- **Evidenzstatus:** Einzelfallbeobachtung, nicht systematisch getestet, nicht repliziert
+- Die Generalisierbarkeit ist unbekannt — der Befund setzt den spezifischen Pathomechanismus (Raphe-Dysregulation mit D2High) voraus
+- Eine Nachdosierung außerhalb des regulären Titrationsschemas birgt Risiken (Schlafstörung bei später Einnahme, Toleranzentwicklung bei häufiger Bedarfsmedikation)
+- Der Befund sollte prospektiv und systematisch evaluiert werden, bevor er in die klinische Praxis übergeht (vgl. Abschnitt 8, Forschungsbedarf)
+
 ---
 
 ## 8. Forschungsbedarf

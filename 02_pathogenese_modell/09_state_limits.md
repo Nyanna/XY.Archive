@@ -63,3 +63,16 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 * Andrillon T, Burns A, Mackay T et al. (2021) Predicting lapses of attention with sleep-like slow waves. *Nature Communications*, 12, 3657.
 * Pigorini A et al. (2025) Cortical reactivation after NREM sleep follows a frontal-to-posterior gradient. *Current Biology*, 35(7).
 * Mensen A et al. (2026) High-frequency EEG changes during wake-up reflect region-specific reactivation dynamics. *bioRxiv*. doi:10.64898/2026.02.08.704730v1.
+
+---
+
+## **Offene Fragen (Stand März 2026)**
+
+Die folgenden Fragen sind aus dem bisherigen Modellierungsprozess hervorgegangen und noch nicht hinreichend adressiert. Sie definieren die Beobachtungs- und Rechercheziele für kommende Sessions.
+
+| Nr. | Frage | These / Hintergrund | Operationalisierung | Status |
+| :---- | :---- | :---- | :---- | :---- |
+| 1 | **Raphe-Depletionshypothese** | LDX stabilisiert die Raphe pro Kern, aber über ~28–30 Tage könnte die 5-HT-Synthese das Ceiling erreichen — Feuerung übersteigt Nachsynthese → Depletion trotz verfügbarem Dopamin | Monitoring über 2–3 weitere Zyklen ohne Metoprolol-Konfundierung | 3 Wochen post-Metoprolol zu kurz für Isolation; 10 Tage zwischen den beiden LDX-Durchbrüchen könnten Rebound, Depletion oder Baseline sein |
+| 2 | **Exakte Inter-Raphe-Kopplung** | Läuft die Inter-Kern-Synchronisation ausschließlich über SCN oder gibt es direkte B7↔B8-Projektionen? Wenn ausschließlich über SCN: LDX kann pro-Kern-Takt stabilisieren, aber den Phasenversatz nicht korrigieren → erklärt den persistierenden ~4-Tage-Zyklus | Literaturrecherche zu direkten DR→MR-Verbindungen | Offen |
+| 3 | **Corpus-callosum-Propagation der tonischen Welle** | Geschwindigkeit und Symmetrie der transhemisphärischen Propagation über das Corpus callosum; Callosotomie-Befund (Auren persistieren, Generalisierung unterbunden) stützt intrahemisphärischen Ursprung | Literaturrecherche zu callosaler CSD/tonischer Wellen-Propagation | Offen |
+| 4 | **Retrobulbärer Druck — Anatomische Zuordnung** | Trigeminale Konvergenz? Orbitale Vaskulatur? Direkte thalamische Repräsentation? Der retrobulbäre Druck ist konsistent das früheste Symptom — aber sein anatomisches Substrat ist unklar | Literaturrecherche zu retrobulbärer Schmerzrepräsentation bei Migräne | Offen |

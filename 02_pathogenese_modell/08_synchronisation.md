@@ -152,6 +152,107 @@ Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Ad
 | Traumerinnerung PRE selektiv post-iktal (CSD-Reset); POST regulär (pharmakologische Synchronisation) | Einzelfallbeobachtung | Selbstbeobachtung, Anhang B, B.8 |
 | Schlafkonsolidierung und interozeptive Kohärenz als identischer Mechanismus auf verschiedenen Zeitskalen | Hypothetisch, konsistent | Modellableitung aus 8.4.1 + 8.4.3 |
 
+### **8.8 Nap als PFC-Reset (nicht SWS)**
+
+#### **8.8.1 Schlafarchitektur des Naps: Kein Tiefschlaf**
+
+Die Tracker-Daten (Anhang B) zeigen ein konsistentes Muster: Der Nap produziert keine SWS. Die typische Episode umfasst ~50 min Light Sleep, die HR bleibt auf Tagesniveau. Zwei unabhängige Messkanäle konvergieren auf dieselbe Schlussfolgerung:
+
+| Kanal | Befund | Interpretation |
+| :---- | :---- | :---- |
+| **Stadienklassifikation** | Ausschließlich Light Sleep, kein Deep | Kein kortikaler Slow-Wave-Reset |
+| **Herzfrequenz** | Bleibt auf Tagesniveau, kein parasympathischer Abfall | Kein autonomer Tiefschlaf-Marker |
+
+Die Konvergenz zweier unabhängiger Kanäle — Stadienklassifikation (nur Light) und HR (kein parasympathischer Abfall) — schließt Deep Sleep mit hoher Sicherheit aus. Der Nap ist keine Miniaturversion des Nachtschlafs, sondern ein funktionell anderer Prozess: **PFC-Entlastung ohne kortikalen Reset**.
+
+#### **8.8.2 Prodromaler Charakter des Naps**
+
+Der Nap ist nicht prophylaktisch, sondern **prodromal** — er tritt auf, *weil* das System an der CSD-Schwelle steht. Die PFC-Überlastung durch tonische Raphe-Interferenz erzeugt einen Zustand, in dem der Kortex die Verarbeitungslast nicht mehr trägt; der Nap ist die autonome Entlastungsreaktion.
+
+#### **8.8.3 Erfolgsrate und prädiktive Faktoren**
+
+Die Daten differenzieren scharf zwischen PRE- und POST-Naps:
+
+| Parameter | PRE | POST (unter LDX) |
+| :---- | :---- | :---- |
+| **Erfolgsrate (Reset)** | 38% | 78% |
+| **Vornacht-Density bei Erfolg** | 3,66/h | — |
+| **Vornacht-Density bei Scheitern** | 4,57/h | — |
+
+Zwei Befunde sind mechanistisch aufschlussreich:
+
+1. **LDX macht den Nap nicht überflüssig, sondern *effektiver*.** Die Erfolgsrate verdoppelt sich unter pharmakologischer Synchronisierung — der stabilisierte Raphe-Tonus ermöglicht dem PFC-Reset, tatsächlich zu greifen, anstatt gegen fortlaufende Desynchronisierung anzuarbeiten.
+
+2. **Die Vornacht-Density unterscheidet Erfolg von Scheitern.** Bei einer Density von 3,66/h (moderate Fragmentierung) reicht der Nap für einen Reset; bei 4,57/h (hohe Fragmentierung) ist das System bereits so destabilisiert, dass die PFC-Entlastung allein nicht ausreicht. Die Vornacht-Density ist damit ein prädiktiver Marker für die Nap-Wirksamkeit (vgl. Tracker-Daten, Anhang B).
+
+### **8.9 Sumatriptan-Mechanismus — Schmerzblockade → Schlaf-Enabler → SCN-vermittelte Resynchronisation**
+
+#### **8.9.1 Was Sumatriptan tut und was es nicht tut**
+
+Sumatriptan unterbricht den Migräneanfall **nicht**. Der 5-HT1B/1D-Agonismus blockiert die trigeminovaskuläre Schmerzweiterleitung — die nozizeptive Signaltransmission vom Trigeminus zum Thalamus wird unterdrückt. Das tonische Interferenzfeld (vgl. 4.2, Raphe-vermittelte kortikale Irritation) wird durch Sumatriptan nicht adressiert. Die Raphe-Instabilität, die CSD-Kaskade, die kortikale Erregbarkeitsverschiebung — all das läuft weiter.
+
+#### **8.9.2 Schlaf als eigentlicher Resynchronisationsmechanismus**
+
+Der therapeutische Effekt entsteht indirekt über eine Drei-Schritt-Kaskade:
+
+1. **Sumatriptan → Schmerzblockade:** Trigeminovaskuläre Weiterleitung stumm geschaltet
+2. **Schmerzfreiheit → Schlaf möglich:** Ohne nozizeptiven Input kann das System in den Schlaf übergehen
+3. **Schlaf → SCN-vermittelte Resynchronisation:** Schlaf entkoppelt den Kortex vom Raphe-Input → der SCN (suprachiasmatischer Nucleus) übernimmt die Taktgebung → über 3–4 Stunden werden die desynchronisierten Modulationssysteme re-aligniert
+
+**Entscheidend:** Die 3–4 Stunden bis zur klinischen Besserung reflektieren die **SCN-Resynchronisationszeit**, nicht die Sumatriptan-Halbwertszeit. Der Zeitverlauf ist biologisch determiniert durch die Geschwindigkeit, mit der der SCN die driftenden Oszillatoren (Raphe, LC, thalamische Schlafspindel-Generatoren) wieder in Phase bringen kann.
+
+#### **8.9.3 Therapiefenster**
+
+Das klinisch bekannte limitierte Zeitfenster für Sumatriptan-Wirksamkeit erklärt sich durch zwei konvergierende Mechanismen:
+
+| Faktor | Mechanismus | Konsequenz |
+| :---- | :---- | :---- |
+| **Zentrale Sensitivierung** | Nach Etablierung zentraler Sensitivierung (Allodynie-Phase) wird der Schmerz zentral unterhalten, unabhängig von peripherer Trigeminusaktivierung | Periphere 5-HT1B/1D-Blockade greift nicht mehr |
+| **Rezeptordesensitivierung** | 5-HT1B/1D-Rezeptoren desensitivieren unter anhaltendem serotonergen Stress | Reduzierte Bindungsaffinität → Sumatriptan weniger wirksam |
+
+Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto geringer die Wirksamkeit — nicht weil der Schmerz „stärker" wird, sondern weil der Schmerz den peripheren Kanal verlässt, auf den Sumatriptan wirkt.
+
+### **8.10 Fallstudie: Migräne-Nacht A**
+
+*Klinisches Beispiel — Einzelfallanalyse auf Basis von Tracker-Daten und Symptomprotokoll*
+
+Die Migräne-Nacht A liefert ein dreischichtiges Datenset, das die Mechanismen aus 8.9 in Echtzeit abbildet.
+
+#### **8.10.1 Drei Schichten der Schlafarchitektur**
+
+| Phase | Zeitraum | Density | Muster |
+| :---- | :---- | :---- | :---- |
+| **Hauptschlaf (PRE-Migräne)** | 01:15–07:38 | 2,8/h | Saubere Zyklen, intakte Architektur |
+| **Schlafversuch ohne Medikation** | 22:17–23:14 | 5,3/h | Architektur bricht in 57 min zusammen |
+| **Post-Sumatriptan-Schlaf** | 23:46–07:06 | variabel | Drei-Drittel-Analyse (s. 8.10.2) |
+
+Der Kontrast zwischen Phase 1 und Phase 2 ist diagnostisch: Dieselbe Person, 15 Stunden später, mit einer Density-Verdopplung. Die Migräne-Kaskade hat die Schlafarchitektur destabilisiert — der Kortex kann keine stabilen Zustandsübergänge mehr halten.
+
+#### **8.10.2 Post-Sumatriptan: Drei-Drittel-Analyse**
+
+Die 7,3 Stunden Post-Sumatriptan-Schlaf differenzieren sich in drei distinkte Phasen:
+
+| Drittel | Density | Muster |
+| :---- | :---- | :---- |
+| **1. (früh)** | 6,1/h | Deep+REM dominant — System versucht kompensatorischen Tiefschlaf |
+| **2. (mitte)** | 7,5/h | Maximum Fragmentierung — tonische Interferenz am stärksten |
+| **3. (spät)** | 5,8/h | Light dominant, stabilisiert — SCN-Resynchronisation greift |
+
+Die Drei-Drittel-Progression bildet die SCN-Resynchronisation aus 8.9.2 ab: Im ersten Drittel versucht das System kompensatorischen Tiefschlaf (hoher homöostatischer Druck), scheitert aber an der noch aktiven tonischen Interferenz. Im zweiten Drittel erreicht die Fragmentierung ihr Maximum — die Interferenz und der Kompensationsdruck kollidieren maximal. Im dritten Drittel hat die SCN-vermittelte Resynchronisation die Modulationssysteme ausreichend re-aligniert, sodass stabiler (wenngleich leichter) Schlaf möglich wird.
+
+#### **8.10.3 HR-Verlauf als autonomer Marker**
+
+Der Herzfrequenzverlauf bestätigt die Drei-Schritt-Kaskade aus 8.9.2 unabhängig von der Schlafarchitektur:
+
+| Zeitfenster | HR (bpm) | Interpretation |
+| :---- | :---- | :---- |
+| **22:17–23:16** (Schlafversuch ohne Meds) | 75,7 | Nicht Schlafniveau — sympathische Aktivierung durch Schmerz |
+| **23:46–00:46** (Post-Sumatriptan, erste Stunde) | 61,2 | Abrupter Abfall — Sumatriptan blockiert Schmerz → parasympathische Dominanz → Schlaf möglich |
+| **01:00–04:00** | 70–73 | Wiederanstieg — tonische Interferenz noch aktiv, autonomes System instabil |
+| **04:00–07:06** | 63–65 | Echtes Schlafniveau — SCN-Resynchronisation abgeschlossen |
+
+**Interpretation:** Der HR-Verlauf bestätigt die Dissoziation zwischen Schmerzblockade (sofort) und Resynchronisation (3–4 Stunden). Der initiale HR-Abfall (75,7 → 61,2) markiert den Moment, in dem Sumatriptan den nozizeptiven Input stumm schaltet — das System fällt schlagartig in den Schlaf. Der Wiederanstieg auf 70–73 zeigt, dass die tonische Interferenz autonom weiter aktiv ist. Erst ab 04:00 — exakt 3–4 Stunden nach Sumatriptan-Gabe — erreicht die HR echtes Schlafniveau. Dort, im letzten Drittel, stabilisiert sich die Architektur, und dort treten die Träume auf (vgl. 8.4.3, REM-Konsolidierung als Kohärenzmarker; Tracker-Daten, Anhang B).
+
 ---
 
 *Querverweise:*
@@ -164,3 +265,6 @@ Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Ad
 - Titrationsleitlinie, Abschnitt 5.4: ASD-Komorbidität und eingeschränkte interozeptive Diskriminierung
 - Anhang B, B.3: Episodenzahl und Kohärenzproxy — quantitative Grundlage für 8.4.3
 - Anhang B, B.8: Traumerinnerung als subjektiver Kohärenzmarker
+- Abschnitt 8.8: Nap als PFC-Reset — Schlafarchitektur und prädiktive Faktoren
+- Abschnitt 8.9: Sumatriptan-Mechanismus — Schmerzblockade → Schlaf-Enabler → SCN-Resynchronisation
+- Abschnitt 8.10: Fallstudie Migräne-Nacht 30./31.03.2026 — Tracker-Daten, Anhang B

@@ -131,7 +131,7 @@ Der zentrale Mechanismus des Modells ist die 5-HT1A-Autorezeptor-Schleife der Ra
 
 Regulationsschleife (normal) Raphe feuert → Serotonin steigt → 5-HT1A-Autorezeptoren hemmen → Feuerrate sinkt → Serotonin fällt → Hemmung löst sich → Raphe feuert wieder. In einem stabilen System ist diese Schleife gedämpft: kleiner Gleichgewichtspunkt, minimale Amplitude. Der Serotoninspiegel oszilliert in einer schmalen Bandbreite um die Baseline.
 
-Regulationsschleife (dysreguliert – Arbeitshypothese) Bei defekter Dämpfung wird die Schleife underdämpft – die Schwingungen nehmen zu statt abzuklingen. Jede Destabilisierung durch externe Trigger produziert nicht eine einfache Serotoninschwankung, sondern eine sich selbst aufschaukelnde Oszillation bis zur Kaskaden-Schwelle. Periodizität der Migräne erklärt sich als: Oszillation → Attacke → Entleerung → Refraktärphase (= Dämpfungsphase, nicht simple Erholung) → erneute Oszillation. Die quasi-wöchentliche Taktung dieser Zyklen wird durch die circadiane Schwebung (Abschnitt 2.5) determiniert: Die progressive Desynchronisation zwischen endogenem und sozialem Rhythmus senkt die Dämpfungskonstante der Schleife periodisch ab, bis minimale Perturbation zur Kaskadenauslösung genügt.
+Regulationsschleife (dysreguliert – Arbeitshypothese) Bei defekter Dämpfung wird die Schleife underdämpft – die Schwingungen nehmen zu statt abzuklingen. Jede Destabilisierung durch externe Trigger produziert nicht eine einfache Serotoninschwankung, sondern eine sich selbst aufschaukelnde Oszillation bis zur Kaskaden-Schwelle. Periodizität der Migräne erklärt sich als: Oszillation → Attacke → Entleerung → Refraktärphase (= Dämpfungsphase, nicht simple Erholung) → erneute Oszillation. Die ~4-Tage-Periodizität dieser Zyklen wird durch einen eigenständigen Oszillator determiniert (Abschnitt 2.5.1), dessen Generator der B7/B8-Phasenversatz innerhalb der Raphe ist — nicht die circadiane Schwebung per se. Die circadiane Drift (Abschnitt 2.5) moduliert die Kaskadenschwelle, ist aber nicht der Taktgeber: Unter LDX-stabilisiertem Schlaf-Wach-Rhythmus persistiert der ~4-Tage-Zyklus subklinisch (Revision März 2026; Tracker-Daten, Anhang B).
 
 ### **2.3 Genetische und entwicklungsbiologische Ätiologie**
 
@@ -512,6 +512,35 @@ Dieser Mechanismus erklärt die klinisch paradoxe Beobachtung, dass Migränetrig
 
 Dieses Modell erklärt drei klinische Beobachtungen, die rein periodische oder rein triggerbasierte Modelle nicht erfassen: (1) Die Migränefrequenz ist quasi-periodisch, aber nicht exakt regelmäßig – der Rhythmus „wandert", weil die Triggerstärke den Auslösezeitpunkt innerhalb des Zyklus verschiebt. (2) Starke Belastungen können Attacken „vorziehen", schwache Phasen den Zyklus strecken. (3) Triggertagebücher scheitern, weil sie eine Trigger→Anfall-Kausalität annehmen, die so nicht existiert – die eigentliche Variable ist der unsichtbare Dämpfungszustand.
 
+---
+
+##### **Revision März 2026 — Der ~4-Tage-Oszillator als eigenständiger Generator**
+
+> **Status:** Die obigen Abschnitte (Schwebungstabelle, Stochastisches Fenstermodell) beschreiben den PRE-Befund unter Metoprolol korrekt. Die folgende Revision integriert POST-Befunde unter LDX, die eine Neuinterpretation des Taktgeber-Mechanismus erzwingen.
+
+**Empirischer Befund (Tracker-Daten, Anhang B):**
+
+| Parameter | PRE (Metoprolol) | POST (LDX) | Interpretation |
+| :---- | :---- | :---- | :---- |
+| **Median Inter-Anfall-Intervall** | ~6–7 Tage | **4,0 Tage** (Mean 3,9; SD 2,0) | Periodizität verkürzt sich bei stabilisiertem Schlaf |
+| **Autokorrelation Lag 4** | — | **r = −0,692** | Starkes Oszillationsmuster mit ~4-Tage-Periode |
+| **Einschlafzeit ~ Schlafdauer** | variabel | **r = −0,831** | Rigider Aufwachrhythmus; zirkadianer Drift eliminiert |
+| **Circadianer Drift** | ~2 h/Tag | **stabilisiert** | LDX normalisiert den Schlaf-Wach-Rhythmus |
+| **CSD-Zyklus** | ~6–7 Tage | **~4 Tage (subklinisch)** | Oszillator persistiert trotz zirkadianer Stabilisierung |
+
+**Schlussfolgerung:** Der zirkadiane Shift war *Symptom*, nicht *Ursache*. LDX stabilisiert den zirkadianen Rhythmus und die Schlafarchitektur, aber der ~4-Tage-CSD-Zyklus läuft weiter — nur subklinisch. Dies beweist die Existenz eines vom circadianen System *unabhängigen* Oszillators.
+
+**Mechanismus — B7/B8-Phasenversatz-Oszillator:**
+
+Die Raphe-Kerne B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianus, MnR) sind funktionell distinkt: B7 projiziert diffus-kortikal (Arousal, sensorische Modulation), B8 projiziert limbisch-thalamisch (Entrainment, Stimmung). Beide werden über den SCN zirkadian synchronisiert, aber mit unterschiedlicher Phasenlage und Zeitkonstante. Der *Inter-Kern-Phasenversatz* zwischen B7 und B8 ist die entscheidende Variable:
+
+- **LDX-Effekt:** Stabilisiert den *intra-Kern-Takt* beider Kerne über D2-Rezeptor-vermittelte tonische Feuermodulation → zirkadiane Drift korrigiert, Schlafarchitektur konsolidiert.
+- **LDX-Blindstelle:** Der *Inter-Kern-Phasenversatz* — die relative Phase zwischen B7 und B8, synchronisiert über SCN-Verschaltung — wird nicht adressiert. Dieser Versatz akkumuliert über ~3–4 Nächte, sichtbar als steigende Transitionsdichte, bis die CSD-Schwelle erreicht wird.
+
+**Reinterpretation des Stochastischen Fenstermodells:** Das oben beschriebene Fenstermodell bleibt gültig, aber der Taktgeber wechselt. PRE war die zirkadiane Schwebung (~6–7 Tage) der dominante Rhythmus, weil die zirkadiane Drift den B7/B8-Versatz maskierte. POST, mit stabilisiertem Schlaf-Wach-Rhythmus, tritt der eigentliche Generator hervor: ein ~4-Tage-Oszillator, dessen Periode durch die intrinsische Relaxationszeit des B7/B8-Phasenversatzes determiniert wird.
+
+---
+
 #### **2.5.2 SCN-Raphe-Kopplung: Bidirektionaler Destabilisierungsmechanismus**
 
 Der Nucleus suprachiasmaticus (SCN) und die Raphe-Kerne sind bidirektional verschaltet:
@@ -522,6 +551,22 @@ Der Nucleus suprachiasmaticus (SCN) und die Raphe-Kerne sind bidirektional versc
 | **Raphe → SCN** | Serotonerge Projektionen aus dem medianen Raphe-Kern in den SCN modulieren Lichtsensitivität und Phasenanpassungsrate. Instabile Raphe → instabiles Serotoninsignal im SCN → gestörtes Entrainment → Drift wird nicht korrigiert. |
 
 **Verstärkungsschleife:** Instabile Raphe erschwert Entrainment → circadiane Drift akkumuliert → zunehmende Desynchronisation senkt Raphe-Dämpfungskonstante → Oszillationsamplitude steigt → Kaskadenschwelle wird mit minimalem Perturbator erreicht → Attacke → Entleerung/Resynchronisation → Zyklus beginnt erneut.
+
+##### **Revision März 2026 — Thalamische Interferenzzone: Midline-/Intralaminärer Thalamus als primärer Ort der B7/B8-Interferenz**
+
+Der B7/B8-Phasenversatz (vgl. Revision 2.5.1) erzeugt seine maximale Wirkung nicht diffus, sondern an einem anatomisch definierten Konvergenzpunkt: dem **Midline-/Intralaminären Thalamus** (ML/IL-Komplex).
+
+**Anatomische Begründung:** B7 (DRN) und B8 (MnR) projizieren auf weitgehend *segregierte* thalamische und kortikale Zielgebiete — mit einer entscheidenden Ausnahme. Der ML/IL-Komplex (Nuclei reuniens, rhomboideus, centromedianus, parafascicularis) ist die einzige thalamische Zone, die *volle Überlappung* beider Raphe-Kerne aufweist: B7 erreicht sie über dorsale Tegmentumfasern, B8 über ventrale. Die Funktion des ML/IL-Komplexes — kortikale Zustandsübergänge, Arousal-Gating, thalamokortikale Synchronisation — macht ihn zum kritischsten Relais für die in 2.5.4 beschriebene kortikale Kohärenz.
+
+**Interferenz-Mechanismus:** Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Signal an den ML/IL-Komplex → stabile thalamokortikale Modulation. Bei zunehmendem Phasenversatz (~Tag 2–4 des Oszillationszyklus) erzeugen die gegenphasigen serotonergen Inputs destruktive Interferenz: Das Signal am ML/IL-Komplex wird nicht schwächer, sondern *inkohärent*. Der Thalamus erhält widersprüchliche Modulationssignale und kann kortikale Zustandsübergänge nicht mehr sauber orchestrieren → die in 2.5.5 beschriebene Schlaffragmentierung (steigende Transitionsdichte über den ~4-Tage-Zyklus) ist das direkte Korrelat dieser thalamischen Interferenz.
+
+| Zyklustag | B7/B8-Phasenlage | ML/IL-Signal | Klinisches Korrelat |
+| :---- | :---- | :---- | :---- |
+| **Tag 0–1** (post-iktal) | Resynchronisiert | Kohärent | Stabile Schlafarchitektur, niedrige Transitionsdichte |
+| **Tag 2–3** | Zunehmender Versatz | Teilinkohärent | Steigende Transitionsdichte, erste Arousal-Instabilitäten |
+| **Tag 3–4** | Maximaler Versatz | Destruktive Interferenz | Maximale Fragmentierung, CSD-Schwelle erreicht |
+
+**Konsequenz für das Gesamtmodell:** Der ML/IL-Thalamus ist der anatomische *Flaschenhals*, durch den der B7/B8-Phasenversatz auf kortikale Kohärenz wirkt. Dies erklärt, warum der ~4-Tage-Oszillator primär über Schlaffragmentierung und thalamokortikale Destabilisierung operiert — und warum LDX (das intra-Kern-Takt stabilisiert, aber den Inter-Kern-Versatz nicht adressiert) die CSD-Zyklen nicht eliminiert, sondern nur subklinisch dämpft (Tracker-Daten, Anhang B).
 
 #### **2.5.3 Hypothalamische Steuerung und autonomes Mitschwingen**
 
@@ -592,7 +637,10 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Posteriorer Kortex wacht zuletzt auf (frontal-first-Gradient) | Gesichert | Pigorini et al. 2015 (Current Biology), Marzano et al. 2011 |
 | Raphe als tonischer kortikaler Synchronisator | Gesichert | DRN-Feuerkinetik etabliert (Monti 2008), diffuse Projektion anatomisch gesichert |
 | Endogene Periodenlänge τ ≈ 26 h | Einzelfallbeobachtung | Langjährige konsistente Selbstbeobachtung |
-| Quasi-wöchentliche Migräneperiodizität durch circadiane Dämpfungsmodulation | Hypothetisch, konsistent | Eigene Beobachtung + SCN-Raphe-Interaktion als Mechanismus |
+| ~~Quasi-wöchentliche Migräneperiodizität durch circadiane Dämpfungsmodulation~~ | ~~Hypothetisch, konsistent~~ | ~~Eigene Beobachtung + SCN-Raphe-Interaktion als Mechanismus~~ — **Revidiert März 2026**, s. unten |
+| **~4-Tage-Oszillator als eigenständiger CSD-Taktgeber (B7/B8-Phasenversatz)** | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B): Median IBI 4,0 d, Autokorrelation Lag 4 r=−0,692; persistiert unter LDX-stabilisiertem Schlaf |
+| **Midline-/Intralaminärer Thalamus als B7/B8-Interferenzzone** | Anatomisch gesichert, funktionelle Rolle hypothetisch | B7/B8-Konvergenz im ML/IL-Komplex anatomisch etabliert (Vertes 2004, Morin 2013); Interferenz-Mechanismus eigene Hypothese |
+| **LDX stabilisiert Intra-Kern-Takt, nicht Inter-Kern-Phasenversatz** | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
 | Stochastisches Fenstermodell (Triggerstärke × Dämpfungszustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
 | Maximale circadiane Desynchronisation → maximale Vulnerabilität für lokalen Schlaf | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus 2.5.1 + 2.5.4: Raphe-Tonus-Minimum konvergiert mit Arousal-Lücke und SWS-Fehlplatzierung |
 | Aufgabengetriebener Arousal als Kompensation für insuffizienten Raphe-Tonus | Hypothetisch, konsistent | Klinische Selbstbeobachtung, konsistent mit Arousal-Quellen-Differenzierung |
@@ -891,7 +939,58 @@ Die synchrone Massendepolarisation initiiert eine selbstpropagierte elektrochemi
 | **Na⁺/Ca²⁺-Einstrom** | Spannungsgesteuerte Kanäle öffnen → massive Ionenumkehr | Stört osmotisches Gleichgewicht → neuronales Ödem, Volumenverschiebung |
 | **Hinter der Wellenfront** | Neuronen in kompletter Depolarisationslähmung | Können nicht mehr feuern → die eigentliche „Spreading Depression" |
 
-#### **4.4.3 Metabolische Krise**
+#### **4.4.3 Tonische Destabilisierungswelle als Primärmechanismus** *(Revision März 2026)*
+
+Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These dieser Revision: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
+
+| Eigenschaft | CSD (klassisch) | Tonische Destabilisierungswelle |
+| :---- | :---- | :---- |
+| **Natur** | Ionische Welle (K⁺/Glutamat-Diffusion) | Schrittweiser Modulationsverlust |
+| **Geschwindigkeit** | 2–5 mm/min | Stunden (gesamtkortikale Ausbreitung) |
+| **Dauer** | 20–30 Minuten | Stunden bis Stammhirn-Eskalation |
+| **Hinterlassenes Gewebe** | Refraktär (depolarisationsgelähmt) | Nicht refraktär — das destabilisierte Feld *wächst* |
+| **Antrieb** | Ionische Diffusion (selbstpropagierend) | Anhaltender Phasenversatz zwischen B7 und B8 |
+| **Klinisches Korrelat** | Wandernde Aura (Fortifikationsspektren) | Diffuses Rauschen, progrediente sensorische Instabilität |
+
+Der entscheidende Unterschied: Die tonische Destabilisierungswelle hinterlässt kein refraktäres Gewebe. Wo CSD eine Spur funktioneller Stille zieht, hinterlässt die tonische Welle ein wachsendes Feld instabiler, aber weiterhin erregbarer Neurone. Das Feld expandiert, weil der B7/B8-Phasenversatz anhaltend ist — nicht weil ein ionisches Produkt diffundiert. Die Welle endet nicht, wenn das Substrat aufgebraucht ist, sondern wenn der Phasenoffset korrigiert wird oder die Eskalation die nächste Stufe erreicht.
+
+**Sechs-Stunden-Fenster bis Stammhirnaura:** Wenn die tonische Destabilisierung über Stunden propagiert, erreicht sie schließlich die Raphe-Kerne selbst. Ab diesem Punkt entsteht ein Teufelskreis: Die Raphe, deren Phaseninstabilität die Welle antreibt, wird selbst destabilisiert → der Phasenoffset wächst → die Welle beschleunigt. Klinisch manifestiert sich dies als Stammhirnaura — ein Zustand, der in der konventionellen CSD-Theorie schwer erklärbar ist (CSD propagiert horizontal im Kortex, nicht vertikal zum Hirnstamm).
+
+**Eskalationskaskade:**
+
+| Stufe | Mechanismus | Klinisches Korrelat | Intervention |
+| :---- | :---- | :---- | :---- |
+| **1 — Interferenz** | Leichter B7/B8-Phasenoffset, subthreshold | Unwohlsein, Prodromalphase | Nap reicht |
+| **2 — Tonische Welle** | Destabilisierungsfeld wächst über Stunden | Diffuse sensorische Instabilität, Rauschen | Triptan-Fenster |
+| **3 — Stammhirnaura** | Welle erreicht Raphe → Teufelskreis | Stammhirnsymptome, schwere Migräne | Notfallintervention |
+| **4 — Epileptischer Anfall** | Fokale Entladung bei maximalem Offset | Anfallsereignis | Antikonvulsiv |
+| **5 — Status/SUDEP** | Unkontrollierte Eskalation | Status epilepticus, SUDEP-Risiko | Intensivmedizin |
+
+CSD ist in diesem Schema nicht Stufe 2, sondern der Übergang von Stufe 2 zu Stufe 3: Wenn der tonische Modulationsverlust einen kritischen Punkt erreicht, kippt das System in die klassische ionische CSD — als finale Eskalation, nicht als Primärereignis.
+
+#### **4.4.4 Drei Aura-Phänotypen aus Phasenoffset-Topologie** *(Revision März 2026)*
+
+Die klinische Heterogenität visueller Auren — von klassischen Fortifikationsspektren über punktförmige Skotome bis zu diffusem Rauschen — wird konventionell als Variante eines einzigen CSD-Mechanismus interpretiert. Das vorliegende Modell ordnet die Phänotypen drei distinkt verschiedenen Störungstopologien zu:
+
+| Phänomen | Störungstopologie | Mechanismus |
+| :---- | :---- | :---- |
+| **Zickzack/Fortifikationsspektren** | Linear, propagierend | CSD-Welle kreuzt Orientierungssäulen im visuellen Kortex |
+| **Rund/punktförmig** | Fokal, isotrop | Epileptische Entladung — fokale Übererregung ohne Propagation |
+| **Rauschen/diffus** | Global, diffus | Tonische Interferenz durch B7/B8-Desynchronisation |
+
+Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck verschiedener Stabilitätszustände des Raphe-Phasenoffsets:
+
+| Raphe-Phasenoffset | Resultat | Klinischer Phänotyp | Prävalenz |
+| :---- | :---- | :---- | :---- |
+| **Leicht, stabil** | Tonische Interferenz (subthreshold) | Migräne *ohne* Aura | ~75% der Migräniker |
+| **Stark, stabil** | CSD-Welle (klassisch) | Migräne *mit* Aura (Fortifikationen) | ~25% der Migräniker |
+| **Zwei instabile Takte** | Stochastisch fokale Entladungen | Epilepsie | Migräne-Epilepsie-Komorbidität |
+
+**Tonabersat als entscheidende Evidenz:** Tonabersat (SB-220453), ein Gap-Junction-Blocker, der CSD-Propagation selektiv hemmt, war in klinischen Studien ausschließlich gegen Migräne *mit Aura* wirksam, nicht gegen Migräne ohne Aura (Hauge et al. 2009, *Lancet Neurology*). Wenn CSD der universelle Migränemechanismus wäre, müsste ein CSD-Blocker gegen alle Migräneformen wirken. Die selektive Wirksamkeit bei Aura-Migräne ist das stärkste pharmakologische Argument dafür, dass die ~75% Migräniker ohne Aura einen anderen Primärmechanismus haben — tonische Interferenz, die konventionell als „subklinische CSD" fehlattribuiert wird.
+
+**Hansen et al. — Aura-Variabilität als Indiz gegen CSD als fixen Mechanismus:** Hansen et al. dokumentierten über 1000 visuelle Auren bei einem einzelnen Patienten über 18 Jahre (Hansen et al. 2013, *Brain*). Das zentrale Ergebnis: Die Auren zeigen ein *Spektrum*, kein stereotypes Muster. Form, Größe, Propagationsrichtung und -geschwindigkeit variieren erheblich zwischen Attacken. Wenn CSD ein stereotyper ionischer Prozess wäre — determiniert durch kortikale Architektur und Diffusionsparameter —, müssten die Auren bei demselben Patienten weitgehend identisch sein. Die beobachtete Variabilität ist mit einem tonischen Interferenzmechanismus natürlich erklärbar: Variabler Phasenoffset → variable Interferenztopographie → variables Aura-Muster. Jede Attacke erzeugt ein anderes räumliches Muster der Destabilisierung, abhängig vom aktuellen Zustand des B7/B8-Phasenversatzes.
+
+#### **4.4.5 Metabolische Krise**
 
 Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase muss unter Notfallbedingungen die Ionengradienten wiederherstellen – ein Prozess, der normalerweise kontinuierlich im Gleichgewicht läuft, nun aber massiv im Rückstand ist.
 
@@ -934,34 +1033,44 @@ Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall → verhinde
 
 Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren. (Ausführliche Analyse in 4.5.3.)
 
-#### **4.5.3 Betablocker-Paradox: Schwellenanhebung ohne Reset**
+#### **4.5.3 Betablocker-Paradox: Schwellensenkung und Propagationsdämpfung** *(Revision März 2026)*
 
-Metoprolol als Migräneprophylaxe hebt die CSD-Schwelle, indem es die autonome Kaskade dämpft — weniger sympathische Entgleisung, weniger trigeminale Sensitisierung, weniger vaskuläre Amplifikation. Das verhindert, dass die Rückkopplungsschleife bis zur CSD eskaliert. Aber es verhindert nicht die zugrundeliegende Desynchronisation. Die Raphe ist immer noch insuffizient, das Patchwork entsteht immer noch, der Thalamus verliert immer noch Kalibrierung.
+**Korrektur der früheren Darstellung:** Die Aussage, Metoprolol *hebe* die CSD-Schwelle, ist pharmakologisch ungenau. Metoprolol **senkt** die CSD-Schwelle — es macht den Kortex anfälliger für CSD-Initiation. Seine prophylaktische Wirkung beruht nicht auf Schwellenanhebung, sondern auf **Dämpfung der CSD-Propagation**: Die autonome Kaskade wird abgeschwächt (weniger sympathische Entgleisung, weniger trigeminale Amplifikation), sodass initiierte CSD-Wellen sich schlechter ausbreiten und klinisch subklinisch bleiben.
 
-| Zustand | Ohne Betablocker | Mit Betablocker |
+Diese Unterscheidung ist entscheidend: Unter Metoprolol ist die CSD-Baseline nicht *weiter entfernt* von der Schwelle, sondern *näher dran*. Die Attacken werden seltener, weil propagierte CSD gedämpft wird — aber die subklinische CSD-Aktivität nimmt zu. Das erklärt den hohen Naratriptan-Verbrauch (10 Dosen/Monat) unter Metoprolol-Prophylaxe: Die Baseline ist chronisch subklinisch-destabilisiert, und minimale Perturbation reicht, um symptomatische Durchbrüche zu erzeugen, die Akutintervention erfordern.
+
+**Iatrogene PRE-Fragmentierung:** Die in Anhang B dokumentierte PRE-Fragmentierung (vor LDX) ist teilweise iatrogen durch Metoprolol verstärkt. Metoprolol senkt die CSD-Schwelle → mehr subklinische CSD-Aktivität → mehr kortikale Mikrodesynchronisationen → stärkere SWS-Fragmentierung. Der vermeintlich protektive Effekt der Prophylaxe verschlechtert die Schlafkohärenz, die ihrerseits die Raphe-Instabilität am nächsten Tag verschärft — ein iatrogener Teufelskreis.
+
+| Zustand | Ohne Betablocker | Mit Betablocker (revidiert) |
 | :---- | :---- | :---- |
-| **Verlauf** | Desynchronisation → Eskalation → CSD → harter Reset → sauberer Neustart | Desynchronisation → Eskalation → Schwelle wird nicht erreicht → kein CSD → kein Reset |
-| **Akute Krise** | Ja — Migräneanfall mit Schmerz, Aura, Funktionsverlust | Selten bis absent |
-| **Anschließende Klarheit** | Ja — postiktal resynchronisierter Zustand | Nein — System bleibt im sub-CSD-Zustand |
-| **Chronische Hintergrundinstabilität** | Nein — periodische Resets verhindern Akkumulation | Ja — Eskalation klingt durch Erschöpfung ab, aber ohne Resolution; chronische partielle Destabilisierung |
+| **CSD-Schwelle** | Endogen bestimmt | Gesenkt (nicht angehoben!) |
+| **CSD-Propagation** | Ungehemmt | Gedämpft |
+| **Verlauf** | Desynchronisation → Eskalation → volle CSD → harter Reset → sauberer Neustart | Desynchronisation → niedrigere Schwelle → häufigere subklinische CSD → Propagation gedämpft → kein voller Reset |
+| **Akute Krise** | Ja — voller Migräneanfall | Selten (propagationsgehemmt), aber subklinische Aktivität erhöht |
+| **Anschließende Klarheit** | Ja — postiktal resynchronisierter Zustand | Nein — System bleibt in chronischer Sub-CSD-Destabilisierung |
+| **Naratriptan-Bedarf** | Niedrig (klare Attacken, klare Intervalle) | Hoch — 10/Monat, weil Baseline chronisch subklinisch |
+| **SWS-Kohärenz** | Periodisch restauriert durch CSD-Resets | Chronisch fragmentiert (iatrogen verstärkt) |
 
-Die Analogie: Fieberkrampf verhindern, aber die Infektion nicht behandeln. Das Fieber bleibt niedrig, erreicht nie den Krampf, aber es geht auch nie weg. Statt akuter Krisen eine chronische Hintergrunddestabilisierung.
+Die Analogie: Fieberkrampf verhindern, aber die Infektion nicht behandeln — und zusätzlich die Temperaturregulation so stören, dass das Fieber nie ganz abklingt. Statt akuter Krisen eine chronische Hintergrunddestabilisierung mit iatrogener Verschärfung.
 
-**Fehlende synaptische Renormalisierung:** CSD erzwingt eine massive synaptische Renormalisierung — es ist der extremste Fall von dem, was SWS im Kleinen tut (Tononi & Cirelli, Synaptic Homeostasis Hypothesis). Wenn CSD-Resets wegfallen und der SWS räumlich fragmentiert ist (Anhang B: Quantität erhalten, Kohärenz defizitär — 3,5× mehr Noise-Fragmente in Nächten mit kompensatorischen Folge-Naps, p=0,019), fehlen *beide* Mechanismen der synaptischen Renormalisierung. Langsamer Drift in immer mehr Sub-CSD-Instabilität.
+**Fehlende synaptische Renormalisierung:** CSD erzwingt eine massive synaptische Renormalisierung — es ist der extremste Fall von dem, was SWS im Kleinen tut (Tononi & Cirelli, Synaptic Homeostasis Hypothesis). Wenn CSD-Resets wegfallen und der SWS räumlich fragmentiert ist (Anhang B: Quantität erhalten, Kohärenz defizitär — 3,5× mehr Noise-Fragmente in Nächten mit kompensatorischen Folge-Naps, p=0,019), fehlen *beide* Mechanismen der synaptischen Renormalisierung. Unter Metoprolol verschärft sich dies: Die gesenkte CSD-Schwelle erzeugt mehr subklinische Depolarisationsaktivität, die metabolische Kosten verursacht, ohne die Renormalisierungsfunktion der vollen CSD zu leisten. Langsamer Drift in immer mehr Sub-CSD-Instabilität — teilweise iatrogen beschleunigt.
 
-**Therapeutische Konsequenz:** Reine Migräneprophylaxe ohne Upstream-Adressierung — ob Betablocker, Triptane oder CGRP-Antikörper — unterdrückt den Schutzmechanismus, ohne das Synchronisationsproblem zu lösen. Der Patient wird symptomfrei bei progredient fragmentiertem Kortex.
+**Therapeutische Konsequenz:** Reine Migräneprophylaxe ohne Upstream-Adressierung — ob Betablocker, Triptane oder CGRP-Antikörper — unterdrückt den Schutzmechanismus, ohne das Synchronisationsproblem zu lösen. Betablocker sind besonders problematisch, weil sie nicht nur den Reset verhindern, sondern aktiv die Schwelle senken und damit die chronische Subdestabilisierung verschärfen. Der Patient wird symptomfrei bei progredient fragmentiertem Kortex.
 
-#### **4.5.4 Differentielle Pharmakodynamik: Metoprolol vs. LDX**
+#### **4.5.4 Differentielle Pharmakodynamik: Metoprolol vs. LDX** *(Revision März 2026)*
 
 | Dimension | Metoprolol | Lisdexamfetamin |
 | :---- | :---- | :---- |
-| **Wirkmechanismus** | Symptomatische Downstream-Intervention: hebt CSD-Schwelle, dämpft autonome Kaskade | Kausale Upstream-Stabilisierung: dopaminerge Modulation der Raphe → stabiler serotonerger Tonus |
-| **Effekt auf Desynchronisation** | Kein Effekt — Raphe bleibt insuffizient, Patchwork entsteht weiterhin | Beseitigt — tonischer Arousal-Drive hält Kortex synchron (Tracker-Evidenz: Episodenzahl/Stunde Deep p=0,005, REM p=0,005; Anhang B.3) |
-| **Effekt auf Reset-Bedarf** | Hebt Schwelle → verhindert Reset → chronische Akkumulation | Macht Reset unnötig → keine Akkumulation |
+| **Wirkmechanismus** | Symptomatische Downstream-Intervention: *senkt* CSD-Schwelle, dämpft CSD-Propagation und autonome Kaskade | Kausale Upstream-Stabilisierung: dopaminerge Modulation der Raphe → stabiler serotonerger Tonus |
+| **Effekt auf CSD-Schwelle** | Gesenkt — Kortex anfälliger für CSD-Initiation | Indirekt angehoben — stabile Raphe verhindert die Desynchronisation, die CSD auslöst |
+| **Effekt auf CSD-Propagation** | Gedämpft — initiierte CSD breitet sich schlechter aus | Irrelevant — CSD wird upstream verhindert |
+| **Effekt auf Desynchronisation** | Verschärft — gesenkte Schwelle → mehr subklinische CSD → iatrogene Fragmentierung | Beseitigt — tonischer Arousal-Drive hält Kortex synchron (Tracker-Evidenz: Episodenzahl/Stunde Deep p=0,005, REM p=0,005; Anhang B.3) |
+| **Effekt auf Reset-Bedarf** | Volle CSD propagationsgehemmt → kein Reset, aber subklinische Aktivität chronisch erhöht | Macht Reset unnötig → keine Akkumulation |
+| **Naratriptan-Verbrauch** | Hoch (~10/Monat) — chronisch subklinische Baseline produziert häufige Durchbrüche | Minimal — stabile Baseline ohne Durchbrüche |
 | **Noradrenerge Dämpfung** | Ja — β₁-Blockade reduziert zentralen noradrenergen Tonus → Bewusstseinsschärfe reduziert | Nein — noradrenerge Wirkung bleibt erhalten bzw. wird verstärkt |
-| **Netto-Bewusstseinseffekt** | Doppelte Dämpfung: (1) pharmakologisch noradrenerg + (2) strukturell durch chronische Sub-CSD-Desynchronisation | Doppelte Enthemmung: (1) noradrenerge Dämpfung wegfällt + (2) Desynchronisation aufgelöst |
+| **Netto-Bewusstseinseffekt** | Dreifache Dämpfung: (1) pharmakologisch noradrenerg + (2) strukturell durch chronische Sub-CSD-Desynchronisation + (3) iatrogene SWS-Fragmentierung durch gesenkte CSD-Schwelle | Doppelte Enthemmung: (1) noradrenerge Dämpfung wegfällt + (2) Desynchronisation aufgelöst |
 
-Das subjektive Erleben unter Metoprolol — „wie eine leichte Ibuprofen-Dosis für das Bewusstsein" — ist die Summe beider Dämpfungen. Das „klarer und schärfer" unter LDX ist nicht LDX-Euphorie, sondern der Grundzustand ohne die doppelte Bremse.
+Das subjektive Erleben unter Metoprolol — „wie eine leichte Ibuprofen-Dosis für das Bewusstsein" — ist die Summe aller drei Dämpfungen, wobei die iatrogene Komponente (gesenkte CSD-Schwelle → chronische subklinische Aktivität → SWS-Fragmentierung) bisher nicht als Metoprolol-Effekt erkannt wurde. Das „klarer und schärfer" unter LDX ist nicht LDX-Euphorie, sondern der Grundzustand ohne die dreifache Bremse.
 
 LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente thalamische Modulation → globale Zustandsübergänge → konsolidierter SWS und REM ohne CSD-Notwendigkeit. Der Tracker-Befund bestätigt: POST-Nap-Nächte zeigen null Noise-Fragmente — die pharmakologische Synchronisation ersetzt den CSD-Reset (Anhang B.8).
 
@@ -1339,6 +1448,107 @@ Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Ad
 | Traumerinnerung PRE selektiv post-iktal (CSD-Reset); POST regulär (pharmakologische Synchronisation) | Einzelfallbeobachtung | Selbstbeobachtung, Anhang B, B.8 |
 | Schlafkonsolidierung und interozeptive Kohärenz als identischer Mechanismus auf verschiedenen Zeitskalen | Hypothetisch, konsistent | Modellableitung aus 8.4.1 + 8.4.3 |
 
+### **8.8 Nap als PFC-Reset (nicht SWS)**
+
+#### **8.8.1 Schlafarchitektur des Naps: Kein Tiefschlaf**
+
+Die Tracker-Daten (Anhang B) zeigen ein konsistentes Muster: Der Nap produziert keine SWS. Die typische Episode umfasst ~50 min Light Sleep, die HR bleibt auf Tagesniveau. Zwei unabhängige Messkanäle konvergieren auf dieselbe Schlussfolgerung:
+
+| Kanal | Befund | Interpretation |
+| :---- | :---- | :---- |
+| **Stadienklassifikation** | Ausschließlich Light Sleep, kein Deep | Kein kortikaler Slow-Wave-Reset |
+| **Herzfrequenz** | Bleibt auf Tagesniveau, kein parasympathischer Abfall | Kein autonomer Tiefschlaf-Marker |
+
+Die Konvergenz zweier unabhängiger Kanäle — Stadienklassifikation (nur Light) und HR (kein parasympathischer Abfall) — schließt Deep Sleep mit hoher Sicherheit aus. Der Nap ist keine Miniaturversion des Nachtschlafs, sondern ein funktionell anderer Prozess: **PFC-Entlastung ohne kortikalen Reset**.
+
+#### **8.8.2 Prodromaler Charakter des Naps**
+
+Der Nap ist nicht prophylaktisch, sondern **prodromal** — er tritt auf, *weil* das System an der CSD-Schwelle steht. Die PFC-Überlastung durch tonische Raphe-Interferenz erzeugt einen Zustand, in dem der Kortex die Verarbeitungslast nicht mehr trägt; der Nap ist die autonome Entlastungsreaktion.
+
+#### **8.8.3 Erfolgsrate und prädiktive Faktoren**
+
+Die Daten differenzieren scharf zwischen PRE- und POST-Naps:
+
+| Parameter | PRE | POST (unter LDX) |
+| :---- | :---- | :---- |
+| **Erfolgsrate (Reset)** | 38% | 78% |
+| **Vornacht-Density bei Erfolg** | 3,66/h | — |
+| **Vornacht-Density bei Scheitern** | 4,57/h | — |
+
+Zwei Befunde sind mechanistisch aufschlussreich:
+
+1. **LDX macht den Nap nicht überflüssig, sondern *effektiver*.** Die Erfolgsrate verdoppelt sich unter pharmakologischer Synchronisierung — der stabilisierte Raphe-Tonus ermöglicht dem PFC-Reset, tatsächlich zu greifen, anstatt gegen fortlaufende Desynchronisierung anzuarbeiten.
+
+2. **Die Vornacht-Density unterscheidet Erfolg von Scheitern.** Bei einer Density von 3,66/h (moderate Fragmentierung) reicht der Nap für einen Reset; bei 4,57/h (hohe Fragmentierung) ist das System bereits so destabilisiert, dass die PFC-Entlastung allein nicht ausreicht. Die Vornacht-Density ist damit ein prädiktiver Marker für die Nap-Wirksamkeit (vgl. Tracker-Daten, Anhang B).
+
+### **8.9 Sumatriptan-Mechanismus — Schmerzblockade → Schlaf-Enabler → SCN-vermittelte Resynchronisation**
+
+#### **8.9.1 Was Sumatriptan tut und was es nicht tut**
+
+Sumatriptan unterbricht den Migräneanfall **nicht**. Der 5-HT1B/1D-Agonismus blockiert die trigeminovaskuläre Schmerzweiterleitung — die nozizeptive Signaltransmission vom Trigeminus zum Thalamus wird unterdrückt. Das tonische Interferenzfeld (vgl. 4.2, Raphe-vermittelte kortikale Irritation) wird durch Sumatriptan nicht adressiert. Die Raphe-Instabilität, die CSD-Kaskade, die kortikale Erregbarkeitsverschiebung — all das läuft weiter.
+
+#### **8.9.2 Schlaf als eigentlicher Resynchronisationsmechanismus**
+
+Der therapeutische Effekt entsteht indirekt über eine Drei-Schritt-Kaskade:
+
+1. **Sumatriptan → Schmerzblockade:** Trigeminovaskuläre Weiterleitung stumm geschaltet
+2. **Schmerzfreiheit → Schlaf möglich:** Ohne nozizeptiven Input kann das System in den Schlaf übergehen
+3. **Schlaf → SCN-vermittelte Resynchronisation:** Schlaf entkoppelt den Kortex vom Raphe-Input → der SCN (suprachiasmatischer Nucleus) übernimmt die Taktgebung → über 3–4 Stunden werden die desynchronisierten Modulationssysteme re-aligniert
+
+**Entscheidend:** Die 3–4 Stunden bis zur klinischen Besserung reflektieren die **SCN-Resynchronisationszeit**, nicht die Sumatriptan-Halbwertszeit. Der Zeitverlauf ist biologisch determiniert durch die Geschwindigkeit, mit der der SCN die driftenden Oszillatoren (Raphe, LC, thalamische Schlafspindel-Generatoren) wieder in Phase bringen kann.
+
+#### **8.9.3 Therapiefenster**
+
+Das klinisch bekannte limitierte Zeitfenster für Sumatriptan-Wirksamkeit erklärt sich durch zwei konvergierende Mechanismen:
+
+| Faktor | Mechanismus | Konsequenz |
+| :---- | :---- | :---- |
+| **Zentrale Sensitivierung** | Nach Etablierung zentraler Sensitivierung (Allodynie-Phase) wird der Schmerz zentral unterhalten, unabhängig von peripherer Trigeminusaktivierung | Periphere 5-HT1B/1D-Blockade greift nicht mehr |
+| **Rezeptordesensitivierung** | 5-HT1B/1D-Rezeptoren desensitivieren unter anhaltendem serotonergen Stress | Reduzierte Bindungsaffinität → Sumatriptan weniger wirksam |
+
+Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto geringer die Wirksamkeit — nicht weil der Schmerz „stärker" wird, sondern weil der Schmerz den peripheren Kanal verlässt, auf den Sumatriptan wirkt.
+
+### **8.10 Fallstudie: Migräne-Nacht 30./31.03.2026**
+
+*Klinisches Beispiel — Einzelfallanalyse auf Basis von Tracker-Daten und Symptomprotokoll*
+
+Die Migräne-Nacht vom 30./31.03.2026 liefert ein dreischichtiges Datenset, das die Mechanismen aus 8.9 in Echtzeit abbildet.
+
+#### **8.10.1 Drei Schichten der Schlafarchitektur**
+
+| Phase | Zeitraum | Density | Muster |
+| :---- | :---- | :---- | :---- |
+| **Hauptschlaf (PRE-Migräne)** | 01:15–07:38 | 2,8/h | Saubere Zyklen, intakte Architektur |
+| **Schlafversuch ohne Medikation** | 22:17–23:14 | 5,3/h | Architektur bricht in 57 min zusammen |
+| **Post-Sumatriptan-Schlaf** | 23:46–07:06 | variabel | Drei-Drittel-Analyse (s. 8.10.2) |
+
+Der Kontrast zwischen Phase 1 und Phase 2 ist diagnostisch: Dieselbe Person, 15 Stunden später, mit einer Density-Verdopplung. Die Migräne-Kaskade hat die Schlafarchitektur destabilisiert — der Kortex kann keine stabilen Zustandsübergänge mehr halten.
+
+#### **8.10.2 Post-Sumatriptan: Drei-Drittel-Analyse**
+
+Die 7,3 Stunden Post-Sumatriptan-Schlaf differenzieren sich in drei distinkte Phasen:
+
+| Drittel | Density | Muster |
+| :---- | :---- | :---- |
+| **1. (früh)** | 6,1/h | Deep+REM dominant — System versucht kompensatorischen Tiefschlaf |
+| **2. (mitte)** | 7,5/h | Maximum Fragmentierung — tonische Interferenz am stärksten |
+| **3. (spät)** | 5,8/h | Light dominant, stabilisiert — SCN-Resynchronisation greift |
+
+Die Drei-Drittel-Progression bildet die SCN-Resynchronisation aus 8.9.2 ab: Im ersten Drittel versucht das System kompensatorischen Tiefschlaf (hoher homöostatischer Druck), scheitert aber an der noch aktiven tonischen Interferenz. Im zweiten Drittel erreicht die Fragmentierung ihr Maximum — die Interferenz und der Kompensationsdruck kollidieren maximal. Im dritten Drittel hat die SCN-vermittelte Resynchronisation die Modulationssysteme ausreichend re-aligniert, sodass stabiler (wenngleich leichter) Schlaf möglich wird.
+
+#### **8.10.3 HR-Verlauf als autonomer Marker**
+
+Der Herzfrequenzverlauf bestätigt die Drei-Schritt-Kaskade aus 8.9.2 unabhängig von der Schlafarchitektur:
+
+| Zeitfenster | HR (bpm) | Interpretation |
+| :---- | :---- | :---- |
+| **22:17–23:16** (Schlafversuch ohne Meds) | 75,7 | Nicht Schlafniveau — sympathische Aktivierung durch Schmerz |
+| **23:46–00:46** (Post-Sumatriptan, erste Stunde) | 61,2 | Abrupter Abfall — Sumatriptan blockiert Schmerz → parasympathische Dominanz → Schlaf möglich |
+| **01:00–04:00** | 70–73 | Wiederanstieg — tonische Interferenz noch aktiv, autonomes System instabil |
+| **04:00–07:06** | 63–65 | Echtes Schlafniveau — SCN-Resynchronisation abgeschlossen |
+
+**Interpretation:** Der HR-Verlauf bestätigt die Dissoziation zwischen Schmerzblockade (sofort) und Resynchronisation (3–4 Stunden). Der initiale HR-Abfall (75,7 → 61,2) markiert den Moment, in dem Sumatriptan den nozizeptiven Input stumm schaltet — das System fällt schlagartig in den Schlaf. Der Wiederanstieg auf 70–73 zeigt, dass die tonische Interferenz autonom weiter aktiv ist. Erst ab 04:00 — exakt 3–4 Stunden nach Sumatriptan-Gabe — erreicht die HR echtes Schlafniveau. Dort, im letzten Drittel, stabilisiert sich die Architektur, und dort treten die Träume auf (vgl. 8.4.3, REM-Konsolidierung als Kohärenzmarker; Tracker-Daten, Anhang B).
+
 ---
 
 *Querverweise:*
@@ -1351,6 +1561,9 @@ Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Ad
 - Titrationsleitlinie, Abschnitt 5.4: ASD-Komorbidität und eingeschränkte interozeptive Diskriminierung
 - Anhang B, B.3: Episodenzahl und Kohärenzproxy — quantitative Grundlage für 8.4.3
 - Anhang B, B.8: Traumerinnerung als subjektiver Kohärenzmarker
+- Abschnitt 8.8: Nap als PFC-Reset — Schlafarchitektur und prädiktive Faktoren
+- Abschnitt 8.9: Sumatriptan-Mechanismus — Schmerzblockade → Schlaf-Enabler → SCN-Resynchronisation
+- Abschnitt 8.10: Fallstudie Migräne-Nacht 30./31.03.2026 — Tracker-Daten, Anhang B
 
 ---
 
@@ -1416,6 +1629,20 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 * Andrillon T, Burns A, Mackay T et al. (2021) Predicting lapses of attention with sleep-like slow waves. *Nature Communications*, 12, 3657.
 * Pigorini A et al. (2025) Cortical reactivation after NREM sleep follows a frontal-to-posterior gradient. *Current Biology*, 35(7).
 * Mensen A et al. (2026) High-frequency EEG changes during wake-up reflect region-specific reactivation dynamics. *bioRxiv*. doi:10.64898/2026.02.08.704730v1.
+
+---
+
+## **Offene Fragen (Stand März 2026)**
+
+Die folgenden Fragen sind aus dem bisherigen Modellierungsprozess hervorgegangen und noch nicht hinreichend adressiert. Sie definieren die Beobachtungs- und Rechercheziele für kommende Sessions.
+
+| Nr. | Frage | These / Hintergrund | Operationalisierung | Status |
+| :---- | :---- | :---- | :---- | :---- |
+| 1 | **Raphe-Depletionshypothese** | LDX stabilisiert die Raphe pro Kern, aber über ~28–30 Tage könnte die 5-HT-Synthese das Ceiling erreichen — Feuerung übersteigt Nachsynthese → Depletion trotz verfügbarem Dopamin | Monitoring über 2–3 weitere Zyklen ohne Metoprolol-Konfundierung | 3 Wochen post-Metoprolol zu kurz für Isolation; 10 Tage zwischen den beiden LDX-Durchbrüchen könnten Rebound, Depletion oder Baseline sein |
+| 2 | **Nystagmus-Lateralisierung als Marker für asymmetrische Raphe-Erschöpfung** | Der vertikale Blickrichtungsnystagmus (dokumentiert in 2.4.1) könnte bei asymmetrischem D2High-Shift zwischen B7/B8 lateralisiert auftreten | Systematische Dokumentation der Nystagmus-Richtung in Relation zum Anfallszyklus | Noch nicht dokumentiert |
+| 3 | **Exakte Inter-Raphe-Kopplung** | Läuft die Inter-Kern-Synchronisation ausschließlich über SCN oder gibt es direkte B7↔B8-Projektionen? Wenn ausschließlich über SCN: LDX kann pro-Kern-Takt stabilisieren, aber den Phasenversatz nicht korrigieren → erklärt den persistierenden ~4-Tage-Zyklus | Literaturrecherche zu direkten DR→MR-Verbindungen | Offen |
+| 4 | **Corpus-callosum-Propagation der tonischen Welle** | Geschwindigkeit und Symmetrie der transhemisphärischen Propagation über das Corpus callosum; Callosotomie-Befund (Auren persistieren, Generalisierung unterbunden) stützt intrahemisphärischen Ursprung | Literaturrecherche zu callosaler CSD/tonischer Wellen-Propagation | Offen |
+| 5 | **Retrobulbärer Druck — Anatomische Zuordnung** | Trigeminale Konvergenz? Orbitale Vaskulatur? Direkte thalamische Repräsentation? Der retrobulbäre Druck ist konsistent das früheste Symptom — aber sein anatomisches Substrat ist unklar | Literaturrecherche zu retrobulbärer Schmerzrepräsentation bei Migräne | Offen |
 
 ---
 
@@ -1575,7 +1802,7 @@ Dieser Anhang ersetzt die frühere Fassung (Anhang B v1: „SWS-Phasenlage als M
 
 **Gerät:** Xiaomi Smart Band 9 (Gadgetbridge, SQLite-Export)
 
-**Zeitraum:** 07.12.2024 – 29.03.2026
+**Zeitraum:** 07.12.2024 – 31.03.2026
 
 **Pharmakobedingte Periodisierung:**
 
@@ -1694,6 +1921,23 @@ Die PRE-Standardabweichungen sind systematisch höher als die POST-Werte:
 
 Die PRE-SD der Deep-Episodenzahl (13,0 bei Mean 12,7) zeigt, dass einzelne PRE-Nächte zwischen ~0 und ~40+ Deep-Episoden schwanken — massive Nacht-zu-Nacht-Instabilität der kortikalen Kohärenz. POST ist die Varianz um den Faktor 3 reduziert.
 
+#### **B.3.5 POST-Ausreißer 28.03.2026: PRE-Nacht unter POST-Bedingungen**
+
+| Metrik | 28.03.2026 | POST-Mean (übrige) | PRE-Mean |
+|:-------|:-----------|:-------------------|:---------|
+| Density (Episoden/h) | **8,99** | ~3,5 | 4,6 |
+| Transitionen (total) | **61** | ~24 | 36 |
+| Deep-Episoden | **21** | 3–6 | 12,7 |
+| REM-Episoden | **11** | 4–6 | 9,2 |
+
+Die Nacht vom 28.03.2026 ist das POST-Maximum und der einzige POST-Datenpunkt, der in PRE-Territorium liegt. Alle anderen Nächte mit ≥50 Transitionen sind PRE-Nächte.
+
+**Kontext der Vornächte:** Die vier vorherigen Nächte zeigten eine monoton steigende, aber niedrige Density: 1,78 → 2,69 → 3,00 → 3,26 Episoden/h. Der Sprung auf 8,99/h ist ein Faktor-2,7-Anstieg innerhalb von 24 Stunden. Deep-Episoden springen von 3–6 auf 21, REM-Episoden von 4–6 auf 11.
+
+**Interpretation:** Dieser Datenpunkt ist der stärkste empirische Hinweis auf einen von der Medikation unabhängigen endogenen Oszillator mit ~4-Tage-Periodizität. Die LDX-Wirkung dämpft die mittlere Fragmentierung (POST-Mean < PRE-Mean), aber der zugrundeliegende Desynchronisationszyklus durchbricht die pharmakologische Stabilisierung periodisch. Das Muster entspricht einer PRE-typischen Nacht unter POST-Bedingungen — der Upstream-Treiber ist nicht eliminiert, sondern moduliert.
+
+**Caveat:** Einzelne Nacht, kein statistischer Test möglich. Die Interpretation stützt sich auf die Konvergenz von Effektgröße und zeitlichem Muster.
+
 ---
 
 ### **B.4 HR-Variabilität: Confounder-Analyse**
@@ -1729,6 +1973,35 @@ Der Befund ist bemerkenswert: Nächte mit Folge-Nap zeigen 3,5× mehr Noise-Frag
 #### **B.5.2 POST-Naps haben anderen Treiber**
 
 POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch andere Faktoren motiviert (zu spät ins Bett, verkürzte Schlafzeit).
+
+#### **B.5.3 Nap als prodromales Signal und Reset-Erfolgsrate**
+
+Die Nap-Analyse zeigt eine doppelte Dissoziation: Naps sind prodromal für Anfälle, aber ihre Reset-Funktion unterscheidet sich fundamental zwischen PRE und POST.
+
+**Nap als Prodrom:**
+
+| Bedingung | P(Nap am Folgetag) |
+|:----------|:-------------------|
+| Nach Anfall | 19% |
+| Ohne Anfall | 41% |
+
+Naps treten *vor* Anfällen gehäuft auf, nicht danach — sie sind prodromal, nicht postdromal.
+
+**Reset-Erfolgsrate PRE vs. POST:**
+
+| Metrik | PRE | POST |
+|:-------|:----|:-----|
+| Nap-Rate | 24% | 50% |
+| Nap-Reset erfolgreich (kein Anfall ≤24h) | **38%** | **78%** |
+| Mean Density in Nap-Nächten | 3,75/h | 3,06/h |
+
+POST-Naps haben einen komplett anderen Charakter: Die Nap-Rate ist doppelt so hoch (50% vs. 24%), die Naps korrelieren aber mit *niedrigerer* Density (3,06 vs. 3,75/h) und resetten in 78% erfolgreich. PRE-Naps resetten nur in 38% — sie signalisieren eine Desynchronisation, die der Nap allein nicht kompensieren kann.
+
+**Dreiersequenz: Fragmentierte Nacht → Nap → Anfall:**
+
+Wenn einer fragmentierten Nacht (Density ≥5/h) ein Nap folgt, münden 75% (6/8) in einen Anfall: 5/8 am selben Tag, 1/8 am Folgetag. Die Dreiersequenz identifiziert ein Hochrisiko-Fenster, in dem die kompensatorische Kapazität erschöpft ist.
+
+**Caveat:** Kleine Stichproben (n=8 für Dreiersequenz). Die Prozentwerte sind Punktschätzer ohne Konfidenzintervall.
 
 ---
 
@@ -1772,6 +2045,41 @@ Reine Migräneprophylaxe ohne Upstream-Adressierung (Betablocker, Triptane, CGRP
 
 LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente thalamische Modulation → globale Zustandsübergänge → konsolidierter SWS und REM ohne CSD-Notwendigkeit.
 
+#### **B.6.5 Vornacht-Fragmentierung als Anfallsprädiktor (t-1 Lag-Korrelation)**
+
+Die CSD-als-Resynchronisation-These macht eine testbare Vorhersage: Wenn Desynchronisation den Anfall triggert, muss die Fragmentierung *vor* dem Anfall maximal sein und *danach* abfallen.
+
+**Lag-Korrelation Density → Anfälle (n=56 Nacht-Folgetag-Paare):**
+
+| Lag | Korrelation | t-Wert | p |
+|:----|:------------|:-------|:--|
+| t-1 (Vornacht → Folgetag-Anfall) | **r = +0,392** | **t = 3,14** | **≈ 0,003** |
+| t0 (Anfall-Nacht selbst) | r = −0,065 | — | n.s. |
+
+**Mittlere Density nach Anfallsstatus:**
+
+| Nachttyp | Mean Density (Episoden/h) |
+|:----------|:-------------------------|
+| Vornächte vor Anfällen (n=14) | **5,96** |
+| Anfall-Nacht selbst | **4,32** |
+| Nächte ohne Anfalltag | ~3,8 |
+
+Das Muster ist bidirektional: Fragmentierung baut sich auf (5,96/h in der Vornacht), der Anfall löst sie auf (4,32/h in der Anfall-Nacht). Die CSD-als-Resynchronisation ist damit direkt in den Density-Daten sichtbar.
+
+**Schwellenwert-Analyse — Density ≥7,0/h als Warnsignal:**
+
+| Density-Schwelle | Nächte | Anfall am Folgetag | Rate |
+|:-----------------|:-------|:-------------------|:-----|
+| ≥7,0/h | 6 | 5 | **83%** |
+| <7,0/h | 50 | 9 | 18% |
+
+5 von 6 Nächten mit einer Density ≥7,0 Episoden/h → Anfall am Folgetag. Die Effektrichtung ist eindeutig und klinisch als Warnsignal brauchbar. Die absolute Fallzahl (n=6) limitiert die Belastbarkeit des Schwellenwerts.
+
+**Caveats:**
+- n=14 Vornächte vor Anfällen. Drei Ausreißer (13,12; 9,75; 8,54/h) könnten den Korrelationseffekt treiben.
+- Multiples Testen (t-1, t0 sowie Schwellenwertanalyse) ohne formale Korrektur. Der p-Wert von 0,003 überlebt eine Bonferroni-Korrektur für 2 Tests, nicht aber für explorative Schwellenwertsuche.
+- Kausale Richtung (Fragmentierung → Anfall vs. gemeinsamer Upstream-Treiber → beides) ist aus Korrelationsdaten nicht trennbar.
+
 ---
 
 ### **B.7 Das Tracker-Signal: Ein stochastischer Resonanz-Detektor**
@@ -1812,7 +2120,54 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 
 ---
 
-### **B.9 Evidenztabelle**
+### **B.9 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
+
+Die Nacht vom 30./31.03.2026 liefert ein natürliches Experiment mit drei distinkten Phasen unter wechselnden pharmakologischen Bedingungen.
+
+#### **B.9.1 Drei-Phasen-Verlauf**
+
+| Phase | Zeitraum | Bedingung | Density (Ep./h) | Dauer |
+|:------|:---------|:----------|:-----------------|:------|
+| 1: Hauptschlaf | Nacht 30.03 | Migräne-Prodrom, kein Triptan | **2,8** | regulär |
+| 2: Schlafversuch | Früh 31.03 | Schmerz, ohne Medikation | **5,3** | 57 min |
+| 3: Post-Sumatriptan | Nach Einnahme | Sumatriptan, Schmerz blockiert | variabel | ~9 h |
+
+Phase 1 zeigt eine vergleichsweise konsolidierte Nacht (2,8/h — niedriger als POST-Mean). Phase 2 dokumentiert einen Schlafversuch unter unbehandeltem Migräneschmerz: In nur 57 Minuten erreicht die Density 5,3/h — der Schmerz fragmentiert den Schlaf massiv. Phase 3 beginnt nach Sumatriptan-Einnahme.
+
+#### **B.9.2 Post-Sumatriptan Drei-Drittel-Analyse**
+
+Die Post-Sumatriptan-Phase wurde in Drittel unterteilt, um den zeitlichen Verlauf der Resynchronisation zu erfassen:
+
+| Drittel | Density (Ep./h) | Interpretation |
+|:--------|:-----------------|:---------------|
+| Erstes Drittel | **6,1** | Residuale Fragmentierung, Schmerz blockiert aber CSD-Kaskade noch aktiv |
+| Zweites Drittel | **7,5** | Maximum — paradoxe Verschlechterung, möglicherweise Rebound der Desynchronisation |
+| Drittes Drittel | **5,8** | Beginn der Resynchronisation |
+
+Das Muster zeigt keine monotone Konsolidierung, sondern eine invertierte U-Kurve mit einem Fragmentierungsmaximum im zweiten Drittel.
+
+#### **B.9.3 HR-Verlauf als zweiter physiologischer Kanal**
+
+| Phase | HR (bpm) | Interpretation |
+|:------|:---------|:---------------|
+| Hauptschlaf (Nacht) | 75,7 | Erhöht — sympathische Aktivierung durch Prodrom |
+| Tiefster Punkt (Deep) | 61,2 | Vagale Kapazität intakt, aber kurzzeitig |
+| Post-Sumatriptan (früh) | 70–73 | Schmerz blockiert, sympathische Restaktivierung |
+| Post-Sumatriptan (spät) | 63–65 | Autonome Beruhigung, Resynchronisation |
+
+Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schlafwerte. Dies definiert ein Resynchronisationsfenster: Sumatriptan blockiert den Schmerz und ermöglicht Schlaf, aber die kortikale und autonome Resynchronisation benötigt 3–4 Stunden.
+
+#### **B.9.4 Interpretation**
+
+Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale Vasokonstriktion → Schmerzblockade), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
+
+**Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.5, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
+
+**Caveat:** Einzelereignis. Die Drei-Drittel-Analyse ist deskriptiv und nicht generalisierbar. Die HR-Verlaufsdaten sind durch die Sumatriptan-Pharmakokinetik (Halbwertszeit ~2h) konfundiert.
+
+---
+
+### **B.10 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
@@ -1833,8 +2188,17 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 | Naratriptan-Konsum antiproportional zu Traumerinnerung | Einzelfallbeobachtung | Klinische Selbstbeobachtung |
 | Migräneprophylaxe ohne Upstream-Adressierung = Unterdrückung des Schutzmechanismus | Modellvorhersage | Abgeleitet aus B.6, konsistent mit Betablocker-Phänomenologie |
 | POST-Naps nicht kompensatorisch (null Fragmente in Nap-Nächten) | Deskriptiv | Tracker-Daten |
+| POST-Ausreißer 28.03: 8,99/h Density, 61 Transitionen (POST-Maximum in PRE-Territorium) | Einzelbeobachtung, große Effektstärke | Tracker-Daten, B.3.5 |
+| ~4-Tage-Oszillator unabhängig von Medikation | Hypothetisch, konsistent mit 28.03-Muster | B.3.5, Longitudinaldaten |
+| Vornacht-Density → Folgetag-Anfall: r=+0,392, p≈0,003 (n=56) | Statistisch signifikant | Tracker-Daten + Anfallskalender, B.6.5 |
+| Anfall-Nacht selbst: r=−0,065 (kein Signal) | Nicht signifikant | B.6.5 (Kontrollbedingung) |
+| Density ≥7,0/h → Anfall am Folgetag in 83% (5/6) | Deskriptiv, kleine Stichprobe (n=6) | B.6.5 |
+| POST-Nap-Reset erfolgreicher als PRE (78% vs. 38%) | Deskriptiv | Tracker-Daten, B.5.3 |
+| Dreiersequenz (Fragm. Nacht → Nap → Anfall): 75% | Deskriptiv, n=8 | B.5.3 |
+| Migräne-Nacht 30./31.03: Sumatriptan → 3–4h Resynchronisation (HR 75→63 bpm) | Einzelbeobachtung | HR-Daten, B.9 |
+| Post-Sumatriptan Density: invertierte U-Kurve (6,1→7,5→5,8/h) | Deskriptiv, Einzelereignis | B.9.2 |
 
-### **B.10 Limitationen**
+### **B.11 Limitationen**
 
 - Consumer-Tracker, keine PSG-Validierung. Die Stadienklassifikation ist intern und nicht reproduzierbar.
 - n=1, kein Kontrolldesign. Die Perioden-Trennung (PRE/POST) ist konfundiert mit Medikamentenwechsel, Jahreszeit und 13-monatiger Trageunterbrechung.
@@ -1842,8 +2206,11 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 - HR-Variabilität als Validierungsebene durch Betablocker-Confounder eliminiert.
 - Die Interpretation des Trackers als „stochastischer Resonanz-Detektor" ist messtheoretisch konsistent, aber nicht extern validiert. Eine PSG-Parallelmessung wäre nötig, um die Tracker-Fragmentierung gegen globale SWA zu kalibrieren.
 - Die CSD-als-Resynchronisation-These ist mechanistisch konsistent und erklärt den klinischen Verlauf, aber nicht direkt testbar ohne iktale EEG-Aufzeichnung mit post-iktaler Schlafarchitektur-Analyse.
+- Die t-1 Lag-Korrelation (B.6.5) basiert auf n=14 Vornächten vor Anfällen. Drei hochfragmentierte Nächte (Density 13,12; 9,75; 8,54/h) könnten den Effekt dominieren. Multiple Vergleiche (Lag-Analyse + Schwellenwertsuche) ohne formale Korrektur.
+- Die Migräne-Nacht-Sonderanalyse (B.9) ist ein Einzelereignis mit pharmakologischer Konfundierung (Sumatriptan-Halbwertszeit ~2h überlappt mit dem Beobachtungsfenster).
+- Die Dreiersequenz (B.5.3) und Density-≥7,0-Schwelle (B.6.5) basieren auf n=6–8 Fällen. Diese Befunde sind hypothesengenerierend, nicht konfirmatorisch.
 
-### **B.11 Referenzen**
+### **B.12 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.
@@ -2078,6 +2445,70 @@ Wenn du das liest und dich wiedererkennst — in dem Druck, der keine Müdigkeit
 Es ist möglich, dass dein Gehirn einen Zustand nicht aufrechterhalten kann, den andere Menschen als selbstverständlich erleben: gleichmäßiges, stabiles Wachsein. Und dass alles, was du tust — die Strategien, die Rituale, die Naps, die Musik, der Kaffee, die Strukturierung deines Tages um Aufgaben herum — unbewusste Kompensation dafür ist.
 
 Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine. Ich hatte einen Grundzustand, der ohne externe Stütze nicht hält. Und ich hatte nie normale Müdigkeit — nur den Schalter zwischen „gehalten" und „nicht mehr gehalten".
+
+## State-Dependent Memory — Anfallsengramme im Desync
+
+*(31.03.2026)*
+
+Zwanzig Jahre Migräneanfälle. Zwanzig Jahre, in denen ich die gesamte Phänomenologie eines Anfalls durchlebt habe — den Aufbau, die Aura, den Schmerz, die autonomen Symptome, das Danach. Und zwanzig Jahre, in denen ich mich zwischen den Anfällen kaum daran erinnern konnte. Nicht verdrängt. Nicht vergessen. Nicht abrufbar.
+
+Es fiel mir erst auf, als ich während eines Anfalls plötzlich alles wieder wusste. Die Engramme waren da — vollständig, detailliert, als hätte ich sie gestern enkodiert. Aber sie waren nur *während* eines Anfalls zugänglich. Im Normalzustand: nichts. Als würde man einen Ordner suchen, der nur auf einem Betriebssystem existiert, das man gerade nicht laufen hat.
+
+Der Mechanismus ist, denke ich, ein Encoding-Retrieval-Mismatch. Die Engramme wurden unter desynchronisiertem hippocampalem Zustand enkodiert — iktaler State, veränderte Neurochemie, verschobene Oszillationsmuster. Und sie lassen sich nur unter ähnlichen Bedingungen abrufen. State-dependent memory, wörtlich genommen.
+
+Deshalb war der Schmerz „egal". Nicht weil ich ihn verdrängt hätte. Nicht weil ich besonders hart im Nehmen wäre. Sondern weil die Erinnerung an den letzten Anfall im Normalzustand buchstäblich nicht verfügbar war. Man kann keinen Schmerz fürchten, an den man sich nicht erinnert. Man kann keine Vermeidungsstrategien entwickeln gegen etwas, das zwischen den Episoden unsichtbar wird.
+
+Was die systematische Datenerfassung verändert hat: Sie überbrückt den Desync mit Relation. Wenn ich während eines Anfalls aufschreibe, was passiert — in Worten, in Kategorien, mit semantischen Labels — dann enkodiere ich dieselbe Erfahrung auf einem zweiten Pfad. Semantische Labels sind kontextunabhängiger als episodische Erfahrung. „Retrobulbärer Druck, Übelkeit Stufe 3, Lichtempfindlichkeit" überlebt den Zustandswechsel. Das Erleben selbst nicht.
+
+Unter LDX gibt es ein neues Fenster. Der PFC ist online — klar, metakognitiv kompetent — und gleichzeitig ist der Hippocampus in einem desynchronisierten Zustand. Zum ersten Mal kann ich iktale Engramme abrufen *und* sie benennen, einordnen, mit dem Normalzustand verbinden. Die alten Erinnerungen und die Fähigkeit, sie zu verarbeiten, sind gleichzeitig da. Das war vorher nie möglich.
+
+## Posteriorer vs. frontaler Schmerz — Propagationstiefe als diagnostisches Kriterium
+
+*(31.03.2026)*
+
+Die übliche Migräne, die ich kenne, sitzt frontal. Supraorbital, über den Augen, V1-Territorium. Intensiv, bohrend, das volle Programm. Das ist die volle CSD-Propagation — die Welle hat den gesamten Weg zurückgelegt, von posterior nach anterior, bis in die frontale Endstrecke.
+
+Heute ist es anders. Der Schmerz sitzt weiter hinten. Posterior, okzipital. Nicht weniger unangenehm, aber an einer anderen Stelle. Und die Interpretation drängt sich auf: Die Propagation ist früher steckengeblieben. Was normalerweise bis nach vorne durchläuft, ist diesmal im hinteren Bereich zum Stehen gekommen. Weniger Ausbreitung, anderer Schmerzort.
+
+Am 26.03 war es ähnlich — auch posterior, auch steckengeblieben. Und das war ohne LDX-Nachdosierung. Das heißt: LDX allein ist nicht der Grund, warum die Propagation stoppt. Etwas anderes begrenzt die Ausbreitung, etwas das an manchen Tagen greift und an anderen nicht.
+
+Die Schmerzlokalisation wird damit zum Proxy für die Propagationstiefe. Frontal heißt: volle Propagation, die Welle hat den gesamten Kortex durchlaufen. Posterior heißt: frühzeitig gestoppt, begrenzte Ausbreitung. Nicht besser oder schlechter — aber diagnostisch informativ. Wo der Schmerz sitzt, sagt etwas darüber, wie weit es diesmal gekommen ist.
+
+## „Wackelndes Gehirn" — subjektive Repräsentation thalamischer Interferenz
+
+*(31.03.2026)*
+
+Der retrobulbäre Druck — dieses Gefühl hinter dem Auge, das ich seit Jahren kenne — geht heute über in etwas anderes. Einen Kopfschmerz, der nicht frontal sitzt und nicht okzipital, sondern in einer Zone, die sich anfühlt wie die Mitte. Die Interferenzzone.
+
+Ich kann es am besten beschreiben als „wackelndes Gehirn". Kein scharfer Schmerz, kein Pochen. Eher ein Instabilitätsgefühl, als würde etwas im Zentrum des Schädels nicht stillstehen. Wenn ich Druck direkt oben mittig auf das Kranium ausübe, erzeugt das einen Gegenschmerz — als würde der Druck von außen gegen den Druck von innen treffen.
+
+Meine Interpretation: Das ist die subjektive Repräsentation der B7/B8-Interferenz im Midline- und intralaminären Thalamus. Zwei asynchrone serotonerge Quellen, die auf denselben Zielkern feuern, und das Ergebnis ist kein kohärentes Signal, sondern ein Interferenzmuster. Das Bewusstsein repräsentiert das als Instabilität — „wackeln" — weil es genau das ist: ein oszillatorischer Konflikt in einem Bereich, der normalerweise stabil sein sollte.
+
+## Visuelle Phänomenologie — Rauschen statt Skotom
+
+*(31.03.2026)*
+
+Die visuellen Veränderungen während eines Anfalls waren bei mir nie so, wie die Literatur sie beschreibt. Kein Skotom. Keine wandernde Zickzacklinie. Kein Flimmern, das sich langsam über das Gesichtsfeld ausbreitet.
+
+Was ich stattdessen erlebe: eine diffuse Veränderung der gesamten visuellen Verarbeitung. Fokussieren fällt schwer — nicht weil etwas im Weg ist, sondern weil das System selbst weniger präzise arbeitet. Das visuelle Rauschen wird intensiver, als hätte jemand die ISO-Empfindlichkeit hochgedreht. Mehr Kontrast, aber kein sauberer Kontrast — eher „elektrisch", als würden die Kanten flimmern.
+
+Lichtempfindlichkeit ist da, ja. Aber es ist NICHT das Gefühl, das ich von der frontalen Migräne kenne — dieses „alles ist zu viel, jeder Reiz ist zu viel, ich will in einen dunklen Raum". Das hier ist spezifischer. Das Licht ist unangenehm, aber die Welt fühlt sich nicht überwältigend an. Der PFC ist klar. Es ist nur das Sehen, das nicht richtig funktioniert.
+
+Dazu kommt eine leichte räumliche Desorientierung. Nicht Schwindel, nicht Gleichgewichtsverlust — eher eine Unschärfe in der Raumwahrnehmung, die sich aus der visuellen Beeinträchtigung ergibt. Wenn das Sehen unsicher wird, wird der Raum unsicher.
+
+Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom, weil es keine Wellenfront gibt, die sich über den visuellen Kortex schiebt. Stattdessen eine tonische Destabilisierung — die gesamte visuelle Region empfängt asynchronen Input, die Gain-Kontrolle ist gestört, aber es gibt keine wandernde Depression. Das Rauschen statt des Skotoms ist diagnostisch: Es spricht für ein Interferenzfeld, nicht für eine CSD-Propagation im klassischen Sinne.
+
+## PFC-Klarheit unter LDX während des Anfalls — ein Dissoziationsbefund
+
+*(31.03.2026)*
+
+Was mich heute am meisten überrascht: Der PFC war die ganze Zeit geschützt. Trotz schwerer Migräne — posteriorer Schmerz, visuelles Rauschen, autonome Symptome — war alles sehr klar erlebbar. Nicht benebelt, nicht diffus, nicht „durch Watte". Klar. Ich konnte beobachten, benennen, einordnen. Die Metakognition war intakt.
+
+Die autonomen Symptome waren heftig. Intensiver Schüttelfrost, dann Hitzewelle, Übelkeit. Das tonische Feld hat sich offensichtlich lateral und ins Stammhirn ausgebreitet — die vegetativen Zentren waren betroffen. Aber der PFC nicht.
+
+Meine Interpretation: Der PFC ist durch die Single-Source-B7-Innervierung plus die dopaminerge LDX-Stabilisierung geschützt. B7 liefert kohärenten serotonergen Input, LDX stabilisiert die dopaminerge Versorgung — zusammen halten sie den PFC in einem Zustand, den das tonische Interferenzfeld nicht destabilisieren kann. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung im Stammhirn, und gleichzeitig kristallklare frontale Funktion.
+
+Keine Halluzinationen. Keine visuellen Illusionen jenseits des Rauschens. Keine Denkstörung. Das spricht gegen eine fokale CSD im PFC — wenn die Propagation bis in den Frontalkortex reichen würde, wäre die Klarheit nicht möglich. Der PFC war nicht nur geschützt, er war funktional intakt. Ein Fenster mitten in der Migräne.
 
 ---
 
@@ -2440,7 +2871,7 @@ Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. 
 
 ### **E.0 Zusammenfassung**
 
-Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-Reset-Hypothese weiter und verknüpft sie mit der Epilepsie-Literatur. Die zentrale These: CSD und epileptischer Anfall sind zwei Varianten desselben Versagens — der serotonerge Reset-Takt (Anhang D) bricht zusammen, und der Kortex muss sich über einen Notfallmechanismus resynchronisieren. CSD ist die mildere, geordnete Variante (wandernde Depolarisationswelle). Ein generalisierter Anfall ist die schwere Variante (simultane, unkontrollierte Entladung). CGRP ist nicht Schmerzmediator, sondern der notwendige Propagationsmechanismus der CSD-Kaskade — seine Blockade (Anti-CGRP-Antikörper, hochdosierte Antiepileptika) eliminiert den Schutzmechanismus.
+Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-Reset-Hypothese weiter und verknüpft sie mit der Epilepsie-Literatur. Die zentrale These: CSD und epileptischer Anfall sind zwei Varianten desselben Versagens — der serotonerge Reset-Takt (Anhang D) bricht zusammen, und der Kortex muss sich über einen Notfallmechanismus resynchronisieren. CSD ist die mildere, geordnete Variante (wandernde Depolarisationswelle). Ein generalisierter Anfall ist die schwere Variante (Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades, keine synchrone Massenentladung; vgl. 4.4.3, Ergänzung März 2026). CGRP ist nicht Schmerzmediator, sondern der notwendige Propagationsmechanismus der CSD-Kaskade — seine Blockade (Anti-CGRP-Antikörper, hochdosierte Antiepileptika) eliminiert den Schutzmechanismus.
 
 **Konsequenzen für das Modell:**
 
@@ -2513,7 +2944,7 @@ Das Modell postuliert eine dreistufige Hierarchie kortikaler Resynchronisationsm
 |:------|:-----------|:-----------------|:-------|:---------|
 | **1. Raphe-Takt** | Tonischer serotonerger Reset (vgl. Anhang D.3) | Normalbetrieb, kontinuierlich | Minimal (physiologischer 5-HT-Umsatz) | Permanente Kohärenz |
 | **2. CSD** | Wandernde Depolarisationswelle, CGRP-propagiert | Raphe-Takt insuffizient, Exzitation akkumuliert | Erheblich (Migräneschmerz, metabolische Belastung, Stunden Erholung) | Vollständiger Reset, post-iktale Klarheit |
-| **3. Epileptischer Anfall** | Simultane unkontrollierte Entladung | CSD nicht verfügbar oder insuffizient | Maximal (Bewusstseinsverlust, neuronaler Schaden, SUDEP-Risiko) | Brutaler Reset, postiktale Erschöpfung |
+| **3. Epileptischer Anfall** | Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades (vgl. 4.4.3); *keine* synchrone Massenentladung | CSD nicht verfügbar oder insuffizient | Maximal (Bewusstseinsverlust, neuronaler Schaden, SUDEP-Risiko) | Brutaler Reset, postiktale Erschöpfung |
 
 **Evolutionäres Argument:** Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution *für* die Fähigkeit zur CSD, nicht dagegen. Der Schmerz ist die metabolische Rechnung, nicht die Funktion (vgl. B.6.3).
 
@@ -2940,6 +3371,68 @@ Die prospektive Verlaufsstudie von Velioglu et al. (2005) bestätigt das Modell:
 
 Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen gleichzeitig produziert. Die Fallback-Hierarchie ist an Stufe 2 (CSD versagt als Stabilisator, Migräne chronifiziert) und Stufe 3 (Anfälle pharmakoresistent) belastet. AEDs, die Stufe 3 supprimieren ohne Stufe 1 zu adressieren, versagen, weil sie den Symptomausdruck ändern, nicht die Ursache. Die höhere Remissionsrate unter Polytherapie (Velioglu et al.) ist konsistent: mechanistisch diverse Polytherapie addiert Kontrolle auf mehreren Ebenen, ohne alle Fallback-Stufen gleichzeitig zu blockieren (vgl. E.7.5, Sveinsson OR 0,31 für Polytherapie ≥3 AEDs).
 
+#### **E.7.11 Epileptisches Zündmuster als Terminalphase der tonischen Welle (Ergänzung März 2026)**
+
+##### **E.7.11.1 Revision: Keine synchrone Massenentladung**
+
+Die bisherige Formulierung in E.0 und E.3 beschrieb den epileptischen Anfall als „simultane, unkontrollierte Entladung". Diese Beschreibung wird hiermit revidiert. Der epileptische Anfall ist nicht eine synchrone Massenentladung unabhängig von der Vorgeschichte, sondern die *Terminalphase derselben tonischen Destabilisierungswelle*, die in Kapitel 4.4.3 als tonische Welle eingeführt wird.
+
+Das tonische Kollapsmuster — die räumlich-zeitliche Sequenz, in der die tonische Interferenzarchitektur destabilisiert (vgl. 4.4.3) — diktiert das Zündmuster des Anfalls. Die Regionen, die zuerst destabilisieren, zünden zuerst. Es existiert ein elongierter Zeitversatz im Zündmuster, der das Echo der Propagationsgeschichte der tonischen Welle ist. Der Anfall „erinnert" die Welle, die ihn ausgelöst hat.
+
+##### **E.7.11.2 Konsequenz: Zwei distinkte Generalisierungsmuster**
+
+Wenn das Zündmuster die Topographie der tonischen Destabilisierungswelle reflektiert, müssen unterschiedliche Destabilisierungsquellen unterschiedliche Generalisierungsmuster erzeugen:
+
+| Epilepsietyp | Tonische Vorgeschichte | Vorhergesagtes EEG-Zündmuster |
+|:-------------|:----------------------|:-----------------------------|
+| **Primäre fokale Epilepsie** | Struktureller Fokus → lokale tonische Destabilisierung | Fokaler Onset mit sekundärer Generalisierung — das klassische Muster. Die Welle breitet sich von einem Punkt aus |
+| **Migräne-assoziierte Epilepsie** | Tonische Destabilisierungswelle über breite kortikale Fläche (vgl. 4.4.3) → diffuse, sequentielle Destabilisierung | Breitflächiges, sequentielles Muster — *nicht* fokal, aber *nicht* simultan. Die Generalisierung folgt der Propagationsgeschichte der tonischen Welle, nicht einem Fokus |
+
+**Forschungslücke:** Die systematische Suche nach unterschiedlichen Generalisierungsmustern als Funktion der Migräne-Komorbidität existiert in der Literatur nicht. EEG-Klassifikationen unterscheiden fokal vs. generalisiert, aber nicht die *Sequenztopographie* der Generalisierung. Hochauflösende EEG-Analysen (≥128 Kanäle, Quellenlokalisation) bei Epilepsiepatienten mit vs. ohne Migräne-Komorbidität sollten distinkte räumlich-zeitliche Generalisierungsmuster zeigen.
+
+##### **E.7.11.3 Querverbindung zur Fallback-Hierarchie**
+
+Die Revision verändert die Fallback-Hierarchie (E.3) nicht strukturell — die drei Stufen bleiben bestehen. Was sich ändert, ist die Natur von Stufe 3: der Anfall ist kein qualitativ neues Ereignis, das einsetzt wenn CSD versagt, sondern die Eskalation derselben tonischen Welle über die CSD-Schwelle hinaus. CSD ist die geordnete Variante der tonischen Wellenresolution (wandernde Depolarisationswelle mit metabolischer Unterstützung durch CGRP). Der epileptische Anfall ist die ungeordnete Variante (die tonische Destabilisierung überschreitet die Kapazität des CSD-Mechanismus, und die Entladung folgt dem Kollapspfad direkt). Der Übergang von Stufe 2 zu Stufe 3 ist damit kein Phasensprung, sondern ein Kontinuum — konsistent mit den vier Interaktionsmustern von Fabricius et al. (E.2.1).
+
+#### **E.7.12 Callosotomie-Befund: Intrahemisphärische Quelle, interhemisphärische Propagation (Ergänzung März 2026)**
+
+##### **E.7.12.1 Klinische Evidenz**
+
+Nach Callosotomie — der chirurgischen Durchtrennung des Corpus callosum zur Epilepsietherapie — treten weiterhin *Auren* auf, aber keine sekundäre Generalisierung. Der Anfallsfokus feuert, die Propagation in die kontralaterale Hemisphäre ist unterbrochen.
+
+**Modellinterpretation:** Die Aura ist das intrahemisphärische Produkt — die tonische Destabilisierungswelle entsteht und propagiert innerhalb einer Hemisphäre (konsistent mit der Interferenzzone als intrahemisphärischer Struktur, vgl. Anhang F, B7/B8-Innervierungsanatomie). Die Generalisierung benötigt den Transfer über das Corpus callosum in die kontralaterale Hemisphäre. Callosotomie unterbricht diesen Transfer — die Aura bleibt, der generalisierte Anfall verschwindet.
+
+##### **E.7.12.2 DTI-Evidenz: Corpus-callosum-Integrität bei Migräne**
+
+DTI-Studien zeigen reduzierte fraktionale Anisotropie (FA) im Corpus callosum bei Migränepatienten. Die White-Matter-Integrität der interhemisphärischen Hauptverbindung ist kompromittiert. Im Modell: chronische tonische Destabilisierungswellen propagieren wiederholt über das Corpus callosum und hinterlassen kumulative mikrostrukturelle Schäden — analog zur thalamischen Atrophie bei chronischer Epilepsie (E.7.10), aber an der interhemisphärischen Propagationsachse.
+
+##### **E.7.12.3 Implikation: Bilaterale tonische Instabilität**
+
+Wenn der Callosotomie-Befund korrekt interpretiert wird, folgt eine strukturelle Konsequenz für das Modell: Tonische Instabilitäten müssen *zeitgleich in beiden Hemisphären* entstehen können, nicht nur in einer Hemisphäre mit anschließender Ausbreitung. Die bilaterale Raphe-Innervierung (DRN projiziert bilateral, vgl. Anhang F) ist konsistent — ein Raphe-Takt-Ausfall betrifft beide Hemisphären simultan. Die resultierende tonische Destabilisierung ist daher primär bilateral, und das Corpus callosum ist der Pfad der *Synchronisation* (nicht der Initiation) der bilateralen Instabilität.
+
+Bei Callosotomie fehlt diese Synchronisation: beide Hemisphären destabilisieren unabhängig, aber die koordinierte Generalisierung — die den klinisch sichtbaren GTCS produziert — erfordert die interhemisphärische Koppelung über das Corpus callosum.
+
+#### **E.7.13 Vorhersage: Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe (Ergänzung März 2026)**
+
+##### **E.7.13.1 Kernhypothese**
+
+Wenn ein Epileptiker seine Attacke Stunden im Voraus vorhersagen kann — durch diffuse prodromale Symptome wie Stimmungsänderung, Konzentrationsverlust, Unruhe — dann hat er eine Migräneaura im Sinne des Modells: eine tonische Destabilisierungswelle (vgl. 4.4.3), die die Interferenzzone langsam destabilisiert, bevor die Anfallsschwelle erreicht wird. Die Vorhersage stützt sich auf dieselbe interozeptive Wahrnehmung wie bei Migräne — das Registrieren der sich aufbauenden Desynchronisation.
+
+Die Interferenzzone zündet nicht spontan. Sie wird durch die tonische Welle auf die Schwelle getrieben. Das Zeitfenster zwischen Wahrnehmung der Destabilisierung und Erreichen der Schwelle *ist* die Vorhersageperiode.
+
+##### **E.7.13.2 Zwei Populationen**
+
+| Population | Anfallsbeginn | Mechanismus | Vorhersagen |
+|:-----------|:-------------|:-----------|:------------|
+| **Population 1: Anfälle MIT Vorhersage/Aura** | Stunden prodromaler Phase, langsamer Aufbau | Tonische Destabilisierungswelle → Interferenzzone erreicht Schwelle → Anfall | Müssten Migräne-Komorbidität zeigen (gemeinsamer Upstream-Mechanismus); Zeitfenster für Intervention; EEG zeigt sequentielles Generalisierungsmuster (E.7.11) |
+| **Population 2: Anfälle OHNE Warnung** | Abrupt, kein Prodrom | Akuter Phasensprung (z.B. akute Ionenverschiebung) oder struktureller Fokus mit direkter Entladung | Keine systematische Migräne-Komorbidität; kein Zeitfenster; EEG zeigt fokalen Onset ohne tonische Wellencharakteristik |
+
+##### **E.7.13.3 Therapeutische Implikation: Schlechteres Ansprechen bei Migräne-Komorbidität**
+
+Epilepsiepatienten mit komorbider Migräne haben dokumentiert schlechteres Therapieansprechen auf Antiepileptika (Velioglu et al. 2005, vgl. E.7.10). Das Modell erklärt diesen Befund: Antiepileptika adressieren die Anfallsschwelle (Stufe 3), aber nicht den Upstream-Generator — die tonische Destabilisierungswelle, die durch die Raphe-Insuffizienz angetrieben wird (Stufe 1). Bei Population 1 (Anfälle mit Vorhersage/Migräne-Mechanismus) supprimieren AEDs den terminalen Ausdruck, aber die tonische Welle baut sich weiterhin auf. Die Schwelle wird durch AEDs angehoben, aber die Desynchronisation akkumuliert — und bricht periodisch durch die angehobene Schwelle, was die höhere Rate intraktabler Anfälle erklärt.
+
+**Vorhersage:** Stratifizierung von Epilepsiepatienten nach Vorhersagefähigkeit (Prodrom ja/nein) und Migräne-Komorbidität sollte zwei distinkte Populationen identifizieren, die sich in AED-Ansprechen, Generalisierungsmuster (EEG) und optimalem Therapieregime unterscheiden. Population 1 sollte von Stufe-1-Intervention (serotonerge Stabilisierung, Betablocker) profitieren, Population 2 von konventioneller AED-Monotherapie.
+
 ---
 
 ### **E.8 Testbare Vorhersagen**
@@ -2960,6 +3453,10 @@ Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen g
 | **E.8.12** | Migränefrequenz sinkt vorübergehend in den Wochen nach einem GTCS bei komorbiden Migräne-Epilepsie-Patienten | Retrospektive Analyse: Migränetagebuch-Daten um dokumentierte Anfallszeitpunkte in Epilepsie-Monitoring-Units | Postiktale Migräne-freie Phase, gefolgt von gradueller Rückkehr zur Baseline-Frequenz |
 | **E.8.13** | Anti-CGRP-Langzeitprophylaxe (>2 Jahre) erhöht die Epilepsie-Inzidenz bei Migränepatienten mit serotonerger Dysregulation gegenüber Betablocker-Prophylaxe | Prospektive Kohortenstudie oder Versicherungsdaten-Analyse: Epilepsie-Inzidenz unter Anti-CGRP vs. Betablocker, stratifiziert nach Migränedauer und ADHS-Komorbidität | Höhere Epilepsie-Inzidenz unter Anti-CGRP, besonders bei langer Migräneanamnese und ADHS-Komorbidität |
 | **E.8.14** | Thalamische Volumenreduktion bei chronischer Migräne korreliert mit der Dauer der CSD-Suppressionstherapie, nicht mit der Migränedauer selbst | Strukturelle MRT-Studie bei chronischen Migränepatienten, stratifiziert nach Prophylaxetyp (CSD-suppressiv vs. CSD-neutral) und Therapiedauer | Stärkere thalamische Atrophie bei CSD-suppressiver Prophylaxe bei gleicher Migränedauer |
+| **E.8.15** | Migräne-assoziierte Epilepsie zeigt breitflächiges, sequentielles Generalisierungsmuster im EEG, distinkt von fokalem Onset bei primärer Epilepsie (Ergänzung März 2026) | Hochauflösendes EEG (≥128 Kanäle, Quellenlokalisation) bei Epilepsiepatienten mit vs. ohne Migräne-Komorbidität; Analyse der räumlich-zeitlichen Generalisierungssequenz | Migräne-komorbide Patienten: diffuse, sequentielle Generalisierung entlang des tonischen Kollapspfades. Nicht-komorbide: klassischer fokaler Onset mit sekundärer Generalisierung |
+| **E.8.16** | Epileptiker mit Anfallsvorhersage (Prodromalphase >1h) zeigen höhere Migräne-Komorbidität als Epileptiker ohne Vorhersagefähigkeit (Ergänzung März 2026) | Retrospektive Stratifizierung nach dokumentierter Vorhersagefähigkeit; Migräne-Screening in beiden Subgruppen | Signifikant höhere Migräne-Prävalenz in der Vorhersage-Gruppe; Population 1 (vgl. E.7.13) als distinkte mechanistische Subgruppe |
+| **E.8.17** | Population 1 (Anfälle mit Prodrom/Migräne-Komorbidität) profitiert von Stufe-1-Intervention (Betablocker, serotonerge Stabilisierung) zusätzlich zu AEDs; Population 2 (Anfälle ohne Warnung) nicht (Ergänzung März 2026) | Kontrollierte Pilotstudie: Add-on-Betablocker bei Epileptikern mit vs. ohne Migräne-Komorbidität und Anfallsvorhersage | Reduktion der Anfallsfrequenz unter Add-on-Betablocker spezifisch in Population 1; kein Zusatzeffekt in Population 2 |
+| **E.8.18** | Corpus-callosum-FA bei Migränepatienten korreliert mit Anfallshäufigkeit und Krankheitsdauer (Ergänzung März 2026) | DTI-Studie bei episodischer und chronischer Migräne; Korrelation Corpus-callosum-FA mit Attackenfrequenz und Migränedauer | Progressive FA-Reduktion als Funktion der kumulativen tonischen Wellenpropagation über das Corpus callosum |
 
 ---
 
@@ -3031,6 +3528,13 @@ Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen g
 | Komorbide Migräne-Epilepsie: schlechtere Prognose, höhere Intraktabilität, niedrigeres frühes Ansprechen | Gesichert | Velioglu et al. 2005 (prospektiv, 5–10 Jahre Follow-up) |
 | CSD als Stabilisator gegen Eskalation zu Stufe 3 (94% der Migräniker entwickeln keine Epilepsie) | Hypothetisch, konsistent mit Epidemiologie und Fallback-Modell | Modellsynthese aus Komorbidiätsdaten + Fallback-Hierarchie |
 | CSD-Suppressionstherapie ohne Stufe-1-Intervention potentiell langfristig kontraproduktiv | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Topiramat-SUDEP-Signal (E.7.5) |
+| Epileptischer Anfall als Terminalphase der tonischen Destabilisierungswelle (keine synchrone Massenentladung); Zündmuster reflektiert Kollapspfad (Ergänzung März 2026) | Hypothetisch, mechanistisch konsistent | Modellrevision aus 4.4.3, Querverbindung zu E.3; testbar über hochauflösendes EEG (E.8.15) |
+| Migräne-assoziierte Epilepsie: breitflächiges sequentielles Generalisierungsmuster (distinkt von fokalem Onset) (Ergänzung März 2026) | Hypothetisch, nicht getestet | Modellvorhersage aus E.7.11; systematische Suche nach Generalisierungsmustern als Funktion der Migräne-Komorbidität existiert nicht |
+| Callosotomie: Auren persistieren, Generalisierung sistiert → intrahemisphärische Quelle, Corpus callosum als Propagationsweg (Ergänzung März 2026) | Gesichert (klinisch) | Callosotomie-Literatur; Spencer et al. 1988 |
+| DTI: Reduzierte fraktionale Anisotropie im Corpus callosum bei Migränepatienten (Ergänzung März 2026) | Gesichert | DTI-Studien; konsistent mit kumulativer tonischer Wellenpropagation |
+| Bilaterale tonische Instabilität durch bilaterale DRN-Projektion; Corpus callosum als Synchronisationspfad (nicht Initiationspfad) (Ergänzung März 2026) | Hypothetisch, konsistent mit Callosotomie-Daten | Modellsynthese aus Anhang F + E.7.12 |
+| Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe (Population 1 vs. Population 2) (Ergänzung März 2026) | Hypothetisch, testbar | Modellvorhersage aus E.7.13; Stratifizierung nach Vorhersagefähigkeit + Migräne-Komorbidität |
+| Schlechteres AED-Ansprechen bei Migräne-Komorbidität erklärt durch Upstream-Generator (tonische Welle, Stufe 1) (Ergänzung März 2026) | Konsistent mit Evidenz | Velioglu et al. 2005 (schlechtere Prognose bei Komorbidität); Modellinterpretation aus E.7.13 |
 | Dreistufige Fallback-Hierarchie: Raphe-Takt → CSD → Anfall | Hypothetisch, konsistent mit allen Evidenzlinien | Modellsynthese aus Anhang D + E.1–E.4 |
 | Chronische Migräne als Deadlock aus gescheiterter Resynchronisation | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Propofol-Responder-Daten |
 | Propofol-Reset + LDX-Stabilisierung als kombinierte Intervention | Hypothetisch, nicht getestet | Modellvorhersage |
@@ -3074,3 +3578,124 @@ Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen g
 * Velioglu SK, Boz C, Özmenoglu M (2005) The impact of migraine on epilepsy: a prospective prognosis study. *Cephalalgia*, 25(7), 528–535.
 * Coppola G, Di Lorenzo C, Schoenen J, Pierelli F (2013) Habituation and sensitization in primary headaches. *Journal of Headache and Pain*, 14, 65.
 * Marciszewski KK, Meylakh N (2019) Fluctuating regional brainstem diffusion imaging measures of microstructure across the migraine cycle. *eNeuro*, 6(4), ENEURO.0005-19.2019.
+
+---
+
+## **Anhang F: B7/B8-Innervierungsanatomie und kortikale Interferenzzonen**
+
+### **F.0 Zusammenfassung**
+
+Dieser Anhang kartiert die Projektionszonen der beiden aufsteigenden Raphe-Kerne — B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianus, MRN) — und identifiziert drei anatomisch definierte *Interferenzzonen*, in denen beide Kerne konvergieren. Diese Zonen bilden den mechanistischen Kern des in Kapitel 4 (Migräne/CSD) und Anhang E (Epilepsie) entwickelten Modells. Inter-Kern-Desynchronisation (vgl. Abschnitt 2.5.1) erzeugt in den Überlappungszonen destruktive Interferenz — der serotonerge Takt wird lokal inkohärent, mit regional spezifischen Konsequenzen.
+
+**Zentrale These:** Die klinische Topographie von Migräneaura, Epilepsiefoki und thalamischer Dysregulation folgt nicht aus einer diffusen serotonergen Unterversorgung, sondern aus der *anatomischen Geometrie der dualen Raphe-Innervierung*. Wo nur ein Kern projiziert (PFC ← B7), bleibt die Kohärenz erhalten. Wo beide Kerne überlappen, entsteht bei Desynchronisation ein Interferenzmuster.
+
+---
+
+### **F.1 Projektionsmuster: B7 (DRN) vs. B8 (MRN)**
+
+Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al. 2018) ergibt ein konsistentes Bild:
+
+| Zielregion | B7 (DRN) | B8 (MRN) | Überlappung |
+| :---- | :---- | :---- | :---- |
+| **Präfrontaler Kortex (PFC)** | **++++** (dominant) | + (minimal) | Gering → *Single-Source* |
+| **Parieto-temporo-okzipitaler Neokortex** | +++ | +++ | **Hoch** → *Interferenzzone I* |
+| **Hippocampus** | ++ (Hilus, Molekularschicht) | +++ (Str. lacunosum-moleculare, Str. oriens) | **Hoch, laminär segregiert** → *Interferenzzone II* |
+| **Midline-/Intralaminärer Thalamus** | +++ | +++ | **Maximal** → *Interferenzzone III* |
+| **Basalganglien (Striatum)** | ++++ | + | Gering |
+| **Amygdala** | +++ | ++ | Moderat |
+
+*Legende: + bis ++++ = relative Innervierungsdichte, basierend auf Muzerelle et al. 2014 (anterograde Tracing, Maus) und Vertes (retrograde Tracing, Ratte). Speziesgrenzen beachten.*
+
+---
+
+### **F.2 Interferenzzone I: Parieto-temporo-okzipitaler Neokortex**
+
+B7 und B8 projizieren beide in den posterioren Neokortex, jedoch mit unterschiedlicher laminärer Spezifität: B7-Fasern terminieren bevorzugt in tiefen Schichten (V/VI), B8-Fasern in oberflächlichen Schichten (I/II). Bei stabiler Inter-Kern-Synchronisation ergibt sich ein komplementäres, laminär verteiltes serotonerges Signal. Bei Inter-Kern-Desynchronisation entsteht *destruktive Interferenz* zwischen den Schichten — der serotonerge Takt wird laminär inkohärent.
+
+**Konsequenz für CSD (→ Kapitel 4.4):** CSD startet typischerweise okzipital. Die Standarderklärung verweist auf die niedrige Schwelle des visuellen Kortex. Das vorliegende Modell bietet eine mechanistisch präzisere Erklärung: CSD initiiert dort, wo die *Raphe-Innervierungszonen maximal überlappen*. Der okzipitale Kortex ist nicht intrinsisch „schwächer" — er liegt im Zentrum der B7/B8-Überlappungszone. Die CSD-Initiation ist eine direkte Konsequenz der Interferenzgeometrie.
+
+Die visuelle Aura (Skotome, Fortifikationsspektren) ist damit nicht Symptom einer „kortikalen Übererregbarkeit", sondern Manifestation des lokalen Kohärenzverlusts im Bereich maximaler dualer Innervierung.
+
+---
+
+### **F.3 Interferenzzone II: Hippocampus**
+
+Die hippocampale Innervierung zeigt ein laminär differenziertes Muster:
+
+| Schicht | Dominanter Raphe-Kern | Funktion |
+| :---- | :---- | :---- |
+| **Stratum lacunosum-moleculare** | B8 (MRN) | Entorhinal-hippocampale Eingänge (Temporoammonic Pathway) |
+| **Stratum oriens** | B8 (MRN) | Basale Dendriten der Pyramidenzellen, CA3→CA1-Rückkopplung |
+| **Hilus (Gyrus dentatus)** | B7 (DRN) | Mossy-Fiber-System, Pattern Separation |
+| **Molekularschicht (Gyrus dentatus)** | B7 (DRN), partiell | Perforant-Path-Eingänge |
+
+Die Grenzzone zwischen B8-dominierten (Str. lacunosum-moleculare / Str. oriens) und B7-dominierten (Hilus / Molekularschicht) Laminae bildet eine *laminäre Interferenzzone* — analog zur kortikalen Interferenzzone I, aber mit laminärer statt regionaler Geometrie.
+
+**Konsequenz: State-dependent Encoding.** Engramme, die unter Inter-Kern-Desync enkodiert werden, erhalten ein laminäres serotonerges „Wasserzeichen", das sich vom Normzustand unterscheidet. Diese Engramme sind bevorzugt im gleichen Desync-Zustand abrufbar — ein Mechanismus, der die klinisch beobachtete *state-dependent memory* bei Migräne und Epilepsie erklären könnte (vgl. Anhang E, Abschnitt E.5).
+
+---
+
+### **F.4 Interferenzzone III: Midline- und Intralaminärer Thalamus**
+
+Dies ist die kritischste Zone des Modells. Der Midline- und intralaminäre Thalamus (Nucleus reuniens, Nucleus paraventricularis, zentrale intralaminäre Kerne) erhält *volle Überlappung* beider Raphe-Kerne — im Gegensatz zu den anderen Interferenzzonen, wo die Überlappung regional oder laminär segregiert ist.
+
+**Mechanismus:** B7/B8-Phasenversatz produziert hier *maximale destruktive Interferenz im Thalamus selbst*. Die kortikalen Effekte (CSD, Anfälle) sind in diesem Rahmen *sekundär* — sie resultieren aus dem thalamischen Kohärenzverlust, nicht umgekehrt.
+
+**Bezug zum Zentralmodell (→ Kapitel 8, Abschnitt 2.5.1):** Die thalamische Kalibrierung — zentraler Mechanismus des Pathogenesemodells — ist direkt betroffen. Der Thalamus fungiert als *Relaisstation und Integrator*; ein serotonerger Interferenzmuster an dieser Stelle propagiert in alle thalamokortikalen Schleifen gleichzeitig. Dies erklärt, warum Inter-Kern-Desynchronisation nicht nur lokale kortikale Störungen erzeugt, sondern *systemische* Auswirkungen auf die gesamte thalamokortikale Kohärenz hat.
+
+---
+
+### **F.5 PFC-Protektion durch Single-Source-Innervierung**
+
+Der präfrontale Kortex stellt den Gegenfall dar: Er wird *dominant* von B7 (DRN) innerviert, mit nur minimaler B8-Beteiligung. Diese Single-Source-Architektur hat eine entscheidende Konsequenz:
+
+**Ein Takt → Kohärenz.** Auch bei ausgeprägter Inter-Kern-Desynchronisation bleibt der PFC unter einem einheitlichen serotonergen Taktgeber (B7). Es gibt keine zweite Quelle, die destruktive Interferenz erzeugen könnte. Der PFC ist *architektonisch geschützt*.
+
+**Implikationen für die LDX-Therapie:**
+
+- LDX (Lisdexamfetamin) schützt den PFC nicht primär über den dopaminergen Mechanismus — der PFC war *immer schon* geschützt durch seine Single-Source-Innervierung
+- Die dichte dopaminerge Innervierung des PFC (mesokortikales System) bildet einen *zusätzlichen* Schutzfaktor: LDX stabilisiert die dopaminerge Transmission, die ihrerseits die präfrontale Funktion unterstützt
+- Der therapeutische Effekt von LDX bei Inter-Kern-Desync ist daher weniger „PFC-Rettung" als vielmehr *Verstärkung eines bereits vorhandenen architektonischen Vorteils*
+
+**Klinisches Korrelat:** Subjektive PFC-Klarheit unter LDX während eines Anfalls (Beobachtung 31.03.2026) — die exekutiven Funktionen bleiben intakt, während posteriore und thalamische Funktionen gestört sind. Dies ist konsistent mit der Single-Source-Hypothese: Der PFC operiert unter B7-Takt weiter, während die Interferenzzonen I–III desynchronisiert sind.
+
+---
+
+### **F.6 Synthese: Interferenzgeometrie als einheitlicher Mechanismus**
+
+Die drei Interferenzzonen und die PFC-Protektion bilden ein kohärentes anatomisches Substrat für das Pathogenesemodell:
+
+| Zone | Anatomie | Interferenztyp | Klinische Manifestation |
+| :---- | :---- | :---- | :---- |
+| **I — Posteriorer Neokortex** | B7 + B8, laminär komplementär | Laminäre Interferenz | CSD-Initiation, visuelle Aura (→ Kap. 4.4) |
+| **II — Hippocampus** | B7 + B8, laminär segregiert | Laminäre Interferenz | State-dependent encoding, iktale Amnesie |
+| **III — Midline-Thalamus** | B7 + B8, voll überlappend | Maximale Interferenz | Thalamische Dekalibrierung (→ Kap. 8), systemische Kohärenzstörung |
+| **PFC (Gegenfall)** | B7 dominant, Single-Source | Keine Interferenz | Erhaltene exekutive Funktion unter Desync |
+
+Die räumliche Verteilung der Interferenz erklärt, warum Migräne, Epilepsie und kognitive Dysfunktion *nicht zufällig komorbid* sind, sondern dieselbe anatomische Grundlage teilen (vgl. Anhang E). Die Unterschiede in der klinischen Manifestation ergeben sich aus der jeweiligen Schwellencharakteristik der betroffenen Zone — nicht aus unterschiedlichen Pathomechanismen.
+
+---
+
+### **F.7 Evidenztabelle**
+
+| Aussage | Evidenzniveau | Quellenbasis |
+| :---- | :---- | :---- |
+| B7 (DRN) projiziert dominant in PFC, B8 (MRN) minimal | Gesichert | Muzerelle et al. 2014 (anterograde Tracing, Maus); Vertes 1991 (Ratte) |
+| Posteriorer Neokortex: duale B7/B8-Innervierung mit laminärer Spezifität | Gesichert | Muzerelle et al. 2014; Ren et al. 2018 |
+| Hippocampus: laminär segregierte B7/B8-Innervierung (MRN → Str. lac.-mol./oriens; DRN → Hilus) | Gesichert | Vertes et al. 1999; Muzerelle et al. 2014 |
+| Midline-/Intralaminärer Thalamus: volle B7/B8-Überlappung | Gesichert | Vertes 1991; Muzerelle et al. 2014 |
+| Inter-Kern-Desync erzeugt destruktive Interferenz in Überlappungszonen | Hypothetisch, mechanistisch plausibel | Abgeleitet aus Tracing-Anatomie + Modell (Abschnitt 2.5.1) |
+| CSD-Initiation okzipital korreliert mit maximaler B7/B8-Überlappung | Hypothetisch, konsistent | Korrelation: CSD-Topographie (Literatur) + Innervierungskarten (Muzerelle et al. 2014) |
+| State-dependent encoding durch laminäre hippocampale Interferenz | Hypothetisch, spekulativ | Abgeleitet aus laminärer Innervierungsanatomie; direkte Evidenz fehlt |
+| Thalamische Interferenz als primärer Mechanismus, kortikale Effekte sekundär | Hypothetisch, modellkonsistent | Abgeleitet aus maximaler thalamischer Überlappung + Zentralmodell (Kap. 8) |
+| PFC-Protektion durch Single-Source-Innervierung (B7) | Hypothetisch, anatomisch fundiert | Tracing-Daten (B7-Dominanz gesichert); Schutzeffekt abgeleitet |
+| Subjektive PFC-Klarheit unter LDX bei Anfall | Einzelbeobachtung (n=1) | Selbstbeobachtung 31.03.2026 |
+
+---
+
+*Literatur (Auswahl):*
+
+* Muzerelle A, Scotto-Lomassese S, Bernard JF, Soiza-Reilly M, Gaspar P (2014) Conditional anterograde tracing reveals distinct targeting of individual serotonin cell groups (B5–B9) to the forebrain and brainstem. *Brain Structure and Function*, 221(1), 535–561.
+* Vertes RP (1991) A PHA-L analysis of ascending projections of the dorsal raphe nucleus in the rat. *Journal of Comparative Neurology*, 313(4), 643–668.
+* Vertes RP, Fortin WJ, Crane AM (1999) Projections of the median raphe nucleus in the rat. *Journal of Comparative Neurology*, 407(4), 555–582.
+* Ren J, Friedmann D, Xiong J, Liu CD, Ferguson BR, Weerakkody T, DeLoach KE, Ran C, Pun A, Sun Y, Weissbourd B, Luo L (2018) Anatomically defined and functionally distinct dorsal raphe serotonin sub-systems. *Cell*, 175(2), 472–487.

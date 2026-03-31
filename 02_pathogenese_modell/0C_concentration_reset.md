@@ -200,6 +200,60 @@ Ich habe mir später eine elegante Erklärung ausgedacht — dass ich mein Gedä
 
 Ich habe nichts entschieden. Ich habe einen Weg gefunden, der funktioniert.
 
+## State-Dependent Memory — Anfallsengramme im Desync
+
+Zwanzig Jahre Migräneanfälle. Zwanzig Jahre, in denen ich die gesamte Phänomenologie eines Anfalls durchlebt habe — den Aufbau, die Aura, den Schmerz, die autonomen Symptome, das Danach. Und zwanzig Jahre, in denen ich mich zwischen den Anfällen kaum daran erinnern konnte. Nicht verdrängt. Nicht vergessen. Nicht abrufbar.
+
+Es fiel mir erst auf, als ich während eines Anfalls plötzlich alles wieder wusste. Die Engramme waren da — vollständig, detailliert, als hätte ich sie gestern enkodiert. Aber sie waren nur *während* eines Anfalls zugänglich. Im Normalzustand: nichts. Als würde man einen Ordner suchen, der nur auf einem Betriebssystem existiert, das man gerade nicht laufen hat.
+
+Der Mechanismus ist, denke ich, ein Encoding-Retrieval-Mismatch. Die Engramme wurden unter desynchronisiertem hippocampalem Zustand enkodiert — iktaler State, veränderte Neurochemie, verschobene Oszillationsmuster. Und sie lassen sich nur unter ähnlichen Bedingungen abrufen. State-dependent memory, wörtlich genommen.
+
+Deshalb war der Schmerz „egal". Nicht weil ich ihn verdrängt hätte. Nicht weil ich besonders hart im Nehmen wäre. Sondern weil die Erinnerung an den letzten Anfall im Normalzustand buchstäblich nicht verfügbar war. Man kann keinen Schmerz fürchten, an den man sich nicht erinnert. Man kann keine Vermeidungsstrategien entwickeln gegen etwas, das zwischen den Episoden unsichtbar wird.
+
+Was die systematische Datenerfassung verändert hat: Sie überbrückt den Desync mit Relation. Wenn ich während eines Anfalls aufschreibe, was passiert — in Worten, in Kategorien, mit semantischen Labels — dann enkodiere ich dieselbe Erfahrung auf einem zweiten Pfad. Semantische Labels sind kontextunabhängiger als episodische Erfahrung. „Retrobulbärer Druck, Übelkeit Stufe 3, Lichtempfindlichkeit" überlebt den Zustandswechsel. Das Erleben selbst nicht.
+
+Unter LDX gibt es ein neues Fenster. Der PFC ist online — klar, metakognitiv kompetent — und gleichzeitig ist der Hippocampus in einem desynchronisierten Zustand. Zum ersten Mal kann ich iktale Engramme abrufen *und* sie benennen, einordnen, mit dem Normalzustand verbinden. Die alten Erinnerungen und die Fähigkeit, sie zu verarbeiten, sind gleichzeitig da. Das war vorher nie möglich.
+
+## Posteriorer vs. frontaler Schmerz — Propagationstiefe als diagnostisches Kriterium
+
+Die übliche Migräne, die ich kenne, sitzt frontal. Supraorbital, über den Augen, V1-Territorium. Intensiv, bohrend, das volle Programm. Das ist die volle CSD-Propagation — die Welle hat den gesamten Weg zurückgelegt, von posterior nach anterior, bis in die frontale Endstrecke.
+
+Heute ist es anders. Der Schmerz sitzt weiter hinten. Posterior, okzipital. Nicht weniger unangenehm, aber an einer anderen Stelle. Und die Interpretation drängt sich auf: Die Propagation ist früher steckengeblieben. Was normalerweise bis nach vorne durchläuft, ist diesmal im hinteren Bereich zum Stehen gekommen. Weniger Ausbreitung, anderer Schmerzort.
+
+Auch vor 10 Tagen war es ähnlich — auch posterior, auch steckengeblieben. Und das war ohne LDX-Nachdosierung. Das heißt: LDX allein ist nicht der Grund, warum die Propagation stoppt. Etwas anderes begrenzt die Ausbreitung, etwas das an manchen Tagen greift und an anderen nicht.
+
+Die Schmerzlokalisation wird damit zum Proxy für die Propagationstiefe. Frontal heißt: volle Propagation, die Welle hat den gesamten Kortex durchlaufen. Posterior heißt: frühzeitig gestoppt, begrenzte Ausbreitung. Nicht besser oder schlechter — aber diagnostisch informativ. Wo der Schmerz sitzt, sagt etwas darüber, wie weit es diesmal gekommen ist.
+
+## „Wackelndes Gehirn" — subjektive Repräsentation thalamischer Interferenz
+
+Der retrobulbäre Druck — dieses Gefühl hinter dem Auge, das ich seit Jahren kenne — geht heute über in etwas anderes. Einen Kopfschmerz, der nicht frontal sitzt und nicht okzipital, sondern in einer Zone, die sich anfühlt wie die Mitte. Die Interferenzzone.
+
+Ich kann es am besten beschreiben als „wackelndes Gehirn". Kein scharfer Schmerz, kein Pochen. Eher ein Instabilitätsgefühl, als würde etwas im Zentrum des Schädels nicht stillstehen. Wenn ich Druck direkt oben mittig auf das Kranium ausübe, erzeugt das einen Gegenschmerz — als würde der Druck von außen gegen den Druck von innen treffen.
+
+Meine Interpretation: Das ist die subjektive Repräsentation der B7/B8-Interferenz im Midline- und intralaminären Thalamus. Zwei asynchrone serotonerge Quellen, die auf denselben Zielkern feuern, und das Ergebnis ist kein kohärentes Signal, sondern ein Interferenzmuster. Das Bewusstsein repräsentiert das als Instabilität — „wackeln" — weil es genau das ist: ein oszillatorischer Konflikt in einem Bereich, der normalerweise stabil sein sollte.
+
+## Visuelle Phänomenologie — Rauschen statt Skotom
+
+Die visuellen Veränderungen während eines Anfalls waren bei mir nie so, wie die Literatur sie beschreibt. Kein Skotom. Keine wandernde Zickzacklinie. Kein Flimmern, das sich langsam über das Gesichtsfeld ausbreitet.
+
+Was ich stattdessen erlebe: eine diffuse Veränderung der gesamten visuellen Verarbeitung. Fokussieren fällt schwer — nicht weil etwas im Weg ist, sondern weil das System selbst weniger präzise arbeitet. Das visuelle Rauschen wird intensiver, als hätte jemand die ISO-Empfindlichkeit hochgedreht. Mehr Kontrast, aber kein sauberer Kontrast — eher „elektrisch", als würden die Kanten flimmern.
+
+Lichtempfindlichkeit ist da, ja. Aber es ist NICHT das Gefühl, das ich von der frontalen Migräne kenne — dieses „alles ist zu viel, jeder Reiz ist zu viel, ich will in einen dunklen Raum". Das hier ist spezifischer. Das Licht ist unangenehm, aber die Welt fühlt sich nicht überwältigend an. Der PFC ist klar. Es ist nur das Sehen, das nicht richtig funktioniert.
+
+Dazu kommt eine leichte räumliche Desorientierung. Nicht Schwindel, nicht Gleichgewichtsverlust — eher eine Unschärfe in der Raumwahrnehmung, die sich aus der visuellen Beeinträchtigung ergibt. Wenn das Sehen unsicher wird, wird der Raum unsicher.
+
+Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom, weil es keine Wellenfront gibt, die sich über den visuellen Kortex schiebt. Stattdessen eine tonische Destabilisierung — die gesamte visuelle Region empfängt asynchronen Input, die Gain-Kontrolle ist gestört, aber es gibt keine wandernde Depression. Das Rauschen statt des Skotoms ist diagnostisch: Es spricht für ein Interferenzfeld, nicht für eine CSD-Propagation im klassischen Sinne.
+
+## PFC-Klarheit unter LDX während des Anfalls — ein Dissoziationsbefund
+
+Was mich heute am meisten überrascht: Der PFC war die ganze Zeit geschützt. Trotz schwerer Migräne — posteriorer Schmerz, visuelles Rauschen, autonome Symptome — war alles sehr klar erlebbar. Nicht benebelt, nicht diffus, nicht „durch Watte". Klar. Ich konnte beobachten, benennen, einordnen. Die Metakognition war intakt.
+
+Die autonomen Symptome waren heftig. Intensiver Schüttelfrost, dann Hitzewelle, Übelkeit. Das tonische Feld hat sich offensichtlich lateral und ins Stammhirn ausgebreitet — die vegetativen Zentren waren betroffen. Aber der PFC nicht.
+
+Meine Interpretation: Der PFC ist durch die Single-Source-B7-Innervierung plus die dopaminerge LDX-Stabilisierung geschützt. B7 liefert kohärenten serotonergen Input, LDX stabilisiert die dopaminerge Versorgung — zusammen halten sie den PFC in einem Zustand, den das tonische Interferenzfeld nicht destabilisieren kann. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung im Stammhirn, und gleichzeitig kristallklare frontale Funktion.
+
+Keine Halluzinationen. Keine visuellen Illusionen jenseits des Rauschens. Keine Denkstörung. Das spricht gegen eine fokale CSD im PFC — wenn die Propagation bis in den Frontalkortex reichen würde, wäre die Klarheit nicht möglich. Der PFC war nicht nur geschützt, er war funktional intakt. Ein Fenster mitten in der Migräne.
+
 ## Was ich anderen sagen würde
 
 Wenn du das liest und dich wiedererkennst — in dem Druck, der keine Müdigkeit ist, in dem Wegdriften, das kein Einschlafen ist, in dem Gefühl, dass Arbeit dich nicht erschöpft sondern zusammenhält, in den Naps, die sich wie Reboots anfühlen — dann bist du möglicherweise nicht faul, nicht unkonzentriert, nicht „einfach müde".

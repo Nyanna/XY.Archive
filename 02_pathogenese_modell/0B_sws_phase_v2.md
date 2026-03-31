@@ -23,7 +23,7 @@ Dieser Anhang ersetzt die frühere Fassung (Anhang B v1: „SWS-Phasenlage als M
 
 **Gerät:** Xiaomi Smart Band 9 (Gadgetbridge, SQLite-Export)
 
-**Zeitraum:** 07.12.2024 – 29.03.2026
+**Zeitraum:** 07.12.2024 – 31.03.2026
 
 **Pharmakobedingte Periodisierung:**
 
@@ -142,6 +142,23 @@ Die PRE-Standardabweichungen sind systematisch höher als die POST-Werte:
 
 Die PRE-SD der Deep-Episodenzahl (13,0 bei Mean 12,7) zeigt, dass einzelne PRE-Nächte zwischen ~0 und ~40+ Deep-Episoden schwanken — massive Nacht-zu-Nacht-Instabilität der kortikalen Kohärenz. POST ist die Varianz um den Faktor 3 reduziert.
 
+#### **B.3.5 POST-Ausreißer 28.03.2026: PRE-Nacht unter POST-Bedingungen**
+
+| Metrik | 28.03.2026 | POST-Mean (übrige) | PRE-Mean |
+|:-------|:-----------|:-------------------|:---------|
+| Density (Episoden/h) | **8,99** | ~3,5 | 4,6 |
+| Transitionen (total) | **61** | ~24 | 36 |
+| Deep-Episoden | **21** | 3–6 | 12,7 |
+| REM-Episoden | **11** | 4–6 | 9,2 |
+
+Die Nacht vom 28.03.2026 ist das POST-Maximum und der einzige POST-Datenpunkt, der in PRE-Territorium liegt. Alle anderen Nächte mit ≥50 Transitionen sind PRE-Nächte.
+
+**Kontext der Vornächte:** Die vier vorherigen Nächte zeigten eine monoton steigende, aber niedrige Density: 1,78 → 2,69 → 3,00 → 3,26 Episoden/h. Der Sprung auf 8,99/h ist ein Faktor-2,7-Anstieg innerhalb von 24 Stunden. Deep-Episoden springen von 3–6 auf 21, REM-Episoden von 4–6 auf 11.
+
+**Interpretation:** Dieser Datenpunkt ist der stärkste empirische Hinweis auf einen von der Medikation unabhängigen endogenen Oszillator mit ~4-Tage-Periodizität. Die LDX-Wirkung dämpft die mittlere Fragmentierung (POST-Mean < PRE-Mean), aber der zugrundeliegende Desynchronisationszyklus durchbricht die pharmakologische Stabilisierung periodisch. Das Muster entspricht einer PRE-typischen Nacht unter POST-Bedingungen — der Upstream-Treiber ist nicht eliminiert, sondern moduliert.
+
+**Caveat:** Einzelne Nacht, kein statistischer Test möglich. Die Interpretation stützt sich auf die Konvergenz von Effektgröße und zeitlichem Muster.
+
 ---
 
 ### **B.4 HR-Variabilität: Confounder-Analyse**
@@ -177,6 +194,35 @@ Der Befund ist bemerkenswert: Nächte mit Folge-Nap zeigen 3,5× mehr Noise-Frag
 #### **B.5.2 POST-Naps haben anderen Treiber**
 
 POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch andere Faktoren motiviert (zu spät ins Bett, verkürzte Schlafzeit).
+
+#### **B.5.3 Nap als prodromales Signal und Reset-Erfolgsrate**
+
+Die Nap-Analyse zeigt eine doppelte Dissoziation: Naps sind prodromal für Anfälle, aber ihre Reset-Funktion unterscheidet sich fundamental zwischen PRE und POST.
+
+**Nap als Prodrom:**
+
+| Bedingung | P(Nap am Folgetag) |
+|:----------|:-------------------|
+| Nach Anfall | 19% |
+| Ohne Anfall | 41% |
+
+Naps treten *vor* Anfällen gehäuft auf, nicht danach — sie sind prodromal, nicht postdromal.
+
+**Reset-Erfolgsrate PRE vs. POST:**
+
+| Metrik | PRE | POST |
+|:-------|:----|:-----|
+| Nap-Rate | 24% | 50% |
+| Nap-Reset erfolgreich (kein Anfall ≤24h) | **38%** | **78%** |
+| Mean Density in Nap-Nächten | 3,75/h | 3,06/h |
+
+POST-Naps haben einen komplett anderen Charakter: Die Nap-Rate ist doppelt so hoch (50% vs. 24%), die Naps korrelieren aber mit *niedrigerer* Density (3,06 vs. 3,75/h) und resetten in 78% erfolgreich. PRE-Naps resetten nur in 38% — sie signalisieren eine Desynchronisation, die der Nap allein nicht kompensieren kann.
+
+**Dreiersequenz: Fragmentierte Nacht → Nap → Anfall:**
+
+Wenn einer fragmentierten Nacht (Density ≥5/h) ein Nap folgt, münden 75% (6/8) in einen Anfall: 5/8 am selben Tag, 1/8 am Folgetag. Die Dreiersequenz identifiziert ein Hochrisiko-Fenster, in dem die kompensatorische Kapazität erschöpft ist.
+
+**Caveat:** Kleine Stichproben (n=8 für Dreiersequenz). Die Prozentwerte sind Punktschätzer ohne Konfidenzintervall.
 
 ---
 
@@ -220,6 +266,41 @@ Reine Migräneprophylaxe ohne Upstream-Adressierung (Betablocker, Triptane, CGRP
 
 LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente thalamische Modulation → globale Zustandsübergänge → konsolidierter SWS und REM ohne CSD-Notwendigkeit.
 
+#### **B.6.5 Vornacht-Fragmentierung als Anfallsprädiktor (t-1 Lag-Korrelation)**
+
+Die CSD-als-Resynchronisation-These macht eine testbare Vorhersage: Wenn Desynchronisation den Anfall triggert, muss die Fragmentierung *vor* dem Anfall maximal sein und *danach* abfallen.
+
+**Lag-Korrelation Density → Anfälle (n=56 Nacht-Folgetag-Paare):**
+
+| Lag | Korrelation | t-Wert | p |
+|:----|:------------|:-------|:--|
+| t-1 (Vornacht → Folgetag-Anfall) | **r = +0,392** | **t = 3,14** | **≈ 0,003** |
+| t0 (Anfall-Nacht selbst) | r = −0,065 | — | n.s. |
+
+**Mittlere Density nach Anfallsstatus:**
+
+| Nachttyp | Mean Density (Episoden/h) |
+|:----------|:-------------------------|
+| Vornächte vor Anfällen (n=14) | **5,96** |
+| Anfall-Nacht selbst | **4,32** |
+| Nächte ohne Anfalltag | ~3,8 |
+
+Das Muster ist bidirektional: Fragmentierung baut sich auf (5,96/h in der Vornacht), der Anfall löst sie auf (4,32/h in der Anfall-Nacht). Die CSD-als-Resynchronisation ist damit direkt in den Density-Daten sichtbar.
+
+**Schwellenwert-Analyse — Density ≥7,0/h als Warnsignal:**
+
+| Density-Schwelle | Nächte | Anfall am Folgetag | Rate |
+|:-----------------|:-------|:-------------------|:-----|
+| ≥7,0/h | 6 | 5 | **83%** |
+| <7,0/h | 50 | 9 | 18% |
+
+5 von 6 Nächten mit einer Density ≥7,0 Episoden/h → Anfall am Folgetag. Die Effektrichtung ist eindeutig und klinisch als Warnsignal brauchbar. Die absolute Fallzahl (n=6) limitiert die Belastbarkeit des Schwellenwerts.
+
+**Caveats:**
+- n=14 Vornächte vor Anfällen. Drei Ausreißer (13,12; 9,75; 8,54/h) könnten den Korrelationseffekt treiben.
+- Multiples Testen (t-1, t0 sowie Schwellenwertanalyse) ohne formale Korrektur. Der p-Wert von 0,003 überlebt eine Bonferroni-Korrektur für 2 Tests, nicht aber für explorative Schwellenwertsuche.
+- Kausale Richtung (Fragmentierung → Anfall vs. gemeinsamer Upstream-Treiber → beides) ist aus Korrelationsdaten nicht trennbar.
+
 ---
 
 ### **B.7 Das Tracker-Signal: Ein stochastischer Resonanz-Detektor**
@@ -260,7 +341,54 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 
 ---
 
-### **B.9 Evidenztabelle**
+### **B.9 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
+
+Die Nacht vom 30./31.03.2026 liefert ein natürliches Experiment mit drei distinkten Phasen unter wechselnden pharmakologischen Bedingungen.
+
+#### **B.9.1 Drei-Phasen-Verlauf**
+
+| Phase | Zeitraum | Bedingung | Density (Ep./h) | Dauer |
+|:------|:---------|:----------|:-----------------|:------|
+| 1: Hauptschlaf | Nacht 30.03 | Migräne-Prodrom, kein Triptan | **2,8** | regulär |
+| 2: Schlafversuch | Früh 31.03 | Schmerz, ohne Medikation | **5,3** | 57 min |
+| 3: Post-Sumatriptan | Nach Einnahme | Sumatriptan, Schmerz blockiert | variabel | ~9 h |
+
+Phase 1 zeigt eine vergleichsweise konsolidierte Nacht (2,8/h — niedriger als POST-Mean). Phase 2 dokumentiert einen Schlafversuch unter unbehandeltem Migräneschmerz: In nur 57 Minuten erreicht die Density 5,3/h — der Schmerz fragmentiert den Schlaf massiv. Phase 3 beginnt nach Sumatriptan-Einnahme.
+
+#### **B.9.2 Post-Sumatriptan Drei-Drittel-Analyse**
+
+Die Post-Sumatriptan-Phase wurde in Drittel unterteilt, um den zeitlichen Verlauf der Resynchronisation zu erfassen:
+
+| Drittel | Density (Ep./h) | Interpretation |
+|:--------|:-----------------|:---------------|
+| Erstes Drittel | **6,1** | Residuale Fragmentierung, Schmerz blockiert aber CSD-Kaskade noch aktiv |
+| Zweites Drittel | **7,5** | Maximum — paradoxe Verschlechterung, möglicherweise Rebound der Desynchronisation |
+| Drittes Drittel | **5,8** | Beginn der Resynchronisation |
+
+Das Muster zeigt keine monotone Konsolidierung, sondern eine invertierte U-Kurve mit einem Fragmentierungsmaximum im zweiten Drittel.
+
+#### **B.9.3 HR-Verlauf als zweiter physiologischer Kanal**
+
+| Phase | HR (bpm) | Interpretation |
+|:------|:---------|:---------------|
+| Hauptschlaf (Nacht) | 75,7 | Erhöht — sympathische Aktivierung durch Prodrom |
+| Tiefster Punkt (Deep) | 61,2 | Vagale Kapazität intakt, aber kurzzeitig |
+| Post-Sumatriptan (früh) | 70–73 | Schmerz blockiert, sympathische Restaktivierung |
+| Post-Sumatriptan (spät) | 63–65 | Autonome Beruhigung, Resynchronisation |
+
+Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schlafwerte. Dies definiert ein Resynchronisationsfenster: Sumatriptan blockiert den Schmerz und ermöglicht Schlaf, aber die kortikale und autonome Resynchronisation benötigt 3–4 Stunden.
+
+#### **B.9.4 Interpretation**
+
+Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale Vasokonstriktion → Schmerzblockade), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
+
+**Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.5, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
+
+**Caveat:** Einzelereignis. Die Drei-Drittel-Analyse ist deskriptiv und nicht generalisierbar. Die HR-Verlaufsdaten sind durch die Sumatriptan-Pharmakokinetik (Halbwertszeit ~2h) konfundiert.
+
+---
+
+### **B.10 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
@@ -281,8 +409,17 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 | Naratriptan-Konsum antiproportional zu Traumerinnerung | Einzelfallbeobachtung | Klinische Selbstbeobachtung |
 | Migräneprophylaxe ohne Upstream-Adressierung = Unterdrückung des Schutzmechanismus | Modellvorhersage | Abgeleitet aus B.6, konsistent mit Betablocker-Phänomenologie |
 | POST-Naps nicht kompensatorisch (null Fragmente in Nap-Nächten) | Deskriptiv | Tracker-Daten |
+| POST-Ausreißer 28.03: 8,99/h Density, 61 Transitionen (POST-Maximum in PRE-Territorium) | Einzelbeobachtung, große Effektstärke | Tracker-Daten, B.3.5 |
+| ~4-Tage-Oszillator unabhängig von Medikation | Hypothetisch, konsistent mit 28.03-Muster | B.3.5, Longitudinaldaten |
+| Vornacht-Density → Folgetag-Anfall: r=+0,392, p≈0,003 (n=56) | Statistisch signifikant | Tracker-Daten + Anfallskalender, B.6.5 |
+| Anfall-Nacht selbst: r=−0,065 (kein Signal) | Nicht signifikant | B.6.5 (Kontrollbedingung) |
+| Density ≥7,0/h → Anfall am Folgetag in 83% (5/6) | Deskriptiv, kleine Stichprobe (n=6) | B.6.5 |
+| POST-Nap-Reset erfolgreicher als PRE (78% vs. 38%) | Deskriptiv | Tracker-Daten, B.5.3 |
+| Dreiersequenz (Fragm. Nacht → Nap → Anfall): 75% | Deskriptiv, n=8 | B.5.3 |
+| Migräne-Nacht 30./31.03: Sumatriptan → 3–4h Resynchronisation (HR 75→63 bpm) | Einzelbeobachtung | HR-Daten, B.9 |
+| Post-Sumatriptan Density: invertierte U-Kurve (6,1→7,5→5,8/h) | Deskriptiv, Einzelereignis | B.9.2 |
 
-### **B.10 Limitationen**
+### **B.11 Limitationen**
 
 - Consumer-Tracker, keine PSG-Validierung. Die Stadienklassifikation ist intern und nicht reproduzierbar.
 - n=1, kein Kontrolldesign. Die Perioden-Trennung (PRE/POST) ist konfundiert mit Medikamentenwechsel, Jahreszeit und 13-monatiger Trageunterbrechung.
@@ -290,8 +427,11 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 - HR-Variabilität als Validierungsebene durch Betablocker-Confounder eliminiert.
 - Die Interpretation des Trackers als „stochastischer Resonanz-Detektor" ist messtheoretisch konsistent, aber nicht extern validiert. Eine PSG-Parallelmessung wäre nötig, um die Tracker-Fragmentierung gegen globale SWA zu kalibrieren.
 - Die CSD-als-Resynchronisation-These ist mechanistisch konsistent und erklärt den klinischen Verlauf, aber nicht direkt testbar ohne iktale EEG-Aufzeichnung mit post-iktaler Schlafarchitektur-Analyse.
+- Die t-1 Lag-Korrelation (B.6.5) basiert auf n=14 Vornächten vor Anfällen. Drei hochfragmentierte Nächte (Density 13,12; 9,75; 8,54/h) könnten den Effekt dominieren. Multiple Vergleiche (Lag-Analyse + Schwellenwertsuche) ohne formale Korrektur.
+- Die Migräne-Nacht-Sonderanalyse (B.9) ist ein Einzelereignis mit pharmakologischer Konfundierung (Sumatriptan-Halbwertszeit ~2h überlappt mit dem Beobachtungsfenster).
+- Die Dreiersequenz (B.5.3) und Density-≥7,0-Schwelle (B.6.5) basieren auf n=6–8 Fällen. Diese Befunde sind hypothesengenerierend, nicht konfirmatorisch.
 
-### **B.11 Referenzen**
+### **B.12 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.

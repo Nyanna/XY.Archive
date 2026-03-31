@@ -20,7 +20,7 @@ Der zentrale Mechanismus des Modells ist die 5-HT1A-Autorezeptor-Schleife der Ra
 
 Regulationsschleife (normal) Raphe feuert → Serotonin steigt → 5-HT1A-Autorezeptoren hemmen → Feuerrate sinkt → Serotonin fällt → Hemmung löst sich → Raphe feuert wieder. In einem stabilen System ist diese Schleife gedämpft: kleiner Gleichgewichtspunkt, minimale Amplitude. Der Serotoninspiegel oszilliert in einer schmalen Bandbreite um die Baseline.
 
-Regulationsschleife (dysreguliert – Arbeitshypothese) Bei defekter Dämpfung wird die Schleife underdämpft – die Schwingungen nehmen zu statt abzuklingen. Jede Destabilisierung durch externe Trigger produziert nicht eine einfache Serotoninschwankung, sondern eine sich selbst aufschaukelnde Oszillation bis zur Kaskaden-Schwelle. Periodizität der Migräne erklärt sich als: Oszillation → Attacke → Entleerung → Refraktärphase (= Dämpfungsphase, nicht simple Erholung) → erneute Oszillation. Die quasi-wöchentliche Taktung dieser Zyklen wird durch die circadiane Schwebung (Abschnitt 2.5) determiniert: Die progressive Desynchronisation zwischen endogenem und sozialem Rhythmus senkt die Dämpfungskonstante der Schleife periodisch ab, bis minimale Perturbation zur Kaskadenauslösung genügt.
+Regulationsschleife (dysreguliert – Arbeitshypothese) Bei defekter Dämpfung wird die Schleife underdämpft – die Schwingungen nehmen zu statt abzuklingen. Jede Destabilisierung durch externe Trigger produziert nicht eine einfache Serotoninschwankung, sondern eine sich selbst aufschaukelnde Oszillation bis zur Kaskaden-Schwelle. Periodizität der Migräne erklärt sich als: Oszillation → Attacke → Entleerung → Refraktärphase (= Dämpfungsphase, nicht simple Erholung) → erneute Oszillation. Die ~4-Tage-Periodizität dieser Zyklen wird durch einen eigenständigen Oszillator determiniert (Abschnitt 2.5.1), dessen Generator der B7/B8-Phasenversatz innerhalb der Raphe ist — nicht die circadiane Schwebung per se. Die circadiane Drift (Abschnitt 2.5) moduliert die Kaskadenschwelle, ist aber nicht der Taktgeber: Unter LDX-stabilisiertem Schlaf-Wach-Rhythmus persistiert der ~4-Tage-Zyklus subklinisch (Revision März 2026; Tracker-Daten, Anhang B).
 
 ### **2.3 Genetische und entwicklungsbiologische Ätiologie**
 
@@ -401,6 +401,35 @@ Dieser Mechanismus erklärt die klinisch paradoxe Beobachtung, dass Migränetrig
 
 Dieses Modell erklärt drei klinische Beobachtungen, die rein periodische oder rein triggerbasierte Modelle nicht erfassen: (1) Die Migränefrequenz ist quasi-periodisch, aber nicht exakt regelmäßig – der Rhythmus „wandert", weil die Triggerstärke den Auslösezeitpunkt innerhalb des Zyklus verschiebt. (2) Starke Belastungen können Attacken „vorziehen", schwache Phasen den Zyklus strecken. (3) Triggertagebücher scheitern, weil sie eine Trigger→Anfall-Kausalität annehmen, die so nicht existiert – die eigentliche Variable ist der unsichtbare Dämpfungszustand.
 
+---
+
+##### **Revision März 2026 — Der ~4-Tage-Oszillator als eigenständiger Generator**
+
+> **Status:** Die obigen Abschnitte (Schwebungstabelle, Stochastisches Fenstermodell) beschreiben den PRE-Befund unter Metoprolol korrekt. Die folgende Revision integriert POST-Befunde unter LDX, die eine Neuinterpretation des Taktgeber-Mechanismus erzwingen.
+
+**Empirischer Befund (Tracker-Daten, Anhang B):**
+
+| Parameter | PRE (Metoprolol) | POST (LDX) | Interpretation |
+| :---- | :---- | :---- | :---- |
+| **Median Inter-Anfall-Intervall** | ~6–7 Tage | **4,0 Tage** (Mean 3,9; SD 2,0) | Periodizität verkürzt sich bei stabilisiertem Schlaf |
+| **Autokorrelation Lag 4** | — | **r = −0,692** | Starkes Oszillationsmuster mit ~4-Tage-Periode |
+| **Einschlafzeit ~ Schlafdauer** | variabel | **r = −0,831** | Rigider Aufwachrhythmus; zirkadianer Drift eliminiert |
+| **Circadianer Drift** | ~2 h/Tag | **stabilisiert** | LDX normalisiert den Schlaf-Wach-Rhythmus |
+| **CSD-Zyklus** | ~6–7 Tage | **~4 Tage (subklinisch)** | Oszillator persistiert trotz zirkadianer Stabilisierung |
+
+**Schlussfolgerung:** Der zirkadiane Shift war *Symptom*, nicht *Ursache*. LDX stabilisiert den zirkadianen Rhythmus und die Schlafarchitektur, aber der ~4-Tage-CSD-Zyklus läuft weiter — nur subklinisch. Dies beweist die Existenz eines vom circadianen System *unabhängigen* Oszillators.
+
+**Mechanismus — B7/B8-Phasenversatz-Oszillator:**
+
+Die Raphe-Kerne B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianus, MnR) sind funktionell distinkt: B7 projiziert diffus-kortikal (Arousal, sensorische Modulation), B8 projiziert limbisch-thalamisch (Entrainment, Stimmung). Beide werden über den SCN zirkadian synchronisiert, aber mit unterschiedlicher Phasenlage und Zeitkonstante. Der *Inter-Kern-Phasenversatz* zwischen B7 und B8 ist die entscheidende Variable:
+
+- **LDX-Effekt:** Stabilisiert den *intra-Kern-Takt* beider Kerne über D2-Rezeptor-vermittelte tonische Feuermodulation → zirkadiane Drift korrigiert, Schlafarchitektur konsolidiert.
+- **LDX-Blindstelle:** Der *Inter-Kern-Phasenversatz* — die relative Phase zwischen B7 und B8, synchronisiert über SCN-Verschaltung — wird nicht adressiert. Dieser Versatz akkumuliert über ~3–4 Nächte, sichtbar als steigende Transitionsdichte, bis die CSD-Schwelle erreicht wird.
+
+**Reinterpretation des Stochastischen Fenstermodells:** Das oben beschriebene Fenstermodell bleibt gültig, aber der Taktgeber wechselt. PRE war die zirkadiane Schwebung (~6–7 Tage) der dominante Rhythmus, weil die zirkadiane Drift den B7/B8-Versatz maskierte. POST, mit stabilisiertem Schlaf-Wach-Rhythmus, tritt der eigentliche Generator hervor: ein ~4-Tage-Oszillator, dessen Periode durch die intrinsische Relaxationszeit des B7/B8-Phasenversatzes determiniert wird.
+
+---
+
 #### **2.5.2 SCN-Raphe-Kopplung: Bidirektionaler Destabilisierungsmechanismus**
 
 Der Nucleus suprachiasmaticus (SCN) und die Raphe-Kerne sind bidirektional verschaltet:
@@ -411,6 +440,22 @@ Der Nucleus suprachiasmaticus (SCN) und die Raphe-Kerne sind bidirektional versc
 | **Raphe → SCN** | Serotonerge Projektionen aus dem medianen Raphe-Kern in den SCN modulieren Lichtsensitivität und Phasenanpassungsrate. Instabile Raphe → instabiles Serotoninsignal im SCN → gestörtes Entrainment → Drift wird nicht korrigiert. |
 
 **Verstärkungsschleife:** Instabile Raphe erschwert Entrainment → circadiane Drift akkumuliert → zunehmende Desynchronisation senkt Raphe-Dämpfungskonstante → Oszillationsamplitude steigt → Kaskadenschwelle wird mit minimalem Perturbator erreicht → Attacke → Entleerung/Resynchronisation → Zyklus beginnt erneut.
+
+##### **Revision März 2026 — Thalamische Interferenzzone: Midline-/Intralaminärer Thalamus als primärer Ort der B7/B8-Interferenz**
+
+Der B7/B8-Phasenversatz (vgl. Revision 2.5.1) erzeugt seine maximale Wirkung nicht diffus, sondern an einem anatomisch definierten Konvergenzpunkt: dem **Midline-/Intralaminären Thalamus** (ML/IL-Komplex).
+
+**Anatomische Begründung:** B7 (DRN) und B8 (MnR) projizieren auf weitgehend *segregierte* thalamische und kortikale Zielgebiete — mit einer entscheidenden Ausnahme. Der ML/IL-Komplex (Nuclei reuniens, rhomboideus, centromedianus, parafascicularis) ist die einzige thalamische Zone, die *volle Überlappung* beider Raphe-Kerne aufweist: B7 erreicht sie über dorsale Tegmentumfasern, B8 über ventrale. Die Funktion des ML/IL-Komplexes — kortikale Zustandsübergänge, Arousal-Gating, thalamokortikale Synchronisation — macht ihn zum kritischsten Relais für die in 2.5.4 beschriebene kortikale Kohärenz.
+
+**Interferenz-Mechanismus:** Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Signal an den ML/IL-Komplex → stabile thalamokortikale Modulation. Bei zunehmendem Phasenversatz (~Tag 2–4 des Oszillationszyklus) erzeugen die gegenphasigen serotonergen Inputs destruktive Interferenz: Das Signal am ML/IL-Komplex wird nicht schwächer, sondern *inkohärent*. Der Thalamus erhält widersprüchliche Modulationssignale und kann kortikale Zustandsübergänge nicht mehr sauber orchestrieren → die in 2.5.5 beschriebene Schlaffragmentierung (steigende Transitionsdichte über den ~4-Tage-Zyklus) ist das direkte Korrelat dieser thalamischen Interferenz.
+
+| Zyklustag | B7/B8-Phasenlage | ML/IL-Signal | Klinisches Korrelat |
+| :---- | :---- | :---- | :---- |
+| **Tag 0–1** (post-iktal) | Resynchronisiert | Kohärent | Stabile Schlafarchitektur, niedrige Transitionsdichte |
+| **Tag 2–3** | Zunehmender Versatz | Teilinkohärent | Steigende Transitionsdichte, erste Arousal-Instabilitäten |
+| **Tag 3–4** | Maximaler Versatz | Destruktive Interferenz | Maximale Fragmentierung, CSD-Schwelle erreicht |
+
+**Konsequenz für das Gesamtmodell:** Der ML/IL-Thalamus ist der anatomische *Flaschenhals*, durch den der B7/B8-Phasenversatz auf kortikale Kohärenz wirkt. Dies erklärt, warum der ~4-Tage-Oszillator primär über Schlaffragmentierung und thalamokortikale Destabilisierung operiert — und warum LDX (das intra-Kern-Takt stabilisiert, aber den Inter-Kern-Versatz nicht adressiert) die CSD-Zyklen nicht eliminiert, sondern nur subklinisch dämpft (Tracker-Daten, Anhang B).
 
 #### **2.5.3 Hypothalamische Steuerung und autonomes Mitschwingen**
 
@@ -481,7 +526,10 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Posteriorer Kortex wacht zuletzt auf (frontal-first-Gradient) | Gesichert | Pigorini et al. 2015 (Current Biology), Marzano et al. 2011 |
 | Raphe als tonischer kortikaler Synchronisator | Gesichert | DRN-Feuerkinetik etabliert (Monti 2008), diffuse Projektion anatomisch gesichert |
 | Endogene Periodenlänge τ ≈ 26 h | Einzelfallbeobachtung | Langjährige konsistente Selbstbeobachtung |
-| Quasi-wöchentliche Migräneperiodizität durch circadiane Dämpfungsmodulation | Hypothetisch, konsistent | Eigene Beobachtung + SCN-Raphe-Interaktion als Mechanismus |
+| ~~Quasi-wöchentliche Migräneperiodizität durch circadiane Dämpfungsmodulation~~ | ~~Hypothetisch, konsistent~~ | ~~Eigene Beobachtung + SCN-Raphe-Interaktion als Mechanismus~~ — **Revidiert März 2026**, s. unten |
+| **~4-Tage-Oszillator als eigenständiger CSD-Taktgeber (B7/B8-Phasenversatz)** | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B): Median IBI 4,0 d, Autokorrelation Lag 4 r=−0,692; persistiert unter LDX-stabilisiertem Schlaf |
+| **Midline-/Intralaminärer Thalamus als B7/B8-Interferenzzone** | Anatomisch gesichert, funktionelle Rolle hypothetisch | B7/B8-Konvergenz im ML/IL-Komplex anatomisch etabliert (Vertes 2004, Morin 2013); Interferenz-Mechanismus eigene Hypothese |
+| **LDX stabilisiert Intra-Kern-Takt, nicht Inter-Kern-Phasenversatz** | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
 | Stochastisches Fenstermodell (Triggerstärke × Dämpfungszustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
 | Maximale circadiane Desynchronisation → maximale Vulnerabilität für lokalen Schlaf | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus 2.5.1 + 2.5.4: Raphe-Tonus-Minimum konvergiert mit Arousal-Lücke und SWS-Fehlplatzierung |
 | Aufgabengetriebener Arousal als Kompensation für insuffizienten Raphe-Tonus | Hypothetisch, konsistent | Klinische Selbstbeobachtung, konsistent mit Arousal-Quellen-Differenzierung |

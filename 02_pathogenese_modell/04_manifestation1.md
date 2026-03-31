@@ -159,7 +159,58 @@ Die synchrone Massendepolarisation initiiert eine selbstpropagierte elektrochemi
 | **Na⁺/Ca²⁺-Einstrom** | Spannungsgesteuerte Kanäle öffnen → massive Ionenumkehr | Stört osmotisches Gleichgewicht → neuronales Ödem, Volumenverschiebung |
 | **Hinter der Wellenfront** | Neuronen in kompletter Depolarisationslähmung | Können nicht mehr feuern → die eigentliche „Spreading Depression" |
 
-#### **4.4.3 Metabolische Krise**
+#### **4.4.3 Tonische Destabilisierungswelle als Primärmechanismus** *(Revision März 2026)*
+
+Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These dieser Revision: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
+
+| Eigenschaft | CSD (klassisch) | Tonische Destabilisierungswelle |
+| :---- | :---- | :---- |
+| **Natur** | Ionische Welle (K⁺/Glutamat-Diffusion) | Schrittweiser Modulationsverlust |
+| **Geschwindigkeit** | 2–5 mm/min | Stunden (gesamtkortikale Ausbreitung) |
+| **Dauer** | 20–30 Minuten | Stunden bis Stammhirn-Eskalation |
+| **Hinterlassenes Gewebe** | Refraktär (depolarisationsgelähmt) | Nicht refraktär — das destabilisierte Feld *wächst* |
+| **Antrieb** | Ionische Diffusion (selbstpropagierend) | Anhaltender Phasenversatz zwischen B7 und B8 |
+| **Klinisches Korrelat** | Wandernde Aura (Fortifikationsspektren) | Diffuses Rauschen, progrediente sensorische Instabilität |
+
+Der entscheidende Unterschied: Die tonische Destabilisierungswelle hinterlässt kein refraktäres Gewebe. Wo CSD eine Spur funktioneller Stille zieht, hinterlässt die tonische Welle ein wachsendes Feld instabiler, aber weiterhin erregbarer Neurone. Das Feld expandiert, weil der B7/B8-Phasenversatz anhaltend ist — nicht weil ein ionisches Produkt diffundiert. Die Welle endet nicht, wenn das Substrat aufgebraucht ist, sondern wenn der Phasenoffset korrigiert wird oder die Eskalation die nächste Stufe erreicht.
+
+**Sechs-Stunden-Fenster bis Stammhirnaura:** Wenn die tonische Destabilisierung über Stunden propagiert, erreicht sie schließlich die Raphe-Kerne selbst. Ab diesem Punkt entsteht ein Teufelskreis: Die Raphe, deren Phaseninstabilität die Welle antreibt, wird selbst destabilisiert → der Phasenoffset wächst → die Welle beschleunigt. Klinisch manifestiert sich dies als Stammhirnaura — ein Zustand, der in der konventionellen CSD-Theorie schwer erklärbar ist (CSD propagiert horizontal im Kortex, nicht vertikal zum Hirnstamm).
+
+**Eskalationskaskade:**
+
+| Stufe | Mechanismus | Klinisches Korrelat | Intervention |
+| :---- | :---- | :---- | :---- |
+| **1 — Interferenz** | Leichter B7/B8-Phasenoffset, subthreshold | Unwohlsein, Prodromalphase | Nap reicht |
+| **2 — Tonische Welle** | Destabilisierungsfeld wächst über Stunden | Diffuse sensorische Instabilität, Rauschen | Triptan-Fenster |
+| **3 — Stammhirnaura** | Welle erreicht Raphe → Teufelskreis | Stammhirnsymptome, schwere Migräne | Notfallintervention |
+| **4 — Epileptischer Anfall** | Fokale Entladung bei maximalem Offset | Anfallsereignis | Antikonvulsiv |
+| **5 — Status/SUDEP** | Unkontrollierte Eskalation | Status epilepticus, SUDEP-Risiko | Intensivmedizin |
+
+CSD ist in diesem Schema nicht Stufe 2, sondern der Übergang von Stufe 2 zu Stufe 3: Wenn der tonische Modulationsverlust einen kritischen Punkt erreicht, kippt das System in die klassische ionische CSD — als finale Eskalation, nicht als Primärereignis.
+
+#### **4.4.4 Drei Aura-Phänotypen aus Phasenoffset-Topologie** *(Revision März 2026)*
+
+Die klinische Heterogenität visueller Auren — von klassischen Fortifikationsspektren über punktförmige Skotome bis zu diffusem Rauschen — wird konventionell als Variante eines einzigen CSD-Mechanismus interpretiert. Das vorliegende Modell ordnet die Phänotypen drei distinkt verschiedenen Störungstopologien zu:
+
+| Phänomen | Störungstopologie | Mechanismus |
+| :---- | :---- | :---- |
+| **Zickzack/Fortifikationsspektren** | Linear, propagierend | CSD-Welle kreuzt Orientierungssäulen im visuellen Kortex |
+| **Rund/punktförmig** | Fokal, isotrop | Epileptische Entladung — fokale Übererregung ohne Propagation |
+| **Rauschen/diffus** | Global, diffus | Tonische Interferenz durch B7/B8-Desynchronisation |
+
+Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck verschiedener Stabilitätszustände des Raphe-Phasenoffsets:
+
+| Raphe-Phasenoffset | Resultat | Klinischer Phänotyp | Prävalenz |
+| :---- | :---- | :---- | :---- |
+| **Leicht, stabil** | Tonische Interferenz (subthreshold) | Migräne *ohne* Aura | ~75% der Migräniker |
+| **Stark, stabil** | CSD-Welle (klassisch) | Migräne *mit* Aura (Fortifikationen) | ~25% der Migräniker |
+| **Zwei instabile Takte** | Stochastisch fokale Entladungen | Epilepsie | Migräne-Epilepsie-Komorbidität |
+
+**Tonabersat als entscheidende Evidenz:** Tonabersat (SB-220453), ein Gap-Junction-Blocker, der CSD-Propagation selektiv hemmt, war in klinischen Studien ausschließlich gegen Migräne *mit Aura* wirksam, nicht gegen Migräne ohne Aura (Hauge et al. 2009, *Lancet Neurology*). Wenn CSD der universelle Migränemechanismus wäre, müsste ein CSD-Blocker gegen alle Migräneformen wirken. Die selektive Wirksamkeit bei Aura-Migräne ist das stärkste pharmakologische Argument dafür, dass die ~75% Migräniker ohne Aura einen anderen Primärmechanismus haben — tonische Interferenz, die konventionell als „subklinische CSD" fehlattribuiert wird.
+
+**Hansen et al. — Aura-Variabilität als Indiz gegen CSD als fixen Mechanismus:** Hansen et al. dokumentierten über 1000 visuelle Auren bei einem einzelnen Patienten über 18 Jahre (Hansen et al. 2013, *Brain*). Das zentrale Ergebnis: Die Auren zeigen ein *Spektrum*, kein stereotypes Muster. Form, Größe, Propagationsrichtung und -geschwindigkeit variieren erheblich zwischen Attacken. Wenn CSD ein stereotyper ionischer Prozess wäre — determiniert durch kortikale Architektur und Diffusionsparameter —, müssten die Auren bei demselben Patienten weitgehend identisch sein. Die beobachtete Variabilität ist mit einem tonischen Interferenzmechanismus natürlich erklärbar: Variabler Phasenoffset → variable Interferenztopographie → variables Aura-Muster. Jede Attacke erzeugt ein anderes räumliches Muster der Destabilisierung, abhängig vom aktuellen Zustand des B7/B8-Phasenversatzes.
+
+#### **4.4.5 Metabolische Krise**
 
 Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase muss unter Notfallbedingungen die Ionengradienten wiederherstellen – ein Prozess, der normalerweise kontinuierlich im Gleichgewicht läuft, nun aber massiv im Rückstand ist.
 
@@ -202,34 +253,44 @@ Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall → verhinde
 
 Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren. (Ausführliche Analyse in 4.5.3.)
 
-#### **4.5.3 Betablocker-Paradox: Schwellenanhebung ohne Reset**
+#### **4.5.3 Betablocker-Paradox: Schwellensenkung und Propagationsdämpfung** *(Revision März 2026)*
 
-Metoprolol als Migräneprophylaxe hebt die CSD-Schwelle, indem es die autonome Kaskade dämpft — weniger sympathische Entgleisung, weniger trigeminale Sensitisierung, weniger vaskuläre Amplifikation. Das verhindert, dass die Rückkopplungsschleife bis zur CSD eskaliert. Aber es verhindert nicht die zugrundeliegende Desynchronisation. Die Raphe ist immer noch insuffizient, das Patchwork entsteht immer noch, der Thalamus verliert immer noch Kalibrierung.
+**Korrektur der früheren Darstellung:** Die Aussage, Metoprolol *hebe* die CSD-Schwelle, ist pharmakologisch ungenau. Metoprolol **senkt** die CSD-Schwelle — es macht den Kortex anfälliger für CSD-Initiation. Seine prophylaktische Wirkung beruht nicht auf Schwellenanhebung, sondern auf **Dämpfung der CSD-Propagation**: Die autonome Kaskade wird abgeschwächt (weniger sympathische Entgleisung, weniger trigeminale Amplifikation), sodass initiierte CSD-Wellen sich schlechter ausbreiten und klinisch subklinisch bleiben.
 
-| Zustand | Ohne Betablocker | Mit Betablocker |
+Diese Unterscheidung ist entscheidend: Unter Metoprolol ist die CSD-Baseline nicht *weiter entfernt* von der Schwelle, sondern *näher dran*. Die Attacken werden seltener, weil propagierte CSD gedämpft wird — aber die subklinische CSD-Aktivität nimmt zu. Das erklärt den hohen Naratriptan-Verbrauch (10 Dosen/Monat) unter Metoprolol-Prophylaxe: Die Baseline ist chronisch subklinisch-destabilisiert, und minimale Perturbation reicht, um symptomatische Durchbrüche zu erzeugen, die Akutintervention erfordern.
+
+**Iatrogene PRE-Fragmentierung:** Die in Anhang B dokumentierte PRE-Fragmentierung (vor LDX) ist teilweise iatrogen durch Metoprolol verstärkt. Metoprolol senkt die CSD-Schwelle → mehr subklinische CSD-Aktivität → mehr kortikale Mikrodesynchronisationen → stärkere SWS-Fragmentierung. Der vermeintlich protektive Effekt der Prophylaxe verschlechtert die Schlafkohärenz, die ihrerseits die Raphe-Instabilität am nächsten Tag verschärft — ein iatrogener Teufelskreis.
+
+| Zustand | Ohne Betablocker | Mit Betablocker (revidiert) |
 | :---- | :---- | :---- |
-| **Verlauf** | Desynchronisation → Eskalation → CSD → harter Reset → sauberer Neustart | Desynchronisation → Eskalation → Schwelle wird nicht erreicht → kein CSD → kein Reset |
-| **Akute Krise** | Ja — Migräneanfall mit Schmerz, Aura, Funktionsverlust | Selten bis absent |
-| **Anschließende Klarheit** | Ja — postiktal resynchronisierter Zustand | Nein — System bleibt im sub-CSD-Zustand |
-| **Chronische Hintergrundinstabilität** | Nein — periodische Resets verhindern Akkumulation | Ja — Eskalation klingt durch Erschöpfung ab, aber ohne Resolution; chronische partielle Destabilisierung |
+| **CSD-Schwelle** | Endogen bestimmt | Gesenkt (nicht angehoben!) |
+| **CSD-Propagation** | Ungehemmt | Gedämpft |
+| **Verlauf** | Desynchronisation → Eskalation → volle CSD → harter Reset → sauberer Neustart | Desynchronisation → niedrigere Schwelle → häufigere subklinische CSD → Propagation gedämpft → kein voller Reset |
+| **Akute Krise** | Ja — voller Migräneanfall | Selten (propagationsgehemmt), aber subklinische Aktivität erhöht |
+| **Anschließende Klarheit** | Ja — postiktal resynchronisierter Zustand | Nein — System bleibt in chronischer Sub-CSD-Destabilisierung |
+| **Naratriptan-Bedarf** | Niedrig (klare Attacken, klare Intervalle) | Hoch — 10/Monat, weil Baseline chronisch subklinisch |
+| **SWS-Kohärenz** | Periodisch restauriert durch CSD-Resets | Chronisch fragmentiert (iatrogen verstärkt) |
 
-Die Analogie: Fieberkrampf verhindern, aber die Infektion nicht behandeln. Das Fieber bleibt niedrig, erreicht nie den Krampf, aber es geht auch nie weg. Statt akuter Krisen eine chronische Hintergrunddestabilisierung.
+Die Analogie: Fieberkrampf verhindern, aber die Infektion nicht behandeln — und zusätzlich die Temperaturregulation so stören, dass das Fieber nie ganz abklingt. Statt akuter Krisen eine chronische Hintergrunddestabilisierung mit iatrogener Verschärfung.
 
-**Fehlende synaptische Renormalisierung:** CSD erzwingt eine massive synaptische Renormalisierung — es ist der extremste Fall von dem, was SWS im Kleinen tut (Tononi & Cirelli, Synaptic Homeostasis Hypothesis). Wenn CSD-Resets wegfallen und der SWS räumlich fragmentiert ist (Anhang B: Quantität erhalten, Kohärenz defizitär — 3,5× mehr Noise-Fragmente in Nächten mit kompensatorischen Folge-Naps, p=0,019), fehlen *beide* Mechanismen der synaptischen Renormalisierung. Langsamer Drift in immer mehr Sub-CSD-Instabilität.
+**Fehlende synaptische Renormalisierung:** CSD erzwingt eine massive synaptische Renormalisierung — es ist der extremste Fall von dem, was SWS im Kleinen tut (Tononi & Cirelli, Synaptic Homeostasis Hypothesis). Wenn CSD-Resets wegfallen und der SWS räumlich fragmentiert ist (Anhang B: Quantität erhalten, Kohärenz defizitär — 3,5× mehr Noise-Fragmente in Nächten mit kompensatorischen Folge-Naps, p=0,019), fehlen *beide* Mechanismen der synaptischen Renormalisierung. Unter Metoprolol verschärft sich dies: Die gesenkte CSD-Schwelle erzeugt mehr subklinische Depolarisationsaktivität, die metabolische Kosten verursacht, ohne die Renormalisierungsfunktion der vollen CSD zu leisten. Langsamer Drift in immer mehr Sub-CSD-Instabilität — teilweise iatrogen beschleunigt.
 
-**Therapeutische Konsequenz:** Reine Migräneprophylaxe ohne Upstream-Adressierung — ob Betablocker, Triptane oder CGRP-Antikörper — unterdrückt den Schutzmechanismus, ohne das Synchronisationsproblem zu lösen. Der Patient wird symptomfrei bei progredient fragmentiertem Kortex.
+**Therapeutische Konsequenz:** Reine Migräneprophylaxe ohne Upstream-Adressierung — ob Betablocker, Triptane oder CGRP-Antikörper — unterdrückt den Schutzmechanismus, ohne das Synchronisationsproblem zu lösen. Betablocker sind besonders problematisch, weil sie nicht nur den Reset verhindern, sondern aktiv die Schwelle senken und damit die chronische Subdestabilisierung verschärfen. Der Patient wird symptomfrei bei progredient fragmentiertem Kortex.
 
-#### **4.5.4 Differentielle Pharmakodynamik: Metoprolol vs. LDX**
+#### **4.5.4 Differentielle Pharmakodynamik: Metoprolol vs. LDX** *(Revision März 2026)*
 
 | Dimension | Metoprolol | Lisdexamfetamin |
 | :---- | :---- | :---- |
-| **Wirkmechanismus** | Symptomatische Downstream-Intervention: hebt CSD-Schwelle, dämpft autonome Kaskade | Kausale Upstream-Stabilisierung: dopaminerge Modulation der Raphe → stabiler serotonerger Tonus |
-| **Effekt auf Desynchronisation** | Kein Effekt — Raphe bleibt insuffizient, Patchwork entsteht weiterhin | Beseitigt — tonischer Arousal-Drive hält Kortex synchron (Tracker-Evidenz: Episodenzahl/Stunde Deep p=0,005, REM p=0,005; Anhang B.3) |
-| **Effekt auf Reset-Bedarf** | Hebt Schwelle → verhindert Reset → chronische Akkumulation | Macht Reset unnötig → keine Akkumulation |
+| **Wirkmechanismus** | Symptomatische Downstream-Intervention: *senkt* CSD-Schwelle, dämpft CSD-Propagation und autonome Kaskade | Kausale Upstream-Stabilisierung: dopaminerge Modulation der Raphe → stabiler serotonerger Tonus |
+| **Effekt auf CSD-Schwelle** | Gesenkt — Kortex anfälliger für CSD-Initiation | Indirekt angehoben — stabile Raphe verhindert die Desynchronisation, die CSD auslöst |
+| **Effekt auf CSD-Propagation** | Gedämpft — initiierte CSD breitet sich schlechter aus | Irrelevant — CSD wird upstream verhindert |
+| **Effekt auf Desynchronisation** | Verschärft — gesenkte Schwelle → mehr subklinische CSD → iatrogene Fragmentierung | Beseitigt — tonischer Arousal-Drive hält Kortex synchron (Tracker-Evidenz: Episodenzahl/Stunde Deep p=0,005, REM p=0,005; Anhang B.3) |
+| **Effekt auf Reset-Bedarf** | Volle CSD propagationsgehemmt → kein Reset, aber subklinische Aktivität chronisch erhöht | Macht Reset unnötig → keine Akkumulation |
+| **Naratriptan-Verbrauch** | Hoch (~10/Monat) — chronisch subklinische Baseline produziert häufige Durchbrüche | Minimal — stabile Baseline ohne Durchbrüche |
 | **Noradrenerge Dämpfung** | Ja — β₁-Blockade reduziert zentralen noradrenergen Tonus → Bewusstseinsschärfe reduziert | Nein — noradrenerge Wirkung bleibt erhalten bzw. wird verstärkt |
-| **Netto-Bewusstseinseffekt** | Doppelte Dämpfung: (1) pharmakologisch noradrenerg + (2) strukturell durch chronische Sub-CSD-Desynchronisation | Doppelte Enthemmung: (1) noradrenerge Dämpfung wegfällt + (2) Desynchronisation aufgelöst |
+| **Netto-Bewusstseinseffekt** | Dreifache Dämpfung: (1) pharmakologisch noradrenerg + (2) strukturell durch chronische Sub-CSD-Desynchronisation + (3) iatrogene SWS-Fragmentierung durch gesenkte CSD-Schwelle | Doppelte Enthemmung: (1) noradrenerge Dämpfung wegfällt + (2) Desynchronisation aufgelöst |
 
-Das subjektive Erleben unter Metoprolol — „wie eine leichte Ibuprofen-Dosis für das Bewusstsein" — ist die Summe beider Dämpfungen. Das „klarer und schärfer" unter LDX ist nicht LDX-Euphorie, sondern der Grundzustand ohne die doppelte Bremse.
+Das subjektive Erleben unter Metoprolol — „wie eine leichte Ibuprofen-Dosis für das Bewusstsein" — ist die Summe aller drei Dämpfungen, wobei die iatrogene Komponente (gesenkte CSD-Schwelle → chronische subklinische Aktivität → SWS-Fragmentierung) bisher nicht als Metoprolol-Effekt erkannt wurde. Das „klarer und schärfer" unter LDX ist nicht LDX-Euphorie, sondern der Grundzustand ohne die dreifache Bremse.
 
 LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente thalamische Modulation → globale Zustandsübergänge → konsolidierter SWS und REM ohne CSD-Notwendigkeit. Der Tracker-Befund bestätigt: POST-Nap-Nächte zeigen null Noise-Fragmente — die pharmakologische Synchronisation ersetzt den CSD-Reset (Anhang B.8).
 

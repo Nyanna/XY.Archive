@@ -5,7 +5,7 @@
 
 ### **E.0 Zusammenfassung**
 
-Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-Reset-Hypothese weiter und verknüpft sie mit der Epilepsie-Literatur. Die zentrale These: CSD und epileptischer Anfall sind zwei Varianten desselben Versagens — der serotonerge Reset-Takt (Anhang D) bricht zusammen, und der Kortex muss sich über einen Notfallmechanismus resynchronisieren. CSD ist die mildere, geordnete Variante (wandernde Depolarisationswelle). Ein generalisierter Anfall ist die schwere Variante (simultane, unkontrollierte Entladung). CGRP ist nicht Schmerzmediator, sondern der notwendige Propagationsmechanismus der CSD-Kaskade — seine Blockade (Anti-CGRP-Antikörper, hochdosierte Antiepileptika) eliminiert den Schutzmechanismus.
+Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-Reset-Hypothese weiter und verknüpft sie mit der Epilepsie-Literatur. Die zentrale These: CSD und epileptischer Anfall sind zwei Varianten desselben Versagens — der serotonerge Reset-Takt (Anhang D) bricht zusammen, und der Kortex muss sich über einen Notfallmechanismus resynchronisieren. CSD ist die mildere, geordnete Variante (wandernde Depolarisationswelle). Ein generalisierter Anfall ist die schwere Variante (Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades, keine synchrone Massenentladung; vgl. 4.4.3, Ergänzung März 2026). CGRP ist nicht Schmerzmediator, sondern der notwendige Propagationsmechanismus der CSD-Kaskade — seine Blockade (Anti-CGRP-Antikörper, hochdosierte Antiepileptika) eliminiert den Schutzmechanismus.
 
 **Konsequenzen für das Modell:**
 
@@ -78,7 +78,7 @@ Das Modell postuliert eine dreistufige Hierarchie kortikaler Resynchronisationsm
 |:------|:-----------|:-----------------|:-------|:---------|
 | **1. Raphe-Takt** | Tonischer serotonerger Reset (vgl. Anhang D.3) | Normalbetrieb, kontinuierlich | Minimal (physiologischer 5-HT-Umsatz) | Permanente Kohärenz |
 | **2. CSD** | Wandernde Depolarisationswelle, CGRP-propagiert | Raphe-Takt insuffizient, Exzitation akkumuliert | Erheblich (Migräneschmerz, metabolische Belastung, Stunden Erholung) | Vollständiger Reset, post-iktale Klarheit |
-| **3. Epileptischer Anfall** | Simultane unkontrollierte Entladung | CSD nicht verfügbar oder insuffizient | Maximal (Bewusstseinsverlust, neuronaler Schaden, SUDEP-Risiko) | Brutaler Reset, postiktale Erschöpfung |
+| **3. Epileptischer Anfall** | Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades (vgl. 4.4.3); *keine* synchrone Massenentladung | CSD nicht verfügbar oder insuffizient | Maximal (Bewusstseinsverlust, neuronaler Schaden, SUDEP-Risiko) | Brutaler Reset, postiktale Erschöpfung |
 
 **Evolutionäres Argument:** Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution *für* die Fähigkeit zur CSD, nicht dagegen. Der Schmerz ist die metabolische Rechnung, nicht die Funktion (vgl. B.6.3).
 
@@ -505,6 +505,68 @@ Die prospektive Verlaufsstudie von Velioglu et al. (2005) bestätigt das Modell:
 
 Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen gleichzeitig produziert. Die Fallback-Hierarchie ist an Stufe 2 (CSD versagt als Stabilisator, Migräne chronifiziert) und Stufe 3 (Anfälle pharmakoresistent) belastet. AEDs, die Stufe 3 supprimieren ohne Stufe 1 zu adressieren, versagen, weil sie den Symptomausdruck ändern, nicht die Ursache. Die höhere Remissionsrate unter Polytherapie (Velioglu et al.) ist konsistent: mechanistisch diverse Polytherapie addiert Kontrolle auf mehreren Ebenen, ohne alle Fallback-Stufen gleichzeitig zu blockieren (vgl. E.7.5, Sveinsson OR 0,31 für Polytherapie ≥3 AEDs).
 
+#### **E.7.11 Epileptisches Zündmuster als Terminalphase der tonischen Welle**
+
+##### **E.7.11.1 Revision: Keine synchrone Massenentladung**
+
+Die bisherige Formulierung in E.0 und E.3 beschrieb den epileptischen Anfall als „simultane, unkontrollierte Entladung". Diese Beschreibung wird hiermit revidiert. Der epileptische Anfall ist nicht eine synchrone Massenentladung unabhängig von der Vorgeschichte, sondern die *Terminalphase derselben tonischen Destabilisierungswelle*, die in Kapitel 4.4.3 als tonische Welle eingeführt wird.
+
+Das tonische Kollapsmuster — die räumlich-zeitliche Sequenz, in der die tonische Interferenzarchitektur destabilisiert (vgl. 4.4.3) — diktiert das Zündmuster des Anfalls. Die Regionen, die zuerst destabilisieren, zünden zuerst. Es existiert ein elongierter Zeitversatz im Zündmuster, der das Echo der Propagationsgeschichte der tonischen Welle ist. Der Anfall „erinnert" die Welle, die ihn ausgelöst hat.
+
+##### **E.7.11.2 Konsequenz: Zwei distinkte Generalisierungsmuster**
+
+Wenn das Zündmuster die Topographie der tonischen Destabilisierungswelle reflektiert, müssen unterschiedliche Destabilisierungsquellen unterschiedliche Generalisierungsmuster erzeugen:
+
+| Epilepsietyp | Tonische Vorgeschichte | Vorhergesagtes EEG-Zündmuster |
+|:-------------|:----------------------|:-----------------------------|
+| **Primäre fokale Epilepsie** | Struktureller Fokus → lokale tonische Destabilisierung | Fokaler Onset mit sekundärer Generalisierung — das klassische Muster. Die Welle breitet sich von einem Punkt aus |
+| **Migräne-assoziierte Epilepsie** | Tonische Destabilisierungswelle über breite kortikale Fläche (vgl. 4.4.3) → diffuse, sequentielle Destabilisierung | Breitflächiges, sequentielles Muster — *nicht* fokal, aber *nicht* simultan. Die Generalisierung folgt der Propagationsgeschichte der tonischen Welle, nicht einem Fokus |
+
+**Forschungslücke:** Die systematische Suche nach unterschiedlichen Generalisierungsmustern als Funktion der Migräne-Komorbidität existiert in der Literatur nicht. EEG-Klassifikationen unterscheiden fokal vs. generalisiert, aber nicht die *Sequenztopographie* der Generalisierung. Hochauflösende EEG-Analysen (≥128 Kanäle, Quellenlokalisation) bei Epilepsiepatienten mit vs. ohne Migräne-Komorbidität sollten distinkte räumlich-zeitliche Generalisierungsmuster zeigen.
+
+##### **E.7.11.3 Querverbindung zur Fallback-Hierarchie**
+
+Die Revision verändert die Fallback-Hierarchie (E.3) nicht strukturell — die drei Stufen bleiben bestehen. Was sich ändert, ist die Natur von Stufe 3: der Anfall ist kein qualitativ neues Ereignis, das einsetzt wenn CSD versagt, sondern die Eskalation derselben tonischen Welle über die CSD-Schwelle hinaus. CSD ist die geordnete Variante der tonischen Wellenresolution (wandernde Depolarisationswelle mit metabolischer Unterstützung durch CGRP). Der epileptische Anfall ist die ungeordnete Variante (die tonische Destabilisierung überschreitet die Kapazität des CSD-Mechanismus, und die Entladung folgt dem Kollapspfad direkt). Der Übergang von Stufe 2 zu Stufe 3 ist damit kein Phasensprung, sondern ein Kontinuum — konsistent mit den vier Interaktionsmustern von Fabricius et al. (E.2.1).
+
+#### **E.7.12 Callosotomie-Befund: Intrahemisphärische Quelle, interhemisphärische Propagation (Ergänzung März 2026)**
+
+##### **E.7.12.1 Klinische Evidenz**
+
+Nach Callosotomie — der chirurgischen Durchtrennung des Corpus callosum zur Epilepsietherapie — treten weiterhin *Auren* auf, aber keine sekundäre Generalisierung. Der Anfallsfokus feuert, die Propagation in die kontralaterale Hemisphäre ist unterbrochen.
+
+**Modellinterpretation:** Die Aura ist das intrahemisphärische Produkt — die tonische Destabilisierungswelle entsteht und propagiert innerhalb einer Hemisphäre (konsistent mit der Interferenzzone als intrahemisphärischer Struktur, vgl. Anhang F, B7/B8-Innervierungsanatomie). Die Generalisierung benötigt den Transfer über das Corpus callosum in die kontralaterale Hemisphäre. Callosotomie unterbricht diesen Transfer — die Aura bleibt, der generalisierte Anfall verschwindet.
+
+##### **E.7.12.2 DTI-Evidenz: Corpus-callosum-Integrität bei Migräne**
+
+DTI-Studien zeigen reduzierte fraktionale Anisotropie (FA) im Corpus callosum bei Migränepatienten. Die White-Matter-Integrität der interhemisphärischen Hauptverbindung ist kompromittiert. Im Modell: chronische tonische Destabilisierungswellen propagieren wiederholt über das Corpus callosum und hinterlassen kumulative mikrostrukturelle Schäden — analog zur thalamischen Atrophie bei chronischer Epilepsie (E.7.10), aber an der interhemisphärischen Propagationsachse.
+
+##### **E.7.12.3 Implikation: Bilaterale tonische Instabilität**
+
+Wenn der Callosotomie-Befund korrekt interpretiert wird, folgt eine strukturelle Konsequenz für das Modell: Tonische Instabilitäten müssen *zeitgleich in beiden Hemisphären* entstehen können, nicht nur in einer Hemisphäre mit anschließender Ausbreitung. Die bilaterale Raphe-Innervierung (DRN projiziert bilateral, vgl. Anhang F) ist konsistent — ein Raphe-Takt-Ausfall betrifft beide Hemisphären simultan. Die resultierende tonische Destabilisierung ist daher primär bilateral, und das Corpus callosum ist der Pfad der *Synchronisation* (nicht der Initiation) der bilateralen Instabilität.
+
+Bei Callosotomie fehlt diese Synchronisation: beide Hemisphären destabilisieren unabhängig, aber die koordinierte Generalisierung — die den klinisch sichtbaren GTCS produziert — erfordert die interhemisphärische Koppelung über das Corpus callosum.
+
+#### **E.7.13 Vorhersage: Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe**
+
+##### **E.7.13.1 Kernhypothese**
+
+Wenn ein Epileptiker seine Attacke Stunden im Voraus vorhersagen kann — durch diffuse prodromale Symptome wie Stimmungsänderung, Konzentrationsverlust, Unruhe — dann hat er eine Migräneaura im Sinne des Modells: eine tonische Destabilisierungswelle (vgl. 4.4.3), die die Interferenzzone langsam destabilisiert, bevor die Anfallsschwelle erreicht wird. Die Vorhersage stützt sich auf dieselbe interozeptive Wahrnehmung wie bei Migräne — das Registrieren der sich aufbauenden Desynchronisation.
+
+Die Interferenzzone zündet nicht spontan. Sie wird durch die tonische Welle auf die Schwelle getrieben. Das Zeitfenster zwischen Wahrnehmung der Destabilisierung und Erreichen der Schwelle *ist* die Vorhersageperiode.
+
+##### **E.7.13.2 Zwei Populationen**
+
+| Population | Anfallsbeginn | Mechanismus | Vorhersagen |
+|:-----------|:-------------|:-----------|:------------|
+| **Population 1: Anfälle MIT Vorhersage/Aura** | Stunden prodromaler Phase, langsamer Aufbau | Tonische Destabilisierungswelle → Interferenzzone erreicht Schwelle → Anfall | Müssten Migräne-Komorbidität zeigen (gemeinsamer Upstream-Mechanismus); Zeitfenster für Intervention; EEG zeigt sequentielles Generalisierungsmuster (E.7.11) |
+| **Population 2: Anfälle OHNE Warnung** | Abrupt, kein Prodrom | Akuter Phasensprung (z.B. akute Ionenverschiebung) oder struktureller Fokus mit direkter Entladung | Keine systematische Migräne-Komorbidität; kein Zeitfenster; EEG zeigt fokalen Onset ohne tonische Wellencharakteristik |
+
+##### **E.7.13.3 Therapeutische Implikation: Schlechteres Ansprechen bei Migräne-Komorbidität**
+
+Epilepsiepatienten mit komorbider Migräne haben dokumentiert schlechteres Therapieansprechen auf Antiepileptika (Velioglu et al. 2005, vgl. E.7.10). Das Modell erklärt diesen Befund: Antiepileptika adressieren die Anfallsschwelle (Stufe 3), aber nicht den Upstream-Generator — die tonische Destabilisierungswelle, die durch die Raphe-Insuffizienz angetrieben wird (Stufe 1). Bei Population 1 (Anfälle mit Vorhersage/Migräne-Mechanismus) supprimieren AEDs den terminalen Ausdruck, aber die tonische Welle baut sich weiterhin auf. Die Schwelle wird durch AEDs angehoben, aber die Desynchronisation akkumuliert — und bricht periodisch durch die angehobene Schwelle, was die höhere Rate intraktabler Anfälle erklärt.
+
+**Vorhersage:** Stratifizierung von Epilepsiepatienten nach Vorhersagefähigkeit (Prodrom ja/nein) und Migräne-Komorbidität sollte zwei distinkte Populationen identifizieren, die sich in AED-Ansprechen, Generalisierungsmuster (EEG) und optimalem Therapieregime unterscheiden. Population 1 sollte von Stufe-1-Intervention (serotonerge Stabilisierung, Betablocker) profitieren, Population 2 von konventioneller AED-Monotherapie.
+
 ---
 
 ### **E.8 Testbare Vorhersagen**
@@ -525,6 +587,10 @@ Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen g
 | **E.8.12** | Migränefrequenz sinkt vorübergehend in den Wochen nach einem GTCS bei komorbiden Migräne-Epilepsie-Patienten | Retrospektive Analyse: Migränetagebuch-Daten um dokumentierte Anfallszeitpunkte in Epilepsie-Monitoring-Units | Postiktale Migräne-freie Phase, gefolgt von gradueller Rückkehr zur Baseline-Frequenz |
 | **E.8.13** | Anti-CGRP-Langzeitprophylaxe (>2 Jahre) erhöht die Epilepsie-Inzidenz bei Migränepatienten mit serotonerger Dysregulation gegenüber Betablocker-Prophylaxe | Prospektive Kohortenstudie oder Versicherungsdaten-Analyse: Epilepsie-Inzidenz unter Anti-CGRP vs. Betablocker, stratifiziert nach Migränedauer und ADHS-Komorbidität | Höhere Epilepsie-Inzidenz unter Anti-CGRP, besonders bei langer Migräneanamnese und ADHS-Komorbidität |
 | **E.8.14** | Thalamische Volumenreduktion bei chronischer Migräne korreliert mit der Dauer der CSD-Suppressionstherapie, nicht mit der Migränedauer selbst | Strukturelle MRT-Studie bei chronischen Migränepatienten, stratifiziert nach Prophylaxetyp (CSD-suppressiv vs. CSD-neutral) und Therapiedauer | Stärkere thalamische Atrophie bei CSD-suppressiver Prophylaxe bei gleicher Migränedauer |
+| **E.8.15** | Migräne-assoziierte Epilepsie zeigt breitflächiges, sequentielles Generalisierungsmuster im EEG, distinkt von fokalem Onset bei primärer Epilepsie (Ergänzung März 2026) | Hochauflösendes EEG (≥128 Kanäle, Quellenlokalisation) bei Epilepsiepatienten mit vs. ohne Migräne-Komorbidität; Analyse der räumlich-zeitlichen Generalisierungssequenz | Migräne-komorbide Patienten: diffuse, sequentielle Generalisierung entlang des tonischen Kollapspfades. Nicht-komorbide: klassischer fokaler Onset mit sekundärer Generalisierung |
+| **E.8.16** | Epileptiker mit Anfallsvorhersage (Prodromalphase >1h) zeigen höhere Migräne-Komorbidität als Epileptiker ohne Vorhersagefähigkeit (Ergänzung März 2026) | Retrospektive Stratifizierung nach dokumentierter Vorhersagefähigkeit; Migräne-Screening in beiden Subgruppen | Signifikant höhere Migräne-Prävalenz in der Vorhersage-Gruppe; Population 1 (vgl. E.7.13) als distinkte mechanistische Subgruppe |
+| **E.8.17** | Population 1 (Anfälle mit Prodrom/Migräne-Komorbidität) profitiert von Stufe-1-Intervention (Betablocker, serotonerge Stabilisierung) zusätzlich zu AEDs; Population 2 (Anfälle ohne Warnung) nicht (Ergänzung März 2026) | Kontrollierte Pilotstudie: Add-on-Betablocker bei Epileptikern mit vs. ohne Migräne-Komorbidität und Anfallsvorhersage | Reduktion der Anfallsfrequenz unter Add-on-Betablocker spezifisch in Population 1; kein Zusatzeffekt in Population 2 |
+| **E.8.18** | Corpus-callosum-FA bei Migränepatienten korreliert mit Anfallshäufigkeit und Krankheitsdauer (Ergänzung März 2026) | DTI-Studie bei episodischer und chronischer Migräne; Korrelation Corpus-callosum-FA mit Attackenfrequenz und Migränedauer | Progressive FA-Reduktion als Funktion der kumulativen tonischen Wellenpropagation über das Corpus callosum |
 
 ---
 
@@ -596,6 +662,13 @@ Im Modell: Komorbidität = schwerer Upstream-Defekt, der beide Manifestationen g
 | Komorbide Migräne-Epilepsie: schlechtere Prognose, höhere Intraktabilität, niedrigeres frühes Ansprechen | Gesichert | Velioglu et al. 2005 (prospektiv, 5–10 Jahre Follow-up) |
 | CSD als Stabilisator gegen Eskalation zu Stufe 3 (94% der Migräniker entwickeln keine Epilepsie) | Hypothetisch, konsistent mit Epidemiologie und Fallback-Modell | Modellsynthese aus Komorbidiätsdaten + Fallback-Hierarchie |
 | CSD-Suppressionstherapie ohne Stufe-1-Intervention potentiell langfristig kontraproduktiv | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Topiramat-SUDEP-Signal (E.7.5) |
+| Epileptischer Anfall als Terminalphase der tonischen Destabilisierungswelle (keine synchrone Massenentladung); Zündmuster reflektiert Kollapspfad (Ergänzung März 2026) | Hypothetisch, mechanistisch konsistent | Modellrevision aus 4.4.3, Querverbindung zu E.3; testbar über hochauflösendes EEG (E.8.15) |
+| Migräne-assoziierte Epilepsie: breitflächiges sequentielles Generalisierungsmuster (distinkt von fokalem Onset) (Ergänzung März 2026) | Hypothetisch, nicht getestet | Modellvorhersage aus E.7.11; systematische Suche nach Generalisierungsmustern als Funktion der Migräne-Komorbidität existiert nicht |
+| Callosotomie: Auren persistieren, Generalisierung sistiert → intrahemisphärische Quelle, Corpus callosum als Propagationsweg (Ergänzung März 2026) | Gesichert (klinisch) | Callosotomie-Literatur; Spencer et al. 1988 |
+| DTI: Reduzierte fraktionale Anisotropie im Corpus callosum bei Migränepatienten (Ergänzung März 2026) | Gesichert | DTI-Studien; konsistent mit kumulativer tonischer Wellenpropagation |
+| Bilaterale tonische Instabilität durch bilaterale DRN-Projektion; Corpus callosum als Synchronisationspfad (nicht Initiationspfad) (Ergänzung März 2026) | Hypothetisch, konsistent mit Callosotomie-Daten | Modellsynthese aus Anhang F + E.7.12 |
+| Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe (Population 1 vs. Population 2) (Ergänzung März 2026) | Hypothetisch, testbar | Modellvorhersage aus E.7.13; Stratifizierung nach Vorhersagefähigkeit + Migräne-Komorbidität |
+| Schlechteres AED-Ansprechen bei Migräne-Komorbidität erklärt durch Upstream-Generator (tonische Welle, Stufe 1) (Ergänzung März 2026) | Konsistent mit Evidenz | Velioglu et al. 2005 (schlechtere Prognose bei Komorbidität); Modellinterpretation aus E.7.13 |
 | Dreistufige Fallback-Hierarchie: Raphe-Takt → CSD → Anfall | Hypothetisch, konsistent mit allen Evidenzlinien | Modellsynthese aus Anhang D + E.1–E.4 |
 | Chronische Migräne als Deadlock aus gescheiterter Resynchronisation | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Propofol-Responder-Daten |
 | Propofol-Reset + LDX-Stabilisierung als kombinierte Intervention | Hypothetisch, nicht getestet | Modellvorhersage |
