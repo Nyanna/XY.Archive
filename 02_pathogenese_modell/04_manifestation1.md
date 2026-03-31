@@ -144,6 +144,16 @@ Post-Schlaf-Wachheit zeigt erhöhte Delta-Aktivität in posterioren Ableitungen 
 
 Dies erklärt das phänomenologisch berichtete „Druckgefühl hinter dem Auge" nach destabilisierenden Naps: Der Frontalkortex ist online genug, um zu merken, dass posterior Verarbeitungskapazität fehlt. Dieses Defizit wird als Druck repräsentiert, weil das Bewusstsein keinen besseren Code für eine Region hat, die nicht vollständig reaktiviert. Es ist kein physischer Druck und kein CSD — es ist die bewusste Wahrnehmung prolongierter, asymmetrischer Sleep Inertia im posterioren Kortex.
 
+**Modalitätsspezifische Asymmetrie der Off-State-Last**
+
+Die posteriore Vulnerabilität ist nicht auf den visuellen Kortex beschränkt, aber die phänomenologische Konsequenz ist modalitätsspezifisch gegenläufig.
+
+Der visuelle Kortex verarbeitet räumlich-parallel: jeder bistabile Patch produziert Output, der zwischen vollem Signal und Schweigen alterniert. Externer visueller Input erzwingt Verarbeitung, die der Off-State-Kortex nicht kohärent liefern kann — das Ergebnis ist inkohärenter feedforward-Output in den PFC. Augenschluss eliminiert den Input und damit den Konflikt: der Off-State wird funktional irrelevant, der PFC registriert keine Diskrepanz, der Bewusstseinsdruck verschwindet.
+
+Der auditorische Kortex verarbeitet temporal-sequenziell. Periodischer Input (Musik, Rhythmus) kann bistabile Neurone in phasengekoppeltes Feuern zwingen — externer Takt überschreibt die stochastische Up/Down-Alternation. Der periodische Stimulus liefert exakt das, was dem endogenen Raphe-Drive fehlt: einen zeitlichen Synchronisator. Stille dagegen entzieht dem auditorischen Kortex den einzigen verfügbaren externen Drive — er fällt in dasselbe Off-State-Patchwork wie der visuelle Kortex, mit spontanen Up-State-Bursts ohne Stimulus-Korrelat, und der PFC detektiert inkohärenten auditorischen Output.
+
+Die Asymmetrie folgt direkt aus der Verarbeitungsmodalität: ob externer Input den Off-State-Konflikt verschärft oder auflöst, hängt davon ab, ob die Modalität räumlich-parallele Kohärenz erfordert (visuell: Input = Last) oder temporal-sequenzielles Entrainment ermöglicht (auditorisch: Input = Stabilisierung). Dies erklärt die kompensatorische Emergenz von Musik als externem Taktsubstitut (vgl. Anhang D, D.6.4) — nicht als Ablenkung, sondern als funktionaler Ersatz für insuffizienten serotonergen Tonus im auditorischen Kortex.
+
 #### **4.3.4 Die Nap-Kaskade: Vom lokalen Schlaf zur thalamokortikalen Destabilisierung**
 
 Die vollständige Kaskade verläuft über mehrere Stunden und ist phänomenologisch von der akuten Raphe-Oszillation (4.3.1) zu unterscheiden:

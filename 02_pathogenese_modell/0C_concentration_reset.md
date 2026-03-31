@@ -32,6 +32,16 @@ Dieser Druck kommt besonders in monotonen Situationen. Am schlimmsten, wenn ich 
 
 Ich dachte immer, das sei Erschöpfung von der Konzentration. Dass mein Gehirn müde wird vom Arbeiten. Heute denke ich: Die Arbeit war nicht das, was mich erschöpft hat. Die Arbeit war das, was mich wach gehalten hat. Und wenn sie aufhörte, zeigte sich, dass ohne sie nicht genug da ist, um mich oben zu halten.
 
+## Die Modalitätsasymmetrie
+
+Der Bewusstseinsdruck reagiert auf sensorische Modalitäten gegenläufig. Augen schließen reduziert ihn sofort. Stille verschlechtert ihn.
+
+Das ergibt keinen Sinn, wenn es Müdigkeit wäre — Müdigkeit wird nicht besser, weil man die Augen schließt, und schlechter, weil es still ist. Es ergibt Sinn, wenn der Druck etwas mit der Verarbeitung selbst zu tun hat.
+
+Visueller Input auf einen Kortex, der nicht richtig online ist, erzeugt den Druck. Augen zu — kein Input, kein Konflikt, kein Druck. Aber auditorisch ist es umgekehrt: Musik, Rhythmus, periodischer Input macht es *besser*. Stille macht es schlechter. Nicht leise Stille, die beruhigt — sondern die Art von Stille, die drückt, die das Bewusstsein anfängt zu füllen mit nichts.
+
+Musik war nie Ablenkung. Sie war das, was der auditorische Kortex brauchte, um nicht in denselben Zustand zu kippen wie der visuelle Kortex beim Starren. Ein äußerer Takt, wo der innere fehlt.
+
 ## Wegdriften
 
 Es gibt Momente, in denen ich einfach weg bin. Nicht eingeschlafen — ich sitze aufrecht, meine Augen sind offen — aber ich bin nicht da. Ich starre auf den Bildschirm und sehe nichts. Nicht, dass ich etwas anderes denke — Mind Wandering, wo die Gedanken abschweifen — sondern buchstäblich: nichts. Ein Loch in der Verarbeitung. Hinterher weiß ich nicht, wie lange es war. Sekunden? Minuten?
