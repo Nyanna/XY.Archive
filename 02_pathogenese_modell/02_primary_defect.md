@@ -430,16 +430,36 @@ Die Raphe-Kerne B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianu
 
 ---
 
-#### **2.5.2 SCN-Raphe-Kopplung: Bidirektionaler Destabilisierungsmechanismus**
+#### **2.5.2 SCN-Raphe-Kopplung: Serielle Architektur und Flaschenhals-Mechanismus (Revision April 2026)**
 
-Der Nucleus suprachiasmaticus (SCN) und die Raphe-Kerne sind bidirektional verschaltet:
+Die frühere Darstellung der SCN↔Raphe-Verschaltung als bidirektionale Parallelarchitektur (SCN ⇄ B7/B8) war unvollständig. Retrograde Tracing-Studien (Meyer-Bernstein et al. 1996) und pharmakologische Blockade-Experimente (Glass et al. 2000) zeigen eine **serielle** Architektur: **SCN ↔ B8 ↔ B7**.
 
-| Richtung | Mechanismus |
-| :---- | :---- |
-| **SCN → Raphe** | SCN-Output moduliert Raphe-Feuerrate circadian. Phasendrift des SCN verschiebt das Zeitfenster, in dem die Raphe ihre Aktivität hoch-/herunterregulieren soll. Bei maximaler Desynchronisation sendet der SCN Wachsignale, während der soziale Kontext Schlaf verlangt (oder umgekehrt). |
-| **Raphe → SCN** | Serotonerge Projektionen aus dem medianen Raphe-Kern in den SCN modulieren Lichtsensitivität und Phasenanpassungsrate. Instabile Raphe → instabiles Serotoninsignal im SCN → gestörtes Entrainment → Drift wird nicht korrigiert. |
+| Pfad | Architektur | Evidenz |
+| :---- | :---- | :---- |
+| **B8 (MRN) → SCN** | **Monosynaptisch.** Der MRN ist die *einzige* direkte serotonerge Quelle der SCN-Innervierung. | Meyer-Bernstein et al. 1996: retrograde Tracer aus dem SCN markieren ausschließlich MRN-Neurone, nicht DRN. |
+| **B7 (DRN) → SCN** | **Multisynaptisch, über B8.** DRN projiziert zum Intergeniculate Leaflet (IGL), nicht direkt zum SCN. DRN-Stimulation erzeugt zwar 5-HT-Freisetzung im SCN, aber dieser Effekt wird durch 5-HT-Antagonisten im MRN vollständig blockiert → der Weg verläuft DRN → MRN → SCN. | Glass et al. 2000: 5-HT-Antagonist-Infusion in den MRN eliminiert DRN-induzierte SCN-5-HT-Freisetzung. |
+| **SCN → B7/B8** | **Keine direkten Projektionen.** SCN-Efferenzen erreichen die Raphe indirekt über hypothalamische Zwischenstationen: mediale präoptische Area (mPOA), subparaventrikuläre Zone (SPZ), dorsomedialer Hypothalamus (DMH). | Fehlende direkte SCN→Raphe-Projektionen in Tracing-Studien; hypothalamische Relaisstationen konsistent dokumentiert. |
 
-**Verstärkungsschleife:** Instabile Raphe erschwert Entrainment → circadiane Drift akkumuliert → zunehmende Desynchronisation senkt Raphe-Dämpfungskonstante → Oszillationsamplitude steigt → Kaskadenschwelle wird mit minimalem Perturbator erreicht → Attacke → Entleerung/Resynchronisation → Zyklus beginnt erneut.
+**Konsequenz: B8 als serielles Relay.** Der MRN (B8) ist nicht nur *ein* Kanal zur SCN-Modulation, sondern der *einzige* Kanal. B7 hat keinen unabhängigen SCN-Zugang. Die gesamte serotonerge Zeitgeberinformation, die den SCN erreicht, wird durch B8 gefiltert. Der 5-HT1A-Autorezeptor am MRN (Dudley et al. 1999) fungiert als Gate dieser Signalübertragung: Er reguliert die Feuerrate der MRN-Neurone und damit die Amplitude und Kohärenz des an den SCN gelieferten 5-HT-Signals.
+
+**Verstärkungsschleife (revidiert):** Instabiler B8-Autorezeptor → verrauschtes 5-HT-Signal am SCN → gestörtes Entrainment → circadiane Drift akkumuliert → zunehmende Desynchronisation senkt Raphe-Dämpfungskonstante → Oszillationsamplitude steigt → Kaskadenschwelle wird mit minimalem Perturbator erreicht → Attacke → Entleerung/Resynchronisation → Zyklus beginnt erneut.
+
+##### **Der MRN-Autorezeptor als mechanistischer Flaschenhals (Revision April 2026)**
+
+Die serielle Architektur hat eine nicht-triviale Konsequenz: Die 5-HT1A-Autorezeptor-Instabilität am MRN (B8) erklärt *beide* in diesem Modell postulierten Desynchronisationsmodi über einen einzigen Mechanismus.
+
+1. **Intra-Kern-Effekt (Feuerrate-Oszillation):** Ein instabiler 5-HT1A-Autorezeptor erzeugt underdämpfte Feuerraten-Oszillationen innerhalb des MRN — der in Abschnitt 2.2 beschriebene Grundmechanismus. Dasselbe gilt für den DRN (B7), dessen 5-HT1A-Autorezeptoren denselben Defekt tragen.
+2. **Inter-Kern-Effekt (B7 verliert SCN-Synchronisation):** Weil B7 den SCN ausschließlich über das B8-Relay erreicht, bedeutet ein verrauschtes B8-Signal, dass B7 seine *einzige* Quelle zirkadianer Synchronisationsinformation verliert. Der B7/B8-Phasenversatz (Abschnitt 2.5.1) ist daher kein unabhängiger Defekt, sondern eine direkte Downstream-Konsequenz der B8-Autorezeptor-Instabilität: B8 rauscht → SCN-Rückkopplung auf B7 degradiert → Phasenbeziehung driftet.
+
+**Ein Mechanismus, ein Defekt, zwei Downstream-Effekte.** Die bisherige Zwei-Prozess-Darstellung (Intra-Kern-Oszillation vs. Inter-Kern-Versatz, vgl. D.4.3) war phänomenologisch korrekt — beide Phänomene existieren und sind messbar —, aber mechanistisch redundant. Der MRN-5-HT1A-Autorezeptor ist der anatomische und funktionelle Flaschenhals, der beide Effekte erzeugt.
+
+##### **LDX-Wirkung auf den SCN: Indirekt über B8 (Revision April 2026)**
+
+LDX wirkt *nicht* direkt auf den SCN. Der SCN exprimiert weder DAT noch NET in funktionell relevanter Dichte; katecholaminerge Modulation ist kein primärer SCN-Input. Der klinisch beobachtete zirkadiane Stabilisierungseffekt von LDX erklärt sich vollständig über die serielle Architektur:
+
+1. **LDX → B8-Stabilisierung:** LDX erhöht tonisch Dopamin und Noradrenalin in der Umgebung der Raphe-Kerne → D2-Rezeptor-vermittelte Modulation stabilisiert die B8-Feuerrate (vgl. Abschnitt 2.5.1).
+2. **Stabilisiertes B8 → kohärenteres SCN-Signal:** Ein weniger verrauschtes B8 liefert ein kohärenteres 5-HT-Signal an den SCN → SCN-Entrainment verbessert sich → zirkadiane Drift wird korrigiert.
+3. **Persistierender ~4-Tage-Oszillator:** LDX korrigiert den *Intra-Kern-Takt* (Feuerrate beider Kerne), adressiert aber nicht den *Inter-Kern-Relay-Versatz* — die relative Phasenbeziehung zwischen B7 und B8, die über das SCN-Relay synchronisiert wird. Das erklärt die Tracker-Daten: zirkadiane Drift eliminiert (r = −0.831), aber der ~4-Tage-Oszillator persistiert subklinisch, weil das verbesserte, aber nicht perfekte B8-Signal den B7/B8-Versatz zwar dämpft, aber nicht aufhebt.
 
 ##### **Revision März 2026 — Thalamische Interferenzzone: Midline-/Intralaminärer Thalamus als primärer Ort der B7/B8-Interferenz**
 

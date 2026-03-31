@@ -17,6 +17,24 @@
 | Triptane (akut) | 5-HT1B/D-Agonismus | Direkte Kaskaden-Intervention über Serotoninrezeptoren |
 | CGRP-Antagonisten | Einzige Ausnahme | Kaskade, nicht Auslöser – ob CGRP upstream oder parallel zu Serotonin liegt, ist unklar |
 
+#### **Revision der Trigger-Logik (Revision April 2026)**
+
+> **Korrektur:** Die obige Darstellung impliziert, dass Trigger primär über Raphe-Destabilisierung wirken (Trigger → Raphe destabilisiert → Interferenz → CSD). Diese Kausalrichtung ist falsch. Trigger wirken **nicht** primär über Raphe-Destabilisierung, sondern über **kortikale Taktperturbation auf nicht-serotonergen Kanälen**:
+
+| Trigger-Klasse | Eintrittskanal | Kortikaler Mechanismus |
+| :---- | :---- | :---- |
+| **Stress / Adrenalin** | LC (Locus coeruleus) → noradrenerg | PFC-Takt verschiebt sich direkt |
+| **Koffein** | Adenosin-Antagonismus | Kortikale Erregbarkeit steigt direkt |
+| **Sensorische Überflutung** | Thalamokortikaler Input | Kortikaler Input steigt direkt |
+| **Schlafentzug** | Homöostatischer Druck (Adenosin-Akkumulation) | Kortikale Oszillationen verschieben sich |
+| **Wetter / Alkohol / Menstruation / Käse** | Diverse periphere und zentrale Kanäle | Konvergenz auf kortikale Erregbarkeit über jeweils verschiedene Rezeptorsysteme |
+
+**Zentrale Einsicht:** Das Interferenzfeld (B7/B8-Phasenversatz, vgl. Revision 2.5.1) bestimmt die *Empfindlichkeit* — nicht der Trigger die Interferenz. Der Trigger ist der Perturbator, der auf einen bereits vorsensibilisierten Kortex trifft. Die Heterogenität der klinischen Triggerliste (Stress, Wetter, Alkohol, Menstruation, Käse, Schlafentzug, sensorische Überflutung) ist kein Zeichen fehlender Spezifität des Modells, sondern positives Zeichen dafür, dass der Trigger-Eintrittspunkt der Kortex ist, nicht die Raphe.
+
+**Serotonerger Schutz und seine Grenzen:** Der PFC ist serotonerg geschützt — B7 projiziert als Single-Source-Modulator diffus-kortikal und stabilisiert die kortikale Taktung tonisch. Dieser Schutz ist jedoch spezifisch serotonerg. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
+
+**Konsequenz für das Modell:** Die serotonerge Konvergenz der Prophylaktika (Tabelle oben) bleibt gültig — Prophylaxe adressiert die Empfindlichkeit (Interferenzfeld). Die Trigger-Heterogenität wird nicht durch serotonerge Konvergenz erklärt, sondern durch kortikale Konvergenz: Alle Trigger münden in kortikale Taktperturbation, unabhängig von ihrem Eintrittskanal.
+
 ### **4.2 Der Migränezyklus als Oszillationsphänomen**
 
 Migräne ist in diesem Modell keine Reaktion auf einen externen Trigger, sondern ein endogenes Oszillationsphänomen der Raphe-Selbstregulation:
@@ -28,6 +46,29 @@ Migräne ist in diesem Modell keine Reaktion auf einen externen Trigger, sondern
 | **Aufschaukeln** | Schwingung der Raphe-Schleife nimmt zu. Zeitpunkt der Schwellenüberschreitung variiert mit Triggerstärke (Abschnitt 2.5.1, Stochastisches Fenstermodell): Starke Perturbation eskaliert bereits bei moderater Prädisposition (Tag 3–4), minimale Perturbation erst bei maximaler (Tag 6–7). Serotoninspiegel fällt unter kritische Schwelle → trigeminovaskuläre Aktivierung, CSD-Initiation. |
 | **Attacke** | Kaskade voll aktiviert: CSD, CGRP-Freisetzung, neurogene Inflammation, Schmerz. Raphe-Entleerung. |
 | **Postdromal/Refraktär** | System in Refractory-Zustand. Autorezeptor-Schleife rekalibriert sich. Klinisch: Erschöpfung, aber Schmerzfreiheit. Dauer = Rekalibrierungszeit. |
+
+#### **Revision des Stochastischen Fenstermodells (Revision April 2026)**
+
+> **Korrektur (vgl. Revision 2.5.1):** Das in 2.5.1 und in der Aufschaukelphase oben referenzierte Stochastische Fenstermodell bleibt strukturell gültig, aber drei Variablen werden neu zugeordnet:
+
+| Variable | Bisherige Zuordnung | Revidierte Zuordnung (April 2026) |
+| :---- | :---- | :---- |
+| **Fenster** | Zirkadiane Shift-Akkumulation (τ-Drift über ~6–7 Tage) | B7/B8-Phasenversatz im Zyklus (~4 Tage POST, vgl. 2.5.1 Revision März 2026) |
+| **Perturbator** | Serotonerge Perturbation (Trigger → Raphe) | Beliebiger kortikaler Taktmodulator (nicht notwendig serotonerg) |
+| **Eintrittskanal** | Serotonerg (über Raphe) | Nicht-serotonerg: LC (noradrenerg), Adenosin, sensorischer Input, homöostatischer Druck, etc. |
+
+**Erklärung der Trigger-Inkonsistenz:** Identische Trigger lösen an manchen Tagen eine Attacke aus und an anderen nicht. Die bisherige Erklärung (variable zirkadiane Dämpfung) war korrekt im Prinzip, aber falsch im Mechanismus. Die revidierte Erklärung: Der Abstand zur Schwelle hängt vom aktuellen B7/B8-Phasenversatz ab — nicht von der zirkadianen Shift-Akkumulation. An Tagen mit minimalem Phasenversatz (z.B. Tag 1 nach Resynchronisation) ist der Abstand zur Schwelle maximal; kein alltagstypischer Trigger überbrückt ihn. An Tagen mit maximalem Phasenversatz (z.B. Tag 3–4 im ~4-Tage-Zyklus) reicht minimale kortikale Perturbation. Der Trigger ist austauschbar — der Phasenversatz determiniert die Empfindlichkeit.
+
+#### **Therapeutische Hebel: Amplitudenmodulation vs. Frequenzreparatur (Revision April 2026, Schritt 10)**
+
+Das revidierte Triggermodell definiert zwei distinkte therapeutische Achsen, die bisher nicht differenziert wurden:
+
+| Hebel | Mechanismus | Verfügbarkeit | Beispiel |
+| :---- | :---- | :---- | :---- |
+| **Amplitudenmodulation** | B7- oder B8-Amplitude senken → Interferenzprodukt sinkt | Verfügbar (Diphenhydramin, TCAs) | Amplitude_B7 ↓ → weniger Interferenz an Zone I–III |
+| **Frequenzreparatur** | Inter-Kern-Phasenversatz korrigieren | Nicht möglich — das Reparaturwerkzeug (5-HT1A-Autorezeptor) ist das defekte Teil | Keine aktuelle Substanz |
+
+**LDX und die dritte Achse:** Lisdexamfetamin optimiert auf einer dritten Achse: **Intra-Kern-Stabilisierung** (D2-vermittelte tonische Feuermodulation beider Kerne, vgl. 2.5.1). Diese Achse adressiert weder die Amplitude differentiell (beide Kerne werden stabilisiert, nicht einer selektiv gedämpft) noch die Frequenz (der Inter-Kern-Phasenversatz wird durch LDX gedämpft, aber nicht aufgehoben — vgl. Tracker-Daten: ~4-Tage-Oszillator persistiert POST). LDX senkt die Empfindlichkeit, indem es den Intra-Kern-Takt stabilisiert und damit die Amplitude der Interferenz indirekt reduziert, aber es repariert nicht den Phasenversatz selbst. Die Persistenz des subklinischen CSD-Zyklus unter LDX (Median IBI 4,0 d, Anhang B) ist die direkte Konsequenz dieser Blindstelle.
 
 ### **4.3 Schlaf-Wach-Übergang und kortikale Desynchronisation als Triggermechanismus**
 

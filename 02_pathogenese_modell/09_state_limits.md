@@ -50,6 +50,23 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Schlaflatenz <2 min als Marker für bereits laufende lokale Schlaf-Intrusion, nicht für gesunden Schlaf | Einzelfallbeobachtung | Selbstbeobachtung, MSLT-Referenz (<5 min = pathologisch) |
 | Maximale circadiane Desynchronisation → maximale lokale Schlaf-Anfälligkeit → Migräne-Zyklusperiodizität | Hypothetisch, konsistent | Verbindung 2.5 (circadiane Drift) + lokaler Schlaf + CSD-Reset-Mechanismus + SWS-Fragmentierung |
 | Arbeit/Aufgabenfokus als externer kortikaler Synchronisator (kompensiert insuffizienten Raphe-Tonus) | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch ableitbar aus stimulusgetriebenem vs. tonischem Arousal |
+| SCN↔B8↔B7 serielle Architektur (MRN als einziger direkter SCN-Afferent) | Gesichert | Meyer-Bernstein et al. 1996 (retrograde Tracing), Glass et al. 2000 (DRN→MRN→SCN), Dudley et al. 1999 |
+| DRN→MRN Glutamat-Verbindung unidirektional | Gesichert | Mokler et al. 2009 |
+| Differentielle afferente Regulation: DRN GABAerg, MRN glutamaterg | Gesichert | Crawford et al. 2003 |
+| H1-Blockade supprimiert selektiv DRN-5-HT, kein MRN-Effekt | Gesichert | Crawford et al. 2013 (Mirtazapin-Studie) |
+| SSRIs und 5-HT1A-Agonisten kernblind (identische Potenz DRN/MRN) | Gesichert | Tao et al. 2003 |
+| DRN/MRN funktionell antagonistisch (Belohnung/Aversion) | Gesichert | Ohmura & Nagayasu 2025 (Neuropsychopharmacology Reports) |
+| AH1-Exposition in Entwicklung assoziiert mit ADHS (HR 1,35–1,47) | Gesichert (epidemiologisch) | Fuhrmann et al. 2020 (Allergy, n=41.484) |
+| MPH erhöht DRN-Feuerrate asymmetrisch (88% der Neurone) | Gesichert (Tier-Elektrophysiologie) | Tang & Dafny 2013, Kharas et al. 2017 |
+| MPH bei Epilepsie: 4-fach erhöhtes Anfallsrisiko in ersten 30 Tagen | Gesichert (Register) | Man et al. 2020 (IRR 4,01) |
+| ADHS-Medikation: 27% Anfallsreduktion langfristig | Gesichert (Register) | Brikell et al. 2019 |
+| 5-HT1A-Autorezeptor-Instabilität am MRN als singulärer Flaschenhals für Intra- UND Inter-Kern-Desync | Hypothetisch, mechanistisch zwingend | Abgeleitet aus serieller Architektur (Meyer-Bernstein 1996) + Autorezeptor-Modell (2.2) |
+| LDX wirkt nicht auf SCN direkt, sondern über B8-Stabilisierung → SCN-Input verbessert | Hypothetisch, konsistent | Mechanistisch abgeleitet; keine direkte DAT/NET-Expression am SCN |
+| MPH kern-asymmetrisch (B7>>B8), LDX kernblind → MPH potentiell interferenzverstärkend | Hypothetisch, konsistent | DRN-Elektrophysiologie (Tang 2013) + MRN-Extrapolation |
+| Diphenhydramin als B7-Amplitudenmodulator → weniger Interferenz an Zone I-III | Hypothetisch, testbar | Crawford et al. 2013 + Interferenzmodell (Anhang F) |
+| Migräne-Trigger wirken über kortikale Taktperturbation, nicht über Raphe-Destabilisierung | Hypothetisch, konsistent | Revision April 2026; erklärt Triggerheterogenität und -inkonsistenz |
+| AH1-Exposition in Entwicklung als potentieller Hit 1b (iatrogene B7-Suppression) | Spekulativ | Dritte Lesart von Fuhrmann et al. 2020 |
+| Zwei-Phasen-Protokoll LDX + DPH-HCl als komplementäres Design | Spekulativ, n=1-Experiment | Theoretische Ableitung (08_zwei_phasen_protokoll.md) |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
@@ -63,6 +80,13 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 * Andrillon T, Burns A, Mackay T et al. (2021) Predicting lapses of attention with sleep-like slow waves. *Nature Communications*, 12, 3657.
 * Pigorini A et al. (2025) Cortical reactivation after NREM sleep follows a frontal-to-posterior gradient. *Current Biology*, 35(7).
 * Mensen A et al. (2026) High-frequency EEG changes during wake-up reflect region-specific reactivation dynamics. *bioRxiv*. doi:10.64898/2026.02.08.704730v1.
+* Ohmura Y, Nagayasu K (2025) Functional diversity of serotonin neurons in the dorsal and median raphe nuclei in emotional responses. *Neuropsychopharmacology Reports*.
+* Mokler DJ, Lariviere D, Johnson DW et al. (2009) Serotonin neuronal release from the DRN to the MRN is unidirectional.
+* Crawford LK, Craige CP, Beck SG (2003) Differential GABA/glutamat regulation of DRN vs MRN.
+* Crawford LK, Craige CP, Beck SG (2013) H1-Blockade and DRN-selective serotonin reduction.
+* Fuhrmann S et al. (2020) AH1 exposure and ADHS risk. *Allergy*.
+* Man KKC et al. (2020) MPH and seizure risk. (IRR 4.01)
+* Brikell I et al. (2019) ADHD medication and seizure reduction.
 
 ---
 

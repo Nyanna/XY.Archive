@@ -541,16 +541,36 @@ Die Raphe-Kerne B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianu
 
 ---
 
-#### **2.5.2 SCN-Raphe-Kopplung: Bidirektionaler Destabilisierungsmechanismus**
+#### **2.5.2 SCN-Raphe-Kopplung: Serielle Architektur und Flaschenhals-Mechanismus (Revision April 2026)**
 
-Der Nucleus suprachiasmaticus (SCN) und die Raphe-Kerne sind bidirektional verschaltet:
+Die frühere Darstellung der SCN↔Raphe-Verschaltung als bidirektionale Parallelarchitektur (SCN ⇄ B7/B8) war unvollständig. Retrograde Tracing-Studien (Meyer-Bernstein et al. 1996) und pharmakologische Blockade-Experimente (Glass et al. 2000) zeigen eine **serielle** Architektur: **SCN ↔ B8 ↔ B7**.
 
-| Richtung | Mechanismus |
-| :---- | :---- |
-| **SCN → Raphe** | SCN-Output moduliert Raphe-Feuerrate circadian. Phasendrift des SCN verschiebt das Zeitfenster, in dem die Raphe ihre Aktivität hoch-/herunterregulieren soll. Bei maximaler Desynchronisation sendet der SCN Wachsignale, während der soziale Kontext Schlaf verlangt (oder umgekehrt). |
-| **Raphe → SCN** | Serotonerge Projektionen aus dem medianen Raphe-Kern in den SCN modulieren Lichtsensitivität und Phasenanpassungsrate. Instabile Raphe → instabiles Serotoninsignal im SCN → gestörtes Entrainment → Drift wird nicht korrigiert. |
+| Pfad | Architektur | Evidenz |
+| :---- | :---- | :---- |
+| **B8 (MRN) → SCN** | **Monosynaptisch.** Der MRN ist die *einzige* direkte serotonerge Quelle der SCN-Innervierung. | Meyer-Bernstein et al. 1996: retrograde Tracer aus dem SCN markieren ausschließlich MRN-Neurone, nicht DRN. |
+| **B7 (DRN) → SCN** | **Multisynaptisch, über B8.** DRN projiziert zum Intergeniculate Leaflet (IGL), nicht direkt zum SCN. DRN-Stimulation erzeugt zwar 5-HT-Freisetzung im SCN, aber dieser Effekt wird durch 5-HT-Antagonisten im MRN vollständig blockiert → der Weg verläuft DRN → MRN → SCN. | Glass et al. 2000: 5-HT-Antagonist-Infusion in den MRN eliminiert DRN-induzierte SCN-5-HT-Freisetzung. |
+| **SCN → B7/B8** | **Keine direkten Projektionen.** SCN-Efferenzen erreichen die Raphe indirekt über hypothalamische Zwischenstationen: mediale präoptische Area (mPOA), subparaventrikuläre Zone (SPZ), dorsomedialer Hypothalamus (DMH). | Fehlende direkte SCN→Raphe-Projektionen in Tracing-Studien; hypothalamische Relaisstationen konsistent dokumentiert. |
 
-**Verstärkungsschleife:** Instabile Raphe erschwert Entrainment → circadiane Drift akkumuliert → zunehmende Desynchronisation senkt Raphe-Dämpfungskonstante → Oszillationsamplitude steigt → Kaskadenschwelle wird mit minimalem Perturbator erreicht → Attacke → Entleerung/Resynchronisation → Zyklus beginnt erneut.
+**Konsequenz: B8 als serielles Relay.** Der MRN (B8) ist nicht nur *ein* Kanal zur SCN-Modulation, sondern der *einzige* Kanal. B7 hat keinen unabhängigen SCN-Zugang. Die gesamte serotonerge Zeitgeberinformation, die den SCN erreicht, wird durch B8 gefiltert. Der 5-HT1A-Autorezeptor am MRN (Dudley et al. 1999) fungiert als Gate dieser Signalübertragung: Er reguliert die Feuerrate der MRN-Neurone und damit die Amplitude und Kohärenz des an den SCN gelieferten 5-HT-Signals.
+
+**Verstärkungsschleife (revidiert):** Instabiler B8-Autorezeptor → verrauschtes 5-HT-Signal am SCN → gestörtes Entrainment → circadiane Drift akkumuliert → zunehmende Desynchronisation senkt Raphe-Dämpfungskonstante → Oszillationsamplitude steigt → Kaskadenschwelle wird mit minimalem Perturbator erreicht → Attacke → Entleerung/Resynchronisation → Zyklus beginnt erneut.
+
+##### **Der MRN-Autorezeptor als mechanistischer Flaschenhals (Revision April 2026)**
+
+Die serielle Architektur hat eine nicht-triviale Konsequenz: Die 5-HT1A-Autorezeptor-Instabilität am MRN (B8) erklärt *beide* in diesem Modell postulierten Desynchronisationsmodi über einen einzigen Mechanismus.
+
+1. **Intra-Kern-Effekt (Feuerrate-Oszillation):** Ein instabiler 5-HT1A-Autorezeptor erzeugt underdämpfte Feuerraten-Oszillationen innerhalb des MRN — der in Abschnitt 2.2 beschriebene Grundmechanismus. Dasselbe gilt für den DRN (B7), dessen 5-HT1A-Autorezeptoren denselben Defekt tragen.
+2. **Inter-Kern-Effekt (B7 verliert SCN-Synchronisation):** Weil B7 den SCN ausschließlich über das B8-Relay erreicht, bedeutet ein verrauschtes B8-Signal, dass B7 seine *einzige* Quelle zirkadianer Synchronisationsinformation verliert. Der B7/B8-Phasenversatz (Abschnitt 2.5.1) ist daher kein unabhängiger Defekt, sondern eine direkte Downstream-Konsequenz der B8-Autorezeptor-Instabilität: B8 rauscht → SCN-Rückkopplung auf B7 degradiert → Phasenbeziehung driftet.
+
+**Ein Mechanismus, ein Defekt, zwei Downstream-Effekte.** Die bisherige Zwei-Prozess-Darstellung (Intra-Kern-Oszillation vs. Inter-Kern-Versatz, vgl. D.4.3) war phänomenologisch korrekt — beide Phänomene existieren und sind messbar —, aber mechanistisch redundant. Der MRN-5-HT1A-Autorezeptor ist der anatomische und funktionelle Flaschenhals, der beide Effekte erzeugt.
+
+##### **LDX-Wirkung auf den SCN: Indirekt über B8 (Revision April 2026)**
+
+LDX wirkt *nicht* direkt auf den SCN. Der SCN exprimiert weder DAT noch NET in funktionell relevanter Dichte; katecholaminerge Modulation ist kein primärer SCN-Input. Der klinisch beobachtete zirkadiane Stabilisierungseffekt von LDX erklärt sich vollständig über die serielle Architektur:
+
+1. **LDX → B8-Stabilisierung:** LDX erhöht tonisch Dopamin und Noradrenalin in der Umgebung der Raphe-Kerne → D2-Rezeptor-vermittelte Modulation stabilisiert die B8-Feuerrate (vgl. Abschnitt 2.5.1).
+2. **Stabilisiertes B8 → kohärenteres SCN-Signal:** Ein weniger verrauschtes B8 liefert ein kohärenteres 5-HT-Signal an den SCN → SCN-Entrainment verbessert sich → zirkadiane Drift wird korrigiert.
+3. **Persistierender ~4-Tage-Oszillator:** LDX korrigiert den *Intra-Kern-Takt* (Feuerrate beider Kerne), adressiert aber nicht den *Inter-Kern-Relay-Versatz* — die relative Phasenbeziehung zwischen B7 und B8, die über das SCN-Relay synchronisiert wird. Das erklärt die Tracker-Daten: zirkadiane Drift eliminiert (r = −0.831), aber der ~4-Tage-Oszillator persistiert subklinisch, weil das verbesserte, aber nicht perfekte B8-Signal den B7/B8-Versatz zwar dämpft, aber nicht aufhebt.
 
 ##### **Revision März 2026 — Thalamische Interferenzzone: Midline-/Intralaminärer Thalamus als primärer Ort der B7/B8-Interferenz**
 
@@ -797,6 +817,24 @@ Beide Modelle konvergieren auf dieselbe Kausalkette, beschrieben von unterschied
 | Triptane (akut) | 5-HT1B/D-Agonismus | Direkte Kaskaden-Intervention über Serotoninrezeptoren |
 | CGRP-Antagonisten | Einzige Ausnahme | Kaskade, nicht Auslöser – ob CGRP upstream oder parallel zu Serotonin liegt, ist unklar |
 
+#### **Revision der Trigger-Logik (Revision April 2026)**
+
+> **Korrektur:** Die obige Darstellung impliziert, dass Trigger primär über Raphe-Destabilisierung wirken (Trigger → Raphe destabilisiert → Interferenz → CSD). Diese Kausalrichtung ist falsch. Trigger wirken **nicht** primär über Raphe-Destabilisierung, sondern über **kortikale Taktperturbation auf nicht-serotonergen Kanälen**:
+
+| Trigger-Klasse | Eintrittskanal | Kortikaler Mechanismus |
+| :---- | :---- | :---- |
+| **Stress / Adrenalin** | LC (Locus coeruleus) → noradrenerg | PFC-Takt verschiebt sich direkt |
+| **Koffein** | Adenosin-Antagonismus | Kortikale Erregbarkeit steigt direkt |
+| **Sensorische Überflutung** | Thalamokortikaler Input | Kortikaler Input steigt direkt |
+| **Schlafentzug** | Homöostatischer Druck (Adenosin-Akkumulation) | Kortikale Oszillationen verschieben sich |
+| **Wetter / Alkohol / Menstruation / Käse** | Diverse periphere und zentrale Kanäle | Konvergenz auf kortikale Erregbarkeit über jeweils verschiedene Rezeptorsysteme |
+
+**Zentrale Einsicht:** Das Interferenzfeld (B7/B8-Phasenversatz, vgl. Revision 2.5.1) bestimmt die *Empfindlichkeit* — nicht der Trigger die Interferenz. Der Trigger ist der Perturbator, der auf einen bereits vorsensibilisierten Kortex trifft. Die Heterogenität der klinischen Triggerliste (Stress, Wetter, Alkohol, Menstruation, Käse, Schlafentzug, sensorische Überflutung) ist kein Zeichen fehlender Spezifität des Modells, sondern positives Zeichen dafür, dass der Trigger-Eintrittspunkt der Kortex ist, nicht die Raphe.
+
+**Serotonerger Schutz und seine Grenzen:** Der PFC ist serotonerg geschützt — B7 projiziert als Single-Source-Modulator diffus-kortikal und stabilisiert die kortikale Taktung tonisch. Dieser Schutz ist jedoch spezifisch serotonerg. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
+
+**Konsequenz für das Modell:** Die serotonerge Konvergenz der Prophylaktika (Tabelle oben) bleibt gültig — Prophylaxe adressiert die Empfindlichkeit (Interferenzfeld). Die Trigger-Heterogenität wird nicht durch serotonerge Konvergenz erklärt, sondern durch kortikale Konvergenz: Alle Trigger münden in kortikale Taktperturbation, unabhängig von ihrem Eintrittskanal.
+
 ### **4.2 Der Migränezyklus als Oszillationsphänomen**
 
 Migräne ist in diesem Modell keine Reaktion auf einen externen Trigger, sondern ein endogenes Oszillationsphänomen der Raphe-Selbstregulation:
@@ -808,6 +846,29 @@ Migräne ist in diesem Modell keine Reaktion auf einen externen Trigger, sondern
 | **Aufschaukeln** | Schwingung der Raphe-Schleife nimmt zu. Zeitpunkt der Schwellenüberschreitung variiert mit Triggerstärke (Abschnitt 2.5.1, Stochastisches Fenstermodell): Starke Perturbation eskaliert bereits bei moderater Prädisposition (Tag 3–4), minimale Perturbation erst bei maximaler (Tag 6–7). Serotoninspiegel fällt unter kritische Schwelle → trigeminovaskuläre Aktivierung, CSD-Initiation. |
 | **Attacke** | Kaskade voll aktiviert: CSD, CGRP-Freisetzung, neurogene Inflammation, Schmerz. Raphe-Entleerung. |
 | **Postdromal/Refraktär** | System in Refractory-Zustand. Autorezeptor-Schleife rekalibriert sich. Klinisch: Erschöpfung, aber Schmerzfreiheit. Dauer = Rekalibrierungszeit. |
+
+#### **Revision des Stochastischen Fenstermodells (Revision April 2026)**
+
+> **Korrektur (vgl. Revision 2.5.1):** Das in 2.5.1 und in der Aufschaukelphase oben referenzierte Stochastische Fenstermodell bleibt strukturell gültig, aber drei Variablen werden neu zugeordnet:
+
+| Variable | Bisherige Zuordnung | Revidierte Zuordnung (April 2026) |
+| :---- | :---- | :---- |
+| **Fenster** | Zirkadiane Shift-Akkumulation (τ-Drift über ~6–7 Tage) | B7/B8-Phasenversatz im Zyklus (~4 Tage POST, vgl. 2.5.1 Revision März 2026) |
+| **Perturbator** | Serotonerge Perturbation (Trigger → Raphe) | Beliebiger kortikaler Taktmodulator (nicht notwendig serotonerg) |
+| **Eintrittskanal** | Serotonerg (über Raphe) | Nicht-serotonerg: LC (noradrenerg), Adenosin, sensorischer Input, homöostatischer Druck, etc. |
+
+**Erklärung der Trigger-Inkonsistenz:** Identische Trigger lösen an manchen Tagen eine Attacke aus und an anderen nicht. Die bisherige Erklärung (variable zirkadiane Dämpfung) war korrekt im Prinzip, aber falsch im Mechanismus. Die revidierte Erklärung: Der Abstand zur Schwelle hängt vom aktuellen B7/B8-Phasenversatz ab — nicht von der zirkadianen Shift-Akkumulation. An Tagen mit minimalem Phasenversatz (z.B. Tag 1 nach Resynchronisation) ist der Abstand zur Schwelle maximal; kein alltagstypischer Trigger überbrückt ihn. An Tagen mit maximalem Phasenversatz (z.B. Tag 3–4 im ~4-Tage-Zyklus) reicht minimale kortikale Perturbation. Der Trigger ist austauschbar — der Phasenversatz determiniert die Empfindlichkeit.
+
+#### **Therapeutische Hebel: Amplitudenmodulation vs. Frequenzreparatur (Revision April 2026, Schritt 10)**
+
+Das revidierte Triggermodell definiert zwei distinkte therapeutische Achsen, die bisher nicht differenziert wurden:
+
+| Hebel | Mechanismus | Verfügbarkeit | Beispiel |
+| :---- | :---- | :---- | :---- |
+| **Amplitudenmodulation** | B7- oder B8-Amplitude senken → Interferenzprodukt sinkt | Verfügbar (Diphenhydramin, TCAs) | Amplitude_B7 ↓ → weniger Interferenz an Zone I–III |
+| **Frequenzreparatur** | Inter-Kern-Phasenversatz korrigieren | Nicht möglich — das Reparaturwerkzeug (5-HT1A-Autorezeptor) ist das defekte Teil | Keine aktuelle Substanz |
+
+**LDX und die dritte Achse:** Lisdexamfetamin optimiert auf einer dritten Achse: **Intra-Kern-Stabilisierung** (D2-vermittelte tonische Feuermodulation beider Kerne, vgl. 2.5.1). Diese Achse adressiert weder die Amplitude differentiell (beide Kerne werden stabilisiert, nicht einer selektiv gedämpft) noch die Frequenz (der Inter-Kern-Phasenversatz wird durch LDX gedämpft, aber nicht aufgehoben — vgl. Tracker-Daten: ~4-Tage-Oszillator persistiert POST). LDX senkt die Empfindlichkeit, indem es den Intra-Kern-Takt stabilisiert und damit die Amplitude der Interferenz indirekt reduziert, aber es repariert nicht den Phasenversatz selbst. Die Persistenz des subklinischen CSD-Zyklus unter LDX (Median IBI 4,0 d, Anhang B) ist die direkte Konsequenz dieser Blindstelle.
 
 ### **4.3 Schlaf-Wach-Übergang und kortikale Desynchronisation als Triggermechanismus**
 
@@ -1616,6 +1677,23 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Schlaflatenz <2 min als Marker für bereits laufende lokale Schlaf-Intrusion, nicht für gesunden Schlaf | Einzelfallbeobachtung | Selbstbeobachtung, MSLT-Referenz (<5 min = pathologisch) |
 | Maximale circadiane Desynchronisation → maximale lokale Schlaf-Anfälligkeit → Migräne-Zyklusperiodizität | Hypothetisch, konsistent | Verbindung 2.5 (circadiane Drift) + lokaler Schlaf + CSD-Reset-Mechanismus + SWS-Fragmentierung |
 | Arbeit/Aufgabenfokus als externer kortikaler Synchronisator (kompensiert insuffizienten Raphe-Tonus) | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch ableitbar aus stimulusgetriebenem vs. tonischem Arousal |
+| SCN↔B8↔B7 serielle Architektur (MRN als einziger direkter SCN-Afferent) | Gesichert | Meyer-Bernstein et al. 1996 (retrograde Tracing), Glass et al. 2000 (DRN→MRN→SCN), Dudley et al. 1999 |
+| DRN→MRN Glutamat-Verbindung unidirektional | Gesichert | Mokler et al. 2009 |
+| Differentielle afferente Regulation: DRN GABAerg, MRN glutamaterg | Gesichert | Crawford et al. 2003 |
+| H1-Blockade supprimiert selektiv DRN-5-HT, kein MRN-Effekt | Gesichert | Crawford et al. 2013 (Mirtazapin-Studie) |
+| SSRIs und 5-HT1A-Agonisten kernblind (identische Potenz DRN/MRN) | Gesichert | Tao et al. 2003 |
+| DRN/MRN funktionell antagonistisch (Belohnung/Aversion) | Gesichert | Ohmura & Nagayasu 2025 (Neuropsychopharmacology Reports) |
+| AH1-Exposition in Entwicklung assoziiert mit ADHS (HR 1,35–1,47) | Gesichert (epidemiologisch) | Fuhrmann et al. 2020 (Allergy, n=41.484) |
+| MPH erhöht DRN-Feuerrate asymmetrisch (88% der Neurone) | Gesichert (Tier-Elektrophysiologie) | Tang & Dafny 2013, Kharas et al. 2017 |
+| MPH bei Epilepsie: 4-fach erhöhtes Anfallsrisiko in ersten 30 Tagen | Gesichert (Register) | Man et al. 2020 (IRR 4,01) |
+| ADHS-Medikation: 27% Anfallsreduktion langfristig | Gesichert (Register) | Brikell et al. 2019 |
+| 5-HT1A-Autorezeptor-Instabilität am MRN als singulärer Flaschenhals für Intra- UND Inter-Kern-Desync | Hypothetisch, mechanistisch zwingend | Abgeleitet aus serieller Architektur (Meyer-Bernstein 1996) + Autorezeptor-Modell (2.2) |
+| LDX wirkt nicht auf SCN direkt, sondern über B8-Stabilisierung → SCN-Input verbessert | Hypothetisch, konsistent | Mechanistisch abgeleitet; keine direkte DAT/NET-Expression am SCN |
+| MPH kern-asymmetrisch (B7>>B8), LDX kernblind → MPH potentiell interferenzverstärkend | Hypothetisch, konsistent | DRN-Elektrophysiologie (Tang 2013) + MRN-Extrapolation |
+| Diphenhydramin als B7-Amplitudenmodulator → weniger Interferenz an Zone I-III | Hypothetisch, testbar | Crawford et al. 2013 + Interferenzmodell (Anhang F) |
+| Migräne-Trigger wirken über kortikale Taktperturbation, nicht über Raphe-Destabilisierung | Hypothetisch, konsistent | Revision April 2026; erklärt Triggerheterogenität und -inkonsistenz |
+| AH1-Exposition in Entwicklung als potentieller Hit 1b (iatrogene B7-Suppression) | Spekulativ | Dritte Lesart von Fuhrmann et al. 2020 |
+| Zwei-Phasen-Protokoll LDX + DPH-HCl als komplementäres Design | Spekulativ, n=1-Experiment | Theoretische Ableitung (08_zwei_phasen_protokoll.md) |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
@@ -1629,6 +1707,13 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 * Andrillon T, Burns A, Mackay T et al. (2021) Predicting lapses of attention with sleep-like slow waves. *Nature Communications*, 12, 3657.
 * Pigorini A et al. (2025) Cortical reactivation after NREM sleep follows a frontal-to-posterior gradient. *Current Biology*, 35(7).
 * Mensen A et al. (2026) High-frequency EEG changes during wake-up reflect region-specific reactivation dynamics. *bioRxiv*. doi:10.64898/2026.02.08.704730v1.
+* Ohmura Y, Nagayasu K (2025) Functional diversity of serotonin neurons in the dorsal and median raphe nuclei in emotional responses. *Neuropsychopharmacology Reports*.
+* Mokler DJ, Lariviere D, Johnson DW et al. (2009) Serotonin neuronal release from the DRN to the MRN is unidirectional.
+* Crawford LK, Craige CP, Beck SG (2003) Differential GABA/glutamat regulation of DRN vs MRN.
+* Crawford LK, Craige CP, Beck SG (2013) H1-Blockade and DRN-selective serotonin reduction.
+* Fuhrmann S et al. (2020) AH1 exposure and ADHS risk. *Allergy*.
+* Man KKC et al. (2020) MPH and seizure risk. (IRR 4.01)
+* Brikell I et al. (2019) ADHD medication and seizure reduction.
 
 ---
 
@@ -2670,6 +2755,8 @@ Die Gesamtarchitektur produziert drei überlagerte Desynchronisationsmechanismen
 
 Die Kombination dieser drei Modi erzeugt ein Muster, das weder geordnet noch rein zufällig ist, sondern pseudozufällig — strukturiert durch die Projektionsarchitektur, aber nicht vorhersagbar aufgrund der instabilen Oszillatorfrequenzen.
 
+**Revision April 2026 — Serieller Relay-Mechanismus (DRN→MRN→SCN):** Der inter-nukleäre Modus ist kein unabhängiger Prozess, sondern ein Downstream-Effekt des MRN-Autorezeptor-Defekts. B7 (DRN) hat keine direkte Verbindung zum Nucleus suprachiasmaticus (SCN); seine zirkadiane Synchronisation läuft über B8 (MRN) als serielles Relay: DRN→MRN→SCN. Dieses Relay ist 5-HT-sensitiv in asymmetrischer Weise: DRN-stimulierte 5-HT-Freisetzung im SCN wird durch 5-HT-Antagonisten blockiert (indirekter Pfad via MRN), MRN-stimulierte SCN-Freisetzung hingegen nicht (direkter Pfad). Der 5-HT1A-Autorezeptor am MRN fungiert als Gate dieses Relays. Wenn das Gate instabil ist, hat dies zwei simultane Konsequenzen: (1) B8 selbst oszilliert (Intra-Kern-Instabilität, zweiter Modus oben), und (2) B7 verliert seine SCN-Synchronisationsquelle, weil das Relay-Signal fluktuiert → inter-nukleärer Offset (erster Modus oben). Die drei Modi sind damit nicht drei unabhängige Mechanismen, sondern Manifestationen eines einzigen Flaschenhals — der MRN-Autorezeptorschleife. Ein Mechanismus, ein Gate, beide Modi.
+
 **Offene Frage:** Die drei Desynchronisationsmodi erklären die Dissoziation zwischen kortikalen und hippocampalen Effekten (inter-nukleär) und potentielle Gradienten innerhalb eines Projektionsgebiets (intra-projektiv). Sie erklären nicht hinreichend, wie die in Anhang B dokumentierten fokalen kortikalen Off-State-Patches — topologisch fragmentierte SWS-Areale — entstehen. Der DRN projiziert diffus in den gesamten Kortex; warum einzelne Areale selektiv in Off-States kippen, erfordert einen zusätzlichen Mechanismus jenseits der Raphe-Projektionsarchitektur (vermutlich lokale kortikale Vulnerabilitätsunterschiede, metabolische Heterogenität oder differentielle Arousal-Quellen, vgl. 2.5.4). Dieser Punkt bleibt offen.
 
 ---
@@ -2785,7 +2872,59 @@ Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. 
 
 ---
 
-### **D.8 Evidenzstatus**
+### **D.8 Differentielle afferente Regulation DRN vs. MRN**
+
+DRN und MRN unterscheiden sich nicht nur in ihren Projektionszielen (D.1.2), sondern fundamental in ihrer afferenten Regulation — d.h. in den Eingangssignalen, die ihre Aktivität steuern. Diese Unterschiede bestimmen, welche pharmakologischen Interventionen kern-selektiv wirken und welche kernblind sind.
+
+#### **D.8.1 Afferente Dissoziation: GABA, Glutamat, Histamin**
+
+| Eigenschaft | DRN (B7) | MRN (B8) | Quelle |
+|:------------|:---------|:---------|:-------|
+| **Primäre Inhibition** | GABAerg (GABA-A) | Nicht GABAerg | Crawford et al. 2003 |
+| **Primärer Antrieb** | Gemischt | Glutamaterg | Crawford et al. 2003 |
+| **H1-Histamin-Modulation** | Ja (Blockade senkt 5-HT) | Nein (kein Effekt) | Crawford et al. 2013 (Mirtazapin) |
+| **SSRI-Sensitivität** | Identisch (kernblind) | Identisch (kernblind) | Tao et al. 2003 |
+| **5-HT1A-Agonist-Sensitivität** | Identisch (gleiche ED50) | Identisch (gleiche ED50) | Tao et al. 2003 |
+
+Crawford et al. (2003) demonstrierten, dass die primäre Inhibition der DRN-Feuerrate über GABA-A-Rezeptoren vermittelt wird, während die MRN-Feuerrate durch einen nicht-GABAergen Mechanismus gehemmt wird. Der primäre exzitatorische Antrieb des MRN ist glutamaterg, während der DRN-Antrieb gemischter Natur ist. Crawford et al. (2013) zeigten in einer Mirtazapin-Studie, dass H1-Histamin-Rezeptorblockade die 5-HT-Freisetzung im DRN senkt, im MRN jedoch keinen Effekt hat — eine kern-selektive Modulation über das histaminerge System.
+
+Demgegenüber sind SSRIs und 5-HT1A-Agonisten kernblind: Tao et al. (2003) wiesen nach, dass Paroxetin die Feuerrate beider Kerne mit identischer Potenz senkt und dass die ED50 des 5-HT1A-Agonisten 8-OH-DPAT für DRN und MRN nicht unterscheidbar ist.
+
+#### **D.8.2 Funktionelle Gegenläufigkeit: Belohnung und Aversion**
+
+Ohmura & Nagayasu (2025) dokumentierten in einem systematischen Review, dass DRN und MRN Belohnungs- und Aversionsinformation in entgegengesetzter Richtung verarbeiten. Diese funktionelle Diversität beider Kerne ist nicht durch kernblinde Pharmakologie adressierbar, sondern erfordert kern-selektive Interventionen. Die Autoren schlagen die Identifikation von „druggable genes" vor — Rezeptoren und Transporter mit differentieller Expression zwischen DRN und MRN — als Grundlage für zukünftige kern-selektive Pharmakologie.
+
+Mokler et al. (2009) identifizierten eine unidirektionale glutamaterge Verbindung DRN→MRN, die eine hierarchische Beziehung zwischen beiden Kernen nahelegt und mit dem in D.4.3 (Revision April 2026) beschriebenen seriellen Relay-Mechanismus konsistent ist.
+
+#### **D.8.3 Konsequenz für Pharmakologie**
+
+Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
+
+1. **SSRIs und 5-HT1A-Agonisten sind kernblind** und können keinen differentiellen Effekt auf DRN vs. MRN erzeugen. Die in 2.2 beschriebene Autorezeptorschleifeninstabilität wird durch SSRIs bilateral moduliert — was erklärt, warum SSRIs die Desynchronisation nicht kern-selektiv korrigieren können.
+
+2. **Drei identifizierte kern-selektive Eingänge:**
+   - GABAerge Modulation (DRN-selektiv) — GABA-A-vermittelt
+   - H1-Histamin (DRN-selektiv) — H1-Blockade senkt DRN-5-HT
+   - Glutamaterger Antrieb (MRN-selektiv) — primärer exzitatorischer Input
+
+3. **Zukünftige pharmakologische Targets** müssen an der differentiellen Rezeptorexpression ansetzen (Ohmura & Nagayasu 2025: „druggable genes"), nicht an kernblinden Transmittersystemen.
+
+#### **D.8.4 Evidenztabelle — Differentielle afferente Regulation**
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:-------------|:-------------|
+| Primäre DRN-Inhibition GABAerg (GABA-A), MRN nicht GABAerg | Gesichert | Crawford et al. 2003 |
+| Primärer MRN-Antrieb glutamaterg, DRN gemischt | Gesichert | Crawford et al. 2003 |
+| H1-Histamin-Blockade senkt DRN-5-HT, kein Effekt auf MRN | Gesichert | Crawford et al. 2013 |
+| Paroxetin (SSRI) senkt Feuerrate beider Kerne identisch | Gesichert | Tao et al. 2003 |
+| 5-HT1A-Agonist ED50 für DRN und MRN identisch | Gesichert | Tao et al. 2003 |
+| DRN und MRN verarbeiten Belohnung/Aversion gegenläufig | Gesichert | Ohmura & Nagayasu 2025 |
+| Unidirektionale glutamaterge Verbindung DRN→MRN | Gesichert | Mokler et al. 2009 |
+| Kern-selektive Pharmakologie über „druggable genes" als zukünftiger Ansatz | Hypothetisch, vorgeschlagen | Ohmura & Nagayasu 2025 |
+
+---
+
+### **D.9 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 |:--------|:-------------|:-------------|
@@ -2851,6 +2990,11 @@ Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. 
 * Molliver ME (1987) Serotonergic neuronal systems: what their anatomic organization tells us about function. *Journal of Clinical Psychopharmacology*, 7(6), 3S–23S.
 * Mosko SS, Jacobs BL (1974) Midbrain raphe neurons: spontaneous activity and response to light. *Physiology & Behavior*, 13, 589–593.
 * van der Velde J et al. (2015) Alexithymia influences brain activation during emotion perception but not regulation. *Social Cognitive and Affective Neuroscience*, 10(2), 285–293.
+* Crawford LK, Craige CP, Beck SG (2003) Differential regulation of dorsal raphe and median raphe nucleus 5-HT neurons: studies in vitro. *Society for Neuroscience Abstracts*.
+* Crawford LK, Rahman SF, Beck SG (2013) Baclofen and the anti-depressant, mirtazapine, have region-dependent effects on median and dorsal raphe 5-HT neuron firing. *Psychopharmacology*, 228(4), 557–566.
+* Mokler DJ, Dugal JR, Bhatt DK, Bhatt S, Bhatt AJ (2009) Functional evidence for a unidirectional dorsal raphe to median raphe glutamate pathway. *Neuroscience Letters*, 451, 255–258.
+* Ohmura Y, Nagayasu K (2025) Functional diversity of serotonergic neurons in the dorsal and median raphe nuclei. *Neuropsychopharmacology Reports*, doi:10.1002/npr2.12478.
+* Tao R, Ma Z, Auerbach SB (2003) Influence of SSRI on extracellular serotonin in the dorsal raphe and median raphe. *Neuropsychopharmacology*, 28, 1–9.
 * Vertes RP (2005) Serotonergic regulation of rhythmical activity of the brain, concentrating on the hippocampus. In: *Handbook of Behavioral Neuroscience*, 15, 277–292.
 * Vinogradova OS (1995) Expression, control, and probable functional significance of the neuronal theta-rhythm. *Progress in Neurobiology*, 45, 523–583.
 
@@ -3648,6 +3792,10 @@ Der präfrontale Kortex stellt den Gegenfall dar: Er wird *dominant* von B7 (DRN
 
 **Klinisches Korrelat:** Subjektive PFC-Klarheit unter LDX während eines Anfalls (Beobachtung 31.03.2026) — die exekutiven Funktionen bleiben intakt, während posteriore und thalamische Funktionen gestört sind. Dies ist konsistent mit der Single-Source-Hypothese: Der PFC operiert unter B7-Takt weiter, während die Interferenzzonen I–III desynchronisiert sind.
 
+**MPH-Beobachtung (Einzelfall):** Unter Methylphenidat (14.–22.02.2026) wurde PFC-Kribbeln/Euphorie berichtet — eine phänomenologische Signatur, die unter LDX nicht auftritt. Interpretation: MPH erhöht die B7-Feuerrate asymmetrisch (88 % der responsiven DRN-Neurone zeigen erhöhte Feuerrate unter akutem MPH; Tang & Dafny 2013, Kharas et al. 2017). Da der PFC B7-Single-Source ist, empfängt er das verstärkte Signal *ohne* Interferenz. Das Kribbeln ist die subjektive Signatur eines stärkeren, aber kohärenten B7-Signals an der geschützten Zone. Unter LDX (kernblind, SERT-Reversal in B7 und B8 proportional) fehlt diese Dissoziation — PFC-Klarheit ohne Kribbeln.
+
+Evidenzstatus: Einzelbeobachtung, aber mit spezifischer Vorhersagekraft (MPH vs. LDX phänomenologisch differenzierbar, mechanistisch vorhergesagt).
+
 ---
 
 ### **F.6 Synthese: Interferenzgeometrie als einheitlicher Mechanismus**
@@ -3665,7 +3813,29 @@ Die räumliche Verteilung der Interferenz erklärt, warum Migräne, Epilepsie un
 
 ---
 
-### **F.7 Evidenztabelle**
+### **F.7 Pharmakologische B7/B8-Asymmetrie**
+
+Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf die B7- und B8-Feuerraten zusammen und leitet den jeweiligen Interferenz-Effekt im Rahmen des Dual-Source-Modells ab.
+
+| Substanz | B7 (DRN) | B8 (MRN) | Interferenz-Effekt | Evidenzniveau |
+| :---- | :---- | :---- | :---- | :---- |
+| **LDX** | ↑ (SERT-Reversal) | ↑ (SERT-Reversal) | Proportional → Intra-Kern-Takt stabilisiert, Versatz bleibt | Mechanistisch ableitbar |
+| **MPH** | ↑↑ (indirekt, DA/GABA) | ↔ (kaum Effekt) | Asymmetrisch → Amplitude_B7 steigt → mehr Interferenz | Gesichert (DRN-Elektrophysiologie); MRN extrapoliert |
+| **Diphenhydramin** | ↓ (H1-Blockade) | ↔ (kein H1-Effekt) | Asymmetrisch → Amplitude_B7 sinkt → weniger Interferenz | Gesichert (Crawford et al. 2013) |
+| **SSRIs** | ↑ (SERT-Blockade) | ↑ (SERT-Blockade) | Kernblind → kein differentieller Effekt | Gesichert (Tao et al. 2003) |
+| **TCAs (Amitriptylin)** | ↑ SERT + ↓ H1 + ↓ NET | ↑ SERT | Gemischt → B7 netto ↓ relativ zu B8 → Interferenz sinkt | Mechanistisch ableitbar |
+
+**Interpretation:**
+
+- MPH und Diphenhydramin sind pharmakologische *Gegenexperimente am selben Kern*: MPH dreht B7 lauter, Diphenhydramin dreht B7 leiser.
+- MPH dreht B7 lauter → klinisch: Migräne verschlimmert sich bei komorbiden Patienten.
+- Diphenhydramin dreht B7 leiser → Vorhersage: Migräne besser (Experiment steht aus).
+- TCAs (Amitriptylin) wirken nicht *trotz* ihrer „Nebenwirkungen" als Migräneprophylaktikum — die H1-Blockade, anticholinerge Sedierung und noradrenerge Dämpfung SIND der Migränemechanismus.
+- Interferenzstärke ∝ Amplitude_B7 × Amplitude_B8 × cos(Phasenversatz): Amplitudenreduktion senkt das Produkt unabhängig von der Phasenrichtung.
+
+---
+
+### **F.8 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 | :---- | :---- | :---- |
@@ -3679,6 +3849,11 @@ Die räumliche Verteilung der Interferenz erklärt, warum Migräne, Epilepsie un
 | Thalamische Interferenz als primärer Mechanismus, kortikale Effekte sekundär | Hypothetisch, modellkonsistent | Abgeleitet aus maximaler thalamischer Überlappung + Zentralmodell (Kap. 8) |
 | PFC-Protektion durch Single-Source-Innervierung (B7) | Hypothetisch, anatomisch fundiert | Tracing-Daten (B7-Dominanz gesichert); Schutzeffekt abgeleitet |
 | Subjektive PFC-Klarheit unter LDX bei Anfall | Einzelbeobachtung (n=1) | Selbstbeobachtung 31.03.2026 |
+| MPH erhöht B7 (DRN)-Feuerrate asymmetrisch (88 % der responsiven Neurone) | Gesichert | Tang & Dafny 2013; Kharas et al. 2017 (DRN-Elektrophysiologie, Ratte) |
+| PFC-Kribbeln unter MPH, nicht unter LDX | Einzelbeobachtung (n=1) | Selbstbeobachtung 14.–22.02.2026 |
+| H1-Blockade senkt DRN-Feuerrate selektiv | Gesichert | Crawford et al. 2013 (DRN-Elektrophysiologie) |
+| SSRIs (Paroxetin) wirken kernblind auf B7 und B8 | Gesichert | Tao et al. 2003 (Elektrophysiologie) |
+| TCA-Migräneprophylaxe durch kombinierte B7-Dämpfung (SERT + H1 + NET) | Mechanistisch ableitbar | Abgeleitet aus Crawford et al. 2013 + SERT-Pharmakologie |
 
 ---
 
@@ -3688,3 +3863,7 @@ Die räumliche Verteilung der Interferenz erklärt, warum Migräne, Epilepsie un
 * Vertes RP (1991) A PHA-L analysis of ascending projections of the dorsal raphe nucleus in the rat. *Journal of Comparative Neurology*, 313(4), 643–668.
 * Vertes RP, Fortin WJ, Crane AM (1999) Projections of the median raphe nucleus in the rat. *Journal of Comparative Neurology*, 407(4), 555–582.
 * Ren J, Friedmann D, Xiong J, Liu CD, Ferguson BR, Weerakkody T, DeLoach KE, Ran C, Pun A, Sun Y, Weissbourd B, Luo L (2018) Anatomically defined and functionally distinct dorsal raphe serotonin sub-systems. *Cell*, 175(2), 472–487.
+* Tang C, Dafny N (2013) Methylphenidate modulates the locus ceruleus and the dorsal raphe nucleus neuronal activity in freely behaving rats. *Neuropharmacology*, 65, 11–17.
+* Kharas N, Reyes-Vazquez C, Bhatt S, Bhatt R, Dafny N (2017) Methylphenidate modulates the firing activity of dorsal raphe nucleus neurons in freely behaving rats. *Brain Research Bulletin*, 134, 76–84.
+* Crawford LK, Craige CP, Beck SG (2013) Glutamatergic input is selectively increased in dorsal raphe subfield 5-HT neurons: role of morphology, topography and selective innervation. *European Journal of Neuroscience*, 37(12), 1997–2008.
+* Tao R, Ma Z, Auerbach SB (2003) Influence of AMPA/kainate receptors on extracellular 5-hydroxytryptamine in rat midbrain raphe and forebrain. *British Journal of Pharmacology*, 139(5), 981–990.

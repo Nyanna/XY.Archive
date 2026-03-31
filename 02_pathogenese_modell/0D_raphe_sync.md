@@ -166,6 +166,8 @@ Die Gesamtarchitektur produziert drei überlagerte Desynchronisationsmechanismen
 
 Die Kombination dieser drei Modi erzeugt ein Muster, das weder geordnet noch rein zufällig ist, sondern pseudozufällig — strukturiert durch die Projektionsarchitektur, aber nicht vorhersagbar aufgrund der instabilen Oszillatorfrequenzen.
 
+**Revision April 2026 — Serieller Relay-Mechanismus (DRN→MRN→SCN):** Der inter-nukleäre Modus ist kein unabhängiger Prozess, sondern ein Downstream-Effekt des MRN-Autorezeptor-Defekts. B7 (DRN) hat keine direkte Verbindung zum Nucleus suprachiasmaticus (SCN); seine zirkadiane Synchronisation läuft über B8 (MRN) als serielles Relay: DRN→MRN→SCN. Dieses Relay ist 5-HT-sensitiv in asymmetrischer Weise: DRN-stimulierte 5-HT-Freisetzung im SCN wird durch 5-HT-Antagonisten blockiert (indirekter Pfad via MRN), MRN-stimulierte SCN-Freisetzung hingegen nicht (direkter Pfad). Der 5-HT1A-Autorezeptor am MRN fungiert als Gate dieses Relays. Wenn das Gate instabil ist, hat dies zwei simultane Konsequenzen: (1) B8 selbst oszilliert (Intra-Kern-Instabilität, zweiter Modus oben), und (2) B7 verliert seine SCN-Synchronisationsquelle, weil das Relay-Signal fluktuiert → inter-nukleärer Offset (erster Modus oben). Die drei Modi sind damit nicht drei unabhängige Mechanismen, sondern Manifestationen eines einzigen Flaschenhals — der MRN-Autorezeptorschleife. Ein Mechanismus, ein Gate, beide Modi.
+
 **Offene Frage:** Die drei Desynchronisationsmodi erklären die Dissoziation zwischen kortikalen und hippocampalen Effekten (inter-nukleär) und potentielle Gradienten innerhalb eines Projektionsgebiets (intra-projektiv). Sie erklären nicht hinreichend, wie die in Anhang B dokumentierten fokalen kortikalen Off-State-Patches — topologisch fragmentierte SWS-Areale — entstehen. Der DRN projiziert diffus in den gesamten Kortex; warum einzelne Areale selektiv in Off-States kippen, erfordert einen zusätzlichen Mechanismus jenseits der Raphe-Projektionsarchitektur (vermutlich lokale kortikale Vulnerabilitätsunterschiede, metabolische Heterogenität oder differentielle Arousal-Quellen, vgl. 2.5.4). Dieser Punkt bleibt offen.
 
 ---
@@ -281,7 +283,59 @@ Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. 
 
 ---
 
-### **D.8 Evidenzstatus**
+### **D.8 Differentielle afferente Regulation DRN vs. MRN**
+
+DRN und MRN unterscheiden sich nicht nur in ihren Projektionszielen (D.1.2), sondern fundamental in ihrer afferenten Regulation — d.h. in den Eingangssignalen, die ihre Aktivität steuern. Diese Unterschiede bestimmen, welche pharmakologischen Interventionen kern-selektiv wirken und welche kernblind sind.
+
+#### **D.8.1 Afferente Dissoziation: GABA, Glutamat, Histamin**
+
+| Eigenschaft | DRN (B7) | MRN (B8) | Quelle |
+|:------------|:---------|:---------|:-------|
+| **Primäre Inhibition** | GABAerg (GABA-A) | Nicht GABAerg | Crawford et al. 2003 |
+| **Primärer Antrieb** | Gemischt | Glutamaterg | Crawford et al. 2003 |
+| **H1-Histamin-Modulation** | Ja (Blockade senkt 5-HT) | Nein (kein Effekt) | Crawford et al. 2013 (Mirtazapin) |
+| **SSRI-Sensitivität** | Identisch (kernblind) | Identisch (kernblind) | Tao et al. 2003 |
+| **5-HT1A-Agonist-Sensitivität** | Identisch (gleiche ED50) | Identisch (gleiche ED50) | Tao et al. 2003 |
+
+Crawford et al. (2003) demonstrierten, dass die primäre Inhibition der DRN-Feuerrate über GABA-A-Rezeptoren vermittelt wird, während die MRN-Feuerrate durch einen nicht-GABAergen Mechanismus gehemmt wird. Der primäre exzitatorische Antrieb des MRN ist glutamaterg, während der DRN-Antrieb gemischter Natur ist. Crawford et al. (2013) zeigten in einer Mirtazapin-Studie, dass H1-Histamin-Rezeptorblockade die 5-HT-Freisetzung im DRN senkt, im MRN jedoch keinen Effekt hat — eine kern-selektive Modulation über das histaminerge System.
+
+Demgegenüber sind SSRIs und 5-HT1A-Agonisten kernblind: Tao et al. (2003) wiesen nach, dass Paroxetin die Feuerrate beider Kerne mit identischer Potenz senkt und dass die ED50 des 5-HT1A-Agonisten 8-OH-DPAT für DRN und MRN nicht unterscheidbar ist.
+
+#### **D.8.2 Funktionelle Gegenläufigkeit: Belohnung und Aversion**
+
+Ohmura & Nagayasu (2025) dokumentierten in einem systematischen Review, dass DRN und MRN Belohnungs- und Aversionsinformation in entgegengesetzter Richtung verarbeiten. Diese funktionelle Diversität beider Kerne ist nicht durch kernblinde Pharmakologie adressierbar, sondern erfordert kern-selektive Interventionen. Die Autoren schlagen die Identifikation von „druggable genes" vor — Rezeptoren und Transporter mit differentieller Expression zwischen DRN und MRN — als Grundlage für zukünftige kern-selektive Pharmakologie.
+
+Mokler et al. (2009) identifizierten eine unidirektionale glutamaterge Verbindung DRN→MRN, die eine hierarchische Beziehung zwischen beiden Kernen nahelegt und mit dem in D.4.3 (Revision April 2026) beschriebenen seriellen Relay-Mechanismus konsistent ist.
+
+#### **D.8.3 Konsequenz für Pharmakologie**
+
+Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
+
+1. **SSRIs und 5-HT1A-Agonisten sind kernblind** und können keinen differentiellen Effekt auf DRN vs. MRN erzeugen. Die in 2.2 beschriebene Autorezeptorschleifeninstabilität wird durch SSRIs bilateral moduliert — was erklärt, warum SSRIs die Desynchronisation nicht kern-selektiv korrigieren können.
+
+2. **Drei identifizierte kern-selektive Eingänge:**
+   - GABAerge Modulation (DRN-selektiv) — GABA-A-vermittelt
+   - H1-Histamin (DRN-selektiv) — H1-Blockade senkt DRN-5-HT
+   - Glutamaterger Antrieb (MRN-selektiv) — primärer exzitatorischer Input
+
+3. **Zukünftige pharmakologische Targets** müssen an der differentiellen Rezeptorexpression ansetzen (Ohmura & Nagayasu 2025: „druggable genes"), nicht an kernblinden Transmittersystemen.
+
+#### **D.8.4 Evidenztabelle — Differentielle afferente Regulation**
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:-------------|:-------------|
+| Primäre DRN-Inhibition GABAerg (GABA-A), MRN nicht GABAerg | Gesichert | Crawford et al. 2003 |
+| Primärer MRN-Antrieb glutamaterg, DRN gemischt | Gesichert | Crawford et al. 2003 |
+| H1-Histamin-Blockade senkt DRN-5-HT, kein Effekt auf MRN | Gesichert | Crawford et al. 2013 |
+| Paroxetin (SSRI) senkt Feuerrate beider Kerne identisch | Gesichert | Tao et al. 2003 |
+| 5-HT1A-Agonist ED50 für DRN und MRN identisch | Gesichert | Tao et al. 2003 |
+| DRN und MRN verarbeiten Belohnung/Aversion gegenläufig | Gesichert | Ohmura & Nagayasu 2025 |
+| Unidirektionale glutamaterge Verbindung DRN→MRN | Gesichert | Mokler et al. 2009 |
+| Kern-selektive Pharmakologie über „druggable genes" als zukünftiger Ansatz | Hypothetisch, vorgeschlagen | Ohmura & Nagayasu 2025 |
+
+---
+
+### **D.9 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 |:--------|:-------------|:-------------|
@@ -347,5 +401,10 @@ Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. 
 * Molliver ME (1987) Serotonergic neuronal systems: what their anatomic organization tells us about function. *Journal of Clinical Psychopharmacology*, 7(6), 3S–23S.
 * Mosko SS, Jacobs BL (1974) Midbrain raphe neurons: spontaneous activity and response to light. *Physiology & Behavior*, 13, 589–593.
 * van der Velde J et al. (2015) Alexithymia influences brain activation during emotion perception but not regulation. *Social Cognitive and Affective Neuroscience*, 10(2), 285–293.
+* Crawford LK, Craige CP, Beck SG (2003) Differential regulation of dorsal raphe and median raphe nucleus 5-HT neurons: studies in vitro. *Society for Neuroscience Abstracts*.
+* Crawford LK, Rahman SF, Beck SG (2013) Baclofen and the anti-depressant, mirtazapine, have region-dependent effects on median and dorsal raphe 5-HT neuron firing. *Psychopharmacology*, 228(4), 557–566.
+* Mokler DJ, Dugal JR, Bhatt DK, Bhatt S, Bhatt AJ (2009) Functional evidence for a unidirectional dorsal raphe to median raphe glutamate pathway. *Neuroscience Letters*, 451, 255–258.
+* Ohmura Y, Nagayasu K (2025) Functional diversity of serotonergic neurons in the dorsal and median raphe nuclei. *Neuropsychopharmacology Reports*, doi:10.1002/npr2.12478.
+* Tao R, Ma Z, Auerbach SB (2003) Influence of SSRI on extracellular serotonin in the dorsal raphe and median raphe. *Neuropsychopharmacology*, 28, 1–9.
 * Vertes RP (2005) Serotonergic regulation of rhythmical activity of the brain, concentrating on the hippocampus. In: *Handbook of Behavioral Neuroscience*, 15, 277–292.
 * Vinogradova OS (1995) Expression, control, and probable functional significance of the neuronal theta-rhythm. *Progress in Neurobiology*, 45, 523–583.
