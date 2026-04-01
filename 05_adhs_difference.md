@@ -288,7 +288,7 @@ Diphenhydramin (DPH) als prototypisches AH1 zeigt altersabhängig gegenteilige E
 | Kontext | Mechanismus | Konsequenz |
 |:--------|:-----------|:-----------|
 | **Developmental** (0–2 Jahre) | H1-Blockade im DRN supprimiert B7 während der Kalibrierungsphase | B7/B8-Balance wird dauerhaft in Richtung B7-Insuffizienz verschoben → iatrogener Beitrag zur Inter-Kern-Asymmetrie |
-| **Adult** (Kalibrierung abgeschlossen) | H1-Blockade im DRN supprimiert B7 → weniger B7-Interferenz an thalamokortikaler Zone I–III | Interferenzprodukt sinkt → symptomatische Besserung (Sedierung, reduzierte sensorische Überflutung) |
+| **Adult** (Kalibrierung abgeschlossen) | H1-Blockade im DRN supprimiert B7 → weniger B7-Interferenz in thalamischer Kaskade | Interferenzprodukt sinkt → symptomatische Besserung (Sedierung, reduzierte sensorische Überflutung) |
 
 Derselbe pharmakologische Effekt (B7↓) hat gegenteilige klinische Konsequenzen, weil das System in der Entwicklung kalibriert und im Adult-Zustand operiert. In der Kalibrierungsphase wird die Sollgröße verschoben; im operativen Zustand wird die Amplitude moduliert, ohne die Sollgröße zu ändern.
 
@@ -310,7 +310,7 @@ Methylphenidat (MPH) und Lisdexamfetamin (LDX) werden klinisch als austauschbare
 
 | Substanz | B7 (DRN) | B8 (MRN) | Konsequenz für Population A |
 |:---------|:---------|:---------|:---------------------------|
-| **MPH** | ↑↑ (DA/GABA-vermittelt) | ↔ (kaum Effekt) | **Kern-asymmetrisch:** B7-Amplitude steigt → Interferenzprodukt an Zone I–III steigt → potentiell interferenzverstärkend für Migräne |
+| **MPH** | ↑↑ (DA/GABA-vermittelt) | ↔ (kaum Effekt) | **Kern-asymmetrisch:** B7-Amplitude steigt → thalamisches Interferenzprodukt steigt → potentiell interferenzverstärkend für Migräne |
 | **LDX** | ↑ (SERT-Reversal) | ↑ (SERT-Reversal) | **Kernblind:** proportionale Erhöhung → Intra-Kern-Takt stabilisiert, Interferenz-Versatz bleibt unverändert → neutral |
 
 ### 10.2 Mechanistische Grundlage
@@ -327,7 +327,7 @@ Amphetamin-basierte Substanzen (Dexamphetamin, LDX nach hepatischer Lyse) wirken
 ### 10.3 Klinische Konsequenzen für Population A
 
 **MPH und Migräne:**
-Wenn Population A durch Inter-Kern-Asymmetrie (B7 > B8 am Interferenz-Output) charakterisiert ist, verstärkt MPH diese Asymmetrie: B7↑↑ bei B8↔. Das Interferenzprodukt an den thalamokortikalen Zonen I–III steigt. Klinisch: **MPH verschlimmert Migräne bei komorbiden Patienten.**
+Wenn Population A durch Inter-Kern-Asymmetrie (B7 > B8 am Interferenz-Output) charakterisiert ist, verstärkt MPH diese Asymmetrie: B7↑↑ bei B8↔. Das thalamische Interferenzprodukt steigt und propagiert über die thalamokortikale Kaskade. Klinisch: **MPH verschlimmert Migräne bei komorbiden Patienten.**
 
 **MPH und Epilepsie-Risiko:**
 Man et al. (2020) zeigten in einer großen Kohortenstudie ein **4-fach erhöhtes Anfallsrisiko in den ersten 30 Tagen nach MPH-Beginn** (IRR 4,01). Nach 30 Tagen normalisiert sich das Risiko. Die Interpretation im Modell: die akute B7-Amplitudenerhöhung durch MPH überschreitet die Schwelle für thalamokortikale Paroxysmalität. Nach ~30 Tagen greift die Autorezeptor-Adaptation (5-HT1A-Desensibilisierung am DRN) und bringt die B7-Amplitude auf ein neues, adaptiertes Plateau zurück.

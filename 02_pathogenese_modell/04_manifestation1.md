@@ -62,7 +62,7 @@
 
 **Zentrale Einsicht:** Das Interferenzfeld (B7/B8-Phasenversatz, vgl. Revision 2.5.1) bestimmt die *Empfindlichkeit* — nicht der Trigger die Interferenz. Der Trigger ist der Perturbator, der auf einen bereits vorsensibilisierten Kortex trifft. Die Heterogenität der klinischen Triggerliste (Stress, Wetter, Alkohol, Menstruation, Käse, Schlafentzug, sensorische Überflutung) ist kein Zeichen fehlender Spezifität des Modells, sondern positives Zeichen dafür, dass der Trigger-Eintrittspunkt der Kortex ist, nicht die Raphe.
 
-**Serotonerger Schutz und seine Grenzen:** Der PFC ist serotonerg geschützt — B7 projiziert als Single-Source-Modulator diffus-kortikal und stabilisiert die kortikale Taktung tonisch. Dieser Schutz ist jedoch spezifisch serotonerg. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
+**PFC-Schutz und seine Grenzen:** Der PFC ist unter LDX pharmakologisch geschützt — der MD-Thalamus-PFC-Loop ist dopaminerg stabilisiert, was die Kippschwelle in der thalamischen Kaskade erhöht (vgl. Anhang F.4.2). Dieser Schutz ist eine höhere Schwelle, kein absoluter Schutz. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
 
 **Konsequenz für das Modell:** Die serotonerge Konvergenz der Prophylaktika (Tabelle oben) bleibt gültig — Prophylaxe adressiert die Empfindlichkeit (Interferenzfeld). Die Trigger-Heterogenität wird nicht durch serotonerge Konvergenz erklärt, sondern durch kortikale Konvergenz: Alle Trigger münden in kortikale Taktperturbation, unabhängig von ihrem Eintrittskanal.
 
@@ -96,7 +96,7 @@ Das revidierte Triggermodell definiert zwei distinkte therapeutische Achsen, die
 
 | Hebel | Mechanismus | Verfügbarkeit | Beispiel |
 | :---- | :---- | :---- | :---- |
-| **Amplitudenmodulation** | B7- oder B8-Amplitude senken → Interferenzprodukt sinkt | Verfügbar (Diphenhydramin, TCAs) | Amplitude_B7 ↓ → weniger Interferenz an Zone I–III |
+| **Amplitudenmodulation** | B7- oder B8-Amplitude senken → Interferenzprodukt sinkt | Verfügbar (Diphenhydramin, TCAs) | Amplitude_B7 ↓ → weniger thalamische Interferenz |
 | **Frequenzreparatur** | Inter-Kern-Phasenversatz korrigieren | Nicht möglich — das Reparaturwerkzeug (5-HT1A-Autorezeptor) ist das defekte Teil | Keine aktuelle Substanz |
 
 **LDX und die dritte Achse:** Lisdexamfetamin optimiert auf einer dritten Achse: **Intra-Kern-Stabilisierung** (D2-vermittelte tonische Feuermodulation beider Kerne, vgl. 2.5.1). Diese Achse adressiert weder die Amplitude differentiell (beide Kerne werden stabilisiert, nicht einer selektiv gedämpft) noch die Frequenz (der Inter-Kern-Phasenversatz wird durch LDX gedämpft, aber nicht aufgehoben — vgl. Tracker-Daten: ~4-Tage-Oszillator persistiert POST). LDX senkt die Empfindlichkeit, indem es den Intra-Kern-Takt stabilisiert und damit die Amplitude der Interferenz indirekt reduziert, aber es repariert nicht den Phasenversatz selbst. Die Persistenz des subklinischen CSD-Zyklus unter LDX (Median IBI 4,0 d, Anhang B) ist die direkte Konsequenz dieser Blindstelle.
@@ -278,7 +278,7 @@ Die klinische Heterogenität visueller Auren — von klassischen Fortifikationss
 | :---- | :---- | :---- |
 | **Zickzack/Fortifikationsspektren** | Linear, propagierend | CSD-Welle kreuzt Orientierungssäulen im visuellen Kortex |
 | **Rund/punktförmig** | Fokal, isotrop | Epileptische Entladung — fokale Übererregung ohne Propagation |
-| **Rauschen/diffus** | Global, diffus | Tonische Interferenz durch B7/B8-Desynchronisation |
+| **Rauschen/diffus** | Global, diffus | Pulvinar-Gating-Versagen: modulatorischer thalamokortikaler Pfad gestört bei intaktem LGN-Driver → gestörte visuelle Integration bei erhaltener Grundübertragung. Rauschen geht dem Skotom voraus (prodromal). |
 
 Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck verschiedener Stabilitätszustände des Raphe-Phasenoffsets:
 

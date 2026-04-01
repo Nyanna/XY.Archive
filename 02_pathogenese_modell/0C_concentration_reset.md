@@ -252,7 +252,7 @@ Lichtempfindlichkeit ist da, ja. Aber es ist NICHT das Gefühl, das ich von der 
 
 Dazu kommt eine leichte räumliche Desorientierung. Nicht Schwindel, nicht Gleichgewichtsverlust — eher eine Unschärfe in der Raumwahrnehmung, die sich aus der visuellen Beeinträchtigung ergibt. Wenn das Sehen unsicher wird, wird der Raum unsicher.
 
-Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom, weil es keine Wellenfront gibt, die sich über den visuellen Kortex schiebt. Stattdessen eine tonische Destabilisierung — die gesamte visuelle Region empfängt asynchronen Input, die Gain-Kontrolle ist gestört, aber es gibt keine wandernde Depression. Das Rauschen statt des Skotoms ist diagnostisch: Es spricht für ein Interferenzfeld, nicht für eine CSD-Propagation im klassischen Sinne.
+Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom, weil es keine Wellenfront gibt, die sich über den visuellen Kortex schiebt. Die visuelle Störung erklärt sich über den Pulvinar-Pfad: Die thalamische Interferenz (B7/B8-Phasenversatz) destabilisiert den modulatorischen thalamokortikalen Pfad (Pulvinar → visueller Kortex), während der LGN-Driver-Pfad intakt bleibt → daher Rauschen statt Blindheit. Die Gain-Kontrolle ist gestört, aber die Grundübertragung erhalten. Das Rauschen statt des Skotoms ist diagnostisch: Es spricht für Pulvinar-Gating-Versagen, nicht für eine CSD-Propagation im klassischen Sinne.
 
 ## PFC-Klarheit unter LDX während des Anfalls — ein Dissoziationsbefund
 
@@ -260,7 +260,7 @@ Was mich heute am meisten überrascht: Der PFC war die ganze Zeit geschützt. Tr
 
 Die autonomen Symptome waren heftig. Intensiver Schüttelfrost, dann Hitzewelle, Übelkeit. Das tonische Feld hat sich offensichtlich lateral und ins Stammhirn ausgebreitet — die vegetativen Zentren waren betroffen. Aber der PFC nicht.
 
-Meine Interpretation: Der PFC ist durch die Single-Source-B7-Innervierung plus die dopaminerge LDX-Stabilisierung geschützt. B7 liefert kohärenten serotonergen Input, LDX stabilisiert die dopaminerge Versorgung — zusammen halten sie den PFC in einem Zustand, den das tonische Interferenzfeld nicht destabilisieren kann. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung im Stammhirn, und gleichzeitig kristallklare frontale Funktion.
+Meine Interpretation: Der PFC ist durch die dopaminerge LDX-Stabilisierung des MD-Thalamus-PFC-Loops geschützt. B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär — der Schutz ist pharmakologisch (höhere Kippschwelle unter LDX), nicht architektonisch. LDX stabilisiert die dopaminerge Versorgung des MD-Loops → der PFC-assoziierte thalamokortikale Pfad hält am längsten in der thalamischen Kaskade. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung im Stammhirn, und gleichzeitig kristallklare frontale Funktion.
 
 Keine Halluzinationen. Keine visuellen Illusionen jenseits des Rauschens. Keine Denkstörung. Das spricht gegen eine fokale CSD im PFC — wenn die Propagation bis in den Frontalkortex reichen würde, wäre die Klarheit nicht möglich. Der PFC war nicht nur geschützt, er war funktional intakt. Ein Fenster mitten in der Migräne.
 

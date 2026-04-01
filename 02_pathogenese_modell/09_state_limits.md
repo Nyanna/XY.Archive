@@ -63,7 +63,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | 5-HT1A-Autorezeptor-Instabilität am MRN als singulärer Flaschenhals für Intra- UND Inter-Kern-Desync | Hypothetisch, mechanistisch zwingend | Abgeleitet aus serieller Architektur (Meyer-Bernstein 1996) + Autorezeptor-Modell (2.2) |
 | LDX wirkt nicht auf SCN direkt, sondern über B8-Stabilisierung → SCN-Input verbessert | Hypothetisch, konsistent | Mechanistisch abgeleitet; keine direkte DAT/NET-Expression am SCN |
 | MPH kern-asymmetrisch (B7>>B8), LDX kernblind → MPH potentiell interferenzverstärkend | Hypothetisch, konsistent | DRN-Elektrophysiologie (Tang 2013) + MRN-Extrapolation |
-| Diphenhydramin als B7-Amplitudenmodulator → weniger Interferenz an Zone I-III | Hypothetisch, testbar | Crawford et al. 2013 + Interferenzmodell (Anhang F) |
+| Diphenhydramin als B7-Amplitudenmodulator → weniger thalamische Interferenz | Hypothetisch, testbar | Crawford et al. 2013 + Interferenzmodell (Anhang F) |
 | Migräne-Trigger wirken über kortikale Taktperturbation, nicht über Raphe-Destabilisierung | Hypothetisch, konsistent | Revision April 2026; erklärt Triggerheterogenität und -inkonsistenz |
 | AH1-Exposition in Entwicklung als potentieller Hit 1b (iatrogene B7-Suppression) | Spekulativ | Dritte Lesart von Fuhrmann et al. 2020 |
 | Zwei-Phasen-Protokoll LDX + DPH-HCl als komplementäres Design | Spekulativ, n=1-Experiment | Theoretische Ableitung (08_zwei_phasen_protokoll.md) |
