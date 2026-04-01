@@ -230,6 +230,19 @@ Welcher Phänotyp resultiert, hängt von Zusatzfaktoren ab:
 | CGRP-System | Funktional (CSD-Propagation möglich) | Insuffizient oder blockiert |
 | Raphe-Defekt-Schwere | Moderat (periodische Insuffizienz) | Schwer (chronische Insuffizienz) |
 
+#### **E.7.2b Epilepsie-Dyslexie-Komorbidität: Gemeinsamer thalamischer Upstream**
+
+Die Komorbidität Epilepsie ↔ Dyslexie ist epidemiologisch erheblich und bidirektional:
+
+- Schachter et al. (1993): 9% Dyslexie-Anamnese bei Epilepsiepatienten vs. 2,3% bei Kontrollen (OR 4,19)
+- Rolandische Epilepsie: OR 5,78 für Lesestörung, OR 2,47 für Speech Sound Disorder (Clarke, Strug & Pal, *Epilepsia*)
+- Idiopathische Epilepsie: ~2× Prävalenz für isolierte Dyslexie vs. Kontrollkinder (Cheng et al. 2022, n=2.282 + 2.371)
+- Bidirektionalität: Dyslexie kann Epilepsiebeginn vorausgehen oder folgen (van Iterson 2023) → gemeinsamer Upstream, nicht Folgeschaden
+
+**Rolandische Epilepsie** ist besonders modellrelevant: Centrotemporale Spikes betreffen den sensomotorischen Kortex → Überlappung mit phonologischen Verarbeitungsarealen. Modellinterpretation: Rolandische Epilepsie = mildeste Form der tonischen Destabilisierung, lokalisiert im perisylvischen Kortex; LRS entsteht durch chronische subklinische Desynchronisation desselben Areals (vgl. Anhang D, Abschnitt D.7.3).
+
+**Thalamische Parallelstruktur:** Der MGB-Befund (Díaz et al. 2012: strukturelle Veränderung des auditorischen Thalamus bei Dyslektikern) bildet die auditorische Parallele zum Pulvinar-Befund bei Migräne (vgl. Anhang F.4.2). Beide thalamischen Kerngruppen empfangen Raphe-Projektionen und sind in der thalamischen Kaskade betroffen — mit modalitätsspezifischen Downstream-Symptomen.
+
 #### **E.7.3 SUDEP als Konvergenz mit SIDS**
 
 Plötzlicher unerwarteter Tod bei Epilepsie (SUDEP) konvergiert mechanistisch mit dem plötzlichen Kindstod (SIDS): Spreading Depolarization in Hirnstammgeweben, die lebenswichtige Funktionen regulieren, wurde mit SUDEP in Verbindung gebracht, insbesondere bei Dravet-Syndrom (schwere kindliche Epilepsie mit Ionenkanal-Mutationen und erhöhtem SUDEP-Risiko).

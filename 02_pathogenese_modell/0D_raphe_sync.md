@@ -279,7 +279,32 @@ Das Ergebnis ist keine gelegentliche Fehlassoziation, sondern eine Grundstruktur
 
 **Gegenläufige Vorhersage:** Hochspezifische, kontextfreie Formalsysteme (Algebra, symbolische Logik) sind für diese Architektur schwer zugänglich, weil sie isolierte Regelräume ohne relationale Anschlussfläche voraussetzen. Die kreuzfunktionale Architektur hat für Domänen ohne externe Relationen keinen Ansatzpunkt.
 
-#### **D.7.3 Thalamische Kompensation als Kohärenzfilter**
+#### **D.7.3 Orthographische Engramm-Instabilität und LRS als Raphe-Downstream-Phänotyp**
+
+Orthographische Wortformen sind Engramme, konsolidiert unter spezifischen Modulationsvektoren (vgl. D.7.1). Bei pseudozufälliger Raphe-Modulation (D.4) werden sie unter variablen Vektoren gespeichert. Der Abruf ist zustandsabhängig: Wenn die Ähnlichkeitsmetrik im Modulationsraum kein passendes orthographisches Engramm findet, kollabiert der Abruf auf die phonologische Route. LRS (Lese-Rechtschreib-Störung) in dieser Population ist Lautsprache als *Fallback*, nicht als Primärdefizit.
+
+**Variabilität als diagnostische Signatur:** Raphe-vermittelte LRS zeigt nicht konsistente Fehler (das wäre Population B — architektonisches Defizit), sondern *zustandsabhängig wechselnde* Fehler. Heute richtig, morgen falsch, übermorgen anders falsch — weil der Modulationsvektor sich verschoben hat. Diese Variabilität ist die diagnostische Signatur für raphe-vermittelte LRS vs. strukturelle LRS.
+
+**LDX-Paradoxon:** LDX stabilisiert B7/B8 intra-nukleär → die Inter-Instabilität (relative Phasenbeziehung zwischen B7 und B8) wird prominenter. Orthographische Engramme, konsolidiert unter einem bestimmten B7/B8-Phasenverhältnis, werden bei anderem Phasenverhältnis *konsistenter* nicht gefunden. Phänomenologisch: nicht mehr Fehler, sondern systematischere. Die Lautsprache-Tendenz wird als Muster erkennbar, weil das Intra-Rauschen weg ist.
+
+**Thalamische Evidenz — MGB-Befund:** Díaz et al. (2012) zeigten, dass das linke Corpus geniculatum mediale (MGB) — der auditorische Thalamus — in Post-mortem-Gehirnen von Dyslektikern strukturell verändert ist. fMRI zeigt abnormale MGB-Antwort bei phonologischer Aufmerksamkeit; MGB-Aktivität korreliert mit Dyslexie-Diagnosescores (*PNAS*, 109(34), 13841–13846). Modellinterpretation: MGB ist die auditorische Parallelstruktur zur visuellen thalamischen Dyskonnektivität bei Migräne (Pulvinar, vgl. Anhang F.4.2). DRN projiziert auf MGB wie auf mediodorsalen und pulvinaren Thalamus. Dieselbe Raphe-Insuffizienz, anderer thalamischer Output-Kanal.
+
+Reis et al. (2018) bestätigten: Dyslektiker zeigen Hypoaktivierung bei orthographischer Verarbeitung im Thalamus; stärkere funktionelle Konnektivität zwischen Thalamus und inferiorem Parietalkortex bei Pseudowort-Lesen (*NeuroImage: Clinical*, 21, 101611) — kompensatorische Überaktivierung der thalamokortikalen Verbindung, analog zur Migräne-Dysrhythmie (vgl. Anhang E, thalamokortikale Dysrhythmie).
+
+**SWS-Konsolidierungspfad:** Orthographische Engramm-Konsolidierung ist SWS-abhängig. SWS-Fragmentierung (vgl. Anhang B) → instabile Konsolidierung → instabile orthographische Engramme → LRS-Phänotyp. Je schwerer die Raphe-Dysregulation, desto stärker die LRS.
+
+**Vorhersage — Zwei Populationen bei LRS:**
+
+| Dimension | Population A (Raphe-vermittelt) | Population B (architektonisch) |
+|:----------|:-------------------------------|:------------------------------|
+| Fehlermuster | Variabel, zustandsabhängig | Konsistent, regelbasiert |
+| Migräne-Komorbidität | Erhöht | Basalrate |
+| ADHD-Komorbidität | Erhöht (gemeinsamer Upstream) | Unabhängig (falls komorbid: separater Mechanismus) |
+| SWS-Architektur | Fragmentiert | Normal |
+| LDX-Effekt auf Schreiben | Systematischere Fehler (Inter-Instabilität wird sichtbar) | Keine Veränderung oder Besserung durch Aufmerksamkeit |
+| Stimulanzien-Response auf Lesen | Leseflüssigkeit ↑ (PFC-Boost), Orthographie ↔ oder ↓ | Leseflüssigkeit ↑, Orthographie ↑ |
+
+#### **D.7.4 Thalamische Kompensation als Kohärenzfilter**
 
 Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. Aber die kognitive Kohärenz wird nicht allein durch die GABAerge Begrenzung gewährleistet, sondern durch die thalamische Kompensationstiefe (vgl. Kapitel 6): der Thalamus filtert das kreuzfunktionale Rauschen und extrahiert kohärente Muster. Tiefe Kompensation + kreuzfunktionale Architektur = hohe Leistung. Unzureichende Kompensation + kreuzfunktionale Architektur = Denkstörung.
 
@@ -380,6 +405,9 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 | Temporales Integrationsdefizit durch desynchronisierte CA3-CA1-Modulation | Hypothetisch, konsistent | Abgeleitet aus CA1-Temporalfunktion + MRN-Subfeldinnervation + Selbstbeobachtung |
 | Alexithymie als Konsolidierungsgradient (Signal-Rausch-Verhältnis stabiler/instabiler Fenster) | Hypothetisch, konsistent | Eigenformulierung, konsistent mit Typ-II-Alexithymie-Profil und hippocampaler Mechanik |
 | Kreuzfunktionale Engramm-Architektur als kumulative Konsequenz der Desynchronisation | Hypothetisch, konsistent | Abgeleitet aus state-dependent memory + pseudozufälliger Modulation |
+| Orthographische Engramm-Instabilität als LRS-Mechanismus (zustandsabhängiger Abruf → phonologischer Fallback) | Hypothetisch, konsistent | Abgeleitet aus D.7.1 + D.7.3; MGB-Befund (Díaz et al. 2012) als thalamische Parallelstruktur |
+| LRS Population A (raphe-vermittelt) vs. Population B (architektonisch): variable vs. konsistente Fehler | Modellvorhersage | Abgeleitet aus D.7.3; keine externe Validierung |
+| ADHD ↔ Dyslexie Komorbidität (OR 2,1–3,1) durch gemeinsamen Raphe-Upstream | Epidemiologisch gesichert, Mechanismus hypothetisch | van Bergen et al. 2025 (n=19.125); McGrath & Stoodley 2019 |
 | Raphe-Takt als Reset-Oszillator (nicht Informationskanal) | Hypothetisch, konsistent | Abgeleitet aus Volumentransmissions-Mechanik + phänomenologischer Korrelation |
 | Zustandsabhängiger Abruf bei instabilen Modulationsvektoren → Gedächtnisinstabilität | Hypothetisch, konsistent mit state-dependent memory-Literatur | Abgeleitet aus D.4 + D.6 |
 | Musik als externer Taktsubstitut für hippocampale Konsolidierung | Hypothetisch, konsistent | Abgeleitet aus auditorischem Entrainment + Modulationsvektor-Instabilität; phänomenologische Bestätigung (Anhang C) |
@@ -418,3 +446,11 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 * Tao R, Ma Z, Auerbach SB (2003) Influence of SSRI on extracellular serotonin in the dorsal raphe and median raphe. *Neuropsychopharmacology*, 28, 1–9.
 * Vertes RP (2005) Serotonergic regulation of rhythmical activity of the brain, concentrating on the hippocampus. In: *Handbook of Behavioral Neuroscience*, 15, 277–292.
 * Vinogradova OS (1995) Expression, control, and probable functional significance of the neuronal theta-rhythm. *Progress in Neurobiology*, 45, 523–583.
+* Díaz B, Hintz F, Kiebel SJ, von Kriegstein K (2012) Dysfunction of the auditory thalamus in developmental dyslexia. *PNAS*, 109(34), 13841–13846.
+* Reis A, Araújo S, Fernandes T, Faísca L, Petersson KM (2018) Neural correlates of phonological, orthographic and semantic reading processing in dyslexia. *NeuroImage: Clinical*, 21, 101611.
+* van Bergen E, de Zeeuw EL, Hart SA, Boomsma DI, de Geus EJC, Kan KJ (2025) Co-Occurrence and Causality Among ADHD, Dyslexia, and Dyscalculia. *Psychological Science*, 36(3).
+* Clarke T, Strug LJ, Murphy PL et al. (2007) High Risk of Reading Disability and Speech Sound Disorder in Rolandic Epilepsy Families. *Epilepsia*, 48(12), 2258–2265.
+* Cheng D, Yan X, Gao Z, Xu K, Chen Q, Zhou X (2022) Dyscalculia and dyslexia in Chinese children with idiopathic epilepsy. *Epilepsia Open*, 7(1), 85–95.
+* Schachter SC, Galaburda AM, Bhatt R (1993) A history of dyslexia in patients with epilepsy: Clinical associations. *Epilepsy Research*, 16(1), 39–44.
+* van Iterson L (2023) Dyslexia Antedating and Postdating Epilepsy Onset. *J Pediatric Neuropsychology*, 9, 146–165.
+* McGrath LM, Stoodley CJ (2019) Are there shared neural correlates between dyslexia and ADHD? *J Neurodevelop Disord*, 11, 31.

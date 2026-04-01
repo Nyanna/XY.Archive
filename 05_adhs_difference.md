@@ -130,6 +130,7 @@ Neuroimaging-Signatur: kleinerer Thalamus, dünnerer PFC, niedrigere FA — die 
 | **Primärdefekt** | Serotonerge Modulationsinsuffizienz | Strukturelle PFC-/WM-Unterentwicklung |
 | **Migräne-Komorbidität** | Hoch (gemeinsame Achse) | Nicht erhöht (Baseline-Prävalenz) |
 | **Epilepsie-Komorbidität** | Erhöht (~6% vs. 0,5%) | Nicht erhöht |
+| **LRS/Dyslexie-Komorbidität** | Erhöht (gemeinsamer Upstream, vgl. D.7.3) | Unabhängig (falls komorbid: separater Mechanismus) |
 | **Hochbegabung komorbid** | Möglich (Twice Exceptional) | Nicht erhöht |
 | **Familiäre Migräne** | Häufig | Nicht assoziiert |
 | **Strukturelles MRT** | Normal (Thalamus, FA, PFC) | Defizitär (kleiner, dünner, niedrigere FA) |
@@ -145,6 +146,8 @@ Neuroimaging-Signatur: kleinerer Thalamus, dünnerer PFC, niedrigere FA — die 
 | **Koffeinwirkung** | Paradox oder absent (kein kohärentes Zielsignal) | Konventionell (wacher, aufmerksamer) |
 | **Stimulanzien-Response** | Raphe-Stabilisierung + PFC-Boost: Schlaf besser, Migräne reduziert, kohärente Müdigkeit | Nur PFC-Boost: Aufmerksamkeit besser, Schlaf unverändert |
 | **Prognose unter Therapie** | Normalisierung (Substrat intakt) | Symptomatische Besserung (Substrat defizitär) |
+
+**Epidemiologische Evidenz ADHD ↔ Dyslexie:** Die bidirektionale Komorbidität von 25–40% (McGrath & Stoodley 2019) ist nicht durch gegenseitige Verursachung erklärbar. van Bergen et al. (2025, *Psychological Science*, n=19.125 Zwillinge) zeigten OR 2,1–3,1 für die Zweitdiagnose; Cross-lagged-Modelle bestätigen gemeinsame genetische Einflüsse, nicht kausale Trait-zu-Trait-Effekte. Modellkonsistent: Raphe-Dysregulation als gemeinsamer Generator. 77,3% der Betroffenen haben nur eine Bedingung → Raphe-Schweregrad und thalamische Kompensationstiefe als Branching-Variable (vgl. Kapitel 3, Anhang D, Abschnitt D.7.3).
 
 ---
 
