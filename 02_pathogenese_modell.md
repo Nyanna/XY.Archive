@@ -672,6 +672,7 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Einzelfallbeobachtung | Statistisch signifikant (Tracker-Daten, n=79) |
 | Betablocker-Invarianz der SWS-Phasenlage als negatives Differentialkriterium | Einzelfallbeobachtung | Tracker-Daten, konsistent mit noradrenerger vs. serotonerger Spezifität |
 | **Late-Chronotyp als Downstream-Marker globaler Desynchronisation** | Plausibel, epidemiologisch gestützt | Kendis et al. 2015: generalisierte Epilepsie 5× Late-Chronotyp vs. Kontrollen; fokale Epilepsie kein Unterschied. ADHD–Late-Chronotyp-Assoziation robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017). Migräne–Late-Chronotyp (Jung et al. 2025, Baksa et al. 2025). Segregation spezifisch mit globalen Synchronisationsstörungen, nicht mit lokalen Hardwaredefekten. |
+| **Subjektiver Late-Chronotyp bei Population A als Kompensationsartefakt (nicht circadianer Trait)** | Hypothetisch, konsistent mit Kreuzkorrelation | ADHD–Late-Typ-Assoziation (Kooij & Bijlenga 2013); generalisierte Epilepsie 5× Late-Typ vs. fokale kein Effekt (Kendis 2015); Manni 2016: MEQ ≠ DLMO bei Epilepsie; Einzelfall: Abendmüdigkeit erstmals unter LDX (Anhang C) |
 | **τ ≈ 26 h als potenzielles Raphe-SCN-Symptom** | Hypothetisch, mechanistisch konsistent | DRN projiziert zum SCN ausschließlich über B8-Relay (vgl. 2.5.2); instabiler Raphe-Tonus könnte SCN-Zeitgeber-Kalibrierung verzerren → verlängerte endogene Periodenlänge nicht unabhängiger Chronotyp-Trait, sondern Downstream der Raphe-SCN-Interaktion. Nicht direkt testbar ohne Forced-Desynchrony-Protokolle. |
 
 ---
@@ -3760,6 +3761,8 @@ Der Befund von Kendis et al. (2015) liefert eine unabhängige externe Validierun
 Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downstream-Marker globaler Raphe-vermittelter Desynchronisation ist (vgl. 4.3.7, 8.7.1), sollte er spezifisch mit Epilepsieformen segregieren, die globale Synchronisationsstörungen reflektieren — nicht mit fokalen Läsionen. Kendis et al. bestätigen exakt dieses Muster. Der Scoping Review 2024 (11 Studien, 1.167 PWE, 4.657 Kontrollen) repliziert die Assoziation: generalisierte Epilepsie konsistent mit Eveningness assoziiert, fokale Epilepsie nicht.
 
 Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen per Fragebogen eher Morning-Orientierung, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive circadiane Phase.
+
+**Population-A/B-Analogie:** Die Dissoziation validiert extern die in 05_adhs_difference postulierten zwei ADHD-Populationen: Generalisierte Epilepsie ≈ Population A (Raphe-vermittelt, gesamtkortikale Kohärenzstörung), fokale Epilepsie ≈ Population B (umschriebene Pathologie ohne Synchronisationskomponente). Der Late-Chronotyp segregiert spezifisch mit dem globalen Typ — konsistent mit der Interpretation als Kompensationsprofil insuffizienter tonischer Modulation.
 
 ### **E.9 Evidenzstatus**
 
