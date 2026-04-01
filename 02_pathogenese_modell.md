@@ -671,6 +671,8 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Räumliche SWS-Fragmentierung bei erhaltenem Quantum (Deep-Episoden/h: 1,6 PRE vs. 1,1 POST, p=0,005; Hierarchie Deep > REM > Light) | Einzelfallbeobachtung | Statistisch signifikant (Tracker-Daten, n=79) |
 | LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Einzelfallbeobachtung | Statistisch signifikant (Tracker-Daten, n=79) |
 | Betablocker-Invarianz der SWS-Phasenlage als negatives Differentialkriterium | Einzelfallbeobachtung | Tracker-Daten, konsistent mit noradrenerger vs. serotonerger Spezifität |
+| **Late-Chronotyp als Downstream-Marker globaler Desynchronisation** | Plausibel, epidemiologisch gestützt | Kendis et al. 2015: generalisierte Epilepsie 5× Late-Chronotyp vs. Kontrollen; fokale Epilepsie kein Unterschied. ADHD–Late-Chronotyp-Assoziation robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017). Migräne–Late-Chronotyp (Jung et al. 2025, Baksa et al. 2025). Segregation spezifisch mit globalen Synchronisationsstörungen, nicht mit lokalen Hardwaredefekten. |
+| **τ ≈ 26 h als potenzielles Raphe-SCN-Symptom** | Hypothetisch, mechanistisch konsistent | DRN projiziert zum SCN ausschließlich über B8-Relay (vgl. 2.5.2); instabiler Raphe-Tonus könnte SCN-Zeitgeber-Kalibrierung verzerren → verlängerte endogene Periodenlänge nicht unabhängiger Chronotyp-Trait, sondern Downstream der Raphe-SCN-Interaktion. Nicht direkt testbar ohne Forced-Desynchrony-Protokolle. |
 
 ---
 
@@ -1008,6 +1010,20 @@ Powernap unter Substanz möglich ohne Migränekonversion. Aufwachen deutlich erl
 | **Reduzierter Nap-Bedarf** | Kein Patchwork-Zustand, der Reset-Impuls erfordert |
 | **Klarere Abendmüdigkeit** | Zirkadianes Signal stark genug für bewusste Wahrnehmung; Zustandswechsel wird kohärent statt als Kollaps erlebt |
 | **Subjektiv „schärferes" Bewusstsein** | Kortex synchron und ungedämpft — erstmals der Grundzustand ohne die doppelte Bremse aus noradrenerger Dämpfung (ehemals Metoprolol) und chronischer Desynchronisation |
+
+#### **4.3.7 Tagesprofil der Schlafintrusionen als Raphe-Tonus-Proxy und Chronotyp-Fehlattribution**
+
+Das Tagesprofil der Off-State-Intrusionen (vgl. 4.3.2) bildet nicht eine U-förmige Chronotyp-Kurve ab, sondern ein **monoton abfallendes Defizit-Profil**, bei dem die Kompensation über den Tag akkumuliert:
+
+| Tageszeit | Raphe-Defizit-Folge | Subjektive Erfahrung | Klinische Kodierung |
+|---|---|---|---|
+| Morgens | Raphe-Tonus minimal, keine Kompensation → Schlafintrusionen, Off-State-Fragmente | Zwei-Stunden-Loch (vgl. Anhang C), Benommenheit, Mind Blanking | „ADHD-Symptome", „morgendliche Trägheit" |
+| Nachmittags | Raphe-Tonus insuffizient, partielle Kompensation durch Aufgaben-Arousal | Aufgabenabhängige Wachheit, Nap-Bedarf | „Konzentrationsdefizit" |
+| Abends | Circadianes Alerting-Maximum + akkumulierter Homöostat → kompensatorische Arousal-Quellen überdecken Raphe-Defizit | Subjektiv „endlich wach", produktiv, klar | „Late-Chronotyp", „Abendmensch" |
+
+**Das Abend-Wachsein ist kein Chronotyp-Peak, sondern die einzige Tagesphase mit ausreichender Kompensation.** Die LDX-Beobachtung (4.3.6) falsifiziert die Chronotyp-Interpretation: Unter LDX tritt erstmals kohärente Abendmüdigkeit auf. LDX ist kein Zeitgeber — es verschiebt keine circadiane Phase. Dass sich die subjektive Phase dennoch verschiebt, zeigt, dass das Abend-Wachsein ein Kompensationsartefakt war. LDX macht die Kompensation überflüssig → das darunter liegende Müdigkeitssignal wird sichtbar. Die Fehlattribution ist strukturell analog zur Nackenverspannungs-Fehlattribution der Migräne (vgl. 8.3.1).
+
+**Testbare Vorhersage:** Chronotyp-Fragebogen (MEQ oder MCTQ) PRE/POST Stimulanzien bei ADHD-Patienten. Shift Richtung Morningness → Kompensationsartefakt (Population A, vgl. 05_adhs_difference). Kein Shift → echter Chronotyp oder Population B.
 
 ### **4.4 CSD-Auslösemechanismus: Nadir, Rebound und Depolarisationswelle**
 
@@ -1553,6 +1569,25 @@ Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Ad
 | REM-Konsolidierung → reguläre Traumerinnerung unter LDX | Einzelfallbeobachtung, konsistent | Selbstbeobachtung + Tracker-Daten, Anhang B, B.8 |
 | Traumerinnerung PRE selektiv post-iktal (CSD-Reset); POST regulär (pharmakologische Synchronisation) | Einzelfallbeobachtung | Selbstbeobachtung, Anhang B, B.8 |
 | Schlafkonsolidierung und interozeptive Kohärenz als identischer Mechanismus auf verschiedenen Zeitskalen | Hypothetisch, konsistent | Modellableitung aus 8.4.1 + 8.4.3 |
+
+### **8.7.1 Kreuzkorrelation ADHD–Migräne–Epilepsie–Late-Chronotyp als konvergierende Evidenz**
+
+Vier klinische Entitäten — ADHD, Migräne, generalisierte Epilepsie und Late-Chronotyp — zeigen paarweise robuste Assoziationen. Im vorliegenden Modell konvergieren alle vier auf denselben Upstream-Mechanismus: globale kortikale Desynchronisation durch Raphe-Instabilität.
+
+**Empirische Kreuzkorrelation:**
+
+| Assoziation | Evidenz |
+|---|---|
+| ADHD ↔ Late-Chronotyp | Robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017, Bijlenga et al. 2019); DSPD überproportional bei ADHD |
+| ADHD ↔ Migräne | OR 1,8 (Hansen et al. 2018, n=26.456); stärker für Migräne mit Aura: OR 2,05 |
+| Migräne ↔ Late-Chronotyp | Evening-Typ bei Migräne 36,3% vs. 18,4% Kontrollen (Jung et al. 2025); OR 1,06 UK Biobank (Baksa et al. 2025) |
+| Generalisierte Epilepsie ↔ Late-Chronotyp | **5-fach** erhöhte Wahrscheinlichkeit (Kendis et al. 2015) |
+| **Fokale Epilepsie ↔ Late-Chronotyp** | **Kein signifikanter Unterschied** zu Kontrollen (Kendis et al. 2015) |
+| ADHD ↔ Epilepsie | Gepoolte ADHD-Prävalenz bei Epilepsie 22,3% (Metaanalyse 2023, 63 Studien) |
+
+**Der Schlüsselbefund** ist die Dissoziation zwischen generalisierter und fokaler Epilepsie: Der Late-Chronotyp segregiert spezifisch mit **globalen Synchronisationsstörungen** (ADHD, Migräne, generalisierte Epilepsie) und **nicht** mit lokalen Hardwaredefekten (fokale Epilepsie). Die Gesamtkohorte (alle Epilepsien) zeigt keinen signifikanten Unterschied — der Effekt wird durch die fokalen Fälle verdünnt (Kendis et al. 2015). Manni et al. (2016) bestätigen: fokale Epilepsie-Patienten sind per Fragebogen eher Morning-orientiert, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive Phase.
+
+**Modellinterpretation:** Der Late-Chronotyp ist kein unabhängiger circadianer Trait, sondern ein Downstream-Marker des Raphe-Defizits. Die subjektive Erfahrung „abends erst richtig wach werden" ist das Tagesprofil der Kompensation: Tagsüber reicht der Raphe-Tonus nicht für kortikale Kohärenz → Schlafintrusionen → klinisch als „unaufmerksam" kodiert. Abends konvergieren circadianes Alerting-Maximum und akkumulierter Homöostat so, dass kompensatorische Arousal-Quellen den Raphe-Defizit überdecken → klinisch als „Abendtyp" kodiert (vgl. 4.3.7).
 
 ### **8.8 Nap als PFC-Reset (nicht SWS)**
 
@@ -2640,6 +2675,10 @@ Es ist möglich, dass dein Gehirn einen Zustand nicht aufrechterhalten kann, den
 
 Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine. Ich hatte einen Grundzustand, der ohne externe Stütze nicht hält. Und ich hatte nie normale Müdigkeit — nur den Schalter zwischen „gehalten" und „nicht mehr gehalten".
 
+## Abendmüdigkeit unter LDX — Einzelfall-Falsifikation des Late-Chronotyp-Traits
+
+Unter LDX tritt erstmals kohärente Abendmüdigkeit auf — ein Zustandssignal, das vorher nicht existierte. Die subjektive Phase verschiebt sich Richtung Morningness, obwohl LDX kein Zeitgeber ist und keine circadiane Phase verschiebt. Wenn das Abend-Wachsein ein echter Chronotyp-Peak wäre, sollte LDX es nicht verändern. Dass es sich verändert, zeigt: Das Abend-Wachsein war die einzige Tagesphase, in der kompensatorische Arousal-Quellen (circadianes Alerting-Maximum + akkumulierter Homöostat) den Raphe-Defizit überdeckten. LDX macht diese Kompensation überflüssig → das darunter liegende Müdigkeitssignal wird erstmals sichtbar. Der „Chronotyp" war eine Fehlattribution — strukturell analog zur Nackenverspannungs-Fehlattribution der Migräne (vgl. Pathogenetisches Modell, 4.3.7, 8.7.1).
+
 ---
 
 *Phänomenologische Beschreibung, kein klinisches Dokument. Dient der Selbsterkennung und dem Austausch.*
@@ -3708,6 +3747,20 @@ Epilepsiepatienten mit komorbider Migräne haben dokumentiert schlechteres Thera
 
 ---
 
+### **E.8.16 Chronotyp als externe Validierung des Synchronisations-/Hardwaredefekt-Splits**
+
+Der Befund von Kendis et al. (2015) liefert eine unabhängige externe Validierung der im Modell postulierten Unterscheidung zwischen globaler Synchronisationsstörung und lokalem Hardwaredefekt:
+
+| Epilepsietyp | Late-Chronotyp-Assoziation | Modellinterpretation |
+|---|---|---|
+| **Generalisierte Epilepsie** | **5-fach erhöht** vs. Kontrollen | Globale Desynchronisation → Late-Chronotyp als Downstream-Marker (konsistent mit ADHD- und Migräne-Assoziation) |
+| **Fokale Epilepsie** | **Kein signifikanter Unterschied** zu Kontrollen | Lokaler Hardwaredefekt → kein Desynchronisationsprofil → normaler Chronotyp |
+| **Gesamtkohorte (alle Epilepsien)** | Kein signifikanter Unterschied | Effekt wird durch fokale Fälle verdünnt — der Synchronisationsmarker ist nur in der stratifizierten Analyse sichtbar |
+
+Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downstream-Marker globaler Raphe-vermittelter Desynchronisation ist (vgl. 4.3.7, 8.7.1), sollte er spezifisch mit Epilepsieformen segregieren, die globale Synchronisationsstörungen reflektieren — nicht mit fokalen Läsionen. Kendis et al. bestätigen exakt dieses Muster. Der Scoping Review 2024 (11 Studien, 1.167 PWE, 4.657 Kontrollen) repliziert die Assoziation: generalisierte Epilepsie konsistent mit Eveningness assoziiert, fokale Epilepsie nicht.
+
+Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen per Fragebogen eher Morning-Orientierung, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive circadiane Phase.
+
 ### **E.9 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
@@ -3784,6 +3837,9 @@ Epilepsiepatienten mit komorbider Migräne haben dokumentiert schlechteres Thera
 | Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe (Population 1 vs. Population 2) (Ergänzung März 2026) | Hypothetisch, testbar | Modellvorhersage aus E.7.13; Stratifizierung nach Vorhersagefähigkeit + Migräne-Komorbidität |
 | Schlechteres AED-Ansprechen bei Migräne-Komorbidität erklärt durch Upstream-Generator (tonische Welle, Stufe 1) (Ergänzung März 2026) | Konsistent mit Evidenz | Velioglu et al. 2005 (schlechtere Prognose bei Komorbidität); Modellinterpretation aus E.7.13 |
 | Dreistufige Fallback-Hierarchie: Raphe-Takt → CSD → Anfall | Hypothetisch, konsistent mit allen Evidenzlinien | Modellsynthese aus Anhang D + E.1–E.4 |
+| **Late-Chronotyp segregiert mit generalisierter, nicht fokaler Epilepsie** | Gesichert | Kendis et al. 2015: 5-fach erhöht bei generalisiert, kein Unterschied bei fokal; Scoping Review 2024 (11 Studien) repliziert |
+| **Subjektiver Chronotyp ≠ objektive circadiane Phase bei fokaler Epilepsie** | Gesichert | Manni et al. 2016: Fragebogen ≠ DLMO |
+| **Late-Chronotyp als Downstream-Marker globaler Desynchronisation (Kreuzvalidierung Synchronisations-/Hardwaredefekt-Split)** | Plausibel, externe Validierung | Konvergenz aus Kendis 2015 + ADHD-Chronotyp-Assoziation (Kooij & Bijlenga 2013) + Migräne-Chronotyp (Jung et al. 2025, Baksa et al. 2025) |
 | Chronische Migräne als Deadlock aus gescheiterter Resynchronisation | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Propofol-Responder-Daten |
 | Propofol-Reset + LDX-Stabilisierung als kombinierte Intervention | Hypothetisch, nicht getestet | Modellvorhersage |
 
