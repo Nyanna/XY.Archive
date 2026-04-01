@@ -18,7 +18,7 @@ Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al
 | Zielregion | B7 (DRN) | B8 (MRN) | Überlappung |
 | :---- | :---- | :---- | :---- |
 | **Präfrontaler Kortex (PFC)** | **++++** (dominant) | + (minimal) | Gering → *Single-Source* |
-| **Parieto-temporo-okzipitaler Neokortex** | +++ | +++ | **Hoch** → *Interferenzzone I* |
+| **Parieto-temporo-okzipitaler Neokortex** | + (moderat, Vertes 1991 Ratte) | ± (fraglich) | Überlappung: nicht belegt → *Zone I als anatomische Arbeitshypothese* |
 | **Hippocampus** | ++ (Hilus, Molekularschicht) | +++ (Str. lacunosum-moleculare, Str. oriens) | **Hoch, laminär segregiert** → *Interferenzzone II* |
 | **Midline-/Intralaminärer Thalamus** | +++ | +++ | **Maximal** → *Interferenzzone III* |
 | **Basalganglien (Striatum)** | ++++ | + | Gering |
@@ -30,11 +30,22 @@ Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al
 
 ### **F.2 Interferenzzone I: Parieto-temporo-okzipitaler Neokortex**
 
-B7 und B8 projizieren beide in den posterioren Neokortex, jedoch mit unterschiedlicher laminärer Spezifität: B7-Fasern terminieren bevorzugt in tiefen Schichten (V/VI), B8-Fasern in oberflächlichen Schichten (I/II). Bei stabiler Inter-Kern-Synchronisation ergibt sich ein komplementäres, laminär verteiltes serotonerges Signal. Bei Inter-Kern-Desynchronisation entsteht *destruktive Interferenz* zwischen den Schichten — der serotonerge Takt wird laminär inkohärent.
+Die laminäre Spezifität der B7/B8-Innervierung im posterioren Neokortex ist aus publizierten Daten nicht belegbar. Für den menschlichen Kortex gilt allgemein, dass oberflächliche Schichten mehr serotonerge Axone erhalten als tiefe (Charnay & Leger 2010). Eine kernspezifische laminäre Segregation B7→V/VI vs. B8→I/II ist eine Arbeitshypothese ohne direkte Quellengrundlage.
 
-**Konsequenz für CSD (→ Kapitel 4.4):** CSD startet typischerweise okzipital. Die Standarderklärung verweist auf die niedrige Schwelle des visuellen Kortex. Das vorliegende Modell bietet eine mechanistisch präzisere Erklärung: CSD initiiert dort, wo die *Raphe-Innervierungszonen maximal überlappen*. Der okzipitale Kortex ist nicht intrinsisch „schwächer" — er liegt im Zentrum der B7/B8-Überlappungszone. Die CSD-Initiation ist eine direkte Konsequenz der Interferenzgeometrie.
+**Konsequenz für CSD (→ Kapitel 4.4):** CSD-Initiation okzipital bleibt mechanistisch erklärungsbedürftig. Die Hypothese einer maximalen B7/B8-Überlappung im okzipitalen Kortex ist durch verfügbare Tracing-Daten nicht gestützt (Muzerelle et al. 2014 zeigt für die Maus keine substanzielle B7- oder B8-Projektion in posterioren/okzipitalen Kortex). Eine alternative Architektur — serotonerge Modulation des visuellen Kortex über den Pulvinar als Relay statt direkter Raphe-Projektion — ist durch humane Daten (Oke et al. 1997: erhöhte 5-HT-Konzentrationen im Pulvinar) plausibler, aber ebenfalls nicht als Interferenzmechanismus belegt. Zone I bleibt Arbeitshypothese.
 
 Die visuelle Aura (Skotome, Fortifikationsspektren) ist damit nicht Symptom einer „kortikalen Übererregbarkeit", sondern Manifestation des lokalen Kohärenzverlusts im Bereich maximaler dualer Innervierung.
+
+#### F.2.1 Alternative Architektur: Pulvinar als serotonerges Relay
+
+Der Pulvinar (posteriorer Thalamus) erhält beim Menschen nachweislich erhöhte
+Serotoninkonzentrationen (Oke et al. 1997, n=13, postmortem HPLC) und ist
+anatomisch eng mit dem visuellen Kortex verbunden (reziproke thalamokortikale
+Projektionen). Eine serotonerge Modulation des okzipitalen Kortex über den
+Pulvinar als Zwischenstation wäre mit humanen Daten konsistenter als eine
+direkte Raphe→Okzipitalkortex-Projektion. Ob dieser Pfad einen
+Interferenzmechanismus analog zu Zone I erzeugt, ist nicht untersucht.
+Evidenzstatus: spekulativ.
 
 ---
 
@@ -91,7 +102,7 @@ Die drei Interferenzzonen und die PFC-Protektion bilden ein kohärentes anatomis
 
 | Zone | Anatomie | Interferenztyp | Klinische Manifestation |
 | :---- | :---- | :---- | :---- |
-| **I — Posteriorer Neokortex** | B7 + B8, laminär komplementär | Laminäre Interferenz | CSD-Initiation, visuelle Aura (→ Kap. 4.4) |
+| **I — Posteriorer Neokortex** | B7/B8-Überlappung nicht belegt; ggf. Pulvinar-Relay (Arbeitshypothese) | Hypothetisch | CSD-Initiation, visuelle Aura (→ Kap. 4.4) — Arbeitshypothese |
 | **II — Hippocampus** | B7 + B8, laminär segregiert | Laminäre Interferenz | State-dependent encoding, iktale Amnesie |
 | **III — Midline-Thalamus** | B7 + B8, voll überlappend | Maximale Interferenz | Thalamische Dekalibrierung (→ Kap. 8), systemische Kohärenzstörung |
 | **PFC (Gegenfall)** | B7 dominant, Single-Source | Keine Interferenz | Erhaltene exekutive Funktion unter Desync |
@@ -127,11 +138,11 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 | Aussage | Evidenzniveau | Quellenbasis |
 | :---- | :---- | :---- |
 | B7 (DRN) projiziert dominant in PFC, B8 (MRN) minimal | Gesichert | Muzerelle et al. 2014 (anterograde Tracing, Maus); Vertes 1991 (Ratte) |
-| Posteriorer Neokortex: duale B7/B8-Innervierung mit laminärer Spezifität | Gesichert | Muzerelle et al. 2014; Ren et al. 2018 |
+| Posteriorer Neokortex: duale B7/B8-Innervierung mit laminärer Spezifität | Hypothetisch, Tierdaten | Muzerelle et al. 2014 (Maus, anterograd): B7v projiziert nicht substanziell in posterioren/okzipitalen Kortex; B8 kortikale Projektion auf mediale PFC und anterioren Kortex beschränkt, lateraler Kortex ausgespart. Ren et al. 2018: DRN-Subsysteme Amygdala vs. frontaler Kortex — kein Bezug zu posteriorem Kortex oder laminärer Spezifität. Humane Daten (Charnay & Leger 2010, PMC3181988): beide Kerne projizieren in menschlichen Kortex und Hippocampus, zwei Axon-Morphologien nachgewiesen. Regionale Dichte im posterioren Kortex und Kernzuordnung für Okzipitallappen: nicht publiziert. |
 | Hippocampus: laminär segregierte B7/B8-Innervierung (MRN → Str. lac.-mol./oriens; DRN → Hilus) | Gesichert | Vertes et al. 1999; Muzerelle et al. 2014 |
 | Midline-/Intralaminärer Thalamus: volle B7/B8-Überlappung | Gesichert | Vertes 1991; Muzerelle et al. 2014 |
 | Inter-Kern-Desync erzeugt destruktive Interferenz in Überlappungszonen | Hypothetisch, mechanistisch plausibel | Abgeleitet aus Tracing-Anatomie + Modell (Abschnitt 2.5.1) |
-| CSD-Initiation okzipital korreliert mit maximaler B7/B8-Überlappung | Hypothetisch, konsistent | Korrelation: CSD-Topographie (Literatur) + Innervierungskarten (Muzerelle et al. 2014) |
+| CSD-Initiation okzipital korreliert mit maximaler B7/B8-Überlappung | Hypothetisch, anatomisch ungesichert | Muzerelle et al. 2014 stützt die Überlappungsannahme für okzipitalen Kortex nicht. Vertes 1991 (Ratte): DRN projiziert moderat in okzipitalen Kortex; MRN-Projektion dorthin nicht belegt. |
 | State-dependent encoding durch laminäre hippocampale Interferenz | Hypothetisch, spekulativ | Abgeleitet aus laminärer Innervierungsanatomie; direkte Evidenz fehlt |
 | Thalamische Interferenz als primärer Mechanismus, kortikale Effekte sekundär | Hypothetisch, modellkonsistent | Abgeleitet aus maximaler thalamischer Überlappung + Zentralmodell (Kap. 8) |
 | PFC-Protektion durch Single-Source-Innervierung (B7) | Hypothetisch, anatomisch fundiert | Tracing-Daten (B7-Dominanz gesichert); Schutzeffekt abgeleitet |
@@ -154,3 +165,5 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 * Kharas N, Reyes-Vazquez C, Bhatt S, Bhatt R, Dafny N (2017) Methylphenidate modulates the firing activity of dorsal raphe nucleus neurons in freely behaving rats. *Brain Research Bulletin*, 134, 76–84.
 * Crawford LK, Craige CP, Beck SG (2013) Glutamatergic input is selectively increased in dorsal raphe subfield 5-HT neurons: role of morphology, topography and selective innervation. *European Journal of Neuroscience*, 37(12), 1997–2008.
 * Tao R, Ma Z, Auerbach SB (2003) Influence of AMPA/kainate receptors on extracellular 5-hydroxytryptamine in rat midbrain raphe and forebrain. *British Journal of Pharmacology*, 139(5), 981–990.
+* Charnay Y, Leger L (2010) Brain serotonergic circuitries. *Dialogues in Clinical Neuroscience*, 12(4), 471–487. PMC3181988.
+* Oke A, Keller R, Adams RN (1997) Monoamine distribution in human thalamus. *Journal of Neurochemistry*, 30, 251–261.
