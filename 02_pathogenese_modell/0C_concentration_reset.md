@@ -272,6 +272,10 @@ Es ist möglich, dass dein Gehirn einen Zustand nicht aufrechterhalten kann, den
 
 Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine. Ich hatte einen Grundzustand, der ohne externe Stütze nicht hält. Und ich hatte nie normale Müdigkeit — nur den Schalter zwischen „gehalten" und „nicht mehr gehalten".
 
+## Abendmüdigkeit unter LDX — Einzelfall-Falsifikation des Late-Chronotyp-Traits
+
+Unter LDX tritt erstmals kohärente Abendmüdigkeit auf — ein Zustandssignal, das vorher nicht existierte. Die subjektive Phase verschiebt sich Richtung Morningness, obwohl LDX kein Zeitgeber ist und keine circadiane Phase verschiebt. Wenn das Abend-Wachsein ein echter Chronotyp-Peak wäre, sollte LDX es nicht verändern. Dass es sich verändert, zeigt: Das Abend-Wachsein war die einzige Tagesphase, in der kompensatorische Arousal-Quellen (circadianes Alerting-Maximum + akkumulierter Homöostat) den Raphe-Defizit überdeckten. LDX macht diese Kompensation überflüssig → das darunter liegende Müdigkeitssignal wird erstmals sichtbar. Der „Chronotyp" war eine Fehlattribution — strukturell analog zur Nackenverspannungs-Fehlattribution der Migräne (vgl. Pathogenetisches Modell, 4.3.7, 8.7.1).
+
 ---
 
 *Phänomenologische Beschreibung, kein klinisches Dokument. Dient der Selbsterkennung und dem Austausch.*

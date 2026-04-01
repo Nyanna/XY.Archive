@@ -607,6 +607,20 @@ Epilepsiepatienten mit komorbider Migräne haben dokumentiert schlechteres Thera
 
 ---
 
+### **E.8.16 Chronotyp als externe Validierung des Synchronisations-/Hardwaredefekt-Splits**
+
+Der Befund von Kendis et al. (2015) liefert eine unabhängige externe Validierung der im Modell postulierten Unterscheidung zwischen globaler Synchronisationsstörung und lokalem Hardwaredefekt:
+
+| Epilepsietyp | Late-Chronotyp-Assoziation | Modellinterpretation |
+|---|---|---|
+| **Generalisierte Epilepsie** | **5-fach erhöht** vs. Kontrollen | Globale Desynchronisation → Late-Chronotyp als Downstream-Marker (konsistent mit ADHD- und Migräne-Assoziation) |
+| **Fokale Epilepsie** | **Kein signifikanter Unterschied** zu Kontrollen | Lokaler Hardwaredefekt → kein Desynchronisationsprofil → normaler Chronotyp |
+| **Gesamtkohorte (alle Epilepsien)** | Kein signifikanter Unterschied | Effekt wird durch fokale Fälle verdünnt — der Synchronisationsmarker ist nur in der stratifizierten Analyse sichtbar |
+
+Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downstream-Marker globaler Raphe-vermittelter Desynchronisation ist (vgl. 4.3.7, 8.7.1), sollte er spezifisch mit Epilepsieformen segregieren, die globale Synchronisationsstörungen reflektieren — nicht mit fokalen Läsionen. Kendis et al. bestätigen exakt dieses Muster. Der Scoping Review 2024 (11 Studien, 1.167 PWE, 4.657 Kontrollen) repliziert die Assoziation: generalisierte Epilepsie konsistent mit Eveningness assoziiert, fokale Epilepsie nicht.
+
+Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen per Fragebogen eher Morning-Orientierung, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive circadiane Phase.
+
 ### **E.9 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
@@ -683,6 +697,9 @@ Epilepsiepatienten mit komorbider Migräne haben dokumentiert schlechteres Thera
 | Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe (Population 1 vs. Population 2) (Ergänzung März 2026) | Hypothetisch, testbar | Modellvorhersage aus E.7.13; Stratifizierung nach Vorhersagefähigkeit + Migräne-Komorbidität |
 | Schlechteres AED-Ansprechen bei Migräne-Komorbidität erklärt durch Upstream-Generator (tonische Welle, Stufe 1) (Ergänzung März 2026) | Konsistent mit Evidenz | Velioglu et al. 2005 (schlechtere Prognose bei Komorbidität); Modellinterpretation aus E.7.13 |
 | Dreistufige Fallback-Hierarchie: Raphe-Takt → CSD → Anfall | Hypothetisch, konsistent mit allen Evidenzlinien | Modellsynthese aus Anhang D + E.1–E.4 |
+| **Late-Chronotyp segregiert mit generalisierter, nicht fokaler Epilepsie** | Gesichert | Kendis et al. 2015: 5-fach erhöht bei generalisiert, kein Unterschied bei fokal; Scoping Review 2024 (11 Studien) repliziert |
+| **Subjektiver Chronotyp ≠ objektive circadiane Phase bei fokaler Epilepsie** | Gesichert | Manni et al. 2016: Fragebogen ≠ DLMO |
+| **Late-Chronotyp als Downstream-Marker globaler Desynchronisation (Kreuzvalidierung Synchronisations-/Hardwaredefekt-Split)** | Plausibel, externe Validierung | Konvergenz aus Kendis 2015 + ADHD-Chronotyp-Assoziation (Kooij & Bijlenga 2013) + Migräne-Chronotyp (Jung et al. 2025, Baksa et al. 2025) |
 | Chronische Migräne als Deadlock aus gescheiterter Resynchronisation | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Propofol-Responder-Daten |
 | Propofol-Reset + LDX-Stabilisierung als kombinierte Intervention | Hypothetisch, nicht getestet | Modellvorhersage |
 

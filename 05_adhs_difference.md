@@ -170,6 +170,7 @@ Die Unterscheidung zwischen Population A und B erfordert kein MRT und keine Stim
 - Paradoxe oder absente Koffeinwirkung
 - Gedächtnisinstabilität mit Zustandsabhängigkeit (manche Tage gut, manche leer)
 - Musikalische oder sensorische Ankerbindung von Erinnerungen
+- **Late-Chronotyp (Abendtyp)** — nicht als unabhängiger circadianer Trait, sondern als Kompensationsprofil des Raphe-Defizits (vgl. Pathogenetisches Modell, 4.3.7): Das Abend-Wachsein ist die einzige Tagesphase, in der kompensatorische Arousal-Quellen den Raphe-Defizit überdecken. Shift Richtung Morningness unter Stimulanzien bestätigt Population-A-Zugehörigkeit.
 
 **Anamneseindikatoren für Population B:**
 - Keine familiäre Migräne
@@ -254,6 +255,19 @@ Die Vermischung beider Populationen in Forschung und Klinik produziert:
 - Fehlende diagnostische Biomarker (weil der „Biomarker" in der gemischten Population nicht diskriminiert)
 
 Die Differenzierung ist anamnestisch möglich, erfordert kein MRT und keine Probedosierung, und hat direkte Konsequenzen für Therapieziel und Dosierung.
+
+### 8.1 Populationsspezifische Vorhersagen zum Late-Chronotyp
+
+Die Late-Chronotyp-Assoziation mit ADHD ist im vorliegenden Modell populationsspezifisch — Population A trägt den Effekt fast vollständig, Population B zeigt normale Chronotyp-Verteilung:
+
+| Vorhersage | Erwartung | Prüfbar durch |
+|---|---|---|
+| Late-Chronotyp-Assoziation ist populationsspezifisch | Population A trägt den Effekt; Population B zeigt Normalverteilung | Stratifizierung nach Migräne-Status: Assoziation sollte verschwinden, wenn Migräne-positive Fälle herausgenommen werden |
+| Chronotyp-Shift unter Stimulanzien | Population A: Shift Richtung Morningness; Population B: kein Shift | MEQ/MCTQ PRE/POST, longitudinal |
+| Generalisierte Epilepsie mit Late-Typ hat höhere Migräne-Komorbidität | Late-Typ = Synchronisationsmarker → Migräne-Rate in Late-Subgruppe der generalisierten Epilepsie höher als in Non-Late-Subgruppe | Retrospektive Analyse bestehender Kohorten |
+| Fokale Epilepsie + ADHD hat anderen ADHD-Subtyp als generalisierte Epilepsie + ADHD | Fokale: ADHD sekundär (Anfallsfolgen/ASM); Generalisierte: ADHD primär (Synchronisationsdefizit, Population A) | Subtyp-Analyse, Onset-Zeitpunkt ADHD vs. Epilepsie |
+
+Evidenzbasis: Kendis et al. 2015 zeigten 5-fach erhöhte Wahrscheinlichkeit für Late-Chronotyp bei generalisierter Epilepsie vs. Kontrollen; fokale Epilepsie zeigte keinen Unterschied. Die Segregation des Late-Chronotyps spezifisch mit globalen Synchronisationsstörungen (ADHD Population A, Migräne, generalisierte Epilepsie) und nicht mit lokalen Hardwaredefekten (fokale Epilepsie ≈ Population B-Äquivalent) stützt die Zwei-Populationen-Hypothese.
 
 ---
 

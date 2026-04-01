@@ -278,6 +278,20 @@ Die Antworten sollten longitudinal dokumentiert werden. Die diagnostisch relevan
 
 Wenn in Woche 3–6 keine Integration eintritt, ist die Dosis zu überprüfen (zu hoch → Arousal statt Kohärenz) oder die thalamische Integrationskapazität als limitierender Faktor zu evaluieren.
 
+### 6.4 Chronotyp-Fragebogen als zusätzlicher Verlaufsmarker
+
+Ergänzend zur kohärenzbasierten Verlaufsdokumentation kann ein standardisierter Chronotyp-Fragebogen (MEQ oder MCTQ) PRE/POST Stimulanzientherapie eingesetzt werden. Die Rationale: Der Late-Chronotyp ist im Modell kein unabhängiger circadianer Trait, sondern ein Kompensationsprofil des Raphe-Defizits — das Abend-Wachsein reflektiert die einzige Tagesphase mit ausreichender Kompensation (vgl. Pathogenetisches Modell, 4.3.7).
+
+**Interpretation:**
+
+| Befund | Interpretation | Konsequenz |
+|---|---|---|
+| Shift Richtung Morningness unter Stimulanzien | Kompensationsartefakt aufgelöst → Population A (Raphe-Achse) bestätigt | Zieldosis über Schlafkonsolidierung titrieren |
+| Kein Chronotyp-Shift | Echter Chronotyp oder Population B (Architekturdefizit) | Konventionelle Titration nach Symptomkontrolle |
+| Shift + kohärente Abendmüdigkeit + verbesserte Schlafqualität | Dreifache Konvergenz → Synchronisierungsmechanismus dominant | Optimale therapeutische Konfiguration erreicht |
+
+**Erhebungszeitpunkte:** Baseline (vor Therapiebeginn), Woche 4, Woche 8. Der MEQ/MCTQ ist ein 15–20-minütiger Selbstberichtsfragebogen und erzeugt keinen relevanten Mehraufwand. Die diagnostisch relevanteste Information liegt im Prä-Post-Vergleich, nicht im absoluten Score.
+
 ---
 
 ## 7. Substanzspezifische Hinweise zur Kohärenzbeobachtung

@@ -205,6 +205,20 @@ Powernap unter Substanz möglich ohne Migränekonversion. Aufwachen deutlich erl
 | **Klarere Abendmüdigkeit** | Zirkadianes Signal stark genug für bewusste Wahrnehmung; Zustandswechsel wird kohärent statt als Kollaps erlebt |
 | **Subjektiv „schärferes" Bewusstsein** | Kortex synchron und ungedämpft — erstmals der Grundzustand ohne die doppelte Bremse aus noradrenerger Dämpfung (ehemals Metoprolol) und chronischer Desynchronisation |
 
+#### **4.3.7 Tagesprofil der Schlafintrusionen als Raphe-Tonus-Proxy und Chronotyp-Fehlattribution**
+
+Das Tagesprofil der Off-State-Intrusionen (vgl. 4.3.2) bildet nicht eine U-förmige Chronotyp-Kurve ab, sondern ein **monoton abfallendes Defizit-Profil**, bei dem die Kompensation über den Tag akkumuliert:
+
+| Tageszeit | Raphe-Defizit-Folge | Subjektive Erfahrung | Klinische Kodierung |
+|---|---|---|---|
+| Morgens | Raphe-Tonus minimal, keine Kompensation → Schlafintrusionen, Off-State-Fragmente | Zwei-Stunden-Loch (vgl. Anhang C), Benommenheit, Mind Blanking | „ADHD-Symptome", „morgendliche Trägheit" |
+| Nachmittags | Raphe-Tonus insuffizient, partielle Kompensation durch Aufgaben-Arousal | Aufgabenabhängige Wachheit, Nap-Bedarf | „Konzentrationsdefizit" |
+| Abends | Circadianes Alerting-Maximum + akkumulierter Homöostat → kompensatorische Arousal-Quellen überdecken Raphe-Defizit | Subjektiv „endlich wach", produktiv, klar | „Late-Chronotyp", „Abendmensch" |
+
+**Das Abend-Wachsein ist kein Chronotyp-Peak, sondern die einzige Tagesphase mit ausreichender Kompensation.** Die LDX-Beobachtung (4.3.6) falsifiziert die Chronotyp-Interpretation: Unter LDX tritt erstmals kohärente Abendmüdigkeit auf. LDX ist kein Zeitgeber — es verschiebt keine circadiane Phase. Dass sich die subjektive Phase dennoch verschiebt, zeigt, dass das Abend-Wachsein ein Kompensationsartefakt war. LDX macht die Kompensation überflüssig → das darunter liegende Müdigkeitssignal wird sichtbar. Die Fehlattribution ist strukturell analog zur Nackenverspannungs-Fehlattribution der Migräne (vgl. 8.3.1).
+
+**Testbare Vorhersage:** Chronotyp-Fragebogen (MEQ oder MCTQ) PRE/POST Stimulanzien bei ADHD-Patienten. Shift Richtung Morningness → Kompensationsartefakt (Population A, vgl. 05_adhs_difference). Kein Shift → echter Chronotyp oder Population B.
+
 ### **4.4 CSD-Auslösemechanismus: Nadir, Rebound und Depolarisationswelle**
 
 #### **4.4.1 Zwei-Phasen-Mechanismus der CSD-Initiation**

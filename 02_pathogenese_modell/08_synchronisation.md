@@ -152,6 +152,25 @@ Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Ad
 | Traumerinnerung PRE selektiv post-iktal (CSD-Reset); POST regulär (pharmakologische Synchronisation) | Einzelfallbeobachtung | Selbstbeobachtung, Anhang B, B.8 |
 | Schlafkonsolidierung und interozeptive Kohärenz als identischer Mechanismus auf verschiedenen Zeitskalen | Hypothetisch, konsistent | Modellableitung aus 8.4.1 + 8.4.3 |
 
+### **8.7.1 Kreuzkorrelation ADHD–Migräne–Epilepsie–Late-Chronotyp als konvergierende Evidenz**
+
+Vier klinische Entitäten — ADHD, Migräne, generalisierte Epilepsie und Late-Chronotyp — zeigen paarweise robuste Assoziationen. Im vorliegenden Modell konvergieren alle vier auf denselben Upstream-Mechanismus: globale kortikale Desynchronisation durch Raphe-Instabilität.
+
+**Empirische Kreuzkorrelation:**
+
+| Assoziation | Evidenz |
+|---|---|
+| ADHD ↔ Late-Chronotyp | Robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017, Bijlenga et al. 2019); DSPD überproportional bei ADHD |
+| ADHD ↔ Migräne | OR 1,8 (Hansen et al. 2018, n=26.456); stärker für Migräne mit Aura: OR 2,05 |
+| Migräne ↔ Late-Chronotyp | Evening-Typ bei Migräne 36,3% vs. 18,4% Kontrollen (Jung et al. 2025); OR 1,06 UK Biobank (Baksa et al. 2025) |
+| Generalisierte Epilepsie ↔ Late-Chronotyp | **5-fach** erhöhte Wahrscheinlichkeit (Kendis et al. 2015) |
+| **Fokale Epilepsie ↔ Late-Chronotyp** | **Kein signifikanter Unterschied** zu Kontrollen (Kendis et al. 2015) |
+| ADHD ↔ Epilepsie | Gepoolte ADHD-Prävalenz bei Epilepsie 22,3% (Metaanalyse 2023, 63 Studien) |
+
+**Der Schlüsselbefund** ist die Dissoziation zwischen generalisierter und fokaler Epilepsie: Der Late-Chronotyp segregiert spezifisch mit **globalen Synchronisationsstörungen** (ADHD, Migräne, generalisierte Epilepsie) und **nicht** mit lokalen Hardwaredefekten (fokale Epilepsie). Die Gesamtkohorte (alle Epilepsien) zeigt keinen signifikanten Unterschied — der Effekt wird durch die fokalen Fälle verdünnt (Kendis et al. 2015). Manni et al. (2016) bestätigen: fokale Epilepsie-Patienten sind per Fragebogen eher Morning-orientiert, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive Phase.
+
+**Modellinterpretation:** Der Late-Chronotyp ist kein unabhängiger circadianer Trait, sondern ein Downstream-Marker des Raphe-Defizits. Die subjektive Erfahrung „abends erst richtig wach werden" ist das Tagesprofil der Kompensation: Tagsüber reicht der Raphe-Tonus nicht für kortikale Kohärenz → Schlafintrusionen → klinisch als „unaufmerksam" kodiert. Abends konvergieren circadianes Alerting-Maximum und akkumulierter Homöostat so, dass kompensatorische Arousal-Quellen den Raphe-Defizit überdecken → klinisch als „Abendtyp" kodiert (vgl. 4.3.7).
+
 ### **8.8 Nap als PFC-Reset (nicht SWS)**
 
 #### **8.8.1 Schlafarchitektur des Naps: Kein Tiefschlaf**
