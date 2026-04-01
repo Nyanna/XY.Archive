@@ -56,6 +56,8 @@ Die hippocampale Innervation ist quantitativ und qualitativ MRN-dominiert. MRN h
 
 **Zielzelltyp:** Ein modellkritisches Detail — die serotonerge Projektion vom MRN innerviert nahezu exklusiv hippocampale GABAerge Interneuronen, nicht die Prinzipalzellen (CA-Pyramidenzellen und DG-Körnerzellen) (Freund 1992). Die Modulation des Hippocampus durch den MRN läuft über die Steuerung der lokalen Inhibition, nicht über direkte Exzitation oder Hemmung der Speicherzellen. Im Hippocampus proper sind die serotonergen Fasern diffus verteilt und zielen präferentiell auf GABAerge Interneuronen, die Cholecystokinin (CCK) und Calcium-bindende Proteine exprimieren.
 
+**DRN-Zielzelltyp (Revision April 2026):** Der kaudale DRN (B6) projiziert ebenfalls zum Hippocampus, aber mit distinkter Zielzellspezifität: DRN-Fasern innervieren exzitatorische CaMKII-positive Pyramidenzellen in dCA1, *nicht* GAD67-positive Interneurone (Translational Neurodegeneration 2024, PMC11267773; AAV/Retro Circuit-Tracing). Die hippocampale Separation ist damit nicht nur laminär (Subfeldebene), sondern primär *zellulär*: MRN→Interneurone (Netzwerk-Inhibition, Theta-Timing) vs. DRN→Pyramidenzellen (Plastizität, Enkodierungsstärke). Bei Volume-Transmission-Dysregulation kann das DRN-Signal über Spillover in den Extrazellulärraum die MRN-Zielneurone erreichen und die zelluläre Separation pharmakologisch aufheben (vgl. Anhang F, Abschnitt F.3.2).
+
 **Funktionelle Konsequenz — Theta-Kontrolle:** Der MRN kontrolliert direkt den hippocampalen Oszillationszustand. MRN-Stimulation desynchronisiert das hippocampale EEG (supprimiert Theta); MRN-Läsionen produzieren ununterbrochenes Theta unabhängig vom Verhalten (Vertes 2005; Vinogradova 1995). Der MRN wirkt als funktioneller Antagonist der Retikulärformation und supprimiert Theta-Bursts mächtig. Dies geschieht indirekt über das mediale Septum: MRN-serotonerge Fasern aktivieren GABAerge Zellen im medialen Septum (über 5-HT2A-Rezeptoren), die wiederum die septohippocampale Theta-Generierung hemmen (Leranth & Vertes 1999).
 
 **Modellrelevanz:** Instabilität des MRN-Takts bedeutet instabile Theta-Kontrolle im Hippocampus — unkontrolliertes Fluktuieren zwischen Theta (Exploration, Enkodierung) und Nicht-Theta (Konsolidierung, Sharp-Wave-Ripples). Der Hippocampus wechselt den Betriebsmodus nicht verhaltensgesteuert, sondern MRN-oszillationsgesteuert.
@@ -353,6 +355,8 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 | DRN und MRN reagieren unterschiedlich auf chronische Agonisten-Behandlung | Gesichert | Blier et al. 1990, Kreiss & Lucki 1997 |
 | MRN-Fasern im Hippocampus terminieren in DG (Molekular-/Körnerzellschicht) und CA1/CA3 (Stratum lacunosum-moleculare) | Gesichert | Azmitia & Segal 1978, Vertes 2005 |
 | MRN innerviert nahezu exklusiv hippocampale GABAerge Interneuronen, nicht Prinzipalzellen | Gesichert | Freund 1992 |
+| DRN (B6) innerviert CaMKII+ Pyramidenzellen in dCA1, nicht GAD67+ Interneurone | Gesichert | Translational Neurodegeneration 2024, PMC11267773 |
+| DRN→vHip und MRN→vHip funktional dissoziiert (Aggression vs. Depression) | Gesichert | ScienceDirect 2024 (Chemogenetik/Optogenetik) |
 | MRN kontrolliert hippocampalen Theta-/Desynchronisationszustand direkt | Gesichert | Vertes 2005, Vinogradova 1995 |
 | MRN-Theta-Kontrolle läuft über GABAerge Zellen im medialen Septum (5-HT2A) | Gesichert | Leranth & Vertes 1999 |
 | ~8–12% der MRN-Neuronen senden Kollateralen zu Septum und Hippocampus gleichzeitig | Gesichert | Retrograde Tracer-Studien |
