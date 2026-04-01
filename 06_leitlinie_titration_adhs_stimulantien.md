@@ -267,6 +267,7 @@ Die folgenden Fragen operationalisieren die kohärenzbasierte Titration als klin
 | „Nehmen Sie neue Körpersignale wahr, die Sie vorher nicht kannten?" | Interozeptive Integration | Ja, bereichernd → therapeutischer Korridor; Ja, bedrohlich → Vulnerabilitätssignal |
 | „Fühlen Sie sich wie Sie selbst unter der Medikation?" | Selbstkongruenz | Ja, aber „klarer" → Korridor; Nein, „anders/fremd" → Überschreitung oder Vulnerabilität |
 | „Gibt es Momente von gehobener Stimmung oder das Gefühl, besonders leistungsfähig zu sein?" | Euphorie-Screening | Ja → mesolimbische Aktivierung → Dosis reduzieren |
+| „Wann am Tag fühlen Sie sich am leistungsfähigsten? Hat sich das seit Medikationsbeginn verändert?" | Chronotyp-Kompensationsprofil | Shift von „abends" → „gleichmäßiger/vormittags" → Synchronisierung (Population A); kein Shift → echter Chronotyp oder insuffiziente Dosis; Shift zu „noch später abends" → Arousal-Overshoot, Dosisreduktion prüfen |
 
 ### 6.3 Verlaufsdokumentation
 
@@ -292,6 +293,15 @@ Ergänzend zur kohärenzbasierten Verlaufsdokumentation kann ein standardisierte
 
 **Erhebungszeitpunkte:** Baseline (vor Therapiebeginn), Woche 4, Woche 8. Der MEQ/MCTQ ist ein 15–20-minütiger Selbstberichtsfragebogen und erzeugt keinen relevanten Mehraufwand. Die diagnostisch relevanteste Information liegt im Prä-Post-Vergleich, nicht im absoluten Score.
 
+#### Methodische Einschränkung: Chronotyp-Fragebögen
+
+Der MEQ und MCTQ messen subjektive Präferenz und Verhaltenstiming, nicht die circadiane Phase. Bei Population A besteht eine systematische Verzerrung: Der Fragebogen erfasst das Kompensationsprofil des Raphe-Defizits als Evening-Score. Manni et al. (2016) zeigten den umgekehrten Fall bei fokaler Epilepsie: Patienten klassifizierten sich per MEQ als Morning-Typ, aber ihr DLMO (objektiver Phasenmarker) zeigte keinen Unterschied zu Kontrollen — der subjektive Chronotyp reflektierte Verhaltensentscheidungen, nicht die biologische Uhr.
+
+Für die Titrationsverlaufsdokumentation folgt daraus:
+- MEQ-Scores sind als Verlaufsmarker verwendbar, aber nur mit Interpretationsregel (vgl. 7.2)
+- Ein DLMO ist indiziert, wenn eine Melatonin-Gabe (Zeitgeber-Therapie) erwogen wird oder der MEQ-Score unter Stimulanzien stabil bleibt und die Differenzierung „echter Chronotyp" vs. „insuffiziente Dosis" klinisch relevant ist
+- Die Kombination MEQ-Evening + DLMO-intermediär ist ein Population-A-Marker
+
 ---
 
 ## 7. Substanzspezifische Hinweise zur Kohärenzbeobachtung
@@ -303,6 +313,8 @@ Die kurze Halbwertszeit erzeugt ein diagnostisch nutzbares Phänomen: Der **Rebo
 ### 7.2 Lisdexamfetamin (LDX)
 
 Die flache Kinetik macht den Rebound weniger dramatisch, aber die **Abendphase** (8–12 h post-dose) besonders informativ. In dieser Phase ist die Wirkung nicht abrupt beendet, sondern graduell absteigend. Die Qualität der Abendmüdigkeit — kohärent vs. diffus — ist damit ein Echtzeit-Indikator für die Synchronisierungstiefe der aktuellen Dosis.
+
+Die Chronotyp-Analyse liefert die mechanistische Begründung: Was unter LDX als „kohärente Abendmüdigkeit" erscheint, ist kein sedierender Effekt, sondern das Sichtbarwerden eines Müdigkeitssignals, das vorher durch das Kompensationsprofil des Raphe-Defizits maskiert war. Viele Population-A-Patienten klassifizieren sich per MEQ als Evening-Typ. Dieser Score reflektiert jedoch nicht die circadiane Phase (messbar via DLMO), sondern die Tageszeit-abhängige Kompensation — abends übersteigen die kompensatorischen Arousal-Quellen erstmals die Synchronisationsschwelle, was als „Leistungspeak" erlebt und im Fragebogen kodiert wird. Unter adäquater Dosis verschwindet dieses Profil, weil die pharmakologische Raphe-Stabilisierung die Kompensation überflüssig macht. Ein Shift im MEQ-Score Richtung Morningness unter Stimulanzien ist daher kein Chronotyp-Shift, sondern ein Synchronisierungsmarker — und als solcher ein positiver Titrationsindikator für Population A.
 
 ### 7.3 Sumatriptan-Therapiefenster — Mechanistische Begründung
 

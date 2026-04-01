@@ -621,6 +621,8 @@ Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downst
 
 Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen per Fragebogen eher Morning-Orientierung, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive circadiane Phase.
 
+**Population-A/B-Analogie:** Die Dissoziation validiert extern die in 05_adhs_difference postulierten zwei ADHD-Populationen: Generalisierte Epilepsie ≈ Population A (Raphe-vermittelt, gesamtkortikale Kohärenzstörung), fokale Epilepsie ≈ Population B (umschriebene Pathologie ohne Synchronisationskomponente). Der Late-Chronotyp segregiert spezifisch mit dem globalen Typ — konsistent mit der Interpretation als Kompensationsprofil insuffizienter tonischer Modulation.
+
 ### **E.9 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |

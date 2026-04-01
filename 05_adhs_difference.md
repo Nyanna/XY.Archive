@@ -170,7 +170,7 @@ Die Unterscheidung zwischen Population A und B erfordert kein MRT und keine Stim
 - Paradoxe oder absente Koffeinwirkung
 - Gedächtnisinstabilität mit Zustandsabhängigkeit (manche Tage gut, manche leer)
 - Musikalische oder sensorische Ankerbindung von Erinnerungen
-- **Late-Chronotyp (Abendtyp)** — nicht als unabhängiger circadianer Trait, sondern als Kompensationsprofil des Raphe-Defizits (vgl. Pathogenetisches Modell, 4.3.7): Das Abend-Wachsein ist die einzige Tagesphase, in der kompensatorische Arousal-Quellen den Raphe-Defizit überdecken. Shift Richtung Morningness unter Stimulanzien bestätigt Population-A-Zugehörigkeit.
+- **Subjektiver Evening-Chronotyp (MEQ < 42)** — Einschränkung: misst Kompensationsprofil, nicht circadiane Phase; differenzierbar via DLMO. Das Abend-Wachsein ist die einzige Tagesphase, in der kompensatorische Arousal-Quellen den Raphe-Defizit überdecken (vgl. Pathogenetisches Modell, 4.3.7). Shift Richtung Morningness unter Stimulanzien stützt Population-A-Zuordnung (vgl. Titrationsleitlinie 6.4, 7.2). Die Kombination MEQ-Evening + DLMO-intermediär ist ein Population-A-Marker.
 
 **Anamneseindikatoren für Population B:**
 - Keine familiäre Migräne
