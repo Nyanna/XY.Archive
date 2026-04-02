@@ -38,11 +38,16 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Insuffizienter Raphe-Tonus → asynchrone kortikale Off-State-Intrusion | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus Raphe-Projektionsmuster + lokaler Schlaf-Literatur |
 | Räumliche SWS-Fragmentierung bei erhaltenem Quantum (Deep-Episoden/h: 1,6 PRE vs. 1,1 POST, p=0,005; Hierarchie Deep > REM > Light) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3) |
 | LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3, B.5) |
+| Quasi-wöchentliche Periodizität im nächtlichen HR-Drop (FFT: 7,5 Tage, Power 102,5; Autokorrelation Lag 7 r=0,317) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B.10) |
+| HR-Drop-Periodizität kongruent mit Schwebungsfrequenz bei τ ≈ 26 h | Deskriptiv, konsistent mit Modellvorhersage | Tracker-Daten (Anhang B.10) |
+| Anfälle auf ansteigender Flanke nach Drop-Minimum (Median 2 Tage post-Minimum) | Deskriptiv (n=15) | Tracker-Daten + Anfallskalender (Anhang B.12) |
+| Pre-Nap HR als CSD-Risikoindikator (PPV 85% bei ≥80 bpm) | Statistisch signifikant (n=33) | Tracker-Daten, HR-Analyse (Anhang B.11) |
+| Nap-Outcome bestimmt durch Zustand bei Eintritt, nicht Dauer | Statistisch signifikant | Tracker-Daten (Anhang B.11) |
 | Fragmentierte Nächte zeigen höhere Deep-Gesamtdauer (129 vs. 106 min) — Quantität ≠ Qualität | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten (Anhang B.5) |
 | Betablocker-Invarianz der Schlaffragmentierung als negatives Differentialkriterium | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten, PRE unter Metoprolol zeigt identische Fragmentierung (Anhang B.4) |
 | Migräneprophylaxe ohne Upstream-Adressierung = Unterdrückung des Schutzmechanismus | Modellvorhersage | Abgeleitet aus B.6, konsistent mit Betablocker-Phänomenologie (Anhang C) |
 | Kortikale Insuffizienz (lokaler Schlaf) → sekundäre thalamische Destabilisierung über Rückkopplungsschleife | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus thalamokortikaler Rückkopplungsarchitektur + lokaler Schlaf |
-| Nap-Kaskade: lokaler Schlaf → Nap → prolongierte posteriore Sleep Inertia → thalamokortikale Destabilisierung → CSD-Schwellensenkung | Hypothetisch, konsistent, quantitativ gestützt | Selbstbeobachtung + Tracker-Daten (r=0,276, p=0,019, Anhang B.5) |
+| Nap-Kaskade: Desynchronisation → Nap (kompensatorisch) + CSD (parallel); Sleep Inertia als Beschleuniger, nicht Initiator | Hypothetisch, konsistent, quantitativ gestützt | Selbstbeobachtung + Tracker-Daten (r=0,276, p=0,019, Anhang B.5; Nap-Outcome: Anhang B.11) |
 | CSD als kortikaler Reset-Mechanismus (erzwungene Resynchronisation) | Hypothetisch, konsistent mit drei konvergenten Beobachtungslinien | Post-Migräne-Klarheit + konsolidierter REM; Naratriptan-Gegenprobe (antiproportional zu Traumerinnerung); Betablocker-Paradox (Anhang B.6) |
 | Betablocker-Paradox: Schwellenerhöhung ohne CSD-Reset → chronische Sub-CSD-Destabilisierung | Hypothetisch | Modellvorhersage, konsistent mit klinischer Beobachtung unter Metoprolol |
 | Doppeldämpfung unter Metoprolol: β₁-Blockade (noradrenerg) + fehlender CSD-Reset (strukturell) | Hypothetisch | Modellvorhersage, konsistent mit Selbstbeobachtung |

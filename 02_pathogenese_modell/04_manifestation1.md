@@ -154,13 +154,15 @@ Der auditorische Kortex verarbeitet temporal-sequenziell. Periodischer Input (Mu
 
 Die Asymmetrie folgt direkt aus der Verarbeitungsmodalität: ob externer Input den Off-State-Konflikt verschärft oder auflöst, hängt davon ab, ob die Modalität räumlich-parallele Kohärenz erfordert (visuell: Input = Last) oder temporal-sequenzielles Entrainment ermöglicht (auditorisch: Input = Stabilisierung). Dies erklärt die kompensatorische Emergenz von Musik als externem Taktsubstitut (vgl. Anhang D, D.6.4) — nicht als Ablenkung, sondern als funktionaler Ersatz für insuffizienten serotonergen Tonus im auditorischen Kortex.
 
-#### **4.3.4 Die Nap-Kaskade: Vom lokalen Schlaf zur thalamokortikalen Destabilisierung**
+#### **4.3.4 Die Nap-Kaskade: Parallele Manifestationen desselben Zustands**
 
-Die vollständige Kaskade verläuft über mehrere Stunden und ist phänomenologisch von der akuten Raphe-Oszillation (4.3.1) zu unterscheiden:
+**Rahmen (Synthese April 2026):** Der Nap ist nicht Auslöser der CSD-Kaskade, sondern — wie die CSD selbst — eine Downstream-Manifestation desselben Desynchronisationszustands. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig und nicht initiierend. Der Pre-Nap-HR ist der stärkste verfügbare Zustandsindikator: ≥80 bpm = System stabil, Nap safe; <75 bpm = System bereits destabilisiert, Nap beschleunigt Kaskade (PPV 85% bei ≥80 bpm, Anhang B.11). PRE-Kaskaderate 58%, POST unter LDX nur 11% — die stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
+
+Die mechanistische Abfolge verläuft über mehrere Stunden und ist phänomenologisch von der akuten Raphe-Oszillation (4.3.1) zu unterscheiden. Die Phasen beschreiben nicht eine kausale Kette (Nap → CSD), sondern die zeitliche Entfaltung eines bereits laufenden Destabilisierungsprozesses, in den der Nap als kompensatorischer Versuch eingebettet ist:
 
 **Phase 1 — Lokaler Schlaf (pre-Nap):** Externer Arousal-Drive fällt weg (Ende der Arbeit, monotone Situation). Regionen ohne externen Drive kippen asynchron in Off-States, je nach individueller metabolischer Last und Schwelle. Ergebnis: Ein Patchwork aus wachen und schlafenden kortikalen Arealen. Subjektiv: Mind Blanking, Bewusstseinsdruck, Konzentrationsverlust, Starren ohne zu sehen. Die Fähigkeit, in 1–2 Minuten einzuschlafen, ist in diesem Kontext kein Zeichen guter Schlafregulation, sondern der Moment, in dem die letzte Kompensation (sympathischer Tonus) wegfällt und die bereits laufende lokale Intrusion sich global ausbreitet.
 
-**Phase 2 — Nap als Fehlkompensation:** Der Zustand fühlt sich an wie Müdigkeit, ist aber keine im homöostatischen Sinne. Es fehlt nicht Schlaf, es fehlt serotonerger Arousal-Drive. Der Nap macht es schlimmer: Der Kortex, der partiell offline war, geht vollständig in den Schlafmodus. Beim Aufwachen muss er komplett reaktivieren — aber das Arousal-System, das vorher schon zu schwach war, ist jetzt nicht stärker. Die posterioren Regionen bleiben im Off-State hängen.
+**Phase 2 — Nap als kompensatorischer Versuch:** Der Zustand fühlt sich an wie Müdigkeit, ist aber keine im homöostatischen Sinne. Es fehlt nicht Schlaf, es fehlt serotonerger Arousal-Drive. Der Nap ist der Versuch des Systems, über einen globalen Down-State die Kohärenz wiederherzustellen. Bei stabilem Ausgangszustand (Pre-Nap-HR ≥80 bpm) gelingt dies — der Nap wirkt als symmetrische Reaktivierung. Bei bereits destabilisiertem System (Pre-Nap-HR <75 bpm) verschärft der Nap den Zustand: Der Kortex, der partiell offline war, geht vollständig in den Schlafmodus. Beim Aufwachen muss er komplett reaktivieren — aber das Arousal-System, das vorher schon zu schwach war, ist jetzt nicht stärker. Die posterioren Regionen bleiben im Off-State hängen.
 
 **Phase 3 — Prolongierte Sleep Inertia (post-Nap):** Der posteriore Kortex produziert spontane Up-State-Bursts (nicht stimulusgetrieben) und Down-States (Schweigen) im Wechsel. Der Thalamus kann nicht unterscheiden, ob kortikaler Output von echter sensorischer Verarbeitung stammt oder von einem spontanen Burst in einer bistabilen Region. Er sieht ein Signal, das zwischen „volle Verarbeitung" und „keine Antwort" fluktuiert. Das ist schlimmer als konstante Insuffizienz, weil er nicht einmal stabil kompensieren kann.
 
@@ -178,9 +180,11 @@ Die vollständige Kaskade verläuft über mehrere Stunden und ist phänomenologi
 
 Am Thalamus ist das Netto-Ergebnis identisch. In allen drei Kontexten ist der Kortex ein topologisch fragmentiertes Patchwork, das keinen stabilen globalen Zustand erreicht. Was sich ändert, ist das Label: „lokaler Schlaf" bei Wachheit, „Schlaffragmentierung" in der Nacht.
 
-**Quantitative Stützung (Tracker-Daten, Anhang B.5):** Nächte mit höherer Fragmentierung (gemessen als Noise-Fragmente <5 min im Deep-Kanal) führen signifikant häufiger zu kompensatorischen Folge-Naps am nächsten Tag (r=0,276, p=0,019, n=79). Der Befund ist paradox: Fragmentierte Nächte zeigen *höhere* Deep-Gesamtdauer (129 vs. 106 min bei Nächten ohne Folge-Nap). Der Tracker klassifiziert genug Minuten als Deep — die Quantität stimmt, die Qualität nicht. Das Gehirn registriert korrekt, dass kein restaurativer SWS stattfand, und triggert kompensatorisches Schlafverhalten — das dann über die oben beschriebene Nap-Kaskade in Phase 1 einsteigt.
+**Quantitative Stützung (Tracker-Daten, Anhang B.5, B.11):** Nächte mit höherer Fragmentierung (gemessen als Noise-Fragmente <5 min im Deep-Kanal) führen signifikant häufiger zu kompensatorischen Folge-Naps am nächsten Tag (r=0,276, p=0,019, n=79). Der Befund ist paradox: Fragmentierte Nächte zeigen *höhere* Deep-Gesamtdauer (129 vs. 106 min bei Nächten ohne Folge-Nap). Der Tracker klassifiziert genug Minuten als Deep — die Quantität stimmt, die Qualität nicht. Das Gehirn registriert korrekt, dass kein restaurativer SWS stattfand, und triggert kompensatorisches Schlafverhalten.
 
-Unter LDX ist dieser Zusammenhang aufgelöst: POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die verbleibenden POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch externe Faktoren motiviert (verkürzte Schlafzeit, spätes Zubettgehen). Die pharmakologische Synchronisation über die Raphe adressiert den Upstream-Defekt: stabilerer serotonerger Tonus → globale kortikale Kohärenz sowohl im Schlaf als auch im Wachzustand → kein kompensatorischer Nap-Bedarf → keine Kaskade.
+**Nap-Outcome ist zustandsabhängig, nicht dauerabhängig (Anhang B.11):** 34 Naps zeigen: Dauer ist kein Diskriminator (OK: 50 min vs. KASKADE: 53 min). Der Pre-Nap-HR (60 min vor Nap) trennt die Outcomes: ≥80 bpm → PPV 85% für sicheren Nap; <75 bpm → System bereits destabilisiert. PRE: 58% Kaskade; POST (LDX): nur 11%. Der Nap ist Indikator für den Systemzustand, nicht Auslöser der Kaskade.
+
+Unter LDX ist der kompensatorische Zusammenhang aufgelöst: POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die verbleibenden POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch externe Faktoren motiviert (verkürzte Schlafzeit, spätes Zubettgehen). Die pharmakologische Synchronisation über die Raphe adressiert den Upstream-Defekt: stabilerer serotonerger Tonus → globale kortikale Kohärenz sowohl im Schlaf als auch im Wachzustand → kein kompensatorischer Nap-Bedarf → keine Kaskade.
 
 #### **4.3.5 Trigeminale Sensitisierung als parallele Kaskade**
 
@@ -333,7 +337,7 @@ Eine vollständige CSD-Welle depolarisiert den gesamten Kortex einmal durch — 
 
 Funktional ist dies dasselbe, was der in Anhang C beschriebene Bewusstseinsreset durch einen optimal getimten Powernap approximiert — nur brutal und unkontrolliert.
 
-#### **4.5.2 Drei konvergente Evidenzlinien**
+#### **4.5.2 Konvergente Evidenzlinien**
 
 **1. Post-Migräne-Klarheit und konsolidierter REM**
 
@@ -348,6 +352,14 @@ Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall → verhinde
 **3. Betablocker-Paradox**
 
 Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren. (Ausführliche Analyse in 4.5.3.)
+
+**4. Anfallstiming auf ansteigender Flanke (Phasenmodell, Anhang B.12)**
+
+15 Anfälle (PRE) korrelieren nicht mit dem Minimum des HR-Drop-Rhythmus, sondern mit der **ansteigenden Flanke** danach (Median: 2 Tage post-Minimum). Am Minimum ist die Fragmentierung maximal, aber das System insgesamt gedämpft — kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, kortikale Kohärenz noch nicht wiederhergestellt → Diskrepanz zwischen steigendem Arousal und fragmentiertem Kortex → CSD-Schwelle erreicht. Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude) — **Phasenmodell**, nicht Schwellenmodell. Dies verstärkt die CSD-als-Reset-These: Der Reset erfolgt, wenn das System aus der maximalen Desynchronisation heraus wieder Arousal aufbaut, nicht am Tiefpunkt selbst.
+
+**5. Traumerinnerung als subjektiver Kohärenzmarker (Anhang B.13)**
+
+POST zeigt bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nicht, ob der REM global konsolidiert ist — die Traumerinnerung ist das sensitivere Instrument. Dreifache Dissoziation: PRE ohne Anfall → keine Traumerinnerung (fragmentierter REM); PRE nach CSD → intensive Traumerinnerung (CSD-erzwungene Resynchronisation → konsolidierter REM); POST (LDX) → reguläre Traumerinnerung (pharmakologische Synchronisation ersetzt CSD-Reset). Die Abnahme bewussten Träumens unter Betablocker/Naratriptan ist antiproportional zum sub-CSD-Naratriptankonsum — wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
 
 #### **4.5.3 Betablocker-Paradox: Schwellensenkung und Propagationsdämpfung** *(Revision März 2026)*
 
@@ -392,9 +404,9 @@ LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente tha
 
 #### **4.5.5 Evolutionäre Einordnung**
 
-Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution *für* die Fähigkeit zur CSD, nicht gegen sie. Der Schmerz ist die metabolische Rechnung, nicht die Funktion.
+Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht und für positive Selektion *für* die CSD-Fähigkeit. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution für die Fähigkeit zur CSD, nicht gegen sie. Der Schmerz ist die metabolische Rechnung, nicht die Funktion. Die ~15% Prävalenz ist damit kein epidemiologisches Rätsel, sondern ein Hinweis darauf, dass die Fähigkeit zur erzwungenen kortikalen Resynchronisation einen Selektionsvorteil darstellt — in Populationen mit variabler Raphe-Stabilität überlebt der Organismus, der sich bei Bedarf „hart rebooten" kann.
 
-Die ~6,5-Tage-Periodizität (im vorliegenden Fall) ist dann kein Anfallszyklus, sondern ein Wartungszyklus: Die Desynchronisation akkumuliert, bis der Funktionsverlust gefährlicher ist als die CSD-Kosten.
+Die quasi-wöchentliche Periodizität (7,5 Tage im HR-Drop-Rhythmus, vgl. Anhang B.10) ist dann kein Anfallszyklus, sondern ein Wartungszyklus: Die Desynchronisation akkumuliert über den Schwebungszyklus, bis der Funktionsverlust gefährlicher ist als die CSD-Kosten. Das Anfallstiming auf der ansteigenden Flanke (Anhang B.12) passt: Der Reset erfolgt nicht am Tiefpunkt, sondern wenn das System wieder Arousal aufbaut und die Diskrepanz zwischen Drive und Kohärenz maximal wird.
 
 #### **4.5.6 Zyklische Akkumulation und der 6–7-Tage-Rhythmus**
 
@@ -407,6 +419,6 @@ Der in Abschnitt 2.5.1 beschriebene 26-h-Zyklus interagiert mit dem lokalen Schl
 | **Lokaler Schlaf** | Maximale Anfälligkeit — Regionen ohne externen Drive erfahren maximalen Mismatch zwischen endogener und sozialer Phase |
 | **Sub-CSD-Akkumulation** | Tägliche partielle Destabilisierung akkumuliert über die Woche, weil weder CSD-Reset noch adäquate SWS-Renormalisierung erfolgt |
 
-Am Punkt maximaler Phasenopposition reicht minimale Perturbation. Der Migräneanfall resynchronisiert das System partiell (CSD als Reset), und der Zyklus beginnt erneut.
+Die maximale Vulnerabilität liegt jedoch nicht am Tiefpunkt selbst, sondern auf der **ansteigenden Flanke** danach (Anhang B.12): Am Minimum ist das System gedämpft; beim Wiederanstieg des sympathischen Drive entsteht die Diskrepanz zwischen steigendem Arousal und noch fragmentiertem Kortex → CSD-Schwelle erreicht (Median 2 Tage nach Minimum, n=15). Minimale Perturbation reicht auf dieser Flanke. Der Migräneanfall resynchronisiert das System partiell (CSD als Reset), und der Zyklus beginnt erneut.
 
 **Diagnostische Implikation:** Ein einzelnes Schlaf-EEG ist diagnostisch wertlos für dieses Muster, weil es einen zufälligen Punkt im Zyklus erfasst. Aussagekräftig wäre ein 14-Tage-EEG mit spezifischer Analyse der zyklusweisen N3-Position als Funktion der Tage seit dem letzten Migräneanfall. Kein Standardprotokoll misst dies.

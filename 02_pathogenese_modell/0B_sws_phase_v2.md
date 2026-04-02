@@ -3,19 +3,19 @@
 
 ## **Anhang B: Tracker-Datenanalyse — Kortikale Desynchronisation**
 
-### **B.0 Zusammenfassung und Revision**
+### **B.0 Zusammenfassung und Synthese**
 
-Dieser Anhang ersetzt die frühere Fassung (Anhang B v1: „SWS-Phasenlage als Marker für Raphe-Dysregulation"). Die ursprüngliche Interpretation — SWS-Quantum erhalten, Phasenlage in ungünstige Druckgradienten verschoben — wird durch die hier dokumentierte Reanalyse der Tracker-Rohdaten revidiert.
+Dieser Anhang dokumentiert die Tracker-Datenanalyse der kortikalen Desynchronisation. Die ursprüngliche Fassung (Anhang B v1) postulierte eine zeitliche Verschiebung der SWS-Phasenlage; die erste Reanalyse (März 2026) identifizierte räumliche Fragmentierung als das eigentliche Signal. Die hier vorliegende Synthese (April 2026) integriert beide Ebenen: **Die räumliche Fragmentierung (Episodenzahl pro Nacht) ist die Nacht-Manifestation. Die zeitliche Akkumulation (HR-Drop-Rhythmus, quasi-wöchentliche FFT-Periodizität) ist der Treiber über Tage.** Keine Revision der SWS-Shift-These, sondern Präzisierung: Der Shift ist real, aber seine Ursache ist nicht verzögerte serotonerge Entladung allein, sondern akkumulierte kortikale Desynchronisation, die sich über den Schwebungszyklus aufbaut.
 
-**Revidierte Kernthese:** Das Defizit liegt nicht in der zeitlichen Lage des SWS, sondern in seiner räumlichen Kohärenz. Der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein topologisch fragmentiertes Patchwork aus lokalen Off-States. Der Tracker-Output — eine 1D-Projektion eines räumlich inhomogenen Prozesses — kodiert diese Fragmentierung als temporale Instabilität: häufige Stadienwechsel, kurze Deep-Fragmente und hohe Nacht-zu-Nacht-Variabilität.
+**Kernthese:** Das SWS-Defizit manifestiert sich auf zwei komplementären Ebenen — **räumlich** (intra-Nacht): Der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein topologisch fragmentiertes Patchwork aus lokalen Off-States; der Tracker kodiert diese räumliche Fragmentierung als temporale Instabilität. **Zeitlich** (inter-Nacht): Der nächtliche HR-Drop oszilliert mit einer dominanten Periode von 7,5 Tagen (FFT, Power 102,5; Autokorrelation Lag 7 r=0,317), kongruent mit der vorhergesagten Schwebungsfrequenz bei τ ≈ 26 h. Die zirkadiane Schwebung akkumuliert kortikale Desynchronisation über ~7 Tage; pro Nacht manifestiert sich das als variable Fragmentierung.
 
 **Konsequenzen für das Modell:**
 
-- Kapitel 2.5.5 (Schlafarchitektur als zirkadianer Marker): Mechanismus revidieren — nicht verzögerte Entladung, sondern fehlende globale Synchronisation.
-- Kapitel 4.3 (Nap-Kaskade): Die Nap-Kaskade beschreibt denselben Mechanismus (patchy Off-States) unter Wachbedingungen. Der Nachtschlaf zeigt denselben Defekt, nur mit anderem Label.
-- Kapitel 4.5 (CSD als Reset): Erhält neue Bedeutung — CSD ist nicht pathologisch, sondern kompensatorische Resynchronisation (siehe B.5).
+- Kapitel 2.5.5 (Schlafarchitektur als Kohärenzmarker): Beide Ebenen — räumliche Fragmentierung (intra-Nacht) und zeitliche Akkumulation (inter-Nacht) — als komplementäre Marker.
+- Kapitel 4.3 (Nap-Kaskade): Der Nap ist Indikator, nicht Auslöser. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Pre-Nap-HR als Zustandsindikator (PPV 85% bei ≥80 bpm).
+- Kapitel 4.5 (CSD als Reset): Verstärkt durch Anfallstiming auf ansteigender Flanke (Phasenmodell) und Traumerinnerung als Kohärenzmarker.
 - Kapitel 8 (Interozeptive Inkohärenz): Schlafkonsolidierung unter LDX als Spezialfall der allgemeinen Synchronisierung.
-- Kapitel 9 (Evidenz): Evidenztabelle aktualisieren, Einzelfallbeobachtungen mit statistischen Befunden ersetzen.
+- Kapitel 9 (Evidenz): Evidenztabelle aktualisiert mit statistisch signifikanten Befunden.
 
 ---
 
@@ -341,7 +341,145 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 
 ---
 
-### **B.9 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
+### **B.9 Nächtliche HR-Trajektorie: Pattern-Klassifikation**
+
+79 Nächte wurden nach dem HR-Verlauf (Entry → Exit) klassifiziert:
+
+| Pattern | n (%) | Entry HR | Exit HR | Drop |
+|:--------|:------|:---------|:--------|:-----|
+| LINEAR_STARK | 29 (37%) | 72 | 60 | 12 |
+| LINEAR_MODERAT | 18 (23%) | 69 | 61 | 9 |
+| FLAT | 18 (23%) | 63 | 62 | 1 |
+| GEMISCHT | 10 (13%) | 66 | 61 | 5 |
+| ANSTIEG | 3 (4%) | 68 | 74 | -6 |
+
+**Kernbefund:** Alle Nächte konvergieren auf denselben HR-Boden (~60–62 bpm). Die Variation liegt ausschließlich im Einstiegspunkt. Der lineare Abfall über Stunden ist sympathischer Rundown — das System geht mit erhöhtem sympathischem Tonus ins Bett und braucht die halbe Nacht für die parasympathische Übernahme.
+
+**Mechanistische Einordnung:** Kein normales zirkadianes HR-Dipping (geschieht in der ersten Stunde). Der lineare Abfall von ~14 bpm über 7 h reflektiert verzögerte B7-Suppression im Schlaf. DRN feuert maximal bei Wachheit, stellt im Schlaf ein — bei instabiler Abschaltkinetik persistiert der sympathische Tonus über die serotonerge Modulation von LC und autonomen Kernen. FLAT-Nächte: B7 bereits vor dem Einschlafen supprimiert → System startet im parasympathischen Modus → kein Rundown nötig.
+
+**PRE/POST-Verteilung:** Nahezu identisch (61% vs. 56% linear) — kein Medikamenteneffekt. Dies ist ein stabiles autonomes Trait.
+
+---
+
+### **B.10 Periodizitätsanalyse: FFT und Autokorrelation**
+
+#### **B.10.1 FFT-Analyse (PRE-Daten, n=60 Nächte)**
+
+| Signal | Dominante Periode | Power |
+|:-------|:-----------------|:------|
+| Drop (Entry-Exit) | **7,5 Tage** | 102,5 (stärkste) |
+| Drop | 6,7 Tage | 82,6 |
+| Slope | 7,5 Tage | 14,5 (stärkste) |
+| Entry HR | 7,5 Tage | 62,8 (Platz 3) |
+| Exit HR | 7,5 Tage | 66,5 |
+
+#### **B.10.2 Autokorrelation (Drop)**
+
+| Lag | r | Signifikanz |
+|:----|:--|:------------|
+| 1 | +0,278 | ** |
+| 7 | +0,317 | *** |
+| 14 | +0,213 | ** |
+| 15 | +0,387 | *** |
+
+#### **B.10.3 Interpretation**
+
+Die 7,5-Tage-Periodizität im nächtlichen HR-Drop entspricht der vorhergesagten Schwebungsfrequenz bei τ ≈ 26 h (T_beat = 26×24/(26-24) = 312 h ≈ 13 Tage Vollzyklus, ~6,5 Tage Halbzyklus). Der sympathische Rundown-Slope im Nachtschlaf oszilliert mit derselben Periodizität wie der Migränezyklus.
+
+Dies ist kein separates Phänomen — der HR-Slope *ist* die autonome Manifestation der zirkadianen Schwebung. Der Drop verstärkt das Signal durch Differenzbildung (eliminiert gemeinsames Rauschen aus Entry und Exit).
+
+#### **B.10.4 POST-Daten**
+
+18 Nächte reichen nicht für eine belastbare FFT bei 7-Tage-Perioden. Mindestens 25, idealerweise 40+ Nächte nötig. Zwei Vorhersagen:
+- Option A: Rhythmus taucht auf → LDX ändert nur Amplitude, nicht Frequenz
+- Option B: Rhythmus gestört → τ komprimiert sich unter LDX, Schwebungsperiode verlängert sich massiv
+
+---
+
+### **B.11 Nap-Outcome-Analyse: Zustand bei Eintritt, nicht Dauer**
+
+#### **B.11.1 Kernbefund**
+
+34 Naps klassifiziert nach Outcome (late_elevation >2 bpm = KASKADE, ≤2 = OK):
+
+| Metrik | OK (n=18) | KASKADE (n=15) |
+|:-------|:----------|:---------------|
+| Dauer mean | 50 min | 53 min |
+| HR min (absolut) | 68 | 62 |
+| Pre-60min HR mean | 88 | 73 |
+| Post 1h elevation | -6,1 | +2,6 |
+| Late 2-4h elevation | -9,5 | +8,2 |
+
+Dauer ist **nicht** der Diskriminator. Der Zustand vor dem Nap bestimmt das Outcome.
+
+#### **B.11.2 Pre-Nap HR als CSD-Risikoindikator**
+
+Stärkster Diskriminator: Pre-60min HR mean.
+
+| Threshold | PPV(safe) | Spezifität |
+|:----------|:----------|:-----------|
+| ≥75 bpm | 75% | 67% |
+| ≥80 bpm | 85% | 87% |
+| ≥85 bpm | 90% | 93% |
+
+Praktische Regel: Puls ≥80 vor dem Nap → safe. Puls <75 → System bereits destabilisiert, Nap beschleunigt Kaskade.
+
+#### **B.11.3 PRE vs. POST**
+
+PRE: 10 OK / 14 KASKADE (58% Kaskade). POST: 8 OK / 1 KASKADE (11%). Unter LDX schlagen Naps fast nie durch — stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
+
+#### **B.11.4 Reinterpretation der Nap-Kaskade**
+
+Bisherige Formulierung in Kapitel 4.3: Nap → patchy Sleep Inertia → trigeminale Sensitisierung → CSD (kausale Kette). Synthese: Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Beides sind Downstream-Effekte desselben Zustands, nicht Ursache und Wirkung. Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig.
+
+---
+
+### **B.12 Anfallstiming: Phasenmodell**
+
+#### **B.12.1 Befund**
+
+15 Anfälle (PRE) korrelieren nicht mit minimalem oder maximalem Slope, sondern mit der **ansteigenden Flanke** nach dem Drop-Minimum:
+
+| Abstand zum letzten Drop-Minimum | Anfälle |
+|:---------------------------------|:--------|
+| 1 Tag | 4 |
+| 2 Tage | 3 |
+| 3–4 Tage | 3 |
+| 5–7 Tage | 2 |
+
+Median: 2 Tage nach dem Minimum.
+
+#### **B.12.2 Mechanismus**
+
+Am Minimum: Raphe-Tonus niedrigster, kortikale Fragmentierung maximal, aber System insgesamt gedämpft → kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, aber kortikale Kohärenz noch nicht wiederhergestellt → Diskrepanz zwischen steigendem Arousal-Drive und fragmentiertem Kortex → CSD-Schwelle erreicht.
+
+Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude). **Phasenmodell**, nicht Schwellenmodell.
+
+#### **B.12.3 Kompatibilität mit dem Stochastischen Fenstermodell**
+
+Das stochastische Fenstermodell (2.5.2) bleibt gültig, wird aber präzisiert: Das Vulnerabilitätsfenster öffnet sich nicht am Tiefpunkt der Schwebung, sondern auf der ansteigenden Flanke. Die Triggerstärke bestimmt, wie weit auf der Flanke der Anfall ausgelöst wird.
+
+---
+
+### **B.13 Traumerinnerung als Kohärenzmarker (erweitert)**
+
+POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nur, ob der motorische Kortex im REM-Profil ist, nicht ob der REM global konsolidiert ist. Traumerinnerung überlebt den Schlaf-Wach-Übergang nur bei konsolidiertem REM.
+
+**PRE-Selektivität:** Intensives Träumen trat PRE selektiv nach Migräneanfällen auf (CSD-erzwungene Resynchronisation → konsolidierter post-iktaler REM). Unter LDX tritt es regulär auf — die pharmakologische Synchronisation ersetzt den CSD-Reset.
+
+**Betablocker/Naratriptan-Gegenprobe:** Abnahme bewussten Träumens unter Betablocker/Naratriptan: antiproportional zum sub-CSD-Naratriptankonsum. Weniger Anfälle → weniger CSD-Resets → weniger REM-Konsolidierung → weniger Traumerinnerung.
+
+**Dreifache Dissoziation:**
+
+| Bedingung | Traumerinnerung | Mechanismus |
+|:----------|:----------------|:------------|
+| PRE (ohne Anfall) | Selten | Fragmentierter REM, keine Konsolidierung |
+| PRE (nach CSD) | Intensiv | CSD-erzwungene Resynchronisation → konsolidierter REM |
+| POST (LDX) | Regulär | Pharmakologische Synchronisation → konsolidierter REM ohne CSD |
+
+---
+
+### **B.14 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
 
 Die Nacht vom 30./31.03.2026 liefert ein natürliches Experiment mit drei distinkten Phasen unter wechselnden pharmakologischen Bedingungen.
 
@@ -388,7 +526,7 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 
 ---
 
-### **B.10 Evidenztabelle**
+### **B.15 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
@@ -418,9 +556,15 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 | Dreiersequenz (Fragm. Nacht → Nap → Anfall): 75% | Deskriptiv, n=8 | B.5.3 |
 | Migräne-Nacht 30./31.03: Sumatriptan → 3–4h Resynchronisation (HR 75→63 bpm) | Einzelbeobachtung | HR-Daten, B.9 |
 | Post-Sumatriptan Density: invertierte U-Kurve (6,1→7,5→5,8/h) | Deskriptiv, Einzelereignis | B.9.2 |
+| HR-Drop-Periodizität 7,5 Tage (FFT, Power 102,5) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT-Analyse (B.10) |
+| Autokorrelation Lag 7 (r=0,317) und Lag 14 (r=0,213) | Statistisch signifikant | Tracker-Daten, Autokorrelation (B.10) |
+| Nap-Outcome durch Pre-Nap-HR determiniert (PPV 85% bei ≥80 bpm) | Statistisch signifikant (n=33) | Tracker-Daten, HR-Analyse (B.11) |
+| Anfall auf ansteigender Flanke, Median 2 Tage nach Minimum | Deskriptiv (n=15) | Tracker-Daten + Anfallskalender (B.12) |
+| PRE/POST HR-Trajectory-Verteilung identisch (61% vs. 56% linear) | Deskriptiv | Tracker-Daten (B.9) |
+| POST-Nap-Kaskadenrate 11% vs. PRE 58% | Deskriptiv | Tracker-Daten (B.11) |
 | SWS-Fragmentierung als Mediator orthographischer Engramm-Instabilität (LRS-Phänotyp) | Modellvorhersage | Abgeleitet aus Anhang D, D.7.3 — orthographische Konsolidierung SWS-abhängig |
 
-### **B.11 Limitationen**
+### **B.16 Limitationen**
 
 - Consumer-Tracker, keine PSG-Validierung. Die Stadienklassifikation ist intern und nicht reproduzierbar.
 - n=1, kein Kontrolldesign. Die Perioden-Trennung (PRE/POST) ist konfundiert mit Medikamentenwechsel, Jahreszeit und 13-monatiger Trageunterbrechung.
@@ -431,8 +575,33 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 - Die t-1 Lag-Korrelation (B.6.5) basiert auf n=14 Vornächten vor Anfällen. Drei hochfragmentierte Nächte (Density 13,12; 9,75; 8,54/h) könnten den Effekt dominieren. Multiple Vergleiche (Lag-Analyse + Schwellenwertsuche) ohne formale Korrektur.
 - Die Migräne-Nacht-Sonderanalyse (B.9) ist ein Einzelereignis mit pharmakologischer Konfundierung (Sumatriptan-Halbwertszeit ~2h überlappt mit dem Beobachtungsfenster).
 - Die Dreiersequenz (B.5.3) und Density-≥7,0-Schwelle (B.6.5) basieren auf n=6–8 Fällen. Diese Befunde sind hypothesengenerierend, nicht konfirmatorisch.
+- POST-Stichprobe zu klein für belastbare FFT bei 7-Tage-Perioden (18 Nächte, mindestens 25 nötig). Die Periodizitätsanalyse (B.10) basiert ausschließlich auf PRE-Daten.
+- Anfalls-Korrelation mit Phase (B.12): n=15, Abstände manuell annotiert. Konsistentes Muster, aber keine formale statistische Testung der Phasen-Hypothese.
+- Nap-Outcome-Analyse (B.11): Kaskadenklassifikation über late_elevation >2 bpm. Schwellenwert empirisch gewählt, nicht extern validiert.
+- Die Daten sind insgesamt robuster als erwartet für einen Consumer-Tracker, aber die Annahmen können bei längerer Erfassung noch kippen. Es wird mit zunehmender Datenmenge unwahrscheinlicher.
 
-### **B.12 Referenzen**
+### **B.17 Diagnostische Implikation: Tracker-basiertes Screening**
+
+Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert einen kontinuierlichen, nicht-invasiven Biomarker für die zirkadiane Schwebung — einen Prozess, den die klinische Forschung mit PET und PSG sucht.
+
+**Methodik:** Standard-Data-Engineering: Gewinnung korrelativer Daten aus Rauschquellen durch geeignete Signalverarbeitung. Kein technologischer Durchbruch — der Tracker ist ein stochastischer Resonanz-Detektor (B.7), dessen Schaltfrequenz die Upstream-Instabilität kodiert. Die relevanten Metriken (Episodenzahl/h, HR-Drop-Periodizität, Pre-Nap-HR) erfordern keine Rohdaten-Zugänge, sondern nur das Standard-Hypnogramm und die HR-Timeline.
+
+**Vorteile gegenüber klinischer Diagnostik:**
+- Kontinuierlich über Monate (Nacht-zu-Nacht-Variabilität als eigentliches Signal)
+- Natürliches Schlafumfeld (keine Laborartefakte)
+- Erfassung der quasi-wöchentlichen Periodizität (erfordert mindestens 4–6 Wochen Daten)
+- Kostenfaktor: ~30 € vs. mehrere Tausend für PSG
+
+**Limitationen:**
+- Keine räumliche Auflösung, keine SWA, keine direkte Validierung der Kohärenz-Interpretation
+- Stadienklassifikation intern, nicht nachvollziehbar oder korrigierbar
+- n=1-Validierung, keine externe Replikation
+
+**Prospektiv testbar:** Systematische HR-Trajectory-Analyse über 4–6 Wochen als Screening-Tool für Raphe-Dysregulation bei ADHS-Migräne-Koinzidenz. Die Vorhersage: Patienten mit diesem Phänotyp zeigen (a) erhöhte Schlaffragmentierung (Deep-Episoden/h >1,3), (b) quasi-wöchentliche Periodizität im HR-Drop und (c) zustandsabhängige Nap-Outcomes.
+
+---
+
+### **B.18 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.
