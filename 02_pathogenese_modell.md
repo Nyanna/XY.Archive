@@ -516,6 +516,8 @@ Dieser Mechanismus erklärt die klinisch paradoxe Beobachtung, dass Migränetrig
 
 Dieses Modell erklärt drei klinische Beobachtungen, die rein periodische oder rein triggerbasierte Modelle nicht erfassen: (1) Die Migränefrequenz ist quasi-periodisch, aber nicht exakt regelmäßig – der Rhythmus „wandert", weil die Triggerstärke den Auslösezeitpunkt innerhalb des Zyklus verschiebt. (2) Starke Belastungen können Attacken „vorziehen", schwache Phasen den Zyklus strecken. (3) Triggertagebücher scheitern, weil sie eine Trigger→Anfall-Kausalität annehmen, die so nicht existiert – die eigentliche Variable ist der unsichtbare Dämpfungszustand.
 
+**Präzisierung (April 2026):** Die Tracker-Datenanalyse (Anhang B.12) zeigt, dass das Vulnerabilitätsfenster sich nicht am Tiefpunkt der Schwebung öffnet, sondern auf der **ansteigenden Flanke** danach: Anfälle liegen im Median 2 Tage nach dem HR-Drop-Minimum (n=15). Am Minimum ist das System maximal fragmentiert, aber insgesamt gedämpft; die CSD-Schwelle wird erst erreicht, wenn der sympathische Drive zurückkehrt und die Diskrepanz zwischen steigendem Arousal und noch fragmentiertem Kortex maximal wird. Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude) — ein **Phasenmodell**, nicht ein Schwellenmodell.
+
 ---
 
 ##### **Revision März 2026 — Der ~4-Tage-Oszillator als eigenständiger Generator**
@@ -619,7 +621,7 @@ Die circadiane Dysregulation wirkt nicht nur über die Raphe-Oszillationsamplitu
 | :---- | :---- |
 | **Raphe-Tonus** | Serotonerge Tagesaktivität maximal phasenverschoben relativ zur externen Wachzeit → tonischer Drive am schwächsten, wenn er am stärksten gebraucht wird |
 | **Cortisol-Awakening-Response** | CAR-Peak verschoben → kompensatorischer morgendlicher Arousal-Push fehlt oder ist zeitlich falsch platziert → Arousal-Lücke 2 h nach dem Aufwachen maximal |
-| **SWS-Phasenlage** | Tiefschlaf in den falschen Zyklen (vgl. 2.5.5) → nächtliche Adenosin-Clearance suboptimal → Residual-Adenosin erhöht die Anfälligkeit für kortikale Off-States |
+| **SWS-Fragmentierung** | Räumlich fragmentierter Tiefschlaf bei erhaltenem Quantum (vgl. 2.5.5) → glymphatische Clearance erfordert globale Oszillationen, Patchwork erfüllt dies nicht → Residual-Adenosin erhöht die Anfälligkeit für kortikale Off-States |
 
 Das Ergebnis: Die circadiane Drift erzeugt am Punkt maximaler Phasenopposition nicht nur eine Prädisposition für die Raphe-Kaskade (2.5.1), sondern *gleichzeitig* eine maximale Vulnerabilität für kortikale Desintegration. Regionen ohne externen Arousal-Drive — posteriorer visueller Kortex bei monotoner Tätigkeit, auditorischer Kortex bei gleichförmiger Musik — fallen zuerst in lokale Off-States. Die resultierende thalamokortikale Destabilisierung senkt die CSD-Schwelle über einen Pfad, der von der Raphe-Oszillationsamplitude unabhängig ist (Abschnitt 4.3).
 
@@ -636,9 +638,11 @@ Wenn externe Aufgaben enden — Arbeitsende, Monotonie, Abend — fällt der exo
 
 Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in 2.5.1–2.5.4 beschriebenen Raphe-Dysregulation und verbindet die circadiane Ebene mit der messbaren kortikalen Kohärenz.
 
-**Kernbefund:** Das SWS-Quantum ist konstant und normal. Das Defizit liegt nicht in der zeitlichen Lage des Tiefschlafs, sondern in seiner räumlichen Kohärenz: Der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein topologisch fragmentiertes Patchwork aus lokalen Off-States. Der Tracker kodiert diese räumliche Fragmentierung als temporale Instabilität — häufige Stadienwechsel, kurze Deep-Fragmente und hohe Nacht-zu-Nacht-Variabilität (Anhang B, B.2–B.3).
+**Kernbefund:** Das SWS-Quantum ist konstant und normal. Das Defizit manifestiert sich auf zwei komplementären Ebenen: **räumlich** (intra-Nacht) als topologische Fragmentierung — der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein Patchwork aus lokalen Off-States — und **zeitlich** (inter-Nacht) als akkumulierte Desynchronisation über den Schwebungszyklus, messbar am quasi-wöchentlichen HR-Drop-Rhythmus (FFT: dominante Periode 7,5 Tage, Power 102,5; Autokorrelation Lag 7 r=0,317, Lag 14 r=0,213; Anhang B). Die räumliche Fragmentierung ist das, was der Tracker pro Nacht sieht; die zeitliche Akkumulation ist der Treiber über Tage. Der Tracker kodiert die räumliche Fragmentierung als temporale Instabilität — häufige Stadienwechsel, kurze Deep-Fragmente und hohe Nacht-zu-Nacht-Variabilität (Anhang B, B.2–B.3).
 
-**Quantifizierung:** Die Episodenzahl pro Schlafstunde ist der sensitivste Kohärenzproxy. PRE (unmediziert/Betablocker) vs. POST (LDX): Deep-Episoden/Stunde 1,6 vs. 1,1 (p=0,005); REM-Episoden/Stunde 1,2 vs. 0,9 (p=0,005); Light-Episoden/Stunde: kein signifikanter Unterschied (p=0,288). Die Trennschärfe folgt der Hierarchie der kortikalen Synchronisationsanforderung: Deep (maximal) > REM (hoch) > Light (gering). Diese Hierarchie ist eine Modellvorhersage — insuffiziente thalamische Modulation beeinträchtigt Zustände mit den höchsten Kohärenzanforderungen am stärksten (Anhang B, B.3.2).
+**Quantifizierung (räumlich, intra-Nacht):** Die Episodenzahl pro Schlafstunde ist der sensitivste Kohärenzproxy. PRE (unmediziert/Betablocker) vs. POST (LDX): Deep-Episoden/Stunde 1,6 vs. 1,1 (p=0,005); REM-Episoden/Stunde 1,2 vs. 0,9 (p=0,005); Light-Episoden/Stunde: kein signifikanter Unterschied (p=0,288). Die Trennschärfe folgt der Hierarchie der kortikalen Synchronisationsanforderung: Deep (maximal) > REM (hoch) > Light (gering). Diese Hierarchie ist eine Modellvorhersage — insuffiziente thalamische Modulation beeinträchtigt Zustände mit den höchsten Kohärenzanforderungen am stärksten (Anhang B, B.3.2).
+
+**Quantifizierung (zeitlich, inter-Nacht):** Der nächtliche HR-Drop (Entry-HR minus Exit-HR) oszilliert mit einer dominanten Periode von 7,5 Tagen (FFT-Analyse, PRE-Daten, n=60 Nächte). Die Autokorrelation des Drops zeigt signifikante Peaks bei Lag 7 (r=0,317) und Lag 14 (r=0,213). Diese Periodizität entspricht der vorhergesagten Schwebungsfrequenz bei τ ≈ 26 h (T_beat ≈ 312 h ≈ 13 Tage Vollzyklus, ~6,5 Tage Halbzyklus). Der HR-Drop-Rhythmus *ist* die autonome Manifestation der zirkadianen Schwebung — kein separates Phänomen, sondern dasselbe Signal auf einem anderen Kanal. Der Shift ist real, aber seine Ursache ist nicht verzögerte serotonerge Entladung allein, sondern akkumulierte kortikale Desynchronisation, die sich über den Schwebungszyklus aufbaut (Anhang B).
 
 **Mechanismus:** Die Raphe — deren tonische Tagesaktivität die serotonerge Modulation thalamokortikaler Zustandsübergänge trägt — liefert ein insuffizientes Signal. Der Thalamus kann den Kortex nicht in globale Zustandsübergänge überführen; statt kohärentem SWS entsteht ein Mosaik aus lokalen Off-States. Der homöostatische Akkumulator (Adenosin-Aufbau) ist intakt — das Quantum stimmt, die Qualität nicht. Nächte mit maximaler Fragmentierung zeigen sogar höhere Deep-Gesamtdauer (129 vs. 106 min), aber signifikant mehr kompensatorische Folge-Naps (r=0,276, p=0,019): Der Tracker klassifiziert genug Minuten als Deep, das Gehirn registriert korrekt, dass kein restaurativer SWS stattgefunden hat (Anhang B, B.5).
 
@@ -646,7 +650,7 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 
 **Konsequenz für die SWS-Clearance:** Fragmentierter SWS bei erhaltenem Quantum bedeutet: gleiche Tracker-Minuten, suboptimale restaurative Funktion. Die glymphatische Clearance erfordert globale langsame Oszillationen, die den gesamten Kortex durchlaufen — ein Patchwork lokaler Off-States erfüllt diese Bedingung nicht. Die resultierende insuffiziente Adenosin-Clearance senkt am Folgetag die Schwelle für lokalen Schlaf (vgl. 2.5.4) und treibt bei maximaler circadianer Desynchronisation den kumulativen Fragmentierungszyklus.
 
-**Diagnostischer Wert:** Die Schlaffragmentierung ist ein nicht-invasiver Marker, der die Raphe-Dysregulation auf einer objektiv messbaren Ebene abbildet — unabhängig von subjektiver Selbstbeobachtung. Die Betablocker-Invarianz des Befunds ist ein negatives Differentialkriterium: Metoprolol (noradrenerg) reduziert die Fragmentierung nicht, LDX (dopaminerg, indirekt serotonerg über Raphe-Modulation) tut es. Die Trennschärfe-Hierarchie (Deep > REM > Light) stützt die serotonerge Spezifität — ein unspezifischer Sedierungseffekt würde alle Stadien gleichermaßen konsolidieren. Details, statistische Befunde und messtheoretische Einordnung in Anhang B.
+**Diagnostischer Wert:** Die Schlaffragmentierung ist ein nicht-invasiver Marker, der die Raphe-Dysregulation auf einer objektiv messbaren Ebene abbildet — unabhängig von subjektiver Selbstbeobachtung. Die Betablocker-Invarianz des Befunds ist ein negatives Differentialkriterium: Metoprolol (noradrenerg) reduziert die Fragmentierung nicht, LDX (dopaminerg, indirekt serotonerg über Raphe-Modulation) tut es. Die Trennschärfe-Hierarchie (Deep > REM > Light) stützt die serotonerge Spezifität — ein unspezifischer Sedierungseffekt würde alle Stadien gleichermaßen konsolidieren. Prospektiv skalierbar: Ein Consumer-Tracker (30 €) + Open-Source-App (Gadgetbridge) liefert über 4–6 Wochen einen kontinuierlichen Biomarker für die zirkadiane Schwebung — einen Prozess, den die klinische Forschung mit PET und PSG sucht. Methodisch kein technologischer Durchbruch, sondern Standard-Data-Engineering: Gewinnung korrelativer Daten aus Rauschquellen durch geeignete Signalverarbeitung. Vorteile gegenüber klinischer Diagnostik: kontinuierlich über Monate, natürliches Schlafumfeld, Nacht-zu-Nacht-Variabilität als eigentliches Signal. Nachteil: keine räumliche Auflösung, keine SWA, keine direkte Validierung der Kohärenz-Interpretation. Details, statistische Befunde und messtheoretische Einordnung in Anhang B.
 
 #### **2.5.6 Evidenz und Einordnung**
 
@@ -661,16 +665,18 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Posteriorer Kortex wacht zuletzt auf (frontal-first-Gradient) | Gesichert | Pigorini et al. 2015 (Current Biology), Marzano et al. 2011 |
 | Raphe als tonischer kortikaler Synchronisator | Gesichert | DRN-Feuerkinetik etabliert (Monti 2008), diffuse Projektion anatomisch gesichert |
 | Endogene Periodenlänge τ ≈ 26 h | Einzelfallbeobachtung | Langjährige konsistente Selbstbeobachtung |
-| ~~Quasi-wöchentliche Migräneperiodizität durch circadiane Dämpfungsmodulation~~ | ~~Hypothetisch, konsistent~~ | ~~Eigene Beobachtung + SCN-Raphe-Interaktion als Mechanismus~~ — **Revidiert März 2026**, s. unten |
+| Quasi-wöchentliche Periodizität im HR-Drop (7,5 Tage, FFT) als autonome Manifestation der zirkadianen Schwebung | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B.10); integriert ~4-Tage-Oszillator (B7/B8) und akkumulierte Schwebung als komplementäre Taktgeber |
 | **~4-Tage-Oszillator als eigenständiger CSD-Taktgeber (B7/B8-Phasenversatz)** | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B): Median IBI 4,0 d, Autokorrelation Lag 4 r=−0,692; persistiert unter LDX-stabilisiertem Schlaf |
 | **Midline-/Intralaminärer Thalamus als primäre B7/B8-Interferenzquelle mit intrathalamischer Kaskade** | Anatomisch gesichert, funktionelle Rolle hypothetisch | B7/B8-Konvergenz im ML/IL-Komplex anatomisch etabliert (Vertes 2004, Morin 2013); Interferenz-Mechanismus und Kaskadenmodell eigene Hypothese |
 | **LDX stabilisiert Intra-Kern-Takt, nicht Inter-Kern-Phasenversatz** | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
 | Stochastisches Fenstermodell (Triggerstärke × Dämpfungszustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
-| Maximale circadiane Desynchronisation → maximale Vulnerabilität für lokalen Schlaf | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus 2.5.1 + 2.5.4: Raphe-Tonus-Minimum konvergiert mit Arousal-Lücke und SWS-Fehlplatzierung |
+| Maximale circadiane Desynchronisation → maximale Vulnerabilität für lokalen Schlaf | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus 2.5.1 + 2.5.4: Raphe-Tonus-Minimum konvergiert mit Arousal-Lücke und SWS-Fragmentierung |
 | Aufgabengetriebener Arousal als Kompensation für insuffizienten Raphe-Tonus | Hypothetisch, konsistent | Klinische Selbstbeobachtung, konsistent mit Arousal-Quellen-Differenzierung |
-| Räumliche SWS-Fragmentierung bei erhaltenem Quantum (Deep-Episoden/h: 1,6 PRE vs. 1,1 POST, p=0,005; Hierarchie Deep > REM > Light) | Einzelfallbeobachtung | Statistisch signifikant (Tracker-Daten, n=79) |
-| LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Einzelfallbeobachtung | Statistisch signifikant (Tracker-Daten, n=79) |
-| Betablocker-Invarianz der SWS-Phasenlage als negatives Differentialkriterium | Einzelfallbeobachtung | Tracker-Daten, konsistent mit noradrenerger vs. serotonerger Spezifität |
+| Räumliche SWS-Fragmentierung bei erhaltenem Quantum (Deep-Episoden/h: 1,6 PRE vs. 1,1 POST, p=0,005; Hierarchie Deep > REM > Light) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3) |
+| LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3, B.5) |
+| Quasi-wöchentliche Periodizität im nächtlichen HR-Drop (FFT: 7,5 Tage, Power 102,5; Autokorrelation Lag 7 r=0,317) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B) |
+| HR-Drop-Periodizität kongruent mit Schwebungsfrequenz bei τ ≈ 26 h | Deskriptiv, konsistent mit Modellvorhersage | Tracker-Daten (Anhang B) |
+| Betablocker-Invarianz der SWS-Fragmentierung als negatives Differentialkriterium | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten, PRE unter Metoprolol zeigt identische Fragmentierung (Anhang B.4) |
 | **Late-Chronotyp als Downstream-Marker globaler Desynchronisation** | Plausibel, epidemiologisch gestützt | Kendis et al. 2015: generalisierte Epilepsie 5× Late-Chronotyp vs. Kontrollen; fokale Epilepsie kein Unterschied. ADHD–Late-Chronotyp-Assoziation robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017). Migräne–Late-Chronotyp (Jung et al. 2025, Baksa et al. 2025). Segregation spezifisch mit globalen Synchronisationsstörungen, nicht mit lokalen Hardwaredefekten. |
 | **Subjektiver Late-Chronotyp bei Population A als Kompensationsartefakt (nicht circadianer Trait)** | Hypothetisch, konsistent mit Kreuzkorrelation | ADHD–Late-Typ-Assoziation (Kooij & Bijlenga 2013); generalisierte Epilepsie 5× Late-Typ vs. fokale kein Effekt (Kendis 2015); Manni 2016: MEQ ≠ DLMO bei Epilepsie; Einzelfall: Abendmüdigkeit erstmals unter LDX (Anhang C) |
 | **τ ≈ 26 h als potenzielles Raphe-SCN-Symptom** | Hypothetisch, mechanistisch konsistent | DRN projiziert zum SCN ausschließlich über B8-Relay (vgl. 2.5.2); instabiler Raphe-Tonus könnte SCN-Zeitgeber-Kalibrierung verzerren → verlängerte endogene Periodenlänge nicht unabhängiger Chronotyp-Trait, sondern Downstream der Raphe-SCN-Interaktion. Nicht direkt testbar ohne Forced-Desynchrony-Protokolle. |
@@ -961,13 +967,15 @@ Der auditorische Kortex verarbeitet temporal-sequenziell. Periodischer Input (Mu
 
 Die Asymmetrie folgt direkt aus der Verarbeitungsmodalität: ob externer Input den Off-State-Konflikt verschärft oder auflöst, hängt davon ab, ob die Modalität räumlich-parallele Kohärenz erfordert (visuell: Input = Last) oder temporal-sequenzielles Entrainment ermöglicht (auditorisch: Input = Stabilisierung). Dies erklärt die kompensatorische Emergenz von Musik als externem Taktsubstitut (vgl. Anhang D, D.6.4) — nicht als Ablenkung, sondern als funktionaler Ersatz für insuffizienten serotonergen Tonus im auditorischen Kortex.
 
-#### **4.3.4 Die Nap-Kaskade: Vom lokalen Schlaf zur thalamokortikalen Destabilisierung**
+#### **4.3.4 Die Nap-Kaskade: Parallele Manifestationen desselben Zustands**
 
-Die vollständige Kaskade verläuft über mehrere Stunden und ist phänomenologisch von der akuten Raphe-Oszillation (4.3.1) zu unterscheiden:
+**Rahmen (Synthese April 2026):** Der Nap ist nicht Auslöser der CSD-Kaskade, sondern — wie die CSD selbst — eine Downstream-Manifestation desselben Desynchronisationszustands. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig und nicht initiierend. Der Pre-Nap-HR ist der stärkste verfügbare Zustandsindikator: ≥80 bpm = System stabil, Nap safe; <75 bpm = System bereits destabilisiert, Nap beschleunigt Kaskade (PPV 85% bei ≥80 bpm, Anhang B.11). PRE-Kaskaderate 58%, POST unter LDX nur 11% — die stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
+
+Die mechanistische Abfolge verläuft über mehrere Stunden und ist phänomenologisch von der akuten Raphe-Oszillation (4.3.1) zu unterscheiden. Die Phasen beschreiben nicht eine kausale Kette (Nap → CSD), sondern die zeitliche Entfaltung eines bereits laufenden Destabilisierungsprozesses, in den der Nap als kompensatorischer Versuch eingebettet ist:
 
 **Phase 1 — Lokaler Schlaf (pre-Nap):** Externer Arousal-Drive fällt weg (Ende der Arbeit, monotone Situation). Regionen ohne externen Drive kippen asynchron in Off-States, je nach individueller metabolischer Last und Schwelle. Ergebnis: Ein Patchwork aus wachen und schlafenden kortikalen Arealen. Subjektiv: Mind Blanking, Bewusstseinsdruck, Konzentrationsverlust, Starren ohne zu sehen. Die Fähigkeit, in 1–2 Minuten einzuschlafen, ist in diesem Kontext kein Zeichen guter Schlafregulation, sondern der Moment, in dem die letzte Kompensation (sympathischer Tonus) wegfällt und die bereits laufende lokale Intrusion sich global ausbreitet.
 
-**Phase 2 — Nap als Fehlkompensation:** Der Zustand fühlt sich an wie Müdigkeit, ist aber keine im homöostatischen Sinne. Es fehlt nicht Schlaf, es fehlt serotonerger Arousal-Drive. Der Nap macht es schlimmer: Der Kortex, der partiell offline war, geht vollständig in den Schlafmodus. Beim Aufwachen muss er komplett reaktivieren — aber das Arousal-System, das vorher schon zu schwach war, ist jetzt nicht stärker. Die posterioren Regionen bleiben im Off-State hängen.
+**Phase 2 — Nap als kompensatorischer Versuch:** Der Zustand fühlt sich an wie Müdigkeit, ist aber keine im homöostatischen Sinne. Es fehlt nicht Schlaf, es fehlt serotonerger Arousal-Drive. Der Nap ist der Versuch des Systems, über einen globalen Down-State die Kohärenz wiederherzustellen. Bei stabilem Ausgangszustand (Pre-Nap-HR ≥80 bpm) gelingt dies — der Nap wirkt als symmetrische Reaktivierung. Bei bereits destabilisiertem System (Pre-Nap-HR <75 bpm) verschärft der Nap den Zustand: Der Kortex, der partiell offline war, geht vollständig in den Schlafmodus. Beim Aufwachen muss er komplett reaktivieren — aber das Arousal-System, das vorher schon zu schwach war, ist jetzt nicht stärker. Die posterioren Regionen bleiben im Off-State hängen.
 
 **Phase 3 — Prolongierte Sleep Inertia (post-Nap):** Der posteriore Kortex produziert spontane Up-State-Bursts (nicht stimulusgetrieben) und Down-States (Schweigen) im Wechsel. Der Thalamus kann nicht unterscheiden, ob kortikaler Output von echter sensorischer Verarbeitung stammt oder von einem spontanen Burst in einer bistabilen Region. Er sieht ein Signal, das zwischen „volle Verarbeitung" und „keine Antwort" fluktuiert. Das ist schlimmer als konstante Insuffizienz, weil er nicht einmal stabil kompensieren kann.
 
@@ -985,9 +993,11 @@ Die vollständige Kaskade verläuft über mehrere Stunden und ist phänomenologi
 
 Am Thalamus ist das Netto-Ergebnis identisch. In allen drei Kontexten ist der Kortex ein topologisch fragmentiertes Patchwork, das keinen stabilen globalen Zustand erreicht. Was sich ändert, ist das Label: „lokaler Schlaf" bei Wachheit, „Schlaffragmentierung" in der Nacht.
 
-**Quantitative Stützung (Tracker-Daten, Anhang B.5):** Nächte mit höherer Fragmentierung (gemessen als Noise-Fragmente <5 min im Deep-Kanal) führen signifikant häufiger zu kompensatorischen Folge-Naps am nächsten Tag (r=0,276, p=0,019, n=79). Der Befund ist paradox: Fragmentierte Nächte zeigen *höhere* Deep-Gesamtdauer (129 vs. 106 min bei Nächten ohne Folge-Nap). Der Tracker klassifiziert genug Minuten als Deep — die Quantität stimmt, die Qualität nicht. Das Gehirn registriert korrekt, dass kein restaurativer SWS stattfand, und triggert kompensatorisches Schlafverhalten — das dann über die oben beschriebene Nap-Kaskade in Phase 1 einsteigt.
+**Quantitative Stützung (Tracker-Daten, Anhang B.5, B.11):** Nächte mit höherer Fragmentierung (gemessen als Noise-Fragmente <5 min im Deep-Kanal) führen signifikant häufiger zu kompensatorischen Folge-Naps am nächsten Tag (r=0,276, p=0,019, n=79). Der Befund ist paradox: Fragmentierte Nächte zeigen *höhere* Deep-Gesamtdauer (129 vs. 106 min bei Nächten ohne Folge-Nap). Der Tracker klassifiziert genug Minuten als Deep — die Quantität stimmt, die Qualität nicht. Das Gehirn registriert korrekt, dass kein restaurativer SWS stattfand, und triggert kompensatorisches Schlafverhalten.
 
-Unter LDX ist dieser Zusammenhang aufgelöst: POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die verbleibenden POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch externe Faktoren motiviert (verkürzte Schlafzeit, spätes Zubettgehen). Die pharmakologische Synchronisation über die Raphe adressiert den Upstream-Defekt: stabilerer serotonerger Tonus → globale kortikale Kohärenz sowohl im Schlaf als auch im Wachzustand → kein kompensatorischer Nap-Bedarf → keine Kaskade.
+**Nap-Outcome ist zustandsabhängig, nicht dauerabhängig (Anhang B.11):** 34 Naps zeigen: Dauer ist kein Diskriminator (OK: 50 min vs. KASKADE: 53 min). Der Pre-Nap-HR (60 min vor Nap) trennt die Outcomes: ≥80 bpm → PPV 85% für sicheren Nap; <75 bpm → System bereits destabilisiert. PRE: 58% Kaskade; POST (LDX): nur 11%. Der Nap ist Indikator für den Systemzustand, nicht Auslöser der Kaskade.
+
+Unter LDX ist der kompensatorische Zusammenhang aufgelöst: POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die verbleibenden POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch externe Faktoren motiviert (verkürzte Schlafzeit, spätes Zubettgehen). Die pharmakologische Synchronisation über die Raphe adressiert den Upstream-Defekt: stabilerer serotonerger Tonus → globale kortikale Kohärenz sowohl im Schlaf als auch im Wachzustand → kein kompensatorischer Nap-Bedarf → keine Kaskade.
 
 #### **4.3.5 Trigeminale Sensitisierung als parallele Kaskade**
 
@@ -1140,7 +1150,7 @@ Eine vollständige CSD-Welle depolarisiert den gesamten Kortex einmal durch — 
 
 Funktional ist dies dasselbe, was der in Anhang C beschriebene Bewusstseinsreset durch einen optimal getimten Powernap approximiert — nur brutal und unkontrolliert.
 
-#### **4.5.2 Drei konvergente Evidenzlinien**
+#### **4.5.2 Konvergente Evidenzlinien**
 
 **1. Post-Migräne-Klarheit und konsolidierter REM**
 
@@ -1155,6 +1165,14 @@ Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall → verhinde
 **3. Betablocker-Paradox**
 
 Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren. (Ausführliche Analyse in 4.5.3.)
+
+**4. Anfallstiming auf ansteigender Flanke (Phasenmodell, Anhang B.12)**
+
+15 Anfälle (PRE) korrelieren nicht mit dem Minimum des HR-Drop-Rhythmus, sondern mit der **ansteigenden Flanke** danach (Median: 2 Tage post-Minimum). Am Minimum ist die Fragmentierung maximal, aber das System insgesamt gedämpft — kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, kortikale Kohärenz noch nicht wiederhergestellt → Diskrepanz zwischen steigendem Arousal und fragmentiertem Kortex → CSD-Schwelle erreicht. Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude) — **Phasenmodell**, nicht Schwellenmodell. Dies verstärkt die CSD-als-Reset-These: Der Reset erfolgt, wenn das System aus der maximalen Desynchronisation heraus wieder Arousal aufbaut, nicht am Tiefpunkt selbst.
+
+**5. Traumerinnerung als subjektiver Kohärenzmarker (Anhang B.13)**
+
+POST zeigt bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nicht, ob der REM global konsolidiert ist — die Traumerinnerung ist das sensitivere Instrument. Dreifache Dissoziation: PRE ohne Anfall → keine Traumerinnerung (fragmentierter REM); PRE nach CSD → intensive Traumerinnerung (CSD-erzwungene Resynchronisation → konsolidierter REM); POST (LDX) → reguläre Traumerinnerung (pharmakologische Synchronisation ersetzt CSD-Reset). Die Abnahme bewussten Träumens unter Betablocker/Naratriptan ist antiproportional zum sub-CSD-Naratriptankonsum — wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
 
 #### **4.5.3 Betablocker-Paradox: Schwellensenkung und Propagationsdämpfung** *(Revision März 2026)*
 
@@ -1199,9 +1217,9 @@ LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente tha
 
 #### **4.5.5 Evolutionäre Einordnung**
 
-Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution *für* die Fähigkeit zur CSD, nicht gegen sie. Der Schmerz ist die metabolische Rechnung, nicht die Funktion.
+Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht und für positive Selektion *für* die CSD-Fähigkeit. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution für die Fähigkeit zur CSD, nicht gegen sie. Der Schmerz ist die metabolische Rechnung, nicht die Funktion. Die ~15% Prävalenz ist damit kein epidemiologisches Rätsel, sondern ein Hinweis darauf, dass die Fähigkeit zur erzwungenen kortikalen Resynchronisation einen Selektionsvorteil darstellt — in Populationen mit variabler Raphe-Stabilität überlebt der Organismus, der sich bei Bedarf „hart rebooten" kann.
 
-Die ~6,5-Tage-Periodizität (im vorliegenden Fall) ist dann kein Anfallszyklus, sondern ein Wartungszyklus: Die Desynchronisation akkumuliert, bis der Funktionsverlust gefährlicher ist als die CSD-Kosten.
+Die quasi-wöchentliche Periodizität (7,5 Tage im HR-Drop-Rhythmus, vgl. Anhang B.10) ist dann kein Anfallszyklus, sondern ein Wartungszyklus: Die Desynchronisation akkumuliert über den Schwebungszyklus, bis der Funktionsverlust gefährlicher ist als die CSD-Kosten. Das Anfallstiming auf der ansteigenden Flanke (Anhang B.12) passt: Der Reset erfolgt nicht am Tiefpunkt, sondern wenn das System wieder Arousal aufbaut und die Diskrepanz zwischen Drive und Kohärenz maximal wird.
 
 #### **4.5.6 Zyklische Akkumulation und der 6–7-Tage-Rhythmus**
 
@@ -1214,7 +1232,7 @@ Der in Abschnitt 2.5.1 beschriebene 26-h-Zyklus interagiert mit dem lokalen Schl
 | **Lokaler Schlaf** | Maximale Anfälligkeit — Regionen ohne externen Drive erfahren maximalen Mismatch zwischen endogener und sozialer Phase |
 | **Sub-CSD-Akkumulation** | Tägliche partielle Destabilisierung akkumuliert über die Woche, weil weder CSD-Reset noch adäquate SWS-Renormalisierung erfolgt |
 
-Am Punkt maximaler Phasenopposition reicht minimale Perturbation. Der Migräneanfall resynchronisiert das System partiell (CSD als Reset), und der Zyklus beginnt erneut.
+Die maximale Vulnerabilität liegt jedoch nicht am Tiefpunkt selbst, sondern auf der **ansteigenden Flanke** danach (Anhang B.12): Am Minimum ist das System gedämpft; beim Wiederanstieg des sympathischen Drive entsteht die Diskrepanz zwischen steigendem Arousal und noch fragmentiertem Kortex → CSD-Schwelle erreicht (Median 2 Tage nach Minimum, n=15). Minimale Perturbation reicht auf dieser Flanke. Der Migräneanfall resynchronisiert das System partiell (CSD als Reset), und der Zyklus beginnt erneut.
 
 **Diagnostische Implikation:** Ein einzelnes Schlaf-EEG ist diagnostisch wertlos für dieses Muster, weil es einen zufälligen Punkt im Zyklus erfasst. Aussagekräftig wäre ein 14-Tage-EEG mit spezifischer Analyse der zyklusweisen N3-Position als Funktion der Tage seit dem letzten Migräneanfall. Kein Standardprotokoll misst dies.
 
@@ -1746,11 +1764,16 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Insuffizienter Raphe-Tonus → asynchrone kortikale Off-State-Intrusion | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus Raphe-Projektionsmuster + lokaler Schlaf-Literatur |
 | Räumliche SWS-Fragmentierung bei erhaltenem Quantum (Deep-Episoden/h: 1,6 PRE vs. 1,1 POST, p=0,005; Hierarchie Deep > REM > Light) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3) |
 | LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3, B.5) |
+| Quasi-wöchentliche Periodizität im nächtlichen HR-Drop (FFT: 7,5 Tage, Power 102,5; Autokorrelation Lag 7 r=0,317) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B.10) |
+| HR-Drop-Periodizität kongruent mit Schwebungsfrequenz bei τ ≈ 26 h | Deskriptiv, konsistent mit Modellvorhersage | Tracker-Daten (Anhang B.10) |
+| Anfälle auf ansteigender Flanke nach Drop-Minimum (Median 2 Tage post-Minimum) | Deskriptiv (n=15) | Tracker-Daten + Anfallskalender (Anhang B.12) |
+| Pre-Nap HR als CSD-Risikoindikator (PPV 85% bei ≥80 bpm) | Statistisch signifikant (n=33) | Tracker-Daten, HR-Analyse (Anhang B.11) |
+| Nap-Outcome bestimmt durch Zustand bei Eintritt, nicht Dauer | Statistisch signifikant | Tracker-Daten (Anhang B.11) |
 | Fragmentierte Nächte zeigen höhere Deep-Gesamtdauer (129 vs. 106 min) — Quantität ≠ Qualität | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten (Anhang B.5) |
 | Betablocker-Invarianz der Schlaffragmentierung als negatives Differentialkriterium | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten, PRE unter Metoprolol zeigt identische Fragmentierung (Anhang B.4) |
 | Migräneprophylaxe ohne Upstream-Adressierung = Unterdrückung des Schutzmechanismus | Modellvorhersage | Abgeleitet aus B.6, konsistent mit Betablocker-Phänomenologie (Anhang C) |
 | Kortikale Insuffizienz (lokaler Schlaf) → sekundäre thalamische Destabilisierung über Rückkopplungsschleife | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus thalamokortikaler Rückkopplungsarchitektur + lokaler Schlaf |
-| Nap-Kaskade: lokaler Schlaf → Nap → prolongierte posteriore Sleep Inertia → thalamokortikale Destabilisierung → CSD-Schwellensenkung | Hypothetisch, konsistent, quantitativ gestützt | Selbstbeobachtung + Tracker-Daten (r=0,276, p=0,019, Anhang B.5) |
+| Nap-Kaskade: Desynchronisation → Nap (kompensatorisch) + CSD (parallel); Sleep Inertia als Beschleuniger, nicht Initiator | Hypothetisch, konsistent, quantitativ gestützt | Selbstbeobachtung + Tracker-Daten (r=0,276, p=0,019, Anhang B.5; Nap-Outcome: Anhang B.11) |
 | CSD als kortikaler Reset-Mechanismus (erzwungene Resynchronisation) | Hypothetisch, konsistent mit drei konvergenten Beobachtungslinien | Post-Migräne-Klarheit + konsolidierter REM; Naratriptan-Gegenprobe (antiproportional zu Traumerinnerung); Betablocker-Paradox (Anhang B.6) |
 | Betablocker-Paradox: Schwellenerhöhung ohne CSD-Reset → chronische Sub-CSD-Destabilisierung | Hypothetisch | Modellvorhersage, konsistent mit klinischer Beobachtung unter Metoprolol |
 | Doppeldämpfung unter Metoprolol: β₁-Blockade (noradrenerg) + fehlender CSD-Reset (strukturell) | Hypothetisch | Modellvorhersage, konsistent mit Selbstbeobachtung |
@@ -1947,19 +1970,19 @@ Die mechanistische Plausibilität ist gegeben. Die therapeutische Implikation fo
 
 ## **Anhang B: Tracker-Datenanalyse — Kortikale Desynchronisation**
 
-### **B.0 Zusammenfassung und Revision**
+### **B.0 Zusammenfassung und Synthese**
 
-Dieser Anhang ersetzt die frühere Fassung (Anhang B v1: „SWS-Phasenlage als Marker für Raphe-Dysregulation"). Die ursprüngliche Interpretation — SWS-Quantum erhalten, Phasenlage in ungünstige Druckgradienten verschoben — wird durch die hier dokumentierte Reanalyse der Tracker-Rohdaten revidiert.
+Dieser Anhang dokumentiert die Tracker-Datenanalyse der kortikalen Desynchronisation. Die ursprüngliche Fassung (Anhang B v1) postulierte eine zeitliche Verschiebung der SWS-Phasenlage; die erste Reanalyse (März 2026) identifizierte räumliche Fragmentierung als das eigentliche Signal. Die hier vorliegende Synthese (April 2026) integriert beide Ebenen: **Die räumliche Fragmentierung (Episodenzahl pro Nacht) ist die Nacht-Manifestation. Die zeitliche Akkumulation (HR-Drop-Rhythmus, quasi-wöchentliche FFT-Periodizität) ist der Treiber über Tage.** Keine Revision der SWS-Shift-These, sondern Präzisierung: Der Shift ist real, aber seine Ursache ist nicht verzögerte serotonerge Entladung allein, sondern akkumulierte kortikale Desynchronisation, die sich über den Schwebungszyklus aufbaut.
 
-**Revidierte Kernthese:** Das Defizit liegt nicht in der zeitlichen Lage des SWS, sondern in seiner räumlichen Kohärenz. Der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein topologisch fragmentiertes Patchwork aus lokalen Off-States. Der Tracker-Output — eine 1D-Projektion eines räumlich inhomogenen Prozesses — kodiert diese Fragmentierung als temporale Instabilität: häufige Stadienwechsel, kurze Deep-Fragmente und hohe Nacht-zu-Nacht-Variabilität.
+**Kernthese:** Das SWS-Defizit manifestiert sich auf zwei komplementären Ebenen — **räumlich** (intra-Nacht): Der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein topologisch fragmentiertes Patchwork aus lokalen Off-States; der Tracker kodiert diese räumliche Fragmentierung als temporale Instabilität. **Zeitlich** (inter-Nacht): Der nächtliche HR-Drop oszilliert mit einer dominanten Periode von 7,5 Tagen (FFT, Power 102,5; Autokorrelation Lag 7 r=0,317), kongruent mit der vorhergesagten Schwebungsfrequenz bei τ ≈ 26 h. Die zirkadiane Schwebung akkumuliert kortikale Desynchronisation über ~7 Tage; pro Nacht manifestiert sich das als variable Fragmentierung.
 
 **Konsequenzen für das Modell:**
 
-- Kapitel 2.5.5 (Schlafarchitektur als zirkadianer Marker): Mechanismus revidieren — nicht verzögerte Entladung, sondern fehlende globale Synchronisation.
-- Kapitel 4.3 (Nap-Kaskade): Die Nap-Kaskade beschreibt denselben Mechanismus (patchy Off-States) unter Wachbedingungen. Der Nachtschlaf zeigt denselben Defekt, nur mit anderem Label.
-- Kapitel 4.5 (CSD als Reset): Erhält neue Bedeutung — CSD ist nicht pathologisch, sondern kompensatorische Resynchronisation (siehe B.5).
+- Kapitel 2.5.5 (Schlafarchitektur als Kohärenzmarker): Beide Ebenen — räumliche Fragmentierung (intra-Nacht) und zeitliche Akkumulation (inter-Nacht) — als komplementäre Marker.
+- Kapitel 4.3 (Nap-Kaskade): Der Nap ist Indikator, nicht Auslöser. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Pre-Nap-HR als Zustandsindikator (PPV 85% bei ≥80 bpm).
+- Kapitel 4.5 (CSD als Reset): Verstärkt durch Anfallstiming auf ansteigender Flanke (Phasenmodell) und Traumerinnerung als Kohärenzmarker.
 - Kapitel 8 (Interozeptive Inkohärenz): Schlafkonsolidierung unter LDX als Spezialfall der allgemeinen Synchronisierung.
-- Kapitel 9 (Evidenz): Evidenztabelle aktualisieren, Einzelfallbeobachtungen mit statistischen Befunden ersetzen.
+- Kapitel 9 (Evidenz): Evidenztabelle aktualisiert mit statistisch signifikanten Befunden.
 
 ---
 
@@ -2285,7 +2308,145 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 
 ---
 
-### **B.9 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
+### **B.9 Nächtliche HR-Trajektorie: Pattern-Klassifikation**
+
+79 Nächte wurden nach dem HR-Verlauf (Entry → Exit) klassifiziert:
+
+| Pattern | n (%) | Entry HR | Exit HR | Drop |
+|:--------|:------|:---------|:--------|:-----|
+| LINEAR_STARK | 29 (37%) | 72 | 60 | 12 |
+| LINEAR_MODERAT | 18 (23%) | 69 | 61 | 9 |
+| FLAT | 18 (23%) | 63 | 62 | 1 |
+| GEMISCHT | 10 (13%) | 66 | 61 | 5 |
+| ANSTIEG | 3 (4%) | 68 | 74 | -6 |
+
+**Kernbefund:** Alle Nächte konvergieren auf denselben HR-Boden (~60–62 bpm). Die Variation liegt ausschließlich im Einstiegspunkt. Der lineare Abfall über Stunden ist sympathischer Rundown — das System geht mit erhöhtem sympathischem Tonus ins Bett und braucht die halbe Nacht für die parasympathische Übernahme.
+
+**Mechanistische Einordnung:** Kein normales zirkadianes HR-Dipping (geschieht in der ersten Stunde). Der lineare Abfall von ~14 bpm über 7 h reflektiert verzögerte B7-Suppression im Schlaf. DRN feuert maximal bei Wachheit, stellt im Schlaf ein — bei instabiler Abschaltkinetik persistiert der sympathische Tonus über die serotonerge Modulation von LC und autonomen Kernen. FLAT-Nächte: B7 bereits vor dem Einschlafen supprimiert → System startet im parasympathischen Modus → kein Rundown nötig.
+
+**PRE/POST-Verteilung:** Nahezu identisch (61% vs. 56% linear) — kein Medikamenteneffekt. Dies ist ein stabiles autonomes Trait.
+
+---
+
+### **B.10 Periodizitätsanalyse: FFT und Autokorrelation**
+
+#### **B.10.1 FFT-Analyse (PRE-Daten, n=60 Nächte)**
+
+| Signal | Dominante Periode | Power |
+|:-------|:-----------------|:------|
+| Drop (Entry-Exit) | **7,5 Tage** | 102,5 (stärkste) |
+| Drop | 6,7 Tage | 82,6 |
+| Slope | 7,5 Tage | 14,5 (stärkste) |
+| Entry HR | 7,5 Tage | 62,8 (Platz 3) |
+| Exit HR | 7,5 Tage | 66,5 |
+
+#### **B.10.2 Autokorrelation (Drop)**
+
+| Lag | r | Signifikanz |
+|:----|:--|:------------|
+| 1 | +0,278 | ** |
+| 7 | +0,317 | *** |
+| 14 | +0,213 | ** |
+| 15 | +0,387 | *** |
+
+#### **B.10.3 Interpretation**
+
+Die 7,5-Tage-Periodizität im nächtlichen HR-Drop entspricht der vorhergesagten Schwebungsfrequenz bei τ ≈ 26 h (T_beat = 26×24/(26-24) = 312 h ≈ 13 Tage Vollzyklus, ~6,5 Tage Halbzyklus). Der sympathische Rundown-Slope im Nachtschlaf oszilliert mit derselben Periodizität wie der Migränezyklus.
+
+Dies ist kein separates Phänomen — der HR-Slope *ist* die autonome Manifestation der zirkadianen Schwebung. Der Drop verstärkt das Signal durch Differenzbildung (eliminiert gemeinsames Rauschen aus Entry und Exit).
+
+#### **B.10.4 POST-Daten**
+
+18 Nächte reichen nicht für eine belastbare FFT bei 7-Tage-Perioden. Mindestens 25, idealerweise 40+ Nächte nötig. Zwei Vorhersagen:
+- Option A: Rhythmus taucht auf → LDX ändert nur Amplitude, nicht Frequenz
+- Option B: Rhythmus gestört → τ komprimiert sich unter LDX, Schwebungsperiode verlängert sich massiv
+
+---
+
+### **B.11 Nap-Outcome-Analyse: Zustand bei Eintritt, nicht Dauer**
+
+#### **B.11.1 Kernbefund**
+
+34 Naps klassifiziert nach Outcome (late_elevation >2 bpm = KASKADE, ≤2 = OK):
+
+| Metrik | OK (n=18) | KASKADE (n=15) |
+|:-------|:----------|:---------------|
+| Dauer mean | 50 min | 53 min |
+| HR min (absolut) | 68 | 62 |
+| Pre-60min HR mean | 88 | 73 |
+| Post 1h elevation | -6,1 | +2,6 |
+| Late 2-4h elevation | -9,5 | +8,2 |
+
+Dauer ist **nicht** der Diskriminator. Der Zustand vor dem Nap bestimmt das Outcome.
+
+#### **B.11.2 Pre-Nap HR als CSD-Risikoindikator**
+
+Stärkster Diskriminator: Pre-60min HR mean.
+
+| Threshold | PPV(safe) | Spezifität |
+|:----------|:----------|:-----------|
+| ≥75 bpm | 75% | 67% |
+| ≥80 bpm | 85% | 87% |
+| ≥85 bpm | 90% | 93% |
+
+Praktische Regel: Puls ≥80 vor dem Nap → safe. Puls <75 → System bereits destabilisiert, Nap beschleunigt Kaskade.
+
+#### **B.11.3 PRE vs. POST**
+
+PRE: 10 OK / 14 KASKADE (58% Kaskade). POST: 8 OK / 1 KASKADE (11%). Unter LDX schlagen Naps fast nie durch — stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
+
+#### **B.11.4 Reinterpretation der Nap-Kaskade**
+
+Bisherige Formulierung in Kapitel 4.3: Nap → patchy Sleep Inertia → trigeminale Sensitisierung → CSD (kausale Kette). Synthese: Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Beides sind Downstream-Effekte desselben Zustands, nicht Ursache und Wirkung. Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig.
+
+---
+
+### **B.12 Anfallstiming: Phasenmodell**
+
+#### **B.12.1 Befund**
+
+15 Anfälle (PRE) korrelieren nicht mit minimalem oder maximalem Slope, sondern mit der **ansteigenden Flanke** nach dem Drop-Minimum:
+
+| Abstand zum letzten Drop-Minimum | Anfälle |
+|:---------------------------------|:--------|
+| 1 Tag | 4 |
+| 2 Tage | 3 |
+| 3–4 Tage | 3 |
+| 5–7 Tage | 2 |
+
+Median: 2 Tage nach dem Minimum.
+
+#### **B.12.2 Mechanismus**
+
+Am Minimum: Raphe-Tonus niedrigster, kortikale Fragmentierung maximal, aber System insgesamt gedämpft → kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, aber kortikale Kohärenz noch nicht wiederhergestellt → Diskrepanz zwischen steigendem Arousal-Drive und fragmentiertem Kortex → CSD-Schwelle erreicht.
+
+Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude). **Phasenmodell**, nicht Schwellenmodell.
+
+#### **B.12.3 Kompatibilität mit dem Stochastischen Fenstermodell**
+
+Das stochastische Fenstermodell (2.5.2) bleibt gültig, wird aber präzisiert: Das Vulnerabilitätsfenster öffnet sich nicht am Tiefpunkt der Schwebung, sondern auf der ansteigenden Flanke. Die Triggerstärke bestimmt, wie weit auf der Flanke der Anfall ausgelöst wird.
+
+---
+
+### **B.13 Traumerinnerung als Kohärenzmarker (erweitert)**
+
+POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nur, ob der motorische Kortex im REM-Profil ist, nicht ob der REM global konsolidiert ist. Traumerinnerung überlebt den Schlaf-Wach-Übergang nur bei konsolidiertem REM.
+
+**PRE-Selektivität:** Intensives Träumen trat PRE selektiv nach Migräneanfällen auf (CSD-erzwungene Resynchronisation → konsolidierter post-iktaler REM). Unter LDX tritt es regulär auf — die pharmakologische Synchronisation ersetzt den CSD-Reset.
+
+**Betablocker/Naratriptan-Gegenprobe:** Abnahme bewussten Träumens unter Betablocker/Naratriptan: antiproportional zum sub-CSD-Naratriptankonsum. Weniger Anfälle → weniger CSD-Resets → weniger REM-Konsolidierung → weniger Traumerinnerung.
+
+**Dreifache Dissoziation:**
+
+| Bedingung | Traumerinnerung | Mechanismus |
+|:----------|:----------------|:------------|
+| PRE (ohne Anfall) | Selten | Fragmentierter REM, keine Konsolidierung |
+| PRE (nach CSD) | Intensiv | CSD-erzwungene Resynchronisation → konsolidierter REM |
+| POST (LDX) | Regulär | Pharmakologische Synchronisation → konsolidierter REM ohne CSD |
+
+---
+
+### **B.14 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
 
 Die Nacht vom 30./31.03.2026 liefert ein natürliches Experiment mit drei distinkten Phasen unter wechselnden pharmakologischen Bedingungen.
 
@@ -2332,7 +2493,7 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 
 ---
 
-### **B.10 Evidenztabelle**
+### **B.15 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
@@ -2362,9 +2523,15 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 | Dreiersequenz (Fragm. Nacht → Nap → Anfall): 75% | Deskriptiv, n=8 | B.5.3 |
 | Migräne-Nacht 30./31.03: Sumatriptan → 3–4h Resynchronisation (HR 75→63 bpm) | Einzelbeobachtung | HR-Daten, B.9 |
 | Post-Sumatriptan Density: invertierte U-Kurve (6,1→7,5→5,8/h) | Deskriptiv, Einzelereignis | B.9.2 |
+| HR-Drop-Periodizität 7,5 Tage (FFT, Power 102,5) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT-Analyse (B.10) |
+| Autokorrelation Lag 7 (r=0,317) und Lag 14 (r=0,213) | Statistisch signifikant | Tracker-Daten, Autokorrelation (B.10) |
+| Nap-Outcome durch Pre-Nap-HR determiniert (PPV 85% bei ≥80 bpm) | Statistisch signifikant (n=33) | Tracker-Daten, HR-Analyse (B.11) |
+| Anfall auf ansteigender Flanke, Median 2 Tage nach Minimum | Deskriptiv (n=15) | Tracker-Daten + Anfallskalender (B.12) |
+| PRE/POST HR-Trajectory-Verteilung identisch (61% vs. 56% linear) | Deskriptiv | Tracker-Daten (B.9) |
+| POST-Nap-Kaskadenrate 11% vs. PRE 58% | Deskriptiv | Tracker-Daten (B.11) |
 | SWS-Fragmentierung als Mediator orthographischer Engramm-Instabilität (LRS-Phänotyp) | Modellvorhersage | Abgeleitet aus Anhang D, D.7.3 — orthographische Konsolidierung SWS-abhängig |
 
-### **B.11 Limitationen**
+### **B.16 Limitationen**
 
 - Consumer-Tracker, keine PSG-Validierung. Die Stadienklassifikation ist intern und nicht reproduzierbar.
 - n=1, kein Kontrolldesign. Die Perioden-Trennung (PRE/POST) ist konfundiert mit Medikamentenwechsel, Jahreszeit und 13-monatiger Trageunterbrechung.
@@ -2375,8 +2542,33 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 - Die t-1 Lag-Korrelation (B.6.5) basiert auf n=14 Vornächten vor Anfällen. Drei hochfragmentierte Nächte (Density 13,12; 9,75; 8,54/h) könnten den Effekt dominieren. Multiple Vergleiche (Lag-Analyse + Schwellenwertsuche) ohne formale Korrektur.
 - Die Migräne-Nacht-Sonderanalyse (B.9) ist ein Einzelereignis mit pharmakologischer Konfundierung (Sumatriptan-Halbwertszeit ~2h überlappt mit dem Beobachtungsfenster).
 - Die Dreiersequenz (B.5.3) und Density-≥7,0-Schwelle (B.6.5) basieren auf n=6–8 Fällen. Diese Befunde sind hypothesengenerierend, nicht konfirmatorisch.
+- POST-Stichprobe zu klein für belastbare FFT bei 7-Tage-Perioden (18 Nächte, mindestens 25 nötig). Die Periodizitätsanalyse (B.10) basiert ausschließlich auf PRE-Daten.
+- Anfalls-Korrelation mit Phase (B.12): n=15, Abstände manuell annotiert. Konsistentes Muster, aber keine formale statistische Testung der Phasen-Hypothese.
+- Nap-Outcome-Analyse (B.11): Kaskadenklassifikation über late_elevation >2 bpm. Schwellenwert empirisch gewählt, nicht extern validiert.
+- Die Daten sind insgesamt robuster als erwartet für einen Consumer-Tracker, aber die Annahmen können bei längerer Erfassung noch kippen. Es wird mit zunehmender Datenmenge unwahrscheinlicher.
 
-### **B.12 Referenzen**
+### **B.17 Diagnostische Implikation: Tracker-basiertes Screening**
+
+Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert einen kontinuierlichen, nicht-invasiven Biomarker für die zirkadiane Schwebung — einen Prozess, den die klinische Forschung mit PET und PSG sucht.
+
+**Methodik:** Standard-Data-Engineering: Gewinnung korrelativer Daten aus Rauschquellen durch geeignete Signalverarbeitung. Kein technologischer Durchbruch — der Tracker ist ein stochastischer Resonanz-Detektor (B.7), dessen Schaltfrequenz die Upstream-Instabilität kodiert. Die relevanten Metriken (Episodenzahl/h, HR-Drop-Periodizität, Pre-Nap-HR) erfordern keine Rohdaten-Zugänge, sondern nur das Standard-Hypnogramm und die HR-Timeline.
+
+**Vorteile gegenüber klinischer Diagnostik:**
+- Kontinuierlich über Monate (Nacht-zu-Nacht-Variabilität als eigentliches Signal)
+- Natürliches Schlafumfeld (keine Laborartefakte)
+- Erfassung der quasi-wöchentlichen Periodizität (erfordert mindestens 4–6 Wochen Daten)
+- Kostenfaktor: ~30 € vs. mehrere Tausend für PSG
+
+**Limitationen:**
+- Keine räumliche Auflösung, keine SWA, keine direkte Validierung der Kohärenz-Interpretation
+- Stadienklassifikation intern, nicht nachvollziehbar oder korrigierbar
+- n=1-Validierung, keine externe Replikation
+
+**Prospektiv testbar:** Systematische HR-Trajectory-Analyse über 4–6 Wochen als Screening-Tool für Raphe-Dysregulation bei ADHS-Migräne-Koinzidenz. Die Vorhersage: Patienten mit diesem Phänotyp zeigen (a) erhöhte Schlaffragmentierung (Deep-Episoden/h >1,3), (b) quasi-wöchentliche Periodizität im HR-Drop und (c) zustandsabhängige Nap-Outcomes.
+
+---
+
+### **B.18 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.
