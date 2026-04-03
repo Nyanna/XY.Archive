@@ -5,8 +5,6 @@
 
 *Subjektive Beschreibungen eines Zustands, den ich jahrelang für Konzentrationserschöpfung hielt.*
 
----
-
 ### Schlaf, der sich nicht verändert
 
 Egal ob ich fünf oder zehn Stunden schlafe — mein Tiefschlaf bleibt gleich. Zwei Stunden und sieben bis zehn Minuten, jede Nacht, seit ich es messe. Betablocker, kein Betablocker, gute Nacht, schlechte Nacht — es spielt keine Rolle. Was sich verändert, ist alles andere: Leichtschlaf, REM, wie oft ich aufwache. Der Tiefschlaf ist eine Konstante.
