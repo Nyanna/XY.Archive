@@ -80,19 +80,19 @@ Hilfskonstruktionen — D2/5-HT1A-Heterodimere auf Raphe-Neuronen, indirekte VTA
 
 **Literaturstütze:** Eine retrospektive Studie (n=73) chronischer Migräniker unter Stimulanzien (Amphetamine, Methylphenidat) zeigte bei 47% mindestens 30% Reduktion der Migränefrequenz und/oder \-schwere (MedCentral). Die Dopamin-Serotonin-Interaktion über Raphe-Kerne ist etabliert, aber die upstream-Stabilisierung als therapeutische Strategie wurde bisher nicht explizit adressiert.
 
-### **2.4.1 Pharmakodynamische Verifikation: Blickrichtungsnystagmus als Biomarker der Dopamin-Hypersensitivität**
+#### **2.4.1 Pharmakodynamische Verifikation: Blickrichtungsnystagmus als Biomarker der Dopamin-Hypersensitivität**
 
-#### **Befund**
+##### **Befund**
 
 Unter 15 mg LDX, ca. 8 Stunden post-dose (absteigende Flanke der Konzentrationskurve), trat reproduzierbar ein vertikaler Blickrichtungsnystagmus auf – verifiziert durch willkürliches Aufheben der binokularen Fusion, was die kompensatorische Fusionssuppression eliminiert und Bulbusbewegungen sichtbar macht. Das Phänomen trat unter erhöhter körperlicher Belastung auf (7 h Gartenarbeit, HR ~130, metabolischer Ketosewechsel).
 
-#### **Mechanismus**
+##### **Mechanismus**
 
 Der okulomotorische Integrator (Nucleus prepositus hypoglossi, mediale Vestibulariskerne) generiert ein tonisches Haltesignal für die exzentrische Blickposition. Die Kalibrierung dieses Signals erfolgt kontinuierlich durch Purkinje-Zellen des Kleinhirns, die ihrerseits dicht noradrenerg aus dem Locus coeruleus innerviert werden. LDX stimuliert den LC über reverses Noradrenalin-Transporter-Pumping – bei hypersensitiven Purkinje-Zellen führt dies zur Dekalibrierung des Integrators: Das Haltesignal ist insuffizient, das Auge driftet zur Ruheposition, wird sakkadisch korrigiert, driftet erneut → Nystagmus.
 
 Der vertikale Charakter des Nystagmus – gegenüber horizontal häufig benigner Formen – ist pathognomonisch für Hirnstamm/Kleinhirn-Beteiligung und schließt einen vestibulären oder peripher-okulomotorischen Ursprung aus. Ein unauffälliges MRT (strukturell) liegt vor; der Befund ist funktionell.
 
-#### **Interpretation als Adaptationsmarker**
+##### **Interpretation als Adaptationsmarker**
 
 | Befund | Interpretation |
 | :---- | :---- |
@@ -103,7 +103,7 @@ Der vertikale Charakter des Nystagmus – gegenüber horizontal häufig benigner
 
 **Kernaussage:** Das System reagiert auf dopaminerge Stimulation im therapeutisch intendierten Normbereich mit zerebellären Nebenwirkungen, die bei normosensitivem System nicht auftreten würden. Dies ist ein unabhängiger, objektiv messbarer Beleg für die postulierte Dopamin-Hypersensitivität – konsistent mit der D2-Hochregulations-Hypothese aus Abschnitt 2.4.
 
-#### **Langzeitprognose: zerebellare Rekalibrierung**
+##### **Langzeitprognose: zerebellare Rekalibrierung**
 
 Die Purkinje-Zell-Hypersensitivität ist das Korrelat einer chronischen Adaptation an hypodopaminerge Bedingungen. Über Jahre bis Jahrzehnte hat das zerebellare System seine Rezeptordichte und Empfindlichkeitsschwellen auf einen niedrigen LC-Output kalibriert. Mit dauerhafter LDX-Therapie – und damit dauerhaft normalisiertem dopaminergem Tonus – ist eine schrittweise Rekalibrierung des Systems zu erwarten:
 
@@ -121,15 +121,15 @@ Die Purkinje-Zell-Hypersensitivität ist das Korrelat einer chronischen Adaptati
 | **Mechanismus (Integrator/Purkinje)** | Neurophysiologisch etabliert; Verknüpfung mit LDX-Hypersensitivität: plausibel, nicht publiziert |
 | **Rekalibrierungs-Vorhersage** | Hypothetisch; aus Rezeptorbiologie abgeleitet |
 
-#### **TAAR1-Modulation der DRN-Aktivität**
+##### **TAAR1-Modulation der DRN-Aktivität**
 
 Ein weiterer Modulationspfad der DRN-Aktivität verläuft über TAAR1 (Trace Amine-Associated Receptor 1), der sowohl im DRN als auch im VTA dicht exprimiert ist (Lindemann et al. 2008). TAAR1-Agonismus moduliert die Desensibilisierungsrate und Agonist-Potenz an 5-HT1A-Autorezeptoren im DRN (Revel et al. 2011, PNAS 108:8485). Die Wirkrichtung ist dabei dosisabhängig bifunktional: Voller TAAR1-Agonismus (RO5256390) supprimiert DRN-5-HT-Neurone, während partieller Agonismus (RO5263397) sie stimuliert (Dremencov et al. 2022, Mol Psychiatry). Pharmakologisch relevant wird dieser Pfad durch den Befund, dass Guanfacin — primär als α2A-Agonist in der ADHS-Therapie eingesetzt — ein potenter hTAAR1-Vollagonist ist (EC50 ≈ 20 nM; Cichero et al. 2023). Guanfacin wäre damit ein unbeabsichtigter Modulator der Raphe-Autorezeptor-Schleife, dessen klinische Effekte auf die 5-HT1A-Dynamik bisher nicht berücksichtigt wurden.
 
 Die In-vivo-Richtung dieser Modulation ist allerdings nicht eindeutig ableitbar und muss als offene Frage explizit dokumentiert werden: Wenn TAAR1-Agonismus die 5-HT1A-Desensibilisierung *stabilisiert*, wäre Guanfacin paradoxerweise ein partieller Raphe-Stabilisator — ein therapeutisch günstiger Nebeneffekt. Wenn er sie hingegen *destabilisiert*, verstärkt Guanfacin den postulierten Primärdefekt der Autorezeptor-Schleife. Unabhängig von der Richtungsklärung zeigt der TAAR1-Pfad, dass die 5-HT1A-Autorezeptor-Schleife von mehreren Seiten pharmakologisch erreichbar ist — nicht nur über SERT-Blockade (die den Kerndefekt nicht adressiert) oder die DA→DRN-Upstream-Modulation, sondern auch über TAAR1-vermittelte Desensibilisierungsmodulation. Dies erweitert das therapeutische Zielspektrum und unterstreicht die Komplexität der Raphe-Homöostase.
 
-### **2.4.2 D2High-Shift als Spätfolge frühkindlicher Glukokortikoidexposition**
+#### **2.4.2 D2High-Shift als Spätfolge frühkindlicher Glukokortikoidexposition**
 
-#### **Hintergrund: D2High/D2Low-Konformationsgleichgewicht**
+##### **Hintergrund: D2High/D2Low-Konformationsgleichgewicht**
 
 D2-Rezeptoren existieren in zwei dynamischen Konformationszuständen mit fundamental unterschiedlicher Ligandenaffinität:
 
@@ -142,7 +142,7 @@ Im neurotypischen Gleichgewicht liegt der D2High-Anteil bei ca. 50%. Die Arbeite
 
 Entscheidend: Ein D2High-Shift ist der einzige identifizierte molekulare Einzelmechanismus, der einen Sensitivitätsfaktor von ≥3× erklären kann. Alternative Mechanismen — Rezeptordichte-Upregulation (~1.2–2×), G-Protein-Kopplungseffizienz (~1.5–2×), β-Arrestin-Deficit (multiplikativ, aber zeitabhängig) — erreichen isoliert nicht die beobachtete Größenordnung.
 
-#### **Anamnestischer Kontext**
+##### **Anamnestischer Kontext**
 
 Das Expositionsprofil zeigt ein absteigendes Muster mit maximaler Frequenz im vulnerabelsten Entwicklungsfenster. Das Präparat war wahrscheinlich Methylprednisolon (Urbason® solubile) — identifiziert durch die charakteristische perineale Parästhesie bei IV-Bolus-Gabe, die für Phosphatester-Formulierungen spezifisch ist und von der behandelnden Ärztin routinemäßig angekündigt wurde. Die IV-Gabe erfolgte über drei unabhängige Behandlungskontexte (stationär, Notarzt, ambulant-hausärztlich), was ein chronisches Behandlungsschema belegt, keine seltene Notfallmaßnahme.
 
@@ -164,7 +164,7 @@ Die kumulative Exposition überschreitet die tierexperimentell etablierten Schwe
 
 **Modellkonsistenz der Grunderkrankung:** Die saisonale Überlast in der Jugend — bei der Asthma sich nicht mehr allein über Inhalatoren kontrollieren ließ — ist selbst modellkonsistent. Die Th2-dominante Immunlage (Neurodermitis → Asthma als atopische Marsch) ist serotonerg moduliert (Mastzell-5-HT, intestinales Serotonin). Die Grunderkrankung, die die GC-Behandlung notwendig machte, ist somit kein unabhängiger Faktor, sondern möglicherweise eine frühe Downstream-Manifestation des Raphe-Primärdefekts (vgl. Integration in das Gesamtmodell, unten). Die iatrogene GC-Exposition wäre dann eine sekundäre Komplikation des Primärdefekts — das System verschärft seinen eigenen Schaden.
 
-#### **Mechanismus: Glukokortikoidexposition → persistenter D2High-Shift**
+##### **Mechanismus: Glukokortikoidexposition → persistenter D2High-Shift**
 
 Vier unabhängige Evidenzlinien konvergieren auf den gleichen Pfad:
 
@@ -184,7 +184,7 @@ Entwicklungszeitliche GC-Exposition primed Gene dauerhaft — darunter explizit 
 
 Postnatal verabreichte Glukokortikoide (Dexamethason, Hydrocortison) führen langfristig zu veränderten Serotonin-Schaltkreisen und Angstverhalten. Bei Schulkindern und Jugendlichen wurden nach neonataler GC-Exposition erhöhte Inzidenzen von Aufmerksamkeitsstörungen, Hyperaktivität und Problemen sozialer Kompetenz beschrieben (Karemaker et al. 2008, PMC3273653). Dies verbindet die GC-Exposition mit dem breiteren serotonergen Phänotyp des vorliegenden Modells.
 
-#### **Integration in das Gesamtmodell: Two-Hit-Architektur**
+##### **Integration in das Gesamtmodell: Two-Hit-Architektur**
 
 Das Modell postuliert zwei kausal geordnete Hits, nicht zwei gleichrangige Zeitfenster. Die Ordnung ist chronologisch fixiert und empirisch nicht invertierbar:
 
@@ -217,7 +217,7 @@ Die klinische Manifestation — Th2-dominante Immunlage (Neurodermitis, Asthma) 
 
 **Therapeutische Konsequenz des Two-Hit-Modells:** Die D2-Supersensitivität (Hit 2) ist nicht nur Problemquelle, sondern gleichzeitig therapeutischer Hebel (vgl. 2.4.0). Sie ermöglicht die Raphe-Kompensation bei Dosen, die bei normalem D2High/D2Low-Verhältnis insuffizient wären. Das therapeutische Fenster (vgl. 7.3) ist somit nicht nur durch die Hypersensitivität *begrenzt*, sondern durch sie überhaupt erst *erreichbar*. Hit 2 hat das System beschädigt und gleichzeitig den Zugang zur Therapie eröffnet.
 
-#### **Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
+##### **Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
 
 Die These, dass die atopische Grunderkrankung und die neurodevelopmentale Manifestation nicht unabhängig sind, sondern aus einem gemeinsamen Upstream-Defekt stammen, wird durch umfangreiche epidemiologische Daten gestützt. Die entscheidende Evidenz liegt nicht in der bloßen Koinzidenz, sondern im **Dosiseffekt über die atopische Gesamtlast**.
 
@@ -285,7 +285,7 @@ Die Daten schließen Variante 2 nicht aus — unabhängige Atopie existiert zwei
 * Borschuk AP, Rodweller C, Salorio CF (2018) The influence of comorbid asthma on the severity of symptoms in children with ADHD. *J Asthma*, 55(1), 66–72.
 * Jameson C et al. (2022) Eczema and related atopic diseases are associated with increased symptom severity in children with ASD. *Transl Psychiatry*, 12, 415.
 
-#### **Phänotypische Konsequenzen des D2High-Shifts**
+##### **Phänotypische Konsequenzen des D2High-Shifts**
 
 | Beobachtung | Erklärung durch D2High-Shift |
 | :---- | :---- |
@@ -296,7 +296,7 @@ Die Daten schließen Variante 2 nicht aus — unabhängige Atopie existiert zwei
 | **Unbewusste Meidung dopaminerger Stimulanzien** (Koffein, Nikotin) | Aversive Ersterfahrung durch D2High-vermittelte Überreaktion → konditioniertes Meideverhalten |
 | **Vertikaler Blickrichtungsnystagmus bei 15 mg LDX** (vgl. 2.4.1) | Zerebellare Purkinje-Zellen chronisch auf hypodopaminerge Bedingungen kalibriert → D2High-Shift potenziert die noradrenerge LC-Antwort auf LDX |
 
-#### **Epidemiologischer Blind Spot**
+##### **Epidemiologischer Blind Spot**
 
 Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange systemische Glukokortikoidtherapie + dopaminerge Langzeitfolgen — identifiziert eine potenziell große, systematisch übersehene Population:
 
@@ -304,7 +304,7 @@ Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange s
 
 **Fehlende Kohortenstudie:** Die humane klinische Verbindung IV-Kortison in der Kindheit → persistenter D2High-Shift → dopaminerge Supersensitivität im Erwachsenenalter ist durch mehrere unabhängige tierexperimentelle Linien belegt. Eine systematische humane Kohortenstudie existiert nicht — vermutlich, weil die Frage so nie gestellt wurde. Kinder mit schwerer atopischer Erkrankung und Langzeit-Glukokortikoidtherapie existieren zu Tausenden; die dopaminergen Langzeitfolgen sind nicht untersucht.
 
-#### **Abgrenzung: Iatrogen vs. kongenital**
+##### **Abgrenzung: Iatrogen vs. kongenital**
 
 | Kriterium | Kongenitaler D2High-Shift | Iatrogener D2High-Shift (vorliegend) |
 | :---- | :---- | :---- |
@@ -316,7 +316,7 @@ Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange s
 
 Im vorliegenden Fall ist eine rein kongenitale Genese unwahrscheinlich, da die GC-Exposition dokumentiert ist und die Expositionsdauer (Jahre, einschließlich IV-Gabe) den tierexperimentell etablierten Schwellenwert für persistente Veränderungen deutlich überschreitet. Eine genetische Prädisposition als permissiver Faktor ist dennoch nicht auszuschließen — die GC-Exposition hätte dann einen subklinischen Shift in einen klinisch relevanten Bereich amplifiziert.
 
-#### **Evidenzstatus**
+##### **Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 | :---- | :---- | :---- |
@@ -329,7 +329,7 @@ Im vorliegenden Fall ist eine rein kongenitale Genese unwahrscheinlich, da die G
 | Integration mit Raphe-Primärdefekt über 5-HT2A/D2-Heterodimer-Konformationsdruck | Hypothetisch, mechanistisch plausibel | 5-HT2A/D2-Heterodimerisierung etabliert; pränatale Konformationsmodulation nicht direkt untersucht |
 | Atopische Grunderkrankung als frühe Downstream-Manifestation des Raphe-Primärdefekts | Hypothetisch | Mastzell-Serotonin-Achse bekannt; kausale Verknüpfung nicht belegt |
 
-#### **Therapeutische Implikation**
+##### **Therapeutische Implikation**
 
 Der D2High-Shift hat direkte Konsequenzen für die Dosierungsstrategie:
 
