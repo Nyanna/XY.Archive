@@ -2586,6 +2586,7 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 *SWS-Initiation:*
 - Oishi, Y. et al. (2017). NAcc core D2/A2A neurons and SWS induction.
 
+
 ---
 
 ## **Anhang C: Was ich erlebe — Phänomenologie eines Bewusstseinsresets
