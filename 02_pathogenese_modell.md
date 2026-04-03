@@ -2586,13 +2586,15 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 *SWS-Initiation:*
 - Oishi, Y. et al. (2017). NAcc core D2/A2A neurons and SWS induction.
 
-# Was ich erlebe — Phänomenologie eines Bewusstseinsresets
+---
+
+## **Anhang C: Was ich erlebe — Phänomenologie eines Bewusstseinsresets
 
 *Subjektive Beschreibungen eines Zustands, den ich jahrelang für Konzentrationserschöpfung hielt.*
 
 ---
 
-## Schlaf, der sich nicht verändert
+### Schlaf, der sich nicht verändert
 
 Egal ob ich fünf oder zehn Stunden schlafe — mein Tiefschlaf bleibt gleich. Zwei Stunden und sieben bis zehn Minuten, jede Nacht, seit ich es messe. Betablocker, kein Betablocker, gute Nacht, schlechte Nacht — es spielt keine Rolle. Was sich verändert, ist alles andere: Leichtschlaf, REM, wie oft ich aufwache. Der Tiefschlaf ist eine Konstante.
 
@@ -2600,19 +2602,19 @@ Was mir lange nicht aufgefallen ist: Er kommt spät. Nicht in den ersten ein bis
 
 Ich kann jederzeit einschlafen. Ich dachte, das wäre eine Fähigkeit. Heute denke ich, es ist ein Symptom. Es bedeutet nicht, dass mein Schlaf gut ist. Es bedeutet, dass die Grenze zwischen Wachsein und Schlafen nicht klar gezogen ist.
 
-## Das Zwei-Stunden-Loch
+### Das Zwei-Stunden-Loch
 
 Morgens, etwa zwei Stunden nach dem Aufstehen, gibt es eine Tiefphase. Ich habe das nie für etwas Besonderes gehalten — braucht nicht jeder Mensch erstmal einen Kaffee, um richtig wach zu werden? Aber das ist nicht dasselbe. Ein Kaffee-Bedürfnis kommt direkt nach dem Aufstehen und geht in zwanzig Minuten vorbei. Mein Loch kommt *danach*. Ich bin aufgestanden, war funktional, und dann, zwei Stunden später, sinkt etwas ab.
 
 Es fühlt sich an wie leichte Dissoziation. Nicht Müdigkeit im klassischen Sinne — ich gähne nicht, meine Augen sind nicht schwer. Es ist eher so, als würde die Auflösung meines Bewusstseins sinken. Weniger Bandbreite. Weniger Kontrast. Wie ein Bildschirm, der von hochauflösend auf Standard zurückschaltet.
 
-## Das verzögerte Aufwachen
+### Das verzögerte Aufwachen
 
 Ich kann aufstehen, wenn der Wecker klingelt. Kerzengerade, sofort. Das war nie das Problem.
 
 Das Problem kommt danach. Es gibt eine Phase — ungefähr deckungsgleich mit dem Zwei-Stunden-Loch — in der etwas zurückfällt, das bereits da war. Nicht Schlaftrunkenheit beim Aufwachen, nicht die Schwere, für die andere Kaffee brauchen. Etwas, das erst eintritt, nachdem ich bereits funktional war. Ich hielt es jahrelang für dasselbe wie bei anderen Menschen — das normale Nicht-sofort-auf-Touren-Kommen. Es ist nicht dasselbe. Es kommt zu spät dafür.
 
-## Der Bewusstseinsdruck
+### Der Bewusstseinsdruck
 
 Es gibt ein Gefühl, das ich nur als „Druck auf das Bewusstsein" beschreiben kann. Es ist nicht Kopfschmerz. Es ist nicht Müdigkeit. Es ist, als würde etwas auf die Wahrnehmung selbst drücken. Wie eine Last, die nicht auf dem Körper liegt, sondern auf dem Wachsein.
 
@@ -2620,7 +2622,7 @@ Dieser Druck kommt besonders in monotonen Situationen. Am schlimmsten, wenn ich 
 
 Ich dachte immer, das sei Erschöpfung von der Konzentration. Dass mein Gehirn müde wird vom Arbeiten. Heute denke ich: Die Arbeit war nicht das, was mich erschöpft hat. Die Arbeit war das, was mich wach gehalten hat. Und wenn sie aufhörte, zeigte sich, dass ohne sie nicht genug da ist, um mich oben zu halten.
 
-## Die Modalitätsasymmetrie
+### Die Modalitätsasymmetrie
 
 Der Bewusstseinsdruck reagiert auf sensorische Modalitäten gegenläufig. Augen schließen reduziert ihn sofort. Stille verschlechtert ihn.
 
@@ -2630,7 +2632,7 @@ Visueller Input auf einen Kortex, der nicht richtig online ist, erzeugt den Druc
 
 Musik war nie Ablenkung. Sie war das, was der auditorische Kortex brauchte, um nicht in denselben Zustand zu kippen wie der visuelle Kortex beim Starren. Ein äußerer Takt, wo der innere fehlt.
 
-## Wegdriften
+### Wegdriften
 
 Es gibt Momente, in denen ich einfach weg bin. Nicht eingeschlafen — ich sitze aufrecht, meine Augen sind offen — aber ich bin nicht da. Ich starre auf den Bildschirm und sehe nichts. Nicht, dass ich etwas anderes denke — Mind Wandering, wo die Gedanken abschweifen — sondern buchstäblich: nichts. Ein Loch in der Verarbeitung. Hinterher weiß ich nicht, wie lange es war. Sekunden? Minuten?
 
@@ -2638,11 +2640,11 @@ Mit Musik passiert es besonders leicht. Musik ist vorhersagbar, gleichförmig �
 
 Was ich in diesen Momenten wahrnehme, wenn ich es überhaupt wahrnehme: weniger Bewegung im Bild. Weniger Rauschen im Bewusstsein. Ton auf dem linken Ohr leiser — aber nicht wirklich leiser, eher *weniger verarbeitet*. Und ein dumpfer Druck hinter dem Auge, als wäre der Sehnerv „locker" — nicht stechend, nicht pochend, eher ein Gefühl von etwas, das nicht richtig antwortet. Es ist nicht das Hören oder Sehen, das ausfällt. Es ist das Verarbeiten. Eine Parästhesie des Bewusstseins.
 
-## Der Migräneschmerz ist etwas anderes
+### Der Migräneschmerz ist etwas anderes
 
 Den Migräneschmerz kenne ich — er sitzt über den Augen, in der Stirn, und er ist so intensiv, dass ich meine Fingernägel in die Stirn bohren muss. Das ist kategorial verschieden von dem dumpfen Druck beim Wegdriften. Der Migräneschmerz ist etwas Späteres in der Kaskade, etwas Eigenes. Früher waren beide gleichzeitig da, ununterscheidbar. Erst als die Migräne seltener wurde, konnte ich das eine vom anderen trennen. Als würde man erst sehen, dass eine einzelne Lampe flackert, wenn die anderen nicht auch flackern.
 
-## Der Powernap als Bewusstseinsreset
+### Der Powernap als Bewusstseinsreset
 
 Irgendwann habe ich gelernt, dass zwanzig Minuten Hinlegen den Zustand auflöst. Nicht immer, aber meistens. Ich nenne es „Bewusstseinsreset". Es geht nicht um Schlaf im eigentlichen Sinne. Es geht darum, einmal komplett weg zu sein und zurückzukommen. Reboot.
 
@@ -2650,13 +2652,13 @@ Die Tiefe ist entscheidend, nicht die Dauer. Nur an der Oberfläche dösen — h
 
 Aber das Fenster ist schmal. Zu flach: kein Reset, der Zustand bleibt. Zu tief: Ich wache groggy auf, benommen, und dann steigt die Migränegefahr. Nicht sofort — erst in den folgenden Stunden. Alles wird zu laut, zu hell, als hätte jemand die Empfindlichkeitsregler hochgedreht. Das kann dann kippen.
 
-## Einschlafen in einer Minute
+### Einschlafen in einer Minute
 
 Wenn der Druck da ist und mein Puls schon ruhig, bin ich innerhalb von ein bis zwei Minuten weg. Wenn der Puls noch hoch ist — vom Arbeiten, vom Bewegen — dauert es etwas länger, bis er runterkommt. Dann bin ich weg.
 
 Ich habe nie darüber nachgedacht, ob das normal ist. Für mich war es immer so. Erst später habe ich gelesen, dass normale Einschlaflatenz zehn bis zwanzig Minuten beträgt. Unter fünf Minuten gilt als auffällig.
 
-## Die Musik
+### Die Musik
 
 Ich schlafe immer mit Musik im Hintergrund ein. Nicht zum Entspannen. Aus Notwendigkeit.
 
@@ -2664,25 +2666,25 @@ Ohne Musik schrecken mich Geräusche hoch. Ein Knacken im Haus, eine Tür, Schri
 
 Die Musik löst drei Probleme gleichzeitig, ohne dass ich das je so formuliert hätte: Sie überdeckt die Störgeräusche, damit der Reset ungestört ablaufen kann. Sie verhindert, dass ich zu tief wegrutsche — genug Input, um nicht in den tiefen Schlaf abzugleiten. Und sie gibt mir etwas, woran mein Bewusstsein beim Zurückkommen andocken kann. Ein bekanntes Signal, das den Übergang zurück erleichtert.
 
-## Nach der Arbeit
+### Nach der Arbeit
 
 Der Abend-Nap folgt demselben Muster. Arbeit vorbei, ich setze mich hin, und innerhalb von Minuten kommt der Druck. Ich dachte jahrelang: Das ist normal, ich habe hart gearbeitet, mein Gehirn braucht Erholung. Jeder ist abends müde.
 
 Aber es ist nicht die Arbeit, die mich ermüdet. Es ist das Ende der Arbeit, das den Zustand enthüllt. Während der Arbeit bin ich klar, fokussiert, leistungsfähig. Die Aufgabe hält mich zusammen. Wenn sie aufhört, fällt etwas weg, das mich oben gehalten hat — und das Ergebnis fühlt sich an wie Erschöpfung, ist es aber nicht.
 
-## Die Betablocker-Jahre
+### Die Betablocker-Jahre
 
 Mit Metoprolol war alles etwas flacher. Nicht schlecht — besser als ohne, weniger Migräne, weniger Krisen. Aber ein Grundgefühl von Dämpfung, das ich nie richtig benennen konnte. Wie eine leichte Ibuprofen-Dosis für das Bewusstsein. Alles ein bisschen weicher, ein bisschen weniger scharf, ein bisschen weniger *da*.
 
 Was mir erst im Rückblick auffällt: Die harten Migräneanfälle wurden seltener, aber die Hintergrundinstabilität wurde chronisch. Früher gab es klare Zyklen — Aufbau, Anfall, danach besser. Mit Betablocker gab es weniger Anfälle, aber auch weniger „danach besser". Stattdessen ein Dauerzustand von *fast* Migräne, *fast* Instabilität, *fast* klar — aber nie ganz.
 
-## Migräne als Reset
+### Migräne als Reset
 
 Das klingt paradox, aber nach einem Migräneanfall fühlte ich mich oft besser als in den Tagen davor. Nicht sofort — direkt danach war ich erschöpft. Aber am nächsten Tag: klar. Scharf. Als hätte jemand die Festplatte defragmentiert. Dieses Gefühl hielt ein paar Tage, dann baute sich der Zustand wieder auf, und nach etwa sechs bis sieben Tagen war ich wieder am Punkt vor dem Anfall.
 
 Sechs bis sieben Tage. Das war mein Rhythmus, jahrelang. Nicht jeden siebten Tag eine Migräne, aber wenn eine kam, dann war es ungefähr eine Woche seit der letzten.
 
-## Die verschwundenen Träume
+### Die verschwundenen Träume
 
 Als Kind habe ich lebhaft geträumt. Als Jugendlicher habe ich luzides Träumen kultiviert — die Traumwelt war freier als die reale, und ich war lieber dort. Irgendwann in den Migränejahren hat das aufgehört. Nicht schlagartig — es gab Wichtigeres, die Zustände selbst waren interessanter als die Träume, und wenn phasenweise keine kamen, ist das untergegangen. Ich habe den Verlust nicht bemerkt.
 
@@ -2690,7 +2692,7 @@ Erst unter Betablockern, mit vierzig, fiel mir auf, dass ich gar nicht mehr trä
 
 Unter LDX träume ich wieder. Regelmäßig, intensiv, erinnerbar. Der Kontrast zu den letzten Jahren ist so stark, dass er nicht zu übersehen ist. Was ich als Alterserscheinung abgetan hatte, war ein Symptom.
 
-## Mit LDX
+### Mit LDX
 
 Der Unterschied ist nicht „weniger Symptome". Der Unterschied ist eine andere Qualität des Bewusstseins. Klarer. Schärfer. Nicht euphorisch — nicht das Gefühl, dass etwas dazugekommen ist, sondern dass etwas weggefallen ist, das vorher im Weg war.
 
@@ -2700,7 +2702,7 @@ Das Zwei-Stunden-Loch ist weg. Die Powernaps sind kaum noch nötig. Der Abend-Ei
 
 Ich habe zum ersten Mal das Gefühl, dass mein Gehirn sich selbst zusammenhalten kann, ohne dass ich es durch Arbeit, Aufgaben oder Willenskraft zusammenhalten muss.
 
-## Müdigkeit, die keine war
+### Müdigkeit, die keine war
 
 Ich muss etwas korrigieren, das in allem oben mitschwingt: Wenn ich „müde" schrieb, meinte ich etwas anderes als die meisten Menschen. Ich wusste es nur nicht.
 
@@ -2720,7 +2722,7 @@ Erst unter LDX habe ich zum ersten Mal erlebt, was Müdigkeit tatsächlich ist. 
 
 Das war der Moment, in dem ich verstanden habe, dass alles, was ich zwanzig Jahre lang für Müdigkeit gehalten hatte, keine war.
 
-## Einschlafen ohne Signal — eine kompensatorische Technik
+### Einschlafen ohne Signal — eine kompensatorische Technik
 
 Weil ich nie ein natürliches Einschlafsignal hatte, habe ich mir irgendwann beigebracht, den Übergang in den Schlaf willentlich auszulösen. Ich nenne es für mich „Alphawellen induzieren", obwohl ich nicht weiß, ob das neurophysiologisch korrekt ist.
 
@@ -2730,7 +2732,7 @@ Wenn man das ein paar Mal zyklisch macht — hineinrutschen, zurückfallen, hine
 
 Ich habe diese Technik nie gelernt. Ich habe sie gebraucht. Ohne natürliches Einschlafsignal war die Alternative, wach zu liegen und auf den Druck zu warten — oder den Übergang selbst auszulösen.
 
-### Der Krampf an der Schwelle
+#### Der Krampf an der Schwelle
 
 Beim bewussten Absinken in den hypnagogen Zustand gibt es eine Schwelle, die sich unangenehm anfühlt. Ein Gefühl wie ein Krampfschmerz im Kopf — nicht wirklich Schmerz, nicht wirklich körperlich, aber etwas, das sich dagegen wehrt. Es hindert mich am Hineingleiten, ich wehre mich dagegen und bounce zurück in den Körper. Nach ein paar Zyklen funktioniert es trotzdem — vermutlich weil der Arousal, der den Widerstand antreibt, mit jedem Zyklus sinkt.
 
@@ -2738,7 +2740,7 @@ Der „Krampf" hat vermutlich eine physische Komponente: den Tensor tympani, ein
 
 Das heißt: Der Krampf an der Einschlafschwelle und die Aufwachtechnik aus luziden Träumen sind möglicherweise derselbe Reflex in entgegengesetzter Richtung. Beim Einschlafen löst die willentliche Deafferentation — der plötzliche Wegfall somatosensorischen Inputs — einen protektiven Reflex aus, bei dem sich der Tensor tympani als Teil der trigeminalen Reflexkette mit anspannt. Das System flaggt die Abkopplung als Anomalie und zieht mich zurück. Beim Aufwachen nutze ich dieselbe Anspannung als Anker, um den Übergang bewusst zu steuern.
 
-### Zwischenzustände
+#### Zwischenzustände
 
 Mit derselben Technik lande ich manchmal nicht im normalen Schlaf, sondern in Zuständen, die normalerweise unbewusst durchlaufen werden:
 
@@ -2750,7 +2752,7 @@ Mit derselben Technik lande ich manchmal nicht im normalen Schlaf, sondern in Zu
 
 All diese Zustände sind Zwischenstationen eines Übergangs, den automatische Systeme überspringen. Wer den Schlaf-Gate manuell bedient, hat Zugang zu den Stufen, die normalerweise unsichtbar durchlaufen werden.
 
-### Der Kontrast unter LDX
+#### Der Kontrast unter LDX
 
 Gestern Abend erlebte ich zum ersten Mal etwas, das ich erst jetzt als neu und unterschiedlich erkannte: Abendmüdigkeit. Nicht den Druck, nicht den Schalter, nicht das Wegkippen. Sondern ein kohärentes, eindeutiges Signal, das sagte: *Du bist jetzt müde. Du kannst jetzt schlafen.*
 
@@ -2764,17 +2766,17 @@ Jetzt, mit einem kohärenten Müdigkeitssignal, ist Koffein plötzlich wahrnehmb
 
 Die Einschlaftechnik funktioniert weiterhin. Es gibt zwei kategorial verschiedene Pfade ins Einschlafen — den manuellen Bypass und das natürliche Signal.
 
-## Das Gedächtnis, das nicht hält
+### Das Gedächtnis, das nicht hält
 
 Als Kind konnte ich mir Dinge merken — Bilder, Seiten, Szenen. Direkt, als Kopie, nicht als Zusammenfassung. Aber es war instabil. An manchen Tagen war eine Erinnerung da, an anderen nicht. Nicht verblasst, sondern nicht auffindbar. Als hätte jemand die Datei verschoben, nicht gelöscht. Ich weiß nicht, ob das ungewöhnlich war. Ich weiß nur, dass ich mich nicht darauf verlassen konnte. Und ein Gedächtnis, auf das man sich nicht verlassen kann, ist schlimmer als ein schlechtes Gedächtnis. Ein schlechtes Gedächtnis lehrt einen, Dinge aufzuschreiben. Ein unzuverlässiges Gedächtnis lehrt einen, dass die eigene Wahrnehmung nicht real ist.
 
-## Die Panik vor der Zeit
+### Die Panik vor der Zeit
 
 Was andere Menschen nicht verstehen: Diese Instabilität macht Angst. Nicht abstrakte Angst, sondern körperliche Panik. Die Zeit vergeht, und ich kann sie nicht festhalten. Dinge passieren schneller, als ich sie begreifen kann. Nicht weil sie schnell passieren, sondern weil sie nicht zusammenhängen. Jeder Moment existiert für sich — nicht eingebettet in eine Kette von vorher und nachher, sondern als isolierter Blitz. Und dann ist er weg.
 
 Als Kind war das die totale Überflutung. Zu viel, zu schnell, zu unkontrollierbar. Alles passiert, nichts bleibt. Die Welt ist ein Strom, und ich habe kein Gefäß. Das ist das, was man ADHS-Kindern nachsagt — die Reizüberflutung, den Meltdown. Aber es ist nicht zu viel Input. Es ist zu wenig Halt. Die Erlebnisse kommen rein, aber sie ketten sich nicht zu einer Geschichte zusammen, und dann sind sie weg, und die Panik kommt, weil die eigene Existenz in Echtzeit zerfällt.
 
-## Die Musik
+### Die Musik
 
 Irgendwann — ich weiß nicht mehr wann, es war keine Entscheidung — habe ich gemerkt, dass Musik etwas verändert. Wenn ich mich an etwas erinnern wollte, das ich unter Musik erlebt hatte, konnte ich die Musik hören und die Erinnerung war da. Nicht mühsam rekonstruiert. Sondern als ob jemand eine Tür öffnet und der ganze Raum noch genau so ist, wie ich ihn verlassen habe.
 
@@ -2782,13 +2784,13 @@ Ich habe angefangen, sehr viel Musik zu hören. Nicht zum Genuss — obwohl ich 
 
 Später habe ich das generalisiert. Nicht nur Musik, sondern Gerüche, Geräusche, Symbole, Schlüsselworte. Alles, was stark genug ist, um eine Erinnerung zuverlässig auszulösen. Nicht das Erlebnis selbst speichern, sondern einen Schlüssel, der das Erlebnis aufschließt. Das war keine Strategie. Das war etwas, das sich von selbst ergeben hat, weil das andere nicht funktionierte.
 
-## Die Welt hinter der Tür
+### Die Welt hinter der Tür
 
 Heute funktioniert mein Gedächtnis über Verknüpfungen. Nicht über Zeitpunkte, nicht über direkte Kopien, sondern über Zusammenhänge. Alles hängt mit allem zusammen, nicht chronologisch, sondern strukturell. Solange sich etwas Neues in das bestehende Netz einhängen lässt, bleibt es.
 
 Aber der Kontextwechsel ist schwer. Wenn ich in einem Thema bin, bin ich dort — mit allen Details, allen Zusammenhängen, allen offenen Fäden. Durch eine Tür gehen ist eine andere Welt betreten. Der Wechsel braucht Zeit, nicht weil ich die Informationen nicht habe, sondern weil irgendetwas sich umstellen muss. Was vorher aktiv war, muss herunterfahren, anderes muss hochfahren. Ohne den Übergang ist es, als würde man zwei Sprachen gleichzeitig sprechen.
 
-## Der lange Augenblick
+### Der lange Augenblick
 
 Die Angst vor der Zeit ist weg. Sie ist irgendwann verschwunden. Ich weiß nicht genau wann.
 
@@ -2798,7 +2800,7 @@ Ich habe mir später eine elegante Erklärung ausgedacht — dass ich mein Gedä
 
 Ich habe nichts entschieden. Ich habe einen Weg gefunden, der funktioniert.
 
-## State-Dependent Memory — Anfallsengramme im Desync
+### State-Dependent Memory — Anfallsengramme im Desync
 
 Zwanzig Jahre Migräneanfälle. Zwanzig Jahre, in denen ich die gesamte Phänomenologie eines Anfalls durchlebt habe — den Aufbau, die Aura, den Schmerz, die autonomen Symptome, das Danach. Und zwanzig Jahre, in denen ich mich zwischen den Anfällen kaum daran erinnern konnte. Nicht verdrängt. Nicht vergessen. Nicht abrufbar.
 
@@ -2812,7 +2814,7 @@ Was die systematische Datenerfassung verändert hat: Sie überbrückt den Desync
 
 Unter LDX gibt es ein neues Fenster. Der PFC ist online — klar, metakognitiv kompetent — und gleichzeitig ist der Hippocampus in einem desynchronisierten Zustand. Zum ersten Mal kann ich iktale Engramme abrufen *und* sie benennen, einordnen, mit dem Normalzustand verbinden. Die alten Erinnerungen und die Fähigkeit, sie zu verarbeiten, sind gleichzeitig da. Das war vorher nie möglich.
 
-## Posteriorer vs. frontaler Schmerz — Propagationstiefe als diagnostisches Kriterium
+### Posteriorer vs. frontaler Schmerz — Propagationstiefe als diagnostisches Kriterium
 
 Die übliche Migräne, die ich kenne, sitzt frontal. Supraorbital, über den Augen, V1-Territorium. Intensiv, bohrend, das volle Programm. Das ist die volle CSD-Propagation — die Welle hat den gesamten Weg zurückgelegt, von posterior nach anterior, bis in die frontale Endstrecke.
 
@@ -2822,7 +2824,7 @@ Auch vor 10 Tagen war es ähnlich — auch posterior, auch steckengeblieben. Und
 
 Die Schmerzlokalisation wird damit zum Proxy für die Propagationstiefe. Frontal heißt: volle Propagation, die Welle hat den gesamten Kortex durchlaufen. Posterior heißt: frühzeitig gestoppt, begrenzte Ausbreitung. Nicht besser oder schlechter — aber diagnostisch informativ. Wo der Schmerz sitzt, sagt etwas darüber, wie weit es diesmal gekommen ist.
 
-## „Wackelndes Gehirn" — subjektive Repräsentation thalamischer Interferenz
+### „Wackelndes Gehirn" — subjektive Repräsentation thalamischer Interferenz
 
 Der retrobulbäre Druck — dieses Gefühl hinter dem Auge, das ich seit Jahren kenne — geht heute über in etwas anderes. Einen Kopfschmerz, der nicht frontal sitzt und nicht okzipital, sondern in einer Zone, die sich anfühlt wie die Mitte. Die Interferenzzone.
 
@@ -2830,7 +2832,7 @@ Ich kann es am besten beschreiben als „wackelndes Gehirn". Kein scharfer Schme
 
 Meine Interpretation: Das ist die subjektive Repräsentation der B7/B8-Interferenz im Midline- und intralaminären Thalamus. Zwei asynchrone serotonerge Quellen, die auf denselben Zielkern feuern, und das Ergebnis ist kein kohärentes Signal, sondern ein Interferenzmuster. Das Bewusstsein repräsentiert das als Instabilität — „wackeln" — weil es genau das ist: ein oszillatorischer Konflikt in einem Bereich, der normalerweise stabil sein sollte.
 
-## Visuelle Phänomenologie — Rauschen statt Skotom
+### Visuelle Phänomenologie — Rauschen statt Skotom
 
 Die visuellen Veränderungen während eines Anfalls waren bei mir nie so, wie die Literatur sie beschreibt. Kein Skotom. Keine wandernde Zickzacklinie. Kein Flimmern, das sich langsam über das Gesichtsfeld ausbreitet.
 
@@ -2842,7 +2844,7 @@ Dazu kommt eine leichte räumliche Desorientierung. Nicht Schwindel, nicht Gleic
 
 Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom, weil es keine Wellenfront gibt, die sich über den visuellen Kortex schiebt. Die visuelle Störung erklärt sich über den Pulvinar-Pfad: Die thalamische Interferenz (B7/B8-Phasenversatz) destabilisiert den modulatorischen thalamokortikalen Pfad (Pulvinar → visueller Kortex), während der LGN-Driver-Pfad intakt bleibt → daher Rauschen statt Blindheit. Die Gain-Kontrolle ist gestört, aber die Grundübertragung erhalten. Das Rauschen statt des Skotoms ist diagnostisch: Es spricht für Pulvinar-Gating-Versagen, nicht für eine CSD-Propagation im klassischen Sinne.
 
-## PFC-Klarheit unter LDX während des Anfalls — ein Dissoziationsbefund
+### PFC-Klarheit unter LDX während des Anfalls — ein Dissoziationsbefund
 
 Was mich heute am meisten überrascht: Der PFC war die ganze Zeit geschützt. Trotz schwerer Migräne — posteriorer Schmerz, visuelles Rauschen, autonome Symptome — war alles sehr klar erlebbar. Nicht benebelt, nicht diffus, nicht „durch Watte". Klar. Ich konnte beobachten, benennen, einordnen. Die Metakognition war intakt.
 
@@ -2852,7 +2854,7 @@ Meine Interpretation: Der PFC ist durch die dopaminerge LDX-Stabilisierung des M
 
 Keine Halluzinationen. Keine visuellen Illusionen jenseits des Rauschens. Keine Denkstörung. Das spricht gegen eine fokale CSD im PFC — wenn die Propagation bis in den Frontalkortex reichen würde, wäre die Klarheit nicht möglich. Der PFC war nicht nur geschützt, er war funktional intakt. Ein Fenster mitten in der Migräne.
 
-## Was ich anderen sagen würde
+### Was ich anderen sagen würde
 
 Wenn du das liest und dich wiedererkennst — in dem Druck, der keine Müdigkeit ist, in dem Wegdriften, das kein Einschlafen ist, in dem Gefühl, dass Arbeit dich nicht erschöpft sondern zusammenhält, in den Naps, die sich wie Reboots anfühlen — dann bist du möglicherweise nicht faul, nicht unkonzentriert, nicht „einfach müde".
 
@@ -2860,11 +2862,9 @@ Es ist möglich, dass dein Gehirn einen Zustand nicht aufrechterhalten kann, den
 
 Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine. Ich hatte einen Grundzustand, der ohne externe Stütze nicht hält. Und ich hatte nie normale Müdigkeit — nur den Schalter zwischen „gehalten" und „nicht mehr gehalten".
 
-## Abendmüdigkeit unter LDX — Einzelfall-Falsifikation des Late-Chronotyp-Traits
+### Abendmüdigkeit unter LDX — Einzelfall-Falsifikation des Late-Chronotyp-Traits
 
 Unter LDX tritt erstmals kohärente Abendmüdigkeit auf — ein Zustandssignal, das vorher nicht existierte. Die subjektive Phase verschiebt sich Richtung Morningness, obwohl LDX kein Zeitgeber ist und keine circadiane Phase verschiebt. Wenn das Abend-Wachsein ein echter Chronotyp-Peak wäre, sollte LDX es nicht verändern. Dass es sich verändert, zeigt: Das Abend-Wachsein war die einzige Tagesphase, in der kompensatorische Arousal-Quellen (circadianes Alerting-Maximum + akkumulierter Homöostat) den Raphe-Defizit überdeckten. LDX macht diese Kompensation überflüssig → das darunter liegende Müdigkeitssignal wird erstmals sichtbar. Der „Chronotyp" war eine Fehlattribution — strukturell analog zur Nackenverspannungs-Fehlattribution der Migräne (vgl. Pathogenetisches Modell, 4.3.7, 8.7.1).
-
----
 
 *Phänomenologische Beschreibung, kein klinisches Dokument. Dient der Selbsterkennung und dem Austausch.*
 
