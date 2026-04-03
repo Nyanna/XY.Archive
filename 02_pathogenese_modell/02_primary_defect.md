@@ -1,4 +1,3 @@
-
 ---
 
 ## **2\. Primärdefekt: Kongenitale Raphe-Dysregulation**
@@ -20,7 +19,7 @@ Der zentrale Mechanismus des Modells ist die 5-HT1A-Autorezeptor-Schleife der Ra
 
 Regulationsschleife (normal) Raphe feuert → Serotonin steigt → 5-HT1A-Autorezeptoren hemmen → Feuerrate sinkt → Serotonin fällt → Hemmung löst sich → Raphe feuert wieder. In einem stabilen System ist diese Schleife gedämpft: kleiner Gleichgewichtspunkt, minimale Amplitude. Der Serotoninspiegel oszilliert in einer schmalen Bandbreite um die Baseline.
 
-Regulationsschleife (dysreguliert – Arbeitshypothese) Bei defekter Dämpfung wird die Schleife underdämpft – die Schwingungen nehmen zu statt abzuklingen. Jede Destabilisierung durch externe Trigger produziert nicht eine einfache Serotoninschwankung, sondern eine sich selbst aufschaukelnde Oszillation bis zur Kaskaden-Schwelle. Periodizität der Migräne erklärt sich als: Oszillation → Attacke → Entleerung → Refraktärphase (= Dämpfungsphase, nicht simple Erholung) → erneute Oszillation. Die ~4-Tage-Periodizität dieser Zyklen wird durch einen eigenständigen Oszillator determiniert (Abschnitt 2.5.1), dessen Generator der B7/B8-Phasenversatz innerhalb der Raphe ist — nicht die circadiane Schwebung per se. Die circadiane Drift (Abschnitt 2.5) moduliert die Kaskadenschwelle, ist aber nicht der Taktgeber: Unter LDX-stabilisiertem Schlaf-Wach-Rhythmus persistiert der ~4-Tage-Zyklus subklinisch (Revision März 2026; Tracker-Daten, Anhang B).
+Regulationsschleife (dysreguliert – Arbeitshypothese) Bei defekter Dämpfung wird die Schleife underdämpft – die Schwingungen nehmen zu statt abzuklingen. Jede Destabilisierung durch externe Trigger produziert nicht eine einfache Serotoninschwankung, sondern eine sich selbst aufschaukelnde Oszillation bis zur Kaskaden-Schwelle. Periodizität der Migräne erklärt sich als: Oszillation → Attacke → Entleerung → Refraktärphase (= Dämpfungsphase, nicht simple Erholung) → erneute Oszillation. Die ~4-Tage-Periodizität dieser Zyklen wird durch einen eigenständigen Oszillator determiniert (Abschnitt 2.5.1), dessen Generator der B7/B8-Phasenversatz innerhalb der Raphe ist — nicht die circadiane Schwebung per se. Die circadiane Drift (Abschnitt 2.5) moduliert die Kaskadenschwelle, ist aber nicht der Taktgeber: Unter LDX-stabilisiertem Schlaf-Wach-Rhythmus persistiert der ~4-Tage-Zyklus subklinisch (Tracker-Daten, Anhang B).
 
 ### **2.3 Genetische und entwicklungsbiologische Ätiologie**
 
@@ -121,9 +120,13 @@ Die Purkinje-Zell-Hypersensitivität ist das Korrelat einer chronischen Adaptati
 | **Mechanismus (Integrator/Purkinje)** | Neurophysiologisch etabliert; Verknüpfung mit LDX-Hypersensitivität: plausibel, nicht publiziert |
 | **Rekalibrierungs-Vorhersage** | Hypothetisch; aus Rezeptorbiologie abgeleitet |
 
-Ein weiterer, bislang wenig beachteter Modulationspfad der DRN-Aktivität verläuft über TAAR1 (Trace Amine-Associated Receptor 1), der sowohl im DRN als auch im VTA dicht exprimiert ist (Lindemann et al. 2008). TAAR1-Agonismus moduliert die Desensibilisierungsrate und Agonist-Potenz an 5-HT1A-Autorezeptoren im DRN (Revel et al. 2011, PNAS 108:8485). Die Wirkrichtung ist dabei dosisabhängig bifunktional: Voller TAAR1-Agonismus (RO5256390) supprimiert DRN-5-HT-Neurone, während partieller Agonismus (RO5263397) sie stimuliert (Dremencov et al. 2022, Mol Psychiatry). Pharmakologisch relevant wird dieser Pfad durch den Befund, dass Guanfacin — primär als α2A-Agonist in der ADHS-Therapie eingesetzt — ein potenter hTAAR1-Vollagonist ist (EC50 ≈ 20 nM; Cichero et al. 2023). Guanfacin wäre damit ein unbeabsichtigter Modulator der Raphe-Autorezeptor-Schleife, dessen klinische Effekte auf die 5-HT1A-Dynamik bisher nicht berücksichtigt wurden.
+#### **TAAR1-Modulation der DRN-Aktivität**
 
-Die In-vivo-Richtung dieser Modulation ist allerdings nicht eindeutig ableitbar und muss als offene Frage explizit dokumentiert werden: Wenn TAAR1-Agonismus die 5-HT1A-Desensibilisierung *stabilisiert*, wäre Guanfacin paradoxerweise ein partieller Raphe-Stabilisator — ein therapeutisch günstiger Nebeneffekt. Wenn er sie hingegen *destabilisiert*, verstärkt Guanfacin den postulierten Primärdefekt der Autorezeptor-Schleife. Unabhängig von der Richtungsklärung zeigt der TAAR1-Pfad, dass die 5-HT1A-Autorezeptor-Schleife von mehreren Seiten pharmakologisch erreichbar ist — nicht nur über SERT-Blockade (die den Kerndefekt nicht adressiert) oder die DA→DRN-Upstream-Modulation, sondern auch über TAAR1-vermittelte Desensibilisierungsmodulation. Dies erweitert das therapeutische Zielspektrum und unterstreicht die Komplexität der Raphe-Homöostase.
+Ein weiterer Modulationspfad der DRN-Aktivität verläuft über TAAR1 (Trace Amine-Associated Receptor 1), der sowohl im DRN als auch im VTA dicht exprimiert ist (Lindemann et al. 2008). TAAR1-Agonismus moduliert die Desensibilisierungsrate und Agonist-Potenz an 5-HT1A-Autorezeptoren im DRN (Revel et al. 2011, PNAS 108:8485). Die Wirkrichtung ist dosisabhängig bifunktional: Voller TAAR1-Agonismus (RO5256390) supprimiert DRN-5-HT-Neurone, während partieller Agonismus (RO5263397) sie stimuliert (Dremencov et al. 2022, Mol Psychiatry).
+
+Pharmakologisch relevant wird dieser Pfad durch den Befund, dass Guanfacin — primär als α2A-Agonist in der ADHS-Therapie eingesetzt — ein potenter hTAAR1-Vollagonist ist (EC50 ≈ 20 nM; Cichero et al. 2023). Guanfacin wäre damit ein unbeabsichtigter Modulator der Raphe-Autorezeptor-Schleife, dessen klinische Effekte auf die 5-HT1A-Dynamik bisher nicht berücksichtigt wurden.
+
+Die In-vivo-Richtung dieser Modulation ist nicht eindeutig ableitbar: Wenn TAAR1-Agonismus die 5-HT1A-Desensibilisierung *stabilisiert*, wäre Guanfacin paradoxerweise ein partieller Raphe-Stabilisator. Wenn er sie *destabilisiert*, verstärkt Guanfacin den postulierten Primärdefekt der Autorezeptor-Schleife. Unabhängig von der Richtungsklärung zeigt der TAAR1-Pfad, dass die 5-HT1A-Autorezeptor-Schleife von mehreren Seiten pharmakologisch erreichbar ist — nicht nur über SERT-Blockade (die den Kerndefekt nicht adressiert) oder die DA→DRN-Upstream-Modulation, sondern auch über TAAR1-vermittelte Desensibilisierungsmodulation. Dies erweitert das therapeutische Zielspektrum und unterstreicht die Komplexität der Raphe-Homöostase.
 
 ### **2.4.2 D2High-Shift als Spätfolge frühkindlicher Glukokortikoidexposition**
 
@@ -376,7 +379,7 @@ Daraus lässt sich ein kohärenter Verhaltensphänotyp ableiten, der über Jahrz
 
 ### **2.5 Hypothalamische Circadian-Dysregulation als ko-primärer Mechanismus**
 
-#### **2.5.1 Endogene Periodenlänge und erzwungene Desynchronisation**
+#### **2.5.1 Endogene Periodenlänge, Schwebung und der ~4-Tage-Oszillator**
 
 Die endogene circadiane Periode (τ) liegt neurotypisch bei ~24,1–24,3 h und wird täglich durch Licht-Entrainment auf den 24-h-Zyklus synchronisiert. Im vorliegenden Profil beträgt τ ≈ 26 h – eine Abweichung von ~2 h pro Tag, die durch normales Entrainment nicht vollständig kompensiert wird.
 
@@ -405,15 +408,11 @@ Dieser Mechanismus erklärt die klinisch paradoxe Beobachtung, dass Migränetrig
 
 Dieses Modell erklärt drei klinische Beobachtungen, die rein periodische oder rein triggerbasierte Modelle nicht erfassen: (1) Die Migränefrequenz ist quasi-periodisch, aber nicht exakt regelmäßig – der Rhythmus „wandert", weil die Triggerstärke den Auslösezeitpunkt innerhalb des Zyklus verschiebt. (2) Starke Belastungen können Attacken „vorziehen", schwache Phasen den Zyklus strecken. (3) Triggertagebücher scheitern, weil sie eine Trigger→Anfall-Kausalität annehmen, die so nicht existiert – die eigentliche Variable ist der unsichtbare Dämpfungszustand.
 
-**Präzisierung (April 2026):** Die Tracker-Datenanalyse (Anhang B.12) zeigt, dass das Vulnerabilitätsfenster sich nicht am Tiefpunkt der Schwebung öffnet, sondern auf der **ansteigenden Flanke** danach: Anfälle liegen im Median 2 Tage nach dem HR-Drop-Minimum (n=15). Am Minimum ist das System maximal fragmentiert, aber insgesamt gedämpft; die CSD-Schwelle wird erst erreicht, wenn der sympathische Drive zurückkehrt und die Diskrepanz zwischen steigendem Arousal und noch fragmentiertem Kortex maximal wird. Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude) — ein **Phasenmodell**, nicht ein Schwellenmodell.
+**Phasenmodell statt Schwellenmodell:** Die Tracker-Datenanalyse (Anhang B.12) zeigt, dass das Vulnerabilitätsfenster sich nicht am Tiefpunkt der Schwebung öffnet, sondern auf der **ansteigenden Flanke** danach: Anfälle liegen im Median 2 Tage nach dem HR-Drop-Minimum (n=15). Am Minimum ist das System maximal fragmentiert, aber insgesamt gedämpft; die CSD-Schwelle wird erst erreicht, wenn der sympathische Drive zurückkehrt und die Diskrepanz zwischen steigendem Arousal und noch fragmentiertem Kortex maximal wird. Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude).
 
----
+**Der ~4-Tage-Oszillator als eigenständiger Generator**
 
-##### **Revision März 2026 — Der ~4-Tage-Oszillator als eigenständiger Generator**
-
-> **Status:** Die obigen Abschnitte (Schwebungstabelle, Stochastisches Fenstermodell) beschreiben den PRE-Befund unter Metoprolol korrekt. Die folgende Revision integriert POST-Befunde unter LDX, die eine Neuinterpretation des Taktgeber-Mechanismus erzwingen.
-
-**Empirischer Befund (Tracker-Daten, Anhang B):**
+Die Tracker-Daten unter LDX (POST) erzwingen eine Neuinterpretation des Taktgeber-Mechanismus:
 
 | Parameter | PRE (Metoprolol) | POST (LDX) | Interpretation |
 | :---- | :---- | :---- | :---- |
@@ -434,42 +433,9 @@ Die Raphe-Kerne B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianu
 
 **Reinterpretation des Stochastischen Fenstermodells:** Das oben beschriebene Fenstermodell bleibt gültig, aber der Taktgeber wechselt. PRE war die zirkadiane Schwebung (~6–7 Tage) der dominante Rhythmus, weil die zirkadiane Drift den B7/B8-Versatz maskierte. POST, mit stabilisiertem Schlaf-Wach-Rhythmus, tritt der eigentliche Generator hervor: ein ~4-Tage-Oszillator, dessen Periode durch die intrinsische Relaxationszeit des B7/B8-Phasenversatzes determiniert wird.
 
----
+**Thalamische Interferenz: Der Midline-/Intralaminäre Thalamus als Konvergenzpunkt**
 
-#### **2.5.2 SCN-Raphe-Kopplung: Serielle Architektur und Flaschenhals-Mechanismus (Revision April 2026)**
-
-Die frühere Darstellung der SCN↔Raphe-Verschaltung als bidirektionale Parallelarchitektur (SCN ⇄ B7/B8) war unvollständig. Retrograde Tracing-Studien (Meyer-Bernstein et al. 1996) und pharmakologische Blockade-Experimente (Glass et al. 2000) zeigen eine **serielle** Architektur: **SCN ↔ B8 ↔ B7**.
-
-| Pfad | Architektur | Evidenz |
-| :---- | :---- | :---- |
-| **B8 (MRN) → SCN** | **Monosynaptisch.** Der MRN ist die *einzige* direkte serotonerge Quelle der SCN-Innervierung. | Meyer-Bernstein et al. 1996: retrograde Tracer aus dem SCN markieren ausschließlich MRN-Neurone, nicht DRN. |
-| **B7 (DRN) → SCN** | **Multisynaptisch, über B8.** DRN projiziert zum Intergeniculate Leaflet (IGL), nicht direkt zum SCN. DRN-Stimulation erzeugt zwar 5-HT-Freisetzung im SCN, aber dieser Effekt wird durch 5-HT-Antagonisten im MRN vollständig blockiert → der Weg verläuft DRN → MRN → SCN. | Glass et al. 2000: 5-HT-Antagonist-Infusion in den MRN eliminiert DRN-induzierte SCN-5-HT-Freisetzung. |
-| **SCN → B7/B8** | **Keine direkten Projektionen.** SCN-Efferenzen erreichen die Raphe indirekt über hypothalamische Zwischenstationen: mediale präoptische Area (mPOA), subparaventrikuläre Zone (SPZ), dorsomedialer Hypothalamus (DMH). | Fehlende direkte SCN→Raphe-Projektionen in Tracing-Studien; hypothalamische Relaisstationen konsistent dokumentiert. |
-
-**Konsequenz: B8 als serielles Relay.** Der MRN (B8) ist nicht nur *ein* Kanal zur SCN-Modulation, sondern der *einzige* Kanal. B7 hat keinen unabhängigen SCN-Zugang. Die gesamte serotonerge Zeitgeberinformation, die den SCN erreicht, wird durch B8 gefiltert. Der 5-HT1A-Autorezeptor am MRN (Dudley et al. 1999) fungiert als Gate dieser Signalübertragung: Er reguliert die Feuerrate der MRN-Neurone und damit die Amplitude und Kohärenz des an den SCN gelieferten 5-HT-Signals.
-
-**Verstärkungsschleife (revidiert):** Instabiler B8-Autorezeptor → verrauschtes 5-HT-Signal am SCN → gestörtes Entrainment → circadiane Drift akkumuliert → zunehmende Desynchronisation senkt Raphe-Dämpfungskonstante → Oszillationsamplitude steigt → Kaskadenschwelle wird mit minimalem Perturbator erreicht → Attacke → Entleerung/Resynchronisation → Zyklus beginnt erneut.
-
-##### **Der MRN-Autorezeptor als mechanistischer Flaschenhals (Revision April 2026)**
-
-Die serielle Architektur hat eine nicht-triviale Konsequenz: Die 5-HT1A-Autorezeptor-Instabilität am MRN (B8) erklärt *beide* in diesem Modell postulierten Desynchronisationsmodi über einen einzigen Mechanismus.
-
-1. **Intra-Kern-Effekt (Feuerrate-Oszillation):** Ein instabiler 5-HT1A-Autorezeptor erzeugt underdämpfte Feuerraten-Oszillationen innerhalb des MRN — der in Abschnitt 2.2 beschriebene Grundmechanismus. Dasselbe gilt für den DRN (B7), dessen 5-HT1A-Autorezeptoren denselben Defekt tragen.
-2. **Inter-Kern-Effekt (B7 verliert SCN-Synchronisation):** Weil B7 den SCN ausschließlich über das B8-Relay erreicht, bedeutet ein verrauschtes B8-Signal, dass B7 seine *einzige* Quelle zirkadianer Synchronisationsinformation verliert. Der B7/B8-Phasenversatz (Abschnitt 2.5.1) ist daher kein unabhängiger Defekt, sondern eine direkte Downstream-Konsequenz der B8-Autorezeptor-Instabilität: B8 rauscht → SCN-Rückkopplung auf B7 degradiert → Phasenbeziehung driftet.
-
-**Ein Mechanismus, ein Defekt, zwei Downstream-Effekte.** Die bisherige Zwei-Prozess-Darstellung (Intra-Kern-Oszillation vs. Inter-Kern-Versatz, vgl. D.4.3) war phänomenologisch korrekt — beide Phänomene existieren und sind messbar —, aber mechanistisch redundant. Der MRN-5-HT1A-Autorezeptor ist der anatomische und funktionelle Flaschenhals, der beide Effekte erzeugt.
-
-##### **LDX-Wirkung auf den SCN: Indirekt über B8 (Revision April 2026)**
-
-LDX wirkt *nicht* direkt auf den SCN. Der SCN exprimiert weder DAT noch NET in funktionell relevanter Dichte; katecholaminerge Modulation ist kein primärer SCN-Input. Der klinisch beobachtete zirkadiane Stabilisierungseffekt von LDX erklärt sich vollständig über die serielle Architektur:
-
-1. **LDX → B8-Stabilisierung:** LDX erhöht tonisch Dopamin und Noradrenalin in der Umgebung der Raphe-Kerne → D2-Rezeptor-vermittelte Modulation stabilisiert die B8-Feuerrate (vgl. Abschnitt 2.5.1).
-2. **Stabilisiertes B8 → kohärenteres SCN-Signal:** Ein weniger verrauschtes B8 liefert ein kohärenteres 5-HT-Signal an den SCN → SCN-Entrainment verbessert sich → zirkadiane Drift wird korrigiert.
-3. **Persistierender ~4-Tage-Oszillator:** LDX korrigiert den *Intra-Kern-Takt* (Feuerrate beider Kerne), adressiert aber nicht den *Inter-Kern-Relay-Versatz* — die relative Phasenbeziehung zwischen B7 und B8, die über das SCN-Relay synchronisiert wird. Das erklärt die Tracker-Daten: zirkadiane Drift eliminiert (r = −0.831), aber der ~4-Tage-Oszillator persistiert subklinisch, weil das verbesserte, aber nicht perfekte B8-Signal den B7/B8-Versatz zwar dämpft, aber nicht aufhebt.
-
-##### **Revision März 2026 — Thalamische Interferenz: Midline-/Intralaminärer Thalamus als primärer Ort der B7/B8-Interferenz**
-
-Der B7/B8-Phasenversatz (vgl. Revision 2.5.1) erzeugt seine maximale Wirkung nicht diffus, sondern an einem anatomisch definierten Konvergenzpunkt: dem **Midline-/Intralaminären Thalamus** (ML/IL-Komplex).
+Der B7/B8-Phasenversatz erzeugt seine maximale Wirkung nicht diffus, sondern an einem anatomisch definierten Konvergenzpunkt: dem **Midline-/Intralaminären Thalamus** (ML/IL-Komplex).
 
 **Anatomische Begründung:** Der ML/IL-Komplex (Nuclei reuniens, rhomboideus, centromedianus, parafascicularis) ist eine funktionelle Gruppierung, keine anatomische Einheit. Er weist die dichteste belegte Überlappung beider Raphe-Kerne auf: B7 erreicht ihn über dorsale Tegmentumfasern, B8 über ventrale. Die einzelnen Kerne innerhalb des Komplexes haben jedoch unterschiedliche B7/B8-Innervierungsdichten und unterschiedliche kortikale Zielgebiete, was zu einer intrathalamischen Kaskade mit unterschiedlichen Kippschwellen führt (vgl. Anhang F.4.1). Die Funktion des ML/IL-Komplexes — kortikale Zustandsübergänge, Arousal-Gating, thalamokortikale Synchronisation — macht ihn zum kritischsten Relais für die in 2.5.4 beschriebene kortikale Kohärenz.
 
@@ -482,6 +448,39 @@ Der B7/B8-Phasenversatz (vgl. Revision 2.5.1) erzeugt seine maximale Wirkung nic
 | **Tag 3–4** | Maximaler Versatz | Destruktive Interferenz | Maximale Fragmentierung, CSD-Schwelle erreicht |
 
 **Konsequenz für das Gesamtmodell:** Der ML/IL-Thalamus ist der anatomische *Flaschenhals*, durch den der B7/B8-Phasenversatz auf kortikale Kohärenz wirkt. Dies erklärt, warum der ~4-Tage-Oszillator primär über Schlaffragmentierung und thalamokortikale Destabilisierung operiert — und warum LDX (das intra-Kern-Takt stabilisiert, aber den Inter-Kern-Versatz nicht adressiert) die CSD-Zyklen nicht eliminiert, sondern nur subklinisch dämpft (Tracker-Daten, Anhang B).
+
+---
+
+#### **2.5.2 SCN-Raphe-Kopplung: Serielle Architektur und Flaschenhals-Mechanismus**
+
+Die SCN↔Raphe-Verschaltung folgt einer **seriellen** Architektur: **SCN ↔ B8 ↔ B7**.
+
+| Pfad | Architektur | Evidenz |
+| :---- | :---- | :---- |
+| **B8 (MRN) → SCN** | **Monosynaptisch.** Der MRN ist die *einzige* direkte serotonerge Quelle der SCN-Innervierung. | Meyer-Bernstein et al. 1996: retrograde Tracer aus dem SCN markieren ausschließlich MRN-Neurone, nicht DRN. |
+| **B7 (DRN) → SCN** | **Multisynaptisch, über B8.** DRN projiziert zum Intergeniculate Leaflet (IGL), nicht direkt zum SCN. DRN-Stimulation erzeugt zwar 5-HT-Freisetzung im SCN, aber dieser Effekt wird durch 5-HT-Antagonisten im MRN vollständig blockiert → der Weg verläuft DRN → MRN → SCN. | Glass et al. 2000: 5-HT-Antagonist-Infusion in den MRN eliminiert DRN-induzierte SCN-5-HT-Freisetzung. |
+| **SCN → B7/B8** | **Keine direkten Projektionen.** SCN-Efferenzen erreichen die Raphe indirekt über hypothalamische Zwischenstationen: mediale präoptische Area (mPOA), subparaventrikuläre Zone (SPZ), dorsomedialer Hypothalamus (DMH). | Fehlende direkte SCN→Raphe-Projektionen in Tracing-Studien; hypothalamische Relaisstationen konsistent dokumentiert. |
+
+**Konsequenz: B8 als serielles Relay.** Der MRN (B8) ist nicht nur *ein* Kanal zur SCN-Modulation, sondern der *einzige* Kanal. B7 hat keinen unabhängigen SCN-Zugang. Die gesamte serotonerge Zeitgeberinformation, die den SCN erreicht, wird durch B8 gefiltert. Der 5-HT1A-Autorezeptor am MRN (Dudley et al. 1999) fungiert als Gate dieser Signalübertragung: Er reguliert die Feuerrate der MRN-Neurone und damit die Amplitude und Kohärenz des an den SCN gelieferten 5-HT-Signals.
+
+**Verstärkungsschleife:** Instabiler B8-Autorezeptor → verrauschtes 5-HT-Signal am SCN → gestörtes Entrainment → circadiane Drift akkumuliert → zunehmende Desynchronisation senkt Raphe-Dämpfungskonstante → Oszillationsamplitude steigt → Kaskadenschwelle wird mit minimalem Perturbator erreicht → Attacke → Entleerung/Resynchronisation → Zyklus beginnt erneut.
+
+##### **Der MRN-Autorezeptor als mechanistischer Flaschenhals**
+
+Die serielle Architektur hat eine nicht-triviale Konsequenz: Die 5-HT1A-Autorezeptor-Instabilität am MRN (B8) erklärt *beide* in diesem Modell postulierten Desynchronisationsmodi über einen einzigen Mechanismus.
+
+1. **Intra-Kern-Effekt (Feuerrate-Oszillation):** Ein instabiler 5-HT1A-Autorezeptor erzeugt underdämpfte Feuerraten-Oszillationen innerhalb des MRN — der in Abschnitt 2.2 beschriebene Grundmechanismus. Dasselbe gilt für den DRN (B7), dessen 5-HT1A-Autorezeptoren denselben Defekt tragen.
+2. **Inter-Kern-Effekt (B7 verliert SCN-Synchronisation):** Weil B7 den SCN ausschließlich über das B8-Relay erreicht, bedeutet ein verrauschtes B8-Signal, dass B7 seine *einzige* Quelle zirkadianer Synchronisationsinformation verliert. Der B7/B8-Phasenversatz (Abschnitt 2.5.1) ist daher kein unabhängiger Defekt, sondern eine direkte Downstream-Konsequenz der B8-Autorezeptor-Instabilität: B8 rauscht → SCN-Rückkopplung auf B7 degradiert → Phasenbeziehung driftet.
+
+**Ein Mechanismus, ein Defekt, zwei Downstream-Effekte.** Die Zwei-Prozess-Darstellung (Intra-Kern-Oszillation vs. Inter-Kern-Versatz, vgl. D.4.3) war phänomenologisch korrekt — beide Phänomene existieren und sind messbar —, aber mechanistisch redundant. Der MRN-5-HT1A-Autorezeptor ist der anatomische und funktionelle Flaschenhals, der beide Effekte erzeugt.
+
+##### **LDX-Wirkung auf den SCN: Indirekt über B8**
+
+LDX wirkt *nicht* direkt auf den SCN. Der SCN exprimiert weder DAT noch NET in funktionell relevanter Dichte; katecholaminerge Modulation ist kein primärer SCN-Input. Der klinisch beobachtete zirkadiane Stabilisierungseffekt von LDX erklärt sich vollständig über die serielle Architektur:
+
+1. **LDX → B8-Stabilisierung:** LDX erhöht tonisch Dopamin und Noradrenalin in der Umgebung der Raphe-Kerne → D2-Rezeptor-vermittelte Modulation stabilisiert die B8-Feuerrate (vgl. Abschnitt 2.5.1).
+2. **Stabilisiertes B8 → kohärenteres SCN-Signal:** Ein weniger verrauschtes B8 liefert ein kohärenteres 5-HT-Signal an den SCN → SCN-Entrainment verbessert sich → zirkadiane Drift wird korrigiert.
+3. **Persistierender ~4-Tage-Oszillator:** LDX korrigiert den *Intra-Kern-Takt* (Feuerrate beider Kerne), adressiert aber nicht den *Inter-Kern-Relay-Versatz* — die relative Phasenbeziehung zwischen B7 und B8, die über das SCN-Relay synchronisiert wird. Das erklärt die Tracker-Daten: zirkadiane Drift eliminiert (r = −0.831), aber der ~4-Tage-Oszillator persistiert subklinisch, weil das verbesserte, aber nicht perfekte B8-Signal den B7/B8-Versatz zwar dämpft, aber nicht aufhebt.
 
 #### **2.5.3 Hypothalamische Steuerung und autonomes Mitschwingen**
 
@@ -547,6 +546,9 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | :---- | :---- | :---- |
 | SCN-Raphe bidirektionale Verschaltung | Gesichert | Tiermodelle, Tract-Tracing |
 | Serotonerge Modulation des SCN-Entrainments | Gesichert | 5-HT1A/7-Rezeptoren im SCN |
+| SCN↔Raphe als serielle Architektur (SCN ↔ B8 ↔ B7); B8 einzige direkte SCN-Quelle | Gesichert | Meyer-Bernstein et al. 1996 (retrograde Tracer); Glass et al. 2000 (MRN-Blockade eliminiert DRN→SCN-Effekt) |
+| MRN-5-HT1A-Autorezeptor als mechanistischer Flaschenhals (ein Defekt → Intra-Kern-Oszillation + Inter-Kern-Versatz) | Plausibel, mechanistisch zwingend | Abgeleitet aus serieller Architektur; nicht direkt experimentell getestet |
+| LDX wirkt auf SCN indirekt über B8-Stabilisierung, nicht direkt | Plausibel, mechanistisch konsistent | SCN exprimiert DAT/NET nicht in funktioneller Dichte; LDX-Effekt über Raphe-Modulation erklärbar |
 | Hypothalamische Aktivierung in Migräneprodrom | Gesichert | PET-Studien (May et al.), repliziert |
 | Lokaler Schlaf bei Wachheit (kortikale Off-State-Intrusion) | Gesichert | Vyazovskiy et al. 2011, Nir et al. 2017, intrakranielle Ableitungen |
 | Slow-Wave-Intrusion korreliert mit Mind Blanking und Aufmerksamkeitsaussetzern | Gesichert | Bernardi et al. 2015, Andrillon et al. 2021 (Nature Communications) |
@@ -555,9 +557,10 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Raphe als tonischer kortikaler Synchronisator | Gesichert | DRN-Feuerkinetik etabliert (Monti 2008), diffuse Projektion anatomisch gesichert |
 | Endogene Periodenlänge τ ≈ 26 h | Einzelfallbeobachtung | Langjährige konsistente Selbstbeobachtung |
 | Quasi-wöchentliche Periodizität im HR-Drop (7,5 Tage, FFT) als autonome Manifestation der zirkadianen Schwebung | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B.10); integriert ~4-Tage-Oszillator (B7/B8) und akkumulierte Schwebung als komplementäre Taktgeber |
-| **~4-Tage-Oszillator als eigenständiger CSD-Taktgeber (B7/B8-Phasenversatz)** | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B): Median IBI 4,0 d, Autokorrelation Lag 4 r=−0,692; persistiert unter LDX-stabilisiertem Schlaf |
-| **Midline-/Intralaminärer Thalamus als primäre B7/B8-Interferenzquelle mit intrathalamischer Kaskade** | Anatomisch gesichert, funktionelle Rolle hypothetisch | B7/B8-Konvergenz im ML/IL-Komplex anatomisch etabliert (Vertes 2004, Morin 2013); Interferenz-Mechanismus und Kaskadenmodell eigene Hypothese |
-| **LDX stabilisiert Intra-Kern-Takt, nicht Inter-Kern-Phasenversatz** | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
+| ~4-Tage-Oszillator als eigenständiger CSD-Taktgeber (B7/B8-Phasenversatz) | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B): Median IBI 4,0 d, Autokorrelation Lag 4 r=−0,692; persistiert unter LDX-stabilisiertem Schlaf |
+| Phasenmodell: CSD-Schwelle auf ansteigender Flanke nach HR-Drop-Minimum, nicht am Minimum selbst | Deskriptiv (n=15 Anfälle) | Tracker-Daten (Anhang B.12); Anfall korreliert mit dDrop/dt, nicht mit Drop-Amplitude |
+| Midline-/Intralaminärer Thalamus als primäre B7/B8-Interferenzquelle mit intrathalamischer Kaskade | Anatomisch gesichert, funktionelle Rolle hypothetisch | B7/B8-Konvergenz im ML/IL-Komplex anatomisch etabliert (Vertes 2004, Morin 2013); Interferenz-Mechanismus und Kaskadenmodell eigene Hypothese |
+| LDX stabilisiert Intra-Kern-Takt, nicht Inter-Kern-Phasenversatz | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
 | Stochastisches Fenstermodell (Triggerstärke × Dämpfungszustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
 | Maximale circadiane Desynchronisation → maximale Vulnerabilität für lokalen Schlaf | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus 2.5.1 + 2.5.4: Raphe-Tonus-Minimum konvergiert mit Arousal-Lücke und SWS-Fragmentierung |
 | Aufgabengetriebener Arousal als Kompensation für insuffizienten Raphe-Tonus | Hypothetisch, konsistent | Klinische Selbstbeobachtung, konsistent mit Arousal-Quellen-Differenzierung |
@@ -566,6 +569,6 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Quasi-wöchentliche Periodizität im nächtlichen HR-Drop (FFT: 7,5 Tage, Power 102,5; Autokorrelation Lag 7 r=0,317) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B) |
 | HR-Drop-Periodizität kongruent mit Schwebungsfrequenz bei τ ≈ 26 h | Deskriptiv, konsistent mit Modellvorhersage | Tracker-Daten (Anhang B) |
 | Betablocker-Invarianz der SWS-Fragmentierung als negatives Differentialkriterium | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten, PRE unter Metoprolol zeigt identische Fragmentierung (Anhang B.4) |
-| **Late-Chronotyp als Downstream-Marker globaler Desynchronisation** | Plausibel, epidemiologisch gestützt | Kendis et al. 2015: generalisierte Epilepsie 5× Late-Chronotyp vs. Kontrollen; fokale Epilepsie kein Unterschied. ADHD–Late-Chronotyp-Assoziation robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017). Migräne–Late-Chronotyp (Jung et al. 2025, Baksa et al. 2025). Segregation spezifisch mit globalen Synchronisationsstörungen, nicht mit lokalen Hardwaredefekten. |
-| **Subjektiver Late-Chronotyp bei Population A als Kompensationsartefakt (nicht circadianer Trait)** | Hypothetisch, konsistent mit Kreuzkorrelation | ADHD–Late-Typ-Assoziation (Kooij & Bijlenga 2013); generalisierte Epilepsie 5× Late-Typ vs. fokale kein Effekt (Kendis 2015); Manni 2016: MEQ ≠ DLMO bei Epilepsie; Einzelfall: Abendmüdigkeit erstmals unter LDX (Anhang C) |
-| **τ ≈ 26 h als potenzielles Raphe-SCN-Symptom** | Hypothetisch, mechanistisch konsistent | DRN projiziert zum SCN ausschließlich über B8-Relay (vgl. 2.5.2); instabiler Raphe-Tonus könnte SCN-Zeitgeber-Kalibrierung verzerren → verlängerte endogene Periodenlänge nicht unabhängiger Chronotyp-Trait, sondern Downstream der Raphe-SCN-Interaktion. Nicht direkt testbar ohne Forced-Desynchrony-Protokolle. |
+| Late-Chronotyp als Downstream-Marker globaler Desynchronisation | Plausibel, epidemiologisch gestützt | Kendis et al. 2015: generalisierte Epilepsie 5× Late-Chronotyp vs. Kontrollen; fokale Epilepsie kein Unterschied. ADHD–Late-Chronotyp-Assoziation robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017). Migräne–Late-Chronotyp (Jung et al. 2025, Baksa et al. 2025). Segregation spezifisch mit globalen Synchronisationsstörungen, nicht mit lokalen Hardwaredefekten. |
+| Subjektiver Late-Chronotyp bei Population A als Kompensationsartefakt (nicht circadianer Trait) | Hypothetisch, konsistent mit Kreuzkorrelation | ADHD–Late-Typ-Assoziation (Kooij & Bijlenga 2013); generalisierte Epilepsie 5× Late-Typ vs. fokale kein Effekt (Kendis 2015); Manni 2016: MEQ ≠ DLMO bei Epilepsie; Einzelfall: Abendmüdigkeit erstmals unter LDX (Anhang C) |
+| τ ≈ 26 h als potenzielles Raphe-SCN-Symptom | Hypothetisch, mechanistisch konsistent | DRN projiziert zum SCN ausschließlich über B8-Relay (vgl. 2.5.2); instabiler Raphe-Tonus könnte SCN-Zeitgeber-Kalibrierung verzerren → verlängerte endogene Periodenlänge nicht unabhängiger Chronotyp-Trait, sondern Downstream der Raphe-SCN-Interaktion. Nicht direkt testbar ohne Forced-Desynchrony-Protokolle. |
