@@ -16,7 +16,7 @@ tz = ZoneInfo("Europe/Berlin")
 
 def sleep_night(ts_utc_seconds):
     dt = datetime.fromtimestamp(ts_utc_seconds, tz=timezone.utc).astimezone(tz)
-    if dt.hour < 18:
+    if dt.hour < 12:
         dt = dt - timedelta(days=1)
     return dt.strftime("%Y-%m-%d")
 
@@ -24,10 +24,10 @@ def sleep_night(ts_utc_seconds):
 def main():
     conn = sqlite3.connect(DB_PATH)
 
-    # Load main sleep sessions (>= 180 min)
+    # Load main sleep sessions (>= min)
     sleep_df = pd.read_sql_query(
         "SELECT TIMESTAMP, WAKEUP_TIME, TOTAL_DURATION FROM XIAOMI_SLEEP_TIME_SAMPLE "
-        "WHERE TOTAL_DURATION >= 180",
+        "WHERE TOTAL_DURATION >= 90",
         conn,
     )
     sleep_df["start_ts"] = sleep_df["TIMESTAMP"] / 1000  # ms -> s
@@ -72,29 +72,25 @@ def main():
         drop = entry_hr - exit_hr
 
         # Quartile means
-        q_bounds = np.linspace(0, ts_hours[-1], 5)
+        q_bounds = np.linspace(0, ts_hours[-1], 7)
         q_means = []
-        for i in range(4):
+        for i in range(6):
             qm = (ts_hours >= q_bounds[i]) & (ts_hours < q_bounds[i + 1])
             q_means.append(float(np.mean(hr_v[qm])) if qm.any() else np.nan)
-        q1, q2, q3, q4 = q_means
+        q1, q2, q3, q4, q5, q6 = q_means
 
-        # Anomaly: late rise
-        late_rise = (q3 > q2 + 3) or (q4 > q3 + 3)
 
         # Pattern classification
         if r2 > 0.25 and slope < -1.0:
-            pattern = "LINEAR_STARK"
+            pattern = "-2"
         elif r2 > 0.12 and slope < -0.5:
-            pattern = "LINEAR_MODERAT"
+            pattern = "-1"
         elif r2 < 0.05 and abs(slope) < 0.5:
-            pattern = "FLAT"
+            pattern = "0"
         elif slope > 0.3 and r2 > 0.05:
-            pattern = "ANSTIEG"
-        elif late_rise:
-            pattern = "ANOMALIE_LATE_RISE"
+            pattern = "1"
         else:
-            pattern = "GEMISCHT"
+            pattern = ""
 
         night = sleep_night(s_start)
         period = "PRE" if night < "2025-03-01" else "POST"
@@ -120,6 +116,8 @@ def main():
                 "q2_mean": round(q2, 1),
                 "q3_mean": round(q3, 1),
                 "q4_mean": round(q4, 1),
+                "q5_mean": round(q4, 1),
+                "q6_mean": round(q4, 1),
                 "pattern": pattern,
             }
         )
@@ -127,21 +125,6 @@ def main():
     result = pd.DataFrame(rows).sort_values("night").reset_index(drop=True)
     result.to_csv(OUT_PATH, index=False)
     print(f"Exported {len(result)} nights to {OUT_PATH}")
-
-    # Summary table
-    print("\n=== Pattern-Verteilung nach Periode ===\n")
-    summary = (
-        result.groupby(["period", "pattern"])
-        .agg(
-            n=("night", "count"),
-            mean_entry_hr=("entry_hr", "mean"),
-            mean_exit_hr=("exit_hr", "mean"),
-            mean_drop=("drop", "mean"),
-        )
-        .round(1)
-    )
-    print(summary.to_string())
-
 
 if __name__ == "__main__":
     main()
