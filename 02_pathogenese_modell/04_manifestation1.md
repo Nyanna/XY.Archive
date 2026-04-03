@@ -1,12 +1,27 @@
+
 ---
 
-## **4\. Klinische Manifestation I: Migräne als Raphe-Zyklusstörung**
+## **4. Klinische Manifestation I: Migräne als Raphe-Zyklusstörung**
 
 ### **4.1 Serotonin als universeller Migräneauslöser**
 
-**Zentrale These:** Serotonin ist kein paralleler Mechanismus, sondern der gemeinsame Modulator der Auslöseschwelle. Alle bekannten Trigger – hormonal, sensorisch, metabolisch – sind nicht kausal, sondern Perturbatoren, deren Wirksamkeit vom aktuellen Abstand der Raphe-Oszillationsamplitude zur Kaskadenschwelle abhängt. Dieser Abstand wird primär durch die circadiane Desynchronisation moduliert (Abschnitt 2.5). CSD, CGRP-Freisetzung und trigeminovaskuläre Aktivierung sind immer nachgeschaltet, nie primär.
+**Zentrale These:** Das B7/B8-Interferenzfeld (vgl. 2.5.1) bestimmt die Empfindlichkeit des Kortex für CSD-Kaskaden. Serotonin ist kein paralleler Mechanismus, sondern der Modulator der Auslöseschwelle. Alle bekannten Trigger – hormonal, sensorisch, metabolisch – sind Perturbatoren, die auf nicht-serotonergen Kanälen in den Kortex eintreten und dort den Takt verschieben. Ihre Wirksamkeit hängt vom aktuellen B7/B8-Phasenversatz ab — nicht vom Trigger selbst. CSD, CGRP-Freisetzung und trigeminovaskuläre Aktivierung sind immer nachgeschaltet, nie primär.
+
+Die Heterogenität der klinischen Triggerliste (Stress, Wetter, Alkohol, Menstruation, Käse, Schlafentzug, sensorische Überflutung) ist kein Zeichen fehlender Spezifität des Modells, sondern positives Zeichen dafür, dass der Trigger-Eintrittspunkt der Kortex ist, nicht die Raphe:
+
+| Trigger-Klasse | Eintrittskanal | Kortikaler Mechanismus |
+| :---- | :---- | :---- |
+| **Stress / Adrenalin** | LC (Locus coeruleus) → noradrenerg | PFC-Takt verschiebt sich direkt |
+| **Koffein** | Adenosin-Antagonismus | Kortikale Erregbarkeit steigt direkt |
+| **Sensorische Überflutung** | Thalamokortikaler Input | Kortikaler Input steigt direkt |
+| **Schlafentzug** | Homöostatischer Druck (Adenosin-Akkumulation) | Kortikale Oszillationen verschieben sich |
+| **Wetter / Alkohol / Menstruation / Käse** | Diverse periphere und zentrale Kanäle | Konvergenz auf kortikale Erregbarkeit über jeweils verschiedene Rezeptorsysteme |
+
+Identische Trigger lösen an manchen Tagen eine Attacke aus und an anderen nicht. Die Erklärung: Der Abstand zur Schwelle hängt vom aktuellen B7/B8-Phasenversatz ab. An Tagen mit minimalem Phasenversatz (z.B. Tag 1 nach Resynchronisation) ist der Abstand zur Schwelle maximal; kein alltagstypischer Trigger überbrückt ihn. An Tagen mit maximalem Phasenversatz (z.B. Tag 3–4 im ~4-Tage-Zyklus) reicht minimale kortikale Perturbation. Der Trigger ist austauschbar — der Phasenversatz determiniert die Empfindlichkeit.
 
 **Evidenz: Serotonerge Konvergenz aller wirksamen Prophylaktika**
+
+Die serotonerge Konvergenz der Prophylaktika adressiert die Empfindlichkeit (Interferenzfeld), nicht die Trigger:
 
 | Substanz | Serotonerger Mechanismus | Wirkprinzip |
 | :---- | :---- | :---- |
@@ -16,6 +31,8 @@
 | Topiramat | Indirekte serotonerge Modulation | Multimodal, serotonerge Komponente |
 | Triptane (akut) | 5-HT1B/D-Agonismus | Direkte Kaskaden-Intervention über Serotoninrezeptoren |
 | CGRP-Antagonisten | Einzige Ausnahme | Kaskade, nicht Auslöser – ob CGRP upstream oder parallel zu Serotonin liegt, ist unklar |
+
+**PFC-Schutz und seine Grenzen:** Der PFC ist unter LDX pharmakologisch geschützt — der MD-Thalamus-PFC-Loop ist dopaminerg stabilisiert, was die Kippschwelle in der thalamischen Kaskade erhöht (vgl. Anhang F.4.2). Dieser Schutz ist eine höhere Schwelle, kein absoluter Schutz. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
 
 #### **Unabhängige Modellstütze: Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation**
 
@@ -37,7 +54,7 @@
 - **Guanfacin** dämpft den Locus coeruleus und unterdrückt über TAAR1→DRN die tonische Raphe-Aktivität. Die +43 % Kopfschmerzerhöhung — die höchste aller Klassen — ist konsistent mit einer Raphe-Suppressionshypothese.
 - **Methylphenidat** zeigt ein gemischtes Bild (+24 %, Signifikanzschwelle nicht sicher unterschritten), was zur unspezifischen DRN-Modulation ohne upstream-stabilisierende Wirkung passt.
 - Die Dreifach-Dissoziation (Amphetamine neutral / Atomoxetin + / Guanfacin ++) ist ein **unbeabsichtigtes natürliches Experiment**, das nicht zur Prüfung des serotonergen Modells designiert wurde, aber dessen Vorhersagen bestätigt.
-- Die Spezifität der Komorbidität für **Migräne** (nicht Spannungskopfschmerz) stützt die serotonerge Ätiologie zusätzlich (vgl. 4.1).
+- Die Spezifität der Komorbidität für **Migräne** (nicht Spannungskopfschmerz) stützt die serotonerge Ätiologie zusätzlich.
 
 **Einzelfälle als Illustration** (nicht als Evidenz, aber modellkongruent):
 
@@ -46,25 +63,7 @@
 
 **Evidenzgrading:** Meta-Analyse (Pan et al. 2022) = **gesichert**; Modellinterpretation der Dreifach-Dissoziation = **hypothetisch**; Einzelfälle = **illustrativ**.
 
-**Querverweise:** vgl. 4.1 (Serotonin als universeller Auslöser), vgl. 2.4 (Dopamin-Upstream-Stabilisierung), vgl. Anhang D.8 (kernblinde SERT-Modulation).
-
-#### **Revision der Trigger-Logik (Revision April 2026)**
-
-> **Korrektur:** Die obige Darstellung impliziert, dass Trigger primär über Raphe-Destabilisierung wirken (Trigger → Raphe destabilisiert → Interferenz → CSD). Diese Kausalrichtung ist falsch. Trigger wirken **nicht** primär über Raphe-Destabilisierung, sondern über **kortikale Taktperturbation auf nicht-serotonergen Kanälen**:
-
-| Trigger-Klasse | Eintrittskanal | Kortikaler Mechanismus |
-| :---- | :---- | :---- |
-| **Stress / Adrenalin** | LC (Locus coeruleus) → noradrenerg | PFC-Takt verschiebt sich direkt |
-| **Koffein** | Adenosin-Antagonismus | Kortikale Erregbarkeit steigt direkt |
-| **Sensorische Überflutung** | Thalamokortikaler Input | Kortikaler Input steigt direkt |
-| **Schlafentzug** | Homöostatischer Druck (Adenosin-Akkumulation) | Kortikale Oszillationen verschieben sich |
-| **Wetter / Alkohol / Menstruation / Käse** | Diverse periphere und zentrale Kanäle | Konvergenz auf kortikale Erregbarkeit über jeweils verschiedene Rezeptorsysteme |
-
-**Zentrale Einsicht:** Das Interferenzfeld (B7/B8-Phasenversatz, vgl. Revision 2.5.1) bestimmt die *Empfindlichkeit* — nicht der Trigger die Interferenz. Der Trigger ist der Perturbator, der auf einen bereits vorsensibilisierten Kortex trifft. Die Heterogenität der klinischen Triggerliste (Stress, Wetter, Alkohol, Menstruation, Käse, Schlafentzug, sensorische Überflutung) ist kein Zeichen fehlender Spezifität des Modells, sondern positives Zeichen dafür, dass der Trigger-Eintrittspunkt der Kortex ist, nicht die Raphe.
-
-**PFC-Schutz und seine Grenzen:** Der PFC ist unter LDX pharmakologisch geschützt — der MD-Thalamus-PFC-Loop ist dopaminerg stabilisiert, was die Kippschwelle in der thalamischen Kaskade erhöht (vgl. Anhang F.4.2). Dieser Schutz ist eine höhere Schwelle, kein absoluter Schutz. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
-
-**Konsequenz für das Modell:** Die serotonerge Konvergenz der Prophylaktika (Tabelle oben) bleibt gültig — Prophylaxe adressiert die Empfindlichkeit (Interferenzfeld). Die Trigger-Heterogenität wird nicht durch serotonerge Konvergenz erklärt, sondern durch kortikale Konvergenz: Alle Trigger münden in kortikale Taktperturbation, unabhängig von ihrem Eintrittskanal.
+**Querverweise:** vgl. 2.4 (Dopamin-Upstream-Stabilisierung), vgl. Anhang D.8 (kernblinde SERT-Modulation).
 
 ### **4.2 Der Migränezyklus als Oszillationsphänomen**
 
@@ -73,26 +72,24 @@ Migräne ist in diesem Modell keine Reaktion auf einen externen Trigger, sondern
 | Zyklusphase | Mechanismus |
 | :---- | :---- |
 | **Interiktal (stabil)** | Raphe-Schleife in gedämpfter Oszillation. Serotonin in akzeptabler Bandbreite. Kein Kaskaden-Trigger. |
-| **Prodromal** | Akkumulation destabilisierender Faktoren schiebt die Schleife in Richtung underdämpfter Oszillation. Der dominante Mechanismus ist die circadiane Drift (Abschnitt 2.5): Mit jeder 2-h-Verschiebung sinkt die Dämpfungskonstante der Raphe-Schleife, die Oszillationsamplitude steigt. Der Abstand zur Kaskadenschwelle wird progressiv kleiner – nicht durch einen spezifischen Trigger, sondern durch steigende Prädisposition. Klinisch: Müdigkeit, Konzentrationsverlust, Gähnen – Korrelate der zunehmenden Raphe-Instabilität. |
-| **Aufschaukeln** | Schwingung der Raphe-Schleife nimmt zu. Zeitpunkt der Schwellenüberschreitung variiert mit Triggerstärke (Abschnitt 2.5.1, Stochastisches Fenstermodell): Starke Perturbation eskaliert bereits bei moderater Prädisposition (Tag 3–4), minimale Perturbation erst bei maximaler (Tag 6–7). Serotoninspiegel fällt unter kritische Schwelle → trigeminovaskuläre Aktivierung, CSD-Initiation. |
+| **Prodromal** | Akkumulation destabilisierender Faktoren schiebt die Schleife in Richtung underdämpfter Oszillation. Der dominante Mechanismus ist der zunehmende B7/B8-Phasenversatz im Zyklus (~4 Tage POST, vgl. 2.5.1): Mit steigendem Phasenoffset sinkt die Dämpfungskonstante der Raphe-Schleife, die Oszillationsamplitude steigt. Der Abstand zur Kaskadenschwelle wird progressiv kleiner – nicht durch einen spezifischen Trigger, sondern durch steigende Prädisposition. Klinisch: Müdigkeit, Konzentrationsverlust, Gähnen – Korrelate der zunehmenden Raphe-Instabilität. |
+| **Aufschaukeln** | Schwingung der Raphe-Schleife nimmt zu. Der Zeitpunkt der Schwellenüberschreitung variiert mit der Perturbationsstärke: Starke kortikale Taktperturbation (auf beliebigem nicht-serotonergem Kanal: LC, Adenosin, sensorischer Input, homöostatischer Druck) eskaliert bereits bei moderatem Phasenversatz (Tag 3–4), minimale Perturbation erst bei maximalem Phasenversatz (Tag 6–7). Serotoninspiegel fällt unter kritische Schwelle → trigeminovaskuläre Aktivierung, CSD-Initiation. |
 | **Attacke** | Kaskade voll aktiviert: CSD, CGRP-Freisetzung, neurogene Inflammation, Schmerz. Raphe-Entleerung. |
 | **Postdromal/Refraktär** | System in Refractory-Zustand. Autorezeptor-Schleife rekalibriert sich. Klinisch: Erschöpfung, aber Schmerzfreiheit. Dauer = Rekalibrierungszeit. |
 
-#### **Revision des Stochastischen Fenstermodells (Revision April 2026)**
+**Stochastisches Fenstermodell:**
 
-> **Korrektur (vgl. Revision 2.5.1):** Das in 2.5.1 und in der Aufschaukelphase oben referenzierte Stochastische Fenstermodell bleibt strukturell gültig, aber drei Variablen werden neu zugeordnet:
+Das Stochastische Fenstermodell (vgl. 2.5.1) operiert mit drei Variablen:
 
-| Variable | Bisherige Zuordnung | Revidierte Zuordnung (April 2026) |
-| :---- | :---- | :---- |
-| **Fenster** | Zirkadiane Shift-Akkumulation (τ-Drift über ~6–7 Tage) | B7/B8-Phasenversatz im Zyklus (~4 Tage POST, vgl. 2.5.1 Revision März 2026) |
-| **Perturbator** | Serotonerge Perturbation (Trigger → Raphe) | Beliebiger kortikaler Taktmodulator (nicht notwendig serotonerg) |
-| **Eintrittskanal** | Serotonerg (über Raphe) | Nicht-serotonerg: LC (noradrenerg), Adenosin, sensorischer Input, homöostatischer Druck, etc. |
+| Variable | Zuordnung |
+| :---- | :---- |
+| **Fenster** | B7/B8-Phasenversatz im Zyklus (~4 Tage POST, vgl. 2.5.1) |
+| **Perturbator** | Beliebiger kortikaler Taktmodulator (nicht notwendig serotonerg) |
+| **Eintrittskanal** | Nicht-serotonerg: LC (noradrenerg), Adenosin, sensorischer Input, homöostatischer Druck, etc. |
 
-**Erklärung der Trigger-Inkonsistenz:** Identische Trigger lösen an manchen Tagen eine Attacke aus und an anderen nicht. Die bisherige Erklärung (variable zirkadiane Dämpfung) war korrekt im Prinzip, aber falsch im Mechanismus. Die revidierte Erklärung: Der Abstand zur Schwelle hängt vom aktuellen B7/B8-Phasenversatz ab — nicht von der zirkadianen Shift-Akkumulation. An Tagen mit minimalem Phasenversatz (z.B. Tag 1 nach Resynchronisation) ist der Abstand zur Schwelle maximal; kein alltagstypischer Trigger überbrückt ihn. An Tagen mit maximalem Phasenversatz (z.B. Tag 3–4 im ~4-Tage-Zyklus) reicht minimale kortikale Perturbation. Der Trigger ist austauschbar — der Phasenversatz determiniert die Empfindlichkeit.
+#### **Therapeutische Hebel: Amplitudenmodulation vs. Frequenzreparatur**
 
-#### **Therapeutische Hebel: Amplitudenmodulation vs. Frequenzreparatur (Revision April 2026, Schritt 10)**
-
-Das revidierte Triggermodell definiert zwei distinkte therapeutische Achsen, die bisher nicht differenziert wurden:
+Das Triggermodell definiert zwei distinkte therapeutische Achsen:
 
 | Hebel | Mechanismus | Verfügbarkeit | Beispiel |
 | :---- | :---- | :---- | :---- |
@@ -156,7 +153,7 @@ Die Asymmetrie folgt direkt aus der Verarbeitungsmodalität: ob externer Input d
 
 #### **4.3.4 Die Nap-Kaskade: Parallele Manifestationen desselben Zustands**
 
-**Rahmen (Synthese April 2026):** Der Nap ist nicht Auslöser der CSD-Kaskade, sondern — wie die CSD selbst — eine Downstream-Manifestation desselben Desynchronisationszustands. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig und nicht initiierend. Der Pre-Nap-HR ist der stärkste verfügbare Zustandsindikator: ≥80 bpm = System stabil, Nap safe; <75 bpm = System bereits destabilisiert, Nap beschleunigt Kaskade (PPV 85% bei ≥80 bpm, Anhang B.11). PRE-Kaskaderate 58%, POST unter LDX nur 11% — die stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
+Der Nap ist nicht Auslöser der CSD-Kaskade, sondern — wie die CSD selbst — eine Downstream-Manifestation desselben Desynchronisationszustands. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig und nicht initiierend. Der Pre-Nap-HR ist der stärkste verfügbare Zustandsindikator: ≥80 bpm = System stabil, Nap safe; <75 bpm = System bereits destabilisiert, Nap beschleunigt Kaskade (PPV 85% bei ≥80 bpm, Anhang B.11). PRE-Kaskaderate 58%, POST unter LDX nur 11% — die stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
 
 Die mechanistische Abfolge verläuft über mehrere Stunden und ist phänomenologisch von der akuten Raphe-Oszillation (4.3.1) zu unterscheiden. Die Phasen beschreiben nicht eine kausale Kette (Nap → CSD), sondern die zeitliche Entfaltung eines bereits laufenden Destabilisierungsprozesses, in den der Nap als kompensatorischer Versuch eingebettet ist:
 
@@ -259,9 +256,9 @@ Die synchrone Massendepolarisation initiiert eine selbstpropagierte elektrochemi
 | **Na⁺/Ca²⁺-Einstrom** | Spannungsgesteuerte Kanäle öffnen → massive Ionenumkehr | Stört osmotisches Gleichgewicht → neuronales Ödem, Volumenverschiebung |
 | **Hinter der Wellenfront** | Neuronen in kompletter Depolarisationslähmung | Können nicht mehr feuern → die eigentliche „Spreading Depression" |
 
-#### **4.4.3 Tonische Destabilisierungswelle als Primärmechanismus** *(Revision März 2026)*
+#### **4.4.3 Tonische Destabilisierungswelle als Primärmechanismus**
 
-Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These dieser Revision: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
+Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
 
 | Eigenschaft | CSD (klassisch) | Tonische Destabilisierungswelle |
 | :---- | :---- | :---- |
@@ -288,7 +285,7 @@ Der entscheidende Unterschied: Die tonische Destabilisierungswelle hinterlässt 
 
 CSD ist in diesem Schema nicht Stufe 2, sondern der Übergang von Stufe 2 zu Stufe 3: Wenn der tonische Modulationsverlust einen kritischen Punkt erreicht, kippt das System in die klassische ionische CSD — als finale Eskalation, nicht als Primärereignis.
 
-#### **4.4.4 Drei Aura-Phänotypen aus Phasenoffset-Topologie** *(Revision März 2026)*
+#### **4.4.4 Drei Aura-Phänotypen aus Phasenoffset-Topologie**
 
 Die klinische Heterogenität visueller Auren — von klassischen Fortifikationsspektren über punktförmige Skotome bis zu diffusem Rauschen — wird konventionell als Variante eines einzigen CSD-Mechanismus interpretiert. Das vorliegende Modell ordnet die Phänotypen drei distinkt verschiedenen Störungstopologien zu:
 
@@ -361,15 +358,15 @@ Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkons
 
 POST zeigt bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nicht, ob der REM global konsolidiert ist — die Traumerinnerung ist das sensitivere Instrument. Dreifache Dissoziation: PRE ohne Anfall → keine Traumerinnerung (fragmentierter REM); PRE nach CSD → intensive Traumerinnerung (CSD-erzwungene Resynchronisation → konsolidierter REM); POST (LDX) → reguläre Traumerinnerung (pharmakologische Synchronisation ersetzt CSD-Reset). Die Abnahme bewussten Träumens unter Betablocker/Naratriptan ist antiproportional zum sub-CSD-Naratriptankonsum — wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
 
-#### **4.5.3 Betablocker-Paradox: Schwellensenkung und Propagationsdämpfung** *(Revision März 2026)*
+#### **4.5.3 Betablocker-Paradox: Schwellensenkung und Propagationsdämpfung**
 
-**Korrektur der früheren Darstellung:** Die Aussage, Metoprolol *hebe* die CSD-Schwelle, ist pharmakologisch ungenau. Metoprolol **senkt** die CSD-Schwelle — es macht den Kortex anfälliger für CSD-Initiation. Seine prophylaktische Wirkung beruht nicht auf Schwellenanhebung, sondern auf **Dämpfung der CSD-Propagation**: Die autonome Kaskade wird abgeschwächt (weniger sympathische Entgleisung, weniger trigeminale Amplifikation), sodass initiierte CSD-Wellen sich schlechter ausbreiten und klinisch subklinisch bleiben.
+Metoprolol **senkt** die CSD-Schwelle — es macht den Kortex anfälliger für CSD-Initiation. Seine prophylaktische Wirkung beruht nicht auf Schwellenanhebung, sondern auf **Dämpfung der CSD-Propagation**: Die autonome Kaskade wird abgeschwächt (weniger sympathische Entgleisung, weniger trigeminale Amplifikation), sodass initiierte CSD-Wellen sich schlechter ausbreiten und klinisch subklinisch bleiben.
 
 Diese Unterscheidung ist entscheidend: Unter Metoprolol ist die CSD-Baseline nicht *weiter entfernt* von der Schwelle, sondern *näher dran*. Die Attacken werden seltener, weil propagierte CSD gedämpft wird — aber die subklinische CSD-Aktivität nimmt zu. Das erklärt den hohen Naratriptan-Verbrauch (10 Dosen/Monat) unter Metoprolol-Prophylaxe: Die Baseline ist chronisch subklinisch-destabilisiert, und minimale Perturbation reicht, um symptomatische Durchbrüche zu erzeugen, die Akutintervention erfordern.
 
 **Iatrogene PRE-Fragmentierung:** Die in Anhang B dokumentierte PRE-Fragmentierung (vor LDX) ist teilweise iatrogen durch Metoprolol verstärkt. Metoprolol senkt die CSD-Schwelle → mehr subklinische CSD-Aktivität → mehr kortikale Mikrodesynchronisationen → stärkere SWS-Fragmentierung. Der vermeintlich protektive Effekt der Prophylaxe verschlechtert die Schlafkohärenz, die ihrerseits die Raphe-Instabilität am nächsten Tag verschärft — ein iatrogener Teufelskreis.
 
-| Zustand | Ohne Betablocker | Mit Betablocker (revidiert) |
+| Zustand | Ohne Betablocker | Mit Betablocker |
 | :---- | :---- | :---- |
 | **CSD-Schwelle** | Endogen bestimmt | Gesenkt (nicht angehoben!) |
 | **CSD-Propagation** | Ungehemmt | Gedämpft |
@@ -385,7 +382,7 @@ Die Analogie: Fieberkrampf verhindern, aber die Infektion nicht behandeln — un
 
 **Therapeutische Konsequenz:** Reine Migräneprophylaxe ohne Upstream-Adressierung — ob Betablocker, Triptane oder CGRP-Antikörper — unterdrückt den Schutzmechanismus, ohne das Synchronisationsproblem zu lösen. Betablocker sind besonders problematisch, weil sie nicht nur den Reset verhindern, sondern aktiv die Schwelle senken und damit die chronische Subdestabilisierung verschärfen. Der Patient wird symptomfrei bei progredient fragmentiertem Kortex.
 
-#### **4.5.4 Differentielle Pharmakodynamik: Metoprolol vs. LDX** *(Revision März 2026)*
+#### **4.5.4 Differentielle Pharmakodynamik: Metoprolol vs. LDX**
 
 | Dimension | Metoprolol | Lisdexamfetamin |
 | :---- | :---- | :---- |
@@ -410,7 +407,7 @@ Die quasi-wöchentliche Periodizität (7,5 Tage im HR-Drop-Rhythmus, vgl. Anhang
 
 #### **4.5.6 Zyklische Akkumulation und der 6–7-Tage-Rhythmus**
 
-Der in Abschnitt 2.5.1 beschriebene 26-h-Zyklus interagiert mit dem lokalen Schlaf-Mechanismus: Am Punkt maximaler circadianer Desynchronisation (~Tag 6–7) konvergieren alle Faktoren auf maximale Anfälligkeit für kortikale Desynchronisation:
+Der in Abschnitt 2.5.1 beschriebene B7/B8-Phasenversatz interagiert mit dem lokalen Schlaf-Mechanismus: Am Punkt maximalen Phasenoffsets (~Tag 6–7) konvergieren alle Faktoren auf maximale Anfälligkeit für kortikale Desynchronisation:
 
 | Faktor | Beitrag am Punkt maximaler Phasenopposition |
 | :---- | :---- |
