@@ -9,14 +9,6 @@ Dieser Anhang dokumentiert die Tracker-Datenanalyse der kortikalen Desynchronisa
 
 **Kernthese:** Das SWS-Defizit manifestiert sich auf zwei komplementären Ebenen — **räumlich** (intra-Nacht): Der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein topologisch fragmentiertes Patchwork aus lokalen Off-States; der Tracker kodiert diese räumliche Fragmentierung als temporale Instabilität. **Zeitlich** (inter-Nacht): Der nächtliche HR-Drop oszilliert mit einer dominanten Periode von 7,5 Tagen (FFT, Power 102,5; Autokorrelation Lag 7 r=0,317), kongruent mit der vorhergesagten Schwebungsfrequenz bei τ ≈ 26 h. Die zirkadiane Schwebung akkumuliert kortikale Desynchronisation über ~7 Tage; pro Nacht manifestiert sich das als variable Fragmentierung.
 
-**Konsequenzen für das Modell:**
-
-- Kapitel 2.5.5 (Schlafarchitektur als Kohärenzmarker): Beide Ebenen — räumliche Fragmentierung (intra-Nacht) und zeitliche Akkumulation (inter-Nacht) — als komplementäre Marker.
-- Kapitel 4.3 (Nap-Kaskade): Der Nap ist Indikator, nicht Auslöser. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Pre-Nap-HR als Zustandsindikator (PPV 85% bei ≥80 bpm).
-- Kapitel 4.5 (CSD als Reset): Verstärkt durch Anfallstiming auf ansteigender Flanke (Phasenmodell) und Traumerinnerung als Kohärenzmarker.
-- Kapitel 8 (Interozeptive Inkohärenz): Schlafkonsolidierung unter LDX als Spezialfall der allgemeinen Synchronisierung.
-- Kapitel 9 (Evidenz): Evidenztabelle aktualisiert mit statistisch signifikanten Befunden.
-
 ---
 
 ### **B.1 Datengrundlage**
