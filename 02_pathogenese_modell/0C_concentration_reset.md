@@ -1,7 +1,7 @@
 
 ---
 
-## **Anhang C: Was ich erlebe — Phänomenologie eines Bewusstseinsresets
+## **Anhang C: Was ich erlebe — Phänomenologie eines Bewusstseinsresets**
 
 *Subjektive Beschreibungen eines Zustands, den ich jahrelang für Konzentrationserschöpfung hielt.*
 
