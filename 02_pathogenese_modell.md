@@ -102,13 +102,17 @@ Wenn dieses Modell auch nur in der Grundstruktur korrekt ist, dann existiert ein
 | **3** | Downstream-Pathologie I: Thalamische Fehlkalibrierung. Kalibrierungsmechanismus (3.2), Predictive Coding (3.3), Signal-Rausch-Verhältnis und thalamischer Gain (3.4). |
 | **4** | Klinische Manifestation I: Migräne als Raphe-Zyklusstörung. Serotonin als universeller Modulator (4.1), Migränezyklus (4.2), lokaler Schlaf und kortikale Desynchronisation als Migränepfad inkl. Nap-Kaskade (4.3), CSD-Mechanismus (4.4), CSD als kompensatorische Resynchronisation, Betablocker-Paradox und differentielle Pharmakodynamik (4.5). |
 | **5** | Klinische Manifestation II: Autonome Dysregulation. Drei afferente Pfade, vestibuloautonomer Reflex, TCR. |
-| **6** | Thalamische Kompensationstiefe als Verzweigungsvariable. |
-| **7** | Therapie und pharmakologisches Profil. |
+| **6** | Klinische Manifestation III: ASD-Phänotyp. ASD als Konfigurationsvariante (6.1), repetitives Verhalten als Stabilisierungsmechanismus (6.2), Identität als Wahrnehmungssignatur und Substanzaversion (6.3). |
+| **7** | Pharmakologische Evidenz: Selbstversuch. Methylphenidat (7.1), Lisdexamfetamin (7.2), therapeutisches Fenster (7.3). |
 | **8** | Interozeptive Inkohärenz als Downstream-Effekt monoaminerger Desynchronisierung. Asynchrone Modulationssysteme (8.2), Phänomenologie der Inkohärenz (8.3), dopaminerge Synchronisierung (8.4), Reformulierung des ADHS-Kerndefizits (8.5). |
 | **9** | Evidenzstatus und Limitationen. |
-| **Anhang A** | ASD-Relation: Emotionsverarbeitung und Bindung. |
-| **Anhang B** | Tracker-Datenanalyse: Kortikale Desynchronisation als Marker für Raphe-Dysregulation |
+| **Anhang A** | Emotionale Affektion: Beobachtung und Arbeitshypothese. Emotionsverarbeitung (A.1–A.2), Implikation für den ASD-Phänotyp (A.3), Abgrenzung und Einordnung (A.4). |
+| **Anhang B** | Tracker-Datenanalyse: Kortikale Desynchronisation als Marker für Raphe-Dysregulation. |
 | **Anhang C** | Phänomenologie eines Bewusstseinsresets: Subjektive Beschreibung von lokalem Schlaf, Bewusstseinsdruck, Nap-als-Reboot und differentiellen Arousal-Quellen als Erfahrungsbericht zum mechanistischen Modell (2.5.4, 4.3). |
+| **Anhang D** | Raphe-Synchronisationsmechanik: Vom Schrittmacher zur kortikalen Kohärenz. Architektur der Raphe-Kerne (D.1), DRN-MRN-Phasenverschiebung als Primärquelle kortikaler Desynchronisation, Verbindung zu CSD als Notfall-Reset bei Takt-Versagen. |
+| **Anhang E** | CSD als Notfall-Resynchronisation: Kreuzkorrelation mit Epilepsie und therapeutische Implikationen. Serotonin als Antikonvulsivum (E.1), Fallback-Hierarchie Raphe-Takt → CSD → epileptischer Anfall, Differenzierung der Migräneprophylaktika nach Eingriffspunkt. |
+| **Anhang F** | B7/B8-Innervierungsanatomie und Interferenzstrukturen. Projektionsmuster DRN vs. MRN (F.1), thalamische und hippocampale Interferenzstrukturen, anatomische Geometrie der dualen Raphe-Innervierung als Grundlage klinischer Symptomtopographie. |
+| **Anhang G** | Iatrogene Prävalenz und Hit-Architektur-Erweiterung. Historische Korrelation pharmazeutischer Exposition mit ADHS-Prävalenz (G.2), Industrieländer-Gradient, ASD als Kontrollgröße für diagnostische vs. iatrogene Prävalenzanteile. |
 
 ---
 
