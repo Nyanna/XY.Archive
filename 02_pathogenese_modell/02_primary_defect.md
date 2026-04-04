@@ -215,7 +215,7 @@ Raphe-Primärdefekt (Hit 1) → instabiler 5-HT-Tonus pränatal → thalamische 
 
 Die klinische Manifestation — Th2-dominante Immunlage (Neurodermitis, Asthma) — ist dabei selbst serotonerg moduliert (Mastzell-5-HT, intestinales Serotonin). Die Grunderkrankung, die zur GC-Behandlung führte, ist somit kein Zufall, sondern eine frühe Downstream-Manifestation desselben Primärdefekts. Die iatrogene GC-Exposition ist damit eine sekundäre Komplikation des Primärdefekts — das System verschärft seinen eigenen Schaden.
 
-**Therapeutische Konsequenz des Two-Hit-Modells:** Die D2-Supersensitivität (Hit 2) ist nicht nur Problemquelle, sondern gleichzeitig therapeutischer Hebel (vgl. 2.4.0). Sie ermöglicht die Raphe-Kompensation bei Dosen, die bei normalem D2High/D2Low-Verhältnis insuffizient wären. Das therapeutische Fenster (vgl. 7.3) ist somit nicht nur durch die Hypersensitivität *begrenzt*, sondern durch sie überhaupt erst *erreichbar*. Hit 2 hat das System beschädigt und gleichzeitig den Zugang zur Therapie eröffnet.
+**Therapeutische Konsequenz des Two-Hit-Modells:** Die D2-Supersensitivität (Hit 2) ist nicht nur Problemquelle, sondern gleichzeitig therapeutischer Hebel (vgl. 2.4). Sie ermöglicht die Raphe-Kompensation bei Dosen, die bei normalem D2High/D2Low-Verhältnis insuffizient wären. Das therapeutische Fenster (vgl. 7.3) ist somit nicht nur durch die Hypersensitivität *begrenzt*, sondern durch sie überhaupt erst *erreichbar*. Hit 2 hat das System beschädigt und gleichzeitig den Zugang zur Therapie eröffnet.
 
 ##### **Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
 
@@ -339,7 +339,7 @@ Das therapeutische Fenster (vgl. Abschnitt 7.3) ist nicht Ausdruck individueller
 
 #### **2.4.3 Verhaltensphänotyp als Vorhersage aus D2High-sensitiver Raphe**
 
-Wenn D2High-Rezeptoren auf Raphe-Neuronen funktionell ausreichend sind (vgl. 2.4.0), folgt eine spezifische, testbare Vorhersage: **Jeder endogene oder exogene Dopaminanstieg destabilisiert die Raphe-Aktivität über den D2High-Mechanismus.** Das System reagiert auf DA-Spikes nicht mit Reward-Enhancement (wie neurotypisch), sondern mit Raphe-Suppression → 5-HT-Nadir → erhöhter Kaskadenvulnerabilität.
+Wenn D2High-Rezeptoren auf Raphe-Neuronen funktionell ausreichend sind (vgl. 2.4), folgt eine spezifische, testbare Vorhersage: **Jeder endogene oder exogene Dopaminanstieg destabilisiert die Raphe-Aktivität über den D2High-Mechanismus.** Das System reagiert auf DA-Spikes nicht mit Reward-Enhancement (wie neurotypisch), sondern mit Raphe-Suppression → 5-HT-Nadir → erhöhter Kaskadenvulnerabilität.
 
 Daraus lässt sich ein kohärenter Verhaltensphänotyp ableiten, der über Jahrzehnte unbewusst als adaptive Strategie gegen DA-induzierte Raphe-Instabilität entstanden ist — phänotypische Adaptation an einen kongenitalen Mechanismus, nicht Persönlichkeitsmerkmal.
 

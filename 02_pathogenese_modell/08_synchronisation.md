@@ -60,7 +60,7 @@ Die interozeptive Inkohärenz erzeugt ein spezifisches phänomenologisches Profi
 
 #### **8.4.1 LDX-Effekt auf interozeptive Kohärenz**
 
-Unter Lisdexamfetamin (vgl. 2.4.0, therapeutische Implikation) zeigt sich ein spezifisches Muster, das die Synchronisierungshypothese stützt:
+Unter Lisdexamfetamin (vgl. 2.4, therapeutische Implikation) zeigt sich ein spezifisches Muster, das die Synchronisierungshypothese stützt:
 
 | Beobachtung | Erklärung durch Aufputscheffekt | Erklärung durch Synchronisierung |
 | :---- | :---- | :---- |
@@ -275,7 +275,7 @@ Der Herzfrequenzverlauf bestätigt die Drei-Schritt-Kaskade aus 8.9.2 unabhängi
 ---
 
 *Querverweise:*
-- Abschnitt 2.4.0: D2High-Raphe-Mechanismus als Grundlage der dopaminergen Stabilisierung
+- Abschnitt 2.4: D2High-Raphe-Mechanismus als Grundlage der dopaminergen Stabilisierung
 - Abschnitt 2.4.3: Verhaltensphänotyp als Downstream der D2High-Raphe-Interaktion
 - Abschnitt 3.4: Thalamisches Gating und Signal-Rausch-Verhältnis
 - Abschnitt 3.4.5: Neurales Rauschen bei ADHS — kortikale Ebene
