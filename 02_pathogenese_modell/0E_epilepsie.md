@@ -1,5 +1,5 @@
 
----
+***
 
 ## **Anhang E: CSD als Notfall-Resynchronisation — Kreuzkorrelation mit Epilepsie und therapeutische Implikationen**
 

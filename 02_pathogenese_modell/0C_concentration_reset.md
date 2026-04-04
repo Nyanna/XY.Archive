@@ -1,5 +1,5 @@
 
----
+***
 
 ## **Anhang C: Was ich erlebe — Phänomenologie eines Bewusstseinsresets**
 

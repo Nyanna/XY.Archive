@@ -1,0 +1,19 @@
+standalone: true
+pdf-engine: xelatex
+#output-file: output/Thesis on Infinite Scale Expansion (ISE).plain.pdf
+include-in-header: scripts/header.tex
+from: markdown
+wrap: none
+metadata:
+   fontsize: 10pt
+#   mainfont: "STIX Two Math"
+   mainfont: "Roboto"
+#   sansfont: "TeX Gyre Heros"
+#   monofont: "Inconsolata"
+   mathfont: "Noto Sans Math"
+   papersize: a4
+   margin-left: 20mm
+   margin-right: 20mm
+   margin-top: 20mm
+   margin-bottom: 20mm
+   

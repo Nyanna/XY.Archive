@@ -1,5 +1,5 @@
 
----
+***
 
 ## **Anhang D: Raphe-Synchronisationsmechanik — Vom Schrittmacher zur kortikalen Kohärenz**
 

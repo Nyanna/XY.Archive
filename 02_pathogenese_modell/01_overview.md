@@ -1,5 +1,5 @@
 
----
+***
 
 ## **1\. Pathogenetischer Verlauf – Übersicht**
 

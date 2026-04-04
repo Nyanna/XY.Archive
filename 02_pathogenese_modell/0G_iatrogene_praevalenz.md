@@ -1,17 +1,13 @@
 
----
+***
 
 ## **Anhang G: Iatrogene Prävalenz und Hit-Architektur-Erweiterung**
 
 *Status: Explorative Analyse, Evidenzniveau V (Arbeitshypothese mit konvergierenden Indizien)*
 
----
-
 ### **G.1 Kernthese**
 
 Der Prävalenzanstieg von ADS, ADHS und Epilepsie in der Neuzeit ist nicht primär diagnostisch bedingt, sondern bildet die historische Zunahme iatrogener Hit-2-Exposition ab. ASD dient als Kontrollgröße: als primär kongenital-architekturelle Störung (tiefste thalamische Kompensationsstufe) sollte der ASD-Anstieg stärker durch diagnostische Expansion erklärbar sein als der ADHS-Anstieg, der eine externe chemische Triggerung voraussetzt.
-
----
 
 ### **G.2 Historische Korrelation: Pharmazeutische Exposition und ADHS-Prävalenz**
 

@@ -1,5 +1,5 @@
 
----
+***
 
 ## **5\. Klinische Manifestation II: Autonome Dysregulation**
 
@@ -87,5 +87,4 @@ Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unab
 | Kompoundierender Effekt überproportional | Verbesserung unter LDX ohne Metoprolol > (Verbesserung unter LDX + Metoprolol) + (Verbesserung unter Metoprolol-Entfall allein) | Hypothetisch, quantitativ schwer operationalisierbar |
 | Migränefreiheit als Voraussetzung | Autonome Verbesserung korreliert mit Migränefreiheit – Rückkehr der Migräne geht mit Verschlechterung der autonomen Reflexanfälligkeit einher | Hypothetisch, bidirektional testbar |
 
-| Evidenzstatus | Gesamte Sektion 5.4 ist eine Modellvorhersage, abgeleitet aus den Mechanismen der Abschnitte 5.1–5.3 und der pharmakologischen Interaktion (7.3). Kein unabhängiger empirischer Nachweis. Die Einzelkomponenten (serotonerge NTS-Modulation, noradrenerge PFC-Suppression, sympathische Gegenregulation unter Betablockade) sind jeweils gesichert; die Kompoundierung ist hypothetisch. |
-| :---- |
+Evidenzstatus: Gesamte Sektion 5.4 ist eine Modellvorhersage, abgeleitet aus den Mechanismen der Abschnitte 5.1–5.3 und der pharmakologischen Interaktion (7.3). Kein unabhängiger empirischer Nachweis. Die Einzelkomponenten (serotonerge NTS-Modulation, noradrenerge PFC-Suppression, sympathische Gegenregulation unter Betablockade) sind jeweils gesichert; die Kompoundierung ist hypothetisch.

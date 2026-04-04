@@ -1,5 +1,5 @@
 
----
+***
 
 ## **Anhang A: Emotionale Affektion – Beobachtung und Arbeitshypothese**
 
