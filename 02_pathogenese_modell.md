@@ -443,6 +443,15 @@ Im vorliegenden Fall ist eine rein kongenitale Genese unwahrscheinlich, da die G
 | D2High-Shift als Erklärung für 3–5× Sensitivitätsfaktor im vorliegenden Profil | Plausibel | Mechanistisch konsistent; der Gesamtsystem-Faktor (PK/PD-Komposit) erlaubt keine isolierte Rezeptorquantifizierung ohne Plasmaspiegel |
 | Integration mit Raphe-Primärdefekt über 5-HT2A/D2-Heterodimer-Konformationsdruck | Hypothetisch, mechanistisch plausibel | 5-HT2A/D2-Heterodimerisierung etabliert; pränatale Konformationsmodulation nicht direkt untersucht |
 | Atopische Grunderkrankung als frühe Downstream-Manifestation des Raphe-Primärdefekts | Hypothetisch | Mastzell-Serotonin-Achse bekannt; kausale Verknüpfung nicht belegt |
+| Somnambulismus bei 30% der Migräniker vs. 4,8% bei Nicht-Migräne-Kopfschmerz | Gesichert | Barabas et al. 1983 |
+| Somnambulismus bei 21,9% Migräne vs. 6,6% Kontrollen | Gesichert | Pradalier et al. 1987 |
+| Schlafwandeln 47,6%, Pavor nocturnus 38% bei ADHD-Kindern (PSG-Studie, n=55) | Gesichert | Silvestri et al. 2009 |
+| Sleepwalking-Prävalenz 15,3% bei genetisch generalisierter Epilepsie; >50% der GGE-Familien mind. 1 Mitglied mit Somnambulismus | Gesichert | Cornejo-Sanchez et al. 2019 |
+| NREM-Arousal-Parasomnien und Epilepsie in der Kindheit häufig assoziiert, besonders TLE und NFLE; Parasomnie in persönlicher oder Familienanamnese bei bis zu 1/3 der NFLE-Patienten | Gesichert | Manni & Terzaghi 2010 |
+| Serotonerge Schaltkreise des Median Raphe als gemeinsame Schlüsselstruktur zwischen Migräne und Parasomnien | Hypothetisch, publiziert | Messina et al. 2018 |
+| Somnambulismus tritt vor Migräne auf → altersabhängige Expression desselben serotonergen Ungleichgewichts | Hypothetisch, publiziert | Barabas et al. 1983, bestätigt Giroud et al. 1986 |
+| Disorders of Partial Arousal teilen mit ADHD: familiäre Prädisposition, erhöhte Arousals, Schlaffragmentierung, erhöhten SWS | Gesichert | JCSM Review (Walters et al. 2008) |
+| Familiäre Anamnese: Xyan Somnambulismus (Jugend, Erschöpfungsschlaf-getriggert), Tochter Pavor nocturnus (ASD, phasenweise wöchentlich) | Einzelfallbeobachtung | Selbstbeobachtung + Fremdbericht |
 
 ##### **Therapeutische Implikation**
 
@@ -1165,6 +1174,26 @@ Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkons
 
 POST zeigt bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nicht, ob der REM global konsolidiert ist — die Traumerinnerung ist das sensitivere Instrument. Dreifache Dissoziation: PRE ohne Anfall → keine Traumerinnerung (fragmentierter REM); PRE nach CSD → intensive Traumerinnerung (CSD-erzwungene Resynchronisation → konsolidierter REM); POST (LDX) → reguläre Traumerinnerung (pharmakologische Synchronisation ersetzt CSD-Reset). Die Abnahme bewussten Träumens unter Betablocker/Naratriptan ist antiproportional zum sub-CSD-Naratriptankonsum — wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
 
+**6. NREM-Parasomnien als Manifestation der State-Instabilität**
+
+Somnambulismus und Pavor nocturnus sind NREM-Parasomnien — Standarderklärung: „inkomplettes Arousal aus Tiefschlaf." Im Modell: Raphe-Insuffizienz verhindert kohärentes State-Signal bei hohem Tiefschlaf-Drive → laminare Dissoziation. Verschiedene kortikale/subkortikale Systeme befinden sich gleichzeitig in verschiedenen Schlaf-Wach-Zuständen.
+
+Dissoziationsarchitektur bei Pavor nocturnus (Beobachtung, n=1, Tochter mit ASD):
+
+| Schicht | Status | Evidenz |
+|:--------|:-------|:--------|
+| Primäre Sensorik | Aktiv | Räumliche Orientierung für Handlungsinitiierung |
+| Prozedurales Gedächtnis (Striatum/Cerebellum) | Aktiv | Geübte Muster werden getriggert |
+| Subkortikaler Drive (limbisch) | Aktiv | Intention persistiert, Angstreaktion |
+| Semantische Bindung (temporo-parietal) | Offline | Hindernisse nicht als solche klassifiziert |
+| Exekutive Sequenzierung (PFC) | Offline | Handlungspläne scheitern jenseits der Initiierung |
+| Episodisches Encoding (Hippocampus) | Offline | Scheitern wird nicht registriert → Zykluswiederholung |
+| Schmerzmodulation des Verhaltens | Offline | Kopfstoßen unterbricht Muster nicht |
+
+Kausalrichtung: Nicht thalamisches Filterleck (passive Gate-Störung), sondern Raphe-Insuffizienz → kein kohärentes State-Signal → Kortex verbleibt partiell aktiv → Differenzsignal zwischen asynchronen Regionen.
+
+Familiäre Anamnese (Somnambulismus in Jugend, Tochter: Pavor nocturnus + ASD) stützt kongenitale Komponente (Hit 1).
+
 #### **4.5.3 Betablocker-Paradox: Schwellensenkung und Propagationsdämpfung**
 
 Metoprolol **senkt** die CSD-Schwelle — es macht den Kortex anfälliger für CSD-Initiation. Seine prophylaktische Wirkung beruht nicht auf Schwellenanhebung, sondern auf **Dämpfung der CSD-Propagation**: Die autonome Kaskade wird abgeschwächt (weniger sympathische Entgleisung, weniger trigeminale Amplifikation), sodass initiierte CSD-Wellen sich schlechter ausbreiten und klinisch subklinisch bleiben.
@@ -1338,6 +1367,8 @@ Wenn kortikale Muster durch den verrauschten thalamischen Referenzwert intrinsis
 | **Routinen/Rituale** | Aktive Rauschunterdrückung durch Vorhersagbarkeit. Externale Stabilisierung flacher Attraktorbecken. |
 
 *Therapeutische Implikation: Stimming und Rituale zu unterdrücken ist neurobiologisch das Äquivalent davon, einem instabilen System seinen einzigen Dämpfungsmechanismus zu nehmen.*
+
+Stimming tritt nicht nur im wachen Zustand als Stabilisierungsmechanismus auf, sondern auch während dissoziierter NREM-Episoden (Pavor nocturnus). Bei der Tochter (ASD) zeigt sich rhythmisches Wippen während des Nachtschrecks — ein ASD-spezifisches motorisches Muster, das im dissoziierten Zustand ohne bewusstes Erleben abläuft. Der sensorische Selbstregulationsversuch wird subkortikal generiert (Striatum/Cerebellum: überlerntes Muster), unabhängig von kortikaler Bewusstheit. Dies bestätigt, dass Stimming kein bewusster Coping-Mechanismus ist, sondern ein subkortikal verankertes Regulationsprogramm (vgl. Anhang C, 4.5.2).
 
 ### **6.3 Identität als Wahrnehmungssignatur**
 
@@ -1553,6 +1584,18 @@ ADHS-Patienten zeigen erhöhte Alexithymie-Scores (Edel et al. 2010, *ADHD Atten
 **3. Neurales Rauschen und Signal-Rausch-Verhältnis**
 
 Die in Abschnitt 3.4.5 diskutierte Literatur (Bluschke et al. 2019; Hearne et al. 2021; Kofler et al. 2020) belegt erhöhtes neurales Rauschen bei ADHS, das durch Stimulanzien auf Kontrollniveau reduziert wird. Diese Befunde betreffen die *kortikale* Ebene — die Verlängerung auf die *interozeptive* Ebene (insuläre Integration viszeraler Afferenzen unter denselben Rauschmechanismen) ist mechanistisch zwingend, aber empirisch nicht direkt untersucht.
+
+### **8.5.3 NREM-Parasomnien als extremste Manifestation der interozeptiven Inkohärenz**
+
+Die in 8.2–8.5 beschriebene Desynchronisierung der Modulationssysteme erzeugt im Wachzustand die ADHS-Phänomenologie. Im Schlaf — bei insuffizientem Raphe-Tonus während des Tiefschlaf-Arousals — eskaliert derselbe Mechanismus zur laminaren State-Dissoziation: Verschiedene kortikale und subkortikale Systeme operieren gleichzeitig in verschiedenen Schlaf-Wach-Zuständen. Die klinischen Manifestationen sind NREM-Parasomnien (Somnambulismus, Pavor nocturnus).
+
+| Zustand | Mechanismus | Klinische Manifestation |
+| :---- | :---- | :---- |
+| **Wachzustand** | Asynchrone Modulationssysteme, partielle Off-State-Intrusion | ADHS-Phänomenologie (Kapitel 8) |
+| **Schlaf-Wach-Übergang** | Inkompletter State-Switch, gradueller Drift statt diskretem Übergang | Verzögertes Aufwachen, morgendliches Forcing-Bedürfnis (Anhang C) |
+| **NREM-Schlaf** | Laminare State-Dissoziation bei Arousal aus Tiefschlaf | Parasomnie-Phänomenologie: Pavor nocturnus, Somnambulismus |
+
+Die drei Manifestationen sind keine separaten Komorbiditäten, sondern Ausdrücke desselben Raphe-vermittelten State-Kohärenzdefizits in verschiedenen Schlaf-Wach-Phasen (ausführliche Phänomenologie: Anhang C; Dissoziationsarchitektur: 4.5.2).
 
 ### **8.6 Klinische Implikation: Mate, Koffein und die Illusion der Wachheit**
 
@@ -1788,6 +1831,10 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Migräne-Trigger wirken über kortikale Taktperturbation, nicht über Raphe-Destabilisierung | Hypothetisch, konsistent | Revision April 2026; erklärt Triggerheterogenität und -inkonsistenz |
 | AH1-Exposition in Entwicklung als potentieller Hit 1b (iatrogene B7-Suppression) | Spekulativ | Dritte Lesart von Fuhrmann et al. 2020 |
 | Zwei-Phasen-Protokoll LDX + DPH-HCl als komplementäres Design | Spekulativ, n=1-Experiment | Theoretische Ableitung (08_zwei_phasen_protokoll.md) |
+| NREM-Parasomnien (Somnambulismus, Pavor nocturnus) als Manifestation der Raphe-vermittelten State-Instabilität | Hypothetisch, konsistent mit Epidemiologie | Modellvorhersage; Barabas 1983, Silvestri 2009, Cornejo-Sanchez 2019, Manni 2010 |
+| Laminare Dissoziation bei Pavor: primäre Sensorik + Striatum aktiv, PFC + Hippocampus + semantische Bindung offline | Einzelfallbeobachtung, mechanistisch konsistent | Phänomenologische Beobachtung (Anhang C) |
+| Stimming während Pavor nocturnus als subkortikal generiertes Muster ohne bewusstes Erleben | Einzelfallbeobachtung | Phänomenologische Beobachtung (Anhang C) |
+| Morgendliches Duschen als sensorisches Forcing bei inkomplettem Schlaf-Wach-Übergang | Einzelfallbeobachtung, mechanistisch konsistent | Selbstbeobachtung |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
@@ -2782,6 +2829,26 @@ Die Implikation: Vor LDX hat Koffein einen diffusen Zustand durch einen anderen 
 Jetzt, mit einem kohärenten Müdigkeitssignal, ist Koffein plötzlich wahrnehmbar: Es überschreibt etwas, das vorher nicht da war. Das ist keine Veränderung der Koffeinpharmakologie. Es ist eine Veränderung der Signalkohärenz, gegen die Koffein wirkt.
 
 Die Einschlaftechnik funktioniert weiterhin. Es gibt zwei kategorial verschiedene Pfade ins Einschlafen — den manuellen Bypass und das natürliche Signal.
+
+### Partielle Schlafintrusion: Somnambulismus und Pavor nocturnus
+
+In der Jugend bin ich regelmäßig schlafgewandelt. Immer dann, wenn ich vor Erschöpfung am Computer eingeschlafen war — Erschöpfungsschlaf, nicht normaler Schlaf. Mein Vater hat mir erzählt, wie ich durchs Haus gelaufen bin, versucht habe zu sprechen — Stammeln, keine kohärente Sprache, keine Reaktion auf Ansprache. Ich habe keine einzige dieser Episoden erlebt.
+
+Was ich damals nicht wusste: Das ist kein normales Schlafwandeln im Sinne von „kommt mal vor". Das ist eine NREM-Parasomnie — inkomplettes Arousal aus dem Tiefschlaf. Der Schlaf-Wach-Übergang fragmentiert. Teile des Systems sind wach genug für Motorik, andere schlafen weiter. Das State-Signal ist nicht kohärent.
+
+### Pavor nocturnus — meine Tochter
+
+Meine Tochter hat ASD. Phasenweise hatte sie wöchentliche Nachtschreck-Episoden. Schreiend aufgewacht, panische Angst, rhythmisches Wippen — ihr Stimming-Muster, aber im dissoziierten Zustand, ohne bewusstes Erleben. Nicht ansprechbar, keine Reaktion auf Berührung, keine Reaktion auf Stimme.
+
+Was ich beobachtet habe, ist ein System, das partiell läuft. Es gibt erkennbare Intention: Aufstehen-Wollen, Sich-Hinlegen-Wollen. Die Handlung wird initiiert, scheitert, wird sofort vergessen und erneut versucht. Kein Lerneffekt innerhalb der Episode — der Zyklus wiederholt mehrmals sich innerhalb der 10–15 Minuten. Geübte Handlungsmuster werden getriggert — sie kann aufstehen, sich räumlich orientieren —, aber sie können nicht konklusiv ausgeführt werden. Die Decke des Hochbetts wird nicht als Hindernis erkannt. Kopfstoßen unterbricht das Muster nicht — Schmerz erreicht das System nozizeptiv, aber ohne Verhaltensmodifikation. Irgendwann wird sie ruhig, legt sich hin, Episode beendet. Keine Erinnerung am nächsten Morgen.
+
+Ich habe irgendwann aufgehört, sie zu wecken oder anzusprechen. Es war wirkungslos. Ich habe nur noch aufgepasst, dass sie sich nicht verletzt.
+
+### Morgendliches Duschen als sensorisches Forcing
+
+Ich dusche morgens. Nicht aus Gewohnheit, sondern weil ich ohne die Dusche nicht richtig wach werde. Im Modellkontext: Bei partieller Schlafintrusion ist der Übergang Schlaf→Wach kein aktiver Switch, sondern ein gradueller Drift. Ohne externen Forcing bleibt er unvollständig. Massiver somatosensorischer Input — heißes Wasser auf der gesamten Hautoberfläche — erzwingt kortikale Synchronisierung der Areale, die im Intermediärzustand hängengeblieben sind.
+
+Das ist derselbe Mechanismus wie beim Powernap als Reset, nur in die andere Richtung: Der Nap erzwingt einen globalen Down-State und sauberes Wiederaufwachen. Die Dusche erzwingt einen globalen sensorischen Input, der die noch schlafenden Areale in den Wachzustand zwingt. Beides adressiert das gleiche Problem: Das System kommt nicht von allein in einen kohärenten Zustand.
 
 ### Das Gedächtnis, das nicht hält
 
