@@ -127,6 +127,18 @@ ADHS-Patienten zeigen erhöhte Alexithymie-Scores (Edel et al. 2010, *ADHD Atten
 
 Die in Abschnitt 3.4.5 diskutierte Literatur (Bluschke et al. 2019; Hearne et al. 2021; Kofler et al. 2020) belegt erhöhtes neurales Rauschen bei ADHS, das durch Stimulanzien auf Kontrollniveau reduziert wird. Diese Befunde betreffen die *kortikale* Ebene — die Verlängerung auf die *interozeptive* Ebene (insuläre Integration viszeraler Afferenzen unter denselben Rauschmechanismen) ist mechanistisch zwingend, aber empirisch nicht direkt untersucht.
 
+### **8.5.3 NREM-Parasomnien als extremste Manifestation der interozeptiven Inkohärenz**
+
+Die in 8.2–8.5 beschriebene Desynchronisierung der Modulationssysteme erzeugt im Wachzustand die ADHS-Phänomenologie. Im Schlaf — bei insuffizientem Raphe-Tonus während des Tiefschlaf-Arousals — eskaliert derselbe Mechanismus zur laminaren State-Dissoziation: Verschiedene kortikale und subkortikale Systeme operieren gleichzeitig in verschiedenen Schlaf-Wach-Zuständen. Die klinischen Manifestationen sind NREM-Parasomnien (Somnambulismus, Pavor nocturnus).
+
+| Zustand | Mechanismus | Klinische Manifestation |
+| :---- | :---- | :---- |
+| **Wachzustand** | Asynchrone Modulationssysteme, partielle Off-State-Intrusion | ADHS-Phänomenologie (Kapitel 8) |
+| **Schlaf-Wach-Übergang** | Inkompletter State-Switch, gradueller Drift statt diskretem Übergang | Verzögertes Aufwachen, morgendliches Forcing-Bedürfnis (Anhang C) |
+| **NREM-Schlaf** | Laminare State-Dissoziation bei Arousal aus Tiefschlaf | Parasomnie-Phänomenologie: Pavor nocturnus, Somnambulismus |
+
+Die drei Manifestationen sind keine separaten Komorbiditäten, sondern Ausdrücke desselben Raphe-vermittelten State-Kohärenzdefizits in verschiedenen Schlaf-Wach-Phasen (ausführliche Phänomenologie: Anhang C; Dissoziationsarchitektur: 4.5.2).
+
 ### **8.6 Klinische Implikation: Mate, Koffein und die Illusion der Wachheit**
 
 Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Adenosin-Antagonismus plus catecholaminerger Push erzeugt Wachheit. Aber Wachheit ist nicht Kohärenz. Das koffeininduzierte Arousal erhöht die Amplitude aller Modulationssysteme, ohne sie zu synchronisieren — die Systeme laufen weiter asynchron, nur lauter. Unter LDX wird Mate entbehrlich, weil die Wachheit ein *Nebenprodukt* der Kohärenz ist: alle Systeme sagen dasselbe, das Zustandssignal ist klar, und klare Zustandssignale erzeugen adäquate Wachheit — oder adäquate Müdigkeit.

@@ -358,6 +358,26 @@ Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkons
 
 POST zeigt bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nicht, ob der REM global konsolidiert ist — die Traumerinnerung ist das sensitivere Instrument. Dreifache Dissoziation: PRE ohne Anfall → keine Traumerinnerung (fragmentierter REM); PRE nach CSD → intensive Traumerinnerung (CSD-erzwungene Resynchronisation → konsolidierter REM); POST (LDX) → reguläre Traumerinnerung (pharmakologische Synchronisation ersetzt CSD-Reset). Die Abnahme bewussten Träumens unter Betablocker/Naratriptan ist antiproportional zum sub-CSD-Naratriptankonsum — wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
 
+**6. NREM-Parasomnien als Manifestation der State-Instabilität**
+
+Somnambulismus und Pavor nocturnus sind NREM-Parasomnien — Standarderklärung: „inkomplettes Arousal aus Tiefschlaf." Im Modell: Raphe-Insuffizienz verhindert kohärentes State-Signal bei hohem Tiefschlaf-Drive → laminare Dissoziation. Verschiedene kortikale/subkortikale Systeme befinden sich gleichzeitig in verschiedenen Schlaf-Wach-Zuständen.
+
+Dissoziationsarchitektur bei Pavor nocturnus (Beobachtung, n=1, Tochter mit ASD):
+
+| Schicht | Status | Evidenz |
+|:--------|:-------|:--------|
+| Primäre Sensorik | Aktiv | Räumliche Orientierung für Handlungsinitiierung |
+| Prozedurales Gedächtnis (Striatum/Cerebellum) | Aktiv | Geübte Muster werden getriggert |
+| Subkortikaler Drive (limbisch) | Aktiv | Intention persistiert, Angstreaktion |
+| Semantische Bindung (temporo-parietal) | Offline | Hindernisse nicht als solche klassifiziert |
+| Exekutive Sequenzierung (PFC) | Offline | Handlungspläne scheitern jenseits der Initiierung |
+| Episodisches Encoding (Hippocampus) | Offline | Scheitern wird nicht registriert → Zykluswiederholung |
+| Schmerzmodulation des Verhaltens | Offline | Kopfstoßen unterbricht Muster nicht |
+
+Kausalrichtung: Nicht thalamisches Filterleck (passive Gate-Störung), sondern Raphe-Insuffizienz → kein kohärentes State-Signal → Kortex verbleibt partiell aktiv → Differenzsignal zwischen asynchronen Regionen.
+
+Familiäre Anamnese (Somnambulismus in Jugend, Tochter: Pavor nocturnus + ASD) stützt kongenitale Komponente (Hit 1).
+
 #### **4.5.3 Betablocker-Paradox: Schwellensenkung und Propagationsdämpfung**
 
 Metoprolol **senkt** die CSD-Schwelle — es macht den Kortex anfälliger für CSD-Initiation. Seine prophylaktische Wirkung beruht nicht auf Schwellenanhebung, sondern auf **Dämpfung der CSD-Propagation**: Die autonome Kaskade wird abgeschwächt (weniger sympathische Entgleisung, weniger trigeminale Amplifikation), sodass initiierte CSD-Wellen sich schlechter ausbreiten und klinisch subklinisch bleiben.

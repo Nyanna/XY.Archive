@@ -72,6 +72,10 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Migräne-Trigger wirken über kortikale Taktperturbation, nicht über Raphe-Destabilisierung | Hypothetisch, konsistent | Revision April 2026; erklärt Triggerheterogenität und -inkonsistenz |
 | AH1-Exposition in Entwicklung als potentieller Hit 1b (iatrogene B7-Suppression) | Spekulativ | Dritte Lesart von Fuhrmann et al. 2020 |
 | Zwei-Phasen-Protokoll LDX + DPH-HCl als komplementäres Design | Spekulativ, n=1-Experiment | Theoretische Ableitung (08_zwei_phasen_protokoll.md) |
+| NREM-Parasomnien (Somnambulismus, Pavor nocturnus) als Manifestation der Raphe-vermittelten State-Instabilität | Hypothetisch, konsistent mit Epidemiologie | Modellvorhersage; Barabas 1983, Silvestri 2009, Cornejo-Sanchez 2019, Manni 2010 |
+| Laminare Dissoziation bei Pavor: primäre Sensorik + Striatum aktiv, PFC + Hippocampus + semantische Bindung offline | Einzelfallbeobachtung, mechanistisch konsistent | Phänomenologische Beobachtung (Anhang C) |
+| Stimming während Pavor nocturnus als subkortikal generiertes Muster ohne bewusstes Erleben | Einzelfallbeobachtung | Phänomenologische Beobachtung (Anhang C) |
+| Morgendliches Duschen als sensorisches Forcing bei inkomplettem Schlaf-Wach-Übergang | Einzelfallbeobachtung, mechanistisch konsistent | Selbstbeobachtung |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |

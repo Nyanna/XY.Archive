@@ -177,6 +177,26 @@ Jetzt, mit einem kohärenten Müdigkeitssignal, ist Koffein plötzlich wahrnehmb
 
 Die Einschlaftechnik funktioniert weiterhin. Es gibt zwei kategorial verschiedene Pfade ins Einschlafen — den manuellen Bypass und das natürliche Signal.
 
+### Partielle Schlafintrusion: Somnambulismus und Pavor nocturnus
+
+In der Jugend bin ich regelmäßig schlafgewandelt. Immer dann, wenn ich vor Erschöpfung am Computer eingeschlafen war — Erschöpfungsschlaf, nicht normaler Schlaf. Mein Vater hat mir erzählt, wie ich durchs Haus gelaufen bin, versucht habe zu sprechen — Stammeln, keine kohärente Sprache, keine Reaktion auf Ansprache. Ich habe keine einzige dieser Episoden erlebt.
+
+Was ich damals nicht wusste: Das ist kein normales Schlafwandeln im Sinne von „kommt mal vor". Das ist eine NREM-Parasomnie — inkomplettes Arousal aus dem Tiefschlaf. Der Schlaf-Wach-Übergang fragmentiert. Teile des Systems sind wach genug für Motorik, andere schlafen weiter. Das State-Signal ist nicht kohärent.
+
+### Pavor nocturnus — meine Tochter
+
+Meine Tochter hat ASD. Phasenweise hatte sie wöchentliche Nachtschreck-Episoden. Schreiend aufgewacht, panische Angst, rhythmisches Wippen — ihr Stimming-Muster, aber im dissoziierten Zustand, ohne bewusstes Erleben. Nicht ansprechbar, keine Reaktion auf Berührung, keine Reaktion auf Stimme.
+
+Was ich beobachtet habe, ist ein System, das partiell läuft. Es gibt erkennbare Intention: Aufstehen-Wollen, Sich-Hinlegen-Wollen. Die Handlung wird initiiert, scheitert, wird sofort vergessen und erneut versucht. Kein Lerneffekt innerhalb der Episode — der Zyklus wiederholt mehrmals sich innerhalb der 10–15 Minuten. Geübte Handlungsmuster werden getriggert — sie kann aufstehen, sich räumlich orientieren —, aber sie können nicht konklusiv ausgeführt werden. Die Decke des Hochbetts wird nicht als Hindernis erkannt. Kopfstoßen unterbricht das Muster nicht — Schmerz erreicht das System nozizeptiv, aber ohne Verhaltensmodifikation. Irgendwann wird sie ruhig, legt sich hin, Episode beendet. Keine Erinnerung am nächsten Morgen.
+
+Ich habe irgendwann aufgehört, sie zu wecken oder anzusprechen. Es war wirkungslos. Ich habe nur noch aufgepasst, dass sie sich nicht verletzt.
+
+### Morgendliches Duschen als sensorisches Forcing
+
+Ich dusche morgens. Nicht aus Gewohnheit, sondern weil ich ohne die Dusche nicht richtig wach werde. Im Modellkontext: Bei partieller Schlafintrusion ist der Übergang Schlaf→Wach kein aktiver Switch, sondern ein gradueller Drift. Ohne externen Forcing bleibt er unvollständig. Massiver somatosensorischer Input — heißes Wasser auf der gesamten Hautoberfläche — erzwingt kortikale Synchronisierung der Areale, die im Intermediärzustand hängengeblieben sind.
+
+Das ist derselbe Mechanismus wie beim Powernap als Reset, nur in die andere Richtung: Der Nap erzwingt einen globalen Down-State und sauberes Wiederaufwachen. Die Dusche erzwingt einen globalen sensorischen Input, der die noch schlafenden Areale in den Wachzustand zwingt. Beides adressiert das gleiche Problem: Das System kommt nicht von allein in einen kohärenten Zustand.
+
 ### Das Gedächtnis, das nicht hält
 
 Als Kind konnte ich mir Dinge merken — Bilder, Seiten, Szenen. Direkt, als Kopie, nicht als Zusammenfassung. Aber es war instabil. An manchen Tagen war eine Erinnerung da, an anderen nicht. Nicht verblasst, sondern nicht auffindbar. Als hätte jemand die Datei verschoben, nicht gelöscht. Ich weiß nicht, ob das ungewöhnlich war. Ich weiß nur, dass ich mich nicht darauf verlassen konnte. Und ein Gedächtnis, auf das man sich nicht verlassen kann, ist schlimmer als ein schlechtes Gedächtnis. Ein schlechtes Gedächtnis lehrt einen, Dinge aufzuschreiben. Ein unzuverlässiges Gedächtnis lehrt einen, dass die eigene Wahrnehmung nicht real ist.

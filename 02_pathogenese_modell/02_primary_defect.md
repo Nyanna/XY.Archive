@@ -328,6 +328,15 @@ Im vorliegenden Fall ist eine rein kongenitale Genese unwahrscheinlich, da die G
 | D2High-Shift als Erklärung für 3–5× Sensitivitätsfaktor im vorliegenden Profil | Plausibel | Mechanistisch konsistent; der Gesamtsystem-Faktor (PK/PD-Komposit) erlaubt keine isolierte Rezeptorquantifizierung ohne Plasmaspiegel |
 | Integration mit Raphe-Primärdefekt über 5-HT2A/D2-Heterodimer-Konformationsdruck | Hypothetisch, mechanistisch plausibel | 5-HT2A/D2-Heterodimerisierung etabliert; pränatale Konformationsmodulation nicht direkt untersucht |
 | Atopische Grunderkrankung als frühe Downstream-Manifestation des Raphe-Primärdefekts | Hypothetisch | Mastzell-Serotonin-Achse bekannt; kausale Verknüpfung nicht belegt |
+| Somnambulismus bei 30% der Migräniker vs. 4,8% bei Nicht-Migräne-Kopfschmerz | Gesichert | Barabas et al. 1983 |
+| Somnambulismus bei 21,9% Migräne vs. 6,6% Kontrollen | Gesichert | Pradalier et al. 1987 |
+| Schlafwandeln 47,6%, Pavor nocturnus 38% bei ADHD-Kindern (PSG-Studie, n=55) | Gesichert | Silvestri et al. 2009 |
+| Sleepwalking-Prävalenz 15,3% bei genetisch generalisierter Epilepsie; >50% der GGE-Familien mind. 1 Mitglied mit Somnambulismus | Gesichert | Cornejo-Sanchez et al. 2019 |
+| NREM-Arousal-Parasomnien und Epilepsie in der Kindheit häufig assoziiert, besonders TLE und NFLE; Parasomnie in persönlicher oder Familienanamnese bei bis zu 1/3 der NFLE-Patienten | Gesichert | Manni & Terzaghi 2010 |
+| Serotonerge Schaltkreise des Median Raphe als gemeinsame Schlüsselstruktur zwischen Migräne und Parasomnien | Hypothetisch, publiziert | Messina et al. 2018 |
+| Somnambulismus tritt vor Migräne auf → altersabhängige Expression desselben serotonergen Ungleichgewichts | Hypothetisch, publiziert | Barabas et al. 1983, bestätigt Giroud et al. 1986 |
+| Disorders of Partial Arousal teilen mit ADHD: familiäre Prädisposition, erhöhte Arousals, Schlaffragmentierung, erhöhten SWS | Gesichert | JCSM Review (Walters et al. 2008) |
+| Familiäre Anamnese: Xyan Somnambulismus (Jugend, Erschöpfungsschlaf-getriggert), Tochter Pavor nocturnus (ASD, phasenweise wöchentlich) | Einzelfallbeobachtung | Selbstbeobachtung + Fremdbericht |
 
 ##### **Therapeutische Implikation**
 

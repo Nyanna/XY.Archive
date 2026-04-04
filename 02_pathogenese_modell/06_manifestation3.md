@@ -21,6 +21,8 @@ Wenn kortikale Muster durch den verrauschten thalamischen Referenzwert intrinsis
 
 *Therapeutische Implikation: Stimming und Rituale zu unterdrücken ist neurobiologisch das Äquivalent davon, einem instabilen System seinen einzigen Dämpfungsmechanismus zu nehmen.*
 
+Stimming tritt nicht nur im wachen Zustand als Stabilisierungsmechanismus auf, sondern auch während dissoziierter NREM-Episoden (Pavor nocturnus). Bei der Tochter (ASD) zeigt sich rhythmisches Wippen während des Nachtschrecks — ein ASD-spezifisches motorisches Muster, das im dissoziierten Zustand ohne bewusstes Erleben abläuft. Der sensorische Selbstregulationsversuch wird subkortikal generiert (Striatum/Cerebellum: überlerntes Muster), unabhängig von kortikaler Bewusstheit. Dies bestätigt, dass Stimming kein bewusster Coping-Mechanismus ist, sondern ein subkortikal verankertes Regulationsprogramm (vgl. Anhang C, 4.5.2).
+
 ### **6.3 Identität als Wahrnehmungssignatur**
 
 Im vorliegenden neurologischen Profil ist Identität nicht primär narrativ oder konzeptuell verankert, sondern direkt in der thalamisch-kortikalen Wahrnehmungssignatur. Das erklärt zwei Beobachtungen:
