@@ -75,12 +75,15 @@ Diphenhydramin ist nicht nur ein H1-Antagonist, sondern auch anticholinerg. Acet
 | Endpunkt | Metrik | Erwartung |
 |---|---|---|
 | **Primär** | Median Inter-Anfall-Intervall (IBI) | Verlängerung (>4.0 d) |
-| **Sekundär** | Transitionsdichte (Stadienwechsel/h) | Reduktion |
+| **Primär** | Transitionsdichte ON vs. OFF-Blöcke | Signifikante Trennung |
+| **Sekundär** | Transitionsdichte (Stadienwechsel/h) | Reduktion (gesamt) |
 | **Sekundär** | Deep/REM-Ratio | Stabil (REM darf nicht einbrechen) |
 | **Sicherheit** | REM-Episoden/Nacht | ≥ POST-Baseline |
+| **Diskriminanz** | IBI-Verlängerung relativ zum ON-Anteil | Überproportional = Interferenz; proportional = Sedierung |
+| **Diskriminanz** | Carry-over: Transitionsdichte OFF-Nacht 1 vs. OFF-Nacht 3–5 | Gradient = partieller Carry-over |
 | **Exploratorisch** | Autokorrelation Lag 4 | Abschwächung des Oszillationsmusters |
 
-**Interpretation:** Wenn das IBI sich verlängert und gleichzeitig die Autokorrelation bei Lag 4 abschwächt, spricht das für eine echte Interferenzreduktion und nicht nur für eine sedierungsbedingte Schwellenanhebung. Wenn nur die Transitionsdichte sinkt bei gleichbleibendem IBI, dominiert der Sedierungseffekt — kein Evidenz für das Interferenzmodell.
+**Interpretation:** Das alternierende Design erlaubt eine Dreifach-Diskriminierung: (1) Wenn das IBI sich verlängert und gleichzeitig die Autokorrelation bei Lag 4 abschwächt, spricht das für echte Interferenzreduktion. (2) Wenn nur die ON-Nächte besser aussehen bei gleichbleibendem IBI und Oszillator, dominiert der Sedierungseffekt. (3) Wenn ON-Nächte besser sind und ein Carry-over in frühe OFF-Nächte sichtbar ist, liegt ein partieller Interferenzeffekt mit abklingender Zeitkonstante vor.
 
 ---
 
@@ -97,14 +100,49 @@ Erste Nächte zeigen eine Transitionsdichte deutlich unterhalb des POST-Means (2
 
 **Caveat:** Sehr frühe Daten, Placebo- und Neuheitseffekte nicht ausschließbar. Bewertung erst nach ≥2 vollständigen erwarteten Zyklen möglich.
 
-### Phase B — Beobachtungsperiode (Woche 2–3)
+### Phase B — Alternierendes ON/OFF-Design (ab Woche 2)
 
-- Falls tolerabel und REM intakt: Fortführung über **2–3 volle erwartete Zyklen** (~12–16 Tage)
-- Fortlaufende Tracker-Erfassung aller definierten Endpunkte
+Statt kontinuierlicher DPH-Gabe: **3 Nächte ON / 3–5 Nächte OFF**, wiederholt über 6–8 Wochen.
+
+**Rationale:**
+
+1. **Toleranzvermeidung.** DPH-Halbwertszeit ~4–8h, nach 24h vollständig ausgewaschen. 3–5 Tage OFF reichen für H1-Rezeptor-Renormalisierung. Die DRN-Selektivität bleibt über die gesamte Beobachtungsperiode erhalten.
+2. **Anticholinerge Kumulation entfällt.** Das kumulative Demenzrisiko (Gray et al. 2015) skaliert mit Gesamtexposition. Intermittierende Gabe (~3 von 8 Nächten) reduziert die Gesamtexposition auf unter 40%.
+3. **Within-subject ON/OFF-Vergleich.** Repeated-measures innerhalb derselben Person unter identischen Kontextbedingungen (LDX, Schlafumgebung, Tagesrhythmus). Über 6–8 Wochen entstehen 6+ ON/OFF-Zyklen — genug für deskriptive Verteilungstrennung.
+
+**Ablauf:**
+
+| Block | Nächte | DPH | Monitoring |
+|---|---|---|---|
+| ON | 3 konsekutiv | 25 mg DPH-HCl abends | Transitionsdichte, HR-Profil, REM-Ratio |
+| OFF | 3–5 konsekutiv | Kein DPH | Identische Tracker-Erfassung |
+| *Wiederholen* | *6–8 Wochen* | | |
+
+Die OFF-Länge (3–5 Nächte) kann an den individuellen Zyklusverlauf angepasst werden, sollte aber innerhalb der Beobachtungsperiode konsistent gehalten werden.
+
+### Phase B — Diskriminanztest: Sedierung vs. Interferenz
+
+Das alternierende Design ermöglicht eine Schlüsselunterscheidung, die bei Dauereinnahme nicht möglich wäre:
+
+| Beobachtung | Interpretation |
+|---|---|
+| Transitionsdichte sinkt **nur in ON-Nächten**, Oszillator und IBI unverändert | **Sedierungseffekt** — DPH verbessert lokale Schlafqualität, ohne die Upstream-Interferenz zu adressieren |
+| IBI verlängert sich **überproportional** zum ON-Anteil, Oszillator-Amplitude gedämpft | **Interferenzreduktion** — B7-Suppression während ansteigender Phase verschiebt CSD-Schwelle für den gesamten Zyklus |
+| Transitionsdichte sinkt in ON-Nächten **und Carry-over in erste OFF-Nächte** | **Gemischter Effekt** — partielle Interferenzreduktion mit abklingendem Profil |
+
+Der zweite Fall wäre die stärkste Bestätigung des Interferenzmodells: Wenn 3 DPH-Nächte den IBI-Effekt über den gesamten ~8-Tage-Zyklus verschieben, ist der Mechanismus nicht Sedierung (die mit der Pharmakokinetik ausgewaschen wäre), sondern tatsächlich Amplitudenmodulation am Interferenz-Produkt.
 
 ### Auswertung
 
-- Vergleich: Median IBI, Transitionsdichte, subjektive Anfallsschwere
+**Primäre Analyse:**
+- Vergleich Transitionsdichte ON vs. OFF-Blöcke (Median, IQR)
+- IBI-Verlängerung relativ zum ON/OFF-Anteil (Proportionalitätstest)
+- Carry-over-Analyse: Transitionsdichte OFF-Nacht 1 vs. OFF-Nacht 3–5
+
+**Sekundäre Analyse:**
+- Vergleich: Median IBI, Transitionsdichte, subjektive Anfallsschwere gegen POST-Baseline
+- Autokorrelation Lag 4 der Nacht-zu-Nacht-Density: Abschwächung als Interferenzreduktions-Marker
+
 - Statistische Einschränkung: n=1-Design erlaubt keine Inferenzstatistik; Effektgrößen werden deskriptiv gegen die intraindividuelle Varianz der POST-Baseline eingeordnet
 
 ---
@@ -117,6 +155,8 @@ Erste Nächte zeigen eine Transitionsdichte deutlich unterhalb des POST-Means (2
 | DPH passiert Blut-Hirn-Schranke | Gesichert |
 | B7-Amplitudenreduktion senkt Interferenzprodukt | Hypothetisch, mechanistisch ableitbar; initiale Tracker-Daten richtungskonsistent |
 | Zwei-Phasen-Design komplementär | Hypothetisch; initiale Beobachtungen zeigen Effekte jenseits LDX-Baseline |
+| Alternierendes ON/OFF diskriminiert Sedierung von Interferenz | Methodisch begründet, nicht getestet |
+| Doxepin 3 mg als langzeitfähige H1-Alternative | Pharmakologisch plausibel, DRN-Selektivität unter Chronizität nicht untersucht |
 | Gesamtprotokoll | Spekulativ, n=1-Experiment; Phase A aktiv, erste Daten richtungskonsistent |
 
 ---
@@ -148,7 +188,9 @@ Diphenhydramin-HCl eignet sich als Proof-of-Concept, nicht als Dauertherapie. Zw
 
 ### 7.3 Konsequenz für das Protokoll
 
-Falls Phase A und B eine stabile Interferenzreduktion unter DPH bestätigen, ist der nächste Schritt der Wechsel auf Doxepin 3 mg als langzeitfähige Umsetzung desselben Mechanismus. Das DPH-Experiment validiert den Pathway; Doxepin wäre das klinisch vertretbare Vehikel für die chronische Anwendung.
+Falls das alternierende ON/OFF-Design eine stabile Interferenzreduktion bestätigt — insbesondere den überproportionalen IBI-Effekt (Abschnitt 5, Diskriminanztest) — ist der nächste Schritt der Wechsel auf Doxepin 3 mg. Das DPH-Experiment validiert den Pathway; Doxepin wäre das klinisch vertretbare Vehikel für die chronische Anwendung.
+
+Das alternierende Design hat den zusätzlichen Vorteil, dass es die Toleranzfrage vorab klärt: Wenn der DPH-Effekt über 6–8 Wochen ON/OFF stabil bleibt, spricht das für erhaltene H1-Sensitivität bei intermittierender Gabe — und liefert gleichzeitig eine Entscheidungsgrundlage, ob die chronische Variante (Doxepin) überhaupt intermittierend dosiert werden muss oder ob die niedrigere anticholinerge Last eine Dauergabe rechtfertigt.
 
 ---
 
