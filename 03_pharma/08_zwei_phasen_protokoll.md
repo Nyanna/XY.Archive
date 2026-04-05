@@ -1,7 +1,7 @@
 # Therapeutisches Zwei-Phasen-Protokoll
 ### LDX (Tag) + Diphenhydramin-HCl (Nacht)
 
-> **Status:** Hypothetisch — n=1-Experiment, nicht klinisch validiert.  
+> **Status:** Phase A aktiv — n=1-Experiment, nicht klinisch validiert. Initiale Beobachtungen richtungskonsistent mit der Modellvorhersage.  
 > Grundlage: B7/B8-Interferenzmodell (Pathogenetisches Modell, Anhang F), differentielle afferente Regulation DRN vs. MRN (Anhang D.8).  
 > Ziel: Experimentelle Überprüfung der Amplitudenmodulations-Hypothese.
 
@@ -92,6 +92,11 @@ Diphenhydramin ist nicht nur ein H1-Antagonist, sondern auch anticholinerg. Acet
 - Vergleichsbasis: POST-Baseline (LDX-stabilisierte Werte ohne DPH)
 - Monitoring: REM-Ratio, subjektive Schlafqualität, morgendliche Kohärenz
 
+**Initiale Beobachtungen (Phase A, laufend):**
+Erste Nächte zeigen eine Transitionsdichte deutlich unterhalb des POST-Means (2,4/h vs. POST 3,6/h, PRE 4,6/h), niedrigen HR-Einstieg und flachen HR-Verlauf über die Nacht. Das Hypnogramm erscheint subjektiv stabiler als unter LDX allein. Die Effektrichtung ist konsistent mit der Modellvorhersage (B7-Suppression → reduzierte Interferenz → verbesserte Schlafkonsolidierung). Die Effektstärke übersteigt den LDX-Durchschnitt, was bemerkenswert ist, da der Wirkmechanismus orthogonal angreift (H1→selektive B7-Suppression vs. DA→indirekte Raphe-Stabilisierung).
+
+**Caveat:** Sehr frühe Daten, Placebo- und Neuheitseffekte nicht ausschließbar. Bewertung erst nach ≥2 vollständigen erwarteten Zyklen möglich.
+
 ### Phase B — Beobachtungsperiode (Woche 2–3)
 
 - Falls tolerabel und REM intakt: Fortführung über **2–3 volle erwartete Zyklen** (~12–16 Tage)
@@ -110,9 +115,40 @@ Diphenhydramin ist nicht nur ein H1-Antagonist, sondern auch anticholinerg. Acet
 |---|---|
 | H1-Blockade supprimiert selektiv DRN-5-HT | Gesichert (Crawford et al. 2013) |
 | DPH passiert Blut-Hirn-Schranke | Gesichert |
-| B7-Amplitudenreduktion senkt Interferenzprodukt | Hypothetisch, mechanistisch ableitbar |
-| Zwei-Phasen-Design komplementär | Hypothetisch |
-| Gesamtprotokoll | Spekulativ, n=1-Experiment |
+| B7-Amplitudenreduktion senkt Interferenzprodukt | Hypothetisch, mechanistisch ableitbar; initiale Tracker-Daten richtungskonsistent |
+| Zwei-Phasen-Design komplementär | Hypothetisch; initiale Beobachtungen zeigen Effekte jenseits LDX-Baseline |
+| Gesamtprotokoll | Spekulativ, n=1-Experiment; Phase A aktiv, erste Daten richtungskonsistent |
+
+---
+
+## 7. Langzeitperspektive: Diphenhydramin vs. Doxepin
+
+### 7.1 Diphenhydramin ist kein Langzeitkandidat
+
+Diphenhydramin-HCl eignet sich als Proof-of-Concept, nicht als Dauertherapie. Zwei Limitationen sind disqualifizierend:
+
+1. **Anticholinerge Last.** Diphenhydramin ist stark anticholinerg. Epidemiologische Daten (Gray et al. 2015, Indiana-Kohorte) zeigen dosisabhängig erhöhtes Demenzrisiko bei kumulativer Exposition. Die anticholinerge Begleitwirkung ist bei OTC-Dosen klinisch relevant und bei chronischem Einsatz nicht akzeptabel.
+
+2. **H1-Toleranz.** H1-Rezeptor-Upregulation unter chronischer Blockade ist gut dokumentiert. Die Zeitkonstante bei Schlafmitteln liegt typischerweise im Bereich von Tagen bis wenigen Wochen. Die DRN-selektive Suppression würde abschwächen.
+
+### 7.2 Niedrigdosiertes Doxepin als chronisch einsetzbare Alternative
+
+**Doxepin 3 mg** (Silenor) ist FDA-zugelassen für Kurz- und Langzeit-Insomnie und funktioniert in diesem Dosisbereich als nahezu reiner H1-Antagonist:
+
+| Eigenschaft | Diphenhydramin 25 mg | Doxepin 3 mg |
+|---|---|---|
+| H1-Selektivität | Mäßig | Hoch (bei ≤6 mg) |
+| Anticholinerge Last | Hoch | Nicht nachweisbar (placebovergleichbar) |
+| Gedächtnisbeeinträchtigung | Möglich | Nicht nachweisbar |
+| Rebound bei Absetzen | Möglich | Nicht berichtet |
+| Studiendauer | — | Bis 3 Monate (3 mg) |
+| Toleranzentwicklung | Tage–Wochen | Nicht systematisch untersucht |
+
+**Offene Frage:** Die DRN-Selektivität der H1-Blockade (Crawford et al. 2013) wurde unter akuter Gabe gezeigt. Ob die differentielle H1-Rezeptordichte am DRN vs. MRN unter chronischer Blockade erhalten bleibt, ist nicht untersucht. Falls die H1-Upregulation am DRN stärker ausfällt als am MRN, könnte die Selektivität unter Langzeitgabe paradoxerweise zunehmen — oder sich nivellieren.
+
+### 7.3 Konsequenz für das Protokoll
+
+Falls Phase A und B eine stabile Interferenzreduktion unter DPH bestätigen, ist der nächste Schritt der Wechsel auf Doxepin 3 mg als langzeitfähige Umsetzung desselben Mechanismus. Das DPH-Experiment validiert den Pathway; Doxepin wäre das klinisch vertretbare Vehikel für die chronische Anwendung.
 
 ---
 
