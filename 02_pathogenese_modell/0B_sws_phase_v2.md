@@ -525,12 +525,14 @@ Das Muster zeigt keine monotone Konsolidierung, sondern eine invertierte U-Kurve
 
 | Phase | HR (bpm) | Interpretation |
 |:------|:---------|:---------------|
-| Hauptschlaf (Nacht) | 75,7 | Erhöht — sympathische Aktivierung durch Prodrom |
-| Tiefster Punkt (Deep) | 61,2 | Vagale Kapazität intakt, aber kurzzeitig |
-| Post-Sumatriptan (früh) | 70–73 | Schmerz blockiert, sympathische Restaktivierung |
-| Post-Sumatriptan (spät) | 63–65 | Autonome Beruhigung, Resynchronisation |
+| Hauptschlaf (Nacht) bis ~23:20 Uhr | 75,7 | Erhöht — sympathische Aktivierung durch Prodrom |
+| Tiefster Punkt (Deep), 0-1 Uhr | 61,2 | Vagale Kapazität intakt, aber kurzzeitig |
+| Post-Sumatriptan (früh), 1-4 Uhr | 70–73 | Schmerz blockiert, sympathische Restaktivierung |
+| Post-Sumatriptan (spät) nach 4 Uhr | 63–65 | Autonome Beruhigung, Resynchronisation |
 
 Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schlafwerte. Dies definiert ein Resynchronisationsfenster: Sumatriptan blockiert den Schmerz und ermöglicht Schlaf, aber die kortikale und autonome Resynchronisation benötigt 3–4 Stunden.
+
+![HR und Schlafphasen der Nacht](<images/Metabase-HR + AVG-6.4.2026, 10_16_53.png>){width=66%}
 
 #### **B.14.4 Interpretation**
 
