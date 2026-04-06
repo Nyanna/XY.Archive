@@ -2537,6 +2537,7 @@ Das Muster zeigt keine monotone Konsolidierung, sondern eine invertierte U-Kurve
 Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schlafwerte. Dies definiert ein Resynchronisationsfenster: Sumatriptan blockiert den Schmerz und ermöglicht Schlaf, aber die kortikale und autonome Resynchronisation benötigt 3–4 Stunden.
 
 ![HR und Schlafphasen der Nacht](<images/Metabase-HR + AVG-6.4.2026, 10_16_53.png>){width=66%}
+*Schlafphasen: 4 = Wach, 2 = Leichtschlaf, 1 = REM, 0 = Tiefschlaf
 
 #### **B.14.4 Interpretation**
 
