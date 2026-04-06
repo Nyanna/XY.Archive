@@ -102,6 +102,8 @@ Normiert auf Schlafdauer:
 | Light Episoden/Stunde | 1,7 | 1,5 | 0,288 |
 | Total Episoden/Stunde | 4,6 | 3,6 | **0,013** |
 
+![Episode per Nacht](<images/Metabase-Episodes per Day-6.4.2026, 10_04_43.png>){width=90%}
+
 #### **B.3.2 Hierarchie folgt Synchronisationsanforderung**
 
 Die Trennschärfe folgt der Hierarchie der erforderlichen kortikalen Synchronisationstiefe:
