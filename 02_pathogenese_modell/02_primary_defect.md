@@ -450,6 +450,22 @@ Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges S
 | **Tag 2–3** | Zunehmender Versatz | Teilinkohärent | Steigende Transitionsdichte, erste Arousal-Instabilitäten |
 | **Tag 3–4** | Maximaler Versatz | Destruktive Interferenz | Maximale Fragmentierung, CSD-Schwelle auf ansteigender Flanke erreicht |
 
+**LC-Suppression: Der Locus Coeruleus als autonomer Konvergenzpunkt**
+
+Der ML/IL-Thalamus kodiert die *kortikale* Konsequenz des B7/B8-Phasenversatzes. Die komplementäre *autonome* Konsequenz wird über einen zweiten Konvergenzpunkt vermittelt: den **Locus Coeruleus** (LC). Beide Raphe-Kerne projizieren mit unterschiedlicher Gewichtung serotonerg auf den LC und modulieren dessen noradrenergen Output — und damit den sympathischen Tonus.
+
+Der Mechanismus ist strukturell identisch zur thalamischen Interferenz: Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Suppressionssignal an den LC → saubere noradrenerge Herunterregulation → niedriger sympathischer Tonus → niedrige Ruhe-HR, kurzes τ. Bei zunehmendem Phasenversatz erhält der LC widersprüchliche Modulationssignale — der LC wird nicht von einem *schwachen* Signal schlecht supprimiert, sondern von zwei *inkoherenten* Signalen aktiv destabilisiert. Der LC kann keines der gegenphasigen Suppressionssignale sauber ausführen → persistenter sympathischer Tonus → hohes τ → HR-Elevation.
+
+| Zyklustag | B7/B8-Phasenlage | LC-Suppression | Autonomes Korrelat |
+| :---- | :---- | :---- | :---- |
+| **Tag 0–1** (post-iktal) | Resynchronisiert | Kohärent → saubere Suppression | Niedriges τ, niedrige Ruhe-HR, steiler nächtlicher HR-Drop |
+| **Tag 2–3** | Zunehmender Versatz | Teilinkohärent → unvollständige Suppression | Steigendes τ, HR-Elevation (d-2/d-1 Muster in HR_RESTING, vgl. B.13.1) |
+| **Tag 3–4** | Maximaler Versatz | Destruktive Interferenz → LC bleibt aktiv | Maximales τ, dann abfallende HR am Anfallstag (vgl. B.13.1) |
+
+Die Amplitude der autonomen Oszillation erklärt sich durch denselben Interferenz-Mechanismus: konstruktive Interferenz (B7+B8 in Phase) erzeugt maximale Suppression, destruktive Interferenz (B7/B8 gegenphasig) erzeugt maximale Destabilisierung. Die Differenz zwischen beiden Zuständen ist größer als bei bloßer Signalabschwächung eines einzelnen Modulators.
+
+**Zwei Projektionen, ein Phasenversatz, zwei Konsequenzen:** Der B7/B8-Interferenz-Mechanismus erzeugt über den ML/IL-Thalamus die *kortikale* Fragmentierung (messbar als Schlafarchitektur-Instabilität, Anhang B.2–B.3) und über den LC die *autonome* Zyklik (messbar als HR-Drop-Periodizität und HR_RESTING-Deviation, Anhang B.10, B.13). Beide sind unterschiedliche Projektionen desselben Signals — der sympathovagalen Zyklusposition. Der HR-Drop und der HR_RESTING-Wert sind damit keine bloßen Korrelate, sondern direkte Readouts des B7/B8-Phasenversatzes über den LC-Pfad. Dies erklärt, warum die CSD den autonomen Zyklus nicht beeinflusst (B.13.3): Die CSD resynchronisiert den Kortex (über den thalamischen Pfad), aber die B7/B8-Phasenbeziehung — und damit der LC-Drive — bleibt unverändert. Der Beat zieht unbeeindruckt seine Bahn.
+
 #### **2.5.2 SCN-Raphe-Kopplung: Serielle Architektur und Flaschenhals-Mechanismus**
 
 Die SCN↔Raphe-Verschaltung folgt einer **seriellen** Architektur: **SCN ↔ B8 ↔ B7**.
@@ -557,6 +573,7 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Quasi-wöchentliche Periodizität im HR-Drop (7,5 Tage, FFT) als autonome Manifestation der zirkadianen Schwebung (PRE-Zustand) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B.10) |
 | Phasenmodell: CSD-Schwelle auf ansteigender Flanke nach HR-Drop-Minimum, nicht am Minimum selbst | Deskriptiv (n=15 Anfälle) | Tracker-Daten (Anhang B.12); Anfall korreliert mit dDrop/dt, nicht mit Drop-Amplitude |
 | Midline-/Intralaminärer Thalamus als primäre B7/B8-Interferenzquelle mit intrathalamischer Kaskade | Anatomisch gesichert, funktionelle Rolle hypothetisch | B7/B8-Konvergenz im ML/IL-Komplex anatomisch etabliert (Vertes 2004, Morin 2013); Interferenz-Mechanismus und Kaskadenmodell eigene Hypothese |
+| LC als autonomer Konvergenzpunkt der B7/B8-Interferenz; HR/τ als Readout des Phasenversatzes | Anatomisch gesichert (Raphe→LC-Projektionen), funktionelle Interferenz-Hypothese | DRN/MRN→LC-Projektionen etabliert; HR_RESTING-Kreuzvalidierung (Anhang B.13); CSD-Invarianz des autonomen Zyklus (B.13.3) |
 | LDX stabilisiert Intra-Kern-Takt, nicht Inter-Kern-Phasenversatz | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
 | Zirkadiane Schwebung als Amplifikator des B7/B8-Grundrhythmus (nicht eigenständiger Taktgeber) | Hypothetisch, konsistent mit PRE/POST-Dissoziation | PRE: ~6–7-Tage-Rhythmus (Superposition); POST: ~4-Tage-Rhythmus (Eigenperiode); Differenz erklärt durch Wegfall des zirkadianen Modulationsfaktors |
 | Stochastisches Fenstermodell (Triggerstärke × B7/B8-Phasenversatz-Zustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
