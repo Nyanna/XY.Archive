@@ -354,7 +354,7 @@ Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkons
 
 15 Anfälle (PRE) korrelieren nicht mit dem Minimum des HR-Drop-Rhythmus, sondern mit der **ansteigenden Flanke** danach (Median: 2 Tage post-Minimum). Am Minimum ist die Fragmentierung maximal, aber das System insgesamt gedämpft — kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, kortikale Kohärenz noch nicht wiederhergestellt → Diskrepanz zwischen steigendem Arousal und fragmentiertem Kortex → CSD-Schwelle erreicht. Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude) — **Phasenmodell**, nicht Schwellenmodell. Dies verstärkt die CSD-als-Reset-These: Der Reset erfolgt, wenn das System aus der maximalen Desynchronisation heraus wieder Arousal aufbaut, nicht am Tiefpunkt selbst.
 
-**5. Traumerinnerung als subjektiver Kohärenzmarker (Anhang B.13)**
+**5. Traumerinnerung als subjektiver Kohärenzmarker (Anhang B.14)**
 
 POST zeigt bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nicht, ob der REM global konsolidiert ist — die Traumerinnerung ist das sensitivere Instrument. Dreifache Dissoziation: PRE ohne Anfall → keine Traumerinnerung (fragmentierter REM); PRE nach CSD → intensive Traumerinnerung (CSD-erzwungene Resynchronisation → konsolidierter REM); POST (LDX) → reguläre Traumerinnerung (pharmakologische Synchronisation ersetzt CSD-Reset). Die Abnahme bewussten Träumens unter Betablocker/Naratriptan ist antiproportional zum sub-CSD-Naratriptankonsum — wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
 

@@ -228,7 +228,7 @@ Die Standardinterpretation der CSD (Cortical Spreading Depression) ist pathologi
 
 **Konventionell:** Trigger → Schwelle überschritten → CSD → Schmerz → Dysfunktion
 
-**Reformuliert:** Progressive kortikale Desynchronisation → Kompensation versagt → CSD als Notfall-Resynchronisation → Schmerz als metabolische Kosten → Kohärenz wiederhergestellt
+**Reformuliert:** Progressive kortikale Desynchronisation → Kompensation versagt → CSD als Notfall-Resynchronisation → Schmerz als metabolische Kosten → *kortikale* Kohärenz wiederhergestellt (der autonome Zyklus bleibt unbeeinflusst, vgl. B.13.3)
 
 Die CSD ist eine erzwungene globale kortikale Depolarisationswelle — sie durchläuft den gesamten Kortex und erzwingt einen synchronisierten Neustart. Post-CSD ist das Patchwork aufgelöst, der Kortex startet aus einem synchronisierten Zustand.
 
@@ -477,7 +477,91 @@ Das stochastische Fenstermodell (2.5.2) bleibt gültig, wird aber präzisiert: D
 
 ---
 
-### **B.13 Traumerinnerung als Kohärenzmarker (erweitert)**
+### **B.13 HR_RESTING als unabhängiger Zyklusmarker**
+
+#### **B.13.1 Befund**
+
+Die proprietäre Metrik HR_RESTING des Xiaomi Smart Band 9 korreliert mit Anfallstagen. Der Algorithmus ist nicht dekomponierbar (proprietär, Berechnung on-device), aber sein Output zeigt ein konsistentes Muster um Anfallstage:
+
+**Deviation vom 5-Tage-Median (Datenreferenz: `cortical_coherence_proxy_analysis - HR Resting.csv`):**
+
+| Kategorie | n | REST mean (bpm) | Deviation |
+|:----------|:--|:-----------------|:----------|
+| d-2 (Vorvortag) | 9 | 57,8 | +1,1 |
+| d-1 (Vortag) | 12 | 57,8 | +1,2 |
+| **Anfallstag** | 15 | 55,7 | -0,9 |
+| d+1 (Folgetag) | 17 | 57,4 | +0,4 |
+| Normal | 34 | 60,1 | -0,1 |
+
+Die Elevation beginnt d-2, hält d-1, und am Anfallstag fällt REST unter die Baseline. Der Anfall sitzt auf der absteigenden Flanke — konsistent mit dem Phasenmodell (B.12).
+
+#### **B.13.2 Absolute Schwellenwerte (periodengetrennt)**
+
+Die Anfalls-Obergrenze ist absolut scharf, verschiebt sich aber mit dem Medikamentenprofil:
+
+| Periode | Anfall-Obergrenze | Safe-Zone (0 Anfälle) | Anfall-Mean | Kein-Anfall-Mean |
+|:--------|:------------------|:----------------------|:------------|:-----------------|
+| PRE (Betablocker) | ≤62 bpm | ≥63 bpm (n=4) | 54,6 | 57,4 |
+| POST (LDX) | ≤60 bpm | ≥61 bpm (n=16) | 58,7 | 61,8 |
+
+Die POST-Verteilung ist um ~4 bpm nach oben verschoben — Betablocker drückt die gesamte HR-Distribution. Die Anfalls-Obergrenze verschiebt sich proportional mit (62→60). Anfälle treten ausschließlich in der unteren ~60% der individuellen Range auf. Der absolute Wert ist medikamentenabhängig, die relative Position ist stabil.
+
+**Höchste Anfallsdichte:**
+
+| Periode | Range | Anfallsrate |
+|:--------|:------|:------------|
+| PRE | 50–54 bpm | 47% |
+| POST | 55–59 bpm | 25% |
+
+#### **B.13.3 Post-Anfall-Verlauf**
+
+Die CSD beeinflusst den autonomen Zyklus nicht:
+
+| Richtung | n |
+|:---------|:--|
+| ↓ weiter fallend | 6 |
+| ↑ Rebound | 9 |
+| = gleich | 2 |
+
+Keine systematische Richtung. Der Beat zieht unbeeindruckt seine Bahn. Die CSD resynchronisiert den Kortex (Post-Migräne-Klarheit, konsolidierter REM), aber der autonome Zyklus kümmert sich nicht darum. Dies differenziert zwei bisher vermengte Ebenen:
+
+- **Kortikale Kohärenz** — wird durch CSD resynchronisiert. Belegt durch Traumerinnerung und Schlafkonsolidierung post-iktal.
+- **Autonomer Zyklus** — läuft unabhängig, getrieben von der B7/B8-Schwebung. CSD greift nicht ein.
+
+#### **B.13.4 Nap-Kreuzvalidierung**
+
+Der Pre-Nap-HR-Befund (vgl. B.5) bestätigt sich als Zykluspositions-Indikator, nicht als Kausalfaktor:
+
+- Pre-Nap HR ≥80 bpm = safe (85% PPV) → System ist früh im Zyklus, stabil.
+- Pre-Nap HR <75 bpm = Kaskade → System ist auf der absteigenden Flanke, Anfall kommt unabhängig vom Nap.
+
+Der Nap verändert den Zyklusverlauf nicht, er ist eine Projektion der aktuellen Zyklusposition.
+
+#### **B.13.5 Algorithmische Qualitätsmerkmale**
+
+Der Xiaomi-Algorithmus zeigt ein Konfidenz-Gating: bei atypischen Nachtprofilen (Triptan-Intervention, Tracker-Artefakte, Randdaten) gibt er HR_RESTING=0 statt eines unzuverlässigen Werts aus. Die Nicht-Null-Werte sind dadurch als algorithmisch valide eingestuft — das erhöht die Zuverlässigkeit der Deviation-Analyse.
+
+Der Algorithmus ist nicht rekonstruierbar. Versuche, HR_RESTING aus nächtlichen HR-Perzentilen, Rolling-Minima oder Zeitfenstern vor dem Aufwachen abzuleiten, scheitern (maximale Korrelation r=0,31 bei keinem Modell). Der Algorithmus integriert vermutlich mehrere Faktoren (HR-Level, Stabilität, Bewegung, Schlafstadiendauer) auf eine Weise, die für uns nicht dekomponierbar ist. Der Output korreliert mit dem Systemzustand, der Mechanismus bleibt proprietär.
+
+#### **B.13.6 Einordnung**
+
+Der HR_RESTING-Befund ist eine unabhängige Kreuzvalidierung des Phasenmodells (B.12) über einen anderen Messkanal. Beide Metriken — der selbst berechnete Drop/τ und der proprietäre HR_RESTING — sind unterschiedliche Projektionen desselben Signals: der sympathovagalen Zyklusposition. Beide enthalten das Signal, beide verzerren es auf eigene Weise (unser Algorithmus bei Nicht-Sättigungskurven, der Xiaomi-Algorithmus bei atypischen Profilen). Die Konvergenz beider Metriken auf dasselbe Anfallsmuster stärkt den Befund.
+
+#### **B.13.7 Evidenztabelle**
+
+| Aussage | Evidenzniveau | Quelle |
+|:--------|:-------------|:-------|
+| HR_RESTING-Elevation d-1/d-2 vor Anfall | Deskriptiv (dev +1,1/+1,2, n=9/12) | `cortical_coherence_proxy_analysis - HR Resting.csv` |
+| Kein Anfall bei REST ≥63 (PRE) bzw. ≥61 (POST) | Deskriptiv, scharfe Grenze, n=4/16 | Dieselbe Datenquelle |
+| Anfallsdichte 50–54 bpm (PRE): 47% | Deskriptiv | Dieselbe Datenquelle |
+| CSD verändert autonomen Zyklus nicht (6↓ / 9↑ / 2=) | Deskriptiv | Post-Anfall-Verlaufsanalyse |
+| HR_RESTING-Schwelle verschiebt sich mit Medikation | Deskriptiv (PRE ≤62, POST ≤60) | Periodengetrennte Analyse |
+| Nap-Outcome ist Zykluspositions-Projektion | Modellinterpretation, konsistent mit Daten | Kreuzreferenz B.5 + B.13 |
+| Kortikale vs. autonome Resynchronisation differenzierbar | Modellinterpretation | Abgeleitet aus Post-Anfall-Verlauf |
+
+---
+
+### **B.14 Traumerinnerung als Kohärenzmarker (erweitert)**
 
 POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nur, ob der motorische Kortex im REM-Profil ist, nicht ob der REM global konsolidiert ist. Traumerinnerung überlebt den Schlaf-Wach-Übergang nur bei konsolidiertem REM.
 
@@ -495,11 +579,11 @@ POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Trac
 
 ---
 
-### **B.14 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
+### **B.15 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
 
 Die Nacht vom 30./31.03.2026 liefert ein natürliches Experiment mit drei distinkten Phasen unter wechselnden pharmakologischen Bedingungen.
 
-#### **B.14.1 Drei-Phasen-Verlauf**
+#### **B.15.1 Drei-Phasen-Verlauf**
 
 | Phase | Zeitraum | Bedingung | Density (Ep./h) | Dauer |
 |:------|:---------|:----------|:-----------------|:------|
@@ -509,7 +593,7 @@ Die Nacht vom 30./31.03.2026 liefert ein natürliches Experiment mit drei distin
 
 Phase 1 zeigt eine vergleichsweise konsolidierte Nacht (2,8/h — niedriger als POST-Mean). Phase 2 dokumentiert einen Schlafversuch unter unbehandeltem Migräneschmerz: In nur 57 Minuten erreicht die Density 5,3/h — der Schmerz fragmentiert den Schlaf massiv. Phase 3 beginnt nach Sumatriptan-Einnahme.
 
-#### **B.14.2 Post-Sumatriptan Drei-Drittel-Analyse**
+#### **B.15.2 Post-Sumatriptan Drei-Drittel-Analyse**
 
 Die Post-Sumatriptan-Phase wurde in Drittel unterteilt, um den zeitlichen Verlauf der Resynchronisation zu erfassen:
 
@@ -521,7 +605,7 @@ Die Post-Sumatriptan-Phase wurde in Drittel unterteilt, um den zeitlichen Verlau
 
 Das Muster zeigt keine monotone Konsolidierung, sondern eine invertierte U-Kurve mit einem Fragmentierungsmaximum im zweiten Drittel.
 
-#### **B.14.3 HR-Verlauf als zweiter physiologischer Kanal**
+#### **B.15.3 HR-Verlauf als zweiter physiologischer Kanal**
 
 | Phase | HR (bpm) | Interpretation |
 |:------|:---------|:---------------|
@@ -535,7 +619,7 @@ Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schl
 ![HR und Schlafphasen der Nacht](<images/Metabase-HR + AVG-6.4.2026, 10_16_53.png>){width=66%}
 *Schlafphasen: 4 = Wach, 2 = Leichtschlaf, 1 = REM, 0 = Tiefschlaf
 
-#### **B.14.4 Interpretation**
+#### **B.15.4 Interpretation**
 
 Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale Vasokonstriktion → Schmerzblockade), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
 
@@ -545,7 +629,7 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 
 ---
 
-### **B.15 Evidenztabelle**
+### **B.16 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
@@ -573,8 +657,8 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 | Density ≥7,0/h → Anfall am Folgetag in 83% (5/6) | Deskriptiv, kleine Stichprobe (n=6) | B.6.5 |
 | POST-Nap-Reset erfolgreicher als PRE (78% vs. 38%) | Deskriptiv | Tracker-Daten, B.5.3 |
 | Dreiersequenz (Fragm. Nacht → Nap → Anfall): 75% | Deskriptiv, n=8 | B.5.3 |
-| Migräne-Nacht 30./31.03: Sumatriptan → 3–4h Resynchronisation (HR 75→63 bpm) | Einzelbeobachtung | HR-Daten, B.14 |
-| Post-Sumatriptan Density: invertierte U-Kurve (6,1→7,5→5,8/h) | Deskriptiv, Einzelereignis | B.14.2 |
+| Migräne-Nacht 30./31.03: Sumatriptan → 3–4h Resynchronisation (HR 75→63 bpm) | Einzelbeobachtung | HR-Daten, B.15 |
+| Post-Sumatriptan Density: invertierte U-Kurve (6,1→7,5→5,8/h) | Deskriptiv, Einzelereignis | B.15.2 |
 | HR-Drop-Periodizität 7,5 Tage (FFT, Power 102,5) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT-Analyse (B.10) |
 | Autokorrelation Lag 7 (r=0,317) und Lag 14 (r=0,213) | Statistisch signifikant | Tracker-Daten, Autokorrelation (B.10) |
 | Nap-Outcome durch Pre-Nap-HR determiniert (PPV 85% bei ≥80 bpm) | Statistisch signifikant (n=33) | Tracker-Daten, HR-Analyse (B.11) |
@@ -585,8 +669,17 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 | Linearer Ganznacht-Slope in keiner Quelle als Normvariante beschrieben | Literaturgestützt | Übersicht B.9.2 |
 | POST-Nap-Kaskadenrate 11% vs. PRE 58% | Deskriptiv | Tracker-Daten (B.11) |
 | SWS-Fragmentierung als Mediator orthographischer Engramm-Instabilität (LRS-Phänotyp) | Modellvorhersage | Abgeleitet aus Anhang D, D.7.3 — orthographische Konsolidierung SWS-abhängig |
+| HR_RESTING als unabhängiger Zyklusmarker (Elevation d-1/d-2, Drop am Anfallstag) | Deskriptiv, kreuzvalidiert | B.13, `cortical_coherence_proxy_analysis - HR Resting.csv` |
+| CSD resynchronisiert Kortex, nicht autonomen Zyklus | Modellinterpretation, konsistent mit Daten | B.13.3 |
+| Anfalls-Schwelle relativ zur individuellen HR-Range, nicht absolut | Deskriptiv | B.13.2 |
 
-### **B.16 Limitationen**
+### **B.17 Revisionstabelle**
+
+| Kapitel | Revision | Priorität |
+|:--------|:---------|:----------|
+| **4.5** (CSD als Reset) | Differenzierung ergänzen: CSD resynchronisiert kortikale Kohärenz, aber nicht den autonomen Zyklus. Der Beat läuft unbeeindruckt weiter. Verweis auf B.13.3. | Mittel — Präzisierung, kein Widerspruch |
+
+### **B.18 Limitationen**
 
 - Consumer-Tracker, keine PSG-Validierung. Die Stadienklassifikation ist intern und nicht reproduzierbar.
 - n=1, kein Kontrolldesign. Die Perioden-Trennung (PRE/POST) ist konfundiert mit Medikamentenwechsel, Jahreszeit und 13-monatiger Trageunterbrechung.
@@ -595,14 +688,14 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 - Die Interpretation des Trackers als „stochastischer Resonanz-Detektor" ist messtheoretisch konsistent, aber nicht extern validiert. Eine PSG-Parallelmessung wäre nötig, um die Tracker-Fragmentierung gegen globale SWA zu kalibrieren.
 - Die CSD-als-Resynchronisation-These ist mechanistisch konsistent und erklärt den klinischen Verlauf, aber nicht direkt testbar ohne iktale EEG-Aufzeichnung mit post-iktaler Schlafarchitektur-Analyse.
 - Die t-1 Lag-Korrelation (B.6.5) basiert auf n=14 Vornächten vor Anfällen. Drei hochfragmentierte Nächte (Density 13,12; 9,75; 8,54/h) könnten den Effekt dominieren. Multiple Vergleiche (Lag-Analyse + Schwellenwertsuche) ohne formale Korrektur.
-- Die Migräne-Nacht-Sonderanalyse (B.14) ist ein Einzelereignis mit pharmakologischer Konfundierung (Sumatriptan-Halbwertszeit ~2h überlappt mit dem Beobachtungsfenster).
+- Die Migräne-Nacht-Sonderanalyse (B.15) ist ein Einzelereignis mit pharmakologischer Konfundierung (Sumatriptan-Halbwertszeit ~2h überlappt mit dem Beobachtungsfenster).
 - Die Dreiersequenz (B.5.3) und Density-≥7,0-Schwelle (B.6.5) basieren auf n=6–8 Fällen. Diese Befunde sind hypothesengenerierend, nicht konfirmatorisch.
 - POST-Stichprobe zu klein für belastbare FFT bei 7-Tage-Perioden (18 Nächte, mindestens 25 nötig). Die Periodizitätsanalyse (B.10) basiert ausschließlich auf PRE-Daten.
 - Anfalls-Korrelation mit Phase (B.12): n=15, Abstände manuell annotiert. Konsistentes Muster, aber keine formale statistische Testung der Phasen-Hypothese.
 - Nap-Outcome-Analyse (B.11): Kaskadenklassifikation über late_elevation >2 bpm. Schwellenwert empirisch gewählt, nicht extern validiert.
 - Die Daten sind insgesamt robuster als erwartet für einen Consumer-Tracker, aber die Annahmen können bei längerer Erfassung noch kippen. Es wird mit zunehmender Datenmenge unwahrscheinlicher.
 
-### **B.17 Diagnostische Implikation: Tracker-basiertes Screening**
+### **B.19 Diagnostische Implikation: Tracker-basiertes Screening**
 
 Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert einen kontinuierlichen, nicht-invasiven Biomarker für die zirkadiane Schwebung — einen Prozess, den die klinische Forschung mit PET und PSG sucht.
 
@@ -623,7 +716,7 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 
 ---
 
-### **B.18 Referenzen**
+### **B.20 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.
