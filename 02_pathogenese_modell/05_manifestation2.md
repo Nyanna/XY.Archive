@@ -88,3 +88,5 @@ Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unab
 | Migränefreiheit als Voraussetzung | Autonome Verbesserung korreliert mit Migränefreiheit – Rückkehr der Migräne geht mit Verschlechterung der autonomen Reflexanfälligkeit einher | Hypothetisch, bidirektional testbar |
 
 Evidenzstatus: Gesamte Sektion 5.4 ist eine Modellvorhersage, abgeleitet aus den Mechanismen der Abschnitte 5.1–5.3 und der pharmakologischen Interaktion (7.3). Kein unabhängiger empirischer Nachweis. Die Einzelkomponenten (serotonerge NTS-Modulation, noradrenerge PFC-Suppression, sympathische Gegenregulation unter Betablockade) sind jeweils gesichert; die Kompoundierung ist hypothetisch.
+
+Die autonome Symptomatik bei schweren Migräneattacken wird konventionell als Teil der „Stammhirnaura" (MBA) klassifiziert und einer CSD-Propagation in den Hirnstamm zugeschrieben. Diese Zuschreibung hat keine humane Evidenzbasis. Die Symptome erklären sich parsimonischer als direkter B7→ANS-Kern-Kollaps (vgl. 4.6, Anhang B.20).

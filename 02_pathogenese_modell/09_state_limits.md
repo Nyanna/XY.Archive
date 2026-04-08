@@ -76,6 +76,9 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Laminare Dissoziation bei Pavor: primäre Sensorik + Striatum aktiv, PFC + Hippocampus + semantische Bindung offline | Einzelfallbeobachtung, mechanistisch konsistent | Phänomenologische Beobachtung (Anhang C) |
 | Stimming während Pavor nocturnus als subkortikal generiertes Muster ohne bewusstes Erleben | Einzelfallbeobachtung | Phänomenologische Beobachtung (Anhang C) |
 | Morgendliches Duschen als sensorisches Forcing bei inkomplettem Schlaf-Wach-Übergang | Einzelfallbeobachtung, mechanistisch konsistent | Selbstbeobachtung |
+| MBA-Symptome erklärbar durch B7→ANS-Kern-Proximität ohne Brainstem-CSD | Modellvorhersage, parsimoniöser als konventionelle Erklärung | ICHD-3 1.2.2 (Symptomtopographie); Anhang F (Innervierungsanatomie); Anhang B.20 (temporale Dissoziation) |
+| Keine humane Evidenz für Brainstem-CSD; einzige Grundlage Cacna1a-S218L-Mausmodell | Evidenzlücke | Literaturreview: Aiba & Noebels 2015, Loonen et al. 2019, Jansen et al. 2019 — ausschließlich Tiermodell |
+| ANS-Symptome temporal vor kortikaler CSD (Einzelfall, LDX-bedingte Separation) | Einzelfallbeobachtung | Anhang B.20 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |

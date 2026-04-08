@@ -271,7 +271,9 @@ Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, se
 
 Der entscheidende Unterschied: Die tonische Destabilisierungswelle hinterlässt kein refraktäres Gewebe. Wo CSD eine Spur funktioneller Stille zieht, hinterlässt die tonische Welle ein wachsendes Feld instabiler, aber weiterhin erregbarer Neurone. Das Feld expandiert, weil der B7/B8-Phasenversatz anhaltend ist — nicht weil ein ionisches Produkt diffundiert. Die Welle endet nicht, wenn das Substrat aufgebraucht ist, sondern wenn der Phasenoffset korrigiert wird oder die Eskalation die nächste Stufe erreicht.
 
-**Sechs-Stunden-Fenster bis Stammhirnaura:** Wenn die tonische Destabilisierung über Stunden propagiert, erreicht sie schließlich die Raphe-Kerne selbst. Ab diesem Punkt entsteht ein Teufelskreis: Die Raphe, deren Phaseninstabilität die Welle antreibt, wird selbst destabilisiert → der Phasenoffset wächst → die Welle beschleunigt. Klinisch manifestiert sich dies als Stammhirnaura — ein Zustand, der in der konventionellen CSD-Theorie schwer erklärbar ist (CSD propagiert horizontal im Kortex, nicht vertikal zum Hirnstamm).
+**Sechs-Stunden-Fenster bis ANS-Kollaps:** Parallel zur tonischen kortikalen Destabilisierung läuft ein zweiter, architektonisch determinierter Prozess: Die B7-Depletion destabilisiert die monosynaptisch innervierten autonomen Stammhirnkerne (NTS, RVLM, Ncl. ambiguus, vestibuläre Kerne) direkt. Dieser Prozess ist schneller als die kortikale Kaskade (monosynaptisch vs. polysynaptisch) und manifestiert sich klinisch als das, was konventionell als „Stammhirnaura" (MBA) klassifiziert wird. Die konventionelle Erklärung — CSD propagiert in den Hirnstamm — hat keine humane Evidenzbasis (vgl. 4.6). Die Stammhirnsymptome sind nicht Resultat einer CSD-Propagation nach kaudal, sondern eines eigenständigen, parallel laufenden ANS-Kollapses. Ohne LDX überlagern sich beide Prozesse zeitlich; unter LDX wird die CSD-Schwelle länger gehalten, und der ANS-Kollaps wird als vorgelagerter, eigenständiger Prozess sichtbar (vgl. Anhang B.20).
+
+Zusätzlich kann die tonische Destabilisierung über Stunden die Raphe-Kerne selbst erreichen. Ab diesem Punkt entsteht ein Teufelskreis: Die Raphe, deren Phaseninstabilität die Welle antreibt, wird selbst destabilisiert → der Phasenoffset wächst → die Welle beschleunigt.
 
 **Eskalationskaskade:**
 
@@ -279,7 +281,7 @@ Der entscheidende Unterschied: Die tonische Destabilisierungswelle hinterlässt 
 | :---- | :---- | :---- | :---- |
 | **1 — Interferenz** | Leichter B7/B8-Phasenoffset, subthreshold | Unwohlsein, Prodromalphase | Nap reicht |
 | **2 — Tonische Welle** | Destabilisierungsfeld wächst über Stunden | Diffuse sensorische Instabilität, Rauschen | Triptan-Fenster |
-| **3 — Stammhirnaura** | Welle erreicht Raphe → Teufelskreis | Stammhirnsymptome, schwere Migräne | Notfallintervention |
+| **3 — ANS-Kollaps** | B7-Depletion destabilisiert monosynaptisch innervierte ANS-Kerne (NTS, vestibuläre Kerne, Retikulärformation); parallel: tonische Welle kann CSD-Schwelle erreichen | Stammhirnsymptome (konventionell MBA), schwere autonome Dysregulation; klinisch als „Stammhirnaura" fehlattribuiert (vgl. 4.6) | Notfallintervention |
 | **4 — Epileptischer Anfall** | Fokale Entladung bei maximalem Offset | Anfallsereignis | Antikonvulsiv |
 | **5 — Status/SUDEP** | Unkontrollierte Eskalation | Status epilepticus, SUDEP-Risiko | Intensivmedizin |
 
@@ -439,3 +441,75 @@ Der in Abschnitt 2.5.1 beschriebene B7/B8-Phasenversatz interagiert mit dem loka
 Die maximale Vulnerabilität liegt jedoch nicht am Tiefpunkt selbst, sondern auf der **ansteigenden Flanke** danach (Anhang B.12): Am Minimum ist das System gedämpft; beim Wiederanstieg des sympathischen Drive entsteht die Diskrepanz zwischen steigendem Arousal und noch fragmentiertem Kortex → CSD-Schwelle erreicht (Median 2 Tage nach Minimum, n=15). Minimale Perturbation reicht auf dieser Flanke. Der Migräneanfall resynchronisiert das System partiell (CSD als Reset), und der Zyklus beginnt erneut.
 
 **Diagnostische Implikation:** Ein einzelnes Schlaf-EEG ist diagnostisch wertlos für dieses Muster, weil es einen zufälligen Punkt im Zyklus erfasst. Aussagekräftig wäre ein 14-Tage-EEG mit spezifischer Analyse der zyklusweisen N3-Position als Funktion der Tage seit dem letzten Migräneanfall. Kein Standardprotokoll misst dies.
+
+### **4.6 Migräne mit Hirnstammaura (MBA): Reattribution von Brainstem-CSD zu ANS-Kollaps**
+
+#### **4.6.1 Konventionelle Klassifikation**
+
+Die ICHD-3-Klassifikation (1.2.2) definiert MBA über Symptome, die einem Hirnstammursprung zugeschrieben werden:
+
+| ICHD-3-Symptom | Zugeordnete Struktur |
+|:---------------|:--------------------|
+| Dysarthrie | Motorkerne (Pons/Medulla) |
+| Schwindel/Vertigo | Vestibuläre Kerne |
+| Tinnitus | Cochleariskerne |
+| Hypakusis | Cochleariskerne |
+| Diplopie | Okulomotorik (III, IV, VI) |
+| Ataxie | Cerebellum/Kleinhirnstiele |
+| Bewusstseinsstörung | Retikulärformation |
+| Bilaterale Parästhesien | Lemniscus medialis |
+
+Die Klassifikation beschreibt die Symptomtopographie korrekt. Die implizite mechanistische Annahme — CSD propagiert in den Hirnstamm und erzeugt diese Symptome dort — ist jedoch nicht belegt.
+
+#### **4.6.2 Evidenzlage für Brainstem-CSD beim Menschen**
+
+**Tiermodell-Evidenz (vorhanden):**
+- Brainstem-SD ist gesichert im Cacna1a-S218L-Mausmodell (FHM1-Gain-of-Function-Mutation; Aiba & Noebels 2015, Loonen et al. 2019, Jansen et al. 2019)
+- Propagation über Colliculus superior in den Hirnstamm als spezifischer Pfad (Cain et al. 2017)
+- Reversibel bei mechanischer Beatmung innerhalb 60 s (Jansen et al. 2019: 7/9 Überlebensrate)
+- NMDA-Antagonisten (MK-801, Memantin) verhindern Brainstem-SD präventiv
+
+**Humane Evidenz:** Keine.
+
+Es existiert keine publizierte Studie, die CSD-Propagation in den Hirnstamm beim Menschen nachweist — weder elektrophysiologisch noch bildgebend. Die MBA-Diagnose basiert ausschließlich auf Symptomtopographie und der Annahme, dass Hirnstammsymptome einen Hirnstammmechanismus erfordern. Diese Annahme ist ein Lokalisierungsfehlschluss: Sie verwechselt den Ort der Symptommanifestation mit dem Ort des pathologischen Prozesses.
+
+**Cacna1a-S218L als Sonderfall:** Das Mausmodell nutzt eine extreme Gain-of-Function-Mutation, die die CSD-Schwelle massiv senkt. Diese Mutation entspricht der schwersten Form der familiären hemiplegischen Migräne (FHM1). Die Übertragung auf sporadische MBA ist nicht gerechtfertigt — die sporadische MBA tritt bei Patienten ohne nachweisbare Kanaldefekte auf.
+
+#### **4.6.3 Alternative Erklärung: ANS-Kollaps durch Raphe-Proximität**
+
+Sämtliche MBA-Symptome lassen sich ohne Brainstem-CSD erklären, wenn die architektonische Proximität der betroffenen Kerne zum Raphe-System berücksichtigt wird:
+
+| MBA-Symptom | Konventionell: Brainstem-CSD | Reattribution: B7-Depletion → ANS-Kollaps |
+|:------------|:----------------------------|:------------------------------------------|
+| Schwindel/Vertigo | CSD in vestibulären Kernen | Vestibuläre Kerne monosynaptisch von B7 innerviert; destabilisieren bei Raphe-Depletion direkt |
+| Übelkeit/Erbrechen | CSD in Area postrema/NTS | NTS als primäres B7-Ziel; ANS-Kollaps-Symptom, kein CSD-Symptom |
+| Bewusstseinsstörung | CSD in Retikulärformation | Raphe-Tonus-Verlust → Arousal-Insuffizienz; keine CSD nötig |
+| Dysarthrie | CSD in motorischen Hirnstammkernen | Motorische Koordination unter Raphe-Modulation; Depletion → Koordinationsverlust |
+| Tinnitus/Hypakusis | CSD in Cochleariskernen | Auditorische Verarbeitung über MGB (MRN-innerviert, vgl. D.7.3); Instabilität bei B8-Depletion |
+| Bilaterale Parästhesien | CSD bilateral im Hirnstamm | Bilaterale Raphe-Projektion → bilaterale Symptome ohne bilaterale CSD |
+| Ataxie | CSD im Cerebellum | Cerebellare Raphe-Innervierung gesichert; Depleted → Koordinationsverlust |
+
+**Parsimoniegewinn:** Die Reattribution eliminiert eine unbelegte Hilfshypothese (Brainstem-CSD beim Menschen) und erklärt alle MBA-Symptome aus einem Mechanismus, der bereits im Modell etabliert ist (B7/B8-Interferenz → Downstream-Destabilisierung).
+
+#### **4.6.4 Temporale Vorhersage**
+
+Die Reattribution macht eine testbare Vorhersage: ANS-Marker (HRV-Einbruch, Blutdruckinstabilität, vestibuläre Symptome) müssten *vor* der kortikalen Aura auftreten, nicht danach. Der ANS-Kollaps ist monosynaptisch (schnell), die CSD-Schwellenunterschreitung polysynaptisch (langsam). Wenn MBA Brainstem-CSD wäre, müssten die Symptome nach oder gleichzeitig mit der kortikalen Aura auftreten.
+
+Einzelfallbeobachtung (Anhang B.20): ANS-Symptome 3,5 Stunden vor der kortikalen Kaskade. Die zeitliche Dissoziation wurde durch LDX-bedingte Verzögerung der CSD-Schwelle sichtbar — ohne LDX überlagern sich beide Prozesse und sind klinisch nicht trennbar.
+
+#### **4.6.5 Einordnung: Was als „Prodrom" gilt, ist der Primärprozess**
+
+Die MBA-Symptome werden klinisch häufig als „Prodromi" der Migräne beschrieben — Vorboten des eigentlichen Anfalls. Im Modell sind sie das Gegenteil: Sie sind der *primäre* Prozess (B7→ANS-Kern-Destabilisierung), der nur prodromal erscheint, weil die nachfolgende CSD dramatischer ist und das klinische Bild dominiert.
+
+Die Analogie zur CSD-Korrektur (4.4) ist direkt: Wie CSD nicht der universelle Migränemechanismus ist (sondern Eskalationsstufe bei maximalem Phasenoffset), so ist MBA nicht Brainstem-CSD (sondern der architektonisch proximale ANS-Kollaps, der zeitlich mit der CSD zusammenfällt).
+
+#### **4.6.6 Evidenz und Einordnung**
+
+| Aussage | Evidenzniveau | Quelle |
+|:--------|:-------------|:-------|
+| MBA als ICHD-3-Diagnose (1.2.2) mit definierten Hirnstammsymptomen | Gesichert (nosologisch) | ICHD-3 |
+| Brainstem-SD im Cacna1a-S218L-Mausmodell | Gesichert (Tiermodell) | Aiba & Noebels 2015, Loonen et al. 2019, Jansen et al. 2019 |
+| Keine humane Evidenz für Brainstem-CSD | Evidenzlücke | Kein publizierter Nachweis |
+| MBA-Symptome erklärbar durch B7-Proximity ohne Brainstem-CSD | Modellvorhersage, parsimoniöser | Raphe-Innervierungsanatomie (Anhang F) |
+| ANS-Symptome vor kortikaler Aura (Einzelfall) | Einzelfallbeobachtung | Anhang B.20 |
+| „Prodromi" als Primärprozess, nicht Vorboten | Modellinterpretation | Abgeleitet aus architektonischer Proximität |

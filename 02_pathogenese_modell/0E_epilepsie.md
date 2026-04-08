@@ -249,6 +249,8 @@ Plötzlicher unerwarteter Tod bei Epilepsie (SUDEP) konvergiert mechanistisch mi
 
 Bei SIDS ist der kaudale Raphe-Takt defekt → autonome Regulation versagt → Atemstillstand (Paterson/Kinney, vgl. 2.3). Bei SUDEP versagt der rostrale Raphe-Takt → Anfälle → Spreading Depolarization propagiert in den Hirnstamm → autonome Kaskade → Atemstillstand. Beide Endstrecken sind serotonerge Synchronisationsversagen — in unterschiedlichen Raphe-Subnetzen, zu unterschiedlichen Entwicklungszeitpunkten.
 
+**Abgrenzung zu MBA:** Die hier diskutierte Brainstem-SD als SUDEP-Mechanismus ist ein Tiermodell-Befund bei extremen Gain-of-Function-Mutationen (Cacna1a-S218L) unter letalen Anfallsbedingungen. Sie ist nicht zu verwechseln mit der klinischen Diagnose „Migräne mit Hirnstammaura" (MBA, ICHD-3 1.2.2), deren Symptome sich ohne Brainstem-CSD durch den direkten B7→ANS-Kern-Kollaps erklären lassen (vgl. 4.6).
+
 #### **E.7.4 SUDEP im Schlaf: Vollständig blockierte Fallback-Hierarchie**
 
 Die epidemiologischen Daten zur Nachtdominanz von SUDEP sind massiv und konsistent:
