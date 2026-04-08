@@ -649,7 +649,7 @@ Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schl
 
 #### **B.15.4 Interpretation**
 
-Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale Vasokonstriktion → Schmerzblockade), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
+Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynaptische Hemmung der trigeminalen Transmitterfreisetzung → Schmerzblockade; vgl. 4.4.5), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
 
 **Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.5, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
 
@@ -673,7 +673,7 @@ Der Anfall vom 07.04.2026 liefert eine zeitliche Dissoziation zwischen ANS-Kolla
 | 6: DPH-Fenster | 20:50–22:26 | 74–81 | DPH-Einnahme ~21:00; HR-Nadir 67 bpm um 22:20; PFC→NTS-Kompensation via Atemkontrolle|
 | 7: Volle Kaskade | 22:26–23:11 | 67→104 | ANS-Eskalation, Erbrechen, Kopfschmerz setzt ein; HR-Spike auf 104 |
 | 8: Sumatriptan | 23:10–23:40 | 104→69 | Sumatriptan-Nasal + Paracetamol 1000 mg rektal; initialer HR-Abfall |
-| 9: Triptan-Plateau | 00:25–03:20 | 80–89 | Sumatriptan-Vasokonstriktion, HR-Plateau ~82 bpm, keine Konsolidierung |
+| 9: Triptan-Plateau | 00:25–03:20 | 80–89 | Sumatriptan-Wirkplateau (trigeminale Transmitterhemmung + sekundäre Vasokonstriktion), HR-Plateau ~82 bpm, keine Konsolidierung |
 | 10: Echtes Nadir | 04:45–06:45 | 58–67 | HR-Minimum 58 bpm (04:55), zweites Minimum 59 bpm (05:37) |
 | 11: Morgen | 07:00–08:00 | 70–84 | Aufwachen, rechtsseitiger Nystagmus |
 
@@ -737,12 +737,12 @@ Empirischer Beleg: Aktives Fahren (Phase 3, hoher PFC-Demand) → NTS-Suppressio
 | Pre-Triptan Nadir | 22:20 | 67 | Maximaler vagaler Tonus bei ANS-Erschöpfung |
 | ANS-Spike | 22:26–23:10 | 67→104 | Volle Kaskade: CSD + Erbrechen |
 | Initialer Triptan-Effekt | 23:10–23:40 | 104→69 | Schmerzblockade → sympathische Deaktivierung |
-| Triptan-Rebound | 00:25–03:20 | 80–89 | 5-HT1B/1D-Vasokonstriktion → sympathische Restaktivierung |
+| Triptan-Rebound | 00:25–03:20 | 80–89 | 5-HT1B/1D-Wirkplateau (Transmitterhemmung + sekundäre Vasokonstriktion) → sympathische Restaktivierung |
 | Post-Triptan-Clearance | 04:45–06:45 | 58–67 | Sumatriptan-HWZ ~2h; erst nach Clearance echtes Nadir |
 
 Das Triptan-Plateau (HR ~82 bpm über ~3 Stunden) ist konsistent mit B.15: Die Resynchronisationszeit beträgt 3–4 Stunden, und das Triptan konfundiert den HR-Verlauf über seine Halbwertszeit. Das echte Nadir (58 bpm) tritt erst nach Triptan-Clearance auf — ähnlich wie in B.15.3.
 
-**Differenz zu B.15:** In B.15 lag der Post-Sumatriptan-HR bei 70–73 bpm (Phase 3), hier bei 80–89. Die Differenz erklärt sich durch die exertionale Vorbelastung: Die sympathische Restaktivierung durch die post-exertionale Depletion addiert sich zur Triptan-Vasokonstriktion.
+**Differenz zu B.15:** In B.15 lag der Post-Sumatriptan-HR bei 70–73 bpm (Phase 3), hier bei 80–89. Die Differenz erklärt sich durch die exertionale Vorbelastung: Die sympathische Restaktivierung durch die post-exertionale Depletion addiert sich zum Triptan-Wirkplateau (Transmitterhemmung + sekundäre Vasokonstriktion).
 
 #### **B.16.7 Konsistente Nystagmus-Lateralisierung**
 

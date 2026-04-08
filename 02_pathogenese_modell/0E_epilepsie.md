@@ -132,7 +132,7 @@ Anti-CGRP-Antikörper (Erenumab, Galcanezumab, Fremanezumab, Eptinezumab) blocki
 
 #### **E.5.3 Triptane: Inkompletter CSD-Abbruch**
 
-Triptane (5-HT1B/1D-Agonisten) hemmen die CGRP-Freisetzung aus trigeminalen Nervenendigungen und konstriktieren meningeale Gefäße. Sie terminieren die CSD-Kaskade mitten im Prozess: die Depolarisationswelle hat begonnen, aber die vaskuläre Propagationskomponente wird abgewürgt. Der Reset bleibt unvollständig.
+Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) aus trigeminalen Nervenendigungen [gesichert] (Burstein et al. 2004). Die resultierende meningeale Vasokonstriktion ist ein sekundärer Effekt, nicht der Primärmechanismus — der primäre Wirkmechanismus ist die Verschiebung der ATP-Allokation am trigeminalen Terminal zugunsten der Ionenhomöostase (vgl. 4.4.5). Triptane terminieren die CSD-Kaskade mitten im Prozess: die Depolarisationswelle hat begonnen, aber die trigeminale Amplifikationskomponente wird unterbrochen. Der Reset bleibt unvollständig.
 
 Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitation auf — kein Anfall, aber auch kein vollständiger Reset. Das Ergebnis ist ein Residualzustand: gedämpft, aber nicht resynchronisiert. Nicht die Post-Migräne-Klarheit (nach vollständiger CSD), sondern ein flaches Fenster.
 
@@ -144,7 +144,15 @@ Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitat
 | Traumerinnerung antiproportional zu Triptaneinnahme (vgl. 8.4) | Kein vollständiger Reset → kein konsolidierter post-iktaler REM → keine Traumerinnerung |
 | Kein Triptan-Rebound bei kurzen Anfällen + erhaltener SWS-Kompensation | Residuum nach Triptan-Abbruch klein genug für Overnight-SWS-Ausgleich |
 
-**Triptan-Rebound (Medication Overuse Headache):** Bei chronischer Migräne reicht das Intervall zwischen Anfällen nicht für SWS-Nachsynchronisation. Jeder Triptan-Abbruch hinterlässt ein Residuum, das sich kumuliert. Das System hat den Reset nie vollzogen, die Desynchronisation besteht weiter, der nächste CSD-Versuch kommt schneller — und wird wieder mit Triptan abgebrochen. Der Teufelskreis mündet in Medication Overuse Headache: nicht weil Triptane direkt sensitivieren, sondern weil sie den Resetbedarf akkumulieren lassen.
+**Triptan-Rebound (Medication Overuse Headache):** Zwei Mechanismen operieren parallel:
+
+**(1) Reset-Akkumulation (bestehende Formulierung):** Bei chronischer Migräne reicht das Intervall zwischen Anfällen nicht für SWS-Nachsynchronisation. Jeder Triptan-Abbruch hinterlässt ein Residuum, das sich kumuliert. Das System hat den Reset nie vollzogen, die Desynchronisation besteht weiter, der nächste CSD-Versuch kommt schneller — und wird wieder mit Triptan abgebrochen.
+
+**(2) 5-HT1B-Autorezeptor-Desensitisierung [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die Triptan-vermittelte 1B/1D-Kompensation des defekten 1A-Feedbacks (vgl. 4.4.5, 8.9.4) durch 1B-Desensitisierung wegfällt, verliert das System seine akut-pharmakologische Bremse → Rückfall in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt. Die kurze Halbwertszeit der Triptane ist damit nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren.
+
+**(3) Latente Sensitisierung (komplementär, gesichert):** Chronische Triptan-Exposition erhöht CGRP in trigeminalen duralen Afferenzen, persistent nach Absetzen (De Felice et al. 2010). Parallel: 5-HT-Depletion → 5-HT2A-Hochregulation → kortikale Hyperexzitabilität via NO-Pathway (Srikiatkhachorn et al.).
+
+Der Teufelskreis mündet in Medication Overuse Headache über alle drei Pfade: Reset-Akkumulation, Autorezeptor-Desensitisierung und latente Sensitisierung.
 
 #### **E.5.4 Antiepileptika mit CGRP-Hemmung: Paradoxe Dualwirkung**
 

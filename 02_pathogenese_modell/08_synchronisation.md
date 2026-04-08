@@ -220,7 +220,7 @@ Zwei Befunde sind mechanistisch aufschlussreich:
 
 #### **8.9.1 Was Sumatriptan tut und was es nicht tut**
 
-Sumatriptan unterbricht den Migräneanfall **nicht**. Der 5-HT1B/1D-Agonismus blockiert die trigeminovaskuläre Schmerzweiterleitung — die nozizeptive Signaltransmission vom Trigeminus zum Thalamus wird unterdrückt. Das tonische Interferenzfeld (vgl. 4.2, Raphe-vermittelte kortikale Irritation) wird durch Sumatriptan nicht adressiert. Die Raphe-Instabilität, die CSD-Kaskade, die kortikale Erregbarkeitsverschiebung — all das läuft weiter.
+Sumatriptan unterbricht den Migräneanfall **nicht**. Der 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) am trigeminalen Terminal [gesichert] (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP: Feuerrate bleibt, Vesikelexozytose pro Spike wird reduziert). Die resultierende Schmerzblockade beruht auf der Unterbrechung der nozizeptiven Signaltransmission vom Trigeminus zum Thalamus. Die meningeale Vasokonstriktion ist ein sekundärer Effekt, nicht der Primärmechanismus. Das tonische Interferenzfeld (vgl. 4.2, Raphe-vermittelte kortikale Irritation) wird durch Sumatriptan nicht adressiert. Die Raphe-Instabilität, die CSD-Kaskade, die kortikale Erregbarkeitsverschiebung — all das läuft weiter.
 
 #### **8.9.2 Schlaf als eigentlicher Resynchronisationsmechanismus**
 
@@ -242,6 +242,22 @@ Das klinisch bekannte limitierte Zeitfenster für Sumatriptan-Wirksamkeit erklä
 | **Rezeptordesensitivierung** | 5-HT1B/1D-Rezeptoren desensitivieren unter anhaltendem serotonergen Stress | Reduzierte Bindungsaffinität → Sumatriptan weniger wirksam |
 
 Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto geringer die Wirksamkeit — nicht weil der Schmerz „stärker" wird, sondern weil der Schmerz den peripheren Kanal verlässt, auf den Sumatriptan wirkt.
+
+#### **8.9.4 Dreigliederige Triptan-Wirkung im Modell**
+
+Die vollständige Triptan-Mechanistik im Modell umfasst drei Glieder, die über unterschiedliche Rezeptorpopulationen und mit unterschiedlichen Evidenzgraden operieren:
+
+**Glied 1 — Trigeminales Terminal [gesichert]:** 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) — nicht die Feuerrate, sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich (vgl. 4.4.5). Quantitative Stützung: Elimination der Exozytose verdoppelt präsynaptischen ATP-Spiegel auf 3,4 mM (Rangaraju et al. 2014, Cell); Vesikelpool ist dominante metabolische Ruhelast am Nerventerminal (Bhatt et al. 2021, Science Advances); synaptisches Energiebudget: Vesikelrecycling > Ionenpumpen (Attwell & Laughlin 2001, Neuron; Harris et al. 2012, Neuron).
+
+**Glied 2 — Raphe-Terminal [hypothetisch — modellspezifisch]:** 5-HT1B/1D-Autorezeptoren auf DRN/MRN-Terminalen werden durch Triptane aktiviert (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1, vgl. 2.2): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen → Unterbrechung des Burst-Deplete-Zyklus (vgl. 5.5.1) → stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird.
+
+**Glied 3 — MOH-Mechanismus [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die kompensatorische 1B/1D-Bremse desensitisiert, fällt das System zurück in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt → Medication Overuse Headache. Die kurze Halbwertszeit ist nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren (vgl. E.5.3).
+
+| Glied | Wirkmechanismus | Rezeptor | Evidenzgrad |
+|:------|:---------------|:---------|:------------|
+| **1 — Trigeminal** | Präsynaptische Transmitterhemmung → ATP-Allokationsverschiebung → Ionenhomöostase | 5-HT1B/1D auf trigeminalen Terminalen | Gesichert |
+| **2 — Raphe-Kompensation** | Autorezeptor-vermittelte Bremse des Burst-Deplete-Zyklus | 5-HT1B/1D auf DRN/MRN-Terminalen | Hypothetisch — modellspezifisch |
+| **3 — MOH** | 1B-Desensitisierung → Verlust der kompensatorischen Bremse → Rückfall in Burst-Modus | 5-HT1B (selektiv desensitisiert) | Hypothetisch — modellspezifisch |
 
 ### **8.10 Fallstudie: Migräne-Nacht A**
 
