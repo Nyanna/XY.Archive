@@ -1611,7 +1611,7 @@ In der Logik dieses Modells sind ASD, Migräne, Gating-Insuffizienz und Hypervig
 
 ### **6.2 Repetitives Verhalten als Stabilisierungsmechanismus**
 
-Wenn kortikale Muster durch den verrauschten thalamischen Referenzwert intrinsisch instabil sind und leicht kippen, erzeugt Wiederholung künstliche Attraktortiefe: Der Input ist bekannt, der Prediction Error minimal, der Thalamus muss nicht filtern, die Raphe-Schleife bleibt unperturbiert.
+Wenn kortikale Muster durch den verrauschten thalamischen Referenzwert intrinsisch instabil sind und leicht kippen (vgl. 3.3: flache Energielandschaft, breitere Attraktorbecken), erzeugt Wiederholung künstliche Attraktortiefe: Der Input ist bekannt, der Prediction Error minimal, der Thalamus muss nicht filtern, die Raphe-Schleife bleibt unperturbiert.
 
 | Verhalten | Neurobiologische Funktion |
 | :---- | :---- |
@@ -1625,7 +1625,7 @@ Stimming tritt nicht nur im wachen Zustand als Stabilisierungsmechanismus auf, s
 
 ### **6.3 Identität als Wahrnehmungssignatur**
 
-Im vorliegenden neurologischen Profil ist Identität nicht primär narrativ oder konzeptuell verankert, sondern direkt in der thalamisch-kortikalen Wahrnehmungssignatur. Das erklärt zwei Beobachtungen:
+Im vorliegenden neurologischen Profil ist Identität nicht primär narrativ oder konzeptuell verankert, sondern direkt in der thalamisch-kortikalen Wahrnehmungssignatur (mechanistische Grundlage: der in 3.3 beschriebene verrauschte Prediction-Error-Referenzwert und die daraus resultierende fluidere, kontextabhängigere Wahrnehmung). Das erklärt zwei Beobachtungen:
 
 **1\. Robustheit gegen narrative Destabilisierung:** Keine Erschütterung durch Überzeugungen oder soziale Manipulation, weil die Identitätsverankerung unterhalb der konzeptuellen Ebene liegt.
 
@@ -1852,7 +1852,7 @@ Die in 8.2–8.5 beschriebene Desynchronisierung der Modulationssysteme erzeugt 
 | **Schlaf-Wach-Übergang** | Inkompletter State-Switch, gradueller Drift statt diskretem Übergang | Verzögertes Aufwachen, morgendliches Forcing-Bedürfnis (Anhang C) |
 | **NREM-Schlaf** | Laminare State-Dissoziation bei Arousal aus Tiefschlaf | Parasomnie-Phänomenologie: Pavor nocturnus, Somnambulismus |
 
-Die drei Manifestationen sind keine separaten Komorbiditäten, sondern Ausdrücke desselben Raphe-vermittelten State-Kohärenzdefizits in verschiedenen Schlaf-Wach-Phasen (ausführliche Phänomenologie: Anhang C; Dissoziationsarchitektur: 4.5.2).
+Die drei Manifestationen sind keine separaten Komorbiditäten, sondern Ausdrücke desselben Raphe-vermittelten State-Kohärenzdefizits in verschiedenen Schlaf-Wach-Phasen (ausführliche Phänomenologie: Anhang C; Dissoziationsarchitektur: 4.5.2). Die ASD-spezifische Variante — Stimming während Pavor nocturnus als subkortikal generiertes Regulationsprogramm ohne bewusstes Erleben — bestätigt, dass Stimming kein bewusster Coping-Mechanismus ist (vgl. 6.2).
 
 ### **8.6 Klinische Implikation: Mate, Koffein und die Illusion der Wachheit**
 
