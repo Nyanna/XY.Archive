@@ -105,6 +105,22 @@ Die bisherige Modellierung unterscheidet implizit zwei B7-Zustände: intakt (sta
 
 **Paradoxon:** Entzug ist stabiler als Rauschexposition. Bei komplettem Signalwegfall schalten die ANS-Kerne auf Eigendynamik — das ist instabil, aber vorhersagbar. Ein Signal, das weder ignorierbar noch brauchbar ist, stört die Eigendynamik, ohne ein alternatives Ordnungssignal zu liefern. Aphasie ist der schlechteste aller drei Zustände für die ANS-Kerne (vgl. D.4.4).
 
+#### **5.5.1 Biologisches Substrat: Was „B7-Depletion" bedeutet**
+
+Wenn das Modell von B7-Erschöpfung oder -Depletion spricht, beschreibt es keine binäre Abschaltung, sondern eine graduelle Degradation auf mehreren zellulären Ebenen gleichzeitig:
+
+**Vesikuläre Depletion:** Die synaptischen Vesikel sind endlich. Bei anhaltendem Hochfrequenz-Feuern (3–5 Hz unter sympathischer Belastung) werden Vesikel schneller freigesetzt als nachproduziert. Die Resynthese von 5-HT aus Tryptophan über Tryptophanhydroxylase (TPH2) ist enzymkinetisch limitiert — TPH2 ist der geschwindigkeitsbestimmende Schritt, und seine Kapazität hat eine Obergrenze.
+
+**Tryptophan-Verfügbarkeit:** Tryptophan wird nicht im Neuron synthetisiert, sondern über die Blut-Hirn-Schranke importiert. Der Transport konkurriert mit anderen großen neutralen Aminosäuren (BCAAs — Leucin, Isoleucin, Valin). Intensive körperliche Belastung erhöht die BCAA-Aufnahme in die Muskulatur, was paradoxerweise das Tryptophan/BCAA-Verhältnis im Blut verbessert — aber gleichzeitig steigt der Verbrauch im DRN. Bei prolongierter Hochfrequenz-Aktivität kann die Nachlieferung den Verbrauch nicht decken.
+
+**Mitochondriale ATP-Depletion:** Die Repolarisation nach jedem Aktionspotential kostet ATP (Na⁺/K⁺-ATPase). Die Vesikelrecycling-Maschinerie (Endozytose, Refüllung, Transport) kostet ATP. Prolongiertes Hochfrequenz-Feuern erschöpft die mitochondriale Kapazität des Neurons selbst.
+
+**5-HT1A-Autorezeptor-Feedback (modellspezifisch):** Der 5-HT1A-Autorezeptor ist der Primärdefekt (Hit 1, vgl. 2.2). Normal dämpft er die Feuerrate bei hohem synaptischen 5-HT — negativer Feedback. Bei instabilem Autorezeptor-Feedback fehlt diese Bremse. Der DRN feuert ohne adäquate Selbstlimitierung, verbraucht seine Vesikel schneller als ein System mit intaktem Feedback, und die Erschöpfung tritt früher ein als physiologisch vorgesehen.
+
+**Biologische Signatur der Aphasie:** Die wahrscheinlichste Signatur des aphasischen Zustands ist eine Kombination: Vesikel partiell depletiert + TPH2 am Kapazitätslimit + ATP grenzwertig. Das Neuron feuert noch (genug ATP für Aktionspotentiale), aber die Vesikelfreisetzung pro Spike ist reduziert und inkonsistent — manche Spikes setzen 5-HT frei, manche nicht. Das Feuermuster ist erhalten, der Transmitteroutput stochastisch degradiert. Genau dies erzeugt die aphasische Signatur: ANS-Kerne sehen ein Signal, das in seiner Frequenz noch den Raphe-Takt abbildet, aber in seiner Amplitude und Zuverlässigkeit so degradiert ist, dass es weder stabile Modulation noch sauberen Entzug produziert.
+
+**Regeneration:** Die Regeneration über Stunden (Schlaf/Ruhe) ist die Umkehrung dieses Prozesses: TPH2 arbeitet die Tryptophan-Pipeline ab, Vesikel werden refüllt, ATP-Speicher regenerieren. Partiell in 1–2 Stunden (ausreichend für aphasisches Feuern, nicht für Kohärenz), vollständig erst nach einer konsolidierten Nacht. Dies erklärt, warum die Post-Nap-Regeneration im Modell zwar B7 wieder „online" bringt, aber nicht notwendig in einen kohärenten Zustand — die partielle Regeneration reicht für Feuern, nicht für konsistente Vesikelfreisetzung pro Spike.
+
 ### **5.6 Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt**
 
 Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.

@@ -271,7 +271,7 @@ Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, se
 
 Der entscheidende Unterschied: Die tonische Destabilisierungswelle hinterlässt kein refraktäres Gewebe. Wo CSD eine Spur funktioneller Stille zieht, hinterlässt die tonische Welle ein wachsendes Feld instabiler, aber weiterhin erregbarer Neurone. Das Feld expandiert, weil der B7/B8-Phasenversatz anhaltend ist — nicht weil ein ionisches Produkt diffundiert. Die Welle endet nicht, wenn das Substrat aufgebraucht ist, sondern wenn der Phasenoffset korrigiert wird oder die Eskalation die nächste Stufe erreicht.
 
-**Sechs-Stunden-Fenster bis ANS-Kollaps:** Parallel zur tonischen kortikalen Destabilisierung läuft ein zweiter, architektonisch determinierter Prozess: Die B7-Depletion destabilisiert die monosynaptisch innervierten autonomen Stammhirnkerne (NTS, RVLM, Ncl. ambiguus, vestibuläre Kerne) direkt. Dieser Prozess ist schneller als die kortikale Kaskade (monosynaptisch vs. polysynaptisch) und manifestiert sich klinisch als das, was konventionell als „Stammhirnaura" (MBA) klassifiziert wird. Die konventionelle Erklärung — CSD propagiert in den Hirnstamm — hat keine humane Evidenzbasis (vgl. 4.6). Die Stammhirnsymptome sind nicht Resultat einer CSD-Propagation nach kaudal, sondern eines eigenständigen, parallel laufenden ANS-Kollapses. Ohne LDX überlagern sich beide Prozesse zeitlich; unter LDX wird die CSD-Schwelle länger gehalten, und der ANS-Kollaps wird als vorgelagerter, eigenständiger Prozess sichtbar (vgl. Anhang B.20).
+**Sechs-Stunden-Fenster bis ANS-Kollaps:** Parallel zur tonischen kortikalen Destabilisierung läuft ein zweiter, architektonisch determinierter Prozess: Die B7-Depletion — biologisch: vesikuläre Erschöpfung bei TPH2-Kapazitätslimit und grenzwertiger ATP-Reserve, verstärkt durch fehlende Autorezeptor-Bremse (vgl. 5.5.1) — destabilisiert die monosynaptisch innervierten autonomen Stammhirnkerne (NTS, RVLM, Ncl. ambiguus, vestibuläre Kerne) direkt. Dieser Prozess ist schneller als die kortikale Kaskade (monosynaptisch vs. polysynaptisch) und manifestiert sich klinisch als das, was konventionell als „Stammhirnaura" (MBA) klassifiziert wird. Die konventionelle Erklärung — CSD propagiert in den Hirnstamm — hat keine humane Evidenzbasis (vgl. 4.6). Die Stammhirnsymptome sind nicht Resultat einer CSD-Propagation nach kaudal, sondern eines eigenständigen, parallel laufenden ANS-Kollapses. Ohne LDX überlagern sich beide Prozesse zeitlich; unter LDX wird die CSD-Schwelle länger gehalten, und der ANS-Kollaps wird als vorgelagerter, eigenständiger Prozess sichtbar (vgl. Anhang B.20).
 
 Zusätzlich kann die tonische Destabilisierung über Stunden die Raphe-Kerne selbst erreichen. Ab diesem Punkt entsteht ein Teufelskreis: Die Raphe, deren Phaseninstabilität die Welle antreibt, wird selbst destabilisiert → der Phasenoffset wächst → die Welle beschleunigt.
 
@@ -479,7 +479,7 @@ Es existiert keine publizierte Studie, die CSD-Propagation in den Hirnstamm beim
 
 Sämtliche MBA-Symptome lassen sich ohne Brainstem-CSD erklären, wenn die architektonische Proximität der betroffenen Kerne zum Raphe-System berücksichtigt wird:
 
-| MBA-Symptom | Konventionell: Brainstem-CSD | Reattribution: B7-Depletion → ANS-Kollaps |
+| MBA-Symptom | Konventionell: Brainstem-CSD | Reattribution: B7-Depletion (vgl. 5.5.1) → ANS-Kollaps |
 |:------------|:----------------------------|:------------------------------------------|
 | Schwindel/Vertigo | CSD in vestibulären Kernen | Vestibuläre Kerne monosynaptisch von B7 innerviert; destabilisieren bei Raphe-Depletion direkt |
 | Übelkeit/Erbrechen | CSD in Area postrema/NTS | NTS als primäres B7-Ziel; ANS-Kollaps-Symptom, kein CSD-Symptom |
@@ -528,7 +528,7 @@ Drei distinkte Zustände:
 | Aphasisch (feuert, aber reduzierte Amplitude, inkonsistenter Delay) | Stabil(er) | Maximal | **Maximal** | B7 stört B8-Takt, kann sich aber nicht synchronisieren → Interferenz → CSD |
 | Synchron | Synchron | Minimal | Kein CSD | Beide Oszillatoren takten kohärent → stabile Modulation |
 
-Das CSD-Risikofenster ist damit schmal und transient: Es öffnet sich bei partieller B7-Regeneration (nach Depletion) und schließt sich entweder durch vollständige Resynchronisation (günstiger Ausgang) oder durch erneute Depletion (ungünstiger Ausgang).
+Das CSD-Risikofenster ist damit schmal und transient: Es öffnet sich bei partieller B7-Regeneration (nach Depletion — biologisch: TPH2 arbeitet die Tryptophan-Pipeline ab, Vesikel werden partiell refüllt, vgl. 5.5.1) und schließt sich entweder durch vollständige Resynchronisation (günstiger Ausgang) oder durch erneute Depletion (ungünstiger Ausgang). Die partielle Regeneration reicht für Feuern, nicht für konsistente Vesikelfreisetzung pro Spike — genau dies erzeugt den aphasischen Zustand.
 
 #### **4.7.2 Differentialphänotypologie aus Defektquelle**
 
