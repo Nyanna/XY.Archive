@@ -1097,7 +1097,7 @@ Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, se
 | :---- | :---- | :---- |
 | **Natur** | Ionische Welle (K⁺/Glutamat-Diffusion) | Schrittweiser Modulationsverlust |
 | **Geschwindigkeit** | 2–5 mm/min | Stunden (gesamtkortikale Ausbreitung) |
-| **Dauer** | 20–30 Minuten | Stunden bis Stammhirn-Eskalation |
+| **Dauer** | 20–30 Minuten | Stunden bis ANS-Kern-Destabilisierung / CSD-Schwelle |
 | **Hinterlassenes Gewebe** | Refraktär (depolarisationsgelähmt) | Nicht refraktär — das destabilisierte Feld *wächst* |
 | **Antrieb** | Ionische Diffusion (selbstpropagierend) | Anhaltender Phasenversatz zwischen B7 und B8 |
 | **Klinisches Korrelat** | Wandernde Aura (Fortifikationsspektren) | Diffuses Rauschen, progrediente sensorische Instabilität |
@@ -1424,7 +1424,7 @@ Die Modellvorhersage ist, dass der Übergang von Szenario 1 zu Szenario 3 eine *
 
 #### Voraussetzung
 
-Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unabhängig von Metoprolol aufrechterhält. Metoprolol ist nicht nur Sympathikusblocker, sondern primär Migräneprophylaktikum – sein Entfall ist nur dann nicht regressiv, wenn die dopaminerge Upstream-Stabilisierung die Raphe-Schleife unabhängig dämpft. Ohne diesen Nachweis ist Metoprolol-Entfall kontraindiziert, weil rezidivierende Stammhirnauren die NTS-Schwelle strukturell senken (vgl. kumulativer Effekt rezidivierender Stammhirnauren, autonomes Profil) und damit den autonomen Schutzeffekt des Metoprolol überkompensieren würden.
+Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unabhängig von Metoprolol aufrechterhält. Metoprolol ist nicht nur Sympathikusblocker, sondern primär Migräneprophylaktikum – sein Entfall ist nur dann nicht regressiv, wenn die dopaminerge Upstream-Stabilisierung die Raphe-Schleife unabhängig dämpft. Ohne diesen Nachweis ist Metoprolol-Entfall kontraindiziert, weil rezidivierende ANS-Kollapsepisoden die NTS-Schwelle strukturell senken (vgl. kumulativer Effekt rezidivierender autonomer Entgleisungen, autonomes Profil) und damit den autonomen Schutzeffekt des Metoprolol überkompensieren würden.
 
 #### Testbare Prädiktionen
 
@@ -3257,9 +3257,9 @@ Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom
 
 Was mich heute am meisten überrascht: Der PFC war die ganze Zeit geschützt. Trotz schwerer Migräne — posteriorer Schmerz, visuelles Rauschen, autonome Symptome — war alles sehr klar erlebbar. Nicht benebelt, nicht diffus, nicht „durch Watte". Klar. Ich konnte beobachten, benennen, einordnen. Die Metakognition war intakt.
 
-Die autonomen Symptome waren heftig. Intensiver Schüttelfrost, dann Hitzewelle, Übelkeit. Das tonische Feld hat sich offensichtlich lateral und ins Stammhirn ausgebreitet — die vegetativen Zentren waren betroffen. Aber der PFC nicht.
+Die autonomen Symptome waren heftig. Intensiver Schüttelfrost, dann Hitzewelle, Übelkeit. Die autonomen Stammhirnkerne waren offensichtlich destabilisiert — die vegetativen Zentren waren betroffen, parallel zur kortikalen Kaskade und unabhängig von ihr (vgl. 4.6). Aber der PFC nicht.
 
-Meine Interpretation: Der PFC ist durch die dopaminerge LDX-Stabilisierung des MD-Thalamus-PFC-Loops geschützt. B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär — der Schutz ist pharmakologisch (höhere Kippschwelle unter LDX), nicht architektonisch. LDX stabilisiert die dopaminerge Versorgung des MD-Loops → der PFC-assoziierte thalamokortikale Pfad hält am längsten in der thalamischen Kaskade. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung im Stammhirn, und gleichzeitig kristallklare frontale Funktion.
+Meine Interpretation: Der PFC ist durch die dopaminerge LDX-Stabilisierung des MD-Thalamus-PFC-Loops geschützt. B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär — der Schutz ist pharmakologisch (höhere Kippschwelle unter LDX), nicht architektonisch. LDX stabilisiert die dopaminerge Versorgung des MD-Loops → der PFC-assoziierte thalamokortikale Pfad hält am längsten in der thalamischen Kaskade. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung durch B7→ANS-Kern-Destabilisierung (vgl. 4.6), und gleichzeitig kristallklare frontale Funktion.
 
 Keine Halluzinationen. Keine visuellen Illusionen jenseits des Rauschens. Keine Denkstörung. Das spricht gegen eine fokale CSD im PFC — wenn die Propagation bis in den Frontalkortex reichen würde, wäre die Klarheit nicht möglich. Der PFC war nicht nur geschützt, er war funktional intakt. Ein Fenster mitten in der Migräne.
 
