@@ -1120,6 +1120,27 @@ Zusätzlich kann die tonische Destabilisierung über Stunden die Raphe-Kerne sel
 
 CSD ist in diesem Schema nicht Stufe 2, sondern der Übergang von Stufe 2 zu Stufe 3: Wenn der tonische Modulationsverlust einen kritischen Punkt erreicht, kippt das System in die klassische ionische CSD — als finale Eskalation, nicht als Primärereignis.
 
+#### **4.4.3.1 Intratakt-Fragmentierung: Vesikuläre Auflösungsgrenze des serotonergen Takts**
+
+Das Modell formuliert bisher Inter-Kern-Desynchronisation (B7 vs. B8 Phasenversatz, vgl. 2.5.1) als CSD-Voraussetzung. Die Vesikelökonomie-Analyse (vgl. 5.5.1) zeigt: **Intratakt-Fragmentierung eines einzelnen Kerns reicht aus.**
+
+**1. Vesikuläre Stochastik bei Depletion:** Unter Last (>3 Hz Feuerrate oder nach prolongierter Aktivität) sind Vesikel-Refill, TPH2-Kapazität und ATP-Bilanz pro Neuron individuell verschieden. Das Feuermuster bleibt erhalten, aber der Transmitter-Output wird stochastisch: Spike 1 setzt 5-HT frei, Spike 2 nicht (Vesikel leer), Spike 3 partiell. Innerhalb des DRN/MRN entsteht ein räumliches Mosaik — Neurone desselben Kerns liefern phasenverschobene, amplitudenvariable Serotoninpulse an ihre Zielstrukturen.
+
+**2. Potentialschwellwert-Abhängigkeit:** Vesikelfreisetzung erfordert einen kohärenten und scharfen Potentialschwellwert. Bei stochastischer Annäherung an die 1/5-Sekunden-Grenze (nicht erst bei Überlast >5 Hz) fragmentiert der Intratakt absolut. Ein instabiler Intratakt auf *einem* Kern reicht aus, um Downstream-Erschöpfung weit unter dem Niveau zu erzeugen, das bei kohärentem Output problematisch wäre.
+
+**3. Inter-Kern-Differenz als zusätzlicher Gradient:** Eine Differenz zwischen DRN- und MRN-Intratakt erzeugt einen weiteren Interferenzgradienten im parallel innervierten Gewebe — additiv zum bestehenden Inter-Kern-Phasenversatz (vgl. 2.5.1, D.4.1).
+
+**Konsequenzen:**
+- Die Eskalationskaskade (Tabelle oben) wird granularer — Kontinuum von Kohärenzgraden statt binär synchron/asynchron
+- Erklärt **Migräne ohne Aura bei normalem Intertakt** (~75% der Migräniker): Intratakt-Fragmentierung genügt für tonische Interferenz ohne CSD
+- Verbindung zum Hit-1-Defekt wird direkter: Instabiler 5-HT1A → Feuerrate schwankt um Regenerationsschwelle → Vesikelfreisetzung stochastisch → Intratakt-Fragmentierung
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:-------------|:-------------|
+| Vesikelstochastik unter Depletion | Gesichert (allgemein neurobiologisch) | Synaptische Transmissionsphysiologie |
+| Intratakt-Fragmentierung als CSD-Auslöser bei normalem Intertakt | Hypothetisch, mechanistisch abgeleitet | Modellableitung aus 5.5.1 + 2.5.1 |
+| 75% Migräne-ohne-Aura durch Intratakt-Interferenz ohne Inter-Kern-Versatz | Hypothetisch, konsistent mit Tonabersat-Evidenz | Hauge et al. 2009 (Tonabersat nur bei Aura wirksam) |
+
 #### **4.4.4 Drei Aura-Phänotypen aus Phasenoffset-Topologie**
 
 Die klinische Heterogenität visueller Auren — von klassischen Fortifikationsspektren über punktförmige Skotome bis zu diffusem Rauschen — wird konventionell als Variante eines einzigen CSD-Mechanismus interpretiert. Das vorliegende Modell ordnet die Phänotypen drei distinkt verschiedenen Störungstopologien zu:
@@ -1142,18 +1163,27 @@ Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck versc
 
 **Hansen et al. — Aura-Variabilität als Indiz gegen CSD als fixen Mechanismus:** Hansen et al. dokumentierten über 1000 visuelle Auren bei einem einzelnen Patienten über 18 Jahre (Hansen et al. 2013, *Brain*). Das zentrale Ergebnis: Die Auren zeigen ein *Spektrum*, kein stereotypes Muster. Form, Größe, Propagationsrichtung und -geschwindigkeit variieren erheblich zwischen Attacken. Wenn CSD ein stereotyper ionischer Prozess wäre — determiniert durch kortikale Architektur und Diffusionsparameter —, müssten die Auren bei demselben Patienten weitgehend identisch sein. Die beobachtete Variabilität ist mit einem tonischen Interferenzmechanismus natürlich erklärbar: Variabler Phasenoffset → variable Interferenztopographie → variables Aura-Muster. Jede Attacke erzeugt ein anderes räumliches Muster der Destabilisierung, abhängig vom aktuellen Zustand des B7/B8-Phasenversatzes.
 
-#### **4.4.5 Metabolische Krise**
+#### **4.4.5 Metabolische Krise: Zwei Kausalrichtungen**
 
-Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase muss unter Notfallbedingungen die Ionengradienten wiederherstellen – ein Prozess, der normalerweise kontinuierlich im Gleichgewicht läuft, nun aber massiv im Rückstand ist.
+Die metabolische Krise hat zwei distinkte Modi — einen graduellen Vorläufer und eine akute Konsequenz der CSD:
+
+**Modus 1 — Pre-CSD (gradueller Vorläufer):** Die Intratakt-Fragmentierung (4.4.3.1) erzeugt eine schleichende metabolische Belastung *vor* der CSD. Instabiler 5-HT1A → Neuron feuert bevor Vesikel regeneriert → Teilentleerung → ATP wird für dysfunktionale Vesikelrecycling-Zyklen (Endozytose, Refüllung ohne Transmitter) verbraucht → Na⁺/K⁺-ATPase konkurriert um denselben ATP-Pool → **Clearance verliert** → Na⁺ akkumuliert graduell → tonische Destabilisierung → CSD-Schwelle erreicht. Die Na⁺-Akkumulation ist nicht Folge der CSD, sondern ihr gradueller Vorläufer. Die CSD ist der Reset, der die Na⁺-Homöostase durch erzwungene Repolarisation wiederherstellt.
+
+**Modus 2 — Post-CSD (akute Konsequenz):** Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase muss unter Notfallbedingungen die Ionengradienten wiederherstellen – ein Prozess, der normalerweise kontinuierlich im Gleichgewicht läuft, nun aber massiv im Rückstand ist.
 
 | Metabolische Komponente | Mechanismus | Zeitlicher Verlauf |
 | :---- | :---- | :---- |
-| **ATP-Depletion** | Na⁺/K⁺-ATPase läuft auf Maximum um Ionengradienten wiederherzustellen | Schlagartig an der Wellenfront, anhaltend hinter ihr |
-| **Neurovaskuläre Kopplung** | Neuronale Aktivität signalisiert Mehrbedarf → initiale Vasodilatation als Kompensationsversuch | Reaktion setzt an der Wellenfront ein |
+| **Pre-CSD: Na⁺-Akkumulation** | Vesikelrecycling-ATP konkurriert mit Na⁺/K⁺-ATPase → Clearance-Verlust → graduelle Depolarisationsverschiebung | Stunden (tonische Destabilisierungswelle, 4.4.3) |
+| **Post-CSD: ATP-Depletion** | Na⁺/K⁺-ATPase läuft auf Maximum um Ionengradienten wiederherzustellen | Schlagartig an der Wellenfront, anhaltend hinter ihr |
+| **Neurovaskuläre Kopplung** | Neuronale Aktivität signalisiert Mehrbedarf → initiale Vasodilatation als reflexiver Kompensationsversuch: das System versucht, über erhöhten Blutfluss die Na⁺-Clearance und Enzymverfügbarkeit (TPH2-Kofaktoren) wiederherzustellen. Die Kompensation funktioniert minimal über das Limit hinaus, reicht aber nicht in den notwendigen Bereich | Pre-CSD: chronisch unzureichend; Post-CSD: reaktiv an der Wellenfront |
 | **Oligämische Phase** | Auf die initiale Vasodilatation folgt Vasokonstriktion – die eigentliche Durchblutungsminderung | Erklärt die visuelle Aura: Okzipitalkortex betroffen, Blutfluss reduziert |
 | **Metabolische Erschöpfung** | Glukose- und Sauerstoffdepletion in der Wellenspur | Neuronen funktionell stumm, können nicht mehr feuern → Spreading Depression |
 
-**Die metabolische Krise ist nicht der Auslöser der CSD, sondern ihre Konsequenz.** Der Versuch des Organismus, die Energieversorgung zu erhöhen (neurovaskuläre Kopplung), kann den Rückstand nicht vollständig ausgleichen, weil die Geschwindigkeit der Ionenumkehr die Regenerationskapazität übersteigt. Hinter der Wellenfront verbleibt ein metabolisch erschöpfter Kortex in Funktionsstille – klinisch als sensorische und motorische Ausfälle der Aura erfahrbar.
+**Die Post-CSD metabolische Krise ist nicht der Auslöser der CSD, sondern ihre Konsequenz.** Der Versuch des Organismus, die Energieversorgung zu erhöhen (neurovaskuläre Kopplung), kann den Rückstand nicht vollständig ausgleichen, weil die Geschwindigkeit der Ionenumkehr die Regenerationskapazität übersteigt. Hinter der Wellenfront verbleibt ein metabolisch erschöpfter Kortex in Funktionsstille – klinisch als sensorische und motorische Ausfälle der Aura erfahrbar.
+
+**Die Pre-CSD metabolische Krise ist dagegen ein gradueller Vorläufer** — die ATP-Konkurrenz zwischen Vesikelrecycling und Ionenhomöostase akkumuliert über Stunden und senkt die CSD-Schwelle progressiv. Die Vasodilatation als Kompensationsversuch erklärt, warum CSD am Ende einer Destabilisierungssequenz steht, nicht am Anfang: Das System versucht, die Ionenhomöostase vaskulär aufrechtzuerhalten, und die CSD tritt ein, wenn diese Kompensation versagt.
+
+**Triptan-Mechanismus (Präzisierung):** Triptane (5-HT1B/1D-Agonisten) reduzieren die trigeminale Feuerrate → weniger Spikes → weniger ATP-Verbrauch für Vesikelrecycling → mehr ATP für Na⁺/K⁺-ATPase → Clearance erholt sich → Na⁺-Gradient normalisiert. Dies erklärt die Triptan-Wirkung präziser als reine Vasokonstriktion: Triptane verschieben die ATP-Allokation zurück zugunsten der Ionenhomöostase.
 
 ### **4.5 CSD als kompensatorische Resynchronisation**
 
@@ -1514,6 +1544,40 @@ Wenn das Modell von B7-Erschöpfung oder -Depletion spricht, beschreibt es keine
 
 **Regeneration:** Die Regeneration über Stunden (Schlaf/Ruhe) ist die Umkehrung dieses Prozesses: TPH2 arbeitet die Tryptophan-Pipeline ab, Vesikel werden refüllt, ATP-Speicher regenerieren. Partiell in 1–2 Stunden (ausreichend für aphasisches Feuern, nicht für Kohärenz), vollständig erst nach einer konsolidierten Nacht. Dies erklärt, warum die Post-Nap-Regeneration im Modell zwar B7 wieder „online" bringt, aber nicht notwendig in einen kohärenten Zustand — die partielle Regeneration reicht für Feuern, nicht für konsistente Vesikelfreisetzung pro Spike.
 
+#### **5.5.2 5-HTP/L-Tryptophan-Substitution: Pharmakokinetische Insuffizienz**
+
+Die Supplementation mit 5-Hydroxytryptophan (5-HTP) oder L-Tryptophan als „natürliche Serotoninerhöhung" wird in der Alternativmedizin für Migräne, Depression und Schlafstörungen propagiert. Im Rahmen des vorliegenden Modells ist die Intervention aus drei Gründen insuffizient:
+
+**1. Pharmakokinetisches Problem:** 5-HTP wird zu ~70% oral absorbiert, aber großteils peripher durch Aromatische-L-Aminosäure-Decarboxylase (AADC) zu Serotonin konvertiert (Leber, Darm, Nieren) *bevor* es die Blut-Hirn-Schranke passiert. Peripheres 5-HT passiert die BHS nicht. Die in Studien berichtete zentrale Bioverfügbarkeit von 48%±15% bezieht sich auf Kombination mit Carbidopa (peripherem Decarboxylase-Inhibitor) — ohne Carbidopa ist die zentrale Verfügbarkeit deutlich niedriger. Die Migränestudien (z.B. Titus 1986: 71% Verbesserung, aber ohne Placeboarm) verwendeten 5-HTP *ohne* Decarboxylase-Inhibitor.
+
+**2. Modellspezifisches Problem:** Selbst bei zentraler Verfügbarkeit wäre die AADC-Konversion **unselektiv** über das gesamte Projektionsfeld — nicht nur DRN-Terminals, nicht nur MRN-Terminals, sondern jede AADC-exprimierende Struktur. Die zelluläre und laminäre B7/B8-Separation (vgl. Anhang F) wird umgangen. Das therapeutische Ziel ist nicht „mehr 5-HT insgesamt", sondern „kohärenteres 5-HT aus den Raphe-Kernen". 5-HTP adressiert das falsche Problem — es erhöht den Gesamtspiegel, ohne die Raphe-Oszillation zu stabilisieren.
+
+**3. Evidenzbasis:** Keine robuste placebokontrollierte Evidenz für 5-HTP-Wirksamkeit bei irgendeiner Indikation. Der häufig zitierte Titus-Trial (1986, Migräne) hatte keinen Placeboarm. Die einzige methodisch akzeptable RCT (200 mg/Tag, IBD-Fatigue) zeigte Placebo-/Zeiteffekt. Meta-Analyse Depression: 2 von 108 Studien methodisch akzeptabel (n=64 total) — keine belastbare Schlussfolgerung möglich.
+
+**Schlussfolgerung:** 5-HTP ist nicht kontraindiziert, sondern **nutzlos**. Das Problem ist nicht exogener 5-HTP-Mangel, sondern endogene TPH2-Effizienz und Autorezeptor-Regulation (vgl. 5.5.1, 03_thalamische_kompensation 1.1). Orale 5-HTP-Supplementation umgeht den Flaschenhals nicht — sie liefert Substrat an Stellen, an denen es nicht gebraucht wird, und nicht an die Stelle, an der es gebraucht wird (die DRN-Neurone selbst).
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:-------------|:-------------|
+| 5-HTP periphere AADC-Konversion vor BHS-Passage | Gesichert | Pharmakokinetische Grundlagen |
+| Zentrale Bioverfügbarkeit ohne Carbidopa deutlich reduziert | Gesichert | Pharmakokinetik |
+| AADC-Konversion unselektiv (nicht Raphe-spezifisch) | Gesichert | Enzymverteilung, Anhang F |
+| Keine robuste RCT-Evidenz für 5-HTP bei Migräne/Depression | Evidenzlücke | Systematische Literaturanalyse |
+| 5-HTP adressiert den falschen Flaschenhals | Modellableitung | 5.5.1, 03_thalamische_kompensation 1.1 |
+
+#### **5.5.3 Vesikelökonomie: Flaschenhälse und Interventionsmöglichkeiten**
+
+Die in 5.5.1 beschriebenen biologischen Flaschenhälse der B7-Depletion lassen sich systematisch auf Interventionsmöglichkeiten abbilden:
+
+| Flaschenhals | Intervention | Status | Modellkonsistenz |
+|:-------------|:-------------|:-------|:-----------------|
+| Feuerrate-Ökonomie | LDX (bereits im Einsatz) | Aktiv | Höchste — adressiert die Ursache des Überverbrauchs |
+| Regenerationsfenster | DPH abends (bereits im Einsatz) | Aktiv | Hoch — erzwingt B7-Ruhe über H1-Blockade |
+| Mitochondriale Reserve | CoQ10, Riboflavin, Magnesium | Prüfenswert | Evidenzbasiert in Migräneprophylaxe; mechanistisch: ATP-Regenerationskapazität der DRN-Neurone |
+| Tryptophan-Nachschub | 5-HTP oder L-Tryptophan | Nutzlos | vgl. 5.5.2 |
+| TPH2-Kofaktoren | Eisen, BH4 | Ferritin prüfen | Nur bei Mangel relevant |
+
+**LDX *erschöpft* B7 nicht, es *schont* ihn:** Dopaminerge Stabilisierung senkt chaotische Überaktivität → weniger Spikes pro Zeiteinheit → weniger Vesikelverbrauch → Reserven halten länger. DPH erzwingt über H1-Blockade ein Regenerationsfenster (Vesikelrefill + ATP-Regeneration). Die mitochondrialen Kofaktoren (CoQ10, Riboflavin, Magnesium) sind die einzige bisher nicht adressierte Ebene mit etablierter Evidenz (Migräneprophylaxe-Leitlinien). Mechanismus im Modell: Anhebung der Erschöpfungsschwelle der DRN-Neurone durch verbesserte ATP-Regenerationskapazität.
+
 ### **5.6 Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt**
 
 Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.
@@ -1615,6 +1679,42 @@ Die DA-Raphe-Instabilität (Abschnitt 2.4.3) und die thalamische Identitätsvuln
 | Alkoholaversion primär thalamisch (nicht DA-Raphe) | Plausibel | Selbstbeobachtung: "Kontrollverlust" als Beschreibung, nicht "fehlende Euphorie" |
 | Synergie DA-Raphe + thalamische Vulnerabilität | Hypothetisch, konsistent | Beide Mechanismen unabhängig abgeleitet, Kombination nicht getestet |
 | Korrelation Aversion ↔ Wahrnehmungsveränderungsgrad | Testbare Vorhersage | Nicht überprüft |
+
+#### **6.3.2 MDMA als iatrogenes Modell der Raphe-Depletion**
+
+MDMA (3,4-Methylendioxymethamphetamin) erzeugt akut und massiv von außen, was der Hit-1-Defekt chronisch und subtil von innen produziert. Dies macht MDMA zum informativen iatrogenen Modell und zur potentiellen Kreuzvalidierung der Population-A/B-Differenzierung.
+
+**MDMA-Mechanismus:** MDMA erzwingt massive 5-HT-Freisetzung über zwei Pfade: SERT-Reversal (der Serotonin-Transporter arbeitet rückwärts und pumpt 5-HT aus dem Neuron) und VMAT2-Disruption (vesikuläres Monoamin-Transporter-2 wird gehemmt → Vesikel können nicht refüllt werden). Das Ergebnis ist erzwungene Vesikelentleerung im gesamten DRN/MRN-Projektionsfeld. Langzeitfolgen bei wiederholter Exposition: TPH2-Inaktivierung (>1 Woche persistent), SERT-Herunterregulierung, 20–40% Reduktion SERT-positiver Faserdichte in allen kortikalen Arealen. Die Schlafarchitektur zeigt reduzierte REM-Latenz, erhöhte Fragmentierung und erhöhte Delta-Power im NREM — exakt die Signatur, die in Anhang B für den PRE-Zustand dokumentiert ist.
+
+**Hit-1-Nachbildung:** MDMA erzeugt persistierende 5-HT1A-Autorezeptor-Desensitivierung und Herunterregulierung der Gαi-Protein-Expression im DRN. 4 Wochen post-MDMA: DRN-Feuerfrequenz reduziert (1,32 vs. 2,05 Spikes/s bei Kontrollen), normalisiert unter 5-HT1A-Antagonist WAY 100635. MDMA produziert akut den Zustand, den Hit 1 chronisch erzeugt: instabiler Autorezeptor → unkontrollierte Feuerrate → vesikuläre Erschöpfung → stochastisch degradierter Output (vgl. 5.5.1).
+
+**Differentielle Population-A/B-Vorhersage:**
+
+| Population | MDMA-Effekt | Mechanismus |
+|:-----------|:------------|:------------|
+| **A** (Hit 1, instabiler 5-HT1A) | Katastrophal | Fehlende Autorezeptor-Bremse → unkontrollierte Depletion → ANS-Kollaps/Migräne-Kaskade |
+| **B** (lokaler Defekt, intakte Raphe) | Potenziell therapeutisch | 5-HT-Überschuss überbrückt lokalen Defekt; Autorezeptor regelt Surplus physiologisch ab |
+
+**Erowid-Fallberichte als Illustration (Evidenzstatus: Illustration, nicht Evidenz):**
+
+- **Fall exp96936 (konsistent mit Population B):** Chronische Migräne nach okzipitalem Trauma; MDMA → 2 Wochen schmerzfrei. Die 2-Wochen-Dauer entspricht der Reakkumulationszeit der lokalen okzipitalen Instabilität. Intaktes Raphe-System regelt den MDMA-Surplus über funktionierenden Autorezeptor ab — keine Depletion, sondern temporäre Überbrückung des lokalen Defizits.
+- **Fall exp79802 (konsistent mit Population A oder serotonerger Vorbelastung):** Manische Störung unter Olanzapin; MDMA → 2 Stunden später schwere Migräne. Psilocybin (5-HT2A-Agonist) als Rescue. Olanzapin dämpft 5-HT2A-Überschuss, verhindert aber nicht die Depletion — konsistent mit einem System, das die MDMA-induzierte Entleerung nicht kompensieren kann.
+
+**MDMA-Kopfschmerz-Prävalenz:** Die Literatur berichtet 3–60% Varianz. Modellkonsistent: Intaktes Raphe-System (Population B) toleriert die 5-HT-Fluktuation; instabiler 5-HT1A (Population A) kippt bei minimaler Depletion. Okzipitale 5-HT2A/CBV-Korrelation bei MDMA-Nutzern (nicht bei Kontrollen) identifiziert die CSD-Initiationszone — okzipital, wo auch klassische Migräneauren beginnen.
+
+**Selbstselektion:** Bei geschätzten ~1,3 Mio Migränikern unter MDMA-Nutzern (Hochrechnung aus Prävalenzdaten) existieren keine publizierten systematischen Berichte zu MDMA bei Migränepatienten — konsistent mit der in 6.3.1 beschriebenen Substanzaversion: Population A meidet instinktiv Substanzen, die den thalamischen Kohärenzverlust verstärken.
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:-------------|:-------------|
+| MDMA erzeugt über SERT-Reversal/VMAT2-Disruption massive 5-HT-Freisetzung | Gesichert | Multiple Tiermodelle, Humanstudien |
+| MDMA → persistierende 5-HT1A-Desensitivierung im DRN | Gesichert | Bhatt et al., elektrophysiologische Studien |
+| MDMA → 20–40% SERT-Faserreduktion kortikal | Gesichert | PET-Studien beim Menschen |
+| MDMA → Schlaffragmentierung mit erhöhter Delta-Power | Gesichert | Polysomnographie-Studien |
+| Kopfschmerz-Prävalenz 3–60% bei MDMA | Gesichert | Epidemiologische Surveys |
+| Okzipitale 5-HT2A/CBV-Korrelation bei MDMA-Nutzern | Gesichert | PET/fMRI-Studien |
+| Differentielle Population-A/B-Vorhersage für MDMA-Response | Hypothetisch | Modellableitung aus Hit-1-Mechanismus |
+| Erowid-Fallberichte als Population-A/B-Illustration | Illustration | Erowid exp96936, exp79802 |
+| Selbstselektion durch Substanzaversion | Plausibel, indirekt gestützt | Fehlende Literatur bei kalkulierter Expositionspopulation |
 
 ***
 
@@ -3939,7 +4039,7 @@ Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-
 
 #### **E.1.1 Evidenzbasis**
 
-Epileptische Anfälle können durch experimentelle Manipulationen, die die serotonerge Neurotransmission abschwächen, induziert oder amplifiziert werden. Umgekehrt wirkt die Augmentation der serotonergen Aktivität — durch Tryptophan-Zufuhr, 5-HTP-Gabe, SSRIs oder direkte DRN-Stimulation — antikonvulsiv (Bagdy et al. 2007; Buchanan et al. 2014).
+Epileptische Anfälle können durch experimentelle Manipulationen, die die serotonerge Neurotransmission abschwächen, induziert oder amplifiziert werden. Umgekehrt wirkt die Augmentation der serotonergen Aktivität — durch Tryptophan-Zufuhr, 5-HTP-Gabe (intraperitoneale Applikation im Tiermodell; orale Bioverfügbarkeit limitiert, vgl. 5.5.2), SSRIs oder direkte DRN-Stimulation — antikonvulsiv (Bagdy et al. 2007; Buchanan et al. 2014).
 
 Das Tiermodell: genetisch epilepsieanfällige Ratten (GEPR) zeigen verringerte 5-HT1A-Rezeptordichte im Hippocampus. Der SSRI Sertralin reduziert dosisabhängig die Intensität audiogener Anfälle, korrelierend mit erhöhter extrazellulärer thalamischer 5-HT-Konzentration (Yan et al. 1995). Neuere Daten zeigen, dass das Anfallsrisiko bei Depression nicht durch SSRIs erhöht wird, sondern durch die zugrundeliegende Serotonin-Defizienz selbst — die Depression ist der Marker, nicht die Ursache (Cardamone et al. 2023).
 
