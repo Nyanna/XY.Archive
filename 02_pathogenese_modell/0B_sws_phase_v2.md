@@ -629,7 +629,138 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 
 ---
 
-### **B.16 Evidenztabelle**
+### **B.20 Sonderanalyse: Post-exertionaler Anfall 07.04.2026 — ANS-Kollaps als eigenständiger Prozess**
+
+Der Anfall vom 07.04.2026 liefert eine zeitliche Dissoziation zwischen ANS-Kollaps und kortikaler CSD-Kaskade, die in früheren Anfällen nicht beobachtbar war. Die LDX-bedingte Verzögerung der CSD-Schwellenunterschreitung machte die ANS-Symptome als eigenständigen, vorgelagerten Prozess sichtbar.
+
+#### **B.20.1 Zeitlicher Verlauf**
+
+| Phase | Zeitraum (CEST) | HR (bpm) | Bedingung |
+|:------|:----------------|:---------|:----------|
+| 1: Baseline | 14:00–16:25 | 77–107 | Post-Arbeit, moderate Aktivität, LDX 15 mg morgens |
+| 2: Exertion | 16:28–17:45 | 115–170 | Rasenmähen, sustained HR 155–170 |
+| 3: Sympathikus-Entzug | 17:46–18:37 | 131→113 | Post-exertional, Autofahrt Werkstatt (aktives Fahren) |
+| 4: ANS-Dekompensation | 18:39–19:00 | 113→108 | Beifahrersitz, kein aktiver Drive; vestibuläre Symptome, Stammhirn-Ziehen |
+| 5: Erschöpfungskollaps | 19:01–20:50 | 83→74 | Hinlegen, Tracker klassifiziert als Tiefschlaf|
+| 6: DPH-Fenster | 20:50–22:26 | 74–81 | DPH-Einnahme ~21:00; HR-Nadir 67 bpm um 22:20; PFC→NTS-Kompensation via Atemkontrolle|
+| 7: Volle Kaskade | 22:26–23:11 | 67→104 | ANS-Eskalation, Erbrechen, Kopfschmerz setzt ein; HR-Spike auf 104 |
+| 8: Sumatriptan | 23:10–23:40 | 104→69 | Sumatriptan-Nasal + Paracetamol 1000 mg rektal; initialer HR-Abfall |
+| 9: Triptan-Plateau | 00:25–03:20 | 80–89 | Sumatriptan-Vasokonstriktion, HR-Plateau ~82 bpm, keine Konsolidierung |
+| 10: Echtes Nadir | 04:45–06:45 | 58–67 | HR-Minimum 58 bpm (04:55), zweites Minimum 59 bpm (05:37) |
+| 11: Morgen | 07:00–08:00 | 70–84 | Aufwachen, rechtsseitiger Nystagmus |
+
+#### **B.20.2 Schlafarchitektur (Tracker-Klassifikation)**
+
+Die Tracker-Klassifikation der Nacht ist diagnostisch für die Schwere der Destabilisierung:
+
+| Metrik | Wert | Einordnung |
+|:-------|:-----|:-----------|
+| Schlaf-Onset (Tracker) | 19:29 | 2+ Stunden vor typischem Onset → Erschöpfungskollaps, kein Schlaf |
+| Gesamtdauer | 641 min (10,7 h) | Überlang, inklusive Prä-Bett-Kollaps |
+| Deep (Tracker) | 204 min | Absolut hoch, aber nicht konsolidiert |
+| REM (Tracker) | 161 min | |
+| Light (Tracker) | 276 min | |
+| Awake (Tracker) | 72 min | |
+| Deep-Episoden | Fragmentiert, kein zusammenhängender Block >30 min erkennbar | Konsistent mit B.3: räumliche Fragmentierung bei erhaltener Gesamtdauer |
+
+Die Phase 5 (19:29–20:50) wurde als Deep/REM klassifiziert. Phänomenologisch war dies kein Schlaf, sondern ein autonomer Zusammenbruch mit Immobilität — der Tracker detektiert Bewegungslosigkeit + niedrigen HR und klassifiziert irrtümlich als Schlaf.
+
+#### **B.20.3 Dreifach-Konvergenz als Trigger**
+
+Der Anfall entstand durch die zeitliche Konvergenz dreier Kompensationsentzüge:
+
+| Faktor | Zeitpunkt | Mechanismus |
+|:-------|:----------|:------------|
+| Post-exertionale B7-Depletion | ab 17:46 | Sympathischer Drive maskierte Raphe-Insuffizienz; Maskierung fällt mit Belastungsende weg |
+| LDX-Abklingen | ab ~18:00 | Wirkdauer 10–12 h, Einnahme morgens → abends insuffizient |
+| SCN-Abendsignal | ab ~19:00 | Normales Herunterfahrsignal via SCN→B8→B7; trifft auf bereits depletierten B7 |
+
+Jeder einzelne Faktor wäre kompensierbar gewesen. Die Dreifach-Konvergenz war es nicht.
+
+#### **B.20.4 Befund: ANS-Kollaps als eigenständiger Prozess**
+
+Die zentrale Beobachtung: ANS-Symptome (vestibuläre Instabilität, Schwindel, Hitzewellen, Kältewellen, Zittern, Kreislaufinstabilität) traten ab 18:39 auf — **3,5 Stunden vor der vollen CSD-Kaskade** (22:26).
+
+| Merkmal | ANS-Kollaps | Kortikale CSD-Kaskade |
+|:--------|:------------|:---------------------|
+| Onset | 18:39 (Beifahrersitz) | 22:26 (volle Eskalation) |
+| Latenz nach Exertion | ~55 min | ~4,5 h |
+| Architektonische Distanz zu B7 | Monosynaptisch (NTS, RVLM, Ncl. ambiguus) | Polysynaptisch (thalamokortikale Schleife) |
+| Kompensierbarkeit | PFC→NTS-Atemkontrolle (temporär wirksam) | Keine willentliche Kompensation |
+| Zeitkonstante | Schnell in der Auslösung, lang im Verlauf | Langsam in der Auslösung, schnell im Verlauf |
+
+**Interpretation:** Was klinisch als „Stammhirnaura" beschrieben wird, ist kein CSD-Propagationsphänomen im Hirnstamm, sondern ein eigenständiger B7→ANS-Kern-Kollaps. Ohne LDX überlagern sich beide Prozesse zeitlich und sind klinisch nicht trennbar. LDX erzeugte unbeabsichtigt eine diagnostische Separation, indem es die CSD-Schwelle länger hielt, während der ANS-Kollaps ungehindert ablief.
+
+#### **B.20.5 PFC→NTS-Kompensation und deren Erschöpfung**
+
+Die bewusste Atemkontrolle (langsames Ausatmen gegen autonome Reflexe) war effektiv gegen:
+- Vestibuläre Instabilität (Schwindel reduziert)
+- Übelkeit (gebremst)
+- Hitzewellen (unterdrückt)
+
+Die Kompensation nutzt den PFC→NTS-Pfad — willentliche Top-down-Kontrolle über autonome Kerne. Dieser Pfad wird gleichzeitig durch dieselben Faktoren destabilisiert, die den ANS-Kollaps treiben (LDX-Abklingen, B7-Depletion). Die Kompensation verbraucht die Ressource, die sie zu ersetzen versucht.
+
+Empirischer Beleg: Aktives Fahren (Phase 3, hoher PFC-Demand) → NTS-Suppression erfolgreich trotz extremer Triggerbelastung. Beifahrersitz (Phase 4, kein PFC-Demand) → Dekompensation innerhalb von Minuten.
+
+#### **B.20.6 Triptan-Pharmakokinetik im HR**
+
+| Phase | Zeitraum | HR (bpm) | Mechanismus |
+|:------|:---------|:---------|:------------|
+| Pre-Triptan Nadir | 22:20 | 67 | Maximaler vagaler Tonus bei ANS-Erschöpfung |
+| ANS-Spike | 22:26–23:10 | 67→104 | Volle Kaskade: CSD + Erbrechen |
+| Initialer Triptan-Effekt | 23:10–23:40 | 104→69 | Schmerzblockade → sympathische Deaktivierung |
+| Triptan-Rebound | 00:25–03:20 | 80–89 | 5-HT1B/1D-Vasokonstriktion → sympathische Restaktivierung |
+| Post-Triptan-Clearance | 04:45–06:45 | 58–67 | Sumatriptan-HWZ ~2h; erst nach Clearance echtes Nadir |
+
+Das Triptan-Plateau (HR ~82 bpm über ~3 Stunden) ist konsistent mit B.15: Die Resynchronisationszeit beträgt 3–4 Stunden, und das Triptan konfundiert den HR-Verlauf über seine Halbwertszeit. Das echte Nadir (58 bpm) tritt erst nach Triptan-Clearance auf — ähnlich wie in B.15.3.
+
+**Differenz zu B.15:** In B.15 lag der Post-Sumatriptan-HR bei 70–73 bpm (Phase 3), hier bei 80–89. Die Differenz erklärt sich durch die exertionale Vorbelastung: Die sympathische Restaktivierung durch die post-exertionale Depletion addiert sich zur Triptan-Vasokonstriktion.
+
+#### **B.20.7 Konsistente Nystagmus-Lateralisierung**
+
+Am Morgen nach dem Anfall: Nystagmus rechtsseitig. Konsistent mit früheren Anfällen (immer rechts). Zwei Hypothesen:
+
+| Hypothese | Mechanismus | Vorhersage |
+|:----------|:------------|:-----------|
+| Architektonisch | Asymmetrische B7-Innervierung vestibulärer Kerne; eine Seite hat weniger Reservekapazität | Fixe Lateralisierung unabhängig von CSD-Hemisphäre |
+| Funktionell | CSD-Propagation bevorzugt eine Hemisphäre; kontralaterale vestibuläre Manifestation | Lateralisierung könnte bei atypischen CSD-Pfaden wechseln |
+
+Die Konsistenz über multiple Anfälle spricht für die architektonische Variante.
+
+#### **B.20.8 Evidenztabelle**
+
+| Aussage | Evidenzniveau | Quelle |
+|:--------|:-------------|:-------|
+| ANS-Symptome 3,5 h vor CSD-Kaskade | Einzelfallbeobachtung | Symptomprotokoll + HR-Daten |
+| Tracker klassifiziert Erschöpfungskollaps als Tiefschlaf | Einzelfallbeobachtung | Tracker-Daten (HR 75–83 statt <65 bpm für echten Deep) |
+| PFC→NTS-Kompensation temporär wirksam, dann erschöpft | Einzelfallbeobachtung | Symptomprotokoll (Fahren vs. Beifahrersitz) |
+| Dreifach-Konvergenz (post-exertional + LDX-Abklingen + SCN-Signal) | Modellinterpretation, konsistent | Zeitlicher Verlauf + Modellarchitektur |
+| Triptan-Plateau bei HR ~82 über 3 h | Einzelfallbeobachtung | HR-Daten |
+| Echtes HR-Nadir erst nach Triptan-Clearance (58 bpm) | Einzelfallbeobachtung | HR-Daten |
+| Nystagmus konsistent rechtsseitig | Deskriptiv, über multiple Anfälle | Symptomprotokoll |
+| ANS-Kollaps ≠ Stammhirnaura (≠ Brainstem-CSD) | Modellinterpretation, gestützt durch temporale Dissoziation | B.20.4 |
+
+#### **B.20.9 Modellimplikation**
+
+Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (MBA) klassifiziert wird, ist kein CSD-Propagationsphänomen, sondern ein eigenständiger B7→ANS-Kern-Kollaps. Die Implikationen:
+
+1. **Architektonische Priorität:** ANS-Kerne liegen monosynaptisch an B7 — sie destabilisieren vor dem polysynaptischen thalamokortikalen Pfad. Die Sequenz ist architektonisch determiniert, nicht stochastisch.
+2. **Maskierung ohne LDX:** Ohne LDX eskaliert CSD schneller → ANS-Kollaps und CSD überlagern sich zeitlich → klinisch als einheitliche „Aura" fehlinterpretiert.
+3. **Brainstem-CSD beim Menschen:** Keine humane Evidenz. Die einzige Grundlage ist das Cacna1a-S218L-Mausmodell (van den Maagdenberg et al.). Die ANS-Kollaps-Reattribution eliminiert die Notwendigkeit dieser unbelegten Hilfshypothese.
+4. **Parsimoniegewinn:** Sämtliche MBA-Symptome folgen aus der architektonischen Proximität der ANS-Kerne zum Raphe-System — ein Mechanismus, der aus dem B7/B8-Interferenzmodell direkt ableitbar ist.
+
+**Caveat:** Einzelereignis. Die temporale Dissoziation war nur durch die spezifische Konstellation (exertionale Vorbelastung + LDX-Abklingen) beobachtbar. Reproduzierbarkeit nicht gesichert — allerdings spricht die konsistente Nystagmus-Lateralisierung über multiple Anfälle für ein architektonisch stabiles Muster.
+
+![HR-Timeline Anfall 07.04.2026](<images/B20_hr_timeline_20260407.png>)
+*HR-Minutenauflösung, CEST. Annotationen: Rasenmähen (rot), Interventionen (gestrichelt), Kaskade (rot), Triptan-Plateau (amber), echtes Nadir (grün).*
+
+![HR-Timeline Tag 07.04.2026](<images/Metabase-HR + AVG - Day-4_8_2026, 11_24_18 AM.png>)
+
+![HR-Sleep-Timeline Schlaf 07.04.2026](<images/Metabase-HR + AVG-4_8_2026, 11_23_07 AM.png>)
+
+---
+
+### **B.17 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
@@ -673,13 +804,13 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 | CSD resynchronisiert Kortex, nicht autonomen Zyklus | Modellinterpretation, konsistent mit Daten | B.13.3 |
 | Anfalls-Schwelle relativ zur individuellen HR-Range, nicht absolut | Deskriptiv | B.13.2 |
 
-### **B.17 Revisionstabelle**
+### **B.18 Revisionstabelle**
 
 | Kapitel | Revision | Priorität |
 |:--------|:---------|:----------|
 | **4.5** (CSD als Reset) | Differenzierung ergänzen: CSD resynchronisiert kortikale Kohärenz, aber nicht den autonomen Zyklus. Der Beat läuft unbeeindruckt weiter. Verweis auf B.13.3. | Mittel — Präzisierung, kein Widerspruch |
 
-### **B.18 Limitationen**
+### **B.19 Limitationen**
 
 - Consumer-Tracker, keine PSG-Validierung. Die Stadienklassifikation ist intern und nicht reproduzierbar.
 - n=1, kein Kontrolldesign. Die Perioden-Trennung (PRE/POST) ist konfundiert mit Medikamentenwechsel, Jahreszeit und 13-monatiger Trageunterbrechung.
@@ -695,7 +826,7 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 - Nap-Outcome-Analyse (B.11): Kaskadenklassifikation über late_elevation >2 bpm. Schwellenwert empirisch gewählt, nicht extern validiert.
 - Die Daten sind insgesamt robuster als erwartet für einen Consumer-Tracker, aber die Annahmen können bei längerer Erfassung noch kippen. Es wird mit zunehmender Datenmenge unwahrscheinlicher.
 
-### **B.19 Diagnostische Implikation: Tracker-basiertes Screening**
+### **B.20 Diagnostische Implikation: Tracker-basiertes Screening**
 
 Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert einen kontinuierlichen, nicht-invasiven Biomarker für die zirkadiane Schwebung — einen Prozess, den die klinische Forschung mit PET und PSG sucht.
 
@@ -716,7 +847,7 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 
 ---
 
-### **B.20 Referenzen**
+### **B.21 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.
