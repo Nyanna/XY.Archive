@@ -181,13 +181,13 @@ Vier klinische Entitäten — ADHD, Migräne, generalisierte Epilepsie und Late-
 
 **Der Schlüsselbefund** ist die Dissoziation zwischen generalisierter und fokaler Epilepsie: Der Late-Chronotyp segregiert spezifisch mit **globalen Synchronisationsstörungen** (ADHD, Migräne, generalisierte Epilepsie) und **nicht** mit lokalen Hardwaredefekten (fokale Epilepsie). Die Gesamtkohorte (alle Epilepsien) zeigt keinen signifikanten Unterschied — der Effekt wird durch die fokalen Fälle verdünnt (Kendis et al. 2015). Manni et al. (2016) bestätigen: fokale Epilepsie-Patienten sind per Fragebogen eher Morning-orientiert, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive Phase.
 
-**Modellinterpretation:** Der Late-Chronotyp ist kein unabhängiger circadianer Trait, sondern ein Downstream-Marker des Raphe-Defizits. Die subjektive Erfahrung „abends erst richtig wach werden" ist das Tagesprofil der Kompensation: Tagsüber reicht der Raphe-Tonus nicht für kortikale Kohärenz → Schlafintrusionen → klinisch als „unaufmerksam" kodiert. Abends konvergieren circadianes Alerting-Maximum und akkumulierter Homöostat so, dass kompensatorische Arousal-Quellen den Raphe-Defizit überdecken → klinisch als „Abendtyp" kodiert (vgl. 4.3.7).
+**Modellinterpretation:** Der Late-Chronotyp ist kein unabhängiger circadianer Trait, sondern ein Downstream-Marker des Raphe-Defizits. Die subjektive Erfahrung „abends erst richtig wach werden" ist das Tagesprofil der Kompensation: Tagsüber reicht der Raphe-Tonus nicht für kortikale Kohärenz → Schlafintrusionen → klinisch als „unaufmerksam" kodiert. Abends konvergieren circadianes Alerting-Maximum und akkumulierter Homöostat so, dass kompensatorische Arousal-Quellen den Raphe-Defizit überdecken → klinisch als „Abendtyp" kodiert (vgl. 2.5.4).
 
 ### **8.8 Nap als PFC-Entlastung im Kontext interozeptiver Inkohärenz**
 
 Die PFC-Überlastung durch tonische Raphe-Interferenz erzeugt einen Zustand, in dem der Kortex die Verarbeitungslast nicht mehr trägt. Der Nap ist die autonome Entlastungsreaktion — kein Tiefschlaf (~50 min Light Sleep, HR bleibt auf Tagesniveau), sondern **PFC-Entlastung ohne kortikalen Reset**. LDX macht den Nap nicht überflüssig, sondern effektiver: Die Reset-Erfolgsrate verdoppelt sich unter pharmakologischer Synchronisierung (PRE 38% → POST 78%; Anhang B.11), weil der stabilisierte Raphe-Tonus dem PFC-Reset erlaubt, tatsächlich zu greifen, anstatt gegen fortlaufende Desynchronisierung anzuarbeiten.
 
-Der prodromale Charakter des Naps, seine Rolle als Migräne-Kaskade und die prädiktiven Faktoren (Pre-Nap-HR, Vornacht-Density) sind Migräne-spezifisch und in Kapitel 4 beschrieben (vgl. 4.3.4 Nap-Kaskade, 4.7.1 CSD-Bedingung; Einzelfalldaten in Anhang B.5, B.11).
+Der prodromale Charakter des Naps, seine Rolle als Migräne-Kaskade und die prädiktiven Faktoren (Pre-Nap-HR, Vornacht-Density) sind Migräne-spezifisch und in Kapitel 4 beschrieben (vgl. 4.3.2 Nap-Kaskade, 4.7.1 CSD-Bedingung; Einzelfalldaten in Anhang B.5, B.11).
 
 ---
 

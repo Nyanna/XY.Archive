@@ -635,7 +635,7 @@ Der Befund von Kendis et al. (2015) liefert eine unabhängige externe Validierun
 | **Fokale Epilepsie** | **Kein signifikanter Unterschied** zu Kontrollen | Lokaler Hardwaredefekt → kein Desynchronisationsprofil → normaler Chronotyp |
 | **Gesamtkohorte (alle Epilepsien)** | Kein signifikanter Unterschied | Effekt wird durch fokale Fälle verdünnt — der Synchronisationsmarker ist nur in der stratifizierten Analyse sichtbar |
 
-Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downstream-Marker globaler Raphe-vermittelter Desynchronisation ist (vgl. 4.3.7, 8.7.1), sollte er spezifisch mit Epilepsieformen segregieren, die globale Synchronisationsstörungen reflektieren — nicht mit fokalen Läsionen. Kendis et al. bestätigen exakt dieses Muster. Der Scoping Review 2024 (11 Studien, 1.167 PWE, 4.657 Kontrollen) repliziert die Assoziation: generalisierte Epilepsie konsistent mit Eveningness assoziiert, fokale Epilepsie nicht.
+Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downstream-Marker globaler Raphe-vermittelter Desynchronisation ist (vgl. 2.5.4, 8.7.1), sollte er spezifisch mit Epilepsieformen segregieren, die globale Synchronisationsstörungen reflektieren — nicht mit fokalen Läsionen. Kendis et al. bestätigen exakt dieses Muster. Der Scoping Review 2024 (11 Studien, 1.167 PWE, 4.657 Kontrollen) repliziert die Assoziation: generalisierte Epilepsie konsistent mit Eveningness assoziiert, fokale Epilepsie nicht.
 
 Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen per Fragebogen eher Morning-Orientierung, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive circadiane Phase.
 
