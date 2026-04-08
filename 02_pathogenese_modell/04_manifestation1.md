@@ -287,6 +287,27 @@ Zusätzlich kann die tonische Destabilisierung über Stunden die Raphe-Kerne sel
 
 CSD ist in diesem Schema nicht Stufe 2, sondern der Übergang von Stufe 2 zu Stufe 3: Wenn der tonische Modulationsverlust einen kritischen Punkt erreicht, kippt das System in die klassische ionische CSD — als finale Eskalation, nicht als Primärereignis.
 
+#### **4.4.3.1 Intratakt-Fragmentierung: Vesikuläre Auflösungsgrenze des serotonergen Takts**
+
+Das Modell formuliert bisher Inter-Kern-Desynchronisation (B7 vs. B8 Phasenversatz, vgl. 2.5.1) als CSD-Voraussetzung. Die Vesikelökonomie-Analyse (vgl. 5.5.1) zeigt: **Intratakt-Fragmentierung eines einzelnen Kerns reicht aus.**
+
+**1. Vesikuläre Stochastik bei Depletion:** Unter Last (>3 Hz Feuerrate oder nach prolongierter Aktivität) sind Vesikel-Refill, TPH2-Kapazität und ATP-Bilanz pro Neuron individuell verschieden. Das Feuermuster bleibt erhalten, aber der Transmitter-Output wird stochastisch: Spike 1 setzt 5-HT frei, Spike 2 nicht (Vesikel leer), Spike 3 partiell. Innerhalb des DRN/MRN entsteht ein räumliches Mosaik — Neurone desselben Kerns liefern phasenverschobene, amplitudenvariable Serotoninpulse an ihre Zielstrukturen.
+
+**2. Potentialschwellwert-Abhängigkeit:** Vesikelfreisetzung erfordert einen kohärenten und scharfen Potentialschwellwert. Bei stochastischer Annäherung an die 1/5-Sekunden-Grenze (nicht erst bei Überlast >5 Hz) fragmentiert der Intratakt absolut. Ein instabiler Intratakt auf *einem* Kern reicht aus, um Downstream-Erschöpfung weit unter dem Niveau zu erzeugen, das bei kohärentem Output problematisch wäre.
+
+**3. Inter-Kern-Differenz als zusätzlicher Gradient:** Eine Differenz zwischen DRN- und MRN-Intratakt erzeugt einen weiteren Interferenzgradienten im parallel innervierten Gewebe — additiv zum bestehenden Inter-Kern-Phasenversatz (vgl. 2.5.1, D.4.1).
+
+**Konsequenzen:**
+- Die Eskalationskaskade (Tabelle oben) wird granularer — Kontinuum von Kohärenzgraden statt binär synchron/asynchron
+- Erklärt **Migräne ohne Aura bei normalem Intertakt** (~75% der Migräniker): Intratakt-Fragmentierung genügt für tonische Interferenz ohne CSD
+- Verbindung zum Hit-1-Defekt wird direkter: Instabiler 5-HT1A → Feuerrate schwankt um Regenerationsschwelle → Vesikelfreisetzung stochastisch → Intratakt-Fragmentierung
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:-------------|:-------------|
+| Vesikelstochastik unter Depletion | Gesichert (allgemein neurobiologisch) | Synaptische Transmissionsphysiologie |
+| Intratakt-Fragmentierung als CSD-Auslöser bei normalem Intertakt | Hypothetisch, mechanistisch abgeleitet | Modellableitung aus 5.5.1 + 2.5.1 |
+| 75% Migräne-ohne-Aura durch Intratakt-Interferenz ohne Inter-Kern-Versatz | Hypothetisch, konsistent mit Tonabersat-Evidenz | Hauge et al. 2009 (Tonabersat nur bei Aura wirksam) |
+
 #### **4.4.4 Drei Aura-Phänotypen aus Phasenoffset-Topologie**
 
 Die klinische Heterogenität visueller Auren — von klassischen Fortifikationsspektren über punktförmige Skotome bis zu diffusem Rauschen — wird konventionell als Variante eines einzigen CSD-Mechanismus interpretiert. Das vorliegende Modell ordnet die Phänotypen drei distinkt verschiedenen Störungstopologien zu:
@@ -309,18 +330,27 @@ Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck versc
 
 **Hansen et al. — Aura-Variabilität als Indiz gegen CSD als fixen Mechanismus:** Hansen et al. dokumentierten über 1000 visuelle Auren bei einem einzelnen Patienten über 18 Jahre (Hansen et al. 2013, *Brain*). Das zentrale Ergebnis: Die Auren zeigen ein *Spektrum*, kein stereotypes Muster. Form, Größe, Propagationsrichtung und -geschwindigkeit variieren erheblich zwischen Attacken. Wenn CSD ein stereotyper ionischer Prozess wäre — determiniert durch kortikale Architektur und Diffusionsparameter —, müssten die Auren bei demselben Patienten weitgehend identisch sein. Die beobachtete Variabilität ist mit einem tonischen Interferenzmechanismus natürlich erklärbar: Variabler Phasenoffset → variable Interferenztopographie → variables Aura-Muster. Jede Attacke erzeugt ein anderes räumliches Muster der Destabilisierung, abhängig vom aktuellen Zustand des B7/B8-Phasenversatzes.
 
-#### **4.4.5 Metabolische Krise**
+#### **4.4.5 Metabolische Krise: Zwei Kausalrichtungen**
 
-Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase muss unter Notfallbedingungen die Ionengradienten wiederherstellen – ein Prozess, der normalerweise kontinuierlich im Gleichgewicht läuft, nun aber massiv im Rückstand ist.
+Die metabolische Krise hat zwei distinkte Modi — einen graduellen Vorläufer und eine akute Konsequenz der CSD:
+
+**Modus 1 — Pre-CSD (gradueller Vorläufer):** Die Intratakt-Fragmentierung (4.4.3.1) erzeugt eine schleichende metabolische Belastung *vor* der CSD. Instabiler 5-HT1A → Neuron feuert bevor Vesikel regeneriert → Teilentleerung → ATP wird für dysfunktionale Vesikelrecycling-Zyklen (Endozytose, Refüllung ohne Transmitter) verbraucht → Na⁺/K⁺-ATPase konkurriert um denselben ATP-Pool → **Clearance verliert** → Na⁺ akkumuliert graduell → tonische Destabilisierung → CSD-Schwelle erreicht. Die Na⁺-Akkumulation ist nicht Folge der CSD, sondern ihr gradueller Vorläufer. Die CSD ist der Reset, der die Na⁺-Homöostase durch erzwungene Repolarisation wiederherstellt.
+
+**Modus 2 — Post-CSD (akute Konsequenz):** Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase muss unter Notfallbedingungen die Ionengradienten wiederherstellen – ein Prozess, der normalerweise kontinuierlich im Gleichgewicht läuft, nun aber massiv im Rückstand ist.
 
 | Metabolische Komponente | Mechanismus | Zeitlicher Verlauf |
 | :---- | :---- | :---- |
-| **ATP-Depletion** | Na⁺/K⁺-ATPase läuft auf Maximum um Ionengradienten wiederherzustellen | Schlagartig an der Wellenfront, anhaltend hinter ihr |
-| **Neurovaskuläre Kopplung** | Neuronale Aktivität signalisiert Mehrbedarf → initiale Vasodilatation als Kompensationsversuch | Reaktion setzt an der Wellenfront ein |
+| **Pre-CSD: Na⁺-Akkumulation** | Vesikelrecycling-ATP konkurriert mit Na⁺/K⁺-ATPase → Clearance-Verlust → graduelle Depolarisationsverschiebung | Stunden (tonische Destabilisierungswelle, 4.4.3) |
+| **Post-CSD: ATP-Depletion** | Na⁺/K⁺-ATPase läuft auf Maximum um Ionengradienten wiederherzustellen | Schlagartig an der Wellenfront, anhaltend hinter ihr |
+| **Neurovaskuläre Kopplung** | Neuronale Aktivität signalisiert Mehrbedarf → initiale Vasodilatation als reflexiver Kompensationsversuch: das System versucht, über erhöhten Blutfluss die Na⁺-Clearance und Enzymverfügbarkeit (TPH2-Kofaktoren) wiederherzustellen. Die Kompensation funktioniert minimal über das Limit hinaus, reicht aber nicht in den notwendigen Bereich | Pre-CSD: chronisch unzureichend; Post-CSD: reaktiv an der Wellenfront |
 | **Oligämische Phase** | Auf die initiale Vasodilatation folgt Vasokonstriktion – die eigentliche Durchblutungsminderung | Erklärt die visuelle Aura: Okzipitalkortex betroffen, Blutfluss reduziert |
 | **Metabolische Erschöpfung** | Glukose- und Sauerstoffdepletion in der Wellenspur | Neuronen funktionell stumm, können nicht mehr feuern → Spreading Depression |
 
-**Die metabolische Krise ist nicht der Auslöser der CSD, sondern ihre Konsequenz.** Der Versuch des Organismus, die Energieversorgung zu erhöhen (neurovaskuläre Kopplung), kann den Rückstand nicht vollständig ausgleichen, weil die Geschwindigkeit der Ionenumkehr die Regenerationskapazität übersteigt. Hinter der Wellenfront verbleibt ein metabolisch erschöpfter Kortex in Funktionsstille – klinisch als sensorische und motorische Ausfälle der Aura erfahrbar.
+**Die Post-CSD metabolische Krise ist nicht der Auslöser der CSD, sondern ihre Konsequenz.** Der Versuch des Organismus, die Energieversorgung zu erhöhen (neurovaskuläre Kopplung), kann den Rückstand nicht vollständig ausgleichen, weil die Geschwindigkeit der Ionenumkehr die Regenerationskapazität übersteigt. Hinter der Wellenfront verbleibt ein metabolisch erschöpfter Kortex in Funktionsstille – klinisch als sensorische und motorische Ausfälle der Aura erfahrbar.
+
+**Die Pre-CSD metabolische Krise ist dagegen ein gradueller Vorläufer** — die ATP-Konkurrenz zwischen Vesikelrecycling und Ionenhomöostase akkumuliert über Stunden und senkt die CSD-Schwelle progressiv. Die Vasodilatation als Kompensationsversuch erklärt, warum CSD am Ende einer Destabilisierungssequenz steht, nicht am Anfang: Das System versucht, die Ionenhomöostase vaskulär aufrechtzuerhalten, und die CSD tritt ein, wenn diese Kompensation versagt.
+
+**Triptan-Mechanismus (Präzisierung):** Triptane (5-HT1B/1D-Agonisten) reduzieren die trigeminale Feuerrate → weniger Spikes → weniger ATP-Verbrauch für Vesikelrecycling → mehr ATP für Na⁺/K⁺-ATPase → Clearance erholt sich → Na⁺-Gradient normalisiert. Dies erklärt die Triptan-Wirkung präziser als reine Vasokonstriktion: Triptane verschieben die ATP-Allokation zurück zugunsten der Ionenhomöostase.
 
 ### **4.5 CSD als kompensatorische Resynchronisation**
 

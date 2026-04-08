@@ -121,6 +121,40 @@ Wenn das Modell von B7-Erschöpfung oder -Depletion spricht, beschreibt es keine
 
 **Regeneration:** Die Regeneration über Stunden (Schlaf/Ruhe) ist die Umkehrung dieses Prozesses: TPH2 arbeitet die Tryptophan-Pipeline ab, Vesikel werden refüllt, ATP-Speicher regenerieren. Partiell in 1–2 Stunden (ausreichend für aphasisches Feuern, nicht für Kohärenz), vollständig erst nach einer konsolidierten Nacht. Dies erklärt, warum die Post-Nap-Regeneration im Modell zwar B7 wieder „online" bringt, aber nicht notwendig in einen kohärenten Zustand — die partielle Regeneration reicht für Feuern, nicht für konsistente Vesikelfreisetzung pro Spike.
 
+#### **5.5.2 5-HTP/L-Tryptophan-Substitution: Pharmakokinetische Insuffizienz**
+
+Die Supplementation mit 5-Hydroxytryptophan (5-HTP) oder L-Tryptophan als „natürliche Serotoninerhöhung" wird in der Alternativmedizin für Migräne, Depression und Schlafstörungen propagiert. Im Rahmen des vorliegenden Modells ist die Intervention aus drei Gründen insuffizient:
+
+**1. Pharmakokinetisches Problem:** 5-HTP wird zu ~70% oral absorbiert, aber großteils peripher durch Aromatische-L-Aminosäure-Decarboxylase (AADC) zu Serotonin konvertiert (Leber, Darm, Nieren) *bevor* es die Blut-Hirn-Schranke passiert. Peripheres 5-HT passiert die BHS nicht. Die in Studien berichtete zentrale Bioverfügbarkeit von 48%±15% bezieht sich auf Kombination mit Carbidopa (peripherem Decarboxylase-Inhibitor) — ohne Carbidopa ist die zentrale Verfügbarkeit deutlich niedriger. Die Migränestudien (z.B. Titus 1986: 71% Verbesserung, aber ohne Placeboarm) verwendeten 5-HTP *ohne* Decarboxylase-Inhibitor.
+
+**2. Modellspezifisches Problem:** Selbst bei zentraler Verfügbarkeit wäre die AADC-Konversion **unselektiv** über das gesamte Projektionsfeld — nicht nur DRN-Terminals, nicht nur MRN-Terminals, sondern jede AADC-exprimierende Struktur. Die zelluläre und laminäre B7/B8-Separation (vgl. Anhang F) wird umgangen. Das therapeutische Ziel ist nicht „mehr 5-HT insgesamt", sondern „kohärenteres 5-HT aus den Raphe-Kernen". 5-HTP adressiert das falsche Problem — es erhöht den Gesamtspiegel, ohne die Raphe-Oszillation zu stabilisieren.
+
+**3. Evidenzbasis:** Keine robuste placebokontrollierte Evidenz für 5-HTP-Wirksamkeit bei irgendeiner Indikation. Der häufig zitierte Titus-Trial (1986, Migräne) hatte keinen Placeboarm. Die einzige methodisch akzeptable RCT (200 mg/Tag, IBD-Fatigue) zeigte Placebo-/Zeiteffekt. Meta-Analyse Depression: 2 von 108 Studien methodisch akzeptabel (n=64 total) — keine belastbare Schlussfolgerung möglich.
+
+**Schlussfolgerung:** 5-HTP ist nicht kontraindiziert, sondern **nutzlos**. Das Problem ist nicht exogener 5-HTP-Mangel, sondern endogene TPH2-Effizienz und Autorezeptor-Regulation (vgl. 5.5.1, 03_thalamische_kompensation 1.1). Orale 5-HTP-Supplementation umgeht den Flaschenhals nicht — sie liefert Substrat an Stellen, an denen es nicht gebraucht wird, und nicht an die Stelle, an der es gebraucht wird (die DRN-Neurone selbst).
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:-------------|:-------------|
+| 5-HTP periphere AADC-Konversion vor BHS-Passage | Gesichert | Pharmakokinetische Grundlagen |
+| Zentrale Bioverfügbarkeit ohne Carbidopa deutlich reduziert | Gesichert | Pharmakokinetik |
+| AADC-Konversion unselektiv (nicht Raphe-spezifisch) | Gesichert | Enzymverteilung, Anhang F |
+| Keine robuste RCT-Evidenz für 5-HTP bei Migräne/Depression | Evidenzlücke | Systematische Literaturanalyse |
+| 5-HTP adressiert den falschen Flaschenhals | Modellableitung | 5.5.1, 03_thalamische_kompensation 1.1 |
+
+#### **5.5.3 Vesikelökonomie: Flaschenhälse und Interventionsmöglichkeiten**
+
+Die in 5.5.1 beschriebenen biologischen Flaschenhälse der B7-Depletion lassen sich systematisch auf Interventionsmöglichkeiten abbilden:
+
+| Flaschenhals | Intervention | Status | Modellkonsistenz |
+|:-------------|:-------------|:-------|:-----------------|
+| Feuerrate-Ökonomie | LDX (bereits im Einsatz) | Aktiv | Höchste — adressiert die Ursache des Überverbrauchs |
+| Regenerationsfenster | DPH abends (bereits im Einsatz) | Aktiv | Hoch — erzwingt B7-Ruhe über H1-Blockade |
+| Mitochondriale Reserve | CoQ10, Riboflavin, Magnesium | Prüfenswert | Evidenzbasiert in Migräneprophylaxe; mechanistisch: ATP-Regenerationskapazität der DRN-Neurone |
+| Tryptophan-Nachschub | 5-HTP oder L-Tryptophan | Nutzlos | vgl. 5.5.2 |
+| TPH2-Kofaktoren | Eisen, BH4 | Ferritin prüfen | Nur bei Mangel relevant |
+
+**LDX *erschöpft* B7 nicht, es *schont* ihn:** Dopaminerge Stabilisierung senkt chaotische Überaktivität → weniger Spikes pro Zeiteinheit → weniger Vesikelverbrauch → Reserven halten länger. DPH erzwingt über H1-Blockade ein Regenerationsfenster (Vesikelrefill + ATP-Regeneration). Die mitochondrialen Kofaktoren (CoQ10, Riboflavin, Magnesium) sind die einzige bisher nicht adressierte Ebene mit etablierter Evidenz (Migräneprophylaxe-Leitlinien). Mechanismus im Modell: Anhebung der Erschöpfungsschwelle der DRN-Neurone durch verbesserte ATP-Regenerationskapazität.
+
 ### **5.6 Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt**
 
 Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.

@@ -19,7 +19,7 @@ Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-
 
 #### **E.1.1 Evidenzbasis**
 
-Epileptische Anfälle können durch experimentelle Manipulationen, die die serotonerge Neurotransmission abschwächen, induziert oder amplifiziert werden. Umgekehrt wirkt die Augmentation der serotonergen Aktivität — durch Tryptophan-Zufuhr, 5-HTP-Gabe, SSRIs oder direkte DRN-Stimulation — antikonvulsiv (Bagdy et al. 2007; Buchanan et al. 2014).
+Epileptische Anfälle können durch experimentelle Manipulationen, die die serotonerge Neurotransmission abschwächen, induziert oder amplifiziert werden. Umgekehrt wirkt die Augmentation der serotonergen Aktivität — durch Tryptophan-Zufuhr, 5-HTP-Gabe (intraperitoneale Applikation im Tiermodell; orale Bioverfügbarkeit limitiert, vgl. 5.5.2), SSRIs oder direkte DRN-Stimulation — antikonvulsiv (Bagdy et al. 2007; Buchanan et al. 2014).
 
 Das Tiermodell: genetisch epilepsieanfällige Ratten (GEPR) zeigen verringerte 5-HT1A-Rezeptordichte im Hippocampus. Der SSRI Sertralin reduziert dosisabhängig die Intensität audiogener Anfälle, korrelierend mit erhöhter extrazellulärer thalamischer 5-HT-Konzentration (Yan et al. 1995). Neuere Daten zeigen, dass das Anfallsrisiko bei Depression nicht durch SSRIs erhöht wird, sondern durch die zugrundeliegende Serotonin-Defizienz selbst — die Depression ist der Marker, nicht die Ursache (Cardamone et al. 2023).
 
