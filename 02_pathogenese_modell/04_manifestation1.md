@@ -513,3 +513,48 @@ Die Analogie zur CSD-Korrektur (4.4) ist direkt: Wie CSD nicht der universelle M
 | MBA-Symptome erklärbar durch B7-Proximity ohne Brainstem-CSD | Modellvorhersage, parsimoniöser | Raphe-Innervierungsanatomie (Anhang F) |
 | ANS-Symptome vor kortikaler Aura (Einzelfall) | Einzelfallbeobachtung | Anhang B.20 |
 | „Prodromi" als Primärprozess, nicht Vorboten | Modellinterpretation | Abgeleitet aus architektonischer Proximität |
+
+### **4.7 CSD-Auslösemechanismus: Zwei aktive, desynchronisierte Oszillatoren**
+
+#### **4.7.1 Präzisierung der CSD-Bedingung**
+
+CSD wird nicht durch den Ausfall eines Oszillators ausgelöst, sondern im Fenster, in dem **zwei aktive Oszillatoren desynchronisiert feuern**. Ein einzelner supprimierter Oszillator erzeugt keinen Phasenoffset — er ist einfach weg. Die CSD-Schwelle wird unterschritten, wenn B7 genug Kapazität hat um B8 zu stören, aber nicht genug um sich mit B8 zu synchronisieren.
+
+Drei distinkte Zustände:
+
+| B7-Zustand | B8-Zustand | Phasenoffset | CSD-Risiko | Begründung |
+|:-----------|:-----------|:-------------|:-----------|:-----------|
+| Depleted (kein Signal) | Stabil | Keiner (nur ein Oszillator aktiv) | Kein CSD | Kein Interferenzpartner; ANS-Kollaps durch Entzug, aber keine kortikale Interferenz |
+| Aphasisch (feuert, aber reduzierte Amplitude, inkonsistenter Delay) | Stabil(er) | Maximal | **Maximal** | B7 stört B8-Takt, kann sich aber nicht synchronisieren → Interferenz → CSD |
+| Synchron | Synchron | Minimal | Kein CSD | Beide Oszillatoren takten kohärent → stabile Modulation |
+
+Das CSD-Risikofenster ist damit schmal und transient: Es öffnet sich bei partieller B7-Regeneration (nach Depletion) und schließt sich entweder durch vollständige Resynchronisation (günstiger Ausgang) oder durch erneute Depletion (ungünstiger Ausgang).
+
+#### **4.7.2 Differentialphänotypologie aus Defektquelle**
+
+Die Kombination aus B7- und B8-Zustand determiniert den klinischen Phänotyp. Die Differenzierung erklärt, warum MBA-Patienten (B7-dominant) ANS-Symptome zeigen, während andere Migräne-mit-Aura-Subtypen (B8-dominant) dies nicht tun:
+
+| B7-Zustand | B8-Zustand | Interferenz | ANS-Symptomatik | Klinischer Phänotyp |
+|:-----------|:-----------|:------------|:----------------|:-------------------|
+| Instabil/aphasisch | Stabil(er) | Ja (B7 aphasisch gegen B8-Takt) | Ja (B7→ANS monosynaptisch) | **MBA-Phänotyp:** ANS-Symptome + CSD |
+| Stabil | Instabil | Ja (B8 aphasisch gegen B7-Takt) | Nein (B8 projiziert nicht primär auf ANS-Kerne) | **Migräne mit Aura ohne ANS-Symptomatik** |
+| Depleted | Stabil | Nein (nur ein aktiver Oszillator) | Ja (Entzug) | **Reine ANS-Symptomatik, keine CSD** |
+| Stabil | Depleted | Nein | Nein | **Zirkadianer Drift, hippocampale Symptome, keine Migräne** |
+
+**Zeile 2** ist klinisch beschrieben aber nie als differentieller Mechanismus erkannt: Migräne mit klassischer Aura ohne Übelkeit, ohne Schwindel, ohne Kreislaufinstabilität — konventionell als „mildere Form" kodiert, im Modell als B8-dominante Instabilität bei stabilem B7.
+
+**Zeile 3** erklärt reine autonome Episoden, die klinisch nicht als Migräne kodiert werden (kardiologische Abklärung als „vestibuläre Störung" oder „unklare Synkope"). Der Einzelfall 07.04.2026 (Anhang B.20, Phase 19:31–20:38) zeigt genau diesen Zustand: B7 depleted nach sympathischem Maximaltakt, ANS-Kollaps ohne CSD.
+
+**Zeile 4** beschreibt den Zustand bei primärer B8-Insuffizienz (MRN-dominant): hippocampale Konsolidierungsdefizite, zirkadianer Drift durch gestörtes SCN-Relay (vgl. D.4.1), aber keine kortikale Desynchronisation und kein ANS-Kollaps.
+
+**Konsistenz mit 95%-Overlap:** 95% der MBA-Patienten haben auch typische Aura-Attacken (Eriksen et al., MedLink Neurology). Dies ist konsistent mit variablem B7-Zustand: Manchmal reicht der Phasenoffset für CSD ohne dass B7 stark genug depleted ist für ANS-Kollaps (reine Aura, Zeile 2 bei temporärem Rollenwechsel), manchmal ist B7 instabil genug für beides (Zeile 1).
+
+#### **4.7.3 LDX-Effekt auf CSD-Fenster**
+
+LDX stabilisiert B7 intranukleär und erweitert damit den Kohärenzbereich — der regenerierte B7 nach partieller Depletion hat unter LDX eine höhere Wahrscheinlichkeit, sich mit B8 zu resynchronisieren, statt im aphasischen Fenster zu verbleiben. Die CSD-Schwelle wird nicht direkt angehoben, sondern das Zeitfenster, in dem die Interferenzbedingung erfüllt ist, wird verkürzt.
+
+LDX reicht für den polysynaptischen kortikalen Pfad (CSD-Schwelle wird länger gehalten), aber nicht für die monosynaptischen ANS-Kerne unter Extrembelastung. Hierarchie der LDX-Schutzwirkung:
+
+**PFC** (pharmakologisch + architektonisch geschützt, MD-Loop) → **Kortex allgemein** (CSD-Schwelle angehoben, aber endlich) → **ANS-Kerne** (monosynaptisch, kein kortikaler Puffer, fallen zuerst)
+
+Die CSD-Auslösung am 07.04.2026 korreliert zeitlich nicht mit dem SCN-Abendsignal, sondern mit dem LDX-Abklingen. LDX-Abklingen destabilisiert auch B8 (B8 ist der stabilere, aber auch er ist auf LDX-Unterstützung angewiesen). Der Moment, in dem **auch B8** die Kohärenz verliert, ist der CSD-Trigger — beide Oszillatoren aktiv, beide instabil, maximale Interferenz.

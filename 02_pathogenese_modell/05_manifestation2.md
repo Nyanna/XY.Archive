@@ -90,3 +90,47 @@ Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unab
 Evidenzstatus: Gesamte Sektion 5.4 ist eine Modellvorhersage, abgeleitet aus den Mechanismen der Abschnitte 5.1–5.3 und der pharmakologischen Interaktion (7.3). Kein unabhängiger empirischer Nachweis. Die Einzelkomponenten (serotonerge NTS-Modulation, noradrenerge PFC-Suppression, sympathische Gegenregulation unter Betablockade) sind jeweils gesichert; die Kompoundierung ist hypothetisch.
 
 Die autonome Symptomatik bei schweren Migräneattacken wird konventionell als Teil der „Stammhirnaura" (MBA) klassifiziert und einer CSD-Propagation in den Hirnstamm zugeschrieben. Diese Zuschreibung hat keine humane Evidenzbasis. Die Symptome erklären sich parsimonischer als direkter B7→ANS-Kern-Kollaps (vgl. 4.6, Anhang B.20).
+
+### **5.5 B7-Aphasie: Der dritte ANS-Zustand**
+
+Die bisherige Modellierung unterscheidet implizit zwei B7-Zustände: intakt (stabile Modulation) und ausgefallen (Entzug, Zielkerne ohne Signal). Der Einzelfall 07.04.2026 (Anhang B.20) zeigt einen dritten Zustand, der klinisch am destabilisierendsten ist:
+
+**B7-Aphasie:** B7 ist nicht heruntergefahren oder abgeschaltet, sondern feuert mit reduzierter Amplitude und trägem, inkonsistentem Delay zum SCN-Takt. Die ANS-Kerne bekommen ein Signal, aber es ist zu schwach und zu unzuverlässig für Stabilisierung. Kein Shutdown, kein Entzug, sondern Rauschen.
+
+| B7-Zustand | ANS-Kerne empfangen | ANS-Reaktion | Klinisches Bild |
+|:-----------|:--------------------|:-------------|:----------------|
+| **Intakt** | Stabiles, kohärentes Signal | Stabile Modulation | Physiologisch |
+| **Depleted** (Entzug) | Kein Signal | Eigendynamik (instabil, aber konsistent) | Reine ANS-Symptomatik (Fixierung, SD/RMSSD niedrig) |
+| **Aphasisch** (Rauschexposition) | Inkonsistentes, schwaches Signal | Weder stabile Modulation noch sauberer Entzug | Maximale Destabilisierung (SD und RMSSD hoch gleichzeitig) |
+
+**Paradoxon:** Entzug ist stabiler als Rauschexposition. Bei komplettem Signalwegfall schalten die ANS-Kerne auf Eigendynamik — das ist instabil, aber vorhersagbar. Ein Signal, das weder ignorierbar noch brauchbar ist, stört die Eigendynamik, ohne ein alternatives Ordnungssignal zu liefern. Aphasie ist der schlechteste aller drei Zustände für die ANS-Kerne (vgl. D.4.4).
+
+### **5.6 Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt**
+
+Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.
+
+**Modellspezifische Erklärung:** Sport verbraucht B7-Reserven durch sympathischen Maximaltakt. Nicht der Sport ist der Trigger, sondern die Transition danach: Die anschließende Ruhe regeneriert B7 partiell → aphasischer B7 interferiert mit stabilem(erem) B8 → CSD.
+
+Der Mechanismus ist identisch mit der Nap-Kaskade (B.5, B.11) — nur der Einstiegspfad unterscheidet sich (vgl. B.11.6):
+
+| Phase | Physiologischer Prozess | B7-Zustand |
+|:------|:----------------------|:-----------|
+| **Exertion** | Sympathischer Maximaltakt (HR 155–170) | B7/B8 synchron am Limit → Reserven werden aufgebraucht |
+| **Transition** | Belastungsende → parasympathischer Rebound | B7 beginnt zu schwanken (SD steigt, Delay inkonsistent) |
+| **Erzwungene Ruhe** | Autonome Dekompensation oder willentliche Pause | B7 depleted → Fixierung (SD/RMSSD niedrig) |
+| **Partielle Regeneration** | B7-Potential partiell wiederhergestellt | B7 wieder online, aber aphasisch |
+| **CSD-Fenster** | Aphasischer B7 interferiert mit B8 | Interferenz → CSD (falls Regeneration für Kohärenz nicht reicht) |
+
+Die 160-Minuten-Latenz (Koppen et al.) ist konsistent mit dem Regenerations-Interferenz-Fenster: Depletion + Ruhephase + partielle Regeneration + Kaskade.
+
+**Nackenschmerz als initiales Symptom** ist bei exercise-triggered Migräne häufiger als bei spontaner Migräne (Koppen et al. 2013) — modellkonsistent als Muskeltonusveränderung bei Raphe-Depletion (B7-Projektion auf spinale Motoneurone über kaudale Raphe-Kerne, vgl. D.1.1).
+
+### **5.7 PFC→NTS-Kompensation und deren Erschöpfungsparadox**
+
+Die kortikale NTS-Suppression (5.3) erklärt einen klinisch beobachteten Befund, der konventionell keinen Mechanismus hat:
+
+**Einzelfallbeobachtung 07.04.2026:** Aktives Fahren (hoher PFC-Demand, 17:45–19:00) nach 75 min Exertion bei HR 155–170 → trotz bereits laufender B7-Depletion keine ANS-Dekompensation. Beifahrersitz (kein PFC-Demand, ab 19:01) → Dekompensation innerhalb von Minuten (SD 14.8, RMSSD 9.1, pNN5 56% — alle Metriken peaken gleichzeitig).
+
+**Mechanismus:** Der PFC kompensiert die B7-Depletion aktiv über den Pfad PFC → PAG → NTS (vgl. 5.3). Solange aufgabengetriebener Arousal den PFC fordert, wird die NTS-Schwelle cortical aufrechterhalten — auch wenn die serotonerge NTS-Modulation (Pfad 1, vgl. 5.4) bereits kollabiert ist. Sobald der PFC-Demand wegfällt (Beifahrersitz), kollabiert auch die kortikale Kompensation.
+
+**Erschöpfungsparadox:** Die PFC→NTS-Kompensation nutzt denselben noradrenergen Pfad, der unter B7-Depletion bereits fragil ist. Die Kompensation funktioniert nur solange, wie externer Demand den PFC aktiv hält — sie ist nicht selbsterhaltend. Das Paradox: Die Kompensation **erschöpft sich schneller**, je länger sie läuft, weil sie noradrenerge Ressourcen verbraucht, die nicht nachgeliefert werden. Die Transition von aktivem Fahren zu Beifahrersitz ist nicht primär ein Aufmerksamkeitswechsel, sondern der Wegfall des einzigen verbleibenden Stabilisierungspfades.

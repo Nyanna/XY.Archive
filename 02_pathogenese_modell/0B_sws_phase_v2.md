@@ -448,6 +448,34 @@ PRE: 10 OK / 14 KASKADE (58% Kaskade). POST: 8 OK / 1 KASKADE (11%). Unter LDX s
 
 Bisherige Formulierung in Kapitel 4.3: Nap → patchy Sleep Inertia → trigeminale Sensitisierung → CSD (kausale Kette). Synthese: Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Beides sind Downstream-Effekte desselben Zustands, nicht Ursache und Wirkung. Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig.
 
+#### **B.11.5 Mechanistischer Pfad der Nap-Kaskade**
+
+Der Nap regeneriert B7-Potential partiell. Das Outcome hängt davon ab, ob der regenerierte B7 sich mit B8 synchronisieren kann oder im aphasischen Fenster verbleibt (vgl. 4.7.1):
+
+| Pre-Nap-Zustand | B7 nach Regeneration | B7-B8-Verhältnis | Outcome |
+|:----------------|:--------------------|:-----------------|:--------|
+| HR <75 (B7 depleted) | Aphasisch (feuert, aber inkohärent) | B7 stört B8-Takt, kann sich nicht synchronisieren | **Interferenz → CSD** (75% PPV bei <75, B.11.2) |
+| HR ≥80 (B7 kohärent) | Kohärent (ausreichende Amplitude) | Resynchronisation mit B8 gelingt | **Kein CSD** (85% PPV bei ≥80, B.11.2) |
+
+Der mechanistische Schlüssel ist die Qualität der Regeneration: Bei pre-Nap HR <75 ist B7 bereits so weit depleted, dass die partielle Regeneration im Nap nicht für Kohärenz reicht — der regenerierte B7 hat genug Kapazität um B8 zu stören, aber nicht genug um sich zu synchronisieren. Das ist das CSD-Fenster (4.7.1).
+
+**LDX-Effekt:** LDX hält B7 intranukleär stabil → der regenerierte B7 nach dem Nap hat höhere Kohärenz → Resynchronisation mit B8 gelingt häufiger → Kaskadenrate sinkt von 58% (PRE) auf 11% (POST, B.11.3). LDX verschiebt nicht die HR-Schwelle, sondern die Regenerationsqualität.
+
+#### **B.11.6 Post-exertionale Migräne als Nap-Kaskade mit autonomem Einstiegspfad**
+
+Der Mechanismus der Nap-Kaskade ist identisch mit post-exertionaler Migräne — nur der Einstiegspfad unterscheidet sich:
+
+| Einstiegspfad | Trigger für Ruhe | B7-Regeneration | Outcome |
+|:--------------|:----------------|:----------------|:--------|
+| **Schlafintrusion (normal)** | Kortikaler Off-State → Nap | Partiell | Aphasischer B7 gegen stabileren B8 → CSD |
+| **ANS-Kollaps (post-exertional)** | Autonome Dekompensation → erzwungene Ruhe | Partiell | Identisch |
+
+Post-exertionale Migräne ist kein eigener Triggerpfad — sie ist eine Nap-Kaskade mit autonomem statt kortikalem Einstieg. Der sympathische Maximaltakt während Sport verbraucht B7-Reserven; die anschließende Pause regeneriert B7 partiell; der aphasische B7 interferiert mit stabilem(erem) B8 → CSD. Nicht der Sport ist der Trigger, sondern die Transition danach.
+
+**Einzelfallbeleg (07.04.2026, Anhang B.20):** Exertion (75 min, HR 155–170) → B7-Depletion → erzwungene Ruhephase (19:31–20:38, fixierte HR, SD <2, RMSSD <2) → partielle B7-Regeneration (21:00–22:26, B7 online aber instabil) → Kaskade (22:26–23:14, SD progressiv steigend auf 12.3, RMSSD auf 7.5 → aktive Interferenz). Die Pause hat gleichzeitig den ANS-Kollaps temporär gebremst UND die Voraussetzung für CSD geschaffen (B7-Potential wiederhergestellt → Interferenz mit B8 wieder möglich).
+
+**Epidemiologische Stützung:** Koppen et al. (2013, J Headache Pain): 38% Lebenszeitprävalenz exercise-triggered Migräne, Onset durchschnittlich 160 min nach Belastungsende — konsistent mit dem Regenerations-Interferenz-Fenster.
+
 ---
 
 ### **B.12 Anfallstiming: Phasenmodell**

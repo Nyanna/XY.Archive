@@ -79,6 +79,16 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | MBA-Symptome erklärbar durch B7→ANS-Kern-Proximität ohne Brainstem-CSD | Modellvorhersage, parsimoniöser als konventionelle Erklärung | ICHD-3 1.2.2 (Symptomtopographie); Anhang F (Innervierungsanatomie); Anhang B.20 (temporale Dissoziation) |
 | Keine humane Evidenz für Brainstem-CSD; einzige Grundlage Cacna1a-S218L-Mausmodell | Evidenzlücke | Literaturreview: Aiba & Noebels 2015, Loonen et al. 2019, Jansen et al. 2019 — ausschließlich Tiermodell |
 | ANS-Symptome temporal vor kortikaler CSD (Einzelfall, LDX-bedingte Separation) | Einzelfallbeobachtung | Anhang B.20 |
+| CSD benötigt zwei aktive, desynchronisierte Oszillatoren; einzelner supprimierter Oszillator erzeugt keine Interferenz | Modellvorhersage, konsistent mit HR-Spreading-Daten | Anhang B.20, Differentialphänotypologie (4.7) |
+| Post-exertionale Migräne als Nap-Kaskade mit autonomem Einstiegspfad | Modellvorhersage, unifiziert zwei Beobachtungskategorien | Anhang B.20 + B.5/B.11 |
+| B7-Aphasie (reduzierte Amplitude, inkonsistenter Delay) als ANS-Destabilisierungsmechanismus | Einzelfallbeobachtung, HR-Spreading-Daten | Anhang B.20 |
+| Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt, CSD durch post-exertionale Regeneration | Modellvorhersage, epidemiologisch gestützt | Koppen et al. 2013 (38% ETM-Prävalenz, 160 min Latenz) |
+| Differentielle Phänotypologie: B7-Instabilität → MBA + CSD; B8-Instabilität → Aura ohne ANS; B7-Depletion → reine ANS; B8-Depletion → kein Migränephänotyp | Modellvorhersage, klinisch plausibel, nicht direkt getestet | Abgeleitet aus Innervierungsanatomie (Anhang F), Differentialtabelle (4.7.2) |
+| 95% der MBA-Patienten haben auch typische Aura → konsistent mit variablem B7-Zustand, nicht fixem Phänotyp | Literaturgestützt | Eriksen et al. (MedLink Neurology) |
+| Schwindel mit Nystagmus = vestibuläre Kerne (B7); Schwindel ohne Nystagmus = möglicherweise kortikal (Demarquay) | Vorgeschlagener klinischer Differentialmarker | Abgeleitet, nicht validiert |
+| Demarquay-Alternative (kortikaler Ursprung) erklärt Symptomtopographie, nicht Symptomintensität | Literaturkritik | Demarquay et al. 2018 (Cephalalgia) |
+| Temporale Sequenz: Literatur beschreibt visuelle Aura vor Hirnstammsymptomen; Modell sagt ANS zuerst; Auflösung über Detektions-Bias plausibel, nicht gesichert | Potenziell falsifizierend, Auflösung hypothetisch | ICHD-3, Einzelfallbeobachtung B.20 |
+| Interferenz vs. Entzug vs. Rauschexposition als drei distinkte Destabilisierungsmechanismen mit unterschiedlichen Zeitkonstanten | Modellpräzisierung | D.4.4, Anhang B.20 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |

@@ -249,7 +249,15 @@ Plötzlicher unerwarteter Tod bei Epilepsie (SUDEP) konvergiert mechanistisch mi
 
 Bei SIDS ist der kaudale Raphe-Takt defekt → autonome Regulation versagt → Atemstillstand (Paterson/Kinney, vgl. 2.3). Bei SUDEP versagt der rostrale Raphe-Takt → Anfälle → Spreading Depolarization propagiert in den Hirnstamm → autonome Kaskade → Atemstillstand. Beide Endstrecken sind serotonerge Synchronisationsversagen — in unterschiedlichen Raphe-Subnetzen, zu unterschiedlichen Entwicklungszeitpunkten.
 
-**Abgrenzung zu MBA:** Die hier diskutierte Brainstem-SD als SUDEP-Mechanismus ist ein Tiermodell-Befund bei extremen Gain-of-Function-Mutationen (Cacna1a-S218L) unter letalen Anfallsbedingungen. Sie ist nicht zu verwechseln mit der klinischen Diagnose „Migräne mit Hirnstammaura" (MBA, ICHD-3 1.2.2), deren Symptome sich ohne Brainstem-CSD durch den direkten B7→ANS-Kern-Kollaps erklären lassen (vgl. 4.6).
+**Abgrenzung zu MBA:** Die hier diskutierte Brainstem-SD als SUDEP-Mechanismus ist ein Tiermodell-Befund bei extremen Gain-of-Function-Mutationen (Cacna1a-S218L) unter letalen Anfallsbedingungen. Sie ist nicht zu verwechseln mit der klinischen Diagnose „Migräne mit Hirnstammaura" (MBA, ICHD-3 1.2.2), deren Symptome sich ohne Brainstem-CSD durch den direkten B7→ANS-Kern-Kollaps erklären lassen (vgl. 4.6, 4.7.2).
+
+**Demarquay-Alternative und deren Grenzen:** Demarquay et al. (2018, Cephalalgia) argumentieren, dass alle MBA-Symptome kortikalen Ursprung haben können — CSD-Propagation über sensorische und motorische Kortexareale erzeuge vestibuläre, auditorische und autonome Symptome durch kortikale Projektion, nicht durch Hirnstamm-CSD. Diese Alternative eliminiert ebenfalls die unbelegte Brainstem-CSD-Hypothese und stützt insofern die Kernaussage des Modells. Für schwere ANS-Symptomatik reicht die Demarquay-Erklärung jedoch nicht aus:
+
+- **Symptomintensität:** Der Kortex kann vestibuläre Wahrnehmung und autonome Parameter *modulieren*, aber keinen Kreislaufkollaps *erzeugen*. Projektives Erbrechen, Bewusstlosigkeit und kardiovaskulärer Kollaps sind autonome Kernfunktionsausfälle — die efferente Kontrolle über Herzrate und Blutdruck liegt nicht kortikal, sondern im NTS/RVLM/Ncl. ambiguus.
+- **Simultaneität:** Bei CSD-Propagation über den Kortex (3 mm/min) müssten Symptome sequentiell auftreten. MBA zeigt simultane, überlappende Symptome, die gleichzeitig eskalieren → gemeinsame Quelle (B7-Depletion auf alle ANS-Kerne simultan).
+- **Vestibulovisueller Mismatch ≠ echtes Vertigo:** Okzipitale CSD erzeugt Tunnelblick → propriozeptive Unsicherheit → wird als „Schwindel" berichtet. Aber echter Vertigo (Raumrotation, Nystagmus, Erbrechen) erfordert vestibuläre Kerndysfunktion. **Differentialmarker:** Schwindel MIT Nystagmus = vestibuläre Kerne = B7-Proximität; Schwindel OHNE Nystagmus = visuell-vestibulärer Mismatch = möglicherweise kortikal (Demarquay).
+
+Mögliche Koexistenz: leichte MBA-Symptome möglicherweise kortikal (Demarquay), schwere MBA-Symptome = B7→ANS-Kern-Kollaps. Demarquay erklärt die Symptomtopographie (wo), aber nicht die Symptomintensität (wie stark) und nicht die Symptomqualität (autonom vs. sensorisch).
 
 #### **E.7.4 SUDEP im Schlaf: Vollständig blockierte Fallback-Hierarchie**
 

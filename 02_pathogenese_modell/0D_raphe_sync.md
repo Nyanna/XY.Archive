@@ -172,6 +172,25 @@ Die Kombination dieser drei Modi erzeugt ein Muster, das weder geordnet noch rei
 
 **Offene Frage:** Die drei Desynchronisationsmodi erklären die Dissoziation zwischen kortikalen und hippocampalen Effekten (inter-nukleär) und potentielle Gradienten innerhalb eines Projektionsgebiets (intra-projektiv). Sie erklären nicht hinreichend, wie die in Anhang B dokumentierten fokalen kortikalen Off-State-Patches — topologisch fragmentierte SWS-Areale — entstehen. Der DRN projiziert diffus in den gesamten Kortex; warum einzelne Areale selektiv in Off-States kippen, erfordert einen zusätzlichen Mechanismus jenseits der Raphe-Projektionsarchitektur (vermutlich lokale kortikale Vulnerabilitätsunterschiede, metabolische Heterogenität oder differentielle Arousal-Quellen, vgl. 2.5.4). Dieser Punkt bleibt offen.
 
+#### **D.4.4 Drei Destabilisierungsmechanismen: Interferenz, Entzug, Rauschexposition**
+
+Die bisher implizit vermengten Mechanismen der B7/B8-Destabilisierung lassen sich in drei distinkte Modi differenzieren, die gleichzeitig, aber mit unterschiedlichen Zeitkonstanten und Zielstrukturen operieren:
+
+| Modus | Mechanismus | Bedingung | Zeitkonstante | Primäres Zielgebiet |
+|:------|:-----------|:----------|:--------------|:-------------------|
+| **Interferenz** (dual, aktiv) | Zwei desynchronisierte Oszillatoren erzeugen Phasenoffset → CSD-Schwelle | Beide Oszillatoren aktiv, aber asynchron | Minuten bis Stunden (Akkumulation bis CSD) | Kortex (polysynaptisch) |
+| **Entzug** (monosynaptisch, passiv) | Ein Oszillator fällt aus → Zielkerne verlieren tonische serotonerge Stütze → Instabilität durch Wegfall | Mindestens ein Oszillator depleted oder supprimiert | Sekunden bis Minuten (direkte Deafferenzierung) | ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) |
+| **Rauschexposition** (B7 aphasisch) | Oszillator feuert mit reduzierter Amplitude und inkonsistentem Delay → Zielkerne erhalten Signal, aber zu schwach und zu unzuverlässig für stabile Modulation | B7 aktiv aber erschöpft (post-exertional, post-Nap-Regeneration) | Übergangsphase zwischen Entzug und Synchronisation | ANS-Kerne + Kortex (weder stabile Modulation noch sauberer Entzug) |
+
+**Rauschexposition** ist der kritischste Zustand: Entzug ist paradoxerweise stabiler als Rauschexposition, weil Zielkerne bei komplettem Signalwegfall auf Eigendynamik schalten, während inkonsistentes Rauschen die Eigendynamik stört, ohne ein alternatives Ordnungssignal zu liefern. Die ANS-Kerne erhalten ein Signal, das weder ignorierbar noch brauchbar ist.
+
+**Dissoziation SD vs. RMSSD als physiologischer Marker (Einzelfall 07.04.2026, Anhang B.20):**
+- SD hoch + RMSSD niedrig = langsamer Drift bei erhaltenem Takt → **synchrone Belastung** (physiologisch, Exertion)
+- SD hoch + RMSSD hoch = schnelle Sprünge bei verlorenem Takt → **aphasische Instabilität** (Rauschexposition)
+- SD niedrig + RMSSD niedrig = Fixierung → **Entzug** (B7 erschöpft, keine Modulation)
+
+**Klinische Konsequenz:** ANS-Kollaps operiert primär über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide Prozesse gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten: ANS-Symptome Stunden vor CSD (Einzelfall B.20: 3,5 h Dissoziation, durch LDX-bedingte CSD-Verzögerung sichtbar). Die Gleichzeitigkeit bei MBA ist nicht weil CSD die ANS-Symptome verursacht, sondern weil beide denselben Upstream-Treiber (B7-Instabilität) haben, aber über unterschiedliche Pfade mit unterschiedlichen Latenzzeiten operieren (vgl. 4.7.2).
+
 ---
 
 ### **D.5 GABAerge Limitierung: Drei Begrenzungsebenen**
