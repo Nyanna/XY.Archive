@@ -754,8 +754,6 @@ Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (M
 ![HR-Timeline Anfall 07.04.2026](<images/B20_hr_timeline_20260407.png>)
 *HR-Minutenauflösung, CEST. Annotationen: Rasenmähen (rot), Interventionen (gestrichelt), Kaskade (rot), Triptan-Plateau (amber), echtes Nadir (grün).*
 
-![HR-Timeline Tag 07.04.2026](<images/Metabase-HR + AVG - Day-4_8_2026, 11_24_18 AM.png>)
-
 ![HR-Sleep-Timeline Schlaf 07.04.2026](<images/Metabase-HR + AVG-4_8_2026, 11_23_07 AM.png>)
 
 ---
