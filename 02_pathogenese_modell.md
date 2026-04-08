@@ -1347,6 +1347,51 @@ Die Analogie zur CSD-Korrektur (4.4) ist direkt: Wie CSD nicht der universelle M
 | ANS-Symptome vor kortikaler Aura (Einzelfall) | Einzelfallbeobachtung | Anhang B.20 |
 | „Prodromi" als Primärprozess, nicht Vorboten | Modellinterpretation | Abgeleitet aus architektonischer Proximität |
 
+### **4.7 CSD-Auslösemechanismus: Zwei aktive, desynchronisierte Oszillatoren**
+
+#### **4.7.1 Präzisierung der CSD-Bedingung**
+
+CSD wird nicht durch den Ausfall eines Oszillators ausgelöst, sondern im Fenster, in dem **zwei aktive Oszillatoren desynchronisiert feuern**. Ein einzelner supprimierter Oszillator erzeugt keinen Phasenoffset — er ist einfach weg. Die CSD-Schwelle wird unterschritten, wenn B7 genug Kapazität hat um B8 zu stören, aber nicht genug um sich mit B8 zu synchronisieren.
+
+Drei distinkte Zustände:
+
+| B7-Zustand | B8-Zustand | Phasenoffset | CSD-Risiko | Begründung |
+|:-----------|:-----------|:-------------|:-----------|:-----------|
+| Depleted (kein Signal) | Stabil | Keiner (nur ein Oszillator aktiv) | Kein CSD | Kein Interferenzpartner; ANS-Kollaps durch Entzug, aber keine kortikale Interferenz |
+| Aphasisch (feuert, aber reduzierte Amplitude, inkonsistenter Delay) | Stabil(er) | Maximal | **Maximal** | B7 stört B8-Takt, kann sich aber nicht synchronisieren → Interferenz → CSD |
+| Synchron | Synchron | Minimal | Kein CSD | Beide Oszillatoren takten kohärent → stabile Modulation |
+
+Das CSD-Risikofenster ist damit schmal und transient: Es öffnet sich bei partieller B7-Regeneration (nach Depletion) und schließt sich entweder durch vollständige Resynchronisation (günstiger Ausgang) oder durch erneute Depletion (ungünstiger Ausgang).
+
+#### **4.7.2 Differentialphänotypologie aus Defektquelle**
+
+Die Kombination aus B7- und B8-Zustand determiniert den klinischen Phänotyp. Die Differenzierung erklärt, warum MBA-Patienten (B7-dominant) ANS-Symptome zeigen, während andere Migräne-mit-Aura-Subtypen (B8-dominant) dies nicht tun:
+
+| B7-Zustand | B8-Zustand | Interferenz | ANS-Symptomatik | Klinischer Phänotyp |
+|:-----------|:-----------|:------------|:----------------|:-------------------|
+| Instabil/aphasisch | Stabil(er) | Ja (B7 aphasisch gegen B8-Takt) | Ja (B7→ANS monosynaptisch) | **MBA-Phänotyp:** ANS-Symptome + CSD |
+| Stabil | Instabil | Ja (B8 aphasisch gegen B7-Takt) | Nein (B8 projiziert nicht primär auf ANS-Kerne) | **Migräne mit Aura ohne ANS-Symptomatik** |
+| Depleted | Stabil | Nein (nur ein aktiver Oszillator) | Ja (Entzug) | **Reine ANS-Symptomatik, keine CSD** |
+| Stabil | Depleted | Nein | Nein | **Zirkadianer Drift, hippocampale Symptome, keine Migräne** |
+
+**Zeile 2** ist klinisch beschrieben aber nie als differentieller Mechanismus erkannt: Migräne mit klassischer Aura ohne Übelkeit, ohne Schwindel, ohne Kreislaufinstabilität — konventionell als „mildere Form" kodiert, im Modell als B8-dominante Instabilität bei stabilem B7.
+
+**Zeile 3** erklärt reine autonome Episoden, die klinisch nicht als Migräne kodiert werden (kardiologische Abklärung als „vestibuläre Störung" oder „unklare Synkope"). Der Einzelfall 07.04.2026 (Anhang B.20, Phase 19:31–20:38) zeigt genau diesen Zustand: B7 depleted nach sympathischem Maximaltakt, ANS-Kollaps ohne CSD.
+
+**Zeile 4** beschreibt den Zustand bei primärer B8-Insuffizienz (MRN-dominant): hippocampale Konsolidierungsdefizite, zirkadianer Drift durch gestörtes SCN-Relay (vgl. D.4.1), aber keine kortikale Desynchronisation und kein ANS-Kollaps.
+
+**Konsistenz mit 95%-Overlap:** 95% der MBA-Patienten haben auch typische Aura-Attacken (Eriksen et al., MedLink Neurology). Dies ist konsistent mit variablem B7-Zustand: Manchmal reicht der Phasenoffset für CSD ohne dass B7 stark genug depleted ist für ANS-Kollaps (reine Aura, Zeile 2 bei temporärem Rollenwechsel), manchmal ist B7 instabil genug für beides (Zeile 1).
+
+#### **4.7.3 LDX-Effekt auf CSD-Fenster**
+
+LDX stabilisiert B7 intranukleär und erweitert damit den Kohärenzbereich — der regenerierte B7 nach partieller Depletion hat unter LDX eine höhere Wahrscheinlichkeit, sich mit B8 zu resynchronisieren, statt im aphasischen Fenster zu verbleiben. Die CSD-Schwelle wird nicht direkt angehoben, sondern das Zeitfenster, in dem die Interferenzbedingung erfüllt ist, wird verkürzt.
+
+LDX reicht für den polysynaptischen kortikalen Pfad (CSD-Schwelle wird länger gehalten), aber nicht für die monosynaptischen ANS-Kerne unter Extrembelastung. Hierarchie der LDX-Schutzwirkung:
+
+**PFC** (pharmakologisch + architektonisch geschützt, MD-Loop) → **Kortex allgemein** (CSD-Schwelle angehoben, aber endlich) → **ANS-Kerne** (monosynaptisch, kein kortikaler Puffer, fallen zuerst)
+
+Die CSD-Auslösung am 07.04.2026 korreliert zeitlich nicht mit dem SCN-Abendsignal, sondern mit dem LDX-Abklingen. LDX-Abklingen destabilisiert auch B8 (B8 ist der stabilere, aber auch er ist auf LDX-Unterstützung angewiesen). Der Moment, in dem **auch B8** die Kohärenz verliert, ist der CSD-Trigger — beide Oszillatoren aktiv, beide instabil, maximale Interferenz.
+
 ***
 
 ## **5\. Klinische Manifestation II: Autonome Dysregulation**
@@ -1438,6 +1483,50 @@ Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unab
 Evidenzstatus: Gesamte Sektion 5.4 ist eine Modellvorhersage, abgeleitet aus den Mechanismen der Abschnitte 5.1–5.3 und der pharmakologischen Interaktion (7.3). Kein unabhängiger empirischer Nachweis. Die Einzelkomponenten (serotonerge NTS-Modulation, noradrenerge PFC-Suppression, sympathische Gegenregulation unter Betablockade) sind jeweils gesichert; die Kompoundierung ist hypothetisch.
 
 Die autonome Symptomatik bei schweren Migräneattacken wird konventionell als Teil der „Stammhirnaura" (MBA) klassifiziert und einer CSD-Propagation in den Hirnstamm zugeschrieben. Diese Zuschreibung hat keine humane Evidenzbasis. Die Symptome erklären sich parsimonischer als direkter B7→ANS-Kern-Kollaps (vgl. 4.6, Anhang B.20).
+
+### **5.5 B7-Aphasie: Der dritte ANS-Zustand**
+
+Die bisherige Modellierung unterscheidet implizit zwei B7-Zustände: intakt (stabile Modulation) und ausgefallen (Entzug, Zielkerne ohne Signal). Der Einzelfall 07.04.2026 (Anhang B.20) zeigt einen dritten Zustand, der klinisch am destabilisierendsten ist:
+
+**B7-Aphasie:** B7 ist nicht heruntergefahren oder abgeschaltet, sondern feuert mit reduzierter Amplitude und trägem, inkonsistentem Delay zum SCN-Takt. Die ANS-Kerne bekommen ein Signal, aber es ist zu schwach und zu unzuverlässig für Stabilisierung. Kein Shutdown, kein Entzug, sondern Rauschen.
+
+| B7-Zustand | ANS-Kerne empfangen | ANS-Reaktion | Klinisches Bild |
+|:-----------|:--------------------|:-------------|:----------------|
+| **Intakt** | Stabiles, kohärentes Signal | Stabile Modulation | Physiologisch |
+| **Depleted** (Entzug) | Kein Signal | Eigendynamik (instabil, aber konsistent) | Reine ANS-Symptomatik (Fixierung, SD/RMSSD niedrig) |
+| **Aphasisch** (Rauschexposition) | Inkonsistentes, schwaches Signal | Weder stabile Modulation noch sauberer Entzug | Maximale Destabilisierung (SD und RMSSD hoch gleichzeitig) |
+
+**Paradoxon:** Entzug ist stabiler als Rauschexposition. Bei komplettem Signalwegfall schalten die ANS-Kerne auf Eigendynamik — das ist instabil, aber vorhersagbar. Ein Signal, das weder ignorierbar noch brauchbar ist, stört die Eigendynamik, ohne ein alternatives Ordnungssignal zu liefern. Aphasie ist der schlechteste aller drei Zustände für die ANS-Kerne (vgl. D.4.4).
+
+### **5.6 Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt**
+
+Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.
+
+**Modellspezifische Erklärung:** Sport verbraucht B7-Reserven durch sympathischen Maximaltakt. Nicht der Sport ist der Trigger, sondern die Transition danach: Die anschließende Ruhe regeneriert B7 partiell → aphasischer B7 interferiert mit stabilem(erem) B8 → CSD.
+
+Der Mechanismus ist identisch mit der Nap-Kaskade (B.5, B.11) — nur der Einstiegspfad unterscheidet sich (vgl. B.11.6):
+
+| Phase | Physiologischer Prozess | B7-Zustand |
+|:------|:----------------------|:-----------|
+| **Exertion** | Sympathischer Maximaltakt (HR 155–170) | B7/B8 synchron am Limit → Reserven werden aufgebraucht |
+| **Transition** | Belastungsende → parasympathischer Rebound | B7 beginnt zu schwanken (SD steigt, Delay inkonsistent) |
+| **Erzwungene Ruhe** | Autonome Dekompensation oder willentliche Pause | B7 depleted → Fixierung (SD/RMSSD niedrig) |
+| **Partielle Regeneration** | B7-Potential partiell wiederhergestellt | B7 wieder online, aber aphasisch |
+| **CSD-Fenster** | Aphasischer B7 interferiert mit B8 | Interferenz → CSD (falls Regeneration für Kohärenz nicht reicht) |
+
+Die 160-Minuten-Latenz (Koppen et al.) ist konsistent mit dem Regenerations-Interferenz-Fenster: Depletion + Ruhephase + partielle Regeneration + Kaskade.
+
+**Nackenschmerz als initiales Symptom** ist bei exercise-triggered Migräne häufiger als bei spontaner Migräne (Koppen et al. 2013) — modellkonsistent als Muskeltonusveränderung bei Raphe-Depletion (B7-Projektion auf spinale Motoneurone über kaudale Raphe-Kerne, vgl. D.1.1).
+
+### **5.7 PFC→NTS-Kompensation und deren Erschöpfungsparadox**
+
+Die kortikale NTS-Suppression (5.3) erklärt einen klinisch beobachteten Befund, der konventionell keinen Mechanismus hat:
+
+**Einzelfallbeobachtung 07.04.2026:** Aktives Fahren (hoher PFC-Demand, 17:45–19:00) nach 75 min Exertion bei HR 155–170 → trotz bereits laufender B7-Depletion keine ANS-Dekompensation. Beifahrersitz (kein PFC-Demand, ab 19:01) → Dekompensation innerhalb von Minuten (SD 14.8, RMSSD 9.1, pNN5 56% — alle Metriken peaken gleichzeitig).
+
+**Mechanismus:** Der PFC kompensiert die B7-Depletion aktiv über den Pfad PFC → PAG → NTS (vgl. 5.3). Solange aufgabengetriebener Arousal den PFC fordert, wird die NTS-Schwelle cortical aufrechterhalten — auch wenn die serotonerge NTS-Modulation (Pfad 1, vgl. 5.4) bereits kollabiert ist. Sobald der PFC-Demand wegfällt (Beifahrersitz), kollabiert auch die kortikale Kompensation.
+
+**Erschöpfungsparadox:** Die PFC→NTS-Kompensation nutzt denselben noradrenergen Pfad, der unter B7-Depletion bereits fragil ist. Die Kompensation funktioniert nur solange, wie externer Demand den PFC aktiv hält — sie ist nicht selbsterhaltend. Das Paradox: Die Kompensation **erschöpft sich schneller**, je länger sie läuft, weil sie noradrenerge Ressourcen verbraucht, die nicht nachgeliefert werden. Die Transition von aktivem Fahren zu Beifahrersitz ist nicht primär ein Aufmerksamkeitswechsel, sondern der Wegfall des einzigen verbleibenden Stabilisierungspfades.
 
 ***
 
@@ -1931,6 +2020,16 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | MBA-Symptome erklärbar durch B7→ANS-Kern-Proximität ohne Brainstem-CSD | Modellvorhersage, parsimoniöser als konventionelle Erklärung | ICHD-3 1.2.2 (Symptomtopographie); Anhang F (Innervierungsanatomie); Anhang B.20 (temporale Dissoziation) |
 | Keine humane Evidenz für Brainstem-CSD; einzige Grundlage Cacna1a-S218L-Mausmodell | Evidenzlücke | Literaturreview: Aiba & Noebels 2015, Loonen et al. 2019, Jansen et al. 2019 — ausschließlich Tiermodell |
 | ANS-Symptome temporal vor kortikaler CSD (Einzelfall, LDX-bedingte Separation) | Einzelfallbeobachtung | Anhang B.20 |
+| CSD benötigt zwei aktive, desynchronisierte Oszillatoren; einzelner supprimierter Oszillator erzeugt keine Interferenz | Modellvorhersage, konsistent mit HR-Spreading-Daten | Anhang B.20, Differentialphänotypologie (4.7) |
+| Post-exertionale Migräne als Nap-Kaskade mit autonomem Einstiegspfad | Modellvorhersage, unifiziert zwei Beobachtungskategorien | Anhang B.20 + B.5/B.11 |
+| B7-Aphasie (reduzierte Amplitude, inkonsistenter Delay) als ANS-Destabilisierungsmechanismus | Einzelfallbeobachtung, HR-Spreading-Daten | Anhang B.20 |
+| Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt, CSD durch post-exertionale Regeneration | Modellvorhersage, epidemiologisch gestützt | Koppen et al. 2013 (38% ETM-Prävalenz, 160 min Latenz) |
+| Differentielle Phänotypologie: B7-Instabilität → MBA + CSD; B8-Instabilität → Aura ohne ANS; B7-Depletion → reine ANS; B8-Depletion → kein Migränephänotyp | Modellvorhersage, klinisch plausibel, nicht direkt getestet | Abgeleitet aus Innervierungsanatomie (Anhang F), Differentialtabelle (4.7.2) |
+| 95% der MBA-Patienten haben auch typische Aura → konsistent mit variablem B7-Zustand, nicht fixem Phänotyp | Literaturgestützt | Eriksen et al. (MedLink Neurology) |
+| Schwindel mit Nystagmus = vestibuläre Kerne (B7); Schwindel ohne Nystagmus = möglicherweise kortikal (Demarquay) | Vorgeschlagener klinischer Differentialmarker | Abgeleitet, nicht validiert |
+| Demarquay-Alternative (kortikaler Ursprung) erklärt Symptomtopographie, nicht Symptomintensität | Literaturkritik | Demarquay et al. 2018 (Cephalalgia) |
+| Temporale Sequenz: Literatur beschreibt visuelle Aura vor Hirnstammsymptomen; Modell sagt ANS zuerst; Auflösung über Detektions-Bias plausibel, nicht gesichert | Potenziell falsifizierend, Auflösung hypothetisch | ICHD-3, Einzelfallbeobachtung B.20 |
+| Interferenz vs. Entzug vs. Rauschexposition als drei distinkte Destabilisierungsmechanismen mit unterschiedlichen Zeitkonstanten | Modellpräzisierung | D.4.4, Anhang B.20 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
@@ -2547,6 +2646,34 @@ PRE: 10 OK / 14 KASKADE (58% Kaskade). POST: 8 OK / 1 KASKADE (11%). Unter LDX s
 #### **B.11.4 Reinterpretation der Nap-Kaskade**
 
 Bisherige Formulierung in Kapitel 4.3: Nap → patchy Sleep Inertia → trigeminale Sensitisierung → CSD (kausale Kette). Synthese: Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Beides sind Downstream-Effekte desselben Zustands, nicht Ursache und Wirkung. Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig.
+
+#### **B.11.5 Mechanistischer Pfad der Nap-Kaskade**
+
+Der Nap regeneriert B7-Potential partiell. Das Outcome hängt davon ab, ob der regenerierte B7 sich mit B8 synchronisieren kann oder im aphasischen Fenster verbleibt (vgl. 4.7.1):
+
+| Pre-Nap-Zustand | B7 nach Regeneration | B7-B8-Verhältnis | Outcome |
+|:----------------|:--------------------|:-----------------|:--------|
+| HR <75 (B7 depleted) | Aphasisch (feuert, aber inkohärent) | B7 stört B8-Takt, kann sich nicht synchronisieren | **Interferenz → CSD** (75% PPV bei <75, B.11.2) |
+| HR ≥80 (B7 kohärent) | Kohärent (ausreichende Amplitude) | Resynchronisation mit B8 gelingt | **Kein CSD** (85% PPV bei ≥80, B.11.2) |
+
+Der mechanistische Schlüssel ist die Qualität der Regeneration: Bei pre-Nap HR <75 ist B7 bereits so weit depleted, dass die partielle Regeneration im Nap nicht für Kohärenz reicht — der regenerierte B7 hat genug Kapazität um B8 zu stören, aber nicht genug um sich zu synchronisieren. Das ist das CSD-Fenster (4.7.1).
+
+**LDX-Effekt:** LDX hält B7 intranukleär stabil → der regenerierte B7 nach dem Nap hat höhere Kohärenz → Resynchronisation mit B8 gelingt häufiger → Kaskadenrate sinkt von 58% (PRE) auf 11% (POST, B.11.3). LDX verschiebt nicht die HR-Schwelle, sondern die Regenerationsqualität.
+
+#### **B.11.6 Post-exertionale Migräne als Nap-Kaskade mit autonomem Einstiegspfad**
+
+Der Mechanismus der Nap-Kaskade ist identisch mit post-exertionaler Migräne — nur der Einstiegspfad unterscheidet sich:
+
+| Einstiegspfad | Trigger für Ruhe | B7-Regeneration | Outcome |
+|:--------------|:----------------|:----------------|:--------|
+| **Schlafintrusion (normal)** | Kortikaler Off-State → Nap | Partiell | Aphasischer B7 gegen stabileren B8 → CSD |
+| **ANS-Kollaps (post-exertional)** | Autonome Dekompensation → erzwungene Ruhe | Partiell | Identisch |
+
+Post-exertionale Migräne ist kein eigener Triggerpfad — sie ist eine Nap-Kaskade mit autonomem statt kortikalem Einstieg. Der sympathische Maximaltakt während Sport verbraucht B7-Reserven; die anschließende Pause regeneriert B7 partiell; der aphasische B7 interferiert mit stabilem(erem) B8 → CSD. Nicht der Sport ist der Trigger, sondern die Transition danach.
+
+**Einzelfallbeleg (07.04.2026, Anhang B.20):** Exertion (75 min, HR 155–170) → B7-Depletion → erzwungene Ruhephase (19:31–20:38, fixierte HR, SD <2, RMSSD <2) → partielle B7-Regeneration (21:00–22:26, B7 online aber instabil) → Kaskade (22:26–23:14, SD progressiv steigend auf 12.3, RMSSD auf 7.5 → aktive Interferenz). Die Pause hat gleichzeitig den ANS-Kollaps temporär gebremst UND die Voraussetzung für CSD geschaffen (B7-Potential wiederhergestellt → Interferenz mit B8 wieder möglich).
+
+**Epidemiologische Stützung:** Koppen et al. (2013, J Headache Pain): 38% Lebenszeitprävalenz exercise-triggered Migräne, Onset durchschnittlich 160 min nach Belastungsende — konsistent mit dem Regenerations-Interferenz-Fenster.
 
 ---
 
@@ -3474,6 +3601,25 @@ Die Kombination dieser drei Modi erzeugt ein Muster, das weder geordnet noch rei
 
 **Offene Frage:** Die drei Desynchronisationsmodi erklären die Dissoziation zwischen kortikalen und hippocampalen Effekten (inter-nukleär) und potentielle Gradienten innerhalb eines Projektionsgebiets (intra-projektiv). Sie erklären nicht hinreichend, wie die in Anhang B dokumentierten fokalen kortikalen Off-State-Patches — topologisch fragmentierte SWS-Areale — entstehen. Der DRN projiziert diffus in den gesamten Kortex; warum einzelne Areale selektiv in Off-States kippen, erfordert einen zusätzlichen Mechanismus jenseits der Raphe-Projektionsarchitektur (vermutlich lokale kortikale Vulnerabilitätsunterschiede, metabolische Heterogenität oder differentielle Arousal-Quellen, vgl. 2.5.4). Dieser Punkt bleibt offen.
 
+#### **D.4.4 Drei Destabilisierungsmechanismen: Interferenz, Entzug, Rauschexposition**
+
+Die bisher implizit vermengten Mechanismen der B7/B8-Destabilisierung lassen sich in drei distinkte Modi differenzieren, die gleichzeitig, aber mit unterschiedlichen Zeitkonstanten und Zielstrukturen operieren:
+
+| Modus | Mechanismus | Bedingung | Zeitkonstante | Primäres Zielgebiet |
+|:------|:-----------|:----------|:--------------|:-------------------|
+| **Interferenz** (dual, aktiv) | Zwei desynchronisierte Oszillatoren erzeugen Phasenoffset → CSD-Schwelle | Beide Oszillatoren aktiv, aber asynchron | Minuten bis Stunden (Akkumulation bis CSD) | Kortex (polysynaptisch) |
+| **Entzug** (monosynaptisch, passiv) | Ein Oszillator fällt aus → Zielkerne verlieren tonische serotonerge Stütze → Instabilität durch Wegfall | Mindestens ein Oszillator depleted oder supprimiert | Sekunden bis Minuten (direkte Deafferenzierung) | ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) |
+| **Rauschexposition** (B7 aphasisch) | Oszillator feuert mit reduzierter Amplitude und inkonsistentem Delay → Zielkerne erhalten Signal, aber zu schwach und zu unzuverlässig für stabile Modulation | B7 aktiv aber erschöpft (post-exertional, post-Nap-Regeneration) | Übergangsphase zwischen Entzug und Synchronisation | ANS-Kerne + Kortex (weder stabile Modulation noch sauberer Entzug) |
+
+**Rauschexposition** ist der kritischste Zustand: Entzug ist paradoxerweise stabiler als Rauschexposition, weil Zielkerne bei komplettem Signalwegfall auf Eigendynamik schalten, während inkonsistentes Rauschen die Eigendynamik stört, ohne ein alternatives Ordnungssignal zu liefern. Die ANS-Kerne erhalten ein Signal, das weder ignorierbar noch brauchbar ist.
+
+**Dissoziation SD vs. RMSSD als physiologischer Marker (Einzelfall 07.04.2026, Anhang B.20):**
+- SD hoch + RMSSD niedrig = langsamer Drift bei erhaltenem Takt → **synchrone Belastung** (physiologisch, Exertion)
+- SD hoch + RMSSD hoch = schnelle Sprünge bei verlorenem Takt → **aphasische Instabilität** (Rauschexposition)
+- SD niedrig + RMSSD niedrig = Fixierung → **Entzug** (B7 erschöpft, keine Modulation)
+
+**Klinische Konsequenz:** ANS-Kollaps operiert primär über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide Prozesse gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten: ANS-Symptome Stunden vor CSD (Einzelfall B.20: 3,5 h Dissoziation, durch LDX-bedingte CSD-Verzögerung sichtbar). Die Gleichzeitigkeit bei MBA ist nicht weil CSD die ANS-Symptome verursacht, sondern weil beide denselben Upstream-Treiber (B7-Instabilität) haben, aber über unterschiedliche Pfade mit unterschiedlichen Latenzzeiten operieren (vgl. 4.7.2).
+
 ---
 
 ### **D.5 GABAerge Limitierung: Drei Begrenzungsebenen**
@@ -4007,7 +4153,15 @@ Plötzlicher unerwarteter Tod bei Epilepsie (SUDEP) konvergiert mechanistisch mi
 
 Bei SIDS ist der kaudale Raphe-Takt defekt → autonome Regulation versagt → Atemstillstand (Paterson/Kinney, vgl. 2.3). Bei SUDEP versagt der rostrale Raphe-Takt → Anfälle → Spreading Depolarization propagiert in den Hirnstamm → autonome Kaskade → Atemstillstand. Beide Endstrecken sind serotonerge Synchronisationsversagen — in unterschiedlichen Raphe-Subnetzen, zu unterschiedlichen Entwicklungszeitpunkten.
 
-**Abgrenzung zu MBA:** Die hier diskutierte Brainstem-SD als SUDEP-Mechanismus ist ein Tiermodell-Befund bei extremen Gain-of-Function-Mutationen (Cacna1a-S218L) unter letalen Anfallsbedingungen. Sie ist nicht zu verwechseln mit der klinischen Diagnose „Migräne mit Hirnstammaura" (MBA, ICHD-3 1.2.2), deren Symptome sich ohne Brainstem-CSD durch den direkten B7→ANS-Kern-Kollaps erklären lassen (vgl. 4.6).
+**Abgrenzung zu MBA:** Die hier diskutierte Brainstem-SD als SUDEP-Mechanismus ist ein Tiermodell-Befund bei extremen Gain-of-Function-Mutationen (Cacna1a-S218L) unter letalen Anfallsbedingungen. Sie ist nicht zu verwechseln mit der klinischen Diagnose „Migräne mit Hirnstammaura" (MBA, ICHD-3 1.2.2), deren Symptome sich ohne Brainstem-CSD durch den direkten B7→ANS-Kern-Kollaps erklären lassen (vgl. 4.6, 4.7.2).
+
+**Demarquay-Alternative und deren Grenzen:** Demarquay et al. (2018, Cephalalgia) argumentieren, dass alle MBA-Symptome kortikalen Ursprung haben können — CSD-Propagation über sensorische und motorische Kortexareale erzeuge vestibuläre, auditorische und autonome Symptome durch kortikale Projektion, nicht durch Hirnstamm-CSD. Diese Alternative eliminiert ebenfalls die unbelegte Brainstem-CSD-Hypothese und stützt insofern die Kernaussage des Modells. Für schwere ANS-Symptomatik reicht die Demarquay-Erklärung jedoch nicht aus:
+
+- **Symptomintensität:** Der Kortex kann vestibuläre Wahrnehmung und autonome Parameter *modulieren*, aber keinen Kreislaufkollaps *erzeugen*. Projektives Erbrechen, Bewusstlosigkeit und kardiovaskulärer Kollaps sind autonome Kernfunktionsausfälle — die efferente Kontrolle über Herzrate und Blutdruck liegt nicht kortikal, sondern im NTS/RVLM/Ncl. ambiguus.
+- **Simultaneität:** Bei CSD-Propagation über den Kortex (3 mm/min) müssten Symptome sequentiell auftreten. MBA zeigt simultane, überlappende Symptome, die gleichzeitig eskalieren → gemeinsame Quelle (B7-Depletion auf alle ANS-Kerne simultan).
+- **Vestibulovisueller Mismatch ≠ echtes Vertigo:** Okzipitale CSD erzeugt Tunnelblick → propriozeptive Unsicherheit → wird als „Schwindel" berichtet. Aber echter Vertigo (Raumrotation, Nystagmus, Erbrechen) erfordert vestibuläre Kerndysfunktion. **Differentialmarker:** Schwindel MIT Nystagmus = vestibuläre Kerne = B7-Proximität; Schwindel OHNE Nystagmus = visuell-vestibulärer Mismatch = möglicherweise kortikal (Demarquay).
+
+Mögliche Koexistenz: leichte MBA-Symptome möglicherweise kortikal (Demarquay), schwere MBA-Symptome = B7→ANS-Kern-Kollaps. Demarquay erklärt die Symptomtopographie (wo), aber nicht die Symptomintensität (wie stark) und nicht die Symptomqualität (autonom vs. sensorisch).
 
 #### **E.7.4 SUDEP im Schlaf: Vollständig blockierte Fallback-Hierarchie**
 
