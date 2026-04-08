@@ -139,7 +139,7 @@ Die in 8.2–8.5 beschriebene Desynchronisierung der Modulationssysteme erzeugt 
 | **Schlaf-Wach-Übergang** | Inkompletter State-Switch, gradueller Drift statt diskretem Übergang | Verzögertes Aufwachen, morgendliches Forcing-Bedürfnis (Anhang C) |
 | **NREM-Schlaf** | Laminare State-Dissoziation bei Arousal aus Tiefschlaf | Parasomnie-Phänomenologie: Pavor nocturnus, Somnambulismus |
 
-Die drei Manifestationen sind keine separaten Komorbiditäten, sondern Ausdrücke desselben Raphe-vermittelten State-Kohärenzdefizits in verschiedenen Schlaf-Wach-Phasen (ausführliche Phänomenologie: Anhang C; Dissoziationsarchitektur: 4.5.2).
+Die drei Manifestationen sind keine separaten Komorbiditäten, sondern Ausdrücke desselben Raphe-vermittelten State-Kohärenzdefizits in verschiedenen Schlaf-Wach-Phasen (ausführliche Phänomenologie: Anhang C; Dissoziationsarchitektur: 4.5.2). Die ASD-spezifische Variante — Stimming während Pavor nocturnus als subkortikal generiertes Regulationsprogramm ohne bewusstes Erleben — bestätigt, dass Stimming kein bewusster Coping-Mechanismus ist (vgl. 6.2).
 
 ### **8.6 Klinische Implikation: Mate, Koffein und die Illusion der Wachheit**
 

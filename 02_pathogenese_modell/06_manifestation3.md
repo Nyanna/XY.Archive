@@ -11,7 +11,7 @@ In der Logik dieses Modells sind ASD, Migräne, Gating-Insuffizienz und Hypervig
 
 ### **6.2 Repetitives Verhalten als Stabilisierungsmechanismus**
 
-Wenn kortikale Muster durch den verrauschten thalamischen Referenzwert intrinsisch instabil sind und leicht kippen, erzeugt Wiederholung künstliche Attraktortiefe: Der Input ist bekannt, der Prediction Error minimal, der Thalamus muss nicht filtern, die Raphe-Schleife bleibt unperturbiert.
+Wenn kortikale Muster durch den verrauschten thalamischen Referenzwert intrinsisch instabil sind und leicht kippen (vgl. 3.3: flache Energielandschaft, breitere Attraktorbecken), erzeugt Wiederholung künstliche Attraktortiefe: Der Input ist bekannt, der Prediction Error minimal, der Thalamus muss nicht filtern, die Raphe-Schleife bleibt unperturbiert.
 
 | Verhalten | Neurobiologische Funktion |
 | :---- | :---- |
@@ -25,7 +25,7 @@ Stimming tritt nicht nur im wachen Zustand als Stabilisierungsmechanismus auf, s
 
 ### **6.3 Identität als Wahrnehmungssignatur**
 
-Im vorliegenden neurologischen Profil ist Identität nicht primär narrativ oder konzeptuell verankert, sondern direkt in der thalamisch-kortikalen Wahrnehmungssignatur. Das erklärt zwei Beobachtungen:
+Im vorliegenden neurologischen Profil ist Identität nicht primär narrativ oder konzeptuell verankert, sondern direkt in der thalamisch-kortikalen Wahrnehmungssignatur (mechanistische Grundlage: der in 3.3 beschriebene verrauschte Prediction-Error-Referenzwert und die daraus resultierende fluidere, kontextabhängigere Wahrnehmung). Das erklärt zwei Beobachtungen:
 
 **1\. Robustheit gegen narrative Destabilisierung:** Keine Erschütterung durch Überzeugungen oder soziale Manipulation, weil die Identitätsverankerung unterhalb der konzeptuellen Ebene liegt.
 
