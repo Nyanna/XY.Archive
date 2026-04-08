@@ -2,7 +2,7 @@
 
 ## Diagnosekontext
 
-Autismus Spektrum Störung (ASD), männlich, geb. 1985. Migräniker mit Stammhirnaura-Prädisposition seit Kindheit, zyklische Migräne seit dem ca. 20. Lebensjahr, 14 Jahre progressiver Verlauf bis zur pharmakologischen Stabilisierung.
+Autismus Spektrum Störung (ASD), männlich, geb. 1985. Migräniker mit autonomer Dysregulation bei Migräneanfällen (konventionell als Stammhirnaura klassifiziert, vgl. 4.6) seit Kindheit, zyklische Migräne seit dem ca. 20. Lebensjahr, 14 Jahre progressiver Verlauf bis zur pharmakologischen Stabilisierung.
 
 ---
 
@@ -94,7 +94,7 @@ Kortikale Spreading Depression mit Hirnstammpropagation hinterlässt Fenster erh
 
 **Indikation:** Migräneprophylaxe. Selektiver Beta-1-Blocker, primär kardiale Wirkung.
 
-**Protektiver Effekt:** Reduktion der Stammhirnaurenfrequenz von progressiv auf 1–2 pro Jahr. Unterbrechung des degenerativen Kreislaufs: Stammhirnaura → Hirnstammsensibilisierung → niedrigere Reflexschwelle → häufigere Episoden. Metoprolol ist damit nicht nur Migräneprophylaxe sondern aktiver Schutz gegen progressive Hirnstammsensibilisierung. Diese Funktion ist klinisch nicht ersetzbar ohne erhebliches Progressionsrisiko.
+**Protektiver Effekt:** Reduktion der ANS-Kollapsepisoden von progressiv auf 1–2 pro Jahr. Unterbrechung des degenerativen Kreislaufs: ANS-Kollaps → autonome Sensibilisierung → niedrigere Reflexschwelle → häufigere Episoden. Metoprolol ist damit nicht nur Migräneprophylaxe sondern aktiver Schutz gegen progressive autonome Sensibilisierung. Diese Funktion ist klinisch nicht ersetzbar ohne erhebliches Progressionsrisiko.
 
 **Antagonistische Implikation auf den Sympathikus:** Metoprolol dämpft die kardiale Sympathikusantwort – den einzigen verfügbaren Gegenregulator gegen den dorsalen Vagus-Shutdown. Der Vagusreflex läuft dadurch ungehinderter durch. Die beobachtete Schwellenverschiebung des Reflexes seit Therapiebeginn ist pharmakologisch plausibel erklärbar durch diese Gegenregulationsschwächung.
 

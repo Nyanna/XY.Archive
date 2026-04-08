@@ -76,7 +76,7 @@ Die Modellvorhersage ist, dass der Übergang von Szenario 1 zu Szenario 3 eine *
 
 #### Voraussetzung
 
-Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unabhängig von Metoprolol aufrechterhält. Metoprolol ist nicht nur Sympathikusblocker, sondern primär Migräneprophylaktikum – sein Entfall ist nur dann nicht regressiv, wenn die dopaminerge Upstream-Stabilisierung die Raphe-Schleife unabhängig dämpft. Ohne diesen Nachweis ist Metoprolol-Entfall kontraindiziert, weil rezidivierende Stammhirnauren die NTS-Schwelle strukturell senken (vgl. kumulativer Effekt rezidivierender Stammhirnauren, autonomes Profil) und damit den autonomen Schutzeffekt des Metoprolol überkompensieren würden.
+Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unabhängig von Metoprolol aufrechterhält. Metoprolol ist nicht nur Sympathikusblocker, sondern primär Migräneprophylaktikum – sein Entfall ist nur dann nicht regressiv, wenn die dopaminerge Upstream-Stabilisierung die Raphe-Schleife unabhängig dämpft. Ohne diesen Nachweis ist Metoprolol-Entfall kontraindiziert, weil rezidivierende ANS-Kollapsepisoden die NTS-Schwelle strukturell senken (vgl. kumulativer Effekt rezidivierender autonomer Entgleisungen, autonomes Profil) und damit den autonomen Schutzeffekt des Metoprolol überkompensieren würden.
 
 #### Testbare Prädiktionen
 

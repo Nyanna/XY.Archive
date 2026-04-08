@@ -264,7 +264,7 @@ Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, se
 | :---- | :---- | :---- |
 | **Natur** | Ionische Welle (K⁺/Glutamat-Diffusion) | Schrittweiser Modulationsverlust |
 | **Geschwindigkeit** | 2–5 mm/min | Stunden (gesamtkortikale Ausbreitung) |
-| **Dauer** | 20–30 Minuten | Stunden bis Stammhirn-Eskalation |
+| **Dauer** | 20–30 Minuten | Stunden bis ANS-Kern-Destabilisierung / CSD-Schwelle |
 | **Hinterlassenes Gewebe** | Refraktär (depolarisationsgelähmt) | Nicht refraktär — das destabilisierte Feld *wächst* |
 | **Antrieb** | Ionische Diffusion (selbstpropagierend) | Anhaltender Phasenversatz zwischen B7 und B8 |
 | **Klinisches Korrelat** | Wandernde Aura (Fortifikationsspektren) | Diffuses Rauschen, progrediente sensorische Instabilität |
