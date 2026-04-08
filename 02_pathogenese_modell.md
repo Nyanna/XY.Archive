@@ -3053,6 +3053,36 @@ Meine Interpretation: Der PFC ist durch die dopaminerge LDX-Stabilisierung des M
 
 Keine Halluzinationen. Keine visuellen Illusionen jenseits des Rauschens. Keine Denkstörung. Das spricht gegen eine fokale CSD im PFC — wenn die Propagation bis in den Frontalkortex reichen würde, wäre die Klarheit nicht möglich. Der PFC war nicht nur geschützt, er war funktional intakt. Ein Fenster mitten in der Migräne.
 
+### Der Anfall, der sich zerlegen ließ
+
+Ich hatte viele Anfälle. Aber nie einen, bei dem ich die Schichten einzeln sehen konnte.
+Normalerweise ist ein Anfall ein einziges Ereignis. Alles kommt gleichzeitig — Schwindel, Übelkeit, Schmerz, Kreislaufkollaps — und man kann nicht sagen, was zuerst da war. Es ist, als würde jemand alle Schalter gleichzeitig umlegen. Man liegt da und wartet, bis es vorbei ist.
+Diesmal war es anders. Diesmal kamen die Symptome nacheinander, mit Abständen, in denen ich sie beobachten konnte.
+
+Nachmittags, nach der Arbeit, Rasenmähen. Anderthalb Stunden, Puls durchgehend um 160. Körperlich anstrengend, aber nichts Ungewöhnliches. Ich habe den veränderten Zustand bemerkt — nicht Schmerz, nicht Schwindel, eher eine Verschiebung. Wie wenn man merkt, dass die Beleuchtung sich geändert hat, aber nicht sagen kann, welche Lampe.
+Danach musste ich das Auto in die Werkstatt fahren. Ich war in dem veränderten Zustand, aber ich konnte fahren. Aktiv fahren — Konzentration auf Verkehr, Schalten, Bremsen. Solange ich aktiv war, hielt etwas den Zustand stabil. Die Symptome waren da — vestibuläre Instabilität, beginnender Schwindel — aber sie eskalierten nicht.
+
+Meine Frau fuhr mich heim. Auf dem Beifahrersitz brach zusammen, was vorher gehalten hatte.
+Kein Kopfschmerz. Ein Ziehen, tief im Kopf, nicht über den Augen wie bei einer Migräne, sondern weiter hinten und tiefer. Im Stammhirn, wenn ich es lokalisieren müsste. Kein stechender Schmerz, kein Pochen. Eher wie ein Muskel, der aufgibt. Eine Sensation von etwas, das herunterfährt.
+Gleichzeitig: Schwindel. Hitzewellen, dann Kältewellen. Zittern. Der Kreislauf wurde instabil — nicht der Kopf, der Körper. Es war, als würde der Boden unter dem autonomen Nervensystem weggezogen. Ich konnte dagegen atmen. Langsames, tiefes Ausatmen, bewusst, kontrolliert. Es half. Solange ich es tat.
+
+### Das Hinlegen
+
+Zu Hause habe ich mich hingelegt. Sofort. Der Tracker hat es als Tiefschlaf klassifiziert. Es war kein Tiefschlaf. Es war Zusammenbruch. Der Körper hat abgeschaltet, nicht eingeschlafen. Der Unterschied ist: Beim Einschlafen gleitet man. Hier ging ein Schalter um.
+Um neun nahm ich DPH, in der Hoffnung, den Zustand abzufangen. Es half nicht. Ob es überhaupt angekommen ist, weiß ich nicht — gegen elf kam das Erbrechen.
+Das Bemerkenswerte: Bis hierhin hatte ich keine Kopfschmerzen. Die autonomen Symptome — der Kreislaufkollaps, die Übelkeit, der Schwindel, das Zittern — liefen seit Stunden. Was ich sonst als „Stammhirnaura" beschrieben hätte, war schon voll da, aber der Kopfschmerz kam erst später. Als hätte jemand den Vorhang in der Mitte des Stücks hochgezogen und ich konnte sehen, dass das, was ich immer für eine Szene gehalten hatte, zwei waren.
+Um halb elf war ich in der vollen Kaskade. Übergeben, Kreislauf am Boden, dann der Kopfschmerz. Sumatriptan-Nasenspray, Paracetamol-Zäpfchen, warten, stöhnen, umherwälzen.
+
+### Zwei Prozesse
+
+Was ich an diesem Abend zum ersten Mal sehen konnte: Die autonomen Symptome und die Kopfschmerzen sind nicht dasselbe Ereignis. Sie laufen parallel, aber unabhängig. Normalerweise kommen sie zusammen — so dicht überlagert, dass man sie nicht trennen kann. Diesmal hatte die Kopfschmerzseite Verspätung, und die autonome Seite stand allein. Stundenlang.
+
+### Die Atemkontrolle
+
+Während des gesamten Verlaufs habe ich intensiv mit der Atmung gegengesteuert. Langsames Ausatmen, bewusst, gegen die autonomen Reflexe. Es funktioniert — erstaunlich breit. Schwindel reduziert, Übelkeit gebremst, Hitzewellen unterdrückt. Aber es hat eine Grenze: Irgendwann kann man nicht mehr. Nicht weil die Technik aufhört zu wirken, sondern weil die Kraft fehlt, sie aufrechtzuerhalten. Man steuert gegen etwas, und die Steuerung selbst erschöpft sich.
+Es ist dasselbe Muster wie beim Fahren versus Beifahrersitz. Solange ich aktiv steuere — ob das Auto oder die Atmung — hält das System. Sobald ich aufhöre, kollabiert es. Die Fähigkeit zu kompensieren und die Sache, die kompensiert werden muss, verbrauchen dieselbe Ressource.
+Am nächsten Morgen: Nystagmus auf der rechten Seite.
+
 ### Was ich anderen sagen würde
 
 Wenn du das liest und dich wiedererkennst — in dem Druck, der keine Müdigkeit ist, in dem Wegdriften, das kein Einschlafen ist, in dem Gefühl, dass Arbeit dich nicht erschöpft sondern zusammenhält, in den Naps, die sich wie Reboots anfühlen — dann bist du möglicherweise nicht faul, nicht unkonzentriert, nicht „einfach müde".
