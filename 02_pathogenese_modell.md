@@ -1424,6 +1424,28 @@ LDX reicht für den polysynaptischen kortikalen Pfad (CSD-Schwelle wird länger 
 
 Die CSD-Auslösung am 07.04.2026 korreliert zeitlich nicht mit dem SCN-Abendsignal, sondern mit dem LDX-Abklingen. LDX-Abklingen destabilisiert auch B8 (B8 ist der stabilere, aber auch er ist auf LDX-Unterstützung angewiesen). Der Moment, in dem **auch B8** die Kohärenz verliert, ist der CSD-Trigger — beide Oszillatoren aktiv, beide instabil, maximale Interferenz.
 
+### **4.8 Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt**
+
+Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.
+
+**Modellspezifische Erklärung:** Sport verbraucht B7-Reserven (vgl. 5.5.1) durch sympathischen Maximaltakt. Nicht der Sport ist der Trigger, sondern die Transition danach: Die anschließende Ruhe regeneriert B7 partiell → aphasischer B7 interferiert mit stabilem(erem) B8 → CSD (vgl. 4.7.1).
+
+Der Mechanismus ist identisch mit der Nap-Kaskade (B.5, B.11) — nur der Einstiegspfad unterscheidet sich (vgl. B.11.6):
+
+| Phase | Physiologischer Prozess | B7-Zustand |
+|:------|:----------------------|:-----------|
+| **Exertion** | Sympathischer Maximaltakt (HR 155–170) | B7/B8 synchron am Limit → Reserven werden aufgebraucht |
+| **Transition** | Belastungsende → parasympathischer Rebound | B7 beginnt zu schwanken (SD steigt, Delay inkonsistent) |
+| **Erzwungene Ruhe** | Autonome Dekompensation oder willentliche Pause | B7 depleted → Fixierung (SD/RMSSD niedrig) |
+| **Partielle Regeneration** | B7-Potential partiell wiederhergestellt | B7 wieder online, aber aphasisch (vgl. 5.5) |
+| **CSD-Fenster** | Aphasischer B7 interferiert mit B8 | Interferenz → CSD (falls Regeneration für Kohärenz nicht reicht) |
+
+Die 160-Minuten-Latenz (Koppen et al.) ist konsistent mit dem Regenerations-Interferenz-Fenster: Depletion + Ruhephase + partielle Regeneration + Kaskade.
+
+**Nackenschmerz als initiales Symptom** ist bei exercise-triggered Migräne häufiger als bei spontaner Migräne (Koppen et al. 2013) — modellkonsistent als Muskeltonusveränderung bei Raphe-Depletion (B7-Projektion auf spinale Motoneurone über kaudale Raphe-Kerne, vgl. D.1.1).
+
+**Autonome Begleitsymptomatik** während der post-exertionalen Transition — Kreislaufinstabilität, Übelkeit, Schwindel — ist autonomer Natur und in Kapitel 5 beschrieben (vgl. 5.5, 5.6). Die CSD-Auslösung selbst folgt dem in 4.7 beschriebenen Zwei-Oszillator-Mechanismus.
+
 ***
 
 ## **5\. Klinische Manifestation II: Autonome Dysregulation**
@@ -1546,61 +1568,9 @@ Wenn das Modell von B7-Erschöpfung oder -Depletion spricht, beschreibt es keine
 
 **Regeneration:** Die Regeneration über Stunden (Schlaf/Ruhe) ist die Umkehrung dieses Prozesses: TPH2 arbeitet die Tryptophan-Pipeline ab, Vesikel werden refüllt, ATP-Speicher regenerieren. Partiell in 1–2 Stunden (ausreichend für aphasisches Feuern, nicht für Kohärenz), vollständig erst nach einer konsolidierten Nacht. Dies erklärt, warum die Post-Nap-Regeneration im Modell zwar B7 wieder „online" bringt, aber nicht notwendig in einen kohärenten Zustand — die partielle Regeneration reicht für Feuern, nicht für konsistente Vesikelfreisetzung pro Spike.
 
-#### **5.5.2 5-HTP/L-Tryptophan-Substitution: Pharmakokinetische Insuffizienz**
+Pharmakologische Interventionen auf der Vesikelökonomie-Ebene (5-HTP-Substitution, Flaschenhals-Tabelle) sind in 03_pharma/09_vesikeloekonomie_5htp.md dokumentiert.
 
-Die Supplementation mit 5-Hydroxytryptophan (5-HTP) oder L-Tryptophan als „natürliche Serotoninerhöhung" wird in der Alternativmedizin für Migräne, Depression und Schlafstörungen propagiert. Im Rahmen des vorliegenden Modells ist die Intervention aus drei Gründen insuffizient:
-
-**1. Pharmakokinetisches Problem:** 5-HTP wird zu ~70% oral absorbiert, aber großteils peripher durch Aromatische-L-Aminosäure-Decarboxylase (AADC) zu Serotonin konvertiert (Leber, Darm, Nieren) *bevor* es die Blut-Hirn-Schranke passiert. Peripheres 5-HT passiert die BHS nicht. Die in Studien berichtete zentrale Bioverfügbarkeit von 48%±15% bezieht sich auf Kombination mit Carbidopa (peripherem Decarboxylase-Inhibitor) — ohne Carbidopa ist die zentrale Verfügbarkeit deutlich niedriger. Die Migränestudien (z.B. Titus 1986: 71% Verbesserung, aber ohne Placeboarm) verwendeten 5-HTP *ohne* Decarboxylase-Inhibitor.
-
-**2. Modellspezifisches Problem:** Selbst bei zentraler Verfügbarkeit wäre die AADC-Konversion **unselektiv** über das gesamte Projektionsfeld — nicht nur DRN-Terminals, nicht nur MRN-Terminals, sondern jede AADC-exprimierende Struktur. Die zelluläre und laminäre B7/B8-Separation (vgl. Anhang F) wird umgangen. Das therapeutische Ziel ist nicht „mehr 5-HT insgesamt", sondern „kohärenteres 5-HT aus den Raphe-Kernen". 5-HTP adressiert das falsche Problem — es erhöht den Gesamtspiegel, ohne die Raphe-Oszillation zu stabilisieren.
-
-**3. Evidenzbasis:** Keine robuste placebokontrollierte Evidenz für 5-HTP-Wirksamkeit bei irgendeiner Indikation. Der häufig zitierte Titus-Trial (1986, Migräne) hatte keinen Placeboarm. Die einzige methodisch akzeptable RCT (200 mg/Tag, IBD-Fatigue) zeigte Placebo-/Zeiteffekt. Meta-Analyse Depression: 2 von 108 Studien methodisch akzeptabel (n=64 total) — keine belastbare Schlussfolgerung möglich.
-
-**Schlussfolgerung:** 5-HTP ist nicht kontraindiziert, sondern **nutzlos**. Das Problem ist nicht exogener 5-HTP-Mangel, sondern endogene TPH2-Effizienz und Autorezeptor-Regulation (vgl. 5.5.1, 03_thalamische_kompensation 1.1). Orale 5-HTP-Supplementation umgeht den Flaschenhals nicht — sie liefert Substrat an Stellen, an denen es nicht gebraucht wird, und nicht an die Stelle, an der es gebraucht wird (die DRN-Neurone selbst).
-
-| Aussage | Evidenzniveau | Quellenbasis |
-|:--------|:-------------|:-------------|
-| 5-HTP periphere AADC-Konversion vor BHS-Passage | Gesichert | Pharmakokinetische Grundlagen |
-| Zentrale Bioverfügbarkeit ohne Carbidopa deutlich reduziert | Gesichert | Pharmakokinetik |
-| AADC-Konversion unselektiv (nicht Raphe-spezifisch) | Gesichert | Enzymverteilung, Anhang F |
-| Keine robuste RCT-Evidenz für 5-HTP bei Migräne/Depression | Evidenzlücke | Systematische Literaturanalyse |
-| 5-HTP adressiert den falschen Flaschenhals | Modellableitung | 5.5.1, 03_thalamische_kompensation 1.1 |
-
-#### **5.5.3 Vesikelökonomie: Flaschenhälse und Interventionsmöglichkeiten**
-
-Die in 5.5.1 beschriebenen biologischen Flaschenhälse der B7-Depletion lassen sich systematisch auf Interventionsmöglichkeiten abbilden:
-
-| Flaschenhals | Intervention | Status | Modellkonsistenz |
-|:-------------|:-------------|:-------|:-----------------|
-| Feuerrate-Ökonomie | LDX (bereits im Einsatz) | Aktiv | Höchste — adressiert die Ursache des Überverbrauchs |
-| Regenerationsfenster | DPH abends (bereits im Einsatz) | Aktiv | Hoch — erzwingt B7-Ruhe über H1-Blockade |
-| Mitochondriale Reserve | CoQ10, Riboflavin, Magnesium | Prüfenswert | Evidenzbasiert in Migräneprophylaxe; mechanistisch: ATP-Regenerationskapazität der DRN-Neurone |
-| Tryptophan-Nachschub | 5-HTP oder L-Tryptophan | Nutzlos | vgl. 5.5.2 |
-| TPH2-Kofaktoren | Eisen, BH4 | Ferritin prüfen | Nur bei Mangel relevant |
-
-**LDX *erschöpft* B7 nicht, es *schont* ihn:** Dopaminerge Stabilisierung senkt chaotische Überaktivität → weniger Spikes pro Zeiteinheit → weniger Vesikelverbrauch → Reserven halten länger. DPH erzwingt über H1-Blockade ein Regenerationsfenster (Vesikelrefill + ATP-Regeneration). Die mitochondrialen Kofaktoren (CoQ10, Riboflavin, Magnesium) sind die einzige bisher nicht adressierte Ebene mit etablierter Evidenz (Migräneprophylaxe-Leitlinien). Mechanismus im Modell: Anhebung der Erschöpfungsschwelle der DRN-Neurone durch verbesserte ATP-Regenerationskapazität.
-
-### **5.6 Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt**
-
-Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.
-
-**Modellspezifische Erklärung:** Sport verbraucht B7-Reserven durch sympathischen Maximaltakt. Nicht der Sport ist der Trigger, sondern die Transition danach: Die anschließende Ruhe regeneriert B7 partiell → aphasischer B7 interferiert mit stabilem(erem) B8 → CSD.
-
-Der Mechanismus ist identisch mit der Nap-Kaskade (B.5, B.11) — nur der Einstiegspfad unterscheidet sich (vgl. B.11.6):
-
-| Phase | Physiologischer Prozess | B7-Zustand |
-|:------|:----------------------|:-----------|
-| **Exertion** | Sympathischer Maximaltakt (HR 155–170) | B7/B8 synchron am Limit → Reserven werden aufgebraucht |
-| **Transition** | Belastungsende → parasympathischer Rebound | B7 beginnt zu schwanken (SD steigt, Delay inkonsistent) |
-| **Erzwungene Ruhe** | Autonome Dekompensation oder willentliche Pause | B7 depleted → Fixierung (SD/RMSSD niedrig) |
-| **Partielle Regeneration** | B7-Potential partiell wiederhergestellt | B7 wieder online, aber aphasisch |
-| **CSD-Fenster** | Aphasischer B7 interferiert mit B8 | Interferenz → CSD (falls Regeneration für Kohärenz nicht reicht) |
-
-Die 160-Minuten-Latenz (Koppen et al.) ist konsistent mit dem Regenerations-Interferenz-Fenster: Depletion + Ruhephase + partielle Regeneration + Kaskade.
-
-**Nackenschmerz als initiales Symptom** ist bei exercise-triggered Migräne häufiger als bei spontaner Migräne (Koppen et al. 2013) — modellkonsistent als Muskeltonusveränderung bei Raphe-Depletion (B7-Projektion auf spinale Motoneurone über kaudale Raphe-Kerne, vgl. D.1.1).
-
-### **5.7 PFC→NTS-Kompensation und deren Erschöpfungsparadox**
+### **5.6 PFC→NTS-Kompensation und deren Erschöpfungsparadox**
 
 Die kortikale NTS-Suppression (5.3) erklärt einen klinisch beobachteten Befund, der konventionell keinen Mechanismus hat:
 
@@ -1682,41 +1652,7 @@ Die DA-Raphe-Instabilität (Abschnitt 2.4.3) und die thalamische Identitätsvuln
 | Synergie DA-Raphe + thalamische Vulnerabilität | Hypothetisch, konsistent | Beide Mechanismen unabhängig abgeleitet, Kombination nicht getestet |
 | Korrelation Aversion ↔ Wahrnehmungsveränderungsgrad | Testbare Vorhersage | Nicht überprüft |
 
-#### **6.3.2 MDMA als iatrogenes Modell der Raphe-Depletion**
-
-MDMA (3,4-Methylendioxymethamphetamin) erzeugt akut und massiv von außen, was der Hit-1-Defekt chronisch und subtil von innen produziert. Dies macht MDMA zum informativen iatrogenen Modell und zur potentiellen Kreuzvalidierung der Population-A/B-Differenzierung.
-
-**MDMA-Mechanismus:** MDMA erzwingt massive 5-HT-Freisetzung über zwei Pfade: SERT-Reversal (der Serotonin-Transporter arbeitet rückwärts und pumpt 5-HT aus dem Neuron) und VMAT2-Disruption (vesikuläres Monoamin-Transporter-2 wird gehemmt → Vesikel können nicht refüllt werden). Das Ergebnis ist erzwungene Vesikelentleerung im gesamten DRN/MRN-Projektionsfeld. Langzeitfolgen bei wiederholter Exposition: TPH2-Inaktivierung (>1 Woche persistent), SERT-Herunterregulierung, 20–40% Reduktion SERT-positiver Faserdichte in allen kortikalen Arealen. Die Schlafarchitektur zeigt reduzierte REM-Latenz, erhöhte Fragmentierung und erhöhte Delta-Power im NREM — exakt die Signatur, die in Anhang B für den PRE-Zustand dokumentiert ist.
-
-**Hit-1-Nachbildung:** MDMA erzeugt persistierende 5-HT1A-Autorezeptor-Desensitivierung und Herunterregulierung der Gαi-Protein-Expression im DRN. 4 Wochen post-MDMA: DRN-Feuerfrequenz reduziert (1,32 vs. 2,05 Spikes/s bei Kontrollen), normalisiert unter 5-HT1A-Antagonist WAY 100635. MDMA produziert akut den Zustand, den Hit 1 chronisch erzeugt: instabiler Autorezeptor → unkontrollierte Feuerrate → vesikuläre Erschöpfung → stochastisch degradierter Output (vgl. 5.5.1).
-
-**Differentielle Population-A/B-Vorhersage:**
-
-| Population | MDMA-Effekt | Mechanismus |
-|:-----------|:------------|:------------|
-| **A** (Hit 1, instabiler 5-HT1A) | Katastrophal | Fehlende Autorezeptor-Bremse → unkontrollierte Depletion → ANS-Kollaps/Migräne-Kaskade |
-| **B** (lokaler Defekt, intakte Raphe) | Potenziell therapeutisch | 5-HT-Überschuss überbrückt lokalen Defekt; Autorezeptor regelt Surplus physiologisch ab |
-
-**Erowid-Fallberichte als Illustration (Evidenzstatus: Illustration, nicht Evidenz):**
-
-- **Fall exp96936 (konsistent mit Population B):** Chronische Migräne nach okzipitalem Trauma; MDMA → 2 Wochen schmerzfrei. Die 2-Wochen-Dauer entspricht der Reakkumulationszeit der lokalen okzipitalen Instabilität. Intaktes Raphe-System regelt den MDMA-Surplus über funktionierenden Autorezeptor ab — keine Depletion, sondern temporäre Überbrückung des lokalen Defizits.
-- **Fall exp79802 (konsistent mit Population A oder serotonerger Vorbelastung):** Manische Störung unter Olanzapin; MDMA → 2 Stunden später schwere Migräne. Psilocybin (5-HT2A-Agonist) als Rescue. Olanzapin dämpft 5-HT2A-Überschuss, verhindert aber nicht die Depletion — konsistent mit einem System, das die MDMA-induzierte Entleerung nicht kompensieren kann.
-
-**MDMA-Kopfschmerz-Prävalenz:** Die Literatur berichtet 3–60% Varianz. Modellkonsistent: Intaktes Raphe-System (Population B) toleriert die 5-HT-Fluktuation; instabiler 5-HT1A (Population A) kippt bei minimaler Depletion. Okzipitale 5-HT2A/CBV-Korrelation bei MDMA-Nutzern (nicht bei Kontrollen) identifiziert die CSD-Initiationszone — okzipital, wo auch klassische Migräneauren beginnen.
-
-**Selbstselektion:** Bei geschätzten ~1,3 Mio Migränikern unter MDMA-Nutzern (Hochrechnung aus Prävalenzdaten) existieren keine publizierten systematischen Berichte zu MDMA bei Migränepatienten — konsistent mit der in 6.3.1 beschriebenen Substanzaversion: Population A meidet instinktiv Substanzen, die den thalamischen Kohärenzverlust verstärken.
-
-| Aussage | Evidenzniveau | Quellenbasis |
-|:--------|:-------------|:-------------|
-| MDMA erzeugt über SERT-Reversal/VMAT2-Disruption massive 5-HT-Freisetzung | Gesichert | Multiple Tiermodelle, Humanstudien |
-| MDMA → persistierende 5-HT1A-Desensitivierung im DRN | Gesichert | Bhatt et al., elektrophysiologische Studien |
-| MDMA → 20–40% SERT-Faserreduktion kortikal | Gesichert | PET-Studien beim Menschen |
-| MDMA → Schlaffragmentierung mit erhöhter Delta-Power | Gesichert | Polysomnographie-Studien |
-| Kopfschmerz-Prävalenz 3–60% bei MDMA | Gesichert | Epidemiologische Surveys |
-| Okzipitale 5-HT2A/CBV-Korrelation bei MDMA-Nutzern | Gesichert | PET/fMRI-Studien |
-| Differentielle Population-A/B-Vorhersage für MDMA-Response | Hypothetisch | Modellableitung aus Hit-1-Mechanismus |
-| Erowid-Fallberichte als Population-A/B-Illustration | Illustration | Erowid exp96936, exp79802 |
-| Selbstselektion durch Substanzaversion | Plausibel, indirekt gestützt | Fehlende Literatur bei kalkulierter Expositionspopulation |
+MDMA als iatrogenes Modell der Raphe-Depletion und Kreuzvalidierung der Population-A/B-Differenzierung ist in 03_pharma/10_mdma_modell.md dokumentiert. Die dort beschriebene differentielle MDMA-Response (Population A: katastrophale Depletion; Population B: potenziell therapeutisch) ist konsistent mit der hier beschriebenen Substanzaversion als thalamischem Schutzmechanismus.
 
 ***
 
@@ -2157,7 +2093,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | CSD benötigt zwei aktive, desynchronisierte Oszillatoren; einzelner supprimierter Oszillator erzeugt keine Interferenz | Modellvorhersage, konsistent mit HR-Spreading-Daten | Anhang B.20, Differentialphänotypologie (4.7) |
 | Post-exertionale Migräne als Nap-Kaskade mit autonomem Einstiegspfad | Modellvorhersage, unifiziert zwei Beobachtungskategorien | Anhang B.20 + B.5/B.11 |
 | B7-Aphasie (reduzierte Amplitude, inkonsistenter Delay) als ANS-Destabilisierungsmechanismus | Einzelfallbeobachtung, HR-Spreading-Daten | Anhang B.20 |
-| Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt, CSD durch post-exertionale Regeneration | Modellvorhersage, epidemiologisch gestützt | Koppen et al. 2013 (38% ETM-Prävalenz, 160 min Latenz) |
+| Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt, CSD durch post-exertionale Regeneration (4.8) | Modellvorhersage, epidemiologisch gestützt | Koppen et al. 2013 (38% ETM-Prävalenz, 160 min Latenz) |
 | Differentielle Phänotypologie: B7-Instabilität → MBA + CSD; B8-Instabilität → Aura ohne ANS; B7-Depletion → reine ANS; B8-Depletion → kein Migränephänotyp | Modellvorhersage, klinisch plausibel, nicht direkt getestet | Abgeleitet aus Innervierungsanatomie (Anhang F), Differentialtabelle (4.7.2) |
 | 95% der MBA-Patienten haben auch typische Aura → konsistent mit variablem B7-Zustand, nicht fixem Phänotyp | Literaturgestützt | Eriksen et al. (MedLink Neurology) |
 | Schwindel mit Nystagmus = vestibuläre Kerne (B7); Schwindel ohne Nystagmus = möglicherweise kortikal (Demarquay) | Vorgeschlagener klinischer Differentialmarker | Abgeleitet, nicht validiert |
@@ -4057,7 +3993,7 @@ Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-
 
 #### **E.1.1 Evidenzbasis**
 
-Epileptische Anfälle können durch experimentelle Manipulationen, die die serotonerge Neurotransmission abschwächen, induziert oder amplifiziert werden. Umgekehrt wirkt die Augmentation der serotonergen Aktivität — durch Tryptophan-Zufuhr, 5-HTP-Gabe (intraperitoneale Applikation im Tiermodell; orale Bioverfügbarkeit limitiert, vgl. 5.5.2), SSRIs oder direkte DRN-Stimulation — antikonvulsiv (Bagdy et al. 2007; Buchanan et al. 2014).
+Epileptische Anfälle können durch experimentelle Manipulationen, die die serotonerge Neurotransmission abschwächen, induziert oder amplifiziert werden. Umgekehrt wirkt die Augmentation der serotonergen Aktivität — durch Tryptophan-Zufuhr, 5-HTP-Gabe (intraperitoneale Applikation im Tiermodell; orale Bioverfügbarkeit limitiert, vgl. 03_pharma/09_vesikeloekonomie_5htp), SSRIs oder direkte DRN-Stimulation — antikonvulsiv (Bagdy et al. 2007; Buchanan et al. 2014).
 
 Das Tiermodell: genetisch epilepsieanfällige Ratten (GEPR) zeigen verringerte 5-HT1A-Rezeptordichte im Hippocampus. Der SSRI Sertralin reduziert dosisabhängig die Intensität audiogener Anfälle, korrelierend mit erhöhter extrazellulärer thalamischer 5-HT-Konzentration (Yan et al. 1995). Neuere Daten zeigen, dass das Anfallsrisiko bei Depression nicht durch SSRIs erhöht wird, sondern durch die zugrundeliegende Serotonin-Defizienz selbst — die Depression ist der Marker, nicht die Ursache (Cardamone et al. 2023).
 
