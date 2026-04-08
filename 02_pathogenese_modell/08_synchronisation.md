@@ -82,7 +82,7 @@ Dieser Übergangszustand ist prognostisch relevant: Bei intakter thalamischer Id
 
 #### **8.4.3 Schlafkonsolidierung als quantitative Evidenz**
 
-Die phänomenologische Dissoziation (8.4.1) stützt die Synchronisierungsthese qualitativ. Die Tracker-Datenanalyse (Anhang B) liefert die quantitative Bestätigung: Die Schlafarchitektur unter LDX konsolidiert sich auf genau den Dimensionen, die das Synchronisierungsmodell vorhersagt — und nicht auf denen, die ein unspezifischer Arousal-Effekt erwarten ließe.
+Die phänomenologische Dissoziation (8.4.1) stützt die Synchronisierungsthese qualitativ. Die Tracker-Datenanalyse (Anhang B; Grundbefunde und Methodik in 2.5.5) liefert die quantitative Bestätigung: Die Schlafarchitektur unter LDX konsolidiert sich auf genau den Dimensionen, die das Synchronisierungsmodell vorhersagt — und nicht auf denen, die ein unspezifischer Arousal-Effekt erwarten ließe.
 
 **Kernbefunde:**
 
@@ -101,6 +101,8 @@ PRE trat intensives Träumen selektiv nach Migräneanfällen auf — post-CSD-er
 ### **8.5 Reformulierung des ADHS-Kerndefizits**
 
 #### **8.5.1 „Konzentration" als Fehlattribution**
+
+Die sensorisch-kognitive Dimension dieser Fehlattribution ist in 3.4.3 beschrieben: ADHS als SNR-Problem (unzureichender thalamischer Gain → schwach diskriminierter Input → kortikales Rauschen). Der vorliegende Abschnitt erweitert die Reformulierung um die interozeptiv-affektive Dimension: Nicht nur der sensorische Input ist verrauscht, sondern auch die internen Zustandssignale sind inkohärent — beide aus demselben Upstream-Defekt, aber über verschiedene Pfade (thalamisch-sensorisch vs. insulär-interozeptiv).
 
 Die Parallele zur Migräne-„Nackenverspannung" (8.3.1) ist strukturell: In beiden Fällen benennt der Patient das saliensteste Downstream-Symptom, und die Diagnostik zementiert es als Kerndefizit.
 
