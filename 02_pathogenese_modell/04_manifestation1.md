@@ -590,3 +590,25 @@ LDX reicht für den polysynaptischen kortikalen Pfad (CSD-Schwelle wird länger 
 **PFC** (pharmakologisch + architektonisch geschützt, MD-Loop) → **Kortex allgemein** (CSD-Schwelle angehoben, aber endlich) → **ANS-Kerne** (monosynaptisch, kein kortikaler Puffer, fallen zuerst)
 
 Die CSD-Auslösung am 07.04.2026 korreliert zeitlich nicht mit dem SCN-Abendsignal, sondern mit dem LDX-Abklingen. LDX-Abklingen destabilisiert auch B8 (B8 ist der stabilere, aber auch er ist auf LDX-Unterstützung angewiesen). Der Moment, in dem **auch B8** die Kohärenz verliert, ist der CSD-Trigger — beide Oszillatoren aktiv, beide instabil, maximale Interferenz.
+
+### **4.8 Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt**
+
+Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.
+
+**Modellspezifische Erklärung:** Sport verbraucht B7-Reserven (vgl. 5.5.1) durch sympathischen Maximaltakt. Nicht der Sport ist der Trigger, sondern die Transition danach: Die anschließende Ruhe regeneriert B7 partiell → aphasischer B7 interferiert mit stabilem(erem) B8 → CSD (vgl. 4.7.1).
+
+Der Mechanismus ist identisch mit der Nap-Kaskade (B.5, B.11) — nur der Einstiegspfad unterscheidet sich (vgl. B.11.6):
+
+| Phase | Physiologischer Prozess | B7-Zustand |
+|:------|:----------------------|:-----------|
+| **Exertion** | Sympathischer Maximaltakt (HR 155–170) | B7/B8 synchron am Limit → Reserven werden aufgebraucht |
+| **Transition** | Belastungsende → parasympathischer Rebound | B7 beginnt zu schwanken (SD steigt, Delay inkonsistent) |
+| **Erzwungene Ruhe** | Autonome Dekompensation oder willentliche Pause | B7 depleted → Fixierung (SD/RMSSD niedrig) |
+| **Partielle Regeneration** | B7-Potential partiell wiederhergestellt | B7 wieder online, aber aphasisch (vgl. 5.5) |
+| **CSD-Fenster** | Aphasischer B7 interferiert mit B8 | Interferenz → CSD (falls Regeneration für Kohärenz nicht reicht) |
+
+Die 160-Minuten-Latenz (Koppen et al.) ist konsistent mit dem Regenerations-Interferenz-Fenster: Depletion + Ruhephase + partielle Regeneration + Kaskade.
+
+**Nackenschmerz als initiales Symptom** ist bei exercise-triggered Migräne häufiger als bei spontaner Migräne (Koppen et al. 2013) — modellkonsistent als Muskeltonusveränderung bei Raphe-Depletion (B7-Projektion auf spinale Motoneurone über kaudale Raphe-Kerne, vgl. D.1.1).
+
+**Autonome Begleitsymptomatik** während der post-exertionalen Transition — Kreislaufinstabilität, Übelkeit, Schwindel — ist autonomer Natur und in Kapitel 5 beschrieben (vgl. 5.5, 5.6). Die CSD-Auslösung selbst folgt dem in 4.7 beschriebenen Zwei-Oszillator-Mechanismus.
