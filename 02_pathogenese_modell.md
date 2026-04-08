@@ -2729,11 +2729,11 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale 
 
 ---
 
-### **B.20 Sonderanalyse: Post-exertionaler Anfall 07.04.2026 — ANS-Kollaps als eigenständiger Prozess**
+### **B.16 Sonderanalyse: Post-exertionaler Anfall 07.04.2026 — ANS-Kollaps als eigenständiger Prozess**
 
 Der Anfall vom 07.04.2026 liefert eine zeitliche Dissoziation zwischen ANS-Kollaps und kortikaler CSD-Kaskade, die in früheren Anfällen nicht beobachtbar war. Die LDX-bedingte Verzögerung der CSD-Schwellenunterschreitung machte die ANS-Symptome als eigenständigen, vorgelagerten Prozess sichtbar.
 
-#### **B.20.1 Zeitlicher Verlauf**
+#### **B.16.1 Zeitlicher Verlauf**
 
 | Phase | Zeitraum (CEST) | HR (bpm) | Bedingung |
 |:------|:----------------|:---------|:----------|
@@ -2749,7 +2749,7 @@ Der Anfall vom 07.04.2026 liefert eine zeitliche Dissoziation zwischen ANS-Kolla
 | 10: Echtes Nadir | 04:45–06:45 | 58–67 | HR-Minimum 58 bpm (04:55), zweites Minimum 59 bpm (05:37) |
 | 11: Morgen | 07:00–08:00 | 70–84 | Aufwachen, rechtsseitiger Nystagmus |
 
-#### **B.20.2 Schlafarchitektur (Tracker-Klassifikation)**
+#### **B.16.2 Schlafarchitektur (Tracker-Klassifikation)**
 
 Die Tracker-Klassifikation der Nacht ist diagnostisch für die Schwere der Destabilisierung:
 
@@ -2765,7 +2765,7 @@ Die Tracker-Klassifikation der Nacht ist diagnostisch für die Schwere der Desta
 
 Die Phase 5 (19:29–20:50) wurde als Deep/REM klassifiziert. Phänomenologisch war dies kein Schlaf, sondern ein autonomer Zusammenbruch mit Immobilität — der Tracker detektiert Bewegungslosigkeit + niedrigen HR und klassifiziert irrtümlich als Schlaf.
 
-#### **B.20.3 Dreifach-Konvergenz als Trigger**
+#### **B.16.3 Dreifach-Konvergenz als Trigger**
 
 Der Anfall entstand durch die zeitliche Konvergenz dreier Kompensationsentzüge:
 
@@ -2777,7 +2777,7 @@ Der Anfall entstand durch die zeitliche Konvergenz dreier Kompensationsentzüge:
 
 Jeder einzelne Faktor wäre kompensierbar gewesen. Die Dreifach-Konvergenz war es nicht.
 
-#### **B.20.4 Befund: ANS-Kollaps als eigenständiger Prozess**
+#### **B.16.4 Befund: ANS-Kollaps als eigenständiger Prozess**
 
 Die zentrale Beobachtung: ANS-Symptome (vestibuläre Instabilität, Schwindel, Hitzewellen, Kältewellen, Zittern, Kreislaufinstabilität) traten ab 18:39 auf — **3,5 Stunden vor der vollen CSD-Kaskade** (22:26).
 
@@ -2791,7 +2791,7 @@ Die zentrale Beobachtung: ANS-Symptome (vestibuläre Instabilität, Schwindel, H
 
 **Interpretation:** Was klinisch als „Stammhirnaura" beschrieben wird, ist kein CSD-Propagationsphänomen im Hirnstamm, sondern ein eigenständiger B7→ANS-Kern-Kollaps. Ohne LDX überlagern sich beide Prozesse zeitlich und sind klinisch nicht trennbar. LDX erzeugte unbeabsichtigt eine diagnostische Separation, indem es die CSD-Schwelle länger hielt, während der ANS-Kollaps ungehindert ablief.
 
-#### **B.20.5 PFC→NTS-Kompensation und deren Erschöpfung**
+#### **B.16.5 PFC→NTS-Kompensation und deren Erschöpfung**
 
 Die bewusste Atemkontrolle (langsames Ausatmen gegen autonome Reflexe) war effektiv gegen:
 - Vestibuläre Instabilität (Schwindel reduziert)
@@ -2802,7 +2802,7 @@ Die Kompensation nutzt den PFC→NTS-Pfad — willentliche Top-down-Kontrolle ü
 
 Empirischer Beleg: Aktives Fahren (Phase 3, hoher PFC-Demand) → NTS-Suppression erfolgreich trotz extremer Triggerbelastung. Beifahrersitz (Phase 4, kein PFC-Demand) → Dekompensation innerhalb von Minuten.
 
-#### **B.20.6 Triptan-Pharmakokinetik im HR**
+#### **B.16.6 Triptan-Pharmakokinetik im HR**
 
 | Phase | Zeitraum | HR (bpm) | Mechanismus |
 |:------|:---------|:---------|:------------|
@@ -2816,7 +2816,7 @@ Das Triptan-Plateau (HR ~82 bpm über ~3 Stunden) ist konsistent mit B.15: Die R
 
 **Differenz zu B.15:** In B.15 lag der Post-Sumatriptan-HR bei 70–73 bpm (Phase 3), hier bei 80–89. Die Differenz erklärt sich durch die exertionale Vorbelastung: Die sympathische Restaktivierung durch die post-exertionale Depletion addiert sich zur Triptan-Vasokonstriktion.
 
-#### **B.20.7 Konsistente Nystagmus-Lateralisierung**
+#### **B.16.7 Konsistente Nystagmus-Lateralisierung**
 
 Am Morgen nach dem Anfall: Nystagmus rechtsseitig. Konsistent mit früheren Anfällen (immer rechts). Zwei Hypothesen:
 
@@ -2827,7 +2827,7 @@ Am Morgen nach dem Anfall: Nystagmus rechtsseitig. Konsistent mit früheren Anf�
 
 Die Konsistenz über multiple Anfälle spricht für die architektonische Variante.
 
-#### **B.20.8 Evidenztabelle**
+#### **B.16.8 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
@@ -2840,7 +2840,7 @@ Die Konsistenz über multiple Anfälle spricht für die architektonische Variant
 | Nystagmus konsistent rechtsseitig | Deskriptiv, über multiple Anfälle | Symptomprotokoll |
 | ANS-Kollaps ≠ Stammhirnaura (≠ Brainstem-CSD) | Modellinterpretation, gestützt durch temporale Dissoziation | B.20.4 |
 
-#### **B.20.9 Modellimplikation**
+#### **B.16.9 Modellimplikation**
 
 Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (MBA) klassifiziert wird, ist kein CSD-Propagationsphänomen, sondern ein eigenständiger B7→ANS-Kern-Kollaps. Die Implikationen:
 
