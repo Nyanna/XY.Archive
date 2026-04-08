@@ -629,7 +629,32 @@ Diese autonome Fehlpassung wirkt nicht als eigenständiger CSD-Treiber, sondern 
 
 **Die Raphe als kortikaler Synchronisator:** Serotonerge DRN-Neurone feuern während Wachheit tonisch — konstant, gleichmäßig, stimulusunabhängig. Dieser tonische Tonus hält kortikale Neurone in einem stabilen depolarisierten Zustand knapp unter der Feuerschwelle: nicht erregt, nicht feuend, aber *bereit zu feuern*. Ohne diesen serotonergen Hintergrund-Drive driften einzelne Neurone in Richtung Hyperpolarisation, und wenn genug Neurone in einer Region hyperpolarisieren, kippen sie kollektiv in einen Down-State — lokaler Schlaf bei globalem Wachsein (Vyazovskiy et al., 2011).
 
-**Lokaler Schlaf ist kein Schlaf, sondern Bistabilität:** Regionen im lokalen Schlaf sind nicht still. Sie alternieren unkontrolliert zwischen Up-States (spontane Bursts) und Down-States (neuronale Schweigephasen). Dies erzeugt kortikalen Output, der nicht stimulusgetrieben ist — der Thalamus kann nicht unterscheiden, ob ein kortikales Signal von echter sensorischer Verarbeitung stammt oder von einem spontanen Up-State-Burst. Die thalamokortikale Rückkopplung wird verrauscht (vgl. Abschnitt 4.3.2 für den vollständigen Kaskadenmechanismus).
+**Lokaler Schlaf ist kein Schlaf, sondern Bistabilität:** Regionen im lokalen Schlaf sind nicht still. Sie alternieren unkontrolliert zwischen Up-States (spontane Bursts) und Down-States (neuronale Schweigephasen). Die spontanen Up-State-Bursts sind funktional äquivalent zu den Gedächtnis-Replays, die während NREM-Schlaf in Up-States laufen — sie erreichen nicht das Bewusstsein, aber sie erzeugen realen Output in die thalamokortikale Schleife. Der Thalamus kann nicht unterscheiden, ob ein kortikales Signal von echter sensorischer Verarbeitung stammt oder von einem spontanen Up-State-Burst. Die thalamokortikale Rückkopplung wird verrauscht.
+
+**Literaturstütze:** Andrillon et al. (2021, *Nature Communications*) zeigten, dass räumlich und zeitlich lokalisierte Slow Waves — ein Muster neuronaler Aktivität, das für den Schlafübergang charakteristisch ist — Aufmerksamkeitsaussetzern vorausgehen und mit zwei distinkt subjektiven Zuständen korrelieren:
+
+| Zustand | Lokalisation der Slow Wave | Phänomenologie |
+| :---- | :---- | :---- |
+| **Mind Wandering** | Frontale Regionen (Aufgabenfokus) | Gedanken schweifen ab, intern generierter Inhalt |
+| **Mind Blanking** | Posteriore Verarbeitungsregionen | Bewusstseinsstrom stoppt, „nichts denken", Verarbeitungslücke |
+
+Bernardi et al. (2015, *Nature Communications*) bestätigten, dass Slow Waves während der Wachheit zu verminderter Hochfrequenz-Aktivität und neuronalem Feuern führten — äquivalent zu einer Unterbrechung der Netzwerkfunktion. Andrillon et al. (2019, *Neuroscience & Biobehavioral Reviews*) argumentieren explizit, dass ADHD-Kernsymptome — Unaufmerksamkeit, Impulsivität, Mind-Blanking — durch lokalen Schlaf erklärbar sind, angesichts der Prävalenz von Schlaf- und Vigilanzstörungen in der ADHD-Population.
+
+**Regionale Vulnerabilität und Modalitätsspezifität:** Die Raphe projiziert diffus, aber nicht identisch stark zu jeder Region. Regionen mit starkem externen Input (Arbeit, Aufgabe, Gespräch) bleiben durch stimulusgetriebene Depolarisation wach, auch wenn der serotonerge Hintergrund schwach ist. Regionen ohne externen Drive — posteriorer visueller Kortex beim monotonen Starren, auditorischer Kortex bei Stille — sind vollständig auf den serotonergen Tonus angewiesen und fallen zuerst.
+
+Beim Aufwachen reaktiviert sich der Kortex nicht simultan. Hochfrequente Veränderungen treten zuerst in frontalen und zuletzt in okzipitalen und inferior-temporalen Arealen auf (Luppi et al. 2025, *Current Biology*; Gonzalez et al. 2026, *bioRxiv*). Der visuelle Kortex wacht zuletzt auf. Post-Schlaf-Wachheit zeigt erhöhte Delta-Aktivität in posterioren Ableitungen — persistierende schlafähnliche Aktivität spezifisch im visuellen Kortex (Marzano et al. 2011). Wenn der Aufwachprozess bei dysregulierter Raphe ohnehin instabil ist, dann ist die Region, die am längsten im Off-State bleibt, der posteriore Kortex. Dies erklärt die Migräne-Topologie (okzipitaler Beginn, vgl. 4.3) und die phänomenologisch berichtete prolongierte Sleep Inertia.
+
+**Modalitätsspezifische Asymmetrie der Off-State-Last:** Der visuelle Kortex verarbeitet räumlich-parallel: jeder bistabile Patch produziert Output, der zwischen vollem Signal und Schweigen alterniert. Externer visueller Input erzwingt Verarbeitung, die der Off-State-Kortex nicht kohärent liefern kann — Augenschluss eliminiert den Input und damit den Konflikt. Der auditorische Kortex verarbeitet temporal-sequenziell: Periodischer Input (Musik, Rhythmus) kann bistabile Neurone in phasengekoppeltes Feuern zwingen — externer Takt überschreibt die stochastische Up/Down-Alternation. Ob externer Input den Off-State-Konflikt verschärft oder auflöst, hängt davon ab, ob die Modalität räumlich-parallele Kohärenz erfordert (visuell: Input = Last) oder temporal-sequenzielles Entrainment ermöglicht (auditorisch: Input = Stabilisierung). Dies erklärt die kompensatorische Emergenz von Musik als externem Taktsubstitut (vgl. Anhang D, D.6.4).
+
+**Tagesprofil als Raphe-Tonus-Proxy:** Das Tagesprofil der Off-State-Intrusionen bildet nicht eine U-förmige Chronotyp-Kurve ab, sondern ein monoton abfallendes Defizit-Profil:
+
+| Tageszeit | Raphe-Defizit-Folge | Subjektive Erfahrung | Klinische Kodierung |
+|---|---|---|---|
+| Morgens | Raphe-Tonus minimal, keine Kompensation → Schlafintrusionen | Zwei-Stunden-Loch, Benommenheit, Mind Blanking | „ADHD-Symptome", „morgendliche Trägheit" |
+| Nachmittags | Raphe-Tonus insuffizient, partielle Kompensation durch Aufgaben-Arousal | Aufgabenabhängige Wachheit, Nap-Bedarf | „Konzentrationsdefizit" |
+| Abends | Circadianes Alerting-Maximum + akkumulierter Homöostat → kompensatorische Arousal-Quellen überdecken Raphe-Defizit | Subjektiv „endlich wach", produktiv, klar | „Late-Chronotyp", „Abendmensch" |
+
+Das Abend-Wachsein ist kein Chronotyp-Peak, sondern die einzige Tagesphase mit ausreichender Kompensation. Die LDX-Beobachtung falsifiziert die Chronotyp-Interpretation: Unter LDX tritt erstmals kohärente Abendmüdigkeit auf. LDX ist kein Zeitgeber — dass sich die subjektive Phase dennoch verschiebt, zeigt, dass das Abend-Wachsein ein Kompensationsartefakt war. Testbare Vorhersage: Chronotyp-Fragebogen (MEQ/MCTQ) PRE/POST Stimulanzien bei ADHD-Patienten — Shift Richtung Morningness = Kompensationsartefakt (Population A, vgl. 05_adhs_difference).
 
 **Zyklische Vulnerabilität durch B7/B8-Interferenz und zirkadiane Modulation:** Die Anfälligkeit für lokalen Schlaf variiert zyklisch, getrieben durch zwei komplementäre Mechanismen mit unterschiedlicher Zeitskala:
 
@@ -945,46 +970,9 @@ Die Raphe-Feuerrate fällt im Schlaf auf Minimum (REM: nahe Null) und muss beim 
 
 Diese Beschreibung erfasst den akuten Schlaf-Wach-Übergang (Abschnitt 4.3.1). Der nachfolgende Abschnitt erweitert den Mechanismus um eine langsamere, über Stunden aufbauende Kaskade, die denselben Endpunkt (CSD) über einen anderen Eintrittsweg erreicht.
 
-#### **4.3.2 Lokaler Schlaf: Regionale Off-State-Intrusion bei globaler Wachheit**
+#### **4.3.2 Die Nap-Kaskade: Parallele Manifestationen desselben Zustands**
 
-Serotonerge DRN-Neurone feuern während Wachheit tonisch — konstant, gleichmäßig, unabhängig vom aktuellen Stimulus. Diese tonische Feuerrate erzeugt einen gleichmäßigen serotonergen Tonus über den gesamten Kortex, weil die Raphe massiv und diffus projiziert. Die Funktion dieses Tonus: Er hält kortikale Neurone in einem stabilen depolarisierten Zustand — nicht erregt, nicht feuernd, aber bereit zu feuern. Das ist der Wachzustand auf zellulärer Ebene.
-
-Ohne diesen tonischen Drive driften einzelne Neurone in Richtung Hyperpolarisation. Wenn genug Neurone in einer Region hyperpolarisieren, kippen sie kollektiv in einen Down-State — das ist lokaler Schlaf (Vyazovskiy et al. 2011). Der Kortex desynchronisiert nicht, weil etwas ihn aktiv auseinanderzieht. Er desynchronisiert, weil der tonische Klebstoff fehlt, der ihn zusammenhält.
-
-Die Raphe projiziert diffus, aber nicht identisch stark zu jeder Region. Entscheidend: Regionen, die starken externen Input bekommen (Arbeit, Aufgabe, Gespräch), bleiben durch stimulusgetriebene Depolarisation wach, auch wenn der serotonerge Hintergrund schwach ist. Regionen ohne externen Drive — posteriorer visueller Kortex beim Starren auf den Bildschirm, auditorischer Kortex bei monotoner Musik — sind vollständig auf den serotonergen Tonus angewiesen. Wenn der insuffizient ist, fallen sie zuerst.
-
-**Bistabilität im Off-State:** Der Off-State ist nicht Stille. Neurone im lokalen Schlaf alternieren zwischen Up-States (spontane Bursts) und Down-States (Schweigen). Während Wachheit feuern Neurone tonisch und stimulusgetrieben. Im Zwischenzustand tun sie beides, unvorhersagbar. Die spontanen Up-State-Bursts sind nicht stimulusgetrieben — sie sind funktional äquivalent zu den Gedächtnis-Replays, die während NREM-Schlaf in Up-States laufen. Sie erreichen nicht das Bewusstsein, aber sie erzeugen realen Output in die thalamokortikale Schleife.
-
-**Literaturstütze:** Andrillon et al. (2021, *Nature Communications*) zeigten, dass räumlich und zeitlich lokalisierte Slow Waves — ein Muster neuronaler Aktivität, das für den Schlafübergang charakteristisch ist — Aufmerksamkeitsaussetzern vorausgehen und mit zwei distinkt subjektiven Zuständen korrelieren, abhängig von der Lokalisation der Intrusion:
-
-| Zustand | Lokalisation der Slow Wave | Phänomenologie |
-| :---- | :---- | :---- |
-| **Mind Wandering** | Frontale Regionen (Aufgabenfokus) | Gedanken schweifen ab, intern generierter Inhalt |
-| **Mind Blanking** | Posteriore Verarbeitungsregionen | Bewusstseinsstrom stoppt, „nichts denken", Verarbeitungslücke |
-
-Bernardi et al. (2015, *Nature Communications*) bestätigten, dass Slow Waves während der Wachheit zu verminderter Hochfrequenz-Aktivität und neuronalem Feuern führten — äquivalent zu einer Unterbrechung der Netzwerkfunktion.
-
-**Verbindung zu ADHD:** Andrillon et al. (2019, *Neuroscience & Biobehavioral Reviews*) argumentieren explizit, dass ADHD-Kernsymptome — Unaufmerksamkeit, Impulsivität, Mind-Blanking — durch lokalen Schlaf erklärbar sind, angesichts der Prävalenz von Schlaf- und Vigilanzstörungen in der ADHD-Population.
-
-#### **4.3.3 Posteriore Vulnerabilität: Der frontale Aufwachgradient**
-
-Beim Aufwachen reaktiviert sich der Kortex nicht simultan. Hochfrequente Veränderungen treten zuerst in frontalen und zuletzt in okzipitalen und inferior-temporalen Arealen auf (Luppi et al. 2025, *Current Biology*; Gonzalez et al. 2026, *bioRxiv*). Der visuelle Kortex wacht zuletzt auf — bei jedem Menschen.
-
-Post-Schlaf-Wachheit zeigt erhöhte Delta-Aktivität in posterioren Ableitungen — persistierende schlafähnliche Aktivität spezifisch im visuellen Kortex (Marzano et al. 2011). Wenn der Aufwachprozess bei dysregulierter Raphe ohnehin instabil ist, dann ist die Region, die am längsten im Off-State bleibt, der posteriore Kortex. Das ist nicht Pathologie — es ist die normale Aufwach-Hierarchie, die *hängenbleibt*.
-
-Dies erklärt das phänomenologisch berichtete „Druckgefühl hinter dem Auge" nach destabilisierenden Naps: Der Frontalkortex ist online genug, um zu merken, dass posterior Verarbeitungskapazität fehlt. Dieses Defizit wird als Druck repräsentiert, weil das Bewusstsein keinen besseren Code für eine Region hat, die nicht vollständig reaktiviert. Es ist kein physischer Druck und kein CSD — es ist die bewusste Wahrnehmung prolongierter, asymmetrischer Sleep Inertia im posterioren Kortex.
-
-**Modalitätsspezifische Asymmetrie der Off-State-Last**
-
-Die posteriore Vulnerabilität ist nicht auf den visuellen Kortex beschränkt, aber die phänomenologische Konsequenz ist modalitätsspezifisch gegenläufig.
-
-Der visuelle Kortex verarbeitet räumlich-parallel: jeder bistabile Patch produziert Output, der zwischen vollem Signal und Schweigen alterniert. Externer visueller Input erzwingt Verarbeitung, die der Off-State-Kortex nicht kohärent liefern kann — das Ergebnis ist inkohärenter feedforward-Output in den PFC. Augenschluss eliminiert den Input und damit den Konflikt: der Off-State wird funktional irrelevant, der PFC registriert keine Diskrepanz, der Bewusstseinsdruck verschwindet.
-
-Der auditorische Kortex verarbeitet temporal-sequenziell. Periodischer Input (Musik, Rhythmus) kann bistabile Neurone in phasengekoppeltes Feuern zwingen — externer Takt überschreibt die stochastische Up/Down-Alternation. Der periodische Stimulus liefert exakt das, was dem endogenen Raphe-Drive fehlt: einen zeitlichen Synchronisator. Stille dagegen entzieht dem auditorischen Kortex den einzigen verfügbaren externen Drive — er fällt in dasselbe Off-State-Patchwork wie der visuelle Kortex, mit spontanen Up-State-Bursts ohne Stimulus-Korrelat, und der PFC detektiert inkohärenten auditorischen Output.
-
-Die Asymmetrie folgt direkt aus der Verarbeitungsmodalität: ob externer Input den Off-State-Konflikt verschärft oder auflöst, hängt davon ab, ob die Modalität räumlich-parallele Kohärenz erfordert (visuell: Input = Last) oder temporal-sequenzielles Entrainment ermöglicht (auditorisch: Input = Stabilisierung). Dies erklärt die kompensatorische Emergenz von Musik als externem Taktsubstitut (vgl. Anhang D, D.6.4) — nicht als Ablenkung, sondern als funktionaler Ersatz für insuffizienten serotonergen Tonus im auditorischen Kortex.
-
-#### **4.3.4 Die Nap-Kaskade: Parallele Manifestationen desselben Zustands**
+Der lokale Schlaf (regionale Off-State-Intrusionen bei globaler Wachheit), die posteriore Vulnerabilität (frontaler Aufwachgradient) und die modalitätsspezifische Asymmetrie der Off-State-Last sind als Konsequenzen des Raphe-Primärdefekts in Abschnitt 2.5.4 beschrieben. Im Migränekontext bilden sie die Voraussetzung für die nachfolgende Kaskade: Posteriore Regionen ohne externen Drive kippen zuerst in Off-States, die thalamokortikale Rückkopplung wird verrauscht, und die CSD-Schwelle sinkt progressiv.
 
 Der Nap ist nicht Auslöser der CSD-Kaskade, sondern — wie die CSD selbst — eine Downstream-Manifestation desselben Desynchronisationszustands. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig und nicht initiierend. Der Pre-Nap-HR ist der stärkste verfügbare Zustandsindikator: ≥80 bpm = System stabil, Nap safe; <75 bpm = System bereits destabilisiert, Nap beschleunigt Kaskade (PPV 85% bei ≥80 bpm, Anhang B.11). PRE-Kaskaderate 58%, POST unter LDX nur 11% — die stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
 
@@ -1016,7 +1004,7 @@ Am Thalamus ist das Netto-Ergebnis identisch. In allen drei Kontexten ist der Ko
 
 Unter LDX ist der kompensatorische Zusammenhang aufgelöst: POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die verbleibenden POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch externe Faktoren motiviert (verkürzte Schlafzeit, spätes Zubettgehen). Die pharmakologische Synchronisation über die Raphe adressiert den Upstream-Defekt: stabilerer serotonerger Tonus → globale kortikale Kohärenz sowohl im Schlaf als auch im Wachzustand → kein kompensatorischer Nap-Bedarf → keine Kaskade.
 
-#### **4.3.5 Trigeminale Sensitisierung als parallele Kaskade**
+#### **4.3.3 Trigeminale Sensitisierung als parallele Kaskade**
 
 Die thalamokortikale Destabilisierung (Phase 4) verläuft parallel zu einer trigeminalen Sensitisierung, die unabhängig die CSD-Schwelle senkt:
 
@@ -1026,7 +1014,7 @@ Das ergibt zwei parallele Kaskaden, die sich gegenseitig verstärken: die eine n
 
 **Naratriptan-Fenster:** Bei diesem Verlauf existiert ein breites therapeutisches Fenster. Das Naratriptan greift an der trigeminalen Sensitisierung an (5-HT₁B/D auf trigeminalen Afferenzen, CGRP-Hemmung) und unterbricht die vaskulär-trigeminale Seite der Doppelkaskade früh genug, dass die thalamokortikale Seite allein die CSD-Schwelle nicht erreicht. Im Gegensatz zur akuten Raphe-Oszillation (4.3.1), bei der die CSD oft bereits läuft wenn der Schmerz einsetzt, hat die Nap-Kaskade ein Zeitfenster von Stunden, in dem die Intervention greifen kann.
 
-#### **4.3.6 Beobachtung unter Lisdexamfetamin**
+#### **4.3.4 Beobachtung unter Lisdexamfetamin**
 
 LDX eliminiert die gesamte Kette an der Wurzel: Stabilere Raphe → stärkerer tonischer Arousal-Drive → kortikale Regionen bleiben online auch ohne externen Drive → kein Patchwork → kein Nap nötig → keine Sleep Inertia → keine Kaskade.
 
@@ -1039,19 +1027,7 @@ Powernap unter Substanz möglich ohne Migränekonversion. Aufwachen deutlich erl
 | **Klarere Abendmüdigkeit** | Zirkadianes Signal stark genug für bewusste Wahrnehmung; Zustandswechsel wird kohärent statt als Kollaps erlebt |
 | **Subjektiv „schärferes" Bewusstsein** | Kortex synchron und ungedämpft — erstmals der Grundzustand ohne die doppelte Bremse aus noradrenerger Dämpfung (ehemals Metoprolol) und chronischer Desynchronisation |
 
-#### **4.3.7 Tagesprofil der Schlafintrusionen als Raphe-Tonus-Proxy und Chronotyp-Fehlattribution**
-
-Das Tagesprofil der Off-State-Intrusionen (vgl. 4.3.2) bildet nicht eine U-förmige Chronotyp-Kurve ab, sondern ein **monoton abfallendes Defizit-Profil**, bei dem die Kompensation über den Tag akkumuliert:
-
-| Tageszeit | Raphe-Defizit-Folge | Subjektive Erfahrung | Klinische Kodierung |
-|---|---|---|---|
-| Morgens | Raphe-Tonus minimal, keine Kompensation → Schlafintrusionen, Off-State-Fragmente | Zwei-Stunden-Loch (vgl. Anhang C), Benommenheit, Mind Blanking | „ADHD-Symptome", „morgendliche Trägheit" |
-| Nachmittags | Raphe-Tonus insuffizient, partielle Kompensation durch Aufgaben-Arousal | Aufgabenabhängige Wachheit, Nap-Bedarf | „Konzentrationsdefizit" |
-| Abends | Circadianes Alerting-Maximum + akkumulierter Homöostat → kompensatorische Arousal-Quellen überdecken Raphe-Defizit | Subjektiv „endlich wach", produktiv, klar | „Late-Chronotyp", „Abendmensch" |
-
-**Das Abend-Wachsein ist kein Chronotyp-Peak, sondern die einzige Tagesphase mit ausreichender Kompensation.** Die LDX-Beobachtung (4.3.6) falsifiziert die Chronotyp-Interpretation: Unter LDX tritt erstmals kohärente Abendmüdigkeit auf. LDX ist kein Zeitgeber — es verschiebt keine circadiane Phase. Dass sich die subjektive Phase dennoch verschiebt, zeigt, dass das Abend-Wachsein ein Kompensationsartefakt war. LDX macht die Kompensation überflüssig → das darunter liegende Müdigkeitssignal wird sichtbar. Die Fehlattribution ist strukturell analog zur Nackenverspannungs-Fehlattribution der Migräne (vgl. 8.3.1).
-
-**Testbare Vorhersage:** Chronotyp-Fragebogen (MEQ oder MCTQ) PRE/POST Stimulanzien bei ADHD-Patienten. Shift Richtung Morningness → Kompensationsartefakt (Population A, vgl. 05_adhs_difference). Kein Shift → echter Chronotyp oder Population B.
+Das Tagesprofil der Schlafintrusionen als Raphe-Tonus-Proxy und die Chronotyp-Fehlattribution (Late-Chronotyp als Kompensationsartefakt) sind Defekt-Downstream-Phänomene, nicht Migräne-spezifisch, und in 2.5.4 beschrieben.
 
 ### **4.4 CSD-Auslösemechanismus: Nadir, Rebound und Depolarisationswelle**
 
@@ -1918,13 +1894,13 @@ Vier klinische Entitäten — ADHD, Migräne, generalisierte Epilepsie und Late-
 
 **Der Schlüsselbefund** ist die Dissoziation zwischen generalisierter und fokaler Epilepsie: Der Late-Chronotyp segregiert spezifisch mit **globalen Synchronisationsstörungen** (ADHD, Migräne, generalisierte Epilepsie) und **nicht** mit lokalen Hardwaredefekten (fokale Epilepsie). Die Gesamtkohorte (alle Epilepsien) zeigt keinen signifikanten Unterschied — der Effekt wird durch die fokalen Fälle verdünnt (Kendis et al. 2015). Manni et al. (2016) bestätigen: fokale Epilepsie-Patienten sind per Fragebogen eher Morning-orientiert, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive Phase.
 
-**Modellinterpretation:** Der Late-Chronotyp ist kein unabhängiger circadianer Trait, sondern ein Downstream-Marker des Raphe-Defizits. Die subjektive Erfahrung „abends erst richtig wach werden" ist das Tagesprofil der Kompensation: Tagsüber reicht der Raphe-Tonus nicht für kortikale Kohärenz → Schlafintrusionen → klinisch als „unaufmerksam" kodiert. Abends konvergieren circadianes Alerting-Maximum und akkumulierter Homöostat so, dass kompensatorische Arousal-Quellen den Raphe-Defizit überdecken → klinisch als „Abendtyp" kodiert (vgl. 4.3.7).
+**Modellinterpretation:** Der Late-Chronotyp ist kein unabhängiger circadianer Trait, sondern ein Downstream-Marker des Raphe-Defizits. Die subjektive Erfahrung „abends erst richtig wach werden" ist das Tagesprofil der Kompensation: Tagsüber reicht der Raphe-Tonus nicht für kortikale Kohärenz → Schlafintrusionen → klinisch als „unaufmerksam" kodiert. Abends konvergieren circadianes Alerting-Maximum und akkumulierter Homöostat so, dass kompensatorische Arousal-Quellen den Raphe-Defizit überdecken → klinisch als „Abendtyp" kodiert (vgl. 2.5.4).
 
 ### **8.8 Nap als PFC-Entlastung im Kontext interozeptiver Inkohärenz**
 
 Die PFC-Überlastung durch tonische Raphe-Interferenz erzeugt einen Zustand, in dem der Kortex die Verarbeitungslast nicht mehr trägt. Der Nap ist die autonome Entlastungsreaktion — kein Tiefschlaf (~50 min Light Sleep, HR bleibt auf Tagesniveau), sondern **PFC-Entlastung ohne kortikalen Reset**. LDX macht den Nap nicht überflüssig, sondern effektiver: Die Reset-Erfolgsrate verdoppelt sich unter pharmakologischer Synchronisierung (PRE 38% → POST 78%; Anhang B.11), weil der stabilisierte Raphe-Tonus dem PFC-Reset erlaubt, tatsächlich zu greifen, anstatt gegen fortlaufende Desynchronisierung anzuarbeiten.
 
-Der prodromale Charakter des Naps, seine Rolle als Migräne-Kaskade und die prädiktiven Faktoren (Pre-Nap-HR, Vornacht-Density) sind Migräne-spezifisch und in Kapitel 4 beschrieben (vgl. 4.3.4 Nap-Kaskade, 4.7.1 CSD-Bedingung; Einzelfalldaten in Anhang B.5, B.11).
+Der prodromale Charakter des Naps, seine Rolle als Migräne-Kaskade und die prädiktiven Faktoren (Pre-Nap-HR, Vornacht-Density) sind Migräne-spezifisch und in Kapitel 4 beschrieben (vgl. 4.3.2 Nap-Kaskade, 4.7.1 CSD-Bedingung; Einzelfalldaten in Anhang B.5, B.11).
 
 ---
 
@@ -4541,7 +4517,7 @@ Der Befund von Kendis et al. (2015) liefert eine unabhängige externe Validierun
 | **Fokale Epilepsie** | **Kein signifikanter Unterschied** zu Kontrollen | Lokaler Hardwaredefekt → kein Desynchronisationsprofil → normaler Chronotyp |
 | **Gesamtkohorte (alle Epilepsien)** | Kein signifikanter Unterschied | Effekt wird durch fokale Fälle verdünnt — der Synchronisationsmarker ist nur in der stratifizierten Analyse sichtbar |
 
-Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downstream-Marker globaler Raphe-vermittelter Desynchronisation ist (vgl. 4.3.7, 8.7.1), sollte er spezifisch mit Epilepsieformen segregieren, die globale Synchronisationsstörungen reflektieren — nicht mit fokalen Läsionen. Kendis et al. bestätigen exakt dieses Muster. Der Scoping Review 2024 (11 Studien, 1.167 PWE, 4.657 Kontrollen) repliziert die Assoziation: generalisierte Epilepsie konsistent mit Eveningness assoziiert, fokale Epilepsie nicht.
+Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downstream-Marker globaler Raphe-vermittelter Desynchronisation ist (vgl. 2.5.4, 8.7.1), sollte er spezifisch mit Epilepsieformen segregieren, die globale Synchronisationsstörungen reflektieren — nicht mit fokalen Läsionen. Kendis et al. bestätigen exakt dieses Muster. Der Scoping Review 2024 (11 Studien, 1.167 PWE, 4.657 Kontrollen) repliziert die Assoziation: generalisierte Epilepsie konsistent mit Eveningness assoziiert, fokale Epilepsie nicht.
 
 Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen per Fragebogen eher Morning-Orientierung, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive circadiane Phase.
 
