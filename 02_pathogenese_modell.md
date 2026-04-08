@@ -862,7 +862,7 @@ Die serotonerge Konvergenz der Prophylaktika adressiert die Empfindlichkeit (Int
 | Valproat | Serotonerge Modulation über GABAerge Verstärkung | Indirekte Stabilisierung der Raphe-Aktivität |
 | Amitriptylin | SERT-Hemmung | Direkte Erhöhung der Serotonin-Verfügbarkeit |
 | Topiramat | Indirekte serotonerge Modulation | Multimodal, serotonerge Komponente |
-| Triptane (akut) | 5-HT1B/D-Agonismus | Direkte Kaskaden-Intervention über Serotoninrezeptoren |
+| Triptane (akut) | 5-HT1B/D-Agonismus | Präsynaptische Hemmung der trigeminalen Transmitterfreisetzung (Glied 1) + Raphe-Terminal-Kompensation des 1A-Feedback-Defekts (Glied 2, modellspezifisch); vgl. 4.4.5, 8.9.4 |
 | CGRP-Antagonisten | Einzige Ausnahme | Kaskade, nicht Auslöser – ob CGRP upstream oder parallel zu Serotonin liegt, ist unklar |
 
 **PFC-Schutz und seine Grenzen:** Der PFC ist unter LDX pharmakologisch geschützt — der MD-Thalamus-PFC-Loop ist dopaminerg stabilisiert, was die Kippschwelle in der thalamischen Kaskade erhöht (vgl. Anhang F.4.2). Dieser Schutz ist eine höhere Schwelle, kein absoluter Schutz. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
@@ -1183,7 +1183,9 @@ Die metabolische Krise hat zwei distinkte Modi — einen graduellen Vorläufer u
 
 **Die Pre-CSD metabolische Krise ist dagegen ein gradueller Vorläufer** — die ATP-Konkurrenz zwischen Vesikelrecycling und Ionenhomöostase akkumuliert über Stunden und senkt die CSD-Schwelle progressiv. Die Vasodilatation als Kompensationsversuch erklärt, warum CSD am Ende einer Destabilisierungssequenz steht, nicht am Anfang: Das System versucht, die Ionenhomöostase vaskulär aufrechtzuerhalten, und die CSD tritt ein, wenn diese Kompensation versagt.
 
-**Triptan-Mechanismus (Präzisierung):** Triptane (5-HT1B/1D-Agonisten) reduzieren die trigeminale Feuerrate → weniger Spikes → weniger ATP-Verbrauch für Vesikelrecycling → mehr ATP für Na⁺/K⁺-ATPase → Clearance erholt sich → Na⁺-Gradient normalisiert. Dies erklärt die Triptan-Wirkung präziser als reine Vasokonstriktion: Triptane verschieben die ATP-Allokation zurück zugunsten der Ionenhomöostase.
+**Triptan-Mechanismus (Präzisierung):** Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) am trigeminalen Terminal — nicht die Feuerrate der peripheren trigeminalen Neurone (Giniatullin 2022, BJP), sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich. Dies erklärt die Triptan-Wirkung präziser als reine Vasokonstriktion: Triptane verschieben die ATP-Allokation zurück zugunsten der Ionenhomöostase [gesichert]. Quantitative Stützung: Elimination der Exozytose verdoppelt den präsynaptischen ATP-Spiegel auf 3,4 mM; Na⁺/K⁺-ATPase allein ist eine geringe Last (Rangaraju et al. 2014, Cell; Bhatt et al. 2021, Science Advances; Attwell & Laughlin 2001, Neuron).
+
+**Raphe-Kompensation (Glied 2, modellspezifisch):** Triptane aktivieren zusätzlich 5-HT1B/1D-Autorezeptoren auf Raphe-Terminalen (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen → Unterbrechung des Burst-Deplete-Zyklus → stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird [hypothetisch — modellspezifisch].
 
 ### **4.5 CSD als kompensatorische Resynchronisation**
 
@@ -1976,7 +1978,7 @@ Zwei Befunde sind mechanistisch aufschlussreich:
 
 #### **8.9.1 Was Sumatriptan tut und was es nicht tut**
 
-Sumatriptan unterbricht den Migräneanfall **nicht**. Der 5-HT1B/1D-Agonismus blockiert die trigeminovaskuläre Schmerzweiterleitung — die nozizeptive Signaltransmission vom Trigeminus zum Thalamus wird unterdrückt. Das tonische Interferenzfeld (vgl. 4.2, Raphe-vermittelte kortikale Irritation) wird durch Sumatriptan nicht adressiert. Die Raphe-Instabilität, die CSD-Kaskade, die kortikale Erregbarkeitsverschiebung — all das läuft weiter.
+Sumatriptan unterbricht den Migräneanfall **nicht**. Der 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) am trigeminalen Terminal [gesichert] (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP: Feuerrate bleibt, Vesikelexozytose pro Spike wird reduziert). Die resultierende Schmerzblockade beruht auf der Unterbrechung der nozizeptiven Signaltransmission vom Trigeminus zum Thalamus. Die meningeale Vasokonstriktion ist ein sekundärer Effekt, nicht der Primärmechanismus. Das tonische Interferenzfeld (vgl. 4.2, Raphe-vermittelte kortikale Irritation) wird durch Sumatriptan nicht adressiert. Die Raphe-Instabilität, die CSD-Kaskade, die kortikale Erregbarkeitsverschiebung — all das läuft weiter.
 
 #### **8.9.2 Schlaf als eigentlicher Resynchronisationsmechanismus**
 
@@ -1998,6 +2000,22 @@ Das klinisch bekannte limitierte Zeitfenster für Sumatriptan-Wirksamkeit erklä
 | **Rezeptordesensitivierung** | 5-HT1B/1D-Rezeptoren desensitivieren unter anhaltendem serotonergen Stress | Reduzierte Bindungsaffinität → Sumatriptan weniger wirksam |
 
 Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto geringer die Wirksamkeit — nicht weil der Schmerz „stärker" wird, sondern weil der Schmerz den peripheren Kanal verlässt, auf den Sumatriptan wirkt.
+
+#### **8.9.4 Dreigliederige Triptan-Wirkung im Modell**
+
+Die vollständige Triptan-Mechanistik im Modell umfasst drei Glieder, die über unterschiedliche Rezeptorpopulationen und mit unterschiedlichen Evidenzgraden operieren:
+
+**Glied 1 — Trigeminales Terminal [gesichert]:** 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) — nicht die Feuerrate, sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich (vgl. 4.4.5). Quantitative Stützung: Elimination der Exozytose verdoppelt präsynaptischen ATP-Spiegel auf 3,4 mM (Rangaraju et al. 2014, Cell); Vesikelpool ist dominante metabolische Ruhelast am Nerventerminal (Bhatt et al. 2021, Science Advances); synaptisches Energiebudget: Vesikelrecycling > Ionenpumpen (Attwell & Laughlin 2001, Neuron; Harris et al. 2012, Neuron).
+
+**Glied 2 — Raphe-Terminal [hypothetisch — modellspezifisch]:** 5-HT1B/1D-Autorezeptoren auf DRN/MRN-Terminalen werden durch Triptane aktiviert (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1, vgl. 2.2): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen → Unterbrechung des Burst-Deplete-Zyklus (vgl. 5.5.1) → stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird.
+
+**Glied 3 — MOH-Mechanismus [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die kompensatorische 1B/1D-Bremse desensitisiert, fällt das System zurück in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt → Medication Overuse Headache. Die kurze Halbwertszeit ist nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren (vgl. E.5.3).
+
+| Glied | Wirkmechanismus | Rezeptor | Evidenzgrad |
+|:------|:---------------|:---------|:------------|
+| **1 — Trigeminal** | Präsynaptische Transmitterhemmung → ATP-Allokationsverschiebung → Ionenhomöostase | 5-HT1B/1D auf trigeminalen Terminalen | Gesichert |
+| **2 — Raphe-Kompensation** | Autorezeptor-vermittelte Bremse des Burst-Deplete-Zyklus | 5-HT1B/1D auf DRN/MRN-Terminalen | Hypothetisch — modellspezifisch |
+| **3 — MOH** | 1B-Desensitisierung → Verlust der kompensatorischen Bremse → Rückfall in Burst-Modus | 5-HT1B (selektiv desensitisiert) | Hypothetisch — modellspezifisch |
 
 ### **8.10 Fallstudie: Migräne-Nacht A**
 
@@ -2964,7 +2982,7 @@ Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schl
 
 #### **B.15.4 Interpretation**
 
-Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → meningeale Vasokonstriktion → Schmerzblockade), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
+Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynaptische Hemmung der trigeminalen Transmitterfreisetzung → Schmerzblockade; vgl. 4.4.5), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
 
 **Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.5, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
 
@@ -2988,7 +3006,7 @@ Der Anfall vom 07.04.2026 liefert eine zeitliche Dissoziation zwischen ANS-Kolla
 | 6: DPH-Fenster | 20:50–22:26 | 74–81 | DPH-Einnahme ~21:00; HR-Nadir 67 bpm um 22:20; PFC→NTS-Kompensation via Atemkontrolle|
 | 7: Volle Kaskade | 22:26–23:11 | 67→104 | ANS-Eskalation, Erbrechen, Kopfschmerz setzt ein; HR-Spike auf 104 |
 | 8: Sumatriptan | 23:10–23:40 | 104→69 | Sumatriptan-Nasal + Paracetamol 1000 mg rektal; initialer HR-Abfall |
-| 9: Triptan-Plateau | 00:25–03:20 | 80–89 | Sumatriptan-Vasokonstriktion, HR-Plateau ~82 bpm, keine Konsolidierung |
+| 9: Triptan-Plateau | 00:25–03:20 | 80–89 | Sumatriptan-Wirkplateau (trigeminale Transmitterhemmung + sekundäre Vasokonstriktion), HR-Plateau ~82 bpm, keine Konsolidierung |
 | 10: Echtes Nadir | 04:45–06:45 | 58–67 | HR-Minimum 58 bpm (04:55), zweites Minimum 59 bpm (05:37) |
 | 11: Morgen | 07:00–08:00 | 70–84 | Aufwachen, rechtsseitiger Nystagmus |
 
@@ -3052,12 +3070,12 @@ Empirischer Beleg: Aktives Fahren (Phase 3, hoher PFC-Demand) → NTS-Suppressio
 | Pre-Triptan Nadir | 22:20 | 67 | Maximaler vagaler Tonus bei ANS-Erschöpfung |
 | ANS-Spike | 22:26–23:10 | 67→104 | Volle Kaskade: CSD + Erbrechen |
 | Initialer Triptan-Effekt | 23:10–23:40 | 104→69 | Schmerzblockade → sympathische Deaktivierung |
-| Triptan-Rebound | 00:25–03:20 | 80–89 | 5-HT1B/1D-Vasokonstriktion → sympathische Restaktivierung |
+| Triptan-Rebound | 00:25–03:20 | 80–89 | 5-HT1B/1D-Wirkplateau (Transmitterhemmung + sekundäre Vasokonstriktion) → sympathische Restaktivierung |
 | Post-Triptan-Clearance | 04:45–06:45 | 58–67 | Sumatriptan-HWZ ~2h; erst nach Clearance echtes Nadir |
 
 Das Triptan-Plateau (HR ~82 bpm über ~3 Stunden) ist konsistent mit B.15: Die Resynchronisationszeit beträgt 3–4 Stunden, und das Triptan konfundiert den HR-Verlauf über seine Halbwertszeit. Das echte Nadir (58 bpm) tritt erst nach Triptan-Clearance auf — ähnlich wie in B.15.3.
 
-**Differenz zu B.15:** In B.15 lag der Post-Sumatriptan-HR bei 70–73 bpm (Phase 3), hier bei 80–89. Die Differenz erklärt sich durch die exertionale Vorbelastung: Die sympathische Restaktivierung durch die post-exertionale Depletion addiert sich zur Triptan-Vasokonstriktion.
+**Differenz zu B.15:** In B.15 lag der Post-Sumatriptan-HR bei 70–73 bpm (Phase 3), hier bei 80–89. Die Differenz erklärt sich durch die exertionale Vorbelastung: Die sympathische Restaktivierung durch die post-exertionale Depletion addiert sich zum Triptan-Wirkplateau (Transmitterhemmung + sekundäre Vasokonstriktion).
 
 #### **B.16.7 Konsistente Nystagmus-Lateralisierung**
 
@@ -4152,7 +4170,7 @@ Anti-CGRP-Antikörper (Erenumab, Galcanezumab, Fremanezumab, Eptinezumab) blocki
 
 #### **E.5.3 Triptane: Inkompletter CSD-Abbruch**
 
-Triptane (5-HT1B/1D-Agonisten) hemmen die CGRP-Freisetzung aus trigeminalen Nervenendigungen und konstriktieren meningeale Gefäße. Sie terminieren die CSD-Kaskade mitten im Prozess: die Depolarisationswelle hat begonnen, aber die vaskuläre Propagationskomponente wird abgewürgt. Der Reset bleibt unvollständig.
+Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) aus trigeminalen Nervenendigungen [gesichert] (Burstein et al. 2004). Die resultierende meningeale Vasokonstriktion ist ein sekundärer Effekt, nicht der Primärmechanismus — der primäre Wirkmechanismus ist die Verschiebung der ATP-Allokation am trigeminalen Terminal zugunsten der Ionenhomöostase (vgl. 4.4.5). Triptane terminieren die CSD-Kaskade mitten im Prozess: die Depolarisationswelle hat begonnen, aber die trigeminale Amplifikationskomponente wird unterbrochen. Der Reset bleibt unvollständig.
 
 Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitation auf — kein Anfall, aber auch kein vollständiger Reset. Das Ergebnis ist ein Residualzustand: gedämpft, aber nicht resynchronisiert. Nicht die Post-Migräne-Klarheit (nach vollständiger CSD), sondern ein flaches Fenster.
 
@@ -4164,7 +4182,15 @@ Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitat
 | Traumerinnerung antiproportional zu Triptaneinnahme (vgl. 8.4) | Kein vollständiger Reset → kein konsolidierter post-iktaler REM → keine Traumerinnerung |
 | Kein Triptan-Rebound bei kurzen Anfällen + erhaltener SWS-Kompensation | Residuum nach Triptan-Abbruch klein genug für Overnight-SWS-Ausgleich |
 
-**Triptan-Rebound (Medication Overuse Headache):** Bei chronischer Migräne reicht das Intervall zwischen Anfällen nicht für SWS-Nachsynchronisation. Jeder Triptan-Abbruch hinterlässt ein Residuum, das sich kumuliert. Das System hat den Reset nie vollzogen, die Desynchronisation besteht weiter, der nächste CSD-Versuch kommt schneller — und wird wieder mit Triptan abgebrochen. Der Teufelskreis mündet in Medication Overuse Headache: nicht weil Triptane direkt sensitivieren, sondern weil sie den Resetbedarf akkumulieren lassen.
+**Triptan-Rebound (Medication Overuse Headache):** Zwei Mechanismen operieren parallel:
+
+**(1) Reset-Akkumulation (bestehende Formulierung):** Bei chronischer Migräne reicht das Intervall zwischen Anfällen nicht für SWS-Nachsynchronisation. Jeder Triptan-Abbruch hinterlässt ein Residuum, das sich kumuliert. Das System hat den Reset nie vollzogen, die Desynchronisation besteht weiter, der nächste CSD-Versuch kommt schneller — und wird wieder mit Triptan abgebrochen.
+
+**(2) 5-HT1B-Autorezeptor-Desensitisierung [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die Triptan-vermittelte 1B/1D-Kompensation des defekten 1A-Feedbacks (vgl. 4.4.5, 8.9.4) durch 1B-Desensitisierung wegfällt, verliert das System seine akut-pharmakologische Bremse → Rückfall in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt. Die kurze Halbwertszeit der Triptane ist damit nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren.
+
+**(3) Latente Sensitisierung (komplementär, gesichert):** Chronische Triptan-Exposition erhöht CGRP in trigeminalen duralen Afferenzen, persistent nach Absetzen (De Felice et al. 2010). Parallel: 5-HT-Depletion → 5-HT2A-Hochregulation → kortikale Hyperexzitabilität via NO-Pathway (Srikiatkhachorn et al.).
+
+Der Teufelskreis mündet in Medication Overuse Headache über alle drei Pfade: Reset-Akkumulation, Autorezeptor-Desensitisierung und latente Sensitisierung.
 
 #### **E.5.4 Antiepileptika mit CGRP-Hemmung: Paradoxe Dualwirkung**
 
