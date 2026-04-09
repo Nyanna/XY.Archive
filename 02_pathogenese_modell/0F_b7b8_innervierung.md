@@ -3,7 +3,7 @@
 
 ## **Anhang F: B7/B8-Innervierungsanatomie und Interferenzstrukturen**
 
-### **F.0 Zusammenfassung**
+**Zusammenfassung**
 
 Dieser Anhang kartiert die Projektionszonen der beiden aufsteigenden Raphe-Kerne — B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianus, MRN) — und identifiziert zwei anatomisch definierte *Interferenzstrukturen*, in denen beide Kerne konvergieren: den **Thalamus** (primäre Interferenzquelle mit maximaler B7/B8-Überlappung) und den **Hippocampus** (zelluläre B7/B8-Segregation). Diese Strukturen bilden den mechanistischen Kern des in Kapitel 4 (Migräne/CSD) und Anhang E (Epilepsie) entwickelten Modells. Inter-Kern-Desynchronisation (vgl. Abschnitt 2.5.1) erzeugt an diesen Konvergenzpunkten destruktive Interferenz — der serotonerge Takt wird lokal inkohärent, mit regional spezifischen Konsequenzen.
 
