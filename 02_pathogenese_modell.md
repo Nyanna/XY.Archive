@@ -42,6 +42,12 @@ Das Modell integriert Beobachtungen aus einem kontrollierten pharmakologischen S
 
 ## **1\. Pathogenetischer Verlauf – Übersicht**
 
+**Zusammenfassung**
+
+Dieses Kapitel skizziert den kausalen Fünf-Phasen-Verlauf des Modells: von kongenitaler 5-HT1A-Instabilität (Hit 1, pränatal) über fetale thalamische Fehlkalibrierung und postnatale Gating-Insuffizienz mit iatogenem D2High-Shift (Hit 2, GC-Exposition bei atopischer Dermatitis) bis zur adulten Migräneperiodizität und pharmakologischen Verifikation durch dopaminerge Upstream-Stabilisierung (LDX). Es identifiziert die Triade atopische Dermatitis + ADHS + Migräne als unerkanntes populationsrelevantes Syndrom (~90k–200k Betroffene in Deutschland) und beschreibt die GC-Therapie der AD als mechanistische Brücke, die drei bisher nur als Dyaden untersuchte Komorbiditäten kausal verbindet.
+
+---
+
 Das Modell beschreibt eine kausale Verlaufskette von einem kongenitalen Primärdefekt über entwicklungsbiologische Konsequenzen zu klinischen Manifestationen. Die zeitliche Ordnung ist entscheidend für das Verständnis der Kausalität. Das Modell folgt einer Two-Hit-Architektur: Hit 1 (5-HT1A-Instabilität, pränatal) ist hinreichend für die thalamische Fehlkalibrierung; Hit 2 (D2High-Shift durch iatrogene GC-Exposition, postnatal) amplifiziert die Raphe-Oszillation in den kaskadenfähigen Bereich (Details in Abschnitt 2.4.2).
 
 | Phase                             | Beschreibung                                                                                                                                                                                                                                     |
@@ -118,6 +124,12 @@ Wenn dieses Modell auch nur in der Grundstruktur korrekt ist, dann existiert ein
 ***
 
 ## **2\. Primärdefekt: Kongenitale Raphe-Dysregulation**
+
+**Zusammenfassung**
+
+Dieses Kapitel definiert den Primärdefekt des Modells: eine underdämpfte 5-HT1A-Autorezeptor-Schleife der Raphe-Kerne als kongenitaler Oszillator (Hit 1), amplifiziert durch einen postnatalen D2High-Shift infolge frühkindlicher Glukokortikoidexposition (Hit 2). Es beschreibt die Vesikelökonomie der Raphe-Neurone (drei Flaschenhälse: vesikuläre Depletion, Tryptophan-Verfügbarkeit, mitochondriale ATP-Depletion) mit drei resultierenden B7-Zuständen (intakt, depleted, aphasisch) und drei Destabilisierungsmodi (Interferenz, Entzug, Rauschexposition). Die genetische Ätiologie ist wahrscheinlich polygenetisch (SLC6A4, Pet1/FEV, TPH2). Der B7/B8-Dual-Oszillator mit SCN-Relay erzeugt über die circadiane Schwebung (endogenes τ ≈ 26 h vs. T = 24 h) eine quasi-wöchentliche Periodizität der Kaskadenvulnerabilität. Kortikale Konsequenzen umfassen lokalen Schlaf (Off-State-Intrusion bei Wachheit), posteriore Vulnerabilität und Schlafarchitektur als Kohärenzmarker.
+
+---
 
 ### **2.1 Anatomie und Funktion der Raphe-Kerne**
 
@@ -766,6 +778,12 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 
 ## **3\. Downstream-Pathologie I: Thalamische Fehlkalibrierung**
 
+**Zusammenfassung**
+
+Dieses Kapitel beschreibt die thalamische Fehlkalibrierung als erste Downstream-Konsequenz des Raphe-Defekts. Ein instabiles fetales Serotoninsignal (22.–26. SSW) kalibriert den Thalamus auf breite statt schmale Signalvarianz — der resultierende Filter ist nicht defekt, sondern korrekt kalibriert für ein inhärent variables Signal. Dies erzeugt einen verrauschten Prediction Error (Predictive-Coding-Rahmen), breitere Attraktorbecken (begünstigte Assoziation, instabile Routinen) und flachere Energielandschaften. ADHS wird als Signal-Rausch-Problem (SNR) reformuliert — unzureichender thalamischer Gain → schwach diskriminierter kortikaler Input → kortikales Rauschen — statt als Aufmerksamkeitsdefizit. Die klinisch beobachtete Dissoziation zwischen thalamischem Gating und basaler sensorischer Schwelle unter LDX wird als Schlüsselevidenz präsentiert, gestützt durch EEG- und fMRI-Literatur (Bluschke 2019, Hearne 2021, MBA-Modell).
+
+---
+
 ### **3.1 Serotonin als fetales Kalibrierungssignal**
 
 Der Thalamus ist eine der ersten vollständig ausreifenden Strukturen – thalamokortikale Axone erreichen den Kortex bereits in der 22.–26. SSW. In dieser Phase ist Serotonin nicht nur Neurotransmitter, sondern primärer trophischer Faktor für die Reifung dieser Verbindungen.
@@ -896,6 +914,12 @@ Beide Modelle konvergieren auf dieselbe Kausalkette, beschrieben von unterschied
 ***
 
 ## **4. Klinische Manifestation I: Migräne als Raphe-Zyklusstörung**
+
+**Zusammenfassung**
+
+Dieses Kapitel entwickelt Migräne als endogenes Oszillationsphänomen der Raphe-Selbstregulation, nicht als Reaktion auf externe Trigger. Das B7/B8-Interferenzfeld bestimmt die CSD-Empfindlichkeit; alle klinischen Trigger (Stress, Wetter, Schlafentzug etc.) sind Perturbatoren, deren Wirksamkeit vom aktuellen B7/B8-Phasenversatz abhängt. CSD wird als kompensatorischer kortikaler Reset interpretiert — erzwungene Resynchronisation eines desynchronisierten Patchworks, erklärt die post-Migräne-Klarheit. Trigger-Mechanismen werden dreifach differenziert: Nap-Kaskade (Desynchronisation → kompensatorischer Nap + parallele CSD), Sport (B7-Depletion durch sympathischen Maximaltakt), Schlaf-Wach-Übergang. Die Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation (Pan et al. 2022: Amphetamine neutral, Atomoxetin +29%, Guanfacin +43%) wird als unbeabsichtigtes natürliches Experiment interpretiert, das die Modellvorhersagen bestätigt. Dreigliederiger Triptan-Mechanismus, Sumatriptan als Schlaf-Enabler, MBA-Reattribution und Betablocker-Paradox werden diskutiert.
+
+---
 
 ### **4.1 Serotonin als universeller Migräneauslöser**
 
@@ -1493,6 +1517,12 @@ Die vollständige Triptan-Mechanistik im Modell umfasst drei Glieder, die über 
 
 ## **5\. Klinische Manifestation II: Autonome Dysregulation**
 
+**Zusammenfassung**
+
+Dieses Kapitel beschreibt die autonome Dysregulation als Downstream-Manifestation des Raphe-Defekts über drei neuroanatomisch distinkte afferente NTS-Pfade (orthostatisch, vestibulär, trigeminal). Instabile Raphe-Aktivität senkt die NTS-Schwelle für autonome Reflexe periodisch ab; die kortikale NTS-Suppression (PFC → PAG → NTS) ist ressourcenintensiv und unter Erschöpfung oder Betablockade fragil. Das Modell prognostiziert einen kompoundierenden Effekt bei LDX + Metoprolol-Entfall über drei unabhängige, additive Pfade: serotonerge NTS-Stabilisierung, noradrenerge PFC-Kapazität und Wiederherstellung der sympathischen Gegenregulation. B7-Aphasie (Feuermuster erhalten, Transmitteroutput stochastisch degradiert) wird als destabilisierendster ANS-Zustand identifiziert. Das PFC→NTS-Erschöpfungsparadox erklärt den klinisch beobachteten Kollaps beim Übergang von aktivem Fahren (PFC-Demand hält NTS-Schwelle aufrecht) zu Beifahrersitz (Wegfall des letzten Stabilisierungspfades).
+
+---
+
 **Terminologische Disambiguierung: Drei afferente Pfade, zwei efferente Zonen, ein Knotenpunkt**
 
 Die klinische Literatur verwendet „vasovagal" als Sammelbezeichnung für alle Reflexe, die über den Vagusnerv Bradykardie und Hypotension erzeugen. Diese Bezeichnung beschreibt den efferenten Schenkel (Vagus → Herz/Gefäße), nicht den auslösenden Stimulus. Drei neuroanatomisch distinkte afferente Pfade konvergieren am selben Hirnstammknotenpunkt (NTS/dorsaler Vaguskern), erzeugen ein ähnliches kardiovaskuläres Bild, haben aber grundlegend unterschiedliche Trigger, Zeitkonstanten und therapeutische Implikationen:
@@ -1603,6 +1633,12 @@ Die kortikale NTS-Suppression (5.3) erklärt einen klinisch beobachteten Befund,
 
 ## **6\. Klinische Manifestation III: ASD-Phänotyp**
 
+**Zusammenfassung**
+
+Dieses Kapitel reinterpretiert den ASD-Phänotyp als Konfigurationsvariante des serotonergen Primärdefekts, nicht als separaten Defekt. Repetitives Verhalten (Stimming, Routinen, Musikschleifen) wird als Stabilisierungsmechanismus gegen instabile Attraktorbecken erklärt — künstliche Attraktortiefe durch vorhersagbaren Input. Identität wird als thalamische Wahrnehmungssignatur beschrieben (nicht narrativ verankert), woraus eine spezifische Substanzaversion folgt: jede psychoaktive Substanz mit Wahrnehmungseffekt verändert thalamische Gating-Schwellen und bedroht damit das Selbstmodell. Die Substanzaversion wird über zwei synergistische Mechanismen erklärt — DA→D2High-Raphe-Suppression (kein positiver Anreiz) + thalamischer Kohärenzverlust (aktive Bedrohungsreaktion). MDMA als iatrogenes Modell der Raphe-Depletion wird referenziert (→ 03_pharma/10_mdma_modell.md).
+
+---
+
 ### **6.1 ASD als Konfigurationsvariante, nicht als separater Defekt**
 
 ASD zeigt konsistent veränderte Serotoninspiegel – erhöhtes peripheres Serotonin bei gleichzeitig veränderter zentraler serotonerger Funktion. Das deutet auf entwicklungsbiologische Fehlverteilung hin: Das System produziert Serotonin, verteilt es aber atypisch.
@@ -1677,6 +1713,12 @@ MDMA als iatrogenes Modell der Raphe-Depletion und Kreuzvalidierung der Populati
 
 ## **7\. Pharmakologische Evidenz: Selbstversuch**
 
+**Zusammenfassung**
+
+Dieses Kapitel dokumentiert den kontrollierten pharmakologischen Selbstversuch mit Methylphenidat (MPH) und Lisdexamfetamin (LDX). MPH (7–14 mg, unter klinischer Schwelle) bestätigte Dopamin-Hypersensitivität und Migränesuppression, wurde aber wegen reproduzierbarem psychotischem Rebound kontraindiziert. LDX (15 mg, ≈4–5 mg aktives Dexamfetamin) zeigt kein Rebound-Profil, ermöglicht Powernap unter Substanz (bei Neurotypischen ungewöhnlich) und belegt erstmals die Dissoziation zwischen thalamischem Gating und basaler sensorischer Schwelle. Das therapeutische Fenster liegt bei 7,5–15 mg LDX — weit unterhalb der ADHS-Standarddosierung (30–70 mg) — als direkte Konsequenz der D2-Rezeptor-Hypersensitivität.
+
+---
+
 ### **7.1 Methylphenidat (Ritalin)**
 
 | Parameter                   | Befund                                                                                                                                                           |
@@ -1715,6 +1757,12 @@ Die Dopamin-Hypersensitivität (Migräneliteratur: D2-Rezeptor-Hypersensitivitä
 ***
 
 ## **8. Interozeptive Inkohärenz als Downstream-Effekt monoaminerger Desynchronisierung**
+
+**Zusammenfassung**
+
+Dieses Kapitel reformuliert ADHS als interozeptive Inkohärenz: Die fünf aufsteigenden Modulationssysteme (serotonerg, noradrenerg, dopaminerg, histaminerg, cholinerg) laufen bei instabiler Raphe asynchron und liefern inkonsistente Gain-Parameter an ihre Zielstrukturen. Die Insula kann keinen kohärenten Prediction Error berechnen → interozeptives Rauschen statt diskreter Zustandssignale → „Konzentrationsstörung" als Fehlattribution. LDX wirkt als Synchronisator (Kohärenz, nicht Arousal) — belegt durch die Dissoziation: sowohl Wachheit als auch Schlafqualität verbessern sich gleichzeitig. Quantitative Evidenz: Schlafkonsolidierung unter LDX zeigt selektive Reduktion synchronisationsintensiver Stadien (Deep-Episoden/h 1,6→1,1, p=0,005; REM-Episoden/h 1,2→0,9, p=0,005; Light unverändert). NREM-Parasomnien als extremste State-Dissoziation. Kreuzkorrelation ADHD–Migräne–Epilepsie–Late-Chronotyp als konvergierende Evidenz: Late-Chronotyp segregiert mit globalen Synchronisationsstörungen (generalisierte Epilepsie 5-fach erhöht), nicht mit fokalen Hardwaredefekten.
+
+---
 
 ### **8.1 Kernthese**
 
@@ -1924,6 +1972,12 @@ Der prodromale Charakter des Naps, seine Rolle als Migräne-Kaskade und die prä
 
 ## **9\. Evidenzstatus und Limitationen**
 
+**Zusammenfassung**
+
+Dieses Kapitel klassifiziert alle Modellaussagen dreistufig nach Evidenzniveau (gesichert / plausibel / hypothetisch) und benennt vier offene Forschungsfragen: Raphe-Depletionshypothese (TPH2-Kapazitätslimit unter LDX über ~28–30 Tage), exakte Inter-Raphe-Kopplung (direkte B7↔B8-Projektionen vs. ausschließlich über SCN), Corpus-callosum-Propagation der tonischen Welle und anatomische Zuordnung des retrobulbären Drucks. Hauptlimitation: Narrative Kohärenz ist kein Beleg für Richtigkeit; empfohlene Beobachtungsdauer für LDX mindestens 6–8 Wochen.
+
+---
+
 Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwischen den Bestandteilen. Die folgende Klassifikation dient der klinischen Einordnung.
 
 | Aussage | Evidenzniveau | Quellenbasis |
@@ -2047,6 +2101,12 @@ Die folgenden Fragen sind aus dem bisherigen Modellierungsprozess hervorgegangen
 ***
 
 ## **Anhang A: Emotionale Affektion – Beobachtung und Arbeitshypothese**
+
+**Zusammenfassung**
+
+Dieser Anhang entwickelt eine mechanistische Hypothese zur emotionalen Verarbeitung bei ASD-Phänotyp. Die zentrale These: Der thalamo-amygdaläre Direktpfad (Low Road) ist entwicklungsbiologisch desensibilisiert (inverses Hebbianisches Pruning durch chronisch inkonsistentes fetales Signal), während der kortiko-amygdaläre Umweg (High Road) intakt und die Amygdala selbst potent bleibt. Dies erklärt drei konsistente Selbstbeobachtungen: volle emotionale Reaktion bei Film/Narrative (kortikal), unkontrolliertes Weinen im Traum (direkt limbisch, Thalamus offline), starke Reduktion bei realer externer Situation (thalamischer Direktpfad desensibilisiert). Die PFC-Amygdala-Kopplung zeigt ein binäres Gating-Profil (Step Function statt Sigmoid) — entweder Kontrolle oder Überflutung, ohne Zwischenzustand (klinisch: Meltdown). LDX verbessert die somatische Resonanz über den intakten kortikalen Pfad, nicht über Reaktivierung des Direktpfads. Reinterpretation der ASD-„Alexithymie" als Pfaddefizit, nicht Kapazitätsdefizit.
+
+---
 
 *Evidenzstatus: Vorläufige Selbstbeobachtung. Mechanistisch plausibel, nicht belegt. Dient als Hypothesengenerierung.*
 
@@ -3085,6 +3145,12 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 ***
 
 ## **Anhang C: Was ich erlebe — Phänomenologie eines Bewusstseinsresets**
+
+**Zusammenfassung**
+
+Dieser Anhang ist ein phänomenologischer Erfahrungsbericht zur subjektiven Manifestation der kortikalen Desynchronisation. Er beschreibt: invarianten Tiefschlaf (~2h07–10min) bei variabler Gesamtarchitektur; das „Zwei-Stunden-Loch" (Bewusstseinsdruckabfall ~2h nach Aufstehen, interpretiert als Off-State-Intrusion); Modalitätsasymmetrie (Augen schließen reduziert Druck, Stille verschlechtert ihn); Wegdriftmomente als Verarbeitungslücken bei Wachheit; den Powernap als Bewusstseinsreset (Tiefe entscheidend, nicht Dauer — zu flach: kein Reset, zu tief: Migränegefahr); Einschlaflatenz <2 min als Symptom statt Fähigkeit; Musik als externer kortikaler Synchronisator; und die differentielle Arousal-Qualität verschiedener Wachzustandsquellen (Arbeit vs. Koffein vs. pharmakologische Synchronisation). Dient als Erfahrungsgrundlage für die mechanistischen Ableitungen in Kapiteln 2.5, 4.3, 8.4 und 8.9.
+
+---
 
 *Subjektive Beschreibungen eines Zustands, den ich jahrelang für Konzentrationserschöpfung hielt.*
 
@@ -4864,6 +4930,12 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 ***
 
 ## **Anhang G: Iatrogene Prävalenz und Hit-Architektur-Erweiterung**
+
+**Zusammenfassung**
+
+Dieser Anhang analysiert den ADHS-Prävalenzanstieg als Korrelat iatrogener Hit-2-Exposition (GC + AH1) und erweitert die Hit-Architektur um einen zweiten molekularen Einstiegspunkt. Drei konvergierende Indizien: (1) Der geographische Gradient (USA 8,1% vs. Irak 0,1%) korreliert mit dem pharmazeutischen Profil besser als mit DSM-Adoption; Japan als natürliches Quasi-Experiment (hohe AD, niedrige GC-Compliance, 1% vs. 10% AD→ADHS-Transition). (2) 60–75% aller ASD-Patienten tragen mindestens einen Raphe-Achsen-Marker (Migräne, Epilepsie, Autoimmunerkrankung) — unstratifizierte Studien mitteln Population A (~65%) und B (~35%). (3) Hit-1-Erweiterung: neben 5-HT1A-Autorezeptor-Instabilität (Hit 1a) identifiziert SERT-Gain-of-Function (SLC6A4-Varianten, Hit 1b) als zweiten Einstiegspunkt — phänotypisch rigid-kompulsive Traits, Hyperserotonämie, ENS-Hypoplasie. Beide Hit-1-Varianten produzieren ihre eigene immunologische Sekundärpathologie.
+
+---
 
 *Status: Explorative Analyse, Evidenzniveau V (Arbeitshypothese mit konvergierenden Indizien)*
 
