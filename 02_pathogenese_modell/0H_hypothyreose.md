@@ -3,15 +3,9 @@
 
 ## **Anhang H: Hypothyreose als modulierender Kofaktor der Raphe-Dysregulation**
 
-### H.0 Zusammenfassung
+**Zusammenfassung**
 
 Dieser Anhang untersucht die Verbindung zwischen der bestehenden Hypothyreose (E03.9, unter L-Thyroxin-Substitution) und dem Primärdefekt des Modells (5-HT1A-Autorezeptor-Instabilität der Raphe-Kerne). Die Verbindung ist bidirektional: Schilddrüsenhormone modulieren direkt die 5-HT1A-Autorezeptorsensitivität in der Raphe, und die Raphe-Dysregulation beeinflusst über absteigende Projektionen die HPT-Achse. Epidemiologisch ist Hypothyreose signifikant mit allen drei klinischen Hauptmanifestationen des Modells assoziiert — am stärksten mit Migräne (OR 5,8–7,4 bei subklinischer Hypothyreose), gefolgt von ADHS (aOR 1,72; Populationskohorte). Bei autoimmuner Ätiologie (V.a. Hashimoto-Thyreoiditis) fügt sich die Hypothyreose zusätzlich in die autoimmune Downstream-Achse des Modells ein (parallel zur atopischen Dermatitis, vgl. 2.3, Anhang G.3).
-
-**Konsequenzen für das Modell:**
-
-- Kapitel 2.5 (Primärdefekt): Suboptimale T3-Versorgung verstärkt den Primärdefekt durch Aufrechterhaltung der 5-HT1A-Autorezeptorsensitivität.
-- Kapitel 7 (Therapie): T4-Substitutionsadäquanz als unerkannter Modulator der LDX-Wirksamkeit.
-- Anhang G (Iatrogene Prävalenz): Autoimmunthyreoiditis als zusätzliche Downstream-Manifestation der immunmodulatorischen Dysregulation.
 
 ---
 

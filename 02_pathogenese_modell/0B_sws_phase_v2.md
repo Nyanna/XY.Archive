@@ -3,7 +3,7 @@
 
 ## **Anhang B: Tracker-Datenanalyse — Kortikale Desynchronisation**
 
-### **B.0 Zusammenfassung und Synthese**
+**Zusammenfassung und Synthese**
 
 Dieser Anhang dokumentiert die Tracker-Datenanalyse der kortikalen Desynchronisation. Die ursprüngliche Fassung (Anhang B v1) postulierte eine zeitliche Verschiebung der SWS-Phasenlage; die erste Reanalyse (März 2026) identifizierte räumliche Fragmentierung als das eigentliche Signal. Die hier vorliegende Synthese (April 2026) integriert beide Ebenen: **Die räumliche Fragmentierung (Episodenzahl pro Nacht) ist die Nacht-Manifestation. Die zeitliche Akkumulation (HR-Drop-Rhythmus, quasi-wöchentliche FFT-Periodizität) ist der Treiber über Tage.** Keine Revision der SWS-Shift-These, sondern Präzisierung: Der Shift ist real, aber seine Ursache ist nicht verzögerte serotonerge Entladung allein, sondern akkumulierte kortikale Desynchronisation, die sich über den Schwebungszyklus aufbaut.
 
