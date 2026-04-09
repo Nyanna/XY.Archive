@@ -9,15 +9,6 @@ Dieser Anhang analysiert den Mechanismus, durch den die Raphe-Kerne gehirnweite 
 
 **Kernthese:** Die Raphe-Kerne operieren als Reset-Oszillator, nicht als Informationskanal. Ihre Funktion ist nicht die Übermittlung eines Signals, sondern die periodische Resynchronisation kortikaler Gain-Parameter über Volumentransmission. Fehlt oder fluktuiert dieser Takt, driften kortikale und hippocampale Subnetze auseinander — nicht zufällig, sondern strukturiert entlang der Raphe-Projektionsarchitektur. DRN (B7) und MRN (B8) sind morphologisch, pharmakologisch und funktionell distinkt und innervieren unterschiedliche Zielstrukturen über unterschiedliche Fasertypen. Ihre Asynchronität unter instabiler Autorezeptorschleife produziert differentielle Konsequenzen: kortikale Desynchronisation (DRN-dominiert) und hippocampale Konsolidierungsdefizite (MRN-dominiert). Die resultierende Desynchronisation wird durch GABAerge Limitierung in einer Bandbreite gehalten, die kognitiv funktional bleibt.
 
-**Konsequenzen für das Modell:**
-
-- Kapitel 2.1 (Raphe-Anatomie): Erweiterung um Projektionsspezifität, Fasermorphologie und Volumentransmissionsmechanik.
-- Kapitel 8.2 (Asynchrone Modulationssysteme): Mechanistische Präzisierung — nicht fünf unabhängig driftende Systeme, sondern DRN-MRN-Phasenverschiebung als Primärquelle mit differentiellen Downstream-Effekten.
-- Kapitel 4.5 (CSD als Reset): Verbindung zum Raphe-Takt als Primär-Reset und CSD als Notfall-Reset bei Takt-Versagen.
-- Anhang A (ASD-Relation): Emotionale Konsolidierungsdefizite als hippocampaler Downstream-Effekt der MRN-Instabilität.
-
-**Offene Frage:** Wie fokale kortikale Desynchronisationsmuster (die in Anhang B dokumentierte topologisch fragmentierte SWS) aus der Raphe-Projektionsarchitektur entstehen, bleibt mechanistisch ungeklärt. Die DRN-MRN-Asynchronität erklärt die Dissoziation zwischen kortikalen und hippocampalen Effekten, aber nicht die räumliche Verteilung lokaler Off-States innerhalb des Kortex.
-
 ---
 
 ### **D.1 Architektur der Raphe-Kerne: Neun Kerne, zwei Gruppen, differentielle Projektionen**
