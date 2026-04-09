@@ -331,7 +331,7 @@ Die Daten schließen Variante 2 nicht aus — unabhängige Atopie existiert zwei
 | **Unbewusste Meidung dopaminerger Stimulanzien** (Koffein, Nikotin) | Aversive Ersterfahrung durch D2High-vermittelte Überreaktion → konditioniertes Meideverhalten |
 | **Vertikaler Blickrichtungsnystagmus bei 15 mg LDX** (vgl. 2.4.1) | Zerebellare Purkinje-Zellen chronisch auf hypodopaminerge Bedingungen kalibriert → D2High-Shift potenziert die noradrenerge LC-Antwort auf LDX |
 
-##### **Epidemiologischer Blind Spot**
+**Epidemiologischer Blind Spot**
 
 Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange systemische Glukokortikoidtherapie + dopaminerge Langzeitfolgen — identifiziert eine potenziell große, systematisch übersehene Population:
 
@@ -339,7 +339,7 @@ Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange s
 
 **Fehlende Kohortenstudie:** Die humane klinische Verbindung IV-Kortison in der Kindheit → persistenter D2High-Shift → dopaminerge Supersensitivität im Erwachsenenalter ist durch mehrere unabhängige tierexperimentelle Linien belegt. Eine systematische humane Kohortenstudie existiert nicht — vermutlich, weil die Frage so nie gestellt wurde. Kinder mit schwerer atopischer Erkrankung und Langzeit-Glukokortikoidtherapie existieren zu Tausenden; die dopaminergen Langzeitfolgen sind nicht untersucht.
 
-##### **Abgrenzung: Iatrogen vs. kongenital**
+**Abgrenzung: Iatrogen vs. kongenital**
 
 | Kriterium | Kongenitaler D2High-Shift | Iatrogener D2High-Shift (vorliegend) |
 | :---- | :---- | :---- |
@@ -351,7 +351,7 @@ Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange s
 
 Im vorliegenden Fall ist eine rein kongenitale Genese unwahrscheinlich, da die GC-Exposition dokumentiert ist und die Expositionsdauer (Jahre, einschließlich IV-Gabe) den tierexperimentell etablierten Schwellenwert für persistente Veränderungen deutlich überschreitet. Eine genetische Prädisposition als permissiver Faktor ist dennoch nicht auszuschließen — die GC-Exposition hätte dann einen subklinischen Shift in einen klinisch relevanten Bereich amplifiziert.
 
-##### **Evidenzstatus**
+**Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 | :---- | :---- | :---- |
@@ -373,7 +373,7 @@ Im vorliegenden Fall ist eine rein kongenitale Genese unwahrscheinlich, da die G
 | Disorders of Partial Arousal teilen mit ADHD: familiäre Prädisposition, erhöhte Arousals, Schlaffragmentierung, erhöhten SWS | Gesichert | JCSM Review (Walters et al. 2008) |
 | Familiäre Anamnese: Xyan Somnambulismus (Jugend, Erschöpfungsschlaf-getriggert), Tochter Pavor nocturnus (ASD, phasenweise wöchentlich) | Einzelfallbeobachtung | Selbstbeobachtung + Fremdbericht |
 
-##### **Therapeutische Implikation**
+**Therapeutische Implikation**
 
 Der D2High-Shift hat direkte Konsequenzen für die Dosierungsstrategie:
 
