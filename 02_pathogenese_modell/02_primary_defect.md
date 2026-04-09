@@ -117,17 +117,17 @@ Hilfskonstruktionen — D2/5-HT1A-Heterodimere auf Raphe-Neuronen, indirekte VTA
 
 #### **2.4.1 Pharmakodynamische Verifikation: Blickrichtungsnystagmus als Biomarker der Dopamin-Hypersensitivität**
 
-##### **Befund**
+**Befund**
 
 Unter 15 mg LDX, ca. 8 Stunden post-dose (absteigende Flanke der Konzentrationskurve), trat reproduzierbar ein vertikaler Blickrichtungsnystagmus auf – verifiziert durch willkürliches Aufheben der binokularen Fusion, was die kompensatorische Fusionssuppression eliminiert und Bulbusbewegungen sichtbar macht. Das Phänomen trat unter erhöhter körperlicher Belastung auf (7 h Gartenarbeit, HR ~130, metabolischer Ketosewechsel).
 
-##### **Mechanismus**
+**Mechanismus**
 
 Der okulomotorische Integrator (Nucleus prepositus hypoglossi, mediale Vestibulariskerne) generiert ein tonisches Haltesignal für die exzentrische Blickposition. Die Kalibrierung dieses Signals erfolgt kontinuierlich durch Purkinje-Zellen des Kleinhirns, die ihrerseits dicht noradrenerg aus dem Locus coeruleus innerviert werden. LDX stimuliert den LC über reverses Noradrenalin-Transporter-Pumping – bei hypersensitiven Purkinje-Zellen führt dies zur Dekalibrierung des Integrators: Das Haltesignal ist insuffizient, das Auge driftet zur Ruheposition, wird sakkadisch korrigiert, driftet erneut → Nystagmus.
 
 Der vertikale Charakter des Nystagmus – gegenüber horizontal häufig benigner Formen – ist pathognomonisch für Hirnstamm/Kleinhirn-Beteiligung und schließt einen vestibulären oder peripher-okulomotorischen Ursprung aus. Ein unauffälliges MRT (strukturell) liegt vor; der Befund ist funktionell.
 
-##### **Interpretation als Adaptationsmarker**
+**Interpretation als Adaptationsmarker**
 
 | Befund | Interpretation |
 | :---- | :---- |
@@ -138,7 +138,7 @@ Der vertikale Charakter des Nystagmus – gegenüber horizontal häufig benigner
 
 **Kernaussage:** Das System reagiert auf dopaminerge Stimulation im therapeutisch intendierten Normbereich mit zerebellären Nebenwirkungen, die bei normosensitivem System nicht auftreten würden. Dies ist ein unabhängiger, objektiv messbarer Beleg für die postulierte Dopamin-Hypersensitivität – konsistent mit der D2-Hochregulations-Hypothese aus Abschnitt 2.4.
 
-##### **Langzeitprognose: zerebellare Rekalibrierung**
+**Langzeitprognose: zerebellare Rekalibrierung**
 
 Die Purkinje-Zell-Hypersensitivität ist das Korrelat einer chronischen Adaptation an hypodopaminerge Bedingungen. Über Jahre bis Jahrzehnte hat das zerebellare System seine Rezeptordichte und Empfindlichkeitsschwellen auf einen niedrigen LC-Output kalibriert. Mit dauerhafter LDX-Therapie – und damit dauerhaft normalisiertem dopaminergem Tonus – ist eine schrittweise Rekalibrierung des Systems zu erwarten:
 
@@ -156,7 +156,7 @@ Die Purkinje-Zell-Hypersensitivität ist das Korrelat einer chronischen Adaptati
 | **Mechanismus (Integrator/Purkinje)** | Neurophysiologisch etabliert; Verknüpfung mit LDX-Hypersensitivität: plausibel, nicht publiziert |
 | **Rekalibrierungs-Vorhersage** | Hypothetisch; aus Rezeptorbiologie abgeleitet |
 
-##### **TAAR1-Modulation der DRN-Aktivität**
+**TAAR1-Modulation der DRN-Aktivität**
 
 Ein weiterer Modulationspfad der DRN-Aktivität verläuft über TAAR1 (Trace Amine-Associated Receptor 1), der sowohl im DRN als auch im VTA dicht exprimiert ist (Lindemann et al. 2008). TAAR1-Agonismus moduliert die Desensibilisierungsrate und Agonist-Potenz an 5-HT1A-Autorezeptoren im DRN (Revel et al. 2011, PNAS 108:8485). Die Wirkrichtung ist dabei dosisabhängig bifunktional: Voller TAAR1-Agonismus (RO5256390) supprimiert DRN-5-HT-Neurone, während partieller Agonismus (RO5263397) sie stimuliert (Dremencov et al. 2022, Mol Psychiatry). Pharmakologisch relevant wird dieser Pfad durch den Befund, dass Guanfacin — primär als α2A-Agonist in der ADHS-Therapie eingesetzt — ein potenter hTAAR1-Vollagonist ist (EC50 ≈ 20 nM; Cichero et al. 2023). Guanfacin wäre damit ein unbeabsichtigter Modulator der Raphe-Autorezeptor-Schleife, dessen klinische Effekte auf die 5-HT1A-Dynamik bisher nicht berücksichtigt wurden.
 
@@ -164,7 +164,7 @@ Die In-vivo-Richtung dieser Modulation ist allerdings nicht eindeutig ableitbar 
 
 #### **2.4.2 D2High-Shift als Spätfolge frühkindlicher Glukokortikoidexposition**
 
-##### **Hintergrund: D2High/D2Low-Konformationsgleichgewicht**
+**Hintergrund: D2High/D2Low-Konformationsgleichgewicht**
 
 D2-Rezeptoren existieren in zwei dynamischen Konformationszuständen mit fundamental unterschiedlicher Ligandenaffinität:
 
@@ -177,7 +177,7 @@ Im neurotypischen Gleichgewicht liegt der D2High-Anteil bei ca. 50%. Die Arbeite
 
 Entscheidend: Ein D2High-Shift ist der einzige identifizierte molekulare Einzelmechanismus, der einen Sensitivitätsfaktor von ≥3× erklären kann. Alternative Mechanismen — Rezeptordichte-Upregulation (~1.2–2×), G-Protein-Kopplungseffizienz (~1.5–2×), β-Arrestin-Deficit (multiplikativ, aber zeitabhängig) — erreichen isoliert nicht die beobachtete Größenordnung.
 
-##### **Anamnestischer Kontext**
+**Anamnestischer Kontext**
 
 Das Expositionsprofil zeigt ein absteigendes Muster mit maximaler Frequenz im vulnerabelsten Entwicklungsfenster. Das Präparat war wahrscheinlich Methylprednisolon (Urbason® solubile) — identifiziert durch die charakteristische perineale Parästhesie bei IV-Bolus-Gabe, die für Phosphatester-Formulierungen spezifisch ist und von der behandelnden Ärztin routinemäßig angekündigt wurde. Die IV-Gabe erfolgte über drei unabhängige Behandlungskontexte (stationär, Notarzt, ambulant-hausärztlich), was ein chronisches Behandlungsschema belegt, keine seltene Notfallmaßnahme.
 
@@ -252,7 +252,7 @@ Die klinische Manifestation — Th2-dominante Immunlage (Neurodermitis, Asthma) 
 
 **Therapeutische Konsequenz des Two-Hit-Modells:** Die D2-Supersensitivität (Hit 2) ist nicht nur Problemquelle, sondern gleichzeitig therapeutischer Hebel (vgl. 2.4). Sie ermöglicht die Raphe-Kompensation bei Dosen, die bei normalem D2High/D2Low-Verhältnis insuffizient wären. Das therapeutische Fenster (vgl. 7.3) ist somit nicht nur durch die Hypersensitivität *begrenzt*, sondern durch sie überhaupt erst *erreichbar*. Hit 2 hat das System beschädigt und gleichzeitig den Zugang zur Therapie eröffnet.
 
-##### **Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
+**Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
 
 Die These, dass die atopische Grunderkrankung und die neurodevelopmentale Manifestation nicht unabhängig sind, sondern aus einem gemeinsamen Upstream-Defekt stammen, wird durch umfangreiche epidemiologische Daten gestützt. Die entscheidende Evidenz liegt nicht in der bloßen Koinzidenz, sondern im **Dosiseffekt über die atopische Gesamtlast**.
 
