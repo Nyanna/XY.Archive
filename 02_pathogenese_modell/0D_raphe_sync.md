@@ -3,7 +3,7 @@
 
 ## **Anhang D: Raphe-Synchronisationsmechanik — Vom Schrittmacher zur kortikalen Kohärenz**
 
-### **D.0 Zusammenfassung**
+**Zusammenfassung**
 
 Dieser Anhang analysiert den Mechanismus, durch den die Raphe-Kerne gehirnweite Synchronisation erzeugen — und wie dessen Versagen die in Kapitel 2, 4 und 8 beschriebenen Desynchronisationsphänomene produziert.
 
