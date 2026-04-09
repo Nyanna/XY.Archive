@@ -3,15 +3,9 @@
 
 ## **Anhang E: CSD als Notfall-Resynchronisation — Kreuzkorrelation mit Epilepsie und therapeutische Implikationen**
 
-### **E.0 Zusammenfassung**
+**Zusammenfassung**
 
 Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-Reset-Hypothese weiter und verknüpft sie mit der Epilepsie-Literatur. Die zentrale These: CSD und epileptischer Anfall sind zwei Varianten desselben Versagens — der serotonerge Reset-Takt (Anhang D) bricht zusammen, und der Kortex muss sich über einen Notfallmechanismus resynchronisieren. CSD ist die mildere, geordnete Variante (wandernde Depolarisationswelle). Ein generalisierter Anfall ist die schwere Variante (Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades, keine synchrone Massenentladung; vgl. 4.4.1, Ergänzung März 2026). CGRP ist nicht Schmerzmediator, sondern der notwendige Propagationsmechanismus der CSD-Kaskade — seine Blockade (Anti-CGRP-Antikörper, hochdosierte Antiepileptika) eliminiert den Schutzmechanismus.
-
-**Konsequenzen für das Modell:**
-
-- Kapitel 4.5 (CSD als Reset): Erweiterung um die Fallback-Hierarchie Raphe-Takt → CSD → epileptischer Anfall.
-- Kapitel 7 (Therapie): Differenzierung der Migräneprophylaktika nach ihrem Eingriffspunkt in der Fallback-Hierarchie.
-- Kapitel 9 (Evidenz): Kreuzkorrelation mit Epilepsie-Literatur als unabhängige Validierungslinie.
 
 ---
 
