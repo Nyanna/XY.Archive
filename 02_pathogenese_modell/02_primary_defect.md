@@ -22,6 +22,41 @@ Regulationsschleife (normal) Raphe feuert → Serotonin steigt → 5-HT1A-Autore
 
 Regulationsschleife (dysreguliert – Arbeitshypothese) Bei defekter Dämpfung wird die Schleife underdämpft – die Schwingungen nehmen zu statt abzuklingen. Jede Destabilisierung durch externe Trigger produziert nicht eine einfache Serotoninschwankung, sondern eine sich selbst aufschaukelnde Oszillation bis zur Kaskaden-Schwelle. Periodizität der Migräne erklärt sich als: Oszillation → Attacke → Entleerung → Refraktärphase (= Dämpfungsphase, nicht simple Erholung) → erneute Oszillation. Die ~4-Tage-Periodizität dieser Zyklen wird durch einen eigenständigen Oszillator determiniert (Abschnitt 2.5.1), dessen Generator der B7/B8-Phasenversatz innerhalb der Raphe ist — nicht die circadiane Schwebung per se. Die circadiane Drift (Abschnitt 2.5) moduliert die Kaskadenschwelle, ist aber nicht der Taktgeber: Unter LDX-stabilisiertem Schlaf-Wach-Rhythmus persistiert der ~4-Tage-Zyklus subklinisch (Tracker-Daten, Anhang B).
 
+#### **2.2.1 Vesikelökonomie: Biologische Grenzen des Raphe-Takts**
+
+Die Autoregulationsschleife (2.2) beschreibt die Oszillation als abstraktes Regelkreismodell. Die physikalische Grenze dieses Regelkreises liegt in der Vesikelökonomie der Raphe-Neurone — der Fähigkeit, Serotonin pro Spike freizusetzen. „B7-Depletion" oder „B7-Erschöpfung" ist keine binäre Abschaltung, sondern eine graduelle Degradation auf mehreren zellulären Ebenen gleichzeitig:
+
+| Flaschenhals | Prozess | Zeitkonstante |
+|:-------------|:--------|:-------------|
+| **Vesikuläre Depletion** | 5-HT-Vesikel schneller freigesetzt als nachproduziert; TPH2 ist geschwindigkeitsbestimmend mit begrenzter Kapazität | Minuten bis Stunden |
+| **Tryptophan-Verfügbarkeit** | BHS-Transport konkurriert mit BCAAs (Leucin, Isoleucin, Valin); bei prolongierter Hochfrequenz-Aktivität kann die Nachlieferung den Verbrauch nicht decken | Stunden |
+| **Mitochondriale ATP-Depletion** | Na⁺/K⁺-ATPase (Repolarisation) + Vesikelrecycling-Maschinerie (Endozytose, Refüllung, Transport) überfordern ATP-Produktion | Minuten (schnellster Flaschenhals) |
+| **5-HT1A-Autorezeptor-Feedback (Hit 1)** | Instabiler Autorezeptor → fehlende Selbstlimitierung → DRN feuert ohne adäquate Bremse → Vesikelverbrauch schneller als bei intaktem Feedback | Verstärkt alle drei oben |
+
+**Drei B7-Zustände:** Die Degradation erzeugt nicht zwei, sondern drei funktionell distinkte Zustände:
+
+| B7-Zustand | Transmitteroutput | Zielkerne empfangen | Funktionelle Konsequenz |
+|:-----------|:-----------------|:--------------------|:----------------------|
+| **Intakt** | Kohärent — jeder Spike setzt 5-HT frei | Stabiles, phasengekoppeltes Signal | Stabile Modulation |
+| **Depleted** (Entzug) | Kein Output — Vesikel erschöpft oder Neuron supprimiert | Kein Signal | Eigendynamik der Zielkerne (instabil, aber konsistent) |
+| **Aphasisch** (Rauschexposition) | Stochastisch degradiert — Feuermuster erhalten, aber manche Spikes setzen 5-HT frei, manche nicht | Inkonsistentes Signal: zu schwach und zu unzuverlässig für Modulation | Weder stabile Modulation noch sauberer Entzug — maximale Destabilisierung |
+
+**Aphasie-Paradoxon:** Entzug ist stabiler als Aphasie. Bei komplettem Signalwegfall schalten Zielkerne auf Eigendynamik — instabil, aber vorhersagbar. Ein Signal, das weder ignorierbar noch brauchbar ist, stört die Eigendynamik, ohne ein alternatives Ordnungssignal zu liefern. Die biologische Signatur: Vesikel partiell depletiert + TPH2 am Kapazitätslimit + ATP grenzwertig. Genug ATP für Aktionspotentiale, aber die Vesikelfreisetzung pro Spike ist reduziert und inkonsistent.
+
+**Regenerationskinetik:** TPH2 arbeitet die Tryptophan-Pipeline ab, Vesikel werden refüllt, ATP-Speicher regenerieren. Partiell in 1–2 Stunden (ausreichend für aphasisches Feuern, nicht für Kohärenz), vollständig erst nach einer konsolidierten Nacht.
+
+**Intratakt-Fragmentierung:** Die Vesikelstochastik erzeugt nicht nur Inter-Kern-Desynchronisation (B7 vs. B8, vgl. 2.5.1), sondern auch Intra-Kern-Fragmentierung: Unter Last sind Vesikel-Refill, TPH2-Kapazität und ATP-Bilanz pro Neuron individuell verschieden. Innerhalb des DRN entsteht ein räumliches Mosaik — Neurone desselben Kerns liefern phasenverschobene, amplitudenvariable Serotoninpulse. Vesikelfreisetzung erfordert einen kohärenten und scharfen Potentialschwellwert; bei stochastischer Annäherung an die 1/5-Sekunden-Grenze fragmentiert der Intratakt absolut. Ein instabiler Intratakt auf *einem* Kern reicht aus, um Downstream-Destabilisierung zu erzeugen, ohne dass der Inter-Kern-Versatz (2.5.1) die CSD-Schwelle erreicht haben muss.
+
+**Drei Destabilisierungsmechanismen:** Die Kombination der B7-Zustände mit der Oszillator-Architektur erzeugt drei distinkte Destabilisierungsmodi mit unterschiedlichen Zeitkonstanten:
+
+| Modus | Bedingung | Primäres Zielgebiet | Zeitkonstante |
+|:------|:----------|:-------------------|:--------------|
+| **Interferenz** (dual, aktiv) | Beide Oszillatoren aktiv, aber asynchron → Phasenoffset | Kortex (polysynaptisch) | Stunden |
+| **Entzug** (monosynaptisch, passiv) | Ein Oszillator fällt aus → Zielkerne verlieren tonische Stütze | ANS-Kerne (NTS, Ncl. ambiguus) | Sekunden bis Minuten |
+| **Rauschexposition** (aphasisch) | Oszillator feuert inkonsistent → Signal weder brauchbar noch ignorierbar | ANS-Kerne + Kortex | Übergangsphase |
+
+ANS-Kollaps operiert über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten (ausführliche Analyse: Anhang D.4.4; ANS-spezifische Konsequenzen: Kapitel 5; CSD-spezifische Konsequenzen: Kapitel 4).
+
 ### **2.3 Genetische und entwicklungsbiologische Ätiologie**
 
 Raphe-Neuronen entstehen sehr früh – zwischen der 5\. und 7\. Schwangerschaftswoche aus dem Rhombencephalon. In diesem Fenster ist das System maximal vulnerabel.

@@ -91,37 +91,13 @@ Evidenzstatus: Gesamte Sektion 5.4 ist eine Modellvorhersage, abgeleitet aus den
 
 Die autonome Symptomatik bei schweren Migräneattacken wird konventionell als Teil der „Stammhirnaura" (MBA) klassifiziert und einer CSD-Propagation in den Hirnstamm zugeschrieben. Diese Zuschreibung hat keine humane Evidenzbasis. Die Symptome erklären sich parsimonischer als direkter B7→ANS-Kern-Kollaps (vgl. 4.6, Anhang B.20).
 
-### **5.5 B7-Aphasie: Der dritte ANS-Zustand**
+### **5.5 B7-Aphasie im autonomen Kontext**
 
-Die bisherige Modellierung unterscheidet implizit zwei B7-Zustände: intakt (stabile Modulation) und ausgefallen (Entzug, Zielkerne ohne Signal). Der Einzelfall 07.04.2026 (Anhang B.20) zeigt einen dritten Zustand, der klinisch am destabilisierendsten ist:
+Die drei B7-Zustände (intakt, depleted, aphasisch) und ihre biologische Grundlage (Vesikelökonomie, Flaschenhälse, Regenerationskinetik) sind als Teil des Primärdefekts in 2.2.1 beschrieben. Im autonomen Kontext ist die klinische Konsequenz spezifisch:
 
-**B7-Aphasie:** B7 ist nicht heruntergefahren oder abgeschaltet, sondern feuert mit reduzierter Amplitude und trägem, inkonsistentem Delay zum SCN-Takt. Die ANS-Kerne bekommen ein Signal, aber es ist zu schwach und zu unzuverlässig für Stabilisierung. Kein Shutdown, kein Entzug, sondern Rauschen.
+Die ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) sind monosynaptisch von B7 innerviert. Der aphasische Zustand — Feuermuster erhalten, Transmitteroutput stochastisch degradiert (vgl. 2.2.1) — ist für die ANS-Kerne der destabilisierendste aller drei Zustände: Bei Entzug (B7 depleted) schalten sie auf Eigendynamik; bei Aphasie erhalten sie ein Signal, das ihre Eigendynamik stört, ohne ein alternatives Ordnungssignal zu liefern. Die HR-Spreading-Daten des Einzelfalls 07.04.2026 (Anhang B.20) zeigen die Dissoziation als physiologischen Marker: SD hoch + RMSSD hoch = aphasische Instabilität; SD niedrig + RMSSD niedrig = Entzug (Fixierung).
 
-| B7-Zustand | ANS-Kerne empfangen | ANS-Reaktion | Klinisches Bild |
-|:-----------|:--------------------|:-------------|:----------------|
-| **Intakt** | Stabiles, kohärentes Signal | Stabile Modulation | Physiologisch |
-| **Depleted** (Entzug) | Kein Signal | Eigendynamik (instabil, aber konsistent) | Reine ANS-Symptomatik (Fixierung, SD/RMSSD niedrig) |
-| **Aphasisch** (Rauschexposition) | Inkonsistentes, schwaches Signal | Weder stabile Modulation noch sauberer Entzug | Maximale Destabilisierung (SD und RMSSD hoch gleichzeitig) |
-
-**Paradoxon:** Entzug ist stabiler als Rauschexposition. Bei komplettem Signalwegfall schalten die ANS-Kerne auf Eigendynamik — das ist instabil, aber vorhersagbar. Ein Signal, das weder ignorierbar noch brauchbar ist, stört die Eigendynamik, ohne ein alternatives Ordnungssignal zu liefern. Aphasie ist der schlechteste aller drei Zustände für die ANS-Kerne (vgl. D.4.4).
-
-#### **5.5.1 Biologisches Substrat: Was „B7-Depletion" bedeutet**
-
-Wenn das Modell von B7-Erschöpfung oder -Depletion spricht, beschreibt es keine binäre Abschaltung, sondern eine graduelle Degradation auf mehreren zellulären Ebenen gleichzeitig:
-
-**Vesikuläre Depletion:** Die synaptischen Vesikel sind endlich. Bei anhaltendem Hochfrequenz-Feuern (3–5 Hz unter sympathischer Belastung) werden Vesikel schneller freigesetzt als nachproduziert. Die Resynthese von 5-HT aus Tryptophan über Tryptophanhydroxylase (TPH2) ist enzymkinetisch limitiert — TPH2 ist der geschwindigkeitsbestimmende Schritt, und seine Kapazität hat eine Obergrenze.
-
-**Tryptophan-Verfügbarkeit:** Tryptophan wird nicht im Neuron synthetisiert, sondern über die Blut-Hirn-Schranke importiert. Der Transport konkurriert mit anderen großen neutralen Aminosäuren (BCAAs — Leucin, Isoleucin, Valin). Intensive körperliche Belastung erhöht die BCAA-Aufnahme in die Muskulatur, was paradoxerweise das Tryptophan/BCAA-Verhältnis im Blut verbessert — aber gleichzeitig steigt der Verbrauch im DRN. Bei prolongierter Hochfrequenz-Aktivität kann die Nachlieferung den Verbrauch nicht decken.
-
-**Mitochondriale ATP-Depletion:** Die Repolarisation nach jedem Aktionspotential kostet ATP (Na⁺/K⁺-ATPase). Die Vesikelrecycling-Maschinerie (Endozytose, Refüllung, Transport) kostet ATP. Prolongiertes Hochfrequenz-Feuern erschöpft die mitochondriale Kapazität des Neurons selbst.
-
-**5-HT1A-Autorezeptor-Feedback (modellspezifisch):** Der 5-HT1A-Autorezeptor ist der Primärdefekt (Hit 1, vgl. 2.2). Normal dämpft er die Feuerrate bei hohem synaptischen 5-HT — negativer Feedback. Bei instabilem Autorezeptor-Feedback fehlt diese Bremse. Der DRN feuert ohne adäquate Selbstlimitierung, verbraucht seine Vesikel schneller als ein System mit intaktem Feedback, und die Erschöpfung tritt früher ein als physiologisch vorgesehen.
-
-**Biologische Signatur der Aphasie:** Die wahrscheinlichste Signatur des aphasischen Zustands ist eine Kombination: Vesikel partiell depletiert + TPH2 am Kapazitätslimit + ATP grenzwertig. Das Neuron feuert noch (genug ATP für Aktionspotentiale), aber die Vesikelfreisetzung pro Spike ist reduziert und inkonsistent — manche Spikes setzen 5-HT frei, manche nicht. Das Feuermuster ist erhalten, der Transmitteroutput stochastisch degradiert. Genau dies erzeugt die aphasische Signatur: ANS-Kerne sehen ein Signal, das in seiner Frequenz noch den Raphe-Takt abbildet, aber in seiner Amplitude und Zuverlässigkeit so degradiert ist, dass es weder stabile Modulation noch sauberen Entzug produziert.
-
-**Regeneration:** Die Regeneration über Stunden (Schlaf/Ruhe) ist die Umkehrung dieses Prozesses: TPH2 arbeitet die Tryptophan-Pipeline ab, Vesikel werden refüllt, ATP-Speicher regenerieren. Partiell in 1–2 Stunden (ausreichend für aphasisches Feuern, nicht für Kohärenz), vollständig erst nach einer konsolidierten Nacht. Dies erklärt, warum die Post-Nap-Regeneration im Modell zwar B7 wieder „online" bringt, aber nicht notwendig in einen kohärenten Zustand — die partielle Regeneration reicht für Feuern, nicht für konsistente Vesikelfreisetzung pro Spike.
-
-Pharmakologische Interventionen auf der Vesikelökonomie-Ebene (5-HTP-Substitution, Flaschenhals-Tabelle) sind in 03_pharma/09_vesikeloekonomie_5htp.md dokumentiert.
+Pharmakologische Interventionen auf der Vesikelökonomie-Ebene sind in 03_pharma/09_vesikeloekonomie_5htp.md dokumentiert.
 
 ### **5.6 PFC→NTS-Kompensation und deren Erschöpfungsparadox**
 

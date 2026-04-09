@@ -10,7 +10,7 @@ Die Supplementation mit 5-Hydroxytryptophan (5-HTP) oder L-Tryptophan als „nat
 
 **3. Evidenzbasis:** Keine robuste placebokontrollierte Evidenz für 5-HTP-Wirksamkeit bei irgendeiner Indikation. Der häufig zitierte Titus-Trial (1986, Migräne) hatte keinen Placeboarm. Die einzige methodisch akzeptable RCT (200 mg/Tag, IBD-Fatigue) zeigte Placebo-/Zeiteffekt. Meta-Analyse Depression: 2 von 108 Studien methodisch akzeptabel (n=64 total) — keine belastbare Schlussfolgerung möglich.
 
-**Schlussfolgerung:** 5-HTP ist nicht kontraindiziert, sondern **nutzlos**. Das Problem ist nicht exogener 5-HTP-Mangel, sondern endogene TPH2-Effizienz und Autorezeptor-Regulation (vgl. 5.5.1, 03_thalamische_kompensation 1.1). Orale 5-HTP-Supplementation umgeht den Flaschenhals nicht — sie liefert Substrat an Stellen, an denen es nicht gebraucht wird, und nicht an die Stelle, an der es gebraucht wird (die DRN-Neurone selbst).
+**Schlussfolgerung:** 5-HTP ist nicht kontraindiziert, sondern **nutzlos**. Das Problem ist nicht exogener 5-HTP-Mangel, sondern endogene TPH2-Effizienz und Autorezeptor-Regulation (vgl. 2.2.1, 03_thalamische_kompensation 1.1). Orale 5-HTP-Supplementation umgeht den Flaschenhals nicht — sie liefert Substrat an Stellen, an denen es nicht gebraucht wird, und nicht an die Stelle, an der es gebraucht wird (die DRN-Neurone selbst).
 
 | Aussage | Evidenzniveau | Quellenbasis |
 |:--------|:-------------|:-------------|
@@ -18,13 +18,13 @@ Die Supplementation mit 5-Hydroxytryptophan (5-HTP) oder L-Tryptophan als „nat
 | Zentrale Bioverfügbarkeit ohne Carbidopa deutlich reduziert | Gesichert | Pharmakokinetik |
 | AADC-Konversion unselektiv (nicht Raphe-spezifisch) | Gesichert | Enzymverteilung, Anhang F |
 | Keine robuste RCT-Evidenz für 5-HTP bei Migräne/Depression | Evidenzlücke | Systematische Literaturanalyse |
-| 5-HTP adressiert den falschen Flaschenhals | Modellableitung | 5.5.1, 03_thalamische_kompensation 1.1 |
+| 5-HTP adressiert den falschen Flaschenhals | Modellableitung | 2.2.1, 03_thalamische_kompensation 1.1 |
 
 ---
 
 ## 2. Vesikelökonomie: Flaschenhälse und Interventionsmöglichkeiten
 
-Die in 5.5.1 beschriebenen biologischen Flaschenhälse der B7-Depletion lassen sich systematisch auf Interventionsmöglichkeiten abbilden:
+Die in 2.2.1 beschriebenen biologischen Flaschenhälse der B7-Depletion lassen sich systematisch auf Interventionsmöglichkeiten abbilden:
 
 | Flaschenhals | Intervention | Status | Modellkonsistenz |
 |:-------------|:-------------|:-------|:-----------------|
