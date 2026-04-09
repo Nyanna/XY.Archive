@@ -112,7 +112,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 
 ---
 
-### **Offene Fragen (Stand März 2026)**
+### **9.1 Offene Fragen (Stand März 2026)**
 
 Die folgenden Fragen sind aus dem bisherigen Modellierungsprozess hervorgegangen und noch nicht hinreichend adressiert. Sie definieren die Beobachtungs- und Rechercheziele für kommende Sessions.
 
