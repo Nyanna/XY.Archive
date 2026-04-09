@@ -27,7 +27,7 @@ Im Normalbetrieb laufen diese Systeme koordiniert, weil sie sich gegenseitig mod
 
 Das Resultat ist nicht ein einzelnes „zu wenig" oder „zu viel" eines Transmitters, sondern ein Zustand, in dem die Modulationssysteme *inkonsistente Gain-Parameter* an ihre gemeinsamen Zielstrukturen — Thalamus, Kortex, Rückenmark — liefern.
 
-#### **8.2.2 Konsequenz für die Interozeption: Insula ohne kohärenten Prediction Error**
+**Konsequenz für die Interozeption: Insula ohne kohärenten Prediction Error**
 
 Die anteriore Insula erzeugt Prädiktionen über Körperzustände und vergleicht sie mit aufsteigenden viszeralen und somatischen Signalen (interoceptive inference, Seth 2013; Seth & Friston 2016). Dieser Vergleich setzt voraus, dass die aufsteigenden Signale intern konsistent sind — dass „Erschöpfung" sich in Raphe-Aktivität, LC-Tonus, Muskeltonus und Arousal gleichsinnig abbildet.
 
@@ -43,7 +43,7 @@ Das RAS wird direkt von Raphe und LC moduliert. Der Tonus ist damit ein Downstre
 
 **Schlafübergang als diagnostisches Fenster:** Beim Schlafeinleitungsprozess ist die Raphe-Quieszenz eine der frühesten Veränderungen (NREM-Einleitung). Der Moment, in dem der retikuläre Tonus abfällt, ist phänomenologisch als plötzliche Ganzkörperentspannung wahrnehmbar — *vor* dem Bewusstseinsverlust. Das Fehlen hypnagoger Übergangsphänomene (kein graduelles kortikales Herunterfahren) bestätigt den subcortikalen Charakter des Schaltvorgangs.
 
-#### **8.3.2 Zustandsblindheit als Kernsymptom**
+**Zustandsblindheit als Kernsymptom**
 
 Die interozeptive Inkohärenz erzeugt ein spezifisches phänomenologisches Profil:
 
@@ -72,7 +72,7 @@ Unter Lisdexamfetamin (vgl. 2.4, therapeutische Implikation) zeigt sich ein spez
 
 Die Dissoziation zwischen den Spalten 2 und 3 ist diagnostisch: Wenn LDX nur aufputschend wirkte, wären die abendlichen Effekte (Zeilen 2–4) nicht erklärbar. Dass sowohl Wachheit *als auch* Schlafqualität sich verbessern, ist nur durch Synchronisierung der Modulationsebene plausibel.
 
-#### **8.4.2 Interozeption als neues Erleben**
+**Interozeption als neues Erleben**
 
 Die Wiederherstellung kohärenter Zustandssignale wird phänomenologisch nicht als Rückkehr zu einem bekannten Zustand erlebt, sondern als **etwas Neues**. Die kohärenten Signale werden initial als fremd wahrgenommen — „jemand anderes in mir" — weil das bisherige Selbstmodell auf dem inkohärenten Zustand aufgebaut war.
 
@@ -80,9 +80,9 @@ Dieser Übergangszustand ist prognostisch relevant: Bei intakter thalamischer Id
 
 **Vorhersage:** Die Qualität der Integration neuer interozeptiver Signale unter Stimulanzientherapie ist ein Proxy für thalamische Identitätskohärenz. Patienten, die die veränderte Interozeption als bereichernd und integrierbar erleben, haben intakte thalamische Gating-Funktion. Patienten, die sie als bedrohlich oder entfremdend erleben, zeigen thalamische Vulnerabilität — und sind Kandidaten für psychotische Dekompensation unter Dosiserhöhung.
 
-#### **8.4.3 Schlafkonsolidierung als quantitative Evidenz**
+#### **8.4.2 Schlafkonsolidierung als quantitative Evidenz**
 
-Die phänomenologische Dissoziation (8.4.1) stützt die Synchronisierungsthese qualitativ. Die Tracker-Datenanalyse (Anhang B; Grundbefunde und Methodik in 2.5.5) liefert die quantitative Bestätigung: Die Schlafarchitektur unter LDX konsolidiert sich auf genau den Dimensionen, die das Synchronisierungsmodell vorhersagt — und nicht auf denen, die ein unspezifischer Arousal-Effekt erwarten ließe.
+Die phänomenologische Dissoziation (8.4.1) stützt die Synchronisierungsthese qualitativ. Die Tracker-Datenanalyse (Anhang B; Grundbefunde und Methodik in 2.5.4) liefert die quantitative Bestätigung: Die Schlafarchitektur unter LDX konsolidiert sich auf genau den Dimensionen, die das Synchronisierungsmodell vorhersagt — und nicht auf denen, die ein unspezifischer Arousal-Effekt erwarten ließe.
 
 **Kernbefunde:**
 
@@ -102,7 +102,7 @@ PRE trat intensives Träumen selektiv nach Migräneanfällen auf — post-CSD-er
 
 #### **8.5.1 „Konzentration" als Fehlattribution**
 
-Die sensorisch-kognitive Dimension dieser Fehlattribution ist in 3.4.3 beschrieben: ADHS als SNR-Problem (unzureichender thalamischer Gain → schwach diskriminierter Input → kortikales Rauschen). Der vorliegende Abschnitt erweitert die Reformulierung um die interozeptiv-affektive Dimension: Nicht nur der sensorische Input ist verrauscht, sondern auch die internen Zustandssignale sind inkohärent — beide aus demselben Upstream-Defekt, aber über verschiedene Pfade (thalamisch-sensorisch vs. insulär-interozeptiv).
+Die sensorisch-kognitive Dimension dieser Fehlattribution ist in 3.4.2 beschrieben: ADHS als SNR-Problem (unzureichender thalamischer Gain → schwach diskriminierter Input → kortikales Rauschen). Der vorliegende Abschnitt erweitert die Reformulierung um die interozeptiv-affektive Dimension: Nicht nur der sensorische Input ist verrauscht, sondern auch die internen Zustandssignale sind inkohärent — beide aus demselben Upstream-Defekt, aber über verschiedene Pfade (thalamisch-sensorisch vs. insulär-interozeptiv).
 
 Die Parallele zur Migräne-„Nackenverspannung" (8.3.1) ist strukturell: In beiden Fällen benennt der Patient das saliensteste Downstream-Symptom, und die Diagnostik zementiert es als Kerndefizit.
 
@@ -113,7 +113,7 @@ Die Parallele zur Migräne-„Nackenverspannung" (8.3.1) ist strukturell: In bei
 | **Impulsivität** | Defizitäre Inhibition | Partiell: zusätzlich fehlende interozeptive Rückmeldung über Zustandsveränderungen → Handlung ohne Zustandsabgleich |
 | **Emotionale Dysregulation** | Komorbides Feature | Emotionen sind Zustandsveränderungen — bei fehlendem kohärentem Zustandsbild fehlt die Referenzlinie, gegen die Emotionen moduliert werden können |
 
-#### **8.5.2 Literaturstütze**
+**Literaturstütze**
 
 Die Reformulierung konvergiert mit drei unabhängigen Befundlinien:
 
@@ -127,9 +127,9 @@ ADHS-Patienten zeigen erhöhte Alexithymie-Scores (Edel et al. 2010, *ADHD Atten
 
 **3. Neurales Rauschen und Signal-Rausch-Verhältnis**
 
-Die in Abschnitt 3.4.5 diskutierte Literatur (Bluschke et al. 2019; Hearne et al. 2021; Kofler et al. 2020) belegt erhöhtes neurales Rauschen bei ADHS, das durch Stimulanzien auf Kontrollniveau reduziert wird. Diese Befunde betreffen die *kortikale* Ebene — die Verlängerung auf die *interozeptive* Ebene (insuläre Integration viszeraler Afferenzen unter denselben Rauschmechanismen) ist mechanistisch zwingend, aber empirisch nicht direkt untersucht.
+Die in Abschnitt 3.4.3 diskutierte Literatur (Bluschke et al. 2019; Hearne et al. 2021; Kofler et al. 2020) belegt erhöhtes neurales Rauschen bei ADHS, das durch Stimulanzien auf Kontrollniveau reduziert wird. Diese Befunde betreffen die *kortikale* Ebene — die Verlängerung auf die *interozeptive* Ebene (insuläre Integration viszeraler Afferenzen unter denselben Rauschmechanismen) ist mechanistisch zwingend, aber empirisch nicht direkt untersucht.
 
-### **8.5.3 NREM-Parasomnien als extremste Manifestation der interozeptiven Inkohärenz**
+### **8.6 NREM-Parasomnien als extremste Manifestation der interozeptiven Inkohärenz**
 
 Die in 8.2–8.5 beschriebene Desynchronisierung der Modulationssysteme erzeugt im Wachzustand die ADHS-Phänomenologie. Im Schlaf — bei insuffizientem Raphe-Tonus während des Tiefschlaf-Arousals — eskaliert derselbe Mechanismus zur laminaren State-Dissoziation: Verschiedene kortikale und subkortikale Systeme operieren gleichzeitig in verschiedenen Schlaf-Wach-Zuständen. Die klinischen Manifestationen sind NREM-Parasomnien (Somnambulismus, Pavor nocturnus).
 
@@ -139,13 +139,13 @@ Die in 8.2–8.5 beschriebene Desynchronisierung der Modulationssysteme erzeugt 
 | **Schlaf-Wach-Übergang** | Inkompletter State-Switch, gradueller Drift statt diskretem Übergang | Verzögertes Aufwachen, morgendliches Forcing-Bedürfnis (Anhang C) |
 | **NREM-Schlaf** | Laminare State-Dissoziation bei Arousal aus Tiefschlaf | Parasomnie-Phänomenologie: Pavor nocturnus, Somnambulismus |
 
-Die drei Manifestationen sind keine separaten Komorbiditäten, sondern Ausdrücke desselben Raphe-vermittelten State-Kohärenzdefizits in verschiedenen Schlaf-Wach-Phasen (ausführliche Phänomenologie: Anhang C; Dissoziationsarchitektur: 4.5.2). Die ASD-spezifische Variante — Stimming während Pavor nocturnus als subkortikal generiertes Regulationsprogramm ohne bewusstes Erleben — bestätigt, dass Stimming kein bewusster Coping-Mechanismus ist (vgl. 6.2).
+Die drei Manifestationen sind keine separaten Komorbiditäten, sondern Ausdrücke desselben Raphe-vermittelten State-Kohärenzdefizits in verschiedenen Schlaf-Wach-Phasen (ausführliche Phänomenologie: Anhang C; Dissoziationsarchitektur: 4.5.1). Die ASD-spezifische Variante — Stimming während Pavor nocturnus als subkortikal generiertes Regulationsprogramm ohne bewusstes Erleben — bestätigt, dass Stimming kein bewusster Coping-Mechanismus ist (vgl. 6.2).
 
-### **8.6 Klinische Implikation: Mate, Koffein und die Illusion der Wachheit**
+### **8.7 Klinische Implikation: Mate, Koffein und die Illusion der Wachheit**
 
 Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Adenosin-Antagonismus plus catecholaminerger Push erzeugt Wachheit. Aber Wachheit ist nicht Kohärenz. Das koffeininduzierte Arousal erhöht die Amplitude aller Modulationssysteme, ohne sie zu synchronisieren — die Systeme laufen weiter asynchron, nur lauter. Unter LDX wird Mate entbehrlich, weil die Wachheit ein *Nebenprodukt* der Kohärenz ist: alle Systeme sagen dasselbe, das Zustandssignal ist klar, und klare Zustandssignale erzeugen adäquate Wachheit — oder adäquate Müdigkeit.
 
-### **8.7 Evidenzstatus**
+### **8.8 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 | :---- | :---- | :---- |
@@ -157,16 +157,16 @@ Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Ad
 | Raphe-Instabilität → Desynchronisierung aller Modulationssysteme | Plausibel, mechanistisch konsistent | Abgeleitet aus reziproker Verschaltung; nicht direkt an Raphe-Defekt-Modellen gezeigt |
 | Interozeptive Inkohärenz als *Ursache* (nicht Korrelat) von Aufmerksamkeitsinstabilität | Hypothetisch, konsistent | Eigene Ableitung; konventionelle Kausalrichtung ist umgekehrt |
 | Konzentrationsstörung als Fehlattribution des interozeptiven Defizits | Hypothetisch | Eigene Reformulierung; strukturell analog zur Nackenverspannungs-Fehlattribution |
-| LDX erzeugt Kohärenz (nicht nur Arousal) auf der Modulationsebene | Hypothetisch, quantitativ gestützt | Selbstbeobachtung (8.4.1); Tracker-Daten: selektive Konsolidierung synchronisationsintensiver Schlafstadien (p=0,005; 8.4.3, Anhang B) |
+| LDX erzeugt Kohärenz (nicht nur Arousal) auf der Modulationsebene | Hypothetisch, quantitativ gestützt | Selbstbeobachtung (8.4.1); Tracker-Daten: selektive Konsolidierung synchronisationsintensiver Schlafstadien (p=0,005; 8.4.2, Anhang B) |
 | Qualität der interozeptiven Integration als Proxy für thalamische Identitätskohärenz | Hypothetisch | Abgeleitet aus 6.3 + 8.4.2; nicht getestet |
 | Desynchronisierung → Zustandsblindheit → Selbstmedikation mit Koffein | Plausibel | Selbstbeobachtung; mechanistisch ableitbar |
 | Schlafkonsolidierung unter LDX: Deep- und REM-Episoden/Stunde signifikant reduziert | Statistisch signifikant (p=0,005, n=79) | Tracker-Daten, Anhang B, B.3 |
 | Konsolidierungshierarchie Deep > REM > Light folgt Synchronisationsanforderung | Modellvorhersage, konsistent mit Daten | Anhang B, B.3.2 |
 | REM-Konsolidierung → reguläre Traumerinnerung unter LDX | Einzelfallbeobachtung, konsistent | Selbstbeobachtung + Tracker-Daten, Anhang B, B.8 |
 | Traumerinnerung PRE selektiv post-iktal (CSD-Reset); POST regulär (pharmakologische Synchronisation) | Einzelfallbeobachtung | Selbstbeobachtung, Anhang B, B.8 |
-| Schlafkonsolidierung und interozeptive Kohärenz als identischer Mechanismus auf verschiedenen Zeitskalen | Hypothetisch, konsistent | Modellableitung aus 8.4.1 + 8.4.3 |
+| Schlafkonsolidierung und interozeptive Kohärenz als identischer Mechanismus auf verschiedenen Zeitskalen | Hypothetisch, konsistent | Modellableitung aus 8.4.1 + 8.4.2 |
 
-### **8.7.1 Kreuzkorrelation ADHD–Migräne–Epilepsie–Late-Chronotyp als konvergierende Evidenz**
+#### **8.8.1 Kreuzkorrelation ADHD–Migräne–Epilepsie–Late-Chronotyp als konvergierende Evidenz**
 
 Vier klinische Entitäten — ADHD, Migräne, generalisierte Epilepsie und Late-Chronotyp — zeigen paarweise robuste Assoziationen. Im vorliegenden Modell konvergieren alle vier auf denselben Upstream-Mechanismus: globale kortikale Desynchronisation durch Raphe-Instabilität.
 
@@ -183,9 +183,9 @@ Vier klinische Entitäten — ADHD, Migräne, generalisierte Epilepsie und Late-
 
 **Der Schlüsselbefund** ist die Dissoziation zwischen generalisierter und fokaler Epilepsie: Der Late-Chronotyp segregiert spezifisch mit **globalen Synchronisationsstörungen** (ADHD, Migräne, generalisierte Epilepsie) und **nicht** mit lokalen Hardwaredefekten (fokale Epilepsie). Die Gesamtkohorte (alle Epilepsien) zeigt keinen signifikanten Unterschied — der Effekt wird durch die fokalen Fälle verdünnt (Kendis et al. 2015). Manni et al. (2016) bestätigen: fokale Epilepsie-Patienten sind per Fragebogen eher Morning-orientiert, aber der DLMO (objektiver Phasenmarker) zeigt keinen Unterschied zu Kontrollen — subjektiver Chronotyp ≠ objektive Phase.
 
-**Modellinterpretation:** Der Late-Chronotyp ist kein unabhängiger circadianer Trait, sondern ein Downstream-Marker des Raphe-Defizits. Die subjektive Erfahrung „abends erst richtig wach werden" ist das Tagesprofil der Kompensation: Tagsüber reicht der Raphe-Tonus nicht für kortikale Kohärenz → Schlafintrusionen → klinisch als „unaufmerksam" kodiert. Abends konvergieren circadianes Alerting-Maximum und akkumulierter Homöostat so, dass kompensatorische Arousal-Quellen den Raphe-Defizit überdecken → klinisch als „Abendtyp" kodiert (vgl. 2.5.4).
+**Modellinterpretation:** Der Late-Chronotyp ist kein unabhängiger circadianer Trait, sondern ein Downstream-Marker des Raphe-Defizits. Die subjektive Erfahrung „abends erst richtig wach werden" ist das Tagesprofil der Kompensation: Tagsüber reicht der Raphe-Tonus nicht für kortikale Kohärenz → Schlafintrusionen → klinisch als „unaufmerksam" kodiert. Abends konvergieren circadianes Alerting-Maximum und akkumulierter Homöostat so, dass kompensatorische Arousal-Quellen den Raphe-Defizit überdecken → klinisch als „Abendtyp" kodiert (vgl. 2.5.3).
 
-### **8.8 Nap als PFC-Entlastung im Kontext interozeptiver Inkohärenz**
+### **8.9 Nap als PFC-Entlastung im Kontext interozeptiver Inkohärenz**
 
 Die PFC-Überlastung durch tonische Raphe-Interferenz erzeugt einen Zustand, in dem der Kortex die Verarbeitungslast nicht mehr trägt. Der Nap ist die autonome Entlastungsreaktion — kein Tiefschlaf (~50 min Light Sleep, HR bleibt auf Tagesniveau), sondern **PFC-Entlastung ohne kortikalen Reset**. LDX macht den Nap nicht überflüssig, sondern effektiver: Die Reset-Erfolgsrate verdoppelt sich unter pharmakologischer Synchronisierung (PRE 38% → POST 78%; Anhang B.11), weil der stabilisierte Raphe-Tonus dem PFC-Reset erlaubt, tatsächlich zu greifen, anstatt gegen fortlaufende Desynchronisierung anzuarbeiten.
 
@@ -197,12 +197,12 @@ Der prodromale Charakter des Naps, seine Rolle als Migräne-Kaskade und die prä
 - Abschnitt 2.4: D2High-Raphe-Mechanismus als Grundlage der dopaminergen Stabilisierung
 - Abschnitt 2.4.3: Verhaltensphänotyp als Downstream der D2High-Raphe-Interaktion
 - Abschnitt 3.4: Thalamisches Gating und Signal-Rausch-Verhältnis
-- Abschnitt 3.4.5: Neurales Rauschen bei ADHS — kortikale Ebene
+- Abschnitt 3.4.3: Neurales Rauschen bei ADHS — kortikale Ebene
 - Abschnitt 4.2: Migräne-Prodrom und retikulärer Tonus
 - Abschnitt 4.9: Sumatriptan-Mechanismus und dreigliederige Triptan-Wirkung
 - Abschnitt 6.3: Thalamische Identitätskohärenz
 - Titrationsleitlinie, Abschnitt 5.4: ASD-Komorbidität und eingeschränkte interozeptive Diskriminierung
-- Anhang B, B.3: Episodenzahl und Kohärenzproxy — quantitative Grundlage für 8.4.3
+- Anhang B, B.3: Episodenzahl und Kohärenzproxy — quantitative Grundlage für 8.4.2
 - Anhang B, B.8: Traumerinnerung als subjektiver Kohärenzmarker
 - Anhang B, B.11: Nap-Outcome-Analyse
 - Anhang B, B.15: Migräne-Nacht mit Sumatriptan-Intervention

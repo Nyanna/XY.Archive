@@ -52,7 +52,7 @@ Das Modell identifiziert drei unabhängige Modulatoren der autonomen Reflexschwe
 | **Kortikale NTS-Suppression** | PFC → PAG → NTS: noradrenerg-abhängig, ressourcenintensiv | LDX-noradrenerge Komponente stärkt PFC-Kapazität |
 | **Sympathische Gegenregulation** | Einziger Abbruchmechanismus nach Reflexauslösung: sympathische Antwort terminiert dorsalen Vagus-Shutdown | Metoprolol-Entfall beseitigt iatrogene Suppression |
 
-#### Zwei Pfade, drei Effekte
+**Zwei Pfade, drei Effekte**
 
 Dopaminerge Upstream-Stabilisierung (LDX) adressiert die Reflexschwelle über zwei unabhängige Pfade gleichzeitig:
 
@@ -62,7 +62,7 @@ Dopaminerge Upstream-Stabilisierung (LDX) adressiert die Reflexschwelle über zw
 
 **Pfad 3 – Wiederherstellung der sympathischen Reserve (nur bei Metoprolol-Entfall):** Metoprolol supprimiert die kardiale Beta-1-Antwort – den einzigen verfügbaren Gegenregulator gegen den dorsalen Vagus-Shutdown. Diese iatrogene Schwächung ist im bestehenden Modell als antagonistische Implikation dokumentiert (vgl. 5.3, Pharmakologie autonomes Profil). Bei Entfall der Betablockade wird die sympathische Gegenregulation wiederhergestellt: Nicht die Schwelle steigt, aber die Konsequenz einer Schwellenüberschreitung wird weniger gefährlich – der Reflex wird terminierbarer.
 
-#### Kompoundierung
+**Kompoundierung**
 
 Die drei Effekte sind mechanistisch unabhängig und daher additiv:
 
@@ -74,11 +74,11 @@ Die drei Effekte sind mechanistisch unabhängig und daher additiv:
 
 Die Modellvorhersage ist, dass der Übergang von Szenario 1 zu Szenario 3 eine **überproportionale** Verbesserung der autonomen Reflexanfälligkeit erzeugt – größer als die Summe der Einzeleffekte erwarten ließe. Der Grund: Die Einzeleffekte interagieren nicht nur additiv, sondern synergistisch. Eine stabilere Schwelle (weniger Auslösungen) bedeutet, dass die Gegenregulation seltener beansprucht wird und daher bei tatsächlicher Auslösung mit voller Reserve verfügbar ist – im Gegensatz zum Eskalationsmechanismus rezidivierender Episoden (vgl. Serieneskalation, autonomes Profil).
 
-#### Voraussetzung
+**Voraussetzung**
 
 Diese Vorhersage steht unter der Bedingung, dass LDX die Migräneprophylaxe unabhängig von Metoprolol aufrechterhält. Metoprolol ist nicht nur Sympathikusblocker, sondern primär Migräneprophylaktikum – sein Entfall ist nur dann nicht regressiv, wenn die dopaminerge Upstream-Stabilisierung die Raphe-Schleife unabhängig dämpft. Ohne diesen Nachweis ist Metoprolol-Entfall kontraindiziert, weil rezidivierende ANS-Kollapsepisoden die NTS-Schwelle strukturell senken (vgl. kumulativer Effekt rezidivierender autonomer Entgleisungen, autonomes Profil) und damit den autonomen Schutzeffekt des Metoprolol überkompensieren würden.
 
-#### Testbare Prädiktionen
+**Testbare Prädiktionen**
 
 | Prädiktion | Operationalisierung | Evidenzniveau |
 | :---- | :---- | :---- |

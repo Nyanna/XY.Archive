@@ -3,15 +3,9 @@
 
 ## **Anhang H: Hypothyreose als modulierender Kofaktor der Raphe-Dysregulation**
 
-### H.0 Zusammenfassung
+**Zusammenfassung**
 
 Dieser Anhang untersucht die Verbindung zwischen der bestehenden Hypothyreose (E03.9, unter L-Thyroxin-Substitution) und dem Primärdefekt des Modells (5-HT1A-Autorezeptor-Instabilität der Raphe-Kerne). Die Verbindung ist bidirektional: Schilddrüsenhormone modulieren direkt die 5-HT1A-Autorezeptorsensitivität in der Raphe, und die Raphe-Dysregulation beeinflusst über absteigende Projektionen die HPT-Achse. Epidemiologisch ist Hypothyreose signifikant mit allen drei klinischen Hauptmanifestationen des Modells assoziiert — am stärksten mit Migräne (OR 5,8–7,4 bei subklinischer Hypothyreose), gefolgt von ADHS (aOR 1,72; Populationskohorte). Bei autoimmuner Ätiologie (V.a. Hashimoto-Thyreoiditis) fügt sich die Hypothyreose zusätzlich in die autoimmune Downstream-Achse des Modells ein (parallel zur atopischen Dermatitis, vgl. 2.3, Anhang G.3).
-
-**Konsequenzen für das Modell:**
-
-- Kapitel 2.5 (Primärdefekt): Suboptimale T3-Versorgung verstärkt den Primärdefekt durch Aufrechterhaltung der 5-HT1A-Autorezeptorsensitivität.
-- Kapitel 7 (Therapie): T4-Substitutionsadäquanz als unerkannter Modulator der LDX-Wirksamkeit.
-- Anhang G (Iatrogene Prävalenz): Autoimmunthyreoiditis als zusätzliche Downstream-Manifestation der immunmodulatorischen Dysregulation.
 
 ---
 
@@ -139,13 +133,13 @@ Autoimmunthyreoiditis (Hashimoto) passt in dieses Schema als parallele autoimmun
 
 ### H.4 Klinische Implikationen: Substitutionsadäquanz als Modellparameter
 
-#### H.4.1 TSH-Insuffizienz als Marker
+**TSH-Insuffizienz als Marker**
 
 Die vorliegenden Laborwerte (TSH basal 5,69 μU/ml ohne Substitution, 06/2021; TSH 1,52 μU/ml unter L-Thyroxin, 03/2022) bestätigen eine substitutionsbedürftige Hypothyreose. Die Werte sind vier Jahre alt und informieren nicht über den aktuellen Substitutionsstatus.
 
 TSH allein ist für die modellrelevante Fragestellung unzureichend: Ein normwertiger TSH kann mit einem fT3 am unteren Referenzrand koexistieren. Da die serotonerge Modulation primär über T3 läuft (T3 ist die aktive Form an den 5-HT1A-Rezeptoren), ist fT3 der funktionell entscheidende Parameter.
 
-#### H.4.2 Drei Szenarien
+**Drei Szenarien**
 
 | Laborkonstellation | Interpretation | Konsequenz |
 |:-------------------|:---------------|:-----------|
@@ -153,7 +147,7 @@ TSH allein ist für die modellrelevante Fragestellung unzureichend: Ein normwert
 | fT4 niedrig, fT3 niedrig | Unterdosierung | T4-Dosiserhöhung indiziert |
 | fT4 und fT3 adäquat | Kein Handlungsbedarf auf SD-Seite | Raphe-Modulation durch T3 bereits im funktionalen Bereich |
 
-#### H.4.3 Diagnostischer Bedarf
+**Diagnostischer Bedarf**
 
 Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die ätiologische Frage (autoimmune Achse); fT3 klärt die Konversionsleistung; die Kombination informiert über die optimale Substitutionsstrategie.
 

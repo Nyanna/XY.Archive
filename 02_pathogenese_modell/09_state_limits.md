@@ -88,7 +88,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Schwindel mit Nystagmus = vestibuläre Kerne (B7); Schwindel ohne Nystagmus = möglicherweise kortikal (Demarquay) | Vorgeschlagener klinischer Differentialmarker | Abgeleitet, nicht validiert |
 | Demarquay-Alternative (kortikaler Ursprung) erklärt Symptomtopographie, nicht Symptomintensität | Literaturkritik | Demarquay et al. 2018 (Cephalalgia) |
 | Temporale Sequenz: Literatur beschreibt visuelle Aura vor Hirnstammsymptomen; Modell sagt ANS zuerst; Auflösung über Detektions-Bias plausibel, nicht gesichert | Potenziell falsifizierend, Auflösung hypothetisch | ICHD-3, Einzelfallbeobachtung B.20 |
-| Interferenz vs. Entzug vs. Rauschexposition als drei distinkte Destabilisierungsmechanismen mit unterschiedlichen Zeitkonstanten | Modellpräzisierung | D.4.4, Anhang B.20 |
+| Interferenz vs. Entzug vs. Rauschexposition als drei distinkte Destabilisierungsmechanismen mit unterschiedlichen Zeitkonstanten | Modellpräzisierung | D.4.3, Anhang B.20 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
@@ -112,7 +112,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 
 ---
 
-### **Offene Fragen (Stand März 2026)**
+### **9.1 Offene Fragen (Stand März 2026)**
 
 Die folgenden Fragen sind aus dem bisherigen Modellierungsprozess hervorgegangen und noch nicht hinreichend adressiert. Sie definieren die Beobachtungs- und Rechercheziele für kommende Sessions.
 

@@ -55,7 +55,7 @@ Die Autoregulationsschleife (2.2) beschreibt die Oszillation als abstraktes Rege
 | **Entzug** (monosynaptisch, passiv) | Ein Oszillator fällt aus → Zielkerne verlieren tonische Stütze | ANS-Kerne (NTS, Ncl. ambiguus) | Sekunden bis Minuten |
 | **Rauschexposition** (aphasisch) | Oszillator feuert inkonsistent → Signal weder brauchbar noch ignorierbar | ANS-Kerne + Kortex | Übergangsphase |
 
-ANS-Kollaps operiert über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten (ausführliche Analyse: Anhang D.4.4; ANS-spezifische Konsequenzen: Kapitel 5; CSD-spezifische Konsequenzen: Kapitel 4).
+ANS-Kollaps operiert über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten (ausführliche Analyse: Anhang D.4.3; ANS-spezifische Konsequenzen: Kapitel 5; CSD-spezifische Konsequenzen: Kapitel 4).
 
 ### **2.3 Genetische und entwicklungsbiologische Ätiologie**
 
@@ -117,17 +117,17 @@ Hilfskonstruktionen — D2/5-HT1A-Heterodimere auf Raphe-Neuronen, indirekte VTA
 
 #### **2.4.1 Pharmakodynamische Verifikation: Blickrichtungsnystagmus als Biomarker der Dopamin-Hypersensitivität**
 
-##### **Befund**
+**Befund**
 
 Unter 15 mg LDX, ca. 8 Stunden post-dose (absteigende Flanke der Konzentrationskurve), trat reproduzierbar ein vertikaler Blickrichtungsnystagmus auf – verifiziert durch willkürliches Aufheben der binokularen Fusion, was die kompensatorische Fusionssuppression eliminiert und Bulbusbewegungen sichtbar macht. Das Phänomen trat unter erhöhter körperlicher Belastung auf (7 h Gartenarbeit, HR ~130, metabolischer Ketosewechsel).
 
-##### **Mechanismus**
+**Mechanismus**
 
 Der okulomotorische Integrator (Nucleus prepositus hypoglossi, mediale Vestibulariskerne) generiert ein tonisches Haltesignal für die exzentrische Blickposition. Die Kalibrierung dieses Signals erfolgt kontinuierlich durch Purkinje-Zellen des Kleinhirns, die ihrerseits dicht noradrenerg aus dem Locus coeruleus innerviert werden. LDX stimuliert den LC über reverses Noradrenalin-Transporter-Pumping – bei hypersensitiven Purkinje-Zellen führt dies zur Dekalibrierung des Integrators: Das Haltesignal ist insuffizient, das Auge driftet zur Ruheposition, wird sakkadisch korrigiert, driftet erneut → Nystagmus.
 
 Der vertikale Charakter des Nystagmus – gegenüber horizontal häufig benigner Formen – ist pathognomonisch für Hirnstamm/Kleinhirn-Beteiligung und schließt einen vestibulären oder peripher-okulomotorischen Ursprung aus. Ein unauffälliges MRT (strukturell) liegt vor; der Befund ist funktionell.
 
-##### **Interpretation als Adaptationsmarker**
+**Interpretation als Adaptationsmarker**
 
 | Befund | Interpretation |
 | :---- | :---- |
@@ -138,7 +138,7 @@ Der vertikale Charakter des Nystagmus – gegenüber horizontal häufig benigner
 
 **Kernaussage:** Das System reagiert auf dopaminerge Stimulation im therapeutisch intendierten Normbereich mit zerebellären Nebenwirkungen, die bei normosensitivem System nicht auftreten würden. Dies ist ein unabhängiger, objektiv messbarer Beleg für die postulierte Dopamin-Hypersensitivität – konsistent mit der D2-Hochregulations-Hypothese aus Abschnitt 2.4.
 
-##### **Langzeitprognose: zerebellare Rekalibrierung**
+**Langzeitprognose: zerebellare Rekalibrierung**
 
 Die Purkinje-Zell-Hypersensitivität ist das Korrelat einer chronischen Adaptation an hypodopaminerge Bedingungen. Über Jahre bis Jahrzehnte hat das zerebellare System seine Rezeptordichte und Empfindlichkeitsschwellen auf einen niedrigen LC-Output kalibriert. Mit dauerhafter LDX-Therapie – und damit dauerhaft normalisiertem dopaminergem Tonus – ist eine schrittweise Rekalibrierung des Systems zu erwarten:
 
@@ -156,7 +156,7 @@ Die Purkinje-Zell-Hypersensitivität ist das Korrelat einer chronischen Adaptati
 | **Mechanismus (Integrator/Purkinje)** | Neurophysiologisch etabliert; Verknüpfung mit LDX-Hypersensitivität: plausibel, nicht publiziert |
 | **Rekalibrierungs-Vorhersage** | Hypothetisch; aus Rezeptorbiologie abgeleitet |
 
-##### **TAAR1-Modulation der DRN-Aktivität**
+**TAAR1-Modulation der DRN-Aktivität**
 
 Ein weiterer Modulationspfad der DRN-Aktivität verläuft über TAAR1 (Trace Amine-Associated Receptor 1), der sowohl im DRN als auch im VTA dicht exprimiert ist (Lindemann et al. 2008). TAAR1-Agonismus moduliert die Desensibilisierungsrate und Agonist-Potenz an 5-HT1A-Autorezeptoren im DRN (Revel et al. 2011, PNAS 108:8485). Die Wirkrichtung ist dabei dosisabhängig bifunktional: Voller TAAR1-Agonismus (RO5256390) supprimiert DRN-5-HT-Neurone, während partieller Agonismus (RO5263397) sie stimuliert (Dremencov et al. 2022, Mol Psychiatry). Pharmakologisch relevant wird dieser Pfad durch den Befund, dass Guanfacin — primär als α2A-Agonist in der ADHS-Therapie eingesetzt — ein potenter hTAAR1-Vollagonist ist (EC50 ≈ 20 nM; Cichero et al. 2023). Guanfacin wäre damit ein unbeabsichtigter Modulator der Raphe-Autorezeptor-Schleife, dessen klinische Effekte auf die 5-HT1A-Dynamik bisher nicht berücksichtigt wurden.
 
@@ -164,7 +164,7 @@ Die In-vivo-Richtung dieser Modulation ist allerdings nicht eindeutig ableitbar 
 
 #### **2.4.2 D2High-Shift als Spätfolge frühkindlicher Glukokortikoidexposition**
 
-##### **Hintergrund: D2High/D2Low-Konformationsgleichgewicht**
+**Hintergrund: D2High/D2Low-Konformationsgleichgewicht**
 
 D2-Rezeptoren existieren in zwei dynamischen Konformationszuständen mit fundamental unterschiedlicher Ligandenaffinität:
 
@@ -177,7 +177,7 @@ Im neurotypischen Gleichgewicht liegt der D2High-Anteil bei ca. 50%. Die Arbeite
 
 Entscheidend: Ein D2High-Shift ist der einzige identifizierte molekulare Einzelmechanismus, der einen Sensitivitätsfaktor von ≥3× erklären kann. Alternative Mechanismen — Rezeptordichte-Upregulation (~1.2–2×), G-Protein-Kopplungseffizienz (~1.5–2×), β-Arrestin-Deficit (multiplikativ, aber zeitabhängig) — erreichen isoliert nicht die beobachtete Größenordnung.
 
-##### **Anamnestischer Kontext**
+**Anamnestischer Kontext**
 
 Das Expositionsprofil zeigt ein absteigendes Muster mit maximaler Frequenz im vulnerabelsten Entwicklungsfenster. Das Präparat war wahrscheinlich Methylprednisolon (Urbason® solubile) — identifiziert durch die charakteristische perineale Parästhesie bei IV-Bolus-Gabe, die für Phosphatester-Formulierungen spezifisch ist und von der behandelnden Ärztin routinemäßig angekündigt wurde. Die IV-Gabe erfolgte über drei unabhängige Behandlungskontexte (stationär, Notarzt, ambulant-hausärztlich), was ein chronisches Behandlungsschema belegt, keine seltene Notfallmaßnahme.
 
@@ -252,7 +252,7 @@ Die klinische Manifestation — Th2-dominante Immunlage (Neurodermitis, Asthma) 
 
 **Therapeutische Konsequenz des Two-Hit-Modells:** Die D2-Supersensitivität (Hit 2) ist nicht nur Problemquelle, sondern gleichzeitig therapeutischer Hebel (vgl. 2.4). Sie ermöglicht die Raphe-Kompensation bei Dosen, die bei normalem D2High/D2Low-Verhältnis insuffizient wären. Das therapeutische Fenster (vgl. 7.3) ist somit nicht nur durch die Hypersensitivität *begrenzt*, sondern durch sie überhaupt erst *erreichbar*. Hit 2 hat das System beschädigt und gleichzeitig den Zugang zur Therapie eröffnet.
 
-##### **Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
+**Epidemiologische Stützung: Atopische Gesamtlast als Prädiktor für ASD/ADHD**
 
 Die These, dass die atopische Grunderkrankung und die neurodevelopmentale Manifestation nicht unabhängig sind, sondern aus einem gemeinsamen Upstream-Defekt stammen, wird durch umfangreiche epidemiologische Daten gestützt. Die entscheidende Evidenz liegt nicht in der bloßen Koinzidenz, sondern im **Dosiseffekt über die atopische Gesamtlast**.
 
@@ -331,7 +331,7 @@ Die Daten schließen Variante 2 nicht aus — unabhängige Atopie existiert zwei
 | **Unbewusste Meidung dopaminerger Stimulanzien** (Koffein, Nikotin) | Aversive Ersterfahrung durch D2High-vermittelte Überreaktion → konditioniertes Meideverhalten |
 | **Vertikaler Blickrichtungsnystagmus bei 15 mg LDX** (vgl. 2.4.1) | Zerebellare Purkinje-Zellen chronisch auf hypodopaminerge Bedingungen kalibriert → D2High-Shift potenziert die noradrenerge LC-Antwort auf LDX |
 
-##### **Epidemiologischer Blind Spot**
+**Epidemiologischer Blind Spot**
 
 Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange systemische Glukokortikoidtherapie + dopaminerge Langzeitfolgen — identifiziert eine potenziell große, systematisch übersehene Population:
 
@@ -339,7 +339,7 @@ Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange s
 
 **Fehlende Kohortenstudie:** Die humane klinische Verbindung IV-Kortison in der Kindheit → persistenter D2High-Shift → dopaminerge Supersensitivität im Erwachsenenalter ist durch mehrere unabhängige tierexperimentelle Linien belegt. Eine systematische humane Kohortenstudie existiert nicht — vermutlich, weil die Frage so nie gestellt wurde. Kinder mit schwerer atopischer Erkrankung und Langzeit-Glukokortikoidtherapie existieren zu Tausenden; die dopaminergen Langzeitfolgen sind nicht untersucht.
 
-##### **Abgrenzung: Iatrogen vs. kongenital**
+**Abgrenzung: Iatrogen vs. kongenital**
 
 | Kriterium | Kongenitaler D2High-Shift | Iatrogener D2High-Shift (vorliegend) |
 | :---- | :---- | :---- |
@@ -351,7 +351,7 @@ Die Konstellation — schwere atopische Erkrankung im Kindesalter + jahrelange s
 
 Im vorliegenden Fall ist eine rein kongenitale Genese unwahrscheinlich, da die GC-Exposition dokumentiert ist und die Expositionsdauer (Jahre, einschließlich IV-Gabe) den tierexperimentell etablierten Schwellenwert für persistente Veränderungen deutlich überschreitet. Eine genetische Prädisposition als permissiver Faktor ist dennoch nicht auszuschließen — die GC-Exposition hätte dann einen subklinischen Shift in einen klinisch relevanten Bereich amplifiziert.
 
-##### **Evidenzstatus**
+**Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 | :---- | :---- | :---- |
@@ -373,7 +373,7 @@ Im vorliegenden Fall ist eine rein kongenitale Genese unwahrscheinlich, da die G
 | Disorders of Partial Arousal teilen mit ADHD: familiäre Prädisposition, erhöhte Arousals, Schlaffragmentierung, erhöhten SWS | Gesichert | JCSM Review (Walters et al. 2008) |
 | Familiäre Anamnese: Xyan Somnambulismus (Jugend, Erschöpfungsschlaf-getriggert), Tochter Pavor nocturnus (ASD, phasenweise wöchentlich) | Einzelfallbeobachtung | Selbstbeobachtung + Fremdbericht |
 
-##### **Therapeutische Implikation**
+**Therapeutische Implikation**
 
 Der D2High-Shift hat direkte Konsequenzen für die Dosierungsstrategie:
 
@@ -475,9 +475,9 @@ Dieses Modell erklärt drei klinische Beobachtungen, die rein periodische oder r
 
 Der B7/B8-Phasenversatz erzeugt seine maximale Wirkung nicht diffus, sondern an einem anatomisch definierten Konvergenzpunkt: dem **Midline-/Intralaminären Thalamus** (ML/IL-Komplex).
 
-Der ML/IL-Komplex (Nuclei reuniens, rhomboideus, centromedianus, parafascicularis) ist eine funktionelle Gruppierung, keine anatomische Einheit. Er weist die dichteste belegte Überlappung beider Raphe-Kerne auf: B7 erreicht ihn über dorsale Tegmentumfasern, B8 über ventrale. Die einzelnen Kerne innerhalb des Komplexes haben unterschiedliche B7/B8-Innervierungsdichten und unterschiedliche kortikale Zielgebiete, was zu einer intrathalamischen Kaskade mit unterschiedlichen Kippschwellen führt (vgl. Anhang F.4.1). Die Funktion des ML/IL-Komplexes — kortikale Zustandsübergänge, Arousal-Gating, thalamokortikale Synchronisation — macht ihn zum kritischsten Relais für die in 2.5.4 beschriebene kortikale Kohärenz.
+Der ML/IL-Komplex (Nuclei reuniens, rhomboideus, centromedianus, parafascicularis) ist eine funktionelle Gruppierung, keine anatomische Einheit. Er weist die dichteste belegte Überlappung beider Raphe-Kerne auf: B7 erreicht ihn über dorsale Tegmentumfasern, B8 über ventrale. Die einzelnen Kerne innerhalb des Komplexes haben unterschiedliche B7/B8-Innervierungsdichten und unterschiedliche kortikale Zielgebiete, was zu einer intrathalamischen Kaskade mit unterschiedlichen Kippschwellen führt (vgl. Anhang F.4.1). Die Funktion des ML/IL-Komplexes — kortikale Zustandsübergänge, Arousal-Gating, thalamokortikale Synchronisation — macht ihn zum kritischsten Relais für die in 2.5.3 beschriebene kortikale Kohärenz.
 
-Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Signal an den ML/IL-Komplex → stabile thalamokortikale Modulation. Bei zunehmendem Phasenversatz erzeugen die gegenphasigen serotonergen Inputs destruktive Interferenz: Das Signal wird nicht schwächer, sondern *inkohärent*. Der Thalamus erhält widersprüchliche Modulationssignale und kann kortikale Zustandsübergänge nicht mehr sauber orchestrieren. Die in 2.5.5 beschriebene Schlaffragmentierung — steigende Transitionsdichte über den Zyklus — ist das direkte Korrelat dieser thalamischen Interferenz.
+Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Signal an den ML/IL-Komplex → stabile thalamokortikale Modulation. Bei zunehmendem Phasenversatz erzeugen die gegenphasigen serotonergen Inputs destruktive Interferenz: Das Signal wird nicht schwächer, sondern *inkohärent*. Der Thalamus erhält widersprüchliche Modulationssignale und kann kortikale Zustandsübergänge nicht mehr sauber orchestrieren. Die in 2.5.4 beschriebene Schlaffragmentierung — steigende Transitionsdichte über den Zyklus — ist das direkte Korrelat dieser thalamischen Interferenz.
 
 | Zyklustag | B7/B8-Phasenlage | ML/IL-Signal | Klinisches Korrelat |
 | :---- | :---- | :---- | :---- |
@@ -499,7 +499,7 @@ Der Mechanismus ist strukturell identisch zur thalamischen Interferenz: Wenn B7 
 
 Die Amplitude der autonomen Oszillation erklärt sich durch denselben Interferenz-Mechanismus: konstruktive Interferenz (B7+B8 in Phase) erzeugt maximale Suppression, destruktive Interferenz (B7/B8 gegenphasig) erzeugt maximale Destabilisierung. Die Differenz zwischen beiden Zuständen ist größer als bei bloßer Signalabschwächung eines einzelnen Modulators.
 
-**Zwei Projektionen, ein Phasenversatz, zwei Konsequenzen:** Der B7/B8-Interferenz-Mechanismus erzeugt über den ML/IL-Thalamus die *kortikale* Fragmentierung (messbar als Schlafarchitektur-Instabilität, Anhang B.2–B.3) und über den LC die *autonome* Zyklik (messbar als HR-Drop-Periodizität und HR_RESTING-Deviation, Anhang B.10, B.13). Beide sind unterschiedliche Projektionen desselben Signals — der sympathovagalen Zyklusposition. Der HR-Drop und der HR_RESTING-Wert sind damit keine bloßen Korrelate, sondern direkte Readouts des B7/B8-Phasenversatzes über den LC-Pfad. Dies erklärt, warum die CSD den autonomen Zyklus nicht beeinflusst (B.13.3): Die CSD resynchronisiert den Kortex (über den thalamischen Pfad), aber die B7/B8-Phasenbeziehung — und damit der LC-Drive — bleibt unverändert. Der Beat zieht unbeeindruckt seine Bahn.
+**Zwei Projektionen, ein Phasenversatz, zwei Konsequenzen:** Der B7/B8-Interferenz-Mechanismus erzeugt über den ML/IL-Thalamus die *kortikale* Fragmentierung (messbar als Schlafarchitektur-Instabilität, Anhang B.2–B.3) und über den LC die *autonome* Zyklik (messbar als HR-Drop-Periodizität und HR_RESTING-Deviation, Anhang B.10, B.13). Beide sind unterschiedliche Projektionen desselben Signals — der sympathovagalen Zyklusposition. Der HR-Drop und der HR_RESTING-Wert sind damit keine bloßen Korrelate, sondern direkte Readouts des B7/B8-Phasenversatzes über den LC-Pfad. Dies erklärt, warum die CSD den autonomen Zyklus nicht beeinflusst (B.13.2): Die CSD resynchronisiert den Kortex (über den thalamischen Pfad), aber die B7/B8-Phasenbeziehung — und damit der LC-Drive — bleibt unverändert. Der Beat zieht unbeeindruckt seine Bahn.
 
 #### **2.5.2 SCN-Raphe-Kopplung: Serielle Architektur und Flaschenhals-Mechanismus**
 
@@ -513,16 +513,16 @@ Die SCN↔Raphe-Verschaltung folgt einer **seriellen** Architektur: **SCN ↔ B8
 
 **Konsequenz: B8 als serielles Relay.** Der MRN (B8) ist nicht nur *ein* Kanal zur SCN-Modulation, sondern der *einzige* Kanal. B7 hat keinen unabhängigen SCN-Zugang. Die gesamte serotonerge Zeitgeberinformation, die den SCN erreicht, wird durch B8 gefiltert. Der 5-HT1A-Autorezeptor am MRN (Dudley et al. 1999) fungiert als Gate dieser Signalübertragung.
 
-##### **Der MRN-Autorezeptor als mechanistischer Flaschenhals**
+**Der MRN-Autorezeptor als mechanistischer Flaschenhals**
 
 Die serielle Architektur hat eine nicht-triviale Konsequenz: Die 5-HT1A-Autorezeptor-Instabilität am MRN (B8) erklärt *beide* in diesem Modell postulierten Desynchronisationsmodi über einen einzigen Mechanismus.
 
 1. **Intra-Kern-Effekt (Feuerrate-Oszillation):** Ein instabiler 5-HT1A-Autorezeptor erzeugt underdämpfte Feuerraten-Oszillationen innerhalb des MRN — der in Abschnitt 2.2 beschriebene Grundmechanismus. Dasselbe gilt für den DRN (B7), dessen 5-HT1A-Autorezeptoren denselben Defekt tragen.
 2. **Inter-Kern-Effekt (B7 verliert SCN-Synchronisation):** Weil B7 den SCN ausschließlich über das B8-Relay erreicht, bedeutet ein verrauschtes B8-Signal, dass B7 seine *einzige* Quelle zirkadianer Synchronisationsinformation verliert. Der B7/B8-Phasenversatz (Abschnitt 2.5.1) ist daher kein unabhängiger Defekt, sondern eine direkte Downstream-Konsequenz der B8-Autorezeptor-Instabilität: B8 rauscht → SCN-Rückkopplung auf B7 degradiert → Phasenbeziehung driftet.
 
-**Ein Mechanismus, ein Defekt, zwei Downstream-Effekte.** Die Zwei-Prozess-Darstellung (Intra-Kern-Oszillation vs. Inter-Kern-Versatz, vgl. D.4.3) ist phänomenologisch korrekt — beide Phänomene existieren und sind messbar —, aber mechanistisch redundant. Der MRN-5-HT1A-Autorezeptor ist der anatomische und funktionelle Flaschenhals, der beide Effekte erzeugt.
+**Ein Mechanismus, ein Defekt, zwei Downstream-Effekte.** Die Zwei-Prozess-Darstellung (Intra-Kern-Oszillation vs. Inter-Kern-Versatz, vgl. D.4.2) ist phänomenologisch korrekt — beide Phänomene existieren und sind messbar —, aber mechanistisch redundant. Der MRN-5-HT1A-Autorezeptor ist der anatomische und funktionelle Flaschenhals, der beide Effekte erzeugt.
 
-##### **LDX-Wirkung auf den SCN: Indirekt über B8**
+**LDX-Wirkung auf den SCN: Indirekt über B8**
 
 LDX wirkt *nicht* direkt auf den SCN. Der SCN exprimiert weder DAT noch NET in funktionell relevanter Dichte; katecholaminerge Modulation ist kein primärer SCN-Input. Der klinisch beobachtete zirkadiane Stabilisierungseffekt von LDX erklärt sich vollständig über die serielle Architektur:
 
@@ -530,7 +530,7 @@ LDX wirkt *nicht* direkt auf den SCN. Der SCN exprimiert weder DAT noch NET in f
 2. **Stabilisiertes B8 → kohärenteres SCN-Signal:** Ein weniger verrauschtes B8 liefert ein kohärenteres 5-HT-Signal an den SCN → SCN-Entrainment verbessert sich → zirkadiane Drift wird korrigiert.
 3. **Persistierender ~4-Tage-Oszillator:** LDX korrigiert den *Intra-Kern-Takt* (Feuerrate beider Kerne), adressiert aber nicht den *Inter-Kern-Relay-Versatz* — die relative Phasenbeziehung zwischen B7 und B8, die über das SCN-Relay synchronisiert wird. Das erklärt die Tracker-Daten: zirkadiane Drift eliminiert (r = −0.831), aber der ~4-Tage-Oszillator persistiert subklinisch, weil das verbesserte, aber nicht perfekte B8-Signal den B7/B8-Versatz zwar dämpft, aber nicht aufhebt.
 
-#### **2.5.3 Autonomes Mitschwingen: Zirkadiane Amplifikation des Grundrhythmus**
+**Autonomes Mitschwingen: Zirkadiane Amplifikation des Grundrhythmus**
 
 Der Hypothalamus synchronisiert über den SCN das gesamte autonome System: Körpertemperatur, Cortisol-Rhythmus, Melatoninfreisetzung, Blutdruckrhythmik und Sympathikus-Parasympathikus-Balance. Bei unkorrigierter zirkadianer Drift (τ ≈ 26 h, PRE-Zustand) erzeugt die resultierende Schwebung eine periodische Fehlpassung aller dieser Systeme mit dem sozialen Taktgeber:
 
@@ -545,7 +545,7 @@ Diese autonome Fehlpassung wirkt nicht als eigenständiger CSD-Treiber, sondern 
 
 **Therapeutische Dissoziation:** LDX korrigiert die zirkadiane Drift über B8-Stabilisierung (vgl. 2.5.2), womit der autonome Amplifikationspfad weitgehend entfällt. Die autonomen Parameter — Cortisol-Rhythmus, Melatonin-Onset, Sympathikus-Parasympathikus-Balance — normalisieren sich. Der ~4-Tage-Oszillator operiert POST ohne diese zusätzliche Modulation: kürzere Zyklen bei niedrigerer Anfallsschwere, subklinischer Verlauf. Die Dissoziation — LDX korrigiert das autonome Mitschwingen, nicht den CSD-Zyklus selbst — bestätigt die hierarchische Trennung zwischen B7/B8-Generator und zirkadianem Modulationsfaktor.
 
-#### **2.5.4 Kortikale Wachhaltefunktion der Raphe und lokaler Schlaf**
+#### **2.5.3 Kortikale Wachhaltefunktion der Raphe und lokaler Schlaf**
 
 **Die Raphe als kortikaler Synchronisator:** Serotonerge DRN-Neurone feuern während Wachheit tonisch — konstant, gleichmäßig, stimulusunabhängig. Dieser tonische Tonus hält kortikale Neurone in einem stabilen depolarisierten Zustand knapp unter der Feuerschwelle: nicht erregt, nicht feuend, aber *bereit zu feuern*. Ohne diesen serotonergen Hintergrund-Drive driften einzelne Neurone in Richtung Hyperpolarisation, und wenn genug Neurone in einer Region hyperpolarisieren, kippen sie kollektiv in einen Down-State — lokaler Schlaf bei globalem Wachsein (Vyazovskiy et al., 2011).
 
@@ -564,7 +564,7 @@ Bernardi et al. (2015, *Nature Communications*) bestätigten, dass Slow Waves w�
 
 Beim Aufwachen reaktiviert sich der Kortex nicht simultan. Hochfrequente Veränderungen treten zuerst in frontalen und zuletzt in okzipitalen und inferior-temporalen Arealen auf (Luppi et al. 2025, *Current Biology*; Gonzalez et al. 2026, *bioRxiv*). Der visuelle Kortex wacht zuletzt auf. Post-Schlaf-Wachheit zeigt erhöhte Delta-Aktivität in posterioren Ableitungen — persistierende schlafähnliche Aktivität spezifisch im visuellen Kortex (Marzano et al. 2011). Wenn der Aufwachprozess bei dysregulierter Raphe ohnehin instabil ist, dann ist die Region, die am längsten im Off-State bleibt, der posteriore Kortex. Dies erklärt die Migräne-Topologie (okzipitaler Beginn, vgl. 4.3) und die phänomenologisch berichtete prolongierte Sleep Inertia.
 
-**Modalitätsspezifische Asymmetrie der Off-State-Last:** Der visuelle Kortex verarbeitet räumlich-parallel: jeder bistabile Patch produziert Output, der zwischen vollem Signal und Schweigen alterniert. Externer visueller Input erzwingt Verarbeitung, die der Off-State-Kortex nicht kohärent liefern kann — Augenschluss eliminiert den Input und damit den Konflikt. Der auditorische Kortex verarbeitet temporal-sequenziell: Periodischer Input (Musik, Rhythmus) kann bistabile Neurone in phasengekoppeltes Feuern zwingen — externer Takt überschreibt die stochastische Up/Down-Alternation. Ob externer Input den Off-State-Konflikt verschärft oder auflöst, hängt davon ab, ob die Modalität räumlich-parallele Kohärenz erfordert (visuell: Input = Last) oder temporal-sequenzielles Entrainment ermöglicht (auditorisch: Input = Stabilisierung). Dies erklärt die kompensatorische Emergenz von Musik als externem Taktsubstitut (vgl. Anhang D, D.6.4).
+**Modalitätsspezifische Asymmetrie der Off-State-Last:** Der visuelle Kortex verarbeitet räumlich-parallel: jeder bistabile Patch produziert Output, der zwischen vollem Signal und Schweigen alterniert. Externer visueller Input erzwingt Verarbeitung, die der Off-State-Kortex nicht kohärent liefern kann — Augenschluss eliminiert den Input und damit den Konflikt. Der auditorische Kortex verarbeitet temporal-sequenziell: Periodischer Input (Musik, Rhythmus) kann bistabile Neurone in phasengekoppeltes Feuern zwingen — externer Takt überschreibt die stochastische Up/Down-Alternation. Ob externer Input den Off-State-Konflikt verschärft oder auflöst, hängt davon ab, ob die Modalität räumlich-parallele Kohärenz erfordert (visuell: Input = Last) oder temporal-sequenzielles Entrainment ermöglicht (auditorisch: Input = Stabilisierung). Dies erklärt die kompensatorische Emergenz von Musik als externem Taktsubstitut (vgl. Anhang D, D.6.3).
 
 **Tagesprofil als Raphe-Tonus-Proxy:** Das Tagesprofil der Off-State-Intrusionen bildet nicht eine U-förmige Chronotyp-Kurve ab, sondern ein monoton abfallendes Defizit-Profil:
 
@@ -596,9 +596,9 @@ POST entfällt die zirkadiane Komponente. Die kortikale Vulnerabilität zykliert
 
 Wenn externe Aufgaben enden — Arbeitsende, Monotonie, Abend — fällt der exogene Drive weg. Was bleibt, ist der endogene Raphe-Tonus. Wenn dieser insuffizient ist — sei es durch B7/B8-Interferenz, zirkadiane Phasenverschiebung oder beides — zeigt sich der Grundzustand: asynchrones Patchwork aus wachen und schlafenden kortikalen Regionen. Was subjektiv als „Erschöpfung nach der Arbeit" erlebt wird, ist nicht Konzentrationsermüdung, sondern der Wegfall des einzigen funktionierenden Synchronisators (vgl. Anhang C).
 
-#### **2.5.5 Schlafarchitektur als kortikaler Kohärenzmarker**
+#### **2.5.4 Schlafarchitektur als kortikaler Kohärenzmarker**
 
-Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in 2.5.1–2.5.4 beschriebenen Mechanismen und verbindet die Oszillator-Ebene mit messbarer kortikaler Kohärenz.
+Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in 2.5.1–2.5.3 beschriebenen Mechanismen und verbindet die Oszillator-Ebene mit messbarer kortikaler Kohärenz.
 
 **Kernbefund:** Das SWS-Quantum ist konstant und normal. Das Defizit manifestiert sich auf zwei komplementären Ebenen: **räumlich** (intra-Nacht) als topologische Fragmentierung — der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein Patchwork aus lokalen Off-States — und **zeitlich** (inter-Nacht) als akkumulierter B7/B8-Phasenversatz über den Oszillationszyklus, überlagert von der quasi-wöchentlichen HR-Drop-Periodizität im PRE-Zustand (FFT: dominante Periode 7,5 Tage, Power 102,5; Autokorrelation Lag 7 r=0,317, Lag 14 r=0,213; Anhang B). Die räumliche Fragmentierung ist das, was der Tracker pro Nacht sieht; die zeitliche Akkumulation ist der Treiber über Tage. Der Tracker kodiert die räumliche Fragmentierung als temporale Instabilität — häufige Stadienwechsel, kurze Deep-Fragmente und hohe Nacht-zu-Nacht-Variabilität (Anhang B, B.2–B.3).
 
@@ -610,11 +610,11 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 
 **LDX-Effekt:** Unter Lisdexamfetamin konsolidiert sich die Schlafarchitektur: Die Transitionsdichte sinkt um ~23% (4,4 → 3,4/h, p=0,011), die Nacht-zu-Nacht-Variabilität der Deep-Episodenzahl reduziert sich um den Faktor 3 (SD 13,0 → 4,0). Parallel konsolidiert sich der REM — die Traumerinnerung, die PRE nur post-iktal (nach CSD-erzwungener Resynchronisation) auftrat, wird unter LDX regulär (Anhang B, B.8). Alle Befunde konvergieren auf denselben Mechanismus: dopaminerge Stabilisierung der Raphe → kohärente thalamische Modulation → globale kortikale Zustandsübergänge. Die Konsolidierung betrifft den Intra-Kern-Takt; die residuale Zyklik der Schlaffragmentierung über den ~4-Tage-Zyklus bleibt als Spur des persistierenden B7/B8-Phasenversatzes bestehen.
 
-**Konsequenz für die SWS-Clearance:** Fragmentierter SWS bei erhaltenem Quantum bedeutet: gleiche Tracker-Minuten, suboptimale restaurative Funktion. Die glymphatische Clearance erfordert globale langsame Oszillationen, die den gesamten Kortex durchlaufen — ein Patchwork lokaler Off-States erfüllt diese Bedingung nicht. Die resultierende insuffiziente Adenosin-Clearance senkt am Folgetag die Schwelle für lokalen Schlaf (vgl. 2.5.4) und verstärkt an Tagen maximalen B7/B8-Versatzes den kumulativen Fragmentierungszyklus.
+**Konsequenz für die SWS-Clearance:** Fragmentierter SWS bei erhaltenem Quantum bedeutet: gleiche Tracker-Minuten, suboptimale restaurative Funktion. Die glymphatische Clearance erfordert globale langsame Oszillationen, die den gesamten Kortex durchlaufen — ein Patchwork lokaler Off-States erfüllt diese Bedingung nicht. Die resultierende insuffiziente Adenosin-Clearance senkt am Folgetag die Schwelle für lokalen Schlaf (vgl. 2.5.3) und verstärkt an Tagen maximalen B7/B8-Versatzes den kumulativen Fragmentierungszyklus.
 
 **Diagnostischer Wert:** Die Schlaffragmentierung ist ein nicht-invasiver Marker, der die Raphe-Dysregulation auf einer objektiv messbaren Ebene abbildet — unabhängig von subjektiver Selbstbeobachtung. Die Betablocker-Invarianz des Befunds ist ein negatives Differentialkriterium: Metoprolol (noradrenerg) reduziert die Fragmentierung nicht, LDX (dopaminerg, indirekt serotonerg über Raphe-Modulation) tut es. Die Trennschärfe-Hierarchie (Deep > REM > Light) stützt die serotonerge Spezifität — ein unspezifischer Sedierungseffekt würde alle Stadien gleichermaßen konsolidieren. Prospektiv skalierbar: Ein Consumer-Tracker (30 €) + Open-Source-App (Gadgetbridge) liefert über 4–6 Wochen einen kontinuierlichen Biomarker — einen Prozess, den die klinische Forschung mit PET und PSG sucht. Methodisch kein technologischer Durchbruch, sondern Standard-Data-Engineering: Gewinnung korrelativer Daten aus Rauschquellen durch geeignete Signalverarbeitung. Vorteile gegenüber klinischer Diagnostik: kontinuierlich über Monate, natürliches Schlafumfeld, Nacht-zu-Nacht-Variabilität als eigentliches Signal. Nachteil: keine räumliche Auflösung, keine SWA, keine direkte Validierung der Kohärenz-Interpretation. Details, statistische Befunde und messtheoretische Einordnung in Anhang B.
 
-#### **2.5.6 Evidenz und Einordnung**
+**Evidenz und Einordnung**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 | :---- | :---- | :---- |
@@ -633,7 +633,7 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Quasi-wöchentliche Periodizität im HR-Drop (7,5 Tage, FFT) als autonome Manifestation der zirkadianen Schwebung (PRE-Zustand) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B.10) |
 | Phasenmodell: CSD-Schwelle auf ansteigender Flanke nach HR-Drop-Minimum, nicht am Minimum selbst | Deskriptiv (n=15 Anfälle) | Tracker-Daten (Anhang B.12); Anfall korreliert mit dDrop/dt, nicht mit Drop-Amplitude |
 | Midline-/Intralaminärer Thalamus als primäre B7/B8-Interferenzquelle mit intrathalamischer Kaskade | Anatomisch gesichert, funktionelle Rolle hypothetisch | B7/B8-Konvergenz im ML/IL-Komplex anatomisch etabliert (Vertes 2004, Morin 2013); Interferenz-Mechanismus und Kaskadenmodell eigene Hypothese |
-| LC als autonomer Konvergenzpunkt der B7/B8-Interferenz; HR/τ als Readout des Phasenversatzes | Anatomisch gesichert (Raphe→LC-Projektionen), funktionelle Interferenz-Hypothese | DRN/MRN→LC-Projektionen etabliert; HR_RESTING-Kreuzvalidierung (Anhang B.13); CSD-Invarianz des autonomen Zyklus (B.13.3) |
+| LC als autonomer Konvergenzpunkt der B7/B8-Interferenz; HR/τ als Readout des Phasenversatzes | Anatomisch gesichert (Raphe→LC-Projektionen), funktionelle Interferenz-Hypothese | DRN/MRN→LC-Projektionen etabliert; HR_RESTING-Kreuzvalidierung (Anhang B.13); CSD-Invarianz des autonomen Zyklus (B.13.2) |
 | LDX stabilisiert Intra-Kern-Takt, nicht Inter-Kern-Phasenversatz | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
 | Zirkadiane Schwebung als Amplifikator des B7/B8-Grundrhythmus (nicht eigenständiger Taktgeber) | Hypothetisch, konsistent mit PRE/POST-Dissoziation | PRE: ~6–7-Tage-Rhythmus (Superposition); POST: ~4-Tage-Rhythmus (Eigenperiode); Differenz erklärt durch Wegfall des zirkadianen Modulationsfaktors |
 | Stochastisches Fenstermodell (Triggerstärke × B7/B8-Phasenversatz-Zustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |

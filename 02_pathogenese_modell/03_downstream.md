@@ -54,7 +54,7 @@ Eine klinische Schlüsselbeobachtung unter Lisdexamfetamin offenbart die operati
 
 Die Dissoziation zeigt: Der Thalamus war imstande, den Kortex vor Überflutung zu schützen, ohne dass der bewusst wahrgenommene Input deshalb geringer war. Kortikaler Schutz ≠ Abwesenheit des Inputs. Die kompensatorischen Verhaltensweisen (Tunnelblick, sensorische Abschirmung) sind automatisiert und reaktiv auf den subkortikalen Input — sie benötigen keine kortikale Eskalation als Auslöser.
 
-#### **3.4.2 Subkortikales Rauschen als unbewusste kortikale Last**
+**Subkortikales Rauschen als unbewusste kortikale Last**
 
 Die Beobachtung impliziert eine zuvor unsichtbare Verarbeitungsebene: Der Kortex verarbeitet subkortikales Rauschen, das nie als diskrete Wahrnehmung ins Bewusstsein dringt — nur in seinen Konsequenzen (Erschöpfung, Konzentrationsbedarf). Chronisches subkortikales Rauschen erzeugt eine kontinuierliche kortikale Last ohne bewusstes Korrelat.
 
@@ -62,7 +62,7 @@ Das erklärt die klinische Beobachtung, dass Erschöpfung nach sensorisch intens
 
 **Subjektives Korrelat:** Was als „Konzentration kostet Energie" erlebt wird, ist strukturell die kortikale Ressource, die permanent für Rauschunterdrückung aufgewendet wird. Fokus wäre dann nicht Anstrengung gegen bewusste Ablenkung, sondern Anstrengung gegen basales Gating-Versagen.
 
-#### **3.4.3 ADHS als SNR-Problem: Diskriminierbarkeit statt Aufmerksamkeitsdefizit**
+#### **3.4.2 ADHS als SNR-Problem: Diskriminierbarkeit statt Aufmerksamkeitsdefizit**
 
 Der subjektive Eindruck „ich kann mich nicht konzentrieren" wäre in diesem Modell ein Epiphänomen eines steigenden Rauschpegels — nicht eine primäre Aufmerksamkeitsschwäche. ADHS reformuliert sich als Signal-Rausch-Problem (SNR) statt als Aufmerksamkeitsdefizit.
 
@@ -81,7 +81,7 @@ Die Kernoperation ist Diskriminierbarkeit, aus zwei oppositen Perspektiven gedac
 
 LDX hebt den serotonergen Tonus und damit die thalamische Auflösung — was sich als schärfere Diskriminierung manifestiert, nicht als stärkeres Signal. Der externe Input wird nicht lauter, er wird kontrastreicher gegen das kortikale Rauschen abgehoben.
 
-#### **3.4.4 Messbarkeitshypothese**
+**Messbarkeitshypothese**
 
 Die Bandbreitenbegrenzung unter LDX müsste sich neurophysiologisch abbilden lassen:
 
@@ -91,7 +91,7 @@ Die Bandbreitenbegrenzung unter LDX müsste sich neurophysiologisch abbilden las
 | **fMRI Resting-State** | Reduktion des Default-Mode-Rauschens ohne proportionale Zunahme task-relevanter Netzwerkaktivität |
 | **1/f-Spektralanalyse** | Steilerer aperiodischer Exponent unter LDX (weniger „flaches" Spektrum = weniger neurales Rauschen) |
 
-#### **3.4.5 Literaturstütze: Neurales Rauschen und SNR bei ADHS**
+#### **3.4.3 Literaturstütze: Neurales Rauschen und SNR bei ADHS**
 
 Die oben beschriebene Reformulierung wird durch drei unabhängige Forschungslinien gestützt:
 
