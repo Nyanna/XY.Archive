@@ -34,7 +34,7 @@ B7 und B8 innervieren den gesamten menschlichen Kortex dual laminär. Für den m
 
 **Konsequenz:** Der Kortex ist kein primärer Interferenzort. Die kortikale Symptomtopographie (okzipitale CSD-Initiation, visuelle Aura) erklärt sich nicht über lokale kortikale B7/B8-Überlappung, sondern über die thalamische Kaskade (→ F.4): Thalamische Interferenz propagiert über spezifische thalamokortikale Projektionspfade in den Kortex, wobei der Pulvinar-Pfad zum visuellen Kortex die niedrigste Kompensationsreserve aufweist und zuerst kippt.
 
-#### F.2.1 Pulvinar-Pfad: Thalamische Projektion zum visuellen Kortex
+**Pulvinar-Pfad: Thalamische Projektion zum visuellen Kortex**
 
 Der Pulvinar (posteriorer Thalamus) erhält beim Menschen nachweislich erhöhte Serotoninkonzentrationen (Oke et al. 1997, n=13, postmortem HPLC) und ist anatomisch eng mit dem visuellen Kortex verbunden (reziproke thalamokortikale Projektionen). Der visuelle Kortex wird über zwei parallele thalamische Pfade versorgt:
 
@@ -60,7 +60,7 @@ Die hippocampale Innervierung zeigt ein laminär *und* zellulär differenziertes
 
 Der funktional entscheidende Separationsmechanismus ist jedoch nicht laminär, sondern **zellulär** — eine Dissoziation, die erst durch Circuit-Tracing-Studien der letzten Jahre aufgelöst wurde:
 
-#### F.3.1 Zelluläre Zielspezifität: Zwei Modulationspfade auf verschiedene Zellpopulationen
+**Zelluläre Zielspezifität: Zwei Modulationspfade auf verschiedene Zellpopulationen**
 
 | Kern | Zielzelltyp | Transmissionsmodus | Funktion |
 | :---- | :---- | :---- | :---- |
@@ -71,7 +71,7 @@ Die zelluläre Zielspezifität ist experimentell gesichert: Circuit-Tracing mit 
 
 Die funktionale Dissoziation ist ebenfalls experimentell bestätigt: DRN→vHip-Aktivierung reduziert reaktive Aggression über 5-HT1B-Rezeptoren, während MRN→vHip-Aktivierung depressionsähnliches Verhalten moduliert, aber keinen Effekt auf Aggression zeigt (Chemogenetik/Optogenetik, ScienceDirect 2024).
 
-#### F.3.2 Separationsmechanismus und Vulnerabilität
+#### F.3.1 Separationsmechanismus und Vulnerabilität
 
 Der Hippocampus (3-Schichten-Architektur) kann DRN und MRN nicht räumlich/laminär voneinander isolieren, wie es der 6-Schichten-Neokortex tut. Stattdessen löst er das Interferenzproblem über **zelluläre Separation**: verschiedene Zellpopulationen als Empfänger. Diese Separation ist unter Normalbedingungen funktional äquivalent zu laminärer Trennung, aber sie hat eine spezifische Vulnerabilität:
 
@@ -80,7 +80,7 @@ Der Hippocampus (3-Schichten-Architektur) kann DRN und MRN nicht räumlich/lamin
 
 Bei SERT-Dysfunktion oder Autoreceptor-Versagen diffundiert das DRN-Signal (Volume Transmission) über den Extrazellulärraum zu den MRN-Zielneuronen (Interneurone) → **pharmakologischer Spillover**. Die zelluläre Separation bricht nicht mechanisch, sondern pharmakologisch zusammen.
 
-#### F.3.3 Pathomechanismus: Inkonsistente Engramm-Kodierung
+#### F.3.2 Pathomechanismus: Inkonsistente Engramm-Kodierung
 
 Bei Spillover überlagert das DRN-Signal das MRN-Signal auf den Interneuronen. Die zwei unabhängigen Modulationspfade — Timing-Kontrolle (MRN→Interneurone→Theta-Phase) und Plastizitätskontrolle (DRN→Pyramidenzellen→LTP) — verlieren ihre Unabhängigkeit.
 
@@ -92,7 +92,7 @@ Bei circadian driftendem B7/B8-Phasenversatz (vgl. Abschnitt 2.5.1) erzeugt dies
 - Spillover-Mechanismus bei SERT-Dysfunktion als Ursache der Entdifferenzierung: **plausible Herleitung, nicht direkt getestet**
 - Inkonsistente Engramm-Kodierung als Downstream-Effekt: **Modellvorhersage**, konsistent mit D.6/D.7
 
-**Konsequenz: State-dependent Encoding.** Engramme, die unter Inter-Kern-Desync enkodiert werden, erhalten ein zelluläres serotonerges „Wasserzeichen", das sich vom Normzustand unterscheidet. Diese Engramme sind bevorzugt im gleichen Desync-Zustand abrufbar — ein Mechanismus, der die klinisch beobachtete *state-dependent memory* bei Migräne und Epilepsie erklären könnte (vgl. Anhang E, Abschnitt E.5; Anhang D, Abschnitt D.6.4).
+**Konsequenz: State-dependent Encoding.** Engramme, die unter Inter-Kern-Desync enkodiert werden, erhalten ein zelluläres serotonerges „Wasserzeichen", das sich vom Normzustand unterscheidet. Diese Engramme sind bevorzugt im gleichen Desync-Zustand abrufbar — ein Mechanismus, der die klinisch beobachtete *state-dependent memory* bei Migräne und Epilepsie erklären könnte (vgl. Anhang E, Abschnitt E.5; Anhang D, Abschnitt D.6.3).
 
 ---
 
@@ -104,7 +104,7 @@ Der Thalamus ist die singuläre primäre Interferenzquelle des Modells. Der Midl
 
 **Bezug zum Zentralmodell (→ Kapitel 8, Abschnitt 2.5.1):** Die thalamische Kalibrierung — zentraler Mechanismus des Pathogenesemodells — ist direkt betroffen. Der Thalamus fungiert als *Relaisstation und Integrator*; ein serotonerges Interferenzmuster an dieser Stelle propagiert über die thalamokortikale Kaskade in alle nachgeschalteten Schleifen.
 
-#### F.4.1 Intrathalamische Differenzierung
+**Intrathalamische Differenzierung**
 
 Der „ML/IL-Komplex" ist eine funktionelle Gruppierung, keine anatomische Einheit. Die einzelnen Kerne (reuniens, centromedianus, parafascicularis, centralis lateralis, Pulvinar) haben unterschiedliche B7/B8-Innervierungsdichten und unterschiedliche kortikale Zielgebiete. Dies erzeugt eine *intrathalamische Kaskade*: Nicht alle thalamischen Kerne kippen gleichzeitig, sondern in einer Reihenfolge, die von der aktuellen Verarbeitungslast und der lokalen B7/B8-Dichte abhängt.
 
@@ -116,7 +116,7 @@ Die Kippreihenfolge der einzelnen Kerne ist eine offene empirische Frage. Bekann
 - **Pulvinar** → visueller Kortex (modulatorisch)
 - **MD (Nucleus mediodorsalis)** → PFC-Projektion
 
-#### F.4.2 Zwei Projektionsrichtungen der thalamischen Kaskade
+#### F.4.1 Zwei Projektionsrichtungen der thalamischen Kaskade
 
 Die thalamische Interferenz propagiert über zwei Hauptpfade mit unterschiedlicher Schwelle:
 
@@ -126,7 +126,7 @@ Der Pulvinar-Pfad ist modulatorisch (Higher-Order-Relay) und hat eine niedrigere
 **Projektionsrichtung 2 — MD und andere Kerne → Kortex:**
 Der MD-Thalamus-PFC-Loop hat unter LDX eine höhere Schwelle, weil LDX die dopaminerge Transmission im mesokortikalen System stabilisiert. Der PFC kippt daher zuletzt in der Kaskade. Andere thalamokortikale Pfade (centralis lateralis → somatosensorisch, centromedianus → striatal) kippen in einer lastabhängigen Reihenfolge.
 
-#### F.4.3 Lastabhängiger Kipppunkt
+**Lastabhängiger Kipppunkt**
 
 Der Erstversagenspunkt in der thalamischen Kaskade ist nicht anatomisch fixiert, sondern ergibt sich aus: **B7/B8-Innervierungsdichte × aktuelle Verarbeitungslast** des jeweiligen thalamokortikalen Pfads. Ein thalamischer Kern unter hoher Last verbraucht mehr modulatorische Reserve und kippt früher.
 
@@ -141,7 +141,7 @@ Dies erklärt:
 
 B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär (Charnay & Leger 2010). Eine architektonische Protektion durch Single-Source-Innervierung existiert nicht. Die klinisch beobachtete PFC-Klarheit unter Anfall erklärt sich pharmakologisch:
 
-**Mechanismus:** Der MD-Thalamus-PFC-Loop ist unter LDX dopaminerg stabilisiert. LDX erhöht tonisch Dopamin im mesokortikalen System → die dopaminerge Modulation des MD-Thalamus-PFC-Pfads erhöht dessen Kippschwelle in der thalamischen Kaskade (→ F.4.2). Der PFC kippt daher zuletzt — nicht weil er architektonisch geschützt ist, sondern weil sein thalamischer Input-Pfad pharmakologisch stabilisiert wird.
+**Mechanismus:** Der MD-Thalamus-PFC-Loop ist unter LDX dopaminerg stabilisiert. LDX erhöht tonisch Dopamin im mesokortikalen System → die dopaminerge Modulation des MD-Thalamus-PFC-Pfads erhöht dessen Kippschwelle in der thalamischen Kaskade (→ F.4.1). Der PFC kippt daher zuletzt — nicht weil er architektonisch geschützt ist, sondern weil sein thalamischer Input-Pfad pharmakologisch stabilisiert wird.
 
 **Implikationen:**
 
@@ -210,7 +210,7 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 | Midline-/Intralaminärer Thalamus: volle B7/B8-Überlappung | Gesichert | Vertes 1991; Muzerelle et al. 2014 |
 | Inter-Kern-Desync erzeugt destruktive Interferenz in Überlappungszonen | Hypothetisch, mechanistisch plausibel | Abgeleitet aus Tracing-Anatomie + Modell (Abschnitt 2.5.1) |
 | CSD-Initiation okzipital über Pulvinar-Kaskade (thalamische Interferenz → Pulvinar → visueller Kortex) | Hypothetisch, mechanistisch plausibel | Pulvinar als modulatorischer Higher-Order-Pfad mit niedrigerer Kompensationsreserve; Oke et al. 1997 (erhöhte 5-HT im Pulvinar); Muzerelle et al. 2014 stützt direkte kortikale Überlappung nicht. |
-| State-dependent encoding durch zelluläre hippocampale Interferenz (Spillover-Mechanismus) | Hypothetisch, spekulativ | Abgeleitet aus zellulärer Zielspezifität (PMC11267773, Freund 1992) + Spillover-Modell (F.3.2); direkte Evidenz fehlt |
+| State-dependent encoding durch zelluläre hippocampale Interferenz (Spillover-Mechanismus) | Hypothetisch, spekulativ | Abgeleitet aus zellulärer Zielspezifität (PMC11267773, Freund 1992) + Spillover-Modell (F.3.1); direkte Evidenz fehlt |
 | Thalamische Interferenz als primärer Mechanismus, kortikale Effekte sekundär | Hypothetisch, modellkonsistent | Abgeleitet aus maximaler thalamischer Überlappung + Zentralmodell (Kap. 8) |
 | PFC-Protektion unter LDX: pharmakologisch (MD-Thalamus-Loop dopaminerg stabilisiert), nicht architektonisch | Hypothetisch, mechanistisch plausibel | Humane Daten: duale laminäre Innervierung des gesamten Kortex inkl. PFC (Charnay & Leger 2010); LDX-Effekt auf mesokortikales DA-System gesichert; MD-Loop-Stabilisierung abgeleitet |
 | Subjektive PFC-Klarheit unter LDX bei Anfall | Einzelbeobachtung (n=1) | Selbstbeobachtung 31.03.2026 |

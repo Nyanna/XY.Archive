@@ -11,7 +11,7 @@ Der Prävalenzanstieg von ADS, ADHS und Epilepsie in der Neuzeit ist nicht prim�
 
 ### **G.2 Historische Korrelation: Pharmazeutische Exposition und ADHS-Prävalenz**
 
-#### **G.2.1 Der Industrieländer-Gradient**
+**Der Industrieländer-Gradient**
 
 Die ADHD-Prävalenz variiert geographisch: USA 8,1% bei Kindern (WHO-Daten, höchster Wert), Irak 0,1%, Polen 0,3%, Rumänien 0,4% (niedrigste Werte). Die konventionelle Interpretation attribuiert dies auf diagnostische Unterschiede (DSM-Adoption, Awareness). Das Modell postuliert eine alternative Erklärung: die Korrelation ist real, aber mit dem länderspezifischen pharmazeutischen Profil — GC- und AH1-Marktdurchdringung als Proxy für Hit-2-Expositionsrate.
 
@@ -22,7 +22,7 @@ Die ADHD-Prävalenz variiert geographisch: USA 8,1% bei Kindern (WHO-Daten, höc
 | Topische GC (Hydrocortison) | ~1952, Massenanwendung bei pädiatrischer AD ab ~1960er | Hit 2: D2High-Shift |
 | AH1-Sedativa (Diphenhydramin) | 1946 (USA), europäische Zulassungen gestaffelt | Hit 1b: serotonerge Destabilisierung (vgl. Kapitel 5, Abschnitt 9) |
 
-#### **G.2.2 Konvergierende Indizien**
+#### **G.2.1 Konvergierende Indizien**
 
 **USA vs. Osteuropa/Asien:** Der größte Anstieg von Inzidenz und Prävalenz 1990–2019 wurde in den USA beobachtet — dem Land mit frühester und aggressivster GC-Anwendung bei pädiatrischer AD und frühester OTC-Verfügbarkeit von Diphenhydramin. Osteuropa hatte beides deutlich später und restriktiver.
 
@@ -34,7 +34,7 @@ Die ADHD-Prävalenz variiert geographisch: USA 8,1% bei Kindern (WHO-Daten, höc
 
 **GC-Expositionsrate bei AD-Kindern:** In Norwegen erhielten 99,2% der pädiatrischen AD-Patienten topische Corticosteroide und 2,1% systemische Corticosteroide (Rønnevig et al. 2022). Die Expositionsrate ist nahezu universell bei AD-Kindern — der Unterschied zwischen Ländern liegt in Potenz, Dauer und Aggressivität der Anwendung.
 
-#### **G.2.3 Der DSM-Gegeneinwand und seine Widerlegung**
+**Der DSM-Gegeneinwand und seine Widerlegung**
 
 Wenn der Prävalenzanstieg *nur* diagnostisch wäre, sollte die Migräne-ADHS-Komorbidität historisch stabil bleiben. Falls sie *ebenfalls* ansteigt, spricht das für einen echten Prävalenzanstieg in Population A.
 
@@ -54,7 +54,7 @@ Umweltfaktoren (Hygienehypothese, EDC)
         → Population-A-ADHS/ASD/Epilepsie
 ```
 
-#### **G.3.1 Abgrenzung: Antenatale GC als separater Expositionspfad**
+**Abgrenzung: Antenatale GC als separater Expositionspfad**
 
 Antenatale GC (Betamethason/Dexamethason) zur Lungenreifung bei Frühgeburtsrisiko stellen einen separaten Expositionspfad dar. Eine taiwanesische Kohorte (n=1.163.443) zeigt erhöhtes kumulatives Risiko für ADHS und kindliche psychische Störungen nach antenataler GC-Exposition (HR 1,13–1,22), wobei eine dänische Geschwisterstudie Confounding nahelegt (aHR 1,03 im Geschwisterdesign). Tiermodelle zeigen, dass experimentelle Erhöhung mütterlicher Cortisolspiegel ADHS-ähnliche Symptome bei Nachkommen produziert.
 
@@ -62,7 +62,7 @@ Antenatale GC (Betamethason/Dexamethason) zur Lungenreifung bei Frühgeburtsrisi
 
 ### **G.4 ASD und Autoimmunität: Populationsgewichtung**
 
-#### **G.4.1 Quantifizierung der Autoimmun-Assoziation bei ASD**
+**Quantifizierung der Autoimmun-Assoziation bei ASD**
 
 | Marker | Prävalenz bei ASD | Quelle |
 |:-------|:-----------------|:-------|
@@ -73,7 +73,7 @@ Antenatale GC (Betamethason/Dexamethason) zur Lungenreifung bei Frühgeburtsrisi
 
 **Konservative Schätzung der Vereinigungsmenge** (mindestens ein Marker: Migräne ODER Epilepsie ODER Autoimmunerkrankung): **60–75%** aller ASD-Patienten.
 
-#### **G.4.2 Implikation für Populationsgewichtung**
+**Implikation für Populationsgewichtung**
 
 Wenn 60–75% jeder unstratifizierten ASD-Kohorte Population A ist, dann ist jede ASD-Studie ein gewichtetes Mittel: ~0,65 × Population-A-Signal + ~0,35 × Population-B-Signal.
 
@@ -83,7 +83,7 @@ Wenn 60–75% jeder unstratifizierten ASD-Kohorte Population A ist, dann ist jed
 
 **Konsequenz 3:** Rückwärtsrechnung möglich: wahrer Population-A-Effekt ≈ d_gemessen / 0,65.
 
-#### **G.4.3 Validierung an existierenden Daten**
+#### **G.4.1 Validierung an existierenden Daten**
 
 ASD-Studien, die nach Raphe-Achsen-Markern stratifizieren, zeigen durchgehend stärkere Effekte als unstratifizierte Kohorten:
 
@@ -96,11 +96,11 @@ ASD-Studien, die nach Raphe-Achsen-Markern stratifizieren, zeigen durchgehend st
 
 ### **G.5 Hit-1-Architektur-Erweiterung: Zwei unabhängige Einstiegspunkte**
 
-#### **G.5.1 Hit 1a: 5-HT1A-Autoreceptor-Feedback-Instabilität**
+**Hit 1a: 5-HT1A-Autoreceptor-Feedback-Instabilität**
 
 Der Originalmechanismus des Modells (vgl. Kapitel 2). Kongenitale Instabilität des negativen Feedback am DRN → instabile Raphe-Feuerrate → zyklische Desynchronisation → CSD-Anfälligkeit. Primärer klinischer Marker: Migränezyklizität.
 
-#### **G.5.2 Hit 1b: SERT-Gain-of-Function (SLC6A4-Varianten)**
+#### **G.5.1 Hit 1b: SERT-Gain-of-Function (SLC6A4-Varianten)**
 
 Multiple seltene hyperfunktionale Kodierungsvarianten des Serotonintransporters wurden bei ASD identifiziert. Die häufigste, SERT Ala56, zeigt im Knock-in-Mausmodell:
 
@@ -113,7 +113,7 @@ Multiple seltene hyperfunktionale Kodierungsvarianten des Serotonintransporters 
 
 **Kritischer Befund:** Der Mechanismus läuft über den immunresponsiven p38-MAPK-Signalweg. Erhöhte Expression von p38-MAPK-Signalkomponenten wurde in Gehirnen von ASD-Patienten berichtet. Die SERT-Variante erzeugt damit ihre eigene Immunpathologie — der Phänotyp *ist* eine immunologische Dysregulation, auch wenn er genetisch und nicht autoimmun im klassischen Sinne verursacht ist.
 
-#### **G.5.3 Phänotypische Differenzierung**
+#### **G.5.2 Phänotypische Differenzierung**
 
 | Merkmal | Hit 1a (5-HT1A) | Hit 1b (SERT-GoF) |
 |:--------|:----------------|:------------------|
@@ -124,7 +124,7 @@ Multiple seltene hyperfunktionale Kodierungsvarianten des Serotonintransporters 
 | **Immun-Sekundäreffekt** | Über 5-HT-vermittelte Thrombozytenaktivierung | Über p38-MAPK-Pathway direkt |
 | **Erblichkeit** | Postuliert (Familienhäufung Migräne) | Nachgewiesen (SLC6A4-Varianten, höhere Heritabilität als ASD selbst) |
 
-#### **G.5.4 Konvergenz am GI-Endpunkt**
+#### **G.5.3 Konvergenz am GI-Endpunkt**
 
 Die erwartete phänotypische Dissoziation (Hit 1a = Migräne ohne GI, Hit 1b = GI ohne Migräne) existiert nicht. Beide Pfade produzieren GI-Symptome:
 
@@ -149,11 +149,11 @@ In einer chinesischen ASD-Kohorte waren die signifikant erhöhten GI-Symptome sp
 
 Der Phänotyp *ist* eine Autoimmun-äquivalente Störung. SERT-Gain-of-Function produziert seine eigene Immunpathologie als direkte Konsequenz der serotonergen Transporterdysfunktion. Die Autoimmun-Komorbidität ist nicht Kofundierung, sondern downstream-Konsequenz des Primärdefekts.
 
-#### **G.6.2 Bewertung**
+**Bewertung**
 
 Die Gegenprobe hat keine Falsifikation produziert. Der schärfste Kandidat (SERT-Genetik ohne sichtbaren Autoimmunhintergrund) ist bei genauerem Hinsehen modellkonform — alternativer Hit 1, der seinen Autoimmun-Phänotyp selbst erzeugt. Die Annahme „alle Population-A-ASD haben Autoimmunhintergrund" bleibt bestehen, wobei „Autoimmunhintergrund" breiter definiert werden muss: nicht nur klassische Autoimmunerkrankungen, sondern jede systemische Immundysregulation, einschließlich genetisch-serotonerger.
 
-#### **G.6.3 Verbleibende methodische Einschränkung**
+**Verbleibende methodische Einschränkung**
 
 Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind durch die Blut-Hirn-Schranke vollständig getrennt. Peripheres 5-HT steigt (SERT-Gain-of-Function in Thrombozyten → erhöhte Aufnahme), zentrales 5-HT fällt (derselbe SERT-Gain-of-Function im Gehirn → reduzierte synaptische Verfügbarkeit). Dies ist kein Widerspruch, sondern die erwartete bidirektionale Konsequenz desselben Mechanismus, aber die direkte Messung zentraler Serotoninspiegel beim Menschen ist nicht verfügbar.
 
