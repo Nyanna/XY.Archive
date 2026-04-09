@@ -185,6 +185,18 @@ Die Autoregulationsschleife (2.2) beschreibt die Oszillation als abstraktes Rege
 
 ANS-Kollaps operiert über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten (ausführliche Analyse: Anhang D.4.3; ANS-spezifische Konsequenzen: Kapitel 5; CSD-spezifische Konsequenzen: Kapitel 4).
 
+#### **2.2.2 Lebenszeitverlauf der Oszillationsamplitude**
+
+Die B7/B8-Phaseninterferenz erzeugt CSD nur, wenn der serotonerge Nadir die kortikale Destabilisierungsschwelle unterschreitet. Im Alter steigt die Serotonin-Synthesekapazität im DRN kompensatorisch an (Bhatt et al. 2023), während die SERT-Dichte — insbesondere thalamisch — moderat abnimmt (Karrer et al. 2019, Meta-Analyse, n=1087). Beide Effekte heben den Oszillationsnadir an: schnellere Resynthese und langsamere Clearance verringern die Depletionstiefe. Die CSD-Schwelle wird seltener erreicht, die Attackenfrequenz sinkt — ohne dass die Oszillation selbst oder der tonische Grunddefizit remittiert. Umgekehrt markiert der Abschluss der DRN-Reifung (späte Adoleszenz bis frühes Erwachsenenalter) den Zeitpunkt, ab dem die Oszillation erstmals volle Amplitude erreicht und CSD-Schwellenüberschreitung möglich wird → Migräne-Onset. Die Neuronenzahl und die 5-HT1A-Autorezeptordichte im DRN bleiben über die gesamte Lebensspanne erhalten (Wöhr et al. 2001; Karrer et al. 2019).
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:--------------|:-------------|
+| Kompensatorischer Anstieg der 5-HT-Synthesekapazität im DRN mit dem Alter | Gesichert | Bhatt et al. 2023 |
+| Moderate Abnahme der thalamischen SERT-Dichte im Alter | Gesichert (Meta-Analyse) | Karrer et al. 2019, n=1087 |
+| Erhaltene DRN-Neuronenzahl und 5-HT1A-Autorezeptordichte über die Lebensspanne | Gesichert | Wöhr et al. 2001; Karrer et al. 2019 |
+| Altersbedingte Anhebung des Oszillationsnadirs → reduzierte CSD-Frequenz ohne Remission des Grunddefekts | Hypothetisch, kongruent mit PET-Daten und epidemiologischem Verlauf | Eigene Ableitung |
+| DRN-Reifung als Determinante des Migräne-Onsets in der Adoleszenz | Hypothetisch, kongruent | Eigene Ableitung |
+
 ### **2.3 Genetische und entwicklungsbiologische Ätiologie**
 
 Raphe-Neuronen entstehen sehr früh – zwischen der 5\. und 7\. Schwangerschaftswoche aus dem Rhombencephalon. In diesem Fenster ist das System maximal vulnerabel.
