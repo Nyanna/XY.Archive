@@ -3,6 +3,12 @@
 
 ## **Anhang G: Iatrogene Prävalenz und Hit-Architektur-Erweiterung**
 
+**Zusammenfassung**
+
+Dieser Anhang analysiert den ADHS-Prävalenzanstieg als Korrelat iatrogener Hit-2-Exposition (GC + AH1) und erweitert die Hit-Architektur um einen zweiten molekularen Einstiegspunkt. Drei konvergierende Indizien: (1) Der geographische Gradient (USA 8,1% vs. Irak 0,1%) korreliert mit dem pharmazeutischen Profil besser als mit DSM-Adoption; Japan als natürliches Quasi-Experiment (hohe AD, niedrige GC-Compliance, 1% vs. 10% AD→ADHS-Transition). (2) 60–75% aller ASD-Patienten tragen mindestens einen Raphe-Achsen-Marker (Migräne, Epilepsie, Autoimmunerkrankung) — unstratifizierte Studien mitteln Population A (~65%) und B (~35%). (3) Hit-1-Erweiterung: neben 5-HT1A-Autorezeptor-Instabilität (Hit 1a) identifiziert SERT-Gain-of-Function (SLC6A4-Varianten, Hit 1b) als zweiten Einstiegspunkt — phänotypisch rigid-kompulsive Traits, Hyperserotonämie, ENS-Hypoplasie. Beide Hit-1-Varianten produzieren ihre eigene immunologische Sekundärpathologie.
+
+---
+
 *Status: Explorative Analyse, Evidenzniveau V (Arbeitshypothese mit konvergierenden Indizien)*
 
 ### **G.1 Kernthese**

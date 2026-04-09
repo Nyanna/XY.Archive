@@ -3,6 +3,12 @@
 
 ## **1\. Pathogenetischer Verlauf – Übersicht**
 
+**Zusammenfassung**
+
+Dieses Kapitel skizziert den kausalen Fünf-Phasen-Verlauf des Modells: von kongenitaler 5-HT1A-Instabilität (Hit 1, pränatal) über fetale thalamische Fehlkalibrierung und postnatale Gating-Insuffizienz mit iatogenem D2High-Shift (Hit 2, GC-Exposition bei atopischer Dermatitis) bis zur adulten Migräneperiodizität und pharmakologischen Verifikation durch dopaminerge Upstream-Stabilisierung (LDX). Es identifiziert die Triade atopische Dermatitis + ADHS + Migräne als unerkanntes populationsrelevantes Syndrom (~90k–200k Betroffene in Deutschland) und beschreibt die GC-Therapie der AD als mechanistische Brücke, die drei bisher nur als Dyaden untersuchte Komorbiditäten kausal verbindet.
+
+---
+
 Das Modell beschreibt eine kausale Verlaufskette von einem kongenitalen Primärdefekt über entwicklungsbiologische Konsequenzen zu klinischen Manifestationen. Die zeitliche Ordnung ist entscheidend für das Verständnis der Kausalität. Das Modell folgt einer Two-Hit-Architektur: Hit 1 (5-HT1A-Instabilität, pränatal) ist hinreichend für die thalamische Fehlkalibrierung; Hit 2 (D2High-Shift durch iatrogene GC-Exposition, postnatal) amplifiziert die Raphe-Oszillation in den kaskadenfähigen Bereich (Details in Abschnitt 2.4.2).
 
 | Phase                             | Beschreibung                                                                                                                                                                                                                                     |

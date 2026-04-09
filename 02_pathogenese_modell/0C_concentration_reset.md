@@ -3,6 +3,12 @@
 
 ## **Anhang C: Was ich erlebe — Phänomenologie eines Bewusstseinsresets**
 
+**Zusammenfassung**
+
+Dieser Anhang ist ein phänomenologischer Erfahrungsbericht zur subjektiven Manifestation der kortikalen Desynchronisation. Er beschreibt: invarianten Tiefschlaf (~2h07–10min) bei variabler Gesamtarchitektur; das „Zwei-Stunden-Loch" (Bewusstseinsdruckabfall ~2h nach Aufstehen, interpretiert als Off-State-Intrusion); Modalitätsasymmetrie (Augen schließen reduziert Druck, Stille verschlechtert ihn); Wegdriftmomente als Verarbeitungslücken bei Wachheit; den Powernap als Bewusstseinsreset (Tiefe entscheidend, nicht Dauer — zu flach: kein Reset, zu tief: Migränegefahr); Einschlaflatenz <2 min als Symptom statt Fähigkeit; Musik als externer kortikaler Synchronisator; und die differentielle Arousal-Qualität verschiedener Wachzustandsquellen (Arbeit vs. Koffein vs. pharmakologische Synchronisation). Dient als Erfahrungsgrundlage für die mechanistischen Ableitungen in Kapiteln 2.5, 4.3, 8.4 und 8.9.
+
+---
+
 *Subjektive Beschreibungen eines Zustands, den ich jahrelang für Konzentrationserschöpfung hielt.*
 
 **Schlaf, der sich nicht verändert**

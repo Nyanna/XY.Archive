@@ -3,6 +3,12 @@
 
 ## **2\. Primärdefekt: Kongenitale Raphe-Dysregulation**
 
+**Zusammenfassung**
+
+Dieses Kapitel definiert den Primärdefekt des Modells: eine underdämpfte 5-HT1A-Autorezeptor-Schleife der Raphe-Kerne als kongenitaler Oszillator (Hit 1), amplifiziert durch einen postnatalen D2High-Shift infolge frühkindlicher Glukokortikoidexposition (Hit 2). Es beschreibt die Vesikelökonomie der Raphe-Neurone (drei Flaschenhälse: vesikuläre Depletion, Tryptophan-Verfügbarkeit, mitochondriale ATP-Depletion) mit drei resultierenden B7-Zuständen (intakt, depleted, aphasisch) und drei Destabilisierungsmodi (Interferenz, Entzug, Rauschexposition). Die genetische Ätiologie ist wahrscheinlich polygenetisch (SLC6A4, Pet1/FEV, TPH2). Der B7/B8-Dual-Oszillator mit SCN-Relay erzeugt über die circadiane Schwebung (endogenes τ ≈ 26 h vs. T = 24 h) eine quasi-wöchentliche Periodizität der Kaskadenvulnerabilität. Kortikale Konsequenzen umfassen lokalen Schlaf (Off-State-Intrusion bei Wachheit), posteriore Vulnerabilität und Schlafarchitektur als Kohärenzmarker.
+
+---
+
 ### **2.1 Anatomie und Funktion der Raphe-Kerne**
 
 Die Raphe-Kerne sind eine Gruppe von neun Kerngebieten entlang der Hirnstamm-Mittellinie (Medulla bis Mittelhirn). Sie sind die primären serotoninproduzierenden Neuronen des ZNS – etwa 80–90% des gesamten zentralen Serotonins entstammt diesen Kernen. Funktionell gliedern sie sich in zwei Gruppen:

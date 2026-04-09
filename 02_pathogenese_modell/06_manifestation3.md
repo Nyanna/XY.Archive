@@ -3,6 +3,12 @@
 
 ## **6\. Klinische Manifestation III: ASD-Phänotyp**
 
+**Zusammenfassung**
+
+Dieses Kapitel reinterpretiert den ASD-Phänotyp als Konfigurationsvariante des serotonergen Primärdefekts, nicht als separaten Defekt. Repetitives Verhalten (Stimming, Routinen, Musikschleifen) wird als Stabilisierungsmechanismus gegen instabile Attraktorbecken erklärt — künstliche Attraktortiefe durch vorhersagbaren Input. Identität wird als thalamische Wahrnehmungssignatur beschrieben (nicht narrativ verankert), woraus eine spezifische Substanzaversion folgt: jede psychoaktive Substanz mit Wahrnehmungseffekt verändert thalamische Gating-Schwellen und bedroht damit das Selbstmodell. Die Substanzaversion wird über zwei synergistische Mechanismen erklärt — DA→D2High-Raphe-Suppression (kein positiver Anreiz) + thalamischer Kohärenzverlust (aktive Bedrohungsreaktion). MDMA als iatrogenes Modell der Raphe-Depletion wird referenziert (→ 03_pharma/10_mdma_modell.md).
+
+---
+
 ### **6.1 ASD als Konfigurationsvariante, nicht als separater Defekt**
 
 ASD zeigt konsistent veränderte Serotoninspiegel – erhöhtes peripheres Serotonin bei gleichzeitig veränderter zentraler serotonerger Funktion. Das deutet auf entwicklungsbiologische Fehlverteilung hin: Das System produziert Serotonin, verteilt es aber atypisch.

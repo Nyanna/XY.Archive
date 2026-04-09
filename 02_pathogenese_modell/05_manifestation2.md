@@ -3,6 +3,12 @@
 
 ## **5\. Klinische Manifestation II: Autonome Dysregulation**
 
+**Zusammenfassung**
+
+Dieses Kapitel beschreibt die autonome Dysregulation als Downstream-Manifestation des Raphe-Defekts über drei neuroanatomisch distinkte afferente NTS-Pfade (orthostatisch, vestibulär, trigeminal). Instabile Raphe-Aktivität senkt die NTS-Schwelle für autonome Reflexe periodisch ab; die kortikale NTS-Suppression (PFC → PAG → NTS) ist ressourcenintensiv und unter Erschöpfung oder Betablockade fragil. Das Modell prognostiziert einen kompoundierenden Effekt bei LDX + Metoprolol-Entfall über drei unabhängige, additive Pfade: serotonerge NTS-Stabilisierung, noradrenerge PFC-Kapazität und Wiederherstellung der sympathischen Gegenregulation. B7-Aphasie (Feuermuster erhalten, Transmitteroutput stochastisch degradiert) wird als destabilisierendster ANS-Zustand identifiziert. Das PFC→NTS-Erschöpfungsparadox erklärt den klinisch beobachteten Kollaps beim Übergang von aktivem Fahren (PFC-Demand hält NTS-Schwelle aufrecht) zu Beifahrersitz (Wegfall des letzten Stabilisierungspfades).
+
+---
+
 **Terminologische Disambiguierung: Drei afferente Pfade, zwei efferente Zonen, ein Knotenpunkt**
 
 Die klinische Literatur verwendet „vasovagal" als Sammelbezeichnung für alle Reflexe, die über den Vagusnerv Bradykardie und Hypotension erzeugen. Diese Bezeichnung beschreibt den efferenten Schenkel (Vagus → Herz/Gefäße), nicht den auslösenden Stimulus. Drei neuroanatomisch distinkte afferente Pfade konvergieren am selben Hirnstammknotenpunkt (NTS/dorsaler Vaguskern), erzeugen ein ähnliches kardiovaskuläres Bild, haben aber grundlegend unterschiedliche Trigger, Zeitkonstanten und therapeutische Implikationen:

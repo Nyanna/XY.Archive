@@ -3,6 +3,12 @@
 
 ## **9\. Evidenzstatus und Limitationen**
 
+**Zusammenfassung**
+
+Dieses Kapitel klassifiziert alle Modellaussagen dreistufig nach Evidenzniveau (gesichert / plausibel / hypothetisch) und benennt vier offene Forschungsfragen: Raphe-Depletionshypothese (TPH2-Kapazitätslimit unter LDX über ~28–30 Tage), exakte Inter-Raphe-Kopplung (direkte B7↔B8-Projektionen vs. ausschließlich über SCN), Corpus-callosum-Propagation der tonischen Welle und anatomische Zuordnung des retrobulbären Drucks. Hauptlimitation: Narrative Kohärenz ist kein Beleg für Richtigkeit; empfohlene Beobachtungsdauer für LDX mindestens 6–8 Wochen.
+
+---
+
 Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwischen den Bestandteilen. Die folgende Klassifikation dient der klinischen Einordnung.
 
 | Aussage | Evidenzniveau | Quellenbasis |

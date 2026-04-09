@@ -3,6 +3,12 @@
 
 ## **7\. Pharmakologische Evidenz: Selbstversuch**
 
+**Zusammenfassung**
+
+Dieses Kapitel dokumentiert den kontrollierten pharmakologischen Selbstversuch mit Methylphenidat (MPH) und Lisdexamfetamin (LDX). MPH (7–14 mg, unter klinischer Schwelle) bestätigte Dopamin-Hypersensitivität und Migränesuppression, wurde aber wegen reproduzierbarem psychotischem Rebound kontraindiziert. LDX (15 mg, ≈4–5 mg aktives Dexamfetamin) zeigt kein Rebound-Profil, ermöglicht Powernap unter Substanz (bei Neurotypischen ungewöhnlich) und belegt erstmals die Dissoziation zwischen thalamischem Gating und basaler sensorischer Schwelle. Das therapeutische Fenster liegt bei 7,5–15 mg LDX — weit unterhalb der ADHS-Standarddosierung (30–70 mg) — als direkte Konsequenz der D2-Rezeptor-Hypersensitivität.
+
+---
+
 ### **7.1 Methylphenidat (Ritalin)**
 
 | Parameter                   | Befund                                                                                                                                                           |

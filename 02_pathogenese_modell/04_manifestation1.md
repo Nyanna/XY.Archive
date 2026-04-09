@@ -3,6 +3,12 @@
 
 ## **4. Klinische Manifestation I: Migräne als Raphe-Zyklusstörung**
 
+**Zusammenfassung**
+
+Dieses Kapitel entwickelt Migräne als endogenes Oszillationsphänomen der Raphe-Selbstregulation, nicht als Reaktion auf externe Trigger. Das B7/B8-Interferenzfeld bestimmt die CSD-Empfindlichkeit; alle klinischen Trigger (Stress, Wetter, Schlafentzug etc.) sind Perturbatoren, deren Wirksamkeit vom aktuellen B7/B8-Phasenversatz abhängt. CSD wird als kompensatorischer kortikaler Reset interpretiert — erzwungene Resynchronisation eines desynchronisierten Patchworks, erklärt die post-Migräne-Klarheit. Trigger-Mechanismen werden dreifach differenziert: Nap-Kaskade (Desynchronisation → kompensatorischer Nap + parallele CSD), Sport (B7-Depletion durch sympathischen Maximaltakt), Schlaf-Wach-Übergang. Die Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation (Pan et al. 2022: Amphetamine neutral, Atomoxetin +29%, Guanfacin +43%) wird als unbeabsichtigtes natürliches Experiment interpretiert, das die Modellvorhersagen bestätigt. Dreigliederiger Triptan-Mechanismus, Sumatriptan als Schlaf-Enabler, MBA-Reattribution und Betablocker-Paradox werden diskutiert.
+
+---
+
 ### **4.1 Serotonin als universeller Migräneauslöser**
 
 **Zentrale These:** Das B7/B8-Interferenzfeld (vgl. 2.5.1) bestimmt die Empfindlichkeit des Kortex für CSD-Kaskaden. Serotonin ist kein paralleler Mechanismus, sondern der Modulator der Auslöseschwelle. Alle bekannten Trigger – hormonal, sensorisch, metabolisch – sind Perturbatoren, die auf nicht-serotonergen Kanälen in den Kortex eintreten und dort den Takt verschieben. Ihre Wirksamkeit hängt vom aktuellen B7/B8-Phasenversatz ab — nicht vom Trigger selbst. CSD, CGRP-Freisetzung und trigeminovaskuläre Aktivierung sind immer nachgeschaltet, nie primär.

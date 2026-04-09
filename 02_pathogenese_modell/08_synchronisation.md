@@ -3,6 +3,12 @@
 
 ## **8. Interozeptive Inkohärenz als Downstream-Effekt monoaminerger Desynchronisierung**
 
+**Zusammenfassung**
+
+Dieses Kapitel reformuliert ADHS als interozeptive Inkohärenz: Die fünf aufsteigenden Modulationssysteme (serotonerg, noradrenerg, dopaminerg, histaminerg, cholinerg) laufen bei instabiler Raphe asynchron und liefern inkonsistente Gain-Parameter an ihre Zielstrukturen. Die Insula kann keinen kohärenten Prediction Error berechnen → interozeptives Rauschen statt diskreter Zustandssignale → „Konzentrationsstörung" als Fehlattribution. LDX wirkt als Synchronisator (Kohärenz, nicht Arousal) — belegt durch die Dissoziation: sowohl Wachheit als auch Schlafqualität verbessern sich gleichzeitig. Quantitative Evidenz: Schlafkonsolidierung unter LDX zeigt selektive Reduktion synchronisationsintensiver Stadien (Deep-Episoden/h 1,6→1,1, p=0,005; REM-Episoden/h 1,2→0,9, p=0,005; Light unverändert). NREM-Parasomnien als extremste State-Dissoziation. Kreuzkorrelation ADHD–Migräne–Epilepsie–Late-Chronotyp als konvergierende Evidenz: Late-Chronotyp segregiert mit globalen Synchronisationsstörungen (generalisierte Epilepsie 5-fach erhöht), nicht mit fokalen Hardwaredefekten.
+
+---
+
 ### **8.1 Kernthese**
 
 Das ADHS-Leitsymptom „Konzentrationsstörung" ist eine Fehlattribution. Das eigentliche Defizit ist die Unfähigkeit des Systems, kohärente Zustandssignale zu erzeugen. Konzentration *setzt* ein konsistentes internes Zustandsbild *voraus* — man kann nicht stabil aufmerksam sein, wenn das System nicht einmal zuverlässig signalisiert, ob man wach, müde, hungrig oder angespannt ist. Was klinisch als Aufmerksamkeitsdefizit gemessen wird, ist das distale Symptom einer proximalen Integrationsstörung.

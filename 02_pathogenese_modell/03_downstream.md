@@ -3,6 +3,12 @@
 
 ## **3\. Downstream-Pathologie I: Thalamische Fehlkalibrierung**
 
+**Zusammenfassung**
+
+Dieses Kapitel beschreibt die thalamische Fehlkalibrierung als erste Downstream-Konsequenz des Raphe-Defekts. Ein instabiles fetales Serotoninsignal (22.–26. SSW) kalibriert den Thalamus auf breite statt schmale Signalvarianz — der resultierende Filter ist nicht defekt, sondern korrekt kalibriert für ein inhärent variables Signal. Dies erzeugt einen verrauschten Prediction Error (Predictive-Coding-Rahmen), breitere Attraktorbecken (begünstigte Assoziation, instabile Routinen) und flachere Energielandschaften. ADHS wird als Signal-Rausch-Problem (SNR) reformuliert — unzureichender thalamischer Gain → schwach diskriminierter kortikaler Input → kortikales Rauschen — statt als Aufmerksamkeitsdefizit. Die klinisch beobachtete Dissoziation zwischen thalamischem Gating und basaler sensorischer Schwelle unter LDX wird als Schlüsselevidenz präsentiert, gestützt durch EEG- und fMRI-Literatur (Bluschke 2019, Hearne 2021, MBA-Modell).
+
+---
+
 ### **3.1 Serotonin als fetales Kalibrierungssignal**
 
 Der Thalamus ist eine der ersten vollständig ausreifenden Strukturen – thalamokortikale Axone erreichen den Kortex bereits in der 22.–26. SSW. In dieser Phase ist Serotonin nicht nur Neurotransmitter, sondern primärer trophischer Faktor für die Reifung dieser Verbindungen.
