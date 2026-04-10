@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Plateaus – {{NIGHT_DATE}}</title></head><body style="margin:0;padding:1rem;background:#fff;font-family:system-ui,sans-serif;">
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px;font-size:11px;color:#666;">
+  <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:3px;background:#333;"></span>Gruppen-Plateau</span>
+  <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:3px;background:#888;border-top:1px dashed #888;"></span>Einzel-Plateau</span>
+</div>
+<div style="position:relative;width:100%;height:500px;">
+  <canvas id="c1" role="img" aria-label="Plateaus for {{NIGHT_DATE}}"></canvas>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
+<script>
+const D = {{DATA_JSON}};
+const palette=['#7F77DD','#E24B4A','#1D9E75','#D85A30','#378ADD','#D4537E','#639922','#BA7517','#85B7EB','#534AB7','#993C1D','#3B6D11','#854F0B','#A32D2D'];
+const isDk=matchMedia('(prefers-color-scheme:dark)').matches;
+const gc=isDk?'rgba(255,255,255,0.08)':'rgba(0,0,0,0.06)';
+const tc=isDk?'#999':'#666';
+const annots={};
+
+D.plateaus.forEach((pl,pi)=>{
+  const c=palette[pi%palette.length];
+  const isGroup=pl.nadir_indices.length>1;
+  const bw=isGroup?3:2;
+  const dash=isGroup?[]:[6,4];
+  const first=Math.min(...pl.nadir_indices);
+  const last=Math.max(...pl.nadir_indices);
+  const barL=isGroup?first:Math.max(0,first-8);
+  const barR=isGroup?last:Math.min(D.t.length-1,last+8);
+
+  annots['bar'+pi]={type:'line',yMin:pl.level,yMax:pl.level,xMin:barL,xMax:barR,borderColor:c,borderWidth:bw,borderDash:dash};
+  annots['lbl'+pi]={type:'label',xValue:barL,yValue:pl.level+0.8,content:pl.level.toFixed(1),font:{size:9},color:c};
+
+  pl.nadir_indices.forEach((ni,j)=>{
+    annots['v'+pi+'_'+j]={type:'line',xMin:ni,xMax:ni,yMin:D.m10[ni],yMax:pl.level,borderColor:c,borderWidth:1,borderDash:[2,2]};
+    annots['p'+pi+'_'+j]={type:'point',xValue:ni,yValue:D.m10[ni],radius:isGroup?5:4,backgroundColor:c,borderColor:isDk?'#222':'#fff',borderWidth:1.5};
+  });
+});
+
+new Chart(document.getElementById('c1'),{
+  type:'line',
+  data:{labels:D.t,datasets:[{data:D.m10,borderColor:isDk?'rgba(200,200,200,0.4)':'rgba(60,60,60,0.3)',borderWidth:1.5,pointRadius:0,fill:false}]},
+  options:{
+    responsive:true,maintainAspectRatio:false,animation:false,
+    plugins:{legend:{display:false},annotation:{annotations:annots}},
+    scales:{
+      y:{min:D.y_min,max:D.y_max,ticks:{color:tc,stepSize:5},grid:{color:gc},title:{display:true,text:'MHR10 (bpm)',color:tc}},
+      x:{ticks:{color:tc,autoSkip:true,maxTicksLimit:25},grid:{color:gc}}
+    }
+  }
+});
+</script>
+</body></html>
