@@ -22,48 +22,47 @@ Ein weiterer Vorteil der Bead-Formulierung: Im Steady-State dominiert nicht mehr
 - **Dünndarm-pH:** 6–7,5 (Alginat-Erosion beginnt)
 - **Dickdarm:** Absorption deutlich reduziert, nicht mehr therapeutisch relevant
 
-**Designziel:** Vollständige Auflösung aller Beads innerhalb von ~4h nach Magenpassage (= im Dünndarm), sodass keine unverdauten Beads in den Dickdarm gelangen.
+**Designziel:** Vollständige Auflösung aller Gelstücke innerhalb von ~4h nach Magenpassage (= im Dünndarm), sodass keine unverdauten Reste in den Dickdarm gelangen.
 
-## Designparameter der Beads
+## Designparameter
 
-Drei Stellschrauben kontrollieren die Auflösungsgeschwindigkeit:
+Zwei Stellschrauben kontrollieren die Auflösungsgeschwindigkeit:
 
-### 1. Kugelgröße (dominanter Faktor)
+### 1. Scheibendicke (dominanter Faktor)
 
-Das Oberfläche-zu-Volumen-Verhältnis bestimmt die Erosionsrate:
+Bestimmt die Gesamtdauer der Freisetzung. Die flache Geometrie (Scheibe/Tablette) gewährleistet eine annähernd konstante Erosionsfläche über die gesamte Auflösungsdauer — die beiden Planflächen bilden den Großteil der Oberfläche, und diese bleibt bis zur vollständigen Auflösung nahezu unverändert.
 
-| Größe | Auflösung im Dünndarm | Funktion |
-|-------|----------------------|----------|
-| 1–2 mm | 30–60 min | Sofortige Freisetzung |
-| 3–4 mm | 1–2 h | Mittlere Phase |
-| 5–8 mm | 3–4 h | Späte Phase |
+Im Gegensatz dazu erzeugt eine Kugelform ein dezelerierendes Freisetzungsprofil: Die Oberfläche einer Kugel nimmt bei Erosion quadratisch ab (A = 4πr²), sodass die Freisetzungsrate mit schrumpfendem Radius progressiv sinkt. Ein Mix verschiedener Kugelgrößen erzeugt daher keine diskreten Phasen, sondern einen steilen Anfangspeak mit schnellem Abfall — kontraproduktiv für die gewünschte Tail-Verlängerung.
 
-Ein **Mix aus verschiedenen Größen** simuliert ein Multi-Phasen-Freisetzungsprofil analog zu pharmazeutischen Retardformulierungen.
+Die Schnittdicke ist die einzige geometrische Stellschraube:
+
+| Schnittdicke | Erwartete Auflösung im Dünndarm | Funktion |
+|-------------|-------------------------------|----------|
+| ~3 mm | 30–60 min | Schnelle Freisetzung |
+| ~5 mm | 1–2 h | Mittlere Freisetzung |
+| ~8 mm | 3–4 h | Langsame Freisetzung |
 
 ### 2. Alginat-Konzentration
+
+Bestimmt Matrixdichte und damit Erosionsrate.
 
 - 0,5–1%: poröse Matrix, schnelle Freisetzung
 - 2–3%: dichte Matrix, langsame Freisetzung
 
 Standardansatz: 2% (2g Natriumalginat auf 100ml Wasser).
 
-### 3. CaCl₂-Vernetzungsgrad
-
-- 1% CaCl₂, 1–2 min Gelierung: weiche Beads, schnelle Erosion
-- 2–3% CaCl₂, 5–10 min Gelierung: feste Beads, langsame Erosion
-
-Standardansatz: 2% CaCl₂, 3 min Gelierung.
+Der Vernetzungsgrad wird durch das CaCO₃/GDL-Verhältnis in der internen Gelierung bestimmt (siehe Herstellungsprotokoll) und ist keine unabhängige Stellschraube.
 
 ## Materialien
 
 | Material | Spezifikation | Bezugsquelle | Kosten |
 |----------|--------------|-------------|--------|
 | Natriumalginat | E401, Lebensmittelqualität | Amazon / Molecular Gastronomy | ~5–8€ / 50g |
-| Calciumchlorid | E509, Lebensmittelqualität (Dihydrat) | Amazon / Käsereibedarf | ~5€ / 100g |
+| CaCO₃ | Lebensmittelqualität (E170) | Amazon / Apotheke | ~5€ / 100g |
+| GDL (Glucono-delta-Lacton) | Lebensmittelqualität (E575) | Amazon / Molecular Gastronomy | ~5–8€ / 100g |
 | Taurin-Pulver | 1000mg Kapseln oder loses Pulver | Amazon / Apotheke | ~5€ / 100 Kapseln |
 | pH-Streifen | Bereich 1–14 | Amazon / Apotheke | ~3€ |
-| Pipette / Spritze | verschiedene Öffnungen für Tropfgrößen | Apotheke | ~2€ |
-| Silikonform | optional, für große Beads | Küchenbedarf | ~5€ |
+| Flache Silikonform | Eiswürfelform oder flache Backform | Küchenbedarf | ~5€ |
 
 **Gesamtinvestition:** < 30€
 
@@ -71,44 +70,30 @@ Standardansatz: 2% CaCl₂, 3 min Gelierung.
 
 Taurin wird als inerte Testsubstanz verwendet, um das Freisetzungsprofil zu kalibrieren, bevor LDX eingesetzt wird. Taurin ist frei verkäuflich, hat eine kurze Halbwertszeit (~1h), und der subjektive Effekt (Wachheit/Stabilisierung) ist spürbar und zeitlich eingrenzbar.
 
-### 1.1 Lösung A (Alginat-Taurin-Lösung)
+### 1.1 Trockenmischung (Vorrat, unbegrenzt haltbar)
 
-1. 100 ml Wasser auf ~40°C erwärmen (erleichtert Lösung des Alginats)
-2. 2g Natriumalginat langsam unter Rühren einstreuen
-3. Mindestens 10 min rühren bis homogene, leicht viskose Lösung entsteht (Alginat klumpt leicht)
-4. 1000–2000 mg Taurin-Pulver einrühren bis gleichmäßig verteilt
-5. Vor jedem Tropfvorgang erneut rühren (Taurin sedimentiert)
+Natriumalginat, CaCO₃ und GDL im festen Verhältnis abwiegen und als Portionsbeutel für je eine Zubereitung vorbereiten:
 
-### 1.2 Lösung B (CaCl₂-Gelierbad)
+| Komponente | Menge pro Portion | Funktion |
+|-----------|-------------------|----------|
+| Natriumalginat | 2 g | Matrixbildner |
+| CaCO₃ | 0,5 g | Ca²⁺-Quelle (interne Gelierung) |
+| GDL | 1 g | Säuerungsmittel (setzt Ca²⁺ aus CaCO₃ frei) |
 
-1. 2g CaCl₂ in 100 ml Wasser bei Raumtemperatur lösen
-2. Rühren bis vollständig gelöst (geht schnell)
+Das Verhältnis ist ein Startpunkt — in Phase 2 wird das Gelierverhalten optimiert. Die Trockenmischung ist unbegrenzt haltbar.
 
-### 1.3 Bead-Herstellung
+### 1.2 Zubereitung (täglich/wöchentlich)
 
-Drei Chargen mit verschiedenen Größen herstellen:
+1. 1000–2000 mg Taurin-Pulver in 100 ml Wasser lösen
+2. Trockenmischung (1 Portionsbeutel) einrühren bis homogen
+3. In flache Silikonform gießen (Arbeitsfenster ca. 5–15 min vor Beginn der Gelierung)
+4. 15–30 min gelieren lassen (Form nicht bewegen)
+5. Aus Form lösen
+6. Mit Messer in gewünschte Portionen schneiden — **Schnittdicke bestimmt Freisetzungsdauer, Fläche bestimmt Dosis**
 
-**Charge S (small, 1–2mm):**
-- Werkzeug: Pipette oder Spritze mit dünner Öffnung
-- Tropfhöhe: ~5cm über Gelierbad
-- Gelierzeit: 2 min in CaCl₂-Lösung
+### 1.3 Nachbehandlung
 
-**Charge M (medium, 3–4mm):**
-- Werkzeug: Spritze ohne Nadel (5ml)
-- Tropfhöhe: ~3cm
-- Gelierzeit: 3 min
-
-**Charge L (large, 5–8mm):**
-- Werkzeug: Löffel oder abgeschnittene Spritze mit großer Öffnung
-- Tropfhöhe: direkt über Oberfläche
-- Gelierzeit: 5 min
-
-### 1.4 Nachbehandlung
-
-- Beads mit einem Sieb aus der CaCl₂-Lösung nehmen
-- Kurz mit klarem Wasser abspülen (entfernt überschüssiges CaCl₂)
-- Auf Küchenpapier abtropfen lassen
-- Sofort verwenden oder im Kühlschrank lagern (max. 24h, danach Taurin kann diffundieren)
+Entfällt. Kein Gelierbad, kein Abspülen nötig. Fertige Stücke direkt verwenden oder max. wenige Tage im Kühlschrank lagern (Wirkstoff diffundiert über Zeit aus der Matrix).
 
 ## Phase 2: Freisetzungs-Kalibrierung (Taurin)
 
@@ -119,10 +104,10 @@ Fünf aufeinanderfolgende Versuchstage, jeweils mit identischem Tagesrhythmus (g
 | Tag | Konfiguration | Ziel |
 |-----|--------------|------|
 | 1 | 1000mg Taurin als Kapsel (Referenz) | Baseline: Subjektiver Effekt, Onset, Dauer |
-| 2 | Nur Charge S Beads (1–2mm) | Schnelle Freisetzung validieren |
-| 3 | Nur Charge L Beads (5–8mm) | Langsame Freisetzung validieren |
-| 4 | Mix S+M+L (1:1:1) | Erstes Multi-Phasen-Profil |
-| 5 | Optimierter Mix basierend auf Tag 1–4 | Iteration |
+| 2 | Dünne Scheiben (~3mm) | Schnelle Freisetzung validieren |
+| 3 | Dicke Scheiben (~8mm) | Langsame Freisetzung validieren |
+| 4 | Mittlere Dicke (~5mm) | Ziel-Profil |
+| 5 | Optimierte Dicke basierend auf Tag 1–4 | Iteration |
 
 ### 2.2 Dokumentation pro Versuchstag
 
@@ -140,9 +125,9 @@ Für jeden Tag dokumentieren:
 ### 2.3 Erwartete Ergebnisse
 
 - **Tag 1 (Referenz):** Effekt-Onset ~30min, Peak ~1,5h, Offset ~4h
-- **Tag 2 (Charge S):** Ähnlich wie Referenz, ggf. leicht verzögerter Onset
-- **Tag 3 (Charge L):** Deutlich verzögerter Onset (~2h), abgeflachter Peak, verlängerte Dauer (~6–8h)
-- **Tag 4 (Mix):** Schneller Onset durch S-Beads, verlängerter Tail durch L-Beads, Gesamtdauer ~8–10h
+- **Tag 2 (dünn, 3mm):** Ähnlich wie Referenz, ggf. leicht verzögerter Onset durch Matrixfreisetzung
+- **Tag 3 (dick, 8mm):** Deutlich verzögerter Onset (~2h), abgeflachter Peak, verlängerte Dauer (~6–8h)
+- **Tag 4 (mittel, 5mm):** Onset ~1h, moderater Peak, Dauer ~4–6h — Kandidat für Ziel-Profil
 
 ## Phase 3: Parametrische Optimierung
 
@@ -150,20 +135,19 @@ Basierend auf Phase-2-Ergebnissen Stellschrauben anpassen:
 
 ### 3.1 Wenn der Tail zu kurz ist (< 8h):
 
-- Alginat-Konzentration für L-Beads auf 3% erhöhen
-- CaCl₂-Konzentration auf 3% erhöhen
-- Gelierzeit auf 10 min verlängern
-- L-Bead-Größe auf 8–10mm erhöhen
+- Schnittdicke erhöhen (z.B. 10mm statt 8mm)
+- Alginat-Konzentration auf 3% erhöhen (dichtere Matrix)
+- CaCO₃/GDL-Verhältnis anpassen für stärkere Vernetzung
 
 ### 3.2 Wenn der Onset zu langsam ist:
 
-- Anteil der S-Beads im Mix erhöhen (z.B. 2:1:1 statt 1:1:1)
+- Schnittdicke reduzieren
 - Zusätzlich ~200mg Taurin als ungekapselte Dosis direkt einnehmen
 
 ### 3.3 Wenn der Peak zu niedrig ist (keine spürbare Wirkung):
 
 - Taurin-Gesamtdosis erhöhen (z.B. 2000mg statt 1000mg)
-- Anteil S- und M-Beads erhöhen
+- Schnittdicke reduzieren für schnellere Freisetzung
 
 ### 3.4 Dokumentation
 
@@ -175,17 +159,17 @@ Erst nach validiertem Taurin-Profil, das eine Wirkdauer von >10h mit gleichmäß
 
 ### 4.1 Voraussetzungen
 
-- Validiertes Bead-Rezept aus Phase 2/3
+- Validiertes Gelrezept aus Phase 2/3
 - Gültige ärztliche Verordnung für LDX
-- Dokumentierte Bead-Konfiguration (Größenverhältnis, Alginat-%, CaCl₂-%, Gelierzeit)
+- Dokumentierte Konfiguration (Schnittdicke, Alginat-%, CaCO₃/GDL-Verhältnis)
 
 ### 4.2 Anpassung
 
 Die Elvanse-Kapsel darf laut Fachinformation geöffnet und der Inhalt in Nahrung eingemischt werden. Die Einmischung in Alginatlösung ist eine Erweiterung dieses Prinzips.
 
-- Kapsel öffnen, Pellets in Alginatlösung einrühren
-- **Hinweis:** LDX-Pellets sind Mikropellets – sie lösen sich in der Alginatlösung möglicherweise nicht vollständig auf, sondern werden in die Gelmatrix eingeschlossen. Das ist für die Retardierung sogar vorteilhaft.
-- Identisches Tropfprotokoll wie in Phase 1
+- Kapsel öffnen, Pellets in die Wirkstofflösung einrühren (Schritt 1.2, Punkt 1–2)
+- **Hinweis:** LDX-Pellets sind Mikropellets – sie lösen sich möglicherweise nicht vollständig auf, sondern werden in die Gelmatrix eingeschlossen. Das ist für die Retardierung sogar vorteilhaft.
+- Identisches Gussverfahren wie in Phase 1 (Trockenmischung einrühren, in Form gießen, gelieren, schneiden)
 
 ### 4.3 Monitoring
 
@@ -197,10 +181,10 @@ Die Elvanse-Kapsel darf laut Fachinformation geöffnet und der Inhalt in Nahrung
 ## Risiken und Limitationen
 
 ### Dosiergenauigkeit
-Die Dosis verteilt sich auf die Gesamtmenge der Beads. Alle Beads müssen eingenommen werden. Homogenität der Taurin/LDX-Verteilung in der Alginatlösung sicherstellen durch gründliches Rühren vor dem Tropfen.
+Die gleichmäßig dicke Form ergibt bei gleich großen Schnittstücken gleiche Dosen — ein Vorteil gegenüber dem früheren Tropfverfahren. Homogenität der Taurin/LDX-Verteilung in der Alginatlösung weiterhin durch gründliches Rühren vor dem Gießen sicherstellen.
 
 ### Lagerstabilität
-Alginat-Beads sind nicht lagerstabil – Wirkstoff diffundiert über Zeit aus der Matrix. Beads am selben Tag herstellen und einnehmen. Keine Vorratshaltung.
+Zu unterscheiden: Die **Trockenmischung** (Alginat + CaCO₃ + GDL) ist unbegrenzt haltbar und kann als Portionsbeutel auf Vorrat vorbereitet werden. **Fertige Gelstücke** sind tagesfrisch bis wenige Tage im Kühlschrank haltbar — Wirkstoff diffundiert über Zeit aus der Matrix.
 
 ### GI-Variabilität
 Trotz stabilem Tagesrhythmus gibt es unvermeidliche Variabilität (Stress, Krankheit, abweichende Mahlzeiten). Das Profil ist reproduzierbar, aber nicht exakt.
