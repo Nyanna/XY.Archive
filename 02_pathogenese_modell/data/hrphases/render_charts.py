@@ -4,7 +4,7 @@ Render nadir and plateau charts for a given night.
 
 Usage:
     python3 render_charts.py 2024-12-13
-    python3 render_charts.py 2024-12-13 --out-dir ./charts
+    python3 render_charts.py 2024-12-13 --out-dir ../../../docs/charts
 
 Reads:
     - Gadgetbridge DB (for raw HR + MHR10)

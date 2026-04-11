@@ -380,7 +380,7 @@ def main():
         script_dir / "Gadgetbridge",
         script_dir / "gb" / "Gadgetbridge",
         Path("/mnt/user-data/uploads/Gadgetbridge"),
-        Path("/home/claude/gb/Gadgetbridge"),
+        Path("../Gadgetbridge"),
     ]:
         if candidate_db.exists():
             db_path = candidate_db
@@ -391,7 +391,7 @@ def main():
 
     for candidate_csv in [
         script_dir / "seizures.csv",
-        Path("/mnt/user-data/uploads/seizures.csv"),
+        Path("../seizures.csv"),
     ]:
         if candidate_csv.exists():
             seizure_path = candidate_csv

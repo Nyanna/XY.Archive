@@ -130,7 +130,7 @@ Rendert interaktive HTML-Charts für eine einzelne Nacht. Liest die Gadgetbridge
 **Ausführung:**
 ```bash
 python3 render_charts.py 2024-12-13
-python3 render_charts.py 2024-12-13 --out-dir ./charts
+python3 render_charts.py 2024-12-13 --out-dir ../../../docs/charts
 ```
 
 **Voraussetzungen:**
