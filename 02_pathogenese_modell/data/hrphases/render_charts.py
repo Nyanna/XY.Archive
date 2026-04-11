@@ -32,7 +32,7 @@ MHR_WINDOW = 10
 
 def find_file(name, script_dir):
     for p in [script_dir / name, Path("/mnt/user-data/uploads") / name,
-              Path("/home/claude/gb") / name, Path("/home/claude") / name]:
+              Path("/home/claude/gb") / name, Path("../") / name]:
         if p.exists():
             return p
     return None
