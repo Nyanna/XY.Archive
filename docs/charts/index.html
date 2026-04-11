@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XY.Archiv – Charts</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --border: #d1d9e0;
+    --border-muted: #d8dee4;
+    --surface: #f6f8fa;
+    --surface-hover: #eff2f5;
+    --accent: #0969da;
+    --accent-hover: #0550ae;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9198a1;
+      --border: #3d444d;
+      --border-muted: #262c36;
+      --surface: #151b23;
+      --surface-hover: #1f2630;
+      --accent: #4493f8;
+      --accent-hover: #58a6ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+                 Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--fg);
+    background: var(--bg);
+  }
+  .container {
+    max-width: 1012px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  header {
+    border-bottom: 1px solid var(--border-muted);
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-muted);
+  }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  .intro {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--fg);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    font-family: inherit;
+  }
+  .btn:hover {
+    background: var(--surface-hover);
+    border-color: var(--muted);
+  }
+  details {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  details[open] {
+    background: var(--bg);
+  }
+  summary {
+    padding: 10px 16px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: var(--surface);
+    border-bottom: 1px solid transparent;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 8px;
+    color: var(--muted);
+    transition: transform 0.15s ease;
+    flex-shrink: 0;
+  }
+  details[open] > summary::before {
+    transform: rotate(90deg);
+  }
+  details[open] > summary {
+    border-bottom-color: var(--border-muted);
+  }
+  summary:hover {
+    background: var(--surface-hover);
+  }
+  .summary-title {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .summary-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+  }
+  .summary-link:hover {
+    background: var(--surface-hover);
+    text-decoration: underline;
+  }
+  .iframe-wrap {
+    padding: 0;
+    background: var(--bg);
+  }
+  iframe {
+    width: 100%;
+    height: 640px;
+    border: 0;
+    display: block;
+    background: #ffffff;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-muted);
+    color: var(--muted);
+    font-size: 12px;
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    background: var(--surface);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>XY.Archiv – Charts</h1>
+  <p class="muted">Visualisierungen zur nächtlichen Herzfrequenz-Analyse (Nadirs &amp; Plateaus)</p>
+</header>
+
+<section class="intro">
+  <p>
+    Diese Seite bündelt interaktive Charts, die aus den Gadgetbridge-Exporten des
+    Pathogenese-Modells generiert werden. Die zugrundeliegenden Daten und Skripte
+    liegen unter <code>02_pathogenese_modell/data/</code>.
+  </p>
+  <p>
+    Es werden zwei Serien pro Aufzeichnungstag bereitgestellt:
+  </p>
+  <ul>
+    <li><strong>Nadirs</strong> – nächtliche Herzfrequenz-Minima und Phasen-Tracking.</li>
+    <li><strong>Plateaus</strong> – identifizierte Plateauphasen im HR-Verlauf.</li>
+  </ul>
+  <p class="muted">
+    Alle Einträge sind zunächst eingeklappt. Über den <em>Alle aufklappen</em>-Button
+    oberhalb jedes Akkordeons können sämtliche Elemente einer Sektion auf einmal
+    ein-/ausgeklappt werden. Der Link <em>Direkt öffnen</em> lädt die jeweilige
+    Chart-Seite in einem neuen Tab.
+  </p>
+</section>
+
+<section>
+  <div class="section-header">
+    <h2 style="border:0; margin:0; padding:0;">Nadirs</h2>
+    <button class="btn" data-toggle="nadirs">Alle aufklappen</button>
+  </div>
+  <div id="nadirs" style="margin-top: 12px;">
+    <!-- nadir-items -->
+  </div>
+</section>
+
+<section>
+  <div class="section-header">
+    <h2 style="border:0; margin:0; padding:0;">Plateaus</h2>
+    <button class="btn" data-toggle="plateaus">Alle aufklappen</button>
+  </div>
+  <div id="plateaus" style="margin-top: 12px;">
+    <!-- plateau-items -->
+  </div>
+</section>
+
+<footer>
+  Generiert aus den HTML-Dateien in <code>docs/charts/</code>. Siehe
+  <code>CLAUDE.md</code> für die Aktualisierung.
+</footer>
+
+</div>
+
+<script>
+  const nadirFiles = [
+    "nadirs_2024-12-13.html",
+    "nadirs_2024-12-14.html",
+    "nadirs_2024-12-15.html",
+    "nadirs_2024-12-16.html",
+    "nadirs_2024-12-17.html",
+    "nadirs_2024-12-18.html",
+    "nadirs_2024-12-19.html",
+    "nadirs_2024-12-20.html",
+    "nadirs_2024-12-21.html",
+    "nadirs_2024-12-22.html",
+    "nadirs_2024-12-23.html",
+    "nadirs_2024-12-24.html",
+    "nadirs_2024-12-25.html",
+    "nadirs_2024-12-26.html",
+    "nadirs_2024-12-27.html"
+  ];
+
+  const plateauFiles = [
+    "plateaus_2024-12-13.html",
+    "plateaus_2024-12-14.html",
+    "plateaus_2024-12-15.html",
+    "plateaus_2024-12-16.html",
+    "plateaus_2024-12-17.html",
+    "plateaus_2024-12-18.html",
+    "plateaus_2024-12-19.html",
+    "plateaus_2024-12-20.html",
+    "plateaus_2024-12-21.html",
+    "plateaus_2024-12-22.html",
+    "plateaus_2024-12-23.html",
+    "plateaus_2024-12-24.html",
+    "plateaus_2024-12-25.html",
+    "plateaus_2024-12-26.html",
+    "plateaus_2024-12-27.html"
+  ];
+
+  function labelFor(file) {
+    const m = file.match(/_(\d{4}-\d{2}-\d{2})\.html$/);
+    return m ? m[1] : file;
+  }
+
+  function buildAccordion(containerId, files, prefix) {
+    const container = document.getElementById(containerId);
+    files.forEach(file => {
+      const details = document.createElement("details");
+      details.dataset.src = file;
+
+      const summary = document.createElement("summary");
+      const title = document.createElement("span");
+      title.className = "summary-title";
+      title.textContent = prefix + " – " + labelFor(file);
+      summary.appendChild(title);
+
+      const link = document.createElement("a");
+      link.className = "summary-link";
+      link.href = file;
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.textContent = "Direkt öffnen ↗";
+      link.addEventListener("click", e => e.stopPropagation());
+      summary.appendChild(link);
+
+      details.appendChild(summary);
+
+      const wrap = document.createElement("div");
+      wrap.className = "iframe-wrap";
+      details.appendChild(wrap);
+
+      // Lazy-load iframe only when the details is first opened,
+      // to avoid fetching ~30 charts up-front.
+      details.addEventListener("toggle", () => {
+        if (details.open && !wrap.dataset.loaded) {
+          const iframe = document.createElement("iframe");
+          iframe.src = file;
+          iframe.loading = "lazy";
+          iframe.title = title.textContent;
+          wrap.appendChild(iframe);
+          wrap.dataset.loaded = "1";
+        }
+      });
+
+      container.appendChild(details);
+    });
+  }
+
+  buildAccordion("nadirs", nadirFiles, "Nadirs");
+  buildAccordion("plateaus", plateauFiles, "Plateaus");
+
+  document.querySelectorAll("button[data-toggle]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const target = document.getElementById(btn.dataset.toggle);
+      const items = target.querySelectorAll("details");
+      const anyClosed = Array.from(items).some(d => !d.open);
+      items.forEach(d => { d.open = anyClosed; });
+      btn.textContent = anyClosed ? "Alle einklappen" : "Alle aufklappen";
+    });
+  });
+</script>
+</body>
+</html>
