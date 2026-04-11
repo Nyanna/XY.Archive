@@ -14,6 +14,7 @@ Algorithm:
    - Pass 2: merge singletons within tol=1.3 bpm
 5. Plateau boundaries = extend lowest nadir level left/right until MHR10 crosses below
 6. Stack depth = count of lower-level plateaus that temporally contain this one
+7. Elevation filter = remove plateaus < 1.5 bpm above parent (min structural separation)
 """
 
 import sqlite3
@@ -34,6 +35,7 @@ NADIR_MIN_DIST = 10     # minutes
 MHR_WINDOW = 10         # minutes
 PLATEAU_TOL1 = 1.0      # bpm, pass 1
 PLATEAU_TOL2 = 1.3      # bpm, pass 2 (singleton merge)
+PLATEAU_MIN_ELEV = 1.5  # bpm, min elevation over parent plateau
 MIN_SLEEP_DURATION = 60  # minutes
 
 
@@ -246,6 +248,54 @@ def compute_stack_depth(plateaus):
     return plateaus
 
 
+def filter_by_elevation(plateaus, min_elev=PLATEAU_MIN_ELEV):
+    """
+    Remove plateaus whose level is less than min_elev above their
+    parent plateau. The parent is the containing plateau with the
+    highest level that is still below this one.
+    A plateau without parent (baseline) is always kept.
+    After filtering, recompute stack_depth.
+    """
+    # Find parent and elevation for each plateau
+    for i, p in enumerate(plateaus):
+        parent_level = -float("inf")
+        for j, q in enumerate(plateaus):
+            if j == i:
+                continue
+            if (
+                q["level"] < p["level"]
+                and q["start_idx"] <= p["start_idx"]
+                and q["end_idx"] >= p["end_idx"]
+                and q["level"] > parent_level
+            ):
+                parent_level = q["level"]
+        p["_elevation"] = (
+            p["level"] - parent_level
+            if parent_level > -float("inf")
+            else float("inf")
+        )
+
+    # Filter
+    kept = [p for p in plateaus if p["_elevation"] >= min_elev]
+
+    # Clean up temp field
+    for p in kept:
+        del p["_elevation"]
+
+    # Recompute stack_depth
+    for i, p in enumerate(kept):
+        p["stack_depth"] = sum(
+            1
+            for j, q in enumerate(kept)
+            if j != i
+            and q["level"] < p["level"]
+            and q["start_idx"] <= p["start_idx"]
+            and q["end_idx"] >= p["end_idx"]
+        )
+
+    return kept
+
+
 # ---------------------------------------------------------------------------
 # Main pipeline: process one night
 # ---------------------------------------------------------------------------
@@ -312,6 +362,7 @@ def process_night(hr_raw, timestamps, night_date):
         )
 
     plateaus_out = compute_stack_depth(plateaus_out)
+    plateaus_out = filter_by_elevation(plateaus_out)
 
     # Remove internal index columns
     for p in plateaus_out:

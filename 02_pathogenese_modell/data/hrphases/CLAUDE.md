@@ -37,6 +37,9 @@ Zwei Nadirs sind auf Plateau-Ebene verbunden, wenn die MHR10-Kurve zwischen ihne
 ### Stacktiefe (`stack_depth`)
 Anzahl der Plateaus mit *niedrigerem* Niveau, die dieses Plateau zeitlich vollständig umschließen. Das tiefste Plateau der Nacht (Baseline) hat Stacktiefe 0. Höhere Plateaus, die innerhalb der Baseline liegen, haben Stacktiefe 1, usw. Die Stacktiefe bildet die hierarchische Verschachtelung der Plateaus ab.
 
+### Elevation (Mindest-Strukturabstand)
+Der Abstand in bpm zwischen einem Plateau-Niveau und dem Niveau seines Eltern-Plateaus (das nächsthöhere enthaltende Plateau mit niedrigerem Level). Plateaus mit einer Elevation unter `PLATEAU_MIN_ELEV` (1.5 bpm) werden als Rauschen auf der Hüllkurve gewertet und entfernt. Das Baseline-Plateau (kein Elternteil) hat per Definition unendliche Elevation und wird immer behalten.
+
 ### Nacht-Datum (`night_date`)
 Das Datum des Aufwachzeitpunkts laut Schlafzusammenfassung. Eine Schlafphase, die am 12.12. beginnt und am 13.12. endet, hat `night_date = 2024-12-13`. Bei mehreren Schlafphasen pro Nacht wird die längste verwendet.
 
@@ -64,6 +67,7 @@ python3 plateau_analysis.py
 | `NADIR_MIN_DIST` | 10 | Mindestabstand zwischen Nadirs (Minuten) |
 | `PLATEAU_TOL1` | 1.0 | Toleranz Pass 1: Nadir-Wert vs. Gruppenmittel (bpm) |
 | `PLATEAU_TOL2` | 1.3 | Toleranz Pass 2: Singleton-Merge (bpm) |
+| `PLATEAU_MIN_ELEV` | 1.5 | Mindest-Elevation eines Plateaus über seinem Eltern-Plateau (bpm) |
 | `MIN_SLEEP_DURATION` | 60 | Mindestdauer einer Schlafphase (Minuten) |
 
 **Algorithmus-Pipeline pro Nacht:**
@@ -74,6 +78,7 @@ python3 plateau_analysis.py
 5. Plateaus gruppieren (Zwei-Pass: erst tol=1.0 greedy temporal, dann Singleton-Merge bei tol=1.3)
 6. Plateau-Grenzen via Merge-Tree-Konnektivität bestimmen
 7. Stacktiefe berechnen
+8. Elevation-Filter: Plateaus entfernen, die weniger als 1.5 bpm über ihrem Eltern-Plateau liegen (Mindest-Strukturabstand im Stack)
 
 ### `nadirs.csv`
 Ein Nadir pro Zeile.
