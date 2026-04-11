@@ -40,9 +40,12 @@
     background: var(--bg);
   }
   .container {
-    max-width: 1012px;
+    width: 100%;
     margin: 0 auto;
-    padding: 32px 24px;
+    padding: 32px clamp(12px, 2vw, 32px);
+  }
+  .intro, header {
+    max-width: 1012px;
   }
   header {
     border-bottom: 1px solid var(--border-muted);
@@ -155,6 +158,33 @@
   .summary-link:hover {
     background: var(--surface-hover);
     text-decoration: underline;
+  }
+  .event-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #cf222e;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  @media (prefers-color-scheme: dark) {
+    .event-badge {
+      background: #f85149;
+      color: #0d1117;
+    }
+  }
+  details.has-event > summary {
+    border-left: 3px solid #cf222e;
+  }
+  @media (prefers-color-scheme: dark) {
+    details.has-event > summary {
+      border-left-color: #f85149;
+    }
   }
   .iframe-wrap {
     padding: 0;
@@ -276,6 +306,16 @@
     "plateaus_2024-12-27.html"
   ];
 
+  // Seizure-Tage (ISO-Datum). Quelle: 02_pathogenese_modell/data/seizures.csv
+  // Nur Einträge, die in den Datumsbereich der Charts fallen, müssen gepflegt
+  // werden — weitere können schadlos enthalten sein.
+  const seizureDates = new Set([
+    "2024-12-13",
+    "2024-12-14",
+    "2024-12-21",
+    "2024-12-24"
+  ]);
+
   function labelFor(file) {
     const m = file.match(/_(\d{4}-\d{2}-\d{2})\.html$/);
     return m ? m[1] : file;
@@ -287,11 +327,23 @@
       const details = document.createElement("details");
       details.dataset.src = file;
 
+      const date = labelFor(file);
+      const isEvent = seizureDates.has(date);
+      if (isEvent) details.classList.add("has-event");
+
       const summary = document.createElement("summary");
       const title = document.createElement("span");
       title.className = "summary-title";
-      title.textContent = prefix + " – " + labelFor(file);
+      title.textContent = prefix + " – " + date;
       summary.appendChild(title);
+
+      if (isEvent) {
+        const badge = document.createElement("span");
+        badge.className = "event-badge";
+        badge.textContent = "Event!";
+        badge.title = "Seizure dokumentiert am " + date;
+        summary.appendChild(badge);
+      }
 
       const link = document.createElement("a");
       link.className = "summary-link";
