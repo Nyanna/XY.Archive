@@ -186,8 +186,10 @@ HTML-Template für den Plateau-Chart. Dieselben Platzhalter wie oben.
 | `n_nadirs` | int | Anzahl Nadirs in der Gruppe |
 | `stack_depth` | int | Verschachtelungstiefe |
 | `nadir_indices` | int[] | Indizes der zugehörigen Nadirs in `t`/`m10` |
+| `start_idx` | int | Index in `t`/`m10` für den linken Hüllkurven-Schnittpunkt |
+| `end_idx` | int | Index in `t`/`m10` für den rechten Hüllkurven-Schnittpunkt |
 
-**Darstellung:** MHR10 als dezente Linie, Plateaus als farbcodierte horizontale Balken (durchgezogen für Gruppen-Plateaus, gestrichelt für Einzel-Plateaus). Vertikale gestrichelte Linien verbinden jeden Nadir mit seinem Plateau-Niveau. Farbzuweisung automatisch aus einer 14-Farben-Palette. Label zeigt das Niveau in bpm.
+**Darstellung:** MHR10 als dezente Linie, Plateaus als farbcodierte horizontale Balken von `start_idx` bis `end_idx` (Hüllkurven-Schnittpunkte, nicht Nadir-Positionen). Durchgezogen für Gruppen-Plateaus, gestrichelt für Einzel-Plateaus. Vertikale gestrichelte Linien verbinden jeden Nadir mit seinem Plateau-Niveau. Farbzuweisung automatisch aus einer 14-Farben-Palette. Label zeigt das Niveau in bpm.
 
 ## Zwei-Oszillatoren-Modell
 

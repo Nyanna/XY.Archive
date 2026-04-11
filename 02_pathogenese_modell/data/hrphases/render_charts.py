@@ -142,11 +142,17 @@ def build_plateau_data(mhr10, times, nadirs_df, plateaus_df, night_date):
             if best is not None:
                 pl_nadirs = [best]
 
+        # Map plateau boundaries to indices
+        si = time_to_idx.get(pl["start_time"], 0)
+        ei = time_to_idx.get(pl["end_time"], len(times) - 1)
+
         plateau_list.append({
             "level": round(float(pl["level"]), 1),
             "n_nadirs": int(pl["n_nadirs"]),
             "stack_depth": int(pl["stack_depth"]),
             "nadir_indices": pl_nadirs,
+            "start_idx": si,
+            "end_idx": ei,
         })
 
     m10_clean = [round(float(v), 1) if not np.isnan(v) else None for v in mhr10]

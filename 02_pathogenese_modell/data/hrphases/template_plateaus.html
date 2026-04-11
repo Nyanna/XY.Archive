@@ -22,13 +22,9 @@ D.plateaus.forEach((pl,pi)=>{
   const isGroup=pl.nadir_indices.length>1;
   const bw=isGroup?3:2;
   const dash=isGroup?[]:[6,4];
-  const first=Math.min(...pl.nadir_indices);
-  const last=Math.max(...pl.nadir_indices);
-  const barL=isGroup?first:Math.max(0,first-8);
-  const barR=isGroup?last:Math.min(D.t.length-1,last+8);
 
-  annots['bar'+pi]={type:'line',yMin:pl.level,yMax:pl.level,xMin:barL,xMax:barR,borderColor:c,borderWidth:bw,borderDash:dash};
-  annots['lbl'+pi]={type:'label',xValue:barL,yValue:pl.level+0.8,content:pl.level.toFixed(1),font:{size:9},color:c};
+  annots['bar'+pi]={type:'line',yMin:pl.level,yMax:pl.level,xMin:pl.start_idx,xMax:pl.end_idx,borderColor:c,borderWidth:bw,borderDash:dash};
+  annots['lbl'+pi]={type:'label',xValue:pl.start_idx,yValue:pl.level+0.8,content:pl.level.toFixed(1),font:{size:9},color:c};
 
   pl.nadir_indices.forEach((ni,j)=>{
     annots['v'+pi+'_'+j]={type:'line',xMin:ni,xMax:ni,yMin:D.m10[ni],yMax:pl.level,borderColor:c,borderWidth:1,borderDash:[2,2]};
