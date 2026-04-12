@@ -2912,7 +2912,7 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynapti
 
 Der Anfall vom 07.04.2026 liefert eine zeitliche Dissoziation zwischen ANS-Kollaps und kortikaler CSD-Kaskade, die in früheren Anfällen nicht beobachtbar war. Die LDX-bedingte Verzögerung der CSD-Schwellenunterschreitung machte die ANS-Symptome als eigenständigen, vorgelagerten Prozess sichtbar.
 
-#### **B.16.1 Zeitlicher Verlauf**
+**Zeitlicher Verlauf**
 
 | Phase | Zeitraum (CEST) | HR (bpm) | Bedingung |
 |:------|:----------------|:---------|:----------|
@@ -2956,7 +2956,7 @@ Der Anfall entstand durch die zeitliche Konvergenz dreier Kompensationsentzüge:
 
 Jeder einzelne Faktor wäre kompensierbar gewesen. Die Dreifach-Konvergenz war es nicht.
 
-#### **B.16.2 Befund: ANS-Kollaps als eigenständiger Prozess**
+**Befund: ANS-Kollaps als eigenständiger Prozess**
 
 Die zentrale Beobachtung: ANS-Symptome (vestibuläre Instabilität, Schwindel, Hitzewellen, Kältewellen, Zittern, Kreislaufinstabilität) traten ab 18:39 auf — **3,5 Stunden vor der vollen CSD-Kaskade** (22:26).
 
@@ -2970,7 +2970,7 @@ Die zentrale Beobachtung: ANS-Symptome (vestibuläre Instabilität, Schwindel, H
 
 **Interpretation:** Was klinisch als „Stammhirnaura" beschrieben wird, ist kein CSD-Propagationsphänomen im Hirnstamm, sondern ein eigenständiger B7→ANS-Kern-Kollaps. Ohne LDX überlagern sich beide Prozesse zeitlich und sind klinisch nicht trennbar. LDX erzeugte unbeabsichtigt eine diagnostische Separation, indem es die CSD-Schwelle länger hielt, während der ANS-Kollaps ungehindert ablief.
 
-#### **B.16.3 PFC→NTS-Kompensation und deren Erschöpfung**
+**PFC→NTS-Kompensation und deren Erschöpfung**
 
 Die bewusste Atemkontrolle (langsames Ausatmen gegen autonome Reflexe) war effektiv gegen:
 - Vestibuläre Instabilität (Schwindel reduziert)
@@ -2981,7 +2981,7 @@ Die Kompensation nutzt den PFC→NTS-Pfad — willentliche Top-down-Kontrolle ü
 
 Empirischer Beleg: Aktives Fahren (Phase 3, hoher PFC-Demand) → NTS-Suppression erfolgreich trotz extremer Triggerbelastung. Beifahrersitz (Phase 4, kein PFC-Demand) → Dekompensation innerhalb von Minuten.
 
-#### **B.16.4 Triptan-Pharmakokinetik im HR**
+**Triptan-Pharmakokinetik im HR**
 
 | Phase | Zeitraum | HR (bpm) | Mechanismus |
 |:------|:---------|:---------|:------------|
@@ -3006,7 +3006,7 @@ Am Morgen nach dem Anfall: Nystagmus rechtsseitig. Konsistent mit früheren Anf�
 
 Die Konsistenz über multiple Anfälle spricht für die architektonische Variante.
 
-#### **B.16.5 Evidenztabelle**
+**Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
@@ -3019,7 +3019,7 @@ Die Konsistenz über multiple Anfälle spricht für die architektonische Variant
 | Nystagmus konsistent rechtsseitig | Deskriptiv, über multiple Anfälle | Symptomprotokoll |
 | ANS-Kollaps ≠ Stammhirnaura (≠ Brainstem-CSD) | Modellinterpretation, gestützt durch temporale Dissoziation | B.20.4 |
 
-#### **B.16.6 Modellimplikation**
+**Modellimplikation**
 
 Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (MBA) klassifiziert wird, ist kein CSD-Propagationsphänomen, sondern ein eigenständiger B7→ANS-Kern-Kollaps. Die Implikationen:
 
@@ -3037,7 +3037,201 @@ Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (M
 
 ---
 
-### **B.17 Evidenztabelle**
+### Einzeltaganalyse: 11./12. April 2026 — B8-Haltemodus und paradoxe LDX-Schlafvertiefung
+
+**Tagesablauf**
+- **13:40–20:40**: Mäßige Gartenarbeit. HR-Durchschnitt 109 bpm (77–143), physiologisch unauffällig.
+- **20:40–22:28**: Vor dem Fernseher eingeschlafen. HR sinkt auf MHR10 ~77 (TV-Nap). Dies ist eine ungeplante Schlafphase — möglicherweise der Punkt, an dem der B7 kurz regeneriert.
+- **22:28–22:48**: Kurz wach, Geschirr aus dem Garten geholt.
+- **22:48**: Ins Bett gelegt. Einseitiges Ziehen im Kopf bemerkt, linksseitig. Kein vollständiges CSD-Bild, eher ein Druckgefühl, vergleichbar mit früheren Prä-CSD-Episoden. Vergleichbar mit retrobulbärem Schmerz, keine ANS-Symptome (kein Schwitzen, keine Übelkeit, keine kardiovaskuläre Dysregulation).
+- **23:50**: 3 mg LDX vorsorglich eingenommen — Hypothese: B8-Instabilität als CSD-Vorstufe, LDX zur Stabilisierung.
+- **23:50–07:20**: Gesamte Nacht mit einseitigem Kopfschmerz durchgeschlafen. Der Schmerz persistierte konstant, eskalierte aber nicht und ging auch nicht weg. Schlaf war möglich, aber nicht erholsam.
+- **07:20**: Regulär aufgestanden.
+- **07:30**: 7,5 mg LDX + Riboflavin (B2) + 300 mg Ibuprofen eingenommen. Anschließend in den Garten gelegt.
+- **07:40–10:00**: 2,5 Stunden tiefer, klarer Schlaf im Garten. Aufgewacht mit deutlich reduziertem Kopfschmerz und subjektivem Erholungsgefühl. Kein groggy Aufwachen, sondern klares, natürliches Ende.
+
+**Phänomenologie**
+- Einseitiger Druck links, kein Vollbild-CSD, keine Aura, keine ANS-Beteiligung.
+- Persistenz über die gesamte Nacht: weder Eskalation noch Remission.
+- Clearance erst im Morgenschlaf unter höherer LDX-Dosis + IBU.
+- Subjektiv: Der Nachtschlaf war „durchgehalten", der Morgenschlaf war „regenerativ".
+
+**HR-Daten**
+
+**Nacht (23:50–07:20)**
+- MHR10-Range: 57,1–79,0 bpm, Mittel 64,4
+- HR-Std: 5,8 bpm
+- ~20 Nadirs detektiert, Modulation vorhanden
+- **Nadir-Slope flach**: Die physiologische nächtliche HR-Absenkung bleibt aus. Die Nadirs sinken nicht progressiv über die Nacht.
+- **Baseline relativ hoch**: MHR10-Mittel 64,4 liegt über dem typischen Tiefschlafbereich.
+
+**Morgen-Schlaf unter LDX (07:40–10:00)**
+- MHR10 sinkt auf **49,2 bpm** — der tiefste Wert der gesamten Aufzeichnung.
+- Ab ~08:15 stabilisiert sich ein extrem flaches Plateau bei ~52 bpm über 90 Minuten.
+- Dies geschieht **unter Einfluss von 7,5 mg LDX**, das normalerweise sympathikoton wirkt und die HR erhöht.
+- Klares, natürliches Aufwachen nach 2,5 Stunden.
+
+**Kontrast Nacht vs. Morgen**
+| Parameter | Nacht | Morgen-Schlaf |
+|-----------|-------|---------------|
+| MHR10 Minimum | 57,1 | 49,2 |
+| MHR10 Mittel | 64,4 | 58,2 |
+| Dauer | 447 min | ~140 min |
+| Subjektiv | nicht erholsam | klar, erholsam |
+| Kopfschmerz | persistierend | rückläufig |
+| LDX-Dosis | 3 mg | 7,5 mg |
+| Zusätzlich | — | 300 mg IBU |
+
+**Hypothesen**
+
+**Ausgangsvermutung am Abend**
+Nach dem TV-Nap entsteht das Ziehen — Verdacht auf CSD-Vorstufe im Okzipitallappen, verwandt mit retrobulbärem Schmerz. Hypothese: B7 hat sich im Nap regeneriert, aber B8 nicht. Die CSD-Vorstufe ist ein B8-Problem, nicht ein B7-Problem. Daher LDX als B8-Stabilisierung.
+
+**Rekonstruktion am Morgen danach**
+- Der B7 war über die Nacht funktional — Modulation (Nadirs, Phasen) war vorhanden. Die ANS-Seite war stabil, keine ANS-Symptome.
+- Der B8 war das isolierte Problem: CSD-Aktivität ohne ANS-Beteiligung.
+- Die 3 mg LDX haben den B7-Arm bedient (ANS-Eskalation verhindert), aber den B8-getriebenen Schmerz nicht durchbrochen.
+- Erst 7,5 mg LDX + IBU am Morgen hatten genug Wirkbreite für die B8-Seite.
+
+**Datenanalyse und Schlussfolgerungen**
+
+**B7/B8-Differenzierung über HR**
+Die HR-Daten ermöglichen eine Trennung der beiden Systeme:
+
+- **B7-Marker**: Nadir-Modulation (Existenz, Regelmäßigkeit, Slope). In dieser Nacht: B7 aktiv, aber ohne Konsolidierungstrend.
+- **B8-Marker (indirekt)**: Hohe, nicht absinkende Baseline trotz funktionalem B7. Die Differenz zwischen „Modulation vorhanden" und „Baseline sinkt nicht" deutet auf einen externen Override — der B8 hält das System oben.
+
+**B8-Haltemodus als Schutzreaktion**
+Der CSD-Schmerzreiz erzeugt einen Feedback-Loop:
+
+1. CSD → Schmerzreiz → Kortex meldet Aktivität
+2. B8/MRN bleibt aktiv als Schutzreaktion (serotonerge Versorgung des betroffenen Areals)
+3. B8-Aktivität verhindert Clearance (System kommt nicht tief genug)
+4. CSD persistiert → Schmerz bleibt → zurück zu Schritt 2
+
+Dieser Loop erklärt die Persistenz des Schmerzes über die gesamte Nacht: Er eskaliert nicht (B7 ist stabil, LDX verhindert ANS-Kaskade), aber er geht auch nicht weg (B8 lässt nicht los, solange der Reiz besteht).
+
+**Clearance-Bedingungen**
+Die Auflösung am Morgen erforderte das Durchbrechen des Loops an zwei Stellen gleichzeitig:
+
+- **IBU**: Reduziert den Schmerzreiz (Entzündungskomponente der CSD) → B8 verliert seinen Grund, im Haltemodus zu bleiben.
+- **7,5 mg LDX**: Stabilisiert den B8 direkt → ermöglicht kontrollierten Rückzug statt Haltemodus.
+- **Ergebnis**: B8 kann abschalten → B7 übernimmt → parasympathische Konsolidierung → MHR10 sinkt auf 49,2 bpm → Clearance.
+
+**Paradoxe Medikamentenreaktion**
+Die MHR10 von 49,2 bpm unter 7,5 mg LDX ist pharmakologisch paradox: LDX (Lisdexamfetamin) ist ein Sympathomimetikum, das über Dopamin- und Noradrenalin-Freisetzung die HR typischerweise erhöht.
+
+Die Auflösung liegt im Modell:
+- LDX stabilisiert den B8 → B8 lässt los → B7 kann ungehindert konsolidieren.
+- Die 5-HT-vermittelte parasympathische Dominanz des B7 überschreibt die sympathomimetische Wirkung des LDX vollständig.
+- Das ist kein Versagen der Medikamentenwirkung, sondern eine **Entlarvung der eigentlichen Achse**: Die sympathomimetische Wirkung von LDX ist schwächer als die serotonerge Konsolidierungskraft eines funktionalen B7, der endlich freie Bahn hat.
+
+Dies erklärt auch die generelle Beobachtung, dass LDX den Schlaf nicht stört: Wenn der B8-Arm stabilisiert wird und der B7 konsolidieren kann, *verbessert* LDX den Schlaf — nicht trotz, sondern wegen seiner Wirkung.
+
+**Koffein-Parallele**
+In seltenen, nie reproduzierbaren Fällen hat Koffein denselben paradoxen Effekt gezeigt: tiefer, erholsamer Schlaf nach Koffein-Einnahme. Der Mechanismus wäre analog — Koffein stabilisiert in diesen Fällen den B8 (Adenosin-Antagonismus an serotonergen Neuronen), der B8 kann loslassen, B7 konsolidiert.
+
+Die fehlende Reproduzierbarkeit bei Koffein gegenüber der relativen Zuverlässigkeit bei LDX erklärt sich durch die Wirkmechanismen: Koffein wirkt über Adenosin-Rezeptoren unspezifisch an vielen Systemen gleichzeitig, LDX über die Dopamin/Noradrenalin-Achse gezielter am B8. Koffein trifft den B8 nur manchmal (abhängig vom Ausgangszustand), LDX zuverlässiger.
+
+**Implikationen**
+
+**Therapeutische Umkehr: Abend-LDX statt Morgen-LDX**
+Die Daten legen eine Inversion des bisherigen Dosierungsschemas nahe:
+
+- **Bisher**: LDX morgens für den Tag, DPH abends für die Nacht (B7-Suppression).
+- **Neu**: LDX abends zur B8-Stabilisierung in der Nacht, Morgendosis als Erhaltung.
+
+Die Nacht ist nicht der Zeitraum, in dem der B7 supprimiert werden muss, sondern der Zeitraum, in dem der B8 loslassen muss. LDX ermöglicht beides: B8-Stabilisierung (direkter Effekt) → B7-Konsolidierung (indirekter Effekt durch Wegfall des B8-Override).
+
+**Testbares Vorhersagemodell**
+Abend-LDX an alternierenden Nächten im ON/OFF-Design. Messbare Endpunkte:
+
+- **Clearance-Marker**: MHR10-Minimum im letzten Schlafdrittel (tiefer = bessere Konsolidierung)
+- **Nadir-Slope**: Sollte unter Abend-LDX steiler negativ werden (B7 kann progressiv absenken)
+- **Morgen-Baseline**: Sollte tiefer liegen als ohne Abend-LDX
+
+**Abgrenzung zum DPH-Protokoll**
+DPH supprimiert den B7 direkt → die Instabilität wird ausgeschaltet, aber auch die Konsolidierung. LDX stabilisiert den B8 → der B7 wird nicht ausgeschaltet, sondern *befreit*. Das ist der Unterschied zwischen Suppression und Ermöglichung.
+
+**Einordnung**
+
+Dieser Tag zeigt erstmals eine klare phänomenologische und datengestützte Trennung von B7- und B8-Beiträgen innerhalb einer einzelnen Episode:
+
+- B7 funktional (Modulation vorhanden, keine ANS-Symptome)
+- B8 im Haltemodus (CSD-Persistenz ohne Eskalation)
+- Clearance erst nach B8-Freigabe (IBU + höheres LDX)
+- HR-Signatur der Clearance: paradoxer Tiefschlaf unter Sympathomimetikum
+
+Die bisherigen Einzeltaganalysen in Anhang B zeigen überwiegend kombinierte B7/B8-Ausfälle. Dieser Fall ist insofern ein Sonderfall, als die beiden Systeme dissoziiert auftreten — und genau diese Dissoziation macht die jeweiligen Beiträge sichtbar.
+
+####Antagonistische Kopplung und zirkadiane Konsequenzen
+
+**Zwei-Pfad-Konvergenz des Anfalls**
+
+Aus der B7/B8-Differenzierung dieser Episode ergibt sich eine erweiterte Anfallsarchitektur: Der Anfall hat zwei unabhängige Eskalationspfade — B7 (DRN→Sympathikus→thalamische Afferenz) und B8 (MRN→Kortex→thalamische Efferenz) — die im Vollbild konvergieren, aber in der Prodromalphase getrennt auftreten können.
+
+Die Episode vom 11./12. April zeigt ein B8-dominantes Prodrom: CSD-Vorstufe (einseitiger Druck) ohne ANS-Beteiligung. Die Symptome, die im Verlauf zusammenfallen, sind in der Frühphase differenzierbar. Diese Differenzierung ist therapeutisch entscheidend — eine reine B7-Intervention (3 mg LDX) reicht bei B8-dominantem Prodrom nicht aus.
+
+**Destabilisierungskaskade über gemeinsame Downstream-Komponenten**
+
+Die bisherige Modellannahme war: B7 und B8 desynchronisieren als phasengekoppelte Oszillatoren, ihre direkte Phasenverschiebung treibt den Anfall. Die Korrektur: Sie wirken nicht direkt aufeinander, sondern destabilisieren jeweils eine gemeinsame Komponente ihrer Feedback-Schleifen.
+
+- **B7-Pfad**: DRN-Instabilität → Sympathikus-Destabilisierung → thalamische Afferenz gestört (der Thalamus braucht stabile autonome Eingänge für seine Gating-Funktion)
+- **B8-Pfad**: MRN-Instabilität → kortikale Modulation instabil → thalamische Efferenz gestört (der Thalamus bekommt inkohärente Rückmeldung vom Kortex)
+
+Der Thalamus ist die Konvergenzstelle, die von beiden Seiten destabilisiert wird — aber über verschiedene Eingänge.
+
+**CSD-Lokalisation als thalamokortikale Konsequenz**
+
+Der destabilisierte Thalamus projiziert über Pulvinar und LGN primär in den Okzipitallappen — dort konvergiert die thalamische Destabilisierung mit der B8-Intratakt-Störung zuerst. Die CSD beginnt okzipital nicht, weil der visuelle Kortex intrinsisch die niedrigste Erregungsschwelle hat, sondern weil er der Ort ist, an dem die B8-Modulation der äußeren kortikalen Schichten (MRN-Territorium) und das thalamische Eingangs-Gating zuerst gemeinsam versagen.
+
+Die Lateralisierung des Symptoms (einseitig links) wäre dann die Lateralisierung des thalamischen Gating-Defizits — nicht die CSD selbst ist lateralisiert, sondern die thalamische Projektion, die sie triggert. Das wäre eine MRT-Vorhersage: Asymmetrischer Befund im Pulvinar/LGN, falls der autoimmune Schaden lateralisiert ist.
+
+**Direkte antagonistische Kopplung von DRN und MRN**
+
+**Literatur [gesichert]**
+- MRN-Neurone feuern spontan bei ~0,56 Hz, DRN-Neurone bei ~1,35 Hz — unterschiedliche Taktbereiche.
+- MRN und DRN verarbeiten Belohnungs- und Aversionsreize in entgegengesetzter Richtung: DRN signalisiert Belohnung, MRN signalisiert Aversion. Sie sind funktionale Antagonisten.
+- DRN-Stimulation erzeugt 5-HT-Freisetzung im SCN, obwohl nur der MRN direkt zum SCN projiziert → multisynaptische DRN→MRN→SCN-Route.
+- Die afferente Steuerung ist fundamental verschieden: DRN wird primär über GABA-Disinhibition gesteuert, MRN über glutamatergen exzitatorischen Antrieb.
+
+**Konsequenz für das Modell [hypothetisch — modellspezifisch]**
+Die antagonistische Funktion setzt DRN und MRN in eine direkte Kopplung, die nicht über den Thalamus oder Kortex läuft, sondern über die Belohnungs-/Aversions-Balance selbst:
+
+1. **Phantomkompensation**: Wenn der B7 (DRN) durch autoimmunen Schaden phasisch ausfällt, fehlt das Belohnungssignal. Der B8 (MRN) interpretiert dies als Bedarf an erhöhter Aversions-/Wachsamkeitssignalisierung und kompensiert hoch. Aber er kompensiert gegen einen Defekt, nicht gegen einen physiologischen Zustand — chronische Gegensteuerung gegen ein Phantom.
+
+2. **Restart-Kollision**: Wenn der B7 nach dem Kollaps wieder anspringt, trifft das zurückkehrende Belohnungssignal auf einen noch hochgefahrenen B8 im Kompensationsmodus. Beide drücken gleichzeitig in ihre jeweilige Richtung — aktive Gegensteuerung statt physiologisches Alternieren.
+
+3. **Erschöpfungszyklus**: Der B8 hält die Überkompensation tagelang durch, erschöpft sich, fällt aus (HR: flaches hohes Plateau = ANS-Eigendynamik ohne B8-Modulation), regeneriert, springt wieder an — und trifft auf einen ebenfalls regenerierenden B7. Zwei frisch gestartete Antagonisten mit instabilen Taktgebern, die sofort in Überkompensation verfallen. Das ist der Trigger-Moment.
+
+**Demaskierung des zirkadianen Shifts [hypothetisch — modellspezifisch]**
+
+**Bisherige Annahme**
+Der zirkadiane Shift liegt bei ~26h als primärer SCN-Defekt. Die Schwebung entsteht aus der Differenz 26h (SCN) gegen 24h (Licht/Dunkel-Zeitgeber).
+
+**Revision**
+Der SCN selbst ist möglicherweise intakt bei ~24h. Der scheinbare 26h-Shift ist das Mittel einer **asymmetrischen Spreizung**, die durch die instabile antagonistische Kopplung erzeugt wird:
+
+- B7-Dominanz (B8 erschöpft): DRN→MRN→SCN verschiebt die Phase in eine Richtung
+- B8-Dominanz (B7 erschöpft): MRN→SCN verschiebt die Phase in die andere Richtung
+- Der gemessene Mittelwert liegt bei ~26h, aber Einzelzyklen schwanken (25h, 27h, nahe 24h bei Balance)
+
+Die ~4–7-Tage-Periodizität der Anfälle ist dann nicht die Schwebungsfrequenz zweier fester Oszillatoren (26h vs. 24h), sondern die **Erschöpfungsperiodik der antagonistischen Kopplung** selbst: Kompensation → Erschöpfung → Ausfall → Regeneration → Restart → Überkompensation. Der SCN wird von diesem Zyklus rhythmisch hin- und hergeschoben.
+
+**Erklärungsgewinn**
+Diese Revision erklärt zwei bisher problematische Beobachtungen:
+
+1. **Variable Periodizität**: Ein fester 26h-Oszillator würde eine stabile Schwebungsfrequenz erzeugen (~6 Tage). Die tatsächliche Anfallsperiodizität variiert zwischen 3 und 8 Tagen. Die Erschöpfungsdynamik hängt von Zustandsvariablen ab (Schlafqualität, Belastung, Medikation), was die Variabilität erklärt.
+
+2. **Bidirektionaler Chronotyp-Drift**: Wenn der Shift ein fester 26h-Takt wäre, würde der Chronotyp monoton nach spät driften. Tatsächlich oszilliert er — mal Spätverschiebung, mal Frühverschiebung. Das passt zu einer Spreizung, nicht zu einem festen Offset.
+
+**Testbarkeit**
+Die Chronotyp-Verschiebung sollte mit dem Erschöpfungszustand der Antagonisten korrelieren: In B7-dominanten Phasen (steep nadir slope, gute Konsolidierung) Frühverschiebung, in B8-dominanten Phasen (flacher slope, hohe Plateaus) Spätverschiebung. Die HR-Plateau-Analyse liefert die nötigen Proxy-Variablen für beide Zustände.
+
+
+---
+
+### **B.18 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
 |:--------|:-------------|:-------|
