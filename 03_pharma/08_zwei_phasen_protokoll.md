@@ -194,4 +194,174 @@ Das alternierende Design hat den zusätzlichen Vorteil, dass es die Toleranzfrag
 
 ---
 
+## 8. CYP2D6-Konfundierung der DPH-Daten
+
+### 8.1 Befund
+
+Die HR-Plateau-Analyse zeigt unter DPH-Nächten eine veränderte Plateau-Signatur: gleichmäßigere Level-Abstände (spacing_cv ↓, z=−1.41), steileren nadir_slope und stabilere Hierarchie. Diese Effekte wurden initial als H1-vermittelte B7-Suppression interpretiert.
+
+Eine pharmakokinetische Analyse deckt einen Confounder auf: **DPH ist ein CYP2D6-Inhibitor.** CYP2D6-vermittelte Hydroxylierung ist der Hauptabbauweg von d-Amphetamin (dem aktiven Metaboliten von LDX). Die abendliche DPH-Einnahme verlangsamt die d-Amphetamin-Elimination und verlängert damit den LDX-Effekt pharmakologisch in die Nacht.
+
+### 8.2 Implikation
+
+Die DPH-Nacht-Signatur hat zwei nicht trennbare Ursachen:
+
+1. **H1-Mechanismus (Intertakt):** DPH suppressiert B7 über H1-Blockade → reduzierte B7/B8-Interferenz → sauberere Plateau-Architektur
+2. **CYP2D6-Mechanismus (Intratakt):** DPH verlängert d-AMP-Exposition → D2-Stabilisierung hält über die Nacht → Intratakt-Kompensation stabilisiert die Architektur downstream
+
+Im D2High-Kontext (1–2 mg LDX klinisch wirksam) könnte bereits eine minimale Spiegelverlängerung funktional sein. Die DPH-Daten belegen damit den Pathway, erlauben aber keine Zuordnung zum Wirkmechanismus.
+
+### 8.3 Konsequenz
+
+Die Konfundierung macht eine Dreifach-Diskrimination notwendig, bevor die kombinierte Nacht-Einnahme evaluiert werden kann (→ Abschnitt 9).
+
+---
+
+## 9. Dreifach-Diskriminationsprotokoll
+
+### 9.1 Design
+
+Drei sequentielle Experimente isolieren die Wirkmechanismen:
+
+| Experiment | D2-Nacht | H1-Blockade | CYP2D6-Konfund | Isoliert |
+|---|---|---|---|---|
+| DPH 25 mg (gelaufen) | Indirekt via CYP2D6 | Ja | Ja | Nichts sauber |
+| **LDX Nacht-Mikrodosis** | **Direkt** | **Nein** | **Nein** | **Intratakt** |
+| **Doxepin 3 mg** | **Nein** | **Ja** | **Nein** | **Intertakt** |
+
+Doxepin 3 mg erzeugt **keine CYP2D6-Hemmung** bei therapeutischen Konzentrationen (Silenor-Fachinformation: Plasmaspiegel ~0.9 ng/mL bei 6 mg, keine CYP-Inhibition nachweisbar). Die CYP2D6-Interaktion mit LDX entfällt vollständig. Gleichzeitig wird Doxepin selbst über CYP2D6 metabolisiert, aber LDX zeigt keine klinisch relevante CYP2D6-Hemmung — die Interaktion ist in beiden Richtungen neutral.
+
+### 9.2 Experiment 1: LDX Nacht-Mikrodosis (isoliert Intratakt)
+
+**Rationale:** LDX-Mikrodosis (1–2 mg) abends testet, ob die D2-Stabilisierung allein — ohne H1-Blockade — die Plateau-Signatur erzeugt. Im D2High-Kontext liegt die wirksame Dosis unter der Arousal-Schwelle; Schlafstörung ist nicht zu erwarten.
+
+**Durchführung:**
+
+| Parameter | Wert |
+|---|---|
+| Substanz | LDX (Elvanse), Kapselinhalt gewichtsdosiert |
+| Dosis | 1–2 mg, identisch zur etablierten Tagesdosis-Untergrenze |
+| Zeitpunkt | 60–90 min vor Schlafbeginn |
+| Dauer | 4–6 konsekutive Nächte |
+| Monitoring | HR-Plateau-Analyse, Einschlaflatenz, Tracker-Hypnogramm |
+| Abbruchkriterium | Einschlaflatenz >45 min oder subjektive Schlafstörung an 2+ Nächten |
+
+**Erwartete Ergebnisse:**
+
+| Beobachtung | Interpretation |
+|---|---|
+| Plateau-Signatur tritt auf (spacing_cv ↓, nadir_slope ↓) | D2-Effekt ist der Träger → Intratakt-Kompensation wirkt über die Nacht |
+| Keine Signatur, keine Schlafstörung | D2-Dosis ist zu niedrig oder der Effekt braucht H1-Achse |
+| Keine Signatur, Schlafstörung | Dosis überschreitet Arousal-Schwelle → Dosisreduktion |
+
+**Sicherheit:** Die LDX-Mikrodosis liegt bei ~2–3% der therapeutischen Standarddosis. Die Prodrug-Konversion über RBC-Peptidasen ist nicht CYP-abhängig; keine Interaktion mit laufender Morgen-LDX-Dosis. Die d-Amphetamin-Halbwertszeit (9–13h) bedeutet, dass bei morgendlicher Einnahme (z.B. 8:00) und abendlicher Mikrodosis (z.B. 22:00) die Spiegel sich nicht klinisch relevant addieren. Urin-pH beeinflusst die Elimination — konsistente Ernährung und Hydration halten diesen Faktor konstant.
+
+### 9.3 Experiment 2: Doxepin 3 mg (isoliert Intertakt)
+
+**Rationale:** Doxepin 3 mg testet die reine H1-vermittelte B7-Suppression ohne CYP2D6-Konfundierung. Im Vergleich zu DPH bietet Doxepin:
+
+- Keine CYP2D6-Hemmung → kein LDX-Carry-over
+- Keine anticholinerge Last bei 3 mg → keine REM-Suppression
+- Längere Halbwertszeit (t½ ~15h, Nordoxepin ~31h) → stabile Nacht-Abdeckung ohne Late-Night-Wirkverlust
+
+**Durchführung:**
+
+| Parameter | Wert |
+|---|---|
+| Substanz | Doxepin 3 mg (Silenor-Äquivalent) |
+| Zeitpunkt | 30 min vor Schlafbeginn, nicht innerhalb von 3h nach Mahlzeit |
+| Dauer | 5–7 konsekutive Nächte |
+| Monitoring | HR-Plateau-Analyse, REM-Ratio, Transitionsdichte |
+
+**Erwartete Ergebnisse:**
+
+| Beobachtung | Interpretation |
+|---|---|
+| Plateau-Signatur wie unter DPH | H1-Mechanismus bestätigt → Intertakt-Effekt real |
+| Schwächere Signatur als DPH | H1-Effekt real, aber DPH-CYP2D6-Carry-over trug bei |
+| Keine Signatur | DPH-Effekt war primär CYP2D6-vermittelt → H1-Achse unzureichend |
+
+**Pharmakokinetische Besonderheit:** Der aktive Metabolit Nordoxepin (t½ ~31h) akkumuliert bei täglicher Gabe. Steady-State wird nach ~5 Tagen erreicht. Die erste Nacht ist daher nicht direkt mit DPH-Nacht-1 vergleichbar; die Bewertung sollte auf Nacht 3–7 fokussieren.
+
+### 9.4 Interpretationsmatrix
+
+| LDX-Nacht | Doxepin | Schlussfolgerung | Konsequenz |
+|---|---|---|---|
+| Signatur ✓ | Signatur ✓ | Beide Achsen wirksam, orthogonal | Kombinierte Gabe maximal wirksam |
+| Signatur ✓ | Signatur ✗ | Intratakt dominiert | LDX-Nacht allein ausreichend |
+| Signatur ✗ | Signatur ✓ | Intertakt dominiert | Doxepin allein ausreichend |
+| Signatur ✗ | Signatur ✗ | DPH-Effekt war CYP2D6-Artefakt | Gesamtansatz überdenken |
+
+---
+
+## 10. Kombinierte Nacht-Einnahme: LDX-Mikrodosis + Doxepin 3 mg
+
+### 10.1 Rationale
+
+Wenn beide Einzelexperimente (9.2, 9.3) jeweils einen Teil der Plateau-Signatur erzeugen, adressiert die Kombination beide Achsen gleichzeitig:
+
+- **LDX-Mikrodosis:** D2-Stabilisierung → Intratakt-Kompensation
+- **Doxepin 3 mg:** H1-Blockade → B7-Amplitudenreduktion → Intertakt-Interferenzreduktion
+
+Das entspricht dem ursprünglichen Zwei-Achsen-Design (Abschnitt 1.5), aber mit sauberer Pharmakologie: keine CYP2D6-Konfundierung, keine anticholinerge Last, keine Toleranzentwicklung bei Niedrigdosis-Doxepin.
+
+### 10.2 Interaktionsprofil LDX + Doxepin 3 mg
+
+| Parameter | Bewertung |
+|---|---|
+| CYP2D6 | Doxepin 3 mg: keine Inhibition. LDX: keine klinisch relevante Inhibition. Neutral in beide Richtungen. |
+| Serotonin-Syndrom | Doxepin 3 mg: keine relevante 5-HT-Reuptake-Hemmung. LDX-Mikrodosis: minimale monoaminerge Wirkung. Risiko nicht über Baseline. |
+| NE-Reuptake | Doxepin 3 mg: nicht nachweisbar (erst ab ~25 mg relevant). Keine Potenzierung der sympathomimetischen LDX-Wirkung. |
+| Anticholinerg | Doxepin 3 mg: placebovergleichbar. Keine REM-Suppression. |
+| QTc-Verlängerung | Doxepin 3 mg: nicht berichtet. LDX: nicht berichtet. Kein additives Risiko. |
+| Sedierung | Doxepin: sedierend (H1). LDX-Mikrodosis: unter Arousal-Schwelle. Kein Antagonismus erwartet. |
+
+**Formale Warnkategorie:** Medscape listet TCA + Amphetamin als "Avoid or Use Alternate Drug". Diese Klassifikation ist dosisblind und bezieht sich auf antidepressive TCA-Dosen (75–300 mg), bei denen NE-Reuptake-Hemmung die sympathomimetische Amphetamin-Wirkung potenziert. Bei Doxepin 3 mg (Silenor-Dosierung) ist die NE-Reuptake-Hemmung pharmakologisch nicht nachweisbar — die Warnung ist für diese Kombination nicht valide, muss aber bei ärztlicher Kommunikation transparent gemacht werden.
+
+### 10.3 Durchführung
+
+| Parameter | Wert |
+|---|---|
+| Substanzen | LDX 1–2 mg + Doxepin 3 mg |
+| Zeitpunkt | Gemeinsam 30–60 min vor Schlafbeginn |
+| Voraussetzung | Beide Einzelexperimente (9.2, 9.3) abgeschlossen |
+| Dauer | 7–10 konsekutive Nächte |
+| Monitoring | HR-Plateau-Analyse, Transitionsdichte, IBI |
+
+**Bewertung:** Vergleich der Plateau-Signatur gegen die drei Referenzen:
+
+| Referenz | Erwartung bei Additivität |
+|---|---|
+| POST-Baseline (LDX Tag, kein Nacht-Supplement) | Signatur stärker |
+| LDX-Nacht allein (Experiment 9.2) | Signatur stärker oder gleich |
+| Doxepin allein (Experiment 9.3) | Signatur stärker oder gleich |
+
+Überadditivität (Signatur stärker als Summe der Einzeleffekte) wäre ein Hinweis auf synergistische Mechanismen. Subadditivität (schwächer als erwartet) könnte auf kompetitive Interaktion auf Ebene der Raphe-Modulation hindeuten.
+
+### 10.4 Pharmakokinetische Überlegungen
+
+**LDX-Mikrodosis bei abendlicher Einnahme:** Die Prodrug-Konversion (RBC-Peptidasen, t½ < 1h) ist CYP-unabhängig. d-Amphetamin erreicht t_max nach ~3.5h, also um ~01:30 bei Einnahme um 22:00. Die d-Amphetamin-Elimination (t½ 9–13h) ist bei Doxepin 3 mg nicht verlängert (keine CYP2D6-Hemmung). Verbleibende d-AMP-Konzentration am Morgen: ~50% der Nacht-Mikrodosis + Rest der Morgen-Standarddosis.
+
+**Doxepin-Akkumulation:** Nordoxepin (t½ ~31h) akkumuliert bei täglicher Gabe. Steady-State nach ~5 Tagen. Die H1-Blockade wird mit jeder Nacht stärker bis zum Plateau. Bewertung der Kombination sollte auf Nacht 5–10 fokussieren.
+
+**Morgen-LDX-Interaktion:** Die morgendliche LDX-Standarddosis wird durch die nächtliche Mikrodosis nicht klinisch relevant beeinflusst. Bei 1–2 mg Nacht + z.B. 30 mg Morgen ist der Nacht-Anteil <7% der Gesamtexposition. Doxepin 3 mg hat keinen Einfluss auf die LDX-Kinetik.
+
+---
+
+## 11. Evidenzstatus (aktualisiert)
+
+| Aussage | Evidenzniveau |
+|---|---|
+| H1-Blockade supprimiert selektiv DRN-5-HT | Gesichert (Crawford et al. 2013) |
+| DPH passiert Blut-Hirn-Schranke | Gesichert |
+| DPH hemmt CYP2D6 | Gesichert |
+| CYP2D6 ist Hauptabbauweg von d-Amphetamin | Gesichert |
+| DPH-Nacht-Signatur ist CYP2D6-konfundiert | Mechanistisch zwingend, Effektgröße unbekannt |
+| Doxepin 3 mg hemmt CYP2D6 nicht | Gesichert (Silenor-Fachinformation) |
+| Doxepin 3 mg hat keine anticholinerge Wirkung | Gesichert (placebovergleichbar in RCTs) |
+| LDX-Mikrodosis unter Arousal-Schwelle | Einzelfallbeobachtung (D2High-Kontext), nicht generalisierbar |
+| Dreifach-Diskrimination trennt Intra-/Intertakt | Methodisch begründet, nicht getestet |
+| Kombinierte Nacht-Einnahme LDX + Doxepin 3 mg sicher | Pharmakologisch plausibel bei Mikrodosierung, keine klinischen Daten |
+| Gesamtprotokoll | Spekulativ, n=1-Experiment |
+
 > **Disclaimer:** Dieses Protokoll ist ein theoretisches Konstrukt im Rahmen eines individuellen Arbeitshypothesen-Archivs. Es handelt sich nicht um eine klinische Empfehlung. Die mechanistische Begründung ist plausibel, aber nicht validiert. Jede Umsetzung erfolgt als n=1-Selbstexperiment unter eigener Verantwortung und sollte idealerweise ärztlich begleitet werden.
