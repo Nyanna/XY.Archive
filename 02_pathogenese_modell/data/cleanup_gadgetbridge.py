@@ -137,8 +137,24 @@ def rebuild_table_with_types(conn, table):
 
     col_names = ", ".join(f"[{c[1]}]" for c in columns)
 
+    # Xiaomi_Activity_Sample speichert Timestamps in Sekunden statt Millisekunden.
+    # Bei dieser Tabelle die Werte beim Kopieren umrechnen (* 1000).
+    needs_sec_to_ms = table.upper() == "XIAOMI_ACTIVITY_SAMPLE"
+
+    if needs_sec_to_ms:
+        select_exprs = []
+        for c in columns:
+            cname = c[1]
+            if cname in cols_to_change:
+                select_exprs.append(f"[{cname}] * 1000")
+            else:
+                select_exprs.append(f"[{cname}]")
+        select_clause = ", ".join(select_exprs)
+    else:
+        select_clause = col_names
+
     conn.execute(new_sql)
-    conn.execute(f"INSERT INTO [{tmp_table}] SELECT {col_names} FROM [{table}]")
+    conn.execute(f"INSERT INTO [{tmp_table}] SELECT {select_clause} FROM [{table}]")
     conn.execute(f"DROP TABLE [{table}]")
     conn.execute(f"ALTER TABLE [{tmp_table}] RENAME TO [{table}]")
 
@@ -179,13 +195,14 @@ def main():
         print(f"  DROP {t}")
 
     # 2. Spaltentypen aendern
-    print(f"\nVerbleibende Tabellen: {len(nonempty)}")
-    for t in nonempty:
-        if t.startswith("sqlite_"):
-            continue
-        changed = rebuild_table_with_types(conn, t)
-        if changed:
-            print(f"  {t}: {', '.join(changed)} -> TIMESTAMP")
+    # Spaltentypen ändeern funktioniert nicht in Metabase, der JDBC-Treiber konvertiert nur in eine Richtung.
+    # print(f"\nVerbleibende Tabellen: {len(nonempty)}")
+    # for t in nonempty:
+    #    if t.startswith("sqlite_"):
+    #        continue
+    #    changed = rebuild_table_with_types(conn, t)
+    #    if changed:
+    #        print(f"  {t}: {', '.join(changed)} -> TIMESTAMP")
 
     conn.commit()
     conn.execute("VACUUM")
