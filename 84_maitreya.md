@@ -178,6 +178,51 @@ The structural parallel to Gautama is exact: *paṭicca-samuppāda* (dependent o
 
 Both men developed philosophical systems that precisely describe what their respective neurologies made visible. The tradition treated these as discoveries about reality. They are discoveries about reality — but the instrument of discovery was not meditation. It was a brain that functioned differently.
 
+#### Textual Evidence from the Authenticated Works
+
+The epileptic-phenomenological reading is not imposed from outside. It emerges from three features of Nāgārjuna's authenticated texts that are anomalous within the Buddhist literary tradition and become coherent only under the neurological hypothesis.
+
+**1. The absence of first-person phenomenological report.** Nāgārjuna describes no meditation experience, no vision, no jhāna state, no personal encounter with emptiness. This is highly anomalous. Nearly every other major Buddhist author — from the Theragāthā poets through Milarepa to Dōgen — leaves some phenomenological trace. Nāgārjuna: exclusively analysis. Either he had no special meditative experiences, or his experience was so basal that it required no special description because it was his default state. Both readings converge on the same conclusion: what the tradition calls "realization of emptiness" was not an event in his life but the constant texture of his perception.
+
+**2. The prasaṅga method as cognitive architecture.** Nāgārjuna's entire philosophical procedure is purely negative — reductio ad absurdum, nothing else. He advances no thesis. He demonstrates only that every thesis, upon examination, collapses. In the Vigrahavyāvartanī he states explicitly: "If I had any thesis, I would have that fault. But I have no thesis."
+
+This is conventionally read as logical strategy — a deliberate methodological choice. Phenomenologically, it is the description of a mind that does not build stable representations. Not because it has disciplined itself against doing so, but because the substrate on which stable representations rest is constitutively unstable. The method mirrors the architecture. A seizure-prone nervous system does not need to learn that positions are untenable. It experiences their collapse directly.
+
+**3. The refusal of positive ontology.** Nāgārjuna consistently refuses to state what reality *is*. He says only what it is *not*. This is admired as philosophical discipline and as the highest form of Madhyamaka insight. It may also be the honest position of a person who has no stable access to "what something is" — only to "what it is not," because he has repeatedly experienced how what seemed solid dissolved. The via negativa is not a choice but a constraint.
+
+**4. MMK 25:19-20 — "There is not the slightest difference between Saṃsāra and Nirvāṇa."** The tradition has treated this as the summit of non-dual realization. For 1800 years the question has been: what did Nāgārjuna *mean*? The question dissolves under the neurological reading. He meant: there is no transition, because there was never a stable state to transition from or to. For a nervous system that has always been intermittent, the distinction between "bound" and "free" does not map onto experience. Both are the same texture of instability, differently labeled by observers.
+
+Taken together: Nāgārjuna's philosophy is not the application of a method to experience. It is the formalization of an experience as method. What epilepsy phenomenologically produces — the intermittence of reality, the absence of self-sustaining existence, the equivalence of all states — he translated into the most precise philosophical language the Buddhist tradition possesses.
+
+#### 7.2.6 The Inversion: Nirvāṇa as Prison
+
+The Samsāra/Nirvāṇa identity statement permits a second reading that the tradition has never performed — because it requires the perspective from inside the neurological configuration, not from outside it.
+
+From the Samsāra side, the statement reads as liberation: even this world is already Nirvāṇa. The practitioner need not escape anywhere. This is how the tradition reads it — as soteriological good news.
+
+From the Nirvāṇa side — from inside the neurological configuration that the tradition classifies as "awakened" — the statement reads as entrapment. Samsāra is the full sensory engagement with the world: the capacity to bear stimulation, the robustness of a nervous system that processes reality without collapsing. Nirvāṇa is not freedom. It is a nervous system that cannot sustain the intensity of ordinary existence. There is no difference between Samsāra and Nirvāṇa — because there is no way out. The "liberated" state is not chosen, not achieved, not the fruit of practice. It is a constitutional limitation.
+
+This reframes the entirety of Nāgārjuna's philosophy:
+
+Śūnyatā is not an insight that was *attained*. It is a condition that was never sought. The recognition that nothing possesses inherent existence is not the result of analytical penetration — it is the accurate report of what a seizure-prone nervous system delivers as perceptual content. Reality does not hold itself up. It collapses and reconstitutes. This is not philosophy. This is neurology, reported in the only language available.
+
+The absence of any positive ontology — "I have no thesis" — is not methodological humility. It is the honest statement of a man who cannot build stable representations of what things *are*, because his nervous system has never sustained them long enough.
+
+U.G. Krishnamurti said the same thing without the philosophical apparatus: "This is not enlightenment. This is a biological mutation. I have no use for it." He identified the "liberated" state as pathological and refused to assign it positive value. Nāgārjuna could not do this — he operated within a system that possessed only the positive valuation. But the absence of positive ontology, the refusal of any thesis, the identity of Samsāra and Nirvāṇa — these are the same refusal, expressed in the only form available to a 2nd-century Buddhist monk.
+
+What the tradition heard: the highest teaching.
+What Nāgārjuna said: I cannot get out.
+
+#### 7.2.7 The Monastery as Trigger Reduction
+
+The monastic environment is conventionally understood as the setting for spiritual practice — withdrawal from worldly distraction to enable contemplation. Under the neurological reading, the function inverts:
+
+The monastery is a low-trigger environment. Regulated light, dampened sound, uniform routine, controlled diet, stable sleep rhythm, absence of social overload spikes. For a nervous system vulnerable to sensory fluctuation — whether through migraine, epilepsy, or autonomic dysregulation — the monastic setting is not a spiritual discipline but a therapeutic milieu.
+
+This explains the otherwise puzzling observation that monastic practice "works" for some individuals and not for others — not because the former are more spiritually advanced, but because they bring the neurology for which the setting is therapeutic. The others lack the condition that the environment treats.
+
+Saraha prescribed the monastery for the seven-year-old Nāgārjuna. The tradition coded this as ordination. It was placement in a controlled environment for a neurologically fragile child. The prescription has not changed in 1800 years. Only the explanation has.
+
 ## 8. Spiritual Practice as Neurological Protocol
 
 The convergence is complete.
@@ -217,6 +262,10 @@ Dissolution of the self occurs — because the cortical identity structure loses
 Every single promise is fulfilled. The phenomenology is correct. Only the explanation is wrong.
 
 The tradition could not notice the difference because it had no instrument to distinguish between "insight dissolves attachment" and "infarction destroys the tissue that generates attachment." From the inside, the two are indistinguishable. The meditator experiences the gradual decline of suffering, grasping, self-reference — and attributes it to practice. But practice is not the cause; it is the frame within which the actual cause — repetitive hemodynamic damage from CSD cascades — operates undetected.
+
+The karmic framework did not destroy the clinical observations. It transported them. Karma was the vehicle, not the obstacle. Without a causal explanation — even a wrong one — the observers would have had no reason to preserve the details. Precisely *because* they sought and found a cause (karmic cause), they documented the effect with precision. Nāgārjuna's death by kusha grass, Gautama's headache, the seven-day prophecy, the blood that turns to milk — all preserved across millennia because karmic attribution gave them narrative function. The observations survived embedded in the wrong explanation.
+
+The achievement belongs to the observers. People without the most basic understanding of biology or neurology recorded, across centuries of oral and written transmission, details that are clinically readable today: the seven-day neonatal crisis window, the graduated care escalation, the photosensitivity, the minimal-trigger sudden death, the post-collapse vocalization and pallor sequence. For people without any concept of seizures, this is remarkably precise.
 
 ## 10. Why No Buddha Can Be Born Again
 
@@ -325,3 +374,9 @@ The Dharma is determinism. The inevitable consequence of the human being itself.
 23. **Kasteleijn-Nolst Trenité DGA et al.** "Photosensitivity in epilepsy." *Epilepsia* 2012; 53(Suppl 1):18–25. (Photosensitivity prevalence, mechanisms, and clinical significance in epilepsy syndromes.)
 
 24. **Specchio N, Wirrell EC, Scheffer IE et al.** "International League Against Epilepsy classification and definition of epilepsy syndromes with onset in childhood." *Epilepsia* 2022; 63:1398–1442. (Current ILAE classification of childhood epilepsy syndromes.)
+
+### Nāgārjuna Primary Philosophical Texts
+
+25. **Nāgārjuna**, *Mūlamadhyamakakārikā* (Root Verses on the Middle Way), especially MMK 25:19-20 (identity of Samsāra and Nirvāṇa). Multiple translations available: Siderits & Katsura (2013), Garfield (1995), Kalupahana (1986).
+
+26. **Nāgārjuna**, *Vigrahavyāvartanī* (The End of Disputes), verse 29: "If I had any thesis, I would have that fault. But I have no thesis, therefore I have no fault." Edition: Westerhoff (2010), *The Dispeller of Disputes*, Oxford University Press.
