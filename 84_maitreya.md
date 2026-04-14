@@ -1,4 +1,4 @@
-# The Neurology of Enlightenment: Migraine, Autism, and the Collapse of a Sacred Category
+# The Neurology of Enlightenment: Migraine, Epilepsy, Autism
 
 ## 1. The Rarity of the Configuration
 
@@ -64,7 +64,7 @@ What is described as enlightenment decomposes into exactly three cases:
 
 In none of these three cases does what the tradition describes actually exist: a conscious transition from bondage to liberation in an otherwise normally functioning human being. That is the void at the center. The tradition describes something that does not exist, and then mistakes social recognition, neurological variance, or pathology for the described phenomenon.
 
-## 7. The Sacred Migraineurs
+## 7. The Sacred Neurologies
 
 The pattern extends beyond U.G.
 
@@ -93,6 +93,90 @@ Scientific literature confirms the connection:
 - Brainstem hyperintensities: 4.4% in migraine patients versus 0.7% in controls.
 
 In a world without modern medicine, these cascades run unchecked. Chronic migraine with brainstem aura over decades produces accumulating subclinical infarcts in the brainstem and cerebellum — silent ischemic damage that progressively alters thalamic gating.
+
+### 7.2. Nāgārjuna: The Sacred Epileptic
+
+The pattern established for Gautama — canonical documentation of a neurological symptom, buried under karmic framing — repeats with perfect structural fidelity in the hagiography of Nāgārjuna, the most important Buddhist philosopher after the Buddha himself. The condition is different: not migraine, but epilepsy. The mechanism of misattribution is identical.
+
+#### 7.2.1 The Seven-Day Prophecy
+
+Multiple independent Tibetan and Chinese hagiographic sources agree on the following narrative core:
+
+At birth, a soothsayer identified "auspicious signs on the body" (*lakṣaṇa*) and predicted the child would live only seven days. The lifespan could be extended: by seven more days through gifts to a hundred ordinary people, by seven months through offerings to a hundred Brahmins, or by seven years through offerings to a hundred monks. Beyond that, no method was known.
+
+The seven-day window is neonatally specific. It corresponds precisely to the period in which neonatal seizure disorders manifest and peak. "Benign neonatal seizures" (formerly "fifth-day fits") present between day 1 and 7, can appear dramatic, and — critically — often remit spontaneously with appropriate care.
+
+The "auspicious signs on the body" that simultaneously indicated holiness and lethality are consistent with the visible manifestations of neonatal seizures: rhythmic eye movements, lip-smacking, pedaling motions, tonic posturing, color changes (cyanosis, pallor, flushing). In a culture that reads bodily marks as *lakṣaṇa*, these involuntary movement patterns and skin color changes would be classified as extraordinary signs — readable as both sacred and terminal depending on the interpretive frame.
+
+The graduated offering structure (ordinary people → Brahmins → monks) with corresponding time extensions (7 days → 7 months → 7 years) encodes escalating levels of care and community mobilization for a chronically fragile child.
+
+**Sources:**
+
+- Buton Rinchen Drub (1290–1364), *History of Buddhism in India and Its Spread to Tibet*. English: Shambhala Publications. Birth narrative with offering structure.
+- Tibetan Buddhist Encyclopedia, "The Life of Nagarjuna." Most granular version of the graduated offering schema.
+- Alexander Berzin, "The Life of Nagarjuna," Study Buddhism (studybuddhism.com). Composite biography from Tibetan sources.
+- Tsem Rinpoche, "Nagarjuna: The Founder of Madhyamaka" (tsemrinpoche.com). Specifies "offerings of food" as the intervention type.
+
+#### 7.2.2 The Healer's Intervention at Age Seven
+
+When the seven-year limit approached, the parents sent the child to Nalanda Monastery, unable to witness his death. There, the Mahasiddha Saraha (Rahulabhadra) — a master of the five sciences including medicine — recognized the child's condition and prescribed a specific therapeutic protocol:
+
+1. **Ordination as a monk** — controlled environment: regulated diet, sleep, routine, sensory input. The monastic setting as therapeutic milieu for a neurologically unstable child.
+
+2. **Initiation into the Amitāyus practice** — the Buddha of Boundless Life. This practice specifically involves sustained rhythmic mantra recitation (breath regulation), visualization, and postural discipline. Not a generic spiritual prescription, but the selection of a practice whose physiological components — respiratory pacing, sensory focusing, autonomic stabilization — constitute seizure prophylaxis.
+
+3. **The critical night** — on the eve of his eighth birthday, the child recited the Amitāyus mantra without interruption through the entire night, and "averted untimely death." This is the description of a monitored nocturnal vigil with continuous respiratory pacing through a crisis point.
+
+That the child was afterward "free from the fear of death" is clinically readable: the first successful survival of a seizure crisis under controlled conditions.
+
+**Sources:**
+
+- Tibetan Buddhist Encyclopedia, "The Life of Nagarjuna." Full account of Saraha's intervention and the night vigil.
+- Dorje Shugden, "Nagarjuna of the Middle Way Philosophy" (dorjeshugden.org). Details of ordination sequence and Amitāyus initiation.
+- Pali & Sanskrit Cultural Exchange Centre, "Arya Nāgārjuna" (pscec.net). Saraha's empowerment into "the mandala of Amitayus, the Destroyer of the Lord of Death."
+
+#### 7.2.3 The Nāga Canopy: Photosensitivity Encoded as Iconography
+
+Nāgārjuna's defining iconographic attribute is the multi-headed cobra hood forming a canopy over his head. The hagiographic explanation: six nāgas appeared and shielded him from the sun while he taught. This is consistently depicted across all Buddhist artistic traditions — Indian, Tibetan, Chinese, Japanese.
+
+Photosensitivity is a well-documented feature of specific epilepsy syndromes. A person requiring protection from light exposure — sunlight as seizure trigger — would, in a pre-neurological culture, be described as supernaturally protected from the sun. The nāga canopy is the cultural encoding of a medical accommodation.
+
+**Sources:**
+
+- "The Serpent of Wisdom: Exploring Nagarjuna's Legacy" (termatree.com). Iconographic analysis: seven-headed cobra hood as consistent attribute.
+- Study Buddhism, "The Life of Nagarjuna." Origin story of the nāga canopy: "six nagas came and formed an umbrella over his head to protect him from the sun."
+
+#### 7.2.4 Death by Kusha Grass: SUDEP in Hagiographic Code
+
+The death narrative is the most diagnostically precise element:
+
+A prince (Kumāra Shaktiman) sought Nāgārjuna's head. Nāgārjuna consented. But no sword could sever his head. Nāgārjuna explained that in a previous life he had killed an ant while cutting grass; as karmic consequence, his head could only be cut by a blade of kusha grass. The prince used the grass. Nāgārjuna died. The blood turned to milk. The severed head spoke.
+
+Stripped of hagiographic convention:
+
+- **"No sword could kill him"** — standard trope for enlightened beings. Not clinical data.
+- **"A blade of kusha grass killed him"** — non-standard. This detail serves no hagiographic purpose. It is embarrassing (a great master killed by grass), narratively unnecessary, and inconsistent with the invulnerability trope. Its preservation against narrative pressure indicates observational origin.
+- **"The blood turned to milk"** — progressive pallor, waxen discoloration: the cyanosis-to-pallor transition characteristic of terminal autonomic collapse during or after a seizure.
+- **"The head spoke after severance"** — vocalization during status epilepticus. The "separation of head and body" is the hagiographic coding of a state where consciousness (speech) persists while the body undergoes visible systemic failure.
+
+The clinical reading: a minimal sensory trigger (touch at the neck, or another stimulus attributed retrospectively to kusha grass) provoked a reflex seizure escalating to status epilepticus, progressive autonomic failure, vocalization during partial awareness, terminal pallor, and death. This is consistent with SUDEP (Sudden Unexpected Death in Epilepsy), the leading cause of epilepsy-related mortality.
+
+The karmic explanation — killing an ant while cutting grass — is structurally identical to Gautama's *Sīsadukkhaṁ* (headache attributed to rejoicing at fish being killed). Both preserve the clinical observation (the trigger, the symptom) while replacing the etiology with karmic causation.
+
+**Sources:**
+
+- Study Buddhism, "The Life of Nagarjuna." Full death narrative with kusha grass, blood-to-milk transformation, and speaking head.
+- Buton Rinchen Drub, *History of Buddhism in India*. Death narrative with identical details. In: Shambhala Publications.
+
+#### 7.2.5 Śūnyatā as Epileptic Phenomenology
+
+Nāgārjuna's central philosophical contribution — that nothing possesses inherent existence (*svabhāva*), that all phenomena arise dependently and are empty of self-nature — maps to the phenomenology of a person whose perceptual stability was constitutively compromised from birth.
+
+A person who experiences seizures — episodes in which reality collapses and reconstitutes — has empirical access to the insight that phenomenal experience is not self-sustaining. The world does not hold itself up. It disappears and returns depending on conditions. This is not metaphysical speculation but direct perception.
+
+The structural parallel to Gautama is exact: *paṭicca-samuppāda* (dependent origination) is the philosophy of a migraineur whose perceptual field is state-dependent. *Śūnyatā* (emptiness of inherent existence) is the philosophy of an epileptic whose perceptual field is intermittent.
+
+Both men developed philosophical systems that precisely describe what their respective neurologies made visible. The tradition treated these as discoveries about reality. They are discoveries about reality — but the instrument of discovery was not meditation. It was a brain that functioned differently.
 
 ## 8. Spiritual Practice as Neurological Protocol
 
@@ -124,7 +208,11 @@ This was coded as spiritual progress for two and a half millennia.
 
 The tradition did not lie. It misattributed.
 
-Liberation from suffering occurs — because the substrate that processes suffering as *personal* suffering is gradually destroyed. Dissolution of the self occurs — because the cortical identity structure loses its thalamic supply. Equanimity occurs — because the evaluation machinery no longer operates at full capacity. Cessation of attachment occurs — because the circuits that generate attachment are ischemic.
+Liberation from suffering occurs — because the substrate that processes suffering as *personal* suffering is gradually destroyed.
+
+The case of Nāgārjuna demonstrates that the mechanism generalizes beyond migraine. Epileptic architectures produce the same philosophical endpoints through a different neurological pathway: not gradual ischemic degradation of identity circuits, but intermittent loss and reconstitution of perceptual continuity from birth. The conclusion — that nothing possesses inherent self-nature — is the same. The substrate is different. The tradition absorbed both as convergent confirmations of a single truth. They are convergent confirmations — of the fact that damaged or variant neurology produces consistent philosophical output.
+
+Dissolution of the self occurs — because the cortical identity structure loses its thalamic supply. Equanimity occurs — because the evaluation machinery no longer operates at full capacity. Cessation of attachment occurs — because the circuits that generate attachment are ischemic.
 
 Every single promise is fulfilled. The phenomenology is correct. Only the explanation is wrong.
 
@@ -143,6 +231,8 @@ In Buddhist eschatology, Maitreya is the future Buddha — the one who will come
 If enlightenment as traditionally understood is a misclassified neurological configuration, then Maitreya is not a person. Maitreya is a cultural threshold: the moment humanity understands that the architectures it classified for millennia as sacred or sick are variants of the same system. No hierarchy, no veneration, no path — only recognition.
 
 The culmination of the recognition and acceptance of neurodiversity.
+
+Nāgārjuna would agree, because śūnyatā says exactly this: nothing possesses inherent existence — including the category "enlightenment" itself. If emptiness applies to all phenomena without exception, it applies to the phenomenon called awakening. The tradition that claimed him understood his words but not his body.
 
 Gautama would agree, because paṭicca-samuppāda says exactly this: everything arises in dependence on conditions. The condition was neurology, not merit.
 
@@ -207,3 +297,31 @@ The Dharma is determinism. The inevitable consequence of the human being itself.
 
 15. **"Pain Is My Built-in Buddha"** — Lion's Roar. Bhikkhu Bodhi, one of the foremost Pāli translators alive, describes his own chronic head pain since 1976, framed as karmic consequence and practice opportunity.
     https://www.lionsroar.com/built-in-buddha/
+
+### Nāgārjuna Hagiographic Sources
+
+16. **Buton Rinchen Drub (1290–1364)**, *History of Buddhism in India and Its Spread to Tibet*. Nāgārjuna birth prophecy, offering structure, death narrative. English excerpt: Shambhala Publications, "Nagarjuna as Described by Buton."
+    https://www.shambhala.com/nagarjuna/
+
+17. **Alexander Berzin**, "The Life of Nagarjuna." Composite biography from Tibetan sources. Study Buddhism.
+    https://studybuddhism.com/en/tibetan-buddhism/spiritual-teachers/nagarjuna
+
+18. **Tibetan Buddhist Encyclopedia**, "The Life of Nagarjuna." Most granular version of the graduated offering schema and Saraha's intervention.
+    http://tibetanbuddhistencyclopedia.com/en/index.php?title=The_Life_of_Nagarjuna
+
+19. **Kumārajīva (344–413 CE)**, *Life of Nāgārjuna Bodhisattva* (T. 2047). Earliest biographical source. English: Li Rongxi, trans. (2017), *The Lives of Great Monks and Nuns*, Numata Center for Buddhist Translation and Research, pp. 17–30.
+
+### Nāgārjuna Philosophy
+
+20. **Jan Westerhoff**, Stanford Encyclopedia of Philosophy, "Nāgārjuna." Authoritative philosophical overview and textual attribution.
+    https://plato.stanford.edu/entries/nagarjuna/
+
+### Epilepsy
+
+21. **Plouin P, Neubauer BA.** "Benign familial and non-familial neonatal seizures." In: *Roger's Epileptic Syndromes in Infancy, Childhood and Adolescence*, 6th ed. John Libbey Eurotext, 2019. (Neonatal seizure presentation, "fifth-day fits," typical day 1–7 onset, frequent spontaneous remission.)
+
+22. **Harden CL, Tomson T, Gloss D et al.** "Practice guideline summary: Sudden unexpected death in epilepsy incidence rates and risk factors." *Neurology* 2017; 88(17):1674–1680. (SUDEP epidemiology, risk factors including generalized tonic-clonic seizures.)
+
+23. **Kasteleijn-Nolst Trenité DGA et al.** "Photosensitivity in epilepsy." *Epilepsia* 2012; 53(Suppl 1):18–25. (Photosensitivity prevalence, mechanisms, and clinical significance in epilepsy syndromes.)
+
+24. **Specchio N, Wirrell EC, Scheffer IE et al.** "International League Against Epilepsy classification and definition of epilepsy syndromes with onset in childhood." *Epilepsia* 2022; 63:1398–1442. (Current ILAE classification of childhood epilepsy syndromes.)
