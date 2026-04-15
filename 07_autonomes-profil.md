@@ -98,7 +98,27 @@ Kortikale Spreading Depression mit Hirnstammpropagation hinterlässt Fenster erh
 
 **Antagonistische Implikation auf den Sympathikus:** Metoprolol dämpft die kardiale Sympathikusantwort – den einzigen verfügbaren Gegenregulator gegen den dorsalen Vagus-Shutdown. Der Vagusreflex läuft dadurch ungehinderter durch. Die beobachtete Schwellenverschiebung des Reflexes seit Therapiebeginn ist pharmakologisch plausibel erklärbar durch diese Gegenregulationsschwächung.
 
+**Degenerative Floor-Absenkung bei chronisch marginalem Profil:** Peroutkas Sympathetic Theory of Migraine (2004, vgl. Pathogenesemodell 7.4) und die daraus abgeleitete Dämpfungskonstanten-Synthese (2.5.5) liefern die pharmakologisch präzise Einordnung: Betablocker reduzieren zwar den Overshoot (Adrenozeptor-Supersensitivität interiktal), senken dazu aber den sympathischen Floor weiter ab. Bei einem Phänotyp mit bereits chronisch marginalem Floor wirkt Metoprolol nicht stabilisierend, sondern entdämpfend auf den B7/B8-Oszillator — die Intervention reduziert das Symptom (Amplitude), verschärft aber die Ursache (niedrige Dämpfungskonstante). Der Nettoeffekt ist klinisch positiv nur, solange die Migräneprophylaxe die ANS-Kollapsserie unterbricht; die pharmakologische Logik selbst ist degenerativ, nicht restaurativ. Dies begründet, warum der Metoprolol-Entfall unter LDX-Stabilisierung (vgl. Pathogenesemodell 5.4) nicht nur kardiovaskulär, sondern ätiologisch wünschenswert ist.
+
 **Kritische Interaktion:** Bei Bradykardie durch Vagusreflex und gleichzeitiger Metoprolol-Wirkung ist die sympathische Gegenregulation eingeschränkt. In Kombination mit Hypoxie durch Atemstopp (Vagusreflex) und zerebraler Hypoperfusion besteht eine theoretisch plausible Kaskade zu ventrikulären Rhythmusstörungen. Diese Interaktion ist nicht formal untersucht.
+
+### Alpha-1-Antagonisten (Prazosin, Doxazosin, Terazosin) — analoges Problem
+
+**Pharmakologisches Profil:** Prazosin und verwandte Substanzen blockieren postsynaptische α1-Rezeptoren → periphere Vasodilatation → Blutdrucksenkung. In der Literatur ist Prazosin bei post-TBI-Kopfschmerz mit einer Responder-Rate von ca. 70 % dokumentiert (Mayer et al. 2023, *Headache*, RCT) — mechanistisch konsistent mit Peroutkas SNS-Theorie (Blutdrucksenker-Klasseneffekt, vgl. Pathogenesemodell 7.4.3, T\*MGR 2024).
+
+**Warum dennoch kontraindiziert bei diesem Profil:**
+
+- Hauptnebenwirkung ist orthostatische Hypotension → verschlimmert den ohnehin niedrigen sympathischen Floor.
+- Die in der Studie eingesetzte Abenddosis (20 mg) würde den nächtlichen vagalen Clamp (vgl. Pathogenesemodell 0B.21) theoretisch verschärfen: Der ohnehin binäre Einschlaf-Cliff würde zusätzlich durch pharmakologische Sympathikusblockade verstärkt, die Kompensationsfähigkeit der restlichen Nacht (sympathischer Burst bei 00:41) könnte pharmakologisch unterbunden werden.
+- Das Risikoprofil entspricht strukturell Metoprolol: Overshoot ↓, aber Floor ↓↓. Die populationsweite Wirksamkeit in RCTs ist kein Schutz gegen die individuelle Kontraindikation bei bereits marginalem Floor.
+
+**Modellkonsistenz:** Der RCT-Befund bestätigt die Sympathetic Theory indirekt — senkt man Blutdruck über jeden beliebigen Mechanismus, reduziert sich die Anfallshäufigkeit. Für den vorliegenden Phänotyp führt diese populationsbasierte Logik jedoch in die Irre, weil die Intervention den Grund-Defekt verstärkt statt kompensiert. Die identische Evidenzlogik gilt für andere Antihypertensiva (Candesartan, Lisinopril) — alle wirksam als Migräneprophylaxe, alle potenziell problematisch bei chronisch niedrigem Floor.
+
+| Aussage | Evidenzniveau | Quellenbasis |
+| :--- | :--- | :--- |
+| Prazosin-Responder-Rate 70 % bei post-TBI-Kopfschmerz | Gesichert (RCT) | Mayer et al. 2023, Headache |
+| Alle Blutdrucksenker als Klasseneffekt anfallsreduzierend | Gesichert (Klassenübersicht) | T*MGR 2024 |
+| Kontraindikation bei chronisch niedrigem Floor trotz populationsweiter Wirksamkeit | Hypothetisch, modellabgeleitet | Abgeleitet aus 2.5.5 + Peroutka-Synthese |
 
 ### Lisdexamfetamin – Implikation für autonomes Profil
 

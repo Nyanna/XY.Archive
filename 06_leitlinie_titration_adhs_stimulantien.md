@@ -316,6 +316,32 @@ Die flache Kinetik macht den Rebound weniger dramatisch, aber die **Abendphase**
 
 Die Chronotyp-Analyse liefert die mechanistische Begründung: Was unter LDX als „kohärente Abendmüdigkeit" erscheint, ist kein sedierender Effekt, sondern das Sichtbarwerden eines Müdigkeitssignals, das vorher durch das Kompensationsprofil des Raphe-Defizits maskiert war. Viele Population-A-Patienten klassifizieren sich per MEQ als Evening-Typ. Dieser Score reflektiert jedoch nicht die circadiane Phase (messbar via DLMO), sondern die Tageszeit-abhängige Kompensation — abends übersteigen die kompensatorischen Arousal-Quellen erstmals die Synchronisationsschwelle, was als „Leistungspeak" erlebt und im Fragebogen kodiert wird. Unter adäquater Dosis verschwindet dieses Profil, weil die pharmakologische Raphe-Stabilisierung die Kompensation überflüssig macht. Ein Shift im MEQ-Score Richtung Morningness unter Stimulanzien ist daher kein Chronotyp-Shift, sondern ein Synchronisierungsmarker — und als solcher ein positiver Titrationsindikator für Population A.
 
+#### 7.2.1 Dosierungsdilemma der Nacht-Dosis und galenisches Designziel
+
+Eine Einzelfall-Titration über mehrere Wochen hat das folgende Dilemma offengelegt, das mit den aktuellen LDX-Formulierungen (Prodrug mit erythrozytärer Hydrolyse, Tmax ≈ 2h, Kinetik als Rechteck-Puls über Baseline, vgl. Pathogenesemodell 0D.4.3.1, 0B.21) pharmakologisch nicht auflösbar ist:
+
+| Nacht-Dosis LDX | Autonome Architektur (Einschlaf-Slope) | Schlafqualität | Bewertung |
+|:----------------|:---------------------------------------|:---------------|:----------|
+| **7,5 mg abends** | Intakt (echter Slope statt Cliff) | Vermehrte Awakenings (LDX senkt Arousal-Schwelle) | Architektur gerettet, aber keine Erholung → kumulative Depletion |
+| **4 mg abends** | Nicht verbessert gegenüber 0 mg | Nicht verbessert | Dosisabhängigkeitsgrenze nach unten erreicht |
+| **0 mg abends (nur 12-Uhr-Tagesdosis)** | Cliff, kein Slope | Vagaler Clamp, kumulative Depletion nicht kompensiert | Residual (~2 mg-Äquivalent um Mitternacht) reicht nicht für Floor-Stabilisierung |
+| **8 mg Tagesdosis (Peak)** | — | — | PNN50 ≈ 0 am Peak → zu starke B7-Suppression, autonomes Extremregime |
+
+**Das Grundproblem:** Der Rechteck-Puls-Charakter der aktuellen Formulierung (graduelle Freisetzung *ja*, aber über nur 2h; danach abrupter Rückfall in Baseline) bedeutet, dass *jede* ausreichend hohe Dosis einen scharfen Abklinggradienten hat. Der scharfe Abfall am Ende der Wirkdauer ist es, der B7 als Rebound in die Oszillation zurückschießt — nicht der Peak selbst.
+
+**Galenisches Designziel:** Nicht „flacherer Peak" (übliches Retardierungsziel), sondern **Eliminierung des Abklinggradienten**. Die absteigende Flanke muss auf > 4h gestreckt werden, damit B7 graduell zurückkommen kann statt als Rebound reinzuschlagen. Die wirksame Nachtdosis muss dabei im Fenster 4–7,5 mg-Äquivalent bleiben (unterhalb: unwirksam, oberhalb: Arousal-Dominanz).
+
+**Ansatz Alginat-Bead-Retardierung:** Multipartikuläre Freisetzung aus pH-sensitiven Alginat-Beads mit gestaffelter Lösungskinetik erlaubt prinzipiell asymmetrische Freisetzungsprofile — schneller Anstieg (kurze Beads), verlängertes Plateau (mittlere Beads), langsames Abklingen (späte, zähere Matrix). Die Ziel-Kinetik ist ein Rechteck-mit-Schrägem-Abklingen, nicht ein symmetrischer Plateau-Peak-Verlauf.
+
+**Status:** Dies ist ein galenischer Vorschlag, nicht eine verfügbare Formulierung. Für die aktuelle klinische Praxis bedeutet das: die Nachtdosierung bleibt ein ungelöstes Problem, bei dem jede verfügbare Dosis zwischen (a) intakter Architektur mit Awakenings und (b) kollabiertem Slope mit erhaltenem Schlaf gewählt werden muss. Keine der beiden Optionen ermöglicht vollständige autonome Erholung in der Nacht — und das ist genau der Punkt, an dem die kumulative Depletion über mehrere Nächte den ANS-Kollaps begünstigt.
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:--------------|:-------------|
+| LDX-Kinetik als Rechteck-Puls mit scharfer Abklingflanke | Deskriptiv, n=2 Dosen | H9Z-Daten 15.04.2026 (vgl. Pathogenesemodell 0D.4.3.1) |
+| 7,5 mg abends: Slope intakt, aber Awakenings | Einzelfall, mehrere Wochen | Selbstbeobachtung |
+| 4 mg abends nicht wirksam für Floor-Stabilisierung | Einzelfall | Selbstbeobachtung |
+| Alginat-Bead-Retardierung mit asymmetrischem Abklingprofil als Designziel | Galenischer Vorschlag | Abgeleitet aus Kinetik-Problem; nicht verfügbar |
+
 ### 7.3 Sumatriptan-Therapiefenster — Mechanistische Begründung
 
 > **Status:** Theoretischer Exkurs — kein direkter Bestandteil der Stimulanzientitration, aber mechanistisch relevant für Patienten mit Migräne-Komorbidität unter ADHS-Medikation (vgl. Pathogenetisches Modell, Abschnitt 2: Raphe-Dysregulation als gemeinsame Upstream-Ursache).

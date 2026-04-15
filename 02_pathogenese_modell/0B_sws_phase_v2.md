@@ -1067,7 +1067,80 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 
 ---
 
-### **B.21 Referenzen**
+### **B.21 H9Z-Brustgurt-Messung 14.–15.04.2026: Einschlaf-Cliff und Plateau-Struktur**
+
+Die unter B.9 beschriebene nächtliche HR-Trajektorie hat eine Auflösungsgrenze im Minutenbereich (Mi-Band 9). Eine ergänzende Messung mit dem Coospo-H9Z-Brustgurt (EKG-Elektroden, ±1 bpm, BT 5.0) über 14.04.2026 18:27 CEST – 15.04.2026 07:59 CEST erfasst 52.849 Beat-to-Beat-RR-Intervalle (99,8 % physiologisch plausibel) — Auflösung auf Einzelschlag-Ebene. Zwei Phänomene werden damit sichtbar, die in den Minuten-aggregierten Mi-Band-Daten systematisch unterdrückt sind: der binäre Charakter des Einschlaf-Übergangs und die 2-Stunden-Plateau-Struktur der Tageszyklik.
+
+**Einschlaf-Cliff statt Slope**
+
+Zeitverlauf 00:00–00:40 CEST (15.04.2026):
+
+| Zeit [CEST] | HR [bpm] | R/S Ratio | Zustand |
+|:------------|:---------|:----------|:--------|
+| 23:55 | 91 | < 0,4 | Wach, sympathisch (Treppe → Bett) |
+| 00:00 | 93 | — | Peak |
+| 00:05 | 77 | — | Abfall beginnt |
+| 00:10 | 63 | 1,01 | Umschlag |
+| 00:15 | 55 | 1,07 | Vagaler Clamp erreicht |
+| 00:20–00:40 | 50–56 | 1,08–1,28 | **30 Minuten reiner vagaler Clamp** |
+
+Kein Einschlaf-Slope (normal wäre ein 30–60-min-Gradueller Abfall), sondern binärer Switch in < 15 Minuten. HR fällt 15 bpm unter den Abend-Ruhepuls (68 bpm). Diese Dynamik ist mit dem normalen parasympathischen Einschlafprozess inkompatibel: graduelle Baroreflex-Abwärtsregulation erzeugt keine R/S-Sprünge > 0,5 in < 5 Minuten.
+
+**Mechanistische Interpretation:** Der Cliff ist kein physiologischer Übergang, sondern Ausdruck kumulierter sympathischer Erschöpfung über mehrere Tage. Das System operiert bereits am Abend im Grenzregime (Baseline HR ~70, aber kein LDX-Puffer mehr); beim Wegfall des exogenen Arousal-Drives (Augen zu, Bett) kippt es nicht graduell in den Schlaf, sondern fällt kollektiv in den Vagaler-Clamp-Attraktor. Die drei autonomen Regime (vgl. D.4.3.1) sind hier direkt im zeitlichen Verlauf ablesbar: Baseline → (keine stabile Zwischenzone) → Clamp.
+
+**Awakening 00:41 CEST: Sympathischer Burst nach Clamp**
+
+- R/S crasht auf 0,46, HR springt auf 71 → sympathischer Burst, vermutlich humoral (Adrenalin-Release aus Nebenniere).
+- Danach erreicht R/S für den Rest der Nacht nicht wieder Werte > 1,1.
+- Restliche Nacht: R/S 0,89–0,98, HR 55–65 → gemischtes Regime ohne erneuten Clamp.
+
+**Deutung:** Der erste Clamp hat den sympathischen Puffer entladen; für den Rest der Nacht reicht die sympathische Reserve nicht mehr aus, um erneut kontrolliert in den Clamp einzutreten. Der kumulative Vortages-Effekt ist damit im Einzelverlauf direkt abbildbar.
+
+**LDX-Interferenz zu Nacht**
+
+- 4 mg LDX zur Nacht eingenommen: keine messbare Wirkung auf den Clamp (weder Dämpfung noch Shift).
+- Vorangegangene Nächte mit 7,5 mg LDX zur Nacht: gute autonome Architektur (echter Slope statt Cliff), aber mehr Awakenings — LDX senkt die Arousal-Schwelle, keine echte Erholung → kumulative Depletion.
+- Kein LDX-Dosierungsregime in diesem Dosisbereich erzeugt gleichzeitig intakten Slope und stabilen Schlaf.
+
+Dies ist das Dosierungsdilemma, das in 06_leitlinie_titration (Abschnitt 7.2) als Designziel der Retardierung (Alginat-Beads, Abklinggradient-Streckung) formuliert ist.
+
+**Zirkadiane Plateau-Struktur**
+
+Jeden Tag zeigen die Langzeit-Mi-Band-Daten zwei 2-Stunden-Plateaus mit zirkadian stabiler Lage, bestätigt durch die H9Z-Einzeltaganalyse vom 15.04.2026:
+
+```
+PRE-Phase → Plateau 1 (2h) → Zwischenphase → Plateau 2 (2h) → POST-Phase
+```
+
+**Eigenschaften:**
+- PRE und POST identisch in ihrer HR-Baseline.
+- Plateaus persistieren auch unter Metoprolol (vgl. B.4) und ohne LDX — **endogen/zirkadian, nicht substanzinduziert**.
+- LDX erzeugt am Peak einen zusätzlichen Rechteck-Puls (vgl. D.4.3.1), ohne die darunterliegende Plateau-Struktur zu verändern.
+
+**Anfallskorrelation — Plateau-Konfiguration:**
+
+| Konfiguration | Verlauf | Klinische Assoziation |
+|:--------------|:--------|:---------------------|
+| **Normal** | Niedriges Plateau zuerst, dann hohes (morgens sanfter, später Aktivitätsanstieg) | Kein Anfall |
+| **Anfallstag** | Hohes Plateau zuerst, mit absteigendem Slope über die 2 Stunden | Anfall wahrscheinlich im oder nach dem Plateau |
+
+Der Anfallsprädiktor ist nicht der absolute HR-Wert, sondern der **Intra-Plateau-Gradient**: Ein stabiles Plateau = ausreichende sympathische Reserve (Dämpfungskonstante intakt, vgl. 2.5.5). Ein degradierendes Plateau = Reserve reicht nicht, um das Niveau über 2h zu halten → Anfallsrisiko erhöht.
+
+Mechanistisch entspricht das degradierende Plateau einem Overshoot beim Einsteigen (Adrenozeptor-Supersensitivität auf NE-Depletion-Basis, vgl. 7.4, Buse-Trend 3), gefolgt von dem Unvermögen, das Niveau zu halten — Depletion während der Plateau-Phase. Der Gradient ist damit der funktionsnahste autonome Marker für die aktuelle Puffertiefe.
+
+**Diagnostische Konsequenz:** Die vier HR-Anomalie-Marker (D.4.3.2) sind direkt aus der Plateau-Struktur ablesbar. Für ein Screening reicht ein HR-Logger mit 1-Minuten-Auflösung + Plateau-Detektion; die prädiktive Größe ist dHR/dt über das Morgen-Plateau, nicht der absolute HR-Wert.
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:--------------|:-------------|
+| Binärer Einschlaf-Cliff statt Slope bei kumulativer sympathischer Depletion | Deskriptiv, n=1 Nacht H9Z | H9Z 14.–15.04.2026 |
+| 30-min reiner vagaler Clamp unmittelbar nach Einschlaf-Cliff | Deskriptiv, n=1 Nacht | H9Z |
+| Zirkadiane 2×2h-Plateau-Struktur, substanzinvariant | Deskriptiv, Langzeit | Mi-Band (n=79 Nächte) + H9Z-Bestätigung |
+| Intra-Plateau-Gradient (dHR/dt) als Anfallsprädiktor | Hypothetisch, konsistent mit Einzelfall | Langzeitdaten; vgl. 2.5.5, 7.4 |
+| LDX als additiver Rechteck-Puls, plateau-strukturinvariant | Deskriptiv, n=2 Dosen | H9Z |
+
+---
+
+### **B.22 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.

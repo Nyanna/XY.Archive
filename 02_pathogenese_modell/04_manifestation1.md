@@ -25,6 +25,26 @@ Die Heterogenität der klinischen Triggerliste (Stress, Wetter, Alkohol, Menstru
 
 Identische Trigger lösen an manchen Tagen eine Attacke aus und an anderen nicht. Die Erklärung: Der Abstand zur Schwelle hängt vom aktuellen B7/B8-Phasenversatz ab. An Tagen mit minimalem Phasenversatz (z.B. Tag 1 nach Resynchronisation) ist der Abstand zur Schwelle maximal; kein alltagstypischer Trigger überbrückt ihn. An Tagen mit maximalem Phasenversatz (z.B. Tag 3–4 im ~4-Tage-Zyklus) reicht minimale kortikale Perturbation. Der Trigger ist austauschbar — der Phasenversatz determiniert die Empfindlichkeit.
 
+**Präzisierung: Effektive Trigger sind ANS-Stressoren, nicht rein kortikale Aktivität**
+
+Die obige Tabelle listet Eintrittskanäle in den Kortex. Die Trigger-Klassen werden dort nach dem *Kanal* der Perturbation sortiert. Ein orthogonaler Befund aus der Langzeit-Selbstbeobachtung präzisiert, welche dieser Kanäle tatsächlich Anfälle auslösen: **alle empirisch wirksamen Trigger destabilisieren das autonome Nervensystem (ANS) — rein kortikale Aktivität ohne ANS-Komponente ist kein Trigger**, selbst wenn sie den Kortex stark beansprucht.
+
+| Trigger | ANS-Komponente | Empirische Anfallsauslösung |
+|:--------|:---------------|:----------------------------|
+| **Hypoglykämie (vergessene Mahlzeit)** | Sympathoadrenale Gegenregulation → NE-Depletion | Bestätigt |
+| **Schlafentzug** | Kumulative sympathische Erschöpfung (Floor-Verlust, vgl. 2.5.5, 7.4) | Bestätigt |
+| **Wetterumschwung** | Autonome Anpassungslast (Barorezeptoren, Thermoregulation) | Bestätigt |
+| **Körperliche Erschöpfung** | Direkter NE-Verbrauch | Bestätigt |
+| **Sensorische Überflutung** | Erzwungene Polling-Rate-Erhöhung → Raphe-Depletion (vgl. D.3.1) + ANS-Aktivierung | Bestätigt |
+| **Hochkonzentrierte kognitive Arbeit über Stunden** | Keine systematische ANS-Destabilisierung | **Kein Trigger** |
+| **Komplexes Problemlösen, intellektuelle Belastung** | Keine ANS-Komponente | **Kein Trigger** |
+
+**Modellinterpretation:** Kortikale Aktivität adressiert thalamocortikale Schaltkreise (Glutamat, GABA), nicht primär das ANS. Der B7/B8-Oszillator hängt über den autonomen Floor von sympathischer Reserve ab — die Dämpfungskonstante der Oszillation wird vom Floor bestimmt (vgl. 2.5.5). Rein kortikale Last ohne autonome Kopplung ändert die Dämpfung nicht und erzeugt daher keine effektive Perturbation. Die klassische Migräne-Triggerliste der Literatur ist konsistent mit diesem Bild: Stress, Hypoglykämie, Schlafentzug, Wetter, Menstruation — alle mit direkter ANS-Signatur. „Kognitive Überlastung" als unabhängiger Trigger fehlt in der Literatur; was Patienten als „Stress-Trigger" berichten, ist in der Regel ein ANS-Phänomen (Cortisol, Katecholamine), nicht reine kortikale Aktivität.
+
+**Konsequenz für die Tabelle oben:** Die Eintrittskanäle (LC, Adenosin, Thalamokortikal) sind nicht alle gleichwertig. Die wirksamen Kanäle sind diejenigen, die gleichzeitig den ANS-Floor belasten — LC-Aktivierung (sympathoadrenal), Adenosin (homöostatisch = NE-Depletion-Marker), homöostatischer Druck (Schlafentzug = kumulativer Floor-Verlust). Koffein als isolierter Adenosin-Antagonist ohne ANS-Last ist in der persönlichen Beobachtung eher modulatorisch als triggernd; erst in Kombination mit Schlafentzug oder metabolischem Defizit wird es wirksam. Die Modellvorhersage ist damit: **Ein Trigger ist genau dann wirksam, wenn er die Dämpfungskonstante senkt, nicht wenn er die Oszillation direkt anstößt** — der Anstoß an einem gut gedämpften System läuft aus, nur am entdämpften System eskaliert er (vgl. 2.5.5, invertiertes Pendel).
+
+Diese Präzisierung ist kein Widerspruch zum Stochastischen Fenstermodell (4.2), sondern eine Schärfung: der Phasenversatz (Fenster) setzt die Empfindlichkeit, der ANS-Trigger (Perturbator) überbrückt die restliche Strecke zur CSD-Schwelle. Rein kortikale Perturbatoren ohne ANS-Anteil liefern diesen Beitrag nicht.
+
 **Evidenz: Serotonerge Konvergenz aller wirksamen Prophylaktika**
 
 Die serotonerge Konvergenz der Prophylaktika adressiert die Empfindlichkeit (Interferenzfeld), nicht die Trigger:

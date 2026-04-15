@@ -180,6 +180,50 @@ Die bisher implizit vermengten Mechanismen der B7/B8-Destabilisierung lassen sic
 - SD hoch + RMSSD hoch = schnelle Sprünge bei verlorenem Takt → **aphasische Instabilität** (Rauschexposition)
 - SD niedrig + RMSSD niedrig = Fixierung → **Entzug** (B7 erschöpft, keine Modulation)
 
+**Drei autonome Regime — Einzelfall-Beat-to-Beat-Daten**
+
+Der Dauerstress-Mi-Band-Monitoring-Datensatz (n=79 Nächte, Anhang B) erfasst HR, Schlafstadien und ein HRV-Proxy mit Minuten-Auflösung. Die ergänzende Coospo-H9Z-Brustgurt-Messung (14.04.2026 18:27 CEST – 15.04.2026 07:59 CEST, 52.849 RR-Intervalle, 99,8 % physiologisch plausibel) liefert die Beat-to-Beat-Auflösung, die eine Klassifikation der autonomen Regime erst ermöglicht. Aus diesen Daten ergibt sich — orthogonal zu den SD/RMSSD-Patterns der Tabelle oben — eine Drei-Regime-Struktur, in der HR, PNN50 und die RMSSD/SDNN-Ratio (R/S) gemeinsam den autonomen Zustand eindeutig identifizieren:
+
+| Regime | HR [bpm] | PNN50 | R/S Ratio | Interpretation |
+|:-------|:--------|:------|:----------|:---------------|
+| **LDX-Peak** | 90–100 | ≈ 0 | < 0,4 | B7 supprimiert, reiner sympathischer Drive; Vagus komplett unterdrückt |
+| **Baseline (kein LDX, wach)** | 65–70 | ~ 20–30 | ~ 0,9 | Gemischt, leichter parasympathischer Überhang |
+| **Vagaler Clamp (Nacht)** | 50–55 | > 50 | > 1,1 | B7 dominant, Sympathikus effektiv abgeschaltet |
+
+**Fehlender Mittelbereich:** Zwischen Baseline und den beiden Extremen existiert keine stabile Zwischenzone. Das System kennt nur drei Attraktoren. LDX verschiebt nicht den Grundzustand, sondern entscheidet lediglich, welches Extrem zu welcher Tageszeit dominiert — das Abklingen der LDX-Dosis erfolgt nicht graduell, sondern als Rückfall in den Baseline-Attraktor. Mechanistisch konsistent mit der D2-Supersensitivitäts-Dosisasymmetrie (D.8.1): LDX erzeugt keinen linearen Gain-Effekt, sondern einen On/Off-Switch der B7-Aktivität über der D2-Schwelle.
+
+**LDX als Rechteck-Puls, nicht als Slope:**
+
+- Zwei LDX-Dosen (7:30 und 12:00 CEST am 15.04.2026): jeweils exakt 120 Minuten nach Einnahme HR-Anstieg auf 90–100 bpm. Tmax = 120 min = Dexamfetamin-Spitzenkonzentration nach LDX-Hydrolyse.
+- Reproduzierbar: beide Dosen identisches Muster.
+- PRE- und POST-LDX-Plateaus bleiben unverändert — LDX erzeugt ein isoliertes 2-Stunden-Plateau, eingebettet in einen stabilen Baseline-Zustand.
+- Kein graduelles Aufbauen, kein graduelles Abklingen → Rechteck-Puls über dem Grundzustand.
+
+Diese Beobachtung stützt die Modellvorhersage, dass LDX den Oszillator nicht repariert, sondern periodisch überschreibt (vgl. 4.2, Amplitudenmodulation; 2.5.5, Dämpfungskonstanten-Synthese).
+
+**Vier HR-basierte Anomalie-Marker**
+
+Bei tonischem vagalem Überhang liefern klassische HRV-Metriken (RMSSD, Frequenzanalyse, DFA) keinen zusätzlichen Informationsgewinn über die HR selbst hinaus — sie sättigen in den beiden Extremregimen (LDX-Peak: PNN50 ≈ 0; Vagaler Clamp: PNN50 > 50). Die diagnostisch relevanten Marker sind daher rein HR-basiert:
+
+| Marker | Schwelle | Interpretation |
+|:-------|:---------|:---------------|
+| **Absoluter HR-Boden** | Nacht-HR < ~55 bpm | Sympathischer Floor weggebrochen → Dämpfungskonstante unter Schwelle (vgl. 2.5.5) |
+| **Plateau-HR zu hoch** | Morgen-Plateau > 85 bpm ohne Aktivität | Overshoot durch Adrenozeptor-Hypersensitivität (NE-Depletion, vgl. Peroutka 7.4) |
+| **Nacht-Slope zu lang** | Einschlaf-Slope > 45 min ohne stabiles Niveau | Aktive Floor-Degradierung statt Clamp-Übergang (vgl. 0B, Einschlaf-Cliff) |
+| **Intra-Plateau-Slope** | HR fällt über 2h linear auf Morgen-Plateau | System kann Niveau nicht halten → unzureichende NE-Reserve → direkter Anfallsprädiktor |
+
+Der **Intra-Plateau-Slope** ist das empirisch wertvollste Einzelsignal: Er ist ein direkter Proxy für die aktuelle Dämpfungsreserve und unterscheidet am Morgen prospektiv Anfallstage von stabilen Tagen (deskriptive Evidenz aus Langzeit-Mi-Band-Daten, vgl. 0B). Das klassische Schwellenwertdenken (ist HR X über oder unter Y?) verfehlt diesen Marker, weil er als *Änderungsrate* definiert ist — kein Absolutwert, sondern ein Trend.
+
+**Methodische Konsequenz:** Die übliche Konzentration der HRV-Literatur auf RMSSD/SDNN/LF-HF-Ratio ist für diesen Phänotyp wenig informativ. Ein simpler HR-Logger mit 1-Minuten-Auflösung reicht für alle vier Marker aus; Beat-to-Beat-Geräte (H9Z) sind nur für die Regime-Klassifikation (D.4.3.1) nötig, nicht für die Anfallsvorhersage selbst.
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:--------------|:-------------|
+| Drei distinkte autonome Regime ohne stabilen Mittelbereich | Deskriptiv, n=1 Nacht H9Z | H9Z-Datensatz 14.–15.04.2026 |
+| LDX als Rechteck-Puls mit Tmax = 120 min | Deskriptiv, n=2 Dosen | H9Z, reproduziert |
+| HR-Boden < 55 bpm als Floor-Ausfall-Marker | Hypothetisch, konsistent | Langzeit-Mi-Band + H9Z |
+| Intra-Plateau-Slope als Anfallsprädiktor (dHR/dt über Morgen-Plateau) | Hypothetisch, konsistent | Mi-Band-Langzeitdaten; vgl. 0B |
+| RMSSD/SDNN bei tonischem vagalem Überhang nicht zusätzlich informativ über HR | Methodisch ableitbar | Sättigungsbeobachtung an den Regime-Extremen |
+
 **Klinische Konsequenz:** ANS-Kollaps operiert primär über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide Prozesse gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten: ANS-Symptome Stunden vor CSD (Einzelfall B.20: 3,5 h Dissoziation, durch LDX-bedingte CSD-Verzögerung sichtbar). Die Gleichzeitigkeit bei MBA ist nicht weil CSD die ANS-Symptome verursacht, sondern weil beide denselben Upstream-Treiber (B7-Instabilität) haben, aber über unterschiedliche Pfade mit unterschiedlichen Latenzzeiten operieren (vgl. 4.7.2).
 
 ---
@@ -361,6 +405,37 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 
 3. **Zukünftige pharmakologische Targets** müssen an der differentiellen Rezeptorexpression ansetzen (Ohmura & Nagayasu 2025: „druggable genes"), nicht an kernblinden Transmittersystemen.
 
+### **D.9 Zwei Wege zum gemeinsamen Endpunkt: B7-Suppression**
+
+Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, der ohne sie paradox erscheint: Lisdexamfetamin (LDX) und Diphenhydramin (DPH) sind pharmakologisch grundverschieden, verhindern aber beide Migräne-Anfälle — über unterschiedliche Mechanismen, mit identischem Endpunkt: **B7-Suppression**. Keine der beiden Substanzen stabilisiert die B7/B8-Balance; beide reduzieren die Interferenz, indem sie einen der beiden Oszillatoren weitgehend abschalten.
+
+**LDX-Mechanismus (via D2-Supersensitivität):**
+
+- DA-Freisetzung über den gesamten Raphe-Bereich.
+- Trifft auf D2-Autorezeptoren in supersensitiver Konfiguration (D2High-Shift, vgl. 2.4.0).
+- Überproportionale Inhibition des B7 (DRN) — trotz „kernblinder" DA-Wirkung im klassischen Sinn — weil der postsynaptische Effekt dosisabhängig asymmetrisch ist: B7 zeigt bei niedriger LDX-Dosis stärkere Suppression als B8 (empirisch abgeleitet aus PNN50 ≈ 0 am LDX-Peak; Vagus komplett unterdrückt; vgl. 0D.8.2).
+- Ergebnis: B8 dominiert funktionell, B7 ist am Peak stillgelegt. Die Interferenz entfällt, weil ein Oszillator ausgeschaltet ist.
+
+**DPH-Mechanismus (via H1 + SERT + ACh):**
+
+- **H1-Antagonismus:** DPH blockiert den histaminergen excitatorischen Input auf B7 vom Tuberomammillärkern. Das eliminiert eine DRN-spezifische afferente Antriebsquelle (vgl. D.8: H1-Blockade senkt DRN-5-HT, MRN-Effekt null). Kern-selektive Suppression.
+- **Schwache SERT-Inhibition:** 5-HT steigt im gesamten Raphe-Bereich → 5-HT1A-Autorezeptoren werden stärker belegt → DRN-Feedback-Hemmung verstärkt sich. Wirkt kernblind (vgl. Tao et al. 2003), aber das zusätzliche H1-Signal kippt die Netto-Bilanz asymmetrisch in Richtung DRN-Suppression. Historischer Kontext: DPH wurde in den 1960ern als schwacher SRI identifiziert und war der strukturelle Vorläufer der SSRI-Entwicklung (Fluoxetin).
+- **Anticholinerg:** Reduziert cholinergen Drive auf das Arousal-System insgesamt, globale Dämpfung von B7 (und B8, und kortikaler Aktivität).
+
+**Vergleich:**
+
+| Dimension | LDX | DPH |
+|:----------|:----|:----|
+| **Kern-Selektivität der B7-Suppression** | Über D2-Supersensitivität (Hit-2-spezifisch) | Über H1-Blockade (kern-selektiv per Afferenz-Asymmetrie) |
+| **Zustand bei Wirkung** | Wach, funktional, alertness ↑ | Sediert, kognitiv gedämpft |
+| **Autonomes Profil am Peak** | Reiner sympathischer Drive (PNN50 ≈ 0, HR 90–100) | Globale Dämpfung, gemischtes Regime |
+| **Dauer der Anfallsprävention** | 2h-Fenster pro Dosis (Tmax = 120 min) | Längerer Überhang durch H1-Bindung |
+| **Therapeutische Bewertung** | Selektiv, kognitiv erhaltend, aber autonome Extreme | Unsauber, sedierend, aber anfallsfrei |
+
+**Modellkonsequenz:** Keine der beiden Substanzen adressiert den eigentlichen Primärdefekt (instabile 5-HT1A-Autorezeptorschleife). Beide reduzieren die Interferenz, indem sie einen Oszillator supprimieren statt beide zu synchronisieren. B7-Hyperaktivität ist der eigentliche Trigger der CSD-Kaskade; sympathische Erschöpfung (Floor-Verlust, vgl. 2.5.5) ermöglicht sie durch Wegfall des Gegendrucks. Daraus folgt, dass **Frequenzreparatur** (vgl. 4.2) weiterhin das unerreichte Ziel bleibt — die gesamte verfügbare Pharmakologie operiert auf **Amplitudenmodulation** (LDX) oder **Oszillator-Abschaltung** (DPH), aber nicht auf **Phasenkorrektur**.
+
+**Evidenzeinordnung:** Der empirische Befund (DPH = Anfallsfreiheit; LDX am Peak = PNN50 ≈ 0) ist reproduzierbar. Die Interpretation als B7-selektive Suppression ist mechanistisch konsistent mit D.8 (H1 kern-selektiv) und mit D2-Supersensitivität-Dosisasymmetrie (2.4.0), aber nicht direkt durch in-vivo-Kernspezifität getestet.
+
 **Evidenztabelle — Differentielle afferente Regulation**
 
 | Aussage | Evidenzniveau | Quellenbasis |
@@ -378,7 +453,7 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 
 ---
 
-### **D.9 Evidenzstatus**
+### **D.10 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 |:--------|:-------------|:-------------|

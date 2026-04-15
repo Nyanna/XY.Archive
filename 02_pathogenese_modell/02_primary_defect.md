@@ -663,3 +663,43 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Late-Chronotyp als Downstream-Marker globaler Desynchronisation | Plausibel, epidemiologisch gestützt | Kendis et al. 2015: generalisierte Epilepsie 5× Late-Chronotyp vs. Kontrollen; fokale Epilepsie kein Unterschied. ADHD–Late-Chronotyp-Assoziation robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017). Migräne–Late-Chronotyp (Jung et al. 2025, Baksa et al. 2025). Segregation spezifisch mit globalen Synchronisationsstörungen, nicht mit lokalen Hardwaredefekten. |
 | Subjektiver Late-Chronotyp bei Population A als Kompensationsartefakt (nicht circadianer Trait) | Hypothetisch, konsistent mit Kreuzkorrelation | ADHD–Late-Typ-Assoziation (Kooij & Bijlenga 2013); generalisierte Epilepsie 5× Late-Typ vs. fokale kein Effekt (Kendis 2015); Manni 2016: MEQ ≠ DLMO bei Epilepsie; Einzelfall: Abendmüdigkeit erstmals unter LDX (Anhang C) |
 | τ ≈ 26 h als potenzielles Raphe-SCN-Symptom | Hypothetisch, mechanistisch konsistent | DRN projiziert zum SCN ausschließlich über B8-Relay (vgl. 2.5.2); instabiler Raphe-Tonus könnte SCN-Zeitgeber-Kalibrierung verzerren → verlängerte endogene Periodenlänge nicht unabhängiger Chronotyp-Trait, sondern Downstream der Raphe-SCN-Interaktion. Nicht direkt testbar ohne Forced-Desynchrony-Protokolle. |
+
+#### **2.5.5 Sympathischer Floor als Dämpfungskonstante des B7/B8-Oszillators**
+
+Die externe Sympathetic-Theory-of-Migraine-Literatur (Peroutka 2004, Buse 2018, T*MGR 2024, vgl. 7.4) beschreibt einen chronisch marginalen sympathischen Floor mit Adrenozeptor-Supersensitivität als zentrale Migränevariable. Diese Beobachtung ist nicht konkurrierend zum B7/B8-Oszillatormodell, sondern eine Beschreibung desselben Systems aus einer anderen Perspektive: Peroutkas Modell sieht den Floor, das Pathogenese-Modell sieht den Oszillator. Beide sind parametrische Beschreibungen derselben Dynamik.
+
+**Die Modellsynthese:** Der sympathische Floor (Peroutka: NE-Pegel im Liegen; hier: autonome Baseline zwischen den LDX-Plateaus) ist nicht nur ein Zustandsmarker, sondern die **Dämpfungskonstante** der B7/B8-Resonanzschleife.
+
+| Floor-Zustand | B7/B8-Dynamik | Anfallswahrscheinlichkeit bei Triggerimpuls |
+|:--------------|:--------------|:-------------------------------------------|
+| **Oberhalb der Schwelle** | Gedämpft — Oszillationen klingen ab | Trigger erzeugt transiente Perturbation, keine Eskalation |
+| **An der Schwelle** | Grenzdämpft — Oszillation marginal stabil | Starke Trigger eskalieren, schwache klingen ab |
+| **Unterhalb der Schwelle** | Entdämpft — Oszillationen wachsen | Auch minimale Trigger erreichen die CSD-Schwelle |
+
+**Warum niedriger Floor nicht immer Anfall bedeutet:** Ein entdämpftes System ist nicht spontan instabil — es ist instabil *gegenüber Anstößen*. Ohne Perturbation bleibt auch die underdämpfte Schleife in einem stationären Zustand nahe der Ruhelage (invertiertes Pendel ohne Stoß). Die Kombination aus niedrigem Floor (Dämpfung ↓) und Trigger (Anstoß) erzeugt den Anfall — beide Komponenten sind notwendig, keine allein hinreichend. Dies erklärt drei Beobachtungen, die ein statisches Schwellenwertmodell nicht erfassen kann:
+
+1. **NE-Tiefs ohne Anfall:** Nicht jedes interiktale NE-Minimum eskaliert. Das statische Schwellenmodell hat hier keinen Freiheitsgrad; das Dämpfungsmodell erklärt es über fehlenden Trigger im Tief.
+2. **Plateau-Konfiguration als Prädiktor:** Der Intra-Plateau-Gradient (vgl. 0B, 0D) ist prädiktiver als der absolute HR-Wert. Ein stabiles Plateau = intakte Dämpfung; ein abfallendes Plateau = System kann den Arbeitspunkt nicht halten → Dämpfungsreserve aufgebraucht.
+3. **Paradoxe Triggerinkonsistenz:** Identische Trigger lösen an manchen Tagen Anfälle aus, an anderen nicht (vgl. 4.1). Die Variable ist nicht der Trigger, sondern die aktuelle Dämpfungskonstante.
+
+**Mechanistische Einordnung:** Die Dämpfungskonstante ist nicht nur der Floor allein, sondern die Summe aller stabilisierenden Einflüsse auf die 5-HT1A-Autorezeptorschleife (vgl. 2.2) — sympathischer Baseline-Tonus, serotonerge Synthesereserve (vgl. 2.2.1 Vesikelökonomie), tonischer PFC→DRN-Drive (vgl. Anhang D.5.1) und afferente Stabilisierung. Peroutkas NE-Depletion entspricht dem Wegfall des sympathischen Stabilisierungsbeitrags; die B7/B8-Phasenakkumulation (vgl. 2.5.1) entspricht dem inneren Aufschaukelprozess, der bei unzureichender Dämpfung ungebremst wächst. Beide operieren am selben Parameter von unterschiedlichen Seiten.
+
+**Therapeutische Hierarchie, die sich aus der Synthese ergibt:**
+
+| Intervention | Angriff | Wirkung auf Dämpfungskonstante |
+|:-------------|:--------|:-------------------------------|
+| **Triptane (akut)** | Substituieren sympathische Vasokonstriktion | Kompensieren akuten Floor-Ausfall, reparieren nicht |
+| **Blutdrucksenker (paradoxe Prophylaxe)** | Reduzieren Adrenozeptor-Supersensitivität | Senken Overshoot-Amplitude, aber auch Floor → ambivalent (vgl. autonomes Profil) |
+| **LDX** | Stabilisiert Intra-Kern-Takt + erhöht NE-Tonus | Hebt Dämpfung an zwei Punkten: B7/B8-Takt (Amplituden-Reduktion) + Floor (NE-Supplementierung) |
+| **B7-Suppressoren (DPH, LDX via D2)** | Eliminieren einen der beiden Oszillatoren | Stoppen die Oszillation durch Wegfall, nicht durch Stabilisierung (vgl. 0D) |
+
+**Testbare Prädiktionen:**
+
+| Prädiktion | Operationalisierung | Evidenzniveau |
+|:-----------|:--------------------|:--------------|
+| Der Intra-Plateau-Gradient ist prädiktiver für Anfallsrisiko als der absolute HR | Korrelation Anfallstag vs. dHR/dt über das Morgen-Plateau | Einzelfall konsistent, n=1 (vgl. 0B) |
+| Floor-Anhebung allein (ohne Oszillator-Stabilisierung) reduziert Anfälle suboptimal | Midodrin oder Vasopressoren vs. LDX | Modellableitung, nicht direkt getestet |
+| Floor-Absenkung (Betablocker, α-Blocker) senkt zwar Overshoot, erhöht aber Anfallsrisiko bei bereits marginalem Floor | Einzelfallbeobachtung: Metoprolol + Depletion → paradoxe Verschlechterung | Konsistent mit autonomer Einzelfall-Dokumentation (vgl. 07_autonomes-profil) |
+| Die kritische Variable ist nicht NE-Pegel, sondern NE-Puffertiefe (Fähigkeit, Floor zu halten) | Orthostasetests als Puffertiefe-Proxy | Nicht formal untersucht |
+
+**Evidenzeinordnung:** Die Synthese erklärt Peroutkas Befunde (externe, populationsbreite Evidenz, gesichert) *und* die Einzelfall-Oszillatordynamik (Tracker-Daten, deskriptiv) mit einem Mechanismus. Sie ist ein Modell-Update, keine eigenständige neue Hypothese — die Einzelkomponenten (B7/B8-Interferenz, NE-Depletion, Adrenozeptor-Supersensitivität) sind jeweils separat dokumentiert; die Integration über die Dämpfungskonstante ist die neue Ableitung.
