@@ -786,6 +786,46 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Subjektiver Late-Chronotyp bei Population A als Kompensationsartefakt (nicht circadianer Trait) | Hypothetisch, konsistent mit Kreuzkorrelation | ADHD–Late-Typ-Assoziation (Kooij & Bijlenga 2013); generalisierte Epilepsie 5× Late-Typ vs. fokale kein Effekt (Kendis 2015); Manni 2016: MEQ ≠ DLMO bei Epilepsie; Einzelfall: Abendmüdigkeit erstmals unter LDX (Anhang C) |
 | τ ≈ 26 h als potenzielles Raphe-SCN-Symptom | Hypothetisch, mechanistisch konsistent | DRN projiziert zum SCN ausschließlich über B8-Relay (vgl. 2.5.2); instabiler Raphe-Tonus könnte SCN-Zeitgeber-Kalibrierung verzerren → verlängerte endogene Periodenlänge nicht unabhängiger Chronotyp-Trait, sondern Downstream der Raphe-SCN-Interaktion. Nicht direkt testbar ohne Forced-Desynchrony-Protokolle. |
 
+#### **2.5.5 Sympathischer Floor als Dämpfungskonstante des B7/B8-Oszillators**
+
+Die externe Sympathetic-Theory-of-Migraine-Literatur (Peroutka 2004, Buse 2018, T*MGR 2024, vgl. 7.4) beschreibt einen chronisch marginalen sympathischen Floor mit Adrenozeptor-Supersensitivität als zentrale Migränevariable. Diese Beobachtung ist nicht konkurrierend zum B7/B8-Oszillatormodell, sondern eine Beschreibung desselben Systems aus einer anderen Perspektive: Peroutkas Modell sieht den Floor, das Pathogenese-Modell sieht den Oszillator. Beide sind parametrische Beschreibungen derselben Dynamik.
+
+**Die Modellsynthese:** Der sympathische Floor (Peroutka: NE-Pegel im Liegen; hier: autonome Baseline zwischen den LDX-Plateaus) ist nicht nur ein Zustandsmarker, sondern die **Dämpfungskonstante** der B7/B8-Resonanzschleife.
+
+| Floor-Zustand | B7/B8-Dynamik | Anfallswahrscheinlichkeit bei Triggerimpuls |
+|:--------------|:--------------|:-------------------------------------------|
+| **Oberhalb der Schwelle** | Gedämpft — Oszillationen klingen ab | Trigger erzeugt transiente Perturbation, keine Eskalation |
+| **An der Schwelle** | Grenzdämpft — Oszillation marginal stabil | Starke Trigger eskalieren, schwache klingen ab |
+| **Unterhalb der Schwelle** | Entdämpft — Oszillationen wachsen | Auch minimale Trigger erreichen die CSD-Schwelle |
+
+**Warum niedriger Floor nicht immer Anfall bedeutet:** Ein entdämpftes System ist nicht spontan instabil — es ist instabil *gegenüber Anstößen*. Ohne Perturbation bleibt auch die underdämpfte Schleife in einem stationären Zustand nahe der Ruhelage (invertiertes Pendel ohne Stoß). Die Kombination aus niedrigem Floor (Dämpfung ↓) und Trigger (Anstoß) erzeugt den Anfall — beide Komponenten sind notwendig, keine allein hinreichend. Dies erklärt drei Beobachtungen, die ein statisches Schwellenwertmodell nicht erfassen kann:
+
+1. **NE-Tiefs ohne Anfall:** Nicht jedes interiktale NE-Minimum eskaliert. Das statische Schwellenmodell hat hier keinen Freiheitsgrad; das Dämpfungsmodell erklärt es über fehlenden Trigger im Tief.
+2. **Plateau-Konfiguration als Prädiktor:** Der Intra-Plateau-Gradient (vgl. 0B, 0D) ist prädiktiver als der absolute HR-Wert. Ein stabiles Plateau = intakte Dämpfung; ein abfallendes Plateau = System kann den Arbeitspunkt nicht halten → Dämpfungsreserve aufgebraucht.
+3. **Paradoxe Triggerinkonsistenz:** Identische Trigger lösen an manchen Tagen Anfälle aus, an anderen nicht (vgl. 4.1). Die Variable ist nicht der Trigger, sondern die aktuelle Dämpfungskonstante.
+
+**Mechanistische Einordnung:** Die Dämpfungskonstante ist nicht nur der Floor allein, sondern die Summe aller stabilisierenden Einflüsse auf die 5-HT1A-Autorezeptorschleife (vgl. 2.2) — sympathischer Baseline-Tonus, serotonerge Synthesereserve (vgl. 2.2.1 Vesikelökonomie), tonischer PFC→DRN-Drive (vgl. Anhang D.5.1) und afferente Stabilisierung. Peroutkas NE-Depletion entspricht dem Wegfall des sympathischen Stabilisierungsbeitrags; die B7/B8-Phasenakkumulation (vgl. 2.5.1) entspricht dem inneren Aufschaukelprozess, der bei unzureichender Dämpfung ungebremst wächst. Beide operieren am selben Parameter von unterschiedlichen Seiten.
+
+**Therapeutische Hierarchie, die sich aus der Synthese ergibt:**
+
+| Intervention | Angriff | Wirkung auf Dämpfungskonstante |
+|:-------------|:--------|:-------------------------------|
+| **Triptane (akut)** | Substituieren sympathische Vasokonstriktion | Kompensieren akuten Floor-Ausfall, reparieren nicht |
+| **Blutdrucksenker (paradoxe Prophylaxe)** | Reduzieren Adrenozeptor-Supersensitivität | Senken Overshoot-Amplitude, aber auch Floor → ambivalent (vgl. autonomes Profil) |
+| **LDX** | Stabilisiert Intra-Kern-Takt + erhöht NE-Tonus | Hebt Dämpfung an zwei Punkten: B7/B8-Takt (Amplituden-Reduktion) + Floor (NE-Supplementierung) |
+| **B7-Suppressoren (DPH, LDX via D2)** | Eliminieren einen der beiden Oszillatoren | Stoppen die Oszillation durch Wegfall, nicht durch Stabilisierung (vgl. 0D) |
+
+**Testbare Prädiktionen:**
+
+| Prädiktion | Operationalisierung | Evidenzniveau |
+|:-----------|:--------------------|:--------------|
+| Der Intra-Plateau-Gradient ist prädiktiver für Anfallsrisiko als der absolute HR | Korrelation Anfallstag vs. dHR/dt über das Morgen-Plateau | Einzelfall konsistent, n=1 (vgl. 0B) |
+| Floor-Anhebung allein (ohne Oszillator-Stabilisierung) reduziert Anfälle suboptimal | Midodrin oder Vasopressoren vs. LDX | Modellableitung, nicht direkt getestet |
+| Floor-Absenkung (Betablocker, α-Blocker) senkt zwar Overshoot, erhöht aber Anfallsrisiko bei bereits marginalem Floor | Einzelfallbeobachtung: Metoprolol + Depletion → paradoxe Verschlechterung | Konsistent mit autonomer Einzelfall-Dokumentation (vgl. 07_autonomes-profil) |
+| Die kritische Variable ist nicht NE-Pegel, sondern NE-Puffertiefe (Fähigkeit, Floor zu halten) | Orthostasetests als Puffertiefe-Proxy | Nicht formal untersucht |
+
+**Evidenzeinordnung:** Die Synthese erklärt Peroutkas Befunde (externe, populationsbreite Evidenz, gesichert) *und* die Einzelfall-Oszillatordynamik (Tracker-Daten, deskriptiv) mit einem Mechanismus. Sie ist ein Modell-Update, keine eigenständige neue Hypothese — die Einzelkomponenten (B7/B8-Interferenz, NE-Depletion, Adrenozeptor-Supersensitivität) sind jeweils separat dokumentiert; die Integration über die Dämpfungskonstante ist die neue Ableitung.
+
 ***
 
 ## **3\. Downstream-Pathologie I: Thalamische Fehlkalibrierung**
@@ -948,6 +988,26 @@ Die Heterogenität der klinischen Triggerliste (Stress, Wetter, Alkohol, Menstru
 | **Wetter / Alkohol / Menstruation / Käse** | Diverse periphere und zentrale Kanäle | Konvergenz auf kortikale Erregbarkeit über jeweils verschiedene Rezeptorsysteme |
 
 Identische Trigger lösen an manchen Tagen eine Attacke aus und an anderen nicht. Die Erklärung: Der Abstand zur Schwelle hängt vom aktuellen B7/B8-Phasenversatz ab. An Tagen mit minimalem Phasenversatz (z.B. Tag 1 nach Resynchronisation) ist der Abstand zur Schwelle maximal; kein alltagstypischer Trigger überbrückt ihn. An Tagen mit maximalem Phasenversatz (z.B. Tag 3–4 im ~4-Tage-Zyklus) reicht minimale kortikale Perturbation. Der Trigger ist austauschbar — der Phasenversatz determiniert die Empfindlichkeit.
+
+**Präzisierung: Effektive Trigger sind ANS-Stressoren, nicht rein kortikale Aktivität**
+
+Die obige Tabelle listet Eintrittskanäle in den Kortex. Die Trigger-Klassen werden dort nach dem *Kanal* der Perturbation sortiert. Ein orthogonaler Befund aus der Langzeit-Selbstbeobachtung präzisiert, welche dieser Kanäle tatsächlich Anfälle auslösen: **alle empirisch wirksamen Trigger destabilisieren das autonome Nervensystem (ANS) — rein kortikale Aktivität ohne ANS-Komponente ist kein Trigger**, selbst wenn sie den Kortex stark beansprucht.
+
+| Trigger | ANS-Komponente | Empirische Anfallsauslösung |
+|:--------|:---------------|:----------------------------|
+| **Hypoglykämie (vergessene Mahlzeit)** | Sympathoadrenale Gegenregulation → NE-Depletion | Bestätigt |
+| **Schlafentzug** | Kumulative sympathische Erschöpfung (Floor-Verlust, vgl. 2.5.5, 7.4) | Bestätigt |
+| **Wetterumschwung** | Autonome Anpassungslast (Barorezeptoren, Thermoregulation) | Bestätigt |
+| **Körperliche Erschöpfung** | Direkter NE-Verbrauch | Bestätigt |
+| **Sensorische Überflutung** | Erzwungene Polling-Rate-Erhöhung → Raphe-Depletion (vgl. D.3.1) + ANS-Aktivierung | Bestätigt |
+| **Hochkonzentrierte kognitive Arbeit über Stunden** | Keine systematische ANS-Destabilisierung | **Kein Trigger** |
+| **Komplexes Problemlösen, intellektuelle Belastung** | Keine ANS-Komponente | **Kein Trigger** |
+
+**Modellinterpretation:** Kortikale Aktivität adressiert thalamocortikale Schaltkreise (Glutamat, GABA), nicht primär das ANS. Der B7/B8-Oszillator hängt über den autonomen Floor von sympathischer Reserve ab — die Dämpfungskonstante der Oszillation wird vom Floor bestimmt (vgl. 2.5.5). Rein kortikale Last ohne autonome Kopplung ändert die Dämpfung nicht und erzeugt daher keine effektive Perturbation. Die klassische Migräne-Triggerliste der Literatur ist konsistent mit diesem Bild: Stress, Hypoglykämie, Schlafentzug, Wetter, Menstruation — alle mit direkter ANS-Signatur. „Kognitive Überlastung" als unabhängiger Trigger fehlt in der Literatur; was Patienten als „Stress-Trigger" berichten, ist in der Regel ein ANS-Phänomen (Cortisol, Katecholamine), nicht reine kortikale Aktivität.
+
+**Konsequenz für die Tabelle oben:** Die Eintrittskanäle (LC, Adenosin, Thalamokortikal) sind nicht alle gleichwertig. Die wirksamen Kanäle sind diejenigen, die gleichzeitig den ANS-Floor belasten — LC-Aktivierung (sympathoadrenal), Adenosin (homöostatisch = NE-Depletion-Marker), homöostatischer Druck (Schlafentzug = kumulativer Floor-Verlust). Koffein als isolierter Adenosin-Antagonist ohne ANS-Last ist in der persönlichen Beobachtung eher modulatorisch als triggernd; erst in Kombination mit Schlafentzug oder metabolischem Defizit wird es wirksam. Die Modellvorhersage ist damit: **Ein Trigger ist genau dann wirksam, wenn er die Dämpfungskonstante senkt, nicht wenn er die Oszillation direkt anstößt** — der Anstoß an einem gut gedämpften System läuft aus, nur am entdämpften System eskaliert er (vgl. 2.5.5, invertiertes Pendel).
+
+Diese Präzisierung ist kein Widerspruch zum Stochastischen Fenstermodell (4.2), sondern eine Schärfung: der Phasenversatz (Fenster) setzt die Empfindlichkeit, der ANS-Trigger (Perturbator) überbrückt die restliche Strecke zur CSD-Schwelle. Rein kortikale Perturbatoren ohne ANS-Anteil liefern diesen Beitrag nicht.
 
 **Evidenz: Serotonerge Konvergenz aller wirksamen Prophylaktika**
 
@@ -1723,11 +1783,11 @@ MDMA als iatrogenes Modell der Raphe-Depletion und Kreuzvalidierung der Populati
 
 ***
 
-## **7\. Pharmakologische Evidenz: Selbstversuch**
+## **7\. Pharmakologische Evidenz: Selbstversuch und externe Validierung**
 
 **Zusammenfassung**
 
-Dieses Kapitel dokumentiert den kontrollierten pharmakologischen Selbstversuch mit Methylphenidat (MPH) und Lisdexamfetamin (LDX). MPH (7–14 mg, unter klinischer Schwelle) bestätigte Dopamin-Hypersensitivität und Migränesuppression, wurde aber wegen reproduzierbarem psychotischem Rebound kontraindiziert. LDX (15 mg, ≈4–5 mg aktives Dexamfetamin) zeigt kein Rebound-Profil, ermöglicht Powernap unter Substanz (bei Neurotypischen ungewöhnlich) und belegt erstmals die Dissoziation zwischen thalamischem Gating und basaler sensorischer Schwelle. Das therapeutische Fenster liegt bei 7,5–15 mg LDX — weit unterhalb der ADHS-Standarddosierung (30–70 mg) — als direkte Konsequenz der D2-Rezeptor-Hypersensitivität.
+Dieses Kapitel dokumentiert den kontrollierten pharmakologischen Selbstversuch mit Methylphenidat (MPH) und Lisdexamfetamin (LDX). MPH (7–14 mg, unter klinischer Schwelle) bestätigte Dopamin-Hypersensitivität und Migränesuppression, wurde aber wegen reproduzierbarem psychotischem Rebound kontraindiziert. LDX (15 mg, ≈4–5 mg aktives Dexamfetamin) zeigt kein Rebound-Profil, ermöglicht Powernap unter Substanz (bei Neurotypischen ungewöhnlich) und belegt erstmals die Dissoziation zwischen thalamischem Gating und basaler sensorischer Schwelle. Das therapeutische Fenster liegt bei 7,5–15 mg LDX — weit unterhalb der ADHS-Standarddosierung (30–70 mg) — als direkte Konsequenz der D2-Rezeptor-Hypersensitivität. Abschnitt 7.4 ergänzt die externe Literaturvalidierung: die Sympathetic Nervous System Theory of Migraine (Peroutka 2004; Buse 2018; T*MGR 2024) reproduziert den autonomen Arm des Modells unabhängig und liefert die bisher fehlende externe Bestätigung der B7/Floor-Mechanik.
 
 ---
 
@@ -1765,6 +1825,57 @@ Die Dopamin-Hypersensitivität (Migräneliteratur: D2-Rezeptor-Hypersensitivitä
 | **Ziel** | Minimale Dosis, die Raphe-Aktivität stabilisiert ohne thalamisches Gating merklich zu verschieben oder sympathisches System zu überreizen |
 
 **Interaktion mit Metoprolol:** Metoprolol blockiert selektiv β1/β2. Lisdexamfetamin aktiviert das gesamte sympathische System inklusive α-Rezeptoren und zentrale Noradrenalinbahnen, die vom Betablocker nicht erfasst werden. Partiell blockiertes System: kardiovaskuläres Risiko reduziert, zentraler Effekt bleibt erhalten. Metoprolol-Reduktion von 100 auf 50 mg klinisch vertretbar bei paralleler Lisdexamfetamin-Gabe.
+
+### **7.4 Externe Validierung: Sympathetic Nervous System Theory of Migraine**
+
+Die unter 7.1–7.3 dokumentierten Selbstversuchsbefunde beschreiben das Verhalten eines einzelnen Systems. Eine unabhängige Literaturlinie — die Sympathetic Nervous System Theory of Migraine (Peroutka 2004 und Nachfolger) — reproduziert denselben autonomen Arm an einer allgemeinen Migränepopulation. Die Konvergenz ist nicht-trivial: beide Zugänge postulieren aus unterschiedlichen Ausgangspunkten einen chronisch marginalen sympathischen Floor mit Adrenozeptor-Supersensitivität als Kernvariable.
+
+#### **7.4.1 Peroutka 2004: Migräne als chronische SNS-Disorder**
+
+Peroutka (*Headache* 2004;44(1):53–64, DOI: 10.1111/j.1526-4610.2004.04011.x) fasst die autonome Literatur der 1980er–90er zu einer kohärenten Hypothese zusammen: Migräne als Störung chronischer sympathischer Dysfunktion, die diagnostische und klinische Merkmale mit Pure Autonomic Failure (PAF) und Multisystematrophie (MSA) teilt.
+
+| Befund Peroutka | Korrespondenz im vorliegenden Modell |
+|:----------------|:-------------------------------------|
+| Reduzierte Plasma-Noradrenalin-Spiegel im Liegen (interiktal) | Niedriger sympathischer Floor als chronische Baseline (vgl. Kap. 5; autonomes Profil) |
+| Periphere Adrenozeptor-Supersensitivität | Morgen-Plateau-Overshoot unter Depletion (vgl. 0D, Drei-Regime-Tabelle) |
+| Migräne-Anfall = relative Depletion der sympathischen NE-Speicher + Kotransmitter-Release (DA, Prostaglandine, ATP, Adenosin) | Anfallsschwelle bei NE-Depletion, kompatibel mit B7/B8-Oszillator-Entdämpfung (vgl. 2.2, 2.5.1) |
+| Anatomisch intaktes System (Unterschied zu PAF/MSA), Fähigkeit zur NE-Erhöhung unter Stress erhalten, aber suboptimal | Kompensationsrahmen vorhanden, aber schmal — kongruent mit den ANS-Symptomen ohne strukturelle Denervierung |
+
+**Status der externen Bestätigung:** Peroutka postuliert NE-Depletion als *statische* Schwelle. Das vorliegende Modell erweitert dies um eine *dynamische* Oszillator-Komponente (vgl. 2.5.4, 8): der Floor bestimmt die Dämpfungskonstante der B7/B8-Schleife, nicht nur einen binären Schwellenwert (vgl. 2.5.x Sympathischer Floor als Dämpfungskonstante). Beide Formulierungen sind vereinbar und decken unterschiedliche Zeitskalen ab.
+
+#### **7.4.2 Buse 2018: Differentielle autonome Beteiligung**
+
+Buse (*PubMed 29476276*) extrahiert aus der Komorbiditätsliteratur drei konsistente Trends:
+
+| Trend | Beobachtung | Modellinterpretation |
+|:------|:------------|:---------------------|
+| **1** | Migräne mit Aura → stärkere autonome Dysfunktion als ohne Aura | Aura-Population liegt näher am B7/B8-Entdämpfungsregime; autonome Fragilität korreliert mit CSD-Häufigkeit |
+| **2** | Sympathische Beeinträchtigung häufiger als parasympathische | Konsistent mit Floor-Defizit als primärem Angriffspunkt; Parasympathikus durch LDX/vagalen Clamp nur sekundär betroffen |
+| **3** | Sympathische Beeinträchtigung interiktal verbreitet, sympathische Hyperresponsivität iktal | Adrenozeptor-Hypersensitivität als direkte Folge chronischer NE-Depletion — erklärt den Morgen-Plateau-Overshoot |
+
+Trend 3 ist die direkte externe Bestätigung des im Einzelfall beobachteten Overshoot-Mechanismus (Plateau-HR 90–100 nach LDX, vgl. 0D Drei-Regime-Tabelle).
+
+#### **7.4.3 T\*MGR Theory 2024 (arXiv 2408.06780)**
+
+T*MGR erweitert Peroutka um zwei therapeutisch relevante Punkte:
+
+- **Partielle NE-Sättigung** als quantitatives Substrat der Migräne-Disposition (statt kategorialer Binärschwelle).
+- **Alle blutdrucksenkenden Medikamente reduzieren Anfallshäufigkeit** — empirische Generalisierung, die Peroutkas Hypothese Metaklassen-breit validiert.
+- **Triptane und Ergotamine imitieren SNS-Effekte** (Vasokonstriktion) ohne auf das SNS angewiesen zu sein — sie **ersetzen** die fehlende sympathische Funktion, statt sie zu reparieren.
+
+**Therapeutische Konsequenz für das Modell:** Erfolgreiche Akuttherapie = sympathische Substitution, nicht Reparatur. Dies fügt sich nahtlos in das bestehende Bild ein, in dem keine Substanz den B7/B8-Inter-Kern-Phasenversatz selbst reparieren kann (vgl. 4.2, "Frequenzreparatur nicht möglich"). Triptane kompensieren den autonomen Arm, LDX stabilisiert den monoaminergen Takt — beide greifen distal am Floor an, nicht am Autorezeptordefekt.
+
+#### **7.4.4 Konvergenzgrad**
+
+Die SNS-Theorie war in den 2000ern eine Randposition der Migräneforschung und wurde zugunsten der CGRP-Hypothese weitgehend aufgegeben. Die hier präsentierten Tracker-Daten (H9Z-Brustgurt, 14.–15.04.2026, vgl. 0D) reproduzieren Peroutkas Befunde am Einzelsystem mit Beat-to-Beat-Auflösung und erweitern sie um die Oszillator-Dimension. Die Konvergenz zweier unabhängiger Zugänge auf denselben Mechanismus — chronisch marginaler Floor + Adrenozeptor-Supersensitivität + NE-Depletion als Anfallsschwelle — ist die bisher stärkste externe Stütze des autonomen Modellarms.
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:--------------|:-------------|
+| Reduziertes Plasma-NE im Liegen interiktal bei Migränepatienten | Gesichert | Peroutka 2004, Review mehrerer Primärstudien |
+| Adrenozeptor-Supersensitivität interiktal, Hyperresponsivität iktal | Gesichert | Buse 2018, Review |
+| Blutdrucksenker reduzieren Anfallshäufigkeit als Medikamentenklasse-Effekt | Gesichert | T*MGR 2024, Review |
+| Triptane als sympathische Substitution (nicht Reparatur) | Hypothetisch, mechanistisch argumentiert | T*MGR 2024 |
+| Konvergenz SNS-Theorie mit B7/B8-Oszillatormodell | Modellintegration | Eigene Ableitung |
 
 ***
 
@@ -3318,7 +3429,80 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 
 ---
 
-### **B.21 Referenzen**
+### **B.21 H9Z-Brustgurt-Messung 14.–15.04.2026: Einschlaf-Cliff und Plateau-Struktur**
+
+Die unter B.9 beschriebene nächtliche HR-Trajektorie hat eine Auflösungsgrenze im Minutenbereich (Mi-Band 9). Eine ergänzende Messung mit dem Coospo-H9Z-Brustgurt (EKG-Elektroden, ±1 bpm, BT 5.0) über 14.04.2026 18:27 CEST – 15.04.2026 07:59 CEST erfasst 52.849 Beat-to-Beat-RR-Intervalle (99,8 % physiologisch plausibel) — Auflösung auf Einzelschlag-Ebene. Zwei Phänomene werden damit sichtbar, die in den Minuten-aggregierten Mi-Band-Daten systematisch unterdrückt sind: der binäre Charakter des Einschlaf-Übergangs und die 2-Stunden-Plateau-Struktur der Tageszyklik.
+
+**Einschlaf-Cliff statt Slope**
+
+Zeitverlauf 00:00–00:40 CEST (15.04.2026):
+
+| Zeit [CEST] | HR [bpm] | R/S Ratio | Zustand |
+|:------------|:---------|:----------|:--------|
+| 23:55 | 91 | < 0,4 | Wach, sympathisch (Treppe → Bett) |
+| 00:00 | 93 | — | Peak |
+| 00:05 | 77 | — | Abfall beginnt |
+| 00:10 | 63 | 1,01 | Umschlag |
+| 00:15 | 55 | 1,07 | Vagaler Clamp erreicht |
+| 00:20–00:40 | 50–56 | 1,08–1,28 | **30 Minuten reiner vagaler Clamp** |
+
+Kein Einschlaf-Slope (normal wäre ein 30–60-min-Gradueller Abfall), sondern binärer Switch in < 15 Minuten. HR fällt 15 bpm unter den Abend-Ruhepuls (68 bpm). Diese Dynamik ist mit dem normalen parasympathischen Einschlafprozess inkompatibel: graduelle Baroreflex-Abwärtsregulation erzeugt keine R/S-Sprünge > 0,5 in < 5 Minuten.
+
+**Mechanistische Interpretation:** Der Cliff ist kein physiologischer Übergang, sondern Ausdruck kumulierter sympathischer Erschöpfung über mehrere Tage. Das System operiert bereits am Abend im Grenzregime (Baseline HR ~70, aber kein LDX-Puffer mehr); beim Wegfall des exogenen Arousal-Drives (Augen zu, Bett) kippt es nicht graduell in den Schlaf, sondern fällt kollektiv in den Vagaler-Clamp-Attraktor. Die drei autonomen Regime (vgl. D.4.3.1) sind hier direkt im zeitlichen Verlauf ablesbar: Baseline → (keine stabile Zwischenzone) → Clamp.
+
+**Awakening 00:41 CEST: Sympathischer Burst nach Clamp**
+
+- R/S crasht auf 0,46, HR springt auf 71 → sympathischer Burst, vermutlich humoral (Adrenalin-Release aus Nebenniere).
+- Danach erreicht R/S für den Rest der Nacht nicht wieder Werte > 1,1.
+- Restliche Nacht: R/S 0,89–0,98, HR 55–65 → gemischtes Regime ohne erneuten Clamp.
+
+**Deutung:** Der erste Clamp hat den sympathischen Puffer entladen; für den Rest der Nacht reicht die sympathische Reserve nicht mehr aus, um erneut kontrolliert in den Clamp einzutreten. Der kumulative Vortages-Effekt ist damit im Einzelverlauf direkt abbildbar.
+
+**LDX-Interferenz zu Nacht**
+
+- 4 mg LDX zur Nacht eingenommen: keine messbare Wirkung auf den Clamp (weder Dämpfung noch Shift).
+- Vorangegangene Nächte mit 7,5 mg LDX zur Nacht: gute autonome Architektur (echter Slope statt Cliff), aber mehr Awakenings — LDX senkt die Arousal-Schwelle, keine echte Erholung → kumulative Depletion.
+- Kein LDX-Dosierungsregime in diesem Dosisbereich erzeugt gleichzeitig intakten Slope und stabilen Schlaf.
+
+Dies ist das Dosierungsdilemma, das in 06_leitlinie_titration (Abschnitt 7.2) als Designziel der Retardierung (Alginat-Beads, Abklinggradient-Streckung) formuliert ist.
+
+**Zirkadiane Plateau-Struktur**
+
+Jeden Tag zeigen die Langzeit-Mi-Band-Daten zwei 2-Stunden-Plateaus mit zirkadian stabiler Lage, bestätigt durch die H9Z-Einzeltaganalyse vom 15.04.2026:
+
+```
+PRE-Phase → Plateau 1 (2h) → Zwischenphase → Plateau 2 (2h) → POST-Phase
+```
+
+**Eigenschaften:**
+- PRE und POST identisch in ihrer HR-Baseline.
+- Plateaus persistieren auch unter Metoprolol (vgl. B.4) und ohne LDX — **endogen/zirkadian, nicht substanzinduziert**.
+- LDX erzeugt am Peak einen zusätzlichen Rechteck-Puls (vgl. D.4.3.1), ohne die darunterliegende Plateau-Struktur zu verändern.
+
+**Anfallskorrelation — Plateau-Konfiguration:**
+
+| Konfiguration | Verlauf | Klinische Assoziation |
+|:--------------|:--------|:---------------------|
+| **Normal** | Niedriges Plateau zuerst, dann hohes (morgens sanfter, später Aktivitätsanstieg) | Kein Anfall |
+| **Anfallstag** | Hohes Plateau zuerst, mit absteigendem Slope über die 2 Stunden | Anfall wahrscheinlich im oder nach dem Plateau |
+
+Der Anfallsprädiktor ist nicht der absolute HR-Wert, sondern der **Intra-Plateau-Gradient**: Ein stabiles Plateau = ausreichende sympathische Reserve (Dämpfungskonstante intakt, vgl. 2.5.5). Ein degradierendes Plateau = Reserve reicht nicht, um das Niveau über 2h zu halten → Anfallsrisiko erhöht.
+
+Mechanistisch entspricht das degradierende Plateau einem Overshoot beim Einsteigen (Adrenozeptor-Supersensitivität auf NE-Depletion-Basis, vgl. 7.4, Buse-Trend 3), gefolgt von dem Unvermögen, das Niveau zu halten — Depletion während der Plateau-Phase. Der Gradient ist damit der funktionsnahste autonome Marker für die aktuelle Puffertiefe.
+
+**Diagnostische Konsequenz:** Die vier HR-Anomalie-Marker (D.4.3.2) sind direkt aus der Plateau-Struktur ablesbar. Für ein Screening reicht ein HR-Logger mit 1-Minuten-Auflösung + Plateau-Detektion; die prädiktive Größe ist dHR/dt über das Morgen-Plateau, nicht der absolute HR-Wert.
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:--------------|:-------------|
+| Binärer Einschlaf-Cliff statt Slope bei kumulativer sympathischer Depletion | Deskriptiv, n=1 Nacht H9Z | H9Z 14.–15.04.2026 |
+| 30-min reiner vagaler Clamp unmittelbar nach Einschlaf-Cliff | Deskriptiv, n=1 Nacht | H9Z |
+| Zirkadiane 2×2h-Plateau-Struktur, substanzinvariant | Deskriptiv, Langzeit | Mi-Band (n=79 Nächte) + H9Z-Bestätigung |
+| Intra-Plateau-Gradient (dHR/dt) als Anfallsprädiktor | Hypothetisch, konsistent mit Einzelfall | Langzeitdaten; vgl. 2.5.5, 7.4 |
+| LDX als additiver Rechteck-Puls, plateau-strukturinvariant | Deskriptiv, n=2 Dosen | H9Z |
+
+---
+
+### **B.22 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.
@@ -3861,6 +4045,50 @@ Die bisher implizit vermengten Mechanismen der B7/B8-Destabilisierung lassen sic
 - SD hoch + RMSSD hoch = schnelle Sprünge bei verlorenem Takt → **aphasische Instabilität** (Rauschexposition)
 - SD niedrig + RMSSD niedrig = Fixierung → **Entzug** (B7 erschöpft, keine Modulation)
 
+**Drei autonome Regime — Einzelfall-Beat-to-Beat-Daten**
+
+Der Dauerstress-Mi-Band-Monitoring-Datensatz (n=79 Nächte, Anhang B) erfasst HR, Schlafstadien und ein HRV-Proxy mit Minuten-Auflösung. Die ergänzende Coospo-H9Z-Brustgurt-Messung (14.04.2026 18:27 CEST – 15.04.2026 07:59 CEST, 52.849 RR-Intervalle, 99,8 % physiologisch plausibel) liefert die Beat-to-Beat-Auflösung, die eine Klassifikation der autonomen Regime erst ermöglicht. Aus diesen Daten ergibt sich — orthogonal zu den SD/RMSSD-Patterns der Tabelle oben — eine Drei-Regime-Struktur, in der HR, PNN50 und die RMSSD/SDNN-Ratio (R/S) gemeinsam den autonomen Zustand eindeutig identifizieren:
+
+| Regime | HR [bpm] | PNN50 | R/S Ratio | Interpretation |
+|:-------|:--------|:------|:----------|:---------------|
+| **LDX-Peak** | 90–100 | ≈ 0 | < 0,4 | B7 supprimiert, reiner sympathischer Drive; Vagus komplett unterdrückt |
+| **Baseline (kein LDX, wach)** | 65–70 | ~ 20–30 | ~ 0,9 | Gemischt, leichter parasympathischer Überhang |
+| **Vagaler Clamp (Nacht)** | 50–55 | > 50 | > 1,1 | B7 dominant, Sympathikus effektiv abgeschaltet |
+
+**Fehlender Mittelbereich:** Zwischen Baseline und den beiden Extremen existiert keine stabile Zwischenzone. Das System kennt nur drei Attraktoren. LDX verschiebt nicht den Grundzustand, sondern entscheidet lediglich, welches Extrem zu welcher Tageszeit dominiert — das Abklingen der LDX-Dosis erfolgt nicht graduell, sondern als Rückfall in den Baseline-Attraktor. Mechanistisch konsistent mit der D2-Supersensitivitäts-Dosisasymmetrie (D.8.1): LDX erzeugt keinen linearen Gain-Effekt, sondern einen On/Off-Switch der B7-Aktivität über der D2-Schwelle.
+
+**LDX als Rechteck-Puls, nicht als Slope:**
+
+- Zwei LDX-Dosen (7:30 und 12:00 CEST am 15.04.2026): jeweils exakt 120 Minuten nach Einnahme HR-Anstieg auf 90–100 bpm. Tmax = 120 min = Dexamfetamin-Spitzenkonzentration nach LDX-Hydrolyse.
+- Reproduzierbar: beide Dosen identisches Muster.
+- PRE- und POST-LDX-Plateaus bleiben unverändert — LDX erzeugt ein isoliertes 2-Stunden-Plateau, eingebettet in einen stabilen Baseline-Zustand.
+- Kein graduelles Aufbauen, kein graduelles Abklingen → Rechteck-Puls über dem Grundzustand.
+
+Diese Beobachtung stützt die Modellvorhersage, dass LDX den Oszillator nicht repariert, sondern periodisch überschreibt (vgl. 4.2, Amplitudenmodulation; 2.5.5, Dämpfungskonstanten-Synthese).
+
+**Vier HR-basierte Anomalie-Marker**
+
+Bei tonischem vagalem Überhang liefern klassische HRV-Metriken (RMSSD, Frequenzanalyse, DFA) keinen zusätzlichen Informationsgewinn über die HR selbst hinaus — sie sättigen in den beiden Extremregimen (LDX-Peak: PNN50 ≈ 0; Vagaler Clamp: PNN50 > 50). Die diagnostisch relevanten Marker sind daher rein HR-basiert:
+
+| Marker | Schwelle | Interpretation |
+|:-------|:---------|:---------------|
+| **Absoluter HR-Boden** | Nacht-HR < ~55 bpm | Sympathischer Floor weggebrochen → Dämpfungskonstante unter Schwelle (vgl. 2.5.5) |
+| **Plateau-HR zu hoch** | Morgen-Plateau > 85 bpm ohne Aktivität | Overshoot durch Adrenozeptor-Hypersensitivität (NE-Depletion, vgl. Peroutka 7.4) |
+| **Nacht-Slope zu lang** | Einschlaf-Slope > 45 min ohne stabiles Niveau | Aktive Floor-Degradierung statt Clamp-Übergang (vgl. 0B, Einschlaf-Cliff) |
+| **Intra-Plateau-Slope** | HR fällt über 2h linear auf Morgen-Plateau | System kann Niveau nicht halten → unzureichende NE-Reserve → direkter Anfallsprädiktor |
+
+Der **Intra-Plateau-Slope** ist das empirisch wertvollste Einzelsignal: Er ist ein direkter Proxy für die aktuelle Dämpfungsreserve und unterscheidet am Morgen prospektiv Anfallstage von stabilen Tagen (deskriptive Evidenz aus Langzeit-Mi-Band-Daten, vgl. 0B). Das klassische Schwellenwertdenken (ist HR X über oder unter Y?) verfehlt diesen Marker, weil er als *Änderungsrate* definiert ist — kein Absolutwert, sondern ein Trend.
+
+**Methodische Konsequenz:** Die übliche Konzentration der HRV-Literatur auf RMSSD/SDNN/LF-HF-Ratio ist für diesen Phänotyp wenig informativ. Ein simpler HR-Logger mit 1-Minuten-Auflösung reicht für alle vier Marker aus; Beat-to-Beat-Geräte (H9Z) sind nur für die Regime-Klassifikation (D.4.3.1) nötig, nicht für die Anfallsvorhersage selbst.
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:--------------|:-------------|
+| Drei distinkte autonome Regime ohne stabilen Mittelbereich | Deskriptiv, n=1 Nacht H9Z | H9Z-Datensatz 14.–15.04.2026 |
+| LDX als Rechteck-Puls mit Tmax = 120 min | Deskriptiv, n=2 Dosen | H9Z, reproduziert |
+| HR-Boden < 55 bpm als Floor-Ausfall-Marker | Hypothetisch, konsistent | Langzeit-Mi-Band + H9Z |
+| Intra-Plateau-Slope als Anfallsprädiktor (dHR/dt über Morgen-Plateau) | Hypothetisch, konsistent | Mi-Band-Langzeitdaten; vgl. 0B |
+| RMSSD/SDNN bei tonischem vagalem Überhang nicht zusätzlich informativ über HR | Methodisch ableitbar | Sättigungsbeobachtung an den Regime-Extremen |
+
 **Klinische Konsequenz:** ANS-Kollaps operiert primär über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide Prozesse gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten: ANS-Symptome Stunden vor CSD (Einzelfall B.20: 3,5 h Dissoziation, durch LDX-bedingte CSD-Verzögerung sichtbar). Die Gleichzeitigkeit bei MBA ist nicht weil CSD die ANS-Symptome verursacht, sondern weil beide denselben Upstream-Treiber (B7-Instabilität) haben, aber über unterschiedliche Pfade mit unterschiedlichen Latenzzeiten operieren (vgl. 4.7.2).
 
 ---
@@ -4042,6 +4270,37 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 
 3. **Zukünftige pharmakologische Targets** müssen an der differentiellen Rezeptorexpression ansetzen (Ohmura & Nagayasu 2025: „druggable genes"), nicht an kernblinden Transmittersystemen.
 
+### **D.9 Zwei Wege zum gemeinsamen Endpunkt: B7-Suppression**
+
+Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, der ohne sie paradox erscheint: Lisdexamfetamin (LDX) und Diphenhydramin (DPH) sind pharmakologisch grundverschieden, verhindern aber beide Migräne-Anfälle — über unterschiedliche Mechanismen, mit identischem Endpunkt: **B7-Suppression**. Keine der beiden Substanzen stabilisiert die B7/B8-Balance; beide reduzieren die Interferenz, indem sie einen der beiden Oszillatoren weitgehend abschalten.
+
+**LDX-Mechanismus (via D2-Supersensitivität):**
+
+- DA-Freisetzung über den gesamten Raphe-Bereich.
+- Trifft auf D2-Autorezeptoren in supersensitiver Konfiguration (D2High-Shift, vgl. 2.4.0).
+- Überproportionale Inhibition des B7 (DRN) — trotz „kernblinder" DA-Wirkung im klassischen Sinn — weil der postsynaptische Effekt dosisabhängig asymmetrisch ist: B7 zeigt bei niedriger LDX-Dosis stärkere Suppression als B8 (empirisch abgeleitet aus PNN50 ≈ 0 am LDX-Peak; Vagus komplett unterdrückt; vgl. 0D.8.2).
+- Ergebnis: B8 dominiert funktionell, B7 ist am Peak stillgelegt. Die Interferenz entfällt, weil ein Oszillator ausgeschaltet ist.
+
+**DPH-Mechanismus (via H1 + SERT + ACh):**
+
+- **H1-Antagonismus:** DPH blockiert den histaminergen excitatorischen Input auf B7 vom Tuberomammillärkern. Das eliminiert eine DRN-spezifische afferente Antriebsquelle (vgl. D.8: H1-Blockade senkt DRN-5-HT, MRN-Effekt null). Kern-selektive Suppression.
+- **Schwache SERT-Inhibition:** 5-HT steigt im gesamten Raphe-Bereich → 5-HT1A-Autorezeptoren werden stärker belegt → DRN-Feedback-Hemmung verstärkt sich. Wirkt kernblind (vgl. Tao et al. 2003), aber das zusätzliche H1-Signal kippt die Netto-Bilanz asymmetrisch in Richtung DRN-Suppression. Historischer Kontext: DPH wurde in den 1960ern als schwacher SRI identifiziert und war der strukturelle Vorläufer der SSRI-Entwicklung (Fluoxetin).
+- **Anticholinerg:** Reduziert cholinergen Drive auf das Arousal-System insgesamt, globale Dämpfung von B7 (und B8, und kortikaler Aktivität).
+
+**Vergleich:**
+
+| Dimension | LDX | DPH |
+|:----------|:----|:----|
+| **Kern-Selektivität der B7-Suppression** | Über D2-Supersensitivität (Hit-2-spezifisch) | Über H1-Blockade (kern-selektiv per Afferenz-Asymmetrie) |
+| **Zustand bei Wirkung** | Wach, funktional, alertness ↑ | Sediert, kognitiv gedämpft |
+| **Autonomes Profil am Peak** | Reiner sympathischer Drive (PNN50 ≈ 0, HR 90–100) | Globale Dämpfung, gemischtes Regime |
+| **Dauer der Anfallsprävention** | 2h-Fenster pro Dosis (Tmax = 120 min) | Längerer Überhang durch H1-Bindung |
+| **Therapeutische Bewertung** | Selektiv, kognitiv erhaltend, aber autonome Extreme | Unsauber, sedierend, aber anfallsfrei |
+
+**Modellkonsequenz:** Keine der beiden Substanzen adressiert den eigentlichen Primärdefekt (instabile 5-HT1A-Autorezeptorschleife). Beide reduzieren die Interferenz, indem sie einen Oszillator supprimieren statt beide zu synchronisieren. B7-Hyperaktivität ist der eigentliche Trigger der CSD-Kaskade; sympathische Erschöpfung (Floor-Verlust, vgl. 2.5.5) ermöglicht sie durch Wegfall des Gegendrucks. Daraus folgt, dass **Frequenzreparatur** (vgl. 4.2) weiterhin das unerreichte Ziel bleibt — die gesamte verfügbare Pharmakologie operiert auf **Amplitudenmodulation** (LDX) oder **Oszillator-Abschaltung** (DPH), aber nicht auf **Phasenkorrektur**.
+
+**Evidenzeinordnung:** Der empirische Befund (DPH = Anfallsfreiheit; LDX am Peak = PNN50 ≈ 0) ist reproduzierbar. Die Interpretation als B7-selektive Suppression ist mechanistisch konsistent mit D.8 (H1 kern-selektiv) und mit D2-Supersensitivität-Dosisasymmetrie (2.4.0), aber nicht direkt durch in-vivo-Kernspezifität getestet.
+
 **Evidenztabelle — Differentielle afferente Regulation**
 
 | Aussage | Evidenzniveau | Quellenbasis |
@@ -4059,7 +4318,7 @@ Aus der afferenten Dissoziation ergeben sich drei Schlussfolgerungen:
 
 ---
 
-### **D.9 Evidenzstatus**
+### **D.10 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
 |:--------|:-------------|:-------------|
