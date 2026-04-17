@@ -168,7 +168,7 @@ def downloadDB():
     gdown.download("https://drive.google.com/uc?id=1NwUmQ_v7WOQIe5tYm2GixOQYm5HSt-xh", "Gadgetbridge", quiet=False)
 
 def main():
-    if not DB_PATH.exists() or (time.time() - DB_PATH.stat().st_birthtime) > EXPIRY_HOURS:
+    if not DB_PATH.exists() or (time.time() - DB_PATH.stat().st_ctime) > EXPIRY_HOURS:
         downloadDB()
     
     if not DB_PATH.exists():
