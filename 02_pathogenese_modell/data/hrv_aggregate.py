@@ -129,7 +129,7 @@ def compute_lf_hf(timestamps_ms, rr_values):
     return lf, hf, ratio
 
 
-def compute_minute_metrics(rr_data):
+def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
     if not rr_data:
         return []
 
@@ -200,48 +200,48 @@ def compute_minute_metrics(rr_data):
 
         time_basic += time.monotonic() - t_step
 
-        # LF/HF: 5-min window centered on minute
-        t_lfhf = time.monotonic()
-        window_start = minute_start - 2 * 60 * 1000
-        window_end = minute_start + 3 * 60 * 1000  # inclusive of minute M itself (M + 2min)
-        mask = (all_ts >= window_start) & (all_ts < window_end)
-        win_count = int(mask.sum())
-        if win_count < LF_HF_MIN_BEATS:
-            # asymmetric fallback near edges: take nearest 5min worth
-            center_idx = np.searchsorted(all_ts, minute_start)
-            half = LF_HF_MIN_BEATS  # expand search
-            lo = max(0, center_idx - half * 2)
-            hi = min(len(all_ts), center_idx + half * 2)
-            # fall back: use as-is if still too few
-            if hi - lo < LF_HF_MIN_BEATS:
-                lf, hf, lfhf = None, None, None
+        # LF/HF: 5-min window centered on minute (optional)
+        lf, hf, lfhf = None, None, None
+        if enable_lf_hf:
+            t_lfhf = time.monotonic()
+            window_start = minute_start - 2 * 60 * 1000
+            window_end = minute_start + 3 * 60 * 1000  # inclusive of minute M itself (M + 2min)
+            mask = (all_ts >= window_start) & (all_ts < window_end)
+            win_count = int(mask.sum())
+            if win_count < LF_HF_MIN_BEATS:
+                # asymmetric fallback near edges: take nearest 5min worth
+                center_idx = np.searchsorted(all_ts, minute_start)
+                half = LF_HF_MIN_BEATS  # expand search
+                lo = max(0, center_idx - half * 2)
+                hi = min(len(all_ts), center_idx + half * 2)
+                # fall back: use as-is if still too few
+                if hi - lo >= LF_HF_MIN_BEATS:
+                    win_ts = all_ts[lo:hi]
+                    win_rr = all_rr[lo:hi]
+                    # restrict to 5 minutes around minute_start
+                    span_mask = (win_ts >= minute_start - LF_HF_WINDOW_MS) & (
+                        win_ts <= minute_start + LF_HF_WINDOW_MS
+                    )
+                    win_ts = win_ts[span_mask]
+                    win_rr = win_rr[span_mask]
+                    if len(win_rr) >= LF_HF_MIN_BEATS:
+                        lf, hf, lfhf = compute_lf_hf(win_ts, win_rr)
             else:
-                win_ts = all_ts[lo:hi]
-                win_rr = all_rr[lo:hi]
-                # restrict to 5 minutes around minute_start
-                span_mask = (win_ts >= minute_start - LF_HF_WINDOW_MS) & (
-                    win_ts <= minute_start + LF_HF_WINDOW_MS
-                )
-                win_ts = win_ts[span_mask]
-                win_rr = win_rr[span_mask]
-                if len(win_rr) < LF_HF_MIN_BEATS:
-                    lf, hf, lfhf = None, None, None
-                else:
-                    lf, hf, lfhf = compute_lf_hf(win_ts, win_rr)
-        else:
-            lf, hf, lfhf = compute_lf_hf(all_ts[mask], all_rr[mask])
+                lf, hf, lfhf = compute_lf_hf(all_ts[mask], all_rr[mask])
 
-        time_lfhf += time.monotonic() - t_lfhf
+            time_lfhf += time.monotonic() - t_lfhf
 
-        # DFA: letzte 200 RR VOR dem Ende der Minute (also TIMESTAMP < minute_start + 60000)
-        t_dfa = time.monotonic()
-        minute_end = minute_start + 60000
-        end_idx = np.searchsorted(all_ts, minute_end, side="left")
-        start_idx = max(0, end_idx - DFA_WINDOW)
-        dfa_values = all_rr[start_idx:end_idx]
-        dfa_alpha1 = compute_dfa_alpha1(list(dfa_values))
+        # DFA: letzte 200 RR VOR dem Ende der Minute (optional)
+        dfa_alpha1 = None
+        if enable_dfa:
+            t_dfa = time.monotonic()
+            minute_end = minute_start + 60000
+            end_idx = np.searchsorted(all_ts, minute_end, side="left")
+            start_idx = max(0, end_idx - DFA_WINDOW)
+            dfa_values = all_rr[start_idx:end_idx]
+            dfa_alpha1 = compute_dfa_alpha1(list(dfa_values))
 
-        time_dfa += time.monotonic() - t_dfa
+            time_dfa += time.monotonic() - t_dfa
 
         if (mi + 1) % log_interval == 0 or mi == total_minutes - 1:
             elapsed = time.monotonic() - t_loop_start
@@ -277,8 +277,14 @@ def compute_minute_metrics(rr_data):
     print(f"  --- Timing summary ---")
     print(f"  Prep (diffs + binning):  included above")
     print(f"  Basic metrics total:     {time_basic:.2f}s")
-    print(f"  LF/HF (Lomb-Scargle):   {time_lfhf:.2f}s")
-    print(f"  DFA alpha1:              {time_dfa:.2f}s")
+    if enable_lf_hf:
+        print(f"  LF/HF (Lomb-Scargle):   {time_lfhf:.2f}s")
+    else:
+        print(f"  LF/HF (Lomb-Scargle):   disabled")
+    if enable_dfa:
+        print(f"  DFA alpha1:              {time_dfa:.2f}s")
+    else:
+        print(f"  DFA alpha1:              disabled")
     print(f"  Loop total:              {time.monotonic() - t_loop_start:.2f}s")
     print(f"  compute_minute_metrics:  {elapsed_total:.2f}s")
 
@@ -342,6 +348,16 @@ def write_results(db_path, rows):
 def main():
     parser = argparse.ArgumentParser(description="HRV minute aggregation")
     parser.add_argument("--device-id", type=int, default=None)
+    parser.add_argument(
+        "--lf-hf",
+        action="store_true",
+        help="Enable LF/HF Lomb-Scargle computation (default: off, slow)",
+    )
+    parser.add_argument(
+        "--dfa",
+        action="store_true",
+        help="Enable DFA alpha1 computation (default: off)",
+    )
     args = parser.parse_args()
 
     if not DB_PATH.exists():
@@ -363,7 +379,7 @@ def main():
     print(f"Processing {minute_count} minutes...")
 
     t0 = time.monotonic()
-    rows = compute_minute_metrics(rr_data)
+    rows = compute_minute_metrics(rr_data, enable_lf_hf=args.lf_hf, enable_dfa=args.dfa)
     print(f"Minute metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
 
     t0 = time.monotonic()
