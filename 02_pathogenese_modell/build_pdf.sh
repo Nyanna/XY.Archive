@@ -23,7 +23,7 @@ sed 's/𝜅/$\\kappa$/g' |
 sed 's/ϰ/$\\kappa$/g' |
 sed 's/𝜌/$\\rho$/g' |
 sed 's/ϱ/$\\rho$/g' |
-sed 's/→/$\\textrightarrow$/g' |
+sed 's/→/$\\to$/g' |
 sed 's/↑/$\\textuparrow$/g' |
 sed 's/↓/$\\textdownarrow$/g' |
 sed 's/✓/$\\checkmark$/g' |

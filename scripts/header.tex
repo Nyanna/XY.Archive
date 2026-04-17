@@ -8,6 +8,17 @@
 \setlist[description]{itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
 %\setmainfont{Roboto}
 %\setmathfont{Noto Sans Math}
+\tracinglostchars=2
+\setlength{\emergencystretch}{3em}
+
+\usepackage{ragged2e}
+\AtBeginEnvironment{itemize}{\RaggedRight}
+\AtBeginEnvironment{enumerate}{\RaggedRight}
+\AtBeginEnvironment{description}{\RaggedRight}
+
+\emergencystretch=3em
+\tolerance=2000
+\hbadness=1500
 
 %\setmainfont{Noto Sans Math}[range={"2190-"21FF}] % Arrows
 %\setmainfont{Noto Sans Math}[range={"2200-"22FF}] % Mathematical Operators
