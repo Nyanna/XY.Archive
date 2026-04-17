@@ -13,9 +13,13 @@ import sqlite3
 import shutil
 import sys
 import re
+import runpy
+import gdown
+import time
 from pathlib import Path
 
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
+EXPIRY_HOURS = 2 * 3600
 
 # Spaltennamen, die Zeitpunkte (nicht Dauern) darstellen.
 # Muster werden case-insensitive geprueft.
@@ -160,8 +164,13 @@ def rebuild_table_with_types(conn, table):
 
     return cols_to_change
 
+def downloadDB():
+    gdown.download("https://drive.google.com/uc?id=1NwUmQ_v7WOQIe5tYm2GixOQYm5HSt-xh", "Gadgetbridge", quiet=False)
 
 def main():
+    if not DB_PATH.exists() or (time.time() - DB_PATH.stat().st_birthtime) > EXPIRY_HOURS:
+        downloadDB()
+    
     if not DB_PATH.exists():
         print(f"Fehler: Datenbank nicht gefunden: {DB_PATH}")
         sys.exit(1)
@@ -207,7 +216,8 @@ def main():
     conn.commit()
     conn.execute("VACUUM")
     conn.close()
-    print("\nFertig.")
+    print("\nFertig.\nStarte verarbeitung...")
+    runpy.run_path("hrv_aggregate.py", run_name="__main__")
 
 
 if __name__ == "__main__":

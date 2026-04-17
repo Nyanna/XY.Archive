@@ -5,6 +5,7 @@ import argparse
 import math
 import sqlite3
 import sys
+import time
 from collections import defaultdict
 from pathlib import Path
 
@@ -132,6 +133,8 @@ def compute_minute_metrics(rr_data):
     if not rr_data:
         return []
 
+    t0 = time.monotonic()
+
     # Sukzessive Differenzen (mit Gap-Filter)
     diffs_for_ts = {}  # timestamp -> diff (diff belongs to beat at index i)
     for i in range(1, len(rr_data)):
@@ -139,6 +142,8 @@ def compute_minute_metrics(rr_data):
         ts_curr, rr_curr = rr_data[i]
         if (ts_curr - ts_prev) <= GAP_THRESHOLD_MS:
             diffs_for_ts[i] = rr_curr - rr_prev
+
+    print(f"  Successive diffs computed: {time.monotonic() - t0:.2f}s")
 
     # Minute binning
     minute_indices = defaultdict(list)
@@ -150,12 +155,22 @@ def compute_minute_metrics(rr_data):
     all_ts = np.array([r[0] for r in rr_data])
     all_rr = np.array([r[1] for r in rr_data])
 
+    print(f"  Minute binning done ({len(sorted_minutes)} bins): {time.monotonic() - t0:.2f}s")
+
     results = []
-    for minute_start in sorted_minutes:
+    total_minutes = len(sorted_minutes)
+    time_basic = 0.0
+    time_lfhf = 0.0
+    time_dfa = 0.0
+    t_loop_start = time.monotonic()
+    log_interval = max(1, total_minutes // 20)  # ~20 progress updates
+
+    for mi, minute_start in enumerate(sorted_minutes):
         idxs = minute_indices[minute_start]
         if len(idxs) < MIN_BEATS_PER_MINUTE:
             continue
 
+        t_step = time.monotonic()
         rr = all_rr[idxs].astype(float)
         n_beats = len(rr)
         mean_rr = float(rr.mean())
@@ -183,7 +198,10 @@ def compute_minute_metrics(rr_data):
         sdnn = std_rr  # equivalent to population stddev
         rmssd_sdnn_ratio = rmssd / sdnn if sdnn > 0 else None
 
+        time_basic += time.monotonic() - t_step
+
         # LF/HF: 5-min window centered on minute
+        t_lfhf = time.monotonic()
         window_start = minute_start - 2 * 60 * 1000
         window_end = minute_start + 3 * 60 * 1000  # inclusive of minute M itself (M + 2min)
         mask = (all_ts >= window_start) & (all_ts < window_end)
@@ -213,12 +231,26 @@ def compute_minute_metrics(rr_data):
         else:
             lf, hf, lfhf = compute_lf_hf(all_ts[mask], all_rr[mask])
 
+        time_lfhf += time.monotonic() - t_lfhf
+
         # DFA: letzte 200 RR VOR dem Ende der Minute (also TIMESTAMP < minute_start + 60000)
+        t_dfa = time.monotonic()
         minute_end = minute_start + 60000
         end_idx = np.searchsorted(all_ts, minute_end, side="left")
         start_idx = max(0, end_idx - DFA_WINDOW)
         dfa_values = all_rr[start_idx:end_idx]
         dfa_alpha1 = compute_dfa_alpha1(list(dfa_values))
+
+        time_dfa += time.monotonic() - t_dfa
+
+        if (mi + 1) % log_interval == 0 or mi == total_minutes - 1:
+            elapsed = time.monotonic() - t_loop_start
+            pct = (mi + 1) / total_minutes * 100
+            print(
+                f"  Progress: {mi + 1}/{total_minutes} ({pct:.0f}%) | "
+                f"elapsed {elapsed:.1f}s | "
+                f"basic {time_basic:.1f}s  lf/hf {time_lfhf:.1f}s  dfa {time_dfa:.1f}s"
+            )
 
         results.append({
             "timestamp_ms": int(minute_start),
@@ -240,6 +272,15 @@ def compute_minute_metrics(rr_data):
             "lf_hf_ratio": lfhf,
             "dfa_alpha1": dfa_alpha1,
         })
+
+    elapsed_total = time.monotonic() - t0
+    print(f"  --- Timing summary ---")
+    print(f"  Prep (diffs + binning):  included above")
+    print(f"  Basic metrics total:     {time_basic:.2f}s")
+    print(f"  LF/HF (Lomb-Scargle):   {time_lfhf:.2f}s")
+    print(f"  DFA alpha1:              {time_dfa:.2f}s")
+    print(f"  Loop total:              {time.monotonic() - t_loop_start:.2f}s")
+    print(f"  compute_minute_metrics:  {elapsed_total:.2f}s")
 
     return results
 
@@ -298,7 +339,6 @@ def write_results(db_path, rows):
     conn.close()
     return total, sample
 
-
 def main():
     parser = argparse.ArgumentParser(description="HRV minute aggregation")
     parser.add_argument("--device-id", type=int, default=None)
@@ -308,20 +348,28 @@ def main():
         print(f"Fehler: Datenbank nicht gefunden: {DB_PATH}")
         sys.exit(1)
 
+    t_total = time.monotonic()
+
+    t0 = time.monotonic()
     rr_data, device_id, device_name = load_rr_data(DB_PATH, args.device_id)
     if not rr_data:
         print("ERROR: No RR data after filtering", file=sys.stderr)
         sys.exit(1)
 
-    print(f"Loaded {len(rr_data)} RR intervals from device {device_id} ({device_name})")
+    print(f"Loaded {len(rr_data)} RR intervals from device {device_id} ({device_name}) [{time.monotonic() - t0:.2f}s]")
     print(f"Time range: {rr_data[0][0]} - {rr_data[-1][0]}")
 
     minute_count = len({(ts // 60000) for ts, _ in rr_data})
     print(f"Processing {minute_count} minutes...")
 
+    t0 = time.monotonic()
     rows = compute_minute_metrics(rr_data)
+    print(f"Minute metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
+
+    t0 = time.monotonic()
     total, sample = write_results(DB_PATH, rows)
-    print(f"Written {total} rows to HRV_MINUTE_AGGREGATED")
+    print(f"Written {total} rows to HRV_MINUTE_AGGREGATED [{time.monotonic() - t0:.2f}s]")
+    print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
 
     if sample:
         ts, n, hr, rmssd, lfhf, dfa = sample
