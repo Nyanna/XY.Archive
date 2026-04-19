@@ -100,33 +100,35 @@ def compute_dfa_alpha1(rr_values):
 
 def compute_lf_hf(timestamps_ms, rr_values):
     if len(rr_values) < LF_HF_MIN_BEATS:
-        return None, None, None
+        return None, None, None, None
     rr = np.asarray(rr_values, dtype=float)
     t_sec = np.cumsum(rr) / 1000.0
     y = rr - rr.mean()
 
     if t_sec[-1] - t_sec[0] <= 0:
-        return None, None, None
+        return None, None, None, None
 
     freqs = np.linspace(0.001, 0.5, 1000)
     angular = 2 * np.pi * freqs
     try:
         pgram = lombscargle(t_sec, y, angular, normalize=False)
     except Exception:
-        return None, None, None
+        return None, None, None, None
 
     # scipy lombscargle returns (A^2 * N / 4); for power density in ms^2/Hz
     # we use a common normalization: 2 * P / N
     power = 2.0 * pgram / len(y)
 
+    vlf_mask = (freqs >= 0.0033) & (freqs < 0.04)
     lf_mask = (freqs >= 0.04) & (freqs <= 0.15)
     hf_mask = (freqs >= 0.15) & (freqs <= 0.40)
 
     trap = getattr(np, "trapezoid", np.trapz)
+    vlf = float(trap(power[vlf_mask], freqs[vlf_mask])) if vlf_mask.any() else None
     lf = float(trap(power[lf_mask], freqs[lf_mask])) if lf_mask.any() else None
     hf = float(trap(power[hf_mask], freqs[hf_mask])) if hf_mask.any() else None
     ratio = lf / hf if (lf is not None and hf is not None and hf > 0) else None
-    return lf, hf, ratio
+    return vlf, lf, hf, ratio
 
 
 def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
@@ -200,8 +202,8 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
 
         time_basic += time.monotonic() - t_step
 
-        # LF/HF: 5-min window centered on minute (optional)
-        lf, hf, lfhf = None, None, None
+        # VLF/LF/HF: 5-min window centered on minute (optional)
+        vlf, lf, hf, lfhf = None, None, None, None
         if enable_lf_hf:
             t_lfhf = time.monotonic()
             window_start = minute_start - 2 * 60 * 1000
@@ -225,9 +227,9 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
                     win_ts = win_ts[span_mask]
                     win_rr = win_rr[span_mask]
                     if len(win_rr) >= LF_HF_MIN_BEATS:
-                        lf, hf, lfhf = compute_lf_hf(win_ts, win_rr)
+                        vlf, lf, hf, lfhf = compute_lf_hf(win_ts, win_rr)
             else:
-                lf, hf, lfhf = compute_lf_hf(all_ts[mask], all_rr[mask])
+                vlf, lf, hf, lfhf = compute_lf_hf(all_ts[mask], all_rr[mask])
 
             time_lfhf += time.monotonic() - t_lfhf
 
@@ -267,6 +269,7 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
             "sdnn_ms": sdnn,
             "rmssd_sdnn_ratio": rmssd_sdnn_ratio,
             "pnn50": pnn50,
+            "vlf_ms2": vlf,
             "lf_ms2": lf,
             "hf_ms2": hf,
             "lf_hf_ratio": lfhf,
@@ -311,6 +314,7 @@ def write_results(db_path, rows):
             SDNN_MS REAL,
             RMSSD_SDNN_RATIO REAL,
             PNN50 REAL,
+            VLF_MS2 REAL,
             LF_MS2 REAL,
             HF_MS2 REAL,
             LF_HF_RATIO REAL,
@@ -319,14 +323,14 @@ def write_results(db_path, rows):
     """)
     cur.executemany(
         "INSERT INTO HRV_MINUTE_AGGREGATED VALUES "
-        "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         [
             (
                 r["timestamp_ms"], r["n_beats"], r["hr_bpm"], r["avg_rr_ms"],
                 r["min_rr_ms"], r["max_rr_ms"], r["stddev_rr_ms"], r["rmssd_ms"],
                 r["ln_rmssd"], r["vagal_index"], r["rmssd_pct"], r["sdnn_ms"],
-                r["rmssd_sdnn_ratio"], r["pnn50"], r["lf_ms2"], r["hf_ms2"],
-                r["lf_hf_ratio"], r["dfa_alpha1"],
+                r["rmssd_sdnn_ratio"], r["pnn50"], r["vlf_ms2"], r["lf_ms2"],
+                r["hf_ms2"], r["lf_hf_ratio"], r["dfa_alpha1"],
             )
             for r in rows
         ],
