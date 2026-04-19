@@ -6,7 +6,6 @@ import math
 import sqlite3
 import sys
 import time
-from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
@@ -18,8 +17,10 @@ MIN_RR = 300
 MAX_RR = 2000
 GAP_THRESHOLD_MS = 5000
 MIN_BEATS_PER_MINUTE = 15
-LF_HF_MIN_BEATS = 150
-LF_HF_WINDOW_MS = 5 * 60 * 1000
+LFHF_MIN_BEATS = 150
+LFHF_WINDOW_MS = 5 * 60 * 1000
+VLF_MIN_BEATS = 300
+VLF_WINDOW_MS = 15 * 60 * 1000
 DFA_WINDOW = 200
 DFA_BOXES_ALL = [4, 6, 8, 10, 12, 16, 20, 24, 32, 48, 64]
 DFA_BOXES_ALPHA1 = {4, 6, 8, 10, 12, 16}
@@ -98,37 +99,82 @@ def compute_dfa_alpha1(rr_values):
     return float(slope)
 
 
-def compute_lf_hf(timestamps_ms, rr_values):
-    if len(rr_values) < LF_HF_MIN_BEATS:
-        return None, None, None, None
+_F_MIN = 0.001  # fixed lower freq grid bound; band integration mask applies effective_low per band
+_FREQ_CACHE = {}
+_BAND_MASK_CACHE = {}
+
+
+def _get_freq_grid(n_freqs):
+    cached = _FREQ_CACHE.get(n_freqs)
+    if cached is None:
+        freqs = np.linspace(_F_MIN, 0.5, n_freqs)
+        angular = 2 * np.pi * freqs
+        cached = (freqs, angular)
+        _FREQ_CACHE[n_freqs] = cached
+    return cached
+
+
+def _get_band_masks(n_freqs, freq_ranges):
+    key = (n_freqs, tuple((n, lo, hi) for n, lo, hi in freq_ranges))
+    cached = _BAND_MASK_CACHE.get(key)
+    if cached is None:
+        freqs, _ = _get_freq_grid(n_freqs)
+        bands = []
+        for name, f_low, f_high in freq_ranges:
+            effective_low = max(f_low, _F_MIN)
+            mask = (freqs >= effective_low) & (freqs <= f_high)
+            valid = bool(mask.any() and (f_high > effective_low))
+            bands.append((name, mask, valid, freqs[mask]))
+        _BAND_MASK_CACHE[key] = bands
+        cached = bands
+    return cached
+
+
+def compute_band_power(rr_values, freq_ranges, n_freqs=300):
+    """Compute integrated band power for given frequency ranges via Lomb-Scargle.
+
+    Args:
+        rr_values: array of RR intervals in ms
+        freq_ranges: list of (name, f_low, f_high) tuples
+        n_freqs: number of frequency bins (300 ≈ Δf 1.7e-3 Hz, ausreichend für VLF-HF)
+
+    Returns:
+        dict of {name: power_ms2}
+    """
+    none_result = {name: None for name, _, _ in freq_ranges}
+    if len(rr_values) < 30:
+        return none_result
+
     rr = np.asarray(rr_values, dtype=float)
     t_sec = np.cumsum(rr) / 1000.0
+    if t_sec[-1] - t_sec[0] <= 0:
+        return none_result
+
     y = rr - rr.mean()
 
-    if t_sec[-1] - t_sec[0] <= 0:
-        return None, None, None, None
-
-    freqs = np.linspace(0.001, 0.5, 1000)
-    angular = 2 * np.pi * freqs
+    freqs, angular = _get_freq_grid(n_freqs)
     try:
         pgram = lombscargle(t_sec, y, angular, normalize=False)
     except Exception:
-        return None, None, None, None
+        return none_result
 
-    # scipy lombscargle returns (A^2 * N / 4); for power density in ms^2/Hz
-    # we use a common normalization: 2 * P / N
     power = 2.0 * pgram / len(y)
-
-    vlf_mask = (freqs >= 0.0033) & (freqs < 0.04)
-    lf_mask = (freqs >= 0.04) & (freqs <= 0.15)
-    hf_mask = (freqs >= 0.15) & (freqs <= 0.40)
-
     trap = getattr(np, "trapezoid", np.trapz)
-    vlf = float(trap(power[vlf_mask], freqs[vlf_mask])) if vlf_mask.any() else None
-    lf = float(trap(power[lf_mask], freqs[lf_mask])) if lf_mask.any() else None
-    hf = float(trap(power[hf_mask], freqs[hf_mask])) if hf_mask.any() else None
-    ratio = lf / hf if (lf is not None and hf is not None and hf > 0) else None
-    return vlf, lf, hf, ratio
+
+    # Parseval normalization: scale PSD so total integral = variance(y).
+    # This makes band power independent of window length / N.
+    total_integral = float(trap(power, freqs))
+    variance = float(np.var(y))
+    if total_integral > 0 and variance > 0:
+        power = power * (variance / total_integral)
+
+    result = {}
+    for name, mask, valid, band_freqs in _get_band_masks(n_freqs, freq_ranges):
+        if valid:
+            result[name] = float(trap(power[mask], band_freqs))
+        else:
+            result[name] = None
+    return result
 
 
 def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
@@ -137,25 +183,24 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
 
     t0 = time.monotonic()
 
-    # Sukzessive Differenzen (mit Gap-Filter)
-    diffs_for_ts = {}  # timestamp -> diff (diff belongs to beat at index i)
-    for i in range(1, len(rr_data)):
-        ts_prev, rr_prev = rr_data[i - 1]
-        ts_curr, rr_curr = rr_data[i]
-        if (ts_curr - ts_prev) <= GAP_THRESHOLD_MS:
-            diffs_for_ts[i] = rr_curr - rr_prev
+    n_total = len(rr_data)
+    all_ts = np.fromiter((r[0] for r in rr_data), dtype=np.int64, count=n_total)
+    all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_total)
+
+    # Sukzessive Differenzen (vektorisiert, mit Gap-Filter)
+    # diff at index k = rr[k+1] - rr[k], gehört zum Beat an Index k+1
+    ts_gaps = np.diff(all_ts)
+    rr_diffs = np.diff(all_rr).astype(float)
+    valid_diff_mask = ts_gaps <= GAP_THRESHOLD_MS
 
     print(f"  Successive diffs computed: {time.monotonic() - t0:.2f}s")
 
-    # Minute binning
-    minute_indices = defaultdict(list)
-    for idx, (ts, _rr) in enumerate(rr_data):
-        minute_start = (ts // 60000) * 60000
-        minute_indices[minute_start].append(idx)
-
-    sorted_minutes = sorted(minute_indices.keys())
-    all_ts = np.array([r[0] for r in rr_data])
-    all_rr = np.array([r[1] for r in rr_data])
+    # Minute binning: data ist nach TIMESTAMP sortiert → contiguous slices pro Minute
+    minute_of_beat = (all_ts // 60000) * 60000
+    sorted_minutes, minute_lo, minute_counts = np.unique(
+        minute_of_beat, return_index=True, return_counts=True
+    )
+    minute_hi = minute_lo + minute_counts
 
     print(f"  Minute binning done ({len(sorted_minutes)} bins): {time.monotonic() - t0:.2f}s")
 
@@ -167,25 +212,35 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
     t_loop_start = time.monotonic()
     log_interval = max(1, total_minutes // 20)  # ~20 progress updates
 
-    for mi, minute_start in enumerate(sorted_minutes):
-        idxs = minute_indices[minute_start]
-        if len(idxs) < MIN_BEATS_PER_MINUTE:
+    for mi in range(total_minutes):
+        n_beats = int(minute_counts[mi])
+        if n_beats < MIN_BEATS_PER_MINUTE:
             continue
 
+        minute_start = int(sorted_minutes[mi])
+        lo = int(minute_lo[mi])
+        hi = int(minute_hi[mi])
+
         t_step = time.monotonic()
-        rr = all_rr[idxs].astype(float)
-        n_beats = len(rr)
+        rr = all_rr[lo:hi].astype(float)
         mean_rr = float(rr.mean())
         hr_bpm = 60000.0 / mean_rr if mean_rr > 0 else None
         min_rr = int(rr.min())
         max_rr = int(rr.max())
         std_rr = float(rr.std(ddof=0))  # population stddev
 
-        minute_diffs = [diffs_for_ts[i] for i in idxs if i in diffs_for_ts]
-        if minute_diffs:
-            d = np.asarray(minute_diffs, dtype=float)
-            rmssd = float(math.sqrt(np.mean(d ** 2)))
-            pnn50 = float(np.sum(np.abs(d) > 50) / len(d) * 100.0)
+        # Diffs für Beats in [lo, hi): diff array indices [max(0, lo-1), hi-1)
+        diff_lo = lo - 1 if lo > 0 else 0
+        diff_hi = hi - 1
+        if diff_hi > diff_lo:
+            valid = valid_diff_mask[diff_lo:diff_hi]
+            d = rr_diffs[diff_lo:diff_hi][valid]
+            if d.size:
+                rmssd = float(math.sqrt(np.mean(d ** 2)))
+                pnn50 = float(np.sum(np.abs(d) > 50) / d.size * 100.0)
+            else:
+                rmssd = 0.0
+                pnn50 = None
         else:
             rmssd = 0.0
             pnn50 = None
@@ -202,34 +257,37 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
 
         time_basic += time.monotonic() - t_step
 
-        # VLF/LF/HF: 5-min window centered on minute (optional)
+        # LF/HF: 5-min window; VLF: 15-min window (band-specific resolution)
         vlf, lf, hf, lfhf = None, None, None, None
         if enable_lf_hf:
             t_lfhf = time.monotonic()
-            window_start = minute_start - 2 * 60 * 1000
-            window_end = minute_start + 3 * 60 * 1000  # inclusive of minute M itself (M + 2min)
-            mask = (all_ts >= window_start) & (all_ts < window_end)
-            win_count = int(mask.sum())
-            if win_count < LF_HF_MIN_BEATS:
-                # asymmetric fallback near edges: take nearest 5min worth
-                center_idx = np.searchsorted(all_ts, minute_start)
-                half = LF_HF_MIN_BEATS  # expand search
-                lo = max(0, center_idx - half * 2)
-                hi = min(len(all_ts), center_idx + half * 2)
-                # fall back: use as-is if still too few
-                if hi - lo >= LF_HF_MIN_BEATS:
-                    win_ts = all_ts[lo:hi]
-                    win_rr = all_rr[lo:hi]
-                    # restrict to 5 minutes around minute_start
-                    span_mask = (win_ts >= minute_start - LF_HF_WINDOW_MS) & (
-                        win_ts <= minute_start + LF_HF_WINDOW_MS
-                    )
-                    win_ts = win_ts[span_mask]
-                    win_rr = win_rr[span_mask]
-                    if len(win_rr) >= LF_HF_MIN_BEATS:
-                        vlf, lf, hf, lfhf = compute_lf_hf(win_ts, win_rr)
-            else:
-                vlf, lf, hf, lfhf = compute_lf_hf(all_ts[mask], all_rr[mask])
+
+            # --- LF + HF from 5-min window (searchsorted: O(log N) statt O(N) mask) ---
+            win5_start = minute_start - 2 * 60 * 1000
+            win5_end = minute_start + 3 * 60 * 1000
+            i5_lo = int(np.searchsorted(all_ts, win5_start, side="left"))
+            i5_hi = int(np.searchsorted(all_ts, win5_end, side="left"))
+            if (i5_hi - i5_lo) >= LFHF_MIN_BEATS:
+                lfhf_result = compute_band_power(
+                    all_rr[i5_lo:i5_hi],
+                    [('lf', 0.04, 0.15), ('hf', 0.15, 0.40)],
+                )
+                lf = lfhf_result['lf']
+                hf = lfhf_result['hf']
+
+            # --- VLF from 15-min window ---
+            win15_start = minute_start - 7 * 60 * 1000
+            win15_end = minute_start + 8 * 60 * 1000
+            i15_lo = int(np.searchsorted(all_ts, win15_start, side="left"))
+            i15_hi = int(np.searchsorted(all_ts, win15_end, side="left"))
+            if (i15_hi - i15_lo) >= VLF_MIN_BEATS:
+                vlf_result = compute_band_power(
+                    all_rr[i15_lo:i15_hi],
+                    [('vlf', 0.0033, 0.04)],
+                )
+                vlf = vlf_result['vlf']
+
+            lfhf = lf / hf if (lf is not None and hf is not None and hf > 0) else None
 
             time_lfhf += time.monotonic() - t_lfhf
 
@@ -237,11 +295,8 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
         dfa_alpha1 = None
         if enable_dfa:
             t_dfa = time.monotonic()
-            minute_end = minute_start + 60000
-            end_idx = np.searchsorted(all_ts, minute_end, side="left")
-            start_idx = max(0, end_idx - DFA_WINDOW)
-            dfa_values = all_rr[start_idx:end_idx]
-            dfa_alpha1 = compute_dfa_alpha1(list(dfa_values))
+            start_idx = hi - DFA_WINDOW if hi >= DFA_WINDOW else 0
+            dfa_alpha1 = compute_dfa_alpha1(all_rr[start_idx:hi])
 
             time_dfa += time.monotonic() - t_dfa
 
