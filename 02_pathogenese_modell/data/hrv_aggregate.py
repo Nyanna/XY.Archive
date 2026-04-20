@@ -9,7 +9,8 @@ import time
 from pathlib import Path
 
 import numpy as np
-from scipy.signal import lombscargle
+from scipy.interpolate import CubicSpline
+from scipy.signal import welch
 
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
 
@@ -99,44 +100,22 @@ def compute_dfa_alpha1(rr_values):
     return float(slope)
 
 
-_F_MIN = 0.001  # fixed lower freq grid bound; band integration mask applies effective_low per band
-_FREQ_CACHE = {}
-_BAND_MASK_CACHE = {}
+FS_RESAMPLE = 4.0  # Hz, Task Force (1996) recommendation for RR-tachogram resampling
+_TRAPZ = getattr(np, "trapezoid", np.trapz)
 
 
-def _get_freq_grid(n_freqs):
-    cached = _FREQ_CACHE.get(n_freqs)
-    if cached is None:
-        freqs = np.linspace(_F_MIN, 0.5, n_freqs)
-        angular = 2 * np.pi * freqs
-        cached = (freqs, angular)
-        _FREQ_CACHE[n_freqs] = cached
-    return cached
+def compute_band_power(rr_values, freq_ranges):
+    """Compute integrated band power via cubic-spline resampling + Welch PSD.
 
-
-def _get_band_masks(n_freqs, freq_ranges):
-    key = (n_freqs, tuple((n, lo, hi) for n, lo, hi in freq_ranges))
-    cached = _BAND_MASK_CACHE.get(key)
-    if cached is None:
-        freqs, _ = _get_freq_grid(n_freqs)
-        bands = []
-        for name, f_low, f_high in freq_ranges:
-            effective_low = max(f_low, _F_MIN)
-            mask = (freqs >= effective_low) & (freqs <= f_high)
-            valid = bool(mask.any() and (f_high > effective_low))
-            bands.append((name, mask, valid, freqs[mask]))
-        _BAND_MASK_CACHE[key] = bands
-        cached = bands
-    return cached
-
-
-def compute_band_power(rr_values, freq_ranges, n_freqs=300):
-    """Compute integrated band power for given frequency ranges via Lomb-Scargle.
+    Task-Force-compliant (ESC/NASPE 1996): RR tachogram → cubic spline → 4 Hz
+    uniform grid → Welch PSD (Hann window, single segment). Welch's
+    scaling='density' returns PSD in ms²/Hz such that ∫ PSD df ≈ variance(y),
+    so band power = ∫_band PSD df directly in ms² — no manual Parseval
+    normalization required.
 
     Args:
         rr_values: array of RR intervals in ms
         freq_ranges: list of (name, f_low, f_high) tuples
-        n_freqs: number of frequency bins (300 ≈ Δf 1.7e-3 Hz, ausreichend für VLF-HF)
 
     Returns:
         dict of {name: power_ms2}
@@ -147,31 +126,35 @@ def compute_band_power(rr_values, freq_ranges, n_freqs=300):
 
     rr = np.asarray(rr_values, dtype=float)
     t_sec = np.cumsum(rr) / 1000.0
-    if t_sec[-1] - t_sec[0] <= 0:
+    t_sec = t_sec - t_sec[0]
+    duration = float(t_sec[-1])
+    if duration <= 0:
         return none_result
 
-    y = rr - rr.mean()
-
-    freqs, angular = _get_freq_grid(n_freqs)
     try:
-        pgram = lombscargle(t_sec, y, angular, normalize=False)
+        cs = CubicSpline(t_sec, rr, extrapolate=False)
     except Exception:
         return none_result
 
-    power = 2.0 * pgram / len(y)
-    trap = getattr(np, "trapezoid", np.trapz)
+    n_uniform = int(duration * FS_RESAMPLE)
+    if n_uniform < 64:
+        return none_result
+    t_uniform = np.linspace(0.0, duration, n_uniform)
+    y = cs(t_uniform)
 
-    # Parseval normalization: scale PSD so total integral = variance(y).
-    # This makes band power independent of window length / N.
-    total_integral = float(trap(power, freqs))
-    variance = float(np.var(y))
-    if total_integral > 0 and variance > 0:
-        power = power * (variance / total_integral)
+    try:
+        f, pxx = welch(
+            y, fs=FS_RESAMPLE, nperseg=n_uniform,
+            window="hann", scaling="density", detrend="constant",
+        )
+    except Exception:
+        return none_result
 
     result = {}
-    for name, mask, valid, band_freqs in _get_band_masks(n_freqs, freq_ranges):
-        if valid:
-            result[name] = float(trap(power[mask], band_freqs))
+    for name, f_low, f_high in freq_ranges:
+        mask = (f >= f_low) & (f <= f_high)
+        if mask.any() and f_high > f_low:
+            result[name] = float(_TRAPZ(pxx[mask], f[mask]))
         else:
             result[name] = None
     return result
@@ -207,7 +190,9 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
     results = []
     total_minutes = len(sorted_minutes)
     time_basic = 0.0
-    time_lfhf = 0.0
+    time_lf = 0.0
+    time_hf = 0.0
+    time_vlf = 0.0
     time_dfa = 0.0
     t_loop_start = time.monotonic()
     log_interval = max(1, total_minutes // 20)  # ~20 progress updates
@@ -260,36 +245,37 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
         # LF/HF: 5-min window; VLF: 15-min window (band-specific resolution)
         vlf, lf, hf, lfhf = None, None, None, None
         if enable_lf_hf:
-            t_lfhf = time.monotonic()
-
-            # --- LF + HF from 5-min window (searchsorted: O(log N) statt O(N) mask) ---
+            # --- LF from 5-min window (searchsorted: O(log N) statt O(N) mask) ---
             win5_start = minute_start - 2 * 60 * 1000
             win5_end = minute_start + 3 * 60 * 1000
             i5_lo = int(np.searchsorted(all_ts, win5_start, side="left"))
             i5_hi = int(np.searchsorted(all_ts, win5_end, side="left"))
-            if (i5_hi - i5_lo) >= LFHF_MIN_BEATS:
-                lfhf_result = compute_band_power(
-                    all_rr[i5_lo:i5_hi],
-                    [('lf', 0.04, 0.15), ('hf', 0.15, 0.40)],
-                )
-                lf = lfhf_result['lf']
-                hf = lfhf_result['hf']
+            win5_ok = (i5_hi - i5_lo) >= LFHF_MIN_BEATS
+            rr_5min = all_rr[i5_lo:i5_hi] if win5_ok else None
+
+            t_lf = time.monotonic()
+            if win5_ok:
+                lf = compute_band_power(rr_5min, [('lf', 0.04, 0.15)])['lf']
+            time_lf += time.monotonic() - t_lf
+
+            t_hf = time.monotonic()
+            if win5_ok:
+                hf = compute_band_power(rr_5min, [('hf', 0.15, 0.40)])['hf']
+            time_hf += time.monotonic() - t_hf
 
             # --- VLF from 15-min window ---
+            t_vlf = time.monotonic()
             win15_start = minute_start - 7 * 60 * 1000
             win15_end = minute_start + 8 * 60 * 1000
             i15_lo = int(np.searchsorted(all_ts, win15_start, side="left"))
             i15_hi = int(np.searchsorted(all_ts, win15_end, side="left"))
             if (i15_hi - i15_lo) >= VLF_MIN_BEATS:
-                vlf_result = compute_band_power(
-                    all_rr[i15_lo:i15_hi],
-                    [('vlf', 0.0033, 0.04)],
-                )
-                vlf = vlf_result['vlf']
+                vlf = compute_band_power(
+                    all_rr[i15_lo:i15_hi], [('vlf', 0.0033, 0.04)],
+                )['vlf']
+            time_vlf += time.monotonic() - t_vlf
 
             lfhf = lf / hf if (lf is not None and hf is not None and hf > 0) else None
-
-            time_lfhf += time.monotonic() - t_lfhf
 
         # DFA: letzte 200 RR VOR dem Ende der Minute (optional)
         dfa_alpha1 = None
@@ -306,7 +292,8 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
             print(
                 f"  Progress: {mi + 1}/{total_minutes} ({pct:.0f}%) | "
                 f"elapsed {elapsed:.1f}s | "
-                f"basic {time_basic:.1f}s  lf/hf {time_lfhf:.1f}s  dfa {time_dfa:.1f}s"
+                f"basic {time_basic:.1f}s  lf {time_lf:.1f}s  hf {time_hf:.1f}s  "
+                f"vlf {time_vlf:.1f}s  dfa {time_dfa:.1f}s"
             )
 
         results.append({
@@ -336,9 +323,11 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
     print(f"  Prep (diffs + binning):  included above")
     print(f"  Basic metrics total:     {time_basic:.2f}s")
     if enable_lf_hf:
-        print(f"  LF/HF (Lomb-Scargle):   {time_lfhf:.2f}s")
+        print(f"  LF  (Welch, 5-min win):  {time_lf:.2f}s")
+        print(f"  HF  (Welch, 5-min win):  {time_hf:.2f}s")
+        print(f"  VLF (Welch, 15-min win): {time_vlf:.2f}s")
     else:
-        print(f"  LF/HF (Lomb-Scargle):   disabled")
+        print(f"  LF/HF/VLF (Welch):       disabled")
     if enable_dfa:
         print(f"  DFA alpha1:              {time_dfa:.2f}s")
     else:
