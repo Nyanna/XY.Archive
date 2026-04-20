@@ -2,11 +2,11 @@
 """
 Gadgetbridge SQLite Cleanup Script
 -----------------------------------
-1. Entfernt alle leeren Tabellen.
-2. Aendert Spaltentypen von INTEGER auf TIMESTAMP fuer Datumsspalten,
-   ohne die gespeicherten Werte zu konvertieren.
+1. Removes all empty tables.
+2. Changes column types from INTEGER to TIMESTAMP for date columns,
+   without converting the stored values.
 
-Erstellt vor der Bearbeitung ein Backup: Gadgetbridge.bak
+Creates a backup before processing: Gadgetbridge.bak
 """
 
 import sqlite3
@@ -21,8 +21,8 @@ from pathlib import Path
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
 EXPIRY_HOURS = 2 * 3600
 
-# Spaltennamen, die Zeitpunkte (nicht Dauern) darstellen.
-# Muster werden case-insensitive geprueft.
+# Column names that represent points in time (not durations).
+# Patterns are matched case-insensitively.
 TIMESTAMP_PATTERNS = [
     r"^TIMESTAMP$",
     r"^TIMESTAMP_FROM$",
@@ -46,7 +46,7 @@ TIMESTAMP_PATTERNS = [
     r"^MODIFY_TIMESTAMP$",
 ]
 
-# Spalten die trotz "time" im Namen keine Zeitpunkte sind
+# Columns that despite "time" in the name are not points in time
 EXCLUDE_PATTERNS = [
     r".*_MINUTES$",
     r"^TIMEZONE$",
@@ -62,7 +62,7 @@ EXCLUDE_PATTERNS = [
     r"^TIME_DELTA$",
     r"^RUN_PACE_ZONE\d+_TIME$",
     r"^UPDATE_AVAILABLE$",
-    r"^TIME$",  # ambig in workout tables -- eher Dauer
+    r"^TIME$",  # ambiguous in workout tables -- more likely a duration
 ]
 
 
@@ -101,7 +101,7 @@ def get_columns(conn, table):
 
 
 def rebuild_table_with_types(conn, table):
-    """Baut die Tabelle neu auf, wobei INTEGER-Timestamp-Spalten als TIMESTAMP definiert werden."""
+    """Rebuilds the table, redefining INTEGER timestamp columns as TIMESTAMP."""
     columns = get_columns(conn, table)
     cols_to_change = []
     for col in columns:
@@ -116,10 +116,10 @@ def rebuild_table_with_types(conn, table):
     original_sql = get_create_sql(conn, table)
     tmp_table = f"_tmp_rebuild_{table}"
 
-    # Neue CREATE-Anweisung: INTEGER -> TIMESTAMP fuer erkannte Spalten
+    # New CREATE statement: INTEGER -> TIMESTAMP for detected columns
     new_sql = original_sql
     for col_name in cols_to_change:
-        # Ersetze "col_name" INTEGER oder col_name INTEGER durch ... TIMESTAMP
+        # Replace "col_name" INTEGER or col_name INTEGER with ... TIMESTAMP
         # Handles: "COL" INTEGER, [COL] INTEGER, COL INTEGER
         pattern = re.compile(
             rf'("{re.escape(col_name)}"|\[{re.escape(col_name)}\]|{re.escape(col_name)})\s+INTEGER\b',
@@ -127,7 +127,7 @@ def rebuild_table_with_types(conn, table):
         )
         new_sql = pattern.sub(rf"\1 TIMESTAMP", new_sql, count=1)
 
-    # Tabellenname in CREATE auf tmp aendern
+    # Change table name in CREATE to tmp
     new_sql = new_sql.replace(
         f"CREATE TABLE {table}",
         f"CREATE TABLE [{tmp_table}]",
@@ -141,8 +141,8 @@ def rebuild_table_with_types(conn, table):
 
     col_names = ", ".join(f"[{c[1]}]" for c in columns)
 
-    # Xiaomi_Activity_Sample speichert Timestamps in Sekunden statt Millisekunden.
-    # Bei dieser Tabelle die Werte beim Kopieren umrechnen (* 1000).
+    # Xiaomi_Activity_Sample stores timestamps in seconds instead of milliseconds.
+    # For this table, convert the values while copying (* 1000).
     needs_sec_to_ms = table.upper() == "XIAOMI_ACTIVITY_SAMPLE"
 
     if needs_sec_to_ms:
@@ -172,21 +172,21 @@ def main():
         downloadDB()
     
     if not DB_PATH.exists():
-        print(f"Fehler: Datenbank nicht gefunden: {DB_PATH}")
+        print(f"ERROR: database not found: {DB_PATH}")
         sys.exit(1)
 
     # Backup
     backup_path = DB_PATH.with_suffix(".bak")
     shutil.copy2(DB_PATH, backup_path)
-    print(f"Backup erstellt: {backup_path}")
+    print(f"Backup created: {backup_path}")
 
     conn = sqlite3.connect(str(DB_PATH))
     conn.execute("PRAGMA foreign_keys = OFF")
 
     tables = get_tables(conn)
-    print(f"\nTabellen gesamt: {len(tables)}")
+    print(f"\nTotal tables: {len(tables)}")
 
-    # 1. Leere Tabellen entfernen
+    # 1. Remove empty tables
     empty = []
     nonempty = []
     for t in tables:
@@ -198,14 +198,14 @@ def main():
         else:
             nonempty.append(t)
 
-    print(f"Leere Tabellen: {len(empty)}")
+    print(f"Empty tables: {len(empty)}")
     for t in empty:
         conn.execute(f"DROP TABLE [{t}]")
         print(f"  DROP {t}")
 
-    # 2. Spaltentypen aendern
-    # Spaltentypen ändeern funktioniert nicht in Metabase, der JDBC-Treiber konvertiert nur in eine Richtung.
-    # print(f"\nVerbleibende Tabellen: {len(nonempty)}")
+    # 2. Change column types
+    # Changing column types does not work in Metabase: the JDBC driver only converts in one direction.
+    # print(f"\nRemaining tables: {len(nonempty)}")
     # for t in nonempty:
     #    if t.startswith("sqlite_"):
     #        continue
@@ -216,7 +216,7 @@ def main():
     conn.commit()
     conn.execute("VACUUM")
     conn.close()
-    print("\nFertig.\nStarte verarbeitung...")
+    print("\nDone.\nStarting processing...")
     runpy.run_path("hrv_aggregate.py", run_name="__main__")
 
 

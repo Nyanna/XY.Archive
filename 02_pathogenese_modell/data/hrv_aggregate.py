@@ -6,6 +6,7 @@ import math
 import sqlite3
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 
 import numpy as np
@@ -25,6 +26,12 @@ VLF_WINDOW_MS = 15 * 60 * 1000
 DFA_WINDOW = 200
 DFA_BOXES_ALL = [4, 6, 8, 10, 12, 16, 20, 24, 32, 48, 64]
 DFA_BOXES_ALPHA1 = {4, 6, 8, 10, 12, 16}
+
+# Artifact correction (PSD path only; base metrics such as RMSSD/pNN50 stay
+# on the raw gap-filtered values to preserve comparability with existing
+# queries).
+ARTIFACT_THRESHOLD = 0.20       # Malik rule
+MAX_ARTIFACT_FRACTION = 0.05    # reject window if exceeded
 
 
 def load_rr_data(db_path, device_id=None):
@@ -104,7 +111,42 @@ FS_RESAMPLE = 4.0  # Hz, Task Force (1996) recommendation for RR-tachogram resam
 _TRAPZ = getattr(np, "trapezoid", np.trapz)
 
 
-def compute_band_power(rr_values, freq_ranges):
+def correct_artifacts(rr: np.ndarray) -> np.ndarray | None:
+    """Malik-rule artifact correction with linear interpolation.
+
+    Flags beat i as artifactual when |RR[i]-RR[i-1]|/RR[i-1] > 0.20, then
+    replaces artifactual beats via linear interpolation between the nearest
+    non-artifactual neighbors (dropping would create phase jumps in the
+    tachogram -> spectral leakage). Rejects the window entirely if the
+    artifact fraction exceeds MAX_ARTIFACT_FRACTION (5%).
+
+    PSD path only; base metrics (RMSSD, pNN50, ...) keep the raw
+    gap-filtered values.
+    """
+    n = len(rr)
+    if n < 2:
+        return rr.astype(float, copy=True)
+    rr = rr.astype(float, copy=True)
+
+    rel_diff = np.abs(np.diff(rr)) / rr[:-1]
+    artifact_mask = np.zeros(n, dtype=bool)
+    artifact_mask[1:] = rel_diff > ARTIFACT_THRESHOLD
+
+    n_artifacts = int(artifact_mask.sum())
+    if n_artifacts / n > MAX_ARTIFACT_FRACTION:
+        return None
+    if n_artifacts == 0:
+        return rr
+
+    valid_idx = np.flatnonzero(~artifact_mask)
+    if valid_idx.size < 2:
+        return None
+    all_idx = np.arange(n)
+    rr[artifact_mask] = np.interp(all_idx[artifact_mask], valid_idx, rr[valid_idx])
+    return rr
+
+
+def compute_band_power(rr_values, freq_ranges, detrend="constant"):
     """Compute integrated band power via cubic-spline resampling + Welch PSD.
 
     Task-Force-compliant (ESC/NASPE 1996): RR tachogram → cubic spline → 4 Hz
@@ -116,6 +158,9 @@ def compute_band_power(rr_values, freq_ranges):
     Args:
         rr_values: array of RR intervals in ms
         freq_ranges: list of (name, f_low, f_high) tuples
+        detrend: 'constant' (mean removal, default for LF/HF 5-min windows)
+            or 'linear' (drift removal, recommended for VLF 15-min windows
+            because otherwise linear drift shows up as spurious VLF power).
 
     Returns:
         dict of {name: power_ms2}
@@ -125,6 +170,9 @@ def compute_band_power(rr_values, freq_ranges):
         return none_result
 
     rr = np.asarray(rr_values, dtype=float)
+    rr = correct_artifacts(rr)
+    if rr is None or len(rr) < 30:
+        return none_result
     t_sec = np.cumsum(rr) / 1000.0
     t_sec = t_sec - t_sec[0]
     duration = float(t_sec[-1])
@@ -145,7 +193,7 @@ def compute_band_power(rr_values, freq_ranges):
     try:
         f, pxx = welch(
             y, fs=FS_RESAMPLE, nperseg=n_uniform,
-            window="hann", scaling="density", detrend="constant",
+            window="hann", scaling="density", detrend=detrend,
         )
     except Exception:
         return none_result
@@ -160,7 +208,13 @@ def compute_band_power(rr_values, freq_ranges):
     return result
 
 
-def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
+def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, limit_minutes=None):
+    """Aggregate HRV metrics per minute.
+
+    limit_minutes: if set, only the first N minute bins are processed.
+    Purpose: performance and integrity test runs on a small slice of the
+    data, without having to crunch through the full dataset. Production: None.
+    """
     if not rr_data:
         return []
 
@@ -170,15 +224,15 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
     all_ts = np.fromiter((r[0] for r in rr_data), dtype=np.int64, count=n_total)
     all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_total)
 
-    # Sukzessive Differenzen (vektorisiert, mit Gap-Filter)
-    # diff at index k = rr[k+1] - rr[k], gehört zum Beat an Index k+1
+    # Successive differences (vectorized, with gap filter)
+    # diff at index k = rr[k+1] - rr[k], belongs to the beat at index k+1
     ts_gaps = np.diff(all_ts)
     rr_diffs = np.diff(all_rr).astype(float)
     valid_diff_mask = ts_gaps <= GAP_THRESHOLD_MS
 
     print(f"  Successive diffs computed: {time.monotonic() - t0:.2f}s")
 
-    # Minute binning: data ist nach TIMESTAMP sortiert → contiguous slices pro Minute
+    # Minute binning: data is sorted by TIMESTAMP -> contiguous slices per minute
     minute_of_beat = (all_ts // 60000) * 60000
     sorted_minutes, minute_lo, minute_counts = np.unique(
         minute_of_beat, return_index=True, return_counts=True
@@ -189,6 +243,9 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
 
     results = []
     total_minutes = len(sorted_minutes)
+    if limit_minutes is not None and limit_minutes > 0:
+        total_minutes = min(total_minutes, int(limit_minutes))
+        print(f"  NOTE: processing limited to first {total_minutes} minute bins (--limit-minutes)")
     time_basic = 0.0
     time_lf = 0.0
     time_hf = 0.0
@@ -214,7 +271,7 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
         max_rr = int(rr.max())
         std_rr = float(rr.std(ddof=0))  # population stddev
 
-        # Diffs für Beats in [lo, hi): diff array indices [max(0, lo-1), hi-1)
+        # Diffs for beats in [lo, hi): diff array indices [max(0, lo-1), hi-1)
         diff_lo = lo - 1 if lo > 0 else 0
         diff_hi = hi - 1
         if diff_hi > diff_lo:
@@ -245,7 +302,7 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
         # LF/HF: 5-min window; VLF: 15-min window (band-specific resolution)
         vlf, lf, hf, lfhf = None, None, None, None
         if enable_lf_hf:
-            # --- LF from 5-min window (searchsorted: O(log N) statt O(N) mask) ---
+            # --- LF from 5-min window (searchsorted: O(log N) instead of O(N) mask) ---
             win5_start = minute_start - 2 * 60 * 1000
             win5_end = minute_start + 3 * 60 * 1000
             i5_lo = int(np.searchsorted(all_ts, win5_start, side="left"))
@@ -272,12 +329,13 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False):
             if (i15_hi - i15_lo) >= VLF_MIN_BEATS:
                 vlf = compute_band_power(
                     all_rr[i15_lo:i15_hi], [('vlf', 0.0033, 0.04)],
+                    detrend="linear",
                 )['vlf']
             time_vlf += time.monotonic() - t_vlf
 
             lfhf = lf / hf if (lf is not None and hf is not None and hf > 0) else None
 
-        # DFA: letzte 200 RR VOR dem Ende der Minute (optional)
+        # DFA: last 200 RR before the end of the minute (optional)
         dfa_alpha1 = None
         if enable_dfa:
             t_dfa = time.monotonic()
@@ -399,17 +457,27 @@ def main():
     parser.add_argument(
         "--lf-hf",
         action="store_true",
-        help="Enable LF/HF Lomb-Scargle computation (default: off, slow)",
+        help="Enable LF/HF/VLF spectral analysis via cubic-spline resampling + Welch PSD (default: off, slow)",
     )
     parser.add_argument(
         "--dfa",
         action="store_true",
         help="Enable DFA alpha1 computation (default: off)",
     )
+    parser.add_argument(
+        "--limit-minutes",
+        type=int,
+        default=None,
+        help=(
+            "Limit processing to the first N minute bins. "
+            "Intended for performance and integrity test runs on a small "
+            "slice of the data; omit for full production runs."
+        ),
+    )
     args = parser.parse_args()
 
     if not DB_PATH.exists():
-        print(f"Fehler: Datenbank nicht gefunden: {DB_PATH}")
+        print(f"ERROR: database not found: {DB_PATH}")
         sys.exit(1)
 
     t_total = time.monotonic()
@@ -421,13 +489,20 @@ def main():
         sys.exit(1)
 
     print(f"Loaded {len(rr_data)} RR intervals from device {device_id} ({device_name}) [{time.monotonic() - t0:.2f}s]")
-    print(f"Time range: {rr_data[0][0]} - {rr_data[-1][0]}")
+    t_start = datetime.fromtimestamp(rr_data[0][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+    t_end = datetime.fromtimestamp(rr_data[-1][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Time range: {t_start} - {t_end}")
 
     minute_count = len({(ts // 60000) for ts, _ in rr_data})
     print(f"Processing {minute_count} minutes...")
 
     t0 = time.monotonic()
-    rows = compute_minute_metrics(rr_data, enable_lf_hf=args.lf_hf, enable_dfa=args.dfa)
+    rows = compute_minute_metrics(
+        rr_data,
+        enable_lf_hf=args.lf_hf,
+        enable_dfa=args.dfa,
+        limit_minutes=args.limit_minutes,
+    )
     print(f"Minute metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
 
     t0 = time.monotonic()
