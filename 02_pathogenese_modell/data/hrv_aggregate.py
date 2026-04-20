@@ -11,6 +11,7 @@ from pathlib import Path
 
 import numpy as np
 from scipy.interpolate import CubicSpline
+from scipy.ndimage import median_filter
 from scipy.signal import welch
 
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
@@ -30,8 +31,16 @@ DFA_BOXES_ALPHA1 = {4, 6, 8, 10, 12, 16}
 # Artifact correction (PSD path only; base metrics such as RMSSD/pNN50 stay
 # on the raw gap-filtered values to preserve comparability with existing
 # queries).
-ARTIFACT_THRESHOLD = 0.20       # Malik rule
-MAX_ARTIFACT_FRACTION = 0.05    # reject window if exceeded
+#
+# Local-median detector (not Malik): ESC/NASPE 1996 Task Force leaves the
+# detection rule open, only the 5% window-reject and the interpolation
+# requirement are fixed. Nearest-neighbor rules (Malik) misclassify
+# physiological RSA swings -- especially during REM-dominated second half
+# of night -- as artifacts. A local median smooths across RSA oscillations
+# so only true spikes (ectopics / missed beats) produce a large deviation.
+ARTIFACT_MEDIAN_HALFWIDTH = 4   # 9-beat window (i-4 .. i+4)
+ARTIFACT_THRESHOLD_MS = 500     # |RR - local_median| > 500 ms -> artifact
+MAX_ARTIFACT_FRACTION = 0.05    # reject window if exceeded (Task Force 5%)
 
 
 def load_rr_data(db_path, device_id=None):
@@ -112,13 +121,20 @@ _TRAPZ = getattr(np, "trapezoid", np.trapz)
 
 
 def correct_artifacts(rr: np.ndarray) -> np.ndarray | None:
-    """Malik-rule artifact correction with linear interpolation.
+    """Local-median artifact correction with linear interpolation.
 
-    Flags beat i as artifactual when |RR[i]-RR[i-1]|/RR[i-1] > 0.20, then
-    replaces artifactual beats via linear interpolation between the nearest
-    non-artifactual neighbors (dropping would create phase jumps in the
-    tachogram -> spectral leakage). Rejects the window entirely if the
-    artifact fraction exceeds MAX_ARTIFACT_FRACTION (5%).
+    For each beat i, compute the median over a 9-beat window centered on i
+    and flag the beat as artifactual when |RR[i] - local_median| exceeds
+    ARTIFACT_THRESHOLD_MS (300 ms). Flagged beats are replaced by linear
+    interpolation between the nearest non-artifactual neighbors. The window
+    is rejected entirely if the artifact fraction exceeds
+    MAX_ARTIFACT_FRACTION (5%), per ESC/NASPE 1996 Task Force.
+
+    Rationale: the nearest-neighbor (Malik) rule conflates physiological
+    RSA swings with ectopic beats -- especially in REM-dominated sleep,
+    where beat-to-beat changes of >20% can be normal. A local median is
+    insensitive to smooth RSA oscillations but still isolates true spikes
+    (PVC, missed beat, compensatory pause).
 
     PSD path only; base metrics (RMSSD, pNN50, ...) keep the raw
     gap-filtered values.
@@ -128,9 +144,9 @@ def correct_artifacts(rr: np.ndarray) -> np.ndarray | None:
         return rr.astype(float, copy=True)
     rr = rr.astype(float, copy=True)
 
-    rel_diff = np.abs(np.diff(rr)) / rr[:-1]
-    artifact_mask = np.zeros(n, dtype=bool)
-    artifact_mask[1:] = rel_diff > ARTIFACT_THRESHOLD
+    window_size = 2 * ARTIFACT_MEDIAN_HALFWIDTH + 1
+    local_median = median_filter(rr, size=window_size, mode="nearest")
+    artifact_mask = np.abs(rr - local_median) > ARTIFACT_THRESHOLD_MS
 
     n_artifacts = int(artifact_mask.sum())
     if n_artifacts / n > MAX_ARTIFACT_FRACTION:
