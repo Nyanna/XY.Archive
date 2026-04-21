@@ -10,6 +10,7 @@ from datetime import datetime
 from pathlib import Path
 
 import numpy as np
+from astropy.timeseries import LombScargle
 from scipy.interpolate import CubicSpline
 from scipy.ndimage import median_filter
 from scipy.signal import welch
@@ -24,13 +25,21 @@ LFHF_MIN_BEATS = 150
 LFHF_WINDOW_MS = 5 * 60 * 1000
 VLF_MIN_BEATS = 300
 VLF_WINDOW_MS = 15 * 60 * 1000
+ULF_WINDOW_MS = 120 * 60 * 1000
+ULF_MIN_BEATS = 3600
+ULF1_BAND = (0.0005, 0.0033)
+ULF2_BAND = (0.0001, 0.0005)
+ULF_BAND = (0.0001, 0.0033)
+ULF_FREQ_MIN = 0.00005
+ULF_FREQ_MAX = 0.005
+ULF_N_FREQ = 512
 DFA_WINDOW = 200
 DFA_BOXES_ALL = [4, 6, 8, 10, 12, 16, 20, 24, 32, 48, 64]
 DFA_BOXES_ALPHA1 = {4, 6, 8, 10, 12, 16}
 
-# Artifact correction (PSD path only; base metrics such as RMSSD/pNN50 stay
-# on the raw gap-filtered values to preserve comparability with existing
-# queries).
+# Artifact correction (PSD path and VAGAL_BALANCE; base metrics such as
+# RMSSD/pNN50/SDNN stay on the raw gap-filtered values to preserve
+# comparability with existing queries).
 #
 # Local-median detector (not Malik): ESC/NASPE 1996 Task Force leaves the
 # detection rule open, only the 5% window-reject and the interpolation
@@ -41,6 +50,12 @@ DFA_BOXES_ALPHA1 = {4, 6, 8, 10, 12, 16}
 ARTIFACT_MEDIAN_HALFWIDTH = 4   # 9-beat window (i-4 .. i+4)
 ARTIFACT_THRESHOLD_MS = 500     # |RR - local_median| > 500 ms -> artifact
 MAX_ARTIFACT_FRACTION = 0.05    # reject window if exceeded (Task Force 5%)
+
+# VAGAL_BALANCE normalization: RMSSD/SDNN of healthy adults at rest
+# (Shaffer & Ginsberg 2017, Front Public Health, 5-min windows).
+# VAGAL_BALANCE = (RMSSD_nn / SDNN_nn) / VAGAL_BALANCE_REF, so >1 = vagotonic,
+# <1 = sympathicotonic relative to the healthy-adult reference.
+VAGAL_BALANCE_REF = 0.50
 
 
 def load_rr_data(db_path, device_id=None):
@@ -224,7 +239,66 @@ def compute_band_power(rr_values, freq_ranges, detrend="constant"):
     return result
 
 
-def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, limit_minutes=None):
+def compute_ulf_power(t_ms: np.ndarray, rr: np.ndarray) -> dict | None:
+    """Lomb-Scargle ULF power on irregularly-sampled RR with gaps.
+
+    Operates directly on the irregular beat timestamps (no spline
+    interpolation) so that multi-minute gaps reduce SNR instead of
+    producing spurious low-frequency power. Literature-conform for
+    gappy HRV (Laguna et al. 1998; Clifford & Tarassenko 2005).
+
+    Returns {'ulf_ms2', 'ulf1_ms2', 'ulf2_ms2'} in ms², or the same
+    dict with None values if artefact fraction > 5 % or the window
+    is too short / degenerate.
+    """
+    none_result = {"ulf_ms2": None, "ulf1_ms2": None, "ulf2_ms2": None}
+    if rr.size < 30:
+        return none_result
+
+    rr_corr = correct_artifacts(rr)
+    if rr_corr is None or rr_corr.size < 30:
+        return none_result
+
+    t_sec = (t_ms.astype(np.float64) - float(t_ms[0])) / 1000.0
+    T = float(t_sec[-1] - t_sec[0])
+    if T <= 0:
+        return none_result
+
+    slope, intercept = np.polyfit(t_sec, rr_corr, 1)
+    rr_detrended = rr_corr - (slope * t_sec + intercept)
+
+    freqs = np.linspace(ULF_FREQ_MIN, ULF_FREQ_MAX, ULF_N_FREQ)
+
+    # astropy's method='fast' uses a non-uniform FFT (Press & Rybicki 1989),
+    # O(N_beats × log N_freq) instead of scipy's O(N_beats × N_freq).
+    # Requires uniform freq grid with samples_per_peak = 1/(df×T) >= 5,
+    # which is satisfied here (~14).
+    try:
+        pgram = LombScargle(
+            t_sec, rr_detrended, normalization='psd',
+        ).power(freqs, method='fast')
+    except Exception:
+        return none_result
+
+    # Parseval-konform mit Welch scaling='density': ∫ PSD df ≈ var(rr).
+    # LombScargle(normalization='psd') integriert zu var/2 über das ganze
+    # Band (empirisch am Sinus-Test verifiziert), Faktor 2 → ms²/Hz.
+    psd = pgram * 2.0
+
+    def _band(f_lo, f_hi):
+        mask = (freqs >= f_lo) & (freqs <= f_hi)
+        if not mask.any():
+            return None
+        return float(_TRAPZ(psd[mask], freqs[mask]))
+
+    return {
+        "ulf_ms2":  _band(*ULF_BAND),
+        "ulf1_ms2": _band(*ULF1_BAND),
+        "ulf2_ms2": _band(*ULF2_BAND),
+    }
+
+
+def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable_ulf=False, limit_minutes=None):
     """Aggregate HRV metrics per minute.
 
     limit_minutes: if set, only the first N minute bins are processed.
@@ -266,6 +340,7 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, limit_
     time_lf = 0.0
     time_hf = 0.0
     time_vlf = 0.0
+    time_ulf = 0.0
     time_dfa = 0.0
     t_loop_start = time.monotonic()
     log_interval = max(1, total_minutes // 20)  # ~20 progress updates
@@ -313,6 +388,23 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, limit_
         sdnn = std_rr  # equivalent to population stddev
         rmssd_sdnn_ratio = rmssd / sdnn if sdnn > 0 else None
 
+        # VAGAL_BALANCE: Task-Force-konform auf NN-Intervallen nach Artefakt-
+        # Korrektur. NULL bei RR-Gap > GAP_THRESHOLD_MS in der Minute, bei
+        # Artefakt-Anteil > 5% (correct_artifacts liefert dann None) oder bei
+        # degenerierten RMSSD/SDNN.
+        vagal_balance = None
+        ts_minute = all_ts[lo:hi]
+        has_gap = ts_minute.size > 1 and int(np.diff(ts_minute).max()) > GAP_THRESHOLD_MS
+        if not has_gap:
+            rr_nn = correct_artifacts(rr)
+            if rr_nn is not None and rr_nn.size >= 2:
+                d_nn = np.diff(rr_nn)
+                if d_nn.size > 0:
+                    rmssd_nn = float(math.sqrt(np.mean(d_nn ** 2)))
+                    sdnn_nn = float(rr_nn.std(ddof=0))
+                    if rmssd_nn > 0 and sdnn_nn > 0:
+                        vagal_balance = (rmssd_nn / sdnn_nn) / VAGAL_BALANCE_REF
+
         time_basic += time.monotonic() - t_step
 
         # LF/HF: 5-min window; VLF: 15-min window (band-specific resolution)
@@ -351,6 +443,25 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, limit_
 
             lfhf = lf / hf if (lf is not None and hf is not None and hf > 0) else None
 
+        # ULF: 120-min sliding window, Lomb-Scargle on irregular RR samples
+        ulf_ms2, ulf1_ms2, ulf2_ms2 = None, None, None
+        if enable_ulf:
+            t_ulf = time.monotonic()
+            win_ulf_start = minute_start - 60 * 60 * 1000
+            win_ulf_end = minute_start + 60 * 60 * 1000
+            i_ulf_lo = int(np.searchsorted(all_ts, win_ulf_start, side="left"))
+            i_ulf_hi = int(np.searchsorted(all_ts, win_ulf_end, side="left"))
+            if (i_ulf_hi - i_ulf_lo) >= ULF_MIN_BEATS:
+                ulf_res = compute_ulf_power(
+                    all_ts[i_ulf_lo:i_ulf_hi].astype(np.int64),
+                    all_rr[i_ulf_lo:i_ulf_hi].astype(float),
+                )
+                if ulf_res is not None:
+                    ulf_ms2 = ulf_res["ulf_ms2"]
+                    ulf1_ms2 = ulf_res["ulf1_ms2"]
+                    ulf2_ms2 = ulf_res["ulf2_ms2"]
+            time_ulf += time.monotonic() - t_ulf
+
         # DFA: last 200 RR before the end of the minute (optional)
         dfa_alpha1 = None
         if enable_dfa:
@@ -367,7 +478,7 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, limit_
                 f"  Progress: {mi + 1}/{total_minutes} ({pct:.0f}%) | "
                 f"elapsed {elapsed:.1f}s | "
                 f"basic {time_basic:.1f}s  lf {time_lf:.1f}s  hf {time_hf:.1f}s  "
-                f"vlf {time_vlf:.1f}s  dfa {time_dfa:.1f}s"
+                f"vlf {time_vlf:.1f}s  ulf {time_ulf:.1f}s  dfa {time_dfa:.1f}s"
             )
 
         results.append({
@@ -384,10 +495,14 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, limit_
             "rmssd_pct": rmssd_pct,
             "sdnn_ms": sdnn,
             "rmssd_sdnn_ratio": rmssd_sdnn_ratio,
+            "vagal_balance": vagal_balance,
             "pnn50": pnn50,
             "vlf_ms2": vlf,
             "lf_ms2": lf,
             "hf_ms2": hf,
+            "ulf_ms2": ulf_ms2,
+            "ulf1_ms2": ulf1_ms2,
+            "ulf2_ms2": ulf2_ms2,
             "lf_hf_ratio": lfhf,
             "dfa_alpha1": dfa_alpha1,
         })
@@ -402,6 +517,10 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, limit_
         print(f"  VLF (Welch, 15-min win): {time_vlf:.2f}s")
     else:
         print(f"  LF/HF/VLF (Welch):       disabled")
+    if enable_ulf:
+        print(f"  ULF (Lomb-Scargle, 2h):  {time_ulf:.2f}s")
+    else:
+        print(f"  ULF (Lomb-Scargle):      disabled")
     if enable_dfa:
         print(f"  DFA alpha1:              {time_dfa:.2f}s")
     else:
@@ -431,24 +550,30 @@ def write_results(db_path, rows):
             RMSSD_PCT REAL,
             SDNN_MS REAL,
             RMSSD_SDNN_RATIO REAL,
+            VAGAL_BALANCE REAL,
             PNN50 REAL,
             VLF_MS2 REAL,
             LF_MS2 REAL,
             HF_MS2 REAL,
+            ULF_MS2 REAL,
+            ULF1_MS2 REAL,
+            ULF2_MS2 REAL,
             LF_HF_RATIO REAL,
             DFA_ALPHA1 REAL
         )
     """)
     cur.executemany(
         "INSERT INTO HRV_MINUTE_AGGREGATED VALUES "
-        "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         [
             (
                 r["timestamp_ms"], r["n_beats"], r["hr_bpm"], r["avg_rr_ms"],
                 r["min_rr_ms"], r["max_rr_ms"], r["stddev_rr_ms"], r["rmssd_ms"],
                 r["ln_rmssd"], r["vagal_index"], r["rmssd_pct"], r["sdnn_ms"],
-                r["rmssd_sdnn_ratio"], r["pnn50"], r["vlf_ms2"], r["lf_ms2"],
-                r["hf_ms2"], r["lf_hf_ratio"], r["dfa_alpha1"],
+                r["rmssd_sdnn_ratio"], r["vagal_balance"], r["pnn50"],
+                r["vlf_ms2"], r["lf_ms2"], r["hf_ms2"],
+                r["ulf_ms2"], r["ulf1_ms2"], r["ulf2_ms2"],
+                r["lf_hf_ratio"], r["dfa_alpha1"],
             )
             for r in rows
         ],
@@ -479,6 +604,13 @@ def main():
         "--dfa",
         action="store_true",
         help="Enable DFA alpha1 computation (default: off)",
+    )
+    parser.add_argument(
+        "--ulf",
+        action="store_true",
+        help="Enable ULF spectral analysis (2 h sliding window, Lomb-Scargle on "
+             "irregular RR samples). Outputs ULF_MS2 + ULF1_MS2 + ULF2_MS2. "
+             "Default: off (very slow).",
     )
     parser.add_argument(
         "--limit-minutes",
@@ -517,6 +649,7 @@ def main():
         rr_data,
         enable_lf_hf=args.lf_hf,
         enable_dfa=args.dfa,
+        enable_ulf=args.ulf,
         limit_minutes=args.limit_minutes,
     )
     print(f"Minute metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
