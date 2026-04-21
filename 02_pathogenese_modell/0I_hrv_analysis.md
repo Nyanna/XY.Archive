@@ -430,11 +430,11 @@ Die methodische Einfachheit der Transformation — zwei Divisionen aus Standardp
 
 ### **I.6 Empirische HRV-Datenanalyse — April 2026**
 
-Dieser Teil analysiert sechs IBI-basierte HRV-Datensätze (vier Nächte, zwei Tage) aus dem Zeitraum 16.–20. April 2026. Die Aufzeichnungen stammen von einem Coospo H808S-Brustgurt mit Beat-to-Beat-Auflösung; die Spektralanalyse erfolgte in gleitenden 5-Minuten-Fenstern. Die Analyse testet Vorhersagen des pathogenetischen Modells zur B7-Amplitudeninstabilität, zur pharmakologischen Modulation durch DPH und Naratriptan, und zur Dissoziation von Tiefschlaf-Staging und autonomer Modulationsqualität.
+Dieser Teil analysiert sechs IBI-basierte HRV-Datensätze (vier Nächte, zwei Tage) aus dem Zeitraum 16.–20. April 2026. Die Aufzeichnungen stammen von einem Coospo H9Z-Brustgurt mit Beat-to-Beat-Auflösung; die Spektralanalyse erfolgte in gleitenden 5-Minuten-Fenstern. Die Analyse testet Vorhersagen des pathogenetischen Modells zur B7-Amplitudeninstabilität, zur pharmakologischen Modulation durch DPH und Naratriptan, und zur Dissoziation von Tiefschlaf-Staging und autonomer Modulationsqualität.
 
 **Methodik**
 
-**Hardware:** Coospo H808S Brustgurt (EKG-basiert, Beat-to-Beat IBI-Erfassung). Kein PPG — die absoluten Power-Werte sind nicht artefaktgedämpft.
+**Hardware:** Coospo H9Z Brustgurt (EKG-basiert, Beat-to-Beat IBI-Erfassung). Kein PPG — die absoluten Power-Werte sind nicht artefaktgedämpft.
 
 **Spektralanalyse:** Gleitende 5-Minuten-Fenster. Standard-Bandgrenzen: HF 0.15–0.4 Hz, LF 0.04–0.15 Hz, VLF <0.04 Hz. Zusätzlich: pNN50 (Prozent aufeinanderfolgender NN-Intervalle mit >50 ms Differenz) als Zeitdomänen-Proxy für vagale Modulation.
 
