@@ -30,7 +30,7 @@ Wichtige Projektionsfelder aus B7:
 
 Die somatodendritische Kompartimentierung der 5-HT1A-Rezeptoren innerhalb des B7-Kerns ist immunhistochemisch seit den Arbeiten von Sotelo et al. (1990) und Riad et al. (2000) etabliert. Somit existiert im B7 sowohl die Quelle der Serotonintransmission als auch der Schaltkreis, der diese Quelle autoinhibitorisch reguliert – die strukturelle Voraussetzung für einen eigenständigen Oszillator.
 
-### **I.1 Die 5-HT1A-Autorezeptor-Rückkopplung: Signaltransduktion und Kinetik
+### **I.1 Die 5-HT1A-Autorezeptor-Rückkopplung: Signaltransduktion und Kinetik**
 
 **Rezeptorklasse und G-Protein-Kopplung**
 

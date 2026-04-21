@@ -57,6 +57,13 @@ MAX_ARTIFACT_FRACTION = 0.05    # reject window if exceeded (Task Force 5%)
 # <1 = sympathicotonic relative to the healthy-adult reference.
 VAGAL_BALANCE_REF = 0.50
 
+# B7/B8 state classification (see temp/command.md). Two axes from LF/HF/VLF:
+#   B7B8_DOM = (HF - LF) / (HF + LF)   in [-1, +1]   B8-vs-B7 dominance
+#   B7B8_OFF = VLF / (LF + HF + VLF)   in [ 0,  1]   congruence-vs-divergence
+# Both NULL when Total < TOTAL_MIN (too little spectral power to classify).
+# Scale-dependent: Coospo/App N1-N3 ~3.0 ms²; N4 needs proportional scaling.
+TOTAL_MIN = 3.0
+
 
 def load_rr_data(db_path, device_id=None):
     conn = sqlite3.connect(db_path)
@@ -443,6 +450,16 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
 
             lfhf = lf / hf if (lf is not None and hf is not None and hf > 0) else None
 
+        # B7/B8 state axes (from existing 5-min LF/HF + 15-min VLF window).
+        # Both NULL if any band missing or total power below TOTAL_MIN.
+        b7b8_dom, b7b8_off = None, None
+        if lf is not None and hf is not None and vlf is not None:
+            total_power = lf + hf + vlf
+            if total_power >= TOTAL_MIN:
+                lf_plus_hf = lf + hf
+                b7b8_dom = 0.0 if lf_plus_hf == 0 else (hf - lf) / lf_plus_hf
+                b7b8_off = vlf / total_power
+
         # ULF: 120-min sliding window, Lomb-Scargle on irregular RR samples
         ulf_ms2, ulf1_ms2, ulf2_ms2 = None, None, None
         if enable_ulf:
@@ -504,6 +521,8 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
             "ulf1_ms2": ulf1_ms2,
             "ulf2_ms2": ulf2_ms2,
             "lf_hf_ratio": lfhf,
+            "b7b8_dom": b7b8_dom,
+            "b7b8_off": b7b8_off,
             "dfa_alpha1": dfa_alpha1,
         })
 
@@ -559,12 +578,14 @@ def write_results(db_path, rows):
             ULF1_MS2 REAL,
             ULF2_MS2 REAL,
             LF_HF_RATIO REAL,
+            B7B8_DOM REAL,
+            B7B8_OFF REAL,
             DFA_ALPHA1 REAL
         )
     """)
     cur.executemany(
         "INSERT INTO HRV_MINUTE_AGGREGATED VALUES "
-        "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         [
             (
                 r["timestamp_ms"], r["n_beats"], r["hr_bpm"], r["avg_rr_ms"],
@@ -573,7 +594,7 @@ def write_results(db_path, rows):
                 r["rmssd_sdnn_ratio"], r["vagal_balance"], r["pnn50"],
                 r["vlf_ms2"], r["lf_ms2"], r["hf_ms2"],
                 r["ulf_ms2"], r["ulf1_ms2"], r["ulf2_ms2"],
-                r["lf_hf_ratio"], r["dfa_alpha1"],
+                r["lf_hf_ratio"], r["b7b8_dom"], r["b7b8_off"], r["dfa_alpha1"],
             )
             for r in rows
         ],
