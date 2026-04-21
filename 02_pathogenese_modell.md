@@ -6119,6 +6119,94 @@ Die 20-Minuten-Periodizität fällt exakt in den vorhergesagten Bereich des 5-HT
 
 **Epistemischer Status:** Die 20-Minuten-Periodizität ist ein einzelner Datenpunkt (n=1, ein Tag). Die Stabilität über Tage und Nächte, die Inter-Individuen-Variabilität und die pharmakologische Modulierbarkeit der Periodizität sind noch zu prüfen. Die Übereinstimmung mit der modellierten Autorezeptor-Kinetik ist bemerkenswert, aber nicht beweisend — Thermoregulation und andere VLF-Quellen müssen differentialdiagnostisch ausgeschlossen werden.
 
+### **I.5 Zweidimensionale Zustandsrepräsentation: Dominanz und Interferenz**
+
+Die kategoriale Zustandsklassifikation (Abschnitt I.4) quantisiert den Zustandsraum in sechs diskrete Bins und verliert dabei Graduierungsinformation. Eine bessere Kompression der drei Spektralbänder in einen zweidimensionalen kontinuierlichen Zustandsraum ergibt sich aus zwei orthogonalen Achsen, die die autonome Output-Balance und die Oszillator-Stabilität separat erfassen.
+
+**Achse 1: Dominanz (autonome Balance)**
+
+```
+dominanz(t) = (HF(t) - LF(t)) / (HF(t) + LF(t))
+```
+
+Der Wertebereich reicht von -1 (reines LF, maximale sympathische Dominanz) bis +1 (reines HF, maximale vagale Dominanz). Null entspricht dem Gleichgewicht HF = LF. Die Achse misst nicht direkt die Aktivität der Raphekerne B7 oder B8, sondern die autonome Output-Balance — den Nettobeitrag des sympathischen vs. parasympathischen Arms zum kardialen Spektrum. Im Schlaf steigt die Dominanz nicht weil B8 stärker feuert (serotonerge Neurone reduzieren im NREM), sondern weil B7s sympathischer Drive wegfällt und der vagale Grundtonus überwiegt. Die Achsenbeschriftung ist daher korrekt als „+vagal / -sympathisch" zu lesen; die B7/B8-Attribution ist eine Modellinterpretation, keine direkte Messung.
+
+Division-by-Zero-Absicherung: Wenn HF + LF = 0 und Total ≥ TOTAL_MIN, dann dominanz = 0.0 (reines VLF, keine LF/HF-Aussage möglich).
+
+**Achse 2: Interferenz (Oszillator-Stabilität)**
+
+```
+interferenz(t) = VLF(t) / (LF(t) + HF(t) + VLF(t))
+```
+
+Der Wertebereich reicht von 0 (kein VLF-Anteil, maximale Kongruenz der schnellen Oszillatoren) bis 1 (reines VLF, maximale Divergenz). Im Amplitudenmodell ist dies das Maß für die Instabilität des B7-Autoreceptor-Feedback-Loops auf der VLF-Zeitskala. Der empirisch ermittelte individuelle Baseline-Wert liegt bei ~0.42 (Trait-Fingerabdruck über vier Nächte stabil, Abschnitt I.6).
+
+**Cutoff-Regel:** Wenn Total(t) < TOTAL_MIN (Default: 3.0 ms²), werden beide Achsen auf NULL gesetzt. Unterhalb dieser Schwelle ist jede Ratio-Berechnung rauschgetrieben und nicht interpretierbar. TOTAL_MIN ist skalierungsabhängig und muss bei geänderter App-Konfiguration oder Fenstergröße proportional angepasst werden.
+
+**Rückabbildung auf kategoriale Klassifikation:**
+
+Die Sechs-Klassen-Taxonomie aus Abschnitt I.4 ist ein Spezialfall der kontinuierlichen Darstellung. Die Schwelle dominanz = ±0.23 entspricht dem Punkt, an dem HF/Total = 0.4 bei LF/Total = 0.25 erreicht wird: (0.4 - 0.25) / (0.4 + 0.25) = 0.231. Die Interferenz-Schwelle bei 0.5 bleibt identisch. Damit gilt: B8-dominant = dominanz > 0.23 bei interferenz < 0.5; B7-dominant = dominanz < -0.23 bei interferenz < 0.5; Interferenz-Zone = interferenz ≥ 0.5; Balance-Zone = |dominanz| ≤ 0.23 bei interferenz < 0.5.
+
+**Empirische Validierung: Phasenraum-Darstellung**
+
+Die Darstellung des 19. April 2026 (24-Stunden-Aufzeichnung, Nacht + Tag) im Phasenraum (X = dominanz, Y = interferenz) zeigt zwei scharf getrennte Cluster:
+
+- **Nacht (00:00–06:30):** Dominanz +0.1 bis +0.8, Interferenz 0.1 bis 0.7. Der Cluster liegt im vagal-dominierten Quadranten mit variabler Interferenz. Die intranight Oszillation zwischen B8-Plateaus (unten rechts: hohe Dominanz, niedrige Interferenz) und VLF-Bursts (oben Mitte: mittlere Dominanz, hohe Interferenz) ist als vertikale Streuung sichtbar.
+
+- **Tag (07:00–23:59):** Dominanz -0.6 bis -0.9, Interferenz 0.3 bis 0.8. Ein dichter Cluster im sympathisch-dominierten Quadranten mit durchgehend erhöhter Interferenz. Bemerkenswert: die Variation liegt fast ausschließlich auf der Interferenz-Achse — die Dominanz-Dimension ist komprimiert.
+
+- **Nap (13:09–13:50):** Der einzige Brückenpunkt. Dominanz wandert von -0.5 durch Null bis +0.15 — der Moment, wo der sympathische Drive kurz nachlässt. Gleichzeitig steigt die Interferenz auf 0.82 — das Maximum des gesamten Tages. Der Nap-Kollaps ist im Phasenraum der Punkt maximaler Interferenz bei minimaler Dominanzbindung.
+
+**Prodromale Zustandsraum-Kompression**
+
+Die Analyse über mehrere aufeinanderfolgende Tage (16.–20. April) zeigt eine progressive Kompression der Dominanz-Achse auf -1 während der Wachstunden. Am 19. April ist die Dominanz am unteren Rand verankert (mean -0.68, median -0.68, std 0.24) — das System hat nur noch einen effektiven Freiheitsgrad (Interferenz), die Dominanz-Dimension ist kollabiert.
+
+Dieses Phänomen ist die Tagesauflösung des B7-Gain-Ramps im Phasenraum: der progressive Verlust der Dominanz-Varianz über Tage ist die prodromale Signatur, nicht ein einzelner Spike.
+
+**Prodromalmetrik: B7-Exposure und B7-Risk**
+
+Aus der zweidimensionalen Darstellung lassen sich zwei quantitative Prodromalmetriken ableiten:
+
+**B7-Exposure** — das Integral der Dominanz-Exkursion unter einem Schwellenwert θ, berechnet über die Wachminuten:
+
+```
+b7_exposure = Σ max(0, θ - dominanz(t))    für alle Wachminuten t mit dominanz(t) < θ
+```
+
+Mit θ = -0.6 (empirisch kalibriert: -0.6 entspricht LF/HF = 4.0, deutliche sympathische Übersteuerung). Eine Minute bei dominanz = -0.95 trägt 0.35 bei, eine bei -0.65 nur 0.05. Dies gewichtet tiefe Exkursionen überproportional — konsistent mit der Annahme, dass der physiologische Schaden nichtlinear mit der Dominanz-Tiefe skaliert.
+
+**Geltungsbereich:** Beide Metriken sind ausschließlich auf die Wachstunden (z. B. 07:00–23:00 oder ab LDX-Einnahme bis Schlaf) zu berechnen. Die nächtliche Dominanzverschiebung Richtung +vagal ist physiologisch und würde den prodromalen Effekt verdecken — konsistent mit der Tatsache, dass B7 im NREM seine Feuerrate physiologisch reduziert und damit nicht informativ für den Gain-Zustand ist.
+
+**Abgrenzung zur bestehenden Literatur**
+
+Die zweidimensionale Zustandsrepräsentation (Dominanz × Interferenz) hat kein direktes Vorbild in der publizierten Schlaf- oder Migräneforschung. Die bestehende Literatur lässt sich in drei Ansätze gliedern, die jeweils anders ansetzen:
+
+**(1) LF/HF-Ratio als skalarer sympathovagaler Index.** Die gesamte Migräne-HRV-Literatur (Zhang et al. 2021; Chuang et al. 2023; Mosek et al. 1999) verwendet die LF/HF-Ratio als eindimensionalen Marker der autonomen Balance. Dies entspricht funktionell der hier definierten Dominanz-Achse, jedoch ohne Normierung auf den Bereich [-1, +1] und ohne Trennung einer zweiten, orthogonalen Dimension. VLF wird in diesen Studien als separater Parameter mitberichtet, aber nie als eigenständige Achse eines interpretierten Zustandsraums operationalisiert. Die Frage *wie dominant ist der sympathische Arm* wird nicht von der Frage *wie instabil ist das System* getrennt.
+
+**(2) Multivariate ML-Klassifikatoren für HRV-basiertes Sleep-Staging.** Die Schlaf-HRV-Literatur (Radha et al. 2019; Xiao et al. 2013; Mendez et al. 2010) verwendet bis zu 41 HRV-Features als Input für neuronale Netze, Random Forests oder Hidden-Markov-Modelle. Mendez et al. erwähnen explizit einen „phase space of HRV parameters" — gemeint ist jedoch der mathematische Phasenraum der RR-Zeitreihe selbst (Poincaré-Plots, Return Maps), nicht ein physiologisch interpretierter Zustandsraum der autonomen Balance. Die Features dienen als Input für Black-Box-Klassifikatoren; die Dimensionsreduktion erfolgt durch den Algorithmus, nicht durch eine interpretierbare Kompression.
+
+**(3) Gruppenmittelwerte iktal vs. interiktal.** Alle publizierten Migräne-HRV-Studien vergleichen Gruppenmittelwerte zwischen Zuständen: iktal vs. interiktal vs. Kontrolle. Keine untersucht eine longitudinale intra-individuelle Trajektorie im Zustandsraum über Tage oder über einen Anfallszyklus. Die Konzeption, dass die prodromale Signatur nicht ein Schwellenwert eines einzelnen Parameters ist, sondern eine progressive Kompression des Zustandsraums (Varianzreduktion der Dominanz-Achse über Tage), existiert in der Primärliteratur nicht.
+
+**Drei Alleinstellungsmerkmale der vorliegenden Methodik:**
+
+Erstens: die Kompression von drei Spektralbändern (LF, HF, VLF) in zwei interpretierte, orthogonale Achsen — autonome Balance (Dominanz) und Oszillator-Stabilität (Interferenz) — statt drei uninterpretierter absoluter Power-Werte oder einer einzelnen Ratio. Die Trennung der Stabilitätsfrage von der Balancefrage ist der konzeptuelle Kern.
+
+Zweitens: die Phasenraum-Darstellung als minutenweise Trajektorie über Stunden und Tage statt als Gruppenmittelwert eines Querschnittsdesigns. Die prodromale Dynamik wird als Pfad durch den Zustandsraum sichtbar, nicht als Punktschätzer.
+
+Drittens: die Ableitung eines Exposure-Integrals (b7_risk) als gewichtete Metrik, die Tiefe und Dauer der sympathischen Exkursion. Kumulative Metriken dieser Art sind in der HRV-Forschung nicht etabliert; die Standardpraxis verwendet Epochenmittelwerte oder Gesamtnacht-Aggregate.
+
+Die methodische Einfachheit der Transformation — zwei Divisionen aus Standardparametern, keine Modellkalibrierung, keine Trainingsphase — steht in Kontrast zur konzeptuellen Neuheit der Interpretation. Die Achsen sind nicht neu; ihre orthogonale Kombination und die Phasenraum-Visualisierung als diagnostisches Werkzeug sind es.
+
+**Referenzen (Abgrenzung):**
+- Zhang M, et al. (2021). *Heart Rate Variability Analysis in Episodic Migraine: A Cross-Sectional Study.* Front Neurol 12: 647092.
+- Chuang CH, et al. (2023). *Abnormal heart rate variability and its application in predicting treatment efficacy in patients with chronic migraine.* Cephalalgia 43(11): 03331024231206781.
+- Mosek A, et al. (1999). *Autonomic Dysfunction in Migraineurs.* Headache 39: 108–117.
+- Radha M, et al. (2019). *Sleep stage classification from heart-rate variability using long short-term memory neural networks.* Sci Rep 9: 14149.
+- Xiao M, et al. (2013). *Sleep stages classification based on heart rate variability and random forest.* Biomed Signal Process Control 8: 624–633.
+- Mendez MO, et al. (2010). *Sleep staging classification based on HRV: time-variant analysis.* Conf Proc IEEE Eng Med Biol Soc 2009: 5862–5865.
+
+**Epistemischer Status:** Die Zweidimensionale Zustandsrepräsentation ist eine datengetriebene Kompression, keine modelltheoretische Ableitung. Die Achsen sind Verhältnisse der drei Standard-HRV-Spektralbänder und damit methodologisch gesichert. Die Interpretation als B7/B8-Proxy ist modellspezifisch. Der Schwellenwert θ = -0.6 ist aus einem einzelnen prodromalen Tag kalibriert und erfordert Validierung über weitere Zyklen. Die B7-Risk-Metrik als Prodromalmarker ist eine Arbeitshypothese. Die Abgrenzung zur bestehenden Literatur zeigt, dass die Methodik konzeptuell neu ist — entsprechend fehlt externe Validierung vollständig.
+
 **Literaturverzeichnis**
 
 **Anatomie, Rezeptoren, Signaltransduktion**
@@ -6167,7 +6255,7 @@ Die 20-Minuten-Periodizität fällt exakt in den vorhergesagten Bereich des 5-HT
 
 ---
 
-### **I.5 Empirische HRV-Datenanalyse — April 2026**
+### **I.6 Empirische HRV-Datenanalyse — April 2026**
 
 Dieser Teil analysiert sechs IBI-basierte HRV-Datensätze (vier Nächte, zwei Tage) aus dem Zeitraum 16.–20. April 2026. Die Aufzeichnungen stammen von einem Coospo H808S-Brustgurt mit Beat-to-Beat-Auflösung; die Spektralanalyse erfolgte in gleitenden 5-Minuten-Fenstern. Die Analyse testet Vorhersagen des pathogenetischen Modells zur B7-Amplitudeninstabilität, zur pharmakologischen Modulation durch DPH und Naratriptan, und zur Dissoziation von Tiefschlaf-Staging und autonomer Modulationsqualität.
 
@@ -6177,7 +6265,7 @@ Dieser Teil analysiert sechs IBI-basierte HRV-Datensätze (vier Nächte, zwei Ta
 
 **Spektralanalyse:** Gleitende 5-Minuten-Fenster. Standard-Bandgrenzen: HF 0.15–0.4 Hz, LF 0.04–0.15 Hz, VLF <0.04 Hz. Zusätzlich: pNN50 (Prozent aufeinanderfolgender NN-Intervalle mit >50 ms Differenz) als Zeitdomänen-Proxy für vagale Modulation.
 
-**Zustandsklassifikation:** Minutenweise Zuordnung zu B7/B8-Zuständen nach den Regeln in Abschnitt I.5. Schwellenwerte: B8-dominant (HF/Total > 0.4, LF/Total < 0.25), B7-dominant (LF/Total > 0.4, HF/Total < 0.25), Interferenz (VLF/Total > 0.5), Beide aktiv (HF > 0.3 und LF > 0.3), Both-off (Total < 3 ms²).
+**Zustandsklassifikation:** Minutenweise Zuordnung zu B7/B8-Zuständen nach den Regeln in Abschnitt I.4. Schwellenwerte: B8-dominant (HF/Total > 0.4, LF/Total < 0.25), B7-dominant (LF/Total > 0.4, HF/Total < 0.25), Interferenz (VLF/Total > 0.5), Beide aktiv (HF > 0.3 und LF > 0.3), Both-off (Total < 3 ms²).
 
 **Glättung:** 5-Minuten gleitender Mittelwert (zentriert) für Visualisierung, Rohdaten für Klassifikation und Statistik.
 
@@ -6362,6 +6450,10 @@ Die minutenweise VLF-Analyse des prodromalen Tages (20. April) zeigt eine regul�
 
 Der Datenpunkt DPH-Tagesintervention (20. April, 16:00) zeigt subjektive Klarheit bei unveränderter oder verschlechterter spektraler Signatur (LF/HF steigt nach DPH). Die Klarheit wird über den kortikalen H1-Pfad vermittelt (Rauschreduktion → PFC-Bandbreite frei), nicht über den autonomen Pfad. Konsequenz: subjektives Befinden ist kein verlässlicher Proxy für den B7-Zustand. Die Spektralanalyse ist dem Erleben epistemisch überlegen.
 
+**Befund 7: Die prodromale Signatur ist eine Zustandsraum-Kompression.**
+
+Die zweidimensionale Zustandsrepräsentation (Abschnitt I.5) zeigt, dass die prodromale Entwicklung über Tage nicht als einzelnes Schwellenereignis, sondern als progressive Kompression der Dominanz-Achse auf -1 während der Wachstunden sichtbar wird. Am prodromalen Tag (19. April) ist die Dominanz-Varianz auf std = 0.24 kollabiert; das System hat nur noch einen effektiven Freiheitsgrad. DPH stellt die Varianz wieder her, ohne den Mittelwert zu verschieben — es löst die Kompression, nicht die Ursache. Die abgeleitete Metrik b7_risk (interferenz-gewichtetes Exposure-Integral, Abschnitt I.5) ist ein Kandidat für einen prospektiven Prodromalmarker.
+
 **Offene Fragen:**
 
 1. Korreliert der VLF-Anteil (>42% vs <42%) über Nächte hinweg mit der Anfallszyklik? Das wäre der spektrale Proxy für die Schwebungsperiode.
@@ -6369,6 +6461,8 @@ Der Datenpunkt DPH-Tagesintervention (20. April, 16:00) zeigt subjektive Klarhei
 3. Gibt es ein Molekül, das den B7-Gain direkt moduliert (nicht nur die Downstream-Kaskade puffert)? Guanfacin (TAAR1) bleibt der offene Kandidat.
 4. Ist die 20-Minuten-Periodizität über Tage stabil oder verschiebt sie sich mit der Zyklusposition?
 5. Repliziert die nächtliche Kombination LDX+Doxepin die N3-Klarheit reproduzierbar?
+6. Validiert sich b7_risk als prospektiver Prodromalmarker über mehrere Zyklen? Kritischer Test: sagt ein b7_risk-Anstieg über aufeinanderfolgende Tage den nächsten Anfall vorher, bevor subjektive Prodrome auftreten?
+7. Ist die Zustandsraum-Kompression (Varianzreduktion der Dominanz-Achse in den Wachstunden) der sensitivere Frühindikator als b7_risk?
 
 **Anhang: Interaktive Dashboards**
 
