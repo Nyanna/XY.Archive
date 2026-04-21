@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XY.Archiv – Dashboards</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --border: #d1d9e0;
+    --border-muted: #d8dee4;
+    --surface: #f6f8fa;
+    --surface-hover: #eff2f5;
+    --accent: #0969da;
+    --accent-hover: #0550ae;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9198a1;
+      --border: #3d444d;
+      --border-muted: #262c36;
+      --surface: #151b23;
+      --surface-hover: #1f2630;
+      --accent: #4493f8;
+      --accent-hover: #58a6ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+                 Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--fg);
+    background: var(--bg);
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px clamp(12px, 2vw, 32px);
+  }
+  .intro, header {
+    max-width: 1012px;
+  }
+  header {
+    border-bottom: 1px solid var(--border-muted);
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 32px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-muted);
+  }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  .intro {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+  .intro ul { margin: 4px 0 12px 0; padding-left: 24px; }
+  .intro li { margin-bottom: 4px; }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--fg);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    font-family: inherit;
+  }
+  .btn:hover {
+    background: var(--surface-hover);
+    border-color: var(--muted);
+  }
+  details {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  summary {
+    padding: 12px 16px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+    border-bottom: 1px solid transparent;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 4px;
+    color: var(--muted);
+    transition: transform 0.15s ease;
+    flex-shrink: 0;
+  }
+  details[open] > summary::before {
+    transform: rotate(90deg);
+  }
+  details[open] > summary {
+    border-bottom-color: var(--border-muted);
+  }
+  summary:hover {
+    background: var(--surface-hover);
+  }
+  .summary-main {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .summary-title {
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .summary-sub {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .summary-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 3px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    flex-shrink: 0;
+  }
+  .summary-link:hover {
+    background: var(--surface-hover);
+    text-decoration: underline;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 3px 8px;
+    border-radius: 999px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .tag-night { background: #1f3a68; color: #d0e3ff; }
+  .tag-day   { background: #6b4e1d; color: #ffe8bf; }
+  .tag-event { background: #cf222e; color: #ffffff; }
+  @media (prefers-color-scheme: light) {
+    .tag-night { background: #ddebff; color: #0b3b78; }
+    .tag-day   { background: #fff4d8; color: #6b4e1d; }
+  }
+  .desc {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border-muted);
+    background: var(--bg);
+  }
+  .desc p { margin: 0 0 8px; }
+  .desc p:last-child { margin-bottom: 0; }
+  .metrics-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0 4px;
+  }
+  .chip {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11px;
+    background: var(--surface);
+    border: 1px solid var(--border-muted);
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: var(--muted);
+  }
+  .chip strong { color: var(--fg); font-weight: 600; }
+  .iframe-wrap {
+    padding: 0;
+    background: var(--bg);
+  }
+  iframe {
+    width: 100%;
+    height: 720px;
+    border: 0;
+    display: block;
+    background: #ffffff;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-muted);
+    color: var(--muted);
+    font-size: 12px;
+    max-width: 1012px;
+  }
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    background: var(--surface);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-hover); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>XY.Archiv – Dashboards</h1>
+  <p class="muted">Interaktive Spektral-Dashboards zur HRV-Analyse (April 2026)</p>
+</header>
+
+<section class="intro">
+  <p>
+    Diese Seite bündelt interaktive Dashboards, die eine zusammenhängende Sequenz aus vier
+    Nächten und zwei Tagen dokumentieren — eine empirische Falsifikationsstudie zum
+    DPH-Gain-Modulator-Modell aus Anhang&nbsp;J des Pathogenese-Modells (Kapitel&nbsp;<code>0I_hrv_analysis.md</code>).
+    Datenbasis: Coospo H808S IBI-Aufzeichnung, 5-min-Fensterspektralanalyse, Zustandsklassifikation
+    nach B7/B8-Dominanz.
+  </p>
+  <p>
+    Pharmakologische Konditionen und Hypothese im Überblick:
+  </p>
+  <ul>
+    <li><strong>N1 (16.04.)</strong> – DPH bei niedriger B7-Zyklusposition</li>
+    <li><strong>N2 (18.04.)</strong> – Desloratadin als unbehandelte Baseline (keine BHS-Penetration)</li>
+    <li><strong>N3 (19.04.)</strong> – DPH + Naratriptan: prodromaler B7-Kollaps abgefangen</li>
+    <li><strong>Tag 19.04.</strong> – B7-Wiederanfahrt nach Pharmako-Shutdown</li>
+    <li><strong>N4 (20.04.)</strong> – DPH allein bei hohem B7-Ausgangspegel (Falsifikationspunkt)</li>
+    <li><strong>Tag 20.04.</strong> – Prodromale Kaskade mit VLF-Kollaps und DPH-Tagesintervention</li>
+  </ul>
+  <p class="muted">
+    Alle Dashboards sind zunächst eingeklappt. <em>Alle aufklappen</em> öffnet sämtliche Panels
+    gleichzeitig; <em>Direkt öffnen</em> lädt das jeweilige Dashboard in einem neuen Tab.
+    iFrames werden beim Aufklappen lazy geladen.
+  </p>
+</section>
+
+<section>
+  <div class="section-header">
+    <h2 style="border:0; margin:0; padding:0;">Verlauf 16.–20. April 2026</h2>
+    <button class="btn" data-toggle="dashboards">Alle aufklappen</button>
+  </div>
+  <div id="dashboards" style="margin-top: 12px;"></div>
+</section>
+
+<footer>
+  Kontext und vollständige Interpretation: <code>02_pathogenese_modell/0I_hrv_analysis.md</code> (Anhang J).
+  Rohdaten unter <code>02_pathogenese_modell/data/</code>.
+</footer>
+
+</div>
+
+<script>
+  const dashboards = [
+    {
+      file: "dashboard_N1_16apr_DPH.html",
+      title: "Nacht 1 — 16. April 2026 (DPH)",
+      sub: "Diphenhydramin · B7 niedrig (Zyklusposition)",
+      tag: { text: "Nacht", cls: "tag-night" },
+      chips: [
+        ["HR mean", "64.6 bpm"],
+        ["HR min", "44.6 bpm"],
+        ["VLF%", "42.0"],
+        ["B7-dom", "2.4%"],
+        ["B8-dom", "21.3%"],
+        ["Typ-2", "12 min"]
+      ],
+      notes: [
+        "Geordnete Zyklik: saubere B8-dominante Plateaus (HR bis 51 bpm, pNN50 74%) alternieren mit Interferenz-Blöcken. Die ersten 5 Stunden tragen den Hauptanteil der glymphatischen Clearance.",
+        "Tiefster HR-Nadir aller vier Nächte. Die niedrige B7-Dominanz (2.4%) wurde initial DPH zugeschrieben — der spätere N4-Vergleich zeigt, dass dies die Zyklusposition reflektiert, nicht die Pharmakologie."
+      ]
+    },
+    {
+      file: "dashboard_N2_18apr_Deslor.html",
+      title: "Nacht 2 — 18. April 2026 (Desloratadin)",
+      sub: "2.-Generations-Antihistaminikum ohne BHS-Penetration · Unbehandelte Baseline",
+      tag: { text: "Nacht", cls: "tag-night" },
+      chips: [
+        ["HR mean", "67.1 bpm"],
+        ["HR min", "45.7 bpm"],
+        ["VLF%", "42.4"],
+        ["B7-dom", "5.1%"],
+        ["B8-dom", "20.7%"],
+        ["Typ-2", "22 min"]
+      ],
+      notes: [
+        "Globale Spektralproportionen nahezu identisch mit N1 (VLF 42.4% vs 42.0%) trotz abweichender Pharmakologie — Hinweis auf einen stabilen individuellen 42%-VLF-Fingerabdruck.",
+        "B7-Dominanz verdoppelt gegenüber N1 (5.1% vs 2.4%). Widerlegt retrospektiv die Attribution der N1-Befunde an DPH. Einschlaf-HR-Spike auf 95 bpm, progressiver VLF-Anstieg in der zweiten Nachthälfte."
+      ]
+    },
+    {
+      file: "dashboard_N3_19apr_DPH_Triptan.html",
+      title: "Nacht 3 — 19. April 2026 (DPH + Naratriptan)",
+      sub: "Prodromaler B7-Kollaps abgefangen · Stammhirn-Ziehen + retrobulbulärer Schmerz rechts ab Abend",
+      tag: { text: "Event", cls: "tag-event" },
+      chips: [
+        ["HR mean", "67.8 bpm"],
+        ["VLF%", "41.6"],
+        ["B7-dom", "0.9%"],
+        ["B8-dom", "38.6%"],
+        ["LF/HF", "0.63"],
+        ["Typ-2", "65 min"]
+      ],
+      notes: [
+        "Diametral anders als N1/N2: B7 nahezu absent (0.9%), B8 nominell dominant. Die B8-Dominanz entsteht nicht durch starke B8-Aktivität, sondern durch noch stärkeres B7-Fehlen.",
+        "65 Minuten Typ-2-Tiefschlaf — das ANS ist funktionell silent. Körperliche Vorbelastung (Sperrmüll, Gartenarbeit) hält HR trotz B8-Dominanz bei 67.8 bpm.",
+        "Kritische Reinterpretation: Initial als „DPH+Triptan hat B7 supprimiert" gelesen. Die spätere N4-Analyse zeigt: B7 war am Zykluspunkt des natürlichen Kollapses. Die Medikation hat die Downstream-Kaskade (CSD, ANS-Destabilisierung) gepuffert, nicht den Kollaps verhindert."
+      ]
+    },
+    {
+      file: "dashboard_Tag19_post_abfang.html",
+      title: "Tag 19. April 2026 — B7-Wiederanfahrt",
+      sub: "Post-Abfang nach DPH+Naratriptan-Shutdown · LDX reguläre Dosis",
+      tag: { text: "Tag", cls: "tag-day" },
+      chips: [
+        ["07–09 total", "2 ms²"],
+        ["16–18 total", "13 ms²"],
+        ["Nap 13:19", "HR 81, Typ-2"],
+        ["τ Reonset", "~10 h"]
+      ],
+      notes: [
+        "Zeitraffer der B7-Resynchronisation. 07–09 Uhr (Autofahrt): Total Power 2 ms², ANS spektral stumm, pNN50 0% — 4 Stunden Fahrt ohne messbare autonome Modulation bei subjektiver Funktionalität (LDX-PFC-Schutz kompensiert fehlenden Raphe-Drive).",
+        "Ab 11 Uhr langsames LF-Anlaufen, Nap 13:09–13:45 als reiner Typ-2 mit VLF-Reonset ab 13:36. Ab 17 Uhr B7 vollständig online, sofort im Interferenzmodus — Phasenbeziehung zu B8 nie korrigiert. Zeitkonstante der Wiederanfahrt: ~10 h."
+      ]
+    },
+    {
+      file: "dashboard_N4_20apr_DPH.html",
+      title: "Nacht 4 — 20. April 2026 (DPH allein)",
+      sub: "DPH ohne Triptan · B7-Gain durchschlägt · Grogginess und Wackelkopf am Morgen",
+      tag: { text: "Nacht", cls: "tag-night" },
+      chips: [
+        ["HR mean", "68.9 bpm"],
+        ["VLF%", "45.4"],
+        ["B7-dom", "8.6%"],
+        ["B8-dom", "20.0%"],
+        ["Typ-2", "0 min"],
+        ["Wake-HR", "117 bpm"]
+      ],
+      notes: [
+        "Entscheidender Falsifikationspunkt für das DPH-als-Gain-Modulator-Modell: identisches Molekül, identische Dosis wie N1 — aber B7-Dominanz (8.6%) höher als die unbehandelte Desloratadin-Baseline (5.1%). VLF erstmals über der 42%-Baseline.",
+        "Keine einzige Typ-2-Episode, durchgehend moduliert. HR-Spike 117 bpm beim Erwachen, Grogginess und Wackelkopf als Prodromal-Symptomatik.",
+        "Interpretation: DPH hat eine Gain-Decke, keine Gain-Nullung. Bei niedrigem B7-Ausgangspegel (N1) reicht die Decke; bei hohem Pegel (N4) liegt B7 darüber. Erklärt, warum N3 das Triptan als notwendige Erweiterung benötigte."
+      ]
+    },
+    {
+      file: "dashboard_Tag20_prodromal.html",
+      title: "Tag 20. April 2026 — Prodromale Kaskade",
+      sub: "VLF-Kollaps im Nap · DPH 16:00 als Tagesintervention · 20-min Autorezeptor-Rhythmus",
+      tag: { text: "Tag", cls: "tag-day" },
+      chips: [
+        ["VLF Peak", "13433 ms²"],
+        ["VLF Median-IPI", "20 min"],
+        ["DPH", "16:00"],
+        ["Flush", "16:37"],
+        ["VLF-Nadir", "669"]
+      ],
+      notes: [
+        "Dokumentiertes Schwellenereignis: VLF explodiert im Nap von 969 auf 13433 ms² in 6 Minuten. HF-Gegenreaktion, danach sympathische Entfesselung (HR 119, LF/HF > 8). B7-Gain überschreitet Autoreceptor-Rückkopplungskapazität.",
+        "20-Minuten-VLF-Rhythmus über den gesamten Tag (n=26 Peaks, Median 20 min, Mean 23 min) — exakt im vorhergesagten Bereich des 5-HT1A-Autorezeptor-Grenzzyklus (T ≈ 2τ–4τ bei τ = 10–20 min).",
+        "DPH-Tagesintervention 16:00: Stammhirn-Ziehen verschwindet, Hitzewelle 16:37 korreliert mit VLF-Nadir (669 ms²). Subjektive Klarheit dissoziiert von spektraler Messung — LF/HF steigt nach DPH. Kortikaler H1-Pfad und autonomer Pfad sind unabhängig."
+      ]
+    }
+  ];
+
+  function buildCards() {
+    const container = document.getElementById("dashboards");
+    dashboards.forEach(d => {
+      const details = document.createElement("details");
+
+      const summary = document.createElement("summary");
+
+      const tag = document.createElement("span");
+      tag.className = "tag " + d.tag.cls;
+      tag.textContent = d.tag.text;
+      summary.appendChild(tag);
+
+      const main = document.createElement("div");
+      main.className = "summary-main";
+      const title = document.createElement("span");
+      title.className = "summary-title";
+      title.textContent = d.title;
+      const sub = document.createElement("span");
+      sub.className = "summary-sub";
+      sub.textContent = d.sub;
+      main.appendChild(title);
+      main.appendChild(sub);
+      summary.appendChild(main);
+
+      const link = document.createElement("a");
+      link.className = "summary-link";
+      link.href = d.file;
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.textContent = "Direkt öffnen ↗";
+      link.addEventListener("click", e => e.stopPropagation());
+      summary.appendChild(link);
+
+      details.appendChild(summary);
+
+      const desc = document.createElement("div");
+      desc.className = "desc";
+
+      if (d.chips && d.chips.length) {
+        const row = document.createElement("div");
+        row.className = "metrics-row";
+        d.chips.forEach(([k, v]) => {
+          const c = document.createElement("span");
+          c.className = "chip";
+          c.innerHTML = k + " <strong>" + v + "</strong>";
+          row.appendChild(c);
+        });
+        desc.appendChild(row);
+      }
+
+      d.notes.forEach(n => {
+        const p = document.createElement("p");
+        p.textContent = n;
+        desc.appendChild(p);
+      });
+
+      details.appendChild(desc);
+
+      const wrap = document.createElement("div");
+      wrap.className = "iframe-wrap";
+      details.appendChild(wrap);
+
+      details.addEventListener("toggle", () => {
+        if (details.open && !wrap.dataset.loaded) {
+          const iframe = document.createElement("iframe");
+          iframe.src = d.file;
+          iframe.loading = "lazy";
+          iframe.title = d.title;
+          wrap.appendChild(iframe);
+          wrap.dataset.loaded = "1";
+        }
+      });
+
+      container.appendChild(details);
+    });
+  }
+
+  buildCards();
+
+  document.querySelectorAll("button[data-toggle]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const target = document.getElementById(btn.dataset.toggle);
+      const items = target.querySelectorAll("details");
+      const anyClosed = Array.from(items).some(d => !d.open);
+      items.forEach(d => { d.open = anyClosed; });
+      btn.textContent = anyClosed ? "Alle einklappen" : "Alle aufklappen";
+    });
+  });
+</script>
+</body>
+</html>
