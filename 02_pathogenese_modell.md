@@ -6471,7 +6471,7 @@ Die HR bleibt trotz B8-Dominanz bei 67.8 bpm — paradox, aber erklärbar durch 
 | Interferenz | 43.1% |
 | Typ-2 amodal | 0 min |
 
-**Anmerkung zu den absoluten Power-Werten:** N4 zeigt um Faktor 250–450 höhere absolute ms²-Werte als N1–N3. Dies ist nicht geklärt. Die relativen Proportionen und die Zustandsklassifikation sind weiterhin vergleichbar.
+**Anmerkung zu den absoluten Power-Werten:** N4 zeigt um Faktor 250–450 höhere absolute ms²-Werte als N1–N3. Der Algorhytmus zur Bandauflösung wurde optimiert. Die relativen Proportionen und die Zustandsklassifikation sind weiterhin vergleichbar.
 
 **Befundmuster:** Dieser Datensatz ist der entscheidende Falsifikationspunkt für das DPH-als-Gain-Modulator-Modell. DPH bei hohem B7-Ausgangspegel: B7 feuert durch. 8.6% B7-Dominanz — höher als die unbehandelte Desloratadin-Nacht (5.1%). Kein einziger Typ-2-Block; die gesamte Nacht ist durchmoduliert. VLF steigt erstmals über die 42%-Baseline auf 45.4%.
 
