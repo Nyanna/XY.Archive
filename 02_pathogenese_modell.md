@@ -6018,7 +6018,7 @@ Aus der Konvergenz der obigen Kapitel lassen sich die folgenden prüfbaren These
 
 > **These 5**: Wirksame zentrale pharmakologische Intervention (z. B. DPH, Ergot-Alkaloide, Triptane) entkoppelt die oszillatorische Kohärenz, nicht notwendigerweise die Oszillator-Amplitude. Entsprechend ist die **ULF2-Varianz (ULF2-CV)** ein sensitiverer Interventionsmarker als der ULF2-Mittelwert; ein gleichzeitiger Anstieg von ULF1 wäre konsistent mit Wiederherstellung der langsameren homöostatischen Bandbreite.
 
-### **I.4 Epistemische Einordnung**
+**Epistemische Einordnung**
 
 Diese Synthese verbindet drei Literaturlinien:
 
@@ -6029,6 +6029,95 @@ Diese Synthese verbindet drei Literaturlinien:
 3. **Inferenz, nicht direkt belegt**: Die explizite Kopplung einer B7-Autorezeptor-Grenzzyklus-Aktivität auf das ULF2-HRV-Band als prodromaler Biomarker. Diese Brücke ist physiologisch plausibel, in der Primärliteratur jedoch nicht als etabliertes Messparadigma verankert. Die Brücke ist das Arbeitsgebiet der nachgelagerten Datenanalyse, nicht ein Zitat.
 
 Die Nützlichkeit dieser Konzeption bemisst sich an ihrer prospektiven Vorhersagekraft: ob der vorhergesagte ULF2-Peak tatsächlich prodromal und spezifisch ist, ob er pharmakologisch interpretierbar moduliert wird, und ob er zwischen Individuen konsistent bleibt.
+
+### **I.4 Zustandsklassifikation: B7/B8-Beteiligung aus dem Spektralprofil**
+
+Die minutenweise Klassifikation des autonomen Zustands anhand der relativen Verteilung von HF, LF und VLF erlaubt eine Zuordnung zur Aktivität der Raphekerne B7 und B8. Die folgende Taxonomie operiert auf den relativen Anteilen am Gesamtspektrum (Total Power = LF + HF + VLF) und ist als heuristische Zuordnung zu verstehen, nicht als direkte Messung der Kernaktivität.
+
+**Zuordnungslogik:**
+
+HF (0.15–0.4 Hz) wird als B8-Proxy behandelt: respiratorische Sinusarrhythmie, primär vagal, über den parasympathischen Pfad moduliert. LF (0.04–0.15 Hz) wird als B7-Proxy behandelt: Baroreflex-Schleife mit dominanter sympathischer Komponente, vermittelt über den DRN→LC→sympathischen Pfad. VLF (<0.04 Hz) operiert auf der Zeitskala, auf der die B7-Amplitudeninstabilität sichtbar wird — die Hüllkurve des Autoreceptor-Feedback-Loops.
+
+**Klassifikationsregeln:**
+
+| Zustand | Kriterium | B8 | B7 | Interpretation |
+|---|---|---|---|---|
+| B8-dominant | HF/Total > 0.4, LF/Total < 0.25 | aktiv | supprimiert | Physiologischer NREM, saubere vagale Modulation |
+| B7-dominant | LF/Total > 0.4, HF/Total < 0.25 | supprimiert | aktiv | Sympathischer Drive ohne vagale Gegenkraft |
+| Beide aktiv | HF/Total > 0.3, LF/Total > 0.3 | aktiv | aktiv | Kohärente duale Modulation |
+| Interferenz | VLF/Total > 0.5 | variabel | variabel | B7-Amplitudeninstabilität auf VLF-Zeitskala |
+| Both off | Total < 3 ms² | pausiert | pausiert | ANS-Eigenzeit, keine serotonerge Modulation |
+| Mixed | keines der obigen | undeterminiert | undeterminiert | Übergangszustand oder unzureichende Trennung |
+
+**Einschränkung:** Die Klassifikation erfordert echte Beat-to-Beat-Intervalle (IBI). PPG-basierte Minutenmittel-HR (z. B. Xiaomi Smart Band) liefern keine saubere Spektralanalyse in diesen Bändern. Die empirische Validierung verwendet Coospo-Brustgurt-Daten mit 5-Minuten-Fensterspektralanalyse.
+
+**Amplitudenmodell vs. Phasenoffset-Modell**
+
+Die ursprüngliche Modellarchitektur postulierte zwei unabhängige Oszillatoren (B7, B8) mit driftendem Phasenoffset als Quelle der ~4-Tage-Schwebung. Diese Konzeption wurde auf Grundlage der empirischen Datenanalyse revidiert.
+
+**Argument gegen das Phasenoffset-Modell:** In der seriellen Architektur SCN↔B8↔B7 hat B7 keine unabhängige Taktquelle. Er empfängt sein Timing von B8 über die SCN-vermittelte zirkadiane Kopplung. Zwei Oszillatoren mit driftendem Phasenoffset setzt voraus, dass beide eine eigene Taktquelle besitzen — B7 hat keine.
+
+**Amplitudenmodell:** Was variiert, ist der B7-Gain — die Stärke, mit der B7 auf den B8-Input antwortet. Dieser Gain wird durch den 5-HT1A-Autoreceptor-Feedback-Loop auf einer eigenen Zeitskala moduliert (Hit 1). Wenn der Autoreceptor-Feedback-Loop über Tage zykliert, entsteht eine Amplitudenmodulation mit ~4-Tage-Periodizität. In den HRV-Daten erscheint dies als Variation der B7-dominierten Spektralkomponenten (LF, VLF), während die B8-Komponente (HF) als Baseline stabil bleibt.
+
+**Konsequenz für die Intervention:** Im Phasenoffset-Modell müsste man resynchronisieren — mechanistisch unklar wie. Im Amplitudenmodell muss man den B7-Gain stabilisieren oder die Downstream-Kaskade der Gain-Instabilität puffern. DPH adressiert empirisch Letzteres.
+
+**Epistemischer Status:** Modellspezifisch, korrigiert aus den Daten der Session April 2026. Die Revision erfordert Änderungen überall im Modelldokument, wo „Phasenoffset" und „destruktive Interferenz" steht — korrekt ist „B7-Amplitudeninstabilität" und „Gain-Oszillation".
+
+**Typ-1 vs. Typ-2 Tiefschlaf: Dissoziation von Bewegungsunfähigkeit und autonomer Modulation**
+
+Die simultane Aufzeichnung von Beschleunigungs-basiertem Sleep-Staging (Xiaomi Smart Band 9) und IBI-basierter Spektralanalyse (Coospo-Brustgurt) offenbart zwei distinkte Tiefschlaf-Modi, die im Bewegungssensor identisch erscheinen:
+
+**Typ 1 — Modulierter Tiefschlaf:** HR 56–60, pNN50 50–60%, HF 25–35 ms², LF 18–22 ms². Beide Oszillatoren aktiv, B8-dominanter vagaler Drive, starke respiratorische Sinusarrhythmie. Entspricht dem physiologischen SWS-Lehrbuch.
+
+**Typ 2 — Amodaler Tiefschlaf:** HR 64–72, pNN50 < 5%, alle Bänder < 3 ms². Bewegungsunfähigkeit bestätigt (Tracker meldet „Deep"), aber das ANS zeigt keine Oszillation. Das Herz schlägt metronomisch gleichförmig.
+
+**Modellinterpretation:** Typ 1 = B8 aktiv, B7 korrekt supprimiert → saubere vagale Durchmodulation mit RSA. Typ 2 = beide Kerne pausiert → thalamokortikaler Shutdown erzeugt Bewegungsunfähigkeit, aber die autonome Modulation fehlt. Die HR settelt auf dem sympathischen Grundtonus ohne aktive serotonerge LC-Suppression — deshalb 64–72 statt 56.
+
+**Konsequenz:** Beschleunigungs-basiertes Sleep-Staging und autonome Modulationsqualität sind orthogonale Dimensionen. Typ-2-Tiefschlaf hat die kortikale Abschaltung, aber nicht den autonomen Drive, der die glymphatische Clearance-Pumpe antreibt. Dies erklärt, warum subjektiv erholsamer Schlaf und Tracker-gemessene Schlaftiefe dissoziieren können.
+
+**Beobachtete Häufigkeit:** Typ-2-Episoden treten reproduzierbar in der zweiten Nachthälfte auf (nach ~4–5 Stunden), typischerweise nach einem Hochmodulations-Zyklus und gefolgt von einem Interferenz-Rebound. Die zweite Nachthälfte ist regenerativ gescheitert — der Organismus kommt seit der Kindheit mit der Regenerationskapazität der ersten 5 Stunden aus. „Kurzschläfer" ist eine Fehlattribution: der Organismus hat gelernt, dass Weiterschlafen keinen Regenerationsmehrwert liefert.
+
+**DPH als Kaskadenpuffer: Empirische Befunde**
+
+Diphenhydramin (DPH) wurde ursprünglich im Modell als B7-Gain-Modulator konzeptualisiert, gestützt auf Crawford et al. (2013): H1-Blockade im DRN supprimiert selektiv B7. Die empirische Testung über vier Nächte mit IBI-Spektralanalyse ergibt ein differenzierteres Bild:
+
+**Befundlage aus vier Nächten (16.–20. April 2026):**
+
+| Nacht | Substanz | B7-dom% | VLF% | HR mean | Interpretation |
+|---|---|---|---|---|---|
+| N1 (16. Apr) | DPH | 2.4 | 42.0 | 64.6 | B7 niedrig — Zyklusposition, nicht DPH |
+| N2 (18. Apr) | Desloratadin | 5.1 | 42.4 | 67.1 | Unbehandelte Baseline (2. Gen. penetriert BHS nicht) |
+| N3 (19. Apr) | DPH + Naratriptan | 0.9 | 41.6 | 67.8 | Natürlicher B7-Kollaps, Kaskade abgefangen |
+| N4 (20. Apr) | DPH | 8.6 | 45.4 | — | B7 feuert durch trotz DPH |
+
+**Schlussfolgerungen:**
+
+1. DPH moduliert den B7-Gain nicht messbar. N4 zeigt den höchsten B7-Dominanz-Wert aller vier Nächte unter DPH. N1 hatte niedrige B7-Dominanz nicht wegen DPH, sondern weil B7 zufällig an diesem Zyklustag niedrig war.
+2. Der VLF-Fingerabdruck (42 ± 1%) ist über alle vier Nächte stabil — keine der Interventionen hat die Grunddynamik des Autoreceptor-Feedback-Loops verändert.
+3. DPH puffert die Downstream-Kaskade der B7-Instabilität, nicht die Instabilität selbst. Die N3-Erfahrung (subjektive post-iktale Klarheit ohne Anfall) zeigt: der B7-Kollaps fand statt (65 min Typ-2), aber die CSD-Kaskade und ANS-Destabilisierung wurden abgefangen.
+4. Die subjektive Schlafqualität unter DPH dissoziiert von der spektralen Signatur: DPH verbessert das Erleben einer gegebenen B7-Zyklusposition, verändert aber nicht die Position selbst.
+
+**DPH als Tagesintervention bei Prodromen:** Ein einzelner Datenpunkt (20. April, DPH um 16:00 bei laufendem Prodrom) zeigt eine kurze vasomotorische Reaktion (Hitzewelle am VLF-Nadir, 16:37) mit subjektiver Klarheit, aber ohne spektrale Normalisierung — LF/HF steigt nach dem initialen Dip weiter an. Die subjektive Erfahrung dissoziiert von der spektralen Messung. Der kortikale H1-Effekt (Rauschreduktion) und der autonome Effekt (ANS-Kaskade) sind unabhängige Pfade.
+
+**PFC-Ressourcenkonkurrenz-Modell**
+
+Die Beobachtung, dass DPH-induzierte sympathische Kaskadenpufferung unter laufendem LDX zu subjektiver kognitiver Klarheit führt, lässt sich als Ressourcenkonkurrenz modellieren:
+
+Im prodromalen Zustand stabilisiert LDX den DA/NA-Pfad für Kognition (MD-Thalamus→PFC), muss aber gleichzeitig Ressourcen in die NTS-Suppression investieren (PFC→PAG→NTS), um die sympathische Kaskade kortikal zu kompensieren. Die kognitive Kapazität wird für ANS-Kontrolle verbrannt.
+
+DPH bricht die sympathische Nachentladung über einen separaten Pfad (H1-Blockade). Der PFC muss den NTS nicht mehr aktiv suppressen. Die gesamte LDX-Kapazität steht für Kognition zur Verfügung. Die resultierende Klarheit ist nicht DPH-Wirkung, sondern LDX-Wirkung, die zuvor durch Bandbreitenbelegung maskiert war.
+
+Dieses Modell erklärt sowohl die N3-Erfahrung (post-iktale Klarheit am Folgetag trotz normaler LDX-Dosis) als auch die akute Tagesintervention (Klarheit 40 Minuten nach DPH bei laufendem LDX). Der Mechanismus ist identisch: B7-Störsignal reduziert → PFC-Ressourcen frei.
+
+**Der 20-Minuten-VLF-Rhythmus als direkte Autorezeptor-Signatur**
+
+Die minutenweise VLF-Analyse des prodromalen Tages (20. April 2026, 10:00–20:00 Uhr) zeigt eine reguläre Oszillation mit einem medianen Inter-Peak-Intervall von 20 Minuten (Mean 23 min). Dieser Rhythmus ist über den gesamten Aufzeichnungszeitraum nachweisbar, mit Amplitudenmodulation aber stabiler Periodizität.
+
+Die 20-Minuten-Periodizität fällt exakt in den vorhergesagten Bereich des 5-HT1A-Autorezeptor-Grenzzyklus (T ≈ 2τ–4τ bei τ = 10–20 min, Abschnitt I.1). Damit ist der VLF-Rhythmus ein Kandidat für die direkte HRV-basierte Messung der Autorezeptor-Rückkopplung, wie in These 2 (Abschnitt I.3) postuliert.
+
+**Beobachtete Substruktur:** Nach dem VLF-Spike um 16:00 Uhr (VLF = 9262 ms²) zeigt sich eine transiente Frequenzverdopplung — Inter-Peak-Intervalle von 7–10 Minuten statt 20 Minuten. Diese Verdopplung ist konsistent mit einem überschwingenden Regelkreis, der sich nach einer großen Perturbation über mehrere verkürzte Zyklen restabilisiert.
+
+**Epistemischer Status:** Die 20-Minuten-Periodizität ist ein einzelner Datenpunkt (n=1, ein Tag). Die Stabilität über Tage und Nächte, die Inter-Individuen-Variabilität und die pharmakologische Modulierbarkeit der Periodizität sind noch zu prüfen. Die Übereinstimmung mit der modellierten Autorezeptor-Kinetik ist bemerkenswert, aber nicht beweisend — Thermoregulation und andere VLF-Quellen müssen differentialdiagnostisch ausgeschlossen werden.
 
 **Literaturverzeichnis**
 
@@ -6075,3 +6164,207 @@ Die Nützlichkeit dieser Konzeption bemisst sich an ihrer prospektiven Vorhersag
 - Schulte LH, May A (2016). *The migraine generator revisited: continuous scanning of the migraine cycle over 30 days and three spontaneous attacks.* Brain 139(7): 1987–1993.
 - Schulte LH, Mehnert J, May A (2020). *Migraine as a cycling brain syndrome.* Neurol Sci (review).
 - Jeong HJ et al. (2016). *Increased Brainstem Serotonergic Transporter Availability in Adult Migraineurs.* Nucl Med Mol Imaging 50(3): 233–238.
+
+---
+
+### **I.5 Empirische HRV-Datenanalyse — April 2026**
+
+Dieser Teil analysiert sechs IBI-basierte HRV-Datensätze (vier Nächte, zwei Tage) aus dem Zeitraum 16.–20. April 2026. Die Aufzeichnungen stammen von einem Coospo H808S-Brustgurt mit Beat-to-Beat-Auflösung; die Spektralanalyse erfolgte in gleitenden 5-Minuten-Fenstern. Die Analyse testet Vorhersagen des pathogenetischen Modells zur B7-Amplitudeninstabilität, zur pharmakologischen Modulation durch DPH und Naratriptan, und zur Dissoziation von Tiefschlaf-Staging und autonomer Modulationsqualität.
+
+**Methodik**
+
+**Hardware:** Coospo H808S Brustgurt (EKG-basiert, Beat-to-Beat IBI-Erfassung). Kein PPG — die absoluten Power-Werte sind nicht artefaktgedämpft.
+
+**Spektralanalyse:** Gleitende 5-Minuten-Fenster. Standard-Bandgrenzen: HF 0.15–0.4 Hz, LF 0.04–0.15 Hz, VLF <0.04 Hz. Zusätzlich: pNN50 (Prozent aufeinanderfolgender NN-Intervalle mit >50 ms Differenz) als Zeitdomänen-Proxy für vagale Modulation.
+
+**Zustandsklassifikation:** Minutenweise Zuordnung zu B7/B8-Zuständen nach den Regeln in Abschnitt I.5. Schwellenwerte: B8-dominant (HF/Total > 0.4, LF/Total < 0.25), B7-dominant (LF/Total > 0.4, HF/Total < 0.25), Interferenz (VLF/Total > 0.5), Beide aktiv (HF > 0.3 und LF > 0.3), Both-off (Total < 3 ms²).
+
+**Glättung:** 5-Minuten gleitender Mittelwert (zentriert) für Visualisierung, Rohdaten für Klassifikation und Statistik.
+
+**Visualisierung:** Metabase/Interaktive HTML-Dashboards (Chart.js) als separate Downloads verfügbar.
+
+#### **Nacht 1 — 16. April 2026 (DPH)**
+
+**Kontext:** Diphenhydramin als Schlafintervention. Kein Prodrom, keine akute Symptomatik. Aufzeichnung 00:00–08:00 Uhr mit Lücke 06:00–07:44.
+
+**Deskriptive Statistik:**
+
+| Parameter | Wert |
+|---|---|
+| HR mean | 64.6 bpm |
+| HR min | 44.6 bpm (tiefster aller vier Nächte) |
+| VLF% | 42.0 |
+| LF% | 25.1 |
+| HF% | 32.9 |
+| LF/HF median | 0.92 |
+| B7-dominant | 2.4% (niedrigster Wert) |
+| B8-dominant | 21.3% |
+| Interferenz | 41.0% |
+| Typ-2 amodal | 12 min |
+
+**Befundmuster:** Die Nacht zeigt eine geordnete Zyklik: B8-dominante Plateaus (HF > LF, niedrige VLF) alternieren mit Interferenz-Blöcken (VLF > LF+HF). Die B8-Plateaus sind die saubersten aller vier Nächte — HF klar über LF, HR erreicht 51 bpm mit pNN50 von 74%. Das Kernstück der Regeneration liegt in den ersten 5 Stunden.
+
+In der zweiten Nachthälfte ab ~04:50 treten 12 Minuten Typ-2-Tiefschlaf auf (pNN50 < 5%, Total Power < 4 ms²). Diese Episoden zeigen Bewegungsunfähigkeit im Xiaomi-Tracker, aber keine autonome Modulation — das Herz schlägt metronomisch bei 63–65 bpm.
+
+Ab 05:10 startet die letzte große Regenerationsphase mit den höchsten Power-Werten der Nacht (Total > 175 ms², VLF bis 173 ms²) und dem tiefsten HR-Nadir (51 bpm, pNN50 74%). Diese Phase trägt den Hauptanteil der glymphatischen Clearance.
+
+**Interpretation:** Die niedrige B7-Dominanz (2.4%) wurde initial DPH zugeschrieben. Die spätere Vergleichsanalyse (N4) zeigt, dass dies nicht haltbar ist — die niedrige B7-Aktivität reflektiert die Zyklusposition, nicht die Pharmakologie.
+
+#### **Nacht 2 — 18. April 2026 (Desloratadin)**
+
+**Kontext:** Desloratadin als 2.-Generations-Antihistaminikum penetriert die Blut-Hirn-Schranke nicht relevant. Diese Nacht fungiert als unbehandelte Baseline. Aufzeichnung 00:00–07:47 Uhr.
+
+**Deskriptive Statistik:**
+
+| Parameter | Wert |
+|---|---|
+| HR mean | 67.1 bpm |
+| HR min | 45.7 bpm |
+| VLF% | 42.4 |
+| LF% | 24.9 |
+| HF% | 32.8 |
+| LF/HF median | 0.96 |
+| B7-dominant | 5.1% |
+| B8-dominant | 20.7% |
+| Interferenz | 42.5% |
+| Typ-2 amodal | 22 min |
+
+**Befundmuster:** Die globalen Spektralproportionen sind nahezu identisch mit N1 — VLF 42.4% vs 42.0%, HF 32.8% vs 32.9%, LF 24.9% vs 25.1%. Diese Übereinstimmung über zwei Nächte mit unterschiedlicher Pharmakologie ist bemerkenswert und deutet auf einen stabilen individuellen Fingerabdruck hin.
+
+Hauptunterschiede zu N1: HR-Mean 2.5 bpm höher, B7-Dominanz verdoppelt (5.1% vs 2.4%), 22 statt 12 Minuten Typ-2-Tiefschlaf. Die Einschlafphase zeigt einen HR-Spike auf 95 bpm (sympathische Einschlafreaktion), der in N1 fehlt.
+
+Das Aphasie-Fenster um 05:24–05:38 (pNN50 < 5%, alle Bänder < 2 ms²) ist länger als in N1 und wird gefolgt von dem massivsten VLF-Spike der Nacht (120 ms² um 06:06). Die zweite Nachthälfte ab ~03:00 ist von zunehmender VLF-Dominanz geprägt — die Interferenz eskaliert progressiv.
+
+**Interpretation:** Desloratadin bestätigt seine Rolle als Negativkontrolle: kein zentraler H1-Effekt, die Nacht entspricht der unbehandelten Dynamik. Die Verdopplung der B7-Dominanz gegenüber N1 widerlegt rückblickend die Attribution der N1-Befunde an DPH.
+
+#### **Nacht 3 — 19. April 2026 (DPH + Naratriptan)**
+
+**Kontext:** Tag der körperlichen Vorbelastung (Sperrmüll, schwere Gartenarbeit). Abends Stammhirn-Ziehen und retrobulbulärer Schmerz rechts — klassische Prodrome eines B7-Kollapses. DPH und Naratriptan um 23:00 Uhr. Verstärkte LDX-Dosis tagsüber, letzte Gabe 16:00 Uhr. Aufzeichnung 23:00–06:30 Uhr.
+
+**Deskriptive Statistik:**
+
+| Parameter | Wert |
+|---|---|
+| HR mean | 67.8 bpm (höchster Nacht-Wert) |
+| HR min | 50.5 bpm |
+| VLF% | 41.6 |
+| LF% | 21.7 |
+| HF% | 36.6 |
+| LF/HF median | 0.63 (stark HF-lastig) |
+| B7-dominant | 0.9% (fast absent) |
+| B8-dominant | 38.6% (verdoppelt) |
+| Interferenz | 33.7% |
+| Typ-2 amodal | 65 min (massiv) |
+
+**Befundmuster:** Diametral anders als N1/N2. B7 ist nahezu absent (0.9%), B8 nominell dominant (38.6%), aber die absolute HF-Power ist ebenfalls gedämpft. Die B8-Dominanz entsteht nicht durch starke B8-Aktivität, sondern durch noch stärkeres B7-Fehlen — das Verhältnis verschiebt sich zugunsten HF, nicht weil HF stärker ist, sondern weil LF stärker fehlt.
+
+65 Minuten Typ-2-Tiefschlaf verteilen sich auf zwei Blöcke: 03:30–04:00 (HR=72, pNN50=4%, Total=4 ms²) und 06:00–06:29. In diesen Blöcken ist das ANS funktionell silent.
+
+Die HR bleibt trotz B8-Dominanz bei 67.8 bpm — paradox, aber erklärbar durch die körperliche Vorbelastung: erhöhter sympathischer Grundtonus vom Vortag, unabhängig vom Raphe-Zustand.
+
+**Kritische Reinterpretation:** Initial wurde N3 als „DPH+Triptan hat B7 supprimiert" gelesen. Die spätere Analyse (N4-Vergleich) führte zu einer Revision: B7 war am Zykluspunkt des natürlichen Kollapses. DPH und Naratriptan haben nicht den Kollaps verhindert, sondern die Downstream-Kaskade (CSD, ANS-Destabilisierung) abgepuffert. Die 65 Minuten Typ-2 sind der Kollaps selbst — aber ohne die destruktiven Konsequenzen.
+
+**Folgetag:** Subjektiv post-iktale Klarheit ohne Anfall. 2 Stunden Autofahrt, Gartenarbeit, normale LDX-Dosis — alles funktional. Die Klarheit erklärt sich als LDX-Wirkung bei freigegebener PFC-Bandbreite (kein ANS-Störsignal zu kompensieren).
+
+#### **Tag 19. April 2026 — B7-Wiederanfahrt**
+
+**Kontext:** Folgetag nach N3 (DPH+Naratriptan). LDX reguläre Dosis. Autofahrt 07:00–11:00 Uhr, Gartenarbeit nachmittags. Aufzeichnung 07:00–18:33 Uhr.
+
+**Befundmuster als Zeitraffer der B7-Resynchronisation:**
+
+**07:00–09:00 (Autofahrt):** Total Power 2 ms². Das ANS ist spektral stumm. pNN50 durchgehend 0%. HR 105–120 (LDX + Fahrtätigkeit). Die Oszillatoren sind offline — Nachklang des nächtlichen B7-Shutdowns. Bemerkenswert: 4 Stunden Autofahrt ohne messbare autonome Modulation, bei subjektiver Funktionalität. Der PFC-Schutz über LDX kompensiert den fehlenden Raphe-Drive.
+
+**11:00–13:00:** Langsames LF-Anlaufen. B7 beginnt sich zu re-engagieren. VLF noch niedrig.
+
+**13:09–13:45 (Nap):** HR sinkt auf 81, pNN50 bleibt bei 0%, HF bei 0.3–0.5 ms². Reiner Typ-2-Nap. Ab 13:36 steigt VLF steil auf 12 ms² — die Interferenz beginnt im Nap.
+
+**17:00–18:30:** LF=13 ms², VLF=14 ms², pNN50 bis 10%. B7 vollständig online, sofort im Interferenzmodus — die Phasenbeziehung zu B8 war nie korrigiert.
+
+**Zeitkonstante:** Die B7-Wiederanfahrt nach DPH+Naratriptan-Shutdown liegt bei ~10 Stunden. Die Wiederanfahrt endet nicht in Kohärenz, sondern direkt in der Interferenz.
+
+#### **Nacht 4 — 20. April 2026 (DPH allein)**
+
+**Kontext:** DPH ohne Triptan. Vorabend: B7 nach 10-stündigem Re-Engagement vollständig online mit hohem Gain (LF=13 ms², VLF=14 ms²). Aufzeichnung 23:00–07:43 Uhr.
+
+**Deskriptive Statistik:**
+
+| Parameter | Wert |
+|---|---|
+| HR mean | 68.9 bpm |
+| VLF% | 45.4 (über Baseline) |
+| LF% | 24.6 |
+| HF% | 30.0 |
+| LF/HF median | 0.98 |
+| B7-dominant | 8.6% (höchster Wert) |
+| B8-dominant | 20.0% |
+| Interferenz | 43.1% |
+| Typ-2 amodal | 0 min |
+
+**Anmerkung zu den absoluten Power-Werten:** N4 zeigt um Faktor 250–450 höhere absolute ms²-Werte als N1–N3. Dies ist nicht geklärt. Die relativen Proportionen und die Zustandsklassifikation sind weiterhin vergleichbar.
+
+**Befundmuster:** Dieser Datensatz ist der entscheidende Falsifikationspunkt für das DPH-als-Gain-Modulator-Modell. DPH bei hohem B7-Ausgangspegel: B7 feuert durch. 8.6% B7-Dominanz — höher als die unbehandelte Desloratadin-Nacht (5.1%). Kein einziger Typ-2-Block; die gesamte Nacht ist durchmoduliert. VLF steigt erstmals über die 42%-Baseline auf 45.4%.
+
+Am Morgen: HR-Spike auf 117 bpm beim Erwachen. Subjektiv Grogginess und Wackelkopf — die Prodromal-Symptomatik des beginnenden B7-Gain-Anstiegs.
+
+**Interpretation:** DPH hat eine Gain-Decke, keine Gain-Nullung. Bei niedrigem B7-Ausgangspegel (N1) reicht die Decke; bei hohem Ausgangspegel (N4) liegt B7 bereits darüber. Die Differenz erklärt, warum N3 das Triptan benötigte — nicht als redundante Ergänzung, sondern als notwendige Erweiterung bei B7-Pegel oberhalb der DPH-Kapazität.
+
+#### **Tag 20. April 2026 — Prodromale Kaskade und DPH-Tagesintervention**
+
+**Kontext:** Grogginess und Wackelkopf seit dem Morgen (N4-Folge). LDX-Nachdosis am Vormittag. Nap ~13:09–13:45 mit subjektivem Kollaps-Erleben. DPH um 16:00 Uhr als Tagesintervention. Aufzeichnung 10:00–20:00 Uhr.
+
+**VLF-Kollaps im Nap (13:30–13:40):** VLF explodiert von 969 auf 13433 ms² in 6 Minuten. HR fällt von 69 auf 63. HF springt auf 1863 — B8-Gegenreaktion. Danach: HR schießt auf 119, LF/HF > 8, sympathisch entfesselt. Dies ist ein dokumentiertes Schwellenereignis — der B7-Gain überschreitet die Autoreceptor-Rückkopplungskapazität, und der Kollaps erzeugt eine massive VLF-Welle.
+
+**20-Minuten-Rhythmus:** Die VLF-Peak-Analyse über den gesamten Tag zeigt ein reguläres Oszillationsmuster mit medianem Inter-Peak-Intervall von 20 Minuten (Mean 23 min, n=26 Peaks). Dieser Rhythmus entspricht der vorhergesagten Periodizität des 5-HT1A-Autorezeptor-Grenzzyklus (T ≈ 2τ–4τ bei τ = 10–20 min).
+
+**DPH-Intervention (16:00):** Subjektiv: Stammhirn-Ziehen wird zu Drücken, dann verschwindet. Hitzewelle um 16:37. Nackenverspannung löst sich. Subjektive Klarheit. Spektral: kurzer VLF-Nadir (669 ms² um 16:36 — Hitzewelle korreliert mit dem VLF-Tal, nicht dem Peak). Danach: LF/HF steigt auf 7.7, höher als prä-DPH (3.6). Die sympathische Dominanz ist nicht gebrochen, sondern kehrt nach einem 30-Minuten-Dip stärker zurück.
+
+**Dissoziation subjektiv/spektral:** Die subjektive Klarheit dissoziiert von der spektralen Messung. Der kortikale H1-Effekt (Rauschreduktion, Erregbarkeitssenkung) und der autonome Effekt (sympathische Kaskade) sind unabhängige Pfade. DPH adressiert den ersten, nicht den zweiten.
+
+**Frequenzverdopplung nach Spike:** Nach dem 16:00-VLF-Peak zeigt sich eine transiente Halbierung der Periodizität auf 7–10 Minuten statt 20. Dies ist konsistent mit einem überschwingenden Regelkreis, der sich nach großer Perturbation über mehrere verkürzte Zyklen restabilisiert.
+
+#### **Synthese: Verknüpfung der Daten mit dem Modell**
+
+**Befund 1: Der 42%-VLF-Fingerabdruck ist ein Trait-Marker.**
+
+Über vier Nächte mit drei verschiedenen pharmakologischen Konditionen (DPH, Desloratadin, DPH+Triptan) liegt der VLF-Anteil bei 42 ± 1.5%. Keine Intervention hat diese Grunddynamik verändert. Im Amplitudenmodell ist dies die Signatur der chronischen B7-Autoreceptor-Instabilität — die VLF-Hüllkurve des instabilen Gain-Regelkreises. Der 42%-Wert ist modellspezifisch als Maß für die Instabilität des 5-HT1A-Feedback-Loops interpretierbar.
+
+**Befund 2: DPH ist ein Kaskadenpuffer, kein Oszillator-Modulator.**
+
+N1 vs N4 zeigt: identisches Molekül, identische Dosis, völlig verschiedene Ergebnisse. Die B7-Dominanz unter DPH hängt von der Zyklusposition ab, nicht von DPH. DPH verbessert die subjektive Schlafqualität und puffert die Downstream-Kaskade (N3: Kollaps ohne CSD), aber es moduliert weder den B7-Gain noch den VLF-Fingerabdruck.
+
+**Befund 3: Typ-1 und Typ-2 Tiefschlaf sind orthogonale Dimensionen.**
+
+Die simultane Aufzeichnung von Beschleunigungs-Staging und IBI-Spektralanalyse zeigt zwei distinkte Tiefschlaf-Modi, die im Bewegungssensor identisch erscheinen. Die zweite Nachthälfte ist überwiegend Typ-2 (amodal) — regenerativ gescheitert. Die funktionale Schlafkapazität beträgt ~5 Stunden; „Kurzschläfer" ist eine Fehlattribution.
+
+**Befund 4: Das Amplitudenmodell hat höhere Erklärungskraft als das Phasenoffset-Modell.**
+
+Die Vorhersage des Amplitudenmodells war: DPH klemmt den B7-Gain auf einen festen Wert, unabhängig von der Zyklusposition → N4 sollte N1 gleichen. Diese Vorhersage wurde falsifiziert — N4 ≠ N1. Die Revision führt zu einer differenzierteren Version: DPH hat eine Gain-Decke, keine Gain-Nullung. Der B7-Gain ist der primäre Freiheitsgrad, aber DPH moduliert ihn nur unterhalb einer Schwelle.
+
+Die stärkere Version des Befunds: DPH moduliert den Gain überhaupt nicht. Die Variation zwischen N1 (2.4% B7-dom) und N4 (8.6% B7-dom) ist ausschließlich Zyklusposition-abhängig. DPH wirkt auf einen unabhängigen Pfad (kortikale H1-Erregbarkeit, Downstream-Kaskadenpufferung).
+
+**Befund 5: Der 20-Minuten-VLF-Rhythmus ist ein Kandidat für die direkte Autorezeptor-Signatur.**
+
+Die minutenweise VLF-Analyse des prodromalen Tages (20. April) zeigt eine reguläre 20-Minuten-Oszillation, exakt im vorhergesagten Bereich des 5-HT1A-Autorezeptor-Grenzzyklus. Dies ist ein einzelner Datenpunkt (n=1), aber die Übereinstimmung mit der Modellvorhersage (These 2, Anhang I) ist bemerkenswert.
+
+**Befund 6: Die subjektive Erfahrung dissoziiert von der spektralen Messung.**
+
+Der Datenpunkt DPH-Tagesintervention (20. April, 16:00) zeigt subjektive Klarheit bei unveränderter oder verschlechterter spektraler Signatur (LF/HF steigt nach DPH). Die Klarheit wird über den kortikalen H1-Pfad vermittelt (Rauschreduktion → PFC-Bandbreite frei), nicht über den autonomen Pfad. Konsequenz: subjektives Befinden ist kein verlässlicher Proxy für den B7-Zustand. Die Spektralanalyse ist dem Erleben epistemisch überlegen.
+
+**Offene Fragen:**
+
+1. Korreliert der VLF-Anteil (>42% vs <42%) über Nächte hinweg mit der Anfallszyklik? Das wäre der spektrale Proxy für die Schwebungsperiode.
+2. Ist das Typ-2/Typ-1-Verhältnis zykluspositionsabhängig? Mehr Typ-2 nahe dem Interferenzmaximum?
+3. Gibt es ein Molekül, das den B7-Gain direkt moduliert (nicht nur die Downstream-Kaskade puffert)? Guanfacin (TAAR1) bleibt der offene Kandidat.
+4. Ist die 20-Minuten-Periodizität über Tage stabil oder verschiebt sie sich mit der Zyklusposition?
+5. Repliziert die nächtliche Kombination LDX+Doxepin die N3-Klarheit reproduzierbar?
+
+**Anhang: Interaktive Dashboards**
+
+Die folgenden HTML-Dateien enthalten interaktive Visualisierungen (Chart.js) der Rohdaten mit Zustandsklassifikation, HR/pNN50-Verlauf und Spektralband-Zeitreihen:
+
+- `dashboard_N1_16apr_DPH.html` — Nacht 1
+- `dashboard_N2_18apr_Deslor.html` — Nacht 2
+- `dashboard_N3_19apr_DPH_Triptan.html` — Nacht 3
+- `dashboard_N4_20apr_DPH.html` — Nacht 4
+- `dashboard_Tag19_post_abfang.html` — Tag 19. April
+- `dashboard_Tag20_prodromal.html` — Tag 20. April
