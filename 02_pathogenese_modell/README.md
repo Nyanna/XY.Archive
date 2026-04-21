@@ -13,7 +13,7 @@ Triade-Hypothese: **AD + ADHS + Migräne** als populationsrelevanter, bislang nu
 | **I — Pränatal (Hit 1)** | Kongenitale 5-HT1A-Instabilität, underdämpfte Raphe-Oszillation ab 5.–7. SSW. |
 | **II — Fetal** | Instabiles Serotoninsignal verzerrt thalamokortikale Kalibrierung (22.–26. SSW). |
 | **III — Postnatal/kindlich (Hit 2)** | Manifeste Gating-Insuffizienz; AD-Manifestation; iatrogene GC-Exposition induziert D2High-Shift. |
-| **IV — Chronisch/adult** | Periodische Migräne, quasi-wöchentliche Periodizität durch circadiane Schwebung (τ ≈ 26 h vs. T = 24 h). |
+| **IV — Chronisch/adult** | Periodische Migräne, quasi-wöchentliche Periodizität als Superposition von zirkadianer Schwebung und B7-Intertakt-Drift gegen B8-SCN-Lock. |
 | **V — Pharmakologisch** | Dopaminerge Upstream-Stabilisierung (MPH/LDX) → Migränefreiheit, Bestätigung der D2-Hypersensitivität. |
 
 ## Kapitel
@@ -43,6 +43,7 @@ Triade-Hypothese: **AD + ADHS + Migräne** als populationsrelevanter, bislang nu
 | [F — B7/B8-Innervierungsanatomie](0F_b7b8_innervierung.md) | Projektionsmuster DRN vs. MRN, thalamische und hippocampale Interferenzstrukturen. |
 | [G — Iatrogene Prävalenz](0G_iatrogene_praevalenz.md) | Historische Korrelation pharmazeutischer Exposition mit ADHS-Prävalenz, Industrieländer-Gradient. |
 | [H — Hypothyreose als Kofaktor](0H_hypothyreose.md) | T3/T4 ↔ 5-HT1A-Sensitivität, Modulator der LDX-Wirksamkeit. |
+| [I — HRV-Frequenzspektrum](0I_hrv_analysis.md) | IBI-basierte Spektralanalyse, VLF-Band als 5-HT1A-Intratakt-Signatur, Trait-Fingerabdruck (42 ± 1,5 % VLF). |
 
 ## Build & Daten
 

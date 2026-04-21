@@ -104,9 +104,9 @@ Wenn dieses Modell auch nur in der Grundstruktur korrekt ist, dann existiert ein
 
 | Kapitel | Inhalt |
 | :------ | :----- |
-| **2** | **Primärdefekt: Kongenitale Raphe-Dysregulation.** Raphe-Anatomie, underdämpfte Autoregulationsschleife, Two-Hit-Architektur (5-HT1A-Instabilität + D2High-Shift durch GC-Exposition). B7/B8-Dual-Oszillator mit SCN-Relay, zirkadiane Schwebung. Kortikale Konsequenzen: lokaler Schlaf, posteriore Vulnerabilität, Chronotyp-Fehlattribution, Schlafarchitektur als Kohärenzmarker. |
+| **2** | **Primärdefekt: Kongenitale Raphe-Dysregulation.** Raphe-Anatomie, underdämpfte Autoregulationsschleife, Two-Hit-Architektur (5-HT1A-Instabilität + D2High-Shift durch GC-Exposition). B7/B8-Dual-Oszillator mit SCN-Relay, zirkadiane Schwebung; Intratakt (5-HT1A-Grenzzyklus) und Intertakt (SCN-Lock von B8, Drift von B7) als getrennte Zeitebenen; aufbauender sympathischer Clamp als Ursache/Metrik/Problem simultan. Kortikale Konsequenzen: lokaler Schlaf, posteriore Vulnerabilität, Chronotyp-Fehlattribution, Schlafarchitektur als Kohärenzmarker. |
 | **3** | **Downstream-Pathologie I: Thalamische Fehlkalibrierung.** Fetale Kalibrierung auf instabiles Signal, verrauschter Prediction Error, ADHS als SNR-Problem (Diskriminierbarkeit statt Aufmerksamkeitsdefizit). Gating/Schwelle-Dissoziation unter LDX. |
-| **4** | **Klinische Manifestation I: Migräne als Raphe-Zyklusstörung.** Trigger-Mechanismen (Nap-Kaskade, Sport, Schlaf-Wach-Übergang), CSD-Auslösung (tonische Welle, Intratakt-Fragmentierung, Zwei-Oszillator-Bedingung), CSD als kompensatorische Resynchronisation. MBA-Reattribution, Differentialphänotypologie, Betablocker-Paradox. Dreigliederiger Triptan-Mechanismus, Sumatriptan als Schlaf-Enabler. |
+| **4** | **Klinische Manifestation I: Migräne als Raphe-Zyklusstörung.** Trigger-Mechanismen (Nap-Kaskade, Sport, Schlaf-Wach-Übergang), CSD-Auslösung (tonische Welle, Intratakt-Fragmentierung, Zwei-Oszillator-Bedingung), CSD als kompensatorische Resynchronisation; Intertakt-Drift als übergeordneter Fragmentierungsmechanismus; CSD als Ersatzmechanismus für defekten Intertakt-Selbstreset. MBA-Reattribution, Differentialphänotypologie, Betablocker-Paradox. Dreigliederiger Triptan-Mechanismus, Sumatriptan als Schlaf-Enabler. |
 | **5** | **Klinische Manifestation II: Autonome Dysregulation.** Drei afferente Pfade zum NTS, vestibuloautonomer Reflex und TCR-Prädisposition, kortikale NTS-Suppression. Kompoundierender Effekt von LDX und Betablocker-Entfall auf autonome Reflexschwelle. B7-Aphasie als dritter ANS-Zustand: biologisches Substrat der Depletion (vesikulär, TPH2-limitiert, ATP-grenzwertig). PFC→NTS-Kompensation und deren Erschöpfungsparadox. |
 | **6** | **Klinische Manifestation III: ASD-Phänotyp.** ASD als Konfigurationsvariante des Primärdefekts. Repetitives Verhalten als Stabilisierungsmechanismus gegen instabile Attraktorbecken. Identität als thalamische Wahrnehmungssignatur: Substanzaversion durch thalamischen Kohärenzverlust. |
 | **7** | **Pharmakologische Evidenz: Selbstversuch.** Methylphenidat, Lisdexamfetamin, therapeutisches Fenster. |
@@ -115,11 +115,12 @@ Wenn dieses Modell auch nur in der Grundstruktur korrekt ist, dann existiert ein
 | **Anhang A** | **Emotionale Affektion.** Beobachtung und Arbeitshypothese zur Emotionsverarbeitung, Implikation für den ASD-Phänotyp. |
 | **Anhang B** | **Tracker-Datenanalyse.** Kortikale Desynchronisation als Marker für Raphe-Dysregulation: Schlaffragmentierung, Nap-Korrelation, CSD-als-Reset-Evidenz, HR-Drop-Periodizität, Nap-Outcome-Analyse, Anfallstiming, Einzelfall-Anfallsdokumentation. |
 | **Anhang C** | **Phänomenologie eines Bewusstseinsresets.** Subjektive Beschreibung von lokalem Schlaf, Bewusstseinsdruck, Nap-als-Reboot und differentiellen Arousal-Quellen als Erfahrungsbericht. |
-| **Anhang D** | **Raphe-Synchronisationsmechanik.** Architektur der neun Raphe-Kerne, Volumentransmission, Reset-Oszillator-Modell, DRN-MRN-Asynchronität und drei Desynchronisationsmodi (inter-nukleär, intra-projektiv, Frequenzinstabilität), Differenzierung von Interferenz, Entzug und Rauschexposition. GABAerge Limitierung, hippocampale und kognitive Downstream-Effekte. |
+| **Anhang D** | **Raphe-Synchronisationsmechanik.** Architektur der neun Raphe-Kerne, Volumentransmission, Reset-Oszillator-Modell, DRN-MRN-Asynchronität und drei Desynchronisationsmodi (inter-nukleär, intra-projektiv, Frequenzinstabilität); Trennung von Intratakt- und Intertakt-Ebene der Asynchronität. Differenzierung von Interferenz, Entzug und Rauschexposition. GABAerge Limitierung, hippocampale und kognitive Downstream-Effekte. |
 | **Anhang E** | **CSD als Notfall-Resynchronisation: Kreuzkorrelation mit Epilepsie.** Serotonin als Antikonvulsivum, Fallback-Hierarchie Raphe-Takt → CSD → epileptischer Anfall, Differenzierung der Migräneprophylaktika nach Eingriffspunkt. SUDEP-Mechanismus und Interventionsprotokoll. |
 | **Anhang F** | **B7/B8-Innervierungsanatomie und Interferenzstrukturen.** Projektionsmuster DRN vs. MRN, thalamische und hippocampale Interferenzstrukturen, anatomische Geometrie der dualen Raphe-Innervierung als Grundlage klinischer Symptomtopographie. |
 | **Anhang G** | **Iatrogene Prävalenz und Hit-Architektur-Erweiterung.** Historische Korrelation pharmazeutischer Exposition mit ADHS-Prävalenz, Industrieländer-Gradient, ASD als Kontrollgröße für diagnostische vs. iatrogene Prävalenzanteile. |
 | **Anhang H** | **Hypothyreose als modulierender Kofaktor.** Bidirektionale Verbindung zwischen Schilddrüsenhormonen und 5-HT1A-Autorezeptorsensitivität, epidemiologische Assoziationen mit Migräne, ADHS und ASD, T4-Substitutionsadäquanz als Modulator der LDX-Wirksamkeit. |
+| **Anhang I** | **HRV-Frequenzspektrum und 5-HT1A-Autorezeptor-Dynamik.** IBI-basierte HRV-Spektralanalyse (Coospo H9Z-Brustgurt) über vier Nächte mit drei pharmakologischen Konditionen. Serielle Architektur SCN↔B8↔B7, VLF-Band als direkte Signatur des 5-HT1A-Intratakts (20-min-Rhythmus), Trait-Fingerabdruck (42 ± 1,5 % VLF) als integrale Instabilitätssignatur. Zustandsraum-Dominanz-Analyse und b7-risk-Integral. |
 
 ***
 
@@ -566,9 +567,16 @@ Die Raphe-Dysregulation manifestiert sich klinisch nicht als konstantes Defizit,
 
 #### **2.5.1 Dual-Oszillator-Architektur**
 
+Die Architektur operiert auf zwei Zeitebenen, die im Folgenden explizit getrennt werden:
+
+- **Intratakt** — der Minuten-Grenzzyklus der somatodendritischen 5-HT1A-Autoreceptor-Rückkopplung (T ≈ 2τ–4τ bei τ = 10–20 min → ~20 min Grundperiode, Anhang I.1). B7 und B8 haben jeweils einen funktionalen Intratakt.
+- **Intertakt** — die circadiane und mehrtägige Kopplungsebene. Die B8→SCN-Projektion (monosynaptisch, Meyer-Bernstein et al. 1996) hält den B8-Intertakt SCN-gelockt; B7 entrainiert multisynaptisch über B8 (§2.5.2). Hit 1 destabilisiert nicht den Intratakt, sondern den Intertakt-Lock von B7 gegenüber B8-SCN.
+
+Der empirische Beleg für die Trennung der beiden Ebenen liefert Anhang I: Der 20-min-Inter-Peak-Intervall der VLF-Oszillation am 20. April 2026 ist eine direkte Intratakt-Signatur; der ~4-Tage-Beat der Tracker-Daten (POST) ist die Intertakt-Signatur; der Trait-Fingerabdruck (42 ± 1,5 % VLF über vier pharmakologisch variierte Nächte) ist die integrale Instabilitätssignatur beider Ebenen.
+
 **Der B7/B8-Phasenversatz-Oszillator (primär)**
 
-Die Raphe-Kerne B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianus, MnR) sind funktionell distinkt: B7 projiziert diffus-kortikal (Arousal, sensorische Modulation), B8 projiziert limbisch-thalamisch (Entrainment, Stimmung). Beide werden über den SCN zirkadian synchronisiert, aber mit unterschiedlicher Phasenlage und Zeitkonstante. Der *Inter-Kern-Phasenversatz* zwischen B7 und B8 akkumuliert über ~3–4 Tage bis zur CSD-Schwelle; die Attacke erzwingt Resynchronisation, der Zyklus beginnt erneut.
+Die Raphe-Kerne B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianus, MnR) sind funktionell distinkt: B7 projiziert diffus-kortikal (Arousal, sensorische Modulation), B8 projiziert limbisch-thalamisch (Entrainment, Stimmung). Der Intertakt-Lock von B7 erfolgt multisynaptisch über B8→SCN; B7 hat keine eigene circadiane Taktquelle. Ein freilaufender circadianer Intertakt in B7 ist damit ausgeschlossen. Was driftet, ist die Fähigkeit von B7, dem SCN-gelockten B8-Intertakt zu folgen — nicht ein unabhängiger Takt, sondern das Kopplungsverhältnis selbst. Der *Intertakt-Phasenversatz* zwischen B7 und B8 akkumuliert über ~3–4 Tage bis zur CSD-Schwelle; die Attacke erzwingt Resynchronisation, der Zyklus beginnt erneut.
 
 Die empirische Evidenz für die Eigenständigkeit dieses Oszillators stammt aus dem PRE/POST-Vergleich (Tracker-Daten, Anhang B):
 
@@ -580,7 +588,7 @@ Die empirische Evidenz für die Eigenständigkeit dieses Oszillators stammt aus 
 | **Circadianer Drift** | ~2 h/Tag | **stabilisiert** | LDX normalisiert den Schlaf-Wach-Rhythmus |
 | **CSD-Zyklus** | ~6–7 Tage | **~4 Tage (subklinisch)** | Oszillator persistiert trotz zirkadianer Stabilisierung |
 
-LDX stabilisiert den *Intra-Kern-Takt* beider Kerne über D2-Rezeptor-vermittelte tonische Feuermodulation — das eliminiert die zirkadiane Drift und konsolidiert die Schlafarchitektur. Der *Inter-Kern-Phasenversatz* — die relative Phase zwischen B7 und B8 — wird nicht adressiert. Der ~4-Tage-CSD-Zyklus persistiert subklinisch: Der zirkadiane Shift war Symptom, nicht Ursache.
+LDX stabilisiert den *5-HT1A-Intratakt* beider Kerne über D2-Rezeptor-vermittelte tonische Feuermodulation — das eliminiert die zirkadiane Drift und konsolidiert die Schlafarchitektur. Die *Intertakt-Drift (B7 vs. B8-SCN-Lock)* — die relative Phasenbeziehung zwischen B7 und B8 — wird nicht adressiert. Der ~4-Tage-CSD-Zyklus persistiert subklinisch: Der zirkadiane Shift war Symptom, nicht Ursache.
 
 **Zirkadiane Schwebung (Modulationsfaktor)**
 
@@ -617,29 +625,45 @@ Der B7/B8-Phasenversatz erzeugt seine maximale Wirkung nicht diffus, sondern an 
 
 Der ML/IL-Komplex (Nuclei reuniens, rhomboideus, centromedianus, parafascicularis) ist eine funktionelle Gruppierung, keine anatomische Einheit. Er weist die dichteste belegte Überlappung beider Raphe-Kerne auf: B7 erreicht ihn über dorsale Tegmentumfasern, B8 über ventrale. Die einzelnen Kerne innerhalb des Komplexes haben unterschiedliche B7/B8-Innervierungsdichten und unterschiedliche kortikale Zielgebiete, was zu einer intrathalamischen Kaskade mit unterschiedlichen Kippschwellen führt (vgl. Anhang F.4.1). Die Funktion des ML/IL-Komplexes — kortikale Zustandsübergänge, Arousal-Gating, thalamokortikale Synchronisation — macht ihn zum kritischsten Relais für die in 2.5.3 beschriebene kortikale Kohärenz.
 
-Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Signal an den ML/IL-Komplex → stabile thalamokortikale Modulation. Bei zunehmendem Phasenversatz erzeugen die gegenphasigen serotonergen Inputs destruktive Interferenz: Das Signal wird nicht schwächer, sondern *inkohärent*. Der Thalamus erhält widersprüchliche Modulationssignale und kann kortikale Zustandsübergänge nicht mehr sauber orchestrieren. Die in 2.5.4 beschriebene Schlaffragmentierung — steigende Transitionsdichte über den Zyklus — ist das direkte Korrelat dieser thalamischen Interferenz.
+Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Signal an den ML/IL-Komplex → stabile thalamokortikale Modulation. Bei zunehmendem Phasenversatz erzeugen die gegenphasigen serotonergen Inputs destruktive Interferenz: Das Signal wird nicht schwächer, sondern *inkohärent*. Die beiden Inputs sind gegenphasig, weil die B7-Intertakt-Phase gegen die SCN-gelockte B8-Intertakt-Phase driftet — der Thalamus erhält einen serotonergen Tonus, dessen Modulationsachse (B7) sich zyklisch aus der SCN-gelockten Trägerachse (B8) herausbewegt. Der Thalamus erhält widersprüchliche Modulationssignale und kann kortikale Zustandsübergänge nicht mehr sauber orchestrieren. Die in 2.5.4 beschriebene Schlaffragmentierung — steigende Transitionsdichte über den Zyklus — ist das direkte Korrelat dieser thalamischen Interferenz.
 
-| Zyklustag | B7/B8-Phasenlage | ML/IL-Signal | Klinisches Korrelat |
+| Zyklustag | B7-Intertakt-Phase relativ zu B8-SCN-Lock | ML/IL-Signal | Klinisches Korrelat |
 | :---- | :---- | :---- | :---- |
-| **Tag 0–1** (post-iktal) | Resynchronisiert | Kohärent | Stabile Schlafarchitektur, niedrige Transitionsdichte |
-| **Tag 2–3** | Zunehmender Versatz | Teilinkohärent | Steigende Transitionsdichte, erste Arousal-Instabilitäten |
-| **Tag 3–4** | Maximaler Versatz | Destruktive Interferenz | Maximale Fragmentierung, CSD-Schwelle auf ansteigender Flanke erreicht |
+| **Tag 0–1** (post-iktal) | Phasensynchron (post-Reset) | Kohärent | Stabile Schlafarchitektur, niedrige Transitionsdichte |
+| **Tag 2–3** | Driftend | Teilinkohärent | Steigende Transitionsdichte, erste Arousal-Instabilitäten |
+| **Tag 3–4** | Maximal inkohärent | Destruktive Interferenz | Maximale Fragmentierung, CSD-Schwelle auf ansteigender Flanke erreicht |
 
 **LC-Suppression: Der Locus Coeruleus als autonomer Konvergenzpunkt**
 
 Der ML/IL-Thalamus kodiert die *kortikale* Konsequenz des B7/B8-Phasenversatzes. Die komplementäre *autonome* Konsequenz wird über einen zweiten Konvergenzpunkt vermittelt: den **Locus Coeruleus** (LC). Beide Raphe-Kerne projizieren mit unterschiedlicher Gewichtung serotonerg auf den LC und modulieren dessen noradrenergen Output — und damit den sympathischen Tonus.
 
-Der Mechanismus ist strukturell identisch zur thalamischen Interferenz: Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Suppressionssignal an den LC → saubere noradrenerge Herunterregulation → niedriger sympathischer Tonus → niedrige Ruhe-HR, kurzes τ. Bei zunehmendem Phasenversatz erhält der LC widersprüchliche Modulationssignale — der LC wird nicht von einem *schwachen* Signal schlecht supprimiert, sondern von zwei *inkoherenten* Signalen aktiv destabilisiert. Der LC kann keines der gegenphasigen Suppressionssignale sauber ausführen → persistenter sympathischer Tonus → hohes τ → HR-Elevation.
+Der Mechanismus ist strukturell identisch zur thalamischen Interferenz: Wenn B7 und B8 phasensynchron feuern, liefern sie ein kohärentes serotonerges Suppressionssignal an den LC → saubere noradrenerge Herunterregulation → niedriger sympathischer Tonus → niedrige Ruhe-HR, kurzes τ. Bei zunehmendem Phasenversatz erhält der LC widersprüchliche Modulationssignale — der LC wird nicht von einem *schwachen* Signal schlecht supprimiert, sondern von zwei *inkoherenten* Signalen aktiv destabilisiert. Der widersprüchliche Input entsteht, weil die B7-Intertakt-Phase aus dem SCN-gelockten B8-Tonus herausdriftet; die resultierende Suppressionsinkohäsion ist das direkte Substrat des aufbauenden Clamps (§2.5.1.1). Der LC kann keines der gegenphasigen Suppressionssignale sauber ausführen → persistenter sympathischer Tonus → hohes τ → HR-Elevation.
 
-| Zyklustag | B7/B8-Phasenlage | LC-Suppression | Autonomes Korrelat |
+| Zyklustag | B7-Intertakt-Phase relativ zu B8-SCN-Lock | LC-Suppression | Autonomes Korrelat |
 | :---- | :---- | :---- | :---- |
-| **Tag 0–1** (post-iktal) | Resynchronisiert | Kohärent → saubere Suppression | Niedriges τ, niedrige Ruhe-HR, steiler nächtlicher HR-Drop |
-| **Tag 2–3** | Zunehmender Versatz | Teilinkohärent → unvollständige Suppression | Steigendes τ, HR-Elevation (d-2/d-1 Muster in HR_RESTING, vgl. B.13.1) |
-| **Tag 3–4** | Maximaler Versatz | Destruktive Interferenz → LC bleibt aktiv | Maximales τ, dann abfallende HR am Anfallstag (vgl. B.13.1) |
+| **Tag 0–1** (post-iktal) | Phasensynchron (post-Reset) | Kohärent → saubere Suppression | Niedriges τ, niedrige Ruhe-HR, steiler nächtlicher HR-Drop |
+| **Tag 2–3** | Driftend | Teilinkohärent → unvollständige Suppression | Steigendes τ, HR-Elevation (d-2/d-1 Muster in HR_RESTING, vgl. B.13.1) |
+| **Tag 3–4** | Maximal inkohärent | Destruktive Interferenz → LC bleibt aktiv | Maximales τ, dann abfallende HR am Anfallstag (vgl. B.13.1) |
 
 Die Amplitude der autonomen Oszillation erklärt sich durch denselben Interferenz-Mechanismus: konstruktive Interferenz (B7+B8 in Phase) erzeugt maximale Suppression, destruktive Interferenz (B7/B8 gegenphasig) erzeugt maximale Destabilisierung. Die Differenz zwischen beiden Zuständen ist größer als bei bloßer Signalabschwächung eines einzelnen Modulators.
 
 **Zwei Projektionen, ein Phasenversatz, zwei Konsequenzen:** Der B7/B8-Interferenz-Mechanismus erzeugt über den ML/IL-Thalamus die *kortikale* Fragmentierung (messbar als Schlafarchitektur-Instabilität, Anhang B.2–B.3) und über den LC die *autonome* Zyklik (messbar als HR-Drop-Periodizität und HR_RESTING-Deviation, Anhang B.10, B.13). Beide sind unterschiedliche Projektionen desselben Signals — der sympathovagalen Zyklusposition. Der HR-Drop und der HR_RESTING-Wert sind damit keine bloßen Korrelate, sondern direkte Readouts des B7/B8-Phasenversatzes über den LC-Pfad. Dies erklärt, warum die CSD den autonomen Zyklus nicht beeinflusst (B.13.2): Die CSD resynchronisiert den Kortex (über den thalamischen Pfad), aber die B7/B8-Phasenbeziehung — und damit der LC-Drive — bleibt unverändert. Der Beat zieht unbeeindruckt seine Bahn.
+
+##### **Der aufbauende sympathische Clamp als Ursache, Metrik und Problem**
+
+Die B7-Intertakt-Drift gegen B8-SCN-Lock projiziert über die etablierten autonomen Ausgangspfade (LC, PVN, RVLM, zentrale Amygdala; direkte sympathische Prämotoneurone) auf die Peripherie. Dort zeigt sie sich als **aufbauender sympathischer Clamp**: rising floor HR, sinkende HRV, fehlender Vagusrebound, VLF-Dominanz im HRV-Spektrum. Drei Eigenschaften machen diesen Clamp zu einer ungewöhnlichen Größe.
+
+**Er ist Ursache.** Der chronisch erhöhte Sympathikotonus verstärkt die Nachfrage an hochumsatzgebundenen 5-HT-Terminalen (kortikal, hypothalamisch). Bei fortgesetzter Intertakt-Drift überschreitet diese Nachfrage die lokale Synthese- und Reuptake-Kapazität — **funktionelle terminale Erschöpfung**, distinkt von somatischer Depletion (die Speicher sind nicht leer, nur die Release/Recovery-Kinetik ist lokal überfordert). Kortikales 5-HT fällt unter die Schwelle, ab der thalamokortikales Gating aufrechterhalten werden kann.
+
+**Er ist Metrik.** Der Clamp ist direkt messbar und auf mehreren Zeitskalen simultan lesbar: als Trait-Fingerabdruck im VLF-Band (42 ± 1,5 % über pharmakologisch variierte Nächte, Anhang I.6); als 20-min-Inter-Peak-Intervall der VLF-Oszillation (direkte Signatur des 5-HT1A-Intratakts, Anhang I.1, I.6); als Dominanz-Kompression im zweidimensionalen Zustandsraum der Wachstunden (Anhang I.5); als b7-risk-Integral (gewichtetes Exposure unter der Dominanz-Schwelle, Anhang I.5); als HR-Drop-Periodizität (~7,5 Tage PRE, ~4 Tage POST, Anhang B.10); als HR_RESTING-Drift an den Anfallstagen (Anhang B.13). Die Tracker-Daten (Anhang B) und die IBI-Spektralanalyse (Anhang I) sind zwei Messkanäle desselben Signals — der sympathovagalen Intertakt-Position.
+
+**Er ist Problem.** Der Clamp bereitet den Anfall vor. Am Peak-Clamp ist die CSD der einzige verfügbare Reset-Mechanismus: Nur die globale kortikale Zwangsdepolarisation erzwingt den postiktalen Parasympathikus-Rebound, der den peripheren Clamp kappt, und die Release-Pause an den kortikalen Terminalen, die den funktionellen Engpass entlastet. Der Anfall ist damit nicht das Primärereignis, sondern der Ersatz-Reset, den das defekte Intertakt-Selbstreset-System nicht mehr selbst leistet.
+
+**Die Dreifachidentität als strukturelle Signatur.** Dass derselbe peripher messbare Parameter simultan Treiber, Metrik und Problem ist, ist nicht ein Zirkelschluss, sondern die direkte Folge der Konstruktion: Der sympathische Output ist die Variable, in der der Kerndefekt sich nach außen abbildet. Ein System, das seine Störung in derselben Größe abbildet, die es antreibt, kann nicht entkoppeln, ohne die Störung selbst zu beheben. Pharmakologische Intervention, die nur die Metrik adressiert (Betablocker), verschleiert die Dreifachidentität, ohne die Autoreceptor-Kinetik zu korrigieren — das Phasenoffset-Ablesesignal verschwindet, die Kinetikstörung bleibt.
+
+**Literaturstützung.** Die autonome DRN-Projektionsanatomie ist etabliert (Johnson & Lowry; Bago & Dean; Ren et al. 2018). Die asymmetrische 5-HT1A-Autoreceptor-Kinetik — Desensitisierung schneller als Resensitisierung, mit trait-artiger Verschiebung unter Stress/Glukokortikoidexposition — ist durch die Blier/de-Montigny-Linie (Antidepressiva-Wirklatenz), durch Laaris et al. (1997, stress-induzierte Desensitisierung) und durch Cremers et al. modellbasiert dokumentiert. Die Entkopplung von somatischer Feuerrate und terminalem Release (Hamon, Gartside; Bunin & Wightman) stützt die Deutung der Terminalerschöpfung als funktionelles, nicht als Speicher-Phänomen. Die prodromale Zeitverschiebung um 24–48 h vor Kopfschmerz mit autonomer Signatur (Giffin/Goadsby) ist die klinische Manifestation des laufenden Clamp-Aufbaus.
+
+**Evidenzgradierung siehe Evidenztabelle §2.** Der Gesamtmechanismus ist modellspezifisch; die Einzelbausteine (Projektionsanatomie, Autoreceptor-Kinetik, Release/Speicher-Dynamik) sind anerkannt.
 
 #### **2.5.2 SCN-Raphe-Kopplung: Serielle Architektur und Flaschenhals-Mechanismus**
 
@@ -657,10 +681,10 @@ Die SCN↔Raphe-Verschaltung folgt einer **seriellen** Architektur: **SCN ↔ B8
 
 Die serielle Architektur hat eine nicht-triviale Konsequenz: Die 5-HT1A-Autorezeptor-Instabilität am MRN (B8) erklärt *beide* in diesem Modell postulierten Desynchronisationsmodi über einen einzigen Mechanismus.
 
-1. **Intra-Kern-Effekt (Feuerrate-Oszillation):** Ein instabiler 5-HT1A-Autorezeptor erzeugt underdämpfte Feuerraten-Oszillationen innerhalb des MRN — der in Abschnitt 2.2 beschriebene Grundmechanismus. Dasselbe gilt für den DRN (B7), dessen 5-HT1A-Autorezeptoren denselben Defekt tragen.
-2. **Inter-Kern-Effekt (B7 verliert SCN-Synchronisation):** Weil B7 den SCN ausschließlich über das B8-Relay erreicht, bedeutet ein verrauschtes B8-Signal, dass B7 seine *einzige* Quelle zirkadianer Synchronisationsinformation verliert. Der B7/B8-Phasenversatz (Abschnitt 2.5.1) ist daher kein unabhängiger Defekt, sondern eine direkte Downstream-Konsequenz der B8-Autorezeptor-Instabilität: B8 rauscht → SCN-Rückkopplung auf B7 degradiert → Phasenbeziehung driftet.
+1. **Intratakt-Effekt (Feuerrate-Oszillation):** Ein instabiler 5-HT1A-Autorezeptor erzeugt underdämpfte Feuerraten-Oszillationen innerhalb des MRN — der in Abschnitt 2.2 beschriebene Grundmechanismus. Dasselbe gilt für den DRN (B7), dessen 5-HT1A-Autorezeptoren denselben Defekt tragen.
+2. **Intertakt-Effekt (B7 verliert SCN-Synchronisation):** Weil B7 den SCN ausschließlich über das B8-Relay erreicht, bedeutet ein verrauschtes B8-Signal, dass B7 seine *einzige* Quelle zirkadianer Synchronisationsinformation verliert. Die Intertakt-Drift (Abschnitt 2.5.1) ist daher kein unabhängiger Defekt, sondern eine direkte Downstream-Konsequenz der B8-Autorezeptor-Instabilität: B8 rauscht → SCN-Rückkopplung auf B7 degradiert → B7-Intertakt-Phase driftet gegen B8-SCN-Lock.
 
-**Ein Mechanismus, ein Defekt, zwei Downstream-Effekte.** Die Zwei-Prozess-Darstellung (Intra-Kern-Oszillation vs. Inter-Kern-Versatz, vgl. D.4.2) ist phänomenologisch korrekt — beide Phänomene existieren und sind messbar —, aber mechanistisch redundant. Der MRN-5-HT1A-Autorezeptor ist der anatomische und funktionelle Flaschenhals, der beide Effekte erzeugt.
+**Ein Mechanismus, ein Defekt, zwei Downstream-Effekte.** Die Zwei-Prozess-Darstellung (Intratakt-Oszillation vs. Intertakt-Drift, vgl. D.4.2) ist phänomenologisch korrekt — beide Phänomene existieren und sind messbar —, aber mechanistisch redundant. Der MRN-5-HT1A-Autorezeptor ist der anatomische und funktionelle Flaschenhals, der beide Effekte erzeugt.
 
 **LDX-Wirkung auf den SCN: Indirekt über B8**
 
@@ -668,7 +692,7 @@ LDX wirkt *nicht* direkt auf den SCN. Der SCN exprimiert weder DAT noch NET in f
 
 1. **LDX → B8-Stabilisierung:** LDX erhöht tonisch Dopamin und Noradrenalin in der Umgebung der Raphe-Kerne → D2-Rezeptor-vermittelte Modulation stabilisiert die B8-Feuerrate (vgl. Abschnitt 2.5.1).
 2. **Stabilisiertes B8 → kohärenteres SCN-Signal:** Ein weniger verrauschtes B8 liefert ein kohärenteres 5-HT-Signal an den SCN → SCN-Entrainment verbessert sich → zirkadiane Drift wird korrigiert.
-3. **Persistierender ~4-Tage-Oszillator:** LDX korrigiert den *Intra-Kern-Takt* (Feuerrate beider Kerne), adressiert aber nicht den *Inter-Kern-Relay-Versatz* — die relative Phasenbeziehung zwischen B7 und B8, die über das SCN-Relay synchronisiert wird. Das erklärt die Tracker-Daten: zirkadiane Drift eliminiert (r = −0.831), aber der ~4-Tage-Oszillator persistiert subklinisch, weil das verbesserte, aber nicht perfekte B8-Signal den B7/B8-Versatz zwar dämpft, aber nicht aufhebt.
+3. **Persistierender ~4-Tage-Oszillator:** LDX korrigiert den *5-HT1A-Intratakt* (Feuerrate beider Kerne), adressiert aber nicht die *Intertakt-Drift (B7 vs. B8-SCN-Lock)* — die relative Phasenbeziehung zwischen B7 und B8, die über das SCN-Relay synchronisiert wird. Das erklärt die Tracker-Daten: zirkadiane Drift eliminiert (r = −0.831), aber der ~4-Tage-Oszillator persistiert subklinisch, weil das verbesserte, aber nicht perfekte B8-Signal den Intertakt-Versatz zwar dämpft, aber nicht aufhebt.
 
 **Autonomes Mitschwingen: Zirkadiane Amplifikation des Grundrhythmus**
 
@@ -769,14 +793,14 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Posteriorer Kortex wacht zuletzt auf (frontal-first-Gradient) | Gesichert | Pigorini et al. 2015 (Current Biology), Marzano et al. 2011 |
 | Raphe als tonischer kortikaler Synchronisator | Gesichert | DRN-Feuerkinetik etabliert (Monti 2008), diffuse Projektion anatomisch gesichert |
 | Endogene Periodenlänge τ ≈ 26 h | Einzelfallbeobachtung | Langjährige konsistente Selbstbeobachtung |
-| ~4-Tage-Oszillator als eigenständiger CSD-Taktgeber (B7/B8-Phasenversatz) | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B): Median IBI 4,0 d, Autokorrelation Lag 4 r=−0,692; persistiert unter LDX-stabilisiertem Schlaf |
+| ~4-Tage-Oszillator als Beat zwischen B7-Intertakt-Drift und B8-SCN-gelockter Intertakt-Phase | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B): Median IBI 4,0 d, Autokorrelation Lag 4 r=−0,692; persistiert unter LDX-stabilisiertem Schlaf |
 | Quasi-wöchentliche Periodizität im HR-Drop (7,5 Tage, FFT) als autonome Manifestation der zirkadianen Schwebung (PRE-Zustand) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B.10) |
 | Phasenmodell: CSD-Schwelle auf ansteigender Flanke nach HR-Drop-Minimum, nicht am Minimum selbst | Deskriptiv (n=15 Anfälle) | Tracker-Daten (Anhang B.12); Anfall korreliert mit dDrop/dt, nicht mit Drop-Amplitude |
 | Midline-/Intralaminärer Thalamus als primäre B7/B8-Interferenzquelle mit intrathalamischer Kaskade | Anatomisch gesichert, funktionelle Rolle hypothetisch | B7/B8-Konvergenz im ML/IL-Komplex anatomisch etabliert (Vertes 2004, Morin 2013); Interferenz-Mechanismus und Kaskadenmodell eigene Hypothese |
 | LC als autonomer Konvergenzpunkt der B7/B8-Interferenz; HR/τ als Readout des Phasenversatzes | Anatomisch gesichert (Raphe→LC-Projektionen), funktionelle Interferenz-Hypothese | DRN/MRN→LC-Projektionen etabliert; HR_RESTING-Kreuzvalidierung (Anhang B.13); CSD-Invarianz des autonomen Zyklus (B.13.2) |
-| LDX stabilisiert Intra-Kern-Takt, nicht Inter-Kern-Phasenversatz | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
-| Zirkadiane Schwebung als Amplifikator des B7/B8-Grundrhythmus (nicht eigenständiger Taktgeber) | Hypothetisch, konsistent mit PRE/POST-Dissoziation | PRE: ~6–7-Tage-Rhythmus (Superposition); POST: ~4-Tage-Rhythmus (Eigenperiode); Differenz erklärt durch Wegfall des zirkadianen Modulationsfaktors |
-| Stochastisches Fenstermodell (Triggerstärke × B7/B8-Phasenversatz-Zustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
+| LDX stabilisiert B8-SCN-Lock (Intertakt von B8) sowie beide Intratakte, adressiert aber nicht die asymmetrische 5-HT1A-Resensitisierungskinetik am B7 — der B7-Intertakt-Drift persistiert | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
+| Zirkadiane Schwebung (τ ≈ 26 h vs. T = 24 h) als Amplifikator des B7-Intertakt-Drift-Musters; unter PRE superponiert mit der Intertakt-Eigenperiode zu ~6–7 Tagen, unter LDX POST reduziert auf ~4 Tage (Intertakt-Drift pur) | Hypothetisch, konsistent mit PRE/POST-Dissoziation | PRE: ~6–7-Tage-Rhythmus (Superposition); POST: ~4-Tage-Rhythmus (Eigenperiode); Differenz erklärt durch Wegfall des zirkadianen Modulationsfaktors |
+| Stochastisches Fenstermodell (Triggerstärke × B7-Intertakt-Drift-Zustand im Zyklus) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
 | Aufgabengetriebener Arousal als Kompensation für insuffizienten Raphe-Tonus | Hypothetisch, konsistent | Klinische Selbstbeobachtung, konsistent mit Arousal-Quellen-Differenzierung |
 | Räumliche SWS-Fragmentierung bei erhaltenem Quantum (Deep-Episoden/h: 1,6 PRE vs. 1,1 POST, p=0,005; Hierarchie Deep > REM > Light) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3) |
 | LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3, B.5) |
@@ -785,6 +809,14 @@ Die Schlafarchitektur (detailliert in Anhang B) ist ein direkter Ausdruck der in
 | Late-Chronotyp als Downstream-Marker globaler Desynchronisation | Plausibel, epidemiologisch gestützt | Kendis et al. 2015: generalisierte Epilepsie 5× Late-Chronotyp vs. Kontrollen; fokale Epilepsie kein Unterschied. ADHD–Late-Chronotyp-Assoziation robust (Kooij & Bijlenga 2013, Coogan & McGowan 2017). Migräne–Late-Chronotyp (Jung et al. 2025, Baksa et al. 2025). Segregation spezifisch mit globalen Synchronisationsstörungen, nicht mit lokalen Hardwaredefekten. |
 | Subjektiver Late-Chronotyp bei Population A als Kompensationsartefakt (nicht circadianer Trait) | Hypothetisch, konsistent mit Kreuzkorrelation | ADHD–Late-Typ-Assoziation (Kooij & Bijlenga 2013); generalisierte Epilepsie 5× Late-Typ vs. fokale kein Effekt (Kendis 2015); Manni 2016: MEQ ≠ DLMO bei Epilepsie; Einzelfall: Abendmüdigkeit erstmals unter LDX (Anhang C) |
 | τ ≈ 26 h als potenzielles Raphe-SCN-Symptom | Hypothetisch, mechanistisch konsistent | DRN projiziert zum SCN ausschließlich über B8-Relay (vgl. 2.5.2); instabiler Raphe-Tonus könnte SCN-Zeitgeber-Kalibrierung verzerren → verlängerte endogene Periodenlänge nicht unabhängiger Chronotyp-Trait, sondern Downstream der Raphe-SCN-Interaktion. Nicht direkt testbar ohne Forced-Desynchrony-Protokolle. |
+| Intratakt (5-HT1A-Grenzzyklus ~20 min) funktional in B7 und B8 | Gesichert | Anhang I.1; Witt et al. 2022; Cooper et al. 2024 |
+| Intertakt-SCN-Lock von B8 monosynaptisch | Gesichert | Meyer-Bernstein et al. 1996 |
+| B7-Intertakt-Drift als asymmetrische 5-HT1A-Resensitisierungskinetik (Hit 1) | Modellspezifisch, kongruent mit Kinetikliteratur | Blier/de Montigny; Laaris et al. 1997; Cremers et al. |
+| VLF-Trait-Fingerabdruck (42 ± 1,5 %) als integrale Instabilitätssignatur | Deskriptiv, n=4 Nächte | Anhang I.6 |
+| 20-min-VLF-Rhythmus als direkte Intratakt-Signatur | Hypothetisch, n=1 Tag | Anhang I.1, I.6 |
+| Aufbauender sympathischer Clamp als Ursache, Metrik und Problem simultan | Modellspezifisch | §2.5.1.1 |
+| Funktionelle terminale Erschöpfung (nicht somatische Depletion) als Terminalereignis | Hypothetisch, mechanistisch ableitbar | Hamon/Gartside; Bunin/Wightman |
+| CSD als Ersatzmechanismus für defekten Intertakt-Selbstreset | Modellspezifisch | §2.5.1.1; §4.5 |
 
 #### **2.5.5 Sympathischer Floor als Dämpfungskonstante des B7/B8-Oszillators**
 
@@ -1019,7 +1051,7 @@ Die serotonerge Konvergenz der Prophylaktika adressiert die Empfindlichkeit (Int
 | Valproat | Serotonerge Modulation über GABAerge Verstärkung | Indirekte Stabilisierung der Raphe-Aktivität |
 | Amitriptylin | SERT-Hemmung | Direkte Erhöhung der Serotonin-Verfügbarkeit |
 | Topiramat | Indirekte serotonerge Modulation | Multimodal, serotonerge Komponente |
-| Triptane (akut) | 5-HT1B/D-Agonismus | Präsynaptische Hemmung der trigeminalen Transmitterfreisetzung (Glied 1) + Raphe-Terminal-Kompensation des 1A-Feedback-Defekts (Glied 2, modellspezifisch); vgl. 4.4.2, 4.9.1 |
+| Triptane (akut) | 5-HT1B/D-Agonismus | Präsynaptische Hemmung der trigeminalen Transmitterfreisetzung (Glied 1) + Raphe-Terminal-Kompensation des 1A-Feedback-Defekts (Glied 2, modellspezifisch); vgl. 4.4.3, 4.9.1 |
 | CGRP-Antagonisten | Einzige Ausnahme | Kaskade, nicht Auslöser – ob CGRP upstream oder parallel zu Serotonin liegt, ist unklar |
 
 **PFC-Schutz und seine Grenzen:** Der PFC ist unter LDX pharmakologisch geschützt — der MD-Thalamus-PFC-Loop ist dopaminerg stabilisiert, was die Kippschwelle in der thalamischen Kaskade erhöht (vgl. Anhang F.4.1). Dieser Schutz ist eine höhere Schwelle, kein absoluter Schutz. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
@@ -1199,7 +1231,7 @@ Die synchrone Massendepolarisation initiiert eine selbstpropagierte elektrochemi
 
 #### **4.4.1 Tonische Destabilisierungswelle als Primärmechanismus**
 
-Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
+Die in 4.4.3 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
 
 | Eigenschaft | CSD (klassisch) | Tonische Destabilisierungswelle |
 | :---- | :---- | :---- |
@@ -1259,7 +1291,18 @@ Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck versc
 
 **Hansen et al. — Aura-Variabilität als Indiz gegen CSD als fixen Mechanismus:** Hansen et al. dokumentierten über 1000 visuelle Auren bei einem einzelnen Patienten über 18 Jahre (Hansen et al. 2013, *Brain*). Das zentrale Ergebnis: Die Auren zeigen ein *Spektrum*, kein stereotypes Muster. Form, Größe, Propagationsrichtung und -geschwindigkeit variieren erheblich zwischen Attacken. Wenn CSD ein stereotyper ionischer Prozess wäre — determiniert durch kortikale Architektur und Diffusionsparameter —, müssten die Auren bei demselben Patienten weitgehend identisch sein. Die beobachtete Variabilität ist mit einem tonischen Interferenzmechanismus natürlich erklärbar: Variabler Phasenoffset → variable Interferenztopographie → variables Aura-Muster. Jede Attacke erzeugt ein anderes räumliches Muster der Destabilisierung, abhängig vom aktuellen Zustand des B7/B8-Phasenversatzes.
 
-#### **4.4.2 Metabolische Krise: Zwei Kausalrichtungen**
+#### **4.4.2 Intertakt-Drift als zweiter, übergeordneter Fragmentierungsmechanismus**
+
+Die Intratakt-Fragmentierung (§4.4.1) beschreibt stochastische Release-Muster innerhalb eines einzelnen B7-Takts: Bei vesikulärer Depletion entsteht innerhalb des DRN ein räumliches Mosaik phasenverschobener, amplitudenvariabler Serotoninpulse (vgl. §2.2.1). Der zweite, übergeordnete Mechanismus operiert auf der Intertakt-Ebene: Zwischen zwei Takten resensitisiert der somatodendritische 5-HT1A-Autoreceptor am B7 langsamer, als er in der aktiven Takt-Phase desensitisiert wurde. Jede Takt-Pause hinterlässt einen Rest-Desensitisierungszustand. Der folgende Takt startet auf leicht erhöhtem tonischem Floor; die Gain-Amplitude der B7-Intertakt-Hüllkurve driftet gegen den SCN-gelockten B8-Träger (§2.5.1.1).
+
+Beide Mechanismen sind additiv und konvergieren auf dasselbe CSD-Vorbereitungsprofil:
+
+- **Intratakt-Fragmentierung** erzeugt innerhalb eines einzelnen Takts stochastische Release-Muster → lokale serotonerge Versorgungslücken am postsynaptischen Gewebe.
+- **Intertakt-Drift** erzeugt über Tage ein progressiv ansteigendes Baseline-Defizit → die stochastischen Lücken akkumulieren auf einem immer weniger kompensierbaren Hintergrund; die B7-Intertakt-Phase driftet aus der B8-SCN-gelockten Trägerachse heraus.
+
+Die CSD-Schwelle wird erreicht, wenn beide Prozesse konvergieren: Eine Intratakt-Fragmentierung in einem ungünstigen Takt-Moment, auf einer bereits durch Intertakt-Drift prekären Basis, überschreitet lokal die serotonerge Reparaturkapazität. Die Phasenlage des Anfalls (ansteigende Flanke nach HR-Drop-Minimum, Median 2 Tage post-Minimum, Anhang B.12) ist in diesem Rahmen natürlich: Am Drop-Minimum ist das System maximal gedämpft (niedriger sympathischer Drive auf prekärer Intertakt-Basis); der Anfall kommt, wenn der sympathische Drive zurückkehrt und die Diskrepanz zwischen steigender Nachfrage und erschöpfter Reparaturkapazität maximal wird. Die ANS-Signatur dieses Prozesses ist der aufbauende sympathische Clamp (§2.5.1.1).
+
+#### **4.4.3 Metabolische Krise: Zwei Kausalrichtungen**
 
 Die metabolische Krise hat zwei distinkte Modi — einen graduellen Vorläufer und eine akute Konsequenz der CSD:
 
@@ -1296,6 +1339,8 @@ Die Standardinterpretation der CSD ist pathologisch: ein Fehlereignis, das Schme
 Eine vollständige CSD-Welle depolarisiert den gesamten Kortex einmal durch — jede Region, synchron, von vorne nach hinten. Danach folgt eine Phase kompletter Suppression, dann Repolarisation. Alle Regionen starten gleichzeitig neu. Das Patchwork aus desynchronisierten wachen und schlafenden Arealen wird gelöscht. Die thalamokortikale Schleife rekalibriert sich auf einen sauberen Zustand.
 
 Funktional ist dies dasselbe, was der in Anhang C beschriebene Bewusstseinsreset durch einen optimal getimten Powernap approximiert — nur brutal und unkontrolliert.
+
+Die CSD adressiert präzise das Defizit, das Hit 1 in der 5-HT1A-Resensitisierungskinetik hinterlässt: Sie erzwingt über den postiktalen Parasympathikus-Rebound eine Release-Pause an den kortikalen serotonergen Terminalen, die der defekte Intertakt-Selbstreset nicht mehr spontan leistet. Sie repariert nicht die Kinetik — sie kappt ihre Konsequenz. Deshalb baut sich der Gain nach jeder CSD erneut auf, und der nächste Zyklus beginnt (vgl. §2.5.1.1, §4.4.2).
 
 #### **4.5.1 Konvergente Evidenzlinien**
 
@@ -1573,7 +1618,7 @@ Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto g
 
 Die vollständige Triptan-Mechanistik im Modell umfasst drei Glieder, die über unterschiedliche Rezeptorpopulationen und mit unterschiedlichen Evidenzgraden operieren:
 
-**Glied 1 — Trigeminales Terminal [gesichert]:** 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) — nicht die Feuerrate, sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich (vgl. 4.4.2). Quantitative Stützung: Elimination der Exozytose verdoppelt präsynaptischen ATP-Spiegel auf 3,4 mM (Rangaraju et al. 2014, Cell); Vesikelpool ist dominante metabolische Ruhelast am Nerventerminal (Bhatt et al. 2021, Science Advances); synaptisches Energiebudget: Vesikelrecycling > Ionenpumpen (Attwell & Laughlin 2001, Neuron; Harris et al. 2012, Neuron).
+**Glied 1 — Trigeminales Terminal [gesichert]:** 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) — nicht die Feuerrate, sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich (vgl. 4.4.3). Quantitative Stützung: Elimination der Exozytose verdoppelt präsynaptischen ATP-Spiegel auf 3,4 mM (Rangaraju et al. 2014, Cell); Vesikelpool ist dominante metabolische Ruhelast am Nerventerminal (Bhatt et al. 2021, Science Advances); synaptisches Energiebudget: Vesikelrecycling > Ionenpumpen (Attwell & Laughlin 2001, Neuron; Harris et al. 2012, Neuron).
 
 **Glied 2 — Raphe-Terminal [hypothetisch — modellspezifisch]:** 5-HT1B/1D-Autorezeptoren auf DRN/MRN-Terminalen werden durch Triptane aktiviert (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1, vgl. 2.2): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen → Unterbrechung des Burst-Deplete-Zyklus (vgl. 2.2.1) → stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird.
 
@@ -1688,6 +1733,8 @@ Die autonome Symptomatik bei schweren Migräneattacken wird konventionell als Te
 Die drei B7-Zustände (intakt, depleted, aphasisch) und ihre biologische Grundlage (Vesikelökonomie, Flaschenhälse, Regenerationskinetik) sind als Teil des Primärdefekts in 2.2.1 beschrieben. Im autonomen Kontext ist die klinische Konsequenz spezifisch:
 
 Die ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) sind monosynaptisch von B7 innerviert. Der aphasische Zustand — Feuermuster erhalten, Transmitteroutput stochastisch degradiert (vgl. 2.2.1) — ist für die ANS-Kerne der destabilisierendste aller drei Zustände: Bei Entzug (B7 depleted) schalten sie auf Eigendynamik; bei Aphasie erhalten sie ein Signal, das ihre Eigendynamik stört, ohne ein alternatives Ordnungssignal zu liefern. Die HR-Spreading-Daten des Einzelfalls 07.04.2026 (Anhang B.20) zeigen die Dissoziation als physiologischen Marker: SD hoch + RMSSD hoch = aphasische Instabilität; SD niedrig + RMSSD niedrig = Entzug (Fixierung).
+
+Im Intratakt/Intertakt-Rahmen (§2.5.1) ist B7-Aphasie der Zustand, in dem die chronische Intertakt-Drift (tonischer Floor-Anstieg zyklus-zu-zyklus) die B7-Feuerrate in eine Zone treibt, in der die Vesikel- und ATP-Reserven der einzelnen Intratakte nicht mehr konsistent versorgt werden. Die Aphasie ist damit nicht ein diskreter Zustand, sondern die Endstufe eines kontinuierlichen Intertakt-Drifts — der Übergang erfolgt, wenn der tonische Floor die lokale Reparaturkapazität überschreitet (vgl. §2.5.1.1).
 
 Pharmakologische Interventionen auf der Vesikelökonomie-Ebene sind in 03_pharma/09_vesikeloekonomie_5htp.md dokumentiert.
 
@@ -2119,7 +2166,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | SCN-Raphe-Kopplung und serotonerges Entrainment | Gesichert | Tiermodelle, Tract-Tracing, Rezeptorpharmakologie |
 | Endogene Periodenlänge τ ≈ 26 h | Einzelfallbeobachtung | Langjährige konsistente Selbstbeobachtung |
 | Circadiane Schwebung als Dämpfungsmodulator der Raphe-Periodizität | Hypothetisch, konsistent | Eigene Beobachtung + SCN-Raphe-Interaktion als Mechanismus |
-| Stochastisches Fenstermodell (Triggerstärke × Dämpfungszustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
+| Stochastisches Fenstermodell (Triggerstärke × B7-Intertakt-Drift-Zustand im Zyklus) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
 | Lisdexamfetamin-Mikrodosierung als Zieldosis | Einzelfallbeobachtung | Eigener Selbstversuch, erste Datenpunkte |
 | Erhöhtes neurales Rauschen bei ADHS, reduzierbar durch Stimulanzien | Gesichert | EEG-Studie (Bluschke et al. 2019, n=29+32), kontrolliert |
 | Rausch-getriebene Struktur-Funktions-Entkopplung bei ADHS | Gesichert | fMRI + computationale Modellierung (Hearne et al. 2021) |
@@ -2187,6 +2234,17 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Demarquay-Alternative (kortikaler Ursprung) erklärt Symptomtopographie, nicht Symptomintensität | Literaturkritik | Demarquay et al. 2018 (Cephalalgia) |
 | Temporale Sequenz: Literatur beschreibt visuelle Aura vor Hirnstammsymptomen; Modell sagt ANS zuerst; Auflösung über Detektions-Bias plausibel, nicht gesichert | Potenziell falsifizierend, Auflösung hypothetisch | ICHD-3, Einzelfallbeobachtung B.20 |
 | Interferenz vs. Entzug vs. Rauschexposition als drei distinkte Destabilisierungsmechanismen mit unterschiedlichen Zeitkonstanten | Modellpräzisierung | D.4.3, Anhang B.20 |
+| Intratakt (5-HT1A-Grenzzyklus ~20 min) funktional in B7 und B8 | Gesichert | Anhang I.1; Witt et al. 2022; Cooper et al. 2024 |
+| Intertakt-SCN-Lock von B8 monosynaptisch | Gesichert | Meyer-Bernstein et al. 1996 |
+| B7-Intertakt-Drift als asymmetrische 5-HT1A-Resensitisierungskinetik (Hit 1) | Modellspezifisch, kongruent mit Kinetikliteratur | Blier/de Montigny; Laaris et al. 1997; Cremers et al. |
+| ~4-Tage-Oszillator als Beat zwischen B7-Intertakt-Drift und B8-SCN-gelockter Intertakt-Phase | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B); Autokorrelation Lag 4 r=−0,692 |
+| LDX stabilisiert B8-SCN-Lock (Intertakt von B8) sowie beide Intratakte, adressiert aber nicht die asymmetrische 5-HT1A-Resensitisierungskinetik am B7 — der B7-Intertakt-Drift persistiert | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
+| Zirkadiane Schwebung (τ ≈ 26 h vs. T = 24 h) als Amplifikator des B7-Intertakt-Drift-Musters; unter PRE superponiert mit der Intertakt-Eigenperiode zu ~6–7 Tagen, unter LDX POST reduziert auf ~4 Tage (Intertakt-Drift pur) | Hypothetisch, konsistent mit PRE/POST-Dissoziation | Modellinterpretation aus §2.5.1 + Tracker-Daten PRE/POST |
+| VLF-Trait-Fingerabdruck (42 ± 1,5 %) als integrale Instabilitätssignatur | Deskriptiv, n=4 Nächte | Anhang I.6 |
+| 20-min-VLF-Rhythmus als direkte Intratakt-Signatur | Hypothetisch, n=1 Tag | Anhang I.1, I.6 |
+| Aufbauender sympathischer Clamp als Ursache, Metrik und Problem simultan | Modellspezifisch | §2.5.1.1 |
+| Funktionelle terminale Erschöpfung (nicht somatische Depletion) als Terminalereignis | Hypothetisch, mechanistisch ableitbar | Hamon/Gartside; Bunin/Wightman |
+| CSD als Ersatzmechanismus für defekten Intertakt-Selbstreset | Modellspezifisch | §2.5.1.1; §4.5 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
@@ -2766,6 +2824,8 @@ Die 7,5-Tage-Periodizität im nächtlichen HR-Drop entspricht der vorhergesagten
 
 Dies ist kein separates Phänomen — der HR-Slope *ist* die autonome Manifestation der zirkadianen Schwebung. Der Drop verstärkt das Signal durch Differenzbildung (eliminiert gemeinsames Rauschen aus Entry und Exit).
 
+Die 7,5-Tage-Periodizität ist strukturell die PRE-Projektion der Intertakt-Drift von B7 gegen B8-SCN-Lock, superponiert mit der zirkadianen Schwebung (τ ≈ 26 h). Unter LDX POST wird die zirkadiane Schwebung eliminiert (r = −0,831 Einschlafzeit ~ Schlafdauer); was bleibt, ist die ~4-Tage-Eigenperiode der reinen B7-Intertakt-Drift (Autokorrelation Lag 4 r = −0,692, §2.5.1). Die Differenz zwischen PRE (~7,5 d) und POST (~4 d) ist damit nicht Hinweis auf einen anderen Mechanismus, sondern das Auftrennen einer Superposition.
+
 **POST-Daten**
 
 18 Nächte reichen nicht für eine belastbare FFT bei 7-Tage-Perioden. Mindestens 25, idealerweise 40+ Nächte nötig. Zwei Vorhersagen:
@@ -2937,6 +2997,8 @@ Der Algorithmus ist nicht rekonstruierbar. Versuche, HR_RESTING aus nächtlichen
 
 Der HR_RESTING-Befund ist eine unabhängige Kreuzvalidierung des Phasenmodells (B.12) über einen anderen Messkanal. Beide Metriken — der selbst berechnete Drop/τ und der proprietäre HR_RESTING — sind unterschiedliche Projektionen desselben Signals: der sympathovagalen Zyklusposition. Beide enthalten das Signal, beide verzerren es auf eigene Weise (unser Algorithmus bei Nicht-Sättigungskurven, der Xiaomi-Algorithmus bei atypischen Profilen). Die Konvergenz beider Metriken auf dasselbe Anfallsmuster stärkt den Befund.
 
+Die Invarianz des autonomen Zyklus gegenüber der CSD ergibt sich direkt aus der Intertakt-Architektur: Die CSD adressiert den kortikalen Notfall (Resynchronisation über Zwangsdepolarisation) und kappt temporär den peripheren sympathischen Clamp (§2.5.1.1), aber die defekte 5-HT1A-Resensitisierungskinetik am B7 bleibt unverändert. Der B7-Intertakt-Drift beginnt unmittelbar postiktal wieder von der neuen Ausgangslage aus — der Beat zieht unbeeindruckt seine Bahn, weil sein Treiber nicht adressiert wurde.
+
 #### **B.13.3 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
@@ -3011,7 +3073,7 @@ Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schl
 
 #### **B.15.1 Interpretation**
 
-Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynaptische Hemmung der trigeminalen Transmitterfreisetzung → Schmerzblockade; vgl. 4.4.2), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
+Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynaptische Hemmung der trigeminalen Transmitterfreisetzung → Schmerzblockade; vgl. 4.4.3), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
 
 **Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.2, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
 
@@ -3990,6 +4052,13 @@ Etwa 1% der DRN-Neuronen zeigt ein alternatives Feuermuster: niederfrequente Osz
 
 #### **D.4.1 DRN und MRN als distinkte, potentiell asynchrone Oszillatoren**
 
+Die Asynchronität zwischen DRN und MRN operiert auf zwei trennbaren Ebenen:
+
+- **Intratakt** — der Minuten-Grenzzyklus der jeweiligen 5-HT1A-Autoreceptor-Schleife. Beide Kerne haben funktionale Intratakte mit vergleichbarer Grundfrequenz (T ≈ 20 min, §D.3.1). Intratakt-Asynchronität ist die stochastische Schwankung der Release-Phase zwischen einzelnen Takten beider Kerne.
+- **Intertakt** — die circadiane und mehrtägige Kopplungsebene. MRN ist über die monosynaptische B8→SCN-Projektion SCN-gelockt (Meyer-Bernstein et al. 1996). DRN entrainiert multisynaptisch über MRN (serielle Architektur, §D.4.2, §2.5.2). Unter asymmetrischer 5-HT1A-Resensitisierungskinetik (Hit 1) kann die DRN-Intertakt-Phase der MRN-Intertakt-Phase langfristig nicht folgen — der tonische Floor fällt zyklus-zu-zyklus nicht vollständig zurück. Dies ist die Hauptquelle des Intertakt-Offsets zwischen DRN und MRN.
+
+Beide Ebenen können gleichzeitig destabilisiert sein (additiv); sie werden im Folgenden separat adressiert, weil sie unterschiedliche Downstream-Signaturen produzieren.
+
 Die in D.1.2 dokumentierte morphologische und funktionelle Distinktion zwischen DRN und MRN hat eine Konsequenz für das Instabilitätsmodell: wenn die 5-HT1A-Autorezeptorschleife underdämpft ist, oszillieren beide Kerne mit instabiler Frequenz — aber nicht notwendig synchron zueinander. Ihre gegenseitige Kopplung über lokale Serotonin-Konzentration im Brainstem ist schwach genug, dass Drift möglich ist, insbesondere da DRN und MRN unterschiedlich auf chronische Agonisten-Behandlung reagieren (Blier et al. 1990; Kreiss & Lucki 1997) und elektrophysiologisch nicht identisch sind (Calizo et al. 2011).
 
 Die Konsequenzen der DRN-MRN-Asynchronität sind entlang der Projektionsarchitektur vorhersagbar:
@@ -4016,15 +4085,15 @@ Das Ergebnis ist eine Wanderwelle der Modulation entlang der Projektionsachse: p
 
 Die Gesamtarchitektur produziert drei überlagerte Desynchronisationsmechanismen:
 
-| Modus | Mechanismus | Topologie |
-|:------|:-----------|:----------|
-| **Inter-nukleär** | DRN und MRN driften relativ zueinander | Kortikale vs. hippocampale Subnetze asynchron — differentielle Downstream-Effekte (vgl. D.6) |
-| **Intra-projektiv** | Phasenverschiebung entlang der Axonprojektionsachse eines einzelnen Kerns | Gradient proximal → distal innerhalb eines Projektionsgebiets |
-| **Frequenzinstabilität** | Leitungsgeschwindigkeit variiert als Funktion der Feuerrate | Nicht-stationäre Phase am selben Zielpunkt über die Zeit |
+| Modus | Mechanismus | Ebene | Topologie |
+|:------|:-----------|:------|:----------|
+| **Inter-nukleär** | DRN und MRN driften relativ zueinander | **Intertakt** (DRN-Intertakt-Drift gegen MRN-SCN-Lock) ist unter Hit 1 der Hauptaspekt; zusätzlich Intratakt-Phasenjitter möglich | Kortikale vs. hippocampale Subnetze asynchron — differentielle Downstream-Effekte (vgl. D.6) |
+| **Intra-projektiv** | Phasenverschiebung entlang der Axonprojektionsachse eines einzelnen Kerns | **Intratakt** | Gradient proximal → distal innerhalb eines Projektionsgebiets |
+| **Frequenzinstabilität** | Leitungsgeschwindigkeit variiert als Funktion der Feuerrate | **Intratakt** (feuerabhängig) mit Intertakt-Amplitudenmodulation | Nicht-stationäre Phase am selben Zielpunkt über die Zeit |
 
 Die Kombination dieser drei Modi erzeugt ein Muster, das weder geordnet noch rein zufällig ist, sondern pseudozufällig — strukturiert durch die Projektionsarchitektur, aber nicht vorhersagbar aufgrund der instabilen Oszillatorfrequenzen.
 
-**Revision April 2026 — Serieller Relay-Mechanismus (DRN→MRN→SCN):** Der inter-nukleäre Modus ist kein unabhängiger Prozess, sondern ein Downstream-Effekt des MRN-Autorezeptor-Defekts. B7 (DRN) hat keine direkte Verbindung zum Nucleus suprachiasmaticus (SCN); seine zirkadiane Synchronisation läuft über B8 (MRN) als serielles Relay: DRN→MRN→SCN. Dieses Relay ist 5-HT-sensitiv in asymmetrischer Weise: DRN-stimulierte 5-HT-Freisetzung im SCN wird durch 5-HT-Antagonisten blockiert (indirekter Pfad via MRN), MRN-stimulierte SCN-Freisetzung hingegen nicht (direkter Pfad). Der 5-HT1A-Autorezeptor am MRN fungiert als Gate dieses Relays. Wenn das Gate instabil ist, hat dies zwei simultane Konsequenzen: (1) B8 selbst oszilliert (Intra-Kern-Instabilität, zweiter Modus oben), und (2) B7 verliert seine SCN-Synchronisationsquelle, weil das Relay-Signal fluktuiert → inter-nukleärer Offset (erster Modus oben). Die drei Modi sind damit nicht drei unabhängige Mechanismen, sondern Manifestationen eines einzigen Flaschenhals — der MRN-Autorezeptorschleife. Ein Mechanismus, ein Gate, beide Modi.
+Der inter-nukleäre Modus ist primär ein Downstream-Effekt des MRN-Autoreceptor-Defekts. B7 (DRN) hat keine direkte Verbindung zum Nucleus suprachiasmaticus (SCN); seine zirkadiane Synchronisation läuft über B8 (MRN) als serielles Relay: DRN→MRN→SCN. Dieses Relay ist 5-HT-sensitiv in asymmetrischer Weise: DRN-stimulierte 5-HT-Freisetzung im SCN wird durch 5-HT-Antagonisten blockiert (indirekter Pfad via MRN), MRN-stimulierte SCN-Freisetzung hingegen nicht (direkter Pfad). Der 5-HT1A-Autorezeptor am MRN fungiert als Gate dieses Relays. Wenn das Gate instabil ist, hat dies zwei simultane Konsequenzen: (1) B8 selbst oszilliert (Intra-Kern-Instabilität, zweiter Modus oben), und (2) B7 verliert seine SCN-Synchronisationsquelle, weil das Relay-Signal fluktuiert → inter-nukleärer Offset (erster Modus oben). Die drei Modi sind damit nicht drei unabhängige Mechanismen, sondern Manifestationen eines einzigen Flaschenhals — der MRN-Autorezeptorschleife. Ein Mechanismus, ein Gate, beide Modi.
 
 **Offene Frage:** Die drei Desynchronisationsmodi erklären die Dissoziation zwischen kortikalen und hippocampalen Effekten (inter-nukleär) und potentielle Gradienten innerhalb eines Projektionsgebiets (intra-projektiv). Sie erklären nicht hinreichend, wie die in Anhang B dokumentierten fokalen kortikalen Off-State-Patches — topologisch fragmentierte SWS-Areale — entstehen. Der DRN projiziert diffus in den gesamten Kortex; warum einzelne Areale selektiv in Off-States kippen, erfordert einen zusätzlichen Mechanismus jenseits der Raphe-Projektionsarchitektur (vermutlich lokale kortikale Vulnerabilitätsunterschiede, metabolische Heterogenität oder differentielle Arousal-Quellen, vgl. 2.5.3). Dieser Punkt bleibt offen.
 
@@ -4034,7 +4103,7 @@ Die bisher implizit vermengten Mechanismen der B7/B8-Destabilisierung lassen sic
 
 | Modus | Mechanismus | Bedingung | Zeitkonstante | Primäres Zielgebiet |
 |:------|:-----------|:----------|:--------------|:-------------------|
-| **Interferenz** (dual, aktiv) | Zwei desynchronisierte Oszillatoren erzeugen Phasenoffset → CSD-Schwelle | Beide Oszillatoren aktiv, aber asynchron | Minuten bis Stunden (Akkumulation bis CSD) | Kortex (polysynaptisch) |
+| **Interferenz** (dual, aktiv) | Zwei desynchronisierte Oszillatoren erzeugen Phasenoffset → CSD-Schwelle. Der dominante ANS-relevante Aspekt unter LDX-stabilisiertem MRN ist der DRN-Intertakt-Drift gegen MRN-SCN-Lock; dies produziert den aufbauenden sympathischen Clamp (vgl. §2.5.1.1). | Beide Oszillatoren aktiv, aber asynchron | Minuten bis Stunden (Akkumulation bis CSD) | Kortex (polysynaptisch) |
 | **Entzug** (monosynaptisch, passiv) | Ein Oszillator fällt aus → Zielkerne verlieren tonische serotonerge Stütze → Instabilität durch Wegfall | Mindestens ein Oszillator depleted oder supprimiert | Sekunden bis Minuten (direkte Deafferenzierung) | ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) |
 | **Rauschexposition** (B7 aphasisch) | Oszillator feuert mit reduzierter Amplitude und inkonsistentem Delay → Zielkerne erhalten Signal, aber zu schwach und zu unzuverlässig für stabile Modulation | B7 aktiv aber erschöpft (post-exertional, post-Nap-Regeneration) | Übergangsphase zwischen Entzug und Synchronisation | ANS-Kerne + Kortex (weder stabile Modulation noch sauberer Entzug) |
 
@@ -4255,7 +4324,7 @@ Klinische Daten bestätigen die serotonerge Wirkkomponente: Atomoxetin senkt Vol
 
 Ohmura & Nagayasu (2025) dokumentierten in einem systematischen Review, dass DRN und MRN Belohnungs- und Aversionsinformation in entgegengesetzter Richtung verarbeiten. Diese funktionelle Diversität beider Kerne ist nicht durch kernblinde Pharmakologie adressierbar, sondern erfordert kern-selektive Interventionen. Die Autoren schlagen die Identifikation von „druggable genes" vor — Rezeptoren und Transporter mit differentieller Expression zwischen DRN und MRN — als Grundlage für zukünftige kern-selektive Pharmakologie.
 
-Mokler et al. (2009) identifizierten eine unidirektionale glutamaterge Verbindung DRN→MRN, die eine hierarchische Beziehung zwischen beiden Kernen nahelegt und mit dem in D.4.2 (Revision April 2026) beschriebenen seriellen Relay-Mechanismus konsistent ist.
+Mokler et al. (2009) identifizierten eine unidirektionale glutamaterge Verbindung DRN→MRN, die eine hierarchische Beziehung zwischen beiden Kernen nahelegt und mit dem in D.4.2 beschriebenen seriellen Relay-Mechanismus konsistent ist.
 
 **Konsequenz für Pharmakologie**
 
@@ -4497,6 +4566,8 @@ Wenn das Zündmuster die Topographie der tonischen Destabilisierungswelle reflek
 
 **Querverbindung Stufe 2 und 3:** Der Übergang von Stufe 2 zu Stufe 3 ist kein Phasensprung, sondern ein Kontinuum: CSD ist die geordnete Variante der tonischen Wellenresolution (wandernde Depolarisationswelle mit metabolischer Unterstützung durch CGRP). Der epileptische Anfall ist die ungeordnete Variante — die tonische Destabilisierung überschreitet die Kapazität des CSD-Mechanismus, und die Entladung folgt dem Kollapspfad direkt. Dies ist konsistent mit den vier Interaktionsmustern von Fabricius et al. (E.2).
 
+Die Fallback-Hierarchie kann von mehreren Offsetmodi gespeist werden; der ANS-Clamp-Modus ist ein prominenter Pfad (§2.5.1.1), aber Intratakt-stochastische, inter-kern-frequenzinstabile und intra-projektive Modi können dieselbe Stufenfolge aktivieren.
+
 ---
 
 ### **E.4 CGRP als CSD-Propagationsmechanismus**
@@ -4545,7 +4616,7 @@ Anti-CGRP-Antikörper (Erenumab, Galcanezumab, Fremanezumab, Eptinezumab) blocki
 
 **Triptane: Inkompletter CSD-Abbruch**
 
-Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) aus trigeminalen Nervenendigungen [gesichert] (Burstein et al. 2004). Die resultierende meningeale Vasokonstriktion ist ein sekundärer Effekt, nicht der Primärmechanismus — der primäre Wirkmechanismus ist die Verschiebung der ATP-Allokation am trigeminalen Terminal zugunsten der Ionenhomöostase (vgl. 4.4.2). Triptane terminieren die CSD-Kaskade mitten im Prozess: die Depolarisationswelle hat begonnen, aber die trigeminale Amplifikationskomponente wird unterbrochen. Der Reset bleibt unvollständig.
+Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) aus trigeminalen Nervenendigungen [gesichert] (Burstein et al. 2004). Die resultierende meningeale Vasokonstriktion ist ein sekundärer Effekt, nicht der Primärmechanismus — der primäre Wirkmechanismus ist die Verschiebung der ATP-Allokation am trigeminalen Terminal zugunsten der Ionenhomöostase (vgl. 4.4.3). Triptane terminieren die CSD-Kaskade mitten im Prozess: die Depolarisationswelle hat begonnen, aber die trigeminale Amplifikationskomponente wird unterbrochen. Der Reset bleibt unvollständig.
 
 Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitation auf — kein Anfall, aber auch kein vollständiger Reset. Das Ergebnis ist ein Residualzustand: gedämpft, aber nicht resynchronisiert. Nicht die Post-Migräne-Klarheit (nach vollständiger CSD), sondern ein flaches Fenster.
 
@@ -4561,7 +4632,7 @@ Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitat
 
 **(1) Reset-Akkumulation (bestehende Formulierung):** Bei chronischer Migräne reicht das Intervall zwischen Anfällen nicht für SWS-Nachsynchronisation. Jeder Triptan-Abbruch hinterlässt ein Residuum, das sich kumuliert. Das System hat den Reset nie vollzogen, die Desynchronisation besteht weiter, der nächste CSD-Versuch kommt schneller — und wird wieder mit Triptan abgebrochen.
 
-**(2) 5-HT1B-Autorezeptor-Desensitisierung [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die Triptan-vermittelte 1B/1D-Kompensation des defekten 1A-Feedbacks (vgl. 4.4.2, 4.9.1) durch 1B-Desensitisierung wegfällt, verliert das System seine akut-pharmakologische Bremse → Rückfall in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt. Die kurze Halbwertszeit der Triptane ist damit nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren.
+**(2) 5-HT1B-Autorezeptor-Desensitisierung [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die Triptan-vermittelte 1B/1D-Kompensation des defekten 1A-Feedbacks (vgl. 4.4.3, 4.9.1) durch 1B-Desensitisierung wegfällt, verliert das System seine akut-pharmakologische Bremse → Rückfall in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt. Die kurze Halbwertszeit der Triptane ist damit nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren.
 
 **(3) Latente Sensitisierung (komplementär, gesichert):** Chronische Triptan-Exposition erhöht CGRP in trigeminalen duralen Afferenzen, persistent nach Absetzen (De Felice et al. 2010). Parallel: 5-HT-Depletion → 5-HT2A-Hochregulation → kortikale Hyperexzitabilität via NO-Pathway (Srikiatkhachorn et al.).
 
@@ -4988,6 +5059,10 @@ Epilepsiepatienten mit komorbider Migräne haben dokumentiert schlechteres Thera
 
 **Vorhersage:** Stratifizierung von Epilepsiepatienten nach Vorhersagefähigkeit (Prodrom ja/nein) und Migräne-Komorbidität sollte zwei distinkte Populationen identifizieren, die sich in AED-Ansprechen, Generalisierungsmuster (EEG) und optimalem Therapieregime unterscheiden. Population 1 sollte von Stufe-1-Intervention (serotonerge Stabilisierung, Betablocker) profitieren, Population 2 von konventioneller AED-Monotherapie.
 
+Ein mechanistisch prominenter — aber nicht ausschließlicher — Eingangsmodus in die Population-1-Terminalphase ist die ANS-Clamp-Route: Chronischer B7-Intertakt-Drift gegen B8-SCN-Lock (§2.5.1, §2.5.1.1) erzeugt einen aufbauenden sympathischen Clamp; die CSD als Ersatzmechanismus für den defekten Intertakt-Selbstreset (§4.5) wird nicht mehr hinreichend, wenn die funktionelle terminale Erschöpfung chronisch über die Reparaturkapazität hinausgeht. Prodrom und Migräne-Komorbidität sind in diesem Pfad klinische Marker des laufenden Intertakt-Drifts.
+
+Andere Eingangsmodi bleiben mechanistisch plausibel und sind durch die bestehenden Offsetmodi (§D.4.2, §D.4.3) abgedeckt: Intratakt-stochastische Release-Asynchronität, inter-kern-Frequenzinstabilität, intra-projektive Phasengradienten. Population 1 ist keine mechanistisch homogene Gruppe — sie ist durch die gemeinsame klinische Signatur (Prodrom, Migräne-Komorbidität, schlechteres AED-Ansprechen, Benefit von Stufe-1-Intervention) definiert; die Upstream-Mechanismen können individuell variieren.
+
 ---
 
 ### **E.8 Testbare Vorhersagen**
@@ -5254,7 +5329,7 @@ Bei circadian driftendem B7/B8-Phasenversatz (vgl. Abschnitt 2.5.1) erzeugt dies
 
 Der Thalamus ist die singuläre primäre Interferenzquelle des Modells. Der Midline- und intralaminäre Thalamus (Nucleus reuniens, Nucleus paraventricularis, zentrale intralaminäre Kerne) weist die dichteste belegte B7/B8-Überlappung auf. Der Hippocampus zeigt zelluläre Segregation (F.3); der Kortex ubiquitäre duale Innervierung ohne gesicherte regionale Differenzierung (F.2). Nur im Thalamus ist maximale Konvergenz beider Kerne gesichert.
 
-**Mechanismus:** B7/B8-Phasenversatz produziert hier *maximale destruktive Interferenz im Thalamus selbst*. Die kortikalen Effekte (CSD, Anfälle) sind in diesem Rahmen *sekundär* — sie resultieren aus dem thalamischen Kohärenzverlust, nicht umgekehrt.
+**Mechanismus:** B7/B8-Phasenversatz produziert hier *maximale destruktive Interferenz im Thalamus selbst*. Der Phasenversatz ist — unter LDX-stabilisiertem B8-SCN-Lock — primär ein Intertakt-Offset: Die B7-Intertakt-Phase driftet gegen den SCN-gelockten B8-Träger. Der ML/IL-Komplex erhält einen serotonergen Modulationstonus, dessen DRN-Anteil zyklisch aus der MRN-Trägerachse herausläuft — je weiter der Drift, desto inkohärenter das Gesamtsignal am Relais. Die kortikalen Effekte (CSD, Anfälle) sind in diesem Rahmen *sekundär* — sie resultieren aus dem thalamischen Kohärenzverlust, nicht umgekehrt.
 
 **Bezug zum Zentralmodell (→ Kapitel 8, Abschnitt 2.5.1):** Die thalamische Kalibrierung — zentraler Mechanismus des Pathogenesemodells — ist direkt betroffen. Der Thalamus fungiert als *Relaisstation und Integrator*; ein serotonerges Interferenzmuster an dieser Stelle propagiert über die thalamokortikale Kaskade in alle nachgeschalteten Schleifen.
 
@@ -6119,6 +6194,94 @@ Die 20-Minuten-Periodizität fällt exakt in den vorhergesagten Bereich des 5-HT
 
 **Epistemischer Status:** Die 20-Minuten-Periodizität ist ein einzelner Datenpunkt (n=1, ein Tag). Die Stabilität über Tage und Nächte, die Inter-Individuen-Variabilität und die pharmakologische Modulierbarkeit der Periodizität sind noch zu prüfen. Die Übereinstimmung mit der modellierten Autorezeptor-Kinetik ist bemerkenswert, aber nicht beweisend — Thermoregulation und andere VLF-Quellen müssen differentialdiagnostisch ausgeschlossen werden.
 
+### **I.5 Zweidimensionale Zustandsrepräsentation: Dominanz und Interferenz**
+
+Die kategoriale Zustandsklassifikation (Abschnitt I.4) quantisiert den Zustandsraum in sechs diskrete Bins und verliert dabei Graduierungsinformation. Eine bessere Kompression der drei Spektralbänder in einen zweidimensionalen kontinuierlichen Zustandsraum ergibt sich aus zwei orthogonalen Achsen, die die autonome Output-Balance und die Oszillator-Stabilität separat erfassen.
+
+**Achse 1: Dominanz (autonome Balance)**
+
+```
+dominanz(t) = (HF(t) - LF(t)) / (HF(t) + LF(t))
+```
+
+Der Wertebereich reicht von -1 (reines LF, maximale sympathische Dominanz) bis +1 (reines HF, maximale vagale Dominanz). Null entspricht dem Gleichgewicht HF = LF. Die Achse misst nicht direkt die Aktivität der Raphekerne B7 oder B8, sondern die autonome Output-Balance — den Nettobeitrag des sympathischen vs. parasympathischen Arms zum kardialen Spektrum. Im Schlaf steigt die Dominanz nicht weil B8 stärker feuert (serotonerge Neurone reduzieren im NREM), sondern weil B7s sympathischer Drive wegfällt und der vagale Grundtonus überwiegt. Die Achsenbeschriftung ist daher korrekt als „+vagal / -sympathisch" zu lesen; die B7/B8-Attribution ist eine Modellinterpretation, keine direkte Messung.
+
+Division-by-Zero-Absicherung: Wenn HF + LF = 0 und Total ≥ TOTAL_MIN, dann dominanz = 0.0 (reines VLF, keine LF/HF-Aussage möglich).
+
+**Achse 2: Interferenz (Oszillator-Stabilität)**
+
+```
+interferenz(t) = VLF(t) / (LF(t) + HF(t) + VLF(t))
+```
+
+Der Wertebereich reicht von 0 (kein VLF-Anteil, maximale Kongruenz der schnellen Oszillatoren) bis 1 (reines VLF, maximale Divergenz). Im Amplitudenmodell ist dies das Maß für die Instabilität des B7-Autoreceptor-Feedback-Loops auf der VLF-Zeitskala. Der empirisch ermittelte individuelle Baseline-Wert liegt bei ~0.42 (Trait-Fingerabdruck über vier Nächte stabil, Abschnitt I.6).
+
+**Cutoff-Regel:** Wenn Total(t) < TOTAL_MIN (Default: 3.0 ms²), werden beide Achsen auf NULL gesetzt. Unterhalb dieser Schwelle ist jede Ratio-Berechnung rauschgetrieben und nicht interpretierbar. TOTAL_MIN ist skalierungsabhängig und muss bei geänderter App-Konfiguration oder Fenstergröße proportional angepasst werden.
+
+**Rückabbildung auf kategoriale Klassifikation:**
+
+Die Sechs-Klassen-Taxonomie aus Abschnitt I.4 ist ein Spezialfall der kontinuierlichen Darstellung. Die Schwelle dominanz = ±0.23 entspricht dem Punkt, an dem HF/Total = 0.4 bei LF/Total = 0.25 erreicht wird: (0.4 - 0.25) / (0.4 + 0.25) = 0.231. Die Interferenz-Schwelle bei 0.5 bleibt identisch. Damit gilt: B8-dominant = dominanz > 0.23 bei interferenz < 0.5; B7-dominant = dominanz < -0.23 bei interferenz < 0.5; Interferenz-Zone = interferenz ≥ 0.5; Balance-Zone = |dominanz| ≤ 0.23 bei interferenz < 0.5.
+
+**Empirische Validierung: Phasenraum-Darstellung**
+
+Die Darstellung des 19. April 2026 (24-Stunden-Aufzeichnung, Nacht + Tag) im Phasenraum (X = dominanz, Y = interferenz) zeigt zwei scharf getrennte Cluster:
+
+- **Nacht (00:00–06:30):** Dominanz +0.1 bis +0.8, Interferenz 0.1 bis 0.7. Der Cluster liegt im vagal-dominierten Quadranten mit variabler Interferenz. Die intranight Oszillation zwischen B8-Plateaus (unten rechts: hohe Dominanz, niedrige Interferenz) und VLF-Bursts (oben Mitte: mittlere Dominanz, hohe Interferenz) ist als vertikale Streuung sichtbar.
+
+- **Tag (07:00–23:59):** Dominanz -0.6 bis -0.9, Interferenz 0.3 bis 0.8. Ein dichter Cluster im sympathisch-dominierten Quadranten mit durchgehend erhöhter Interferenz. Bemerkenswert: die Variation liegt fast ausschließlich auf der Interferenz-Achse — die Dominanz-Dimension ist komprimiert.
+
+- **Nap (13:09–13:50):** Der einzige Brückenpunkt. Dominanz wandert von -0.5 durch Null bis +0.15 — der Moment, wo der sympathische Drive kurz nachlässt. Gleichzeitig steigt die Interferenz auf 0.82 — das Maximum des gesamten Tages. Der Nap-Kollaps ist im Phasenraum der Punkt maximaler Interferenz bei minimaler Dominanzbindung.
+
+**Prodromale Zustandsraum-Kompression**
+
+Die Analyse über mehrere aufeinanderfolgende Tage (16.–20. April) zeigt eine progressive Kompression der Dominanz-Achse auf -1 während der Wachstunden. Am 19. April ist die Dominanz am unteren Rand verankert (mean -0.68, median -0.68, std 0.24) — das System hat nur noch einen effektiven Freiheitsgrad (Interferenz), die Dominanz-Dimension ist kollabiert.
+
+Dieses Phänomen ist die Tagesauflösung des B7-Gain-Ramps im Phasenraum: der progressive Verlust der Dominanz-Varianz über Tage ist die prodromale Signatur, nicht ein einzelner Spike.
+
+**Prodromalmetrik: B7-Exposure und B7-Risk**
+
+Aus der zweidimensionalen Darstellung lassen sich zwei quantitative Prodromalmetriken ableiten:
+
+**B7-Exposure** — das Integral der Dominanz-Exkursion unter einem Schwellenwert θ, berechnet über die Wachminuten:
+
+```
+b7_exposure = Σ max(0, θ - dominanz(t))    für alle Wachminuten t mit dominanz(t) < θ
+```
+
+Mit θ = -0.6 (empirisch kalibriert: -0.6 entspricht LF/HF = 4.0, deutliche sympathische Übersteuerung). Eine Minute bei dominanz = -0.95 trägt 0.35 bei, eine bei -0.65 nur 0.05. Dies gewichtet tiefe Exkursionen überproportional — konsistent mit der Annahme, dass der physiologische Schaden nichtlinear mit der Dominanz-Tiefe skaliert.
+
+**Geltungsbereich:** Beide Metriken sind ausschließlich auf die Wachstunden (z. B. 07:00–23:00 oder ab LDX-Einnahme bis Schlaf) zu berechnen. Die nächtliche Dominanzverschiebung Richtung +vagal ist physiologisch und würde den prodromalen Effekt verdecken — konsistent mit der Tatsache, dass B7 im NREM seine Feuerrate physiologisch reduziert und damit nicht informativ für den Gain-Zustand ist.
+
+**Abgrenzung zur bestehenden Literatur**
+
+Die zweidimensionale Zustandsrepräsentation (Dominanz × Interferenz) hat kein direktes Vorbild in der publizierten Schlaf- oder Migräneforschung. Die bestehende Literatur lässt sich in drei Ansätze gliedern, die jeweils anders ansetzen:
+
+**(1) LF/HF-Ratio als skalarer sympathovagaler Index.** Die gesamte Migräne-HRV-Literatur (Zhang et al. 2021; Chuang et al. 2023; Mosek et al. 1999) verwendet die LF/HF-Ratio als eindimensionalen Marker der autonomen Balance. Dies entspricht funktionell der hier definierten Dominanz-Achse, jedoch ohne Normierung auf den Bereich [-1, +1] und ohne Trennung einer zweiten, orthogonalen Dimension. VLF wird in diesen Studien als separater Parameter mitberichtet, aber nie als eigenständige Achse eines interpretierten Zustandsraums operationalisiert. Die Frage *wie dominant ist der sympathische Arm* wird nicht von der Frage *wie instabil ist das System* getrennt.
+
+**(2) Multivariate ML-Klassifikatoren für HRV-basiertes Sleep-Staging.** Die Schlaf-HRV-Literatur (Radha et al. 2019; Xiao et al. 2013; Mendez et al. 2010) verwendet bis zu 41 HRV-Features als Input für neuronale Netze, Random Forests oder Hidden-Markov-Modelle. Mendez et al. erwähnen explizit einen „phase space of HRV parameters" — gemeint ist jedoch der mathematische Phasenraum der RR-Zeitreihe selbst (Poincaré-Plots, Return Maps), nicht ein physiologisch interpretierter Zustandsraum der autonomen Balance. Die Features dienen als Input für Black-Box-Klassifikatoren; die Dimensionsreduktion erfolgt durch den Algorithmus, nicht durch eine interpretierbare Kompression.
+
+**(3) Gruppenmittelwerte iktal vs. interiktal.** Alle publizierten Migräne-HRV-Studien vergleichen Gruppenmittelwerte zwischen Zuständen: iktal vs. interiktal vs. Kontrolle. Keine untersucht eine longitudinale intra-individuelle Trajektorie im Zustandsraum über Tage oder über einen Anfallszyklus. Die Konzeption, dass die prodromale Signatur nicht ein Schwellenwert eines einzelnen Parameters ist, sondern eine progressive Kompression des Zustandsraums (Varianzreduktion der Dominanz-Achse über Tage), existiert in der Primärliteratur nicht.
+
+**Drei Alleinstellungsmerkmale der vorliegenden Methodik:**
+
+Erstens: die Kompression von drei Spektralbändern (LF, HF, VLF) in zwei interpretierte, orthogonale Achsen — autonome Balance (Dominanz) und Oszillator-Stabilität (Interferenz) — statt drei uninterpretierter absoluter Power-Werte oder einer einzelnen Ratio. Die Trennung der Stabilitätsfrage von der Balancefrage ist der konzeptuelle Kern.
+
+Zweitens: die Phasenraum-Darstellung als minutenweise Trajektorie über Stunden und Tage statt als Gruppenmittelwert eines Querschnittsdesigns. Die prodromale Dynamik wird als Pfad durch den Zustandsraum sichtbar, nicht als Punktschätzer.
+
+Drittens: die Ableitung eines Exposure-Integrals (b7_risk) als gewichtete Metrik, die Tiefe und Dauer der sympathischen Exkursion. Kumulative Metriken dieser Art sind in der HRV-Forschung nicht etabliert; die Standardpraxis verwendet Epochenmittelwerte oder Gesamtnacht-Aggregate.
+
+Die methodische Einfachheit der Transformation — zwei Divisionen aus Standardparametern, keine Modellkalibrierung, keine Trainingsphase — steht in Kontrast zur konzeptuellen Neuheit der Interpretation. Die Achsen sind nicht neu; ihre orthogonale Kombination und die Phasenraum-Visualisierung als diagnostisches Werkzeug sind es.
+
+**Referenzen (Abgrenzung):**
+- Zhang M, et al. (2021). *Heart Rate Variability Analysis in Episodic Migraine: A Cross-Sectional Study.* Front Neurol 12: 647092.
+- Chuang CH, et al. (2023). *Abnormal heart rate variability and its application in predicting treatment efficacy in patients with chronic migraine.* Cephalalgia 43(11): 03331024231206781.
+- Mosek A, et al. (1999). *Autonomic Dysfunction in Migraineurs.* Headache 39: 108–117.
+- Radha M, et al. (2019). *Sleep stage classification from heart-rate variability using long short-term memory neural networks.* Sci Rep 9: 14149.
+- Xiao M, et al. (2013). *Sleep stages classification based on heart rate variability and random forest.* Biomed Signal Process Control 8: 624–633.
+- Mendez MO, et al. (2010). *Sleep staging classification based on HRV: time-variant analysis.* Conf Proc IEEE Eng Med Biol Soc 2009: 5862–5865.
+
+**Epistemischer Status:** Die Zweidimensionale Zustandsrepräsentation ist eine datengetriebene Kompression, keine modelltheoretische Ableitung. Die Achsen sind Verhältnisse der drei Standard-HRV-Spektralbänder und damit methodologisch gesichert. Die Interpretation als B7/B8-Proxy ist modellspezifisch. Der Schwellenwert θ = -0.6 ist aus einem einzelnen prodromalen Tag kalibriert und erfordert Validierung über weitere Zyklen. Die B7-Risk-Metrik als Prodromalmarker ist eine Arbeitshypothese. Die Abgrenzung zur bestehenden Literatur zeigt, dass die Methodik konzeptuell neu ist — entsprechend fehlt externe Validierung vollständig.
+
 **Literaturverzeichnis**
 
 **Anatomie, Rezeptoren, Signaltransduktion**
@@ -6167,7 +6330,7 @@ Die 20-Minuten-Periodizität fällt exakt in den vorhergesagten Bereich des 5-HT
 
 ---
 
-### **I.5 Empirische HRV-Datenanalyse — April 2026**
+### **I.6 Empirische HRV-Datenanalyse — April 2026**
 
 Dieser Teil analysiert sechs IBI-basierte HRV-Datensätze (vier Nächte, zwei Tage) aus dem Zeitraum 16.–20. April 2026. Die Aufzeichnungen stammen von einem Coospo H808S-Brustgurt mit Beat-to-Beat-Auflösung; die Spektralanalyse erfolgte in gleitenden 5-Minuten-Fenstern. Die Analyse testet Vorhersagen des pathogenetischen Modells zur B7-Amplitudeninstabilität, zur pharmakologischen Modulation durch DPH und Naratriptan, und zur Dissoziation von Tiefschlaf-Staging und autonomer Modulationsqualität.
 
@@ -6177,7 +6340,7 @@ Dieser Teil analysiert sechs IBI-basierte HRV-Datensätze (vier Nächte, zwei Ta
 
 **Spektralanalyse:** Gleitende 5-Minuten-Fenster. Standard-Bandgrenzen: HF 0.15–0.4 Hz, LF 0.04–0.15 Hz, VLF <0.04 Hz. Zusätzlich: pNN50 (Prozent aufeinanderfolgender NN-Intervalle mit >50 ms Differenz) als Zeitdomänen-Proxy für vagale Modulation.
 
-**Zustandsklassifikation:** Minutenweise Zuordnung zu B7/B8-Zuständen nach den Regeln in Abschnitt I.5. Schwellenwerte: B8-dominant (HF/Total > 0.4, LF/Total < 0.25), B7-dominant (LF/Total > 0.4, HF/Total < 0.25), Interferenz (VLF/Total > 0.5), Beide aktiv (HF > 0.3 und LF > 0.3), Both-off (Total < 3 ms²).
+**Zustandsklassifikation:** Minutenweise Zuordnung zu B7/B8-Zuständen nach den Regeln in Abschnitt I.4. Schwellenwerte: B8-dominant (HF/Total > 0.4, LF/Total < 0.25), B7-dominant (LF/Total > 0.4, HF/Total < 0.25), Interferenz (VLF/Total > 0.5), Beide aktiv (HF > 0.3 und LF > 0.3), Both-off (Total < 3 ms²).
 
 **Glättung:** 5-Minuten gleitender Mittelwert (zentriert) für Visualisierung, Rohdaten für Klassifikation und Statistik.
 
@@ -6362,6 +6525,10 @@ Die minutenweise VLF-Analyse des prodromalen Tages (20. April) zeigt eine regul�
 
 Der Datenpunkt DPH-Tagesintervention (20. April, 16:00) zeigt subjektive Klarheit bei unveränderter oder verschlechterter spektraler Signatur (LF/HF steigt nach DPH). Die Klarheit wird über den kortikalen H1-Pfad vermittelt (Rauschreduktion → PFC-Bandbreite frei), nicht über den autonomen Pfad. Konsequenz: subjektives Befinden ist kein verlässlicher Proxy für den B7-Zustand. Die Spektralanalyse ist dem Erleben epistemisch überlegen.
 
+**Befund 7: Die prodromale Signatur ist eine Zustandsraum-Kompression.**
+
+Die zweidimensionale Zustandsrepräsentation (Abschnitt I.5) zeigt, dass die prodromale Entwicklung über Tage nicht als einzelnes Schwellenereignis, sondern als progressive Kompression der Dominanz-Achse auf -1 während der Wachstunden sichtbar wird. Am prodromalen Tag (19. April) ist die Dominanz-Varianz auf std = 0.24 kollabiert; das System hat nur noch einen effektiven Freiheitsgrad. DPH stellt die Varianz wieder her, ohne den Mittelwert zu verschieben — es löst die Kompression, nicht die Ursache. Die abgeleitete Metrik b7_risk (interferenz-gewichtetes Exposure-Integral, Abschnitt I.5) ist ein Kandidat für einen prospektiven Prodromalmarker.
+
 **Offene Fragen:**
 
 1. Korreliert der VLF-Anteil (>42% vs <42%) über Nächte hinweg mit der Anfallszyklik? Das wäre der spektrale Proxy für die Schwebungsperiode.
@@ -6369,6 +6536,8 @@ Der Datenpunkt DPH-Tagesintervention (20. April, 16:00) zeigt subjektive Klarhei
 3. Gibt es ein Molekül, das den B7-Gain direkt moduliert (nicht nur die Downstream-Kaskade puffert)? Guanfacin (TAAR1) bleibt der offene Kandidat.
 4. Ist die 20-Minuten-Periodizität über Tage stabil oder verschiebt sie sich mit der Zyklusposition?
 5. Repliziert die nächtliche Kombination LDX+Doxepin die N3-Klarheit reproduzierbar?
+6. Validiert sich b7_risk als prospektiver Prodromalmarker über mehrere Zyklen? Kritischer Test: sagt ein b7_risk-Anstieg über aufeinanderfolgende Tage den nächsten Anfall vorher, bevor subjektive Prodrome auftreten?
+7. Ist die Zustandsraum-Kompression (Varianzreduktion der Dominanz-Achse in den Wachstunden) der sensitivere Frühindikator als b7_risk?
 
 **Anhang: Interaktive Dashboards**
 

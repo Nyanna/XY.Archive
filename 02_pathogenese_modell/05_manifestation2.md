@@ -103,6 +103,8 @@ Die drei B7-Zustände (intakt, depleted, aphasisch) und ihre biologische Grundla
 
 Die ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) sind monosynaptisch von B7 innerviert. Der aphasische Zustand — Feuermuster erhalten, Transmitteroutput stochastisch degradiert (vgl. 2.2.1) — ist für die ANS-Kerne der destabilisierendste aller drei Zustände: Bei Entzug (B7 depleted) schalten sie auf Eigendynamik; bei Aphasie erhalten sie ein Signal, das ihre Eigendynamik stört, ohne ein alternatives Ordnungssignal zu liefern. Die HR-Spreading-Daten des Einzelfalls 07.04.2026 (Anhang B.20) zeigen die Dissoziation als physiologischen Marker: SD hoch + RMSSD hoch = aphasische Instabilität; SD niedrig + RMSSD niedrig = Entzug (Fixierung).
 
+Im Intratakt/Intertakt-Rahmen (§2.5.1) ist B7-Aphasie der Zustand, in dem die chronische Intertakt-Drift (tonischer Floor-Anstieg zyklus-zu-zyklus) die B7-Feuerrate in eine Zone treibt, in der die Vesikel- und ATP-Reserven der einzelnen Intratakte nicht mehr konsistent versorgt werden. Die Aphasie ist damit nicht ein diskreter Zustand, sondern die Endstufe eines kontinuierlichen Intertakt-Drifts — der Übergang erfolgt, wenn der tonische Floor die lokale Reparaturkapazität überschreitet (vgl. §2.5.1.1).
+
 Pharmakologische Interventionen auf der Vesikelökonomie-Ebene sind in 03_pharma/09_vesikeloekonomie_5htp.md dokumentiert.
 
 ### **5.6 PFC→NTS-Kompensation und deren Erschöpfungsparadox**

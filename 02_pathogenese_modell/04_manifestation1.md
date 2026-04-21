@@ -55,7 +55,7 @@ Die serotonerge Konvergenz der Prophylaktika adressiert die Empfindlichkeit (Int
 | Valproat | Serotonerge Modulation über GABAerge Verstärkung | Indirekte Stabilisierung der Raphe-Aktivität |
 | Amitriptylin | SERT-Hemmung | Direkte Erhöhung der Serotonin-Verfügbarkeit |
 | Topiramat | Indirekte serotonerge Modulation | Multimodal, serotonerge Komponente |
-| Triptane (akut) | 5-HT1B/D-Agonismus | Präsynaptische Hemmung der trigeminalen Transmitterfreisetzung (Glied 1) + Raphe-Terminal-Kompensation des 1A-Feedback-Defekts (Glied 2, modellspezifisch); vgl. 4.4.2, 4.9.1 |
+| Triptane (akut) | 5-HT1B/D-Agonismus | Präsynaptische Hemmung der trigeminalen Transmitterfreisetzung (Glied 1) + Raphe-Terminal-Kompensation des 1A-Feedback-Defekts (Glied 2, modellspezifisch); vgl. 4.4.3, 4.9.1 |
 | CGRP-Antagonisten | Einzige Ausnahme | Kaskade, nicht Auslöser – ob CGRP upstream oder parallel zu Serotonin liegt, ist unklar |
 
 **PFC-Schutz und seine Grenzen:** Der PFC ist unter LDX pharmakologisch geschützt — der MD-Thalamus-PFC-Loop ist dopaminerg stabilisiert, was die Kippschwelle in der thalamischen Kaskade erhöht (vgl. Anhang F.4.1). Dieser Schutz ist eine höhere Schwelle, kein absoluter Schutz. Der PFC ist **nicht** geschützt gegen noradrenerge (LC), dopaminerge (VTA), adenosinerge oder direkte sensorische Perturbation. Jeder dieser Kanäle kann den kortikalen Takt unabhängig von der Raphe verschieben und damit die Schwelle zur CSD-Kaskade unterschreiten — vorausgesetzt, der B7/B8-Phasenversatz hat die Empfindlichkeit ausreichend erhöht.
@@ -235,7 +235,7 @@ Die synchrone Massendepolarisation initiiert eine selbstpropagierte elektrochemi
 
 #### **4.4.1 Tonische Destabilisierungswelle als Primärmechanismus**
 
-Die in 4.4.2 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
+Die in 4.4.3 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
 
 | Eigenschaft | CSD (klassisch) | Tonische Destabilisierungswelle |
 | :---- | :---- | :---- |
@@ -295,7 +295,18 @@ Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck versc
 
 **Hansen et al. — Aura-Variabilität als Indiz gegen CSD als fixen Mechanismus:** Hansen et al. dokumentierten über 1000 visuelle Auren bei einem einzelnen Patienten über 18 Jahre (Hansen et al. 2013, *Brain*). Das zentrale Ergebnis: Die Auren zeigen ein *Spektrum*, kein stereotypes Muster. Form, Größe, Propagationsrichtung und -geschwindigkeit variieren erheblich zwischen Attacken. Wenn CSD ein stereotyper ionischer Prozess wäre — determiniert durch kortikale Architektur und Diffusionsparameter —, müssten die Auren bei demselben Patienten weitgehend identisch sein. Die beobachtete Variabilität ist mit einem tonischen Interferenzmechanismus natürlich erklärbar: Variabler Phasenoffset → variable Interferenztopographie → variables Aura-Muster. Jede Attacke erzeugt ein anderes räumliches Muster der Destabilisierung, abhängig vom aktuellen Zustand des B7/B8-Phasenversatzes.
 
-#### **4.4.2 Metabolische Krise: Zwei Kausalrichtungen**
+#### **4.4.2 Intertakt-Drift als zweiter, übergeordneter Fragmentierungsmechanismus**
+
+Die Intratakt-Fragmentierung (§4.4.1) beschreibt stochastische Release-Muster innerhalb eines einzelnen B7-Takts: Bei vesikulärer Depletion entsteht innerhalb des DRN ein räumliches Mosaik phasenverschobener, amplitudenvariabler Serotoninpulse (vgl. §2.2.1). Der zweite, übergeordnete Mechanismus operiert auf der Intertakt-Ebene: Zwischen zwei Takten resensitisiert der somatodendritische 5-HT1A-Autoreceptor am B7 langsamer, als er in der aktiven Takt-Phase desensitisiert wurde. Jede Takt-Pause hinterlässt einen Rest-Desensitisierungszustand. Der folgende Takt startet auf leicht erhöhtem tonischem Floor; die Gain-Amplitude der B7-Intertakt-Hüllkurve driftet gegen den SCN-gelockten B8-Träger (§2.5.1.1).
+
+Beide Mechanismen sind additiv und konvergieren auf dasselbe CSD-Vorbereitungsprofil:
+
+- **Intratakt-Fragmentierung** erzeugt innerhalb eines einzelnen Takts stochastische Release-Muster → lokale serotonerge Versorgungslücken am postsynaptischen Gewebe.
+- **Intertakt-Drift** erzeugt über Tage ein progressiv ansteigendes Baseline-Defizit → die stochastischen Lücken akkumulieren auf einem immer weniger kompensierbaren Hintergrund; die B7-Intertakt-Phase driftet aus der B8-SCN-gelockten Trägerachse heraus.
+
+Die CSD-Schwelle wird erreicht, wenn beide Prozesse konvergieren: Eine Intratakt-Fragmentierung in einem ungünstigen Takt-Moment, auf einer bereits durch Intertakt-Drift prekären Basis, überschreitet lokal die serotonerge Reparaturkapazität. Die Phasenlage des Anfalls (ansteigende Flanke nach HR-Drop-Minimum, Median 2 Tage post-Minimum, Anhang B.12) ist in diesem Rahmen natürlich: Am Drop-Minimum ist das System maximal gedämpft (niedriger sympathischer Drive auf prekärer Intertakt-Basis); der Anfall kommt, wenn der sympathische Drive zurückkehrt und die Diskrepanz zwischen steigender Nachfrage und erschöpfter Reparaturkapazität maximal wird. Die ANS-Signatur dieses Prozesses ist der aufbauende sympathische Clamp (§2.5.1.1).
+
+#### **4.4.3 Metabolische Krise: Zwei Kausalrichtungen**
 
 Die metabolische Krise hat zwei distinkte Modi — einen graduellen Vorläufer und eine akute Konsequenz der CSD:
 
@@ -332,6 +343,8 @@ Die Standardinterpretation der CSD ist pathologisch: ein Fehlereignis, das Schme
 Eine vollständige CSD-Welle depolarisiert den gesamten Kortex einmal durch — jede Region, synchron, von vorne nach hinten. Danach folgt eine Phase kompletter Suppression, dann Repolarisation. Alle Regionen starten gleichzeitig neu. Das Patchwork aus desynchronisierten wachen und schlafenden Arealen wird gelöscht. Die thalamokortikale Schleife rekalibriert sich auf einen sauberen Zustand.
 
 Funktional ist dies dasselbe, was der in Anhang C beschriebene Bewusstseinsreset durch einen optimal getimten Powernap approximiert — nur brutal und unkontrolliert.
+
+Die CSD adressiert präzise das Defizit, das Hit 1 in der 5-HT1A-Resensitisierungskinetik hinterlässt: Sie erzwingt über den postiktalen Parasympathikus-Rebound eine Release-Pause an den kortikalen serotonergen Terminalen, die der defekte Intertakt-Selbstreset nicht mehr spontan leistet. Sie repariert nicht die Kinetik — sie kappt ihre Konsequenz. Deshalb baut sich der Gain nach jeder CSD erneut auf, und der nächste Zyklus beginnt (vgl. §2.5.1.1, §4.4.2).
 
 #### **4.5.1 Konvergente Evidenzlinien**
 
@@ -609,7 +622,7 @@ Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto g
 
 Die vollständige Triptan-Mechanistik im Modell umfasst drei Glieder, die über unterschiedliche Rezeptorpopulationen und mit unterschiedlichen Evidenzgraden operieren:
 
-**Glied 1 — Trigeminales Terminal [gesichert]:** 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) — nicht die Feuerrate, sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich (vgl. 4.4.2). Quantitative Stützung: Elimination der Exozytose verdoppelt präsynaptischen ATP-Spiegel auf 3,4 mM (Rangaraju et al. 2014, Cell); Vesikelpool ist dominante metabolische Ruhelast am Nerventerminal (Bhatt et al. 2021, Science Advances); synaptisches Energiebudget: Vesikelrecycling > Ionenpumpen (Attwell & Laughlin 2001, Neuron; Harris et al. 2012, Neuron).
+**Glied 1 — Trigeminales Terminal [gesichert]:** 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) — nicht die Feuerrate, sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich (vgl. 4.4.3). Quantitative Stützung: Elimination der Exozytose verdoppelt präsynaptischen ATP-Spiegel auf 3,4 mM (Rangaraju et al. 2014, Cell); Vesikelpool ist dominante metabolische Ruhelast am Nerventerminal (Bhatt et al. 2021, Science Advances); synaptisches Energiebudget: Vesikelrecycling > Ionenpumpen (Attwell & Laughlin 2001, Neuron; Harris et al. 2012, Neuron).
 
 **Glied 2 — Raphe-Terminal [hypothetisch — modellspezifisch]:** 5-HT1B/1D-Autorezeptoren auf DRN/MRN-Terminalen werden durch Triptane aktiviert (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1, vgl. 2.2): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen → Unterbrechung des Burst-Deplete-Zyklus (vgl. 2.2.1) → stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird.
 

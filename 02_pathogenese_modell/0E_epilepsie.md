@@ -91,6 +91,8 @@ Wenn das Zündmuster die Topographie der tonischen Destabilisierungswelle reflek
 
 **Querverbindung Stufe 2 und 3:** Der Übergang von Stufe 2 zu Stufe 3 ist kein Phasensprung, sondern ein Kontinuum: CSD ist die geordnete Variante der tonischen Wellenresolution (wandernde Depolarisationswelle mit metabolischer Unterstützung durch CGRP). Der epileptische Anfall ist die ungeordnete Variante — die tonische Destabilisierung überschreitet die Kapazität des CSD-Mechanismus, und die Entladung folgt dem Kollapspfad direkt. Dies ist konsistent mit den vier Interaktionsmustern von Fabricius et al. (E.2).
 
+Die Fallback-Hierarchie kann von mehreren Offsetmodi gespeist werden; der ANS-Clamp-Modus ist ein prominenter Pfad (§2.5.1.1), aber Intratakt-stochastische, inter-kern-frequenzinstabile und intra-projektive Modi können dieselbe Stufenfolge aktivieren.
+
 ---
 
 ### **E.4 CGRP als CSD-Propagationsmechanismus**
@@ -139,7 +141,7 @@ Anti-CGRP-Antikörper (Erenumab, Galcanezumab, Fremanezumab, Eptinezumab) blocki
 
 **Triptane: Inkompletter CSD-Abbruch**
 
-Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) aus trigeminalen Nervenendigungen [gesichert] (Burstein et al. 2004). Die resultierende meningeale Vasokonstriktion ist ein sekundärer Effekt, nicht der Primärmechanismus — der primäre Wirkmechanismus ist die Verschiebung der ATP-Allokation am trigeminalen Terminal zugunsten der Ionenhomöostase (vgl. 4.4.2). Triptane terminieren die CSD-Kaskade mitten im Prozess: die Depolarisationswelle hat begonnen, aber die trigeminale Amplifikationskomponente wird unterbrochen. Der Reset bleibt unvollständig.
+Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) aus trigeminalen Nervenendigungen [gesichert] (Burstein et al. 2004). Die resultierende meningeale Vasokonstriktion ist ein sekundärer Effekt, nicht der Primärmechanismus — der primäre Wirkmechanismus ist die Verschiebung der ATP-Allokation am trigeminalen Terminal zugunsten der Ionenhomöostase (vgl. 4.4.3). Triptane terminieren die CSD-Kaskade mitten im Prozess: die Depolarisationswelle hat begonnen, aber die trigeminale Amplifikationskomponente wird unterbrochen. Der Reset bleibt unvollständig.
 
 Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitation auf — kein Anfall, aber auch kein vollständiger Reset. Das Ergebnis ist ein Residualzustand: gedämpft, aber nicht resynchronisiert. Nicht die Post-Migräne-Klarheit (nach vollständiger CSD), sondern ein flaches Fenster.
 
@@ -155,7 +157,7 @@ Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitat
 
 **(1) Reset-Akkumulation (bestehende Formulierung):** Bei chronischer Migräne reicht das Intervall zwischen Anfällen nicht für SWS-Nachsynchronisation. Jeder Triptan-Abbruch hinterlässt ein Residuum, das sich kumuliert. Das System hat den Reset nie vollzogen, die Desynchronisation besteht weiter, der nächste CSD-Versuch kommt schneller — und wird wieder mit Triptan abgebrochen.
 
-**(2) 5-HT1B-Autorezeptor-Desensitisierung [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die Triptan-vermittelte 1B/1D-Kompensation des defekten 1A-Feedbacks (vgl. 4.4.2, 4.9.1) durch 1B-Desensitisierung wegfällt, verliert das System seine akut-pharmakologische Bremse → Rückfall in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt. Die kurze Halbwertszeit der Triptane ist damit nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren.
+**(2) 5-HT1B-Autorezeptor-Desensitisierung [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die Triptan-vermittelte 1B/1D-Kompensation des defekten 1A-Feedbacks (vgl. 4.4.3, 4.9.1) durch 1B-Desensitisierung wegfällt, verliert das System seine akut-pharmakologische Bremse → Rückfall in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt. Die kurze Halbwertszeit der Triptane ist damit nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren.
 
 **(3) Latente Sensitisierung (komplementär, gesichert):** Chronische Triptan-Exposition erhöht CGRP in trigeminalen duralen Afferenzen, persistent nach Absetzen (De Felice et al. 2010). Parallel: 5-HT-Depletion → 5-HT2A-Hochregulation → kortikale Hyperexzitabilität via NO-Pathway (Srikiatkhachorn et al.).
 
@@ -581,6 +583,10 @@ Die Interferenzzone zündet nicht spontan. Sie wird durch die tonische Welle auf
 Epilepsiepatienten mit komorbider Migräne haben dokumentiert schlechteres Therapieansprechen auf Antiepileptika (Velioglu et al. 2005, vgl. E.7.9). Das Modell erklärt diesen Befund: Antiepileptika adressieren die Anfallsschwelle (Stufe 3), aber nicht den Upstream-Generator — die tonische Destabilisierungswelle, die durch die Raphe-Insuffizienz angetrieben wird (Stufe 1). Bei Population 1 (Anfälle mit Vorhersage/Migräne-Mechanismus) supprimieren AEDs den terminalen Ausdruck, aber die tonische Welle baut sich weiterhin auf. Die Schwelle wird durch AEDs angehoben, aber die Desynchronisation akkumuliert — und bricht periodisch durch die angehobene Schwelle, was die höhere Rate intraktabler Anfälle erklärt.
 
 **Vorhersage:** Stratifizierung von Epilepsiepatienten nach Vorhersagefähigkeit (Prodrom ja/nein) und Migräne-Komorbidität sollte zwei distinkte Populationen identifizieren, die sich in AED-Ansprechen, Generalisierungsmuster (EEG) und optimalem Therapieregime unterscheiden. Population 1 sollte von Stufe-1-Intervention (serotonerge Stabilisierung, Betablocker) profitieren, Population 2 von konventioneller AED-Monotherapie.
+
+Ein mechanistisch prominenter — aber nicht ausschließlicher — Eingangsmodus in die Population-1-Terminalphase ist die ANS-Clamp-Route: Chronischer B7-Intertakt-Drift gegen B8-SCN-Lock (§2.5.1, §2.5.1.1) erzeugt einen aufbauenden sympathischen Clamp; die CSD als Ersatzmechanismus für den defekten Intertakt-Selbstreset (§4.5) wird nicht mehr hinreichend, wenn die funktionelle terminale Erschöpfung chronisch über die Reparaturkapazität hinausgeht. Prodrom und Migräne-Komorbidität sind in diesem Pfad klinische Marker des laufenden Intertakt-Drifts.
+
+Andere Eingangsmodi bleiben mechanistisch plausibel und sind durch die bestehenden Offsetmodi (§D.4.2, §D.4.3) abgedeckt: Intratakt-stochastische Release-Asynchronität, inter-kern-Frequenzinstabilität, intra-projektive Phasengradienten. Population 1 ist keine mechanistisch homogene Gruppe — sie ist durch die gemeinsame klinische Signatur (Prodrom, Migräne-Komorbidität, schlechteres AED-Ansprechen, Benefit von Stufe-1-Intervention) definiert; die Upstream-Mechanismen können individuell variieren.
 
 ---
 

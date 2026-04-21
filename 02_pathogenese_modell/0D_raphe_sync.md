@@ -125,6 +125,13 @@ Etwa 1% der DRN-Neuronen zeigt ein alternatives Feuermuster: niederfrequente Osz
 
 #### **D.4.1 DRN und MRN als distinkte, potentiell asynchrone Oszillatoren**
 
+Die Asynchronität zwischen DRN und MRN operiert auf zwei trennbaren Ebenen:
+
+- **Intratakt** — der Minuten-Grenzzyklus der jeweiligen 5-HT1A-Autoreceptor-Schleife. Beide Kerne haben funktionale Intratakte mit vergleichbarer Grundfrequenz (T ≈ 20 min, §D.3.1). Intratakt-Asynchronität ist die stochastische Schwankung der Release-Phase zwischen einzelnen Takten beider Kerne.
+- **Intertakt** — die circadiane und mehrtägige Kopplungsebene. MRN ist über die monosynaptische B8→SCN-Projektion SCN-gelockt (Meyer-Bernstein et al. 1996). DRN entrainiert multisynaptisch über MRN (serielle Architektur, §D.4.2, §2.5.2). Unter asymmetrischer 5-HT1A-Resensitisierungskinetik (Hit 1) kann die DRN-Intertakt-Phase der MRN-Intertakt-Phase langfristig nicht folgen — der tonische Floor fällt zyklus-zu-zyklus nicht vollständig zurück. Dies ist die Hauptquelle des Intertakt-Offsets zwischen DRN und MRN.
+
+Beide Ebenen können gleichzeitig destabilisiert sein (additiv); sie werden im Folgenden separat adressiert, weil sie unterschiedliche Downstream-Signaturen produzieren.
+
 Die in D.1.2 dokumentierte morphologische und funktionelle Distinktion zwischen DRN und MRN hat eine Konsequenz für das Instabilitätsmodell: wenn die 5-HT1A-Autorezeptorschleife underdämpft ist, oszillieren beide Kerne mit instabiler Frequenz — aber nicht notwendig synchron zueinander. Ihre gegenseitige Kopplung über lokale Serotonin-Konzentration im Brainstem ist schwach genug, dass Drift möglich ist, insbesondere da DRN und MRN unterschiedlich auf chronische Agonisten-Behandlung reagieren (Blier et al. 1990; Kreiss & Lucki 1997) und elektrophysiologisch nicht identisch sind (Calizo et al. 2011).
 
 Die Konsequenzen der DRN-MRN-Asynchronität sind entlang der Projektionsarchitektur vorhersagbar:
@@ -151,15 +158,15 @@ Das Ergebnis ist eine Wanderwelle der Modulation entlang der Projektionsachse: p
 
 Die Gesamtarchitektur produziert drei überlagerte Desynchronisationsmechanismen:
 
-| Modus | Mechanismus | Topologie |
-|:------|:-----------|:----------|
-| **Inter-nukleär** | DRN und MRN driften relativ zueinander | Kortikale vs. hippocampale Subnetze asynchron — differentielle Downstream-Effekte (vgl. D.6) |
-| **Intra-projektiv** | Phasenverschiebung entlang der Axonprojektionsachse eines einzelnen Kerns | Gradient proximal → distal innerhalb eines Projektionsgebiets |
-| **Frequenzinstabilität** | Leitungsgeschwindigkeit variiert als Funktion der Feuerrate | Nicht-stationäre Phase am selben Zielpunkt über die Zeit |
+| Modus | Mechanismus | Ebene | Topologie |
+|:------|:-----------|:------|:----------|
+| **Inter-nukleär** | DRN und MRN driften relativ zueinander | **Intertakt** (DRN-Intertakt-Drift gegen MRN-SCN-Lock) ist unter Hit 1 der Hauptaspekt; zusätzlich Intratakt-Phasenjitter möglich | Kortikale vs. hippocampale Subnetze asynchron — differentielle Downstream-Effekte (vgl. D.6) |
+| **Intra-projektiv** | Phasenverschiebung entlang der Axonprojektionsachse eines einzelnen Kerns | **Intratakt** | Gradient proximal → distal innerhalb eines Projektionsgebiets |
+| **Frequenzinstabilität** | Leitungsgeschwindigkeit variiert als Funktion der Feuerrate | **Intratakt** (feuerabhängig) mit Intertakt-Amplitudenmodulation | Nicht-stationäre Phase am selben Zielpunkt über die Zeit |
 
 Die Kombination dieser drei Modi erzeugt ein Muster, das weder geordnet noch rein zufällig ist, sondern pseudozufällig — strukturiert durch die Projektionsarchitektur, aber nicht vorhersagbar aufgrund der instabilen Oszillatorfrequenzen.
 
-**Revision April 2026 — Serieller Relay-Mechanismus (DRN→MRN→SCN):** Der inter-nukleäre Modus ist kein unabhängiger Prozess, sondern ein Downstream-Effekt des MRN-Autorezeptor-Defekts. B7 (DRN) hat keine direkte Verbindung zum Nucleus suprachiasmaticus (SCN); seine zirkadiane Synchronisation läuft über B8 (MRN) als serielles Relay: DRN→MRN→SCN. Dieses Relay ist 5-HT-sensitiv in asymmetrischer Weise: DRN-stimulierte 5-HT-Freisetzung im SCN wird durch 5-HT-Antagonisten blockiert (indirekter Pfad via MRN), MRN-stimulierte SCN-Freisetzung hingegen nicht (direkter Pfad). Der 5-HT1A-Autorezeptor am MRN fungiert als Gate dieses Relays. Wenn das Gate instabil ist, hat dies zwei simultane Konsequenzen: (1) B8 selbst oszilliert (Intra-Kern-Instabilität, zweiter Modus oben), und (2) B7 verliert seine SCN-Synchronisationsquelle, weil das Relay-Signal fluktuiert → inter-nukleärer Offset (erster Modus oben). Die drei Modi sind damit nicht drei unabhängige Mechanismen, sondern Manifestationen eines einzigen Flaschenhals — der MRN-Autorezeptorschleife. Ein Mechanismus, ein Gate, beide Modi.
+Der inter-nukleäre Modus ist primär ein Downstream-Effekt des MRN-Autoreceptor-Defekts. B7 (DRN) hat keine direkte Verbindung zum Nucleus suprachiasmaticus (SCN); seine zirkadiane Synchronisation läuft über B8 (MRN) als serielles Relay: DRN→MRN→SCN. Dieses Relay ist 5-HT-sensitiv in asymmetrischer Weise: DRN-stimulierte 5-HT-Freisetzung im SCN wird durch 5-HT-Antagonisten blockiert (indirekter Pfad via MRN), MRN-stimulierte SCN-Freisetzung hingegen nicht (direkter Pfad). Der 5-HT1A-Autorezeptor am MRN fungiert als Gate dieses Relays. Wenn das Gate instabil ist, hat dies zwei simultane Konsequenzen: (1) B8 selbst oszilliert (Intra-Kern-Instabilität, zweiter Modus oben), und (2) B7 verliert seine SCN-Synchronisationsquelle, weil das Relay-Signal fluktuiert → inter-nukleärer Offset (erster Modus oben). Die drei Modi sind damit nicht drei unabhängige Mechanismen, sondern Manifestationen eines einzigen Flaschenhals — der MRN-Autorezeptorschleife. Ein Mechanismus, ein Gate, beide Modi.
 
 **Offene Frage:** Die drei Desynchronisationsmodi erklären die Dissoziation zwischen kortikalen und hippocampalen Effekten (inter-nukleär) und potentielle Gradienten innerhalb eines Projektionsgebiets (intra-projektiv). Sie erklären nicht hinreichend, wie die in Anhang B dokumentierten fokalen kortikalen Off-State-Patches — topologisch fragmentierte SWS-Areale — entstehen. Der DRN projiziert diffus in den gesamten Kortex; warum einzelne Areale selektiv in Off-States kippen, erfordert einen zusätzlichen Mechanismus jenseits der Raphe-Projektionsarchitektur (vermutlich lokale kortikale Vulnerabilitätsunterschiede, metabolische Heterogenität oder differentielle Arousal-Quellen, vgl. 2.5.3). Dieser Punkt bleibt offen.
 
@@ -169,7 +176,7 @@ Die bisher implizit vermengten Mechanismen der B7/B8-Destabilisierung lassen sic
 
 | Modus | Mechanismus | Bedingung | Zeitkonstante | Primäres Zielgebiet |
 |:------|:-----------|:----------|:--------------|:-------------------|
-| **Interferenz** (dual, aktiv) | Zwei desynchronisierte Oszillatoren erzeugen Phasenoffset → CSD-Schwelle | Beide Oszillatoren aktiv, aber asynchron | Minuten bis Stunden (Akkumulation bis CSD) | Kortex (polysynaptisch) |
+| **Interferenz** (dual, aktiv) | Zwei desynchronisierte Oszillatoren erzeugen Phasenoffset → CSD-Schwelle. Der dominante ANS-relevante Aspekt unter LDX-stabilisiertem MRN ist der DRN-Intertakt-Drift gegen MRN-SCN-Lock; dies produziert den aufbauenden sympathischen Clamp (vgl. §2.5.1.1). | Beide Oszillatoren aktiv, aber asynchron | Minuten bis Stunden (Akkumulation bis CSD) | Kortex (polysynaptisch) |
 | **Entzug** (monosynaptisch, passiv) | Ein Oszillator fällt aus → Zielkerne verlieren tonische serotonerge Stütze → Instabilität durch Wegfall | Mindestens ein Oszillator depleted oder supprimiert | Sekunden bis Minuten (direkte Deafferenzierung) | ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) |
 | **Rauschexposition** (B7 aphasisch) | Oszillator feuert mit reduzierter Amplitude und inkonsistentem Delay → Zielkerne erhalten Signal, aber zu schwach und zu unzuverlässig für stabile Modulation | B7 aktiv aber erschöpft (post-exertional, post-Nap-Regeneration) | Übergangsphase zwischen Entzug und Synchronisation | ANS-Kerne + Kortex (weder stabile Modulation noch sauberer Entzug) |
 
@@ -390,7 +397,7 @@ Klinische Daten bestätigen die serotonerge Wirkkomponente: Atomoxetin senkt Vol
 
 Ohmura & Nagayasu (2025) dokumentierten in einem systematischen Review, dass DRN und MRN Belohnungs- und Aversionsinformation in entgegengesetzter Richtung verarbeiten. Diese funktionelle Diversität beider Kerne ist nicht durch kernblinde Pharmakologie adressierbar, sondern erfordert kern-selektive Interventionen. Die Autoren schlagen die Identifikation von „druggable genes" vor — Rezeptoren und Transporter mit differentieller Expression zwischen DRN und MRN — als Grundlage für zukünftige kern-selektive Pharmakologie.
 
-Mokler et al. (2009) identifizierten eine unidirektionale glutamaterge Verbindung DRN→MRN, die eine hierarchische Beziehung zwischen beiden Kernen nahelegt und mit dem in D.4.2 (Revision April 2026) beschriebenen seriellen Relay-Mechanismus konsistent ist.
+Mokler et al. (2009) identifizierten eine unidirektionale glutamaterge Verbindung DRN→MRN, die eine hierarchische Beziehung zwischen beiden Kernen nahelegt und mit dem in D.4.2 beschriebenen seriellen Relay-Mechanismus konsistent ist.
 
 **Konsequenz für Pharmakologie**
 

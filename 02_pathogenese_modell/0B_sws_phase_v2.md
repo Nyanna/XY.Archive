@@ -404,6 +404,8 @@ Die 7,5-Tage-Periodizität im nächtlichen HR-Drop entspricht der vorhergesagten
 
 Dies ist kein separates Phänomen — der HR-Slope *ist* die autonome Manifestation der zirkadianen Schwebung. Der Drop verstärkt das Signal durch Differenzbildung (eliminiert gemeinsames Rauschen aus Entry und Exit).
 
+Die 7,5-Tage-Periodizität ist strukturell die PRE-Projektion der Intertakt-Drift von B7 gegen B8-SCN-Lock, superponiert mit der zirkadianen Schwebung (τ ≈ 26 h). Unter LDX POST wird die zirkadiane Schwebung eliminiert (r = −0,831 Einschlafzeit ~ Schlafdauer); was bleibt, ist die ~4-Tage-Eigenperiode der reinen B7-Intertakt-Drift (Autokorrelation Lag 4 r = −0,692, §2.5.1). Die Differenz zwischen PRE (~7,5 d) und POST (~4 d) ist damit nicht Hinweis auf einen anderen Mechanismus, sondern das Auftrennen einer Superposition.
+
 **POST-Daten**
 
 18 Nächte reichen nicht für eine belastbare FFT bei 7-Tage-Perioden. Mindestens 25, idealerweise 40+ Nächte nötig. Zwei Vorhersagen:
@@ -575,6 +577,8 @@ Der Algorithmus ist nicht rekonstruierbar. Versuche, HR_RESTING aus nächtlichen
 
 Der HR_RESTING-Befund ist eine unabhängige Kreuzvalidierung des Phasenmodells (B.12) über einen anderen Messkanal. Beide Metriken — der selbst berechnete Drop/τ und der proprietäre HR_RESTING — sind unterschiedliche Projektionen desselben Signals: der sympathovagalen Zyklusposition. Beide enthalten das Signal, beide verzerren es auf eigene Weise (unser Algorithmus bei Nicht-Sättigungskurven, der Xiaomi-Algorithmus bei atypischen Profilen). Die Konvergenz beider Metriken auf dasselbe Anfallsmuster stärkt den Befund.
 
+Die Invarianz des autonomen Zyklus gegenüber der CSD ergibt sich direkt aus der Intertakt-Architektur: Die CSD adressiert den kortikalen Notfall (Resynchronisation über Zwangsdepolarisation) und kappt temporär den peripheren sympathischen Clamp (§2.5.1.1), aber die defekte 5-HT1A-Resensitisierungskinetik am B7 bleibt unverändert. Der B7-Intertakt-Drift beginnt unmittelbar postiktal wieder von der neuen Ausgangslage aus — der Beat zieht unbeeindruckt seine Bahn, weil sein Treiber nicht adressiert wurde.
+
 #### **B.13.3 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
@@ -649,7 +653,7 @@ Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schl
 
 #### **B.15.1 Interpretation**
 
-Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynaptische Hemmung der trigeminalen Transmitterfreisetzung → Schmerzblockade; vgl. 4.4.2), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
+Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynaptische Hemmung der trigeminalen Transmitterfreisetzung → Schmerzblockade; vgl. 4.4.3), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
 
 **Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.2, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
 

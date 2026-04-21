@@ -27,7 +27,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | SCN-Raphe-Kopplung und serotonerges Entrainment | Gesichert | Tiermodelle, Tract-Tracing, Rezeptorpharmakologie |
 | Endogene Periodenlänge τ ≈ 26 h | Einzelfallbeobachtung | Langjährige konsistente Selbstbeobachtung |
 | Circadiane Schwebung als Dämpfungsmodulator der Raphe-Periodizität | Hypothetisch, konsistent | Eigene Beobachtung + SCN-Raphe-Interaktion als Mechanismus |
-| Stochastisches Fenstermodell (Triggerstärke × Dämpfungszustand) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
+| Stochastisches Fenstermodell (Triggerstärke × B7-Intertakt-Drift-Zustand im Zyklus) | Hypothetisch, konsistent | Eigene Beobachtung: wandernder Rhythmus, inkonsistente Trigger |
 | Lisdexamfetamin-Mikrodosierung als Zieldosis | Einzelfallbeobachtung | Eigener Selbstversuch, erste Datenpunkte |
 | Erhöhtes neurales Rauschen bei ADHS, reduzierbar durch Stimulanzien | Gesichert | EEG-Studie (Bluschke et al. 2019, n=29+32), kontrolliert |
 | Rausch-getriebene Struktur-Funktions-Entkopplung bei ADHS | Gesichert | fMRI + computationale Modellierung (Hearne et al. 2021) |
@@ -95,6 +95,17 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Demarquay-Alternative (kortikaler Ursprung) erklärt Symptomtopographie, nicht Symptomintensität | Literaturkritik | Demarquay et al. 2018 (Cephalalgia) |
 | Temporale Sequenz: Literatur beschreibt visuelle Aura vor Hirnstammsymptomen; Modell sagt ANS zuerst; Auflösung über Detektions-Bias plausibel, nicht gesichert | Potenziell falsifizierend, Auflösung hypothetisch | ICHD-3, Einzelfallbeobachtung B.20 |
 | Interferenz vs. Entzug vs. Rauschexposition als drei distinkte Destabilisierungsmechanismen mit unterschiedlichen Zeitkonstanten | Modellpräzisierung | D.4.3, Anhang B.20 |
+| Intratakt (5-HT1A-Grenzzyklus ~20 min) funktional in B7 und B8 | Gesichert | Anhang I.1; Witt et al. 2022; Cooper et al. 2024 |
+| Intertakt-SCN-Lock von B8 monosynaptisch | Gesichert | Meyer-Bernstein et al. 1996 |
+| B7-Intertakt-Drift als asymmetrische 5-HT1A-Resensitisierungskinetik (Hit 1) | Modellspezifisch, kongruent mit Kinetikliteratur | Blier/de Montigny; Laaris et al. 1997; Cremers et al. |
+| ~4-Tage-Oszillator als Beat zwischen B7-Intertakt-Drift und B8-SCN-gelockter Intertakt-Phase | Hypothetisch, empirisch gestützt | Tracker-Daten POST (Anhang B); Autokorrelation Lag 4 r=−0,692 |
+| LDX stabilisiert B8-SCN-Lock (Intertakt von B8) sowie beide Intratakte, adressiert aber nicht die asymmetrische 5-HT1A-Resensitisierungskinetik am B7 — der B7-Intertakt-Drift persistiert | Hypothetisch, konsistent | Tracker-Daten: zirkadianer Drift eliminiert (r=−0,831), CSD-Zyklus persistiert (Anhang B) |
+| Zirkadiane Schwebung (τ ≈ 26 h vs. T = 24 h) als Amplifikator des B7-Intertakt-Drift-Musters; unter PRE superponiert mit der Intertakt-Eigenperiode zu ~6–7 Tagen, unter LDX POST reduziert auf ~4 Tage (Intertakt-Drift pur) | Hypothetisch, konsistent mit PRE/POST-Dissoziation | Modellinterpretation aus §2.5.1 + Tracker-Daten PRE/POST |
+| VLF-Trait-Fingerabdruck (42 ± 1,5 %) als integrale Instabilitätssignatur | Deskriptiv, n=4 Nächte | Anhang I.6 |
+| 20-min-VLF-Rhythmus als direkte Intratakt-Signatur | Hypothetisch, n=1 Tag | Anhang I.1, I.6 |
+| Aufbauender sympathischer Clamp als Ursache, Metrik und Problem simultan | Modellspezifisch | §2.5.1.1 |
+| Funktionelle terminale Erschöpfung (nicht somatische Depletion) als Terminalereignis | Hypothetisch, mechanistisch ableitbar | Hamon/Gartside; Bunin/Wightman |
+| CSD als Ersatzmechanismus für defekten Intertakt-Selbstreset | Modellspezifisch | §2.5.1.1; §4.5 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |

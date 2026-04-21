@@ -100,7 +100,7 @@ Bei circadian driftendem B7/B8-Phasenversatz (vgl. Abschnitt 2.5.1) erzeugt dies
 
 Der Thalamus ist die singuläre primäre Interferenzquelle des Modells. Der Midline- und intralaminäre Thalamus (Nucleus reuniens, Nucleus paraventricularis, zentrale intralaminäre Kerne) weist die dichteste belegte B7/B8-Überlappung auf. Der Hippocampus zeigt zelluläre Segregation (F.3); der Kortex ubiquitäre duale Innervierung ohne gesicherte regionale Differenzierung (F.2). Nur im Thalamus ist maximale Konvergenz beider Kerne gesichert.
 
-**Mechanismus:** B7/B8-Phasenversatz produziert hier *maximale destruktive Interferenz im Thalamus selbst*. Die kortikalen Effekte (CSD, Anfälle) sind in diesem Rahmen *sekundär* — sie resultieren aus dem thalamischen Kohärenzverlust, nicht umgekehrt.
+**Mechanismus:** B7/B8-Phasenversatz produziert hier *maximale destruktive Interferenz im Thalamus selbst*. Der Phasenversatz ist — unter LDX-stabilisiertem B8-SCN-Lock — primär ein Intertakt-Offset: Die B7-Intertakt-Phase driftet gegen den SCN-gelockten B8-Träger. Der ML/IL-Komplex erhält einen serotonergen Modulationstonus, dessen DRN-Anteil zyklisch aus der MRN-Trägerachse herausläuft — je weiter der Drift, desto inkohärenter das Gesamtsignal am Relais. Die kortikalen Effekte (CSD, Anfälle) sind in diesem Rahmen *sekundär* — sie resultieren aus dem thalamischen Kohärenzverlust, nicht umgekehrt.
 
 **Bezug zum Zentralmodell (→ Kapitel 8, Abschnitt 2.5.1):** Die thalamische Kalibrierung — zentraler Mechanismus des Pathogenesemodells — ist direkt betroffen. Der Thalamus fungiert als *Relaisstation und Integrator*; ein serotonerges Interferenzmuster an dieser Stelle propagiert über die thalamokortikale Kaskade in alle nachgeschalteten Schleifen.
 
