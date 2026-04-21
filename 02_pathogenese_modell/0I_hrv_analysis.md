@@ -9,7 +9,7 @@ abstract: |
 
 ***
 
-## **Anhang I: Tracker-Datenanalyse — HRV**
+## **Anhang I: Tracker-Datenanalyse — HRV Frequenzspektrum**
 
 **Einleitung und Geltungsbereich**
 
