@@ -8,26 +8,26 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'IBM Plex Sans',sans-serif;background:#0a0a0f;color:#d4d4d8;padding:24px;max-width:1100px;margin:0 auto}
-h1{font-size:20px;font-weight:500;color:#fafafa;margin-bottom:4px}
-.sub{font-size:13px;color:#71717a;margin-bottom:20px}
+body{font-family:'IBM Plex Sans',sans-serif;background:#ffffff;color:#27272a;padding:24px}
+h1{font-size:20px;font-weight:500;color:#09090b;margin-bottom:4px}
+.sub{font-size:13px;color:#52525b;margin-bottom:20px}
 .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:20px}
-.metric{background:#18181b;border:1px solid #27272a;border-radius:8px;padding:12px}
+.metric{background:#ffffff;border:1px solid #e4e4e7;border-radius:8px;padding:12px}
 .metric-label{font-size:11px;color:#71717a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
-.metric-val{font-size:22px;font-weight:500;color:#fafafa;font-family:'IBM Plex Mono',monospace}
-.metric-sub{font-size:11px;color:#52525b;margin-top:2px}
-.section{font-size:13px;font-weight:500;color:#71717a;margin:16px 0 6px;text-transform:uppercase;letter-spacing:.5px}
-.legend{display:flex;flex-wrap:wrap;gap:12px;margin:6px 0 8px;font-size:12px;color:#a1a1aa}
+.metric-val{font-size:22px;font-weight:500;color:#09090b;font-family:'IBM Plex Mono',monospace}
+.metric-sub{font-size:11px;color:#71717a;margin-top:2px}
+.section{font-size:13px;font-weight:500;color:#52525b;margin:16px 0 6px;text-transform:uppercase;letter-spacing:.5px}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin:6px 0 8px;font-size:12px;color:#52525b}
 .legend span{display:flex;align-items:center;gap:5px}
 .ldot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
-.chart-box{background:#18181b;border:1px solid #27272a;border-radius:8px;padding:16px;margin-bottom:12px}
+.chart-box{background:#ffffff;border:1px solid #e4e4e7;border-radius:8px;padding:16px;margin-bottom:12px}
 .chart-box canvas{width:100%!important}
-.annotations{background:#18181b;border:1px solid #27272a;border-radius:8px;padding:16px;margin-bottom:12px}
-.ann{display:flex;gap:10px;padding:4px 0;border-bottom:1px solid #1f1f23;font-size:13px}
+.annotations{background:#ffffff;border:1px solid #e4e4e7;border-radius:8px;padding:16px;margin-bottom:12px}
+.ann{display:flex;gap:10px;padding:4px 0;border-bottom:1px solid #f4f4f5;font-size:13px}
 .ann:last-child{border-bottom:none}
-.ann-time{font-family:'IBM Plex Mono',monospace;color:#a78bfa;flex-shrink:0;width:50px}
-.ann-text{color:#a1a1aa}
-.footer{font-size:11px;color:#3f3f46;margin-top:20px;text-align:center}
+.ann-time{font-family:'IBM Plex Mono',monospace;color:#6d28d9;flex-shrink:0;width:50px}
+.ann-text{color:#3f3f46}
+.footer{font-size:11px;color:#a1a1aa;margin-top:20px;text-align:center}
 </style>
 </head>
 <body>
@@ -63,13 +63,13 @@ const D=[{"t": "00:00", "hr": 72.4, "pnn": 13.8, "lf": 4.34, "hf": 2.48, "vlf": 
 const sc={'b8_dom':'#5DCAA5','both':'#85B7EB','interf':'#EF9F27','b7_dom':'#E24B4A','mixed':'#6b6b75','both_off':'#3f3f46'};
 const sn={'b8_dom':'B8-dominant','both':'Beide aktiv','interf':'Interferenz','b7_dom':'B7-dominant','mixed':'Mixed','both_off':'Beide off'};
 const cDef={responsive:true,maintainAspectRatio:false,animation:false};
-const xDef={ticks:{maxTicksLimit:18,font:{size:10,family:"IBM Plex Mono"},color:'#52525b'},grid:{color:'#1f1f23'}};
+const xDef={ticks:{maxTicksLimit:18,font:{size:10,family:"IBM Plex Mono"},color:'#71717a'},grid:{color:'#e4e4e7'}};
 
 new Chart(document.getElementById('c0'),{type:'bar',data:{labels:D.map(d=>d.t),datasets:[{data:D.map(()=>1),backgroundColor:D.map(d=>sc[d.s]),borderWidth:0,barPercentage:1,categoryPercentage:1}]},options:{...cDef,scales:{x:{...xDef},y:{display:false}},plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>sn[D[c.dataIndex].s]}}}}});
 
-new Chart(document.getElementById('c1'),{type:'line',data:{labels:D.map(d=>d.t),datasets:[{label:'HR',data:D.map(d=>d.hr),borderColor:'#ef4444',borderWidth:1.5,pointRadius:0,tension:.3,yAxisID:'y'},{label:'pNN50',data:D.map(d=>d.pnn),borderColor:'#5DCAA5',borderWidth:1,pointRadius:0,tension:.3,yAxisID:'y1',borderDash:[4,2]}]},options:{...cDef,interaction:{mode:'index',intersect:false},scales:{x:{...xDef},y:{position:'left',title:{display:true,text:'HR bpm',font:{size:11},color:'#71717a'},grid:{color:'#1f1f23'},ticks:{color:'#52525b'}},y1:{position:'right',title:{display:true,text:'pNN50 %',font:{size:11},color:'#71717a'},grid:{drawOnChartArea:false},ticks:{color:'#52525b'}}},plugins:{legend:{display:false}}}});
+new Chart(document.getElementById('c1'),{type:'line',data:{labels:D.map(d=>d.t),datasets:[{label:'HR',data:D.map(d=>d.hr),borderColor:'#ef4444',borderWidth:1.5,pointRadius:0,tension:.3,yAxisID:'y'},{label:'pNN50',data:D.map(d=>d.pnn),borderColor:'#5DCAA5',borderWidth:1,pointRadius:0,tension:.3,yAxisID:'y1',borderDash:[4,2]}]},options:{...cDef,interaction:{mode:'index',intersect:false},scales:{x:{...xDef},y:{position:'left',title:{display:true,text:'HR bpm',font:{size:11},color:'#52525b'},grid:{color:'#e4e4e7'},ticks:{color:'#71717a'}},y1:{position:'right',title:{display:true,text:'pNN50 %',font:{size:11},color:'#52525b'},grid:{drawOnChartArea:false},ticks:{color:'#71717a'}}},plugins:{legend:{display:false}}}});
 
-new Chart(document.getElementById('c2'),{type:'line',data:{labels:D.map(d=>d.t),datasets:[{label:'VLF',data:D.map(d=>d.vlf),borderColor:'#EF9F27',backgroundColor:'rgba(239,159,39,.1)',fill:true,borderWidth:1.5,pointRadius:0,tension:.3},{label:'LF',data:D.map(d=>d.lf),borderColor:'#ef4444',backgroundColor:'rgba(239,68,68,.06)',fill:true,borderWidth:1.2,pointRadius:0,tension:.3},{label:'HF',data:D.map(d=>d.hf),borderColor:'#5DCAA5',backgroundColor:'rgba(93,202,165,.06)',fill:true,borderWidth:1.2,pointRadius:0,tension:.3}]},options:{...cDef,interaction:{mode:'index',intersect:false},scales:{x:{...xDef},y:{title:{display:true,text:'ms²',font:{size:11},color:'#71717a'},grid:{color:'#1f1f23'},ticks:{color:'#52525b'}}},plugins:{legend:{display:false}}}});
+new Chart(document.getElementById('c2'),{type:'line',data:{labels:D.map(d=>d.t),datasets:[{label:'VLF',data:D.map(d=>d.vlf),borderColor:'#EF9F27',backgroundColor:'rgba(239,159,39,.1)',fill:true,borderWidth:1.5,pointRadius:0,tension:.3},{label:'LF',data:D.map(d=>d.lf),borderColor:'#ef4444',backgroundColor:'rgba(239,68,68,.06)',fill:true,borderWidth:1.2,pointRadius:0,tension:.3},{label:'HF',data:D.map(d=>d.hf),borderColor:'#5DCAA5',backgroundColor:'rgba(93,202,165,.06)',fill:true,borderWidth:1.2,pointRadius:0,tension:.3}]},options:{...cDef,interaction:{mode:'index',intersect:false},scales:{x:{...xDef},y:{title:{display:true,text:'ms²',font:{size:11},color:'#52525b'},grid:{color:'#e4e4e7'},ticks:{color:'#71717a'}}},plugins:{legend:{display:false}}}});
 </script>
 </body>
 </html>

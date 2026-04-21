@@ -383,6 +383,8 @@ Ab 05:10 startet die letzte große Regenerationsphase mit den höchsten Power-We
 
 **Interpretation:** Die niedrige B7-Dominanz (2.4%) wurde initial DPH zugeschrieben. Die spätere Vergleichsanalyse (N4) zeigt, dass dies nicht haltbar ist — die niedrige B7-Aktivität reflektiert die Zyklusposition, nicht die Pharmakologie.
 
+![Dashboard Nacht 16. April](<images/dashboard_N1_16apr_DPH.png>){width=90%}
+
 #### **Nacht 2 — 18. April 2026 (Desloratadin)**
 
 **Kontext:** Desloratadin als 2.-Generations-Antihistaminikum penetriert die Blut-Hirn-Schranke nicht relevant. Diese Nacht fungiert als unbehandelte Baseline. Aufzeichnung 00:00–07:47 Uhr.
@@ -409,6 +411,8 @@ Hauptunterschiede zu N1: HR-Mean 2.5 bpm höher, B7-Dominanz verdoppelt (5.1% vs
 Das Aphasie-Fenster um 05:24–05:38 (pNN50 < 5%, alle Bänder < 2 ms²) ist länger als in N1 und wird gefolgt von dem massivsten VLF-Spike der Nacht (120 ms² um 06:06). Die zweite Nachthälfte ab ~03:00 ist von zunehmender VLF-Dominanz geprägt — die Interferenz eskaliert progressiv.
 
 **Interpretation:** Desloratadin bestätigt seine Rolle als Negativkontrolle: kein zentraler H1-Effekt, die Nacht entspricht der unbehandelten Dynamik. Die Verdopplung der B7-Dominanz gegenüber N1 widerlegt rückblickend die Attribution der N1-Befunde an DPH.
+
+![Dashboard Nacht 18. April](<images/dashboard_N2_18apr_Deslor.png>){width=90%}
 
 #### **Nacht 3 — 19. April 2026 (DPH + Naratriptan)**
 
@@ -439,6 +443,8 @@ Die HR bleibt trotz B8-Dominanz bei 67.8 bpm — paradox, aber erklärbar durch 
 
 **Folgetag:** Subjektiv post-iktale Klarheit ohne Anfall. 2 Stunden Autofahrt, Gartenarbeit, normale LDX-Dosis — alles funktional. Die Klarheit erklärt sich als LDX-Wirkung bei freigegebener PFC-Bandbreite (kein ANS-Störsignal zu kompensieren).
 
+![Dashboard Nacht 19. April](<images/dashboard_N3_19apr_DPH_Triptan.png>){width=90%}
+
 #### **Tag 19. April 2026 — B7-Wiederanfahrt**
 
 **Kontext:** Folgetag nach N3 (DPH+Naratriptan). LDX reguläre Dosis. Autofahrt 07:00–11:00 Uhr, Gartenarbeit nachmittags. Aufzeichnung 07:00–18:33 Uhr.
@@ -454,6 +460,8 @@ Die HR bleibt trotz B8-Dominanz bei 67.8 bpm — paradox, aber erklärbar durch 
 **17:00–18:30:** LF=13 ms², VLF=14 ms², pNN50 bis 10%. B7 vollständig online, sofort im Interferenzmodus — die Phasenbeziehung zu B8 war nie korrigiert.
 
 **Zeitkonstante:** Die B7-Wiederanfahrt nach DPH+Naratriptan-Shutdown liegt bei ~10 Stunden. Die Wiederanfahrt endet nicht in Kohärenz, sondern direkt in der Interferenz.
+
+![Dashboard Tag 19. April](<images/dashboard_Tag19_post_abfang.png>){width=90%}
 
 #### **Nacht 4 — 20. April 2026 (DPH allein)**
 
@@ -481,6 +489,8 @@ Am Morgen: HR-Spike auf 117 bpm beim Erwachen. Subjektiv Grogginess und Wackelko
 
 **Interpretation:** DPH hat eine Gain-Decke, keine Gain-Nullung. Bei niedrigem B7-Ausgangspegel (N1) reicht die Decke; bei hohem Ausgangspegel (N4) liegt B7 bereits darüber. Die Differenz erklärt, warum N3 das Triptan benötigte — nicht als redundante Ergänzung, sondern als notwendige Erweiterung bei B7-Pegel oberhalb der DPH-Kapazität.
 
+![Dashboard Nacht 20. April](<images/dashboard_N4_20apr_DPH.png>){width=90%}
+
 #### **Tag 20. April 2026 — Prodromale Kaskade und DPH-Tagesintervention**
 
 **Kontext:** Grogginess und Wackelkopf seit dem Morgen (N4-Folge). LDX-Nachdosis am Vormittag. Nap ~13:09–13:45 mit subjektivem Kollaps-Erleben. DPH um 16:00 Uhr als Tagesintervention. Aufzeichnung 10:00–20:00 Uhr.
@@ -494,6 +504,8 @@ Am Morgen: HR-Spike auf 117 bpm beim Erwachen. Subjektiv Grogginess und Wackelko
 **Dissoziation subjektiv/spektral:** Die subjektive Klarheit dissoziiert von der spektralen Messung. Der kortikale H1-Effekt (Rauschreduktion, Erregbarkeitssenkung) und der autonome Effekt (sympathische Kaskade) sind unabhängige Pfade. DPH adressiert den ersten, nicht den zweiten.
 
 **Frequenzverdopplung nach Spike:** Nach dem 16:00-VLF-Peak zeigt sich eine transiente Halbierung der Periodizität auf 7–10 Minuten statt 20. Dies ist konsistent mit einem überschwingenden Regelkreis, der sich nach großer Perturbation über mehrere verkürzte Zyklen restabilisiert.
+
+![Dashboard Tag 20. April](<images/dashboard_Tag20_prodromal.png>){width=90%}
 
 #### **Synthese: Verknüpfung der Daten mit dem Modell**
 
