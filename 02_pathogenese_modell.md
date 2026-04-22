@@ -2287,8 +2287,6 @@ Die folgenden Fragen sind aus dem bisherigen Modellierungsprozess hervorgegangen
 
 Dieser Anhang entwickelt eine mechanistische Hypothese zur emotionalen Verarbeitung bei ASD-Phänotyp. Die zentrale These: Der thalamo-amygdaläre Direktpfad (Low Road) ist entwicklungsbiologisch desensibilisiert (inverses Hebbianisches Pruning durch chronisch inkonsistentes fetales Signal), während der kortiko-amygdaläre Umweg (High Road) intakt und die Amygdala selbst potent bleibt. Dies erklärt drei konsistente Selbstbeobachtungen: volle emotionale Reaktion bei Film/Narrative (kortikal), unkontrolliertes Weinen im Traum (direkt limbisch, Thalamus offline), starke Reduktion bei realer externer Situation (thalamischer Direktpfad desensibilisiert). Die PFC-Amygdala-Kopplung zeigt ein binäres Gating-Profil (Step Function statt Sigmoid) — entweder Kontrolle oder Überflutung, ohne Zwischenzustand (klinisch: Meltdown). LDX verbessert die somatische Resonanz über den intakten kortikalen Pfad, nicht über Reaktivierung des Direktpfads. Reinterpretation der ASD-„Alexithymie" als Pfaddefizit, nicht Kapazitätsdefizit.
 
----
-
 *Evidenzstatus: Vorläufige Selbstbeobachtung. Mechanistisch plausibel, nicht belegt. Dient als Hypothesengenerierung.*
 
 ### **A.1 Beobachtung**
@@ -2429,8 +2427,6 @@ Dieser Anhang dokumentiert die Tracker-Datenanalyse der kortikalen Desynchronisa
 
 **Kernthese:** Das SWS-Defizit manifestiert sich auf zwei komplementären Ebenen — **räumlich** (intra-Nacht): Der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein topologisch fragmentiertes Patchwork aus lokalen Off-States; der Tracker kodiert diese räumliche Fragmentierung als temporale Instabilität. **Zeitlich** (inter-Nacht): Der nächtliche HR-Drop oszilliert mit einer dominanten Periode von 7,5 Tagen (FFT, Power 102,5; Autokorrelation Lag 7 r=0,317), kongruent mit der vorhergesagten Schwebungsfrequenz bei τ ≈ 26 h. Die zirkadiane Schwebung akkumuliert kortikale Desynchronisation über ~7 Tage; pro Nacht manifestiert sich das als variable Fragmentierung.
 
----
-
 ### **B.1 Datengrundlage**
 
 **Gerät:** Xiaomi Smart Band 9 (Gadgetbridge, SQLite-Export)
@@ -2456,8 +2452,6 @@ Dieser Anhang dokumentiert die Tracker-Datenanalyse der kortikalen Desynchronisa
 | `deep_latency_epoch_filtered.csv` | Deep-Latenz (roh und 5-min-gefiltert), Noise-Fragmente pro Nacht | 79 |
 
 **Tracker-Limitationen:** Der Tracker klassifiziert Schlafstadien intern über ein Fusionsmodell aus Accelerometer (Bewegung) und PPG (Herzrate). Die Rohdaten des Accelerometers sind nicht exportierbar — nur das fertige Hypnogramm und die HR-Samples stehen zur Analyse bereit. Die Stadienklassifikation kann nicht nachvollzogen oder korrigiert werden.
-
----
 
 ### **B.2 Fragmentierung als Desynchronisationssignal**
 
@@ -2495,8 +2489,6 @@ Die PRE-Werte stiegen durch den Filter (P25: 18→25), die POST-Werte blieben st
 Die entscheidende Einsicht: Wenn der Tracker ein Single-Point-Probe des motorischen Kortex ist und der Schlafzustand räumlich inhomogen (topologisch fragmentiert), dann sind die kurzen Deep-Fragmente keine Fehlklassifikationen, sondern korrekte Momentaufnahmen eines lokalen Off-States, der den motorischen Kortex kurzzeitig erfasst.
 
 Die temporale Fragmentierung im 1D-Tracker-Output kodiert die räumliche Fragmentierung des Kortex. Mehr Kurzfragmente = mehr Patchwork = weniger globale Kohärenz.
-
----
 
 ### **B.3 Quantifizierung der kortikalen Kohärenz**
 
@@ -2573,8 +2565,6 @@ Die Nacht vom 28.03.2026 ist das POST-Maximum und der einzige POST-Datenpunkt, d
 
 **Caveat:** Einzelne Nacht, kein statistischer Test möglich. Die Interpretation stützt sich auf die Konvergenz von Effektgröße und zeitlichem Muster.
 
----
-
 ### **B.4 HR-Variabilität: Confounder-Analyse**
 
 Der Versuch, die Fragmentierung über HR-Variabilität während der Deep-Phasen zu validieren, scheitert am pharmakologischen Confounder:
@@ -2588,8 +2578,6 @@ Der Versuch, die Fragmentierung über HR-Variabilität während der Deep-Phasen 
 PRE ist niedriger — aber Betablocker dämpfen HR-Variabilität pharmakologisch. Die Differenz ist nicht von der Betablocker-Wirkung zu trennen. Befund: **nicht interpretierbar (confounded)**.
 
 Die intakte vagale Kapazität ist davon unberührt: HR-Floor median 50 bpm (PRE) vs. 52 bpm (POST), absolutes Minimum 44 bpm — konsistent mit dem im Autonomen Profil dokumentierten Befund, dass die vagale Kapazität strukturell intakt, aber zustandsabhängig supprimiert ist.
-
----
 
 ### **B.5 Nap-Korrelation: Kompensatorischer SWS**
 
@@ -2637,8 +2625,6 @@ POST-Naps haben einen komplett anderen Charakter: Die Nap-Rate ist doppelt so ho
 Wenn einer fragmentierten Nacht (Density ≥5/h) ein Nap folgt, münden 75% (6/8) in einen Anfall: 5/8 am selben Tag, 1/8 am Folgetag. Die Dreiersequenz identifiziert ein Hochrisiko-Fenster, in dem die kompensatorische Kapazität erschöpft ist.
 
 **Caveat:** Kleine Stichproben (n=8 für Dreiersequenz). Die Prozentwerte sind Punktschätzer ohne Konfidenzintervall.
-
----
 
 ### **B.6 CSD als kompensatorische Resynchronisation**
 
@@ -2715,8 +2701,6 @@ Das Muster ist bidirektional: Fragmentierung baut sich auf (5,96/h in der Vornac
 - Multiples Testen (t-1, t0 sowie Schwellenwertanalyse) ohne formale Korrektur. Der p-Wert von 0,003 überlebt eine Bonferroni-Korrektur für 2 Tests, nicht aber für explorative Schwellenwertsuche.
 - Kausale Richtung (Fragmentierung → Anfall vs. gemeinsamer Upstream-Treiber → beides) ist aus Korrelationsdaten nicht trennbar.
 
----
-
 ### **B.7 Das Tracker-Signal: Ein stochastischer Resonanz-Detektor**
 
 **Messtheorie**
@@ -2743,8 +2727,6 @@ Was der Tracker *nicht* misst:
 
 Der Tracker liefert für die vorliegende Fragestellung ein in einem Aspekt überlegenes Signal: Er misst kontinuierlich über die gesamte Nacht, über Monate, im natürlichen Schlafumfeld, ohne Messartefakte durch die Laborumgebung. Ein fMRT liefert höhere räumliche Auflösung, aber nur für eine einzelne Nacht unter Laborbedingungen — und misst nicht die Nacht-zu-Nacht-Variabilität, die das eigentliche Signal ist.
 
----
-
 ### **B.8 Konsolidierung der Traumerinnerung als subjektiver Kohärenzmarker**
 
 POST-Beobachtung: Bewussteres, intensiveres Träumen bei gleichzeitig unverändertem REM-Anteil laut Tracker.
@@ -2752,8 +2734,6 @@ POST-Beobachtung: Bewussteres, intensiveres Träumen bei gleichzeitig unverände
 **Interpretation:** Der Tracker misst, ob der motorische Kortex sich im REM-typischen Profil befindet. Er misst nicht, ob der REM global konsolidiert ist. Die Traumerinnerung ist das sensitivere Instrument: Sie überlebt den Schlaf-Wach-Übergang nur, wenn die letzte REM-Phase konsolidiert genug war. Fragmentierter REM (PRE) → Traumerinnerung überlebt die Transitionen nicht. Konsolidierter REM (POST) → Erinnerung bleibt erhalten.
 
 Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen auf (CSD-erzwungene Resynchronisation → konsolidierter post-iktaler REM). Unter LDX tritt es regulär auf — die pharmakologische Synchronisation ersetzt den CSD-Reset.
-
----
 
 ### **B.9 Nächtliche HR-Trajektorie: Pattern-Klassifikation**
 
@@ -2795,8 +2775,6 @@ Die Aussage stützt sich auf mehrere konvergierende Befunde:
 
 **Konvergenz mit B.10:** Der Slope als autonome Projektion der Fragmentierung erklärt, warum der HR-Drop dieselbe quasi-wöchentliche Periodizität zeigt wie die Fragmentierungsmetriken — es ist dasselbe Signal in einem anderen Messkanal.
 
----
-
 ### **B.10 Periodizitätsanalyse: FFT und Autokorrelation**
 
 **FFT-Analyse (PRE-Daten, n=60 Nächte)**
@@ -2831,8 +2809,6 @@ Die 7,5-Tage-Periodizität ist strukturell die PRE-Projektion der Intertakt-Drif
 18 Nächte reichen nicht für eine belastbare FFT bei 7-Tage-Perioden. Mindestens 25, idealerweise 40+ Nächte nötig. Zwei Vorhersagen:
 - Option A: Rhythmus taucht auf → LDX ändert nur Amplitude, nicht Frequenz
 - Option B: Rhythmus gestört → τ komprimiert sich unter LDX, Schwebungsperiode verlängert sich massiv
-
----
 
 ### **B.11 Nap-Outcome-Analyse: Zustand bei Eintritt, nicht Dauer**
 
@@ -2898,8 +2874,6 @@ Post-exertionale Migräne ist kein eigener Triggerpfad — sie ist eine Nap-Kask
 
 **Epidemiologische Stützung:** Koppen et al. (2013, J Headache Pain): 38% Lebenszeitprävalenz exercise-triggered Migräne, Onset durchschnittlich 160 min nach Belastungsende — konsistent mit dem Regenerations-Interferenz-Fenster.
 
----
-
 ### **B.12 Anfallstiming: Phasenmodell**
 
 **Befund**
@@ -2924,8 +2898,6 @@ Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude).
 **Kompatibilität mit dem Stochastischen Fenstermodell**
 
 Das stochastische Fenstermodell (2.5.2) bleibt gültig, wird aber präzisiert: Das Vulnerabilitätsfenster öffnet sich nicht am Tiefpunkt der Schwebung, sondern auf der ansteigenden Flanke. Die Triggerstärke bestimmt, wie weit auf der Flanke der Anfall ausgelöst wird.
-
----
 
 ### **B.13 HR_RESTING als unabhängiger Zyklusmarker**
 
@@ -3011,8 +2983,6 @@ Die Invarianz des autonomen Zyklus gegenüber der CSD ergibt sich direkt aus der
 | Nap-Outcome ist Zykluspositions-Projektion | Modellinterpretation, konsistent mit Daten | Kreuzreferenz B.5 + B.13 |
 | Kortikale vs. autonome Resynchronisation differenzierbar | Modellinterpretation | Abgeleitet aus Post-Anfall-Verlauf |
 
----
-
 ### **B.14 Traumerinnerung als Kohärenzmarker (erweitert)**
 
 POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nur, ob der motorische Kortex im REM-Profil ist, nicht ob der REM global konsolidiert ist. Traumerinnerung überlebt den Schlaf-Wach-Übergang nur bei konsolidiertem REM.
@@ -3028,8 +2998,6 @@ POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Trac
 | PRE (ohne Anfall) | Selten | Fragmentierter REM, keine Konsolidierung |
 | PRE (nach CSD) | Intensiv | CSD-erzwungene Resynchronisation → konsolidierter REM |
 | POST (LDX) | Regulär | Pharmakologische Synchronisation → konsolidierter REM ohne CSD |
-
----
 
 ### **B.15 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
 
@@ -3078,8 +3046,6 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynapti
 **Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.2, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
 
 **Caveat:** Einzelereignis. Die Drei-Drittel-Analyse ist deskriptiv und nicht generalisierbar. Die HR-Verlaufsdaten sind durch die Sumatriptan-Pharmakokinetik (Halbwertszeit ~2h) konfundiert.
-
----
 
 ### **B.16 Sonderanalyse: Post-exertionaler Anfall 07.04.2026 — ANS-Kollaps als eigenständiger Prozess**
 
@@ -3207,8 +3173,6 @@ Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (M
 *HR-Minutenauflösung, CEST. Annotationen: Rasenmähen (rot), Interventionen (gestrichelt), Kaskade (rot), Triptan-Plateau (amber), echtes Nadir (grün).*
 
 ![HR-Sleep-Timeline Schlaf 07.04.2026](<images/Metabase-HR + AVG-4_8_2026, 11_23_07 AM.png>)
-
----
 
 ### Einzeltaganalyse: 11./12. April 2026 — B8-Haltemodus und paradoxe LDX-Schlafvertiefung
 
@@ -3401,9 +3365,6 @@ Diese Revision erklärt zwei bisher problematische Beobachtungen:
 **Testbarkeit**
 Die Chronotyp-Verschiebung sollte mit dem Erschöpfungszustand der Antagonisten korrelieren: In B7-dominanten Phasen (steep nadir slope, gute Konsolidierung) Frühverschiebung, in B8-dominanten Phasen (flacher slope, hohe Plateaus) Spätverschiebung. Die HR-Plateau-Analyse liefert die nötigen Proxy-Variablen für beide Zustände.
 
-
----
-
 ### **B.18 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
@@ -3489,8 +3450,6 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 
 **Prospektiv testbar:** Systematische HR-Trajectory-Analyse über 4–6 Wochen als Screening-Tool für Raphe-Dysregulation bei ADHS-Migräne-Koinzidenz. Die Vorhersage: Patienten mit diesem Phänotyp zeigen (a) erhöhte Schlaffragmentierung (Deep-Episoden/h >1,3), (b) quasi-wöchentliche Periodizität im HR-Drop und (c) zustandsabhängige Nap-Outcomes.
 
----
-
 ### **B.21 H9Z-Brustgurt-Messung 14.–15.04.2026: Einschlaf-Cliff und Plateau-Struktur**
 
 Die unter B.9 beschriebene nächtliche HR-Trajektorie hat eine Auflösungsgrenze im Minutenbereich (Mi-Band 9). Eine ergänzende Messung mit dem Coospo-H9Z-Brustgurt (EKG-Elektroden, ±1 bpm, BT 5.0) über 14.04.2026 18:27 CEST – 15.04.2026 07:59 CEST erfasst 52.849 Beat-to-Beat-RR-Intervalle (99,8 % physiologisch plausibel) — Auflösung auf Einzelschlag-Ebene. Zwei Phänomene werden damit sichtbar, die in den Minuten-aggregierten Mi-Band-Daten systematisch unterdrückt sind: der binäre Charakter des Einschlaf-Übergangs und die 2-Stunden-Plateau-Struktur der Tageszyklik.
@@ -3562,8 +3521,6 @@ Mechanistisch entspricht das degradierende Plateau einem Overshoot beim Einsteig
 | Intra-Plateau-Gradient (dHR/dt) als Anfallsprädiktor | Hypothetisch, konsistent mit Einzelfall | Langzeitdaten; vgl. 2.5.5, 7.4 |
 | LDX als additiver Rechteck-Puls, plateau-strukturinvariant | Deskriptiv, n=2 Dosen | H9Z |
 
----
-
 ### **B.22 Referenzen**
 
 *Methodische Grundlagen:*
@@ -3601,8 +3558,6 @@ Mechanistisch entspricht das degradierende Plateau einem Overshoot beim Einsteig
 **Zusammenfassung**
 
 Dieser Anhang ist ein phänomenologischer Erfahrungsbericht zur subjektiven Manifestation der kortikalen Desynchronisation. Er beschreibt: invarianten Tiefschlaf (~2h07–10min) bei variabler Gesamtarchitektur; das „Zwei-Stunden-Loch" (Bewusstseinsdruckabfall ~2h nach Aufstehen, interpretiert als Off-State-Intrusion); Modalitätsasymmetrie (Augen schließen reduziert Druck, Stille verschlechtert ihn); Wegdriftmomente als Verarbeitungslücken bei Wachheit; den Powernap als Bewusstseinsreset (Tiefe entscheidend, nicht Dauer — zu flach: kein Reset, zu tief: Migränegefahr); Einschlaflatenz <2 min als Symptom statt Fähigkeit; Musik als externer kortikaler Synchronisator; und die differentielle Arousal-Qualität verschiedener Wachzustandsquellen (Arbeit vs. Koffein vs. pharmakologische Synchronisation). Dient als Erfahrungsgrundlage für die mechanistischen Ableitungen in Kapiteln 2.5, 4.3, 8.4 und 8.9.
-
----
 
 *Subjektive Beschreibungen eines Zustands, den ich jahrelang für Konzentrationserschöpfung hielt.*
 
@@ -3924,8 +3879,6 @@ Es ist möglich, dass dein Gehirn einen Zustand nicht aufrechterhalten kann, den
 
 Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine. Ich hatte einen Grundzustand, der ohne externe Stütze nicht hält. Und ich hatte nie normale Müdigkeit — nur den Schalter zwischen „gehalten" und „nicht mehr gehalten".
 
-*Phänomenologische Beschreibung, kein klinisches Dokument. Dient der Selbsterkennung und dem Austausch.*
-
 ***
 
 ## **Anhang D: Raphe-Synchronisationsmechanik — Vom Schrittmacher zur kortikalen Kohärenz**
@@ -3935,8 +3888,6 @@ Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine
 Dieser Anhang analysiert den Mechanismus, durch den die Raphe-Kerne gehirnweite Synchronisation erzeugen — und wie dessen Versagen die in Kapitel 2, 4 und 8 beschriebenen Desynchronisationsphänomene produziert.
 
 **Kernthese:** Die Raphe-Kerne operieren als Reset-Oszillator, nicht als Informationskanal. Ihre Funktion ist nicht die Übermittlung eines Signals, sondern die periodische Resynchronisation kortikaler Gain-Parameter über Volumentransmission. Fehlt oder fluktuiert dieser Takt, driften kortikale und hippocampale Subnetze auseinander — nicht zufällig, sondern strukturiert entlang der Raphe-Projektionsarchitektur. DRN (B7) und MRN (B8) sind morphologisch, pharmakologisch und funktionell distinkt und innervieren unterschiedliche Zielstrukturen über unterschiedliche Fasertypen. Ihre Asynchronität unter instabiler Autorezeptorschleife produziert differentielle Konsequenzen: kortikale Desynchronisation (DRN-dominiert) und hippocampale Konsolidierungsdefizite (MRN-dominiert). Die resultierende Desynchronisation wird durch GABAerge Limitierung in einer Bandbreite gehalten, die kognitiv funktional bleibt.
-
----
 
 ### **D.1 Architektur der Raphe-Kerne: Neun Kerne, zwei Gruppen, differentielle Projektionen**
 
@@ -3980,8 +3931,6 @@ Die hippocampale Innervation ist quantitativ und qualitativ MRN-dominiert. MRN h
 
 **Modellrelevanz:** Instabilität des MRN-Takts bedeutet instabile Theta-Kontrolle im Hippocampus — unkontrolliertes Fluktuieren zwischen Theta (Exploration, Enkodierung) und Nicht-Theta (Konsolidierung, Sharp-Wave-Ripples). Der Hippocampus wechselt den Betriebsmodus nicht verhaltensgesteuert, sondern MRN-oszillationsgesteuert.
 
----
-
 ### **D.2 Volumentransmission: Mechanismus der gehirnweiten Modulation**
 
 Die serotonerge Projektion unterscheidet sich fundamental von klassischer synaptischer Transmission. Drei Merkmale bestimmen die Signalcharakteristik:
@@ -4009,8 +3958,6 @@ Die extrasynaptische Freisetzung erzeugt ein räumlich-zeitliches Konzentrations
 Ein zusätzlicher Instabilitätsfaktor: die Leitungsgeschwindigkeit unmyelinisierter aminergic Axone ist nicht konstant. Aston-Jones et al. (1980) dokumentierten an Locus-coeruleus-Neuronen (gleiches Prinzip: dünne, unmyelinisierte Axone) Latenzschwankungen von über 20 ms innerhalb eines einzelnen Aktivierungszugs, abhängig von Ausgangslatenz, Stimulationsfrequenz und Impulszahl. Diese Variabilität resultiert aus veränderten Ionenkonzentrations-Gradienten durch die Impulspropagation selbst.
 
 **Modellimplikation:** Die axonale Konduktionsgeschwindigkeit schwankt als Funktion der unmittelbaren Vorgeschichte des Neurons. Bei einem Kern, der am Grenzwert der Autorezeptorschleife oszilliert, variiert die Laufzeit zu distalen Zielstrukturen mit jeder Oszillationsperiode — ein dritter Desynchronisationsmechanismus neben inter-nukleärem Drift und intra-projektiver Phasenverschiebung.
-
----
 
 ### **D.3 Der Raphe-Takt als Reset-Oszillator**
 
@@ -4045,8 +3992,6 @@ Der Raphe-Puls ist kein Informationssignal, sondern ein Synchronisationspuls. Je
 Etwa 1% der DRN-Neuronen zeigt ein alternatives Feuermuster: niederfrequente Oszillationen der Feuerrate mit ~0,02–0,1 Hz Modulationsfrequenz (Mosko & Jacobs 1974, 1976; Calizo et al. 2011). Dieses Muster wurde spezifisch im DRN gefunden, nicht im MRN, und persistierte über Stunden. Übergänge zwischen regulärem und oszillatorischem Feuern wurden beobachtet — das Muster ist ein alternativer Betriebsmodus, kein fester Zelltyp.
 
 **Modellinterpretation:** Diese ~1%-Subpopulation zeigt den Grundmechanismus der underdämpften 5-HT1A-Autorezeptorschleife (vgl. 2.2) in isolierten Neuronen. Unter normalen Bedingungen ist der Anteil gering. Bei kongenitaler Raphe-Instabilität (Primärdefekt, vgl. 2.1) könnte ein größerer Anteil des Ensembles in diesen oszillatorischen Modus kippen — mit den in D.4 beschriebenen Konsequenzen für die Projektionskohärenz.
-
----
 
 ### **D.4 Zwei-Oszillator-Modell: DRN-MRN-Asynchronität**
 
@@ -4160,8 +4105,6 @@ Der **Intra-Plateau-Slope** ist das empirisch wertvollste Einzelsignal: Er ist e
 
 **Klinische Konsequenz:** ANS-Kollaps operiert primär über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide Prozesse gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten: ANS-Symptome Stunden vor CSD (Einzelfall B.20: 3,5 h Dissoziation, durch LDX-bedingte CSD-Verzögerung sichtbar). Die Gleichzeitigkeit bei MBA ist nicht weil CSD die ANS-Symptome verursacht, sondern weil beide denselben Upstream-Treiber (B7-Instabilität) haben, aber über unterschiedliche Pfade mit unterschiedlichen Latenzzeiten operieren (vgl. 4.7.2).
 
----
-
 ### **D.5 GABAerge Limitierung: Drei Begrenzungsebenen**
 
 Die in D.4 beschriebene Desynchronisation wird durch ein dreistufiges GABAerges Sicherungssystem in einer funktionalen Bandbreite gehalten.
@@ -4194,8 +4137,6 @@ Pyramidalneuronen des medialen PFC projizieren direkt in den DRN und modulieren 
 Die GABAerge Limitierung begrenzt die Raphe-Oszillation auf eine Bandbreite von 0–5 Hz. Diese Bandbreite ist weit genug für physiologische Zustandsübergänge, moderate Desynchronisation und normale kognitive Variabilität, aber schmal genug, um epileptische Entladung, vollständigen Kohärenzverlust und Raphe-Stillstand im Wachzustand zu verhindern.
 
 Die klinische Abwesenheit klassischer GABAerger Defizitsymptome (keine Epilepsie, keine Angststörung im engeren Sinne, keine Spastik) bei gleichzeitig vorhandener sensorischer Überempfindlichkeit (Hyperakusis) ist konsistent mit einem intakten GABAergen System als funktionierendem Kompensator: der Primärdefekt sitzt in der 5-HT1A-Autorezeptorschleife, nicht in der GABAergen Inhibition. Die sensorische Überempfindlichkeit ist ein thalamisches Gating-Problem (insuffiziente serotonerge Modulation des NRT), nicht ein GABAerger Defekt — der Filter ist intakt, bekommt aber inkonsistente Steuerungssignale.
-
----
 
 ### **D.6 Hippocampale Konsequenzen: Emotionale Konsolidierung und temporale Integration**
 
@@ -4245,8 +4186,6 @@ Die Generalisierung dieses Prinzips — von Musik auf Gerüche, Geräusche, Symb
 
 **ECT-Amnesie als Modellvalidierung:** Der ECT-induzierte Modulationsvektor-Sprung (vgl. Anhang E.7.7) invalidiert Zugangspfade frischer Engramme (konsolidiert unter einem einzigen, kürzlich aktiven Vektor), während alte Engramme (konsolidiert unter vielen verschiedenen Vektoren, mit multiplen Abrufgelegenheiten) überleben. Das klinische Bild — retrograde Amnesie für Wochen bis Monate bei erhaltenem Langzeitgedächtnis — ist die exakte Vorhersage des Zustandsvektor-Modells.
 
----
-
 ### **D.7 Kognitive Architektur-Implikation: Kreuzfunktionale Kodierung**
 
 Die in D.4 beschriebene pseudozufällige Desynchronisation hat eine entwicklungsbiologische Konsequenz: ein Kortex, der über Jahre unter desynchronisierten Modulationsbedingungen konsolidiert, baut keine sauberen domänenspezifischen Engramm-Cluster auf.
@@ -4295,8 +4234,6 @@ Reis et al. (2018) bestätigten: Dyslektiker zeigen Hypoaktivierung bei orthogra
 **Thalamische Kompensation als Kohärenzfilter**
 
 Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. Aber die kognitive Kohärenz wird nicht allein durch die GABAerge Begrenzung gewährleistet, sondern durch die thalamische Kompensationstiefe (vgl. Kapitel 6): der Thalamus filtert das kreuzfunktionale Rauschen und extrahiert kohärente Muster. Tiefe Kompensation + kreuzfunktionale Architektur = hohe Leistung. Unzureichende Kompensation + kreuzfunktionale Architektur = Denkstörung.
-
----
 
 ### **D.8 Differentielle afferente Regulation DRN vs. MRN**
 
@@ -4385,8 +4322,6 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 | Unidirektionale glutamaterge Verbindung DRN→MRN | Gesichert | Mokler et al. 2009 |
 | Kern-selektive Pharmakologie über „druggable genes" als zukünftiger Ansatz | Hypothetisch, vorgeschlagen | Ohmura & Nagayasu 2025 |
 
----
-
 ### **D.10 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
@@ -4436,8 +4371,6 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 | TGA-Ursprung in mediobasal-temporaler Region (Hippocampus CA1), MRN-innerviert | Gesichert | Mayo Clinic, StatPearls 2024, Neuroanatomie |
 | Fokale kortikale Off-State-Patches aus Raphe-Projektionsarchitektur | **Offen** | Mechanismus nicht hinreichend erklärt; zusätzliche lokale Faktoren erforderlich |
 
----
-
 *Literatur (Auswahl):*
 
 * Aston-Jones G, Segal M, Bloom FE (1980) Brain aminergic axons exhibit marked variability in conduction velocity. *Brain Research*, 195(1), 215–222.
@@ -4482,8 +4415,6 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 
 Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-Reset-Hypothese weiter und verknüpft sie mit der Epilepsie-Literatur. Die zentrale These: CSD und epileptischer Anfall sind zwei Varianten desselben Versagens — der serotonerge Reset-Takt (Anhang D) bricht zusammen, und der Kortex muss sich über einen Notfallmechanismus resynchronisieren. CSD ist die mildere, geordnete Variante (wandernde Depolarisationswelle). Ein generalisierter Anfall ist die schwere Variante (Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades, keine synchrone Massenentladung; vgl. 4.4.1). CGRP ist nicht Schmerzmediator, sondern der notwendige Propagationsmechanismus der CSD-Kaskade — seine Blockade (Anti-CGRP-Antikörper, hochdosierte Antiepileptika) eliminiert den Schutzmechanismus.
 
----
-
 ### **E.1 Serotonin als Antikonvulsivum: Der Raphe-Takt schützt vor Anfällen**
 
 **Evidenzbasis**
@@ -4511,8 +4442,6 @@ Die Anfallsschwelle ist nicht binär, sondern ein Kontinuum:
 | Insuffizient (tiefes Nadir) | Fortschreitende Exzitation | CSD-Schwelle erreicht → Migräneaura |
 | Versagend | Exzitation unkontrolliert | Anfallsschwelle erreicht → epileptischer Anfall |
 
----
-
 ### **E.2 CSD und Epilepsie: Bidirektionale Beziehung**
 
 **Vier Interaktionsmuster (Fabricius et al. 2008)**
@@ -4536,8 +4465,6 @@ Muster II ist besonders informativ: es zeigt, dass CSD und Anfälle funktionell 
 **Trigger-Mechanismus: Extrazelluläres Kalium**
 
 Die Akkumulation von extrazellulärem Kalium während epileptischer Aktivität ist wahrscheinlich der Trigger für die Entwicklung von CSD (Mayevsky 2023). Das verknüpft beide Phänomene auf ionischer Ebene: die exzitatorische Aktivität, die sich ohne Reset aufbaut, verändert die Ionenhomöostase. CSD ist die Antwort auf diese Ionenverschiebung — ein koordinierter Reset der Ionengradienten über die gesamte Kortexfläche.
-
----
 
 ### **E.3 Die Fallback-Hierarchie der Resynchronisation**
 
@@ -4568,8 +4495,6 @@ Wenn das Zündmuster die Topographie der tonischen Destabilisierungswelle reflek
 
 Die Fallback-Hierarchie kann von mehreren Offsetmodi gespeist werden; der ANS-Clamp-Modus ist ein prominenter Pfad (§2.5.1.1), aber Intratakt-stochastische, inter-kern-frequenzinstabile und intra-projektive Modi können dieselbe Stufenfolge aktivieren.
 
----
-
 ### **E.4 CGRP als CSD-Propagationsmechanismus**
 
 **Uminterpretation der CGRP-Funktion**
@@ -4589,8 +4514,6 @@ In epileptischen Tiermodellen wird ein ausgeprägter, transienter CGRP-Anstieg n
 Die Modellinterpretation: Der CGRP-Anstieg ist das Residuum eines gescheiterten CSD-Versuchs. Das Gehirn hat CGRP freigesetzt, um eine CSD zu propagieren. Die CSD hat nicht gereicht oder war zu langsam. Die Exzitation hat sich stattdessen als Anfall entladen. Das CGRP ist noch im Gewebe messbar — als Spur des gescheiterten Resets, nicht als Antwort auf den Anfall.
 
 Stützend: CGRP-Anstieg wurde nach kainatinduzierten, aber *nicht* nach pentylenetetrazol-induzierten Anfällen beobachtet. Dies ist konsistent mit der Hypothese, wenn Kainat-Anfälle einen CSD-Versuch triggern (glutamaterge Überaktivierung → CSD-ähnliche Depolarisationswelle → scheitert → Anfall) während PTZ-Anfälle (GABAerge Disinhibition) einen anderen Mechanismus nutzen.
-
----
 
 ### **E.5 Pharmakologische Implikationen: Eingriffspunkte in der Fallback-Hierarchie**
 
@@ -4656,8 +4579,6 @@ Bei einem Subtyp von Epilepsiepatienten, bei dem Anfälle durch CSD-Insuffizienz
 
 **Valproat-Sonderstellung:** Valproat hat einen einzigartigen doppelten Eingriffspunkt: es supprimiert sowohl den CSD-Reset (über CGRP-Hemmung) als auch den Raphe-Takt direkt (über Abschalten von DRN-5-HT-Neuronen). Beide Resynchronisationsmechanismen — Stufe 1 und Stufe 2 — werden gleichzeitig beeinträchtigt. Dies könnte erklären, warum Valproat-Non-Responder bei Epilepsie existieren und warum Valproat bei manchen Patienten die Anfallskontrolle paradox verschlechtert.
 
----
-
 ### **E.6 Chronische Migräne als Deadlock-Zustand**
 
 **Reset-Versagen auf allen Stufen**
@@ -4695,8 +4616,6 @@ Sechs Monate Effekt nach einer einzigen Narkose. Propofol hat eine Halbwertszeit
 Propofol-Narkose adressiert Stufe 2 (erzwungener globaler Down-State = pharmakologisches Äquivalent einer perfekten CSD über den gesamten Kortex), aber nicht Stufe 1 (der Raphe-Primärdefekt bleibt). Die 43% Responder sind diejenigen, bei denen der einmalige Reset ausreicht, um den Deadlock zu brechen — das System findet danach einen selbsterhaltenden Zyklus. Die 47% Non-Responder brauchen Stufe-1-Intervention (Upstream-Stabilisierung, z.B. LDX) zusätzlich zum Reset.
 
 **Vorhersage:** Die Kombination aus Propofol-Reset und anschließender LDX-Upstream-Stabilisierung sollte eine höhere Responderrate produzieren als Propofol allein — der Reset bricht den Deadlock, die LDX-Stabilisierung verhindert die Reakkumulation der Desynchronisation.
-
----
 
 ### **E.7 Migräne-Epilepsie-Komorbidität: Gemeinsamer Upstream-Defekt**
 
@@ -4835,8 +4754,6 @@ api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name:"[SUBSTANZ]
 ```
 
 Für jede Substanz werden die Top-1000-Reaktionsterme abgerufen und nach SUDEP/Sudden-Death-Termen gefiltert. Die Normalisierung gegen die Gesamtreportzahl pro Substanz ergibt das PRR.
-
----
 
 #### **E.7.6 SUDEP-Interventionsprotokoll: Mechanische Perfusion bei reversiblem Brainstem-SD**
 
@@ -5063,8 +4980,6 @@ Ein mechanistisch prominenter — aber nicht ausschließlicher — Eingangsmodus
 
 Andere Eingangsmodi bleiben mechanistisch plausibel und sind durch die bestehenden Offsetmodi (§D.4.2, §D.4.3) abgedeckt: Intratakt-stochastische Release-Asynchronität, inter-kern-Frequenzinstabilität, intra-projektive Phasengradienten. Population 1 ist keine mechanistisch homogene Gruppe — sie ist durch die gemeinsame klinische Signatur (Prodrom, Migräne-Komorbidität, schlechteres AED-Ansprechen, Benefit von Stufe-1-Intervention) definiert; die Upstream-Mechanismen können individuell variieren.
 
----
-
 ### **E.8 Testbare Vorhersagen**
 
 | Nr. | Vorhersage | Testmethode | Erwartetes Ergebnis |
@@ -5087,8 +5002,6 @@ Andere Eingangsmodi bleiben mechanistisch plausibel und sind durch die bestehend
 | **E.8.16** | Epileptiker mit Anfallsvorhersage (Prodromalphase >1h) zeigen höhere Migräne-Komorbidität als Epileptiker ohne Vorhersagefähigkeit | Retrospektive Stratifizierung nach dokumentierter Vorhersagefähigkeit; Migräne-Screening in beiden Subgruppen | Signifikant höhere Migräne-Prävalenz in der Vorhersage-Gruppe; Population 1 (vgl. E.7.11) als distinkte mechanistische Subgruppe |
 | **E.8.17** | Population 1 (Anfälle mit Prodrom/Migräne-Komorbidität) profitiert von Stufe-1-Intervention (Betablocker, serotonerge Stabilisierung) zusätzlich zu AEDs; Population 2 (Anfälle ohne Warnung) nicht | Kontrollierte Pilotstudie: Add-on-Betablocker bei Epileptikern mit vs. ohne Migräne-Komorbidität und Anfallsvorhersage | Reduktion der Anfallsfrequenz unter Add-on-Betablocker spezifisch in Population 1; kein Zusatzeffekt in Population 2 |
 | **E.8.18** | Corpus-callosum-FA bei Migränepatienten korreliert mit Anfallshäufigkeit und Krankheitsdauer | DTI-Studie bei episodischer und chronischer Migräne; Korrelation Corpus-callosum-FA mit Attackenfrequenz und Migränedauer | Progressive FA-Reduktion als Funktion der kumulativen tonischen Wellenpropagation über das Corpus callosum |
-
----
 
 ### **E.9 Chronotyp als externe Validierung des Synchronisations-/Hardwaredefekt-Splits**
 
@@ -5188,8 +5101,6 @@ Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen pe
 | Chronische Migräne als Deadlock aus gescheiterter Resynchronisation | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Propofol-Responder-Daten |
 | Propofol-Reset + LDX-Stabilisierung als kombinierte Intervention | Hypothetisch, nicht getestet | Modellvorhersage |
 
----
-
 *Literatur (Auswahl):*
 
 * Ayatollahi V et al. (2022) The effect of propofol anesthesia on the pain severity and frequency of migraine attacks in patients with chronic migraine headache over a six month follow up. *Iranian Journal of Pharmaceutical Research*, 21(1), e124265.
@@ -5238,8 +5149,6 @@ Dieser Anhang kartiert die Projektionszonen der beiden aufsteigenden Raphe-Kerne
 
 **Zentrale These:** Die klinische Topographie von Migräneaura, Epilepsiefoki und thalamischer Dysregulation folgt nicht aus einer diffusen serotonergen Unterversorgung, sondern aus der *anatomischen Geometrie der dualen Raphe-Innervierung*. B7 und B8 innervieren den gesamten menschlichen Kortex dual laminär (äußere vs. innere Schichten, Charnay & Leger 2010) — es gibt keine kortikale Region mit Single-Source-Innervierung. Die Interferenz ist primär thalamisch; die kortikale Symptomtopographie folgt aus der thalamischen Kaskade mit lastabhängigem Kipppunkt. Der Thalamus ist die einzige Struktur, in der maximale B7/B8-Überlappung gesichert belegt ist. Der Hippocampus zeigt belegte zelluläre Segregation (DRN→Pyramidenzellen, MRN→GABAerge Interneurone). Der Kortex zeigt ubiquitäre duale Innervierung ohne regionale Schutzzone.
 
----
-
 ### **F.1 Projektionsmuster: B7 (DRN) vs. B8 (MRN)**
 
 Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al. 2018) ergibt ein konsistentes Bild:
@@ -5254,8 +5163,6 @@ Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al
 | **Amygdala** | +++ | ++ | Moderat |
 
 *Legende: + bis ++++ = relative Innervierungsdichte, basierend auf Muzerelle et al. 2014 (anterograde Tracing, Maus) und Vertes (retrograde Tracing, Ratte). Speziesgrenzen beachten.*
-
----
 
 ### **F.2 Kortikale Innervierung: Ubiquitäre duale laminäre Versorgung**
 
@@ -5273,8 +5180,6 @@ Der Pulvinar (posteriorer Thalamus) erhält beim Menschen nachweislich erhöhte 
 Bei thalamischer B7/B8-Interferenz (→ F.4) kippt der Pulvinar-Pfad zuerst, weil modulatorische Pfade empfindlicher auf Kohärenzverlust reagieren als Driver-Pfade. Die Symptomqualität folgt aus dieser Differenz: Gestörte visuelle *Integration* bei erhaltener visueller *Übertragung* — Rauschen statt Skotom als Prodrom. Das Skotom (CSD) entsteht erst bei weiterer Eskalation, wenn die Destabilisierung auf den Kortex selbst propagiert.
 
 Die visuelle Aura (Skotome, Fortifikationsspektren) ist damit nicht Symptom einer „kortikalen Übererregbarkeit", sondern Downstream-Manifestation der thalamischen Interferenz über den Pulvinar-Pfad.
-
----
 
 ### **F.3 Hippocampale Interferenz: Zelluläre B7/B8-Segregation**
 
@@ -5323,8 +5228,6 @@ Bei circadian driftendem B7/B8-Phasenversatz (vgl. Abschnitt 2.5.1) erzeugt dies
 
 **Konsequenz: State-dependent Encoding.** Engramme, die unter Inter-Kern-Desync enkodiert werden, erhalten ein zelluläres serotonerges „Wasserzeichen", das sich vom Normzustand unterscheidet. Diese Engramme sind bevorzugt im gleichen Desync-Zustand abrufbar — ein Mechanismus, der die klinisch beobachtete *state-dependent memory* bei Migräne und Epilepsie erklären könnte (vgl. Anhang E, Abschnitt E.5; Anhang D, Abschnitt D.6.3).
 
----
-
 ### **F.4 Thalamische Interferenz: Primäre Quelle und Kaskadenmechanismus**
 
 Der Thalamus ist die singuläre primäre Interferenzquelle des Modells. Der Midline- und intralaminäre Thalamus (Nucleus reuniens, Nucleus paraventricularis, zentrale intralaminäre Kerne) weist die dichteste belegte B7/B8-Überlappung auf. Der Hippocampus zeigt zelluläre Segregation (F.3); der Kortex ubiquitäre duale Innervierung ohne gesicherte regionale Differenzierung (F.2). Nur im Thalamus ist maximale Konvergenz beider Kerne gesichert.
@@ -5364,8 +5267,6 @@ Dies erklärt:
 - **Aura-Polymorphismus:** Die Aura-Topographie variiert zwischen Attacken, weil der prä-iktale Lastzustand variiert
 - **Modalitätsspezifische Prodromi:** Visuelles Arbeiten belastet Pulvinar-Pfad → visuelle Prodromi. Auditorische/somatosensorische Last → andere Erstversagenspunkte
 
----
-
 ### **F.5 PFC-Protektion: Pharmakologisch, nicht architektonisch**
 
 B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär (Charnay & Leger 2010). Eine architektonische Protektion durch Single-Source-Innervierung existiert nicht. Die klinisch beobachtete PFC-Klarheit unter Anfall erklärt sich pharmakologisch:
@@ -5384,8 +5285,6 @@ B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär (Charnay & L
 
 Evidenzstatus: Einzelbeobachtung. Die pharmakologische Interpretation (MD-Loop-Stabilisierung) ist mechanistisch konsistenter als die architektonische (Single-Source), da letztere auf einer für den Menschen nicht belegten Prämisse beruht.
 
----
-
 ### **F.6 Synthese: Thalamische Kaskade und hippocampale Interferenz als einheitlicher Mechanismus**
 
 Die zwei Interferenzstrukturen bilden ein kohärentes anatomisches Substrat für das Pathogenesemodell:
@@ -5399,8 +5298,6 @@ Die zwei Interferenzstrukturen bilden ein kohärentes anatomisches Substrat für
 | **Hippocampus** | Zelluläre B7/B8-Segregation (gesichert): DRN→Pyramidenzellen, MRN→Interneurone | Pharmakologischer Spillover → inkonsistente Engramm-Kodierung | State-dependent encoding, iktale Amnesie |
 
 Die thalamische Kaskade erklärt, warum Migräne, Epilepsie und kognitive Dysfunktion *nicht zufällig komorbid* sind, sondern dieselbe anatomische Grundlage teilen (vgl. Anhang E). Die Unterschiede in der klinischen Manifestation ergeben sich aus der jeweiligen Schwellencharakteristik der betroffenen thalamokortikalen Pfade und dem prä-iktalen Lastprofil — nicht aus unterschiedlichen Pathomechanismen.
-
----
 
 ### **F.7 Pharmakologische B7/B8-Asymmetrie**
 
@@ -5421,8 +5318,6 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 - Diphenhydramin dreht B7 leiser → Vorhersage: Migräne besser (Experiment steht aus).
 - TCAs (Amitriptylin) wirken nicht *trotz* ihrer „Nebenwirkungen" als Migräneprophylaktikum — die H1-Blockade, anticholinerge Sedierung und noradrenerge Dämpfung SIND der Migränemechanismus.
 - Interferenzstärke ∝ Amplitude_B7 × Amplitude_B8 × cos(Phasenversatz): Amplitudenreduktion senkt das Produkt unabhängig von der Phasenrichtung.
-
----
 
 ### **F.8 Evidenztabelle**
 
@@ -5449,8 +5344,6 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 | SSRIs (Paroxetin) wirken kernblind auf B7 und B8 | Gesichert | Tao et al. 2003 (Elektrophysiologie) |
 | TCA-Migräneprophylaxe durch kombinierte B7-Dämpfung (SERT + H1 + NET) | Mechanistisch ableitbar | Abgeleitet aus Crawford et al. 2013 + SERT-Pharmakologie |
 
----
-
 *Literatur (Auswahl):*
 
 * Muzerelle A, Scotto-Lomassese S, Bernard JF, Soiza-Reilly M, Gaspar P (2014) Conditional anterograde tracing reveals distinct targeting of individual serotonin cell groups (B5–B9) to the forebrain and brainstem. *Brain Structure and Function*, 221(1), 535–561.
@@ -5474,8 +5367,6 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 **Zusammenfassung**
 
 Dieser Anhang analysiert den ADHS-Prävalenzanstieg als Korrelat iatrogener Hit-2-Exposition (GC + AH1) und erweitert die Hit-Architektur um einen zweiten molekularen Einstiegspunkt. Drei konvergierende Indizien: (1) Der geographische Gradient (USA 8,1% vs. Irak 0,1%) korreliert mit dem pharmazeutischen Profil besser als mit DSM-Adoption; Japan als natürliches Quasi-Experiment (hohe AD, niedrige GC-Compliance, 1% vs. 10% AD→ADHS-Transition). (2) 60–75% aller ASD-Patienten tragen mindestens einen Raphe-Achsen-Marker (Migräne, Epilepsie, Autoimmunerkrankung) — unstratifizierte Studien mitteln Population A (~65%) und B (~35%). (3) Hit-1-Erweiterung: neben 5-HT1A-Autorezeptor-Instabilität (Hit 1a) identifiziert SERT-Gain-of-Function (SLC6A4-Varianten, Hit 1b) als zweiten Einstiegspunkt — phänotypisch rigid-kompulsive Traits, Hyperserotonämie, ENS-Hypoplasie. Beide Hit-1-Varianten produzieren ihre eigene immunologische Sekundärpathologie.
-
----
 
 *Status: Explorative Analyse, Evidenzniveau V (Arbeitshypothese mit konvergierenden Indizien)*
 
@@ -5512,8 +5403,6 @@ Die ADHD-Prävalenz variiert geographisch: USA 8,1% bei Kindern (WHO-Daten, höc
 
 Wenn der Prävalenzanstieg *nur* diagnostisch wäre, sollte die Migräne-ADHS-Komorbidität historisch stabil bleiben. Falls sie *ebenfalls* ansteigt, spricht das für einen echten Prävalenzanstieg in Population A.
 
----
-
 ### **G.3 Serielle Achsenstruktur: Autoimmun-Achse → Hit-2-Pfad**
 
 Die Industrialisierung erhöht die AD-Prävalenz über die Autoimmun-/Hygiene-Achse → mehr AD-Kinder werden mit GC behandelt → Hit 2 wird iatrogen aktiviert → Population-A-ADHS steigt. Die Autoimmun-/EDC-Achse (Phthalate, BPA, PFAS) ist nicht der Hit 2 selbst, sondern erhöht den Durchsatz durch den Hit-2-Pfad, indem sie mehr Kinder in die GC-Behandlung bringt.
@@ -5531,8 +5420,6 @@ Umweltfaktoren (Hygienehypothese, EDC)
 **Abgrenzung: Antenatale GC als separater Expositionspfad**
 
 Antenatale GC (Betamethason/Dexamethason) zur Lungenreifung bei Frühgeburtsrisiko stellen einen separaten Expositionspfad dar. Eine taiwanesische Kohorte (n=1.163.443) zeigt erhöhtes kumulatives Risiko für ADHS und kindliche psychische Störungen nach antenataler GC-Exposition (HR 1,13–1,22), wobei eine dänische Geschwisterstudie Confounding nahelegt (aHR 1,03 im Geschwisterdesign). Tiermodelle zeigen, dass experimentelle Erhöhung mütterlicher Cortisolspiegel ADHS-ähnliche Symptome bei Nachkommen produziert.
-
----
 
 ### **G.4 ASD und Autoimmunität: Populationsgewichtung**
 
@@ -5565,8 +5452,6 @@ ASD-Studien, die nach Raphe-Achsen-Markern stratifizieren, zeigen durchgehend st
 - **Regressiver vs. nicht-regressiver ASD:** 70% familiäre Autoimmunerkrankung bei Regression vs. 55% bei frühem Beginn — Autoimmunmarker in der regressiven Subgruppe angereichert.
 - **ASD+Migräne-Subgruppe:** Innerhalb dieser Subgruppe besteht zusätzlich signifikante Assoziation mit Epilepsie (p=0,028) — Kaskadierung auf derselben Achse.
 - **Cluster-Analyse (Cuccaro et al.):** Der Cluster mit höchster Epilepsierate war durch sensorische Interessen + Koordinationsprobleme gekennzeichnet — thalamokortikale Desynchronisation.
-
----
 
 ### **G.5 Hit-1-Architektur-Erweiterung: Zwei unabhängige Einstiegspunkte**
 
@@ -5607,8 +5492,6 @@ Die erwartete phänotypische Dissoziation (Hit 1a = Migräne ohne GI, Hit 1b = G
 
 In einer chinesischen ASD-Kohorte waren die signifikant erhöhten GI-Symptome spezifisch Obstipation, abdominale Migräne und Aerophagie — wobei abdominale Migräne als eigenständige GI-Diagnose auftrat (Chen et al. 2020). Die Trennung Hit 1a vs. 1b erfordert Genotypisierung, nicht Symptomphänotypisierung.
 
----
-
 ### **G.6 Gegenprobe und Modellresilienz**
 
 #### **G.6.1 Versuchte Falsifikation: SERT-Genetik als Hit 1 ohne Autoimmun**
@@ -5631,8 +5514,6 @@ Die Gegenprobe hat keine Falsifikation produziert. Der schärfste Kandidat (SERT
 
 Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind durch die Blut-Hirn-Schranke vollständig getrennt. Peripheres 5-HT steigt (SERT-Gain-of-Function in Thrombozyten → erhöhte Aufnahme), zentrales 5-HT fällt (derselbe SERT-Gain-of-Function im Gehirn → reduzierte synaptische Verfügbarkeit). Dies ist kein Widerspruch, sondern die erwartete bidirektionale Konsequenz desselben Mechanismus, aber die direkte Messung zentraler Serotoninspiegel beim Menschen ist nicht verfügbar.
 
----
-
 ### **G.7 Testbare Vorhersagen**
 
 | Nr. | Vorhersage | Testmethode | Erwartetes Ergebnis |
@@ -5643,8 +5524,6 @@ Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind d
 | **G.7.4** | ASD-Patienten mit SLC6A4-Gain-of-Function-Varianten zeigen signifikant häufiger GI-Symptome als ASD-Patienten ohne diese Varianten | Genotypisierung × GI-Symptom-Inventar in ASD-Kohorten | OR > 2 für GI-Symptome bei SLC6A4-Variantenträgern |
 | **G.7.5** | Serotonerge Biomarker (z.B. thalamokortikale FC, HRV) zeigen in ASD-Studien, die nach Autoimmun-/Migräne-/Epilepsie-Komorbidität stratifizieren, ~1,5-fach stärkere Effektgrößen als in unstratifizierten Kohorten | Sekundäranalyse existierender Datensätze | d_stratifiziert / d_unstratifiziert ≈ 1,54 (konsistent mit ~65% Population-A-Anteil) |
 | **G.7.6** | Migräne-ADHS-Komorbiditätsrate steigt historisch parallel zum ADHD-Prävalenzanstieg (nicht stabil) | Zeitreihenanalyse: Migräne-ADHS-Komorbidität über Dekaden | Paralleler Anstieg spricht für echten Prävalenzanstieg in Population A |
-
----
 
 ### **G.8 Evidenztabelle**
 
@@ -5667,8 +5546,6 @@ Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind d
 | Casanova 2008 | Hypothesenarbeit | GI-Symptome bei ASD = abdominale Migräne (CSD-Äquivalent im ENS) | GI-Phänotyp-Konvergenz Hit 1a/1b |
 | Chen et al. 2020 (China) | n=107 ASD + 249 Kontrollen | Erhöhte GI-Symptome: Obstipation, abdominale Migräne, Aerophagie; ASD als einziger signifikanter Prädiktor | Abdominale Migräne als eigenständige GI-Diagnose bei ASD |
 
----
-
 ### **G.9 Zusammenfassung**
 
 Die Analyse liefert keinen einzelnen Durchbruch, aber konvergierende Indizien auf drei Ebenen:
@@ -5679,10 +5556,6 @@ Die Analyse liefert keinen einzelnen Durchbruch, aber konvergierende Indizien au
 
 3. **Hit-1-Erweiterung:** Zwei unabhängige molekulare Einstiegspunkte (5-HT1A-Autoreceptor-Instabilität und SERT-Gain-of-Function) konvergieren auf B7-Dysfunktion und produzieren jeweils ihre eigene immunologische Sekundärpathologie. Die Autoimmun-Assoziation bei ASD ist nicht Kofundierung, sondern downstream-Konsequenz des serotonergen Primärdefekts.
 
----
-
-*Version: März 2026 — Explorative Session, keine Revision bestehender Kapitel*
-
 ***
 
 ## **Anhang H: Hypothyreose als modulierender Kofaktor der Raphe-Dysregulation**
@@ -5690,8 +5563,6 @@ Die Analyse liefert keinen einzelnen Durchbruch, aber konvergierende Indizien au
 **Zusammenfassung**
 
 Dieser Anhang untersucht die Verbindung zwischen der bestehenden Hypothyreose (E03.9, unter L-Thyroxin-Substitution) und dem Primärdefekt des Modells (5-HT1A-Autorezeptor-Instabilität der Raphe-Kerne). Die Verbindung ist bidirektional: Schilddrüsenhormone modulieren direkt die 5-HT1A-Autorezeptorsensitivität in der Raphe, und die Raphe-Dysregulation beeinflusst über absteigende Projektionen die HPT-Achse. Epidemiologisch ist Hypothyreose signifikant mit allen drei klinischen Hauptmanifestationen des Modells assoziiert — am stärksten mit Migräne (OR 5,8–7,4 bei subklinischer Hypothyreose), gefolgt von ADHS (aOR 1,72; Populationskohorte). Bei autoimmuner Ätiologie (V.a. Hashimoto-Thyreoiditis) fügt sich die Hypothyreose zusätzlich in die autoimmune Downstream-Achse des Modells ein (parallel zur atopischen Dermatitis, vgl. 2.3, Anhang G.3).
-
----
 
 ### H.1 Schilddrüsenhormone und serotonerges System: Evidenzbasis
 
@@ -5775,8 +5646,6 @@ Eine systematische Literaturübersicht (Faraone et al. 2025, Neurosci Biobehav R
 | AITD × Generalisierte Epilepsie | OR 1,08 (MR, n.s.) | Hinweisend | Gering (MR-Design) |
 | Serotonin × ADHS-Komorbiditäten | 74,2% serotonerge Beteiligung | Gesichert (systematischer Review) | — |
 
----
-
 ### H.2 Bidirektionalität: Raphe-Dysregulation und HPT-Achse
 
 Die Beziehung zwischen Raphe und Schilddrüse ist nicht unidirektional. Zwei Rückwirkungspfade existieren:
@@ -5797,8 +5666,6 @@ Chronische periphere 5-HT-Gabe senkt T3- und T4-Plasmaspiegel unabhängig von de
 | Raphe-Neurone produzieren TRH | Raphe = SD | Gesichert (neurochemisch) |
 | Peripheres 5-HT → Deiodinase → T3/T4 | 5-HT → SD (peripher) | Gesichert (Tier) |
 
----
-
 ### H.3 Autoimmune Achse: Hashimoto als parallele Downstream-Manifestation
 
 Das Modell postuliert eine immunmodulatorische Dysfunktion als Downstream-Effekt der Raphe-Dysregulation, die sich klinisch als atopische Dermatitis manifestiert (vgl. 2.3). Die serielle Achsenstruktur (Anhang G.3) beschreibt den Pfad: Raphe-Defekt → Immunmodulationsstörung → atopische Grunderkrankung → GC-Behandlung → Hit 2.
@@ -5812,8 +5679,6 @@ Autoimmunthyreoiditis (Hashimoto) passt in dieses Schema als parallele autoimmun
 | Atopische Gesamtlast und ASD-Risiko | HR 16,65 bei vollem atopischen Syndrom | Lee et al. 2016 |
 
 **Modellvorhersage:** Wenn die Hypothyreose autoimmun bedingt ist (TPO-AK positiv), erweitert sich die autoimmune Downstream-Achse von einem Organ (Haut: AD) auf zwei (Haut + Schilddrüse). Die Anzahl autoimmuner Manifestationen sollte mit dem Schweregrad des Upstream-Defekts korrelieren — konsistent mit dem Dosiseffekt der atopischen Gesamtlast auf das ASD-Risiko (Lee et al. 2016).
-
----
 
 ### H.4 Klinische Implikationen: Substitutionsadäquanz als Modellparameter
 
@@ -5835,8 +5700,6 @@ TSH allein ist für die modellrelevante Fragestellung unzureichend: Ein normwert
 
 Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die ätiologische Frage (autoimmune Achse); fT3 klärt die Konversionsleistung; die Kombination informiert über die optimale Substitutionsstrategie.
 
----
-
 ### H.5 Testbare Vorhersagen
 
 | Nr. | Vorhersage | Testmethode | Erwartetes Ergebnis |
@@ -5845,8 +5708,6 @@ Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die 
 | **H.5.2** | Optimierung der fT3-Versorgung verbessert Schlafkonsolidierung unabhängig von LDX-Dosis | Prä-/Post-Vergleich der Schlaf-Tracking-Daten (Fragmentierungsrate, Deep-Episoden-Dichte) nach Substitutionsanpassung | Reduktion der Fragmentierungsepisoden/h; Anstieg der Deep-Episodendauer |
 | **H.5.3** | Optimierung der fT3-Versorgung senkt Migränevulnerabilität | Prä-/Post-Vergleich Migränefrequenz über ≥3 Zyklen nach Substitutionsanpassung | Reduktion der Durchbruchereignisse unter LDX |
 | **H.5.4** | Bei gesichertem fT3-Defizit: T3-Supplementation hat stärkeren Effekt auf Schlafkonsolidierung als äquivalente T4-Dosiserhöhung | Sequentieller Vergleich (T4-Erhöhung → Washout → T3-Zusatz), Schlaf-Tracking | fT3-Direktsupplementation zeigt stärkere Verbesserung |
-
----
 
 ### H.6 Evidenztabelle
 
@@ -5869,15 +5730,11 @@ Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die 
 | Konversionsschwäche als kompensatorischer Trade-off | Spekulativ | Mechanistisch ableitbar, keine direkte Evidenz |
 | fT3 als funktionell relevanter Parameter für Raphe-Modulation | Plausibel | Abgeleitet aus T3-Spezifität der 5-HT1A-Wirkung |
 
----
-
 ### H.7 Abgrenzung: Was dieser Anhang nicht behauptet
 
 1. Die Hypothyreose ist nicht Ursache der Raphe-Dysregulation. Der Primärdefekt (Hit 1) ist kongenital und unabhängig von der Schilddrüsenfunktion. Die Hypothyreose ist ein modulierender Kofaktor, kein ätiologischer Faktor.
 2. Die Beziehung T3→5-HT1A ist in Tiermodellen robust, die Übertragbarkeit auf den menschlichen Raphe-Kern in vivo ist hinweisend, nicht gesichert.
 3. Die Vorhersage H.5.4 (T3-Supplementation vs. T4-Erhöhung) ist ein n=1-Experiment mit allen Limitationen. Die Differenz könnte zu klein sein, um mit den verfügbaren Tracking-Daten aufgelöst zu werden.
-
----
 
 *Literatur:*
 
@@ -5900,14 +5757,6 @@ Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die 
 * Tasnim S, Ho A, Ntalindwa L, Fuh JL, Duarte R (2023) Migraine and thyroid dysfunction: Co-occurrence, shared genes and biological mechanisms. *Eur J Neurol* 30, 2702–2713.
 * Xu M, Yao Z, Wang Y et al. (2025) Thyroid, growth and appetite hormones in neurodevelopmental disorders: a meta-analysis. *J Integr Neurosci* 24(10), 39816.
 * Zhou J, Yang M, Wang J (2024) Thyroid function and epilepsy: a two-sample Mendelian randomization study. *Front Hum Neurosci* 17, 1295749.
----
-title: "Der B7-Kern, 5-HT1A-Autorezeptor-Dynamik und ihre Signatur im HRV-Frequenzspektrum"
-subtitle: "Eine Kontextualisierung für die pathogenetische Analyse autonomer Oszillationen"
-author: "Synthese-Dokument"
-date: 2026-04-20
-abstract: |
-  Dieses Dokument synthetisiert das wissenschaftliche Material zur rostralen Dorsal-Raphe-Region (Zellgruppe B7 nach Dahlström & Fuxe), zur somatodendritischen 5-HT1A-Autorezeptor-Rückkopplung und zu deren Manifestation in den Spektralbändern der Herzfrequenzvariabilität. Ziel ist die kompakte Bereitstellung des pathogenetischen Kontexts für eine nachfolgende empirische Datenauswertung. Nicht enthalten sind formale Herleitungen der spektralen Transformation oder Bifurkationsanalysen des Oszillatormodells.
----
 
 ***
 
@@ -6549,6 +6398,7 @@ Die folgenden HTML-Dateien enthalten interaktive Visualisierungen (Chart.js) der
 - `dashboard_N4_20apr_DPH.html` — Nacht 4
 - `dashboard_Tag19_post_abfang.html` — Tag 19. April
 - `dashboard_Tag20_prodromal.html` — Tag 20. April
+
 ***
 
 ## **Anhang J: ME/CFS als klinischer Endpunkt des Pathogenesemodells**
