@@ -7,8 +7,6 @@
 
 Dieser Anhang analysiert den ADHS-Prävalenzanstieg als Korrelat iatrogener Hit-2-Exposition (GC + AH1) und erweitert die Hit-Architektur um einen zweiten molekularen Einstiegspunkt. Drei konvergierende Indizien: (1) Der geographische Gradient (USA 8,1% vs. Irak 0,1%) korreliert mit dem pharmazeutischen Profil besser als mit DSM-Adoption; Japan als natürliches Quasi-Experiment (hohe AD, niedrige GC-Compliance, 1% vs. 10% AD→ADHS-Transition). (2) 60–75% aller ASD-Patienten tragen mindestens einen Raphe-Achsen-Marker (Migräne, Epilepsie, Autoimmunerkrankung) — unstratifizierte Studien mitteln Population A (~65%) und B (~35%). (3) Hit-1-Erweiterung: neben 5-HT1A-Autorezeptor-Instabilität (Hit 1a) identifiziert SERT-Gain-of-Function (SLC6A4-Varianten, Hit 1b) als zweiten Einstiegspunkt — phänotypisch rigid-kompulsive Traits, Hyperserotonämie, ENS-Hypoplasie. Beide Hit-1-Varianten produzieren ihre eigene immunologische Sekundärpathologie.
 
----
-
 *Status: Explorative Analyse, Evidenzniveau V (Arbeitshypothese mit konvergierenden Indizien)*
 
 ### **G.1 Kernthese**
@@ -44,8 +42,6 @@ Die ADHD-Prävalenz variiert geographisch: USA 8,1% bei Kindern (WHO-Daten, höc
 
 Wenn der Prävalenzanstieg *nur* diagnostisch wäre, sollte die Migräne-ADHS-Komorbidität historisch stabil bleiben. Falls sie *ebenfalls* ansteigt, spricht das für einen echten Prävalenzanstieg in Population A.
 
----
-
 ### **G.3 Serielle Achsenstruktur: Autoimmun-Achse → Hit-2-Pfad**
 
 Die Industrialisierung erhöht die AD-Prävalenz über die Autoimmun-/Hygiene-Achse → mehr AD-Kinder werden mit GC behandelt → Hit 2 wird iatrogen aktiviert → Population-A-ADHS steigt. Die Autoimmun-/EDC-Achse (Phthalate, BPA, PFAS) ist nicht der Hit 2 selbst, sondern erhöht den Durchsatz durch den Hit-2-Pfad, indem sie mehr Kinder in die GC-Behandlung bringt.
@@ -63,8 +59,6 @@ Umweltfaktoren (Hygienehypothese, EDC)
 **Abgrenzung: Antenatale GC als separater Expositionspfad**
 
 Antenatale GC (Betamethason/Dexamethason) zur Lungenreifung bei Frühgeburtsrisiko stellen einen separaten Expositionspfad dar. Eine taiwanesische Kohorte (n=1.163.443) zeigt erhöhtes kumulatives Risiko für ADHS und kindliche psychische Störungen nach antenataler GC-Exposition (HR 1,13–1,22), wobei eine dänische Geschwisterstudie Confounding nahelegt (aHR 1,03 im Geschwisterdesign). Tiermodelle zeigen, dass experimentelle Erhöhung mütterlicher Cortisolspiegel ADHS-ähnliche Symptome bei Nachkommen produziert.
-
----
 
 ### **G.4 ASD und Autoimmunität: Populationsgewichtung**
 
@@ -97,8 +91,6 @@ ASD-Studien, die nach Raphe-Achsen-Markern stratifizieren, zeigen durchgehend st
 - **Regressiver vs. nicht-regressiver ASD:** 70% familiäre Autoimmunerkrankung bei Regression vs. 55% bei frühem Beginn — Autoimmunmarker in der regressiven Subgruppe angereichert.
 - **ASD+Migräne-Subgruppe:** Innerhalb dieser Subgruppe besteht zusätzlich signifikante Assoziation mit Epilepsie (p=0,028) — Kaskadierung auf derselben Achse.
 - **Cluster-Analyse (Cuccaro et al.):** Der Cluster mit höchster Epilepsierate war durch sensorische Interessen + Koordinationsprobleme gekennzeichnet — thalamokortikale Desynchronisation.
-
----
 
 ### **G.5 Hit-1-Architektur-Erweiterung: Zwei unabhängige Einstiegspunkte**
 
@@ -139,8 +131,6 @@ Die erwartete phänotypische Dissoziation (Hit 1a = Migräne ohne GI, Hit 1b = G
 
 In einer chinesischen ASD-Kohorte waren die signifikant erhöhten GI-Symptome spezifisch Obstipation, abdominale Migräne und Aerophagie — wobei abdominale Migräne als eigenständige GI-Diagnose auftrat (Chen et al. 2020). Die Trennung Hit 1a vs. 1b erfordert Genotypisierung, nicht Symptomphänotypisierung.
 
----
-
 ### **G.6 Gegenprobe und Modellresilienz**
 
 #### **G.6.1 Versuchte Falsifikation: SERT-Genetik als Hit 1 ohne Autoimmun**
@@ -163,8 +153,6 @@ Die Gegenprobe hat keine Falsifikation produziert. Der schärfste Kandidat (SERT
 
 Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind durch die Blut-Hirn-Schranke vollständig getrennt. Peripheres 5-HT steigt (SERT-Gain-of-Function in Thrombozyten → erhöhte Aufnahme), zentrales 5-HT fällt (derselbe SERT-Gain-of-Function im Gehirn → reduzierte synaptische Verfügbarkeit). Dies ist kein Widerspruch, sondern die erwartete bidirektionale Konsequenz desselben Mechanismus, aber die direkte Messung zentraler Serotoninspiegel beim Menschen ist nicht verfügbar.
 
----
-
 ### **G.7 Testbare Vorhersagen**
 
 | Nr. | Vorhersage | Testmethode | Erwartetes Ergebnis |
@@ -175,8 +163,6 @@ Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind d
 | **G.7.4** | ASD-Patienten mit SLC6A4-Gain-of-Function-Varianten zeigen signifikant häufiger GI-Symptome als ASD-Patienten ohne diese Varianten | Genotypisierung × GI-Symptom-Inventar in ASD-Kohorten | OR > 2 für GI-Symptome bei SLC6A4-Variantenträgern |
 | **G.7.5** | Serotonerge Biomarker (z.B. thalamokortikale FC, HRV) zeigen in ASD-Studien, die nach Autoimmun-/Migräne-/Epilepsie-Komorbidität stratifizieren, ~1,5-fach stärkere Effektgrößen als in unstratifizierten Kohorten | Sekundäranalyse existierender Datensätze | d_stratifiziert / d_unstratifiziert ≈ 1,54 (konsistent mit ~65% Population-A-Anteil) |
 | **G.7.6** | Migräne-ADHS-Komorbiditätsrate steigt historisch parallel zum ADHD-Prävalenzanstieg (nicht stabil) | Zeitreihenanalyse: Migräne-ADHS-Komorbidität über Dekaden | Paralleler Anstieg spricht für echten Prävalenzanstieg in Population A |
-
----
 
 ### **G.8 Evidenztabelle**
 
@@ -199,8 +185,6 @@ Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind d
 | Casanova 2008 | Hypothesenarbeit | GI-Symptome bei ASD = abdominale Migräne (CSD-Äquivalent im ENS) | GI-Phänotyp-Konvergenz Hit 1a/1b |
 | Chen et al. 2020 (China) | n=107 ASD + 249 Kontrollen | Erhöhte GI-Symptome: Obstipation, abdominale Migräne, Aerophagie; ASD als einziger signifikanter Prädiktor | Abdominale Migräne als eigenständige GI-Diagnose bei ASD |
 
----
-
 ### **G.9 Zusammenfassung**
 
 Die Analyse liefert keinen einzelnen Durchbruch, aber konvergierende Indizien auf drei Ebenen:
@@ -210,7 +194,3 @@ Die Analyse liefert keinen einzelnen Durchbruch, aber konvergierende Indizien au
 2. **ASD-Populationsgewichtung:** 60–75% aller ASD-Patienten tragen mindestens einen Raphe-Achsen-Marker (Migräne, Epilepsie, Autoimmunerkrankung). Dieser Anteil ist der Proxy für Population A und erlaubt Rückwärtsrechnung existierender Studienergebnisse.
 
 3. **Hit-1-Erweiterung:** Zwei unabhängige molekulare Einstiegspunkte (5-HT1A-Autoreceptor-Instabilität und SERT-Gain-of-Function) konvergieren auf B7-Dysfunktion und produzieren jeweils ihre eigene immunologische Sekundärpathologie. Die Autoimmun-Assoziation bei ASD ist nicht Kofundierung, sondern downstream-Konsequenz des serotonergen Primärdefekts.
-
----
-
-*Version: März 2026 — Explorative Session, keine Revision bestehender Kapitel*

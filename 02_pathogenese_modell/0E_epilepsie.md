@@ -7,8 +7,6 @@
 
 Dieser Anhang entwickelt die in Kapitel 4.5 und Anhang B.6 eingeführte CSD-als-Reset-Hypothese weiter und verknüpft sie mit der Epilepsie-Literatur. Die zentrale These: CSD und epileptischer Anfall sind zwei Varianten desselben Versagens — der serotonerge Reset-Takt (Anhang D) bricht zusammen, und der Kortex muss sich über einen Notfallmechanismus resynchronisieren. CSD ist die mildere, geordnete Variante (wandernde Depolarisationswelle). Ein generalisierter Anfall ist die schwere Variante (Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades, keine synchrone Massenentladung; vgl. 4.4.1). CGRP ist nicht Schmerzmediator, sondern der notwendige Propagationsmechanismus der CSD-Kaskade — seine Blockade (Anti-CGRP-Antikörper, hochdosierte Antiepileptika) eliminiert den Schutzmechanismus.
 
----
-
 ### **E.1 Serotonin als Antikonvulsivum: Der Raphe-Takt schützt vor Anfällen**
 
 **Evidenzbasis**
@@ -36,8 +34,6 @@ Die Anfallsschwelle ist nicht binär, sondern ein Kontinuum:
 | Insuffizient (tiefes Nadir) | Fortschreitende Exzitation | CSD-Schwelle erreicht → Migräneaura |
 | Versagend | Exzitation unkontrolliert | Anfallsschwelle erreicht → epileptischer Anfall |
 
----
-
 ### **E.2 CSD und Epilepsie: Bidirektionale Beziehung**
 
 **Vier Interaktionsmuster (Fabricius et al. 2008)**
@@ -61,8 +57,6 @@ Muster II ist besonders informativ: es zeigt, dass CSD und Anfälle funktionell 
 **Trigger-Mechanismus: Extrazelluläres Kalium**
 
 Die Akkumulation von extrazellulärem Kalium während epileptischer Aktivität ist wahrscheinlich der Trigger für die Entwicklung von CSD (Mayevsky 2023). Das verknüpft beide Phänomene auf ionischer Ebene: die exzitatorische Aktivität, die sich ohne Reset aufbaut, verändert die Ionenhomöostase. CSD ist die Antwort auf diese Ionenverschiebung — ein koordinierter Reset der Ionengradienten über die gesamte Kortexfläche.
-
----
 
 ### **E.3 Die Fallback-Hierarchie der Resynchronisation**
 
@@ -93,8 +87,6 @@ Wenn das Zündmuster die Topographie der tonischen Destabilisierungswelle reflek
 
 Die Fallback-Hierarchie kann von mehreren Offsetmodi gespeist werden; der ANS-Clamp-Modus ist ein prominenter Pfad (§2.5.1.1), aber Intratakt-stochastische, inter-kern-frequenzinstabile und intra-projektive Modi können dieselbe Stufenfolge aktivieren.
 
----
-
 ### **E.4 CGRP als CSD-Propagationsmechanismus**
 
 **Uminterpretation der CGRP-Funktion**
@@ -114,8 +106,6 @@ In epileptischen Tiermodellen wird ein ausgeprägter, transienter CGRP-Anstieg n
 Die Modellinterpretation: Der CGRP-Anstieg ist das Residuum eines gescheiterten CSD-Versuchs. Das Gehirn hat CGRP freigesetzt, um eine CSD zu propagieren. Die CSD hat nicht gereicht oder war zu langsam. Die Exzitation hat sich stattdessen als Anfall entladen. Das CGRP ist noch im Gewebe messbar — als Spur des gescheiterten Resets, nicht als Antwort auf den Anfall.
 
 Stützend: CGRP-Anstieg wurde nach kainatinduzierten, aber *nicht* nach pentylenetetrazol-induzierten Anfällen beobachtet. Dies ist konsistent mit der Hypothese, wenn Kainat-Anfälle einen CSD-Versuch triggern (glutamaterge Überaktivierung → CSD-ähnliche Depolarisationswelle → scheitert → Anfall) während PTZ-Anfälle (GABAerge Disinhibition) einen anderen Mechanismus nutzen.
-
----
 
 ### **E.5 Pharmakologische Implikationen: Eingriffspunkte in der Fallback-Hierarchie**
 
@@ -181,8 +171,6 @@ Bei einem Subtyp von Epilepsiepatienten, bei dem Anfälle durch CSD-Insuffizienz
 
 **Valproat-Sonderstellung:** Valproat hat einen einzigartigen doppelten Eingriffspunkt: es supprimiert sowohl den CSD-Reset (über CGRP-Hemmung) als auch den Raphe-Takt direkt (über Abschalten von DRN-5-HT-Neuronen). Beide Resynchronisationsmechanismen — Stufe 1 und Stufe 2 — werden gleichzeitig beeinträchtigt. Dies könnte erklären, warum Valproat-Non-Responder bei Epilepsie existieren und warum Valproat bei manchen Patienten die Anfallskontrolle paradox verschlechtert.
 
----
-
 ### **E.6 Chronische Migräne als Deadlock-Zustand**
 
 **Reset-Versagen auf allen Stufen**
@@ -220,8 +208,6 @@ Sechs Monate Effekt nach einer einzigen Narkose. Propofol hat eine Halbwertszeit
 Propofol-Narkose adressiert Stufe 2 (erzwungener globaler Down-State = pharmakologisches Äquivalent einer perfekten CSD über den gesamten Kortex), aber nicht Stufe 1 (der Raphe-Primärdefekt bleibt). Die 43% Responder sind diejenigen, bei denen der einmalige Reset ausreicht, um den Deadlock zu brechen — das System findet danach einen selbsterhaltenden Zyklus. Die 47% Non-Responder brauchen Stufe-1-Intervention (Upstream-Stabilisierung, z.B. LDX) zusätzlich zum Reset.
 
 **Vorhersage:** Die Kombination aus Propofol-Reset und anschließender LDX-Upstream-Stabilisierung sollte eine höhere Responderrate produzieren als Propofol allein — der Reset bricht den Deadlock, die LDX-Stabilisierung verhindert die Reakkumulation der Desynchronisation.
-
----
 
 ### **E.7 Migräne-Epilepsie-Komorbidität: Gemeinsamer Upstream-Defekt**
 
@@ -360,8 +346,6 @@ api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name:"[SUBSTANZ]
 ```
 
 Für jede Substanz werden die Top-1000-Reaktionsterme abgerufen und nach SUDEP/Sudden-Death-Termen gefiltert. Die Normalisierung gegen die Gesamtreportzahl pro Substanz ergibt das PRR.
-
----
 
 #### **E.7.6 SUDEP-Interventionsprotokoll: Mechanische Perfusion bei reversiblem Brainstem-SD**
 
@@ -588,8 +572,6 @@ Ein mechanistisch prominenter — aber nicht ausschließlicher — Eingangsmodus
 
 Andere Eingangsmodi bleiben mechanistisch plausibel und sind durch die bestehenden Offsetmodi (§D.4.2, §D.4.3) abgedeckt: Intratakt-stochastische Release-Asynchronität, inter-kern-Frequenzinstabilität, intra-projektive Phasengradienten. Population 1 ist keine mechanistisch homogene Gruppe — sie ist durch die gemeinsame klinische Signatur (Prodrom, Migräne-Komorbidität, schlechteres AED-Ansprechen, Benefit von Stufe-1-Intervention) definiert; die Upstream-Mechanismen können individuell variieren.
 
----
-
 ### **E.8 Testbare Vorhersagen**
 
 | Nr. | Vorhersage | Testmethode | Erwartetes Ergebnis |
@@ -612,8 +594,6 @@ Andere Eingangsmodi bleiben mechanistisch plausibel und sind durch die bestehend
 | **E.8.16** | Epileptiker mit Anfallsvorhersage (Prodromalphase >1h) zeigen höhere Migräne-Komorbidität als Epileptiker ohne Vorhersagefähigkeit | Retrospektive Stratifizierung nach dokumentierter Vorhersagefähigkeit; Migräne-Screening in beiden Subgruppen | Signifikant höhere Migräne-Prävalenz in der Vorhersage-Gruppe; Population 1 (vgl. E.7.11) als distinkte mechanistische Subgruppe |
 | **E.8.17** | Population 1 (Anfälle mit Prodrom/Migräne-Komorbidität) profitiert von Stufe-1-Intervention (Betablocker, serotonerge Stabilisierung) zusätzlich zu AEDs; Population 2 (Anfälle ohne Warnung) nicht | Kontrollierte Pilotstudie: Add-on-Betablocker bei Epileptikern mit vs. ohne Migräne-Komorbidität und Anfallsvorhersage | Reduktion der Anfallsfrequenz unter Add-on-Betablocker spezifisch in Population 1; kein Zusatzeffekt in Population 2 |
 | **E.8.18** | Corpus-callosum-FA bei Migränepatienten korreliert mit Anfallshäufigkeit und Krankheitsdauer | DTI-Studie bei episodischer und chronischer Migräne; Korrelation Corpus-callosum-FA mit Attackenfrequenz und Migränedauer | Progressive FA-Reduktion als Funktion der kumulativen tonischen Wellenpropagation über das Corpus callosum |
-
----
 
 ### **E.9 Chronotyp als externe Validierung des Synchronisations-/Hardwaredefekt-Splits**
 
@@ -712,8 +692,6 @@ Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen pe
 | **Late-Chronotyp als Downstream-Marker globaler Desynchronisation (Kreuzvalidierung Synchronisations-/Hardwaredefekt-Split)** | Plausibel, externe Validierung | Konvergenz aus Kendis 2015 + ADHD-Chronotyp-Assoziation (Kooij & Bijlenga 2013) + Migräne-Chronotyp (Jung et al. 2025, Baksa et al. 2025) |
 | Chronische Migräne als Deadlock aus gescheiterter Resynchronisation | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Propofol-Responder-Daten |
 | Propofol-Reset + LDX-Stabilisierung als kombinierte Intervention | Hypothetisch, nicht getestet | Modellvorhersage |
-
----
 
 *Literatur (Auswahl):*
 

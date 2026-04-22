@@ -7,8 +7,6 @@
 
 Dieser Anhang entwickelt eine mechanistische Hypothese zur emotionalen Verarbeitung bei ASD-Phänotyp. Die zentrale These: Der thalamo-amygdaläre Direktpfad (Low Road) ist entwicklungsbiologisch desensibilisiert (inverses Hebbianisches Pruning durch chronisch inkonsistentes fetales Signal), während der kortiko-amygdaläre Umweg (High Road) intakt und die Amygdala selbst potent bleibt. Dies erklärt drei konsistente Selbstbeobachtungen: volle emotionale Reaktion bei Film/Narrative (kortikal), unkontrolliertes Weinen im Traum (direkt limbisch, Thalamus offline), starke Reduktion bei realer externer Situation (thalamischer Direktpfad desensibilisiert). Die PFC-Amygdala-Kopplung zeigt ein binäres Gating-Profil (Step Function statt Sigmoid) — entweder Kontrolle oder Überflutung, ohne Zwischenzustand (klinisch: Meltdown). LDX verbessert die somatische Resonanz über den intakten kortikalen Pfad, nicht über Reaktivierung des Direktpfads. Reinterpretation der ASD-„Alexithymie" als Pfaddefizit, nicht Kapazitätsdefizit.
 
----
-
 *Evidenzstatus: Vorläufige Selbstbeobachtung. Mechanistisch plausibel, nicht belegt. Dient als Hypothesengenerierung.*
 
 ### **A.1 Beobachtung**

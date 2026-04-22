@@ -9,8 +9,6 @@ Dieser Anhang analysiert den Mechanismus, durch den die Raphe-Kerne gehirnweite 
 
 **Kernthese:** Die Raphe-Kerne operieren als Reset-Oszillator, nicht als Informationskanal. Ihre Funktion ist nicht die Übermittlung eines Signals, sondern die periodische Resynchronisation kortikaler Gain-Parameter über Volumentransmission. Fehlt oder fluktuiert dieser Takt, driften kortikale und hippocampale Subnetze auseinander — nicht zufällig, sondern strukturiert entlang der Raphe-Projektionsarchitektur. DRN (B7) und MRN (B8) sind morphologisch, pharmakologisch und funktionell distinkt und innervieren unterschiedliche Zielstrukturen über unterschiedliche Fasertypen. Ihre Asynchronität unter instabiler Autorezeptorschleife produziert differentielle Konsequenzen: kortikale Desynchronisation (DRN-dominiert) und hippocampale Konsolidierungsdefizite (MRN-dominiert). Die resultierende Desynchronisation wird durch GABAerge Limitierung in einer Bandbreite gehalten, die kognitiv funktional bleibt.
 
----
-
 ### **D.1 Architektur der Raphe-Kerne: Neun Kerne, zwei Gruppen, differentielle Projektionen**
 
 Die Raphe-Kerne sind neun Kerngebiete entlang der Hirnstamm-Mittellinie (Medulla bis Mittelhirn), die ~80–90% des zentralen Serotonins produzieren (vgl. 2.1). Funktionell gliedern sie sich in zwei Gruppen mit differentiellen Projektionszielen.
@@ -53,8 +51,6 @@ Die hippocampale Innervation ist quantitativ und qualitativ MRN-dominiert. MRN h
 
 **Modellrelevanz:** Instabilität des MRN-Takts bedeutet instabile Theta-Kontrolle im Hippocampus — unkontrolliertes Fluktuieren zwischen Theta (Exploration, Enkodierung) und Nicht-Theta (Konsolidierung, Sharp-Wave-Ripples). Der Hippocampus wechselt den Betriebsmodus nicht verhaltensgesteuert, sondern MRN-oszillationsgesteuert.
 
----
-
 ### **D.2 Volumentransmission: Mechanismus der gehirnweiten Modulation**
 
 Die serotonerge Projektion unterscheidet sich fundamental von klassischer synaptischer Transmission. Drei Merkmale bestimmen die Signalcharakteristik:
@@ -82,8 +78,6 @@ Die extrasynaptische Freisetzung erzeugt ein räumlich-zeitliches Konzentrations
 Ein zusätzlicher Instabilitätsfaktor: die Leitungsgeschwindigkeit unmyelinisierter aminergic Axone ist nicht konstant. Aston-Jones et al. (1980) dokumentierten an Locus-coeruleus-Neuronen (gleiches Prinzip: dünne, unmyelinisierte Axone) Latenzschwankungen von über 20 ms innerhalb eines einzelnen Aktivierungszugs, abhängig von Ausgangslatenz, Stimulationsfrequenz und Impulszahl. Diese Variabilität resultiert aus veränderten Ionenkonzentrations-Gradienten durch die Impulspropagation selbst.
 
 **Modellimplikation:** Die axonale Konduktionsgeschwindigkeit schwankt als Funktion der unmittelbaren Vorgeschichte des Neurons. Bei einem Kern, der am Grenzwert der Autorezeptorschleife oszilliert, variiert die Laufzeit zu distalen Zielstrukturen mit jeder Oszillationsperiode — ein dritter Desynchronisationsmechanismus neben inter-nukleärem Drift und intra-projektiver Phasenverschiebung.
-
----
 
 ### **D.3 Der Raphe-Takt als Reset-Oszillator**
 
@@ -118,8 +112,6 @@ Der Raphe-Puls ist kein Informationssignal, sondern ein Synchronisationspuls. Je
 Etwa 1% der DRN-Neuronen zeigt ein alternatives Feuermuster: niederfrequente Oszillationen der Feuerrate mit ~0,02–0,1 Hz Modulationsfrequenz (Mosko & Jacobs 1974, 1976; Calizo et al. 2011). Dieses Muster wurde spezifisch im DRN gefunden, nicht im MRN, und persistierte über Stunden. Übergänge zwischen regulärem und oszillatorischem Feuern wurden beobachtet — das Muster ist ein alternativer Betriebsmodus, kein fester Zelltyp.
 
 **Modellinterpretation:** Diese ~1%-Subpopulation zeigt den Grundmechanismus der underdämpften 5-HT1A-Autorezeptorschleife (vgl. 2.2) in isolierten Neuronen. Unter normalen Bedingungen ist der Anteil gering. Bei kongenitaler Raphe-Instabilität (Primärdefekt, vgl. 2.1) könnte ein größerer Anteil des Ensembles in diesen oszillatorischen Modus kippen — mit den in D.4 beschriebenen Konsequenzen für die Projektionskohärenz.
-
----
 
 ### **D.4 Zwei-Oszillator-Modell: DRN-MRN-Asynchronität**
 
@@ -233,8 +225,6 @@ Der **Intra-Plateau-Slope** ist das empirisch wertvollste Einzelsignal: Er ist e
 
 **Klinische Konsequenz:** ANS-Kollaps operiert primär über Entzug und Rauschexposition (monosynaptisch, schnell). CSD operiert über Interferenz (polysynaptisch, langsam). Deshalb können beide Prozesse gleichzeitig laufen, aber mit unterschiedlichen Zeitkonstanten: ANS-Symptome Stunden vor CSD (Einzelfall B.20: 3,5 h Dissoziation, durch LDX-bedingte CSD-Verzögerung sichtbar). Die Gleichzeitigkeit bei MBA ist nicht weil CSD die ANS-Symptome verursacht, sondern weil beide denselben Upstream-Treiber (B7-Instabilität) haben, aber über unterschiedliche Pfade mit unterschiedlichen Latenzzeiten operieren (vgl. 4.7.2).
 
----
-
 ### **D.5 GABAerge Limitierung: Drei Begrenzungsebenen**
 
 Die in D.4 beschriebene Desynchronisation wird durch ein dreistufiges GABAerges Sicherungssystem in einer funktionalen Bandbreite gehalten.
@@ -267,8 +257,6 @@ Pyramidalneuronen des medialen PFC projizieren direkt in den DRN und modulieren 
 Die GABAerge Limitierung begrenzt die Raphe-Oszillation auf eine Bandbreite von 0–5 Hz. Diese Bandbreite ist weit genug für physiologische Zustandsübergänge, moderate Desynchronisation und normale kognitive Variabilität, aber schmal genug, um epileptische Entladung, vollständigen Kohärenzverlust und Raphe-Stillstand im Wachzustand zu verhindern.
 
 Die klinische Abwesenheit klassischer GABAerger Defizitsymptome (keine Epilepsie, keine Angststörung im engeren Sinne, keine Spastik) bei gleichzeitig vorhandener sensorischer Überempfindlichkeit (Hyperakusis) ist konsistent mit einem intakten GABAergen System als funktionierendem Kompensator: der Primärdefekt sitzt in der 5-HT1A-Autorezeptorschleife, nicht in der GABAergen Inhibition. Die sensorische Überempfindlichkeit ist ein thalamisches Gating-Problem (insuffiziente serotonerge Modulation des NRT), nicht ein GABAerger Defekt — der Filter ist intakt, bekommt aber inkonsistente Steuerungssignale.
-
----
 
 ### **D.6 Hippocampale Konsequenzen: Emotionale Konsolidierung und temporale Integration**
 
@@ -318,8 +306,6 @@ Die Generalisierung dieses Prinzips — von Musik auf Gerüche, Geräusche, Symb
 
 **ECT-Amnesie als Modellvalidierung:** Der ECT-induzierte Modulationsvektor-Sprung (vgl. Anhang E.7.7) invalidiert Zugangspfade frischer Engramme (konsolidiert unter einem einzigen, kürzlich aktiven Vektor), während alte Engramme (konsolidiert unter vielen verschiedenen Vektoren, mit multiplen Abrufgelegenheiten) überleben. Das klinische Bild — retrograde Amnesie für Wochen bis Monate bei erhaltenem Langzeitgedächtnis — ist die exakte Vorhersage des Zustandsvektor-Modells.
 
----
-
 ### **D.7 Kognitive Architektur-Implikation: Kreuzfunktionale Kodierung**
 
 Die in D.4 beschriebene pseudozufällige Desynchronisation hat eine entwicklungsbiologische Konsequenz: ein Kortex, der über Jahre unter desynchronisierten Modulationsbedingungen konsolidiert, baut keine sauberen domänenspezifischen Engramm-Cluster auf.
@@ -368,8 +354,6 @@ Reis et al. (2018) bestätigten: Dyslektiker zeigen Hypoaktivierung bei orthogra
 **Thalamische Kompensation als Kohärenzfilter**
 
 Die in D.5 beschriebene GABAerge Limitierung verhindert das Abgleiten in Chaos. Aber die kognitive Kohärenz wird nicht allein durch die GABAerge Begrenzung gewährleistet, sondern durch die thalamische Kompensationstiefe (vgl. Kapitel 6): der Thalamus filtert das kreuzfunktionale Rauschen und extrahiert kohärente Muster. Tiefe Kompensation + kreuzfunktionale Architektur = hohe Leistung. Unzureichende Kompensation + kreuzfunktionale Architektur = Denkstörung.
-
----
 
 ### **D.8 Differentielle afferente Regulation DRN vs. MRN**
 
@@ -458,8 +442,6 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 | Unidirektionale glutamaterge Verbindung DRN→MRN | Gesichert | Mokler et al. 2009 |
 | Kern-selektive Pharmakologie über „druggable genes" als zukünftiger Ansatz | Hypothetisch, vorgeschlagen | Ohmura & Nagayasu 2025 |
 
----
-
 ### **D.10 Evidenzstatus**
 
 | Aussage | Evidenzniveau | Quellenbasis |
@@ -508,8 +490,6 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 | TGA bei Migränepatienten 2,48-fach erhöht | Gesichert | StatPearls 2024, epidemiologische Studien |
 | TGA-Ursprung in mediobasal-temporaler Region (Hippocampus CA1), MRN-innerviert | Gesichert | Mayo Clinic, StatPearls 2024, Neuroanatomie |
 | Fokale kortikale Off-State-Patches aus Raphe-Projektionsarchitektur | **Offen** | Mechanismus nicht hinreichend erklärt; zusätzliche lokale Faktoren erforderlich |
-
----
 
 *Literatur (Auswahl):*
 

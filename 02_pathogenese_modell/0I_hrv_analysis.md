@@ -1,11 +1,3 @@
----
-title: "Der B7-Kern, 5-HT1A-Autorezeptor-Dynamik und ihre Signatur im HRV-Frequenzspektrum"
-subtitle: "Eine Kontextualisierung für die pathogenetische Analyse autonomer Oszillationen"
-author: "Synthese-Dokument"
-date: 2026-04-20
-abstract: |
-  Dieses Dokument synthetisiert das wissenschaftliche Material zur rostralen Dorsal-Raphe-Region (Zellgruppe B7 nach Dahlström & Fuxe), zur somatodendritischen 5-HT1A-Autorezeptor-Rückkopplung und zu deren Manifestation in den Spektralbändern der Herzfrequenzvariabilität. Ziel ist die kompakte Bereitstellung des pathogenetischen Kontexts für eine nachfolgende empirische Datenauswertung. Nicht enthalten sind formale Herleitungen der spektralen Transformation oder Bifurkationsanalysen des Oszillatormodells.
----
 
 ***
 

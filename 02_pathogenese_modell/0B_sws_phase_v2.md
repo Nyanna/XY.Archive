@@ -9,8 +9,6 @@ Dieser Anhang dokumentiert die Tracker-Datenanalyse der kortikalen Desynchronisa
 
 **Kernthese:** Das SWS-Defizit manifestiert sich auf zwei komplementären Ebenen — **räumlich** (intra-Nacht): Der Kortex erreicht keinen globalen SWS-Zustand, sondern zeigt ein topologisch fragmentiertes Patchwork aus lokalen Off-States; der Tracker kodiert diese räumliche Fragmentierung als temporale Instabilität. **Zeitlich** (inter-Nacht): Der nächtliche HR-Drop oszilliert mit einer dominanten Periode von 7,5 Tagen (FFT, Power 102,5; Autokorrelation Lag 7 r=0,317), kongruent mit der vorhergesagten Schwebungsfrequenz bei τ ≈ 26 h. Die zirkadiane Schwebung akkumuliert kortikale Desynchronisation über ~7 Tage; pro Nacht manifestiert sich das als variable Fragmentierung.
 
----
-
 ### **B.1 Datengrundlage**
 
 **Gerät:** Xiaomi Smart Band 9 (Gadgetbridge, SQLite-Export)
@@ -36,8 +34,6 @@ Dieser Anhang dokumentiert die Tracker-Datenanalyse der kortikalen Desynchronisa
 | `deep_latency_epoch_filtered.csv` | Deep-Latenz (roh und 5-min-gefiltert), Noise-Fragmente pro Nacht | 79 |
 
 **Tracker-Limitationen:** Der Tracker klassifiziert Schlafstadien intern über ein Fusionsmodell aus Accelerometer (Bewegung) und PPG (Herzrate). Die Rohdaten des Accelerometers sind nicht exportierbar — nur das fertige Hypnogramm und die HR-Samples stehen zur Analyse bereit. Die Stadienklassifikation kann nicht nachvollzogen oder korrigiert werden.
-
----
 
 ### **B.2 Fragmentierung als Desynchronisationssignal**
 
@@ -75,8 +71,6 @@ Die PRE-Werte stiegen durch den Filter (P25: 18→25), die POST-Werte blieben st
 Die entscheidende Einsicht: Wenn der Tracker ein Single-Point-Probe des motorischen Kortex ist und der Schlafzustand räumlich inhomogen (topologisch fragmentiert), dann sind die kurzen Deep-Fragmente keine Fehlklassifikationen, sondern korrekte Momentaufnahmen eines lokalen Off-States, der den motorischen Kortex kurzzeitig erfasst.
 
 Die temporale Fragmentierung im 1D-Tracker-Output kodiert die räumliche Fragmentierung des Kortex. Mehr Kurzfragmente = mehr Patchwork = weniger globale Kohärenz.
-
----
 
 ### **B.3 Quantifizierung der kortikalen Kohärenz**
 
@@ -153,8 +147,6 @@ Die Nacht vom 28.03.2026 ist das POST-Maximum und der einzige POST-Datenpunkt, d
 
 **Caveat:** Einzelne Nacht, kein statistischer Test möglich. Die Interpretation stützt sich auf die Konvergenz von Effektgröße und zeitlichem Muster.
 
----
-
 ### **B.4 HR-Variabilität: Confounder-Analyse**
 
 Der Versuch, die Fragmentierung über HR-Variabilität während der Deep-Phasen zu validieren, scheitert am pharmakologischen Confounder:
@@ -168,8 +160,6 @@ Der Versuch, die Fragmentierung über HR-Variabilität während der Deep-Phasen 
 PRE ist niedriger — aber Betablocker dämpfen HR-Variabilität pharmakologisch. Die Differenz ist nicht von der Betablocker-Wirkung zu trennen. Befund: **nicht interpretierbar (confounded)**.
 
 Die intakte vagale Kapazität ist davon unberührt: HR-Floor median 50 bpm (PRE) vs. 52 bpm (POST), absolutes Minimum 44 bpm — konsistent mit dem im Autonomen Profil dokumentierten Befund, dass die vagale Kapazität strukturell intakt, aber zustandsabhängig supprimiert ist.
-
----
 
 ### **B.5 Nap-Korrelation: Kompensatorischer SWS**
 
@@ -217,8 +207,6 @@ POST-Naps haben einen komplett anderen Charakter: Die Nap-Rate ist doppelt so ho
 Wenn einer fragmentierten Nacht (Density ≥5/h) ein Nap folgt, münden 75% (6/8) in einen Anfall: 5/8 am selben Tag, 1/8 am Folgetag. Die Dreiersequenz identifiziert ein Hochrisiko-Fenster, in dem die kompensatorische Kapazität erschöpft ist.
 
 **Caveat:** Kleine Stichproben (n=8 für Dreiersequenz). Die Prozentwerte sind Punktschätzer ohne Konfidenzintervall.
-
----
 
 ### **B.6 CSD als kompensatorische Resynchronisation**
 
@@ -295,8 +283,6 @@ Das Muster ist bidirektional: Fragmentierung baut sich auf (5,96/h in der Vornac
 - Multiples Testen (t-1, t0 sowie Schwellenwertanalyse) ohne formale Korrektur. Der p-Wert von 0,003 überlebt eine Bonferroni-Korrektur für 2 Tests, nicht aber für explorative Schwellenwertsuche.
 - Kausale Richtung (Fragmentierung → Anfall vs. gemeinsamer Upstream-Treiber → beides) ist aus Korrelationsdaten nicht trennbar.
 
----
-
 ### **B.7 Das Tracker-Signal: Ein stochastischer Resonanz-Detektor**
 
 **Messtheorie**
@@ -323,8 +309,6 @@ Was der Tracker *nicht* misst:
 
 Der Tracker liefert für die vorliegende Fragestellung ein in einem Aspekt überlegenes Signal: Er misst kontinuierlich über die gesamte Nacht, über Monate, im natürlichen Schlafumfeld, ohne Messartefakte durch die Laborumgebung. Ein fMRT liefert höhere räumliche Auflösung, aber nur für eine einzelne Nacht unter Laborbedingungen — und misst nicht die Nacht-zu-Nacht-Variabilität, die das eigentliche Signal ist.
 
----
-
 ### **B.8 Konsolidierung der Traumerinnerung als subjektiver Kohärenzmarker**
 
 POST-Beobachtung: Bewussteres, intensiveres Träumen bei gleichzeitig unverändertem REM-Anteil laut Tracker.
@@ -332,8 +316,6 @@ POST-Beobachtung: Bewussteres, intensiveres Träumen bei gleichzeitig unverände
 **Interpretation:** Der Tracker misst, ob der motorische Kortex sich im REM-typischen Profil befindet. Er misst nicht, ob der REM global konsolidiert ist. Die Traumerinnerung ist das sensitivere Instrument: Sie überlebt den Schlaf-Wach-Übergang nur, wenn die letzte REM-Phase konsolidiert genug war. Fragmentierter REM (PRE) → Traumerinnerung überlebt die Transitionen nicht. Konsolidierter REM (POST) → Erinnerung bleibt erhalten.
 
 Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen auf (CSD-erzwungene Resynchronisation → konsolidierter post-iktaler REM). Unter LDX tritt es regulär auf — die pharmakologische Synchronisation ersetzt den CSD-Reset.
-
----
 
 ### **B.9 Nächtliche HR-Trajektorie: Pattern-Klassifikation**
 
@@ -375,8 +357,6 @@ Die Aussage stützt sich auf mehrere konvergierende Befunde:
 
 **Konvergenz mit B.10:** Der Slope als autonome Projektion der Fragmentierung erklärt, warum der HR-Drop dieselbe quasi-wöchentliche Periodizität zeigt wie die Fragmentierungsmetriken — es ist dasselbe Signal in einem anderen Messkanal.
 
----
-
 ### **B.10 Periodizitätsanalyse: FFT und Autokorrelation**
 
 **FFT-Analyse (PRE-Daten, n=60 Nächte)**
@@ -411,8 +391,6 @@ Die 7,5-Tage-Periodizität ist strukturell die PRE-Projektion der Intertakt-Drif
 18 Nächte reichen nicht für eine belastbare FFT bei 7-Tage-Perioden. Mindestens 25, idealerweise 40+ Nächte nötig. Zwei Vorhersagen:
 - Option A: Rhythmus taucht auf → LDX ändert nur Amplitude, nicht Frequenz
 - Option B: Rhythmus gestört → τ komprimiert sich unter LDX, Schwebungsperiode verlängert sich massiv
-
----
 
 ### **B.11 Nap-Outcome-Analyse: Zustand bei Eintritt, nicht Dauer**
 
@@ -478,8 +456,6 @@ Post-exertionale Migräne ist kein eigener Triggerpfad — sie ist eine Nap-Kask
 
 **Epidemiologische Stützung:** Koppen et al. (2013, J Headache Pain): 38% Lebenszeitprävalenz exercise-triggered Migräne, Onset durchschnittlich 160 min nach Belastungsende — konsistent mit dem Regenerations-Interferenz-Fenster.
 
----
-
 ### **B.12 Anfallstiming: Phasenmodell**
 
 **Befund**
@@ -504,8 +480,6 @@ Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude).
 **Kompatibilität mit dem Stochastischen Fenstermodell**
 
 Das stochastische Fenstermodell (2.5.2) bleibt gültig, wird aber präzisiert: Das Vulnerabilitätsfenster öffnet sich nicht am Tiefpunkt der Schwebung, sondern auf der ansteigenden Flanke. Die Triggerstärke bestimmt, wie weit auf der Flanke der Anfall ausgelöst wird.
-
----
 
 ### **B.13 HR_RESTING als unabhängiger Zyklusmarker**
 
@@ -591,8 +565,6 @@ Die Invarianz des autonomen Zyklus gegenüber der CSD ergibt sich direkt aus der
 | Nap-Outcome ist Zykluspositions-Projektion | Modellinterpretation, konsistent mit Daten | Kreuzreferenz B.5 + B.13 |
 | Kortikale vs. autonome Resynchronisation differenzierbar | Modellinterpretation | Abgeleitet aus Post-Anfall-Verlauf |
 
----
-
 ### **B.14 Traumerinnerung als Kohärenzmarker (erweitert)**
 
 POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nur, ob der motorische Kortex im REM-Profil ist, nicht ob der REM global konsolidiert ist. Traumerinnerung überlebt den Schlaf-Wach-Übergang nur bei konsolidiertem REM.
@@ -608,8 +580,6 @@ POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Trac
 | PRE (ohne Anfall) | Selten | Fragmentierter REM, keine Konsolidierung |
 | PRE (nach CSD) | Intensiv | CSD-erzwungene Resynchronisation → konsolidierter REM |
 | POST (LDX) | Regulär | Pharmakologische Synchronisation → konsolidierter REM ohne CSD |
-
----
 
 ### **B.15 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
 
@@ -658,8 +628,6 @@ Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynapti
 **Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.2, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
 
 **Caveat:** Einzelereignis. Die Drei-Drittel-Analyse ist deskriptiv und nicht generalisierbar. Die HR-Verlaufsdaten sind durch die Sumatriptan-Pharmakokinetik (Halbwertszeit ~2h) konfundiert.
-
----
 
 ### **B.16 Sonderanalyse: Post-exertionaler Anfall 07.04.2026 — ANS-Kollaps als eigenständiger Prozess**
 
@@ -787,8 +755,6 @@ Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (M
 *HR-Minutenauflösung, CEST. Annotationen: Rasenmähen (rot), Interventionen (gestrichelt), Kaskade (rot), Triptan-Plateau (amber), echtes Nadir (grün).*
 
 ![HR-Sleep-Timeline Schlaf 07.04.2026](<images/Metabase-HR + AVG-4_8_2026, 11_23_07 AM.png>)
-
----
 
 ### Einzeltaganalyse: 11./12. April 2026 — B8-Haltemodus und paradoxe LDX-Schlafvertiefung
 
@@ -981,9 +947,6 @@ Diese Revision erklärt zwei bisher problematische Beobachtungen:
 **Testbarkeit**
 Die Chronotyp-Verschiebung sollte mit dem Erschöpfungszustand der Antagonisten korrelieren: In B7-dominanten Phasen (steep nadir slope, gute Konsolidierung) Frühverschiebung, in B8-dominanten Phasen (flacher slope, hohe Plateaus) Spätverschiebung. Die HR-Plateau-Analyse liefert die nötigen Proxy-Variablen für beide Zustände.
 
-
----
-
 ### **B.18 Evidenztabelle**
 
 | Aussage | Evidenzniveau | Quelle |
@@ -1069,8 +1032,6 @@ Ein Consumer-Schlaftracker (30 €) + Open-Source-App (Gadgetbridge) liefert ein
 
 **Prospektiv testbar:** Systematische HR-Trajectory-Analyse über 4–6 Wochen als Screening-Tool für Raphe-Dysregulation bei ADHS-Migräne-Koinzidenz. Die Vorhersage: Patienten mit diesem Phänotyp zeigen (a) erhöhte Schlaffragmentierung (Deep-Episoden/h >1,3), (b) quasi-wöchentliche Periodizität im HR-Drop und (c) zustandsabhängige Nap-Outcomes.
 
----
-
 ### **B.21 H9Z-Brustgurt-Messung 14.–15.04.2026: Einschlaf-Cliff und Plateau-Struktur**
 
 Die unter B.9 beschriebene nächtliche HR-Trajektorie hat eine Auflösungsgrenze im Minutenbereich (Mi-Band 9). Eine ergänzende Messung mit dem Coospo-H9Z-Brustgurt (EKG-Elektroden, ±1 bpm, BT 5.0) über 14.04.2026 18:27 CEST – 15.04.2026 07:59 CEST erfasst 52.849 Beat-to-Beat-RR-Intervalle (99,8 % physiologisch plausibel) — Auflösung auf Einzelschlag-Ebene. Zwei Phänomene werden damit sichtbar, die in den Minuten-aggregierten Mi-Band-Daten systematisch unterdrückt sind: der binäre Charakter des Einschlaf-Übergangs und die 2-Stunden-Plateau-Struktur der Tageszyklik.
@@ -1141,8 +1102,6 @@ Mechanistisch entspricht das degradierende Plateau einem Overshoot beim Einsteig
 | Zirkadiane 2×2h-Plateau-Struktur, substanzinvariant | Deskriptiv, Langzeit | Mi-Band (n=79 Nächte) + H9Z-Bestätigung |
 | Intra-Plateau-Gradient (dHR/dt) als Anfallsprädiktor | Hypothetisch, konsistent mit Einzelfall | Langzeitdaten; vgl. 2.5.5, 7.4 |
 | LDX als additiver Rechteck-Puls, plateau-strukturinvariant | Deskriptiv, n=2 Dosen | H9Z |
-
----
 
 ### **B.22 Referenzen**
 

@@ -7,8 +7,6 @@
 
 Dieser Anhang untersucht die Verbindung zwischen der bestehenden Hypothyreose (E03.9, unter L-Thyroxin-Substitution) und dem Primärdefekt des Modells (5-HT1A-Autorezeptor-Instabilität der Raphe-Kerne). Die Verbindung ist bidirektional: Schilddrüsenhormone modulieren direkt die 5-HT1A-Autorezeptorsensitivität in der Raphe, und die Raphe-Dysregulation beeinflusst über absteigende Projektionen die HPT-Achse. Epidemiologisch ist Hypothyreose signifikant mit allen drei klinischen Hauptmanifestationen des Modells assoziiert — am stärksten mit Migräne (OR 5,8–7,4 bei subklinischer Hypothyreose), gefolgt von ADHS (aOR 1,72; Populationskohorte). Bei autoimmuner Ätiologie (V.a. Hashimoto-Thyreoiditis) fügt sich die Hypothyreose zusätzlich in die autoimmune Downstream-Achse des Modells ein (parallel zur atopischen Dermatitis, vgl. 2.3, Anhang G.3).
 
----
-
 ### H.1 Schilddrüsenhormone und serotonerges System: Evidenzbasis
 
 #### H.1.1 T3-Wirkung auf 5-HT1A-Autorezeptoren
@@ -91,8 +89,6 @@ Eine systematische Literaturübersicht (Faraone et al. 2025, Neurosci Biobehav R
 | AITD × Generalisierte Epilepsie | OR 1,08 (MR, n.s.) | Hinweisend | Gering (MR-Design) |
 | Serotonin × ADHS-Komorbiditäten | 74,2% serotonerge Beteiligung | Gesichert (systematischer Review) | — |
 
----
-
 ### H.2 Bidirektionalität: Raphe-Dysregulation und HPT-Achse
 
 Die Beziehung zwischen Raphe und Schilddrüse ist nicht unidirektional. Zwei Rückwirkungspfade existieren:
@@ -113,8 +109,6 @@ Chronische periphere 5-HT-Gabe senkt T3- und T4-Plasmaspiegel unabhängig von de
 | Raphe-Neurone produzieren TRH | Raphe = SD | Gesichert (neurochemisch) |
 | Peripheres 5-HT → Deiodinase → T3/T4 | 5-HT → SD (peripher) | Gesichert (Tier) |
 
----
-
 ### H.3 Autoimmune Achse: Hashimoto als parallele Downstream-Manifestation
 
 Das Modell postuliert eine immunmodulatorische Dysfunktion als Downstream-Effekt der Raphe-Dysregulation, die sich klinisch als atopische Dermatitis manifestiert (vgl. 2.3). Die serielle Achsenstruktur (Anhang G.3) beschreibt den Pfad: Raphe-Defekt → Immunmodulationsstörung → atopische Grunderkrankung → GC-Behandlung → Hit 2.
@@ -128,8 +122,6 @@ Autoimmunthyreoiditis (Hashimoto) passt in dieses Schema als parallele autoimmun
 | Atopische Gesamtlast und ASD-Risiko | HR 16,65 bei vollem atopischen Syndrom | Lee et al. 2016 |
 
 **Modellvorhersage:** Wenn die Hypothyreose autoimmun bedingt ist (TPO-AK positiv), erweitert sich die autoimmune Downstream-Achse von einem Organ (Haut: AD) auf zwei (Haut + Schilddrüse). Die Anzahl autoimmuner Manifestationen sollte mit dem Schweregrad des Upstream-Defekts korrelieren — konsistent mit dem Dosiseffekt der atopischen Gesamtlast auf das ASD-Risiko (Lee et al. 2016).
-
----
 
 ### H.4 Klinische Implikationen: Substitutionsadäquanz als Modellparameter
 
@@ -151,8 +143,6 @@ TSH allein ist für die modellrelevante Fragestellung unzureichend: Ein normwert
 
 Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die ätiologische Frage (autoimmune Achse); fT3 klärt die Konversionsleistung; die Kombination informiert über die optimale Substitutionsstrategie.
 
----
-
 ### H.5 Testbare Vorhersagen
 
 | Nr. | Vorhersage | Testmethode | Erwartetes Ergebnis |
@@ -161,8 +151,6 @@ Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die 
 | **H.5.2** | Optimierung der fT3-Versorgung verbessert Schlafkonsolidierung unabhängig von LDX-Dosis | Prä-/Post-Vergleich der Schlaf-Tracking-Daten (Fragmentierungsrate, Deep-Episoden-Dichte) nach Substitutionsanpassung | Reduktion der Fragmentierungsepisoden/h; Anstieg der Deep-Episodendauer |
 | **H.5.3** | Optimierung der fT3-Versorgung senkt Migränevulnerabilität | Prä-/Post-Vergleich Migränefrequenz über ≥3 Zyklen nach Substitutionsanpassung | Reduktion der Durchbruchereignisse unter LDX |
 | **H.5.4** | Bei gesichertem fT3-Defizit: T3-Supplementation hat stärkeren Effekt auf Schlafkonsolidierung als äquivalente T4-Dosiserhöhung | Sequentieller Vergleich (T4-Erhöhung → Washout → T3-Zusatz), Schlaf-Tracking | fT3-Direktsupplementation zeigt stärkere Verbesserung |
-
----
 
 ### H.6 Evidenztabelle
 
@@ -185,15 +173,11 @@ Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die 
 | Konversionsschwäche als kompensatorischer Trade-off | Spekulativ | Mechanistisch ableitbar, keine direkte Evidenz |
 | fT3 als funktionell relevanter Parameter für Raphe-Modulation | Plausibel | Abgeleitet aus T3-Spezifität der 5-HT1A-Wirkung |
 
----
-
 ### H.7 Abgrenzung: Was dieser Anhang nicht behauptet
 
 1. Die Hypothyreose ist nicht Ursache der Raphe-Dysregulation. Der Primärdefekt (Hit 1) ist kongenital und unabhängig von der Schilddrüsenfunktion. Die Hypothyreose ist ein modulierender Kofaktor, kein ätiologischer Faktor.
 2. Die Beziehung T3→5-HT1A ist in Tiermodellen robust, die Übertragbarkeit auf den menschlichen Raphe-Kern in vivo ist hinweisend, nicht gesichert.
 3. Die Vorhersage H.5.4 (T3-Supplementation vs. T4-Erhöhung) ist ein n=1-Experiment mit allen Limitationen. Die Differenz könnte zu klein sein, um mit den verfügbaren Tracking-Daten aufgelöst zu werden.
-
----
 
 *Literatur:*
 

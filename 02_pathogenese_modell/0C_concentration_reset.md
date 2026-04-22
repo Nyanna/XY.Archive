@@ -7,8 +7,6 @@
 
 Dieser Anhang ist ein phänomenologischer Erfahrungsbericht zur subjektiven Manifestation der kortikalen Desynchronisation. Er beschreibt: invarianten Tiefschlaf (~2h07–10min) bei variabler Gesamtarchitektur; das „Zwei-Stunden-Loch" (Bewusstseinsdruckabfall ~2h nach Aufstehen, interpretiert als Off-State-Intrusion); Modalitätsasymmetrie (Augen schließen reduziert Druck, Stille verschlechtert ihn); Wegdriftmomente als Verarbeitungslücken bei Wachheit; den Powernap als Bewusstseinsreset (Tiefe entscheidend, nicht Dauer — zu flach: kein Reset, zu tief: Migränegefahr); Einschlaflatenz <2 min als Symptom statt Fähigkeit; Musik als externer kortikaler Synchronisator; und die differentielle Arousal-Qualität verschiedener Wachzustandsquellen (Arbeit vs. Koffein vs. pharmakologische Synchronisation). Dient als Erfahrungsgrundlage für die mechanistischen Ableitungen in Kapiteln 2.5, 4.3, 8.4 und 8.9.
 
----
-
 *Subjektive Beschreibungen eines Zustands, den ich jahrelang für Konzentrationserschöpfung hielt.*
 
 **Schlaf, der sich nicht verändert**
@@ -328,5 +326,3 @@ Wenn du das liest und dich wiedererkennst — in dem Druck, der keine Müdigkeit
 Es ist möglich, dass dein Gehirn einen Zustand nicht aufrechterhalten kann, den andere Menschen als selbstverständlich erleben: gleichmäßiges, stabiles Wachsein. Und dass alles, was du tust — die Strategien, die Rituale, die Naps, die Musik, der Kaffee, die Strukturierung deines Tages um Aufgaben herum — unbewusste Kompensation dafür ist.
 
 Ich dachte zwanzig Jahre, ich hätte Konzentrationserschöpfung. Ich hatte keine. Ich hatte einen Grundzustand, der ohne externe Stütze nicht hält. Und ich hatte nie normale Müdigkeit — nur den Schalter zwischen „gehalten" und „nicht mehr gehalten".
-
-*Phänomenologische Beschreibung, kein klinisches Dokument. Dient der Selbsterkennung und dem Austausch.*

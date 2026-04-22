@@ -9,8 +9,6 @@ Dieser Anhang kartiert die Projektionszonen der beiden aufsteigenden Raphe-Kerne
 
 **Zentrale These:** Die klinische Topographie von Migräneaura, Epilepsiefoki und thalamischer Dysregulation folgt nicht aus einer diffusen serotonergen Unterversorgung, sondern aus der *anatomischen Geometrie der dualen Raphe-Innervierung*. B7 und B8 innervieren den gesamten menschlichen Kortex dual laminär (äußere vs. innere Schichten, Charnay & Leger 2010) — es gibt keine kortikale Region mit Single-Source-Innervierung. Die Interferenz ist primär thalamisch; die kortikale Symptomtopographie folgt aus der thalamischen Kaskade mit lastabhängigem Kipppunkt. Der Thalamus ist die einzige Struktur, in der maximale B7/B8-Überlappung gesichert belegt ist. Der Hippocampus zeigt belegte zelluläre Segregation (DRN→Pyramidenzellen, MRN→GABAerge Interneurone). Der Kortex zeigt ubiquitäre duale Innervierung ohne regionale Schutzzone.
 
----
-
 ### **F.1 Projektionsmuster: B7 (DRN) vs. B8 (MRN)**
 
 Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al. 2018) ergibt ein konsistentes Bild:
@@ -25,8 +23,6 @@ Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al
 | **Amygdala** | +++ | ++ | Moderat |
 
 *Legende: + bis ++++ = relative Innervierungsdichte, basierend auf Muzerelle et al. 2014 (anterograde Tracing, Maus) und Vertes (retrograde Tracing, Ratte). Speziesgrenzen beachten.*
-
----
 
 ### **F.2 Kortikale Innervierung: Ubiquitäre duale laminäre Versorgung**
 
@@ -44,8 +40,6 @@ Der Pulvinar (posteriorer Thalamus) erhält beim Menschen nachweislich erhöhte 
 Bei thalamischer B7/B8-Interferenz (→ F.4) kippt der Pulvinar-Pfad zuerst, weil modulatorische Pfade empfindlicher auf Kohärenzverlust reagieren als Driver-Pfade. Die Symptomqualität folgt aus dieser Differenz: Gestörte visuelle *Integration* bei erhaltener visueller *Übertragung* — Rauschen statt Skotom als Prodrom. Das Skotom (CSD) entsteht erst bei weiterer Eskalation, wenn die Destabilisierung auf den Kortex selbst propagiert.
 
 Die visuelle Aura (Skotome, Fortifikationsspektren) ist damit nicht Symptom einer „kortikalen Übererregbarkeit", sondern Downstream-Manifestation der thalamischen Interferenz über den Pulvinar-Pfad.
-
----
 
 ### **F.3 Hippocampale Interferenz: Zelluläre B7/B8-Segregation**
 
@@ -94,8 +88,6 @@ Bei circadian driftendem B7/B8-Phasenversatz (vgl. Abschnitt 2.5.1) erzeugt dies
 
 **Konsequenz: State-dependent Encoding.** Engramme, die unter Inter-Kern-Desync enkodiert werden, erhalten ein zelluläres serotonerges „Wasserzeichen", das sich vom Normzustand unterscheidet. Diese Engramme sind bevorzugt im gleichen Desync-Zustand abrufbar — ein Mechanismus, der die klinisch beobachtete *state-dependent memory* bei Migräne und Epilepsie erklären könnte (vgl. Anhang E, Abschnitt E.5; Anhang D, Abschnitt D.6.3).
 
----
-
 ### **F.4 Thalamische Interferenz: Primäre Quelle und Kaskadenmechanismus**
 
 Der Thalamus ist die singuläre primäre Interferenzquelle des Modells. Der Midline- und intralaminäre Thalamus (Nucleus reuniens, Nucleus paraventricularis, zentrale intralaminäre Kerne) weist die dichteste belegte B7/B8-Überlappung auf. Der Hippocampus zeigt zelluläre Segregation (F.3); der Kortex ubiquitäre duale Innervierung ohne gesicherte regionale Differenzierung (F.2). Nur im Thalamus ist maximale Konvergenz beider Kerne gesichert.
@@ -135,8 +127,6 @@ Dies erklärt:
 - **Aura-Polymorphismus:** Die Aura-Topographie variiert zwischen Attacken, weil der prä-iktale Lastzustand variiert
 - **Modalitätsspezifische Prodromi:** Visuelles Arbeiten belastet Pulvinar-Pfad → visuelle Prodromi. Auditorische/somatosensorische Last → andere Erstversagenspunkte
 
----
-
 ### **F.5 PFC-Protektion: Pharmakologisch, nicht architektonisch**
 
 B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär (Charnay & Leger 2010). Eine architektonische Protektion durch Single-Source-Innervierung existiert nicht. Die klinisch beobachtete PFC-Klarheit unter Anfall erklärt sich pharmakologisch:
@@ -155,8 +145,6 @@ B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär (Charnay & L
 
 Evidenzstatus: Einzelbeobachtung. Die pharmakologische Interpretation (MD-Loop-Stabilisierung) ist mechanistisch konsistenter als die architektonische (Single-Source), da letztere auf einer für den Menschen nicht belegten Prämisse beruht.
 
----
-
 ### **F.6 Synthese: Thalamische Kaskade und hippocampale Interferenz als einheitlicher Mechanismus**
 
 Die zwei Interferenzstrukturen bilden ein kohärentes anatomisches Substrat für das Pathogenesemodell:
@@ -170,8 +158,6 @@ Die zwei Interferenzstrukturen bilden ein kohärentes anatomisches Substrat für
 | **Hippocampus** | Zelluläre B7/B8-Segregation (gesichert): DRN→Pyramidenzellen, MRN→Interneurone | Pharmakologischer Spillover → inkonsistente Engramm-Kodierung | State-dependent encoding, iktale Amnesie |
 
 Die thalamische Kaskade erklärt, warum Migräne, Epilepsie und kognitive Dysfunktion *nicht zufällig komorbid* sind, sondern dieselbe anatomische Grundlage teilen (vgl. Anhang E). Die Unterschiede in der klinischen Manifestation ergeben sich aus der jeweiligen Schwellencharakteristik der betroffenen thalamokortikalen Pfade und dem prä-iktalen Lastprofil — nicht aus unterschiedlichen Pathomechanismen.
-
----
 
 ### **F.7 Pharmakologische B7/B8-Asymmetrie**
 
@@ -192,8 +178,6 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 - Diphenhydramin dreht B7 leiser → Vorhersage: Migräne besser (Experiment steht aus).
 - TCAs (Amitriptylin) wirken nicht *trotz* ihrer „Nebenwirkungen" als Migräneprophylaktikum — die H1-Blockade, anticholinerge Sedierung und noradrenerge Dämpfung SIND der Migränemechanismus.
 - Interferenzstärke ∝ Amplitude_B7 × Amplitude_B8 × cos(Phasenversatz): Amplitudenreduktion senkt das Produkt unabhängig von der Phasenrichtung.
-
----
 
 ### **F.8 Evidenztabelle**
 
@@ -219,8 +203,6 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 | H1-Blockade senkt DRN-Feuerrate selektiv | Gesichert | Crawford et al. 2013 (DRN-Elektrophysiologie) |
 | SSRIs (Paroxetin) wirken kernblind auf B7 und B8 | Gesichert | Tao et al. 2003 (Elektrophysiologie) |
 | TCA-Migräneprophylaxe durch kombinierte B7-Dämpfung (SERT + H1 + NET) | Mechanistisch ableitbar | Abgeleitet aus Crawford et al. 2013 + SERT-Pharmakologie |
-
----
 
 *Literatur (Auswahl):*
 
