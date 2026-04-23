@@ -1,21 +1,41 @@
 #!/usr/bin/env python3
-"""HRV minute aggregation from Gadgetbridge RR-interval samples."""
+"""HRV minute aggregation from Gadgetbridge RR-interval samples.
+
+Reads raw RR intervals from the Gadgetbridge SQLite database and
+upserts the derived per-minute metrics into the target Postgres
+database (HRV_MINUTE_AGGREGATED). Only minutes that are not yet
+present in Postgres are computed; RR samples older than the largest
+analysis window before the newest stored minute are not loaded from
+SQLite to keep incremental runs cheap.
+"""
 
 import argparse
 import math
 import sqlite3
 import sys
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
+import psycopg2
 from astropy.timeseries import LombScargle
+from psycopg2 import sql as pgsql
+from psycopg2.extras import execute_values
 from scipy.interpolate import CubicSpline
 from scipy.ndimage import median_filter
 from scipy.signal import welch
 
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
+
+# Postgres target (mirrors cleanup_gadgetbridge.py)
+PG_HOST = "localhost"
+PG_PORT = 5432
+PG_DB = "gadgetbridge"
+PG_USER = "postgres"
+PG_PASSWORD = "postgres"
+PG_SCHEMA = "public"
+PG_TABLE = "HRV_MINUTE_AGGREGATED"
 
 MIN_RR = 300
 MAX_RR = 2000
@@ -65,7 +85,7 @@ VAGAL_BALANCE_REF = 0.50
 TOTAL_MIN = 3.0
 
 
-def load_rr_data(db_path, device_id=None):
+def load_rr_data(db_path, device_id=None, min_ts_ms=None):
     conn = sqlite3.connect(db_path)
     cur = conn.cursor()
     cur.execute(
@@ -90,11 +110,17 @@ def load_rr_data(db_path, device_id=None):
     dev_row = cur.fetchone()
     device_name = dev_row[0] if dev_row else f"id={device_id}"
 
-    cur.execute(
+    query = (
         "SELECT TIMESTAMP, RR_MILLIS FROM HEART_RR_INTERVAL_SAMPLE "
-        "WHERE DEVICE_ID = ? ORDER BY TIMESTAMP, SEQ",
-        (device_id,),
+        "WHERE DEVICE_ID = ?"
     )
+    params = [device_id]
+    if min_ts_ms is not None:
+        query += " AND TIMESTAMP >= ?"
+        params.append(int(min_ts_ms))
+    query += " ORDER BY TIMESTAMP, SEQ"
+
+    cur.execute(query, params)
     raw = cur.fetchall()
     conn.close()
 
@@ -305,15 +331,20 @@ def compute_ulf_power(t_ms: np.ndarray, rr: np.ndarray) -> dict | None:
     }
 
 
-def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable_ulf=False, limit_minutes=None):
+def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable_ulf=False, limit_minutes=None, skip_minutes=None):
     """Aggregate HRV metrics per minute.
 
     limit_minutes: if set, only the first N minute bins are processed.
     Purpose: performance and integrity test runs on a small slice of the
     data, without having to crunch through the full dataset. Production: None.
+
+    skip_minutes: optional set of minute-start timestamps (ms) already
+    present in the target; those bins are skipped so the script only
+    recomputes new minutes.
     """
     if not rr_data:
         return []
+    skip_minutes = skip_minutes or set()
 
     t0 = time.monotonic()
 
@@ -352,12 +383,17 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
     t_loop_start = time.monotonic()
     log_interval = max(1, total_minutes // 20)  # ~20 progress updates
 
+    n_skipped = 0
     for mi in range(total_minutes):
+        minute_start = int(sorted_minutes[mi])
+        if minute_start in skip_minutes:
+            n_skipped += 1
+            continue
+
         n_beats = int(minute_counts[mi])
         if n_beats < MIN_BEATS_PER_MINUTE:
             continue
 
-        minute_start = int(sorted_minutes[mi])
         lo = int(minute_lo[mi])
         hi = int(minute_hi[mi])
 
@@ -546,71 +582,136 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
         print(f"  DFA alpha1:              disabled")
     print(f"  Loop total:              {time.monotonic() - t_loop_start:.2f}s")
     print(f"  compute_minute_metrics:  {elapsed_total:.2f}s")
+    if n_skipped:
+        print(f"  Skipped (already in target): {n_skipped}")
 
     return results
 
 
-def write_results(db_path, rows):
-    conn = sqlite3.connect(db_path)
-    cur = conn.cursor()
-    cur.execute("DROP TABLE IF EXISTS HRV_MINUTE_AGGREGATED")
-    cur.execute("""
-        CREATE TABLE HRV_MINUTE_AGGREGATED (
-            TIMESTAMP_MS INTEGER NOT NULL PRIMARY KEY,
-            N_BEATS INTEGER NOT NULL,
-            HR_BPM REAL,
-            AVG_RR_MS REAL,
-            MIN_RR_MS INTEGER,
-            MAX_RR_MS INTEGER,
-            STDDEV_RR_MS REAL,
-            RMSSD_MS REAL,
-            LN_RMSSD REAL,
-            VAGAL_INDEX REAL,
-            RMSSD_PCT REAL,
-            SDNN_MS REAL,
-            RMSSD_SDNN_RATIO REAL,
-            VAGAL_BALANCE REAL,
-            PNN50 REAL,
-            VLF_MS2 REAL,
-            LF_MS2 REAL,
-            HF_MS2 REAL,
-            ULF_MS2 REAL,
-            ULF1_MS2 REAL,
-            ULF2_MS2 REAL,
-            LF_HF_RATIO REAL,
-            B7B8_DOM REAL,
-            B7B8_OFF REAL,
-            DFA_ALPHA1 REAL
+PG_COLUMNS = [
+    "TIMESTAMP_MS", "N_BEATS", "HR_BPM", "AVG_RR_MS", "MIN_RR_MS", "MAX_RR_MS",
+    "STDDEV_RR_MS", "RMSSD_MS", "LN_RMSSD", "VAGAL_INDEX", "RMSSD_PCT", "SDNN_MS",
+    "RMSSD_SDNN_RATIO", "VAGAL_BALANCE", "PNN50",
+    "VLF_MS2", "LF_MS2", "HF_MS2", "ULF_MS2", "ULF1_MS2", "ULF2_MS2",
+    "LF_HF_RATIO", "B7B8_DOM", "B7B8_OFF", "DFA_ALPHA1",
+]
+PG_AT_COLUMN = "timestamp_ms_at"
+
+
+def connect_pg():
+    return psycopg2.connect(
+        host=PG_HOST, port=PG_PORT, user=PG_USER, password=PG_PASSWORD,
+        dbname=PG_DB,
+    )
+
+
+def ensure_hrv_table(pg_conn):
+    ddl = f'''
+        CREATE TABLE IF NOT EXISTS "{PG_SCHEMA}"."{PG_TABLE}" (
+            "TIMESTAMP_MS"     BIGINT NOT NULL PRIMARY KEY,
+            "N_BEATS"          BIGINT NOT NULL,
+            "HR_BPM"           DOUBLE PRECISION,
+            "AVG_RR_MS"        DOUBLE PRECISION,
+            "MIN_RR_MS"        BIGINT,
+            "MAX_RR_MS"        BIGINT,
+            "STDDEV_RR_MS"     DOUBLE PRECISION,
+            "RMSSD_MS"         DOUBLE PRECISION,
+            "LN_RMSSD"         DOUBLE PRECISION,
+            "VAGAL_INDEX"      DOUBLE PRECISION,
+            "RMSSD_PCT"        DOUBLE PRECISION,
+            "SDNN_MS"          DOUBLE PRECISION,
+            "RMSSD_SDNN_RATIO" DOUBLE PRECISION,
+            "VAGAL_BALANCE"    DOUBLE PRECISION,
+            "PNN50"            DOUBLE PRECISION,
+            "VLF_MS2"          DOUBLE PRECISION,
+            "LF_MS2"           DOUBLE PRECISION,
+            "HF_MS2"           DOUBLE PRECISION,
+            "ULF_MS2"          DOUBLE PRECISION,
+            "ULF1_MS2"         DOUBLE PRECISION,
+            "ULF2_MS2"         DOUBLE PRECISION,
+            "LF_HF_RATIO"      DOUBLE PRECISION,
+            "B7B8_DOM"         DOUBLE PRECISION,
+            "B7B8_OFF"         DOUBLE PRECISION,
+            "DFA_ALPHA1"       DOUBLE PRECISION,
+            {PG_AT_COLUMN}     TIMESTAMPTZ
         )
-    """)
-    cur.executemany(
-        "INSERT INTO HRV_MINUTE_AGGREGATED VALUES "
-        "(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-        [
-            (
-                r["timestamp_ms"], r["n_beats"], r["hr_bpm"], r["avg_rr_ms"],
-                r["min_rr_ms"], r["max_rr_ms"], r["stddev_rr_ms"], r["rmssd_ms"],
-                r["ln_rmssd"], r["vagal_index"], r["rmssd_pct"], r["sdnn_ms"],
-                r["rmssd_sdnn_ratio"], r["vagal_balance"], r["pnn50"],
-                r["vlf_ms2"], r["lf_ms2"], r["hf_ms2"],
-                r["ulf_ms2"], r["ulf1_ms2"], r["ulf2_ms2"],
-                r["lf_hf_ratio"], r["b7b8_dom"], r["b7b8_off"], r["dfa_alpha1"],
+    '''
+    with pg_conn.cursor() as cur:
+        cur.execute(ddl)
+    pg_conn.commit()
+
+
+def get_existing_minutes(pg_conn):
+    with pg_conn.cursor() as cur:
+        cur.execute(
+            pgsql.SQL('SELECT "TIMESTAMP_MS" FROM {}.{}').format(
+                pgsql.Identifier(PG_SCHEMA),
+                pgsql.Identifier(PG_TABLE),
             )
-            for r in rows
-        ],
-    )
-    conn.commit()
+        )
+        return {int(r[0]) for r in cur.fetchall()}
 
-    cur.execute("SELECT COUNT(*) FROM HRV_MINUTE_AGGREGATED")
-    total = cur.fetchone()[0]
 
-    cur.execute(
-        "SELECT TIMESTAMP_MS, N_BEATS, HR_BPM, RMSSD_MS, LF_HF_RATIO, DFA_ALPHA1 "
-        "FROM HRV_MINUTE_AGGREGATED WHERE RMSSD_MS IS NOT NULL "
-        "ORDER BY RMSSD_MS DESC LIMIT 1"
+def write_results_pg(pg_conn, rows):
+    if not rows:
+        return 0, None
+
+    all_cols = PG_COLUMNS + [PG_AT_COLUMN]
+    col_list = pgsql.SQL(", ").join(pgsql.Identifier(c) for c in all_cols)
+    update_cols = [c for c in all_cols if c != "TIMESTAMP_MS"]
+    set_clause = pgsql.SQL(", ").join(
+        pgsql.SQL("{c} = EXCLUDED.{c}").format(c=pgsql.Identifier(c))
+        for c in update_cols
     )
-    sample = cur.fetchone()
-    conn.close()
+    insert_stmt = pgsql.SQL(
+        "INSERT INTO {}.{} ({}) VALUES %s "
+        "ON CONFLICT ({}) DO UPDATE SET {}"
+    ).format(
+        pgsql.Identifier(PG_SCHEMA),
+        pgsql.Identifier(PG_TABLE),
+        col_list,
+        pgsql.Identifier("TIMESTAMP_MS"),
+        set_clause,
+    )
+
+    tuples = [
+        (
+            r["timestamp_ms"], r["n_beats"], r["hr_bpm"], r["avg_rr_ms"],
+            r["min_rr_ms"], r["max_rr_ms"], r["stddev_rr_ms"], r["rmssd_ms"],
+            r["ln_rmssd"], r["vagal_index"], r["rmssd_pct"], r["sdnn_ms"],
+            r["rmssd_sdnn_ratio"], r["vagal_balance"], r["pnn50"],
+            r["vlf_ms2"], r["lf_ms2"], r["hf_ms2"],
+            r["ulf_ms2"], r["ulf1_ms2"], r["ulf2_ms2"],
+            r["lf_hf_ratio"], r["b7b8_dom"], r["b7b8_off"], r["dfa_alpha1"],
+            datetime.fromtimestamp(r["timestamp_ms"] / 1000.0, tz=timezone.utc),
+        )
+        for r in rows
+    ]
+
+    with pg_conn.cursor() as cur:
+        execute_values(cur, insert_stmt, tuples, page_size=5000)
+
+        cur.execute(
+            pgsql.SQL('SELECT COUNT(*) FROM {}.{}').format(
+                pgsql.Identifier(PG_SCHEMA),
+                pgsql.Identifier(PG_TABLE),
+            )
+        )
+        total = cur.fetchone()[0]
+
+        cur.execute(
+            pgsql.SQL(
+                'SELECT "TIMESTAMP_MS", "N_BEATS", "HR_BPM", "RMSSD_MS", '
+                '"LF_HF_RATIO", "DFA_ALPHA1" '
+                'FROM {}.{} WHERE "RMSSD_MS" IS NOT NULL '
+                'ORDER BY "RMSSD_MS" DESC LIMIT 1'
+            ).format(
+                pgsql.Identifier(PG_SCHEMA),
+                pgsql.Identifier(PG_TABLE),
+            )
+        )
+        sample = cur.fetchone()
+    pg_conn.commit()
     return total, sample
 
 def main():
@@ -651,41 +752,72 @@ def main():
 
     t_total = time.monotonic()
 
-    t0 = time.monotonic()
-    rr_data, device_id, device_name = load_rr_data(DB_PATH, args.device_id)
-    if not rr_data:
-        print("ERROR: No RR data after filtering", file=sys.stderr)
-        sys.exit(1)
+    pg_conn = connect_pg()
+    try:
+        ensure_hrv_table(pg_conn)
+        existing_minutes = get_existing_minutes(pg_conn)
+        print(f"Existing HRV minutes in Postgres: {len(existing_minutes)}")
 
-    print(f"Loaded {len(rr_data)} RR intervals from device {device_id} ({device_name}) [{time.monotonic() - t0:.2f}s]")
-    t_start = datetime.fromtimestamp(rr_data[0][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
-    t_end = datetime.fromtimestamp(rr_data[-1][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
-    print(f"Time range: {t_start} - {t_end}")
+        # Incremental RR load: when the target already has data, only
+        # read beats within one ULF window (2 h) before the newest stored
+        # minute. Backward-looking windows for any genuinely new minute
+        # still find the beats they need, while SQLite does not have to
+        # return the full history on every run.
+        min_ts_ms = None
+        if existing_minutes:
+            min_ts_ms = max(existing_minutes) - ULF_WINDOW_MS
 
-    minute_count = len({(ts // 60000) for ts, _ in rr_data})
-    print(f"Processing {minute_count} minutes...")
-
-    t0 = time.monotonic()
-    rows = compute_minute_metrics(
-        rr_data,
-        enable_lf_hf=args.lf_hf,
-        enable_dfa=args.dfa,
-        enable_ulf=args.ulf,
-        limit_minutes=args.limit_minutes,
-    )
-    print(f"Minute metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
-
-    t0 = time.monotonic()
-    total, sample = write_results(DB_PATH, rows)
-    print(f"Written {total} rows to HRV_MINUTE_AGGREGATED [{time.monotonic() - t0:.2f}s]")
-    print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
-
-    if sample:
-        ts, n, hr, rmssd, lfhf, dfa = sample
-        print(
-            f"Sample (max RMSSD): ts={ts} n_beats={n} hr={hr:.1f} "
-            f"rmssd={rmssd:.1f} lf_hf={lfhf} dfa_alpha1={dfa}"
+        t0 = time.monotonic()
+        rr_data, device_id, device_name = load_rr_data(
+            DB_PATH, args.device_id, min_ts_ms=min_ts_ms,
         )
+        if not rr_data:
+            print("No new RR intervals to process.")
+            print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
+            return
+
+        span = f" (from ts >= {min_ts_ms})" if min_ts_ms is not None else ""
+        print(
+            f"Loaded {len(rr_data)} RR intervals{span} from device "
+            f"{device_id} ({device_name}) [{time.monotonic() - t0:.2f}s]"
+        )
+        t_start = datetime.fromtimestamp(rr_data[0][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+        t_end = datetime.fromtimestamp(rr_data[-1][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+        print(f"Time range: {t_start} - {t_end}")
+
+        minute_count = len({(ts // 60000) for ts, _ in rr_data})
+        print(f"Processing up to {minute_count} minute bins "
+              f"({len(existing_minutes)} already in target -> skipped)...")
+
+        t0 = time.monotonic()
+        rows = compute_minute_metrics(
+            rr_data,
+            enable_lf_hf=args.lf_hf,
+            enable_dfa=args.dfa,
+            enable_ulf=args.ulf,
+            limit_minutes=args.limit_minutes,
+            skip_minutes=existing_minutes,
+        )
+        print(f"Minute metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
+
+        t0 = time.monotonic()
+        total, sample = write_results_pg(pg_conn, rows)
+        print(
+            f"Upserted {len(rows)} rows into {PG_SCHEMA}.\"{PG_TABLE}\" "
+            f"(total now {total}) [{time.monotonic() - t0:.2f}s]"
+        )
+        print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
+
+        if sample:
+            ts, n, hr, rmssd, lfhf, dfa = sample
+            hr_str = f"{hr:.1f}" if hr is not None else "None"
+            rmssd_str = f"{rmssd:.1f}" if rmssd is not None else "None"
+            print(
+                f"Sample (max RMSSD): ts={ts} n_beats={n} hr={hr_str} "
+                f"rmssd={rmssd_str} lf_hf={lfhf} dfa_alpha1={dfa}"
+            )
+    finally:
+        pg_conn.close()
 
 
 if __name__ == "__main__":
