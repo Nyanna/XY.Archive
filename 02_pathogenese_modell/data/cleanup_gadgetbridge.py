@@ -43,7 +43,7 @@ from psycopg2.extras import execute_values
 # --- Source -----------------------------------------------------------
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
 DB_REMOTE_URL = "https://drive.google.com/uc?id=1NwUmQ_v7WOQIe5tYm2GixOQYm5HSt-xh"
-EXPIRY_SECONDS = 2 * 3600
+EXPIRY_SECONDS = 1 * 3600
 
 # --- Postgres target --------------------------------------------------
 PG_HOST = "localhost"

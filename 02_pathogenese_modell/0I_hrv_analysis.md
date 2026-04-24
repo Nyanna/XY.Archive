@@ -587,6 +587,91 @@ Am Morgen: HR-Spike auf 117 bpm beim Erwachen. Subjektiv Grogginess und Wackelko
 
 ![Dashboard Tag 20. April](<images/dashboard_Tag20_prodromal.png>){width=90%}
 
+#### **Tag 24. April 2026 — Tonische Wellenprogression ohne posteriore CSD**
+
+**Kontext:** Vorabend: Melatonin 23:00, Einschlafen 00:00. Seit Nachmittag des 23. April erhöhter ULF1/ULF2-Eintrag, subjektiv als „Kortex schwach, ANS stark" eingeordnet. DPH-Entkopplung abends erwogen, aber nicht durchgeführt (ULF ausreichend dynamisch). Nacht zunächst ruhig, ab 04:00 Destabilisierung. LDX 8 mg um 07:30 und 12:00 Uhr. DPH 25 mg um 10:00 Uhr als Tagesintervention im laufenden Prodrom. Gartenarbeit 13:00–14:00 als Kompensationsversuch. Naratriptan um 16:30 Uhr.
+
+**Deskriptive Statistik (Gesamtaufzeichnung):**
+
+| Parameter | Wert |
+|---|---|
+| HR mean | 75.5 bpm |
+| HR min / max | 47.7 / 141.0 bpm |
+| VLF% | 52.7 (über 42%-Baseline) |
+| LF% | 25.4 |
+| HF% | 21.9 |
+| Dominanz mean (Wachstunden) | −0.290 (std 0.345) |
+| Interferenz mean | 0.51 (Nacht 0.45, Tag 0.55) |
+| ULF1 mean | 2670 (Peak: 7650 um 08:10) |
+| ULF2 mean | 2453 (Peak: 13300 um 07:49) |
+| PNN50 mean | 16.6% |
+| b7_exposure (θ = −0.6) | 17.8 (127 von 541 Wachminuten) |
+| LC-Burst-Signaturen (ΔHR > 10 bpm/min) | 25 (Nacht), 50 (Tag) |
+
+**Befundmuster — Verlauf in fünf Phasen:**
+
+**Phase 1 — Stabile erste Nachthälfte (00:00–03:45).** HR mean 67.5, Dominanz +0.15 (parasympathisch), Interferenz 0.42 (Baseline), PNN50 25.8%. Zwei tiefe vagale Plateaus mit HR-Minima um 55 bpm bei klarer B8-Dominanz. Das Profil entspricht den N1/N2-Referenznächten. Kein Hinweis auf B7-Gain-Eskalation — die LF/HF-Proportionen sind unauffällig. ULF1 und ULF2 moderat (2100–2200), stabil, ohne Rampe.
+
+**Phase 2 — Hirnstamm-Destabilisierung (03:45–07:00).** Abrupter Bruch: VLF explodiert von 750 auf 23.800 ms² in 15 Minuten (03:45–04:00). Gleichzeitig verdoppelt ULF2 von 1720 auf 3000 — ULF2 führt den Anstieg an, ULF1 zieht erst ab 04:30 nach (2040 → 2640). Die Dominanz wird instabil, pendelt zwischen +0.5 und −0.2.
+
+Kritisch: Ab 03:49 häufen sich LC-Burst-Signaturen (HR-Sprünge > 10 bpm/min). Die Sequenz 03:59–04:01 zeigt eine 2-Minuten-Oszillation von ±17 bpm (49.3 → 66.6 → 49.2). Um 04:06: +21.8 bpm in einer Minute. Subjektiv: elektrische Schock-Sensation im Mittelhirn beim Hochschrecken aus dem Halbschlaf. Die Qualität wird als rein sensorischer Sleep-Start (sensory start) beschrieben — keine motorische Myoklonie, keine Fallillusion, reine Mittelhirn-Entladung.
+
+Zweite Nachthälfte: HR mean 62.9, aber Dominanz auf 0.022 kollabiert (vs. +0.15 in der ersten Hälfte). Die Interferenz steigt auf 0.49. PNN50 steigt paradoxerweise auf 38.0% — die vagale Kapazität ist erhalten, aber die Steuerung ist inkohärent.
+
+**Phase 3 — Aufwachkaskade und ULF-Peak (06:30–10:00).** ULF1 steigt auf 5600–7230 (Nachtmaximum), ULF2 erreicht 13.300 um 07:49 — den höchsten Einzelwert des gesamten Datensatzes. Gleichzeitig die tiefsten HR-Werte: 47.7 und 48.3 bpm. Dann um 07:23 der stärkste LC-Burst der Aufzeichnung: +29.7 bpm in einer Minute (62.8 → 92.5). Danach sympathische Eskalation: HR 113 bei Dom −0.76, Interferenz 0.70.
+
+Das ULF-Profil zeigt eine Dissoziation: ULF2 peakt vor ULF1 und fällt danach schneller ab. Wenn ULF2 die langsamere Oszillationsdynamik (Perioden ~5–16 min) abbildet, deutet die ULF2-Führung auf eine tiefere Hirnstamm-Quelle als den DRN. Die Zeitkonstante des ULF2-Peaks (Anstieg über ~3 Stunden, Peak um 07:49, Abfall über ~2 Stunden) ist mit MRN-Clearance-Kinetik kompatibel, bleibt aber spekulativ.
+
+Morgens (07:00–10:00): HR mean 81.2, Dominanz −0.31, Interferenz 0.57. Kein sympathischer Clamp — die Dominanz bleibt dynamisch (std 0.35), das ANS reagiert auf Perturbationen. Verdauung und Hunger subjektiv erhalten. Starke Abulie bei intaktem Bewusstsein. Keine Lichtempfindlichkeit, keine okzipitalen Phänomene, kein sensorisches Gating-Defizit.
+
+**Phase 4 — DPH-Intervention und Halbschlaf (10:00–13:00).** DPH 25 mg oral um 10:00 Uhr bei laufendem Prodrom. Merklicher Sedierungseffekt. HR sinkt intermittierend unter 70 (30 Minuten mit HR < 70), 55 Minuten mit Dominanz > 0 (parasympathische Episoden). ULF1 steigt weiter an (2880 → 4500), nicht reduziert durch DPH. ULF2 macht einen bemerkenswerten Sprung auf ~5000 um 11:55 — der höchste Tageswert.
+
+Subjektiv: Halbschlaf mit aphasischem Erleben — nicht Schlaf, nicht Wachheit, partiell geschlossenes thalamisches Gating bei erhaltenem Bewusstsein. Instinktiv als protektiv empfunden: jede State-Transition (Hochschrecken aus dem Dämmern) erzeugt einen LC-Burst, der als elektrischer Schock im Mittelhirn imponiert. Der Halbschlaf-Zustand vermeidet Transitionen und senkt damit die kortikale Last.
+
+Kreislaufschwäche nach DPH. Die Sedierung war subjektiv hilfreich, aber der Wirkmechanismus war unspezifisch (kortikale Last-Reduktion durch Ruhigstellung), nicht B7-selektiv. Die Interferenz (mean 0.55) bleibt unter DPH unverändert — DPH hat die Interferenzquelle nicht adressiert.
+
+**Phase 5 — Dekompensation und Gartenarbeit (13:00–16:17).** Gartenarbeit als Kompensationsversuch — Mobilisierung über sympathische Aktivierung. HR mean 98.6, max 141, Dominanz −0.50, Interferenz 0.59. Kurzfristig subjektiv besser, aber der hohe Kreislauf destabilisiert auf dem DPH-belasteten ANS.
+
+Danach progressive Symptomverdichtung: rechtsseitiges Parästhesiegefühl, dann diffuser Mittelhirn-Druck (retrobulbär, nicht okzipital), „Wackelgehirn" ähnlich SCN-Symptomen. Keine klassische Aura, keine Photophobie. Druck- und Fingernagelstimulation am Kranium entlastet. Naratriptan um 16:30 (außerhalb Aufzeichnung) — Symptomrückbildung.
+
+Spätnachmittag (15:00–16:17): HR 73.7, Dominanz −0.17, Interferenz 0.45. ULF1 und ULF2 kollabiert auf 1429 bzw. 628 — das System hat sich entladen. Die Energie, die seit 04:00 im ULF akkumuliert wurde, ist in die kortikale Endstrecke übergegangen.
+
+**Differentialmerkmale gegenüber den B7-getriebenen Ereignissen (N3/N4, Tag 19./20. April):**
+
+| Merkmal | B7-Profil (19./20. April) | Heutiges Profil (24. April) |
+|---|---|---|
+| Sympathischer Clamp | Ja (Dom −0.68, std 0.24) | Nein (Dom −0.29, std 0.35) |
+| Dominanz-Kompression | Stark (einziger Freiheitsgrad) | Moderat (zwei Freiheitsgrade erhalten) |
+| VLF% | 42–45% (Baseline) | 52.7% (über Baseline) |
+| ULF2-Führung | Nicht dokumentiert | Ja (ULF2 verdoppelt vor ULF1) |
+| Sensorische Überflutung | Ja (Licht, Geräusch) | Nein |
+| Abulie | Gering | Ausgeprägt |
+| CSD-Topographie | Okzipital → anterior | Keine klassische CSD; anterior/medial |
+| Verdauung | Supprimiert | Durchgehend aktiv |
+| LC-Burst-Qualität | Nicht berichtet | Elektrisch, Mittelhirn-lokalisiert |
+| DPH-Response | Kaskadenpuffer (wirksam) | Sedierung (unspezifisch) |
+| Zeitverlauf Prodrom → Triptan | Stunden | 12.5 Stunden (tonisch) |
+
+**Interpretation:**
+
+Dieser Datensatz dokumentiert ein Migräneereignis mit fundamentaler Abweichung vom bisher beschriebenen B7-Profil. Die Kernbefunde — fehlender sympathischer Clamp, erhaltene Verdauung, Abulie statt sensorischer Überflutung, anteriore/mediale Drucktopographie ohne okzipitale Signatur, ULF2-Führung, DPH-Versagen als Interferenzmodulator — konvergieren auf eine B8-modulierte Pathogenese.
+
+Die Hypothese: Der MRN (B8) war diesmal der dominante Oszillator. Die Interferenz-Topographie verschiebt sich bei B8-Dominanz von posterioren kortikalen Feldern (DRN-Projektion) zu medialen/limbischen/Mittelhirn-Strukturen (MRN-Projektion). Die CSD-Schwelle im Okzipitallappen wurde nie erreicht — stattdessen tonische Wellenprogression entlang trigeminovaskulärer Pfade ohne vollständige CSD. Die Naratriptan-Responsivität bestätigt die trigeminovaskuläre Endstrecke unabhängig vom Initiationspfad.
+
+**Interventionslogik — Rückblick:** DPH war die falsche Wahl. Als selektiver B7-Suppressor (H1-Blockade am DRN) adressiert DPH die B7-Amplitude. Bei B8-getriebener Interferenz hat DPH keinen Hebel an der Quelle; die Sedierung senkt die kortikale Last unspezifisch, aber die Kreislaufschwäche ist reiner Schaden. Eine LDX-Dosiserhöhung hätte über den NE-Pfad die kortikale CSD-Schwelle gehoben (Kortexschutz kernagnostisch) und über den DA-Pfad den B8-Intra-Kern-Takt stabilisiert.
+
+**Diagnostische Konsequenz:** ULF-Elevation allein ist ein kernblinder Marker. Die Diskriminierung B7 vs. B8 erfordert ein klinisches Begleitprofil: ULF-hoch mit sympathischem Clamp, sensorischer Überflutung und Verdauungssuppression → B7 → DPH. ULF-hoch ohne sympathischen Clamp, mit erhaltener Verdauung und Abulie → B8 → LDX bevorzugen.
+
+**Evidenzniveau:** Einzelbeobachtung (n=1), phänomenologisch detailliert, mechanistisch konsistent mit dem Dual-Source-Modell. Die B8-Attribution ist eine Arbeitshypothese, gestützt auf die Differentialsemiotik gegenüber den B7-Referenzereignissen. Prospektive Validierung erfordert weitere B8-Ereignisse mit der revidierten Interventionslogik (LDX-Erhöhung statt DPH).
+
+**Offene Fragen:**
+
+1. Repliziert sich das ULF2-führende Muster bei weiteren Ereignissen mit anteromedialer Symptomtopographie?
+2. Ist das ULF2/ULF1-Verhältnis (>1 vs. <1) ein prospektiv nutzbarer Diskriminator für B7 vs. B8?
+3. Hätte eine LDX-Erhöhung um 10:00 (statt DPH) die tonische Progression abgefangen?
+4. Ist die LC-Burst-Qualität (elektrisch, Mittelhirn-lokalisiert vs. unspezifischer Hypnic Jerk) semiologisch spezifisch für B8-Interferenz?
+5. Erklärt die B8-Hypothese retrospektiv andere Anfälle mit atypischer Topographie (keine Aura, kein Okzipitalschwerpunkt)?
+
 #### **Synthese: Verknüpfung der Daten mit dem Modell**
 
 **Befund 1: Der 42%-VLF-Fingerabdruck ist ein Trait-Marker.**
@@ -619,6 +704,10 @@ Der Datenpunkt DPH-Tagesintervention (20. April, 16:00) zeigt subjektive Klarhei
 
 Die zweidimensionale Zustandsrepräsentation (Abschnitt I.5) zeigt, dass die prodromale Entwicklung über Tage nicht als einzelnes Schwellenereignis, sondern als progressive Kompression der Dominanz-Achse auf -1 während der Wachstunden sichtbar wird. Am prodromalen Tag (19. April) ist die Dominanz-Varianz auf std = 0.24 kollabiert; das System hat nur noch einen effektiven Freiheitsgrad. DPH stellt die Varianz wieder her, ohne den Mittelwert zu verschieben — es löst die Kompression, nicht die Ursache. Die abgeleitete Metrik b7_risk (interferenz-gewichtetes Exposure-Integral, Abschnitt I.5) ist ein Kandidat für einen prospektiven Prodromalmarker.
 
+**Befund 8: B8-modulierte Ereignisse zeigen ein eigenes Spektral- und Symptomprofil.**
+
+Der Tag 24. April dokumentiert ein Migräneereignis ohne die B7-Signatur der Referenzereignisse (N3/N4, Tag 19./20. April): kein sympathischer Clamp, kein Dominanz-Kompression, keine okzipitale CSD. Stattdessen: ULF2-führende Destabilisierung, erhaltene Verdauung, ausgeprägte Abulie, anteriore/mediale Drucktopographie, DPH-Versagen als Interferenzmodulator. Die Differentialsemiotik erlaubt eine heuristische B7/B8-Diskriminierung: sympathischer Clamp + sensorische Überflutung → B7; erhaltene Verdauung + Abulie → B8. DPH ist der B7-Hebel, LDX-Erhöhung der B8-Hebel (über kortikalen NE-Schutz). Evidenzniveau: Einzelbeobachtung, mechanistisch konsistent.
+
 **Offene Fragen:**
 
 1. Korreliert der VLF-Anteil (>42% vs <42%) über Nächte hinweg mit der Anfallszyklik? Das wäre der spektrale Proxy für die Schwebungsperiode.
@@ -628,6 +717,9 @@ Die zweidimensionale Zustandsrepräsentation (Abschnitt I.5) zeigt, dass die pro
 5. Repliziert die nächtliche Kombination LDX+Doxepin die N3-Klarheit reproduzierbar?
 6. Validiert sich b7_risk als prospektiver Prodromalmarker über mehrere Zyklen? Kritischer Test: sagt ein b7_risk-Anstieg über aufeinanderfolgende Tage den nächsten Anfall vorher, bevor subjektive Prodrome auftreten?
 7. Ist die Zustandsraum-Kompression (Varianzreduktion der Dominanz-Achse in den Wachstunden) der sensitivere Frühindikator als b7_risk?
+8. Ist das ULF2/ULF1-Verhältnis ein prospektiv nutzbarer Diskriminator für B7- vs. B8-getriebene Ereignisse?
+9. Repliziert sich das B8-Profil (fehlender sympathischer Clamp, ULF2-Führung, Abulie ohne sensorische Überflutung) bei weiteren Anfällen mit atypischer Topographie?
+10. Validiert eine LDX-Dosiserhöhung (statt DPH) bei identifiziertem B8-Profil die Zwei-Hebel-Interventionslogik?
 
 **Anhang: Interaktive Dashboards**
 
@@ -639,3 +731,4 @@ Die folgenden HTML-Dateien enthalten interaktive Visualisierungen (Chart.js) der
 - `dashboard_N4_20apr_DPH.html` — Nacht 4
 - `dashboard_Tag19_post_abfang.html` — Tag 19. April
 - `dashboard_Tag20_prodromal.html` — Tag 20. April
+- `dashboard_Tag24_B8_progression.html` — Tag 24. April (falls Dashboard erstellt wird)
