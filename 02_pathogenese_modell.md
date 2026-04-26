@@ -6491,14 +6491,13 @@ Die folgenden HTML-Dateien enthalten interaktive Visualisierungen (Chart.js) der
 - `dashboard_Tag19_post_abfang.html` — Tag 19. April
 - `dashboard_Tag20_prodromal.html` — Tag 20. April
 - `dashboard_Tag24_B8_progression.html` — Tag 24. April (falls Dashboard erstellt wird)
-
 ***
 
 ## **Anhang J: ME/CFS als klinischer Endpunkt des Pathogenesemodells**
 
 **Zusammenfassung**
 
-Dieser Anhang integriert ME/CFS in das Pathogenesemodell als dekompensierte Endstrecke derselben neurologischen Grundarchitektur, die das Hauptmodell am kompensierten Pol beschreibt. Die zentrale Integrationsachse ist ein Clearance-Defizit über gestörtes SWS, auf das alle anderen Modellachsen (Raphe/Hirnstamm, thalamokortikales Gating, D2-Hypersensitivität, Glukokortikoid-Prägung) mechanistisch konvergieren; Mikrozirkulations- und Endothelbefunde sind Ausdruck derselben Dysfunktion, nicht eigenständige Pathologie. Der Crash wird als Bifurkationsereignis eines präkritischen Systems modelliert (sensorische Überflutung → autonome Entgleisung → zerebrale Minderperfusion → zelluläre Energiekrise → Neuroinflammation). Die Kaskade erzwingt eine Korrektur des CSD-Konzepts (lokale Bifurkationsfelder statt wandernder Welle) und motiviert eine SUDEP-analoge Risikokategorie bei sehr schwer Betroffenen. Therapeutisch folgt ein Dual-Hit auf die Clearance-Achse (retardiertes B2 upstream, retardiertes LPC-DHA am Ausführungsort), ergänzt um LDN, Mastzellstabilisierung, niedrigdosierte Benzodiazepine, NMDA-Antagonismus sowie bidirektionale Rückübertragung modellkohärenter Interventionen auf die Migräneprophylaxe.
+Dieser Anhang integriert ME/CFS in das Pathogenesemodell als dekompensierte Endstrecke derselben neurologischen Grundarchitektur, die das Hauptmodell am kompensierten Pol beschreibt. Die zentrale Integrationsachse ist ein Clearance-Defizit über gestörtes SWS, auf das alle anderen Modellachsen (Raphe/Hirnstamm, thalamokortikales Gating, D2-Hypersensitivität, Glukokortikoid-Prägung) mechanistisch konvergieren; Mikrozirkulations- und Endothelbefunde sind Ausdruck derselben Dysfunktion, nicht eigenständige Pathologie. Der Crash wird als Bifurkationsereignis eines präkritischen Systems modelliert (sensorische Überflutung → autonome Entgleisung → zerebrale Minderperfusion → zelluläre Energiekrise → Neuroinflammation). Die Kaskade erzwingt eine Korrektur des CSD-Konzepts (lokale Bifurkationsfelder statt wandernder Welle) und motiviert eine SUDEP-analoge Risikokategorie bei sehr schwer Betroffenen. Therapeutisch folgt ein Dual-Hit auf die Clearance-Achse (retardiertes B2 upstream, retardiertes LPC-DHA am Ausführungsort), ergänzt um LDN, Mastzellstabilisierung, niedrigdosierte Benzodiazepine, NMDA-Antagonismus, zyklische DORA-Gabe als Flip-Flop-Reset sowie bidirektionale Rückübertragung modellkohärenter Interventionen auf die Migräneprophylaxe.
 
 **Vorbemerkung zur Einordnung**
 
@@ -6575,7 +6574,7 @@ Diese Achse ergänzt das Hauptmodell und bindet die anderen Achsen zusammen.
 
 **Wichtige Präzisierung zur SWS-Qualität:** Patienten mit CFS zeigen in Studien nicht notwendig reduzierte SWS-Quantität, sondern reduzierte parasympathische Aktivität während der tieferen Schlafstadien (HRV-HF-Power reduziert, siehe Nitsu et al. im Journal of Clinical Sleep Medicine). Das heißt: Der Patient liegt in SWS, aber das System läuft im falschen autonomen Modus. Die Hirnstamm-Dysregulation sabotiert die parasympathische Dominanz, die SWS braucht, damit Clearance überhaupt effektiv läuft.
 
-Das ist präziser als ein einfaches Quantitätsdefizit und entlastet das Modell von einer angreifbaren Vorhersage.
+Das ist präziser als ein einfaches Quantitätsdefizit und entlastet das Modell von einer angreifbaren Vorhersage. Im Kontext der Flip-Flop-These (J.7.8) lässt sich dieser Befund weiter präzisieren: Das konventionelle Schlafstaging registriert „SWS", weil die makroskopischen Kriterien erfüllt sind, aber der thalamokortikale Gate schließt nie vollständig — keine echten autonomen Nullphasen entstehen, und die glymphatische Clearance bleibt insuffizient trotz scheinbar normalem Tiefschlaf.
 
 **Konzeptuelle Konsequenz:** Mikrozirkulations- und Endothelbefunde in der ME/CFS-Literatur sind in dieser Lesart **nicht eigenständige Pathologie**, sondern Korrelate derselben gestörten Fluss-Clearance-Dynamik an der parenchymal-vaskulären Grenzfläche. Das Modell braucht keine zusätzliche Mikrozirkulationsachse — der einheitliche Defekt ist Clearance, Mikrovaskuläres ist Ausdruck.
 
@@ -6810,11 +6809,77 @@ Die Einzelteile sind peer-reviewed belegbar; die Integration als kohärentes the
 
 **Mechanistisch sinnvollste realistische Variante:** Nicht tiefe Narkose, sondern orales/bukkales NMDA-Antagonist-Protokoll bei frühem Crash-Beginn, Ziel: Abbruch der Bifurkationskaskade vor systemischer Amplifikation. Niedrigdosiert oral resorbierbares Ketamin (Lutschtabletten, nasale Applikation) plus Benzodiazepin als adjuvante GABA-Potenzierung. Off-label, nicht formalisiert.
 
-#### **J.7.8 Induzierte Narkose als theoretische Option**
+#### **J.7.8 DORA (Dual Orexin Receptor Antagonists) als periodischer Flip-Flop-Reset**
+
+**Mechanistische These: Orexin-Depletion als Folge, nicht Ursache**
+
+ME/CFS zeigt konsistent erniedrigte Orexin-A-Spiegel im Liquor (López-Amador 2025, integrative Review). Die konventionelle Lesart interpretiert dies als hypothalamische Dysfunktion, die zur Pathogenese beiträgt. Das Modell invertiert die Kausalität:
+
+Die Orexin-Depletion ist **Endprodukt einer chronischen Kompensationskaskade**, nicht Primärdefekt. Die Sequenz:
+
+1. Initialer Insult (Infektion, Immunaktivierung, oder Raphe-Instabilität aus dem Grundmodell) erzeugt chronische autonome Hyperaktivierung und thalamokortikale Gating-Insuffizienz.
+2. Der Flip-Flop-Switch (Saper-Modell: VLPO/MnPO vs. Wake-Kerne) kann nicht stabil in Sleep kippen → Gate bleibt offen → nicht-erholsamer Schlaf.
+3. Orexin-Neurone kompensieren: Sie stabilisieren den Wake-Zustand aktiv, weil ohne Orexin der instabile Flip-Flop in einen dysfunktionalen Zwischenzustand fällt statt sauber wach zu bleiben.
+4. Über Monate bis Jahre: Chronische Überaktivierung → Orexin-Neurone depletieren oder downregulieren.
+5. Beide Seiten des Flip-Flop sind nun insuffizient — weder stabil wach noch stabil schlafend.
+6. Klinisches Bild: Erschöpfung (kein stabiler Wake) bei gleichzeitig nicht-erholsamem Schlaf (kein stabiler Sleep). Genau das ME/CFS-Kardinalsymptom.
+
+**Abgrenzung zur Narkolepsie:** Bei Narkolepsie Typ 1 sind die Orexin-Neurone autoimmun zerstört — Orexin ≈ null, irreversibel. Bei ME/CFS sind sie depletiert aber vorhanden — Orexin erniedrigt aber nicht null. Der Unterschied ist therapeutisch entscheidend.
+
+**Pathologischer Zwischenzustand des Flip-Flop**
+
+Der Flip-Flop steckt im Niemandsland: Wake-Seite zu schwach für stabiles Wachsein (Fatigue), aber zusammen mit sympathischer Hyperaktivierung und residualem Orexin immer noch stark genug, um die Sleep-Seite am vollständigen Kippen zu hindern. Das System pendelt im Zwischenzustand: weder vollständig wach noch vollständig schlafend. Konventionelles Schlafstaging meldet „Schlaf" (Bewegungsarmut, HR-Absenkung erfüllt), aber der thalamische Gate schließt nie vollständig — keine echten autonomen Nullphasen, keine vollständige kortiko-autonome Entkopplung, keine effektive glymphatische Clearance.
+
+Dieser Befund ist empirisch gestützt: Polysomnographische Studien bei ME/CFS zeigen keine offensichtliche Schlafpathologie und keine erhöhte Tagesschläfrigkeit. Die Autoren (Reeves et al.) schlussfolgern, dass der nicht-erholsame Schlaf keine primäre Schlafstörung widerspiegelt, sondern eine gestörte Schlafhomöostase. Im Kontext des Flip-Flop-Modells: Der Schlaf sieht normal aus, weil die makroskopischen Parameter erfüllt sind — aber der thalamokortikale Gate schließt nicht, und das autonome Profil bleibt im Wach-Modus.
+
+**Therapeutische Rationale: DORA als Reset**
+
+Ein DORA (Daridorexant, Lemborexant, Suvorexant) entfernt die Orexin-Komponente der Wake-Stabilisierung durch kompetitive Blockade an OX1R und OX2R. Im ME/CFS-Kontext bedeutet das: Der letzte verbleibende Wake-Vorteil wird eliminiert. Wenn die verbleibende sympathische Aktivierung allein nicht reicht, um den Flip-Flop zu halten, kippt er — erstmals seit Monaten oder Jahren — vollständig in Sleep. Der thalamische Gate schließt, echte autonome Nullphasen entstehen, das System kann restaurieren.
+
+Die konventionelle Einschätzung „warum blockierst du ein erschöpftes System" greift zu kurz. Es geht nicht um die absolute Höhe des Orexin-Spiegels, sondern um die Balance am Flip-Flop. Selbst depletiertes Orexin plus sympathischer Drive ist gerade genug, um echtes Kippen zu verhindern. DORA muss nicht viel tun — es muss nur den letzten Rest Wake-Vorteil eliminieren, damit das System den Phasenübergang vollziehen kann.
+
+Orexin-Neurone projizieren direkt auf den DRN und aktivieren serotonerge Neurone über OX1R und OX2R. Ein DORA reduziert daher nicht nur den Wake-Drive am Flip-Flop, sondern auch den exzitatorischen Input auf den instabilen DRN im Schlaf — eine partielle Upstream-Intervention am Raphe-Oszillator.
+
+**Zyklische, nicht kontinuierliche Gabe**
+
+Dauerhafte Gabe wäre kontraproduktiv — der Flip-Flop soll nicht permanent in Sleep verriegelt werden. Das Intervall-Konzept:
+
+- Eine DORA-Nacht produziert echte Nullphasen → glymphatische Clearance → Restoration → Orexin-Neurone werden entlastet (keine Kompensationsarbeit nötig).
+- Dieser Puffer hält ein bis mehrere Tage. Dann akkumuliert das Clearance-Defizit wieder.
+- Nächste DORA-Nacht, wenn die Nullphasen in unmedizierter Nacht unter einen Schwellenwert fallen.
+
+Das Intervall wäre anfangs dicht (jede Nacht oder jede zweite, weil das System stark depletiert ist und der Puffer sofort leerläuft) und würde sich mit zunehmender Orexin-Erholung strecken — bis möglicherweise nur noch alle 4–7 Tage ein Reset nötig ist. Die Verlängerung des Intervalls ist der messbare Therapieerfolg.
+
+Ein Wearable-basierter Biomarker (Mayer-Nullphasen-Dauer als Proxy für thalamokortikale Entkopplung, oder SDNN-Floor als Proxy für autonome Stille) könnte die Gabe bedarfsgesteuert triggern statt nach starrem Schema.
+
+**Protektiver Aspekt**
+
+Über den symptomatischen Effekt hinaus könnte periodische DORA-Gabe protektiv sein: Sie verhindert die fortschreitende Orexin-Depletion, die das System progressiv tiefer in den ME/CFS-Attraktor zieht. Frühzeitige Intervention — bevor die Depletion irreversibel wird — könnte den Übergang vom kompensierten (Migräne, ADHS, instabiler Schlaf) zum dekompensierten Pol (ME/CFS) verhindern.
+
+**Substanzauswahl**
+
+Daridorexant (Quviviq, t½ 6–10h) ist für zyklische Anwendung am geeignetsten: kurze Halbwertszeit minimiert Carry-over, in Deutschland zugelassen, Startdosis 25 mg. Lemborexant (effektive t½ 17–19h) hat ein längeres Wirkfenster, das bei besonders fragmentiertem Schlaf nützlich sein könnte, aber mehr Residualsedierung erzeugt.
+
+**Wechselwirkungen im ME/CFS-Kontext**
+
+- Mit Benzodiazepinen (J.7.6): Additiv sedierend, nicht kombinieren — alternieren.
+- Mit LDN (J.7.4): Keine bekannte Interaktion. Verschiedene Angriffspunkte.
+- Mit Mastzellstabilisierung (J.7.5): H1-Blocker der 2. Generation interagieren nicht mit DORAs (verschiedene Rezeptorfamilien). Ketotifen (sedativ, H1) könnte additiv sedieren.
+- CYP3A4-Metabolismus der DORAs beachten: Ketoconazol, Clarithromycin, Grapefruitsaft als CYP3A4-Hemmer erhöhen DORA-Spiegel.
+
+**Sicherheitsprofil**
+
+DORAs zeigen keine Toleranzentwicklung, keinen Rebound, kein Missbrauchspotenzial, keine Atemdepression, keine kognitive Beeinträchtigung in 12-Monats-Studien. Die bei ME/CFS besondere Pharmakosensitivität erfordert Einschleichen (halbe Startdosis), aber das günstige Nebenwirkungsprofil macht DORAs zu einem seltenen Kandidaten, der mit der „start low, go slow"-Regel bei ME/CFS vereinbar ist.
+
+**Evidenzstatus**
+
+Keine klinischen Studien mit DORAs bei ME/CFS. López-Amador (2025) empfiehlt DORA-Studien bei ME/CFS explizit als nächsten Forschungsschritt. Die hier formulierte These (Orexin-Depletion als Folge, zyklischer Reset als Intervention) geht über den Stand der Literatur hinaus und ist nicht publiziert. Die theoretische Grundlage (Flip-Flop-Modell, Orexin-Neurone als Wake-Stabilisator, thalamokortikale Gating-Insuffizienz) ist jeweils einzeln gut belegt; die Integration ist modellspezifisch.
+
+#### **J.7.9 Induzierte Narkose als theoretische Option**
 
 Systematisch nicht etabliert. Mechanistisch stark begründet: GABA-Potenzierung (Propofol) oder NMDA-Blockade (Ketamin) unterbricht die exzitotoxische Kaskade am Punkt der Initiierung. Praktische Realisierung scheitert an fehlender ME/CFS-spezialisierter Anästhesiologie, unvermeidbar reizbelasteter ITS-Umgebung, unvorhersagbarer postanästhetischer Reaktion.
 
-#### **J.7.9 Weitere Modell-kohärente Optionen**
+#### **J.7.10 Weitere Modell-kohärente Optionen**
 
 - **Pyridostigmin** bei POTS-Komponente (cholinerge Tonisierung)
 - **Pacing** als energieökonomisches Management unterhalb der PEM-Schwelle
@@ -6822,7 +6887,7 @@ Systematisch nicht etabliert. Mechanistisch stark begründet: GABA-Potenzierung 
 - **CGRP-Antikörper** bei dokumentierter Migräne-Komponente (trigeminovaskuläre Amplifikation)
 - **Topiramat, Flunarizin, Magnesium, retardiertes Melatonin** zur Bifurkations-Schwellenerhöhung
 
-#### **J.7.10 Kontraindiziert**
+#### **J.7.11 Kontraindiziert**
 
 **Graded Exercise Therapy (GET):** PACE-Trial-Reanalyse hat die ursprüngliche Evidenz widerlegt. NICE-Leitlinie 2021 empfiehlt GET explizit nicht mehr. Mechanistisch unvereinbar mit dem Modell: Belastung oberhalb der Schwelle erzeugt Crashes, Crashes produzieren sekundäre Schäden.
 
@@ -6872,7 +6937,7 @@ Die zentrale Integrationsachse ist das **Clearance-Defizit über gestörtes SWS*
 
 Der "Kernschaden" ist nicht primär struktureller Gewebsverlust, sondern ein metastabiler Attraktor — ein pathologisch stationärer Fehlzustand eines anatomisch intakten, aber fehlregulierten Systems, aufrechterhalten durch selbstverstärkende Rückkopplungen zwischen Neuroinflammation, Clearance-Defizit, SWS-Störung, autonomer Dysbalance und D2-Hypersensitivität. Bei sehr schwer Betroffenen mit langem Verlauf kommt sekundärer struktureller Verlust hinzu (Long-COVID-MRT-Daten als Proxy).
 
-Therapeutisch folgt daraus: Interventionen müssen die selbstverstärkenden Rückkopplungen an mehreren Stellen gleichzeitig genug stören, um das System aus dem Attraktor zu befreien. Einzelne Einzeleingriffe greifen meist nicht, weil die anderen Rückkopplungen den Zustand stabilisieren.
+Therapeutisch folgt daraus: Interventionen müssen die selbstverstärkenden Rückkopplungen an mehreren Stellen gleichzeitig genug stören, um das System aus dem Attraktor zu befreien. Einzelne Einzeleingriffe greifen meist nicht, weil die anderen Rückkopplungen den Zustand stabilisieren. Ein Schlüsselmechanismus ist die zyklische Wiederherstellung echter thalamokortikaler Entkopplung (autonome Nullphasen) via DORA als Flip-Flop-Reset — die Orexin-Depletion bei ME/CFS ist in dieser Lesart Folge der chronischen Kompensationsarbeit, nicht Primärdefekt, und periodische Entlastung der Orexin-Neurone ermöglicht partielle Erholung.
 
 Crashes sind Bifurkationsereignisse dieses präkritischen Systems. Die Intervention an der Bifurkationsschwelle (NMDA-Antagonismus, GABA-Potenzierung, Reizabschirmung) ist mechanistisch stärker als Intervention an der Endstrecke.
 
@@ -6932,6 +6997,14 @@ Der Dual-Hit auf die Clearance-Achse (retardiertes B2 upstream, retardiertes LPC
 - Goldstein, J. — Clonazepam bei ME/CFS (klinische Tradition)
 - Krusz, J. — Propofol-Protokolle bei Status migraenosus
 - Jefferson Headache Center — intravenöses Ketamin bei Status migraenosus
+
+**DORA und Orexin-System**
+
+- López-Amador, N. (2025) — Integrative Review: Orexin System and Hypothalamic Dysfunction in ME/CFS, Exploration of Neuroprotective Therapy
+- Saper, C. B. et al. (2001, 2010) — Flip-Flop-Switch-Modell der Schlaf-Wach-Regulation
+- Kim, W. J. et al. (2024) — Comparative Pharmacology of DORAs, Translational and Clinical Pharmacology
+- Kishi, T. et al. (2020) — Lemborexant vs Suvorexant: Systematic Review and Network Meta-Analysis
+- Open Medicine Foundation — Laufende Studie zu Orexin-A im Liquor bei ME/CFS und Long-COVID (Beth Israel Deaconess Medical Center)
 
 **Leitlinien und Kriterien**
 
