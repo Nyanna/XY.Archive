@@ -27,6 +27,7 @@ Tables without a primary key are fully replaced (TRUNCATE + INSERT).
 """
 
 import argparse
+import os
 import re
 import runpy
 import sqlite3
@@ -46,11 +47,11 @@ DB_REMOTE_URL = "https://drive.google.com/uc?id=1NwUmQ_v7WOQIe5tYm2GixOQYm5HSt-x
 EXPIRY_SECONDS = 1 * 3600
 
 # --- Postgres target --------------------------------------------------
-PG_HOST = "localhost"
-PG_PORT = 5432
-PG_DB = "gadgetbridge"
-PG_USER = "postgres"
-PG_PASSWORD = "postgres"
+PG_HOST = os.environ["PGHOST"]
+PG_PORT = int(os.environ.get("PGPORT", "5432"))
+PG_DB = os.environ["PGDATABASE"]
+PG_USER = os.environ.get("PGUSER", "gadgetbridge")
+PG_PASSWORD = os.environ["PGPASSWORD"]
 PG_SCHEMA = "public"
 
 BATCH_SIZE = 5000
@@ -181,7 +182,7 @@ def get_primary_key(columns):
 def ensure_database():
     conn = psycopg2.connect(
         host=PG_HOST, port=PG_PORT, user=PG_USER, password=PG_PASSWORD,
-        dbname="postgres",
+        dbname=PG_DB, sslmode="require",
     )
     conn.autocommit = True
     try:
@@ -199,7 +200,7 @@ def ensure_database():
 def connect_target():
     return psycopg2.connect(
         host=PG_HOST, port=PG_PORT, user=PG_USER, password=PG_PASSWORD,
-        dbname=PG_DB,
+        dbname=PG_DB, sslmode="require",
     )
 
 

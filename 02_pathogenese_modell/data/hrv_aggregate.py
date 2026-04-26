@@ -11,6 +11,7 @@ SQLite to keep incremental runs cheap.
 
 import argparse
 import math
+import os
 import sqlite3
 import sys
 import time
@@ -29,11 +30,11 @@ from scipy.signal import welch
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
 
 # Postgres target (mirrors cleanup_gadgetbridge.py)
-PG_HOST = "localhost"
-PG_PORT = 5432
-PG_DB = "gadgetbridge"
-PG_USER = "postgres"
-PG_PASSWORD = "postgres"
+PG_HOST = os.environ["PGHOST"]
+PG_PORT = int(os.environ.get("PGPORT", "5432"))
+PG_DB = os.environ["PGDATABASE"]
+PG_USER = os.environ.get("PGUSER", "gadgetbridge")
+PG_PASSWORD = os.environ["PGPASSWORD"]
 PG_SCHEMA = "public"
 PG_TABLE = "HRV_MINUTE_AGGREGATED"
 
@@ -601,7 +602,7 @@ PG_AT_COLUMN = "timestamp_ms_at"
 def connect_pg():
     return psycopg2.connect(
         host=PG_HOST, port=PG_PORT, user=PG_USER, password=PG_PASSWORD,
-        dbname=PG_DB,
+        dbname=PG_DB, sslmode="require",
     )
 
 
