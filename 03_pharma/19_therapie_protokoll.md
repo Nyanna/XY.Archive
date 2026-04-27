@@ -153,6 +153,8 @@ Das Protokoll schirmt Endstrecken ab (ANS peripher via B7-Dämpfung, PFC kortika
 - **Pathogenesemodell, Anhang B.20:** Post-exertionaler Anfall und B7-Erschöpfungsmechanismus als Rationale für B2.
 - **Pathogenesemodell, Anhang D.8:** Differentielle histaminerge Afferenz DRN vs. MRN als Rationale für H1-Selektivität.
 - **Pathogenesemodell, Anhang F:** Interferenzmodell B7/B8 als übergreifende Architektur.
+- **Pathogenesemodell, Anhang J.7 (Therapeutische Ableitungen ME/CFS):** Mechanistische Erweiterung der B2-Indikation auf die Clearance-Achse (mitochondriale Kapazität an der Entstehungsseite der zu clearenden Metaboliten); zusätzliche Rationale für Retardierung über das B7-Erschöpfungsargument hinaus.
+- **Pathogenesemodell, Anhang J.8 (Bidirektionale Migräne-Rückübertragung):** ME/CFS-Paradigma motiviert weitere modellkohärente, im aktuellen Protokoll nicht enthaltene Interventionen (LDN, Mastzellstabilisierung, niedrigdosiertes Clonazepam, Pyridostigmin) als Erweiterungsoptionen.
 - **`03_pharma/`:** Alginat-Retardierung der LDX-Formulierung, Entwicklungsstand.
 
 ---

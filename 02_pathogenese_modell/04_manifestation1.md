@@ -233,6 +233,15 @@ Die synchrone Massendepolarisation initiiert eine selbstpropagierte elektrochemi
 | **Na⁺/Ca²⁺-Einstrom** | Spannungsgesteuerte Kanäle öffnen → massive Ionenumkehr | Stört osmotisches Gleichgewicht → neuronales Ödem, Volumenverschiebung |
 | **Hinter der Wellenfront** | Neuronen in kompletter Depolarisationslähmung | Können nicht mehr feuern → die eigentliche „Spreading Depression" |
 
+**Anmerkung zur Wellen-Metapher:** Die hier verwendete Beschreibung der CSD als wandernde
+Depolarisationsfront mit ~3 mm/min ist die klassische Leão-Lesart. Mechanistisch sauberer
+ist die Reformulierung als sequenzielle Bifurkation lokal gekoppelter Instabilitäten in
+einem exzitablen Medium mit heterogener Suszeptibilität — die "Front" ist Emergenz, kein
+Objekt, das sich bewegt. Diese Korrektur erklärt Propagationsblockade an kleinen Läsionen,
+variable Geschwindigkeit, übersprungene Gyri und solitäre Depolarisationen ohne
+Weiterleitung. Sie ändert nichts am Endpunkt, aber den Vokabeln, mit denen er beschrieben
+wird (vgl. Anhang J.5).
+
 #### **4.4.1 Tonische Destabilisierungswelle als Primärmechanismus**
 
 Die in 4.4.3 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:

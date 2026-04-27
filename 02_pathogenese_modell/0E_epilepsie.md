@@ -68,6 +68,16 @@ Das Modell postuliert eine dreistufige Hierarchie kortikaler Resynchronisationsm
 | **2. CSD** | Wandernde Depolarisationswelle, CGRP-propagiert | Raphe-Takt insuffizient, Exzitation akkumuliert | Erheblich (Migräneschmerz, metabolische Belastung, Stunden Erholung) | Vollständiger Reset, post-iktale Klarheit |
 | **3. Epileptischer Anfall** | Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades (vgl. 4.4.1); *keine* synchrone Massenentladung | CSD nicht verfügbar oder insuffizient | Maximal (Bewusstseinsverlust, neuronaler Schaden, SUDEP-Risiko) | Brutaler Reset, postiktale Erschöpfung |
 
+**Spektrumendpunkt jenseits der Hierarchie.** Die hier beschriebene dreistufige Fallback-
+Architektur charakterisiert das kompensierte Ende des Modellspektrums — Systeme, die
+zwischen den Stufen wechseln können. Am dekompensierten Pol (vgl. Anhang J) verliert die
+Hierarchie ihre sequenzielle Struktur: Das System verharrt in einem metastabilen Attraktor
+mit chronischer Sub-Schwellen-Instabilität; Inputs oberhalb der Restkapazität triggern
+keinen geordneten Reset (Stufe 2/3), sondern einen Crash als lokales Bifurkationsfeld
+(J.5) mit kaskadierender autonomer und exzitotoxischer Entgleisung (J.4). Therapeutisch
+verschiebt sich die Logik von "Fallback ermöglichen" (kompensiertes Ende, vgl. E.7.3) zu
+"Bifurkationsschwelle anheben und Clearance-Achse stützen" (Anhang J.7).
+
 **Evolutionäres Argument:** Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution *für* die Fähigkeit zur CSD, nicht dagegen. Der Schmerz ist die metabolische Rechnung, nicht die Funktion (vgl. B.6.3).
 
 Die ~6,5-Tage-Periodizität (im vorliegenden Fall) ist dann kein Anfallszyklus, sondern ein Wartungszyklus: die Desynchronisation akkumuliert, bis der Funktionsverlust gefährlicher ist als die CSD-Kosten.
@@ -295,6 +305,14 @@ Im Schlaf steht die gesamte Fallback-Hierarchie auf Minimum: Stufe 1 auf physiol
 Die einzige nicht-blockierte Richtung ist nach unten: Spreading Depolarization propagiert in den Hirnstamm, trifft die kaudalen Raphe-Kerne (B1–B3), NTS, preBötzinger-Komplex. Atemstillstand. Die MORTEMUS-Sequenz (Respiration sistiert vor Kardio) bestätigt diese Propagationsrichtung.
 
 **Kernthese:** SUDEP ist kein zufälliges Nacht-Ereignis, sondern die deterministische Konsequenz einer vollständig blockierten Fallback-Hierarchie im Schlaf. Die konventionelle Empfehlung „gute Anfallskontrolle reduziert SUDEP-Risiko" ist aus dieser Perspektive differenzierungsbedürftig: Anfallskontrolle *durch Upstream-Stabilisierung* (Stufe 1: serotonerge Stabilisierung, Betablocker) reduziert SUDEP, weil weniger Exzitation akkumuliert. Anfallskontrolle *durch reine Anfallsunterdrückung* (Stufe 3 blockiert, ohne Stufe 1 zu adressieren) könnte SUDEP-Risiko paradox *erhöhen* — besonders nachts, besonders bei Patienten mit serotonerger Dysregulation als Grunddefekt.
+
+**Konfigurationsparallele in der ME/CFS-Endstrecke.** Bei sehr schwerem ME/CFS sind
+mehrere SUDEP-Risikofaktoren — Raphe-Dysfunktion, Hirnstamm-Strukturreduktion, autonome
+Dysregulation, Arousal-Insuffizienz — chronisch präsent statt nur peri-iktal. Die Schlaf-
+Hierarchie-Blockade ist hier ein Baseline-Zustand, nicht ein anfallsspezifisches Fenster.
+Eine SUDEP-analoge Risikokategorie ist mechanistisch zu erwarten und epidemiologisch
+unzureichend erfasst (Chu, Jason et al. 2018 als einzige quantitative Annäherung).
+Ausführliche Diskussion und klinische Konsequenzen siehe Anhang J.6.
 
 #### **E.7.4 Topiramat-Signal: Substanzspezifische SUDEP-Risikoerhöhung**
 

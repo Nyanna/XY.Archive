@@ -44,6 +44,7 @@ Triade-Hypothese: **AD + ADHS + Migräne** als populationsrelevanter, bislang nu
 | [G — Iatrogene Prävalenz](0G_iatrogene_praevalenz.md) | Historische Korrelation pharmazeutischer Exposition mit ADHS-Prävalenz, Industrieländer-Gradient. |
 | [H — Hypothyreose als Kofaktor](0H_hypothyreose.md) | T3/T4 ↔ 5-HT1A-Sensitivität, Modulator der LDX-Wirksamkeit. |
 | [I — HRV-Frequenzspektrum](0I_hrv_analysis.md) · [Dashboards ↗](https://nyanna.github.io/XY.Archive/dashboards/)| IBI-basierte Spektralanalyse, VLF-Band als 5-HT1A-Intratakt-Signatur, Trait-Fingerabdruck (42 ± 1,5 % VLF). |
+| [J — ME/CFS](0J_mecfs.md) | Dekompensierte Endstrecke der Modellarchitektur, Clearance-Defizit als Integrationsachse, Crash-Bifurkation, SUDEP-Äquivalent, Dual-Hit B2/LPC-DHA. |
 
 ## Build & Daten
 

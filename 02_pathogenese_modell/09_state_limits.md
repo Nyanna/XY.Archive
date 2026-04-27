@@ -106,6 +106,21 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Aufbauender sympathischer Clamp als Ursache, Metrik und Problem simultan | Modellspezifisch | §2.5.1.1 |
 | Funktionelle terminale Erschöpfung (nicht somatische Depletion) als Terminalereignis | Hypothetisch, mechanistisch ableitbar | Hamon/Gartside; Bunin/Wightman |
 | CSD als Ersatzmechanismus für defekten Intertakt-Selbstreset | Modellspezifisch | §2.5.1.1; §4.5 |
+| Glymphatische Clearance primär SWS-abhängig, AQP4-vermittelt | Gesichert | Xie et al. 2013 (Science), Nedergaard-Gruppe |
+| Glymphatische Dysregulation als zentrale Achse bei ME/CFS | Plausibel | Wostyn & De Deyn 2018; MDPI-Übersicht 2025 |
+| Reduzierte parasympathische Aktivität (HRV-HF) während SWS bei CFS | Gesichert | Nitsu et al., J Clin Sleep Med |
+| Mfsd2a als primärer DHA-Transporter an der BBB | Gesichert | Nguyen et al. 2014 (Nature); Chua et al. 2023 (PNAS) |
+| Hirnstamm-/Raphe-/LC-/PAG-MRT-Auffälligkeiten bei ME/CFS | Gesichert | Barnden et al. (NCNED-Serie) |
+| Neuroinflammation bei ME/CFS per TSPO-PET | Gesichert | Nakatomi et al. 2014; VanElzakker (Replikation) |
+| Long-COVID prä/post-MRT: Volumenreduktion in Hirnstamm, orbitofrontal, limbisch | Gesichert | Douaud et al. 2022 (Nature) |
+| Reduzierte zerebrale Perfusion unter Orthostase bei ME/CFS | Gesichert | van Campen & Visser, Doppler-Studien |
+| ME/CFS und kompensierter Spektrumpol teilen neurologische Grundarchitektur | Hypothetisch, modellgetragen | Modellsynthese aus Achsenkonvergenz, Anhang J |
+| Clearance-Defizit als einheitliche Integrationsachse aller anderen Modellachsen | Hypothetisch, mechanistisch konsistent | Modellsynthese, Anhang J.2 |
+| Crash als Bifurkationsereignis eines präkritischen Systems (sechs Phasen) | Hypothetisch, kohärent mit Pathophysiologie | Modellsynthese, Anhang J.4 |
+| CSD als sequenzielle Bifurkation lokal gekoppelter Instabilitäten (statt wandernde Welle) | Hypothetisch, physikalisch konsistent | Modellrevision aus J.5 |
+| SUDEP-analoge Risikokategorie bei sehr schwerem ME/CFS | Hypothetisch, mechanistisch zu erwarten, epidemiologisch unzureichend erfasst | Chu, Jason et al. 2018; Anhang J.6 |
+| Dual-Hit auf Clearance-Achse (retardiertes B2 + retardiertes LPC-DHA) als kohärente therapeutische Strategie | Hypothetisch, Einzelteile peer-reviewed, Integration nicht publiziert | Anhang J.7.1–J.7.3 |
+| Bidirektionale Rückübertragung modellkohärenter Interventionen auf Migräneprophylaxe (LDN, Mastzellstabilisierung, niedrigdosierte Benzodiazepine, Pyridostigmin) | Hypothetisch, mechanistisch begründet, klinisch unerforscht | Anhang J.8 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |

@@ -30,6 +30,16 @@ Version 1.4 – März 2026
 
 Die phänotypische Varianz entsteht nicht durch fünf separate Defekte, sondern durch ein einziges instabiles Regelkreissystem mit unterschiedlichen Downstream-Manifestationen.
 
+**Spektrumarchitektur:** Das Modell beschreibt ein Spektrum mit zwei Polen derselben
+Grundarchitektur. Am kompensierten Pol: thalamokortikale Eigenheit mit funktionaler
+Integration über Kognition, periodische Migränekompensation, intaktes Hardware. Am
+dekompensierten Pol: schwere bis sehr schwere ME/CFS als postinfektiöse Endstrecke, in
+der dieselbe Architektur durch einen geeigneten Trigger in einen pathologisch
+stationären Fehlzustand kippt. Der Trigger ist Katalysator, nicht Ursache. Die zentrale
+Integrationsachse ist ein Clearance-Defizit über gestörtes SWS, auf das alle anderen
+Modellachsen (Raphe/Hirnstamm, thalamokortikales Gating, D2-Hypersensitivität,
+Glukokortikoid-Prägung) mechanistisch konvergieren. Detaillierte Entfaltung in Anhang J.
+
 **Kortikale Desynchronisation als eigenständiger Migränepfad:** Die Raphe fungiert als tonischer kortikaler Synchronisator. Bei insuffizientem serotonergen Arousal-Drive fallen kortikale Regionen in lokalen Schlaf (Off-State-Intrusion bei globalem Wachsein). Das resultierende Patchwork aus wachen und schlafenden Arealen destabilisiert die thalamokortikale Rückkopplungsschleife und senkt die CSD-Schwelle über einen Pfad, der von der Raphe-Oszillationsamplitude unabhängig ist. Der Migräneanfall selbst wirkt als erzwungener Reset: CSD depolarisiert den gesamten Kortex synchron durch und resynchronisiert das desynchronisierte Patchwork (vgl. 4.5, Anhang C).
 
 **Thalamische Kompensationstiefe als Verzweigungsvariable:** Eine Erweiterung des Modells (separates Kapitel) leitet aus der Interaktion zwischen Raphe-Kapazität, thalamischer Kalibrierung und kortikaler Konnektivität eine vertikale Relation zwischen ASD, ADS, ADHS und Hochbegabung ab: Die Kompensationstiefe des Thalamus auf das instabile fetale Serotoninsignal bestimmt, welcher phänotypische Zweig resultiert. Diese Ableitung ist die originärste und derzeit am wenigsten empirisch gestützte These des Modells.
