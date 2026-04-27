@@ -30,6 +30,16 @@ Version 1.4 – März 2026
 
 Die phänotypische Varianz entsteht nicht durch fünf separate Defekte, sondern durch ein einziges instabiles Regelkreissystem mit unterschiedlichen Downstream-Manifestationen.
 
+**Spektrumarchitektur:** Das Modell beschreibt ein Spektrum mit zwei Polen derselben
+Grundarchitektur. Am kompensierten Pol: thalamokortikale Eigenheit mit funktionaler
+Integration über Kognition, periodische Migränekompensation, intaktes Hardware. Am
+dekompensierten Pol: schwere bis sehr schwere ME/CFS als postinfektiöse Endstrecke, in
+der dieselbe Architektur durch einen geeigneten Trigger in einen pathologisch
+stationären Fehlzustand kippt. Der Trigger ist Katalysator, nicht Ursache. Die zentrale
+Integrationsachse ist ein Clearance-Defizit über gestörtes SWS, auf das alle anderen
+Modellachsen (Raphe/Hirnstamm, thalamokortikales Gating, D2-Hypersensitivität,
+Glukokortikoid-Prägung) mechanistisch konvergieren. Detaillierte Entfaltung in Anhang J.
+
 **Kortikale Desynchronisation als eigenständiger Migränepfad:** Die Raphe fungiert als tonischer kortikaler Synchronisator. Bei insuffizientem serotonergen Arousal-Drive fallen kortikale Regionen in lokalen Schlaf (Off-State-Intrusion bei globalem Wachsein). Das resultierende Patchwork aus wachen und schlafenden Arealen destabilisiert die thalamokortikale Rückkopplungsschleife und senkt die CSD-Schwelle über einen Pfad, der von der Raphe-Oszillationsamplitude unabhängig ist. Der Migräneanfall selbst wirkt als erzwungener Reset: CSD depolarisiert den gesamten Kortex synchron durch und resynchronisiert das desynchronisierte Patchwork (vgl. 4.5, Anhang C).
 
 **Thalamische Kompensationstiefe als Verzweigungsvariable:** Eine Erweiterung des Modells (separates Kapitel) leitet aus der Interaktion zwischen Raphe-Kapazität, thalamischer Kalibrierung und kortikaler Konnektivität eine vertikale Relation zwischen ASD, ADS, ADHS und Hochbegabung ab: Die Kompensationstiefe des Thalamus auf das instabile fetale Serotoninsignal bestimmt, welcher phänotypische Zweig resultiert. Diese Ableitung ist die originärste und derzeit am wenigsten empirisch gestützte These des Modells.
@@ -57,6 +67,7 @@ Das Modell beschreibt eine kausale Verlaufskette von einem kongenitalen Primärd
 | **Phase III: Postnatal/kindlich** | Manifeste Gating-Insuffizienz: Hypervigilanz, sensorische Hypersensitivität, vestibuloautonome Reflexe (TCR ab 6\. Lebensjahr dokumentiert), Habituation bleibt unvollständig. Parallel: Atopische Grunderkrankung manifestiert sich als Downstream-Produkt des Raphe-Defekts (Neurodermitis-Diagnose ~9. Lebensmonat). Die darauf folgende iatrogene GC-Exposition induziert mit eigenem Zeitversatz den D2High-Shift (Hit 2), der die Raphe-Oszillationsamplitude in den kaskadenfähigen Bereich hebt (vgl. 2.4.2). |
 | **Phase IV: Chronisch/adult**     | Periodische Migräne als klinisch sichtbarste Manifestation der Raphe-Oszillation ab 20. Lebensjahr. Quasi-wöchentliche Periodizität durch circadiane Dämpfungsmodulation: endogenes τ ≈ 26 h vs. soziales T = 24 h → progressive Absenkung der Raphe-Dämpfungskonstante → maximale Prädisposition alle ~6–7 Tage, bei der minimale Perturbation zur Kaskadenauslösung genügt. Die circadiane Drift wirkt über drei konvergierende Pfade: (1) Raphe-Oszillationsamplitude, (2) autonome Phasenverschiebung, (3) kortikale Desynchronisation durch insuffizienten serotonergen Arousal-Drive — lokaler Schlaf bei Wachheit, der die thalamokortikale Rückkopplungsschleife destabilisiert und die CSD-Schwelle über einen von der Raphe-Oszillation unabhängigen Pfad senkt (vgl. 2.5.3, Kapitel 4.3). CSD fungiert dabei als erzwungener kortikaler Reset: Massendepolarisation resynchronisiert das desynchronisierte Patchwork, erklärt die klinische Post-Migräne-Klarheit (vgl. 4.5). TCR-Kompensation durch aktive kortikale Suppression (PFC-NTS-Hemmung), die unter Erschöpfung, Schlafmangel oder Betablockade zusammenbricht. Interozeptive Inkohärenz durch asynchrone aufsteigende Modulationssysteme — ADHS-Kernsymptomatik als Fehlattribution des interozeptiven Defizits (vgl. Kapitel 8). |
 | **Phase V: Pharmakologisch**      | Dopaminerge Stimulation (Methylphenidat/Lisdexamfetamin) stabilisiert Raphe-Aktivität upstream. Migränefreiheit unter Substanz bei gleichzeitiger Bestätigung der Dopamin-Hypersensitivität durch Wirkung bei Niedrigdosen. Pharmakodynamische Verifikation der Hypersensitivität durch reproduzierbaren vertikalen Blickrichtungsnystagmus unter 15 mg LDX – interpretiert als zerebellär-hirnstammale Integratordekompensation bei langfristig hypodopaminerg-adaptierter Purkinje-Zell-Kalibrierung (siehe 2.4.1). |
+| **Phase VI: Dekompensation (alternativer Pfad)** | Bei katalytischem Trigger (postinfektiös: EBV, Enteroviren, SARS-CoV-2; seltener Trauma, OP, ohne erkennbaren Trigger) auf prädisponiertem Substrat: Übergang in einen metastabilen Attraktor mit chronischem Clearance-Defizit, autonomer Dysregulation und neuroinflammatorischer Selbsterhaltung — schwere bis sehr schwere ME/CFS als Endstrecke. Nicht obligater Folgeschritt von V, sondern alternative Verlaufsbedingung der Modellarchitektur (vgl. Anhang J). |
 
 ### **1.1 Die unerkannte Triade: Atopische Dermatitis, ADHS und Migräne**
 
@@ -121,6 +132,7 @@ Wenn dieses Modell auch nur in der Grundstruktur korrekt ist, dann existiert ein
 | **Anhang G** | **Iatrogene Prävalenz und Hit-Architektur-Erweiterung.** Historische Korrelation pharmazeutischer Exposition mit ADHS-Prävalenz, Industrieländer-Gradient, ASD als Kontrollgröße für diagnostische vs. iatrogene Prävalenzanteile. |
 | **Anhang H** | **Hypothyreose als modulierender Kofaktor.** Bidirektionale Verbindung zwischen Schilddrüsenhormonen und 5-HT1A-Autorezeptorsensitivität, epidemiologische Assoziationen mit Migräne, ADHS und ASD, T4-Substitutionsadäquanz als Modulator der LDX-Wirksamkeit. |
 | **Anhang I** | **HRV-Frequenzspektrum und 5-HT1A-Autorezeptor-Dynamik.** IBI-basierte HRV-Spektralanalyse (Coospo H9Z-Brustgurt) über vier Nächte mit drei pharmakologischen Konditionen. Serielle Architektur SCN↔B8↔B7, VLF-Band als direkte Signatur des 5-HT1A-Intratakts (20-min-Rhythmus), Trait-Fingerabdruck (42 ± 1,5 % VLF) als integrale Instabilitätssignatur. Zustandsraum-Dominanz-Analyse und b7-risk-Integral. |
+| **Anhang J** | **ME/CFS als klinischer Endpunkt des Pathogenesemodells.** Integration des dekompensierten Spektrumendes (postinfektiöse schwere ME/CFS) als Endstrecke derselben neurologischen Architektur. Clearance-Defizit über gestörtes SWS als einheitliche Integrationsachse, auf die Raphe/Hirnstamm, thalamokortikales Gating, D2-Hypersensitivität und Glukokortikoid-Prägung konvergieren. Crash-Mechanistik als Bifurkationsereignis eines präkritischen Systems. CSD-Wellen-Korrektur (lokales Bifurkationsfeld). SUDEP-Äquivalent bei sehr schwerem Verlauf. Dual-Hit-Therapieachse (retardiertes B2 + retardiertes LPC-DHA), bidirektionale Migräne-Rückübertragung. |
 
 ***
 
@@ -1229,6 +1241,15 @@ Die synchrone Massendepolarisation initiiert eine selbstpropagierte elektrochemi
 | **Na⁺/Ca²⁺-Einstrom** | Spannungsgesteuerte Kanäle öffnen → massive Ionenumkehr | Stört osmotisches Gleichgewicht → neuronales Ödem, Volumenverschiebung |
 | **Hinter der Wellenfront** | Neuronen in kompletter Depolarisationslähmung | Können nicht mehr feuern → die eigentliche „Spreading Depression" |
 
+**Anmerkung zur Wellen-Metapher:** Die hier verwendete Beschreibung der CSD als wandernde
+Depolarisationsfront mit ~3 mm/min ist die klassische Leão-Lesart. Mechanistisch sauberer
+ist die Reformulierung als sequenzielle Bifurkation lokal gekoppelter Instabilitäten in
+einem exzitablen Medium mit heterogener Suszeptibilität — die "Front" ist Emergenz, kein
+Objekt, das sich bewegt. Diese Korrektur erklärt Propagationsblockade an kleinen Läsionen,
+variable Geschwindigkeit, übersprungene Gyri und solitäre Depolarisationen ohne
+Weiterleitung. Sie ändert nichts am Endpunkt, aber den Vokabeln, mit denen er beschrieben
+wird (vgl. Anhang J.5).
+
 #### **4.4.1 Tonische Destabilisierungswelle als Primärmechanismus**
 
 Die in 4.4.3 beschriebene CSD ist eine klassische ionische Welle — schnell, selbstlimitierend, refraktäres Gewebe hinterlassend. Die zentrale These: **CSD ist nicht der universelle Migränemechanismus, sondern eine Eskalationsstufe bei maximalem Phasenoffset.** Der Primärmechanismus ist eine *tonische Destabilisierungswelle* — ein schrittweiser Modulationsverlust durch B7/B8-Interferenz, der sich fundamental von CSD unterscheidet:
@@ -2245,6 +2266,21 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Aufbauender sympathischer Clamp als Ursache, Metrik und Problem simultan | Modellspezifisch | §2.5.1.1 |
 | Funktionelle terminale Erschöpfung (nicht somatische Depletion) als Terminalereignis | Hypothetisch, mechanistisch ableitbar | Hamon/Gartside; Bunin/Wightman |
 | CSD als Ersatzmechanismus für defekten Intertakt-Selbstreset | Modellspezifisch | §2.5.1.1; §4.5 |
+| Glymphatische Clearance primär SWS-abhängig, AQP4-vermittelt | Gesichert | Xie et al. 2013 (Science), Nedergaard-Gruppe |
+| Glymphatische Dysregulation als zentrale Achse bei ME/CFS | Plausibel | Wostyn & De Deyn 2018; MDPI-Übersicht 2025 |
+| Reduzierte parasympathische Aktivität (HRV-HF) während SWS bei CFS | Gesichert | Nitsu et al., J Clin Sleep Med |
+| Mfsd2a als primärer DHA-Transporter an der BBB | Gesichert | Nguyen et al. 2014 (Nature); Chua et al. 2023 (PNAS) |
+| Hirnstamm-/Raphe-/LC-/PAG-MRT-Auffälligkeiten bei ME/CFS | Gesichert | Barnden et al. (NCNED-Serie) |
+| Neuroinflammation bei ME/CFS per TSPO-PET | Gesichert | Nakatomi et al. 2014; VanElzakker (Replikation) |
+| Long-COVID prä/post-MRT: Volumenreduktion in Hirnstamm, orbitofrontal, limbisch | Gesichert | Douaud et al. 2022 (Nature) |
+| Reduzierte zerebrale Perfusion unter Orthostase bei ME/CFS | Gesichert | van Campen & Visser, Doppler-Studien |
+| ME/CFS und kompensierter Spektrumpol teilen neurologische Grundarchitektur | Hypothetisch, modellgetragen | Modellsynthese aus Achsenkonvergenz, Anhang J |
+| Clearance-Defizit als einheitliche Integrationsachse aller anderen Modellachsen | Hypothetisch, mechanistisch konsistent | Modellsynthese, Anhang J.2 |
+| Crash als Bifurkationsereignis eines präkritischen Systems (sechs Phasen) | Hypothetisch, kohärent mit Pathophysiologie | Modellsynthese, Anhang J.4 |
+| CSD als sequenzielle Bifurkation lokal gekoppelter Instabilitäten (statt wandernde Welle) | Hypothetisch, physikalisch konsistent | Modellrevision aus J.5 |
+| SUDEP-analoge Risikokategorie bei sehr schwerem ME/CFS | Hypothetisch, mechanistisch zu erwarten, epidemiologisch unzureichend erfasst | Chu, Jason et al. 2018; Anhang J.6 |
+| Dual-Hit auf Clearance-Achse (retardiertes B2 + retardiertes LPC-DHA) als kohärente therapeutische Strategie | Hypothetisch, Einzelteile peer-reviewed, Integration nicht publiziert | Anhang J.7.1–J.7.3 |
+| Bidirektionale Rückübertragung modellkohärenter Interventionen auf Migräneprophylaxe (LDN, Mastzellstabilisierung, niedrigdosierte Benzodiazepine, Pyridostigmin) | Hypothetisch, mechanistisch begründet, klinisch unerforscht | Anhang J.8 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
@@ -4476,6 +4512,16 @@ Das Modell postuliert eine dreistufige Hierarchie kortikaler Resynchronisationsm
 | **2. CSD** | Wandernde Depolarisationswelle, CGRP-propagiert | Raphe-Takt insuffizient, Exzitation akkumuliert | Erheblich (Migräneschmerz, metabolische Belastung, Stunden Erholung) | Vollständiger Reset, post-iktale Klarheit |
 | **3. Epileptischer Anfall** | Terminalphase der tonischen Destabilisierungswelle — sequentielles Zündmuster entlang des Kollapspfades (vgl. 4.4.1); *keine* synchrone Massenentladung | CSD nicht verfügbar oder insuffizient | Maximal (Bewusstseinsverlust, neuronaler Schaden, SUDEP-Risiko) | Brutaler Reset, postiktale Erschöpfung |
 
+**Spektrumendpunkt jenseits der Hierarchie.** Die hier beschriebene dreistufige Fallback-
+Architektur charakterisiert das kompensierte Ende des Modellspektrums — Systeme, die
+zwischen den Stufen wechseln können. Am dekompensierten Pol (vgl. Anhang J) verliert die
+Hierarchie ihre sequenzielle Struktur: Das System verharrt in einem metastabilen Attraktor
+mit chronischer Sub-Schwellen-Instabilität; Inputs oberhalb der Restkapazität triggern
+keinen geordneten Reset (Stufe 2/3), sondern einen Crash als lokales Bifurkationsfeld
+(J.5) mit kaskadierender autonomer und exzitotoxischer Entgleisung (J.4). Therapeutisch
+verschiebt sich die Logik von "Fallback ermöglichen" (kompensiertes Ende, vgl. E.7.3) zu
+"Bifurkationsschwelle anheben und Clearance-Achse stützen" (Anhang J.7).
+
 **Evolutionäres Argument:** Migräne betrifft ~15% der Population — eine Prävalenz, die gegen reine Dysfunktion spricht. Wenn CSD ein Notfall-Resynchronisationsmechanismus ist, selektiert die Evolution *für* die Fähigkeit zur CSD, nicht dagegen. Der Schmerz ist die metabolische Rechnung, nicht die Funktion (vgl. B.6.3).
 
 Die ~6,5-Tage-Periodizität (im vorliegenden Fall) ist dann kein Anfallszyklus, sondern ein Wartungszyklus: die Desynchronisation akkumuliert, bis der Funktionsverlust gefährlicher ist als die CSD-Kosten.
@@ -4703,6 +4749,14 @@ Im Schlaf steht die gesamte Fallback-Hierarchie auf Minimum: Stufe 1 auf physiol
 Die einzige nicht-blockierte Richtung ist nach unten: Spreading Depolarization propagiert in den Hirnstamm, trifft die kaudalen Raphe-Kerne (B1–B3), NTS, preBötzinger-Komplex. Atemstillstand. Die MORTEMUS-Sequenz (Respiration sistiert vor Kardio) bestätigt diese Propagationsrichtung.
 
 **Kernthese:** SUDEP ist kein zufälliges Nacht-Ereignis, sondern die deterministische Konsequenz einer vollständig blockierten Fallback-Hierarchie im Schlaf. Die konventionelle Empfehlung „gute Anfallskontrolle reduziert SUDEP-Risiko" ist aus dieser Perspektive differenzierungsbedürftig: Anfallskontrolle *durch Upstream-Stabilisierung* (Stufe 1: serotonerge Stabilisierung, Betablocker) reduziert SUDEP, weil weniger Exzitation akkumuliert. Anfallskontrolle *durch reine Anfallsunterdrückung* (Stufe 3 blockiert, ohne Stufe 1 zu adressieren) könnte SUDEP-Risiko paradox *erhöhen* — besonders nachts, besonders bei Patienten mit serotonerger Dysregulation als Grunddefekt.
+
+**Konfigurationsparallele in der ME/CFS-Endstrecke.** Bei sehr schwerem ME/CFS sind
+mehrere SUDEP-Risikofaktoren — Raphe-Dysfunktion, Hirnstamm-Strukturreduktion, autonome
+Dysregulation, Arousal-Insuffizienz — chronisch präsent statt nur peri-iktal. Die Schlaf-
+Hierarchie-Blockade ist hier ein Baseline-Zustand, nicht ein anfallsspezifisches Fenster.
+Eine SUDEP-analoge Risikokategorie ist mechanistisch zu erwarten und epidemiologisch
+unzureichend erfasst (Chu, Jason et al. 2018 als einzige quantitative Annäherung).
+Ausführliche Diskussion und klinische Konsequenzen siehe Anhang J.6.
 
 #### **E.7.4 Topiramat-Signal: Substanzspezifische SUDEP-Risikoerhöhung**
 
