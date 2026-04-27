@@ -148,11 +148,12 @@ def load_rr_data():
     try:
         cur = conn.cursor()
         cur.execute(
-            'SELECT "TIMESTAMP", "RR_MILLIS" '
+            'SELECT (EXTRACT(EPOCH FROM timestamp_at) * 1000)::bigint, '
+            '       "RR_MILLIS" '
             'FROM "HEART_RR_INTERVAL_SAMPLE" '
             'WHERE "DEVICE_ID" = %s '
             '  AND "RR_MILLIS" BETWEEN %s AND %s '
-            'ORDER BY "TIMESTAMP", "SEQ"',
+            'ORDER BY timestamp_at, "SEQ"',
             (DEVICE_ID, MIN_RR, MAX_RR),
         )
         rows = cur.fetchall()

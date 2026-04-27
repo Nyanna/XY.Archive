@@ -12,14 +12,13 @@ is mapped to BIGINT because Postgres INTEGER is 32-bit and would
 overflow on millisecond timestamps; REAL is mapped to DOUBLE PRECISION
 and BLOB to BYTEA for semantic equivalence).
 
-For every INTEGER column that holds a point in time (ms since the Unix
-epoch) a companion TIMESTAMPTZ column `<original_lowercase>_at` is
-maintained in the target database. The lowercase _at naming scheme
-applies only to these newly generated columns.
-
-XIAOMI_ACTIVITY_SAMPLE stores raw timestamps in seconds; they are
-normalized to milliseconds during replication so every raw timestamp
-column in Postgres shares the same base unit (ms).
+Every INTEGER column that holds a point in time (Unix epoch, ms or s)
+is replaced in Postgres by a single TIMESTAMPTZ column named
+`<original_lowercase>_at`. The bigint variant is not replicated, so
+the target schema only carries the canonical timestamptz form. The
+unit (ms vs. seconds) is detected from the raw value's magnitude:
+values <= 10^11 are treated as seconds (covers BATTERY_LEVEL,
+XIAOMI_ACTIVITY_SAMPLE), larger values as milliseconds.
 
 Idempotent: database / schema / tables / columns are created on demand,
 rows are upserted via INSERT ... ON CONFLICT on each table's primary key.
@@ -145,10 +144,21 @@ def sqlite_type_to_pg(sqlite_type: str) -> str:
     return SQLITE_TO_PG.get(base.group(1).upper(), "TEXT")
 
 
-def ms_to_ts(ms):
-    if ms is None:
+# Unix-epoch values <= 10^11 are seconds (year 5138 max), values
+# above are milliseconds (lower bound year 2001). All Gadgetbridge
+# raw timestamps fall comfortably outside the ambiguous band.
+_EPOCH_MS_THRESHOLD = 100_000_000_000
+
+
+def epoch_to_ts(v):
+    if v is None:
         return None
-    return datetime.fromtimestamp(ms / 1000.0, tz=timezone.utc)
+    secs = v / 1000.0 if v >= _EPOCH_MS_THRESHOLD else float(v)
+    return datetime.fromtimestamp(secs, tz=timezone.utc)
+
+
+def ts_at_name(col_name):
+    return f"{col_name.lower()}_at"
 
 
 # --- Download --------------------------------------------------------
@@ -215,30 +225,44 @@ def ensure_schema(pg_conn):
 
 
 def ensure_table(pg_conn, table_name, columns, pk_cols, ts_cols):
+    """Create or extend the target table.
+
+    Bigint timestamp columns (members of `ts_cols`) are NOT replicated
+    as raw integers; instead a TIMESTAMPTZ `<col>_at` column is created
+    and used as the canonical timestamp. PK references to a ts_col are
+    rewritten to its `_at` counterpart.
+    """
+    ts_set = set(ts_cols)
     pk_set = set(pk_cols)
+    pg_pk_cols = [ts_at_name(c) if c in ts_set else c for c in pk_cols]
+    pg_pk_set = set(pg_pk_cols)
 
     col_defs = []
     for c in columns:
         name = c[1]
+        if name in ts_set:
+            continue   # bigint ts columns are no longer materialised
         notnull = c[3]
         pg_type = sqlite_type_to_pg(c[2])
         parts = [sql.Identifier(name), sql.SQL(pg_type)]
         # PK columns are implicitly NOT NULL in PG; avoid redundant clause.
-        if notnull and name not in pk_set:
+        if notnull and name not in pg_pk_set:
             parts.append(sql.SQL("NOT NULL"))
         col_defs.append(sql.SQL(" ").join(parts))
 
     for ts_col in ts_cols:
-        col_defs.append(
-            sql.SQL("{} TIMESTAMPTZ").format(
-                sql.Identifier(f"{ts_col.lower()}_at")
-            )
-        )
+        at_name = ts_at_name(ts_col)
+        # Source bigint was NOT NULL for every observed ts column; PK ts
+        # cols are implicitly NOT NULL. Mark non-PK explicitly.
+        parts = [sql.Identifier(at_name), sql.SQL("TIMESTAMPTZ")]
+        if at_name not in pg_pk_set:
+            parts.append(sql.SQL("NOT NULL"))
+        col_defs.append(sql.SQL(" ").join(parts))
 
-    if pk_cols:
+    if pg_pk_cols:
         col_defs.append(
             sql.SQL("PRIMARY KEY ({})").format(
-                sql.SQL(", ").join(sql.Identifier(c) for c in pk_cols)
+                sql.SQL(", ").join(sql.Identifier(c) for c in pg_pk_cols)
             )
         )
 
@@ -265,7 +289,7 @@ def ensure_table(pg_conn, table_name, columns, pk_cols, ts_cols):
 
         for c in columns:
             name = c[1]
-            if name in existing:
+            if name in ts_set or name in existing:
                 continue
             pg_type = sqlite_type_to_pg(c[2])
             cur.execute(
@@ -279,7 +303,7 @@ def ensure_table(pg_conn, table_name, columns, pk_cols, ts_cols):
             existing.add(name)
 
         for ts_col in ts_cols:
-            at_name = f"{ts_col.lower()}_at"
+            at_name = ts_at_name(ts_col)
             if at_name in existing:
                 continue
             cur.execute(
@@ -324,37 +348,55 @@ def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
         if (c[2] or "").upper().startswith("INT")
         and is_timestamp_column(c[1])
     ]
+    ts_set = set(ts_cols)
 
     ensure_table(pg_conn, table_name, columns, pk_cols, ts_cols)
 
-    # Incremental watermark: if the first PK column is an INTEGER
-    # timestamp, only load source rows with that column >= the current
-    # target max. `>=` ensures the boundary row is re-upserted (no-op on
-    # conflict) so that a composite PK with ties at the boundary
-    # (multiple device_ids, seq values, ...) does not get missed.
-    watermark_col = None
-    watermark_val = None
+    # PG-side PK: bigint ts cols are stored as their _at counterpart.
+    pg_pk_cols = [ts_at_name(c) if c in ts_set else c for c in pk_cols]
+
+    # Incremental watermark: if the first PK column was a bigint
+    # timestamp, query MAX(<col>_at) on the target (timestamptz). The
+    # SQLite source still stores the raw integer; convert the datetime
+    # back into the source's native unit for the WHERE filter. `>=`
+    # ensures boundary rows (composite PK ties) are re-upserted.
+    watermark_col = None       # SQLite source column
+    watermark_sqlite = None    # value in SQLite source unit (int)
+    watermark_dt = None        # datetime, for log output
     if not force and pk_cols:
         first = pk_cols[0]
         first_info = next(c for c in columns if c[1] == first)
         first_type = (first_info[2] or "").upper()
         if first_type.startswith("INT") and is_timestamp_column(first):
-            target_max = get_target_max(pg_conn, table_name, first)
+            target_max = get_target_max(
+                pg_conn, table_name, ts_at_name(first)
+            )
             if target_max is not None:
                 watermark_col = first
-                watermark_val = int(target_max)
-                # Target stores ms, source stores seconds for this table.
-                if table_name.upper() == "XIAOMI_ACTIVITY_SAMPLE":
-                    watermark_val = watermark_val // 1000
+                watermark_dt = target_max
+                # Probe one row to detect SQLite's native unit (ms vs s).
+                probe = sqlite_conn.execute(
+                    f"SELECT [{first}] FROM [{table_name}] "
+                    f"WHERE [{first}] IS NOT NULL LIMIT 1"
+                ).fetchone()
+                if probe is None:
+                    watermark_col = None
+                else:
+                    sample = probe[0]
+                    epoch_ms = int(target_max.timestamp() * 1000)
+                    if sample >= _EPOCH_MS_THRESHOLD:
+                        watermark_sqlite = epoch_ms
+                    else:
+                        watermark_sqlite = epoch_ms // 1000
 
-    col_names = [c[1] for c in columns]
-    at_names = [f"{t.lower()}_at" for t in ts_cols]
-
-    # Xiaomi_Activity_Sample: seconds -> milliseconds, so every raw
-    # timestamp column in Postgres uses the same unit.
-    seconds_to_ms = table_name.upper() == "XIAOMI_ACTIVITY_SAMPLE"
-    ts_col_set = set(ts_cols)
-    ts_indices = [col_names.index(t) for t in ts_cols]
+    # Postgres-side column order: non-ts source columns followed by
+    # the derived _at columns. The bigint ts cols themselves are
+    # dropped from the projection.
+    keep_indices = [i for i, c in enumerate(columns) if c[1] not in ts_set]
+    keep_names = [columns[i][1] for i in keep_indices]
+    at_names = [ts_at_name(t) for t in ts_cols]
+    ts_indices = [next(i for i, c in enumerate(columns) if c[1] == t)
+                  for t in ts_cols]
 
     # SQLite stores BOOLEAN columns as 0/1 integers; Postgres bool is
     # strict and rejects integer literals, so convert in Python.
@@ -362,12 +404,15 @@ def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
         i for i, c in enumerate(columns)
         if (c[2] or "").upper().startswith("BOOL")
     ]
+    bool_keep_positions = [
+        keep_indices.index(i) for i in bool_indices if i in keep_indices
+    ]
 
-    all_cols = col_names + at_names
+    all_cols = keep_names + at_names
     insert_cols = sql.SQL(", ").join(sql.Identifier(c) for c in all_cols)
 
-    if pk_cols:
-        pk_set = set(pk_cols)
+    if pg_pk_cols:
+        pk_set = set(pg_pk_cols)
         update_cols = [c for c in all_cols if c not in pk_set]
         if update_cols:
             set_clause = sql.SQL(", ").join(
@@ -379,12 +424,12 @@ def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
             on_conflict = sql.SQL(
                 "ON CONFLICT ({pk}) DO UPDATE SET {upd}"
             ).format(
-                pk=sql.SQL(", ").join(sql.Identifier(p) for p in pk_cols),
+                pk=sql.SQL(", ").join(sql.Identifier(p) for p in pg_pk_cols),
                 upd=set_clause,
             )
         else:
             on_conflict = sql.SQL("ON CONFLICT ({pk}) DO NOTHING").format(
-                pk=sql.SQL(", ").join(sql.Identifier(p) for p in pk_cols)
+                pk=sql.SQL(", ").join(sql.Identifier(p) for p in pg_pk_cols)
             )
     else:
         # No PK: full replace.
@@ -406,12 +451,13 @@ def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
         on_conflict,
     )
 
-    select_cols = ", ".join(f"[{n}]" for n in col_names)
+    src_col_names = [c[1] for c in columns]
+    select_cols = ", ".join(f"[{n}]" for n in src_col_names)
     select_query = f"SELECT {select_cols} FROM [{table_name}]"
     select_params = ()
     if watermark_col is not None:
         select_query += f" WHERE [{watermark_col}] >= ?"
-        select_params = (watermark_val,)
+        select_params = (watermark_sqlite,)
     cur = sqlite_conn.execute(select_query, select_params)
 
     total = 0
@@ -430,23 +476,20 @@ def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
             if row is None:
                 break
             row = list(row)
-            if seconds_to_ms:
-                for i, col in enumerate(col_names):
-                    if col in ts_col_set and row[i] is not None:
-                        row[i] = row[i] * 1000
-            for i in bool_indices:
-                if row[i] is not None:
-                    row[i] = bool(row[i])
-            for idx in ts_indices:
-                row.append(ms_to_ts(row[idx]))
-            batch.append(tuple(row))
+            for pos in bool_keep_positions:
+                src_idx = keep_indices[pos]
+                if row[src_idx] is not None:
+                    row[src_idx] = bool(row[src_idx])
+            kept = [row[i] for i in keep_indices]
+            ts_values = [epoch_to_ts(row[i]) for i in ts_indices]
+            batch.append(tuple(kept + ts_values))
             if len(batch) >= BATCH_SIZE:
                 flush()
         flush()
 
     pg_conn.commit()
     mode = (
-        f"incremental (>= {watermark_val})"
+        f"incremental (>= {watermark_dt.isoformat()})"
         if watermark_col is not None
         else ("full (no pk, truncate+insert)" if not pk_cols else "full")
     )

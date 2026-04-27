@@ -28,9 +28,10 @@ artifact fraction exceeds 5 %, or the LS computation fails.
 Standalone & incremental
 ------------------------
 Not called from cleanup_gadgetbridge.py. The target's existing
-TIMESTAMP_MS values define a skip-set so only new minutes are
-computed. RR samples older than (max(target) - 48 h) are not loaded
-from Postgres on incremental runs.
+timestamp_ms_at values define a skip-set (converted internally to
+minute-start ms) so only new minutes are computed. RR samples older
+than (max(target) - 48 h) are not loaded from Postgres on
+incremental runs.
 """
 
 import argparse
@@ -159,14 +160,13 @@ def connect_pg():
 
 def ensure_table(pg_conn):
     cols = ',\n            '.join(
-        f'"{name}" DOUBLE PRECISION' for name in BAND_NAMES
+        f'"{name}" REAL' for name in BAND_NAMES
     )
     ddl = f'''
         CREATE TABLE IF NOT EXISTS "{PG_SCHEMA}"."{PG_TABLE}" (
-            "TIMESTAMP_MS" BIGINT NOT NULL PRIMARY KEY,
-            "N_BEATS"      BIGINT NOT NULL,
-            {cols},
-            timestamp_ms_at TIMESTAMPTZ
+            timestamp_ms_at TIMESTAMPTZ NOT NULL PRIMARY KEY,
+            "N_BEATS"      SMALLINT NOT NULL,
+            {cols}
         )
     '''
     with pg_conn.cursor() as cur:
@@ -177,7 +177,10 @@ def ensure_table(pg_conn):
 def get_existing_minutes(pg_conn):
     with pg_conn.cursor() as cur:
         cur.execute(
-            pgsql.SQL('SELECT "TIMESTAMP_MS" FROM {}.{}').format(
+            pgsql.SQL(
+                'SELECT (EXTRACT(EPOCH FROM timestamp_ms_at) * 1000)::bigint '
+                'FROM {}.{}'
+            ).format(
                 pgsql.Identifier(PG_SCHEMA),
                 pgsql.Identifier(PG_TABLE),
             )
@@ -186,18 +189,25 @@ def get_existing_minutes(pg_conn):
 
 
 def load_rr_data(pg_conn, min_ts_ms=None):
+    """Load RR samples projected to (epoch-ms, RR_MILLIS).
+
+    HEART_RR_INTERVAL_SAMPLE no longer carries a bigint TIMESTAMP; the
+    canonical timestamp is timestamp_at (timestamptz). We project back
+    to integer ms for the existing minute-binning logic.
+    """
     cur = pg_conn.cursor()
     query = (
-        'SELECT "TIMESTAMP", "RR_MILLIS" '
+        'SELECT (EXTRACT(EPOCH FROM timestamp_at) * 1000)::bigint, '
+        '       "RR_MILLIS" '
         'FROM "HEART_RR_INTERVAL_SAMPLE" '
         'WHERE "DEVICE_ID" = %s '
         '  AND "RR_MILLIS" BETWEEN %s AND %s'
     )
     params = [DEVICE_ID, MIN_RR, MAX_RR]
     if min_ts_ms is not None:
-        query += ' AND "TIMESTAMP" >= %s'
-        params.append(int(min_ts_ms))
-    query += ' ORDER BY "TIMESTAMP", "SEQ"'
+        query += ' AND timestamp_at >= to_timestamp(%s)'
+        params.append(int(min_ts_ms) / 1000.0)
+    query += ' ORDER BY timestamp_at, "SEQ"'
     cur.execute(query, params)
     rows = cur.fetchall()
     cur.close()
@@ -266,9 +276,9 @@ def compute_minute(ts_all, rr_all, minute_start_ms,
 def write_rows(pg_conn, rows):
     if not rows:
         return 0
-    all_cols = ["TIMESTAMP_MS", "N_BEATS"] + BAND_NAMES + ["timestamp_ms_at"]
+    all_cols = ["timestamp_ms_at", "N_BEATS"] + BAND_NAMES
     col_list = pgsql.SQL(", ").join(pgsql.Identifier(c) for c in all_cols)
-    update_cols = [c for c in all_cols if c != "TIMESTAMP_MS"]
+    update_cols = [c for c in all_cols if c != "timestamp_ms_at"]
     set_clause = pgsql.SQL(", ").join(
         pgsql.SQL("{c} = EXCLUDED.{c}").format(c=pgsql.Identifier(c))
         for c in update_cols
@@ -280,17 +290,17 @@ def write_rows(pg_conn, rows):
         pgsql.Identifier(PG_SCHEMA),
         pgsql.Identifier(PG_TABLE),
         col_list,
-        pgsql.Identifier("TIMESTAMP_MS"),
+        pgsql.Identifier("timestamp_ms_at"),
         set_clause,
     )
 
     tuples = []
     for r in rows:
         tup = (
-            r["timestamp_ms"], r["n_beats"],
-            *[r[name] for name in BAND_NAMES],
             datetime.fromtimestamp(r["timestamp_ms"] / 1000.0,
                                    tz=timezone.utc),
+            r["n_beats"],
+            *[r[name] for name in BAND_NAMES],
         )
         tuples.append(tup)
     with pg_conn.cursor() as cur:
@@ -325,7 +335,7 @@ def main():
         min_ts_ms = None
         if existing:
             min_ts_ms = max(existing) - MAX_WINDOW_MS
-            print(f"Incremental load: TIMESTAMP >= {min_ts_ms}")
+            print(f"Incremental load: timestamp_at >= ms {min_ts_ms}")
 
         t0 = time.monotonic()
         ts, rr = load_rr_data(pg, min_ts_ms=min_ts_ms)

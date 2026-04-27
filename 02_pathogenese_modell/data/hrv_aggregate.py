@@ -590,7 +590,7 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
 
 
 PG_COLUMNS = [
-    "TIMESTAMP_MS", "N_BEATS", "HR_BPM", "AVG_RR_MS", "MIN_RR_MS", "MAX_RR_MS",
+    "N_BEATS", "HR_BPM", "AVG_RR_MS", "MIN_RR_MS", "MAX_RR_MS",
     "STDDEV_RR_MS", "RMSSD_MS", "LN_RMSSD", "VAGAL_INDEX", "RMSSD_PCT", "SDNN_MS",
     "RMSSD_SDNN_RATIO", "VAGAL_BALANCE", "PNN50",
     "VLF_MS2", "LF_MS2", "HF_MS2", "ULF_MS2", "ULF1_MS2", "ULF2_MS2",
@@ -609,32 +609,31 @@ def connect_pg():
 def ensure_hrv_table(pg_conn):
     ddl = f'''
         CREATE TABLE IF NOT EXISTS "{PG_SCHEMA}"."{PG_TABLE}" (
-            "TIMESTAMP_MS"     BIGINT NOT NULL PRIMARY KEY,
-            "N_BEATS"          BIGINT NOT NULL,
-            "HR_BPM"           DOUBLE PRECISION,
-            "AVG_RR_MS"        DOUBLE PRECISION,
-            "MIN_RR_MS"        BIGINT,
-            "MAX_RR_MS"        BIGINT,
-            "STDDEV_RR_MS"     DOUBLE PRECISION,
-            "RMSSD_MS"         DOUBLE PRECISION,
-            "LN_RMSSD"         DOUBLE PRECISION,
-            "VAGAL_INDEX"      DOUBLE PRECISION,
-            "RMSSD_PCT"        DOUBLE PRECISION,
-            "SDNN_MS"          DOUBLE PRECISION,
-            "RMSSD_SDNN_RATIO" DOUBLE PRECISION,
-            "VAGAL_BALANCE"    DOUBLE PRECISION,
-            "PNN50"            DOUBLE PRECISION,
-            "VLF_MS2"          DOUBLE PRECISION,
-            "LF_MS2"           DOUBLE PRECISION,
-            "HF_MS2"           DOUBLE PRECISION,
-            "ULF_MS2"          DOUBLE PRECISION,
-            "ULF1_MS2"         DOUBLE PRECISION,
-            "ULF2_MS2"         DOUBLE PRECISION,
-            "LF_HF_RATIO"      DOUBLE PRECISION,
-            "B7B8_DOM"         DOUBLE PRECISION,
-            "B7B8_OFF"         DOUBLE PRECISION,
-            "DFA_ALPHA1"       DOUBLE PRECISION,
-            {PG_AT_COLUMN}     TIMESTAMPTZ
+            {PG_AT_COLUMN}     TIMESTAMPTZ NOT NULL PRIMARY KEY,
+            "N_BEATS"          SMALLINT NOT NULL,
+            "HR_BPM"           REAL,
+            "AVG_RR_MS"        REAL,
+            "MIN_RR_MS"        SMALLINT,
+            "MAX_RR_MS"        SMALLINT,
+            "STDDEV_RR_MS"     REAL,
+            "RMSSD_MS"         REAL,
+            "LN_RMSSD"         REAL,
+            "VAGAL_INDEX"      REAL,
+            "RMSSD_PCT"        REAL,
+            "SDNN_MS"          REAL,
+            "RMSSD_SDNN_RATIO" REAL,
+            "VAGAL_BALANCE"    REAL,
+            "PNN50"            REAL,
+            "VLF_MS2"          REAL,
+            "LF_MS2"           REAL,
+            "HF_MS2"           REAL,
+            "ULF_MS2"          REAL,
+            "ULF1_MS2"         REAL,
+            "ULF2_MS2"         REAL,
+            "LF_HF_RATIO"      REAL,
+            "B7B8_DOM"         REAL,
+            "B7B8_OFF"         REAL,
+            "DFA_ALPHA1"       REAL
         )
     '''
     with pg_conn.cursor() as cur:
@@ -643,9 +642,17 @@ def ensure_hrv_table(pg_conn):
 
 
 def get_existing_minutes(pg_conn):
+    """Return set of minute starts (ms epoch, int) already stored.
+
+    Internal logic still keys minutes by integer ms; the on-disk PK is a
+    timestamptz, so we project epoch-ms via EXTRACT.
+    """
     with pg_conn.cursor() as cur:
         cur.execute(
-            pgsql.SQL('SELECT "TIMESTAMP_MS" FROM {}.{}').format(
+            pgsql.SQL(
+                'SELECT (EXTRACT(EPOCH FROM {}) * 1000)::bigint FROM {}.{}'
+            ).format(
+                pgsql.Identifier(PG_AT_COLUMN),
                 pgsql.Identifier(PG_SCHEMA),
                 pgsql.Identifier(PG_TABLE),
             )
@@ -657,9 +664,9 @@ def write_results_pg(pg_conn, rows):
     if not rows:
         return 0, None
 
-    all_cols = PG_COLUMNS + [PG_AT_COLUMN]
+    all_cols = [PG_AT_COLUMN] + PG_COLUMNS
     col_list = pgsql.SQL(", ").join(pgsql.Identifier(c) for c in all_cols)
-    update_cols = [c for c in all_cols if c != "TIMESTAMP_MS"]
+    update_cols = [c for c in all_cols if c != PG_AT_COLUMN]
     set_clause = pgsql.SQL(", ").join(
         pgsql.SQL("{c} = EXCLUDED.{c}").format(c=pgsql.Identifier(c))
         for c in update_cols
@@ -671,20 +678,20 @@ def write_results_pg(pg_conn, rows):
         pgsql.Identifier(PG_SCHEMA),
         pgsql.Identifier(PG_TABLE),
         col_list,
-        pgsql.Identifier("TIMESTAMP_MS"),
+        pgsql.Identifier(PG_AT_COLUMN),
         set_clause,
     )
 
     tuples = [
         (
-            r["timestamp_ms"], r["n_beats"], r["hr_bpm"], r["avg_rr_ms"],
+            datetime.fromtimestamp(r["timestamp_ms"] / 1000.0, tz=timezone.utc),
+            r["n_beats"], r["hr_bpm"], r["avg_rr_ms"],
             r["min_rr_ms"], r["max_rr_ms"], r["stddev_rr_ms"], r["rmssd_ms"],
             r["ln_rmssd"], r["vagal_index"], r["rmssd_pct"], r["sdnn_ms"],
             r["rmssd_sdnn_ratio"], r["vagal_balance"], r["pnn50"],
             r["vlf_ms2"], r["lf_ms2"], r["hf_ms2"],
             r["ulf_ms2"], r["ulf1_ms2"], r["ulf2_ms2"],
             r["lf_hf_ratio"], r["b7b8_dom"], r["b7b8_off"], r["dfa_alpha1"],
-            datetime.fromtimestamp(r["timestamp_ms"] / 1000.0, tz=timezone.utc),
         )
         for r in rows
     ]
@@ -702,11 +709,12 @@ def write_results_pg(pg_conn, rows):
 
         cur.execute(
             pgsql.SQL(
-                'SELECT "TIMESTAMP_MS", "N_BEATS", "HR_BPM", "RMSSD_MS", '
+                'SELECT {}, "N_BEATS", "HR_BPM", "RMSSD_MS", '
                 '"LF_HF_RATIO", "DFA_ALPHA1" '
                 'FROM {}.{} WHERE "RMSSD_MS" IS NOT NULL '
                 'ORDER BY "RMSSD_MS" DESC LIMIT 1'
             ).format(
+                pgsql.Identifier(PG_AT_COLUMN),
                 pgsql.Identifier(PG_SCHEMA),
                 pgsql.Identifier(PG_TABLE),
             )
