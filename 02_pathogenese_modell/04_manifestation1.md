@@ -557,7 +557,7 @@ Die Kombination aus B7- und B8-Zustand determiniert den klinischen Phänotyp. Di
 |:-----------|:-----------|:------------|:----------------|:-------------------|
 | Instabil/aphasisch | Stabil(er) | Ja (B7 aphasisch gegen B8-Takt) | Ja (B7→ANS monosynaptisch) | **MBA-Phänotyp:** ANS-Symptome + CSD |
 | Stabil | Instabil | Ja (B8 aphasisch gegen B7-Takt) | Nein (B8 projiziert nicht primär auf ANS-Kerne) | **Migräne mit Aura ohne ANS-Symptomatik** |
-| Depleted | Stabil | Nein (nur ein aktiver Oszillator) | Ja (Entzug) | **Reine ANS-Symptomatik, keine CSD** |
+| Depleted | Stabil | Nein (nur ein aktiver Oszillator) | Ja (Entzug) | **Reine ANS-Symptomatik, keine CSD.** Klinisch: NTS-Tonusinsuffizienz — moderate HR-Elevation (adrenal, nicht neural), Flushing, Erschöpfung bei erhaltener Kognition. Keine orthostatische Tachykardie. Tonischer NTS-5-HT2A-Pfad insuffizient → RVLM unreguliert → HPA-Kompensation (vgl. 5.7). Differentialdiagnostische Überlappung mit POTS bei Flushing und Erschöpfung, aber distinkt durch Fehlen des posturalen Triggers. |
 | Stabil | Depleted | Nein | Nein | **Zirkadianer Drift, hippocampale Symptome, keine Migräne** |
 
 **Zeile 2** ist klinisch beschrieben aber nie als differentieller Mechanismus erkannt: Migräne mit klassischer Aura ohne Übelkeit, ohne Schwindel, ohne Kreislaufinstabilität — konventionell als „mildere Form" kodiert, im Modell als B8-dominante Instabilität bei stabilem B7.

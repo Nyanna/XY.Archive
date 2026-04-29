@@ -90,6 +90,15 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | B7-Aphasie (reduzierte Amplitude, inkonsistenter Delay) als ANS-Destabilisierungsmechanismus | Einzelfallbeobachtung, HR-Spreading-Daten | Anhang B.20 |
 | Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt, CSD durch post-exertionale Regeneration (4.8) | Modellvorhersage, epidemiologisch gestützt | Koppen et al. 2013 (38% ETM-Prävalenz, 160 min Latenz) |
 | Differentielle Phänotypologie: B7-Instabilität → MBA + CSD; B8-Instabilität → Aura ohne ANS; B7-Depletion → reine ANS; B8-Depletion → kein Migränephänotyp | Modellvorhersage, klinisch plausibel, nicht direkt getestet | Abgeleitet aus Innervierungsanatomie (Anhang F), Differentialtabelle (4.7.2) |
+| 5-HT2A-Aktivierung im NTS hemmt RVLM-Sympathikus tonisch (nicht nur reflexiv) | Gesichert | Sévoz-Couche et al. 2004/2006, Tiermodell, reproduziert |
+| PFC→Hypothalamus→Raphe→NTS 5-HT2A als Baroreflex-Fazilitationspfad | Gesichert | Sévoz-Couche et al. 2006, Tiermodell |
+| NTS-Tonusinsuffizienz bei B7-Insuffizienz (adrenale HR-Kompensation + Flushing + Erschöpfung bei erhaltener Kognition, keine orthostatische Tachykardie) | Einzelfallbeobachtung, mechanistisch konsistent | HRV-Daten 29.04.2026; POTS-Literatur als Differentialdiagnose (Raj 2006, Circulation 2013) |
+| LDX schützt CSD-Pfad, entblößt NTS-Tonuspfad durch PFC-Priorisierung | Hypothetisch, konsistent | Modellvorhersage aus PFC-Ressourcenkonkurrenz |
+| Nullphase als notwendige, nicht hinreichende Bedingung für SWS-Restauration | Einzelfallbeobachtung | DPH-Vergleich: Nullphase ohne Morgenumschaltung (29.04.2026) |
+| Morgenprofil (sympathische Umschaltung) als Restaurationsmarker, nicht Nachtprofil | Einzelfallbeobachtung, methodisch ableitbar | HRV-Daten 29.04.2026 |
+| LDX-Sympathikus-Effekt (HR-Rechteck-Puls) läuft über NTS-Pfad, nicht peripher-katecholaminerg | Einzelfallbeobachtung, mechanistisch konsistent | Dissoziation Kognition/Sympathikus unter LDX am 29.04.2026; Rechteck-Kinetik (Anhang D) konsistent mit zentraler Umschaltung |
+| Abwesenheit des LDX-Peaks bei erhaltener Kognition als diagnostischer Marker für NTS-Tonusinsuffizienz | Einzelfallbeobachtung | 29.04.2026 — LDX kognitiv wirksam, sympathischer Drive absent |
+| LDX-Dosiserhöhung bei NTS-Insuffizienz adressiert falschen Engpass (PFC-Priorisierung) | Hypothetisch, mechanistisch ableitbar | Modellvorhersage aus PFC-Ressourcenkonkurrenz + NTS-Pfad-Abhängigkeit |
 | 95% der MBA-Patienten haben auch typische Aura → konsistent mit variablem B7-Zustand, nicht fixem Phänotyp | Literaturgestützt | Eriksen et al. (MedLink Neurology) |
 | Schwindel mit Nystagmus = vestibuläre Kerne (B7); Schwindel ohne Nystagmus = möglicherweise kortikal (Demarquay) | Vorgeschlagener klinischer Differentialmarker | Abgeleitet, nicht validiert |
 | Demarquay-Alternative (kortikaler Ursprung) erklärt Symptomtopographie, nicht Symptomintensität | Literaturkritik | Demarquay et al. 2018 (Cephalalgia) |

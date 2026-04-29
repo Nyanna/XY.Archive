@@ -198,7 +198,7 @@ Der Dauerstress-Mi-Band-Monitoring-Datensatz (n=79 Nächte, Anhang B) erfasst HR
 - PRE- und POST-LDX-Plateaus bleiben unverändert — LDX erzeugt ein isoliertes 2-Stunden-Plateau, eingebettet in einen stabilen Baseline-Zustand.
 - Kein graduelles Aufbauen, kein graduelles Abklingen → Rechteck-Puls über dem Grundzustand.
 
-Diese Beobachtung stützt die Modellvorhersage, dass LDX den Oszillator nicht repariert, sondern periodisch überschreibt (vgl. 4.2, Amplitudenmodulation; 2.5.5, Dämpfungskonstanten-Synthese).
+Diese Beobachtung stützt die Modellvorhersage, dass LDX den Oszillator nicht repariert, sondern periodisch überschreibt (vgl. 4.2, Amplitudenmodulation; 2.5.5, Dämpfungskonstanten-Synthese). Der Mechanismus des LDX-Peaks wurde in §5.7 als NTS-zustandsabhängig identifiziert: Der sympathische Drive läuft über den Pfad PFC→Hypothalamus→Raphe→NTS (5-HT2A)→RVLM und kann bei B7-Insuffizienz am NTS ausbleiben — kognitive LDX-Wirkung bei absentem sympathischem Peak (29.04.2026).
 
 **Vier HR-basierte Anomalie-Marker**
 

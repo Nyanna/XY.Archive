@@ -118,7 +118,7 @@ Wenn dieses Modell auch nur in der Grundstruktur korrekt ist, dann existiert ein
 | **2** | **Primärdefekt: Kongenitale Raphe-Dysregulation.** Raphe-Anatomie, underdämpfte Autoregulationsschleife, Two-Hit-Architektur (5-HT1A-Instabilität + D2High-Shift durch GC-Exposition). B7/B8-Dual-Oszillator mit SCN-Relay, zirkadiane Schwebung; Intratakt (5-HT1A-Grenzzyklus) und Intertakt (SCN-Lock von B8, Drift von B7) als getrennte Zeitebenen; aufbauender sympathischer Clamp als Ursache/Metrik/Problem simultan. Kortikale Konsequenzen: lokaler Schlaf, posteriore Vulnerabilität, Chronotyp-Fehlattribution, Schlafarchitektur als Kohärenzmarker. |
 | **3** | **Downstream-Pathologie I: Thalamische Fehlkalibrierung.** Fetale Kalibrierung auf instabiles Signal, verrauschter Prediction Error, ADHS als SNR-Problem (Diskriminierbarkeit statt Aufmerksamkeitsdefizit). Gating/Schwelle-Dissoziation unter LDX. |
 | **4** | **Klinische Manifestation I: Migräne als Raphe-Zyklusstörung.** Trigger-Mechanismen (Nap-Kaskade, Sport, Schlaf-Wach-Übergang), CSD-Auslösung (tonische Welle, Intratakt-Fragmentierung, Zwei-Oszillator-Bedingung), CSD als kompensatorische Resynchronisation; Intertakt-Drift als übergeordneter Fragmentierungsmechanismus; CSD als Ersatzmechanismus für defekten Intertakt-Selbstreset. MBA-Reattribution, Differentialphänotypologie, Betablocker-Paradox. Dreigliederiger Triptan-Mechanismus, Sumatriptan als Schlaf-Enabler. |
-| **5** | **Klinische Manifestation II: Autonome Dysregulation.** Drei afferente Pfade zum NTS, vestibuloautonomer Reflex und TCR-Prädisposition, kortikale NTS-Suppression. Kompoundierender Effekt von LDX und Betablocker-Entfall auf autonome Reflexschwelle. B7-Aphasie als dritter ANS-Zustand: biologisches Substrat der Depletion (vesikulär, TPH2-limitiert, ATP-grenzwertig). PFC→NTS-Kompensation und deren Erschöpfungsparadox. |
+| **5** | **Klinische Manifestation II: Autonome Dysregulation.** Drei afferente Pfade zum NTS, vestibuloautonomer Reflex und TCR-Prädisposition, kortikale NTS-Suppression. Kompoundierender Effekt von LDX und Betablocker-Entfall auf autonome Reflexschwelle. B7-Aphasie als dritter ANS-Zustand. **Tonische sympathovagale Regulation als zweiter B7-Downstream-Pfad** (Raphe→NTS 5-HT2A→RVLM), distinct vom CSD-Pfad; NTS-Tonusinsuffizienz als Manifestation; LDX als CSD-Schutz bei gleichzeitiger NTS-Exposition; Nullphase als schwacher SWS-Indikator. PFC→NTS-Kompensation und deren Erschöpfungsparadox. |
 | **6** | **Klinische Manifestation III: ASD-Phänotyp.** ASD als Konfigurationsvariante des Primärdefekts. Repetitives Verhalten als Stabilisierungsmechanismus gegen instabile Attraktorbecken. Identität als thalamische Wahrnehmungssignatur: Substanzaversion durch thalamischen Kohärenzverlust. |
 | **7** | **Pharmakologische Evidenz: Selbstversuch.** Methylphenidat, Lisdexamfetamin, therapeutisches Fenster. |
 | **8** | **Interozeptive Inkohärenz als Downstream-Effekt monoaminerger Desynchronisierung.** Asynchrone Modulationssysteme → Zustandsblindheit, Konzentration als Fehlattribution. LDX als Synchronisator (Kohärenz, nicht Arousal). NREM-Parasomnien als extremste State-Dissoziation. Kreuzkorrelation ADHD–Migräne–Epilepsie–Late-Chronotyp. |
@@ -1565,7 +1565,7 @@ Die Kombination aus B7- und B8-Zustand determiniert den klinischen Phänotyp. Di
 |:-----------|:-----------|:------------|:----------------|:-------------------|
 | Instabil/aphasisch | Stabil(er) | Ja (B7 aphasisch gegen B8-Takt) | Ja (B7→ANS monosynaptisch) | **MBA-Phänotyp:** ANS-Symptome + CSD |
 | Stabil | Instabil | Ja (B8 aphasisch gegen B7-Takt) | Nein (B8 projiziert nicht primär auf ANS-Kerne) | **Migräne mit Aura ohne ANS-Symptomatik** |
-| Depleted | Stabil | Nein (nur ein aktiver Oszillator) | Ja (Entzug) | **Reine ANS-Symptomatik, keine CSD** |
+| Depleted | Stabil | Nein (nur ein aktiver Oszillator) | Ja (Entzug) | **Reine ANS-Symptomatik, keine CSD.** Klinisch: NTS-Tonusinsuffizienz — moderate HR-Elevation (adrenal, nicht neural), Flushing, Erschöpfung bei erhaltener Kognition. Keine orthostatische Tachykardie. Tonischer NTS-5-HT2A-Pfad insuffizient → RVLM unreguliert → HPA-Kompensation (vgl. 5.7). Differentialdiagnostische Überlappung mit POTS bei Flushing und Erschöpfung, aber distinkt durch Fehlen des posturalen Triggers. |
 | Stabil | Depleted | Nein | Nein | **Zirkadianer Drift, hippocampale Symptome, keine Migräne** |
 
 **Zeile 2** ist klinisch beschrieben aber nie als differentieller Mechanismus erkannt: Migräne mit klassischer Aura ohne Übelkeit, ohne Schwindel, ohne Kreislaufinstabilität — konventionell als „mildere Form" kodiert, im Modell als B8-dominante Instabilität bei stabilem B7.
@@ -1657,7 +1657,7 @@ Die vollständige Triptan-Mechanistik im Modell umfasst drei Glieder, die über 
 
 **Zusammenfassung**
 
-Dieses Kapitel beschreibt die autonome Dysregulation als Downstream-Manifestation des Raphe-Defekts über drei neuroanatomisch distinkte afferente NTS-Pfade (orthostatisch, vestibulär, trigeminal). Instabile Raphe-Aktivität senkt die NTS-Schwelle für autonome Reflexe periodisch ab; die kortikale NTS-Suppression (PFC → PAG → NTS) ist ressourcenintensiv und unter Erschöpfung oder Betablockade fragil. Das Modell prognostiziert einen kompoundierenden Effekt bei LDX + Metoprolol-Entfall über drei unabhängige, additive Pfade: serotonerge NTS-Stabilisierung, noradrenerge PFC-Kapazität und Wiederherstellung der sympathischen Gegenregulation. B7-Aphasie (Feuermuster erhalten, Transmitteroutput stochastisch degradiert) wird als destabilisierendster ANS-Zustand identifiziert. Das PFC→NTS-Erschöpfungsparadox erklärt den klinisch beobachteten Kollaps beim Übergang von aktivem Fahren (PFC-Demand hält NTS-Schwelle aufrecht) zu Beifahrersitz (Wegfall des letzten Stabilisierungspfades).
+Dieses Kapitel beschreibt die autonome Dysregulation als Downstream-Manifestation des Raphe-Defekts über zwei mechanistisch distinkte Pfade: (1) das reflexive Schwellenmodell — drei neuroanatomisch distinkte afferente NTS-Pfade (orthostatisch, vestibulär, trigeminal), deren Schwelle durch instabile Raphe-Aktivität periodisch abgesenkt wird; (2) den **tonischen NTS-5-HT2A-Pfad** — Raphe→NTS (5-HT2A)→RVLM als zweiter B7-Downstream-Pfad, distinct vom CSD-Pfad (Raphe→Thalamus→Cortex), der die sympathische Grundsteuerung kontrolliert. Die kortikale NTS-Suppression (PFC → PAG → NTS) ist ressourcenintensiv und unter Erschöpfung oder Betablockade fragil. Das Modell prognostiziert einen kompoundierenden Effekt bei LDX + Metoprolol-Entfall über drei unabhängige, additive Pfade: serotonerge NTS-Stabilisierung, noradrenerge PFC-Kapazität und Wiederherstellung der sympathischen Gegenregulation. B7-Aphasie (Feuermuster erhalten, Transmitteroutput stochastisch degradiert) wird als destabilisierendster ANS-Zustand identifiziert. LDX stabilisiert den CSD-Pfad, entblößt aber den NTS-Tonuspfad durch PFC-Priorisierung — NTS-Tonusinsuffizienz (adrenale HR-Kompensation, Flushing, Erschöpfung bei erhaltener Kognition; keine orthostatische Tachykardie) als klinisches Korrelat. Nullphase ist notwendige, nicht hinreichende Bedingung für SWS-Restauration; das Morgenprofil (sympathische Umschaltung) ist der eigentliche Restaurationsmarker. Das PFC→NTS-Erschöpfungsparadox erklärt den klinisch beobachteten Kollaps beim Übergang von aktivem Fahren (PFC-Demand hält NTS-Schwelle aufrecht) zu Beifahrersitz (Wegfall des letzten Stabilisierungspfades).
 
 ---
 
@@ -1679,7 +1679,7 @@ Die Raphe-Kerne projizieren nicht nur aufsteigend, sondern auch absteigend in de
 
 | Zielstruktur | Serotonerge Modulation |
 | :---- | :---- |
-| **NTS** | 5-HT3-Rezeptoren hochdicht. Stabile Raphe-Aktivität → stabile NTS-Schwelle für autonome Reflexe. |
+| **NTS** | Multipel innerviert: **5-HT2A** → tonische RVLM-Hemmung (sympathische Grundsteuerung); **5-HT3** → reflexive Baroreflex-Modulation. Stabile Raphe-Aktivität → stabile NTS-Schwelle für autonome Reflexe (5-HT3) UND stabile sympathovagale Balance (5-HT2A). |
 | **Dorsaler Vaguskern** | 5-HT2A-Rezeptoren modulieren Grundtonus des ventralen Vagus. |
 | **Nucleus ambiguus** | Serotonerge Projektionen modulieren kardialen Vagustonus. |
 | **Sympathische Präganglien** | Serotonerge Modulation der sympathischen Grundaktivität. |
@@ -1709,6 +1709,7 @@ Das Modell identifiziert drei unabhängige Modulatoren der autonomen Reflexschwe
 | **Serotonerge NTS-Schwelle** | Raphe → NTS (5-HT3): stabile Raphe-Aktivität → höhere, weniger schwankende Reflexschwelle | LDX-Upstream-Stabilisierung der Raphe |
 | **Kortikale NTS-Suppression** | PFC → PAG → NTS: noradrenerg-abhängig, ressourcenintensiv | LDX-noradrenerge Komponente stärkt PFC-Kapazität |
 | **Sympathische Gegenregulation** | Einziger Abbruchmechanismus nach Reflexauslösung: sympathische Antwort terminiert dorsalen Vagus-Shutdown | Metoprolol-Entfall beseitigt iatrogene Suppression |
+| **Tonische sympathovagale Balance** | Raphe → NTS (5-HT2A) → RVLM: Serotonin am NTS hemmt prämotorische sympathische Neurone; bei B7-Insuffizienz fehlt diese Hemmung → RVLM unreguliert → HPA-Kompensation | Nicht direkt pharmakologisch adressierbar; LDX stabilisiert Raphe upstream, priorisiert aber CSD-Pfad |
 
 **Zwei Pfade, drei Effekte**
 
@@ -1768,6 +1769,91 @@ Die kortikale NTS-Suppression (5.3) erklärt einen klinisch beobachteten Befund,
 **Mechanismus:** Der PFC kompensiert die B7-Depletion aktiv über den Pfad PFC → PAG → NTS (vgl. 5.3). Solange aufgabengetriebener Arousal den PFC fordert, wird die NTS-Schwelle cortical aufrechterhalten — auch wenn die serotonerge NTS-Modulation (Pfad 1, vgl. 5.4) bereits kollabiert ist. Sobald der PFC-Demand wegfällt (Beifahrersitz), kollabiert auch die kortikale Kompensation.
 
 **Erschöpfungsparadox:** Die PFC→NTS-Kompensation nutzt denselben noradrenergen Pfad, der unter B7-Depletion bereits fragil ist. Die Kompensation funktioniert nur solange, wie externer Demand den PFC aktiv hält — sie ist nicht selbsterhaltend. Das Paradox: Die Kompensation **erschöpft sich schneller**, je länger sie läuft, weil sie noradrenerge Ressourcen verbraucht, die nicht nachgeliefert werden. Die Transition von aktivem Fahren zu Beifahrersitz ist nicht primär ein Aufmerksamkeitswechsel, sondern der Wegfall des einzigen verbleibenden Stabilisierungspfades.
+
+### **5.7 Tonische sympathovagale Regulation: Raphe→NTS→RVLM als zweiter Downstream-Pfad**
+
+Die bisherigen Abschnitte (5.1–5.6) behandeln den NTS als reflexiven Knotenpunkt: Afferente Signale (orthostatisch, vestibulär, trigeminal) konvergieren am NTS, deren Schwelle durch serotonerge Modulation (5-HT3) und kortikale Suppression (PFC→PAG→NTS) bestimmt wird. Dieses Schwellenmodell erfasst die episodische autonome Symptomatik. Es fehlt jedoch ein mechanistisch und klinisch distinkter Pfad: die **tonische** Raphe→NTS-Regulation der sympathischen Grundsteuerung über 5-HT2A-Rezeptoren.
+
+**Mechanismus: 5-HT2A am NTS als tonischer Sympathikus-Regulator**
+
+Raphe-Kerne projizieren direkt auf den NTS mit multiplen 5-HT-Rezeptorsubtypen (5-HT1A, 5-HT2A, 5-HT2C, 5-HT3, 5-HT7 — alle im NTS exprimiert). Die funktionelle Differenzierung ist rezeptorspezifisch:
+
+- **5-HT2A-Aktivierung im NTS hemmt RVLM-prämotorische sympathische Neurone** (Sévoz-Couche et al. 2004: DOI (5-HT2A-Agonist) im NTS → Blutdrucksenkung + Bradykardie; MDL-100907 (selektiver 5-HT2A-Antagonist) blockiert den Effekt vollständig; 5-HT2B/2C-Antagonisten wirkungslos).
+- **5-HT3-Aktivierung im NTS hemmt den Baroreflex** (entgegengesetzter Effekt).
+- **Dual-Modulation:** Verschiedene Raphe-Fasern zielen auf 5-HT2A- vs. 5-HT3-tragende NTS-Neurone und modulieren den Baroreflex in entgegengesetzte Richtungen (Sévoz-Couche et al. 2006).
+- **PFC-Integration:** Infralimbischer Cortex → Hypothalamus (POA) → Raphe → NTS 5-HT2A → Baroreflex-Fazilitation (Sévoz-Couche et al. 2006).
+
+| Rezeptor am NTS | Raphe-Quelle | Effekt auf RVLM | Effekt auf Baroreflex | Funktionelle Rolle |
+|:----------------|:-------------|:-----------------|:---------------------|:-------------------|
+| **5-HT2A** | DRN (versch. Subnuklei) | Hemmung → Sympathikus↓ | Fazilitation | Tonische sympathische Dämpfung |
+| **5-HT3** | DRN (andere Subnuklei) | (indirekt via GABA) | Inhibition | Reflexive Baroreflex-Suppression (active coping) |
+
+**Abgrenzung: Zwei distinkte B7-Downstream-Pfade**
+
+Der CSD-Pfad (B7→Thalamus→Cortex) und der ANS-Tonuspfad (B7→NTS 5-HT2A→RVLM) sind mechanistisch, klinisch und pharmakologisch distinct:
+
+| Dimension | CSD-Pfad | ANS-Tonuspfad |
+|:----------|:---------|:-------------|
+| **Anatomie** | B7 → Thalamus → Cortex | B7 → NTS (5-HT2A) → RVLM |
+| **Funktion** | Thalamokortikale Kohärenz, Gating | Tonische sympathovagale Balance |
+| **Klinisches Korrelat bei Insuffizienz** | CSD, Aura, Migräne | Funktionales POTS: Tachykardie ohne sympathischen Drive, Flushing, Erschöpfung |
+| **Zeitkonstante** | ~4-Tage-Beat (Intertakt) | Stunden bis Tage (Clearance-Schuld) |
+| **SWS-Relevanz** | Nullphase = Vorbedingung für kortikale Restauration | Unabhängig — Nullphase zeigt B7-Output↓, nicht NTS-Restauration |
+| **LDX-Effekt** | Schützend (PFC-Stützung, CSD-Schwelle↑) | **Entblößend** — LDX schützt Cortex, adressiert aber nicht den NTS-Tonuspfad; kortikale Ressourcen werden von CSD-Prävention absorbiert |
+| **DPH-Effekt** | B7-Suppression → Nullphase (CSD-relevant) | B7-Suppression → NTS-5-HT2A-Input↓ → keine tonische Sympathikus-Regulation |
+| **Messbarkeit** | Aura, CSD-Phänomenologie | HRV: Dominanz-Clamp, RMSSD-Kollaps bei hohem HR, ULF-Kompensation |
+
+**LDX entblößt den NTS-Pfad**
+
+LDX stabilisiert den CSD-Pfad (kortikale Kohärenz, PFC-Kapazität, CSD-Schwelle). Die begrenzte PFC-Kapazität wird unter LDX für Kognition + CSD-Prävention priorisiert. Die PFC→Hypothalamus→Raphe→NTS-5-HT2A-Kaskade (Baroreflex-Fazilitation) bleibt unterversorgt.
+
+Ergebnis: CSD-freie Tage mit NTS-Tonusinsuffizienz — Migränefreiheit bei gleichzeitiger autonomer Dysregulation. Dies erklärt, warum LDX-Responder mit Migränefreiheit trotzdem Erschöpfung, Hitzewellen und Belastungsintoleranz zeigen können.
+
+Der Mechanismus ist keine Nebenwirkung von LDX, sondern eine Ressourcenkonkurrenz: Dieselbe PFC-Kapazität, die den CSD-Pfad stabilisiert, fehlt für die NTS-Tonusregulation. LDX verschiebt die PFC-Allokation zugunsten des klinisch sichtbareren Symptoms (Migräne) und auf Kosten des klinisch subtileren Symptoms (autonome Dysregulation).
+
+**NTS-Tonusinsuffizienz als Manifestation**
+
+Symptomprofil: moderate adrenale HR-Elevation (kein orthostatischer Trigger, keine Tachykardie im POTS-Sinn), Flushing/Hitzewellen, Erschöpfung, Belastungsintoleranz bei erhaltener Kognition.
+
+Symptomatische Überlappung mit POTS (Flushing, Erschöpfung), aber keine orthostatische Tachykardie; POTS als Differentialdiagnose, nicht als Identifikation. Die NTS-Tonusinsuffizienz ist episodisch, zustandsabhängig (B7-Phasenposition), pharmakologisch modulierbar und kein eigenständiges Krankheitsbild, sondern die klinische Manifestation des insuffizienten NTS-5-HT2A-Tonuspfades.
+
+HPA-Kompensation als Surrogatmechanismus: Cortisol/Adrenalin übernimmt HR-Steuerung bei fehlendem neuralem sympathischem Drive → ULF2-Anstieg als Marker.
+
+Diskriminator: HR hoch + Dominanz tief vagal + RMSSD kollabiert = autonome Starre (weder sympathisch noch parasympathisch kontrolliert). Dieser Zustand ist weder klassisch sympathikoton noch vagoton, sondern ein dritter Modus: Die neurale Kontrolle beider Schenkel ist insuffizient, die HR wird humorally (HPA-Achse) aufrechterhalten.
+
+**Nullphase als schwacher SWS-Indikator**
+
+Nullphase zeigt: B7-Output am NTS ist niedrig → Baroreflex setzt aus. Dies ist notwendige, nicht hinreichende Bedingung für SWS-Restauration. DPH erzeugt Nullphase exogen (H1→B7-Suppression), ohne dass thalamokortikale Restauration stattfindet.
+
+**Konsequenz:** Morgenprofil (sympathische Umschaltung innerhalb ~60 min nach Aufwachen) ist der eigentliche Restaurationsmarker, nicht die Nullphase selbst. Eine Nacht mit Nullphase, aber ohne morgendliche sympathische Umschaltung, zeigt B7-Suppression ohne kortikale Restauration — der Zustand unter DPH.
+
+**Quellen:**
+- Sévoz-Couche C, Comet MA, Hamon M, Laguzzi R (2006). Cardiac baroreflex facilitation evoked by hypothalamus and prefrontal cortex stimulation: role of the nucleus tractus solitarius 5-HT2A receptors. *Am J Physiol Regul Integr Comp Physiol* 291:R1007–R1015.
+- Laguzzi R, Sévoz-Couche C et al. (2000/2004). Activation of NTS 5-HT2A but not other 5-HT2 receptor subtypes inhibits the sympathetic activity in rats. *Brain Res*.
+- Raj SR (2006). The Postural Tachycardia Syndrome (POTS): Pathophysiology, Diagnosis & Management. *Indian Pacing Electrophysiol J*.
+- Benarroch EE (2014). Central control of autonomic function and involvement in neurodegenerative disorders. *Handbook of Clinical Neurology*.
+
+**LDX-Peak als NTS-zustandsabhängiger Effekt — diagnostischer Marker**
+
+**Befund:** Am 29.04.2026 fehlt unter LDX der typische HR-Rechteck-Puls (90–100 bpm, PNN50 ≈ 0, R/S < 0.4), der in den Brustgurt-Referenzdaten (15.04.2026, Anhang D) reproduzierbar dokumentiert ist. Stattdessen: HR 90–100 bpm bei Dominanz -0.5, RMSSD 12 ms — gleiche HR, komplett anderer Mechanismus. Kognitive Funktion erhalten, sympathischer Drive absent.
+
+**Mechanistische Erklärung:** Der LDX-Sympathikus-Effekt ist nicht peripher-katecholaminerg (das wäre graduell), sondern zentral-neural:
+
+LDX → NE am PFC → PFC → Hypothalamus → Raphe → NTS (5-HT2A) → RVLM → sympathischer Drive
+
+LDX liefert das Signal bis zum PFC. Der PFC verteilt es auf Kognition und NTS-Fazilitation. Die Weiterleitung zum Sympathikus erfordert einen funktionierenden Raphe→NTS-5-HT2A-Schenkel. Bei B7-Insuffizienz am NTS kommt das LDX-Signal nicht bis zur RVLM — der PFC arbeitet, die Sympathikus-Steuerung bleibt leer.
+
+Das erklärt drei bisherige Beobachtungen:
+
+| Beobachtung | Bisherige Erklärung | NTS-Pfad-Erklärung |
+|:---|:---|:---|
+| LDX-Peak als sauberer Rechteck-Puls (Anhang D) | D2-On/Off-Switch | Korrekt, aber der Switch schaltet das NTS-Regime um, nicht periphere Katecholamine |
+| LDX-Peak reproduzierbar exakt 120 min nach Einnahme | Dexamfetamin-Tmax | Korrekt — NE-Spiegel am PFC erreicht Schwelle für NTS-Fazilitation |
+| LDX-Peak fehlt bei B7-Erschöpfung (29.04.2026) | Nicht erklärt | PFC funktioniert (Kognition vorhanden), aber NTS-Pfad ist B7-seitig nicht modulierbar |
+
+**Diagnostischer Marker:** Subjektiv ist der Unterschied zwischen „klar und angetrieben" (Kognition + Sympathikus, beide Pfade aktiv) und „klar aber kraftlos" (nur Kognition, NTS-Pfad insuffizient) leicht zugänglich. Abwesenheit des LDX-Peaks bei erhaltener kognitiver Wirkung ist ein alltagstauglicher diagnostischer Marker für NTS-Tonusinsuffizienz.
+
+**Implikation für LDX-Dosierung:** Dosiserhöhung bei fehlendem LDX-Peak adressiert den falschen Engpass — mehr NE am PFC erhöht die PFC-Kapazität, aber wenn der Raphe→NTS-Schenkel insuffizient ist, wird die zusätzliche Kapazität für Kognition verwendet, nicht für Sympathikus-Steuerung (PFC-Priorisierung, vgl. §5.7).
 
 ***
 
@@ -2250,6 +2336,15 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | B7-Aphasie (reduzierte Amplitude, inkonsistenter Delay) als ANS-Destabilisierungsmechanismus | Einzelfallbeobachtung, HR-Spreading-Daten | Anhang B.20 |
 | Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt, CSD durch post-exertionale Regeneration (4.8) | Modellvorhersage, epidemiologisch gestützt | Koppen et al. 2013 (38% ETM-Prävalenz, 160 min Latenz) |
 | Differentielle Phänotypologie: B7-Instabilität → MBA + CSD; B8-Instabilität → Aura ohne ANS; B7-Depletion → reine ANS; B8-Depletion → kein Migränephänotyp | Modellvorhersage, klinisch plausibel, nicht direkt getestet | Abgeleitet aus Innervierungsanatomie (Anhang F), Differentialtabelle (4.7.2) |
+| 5-HT2A-Aktivierung im NTS hemmt RVLM-Sympathikus tonisch (nicht nur reflexiv) | Gesichert | Sévoz-Couche et al. 2004/2006, Tiermodell, reproduziert |
+| PFC→Hypothalamus→Raphe→NTS 5-HT2A als Baroreflex-Fazilitationspfad | Gesichert | Sévoz-Couche et al. 2006, Tiermodell |
+| NTS-Tonusinsuffizienz bei B7-Insuffizienz (adrenale HR-Kompensation + Flushing + Erschöpfung bei erhaltener Kognition, keine orthostatische Tachykardie) | Einzelfallbeobachtung, mechanistisch konsistent | HRV-Daten 29.04.2026; POTS-Literatur als Differentialdiagnose (Raj 2006, Circulation 2013) |
+| LDX schützt CSD-Pfad, entblößt NTS-Tonuspfad durch PFC-Priorisierung | Hypothetisch, konsistent | Modellvorhersage aus PFC-Ressourcenkonkurrenz |
+| Nullphase als notwendige, nicht hinreichende Bedingung für SWS-Restauration | Einzelfallbeobachtung | DPH-Vergleich: Nullphase ohne Morgenumschaltung (29.04.2026) |
+| Morgenprofil (sympathische Umschaltung) als Restaurationsmarker, nicht Nachtprofil | Einzelfallbeobachtung, methodisch ableitbar | HRV-Daten 29.04.2026 |
+| LDX-Sympathikus-Effekt (HR-Rechteck-Puls) läuft über NTS-Pfad, nicht peripher-katecholaminerg | Einzelfallbeobachtung, mechanistisch konsistent | Dissoziation Kognition/Sympathikus unter LDX am 29.04.2026; Rechteck-Kinetik (Anhang D) konsistent mit zentraler Umschaltung |
+| Abwesenheit des LDX-Peaks bei erhaltener Kognition als diagnostischer Marker für NTS-Tonusinsuffizienz | Einzelfallbeobachtung | 29.04.2026 — LDX kognitiv wirksam, sympathischer Drive absent |
+| LDX-Dosiserhöhung bei NTS-Insuffizienz adressiert falschen Engpass (PFC-Priorisierung) | Hypothetisch, mechanistisch ableitbar | Modellvorhersage aus PFC-Ressourcenkonkurrenz + NTS-Pfad-Abhängigkeit |
 | 95% der MBA-Patienten haben auch typische Aura → konsistent mit variablem B7-Zustand, nicht fixem Phänotyp | Literaturgestützt | Eriksen et al. (MedLink Neurology) |
 | Schwindel mit Nystagmus = vestibuläre Kerne (B7); Schwindel ohne Nystagmus = möglicherweise kortikal (Demarquay) | Vorgeschlagener klinischer Differentialmarker | Abgeleitet, nicht validiert |
 | Demarquay-Alternative (kortikaler Ursprung) erklärt Symptomtopographie, nicht Symptomintensität | Literaturkritik | Demarquay et al. 2018 (Cephalalgia) |
@@ -4114,7 +4209,7 @@ Der Dauerstress-Mi-Band-Monitoring-Datensatz (n=79 Nächte, Anhang B) erfasst HR
 - PRE- und POST-LDX-Plateaus bleiben unverändert — LDX erzeugt ein isoliertes 2-Stunden-Plateau, eingebettet in einen stabilen Baseline-Zustand.
 - Kein graduelles Aufbauen, kein graduelles Abklingen → Rechteck-Puls über dem Grundzustand.
 
-Diese Beobachtung stützt die Modellvorhersage, dass LDX den Oszillator nicht repariert, sondern periodisch überschreibt (vgl. 4.2, Amplitudenmodulation; 2.5.5, Dämpfungskonstanten-Synthese).
+Diese Beobachtung stützt die Modellvorhersage, dass LDX den Oszillator nicht repariert, sondern periodisch überschreibt (vgl. 4.2, Amplitudenmodulation; 2.5.5, Dämpfungskonstanten-Synthese). Der Mechanismus des LDX-Peaks wurde in §5.7 als NTS-zustandsabhängig identifiziert: Der sympathische Drive läuft über den Pfad PFC→Hypothalamus→Raphe→NTS (5-HT2A)→RVLM und kann bei B7-Insuffizienz am NTS ausbleiben — kognitive LDX-Wirkung bei absentem sympathischem Peak (29.04.2026).
 
 **Vier HR-basierte Anomalie-Marker**
 

@@ -25,7 +25,7 @@ Triade-Hypothese: **AD + ADHS + Migräne** als populationsrelevanter, bislang nu
 | [02 — Primärdefekt: Raphe-Dysregulation](02_primary_defect.md) | Raphe-Anatomie, 5-HT1A-Instabilität, Two-Hit-Architektur, B7/B8-Dual-Oszillator, zirkadiane Schwebung. |
 | [03 — Downstream I: Thalamische Fehlkalibrierung](03_downstream.md) | Fetale Kalibrierung auf instabiles Signal, ADHS als SNR-Problem, Gating/Schwelle unter LDX. |
 | [04 — Manifestation I: Migräne als Raphe-Zyklusstörung](04_manifestation1.md) | Trigger, CSD-Auslösung, CSD als Reset, Triptan-Mechanismus, Betablocker-Paradox. |
-| [05 — Manifestation II: Autonome Dysregulation](05_manifestation2.md) | NTS-Pfade, vestibuloautonomer Reflex, TCR, PFC→NTS-Suppression, B7-Aphasie. |
+| [05 — Manifestation II: Autonome Dysregulation](05_manifestation2.md) | NTS-Pfade, vestibuloautonomer Reflex, TCR, PFC→NTS-Suppression, B7-Aphasie. Tonischer NTS-5-HT2A→RVLM-Pfad, NTS-Tonusinsuffizienz, LDX-Exposition, Nullphase als SWS-Indikator. |
 | [06 — Manifestation III: ASD-Phänotyp](06_manifestation3.md) | ASD als Konfigurationsvariante des Primärdefekts, repetitives Verhalten als Stabilisierung. |
 | [07 — Pharmakologische Evidenz: Selbstversuch](07_evidenz.md) | Methylphenidat, Lisdexamfetamin, therapeutisches Fenster. |
 | [08 — Interozeptive Inkohärenz](08_synchronisation.md) | Asynchrone Modulationssysteme, LDX als Synchronisator, Kreuzkorrelation ADHS–Migräne–Epilepsie. |

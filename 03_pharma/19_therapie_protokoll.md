@@ -15,7 +15,7 @@ Vier Komponenten an orthogonalen Angriffspunkten, aufgeteilt in drei Zeitachsen:
 |---|---|---|---|
 | Chronisch, Tag | LDX 2× 8 mg | Dopaminerge Intratakt-Stabilisierung, PFC-Gain | Etabliert |
 | Chronisch, permanent | Riboflavin 400 mg/d | Mitochondriale ATP-Kapazität, Anhebung der Raphe-Erschöpfungsschwelle | In Durchführung |
-| Prodromal, akut | DPH 25 mg → Doxepin (geplant) | H1-vermittelte B7-Amplitudenreduktion vor Interferenzpotenzierung im Thalamus | DPH aktuell; Doxepin-Transition offen |
+| Prodromal, akut | Doxepin 3–6 mg (DPH disqualifiziert) | H1-vermittelte B7-Amplitudenreduktion; SERT-Komponente kompensiert NTS-5-HT2A-Entzug partiell | Doxepin-Transition ausstehend; DPH wegen NTS-Tonuspfad-Entzug, anticholinerger Last und Toleranzentwicklung disqualifiziert |
 
 Die Kombination ist additiv, nicht synergistisch im pharmakologischen Sinn: jede Achse trägt einen eigenen Effekt, Interaktionen sind gering und pharmakologisch kontrolliert. Die Begründung für genau dieses Bündel (Generator-Schwelle, Tagesregulation, Prodromal-Deckel) liegt im Pathogenesemodell, die klinische Wirksamkeit der Einzelkomponenten ist davon unabhängig.
 
@@ -131,6 +131,8 @@ Doxepin 3 mg ist für bis zu 3 Monate Dauerinsomnie studiert. Für die hier gepl
 
 Das Protokoll schirmt Endstrecken ab (ANS peripher via B7-Dämpfung, PFC kortikal via LDX/NE-Gain, Generator via B2-Kapazität) und kappt Amplitudenpeaks prodromal (H1). Es adressiert *nicht* den Regelkreisdefekt selbst (5-HT1A-Autorezeptor-Instabilität in der Raphe; D2High-Shift). Es ist ein Schonprotokoll, kein Kurativprotokoll. Diese Einordnung ist in beide Richtungen ehrlich zu halten: weder dramatisieren (das Regime ist belastbar und wirksam) noch überhöhen (es beseitigt nichts, es verlagert Arbeitspunkte).
 
+**NTS-Tonuspfad als unbeabsichtigte Nebenwirkung der H1-Achse:** Die H1-vermittelte B7-Suppression adressiert die CSD-Interferenz, entzieht aber gleichzeitig dem NTS den serotonergen Input für die tonische Sympathikussteuerung (§5.7 Pathogenesemodell). DPH erzeugt diesen Entzug vollständig; Doxepin kompensiert über SERT partiell. Dies bedeutet: die H1-Achse des Protokolls hat inhärent einen autonomen Trade-off. Die Schwere des Trade-offs hängt von der SERT-Kompensation ab — Doxepin ist deshalb nicht bloß die nebenwirkungsärmere Alternative zu DPH, sondern mechanistisch die einzig vertretbare Option.
+
 ---
 
 ## 6. Validierungsstatus
@@ -139,8 +141,8 @@ Das Protokoll schirmt Endstrecken ab (ANS peripher via B7-Dämpfung, PFC kortika
 |---|---|---|
 | LDX 2× 8 mg als wirksame Dosis | D2High-Hypothese, Eigenbeobachtung | Oberflächlich validiert (Tagesfunktion, interozeptive Kohärenz) |
 | Riboflavin 400 mg/d | Level B, RCT-gestützt (externe Evidenz) | Nicht isolierbar (→ §5.2) |
-| DPH 25 mg prodromal | Pharmakologie plausibel, Eigenbeobachtung | Empirisch bestätigt: Triptananwendung <30 % der Ausgangsfrequenz |
-| DPH 25 mg nächtlich | Hypothetisch (08) | Nicht bestätigt — aus dem Zielregime entfernt |
+| DPH 25 mg prodromal | Pharmakologie plausibel, Eigenbeobachtung | Empirisch bestätigt (Triptanreduktion), aber disqualifiziert: NTS-5-HT2A-Entzug → iatrogene autonome Dysregulation bei jeder Einzeldosis (29.04.2026). Siehe 08H, Pathogenesemodell §5.7 |
+| DPH 25 mg nächtlich | Hypothetisch (08) | Disqualifiziert — NTS-Tonuspfad-Entzug + anticholinerge Last + CYP2D6-Konfundierung |
 | Doxepin 3 mg als DPH-Ersatz prodromal | Pharmakologisch plausibel | Nicht begonnen |
 | Gesamtregime | — | n=1, temporär stabil |
 

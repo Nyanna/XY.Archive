@@ -115,3 +115,49 @@ Die HR-Variabilität im Late-Abschnitt von Nacht 2 (std=7.6) ist durch das CSD-E
 - *Pathogenetisches Modell, Anhang B: Tracker-Datenanalyse*
 - *Pathogenetisches Modell, Abschnitt 2.5.5: Schlafarchitektur als Kohärenzmarker*
 - *Analyseskripte: `dph_analyse.py` (Gesamtanalyse), `dph_hr_timecourse.py` (30-min-Bins), `dph_stage_stability.py` (Episodenlängen)*
+
+---
+
+## H.6 NTS-Tonuspfad: Dritter Disqualifikationsgrund für DPH
+
+> **Stand:** 29.04.2026
+> **Datenbasis:** 24h-HRV-Datensatz (Coospo H9Z, IBI-basiert), 28./29.04.2026
+> **Kontext:** Ergänzt die bisherigen Disqualifikationsgründe (anticholinerge Last, H1-Toleranz) um einen akuten, mechanistisch schwerwiegenderen Befund.
+
+### H.6.1 Befund
+
+24h-HRV-Datensatz nach DPH-Nacht (12,5 mg + Melatonin) zeigt ein Morgenprofil ohne sympathische Umschaltung trotz Spitzenwert-Nullphase (39 min, HR-Boden 47.4, RMSSD >150). HR 90–100 bpm bei Dominanz -0.5 (91% vagal), RMSSD 12 ms, ULF2 bis 4597 (HPA-Kompensation). Kein neuraler sympathischer Drive über den gesamten Vormittag.
+
+### H.6.2 Mechanistische Erklärung
+
+DPH suppressiert B7 via H1 → B7-Output zum NTS fällt → 5-HT2A-Aktivierung am NTS fehlt → RVLM-Hemmung entfällt → tonische sympathische Steuerung nicht verfügbar. Die Nullphase (B7 still → Baroreflex setzt aus) wird erzeugt, aber die für die Morgenumschaltung erforderliche NTS-5-HT2A-Kaskade wird gleichzeitig abgeschaltet. DPH erzeugt die Vorbedingung für SWS (Nullphase) und verhindert gleichzeitig die autonome Restauration, die SWS leisten müsste.
+
+### H.6.3 Abgrenzung zu den bisherigen Disqualifikationsgründen (§7.1)
+
+| # | Disqualifikationsgrund | Zeithorizont | Schwere |
+|---|---|---|---|
+| 1 | Anticholinerge Last, Demenzrisiko (Gray et al. 2015) | Langfristig, kumulativ | Hoch bei chronischer Anwendung |
+| 2 | H1-Toleranz, Wirkabschwächung | Wochen | Moderat (Wirksamkeitsverlust) |
+| **3** | **NTS-5-HT2A-Entzug → Verlust der tonischen Sympathikussteuerung → NTS-Tonusinsuffizienz am Folgetag** | **Akut, jede Einzeldosis** | **Hoch — iatrogene autonome Dysregulation** |
+
+Grund 3 ist schwerwiegender als 1 und 2, weil er bei *jeder Einzeldosis* auftritt, nicht erst bei chronischer Anwendung, und weil er einen aktiven pathologischen Zustand erzeugt statt nur Wirksamkeit zu verlieren.
+
+### H.6.4 Nullphase als schwacher SWS-Indikator
+
+Die bisherige Annahme, dass die DPH-Nullphase SWS-Clearance indiziert, ist nicht haltbar. Die Nullphase zeigt B7-Output-Reduktion, nicht thalamokortikale Restauration. DPH erzeugt die Nullphase exogen; ob SWS tatsächlich stattfindet, ist nicht ableitbar. Der eigentliche Restaurationsmarker ist das Morgenprofil: sympathische Umschaltung innerhalb ~60 min nach Aufwachen.
+
+### H.6.5 Empirische Daten (24h-Datensatz 28./29.04.2026)
+
+| Phase | Dominanz | RMSSD | ULF2 | Interpretation |
+|---|---|---|---|---|
+| Vorabend | -0.47 | 21.5 | 1081 | Bereits kompensierend |
+| Nacht (DPH+Melatonin) | — | 84 | — | HR-Boden 47.4, 39 min Nullphase (metrisch exzellent) |
+| Morgen | -0.43 | 19 | 2192 | Keine sympathische Umschaltung |
+| Einbruch 11–14h | — | — | 4597 | HPA-Maximum |
+| Nachmittags-DPH (14h, 12.5 mg) | — | — | — | PFC-Entlastungseffekt (Klarheit↑), ULF-Reduktion ohne sympathische Umschaltung — PFC priorisiert Kognition über NTS-Ansteuerung |
+| Abend | -0.66 | — | 236 | HPA erschöpft |
+
+*Querverweise:*
+- *Pathogenesemodell, §5.7: Tonische sympathovagale Regulation*
+- *Zwei-Phasen-Protokoll, §7.1: DPH-Disqualifikation*
+- *Therapieprotokoll, §6: Validierungsstatus*

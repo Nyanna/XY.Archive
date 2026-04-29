@@ -171,6 +171,8 @@ Diphenhydramin-HCl eignet sich als Proof-of-Concept, nicht als Dauertherapie. Zw
 
 2. **H1-Toleranz.** H1-Rezeptor-Upregulation unter chronischer Blockade ist gut dokumentiert. Die Zeitkonstante bei Schlafmitteln liegt typischerweise im Bereich von Tagen bis wenigen Wochen. Die DRN-selektive Suppression würde abschwächen.
 
+3. **NTS-Tonuspfad-Entzug (akut).** DPH suppressiert B7 via H1-Blockade (Crawford et al. 2013). Dies entzieht dem NTS den serotonergen 5-HT2A-Input, der die tonische RVLM-Hemmung steuert (Sévoz-Couche et al. 2004/2006). Konsequenz: Verlust der neuralen sympathischen Grundsteuerung am Folgetag. Empirisch bestätigt am 29.04.2026 — Spitzenwert-Nullphase bei gleichzeitigem Totalausfall der sympathischen Morgenumschaltung (Dominanz -0.43 bis -0.66 über den gesamten Tag, RMSSD 12–19ms, ULF2 bis 4597 als HPA-Kompensation). Dieser Effekt tritt bei jeder Einzeldosis auf, nicht erst bei chronischer Anwendung, und erzeugt ein NTS-Tonusinsuffizienz (adrenale HR-Kompensation, Flushing, Erschöpfung bei erhaltener Kognition; keine orthostatische Tachykardie). Siehe Pathogenesemodell §5.7.
+
 ### 7.2 Niedrigdosiertes Doxepin als chronisch einsetzbare Alternative
 
 **Doxepin 3 mg** (Silenor) ist FDA-zugelassen für Kurz- und Langzeit-Insomnie und funktioniert in diesem Dosisbereich als nahezu reiner H1-Antagonist:
@@ -183,6 +185,9 @@ Diphenhydramin-HCl eignet sich als Proof-of-Concept, nicht als Dauertherapie. Zw
 | Rebound bei Absetzen | Möglich | Nicht berichtet |
 | Studiendauer | — | Bis 3 Monate (3 mg) |
 | Toleranzentwicklung | Tage–Wochen | Nicht systematisch untersucht |
+| NTS-5-HT2A-Entzug | Vollständig (kein SERT-Effekt) | Partiell kompensiert (SERT-Blockade hält 5-HT im Spalt) |
+
+**NTS-Kompensation via SERT:** Doxepin besitzt SERT-Affinität (Ki ~68nM), DPH nicht. Bei H1-vermittelter B7-Suppression reduziert sich der Raphe-Output zum NTS. DPH: weniger Output + normale Clearance = doppelter Verlust am 5-HT2A. Doxepin: weniger Output + verlangsamte synaptische Clearance = partielle Kompensation. Bei 3mg Doxepin (Silenor-Bereich) dominiert H1 (Ki ~0.24nM) stark über SERT; ob die SERT-Besetzung für eine funktional relevante NTS-Kompensation ausreicht, ist nicht gesichert. Bei 10–25mg wäre die SERT-Komponente stärker, aber anticholinerge Effekte steigen. Die optimale Dosis liegt möglicherweise bei 3–6mg — maximale H1-Selektivität bei gerade ausreichender SERT-Kompensation.
 
 **Offene Frage:** Die DRN-Selektivität der H1-Blockade (Crawford et al. 2013) wurde unter akuter Gabe gezeigt. Ob die differentielle H1-Rezeptordichte am DRN vs. MRN unter chronischer Blockade erhalten bleibt, ist nicht untersucht. Falls die H1-Upregulation am DRN stärker ausfällt als am MRN, könnte die Selektivität unter Langzeitgabe paradoxerweise zunehmen — oder sich nivellieren.
 
