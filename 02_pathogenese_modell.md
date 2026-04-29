@@ -2376,6 +2376,9 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | SUDEP-analoge Risikokategorie bei sehr schwerem ME/CFS | Hypothetisch, mechanistisch zu erwarten, epidemiologisch unzureichend erfasst | Chu, Jason et al. 2018; Anhang J.6 |
 | Dual-Hit auf Clearance-Achse (retardiertes B2 + retardiertes LPC-DHA) als kohärente therapeutische Strategie | Hypothetisch, Einzelteile peer-reviewed, Integration nicht publiziert | Anhang J.7.1–J.7.3 |
 | Bidirektionale Rückübertragung modellkohärenter Interventionen auf Migräneprophylaxe (LDN, Mastzellstabilisierung, niedrigdosierte Benzodiazepine, Pyridostigmin) | Hypothetisch, mechanistisch begründet, klinisch unerforscht | Anhang J.8 |
+| DPH 12,5 mg als PFC-Entlastung bei manifester NTS-Insuffizienz (Klarheit↑, ULF↓, Sympathikus unverändert) | Einzelfallbeobachtung | 29.04.2026 — diagnostischer Trigger validiert, Wirkmechanismus konsistent |
+| DPH-Rollenumkehr: SWS-Clearance disqualifiziert (zustandsblind + NTS-Risiko), ANS-Akuteinsatz erhalten (zustandsgeprüft + NTS-Risiko irrelevant) | Einzelfallbeobachtung, mechanistisch ableitbar | 29.04.2026 + NTS-Pfad-Modell (§5.7) |
+| LDX-Peak absent als diagnostischer Marker für NTS-Insuffizienz und Einsatztrigger für DPH-PFC-Entlastung | Einzelfallbeobachtung | 29.04.2026 |
 
 | Hauptlimitation: Die narrative Kohärenz des Modells ist kein Beleg für Richtigkeit. Ein kohärentes Modell kann elegant und falsch sein. Die Selbstbeobachtungen sind valide Datenpunkte, das Modell ist eine nützliche Interpretationsstruktur. Sinnvolle Beobachtungsdauer für Lisdexamfetamin: mindestens 6–8 Wochen bei normalem Alltagsbetrieb. |
 | :---- |
