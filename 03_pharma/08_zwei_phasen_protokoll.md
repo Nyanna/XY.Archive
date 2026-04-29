@@ -197,6 +197,36 @@ Falls das alternierende ON/OFF-Design eine stabile Interferenzreduktion bestäti
 
 Das alternierende Design hat den zusätzlichen Vorteil, dass es die Toleranzfrage vorab klärt: Wenn der DPH-Effekt über 6–8 Wochen ON/OFF stabil bleibt, spricht das für erhaltene H1-Sensitivität bei intermittierender Gabe — und liefert gleichzeitig eine Entscheidungsgrundlage, ob die chronische Variante (Doxepin) überhaupt intermittierend dosiert werden muss oder ob die niedrigere anticholinerge Last eine Dauergabe rechtfertigt.
 
+### 7.4 DPH als Akutmedikament bei ANS-Eskalation
+
+Die Disqualifikation von DPH für die SWS-Clearance (§7.1) eliminiert
+DPH nicht vollständig aus dem Protokoll. Ein zustandsgeprüftes
+Einsatzprofil bleibt erhalten:
+
+**Indikation:** Manifeste NTS-Tonusinsuffizienz (LDX kognitiv wirksam,
+sympathischer LDX-Peak absent, Hitzewellen, subjektive Erschöpfung
+ohne Kraft).
+
+**Mechanismus:** H1-Blockade reduziert histaminerge Interferenz am PFC →
+PFC-Filteraufwand sinkt → freigewordene Kapazität wird für Kognition
+verwendet. Der NTS-Entzug durch H1→DRN-Suppression ist in diesem
+Zustand ohne zusätzliche Konsequenz, weil der NTS-Tonuspfad bereits
+insuffizient ist.
+
+**Abgrenzung zum SWS-Einsatz:** Der SWS-Einsatz war prophylaktisch
+(zustandsblind, abends). Der ANS-Einsatz ist reaktiv (zustandsgeprüft,
+tagsüber). Der diagnostische Marker (LDX-Peak absent) ist der
+Zustandsprädiktor, der dem SWS-Einsatz fehlte.
+
+**Dosierung:** 12,5 mg (halbe OTC-Standarddosis). Evaluationszeitraum
+30 min — Klarheit zeigt PFC-Entlastung, Sedierung zeigt
+unzureichende PFC-Reserve (Hypothese war falsch, keine Wiederholung).
+
+**Limitierung:** Anticholinerge Last bleibt bestehen. Bei häufigem
+Bedarf ist die ANS-Eskalationsfrequenz das therapeutische Ziel, nicht
+die DPH-Frequenz. Häufiger Bedarf → Doxepin-SWS-Clearance optimieren
+oder Upstream-Stabilisierung (LDX-Regime) anpassen.
+
 ---
 
 ## 8. CYP2D6-Konfundierung der DPH-Daten

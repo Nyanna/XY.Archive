@@ -161,3 +161,34 @@ Die bisherige Annahme, dass die DPH-Nullphase SWS-Clearance indiziert, ist nicht
 - *Pathogenesemodell, §5.7: Tonische sympathovagale Regulation*
 - *Zwei-Phasen-Protokoll, §7.1: DPH-Disqualifikation*
 - *Therapieprotokoll, §6: Validierungsstatus*
+
+---
+
+### Rollenumkehr: DPH als akut-reaktives PFC-Entlastungsmedikament
+
+Die Disqualifikation betrifft ausschließlich den prophylaktischen
+Einsatz zur SWS-Clearance (abends, zustandsblind). Ein neues
+Einsatzprofil ergibt sich aus dem Befund vom 29.04.2026:
+
+Bei manifester NTS-Insuffizienz (diagnostisch: LDX kognitiv wirksam,
+sympathischer Peak absent, Hitzewellen) reduziert DPH 12,5 mg die
+histaminerge PFC-Belastung. Der PFC nutzt die freigewordene Kapazität
+für Kognition — der sympathische Drive bleibt absent, weil der
+NTS-Pfad bereits ausgefallen ist und der PFC kognitive Funktion über
+NTS-Ansteuerung priorisiert.
+
+Der entscheidende Unterschied zum Schlafmittel-Einsatz: der NTS-Pfad
+ist zum Zeitpunkt der Einnahme bereits nicht funktional. DPH entzieht
+nichts, was noch vorhanden ist. Der Trade-off (NTS-Entzug vs.
+PFC-Entlastung) existiert nur bei intaktem NTS — bei ausgefallenem
+NTS ist er neutral.
+
+Empirischer Befund: 14:00 Uhr, 12,5 mg DPH bei dokumentierter
+NTS-Insuffizienz (Dominanz -0.5, RMSSD 12, ULF2 4597). Innerhalb
+30 min subjektive Klarheit, ULF/VLF-Reduktion (adrenale Kompensation
+fährt herunter). Sympathischer Drive nicht wiederhergestellt —
+erwartungsgemäß, da dies nicht das Ziel war.
+
+Einsatzfrequenz: selten, nur bei manifester ANS-Eskalation.
+Anticholinerge Kumulationsrisiken bleiben bestehen und limitieren
+die Einsatzhäufigkeit.

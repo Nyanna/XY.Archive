@@ -15,7 +15,46 @@ Vier Komponenten an orthogonalen Angriffspunkten, aufgeteilt in drei Zeitachsen:
 |---|---|---|---|
 | Chronisch, Tag | LDX 2× 8 mg | Dopaminerge Intratakt-Stabilisierung, PFC-Gain | Etabliert |
 | Chronisch, permanent | Riboflavin 400 mg/d | Mitochondriale ATP-Kapazität, Anhebung der Raphe-Erschöpfungsschwelle | In Durchführung |
-| Prodromal, akut | Doxepin 3–6 mg (DPH disqualifiziert) | H1-vermittelte B7-Amplitudenreduktion; SERT-Komponente kompensiert NTS-5-HT2A-Entzug partiell | Doxepin-Transition ausstehend; DPH wegen NTS-Tonuspfad-Entzug, anticholinerger Last und Toleranzentwicklung disqualifiziert |
+| Prodromal / nächtlich | Doxepin 3–6 mg | H1-vermittelte DRN-Suppression für SWS-Clearance; SERT kompensiert NTS-5-HT2A-Entzug partiell | Doxepin-Transition ausstehend |
+| ANS-Eskalation, akut | DPH 12,5 mg | H1→PFC-Entlastung bei manifester NTS-Insuffizienz; NTS-Risiko entfällt weil Pfad bereits ausgefallen | Rollenumkehr: nicht mehr SWS-Clearance, sondern kognitive Notfallintervention; niedrige Einsatzfrequenz obligat |
+
+### 1.1 Zwei distinkte H1-Einsatzprofile
+
+Die H1-Achse des Protokolls hat sich durch die Identifikation des
+tonischen NTS-Pfades (Pathogenesemodell §5.7) in zwei orthogonale
+Einsatzprofile aufgespalten:
+
+| Dimension | SWS-Clearance | PFC-Entlastung bei ANS-Eskalation |
+|:---|:---|:---|
+| **Substanz** | Doxepin 3–6 mg | DPH 12,5 mg |
+| **Zeitpunkt** | Abends, prophylaktisch | Tagsüber, akut-reaktiv |
+| **Frequenz** | Regelmäßig oder prodromal | Selten, nur bei manifester Eskalation |
+| **Voraussetzung** | B7-Zustand unbekannt → SERT-Kompensation erforderlich | NTS-Insuffizienz bereits manifest → NTS-Risiko irrelevant |
+| **NTS-Risiko** | Zustandsabhängig; Doxepin-SERT puffert Worst Case | Kein zusätzliches Risiko — Pfad bereits ausgefallen |
+| **Ziel** | Restaurationsfenster öffnen → NTS-Problematik präventiv vermeiden | Kognitive Handlungsfähigkeit sichern bei bereits eingetretener autonomer Dysregulation |
+| **Diagnostischer Trigger** | Keiner (prophylaktisch/prodromal) | LDX-Peak absent bei erhaltener Kognition + Hitzewellen + subjektive Erschöpfung ohne Kraft |
+| **Wirkmechanismus** | H1→DRN↓ → Nullphase → SWS-Restaurationsfenster; SERT hält 5-HT am NTS | H1→DRN↓ → reduzierte histaminerge Interferenz → PFC-Filteraufwand sinkt → freigewordene Kapazität für Kognition |
+| **Erfolgskriterium** | Morgenprofil: sympathische Umschaltung innerhalb ~60 min | Subjektive Klarheit innerhalb 30 min; ULF/VLF-Reduktion in HRV |
+
+**Logik der Rollenaufteilung:** DPH als SWS-Clearance-Mittel war ein
+Eingriff ohne Zustandsprüfung in ein zustandsabhängiges System — bei
+robustem B7 funktional, bei schwachem B7 iatrogen (NTS-Entzug →
+24h autonome Dysregulation). Doxepin übernimmt diese Rolle mit
+SERT-gepuffertem Sicherheitsabstand.
+
+DPH als PFC-Entlastung ist zustandsgeprüft: der diagnostische
+Marker (LDX kognitiv wirksam, sympathischer Peak absent) bestätigt
+manifeste NTS-Insuffizienz *vor* der Einnahme. In diesem Zustand
+entzieht DPH dem NTS nichts, was noch vorhanden ist. Der Trade-off
+(NTS-Entzug gegen PFC-Entlastung) ist nur bei intaktem NTS-Pfad
+negativ — bei bereits ausgefallenem Pfad ist er neutral mit
+positivem kognitivem Effekt.
+
+**Anticholinerge Einschränkung:** Auch als Akutmedikament unterliegt
+DPH der anticholinergen Last (§7.1, Disqualifikationsgrund 1).
+Die Einsatzfrequenz muss niedrig bleiben — Einzeldosen bei
+seltenen ANS-Eskalationen, nicht regelmäßig. Bei häufigerem Bedarf
+ist die Eskalationshäufigkeit das Problem, nicht das Medikament.
 
 Die Kombination ist additiv, nicht synergistisch im pharmakologischen Sinn: jede Achse trägt einen eigenen Effekt, Interaktionen sind gering und pharmakologisch kontrolliert. Die Begründung für genau dieses Bündel (Generator-Schwelle, Tagesregulation, Prodromal-Deckel) liegt im Pathogenesemodell, die klinische Wirksamkeit der Einzelkomponenten ist davon unabhängig.
 
@@ -144,6 +183,7 @@ Das Protokoll schirmt Endstrecken ab (ANS peripher via B7-Dämpfung, PFC kortika
 | DPH 25 mg prodromal | Pharmakologie plausibel, Eigenbeobachtung | Empirisch bestätigt (Triptanreduktion), aber disqualifiziert: NTS-5-HT2A-Entzug → iatrogene autonome Dysregulation bei jeder Einzeldosis (29.04.2026). Siehe 08H, Pathogenesemodell §5.7 |
 | DPH 25 mg nächtlich | Hypothetisch (08) | Disqualifiziert — NTS-Tonuspfad-Entzug + anticholinerge Last + CYP2D6-Konfundierung |
 | Doxepin 3 mg als DPH-Ersatz prodromal | Pharmakologisch plausibel | Nicht begonnen |
+| DPH 12,5 mg als PFC-Entlastung bei ANS-Eskalation | Pharmakologisch plausibel, Einzelfall | Empirisch bestätigt am 29.04.2026: Klarheit↑, ULF/VLF↓ bei manifester NTS-Insuffizienz; diagnostischer Trigger (LDX-Peak absent) validiert |
 | Gesamtregime | — | n=1, temporär stabil |
 
 ---
