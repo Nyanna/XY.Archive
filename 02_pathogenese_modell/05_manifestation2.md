@@ -5,7 +5,7 @@
 
 **Zusammenfassung**
 
-Dieses Kapitel beschreibt die autonome Dysregulation als Downstream-Manifestation des Raphe-Defekts über zwei mechanistisch distinkte Pfade: (1) das reflexive Schwellenmodell — drei neuroanatomisch distinkte afferente NTS-Pfade (orthostatisch, vestibulär, trigeminal), deren Schwelle durch instabile Raphe-Aktivität periodisch abgesenkt wird; (2) den **tonischen NTS-5-HT2A-Pfad** — Raphe→NTS (5-HT2A)→RVLM als zweiter B7-Downstream-Pfad, distinct vom CSD-Pfad (Raphe→Thalamus→Cortex), der die sympathische Grundsteuerung kontrolliert. Die kortikale NTS-Suppression (PFC → PAG → NTS) ist ressourcenintensiv und unter Erschöpfung oder Betablockade fragil. Das Modell prognostiziert einen kompoundierenden Effekt bei LDX + Metoprolol-Entfall über drei unabhängige, additive Pfade: serotonerge NTS-Stabilisierung, noradrenerge PFC-Kapazität und Wiederherstellung der sympathischen Gegenregulation. B7-Aphasie (Feuermuster erhalten, Transmitteroutput stochastisch degradiert) wird als destabilisierendster ANS-Zustand identifiziert. LDX stabilisiert den CSD-Pfad, entblößt aber den NTS-Tonuspfad durch PFC-Priorisierung — NTS-Tonusinsuffizienz (adrenale HR-Kompensation, Flushing, Erschöpfung bei erhaltener Kognition; keine orthostatische Tachykardie) als klinisches Korrelat. Nullphase ist notwendige, nicht hinreichende Bedingung für SWS-Restauration; das Morgenprofil (sympathische Umschaltung) ist der eigentliche Restaurationsmarker. Das PFC→NTS-Erschöpfungsparadox erklärt den klinisch beobachteten Kollaps beim Übergang von aktivem Fahren (PFC-Demand hält NTS-Schwelle aufrecht) zu Beifahrersitz (Wegfall des letzten Stabilisierungspfades).
+Dieses Kapitel beschreibt die autonome Dysregulation als Downstream-Manifestation des Raphe-Defekts über zwei mechanistisch distinkte Pfade: (1) das reflexive Schwellenmodell — drei neuroanatomisch distinkte afferente NTS-Pfade (orthostatisch, vestibulär, trigeminal), deren Schwelle durch instabile Raphe-Aktivität periodisch abgesenkt wird; (2) den **tonischen NTS-5-HT2A-Pfad** — Raphe→NTS (5-HT2A)→RVLM als zweiter B7-Downstream-Pfad, distinct vom CSD-Pfad (Raphe→Thalamus→Cortex), der die sympathische Grundsteuerung kontrolliert. Die kortikale NTS-Suppression (PFC → PAG → NTS) ist ressourcenintensiv und unter Erschöpfung oder Betablockade fragil. Das Modell prognostiziert einen kompoundierenden Effekt bei LDX + Metoprolol-Entfall über drei unabhängige, additive Pfade: serotonerge NTS-Stabilisierung, noradrenerge PFC-Kapazität und Wiederherstellung der sympathischen Gegenregulation. B7-Aphasie (Feuermuster erhalten, Transmitteroutput stochastisch degradiert) wird als destabilisierendster ANS-Zustand identifiziert. LDX stabilisiert den CSD-Pfad, entblößt aber den NTS-Tonuspfad durch PFC-Priorisierung — NTS-Tonusinsuffizienz (adrenale HR-Kompensation, Flushing, Erschöpfung bei erhaltener Kognition; keine orthostatische Tachykardie) als klinisches Korrelat. Nullphase ist notwendige, nicht hinreichende Bedingung für SWS-Restauration; das Morgenprofil (sympathische Umschaltung) ist der eigentliche Restaurationsmarker. Das PFC→NTS-Erschöpfungsparadox erklärt den klinisch beobachteten Kollaps beim Übergang von aktivem Fahren (PFC-Demand hält NTS-Schwelle aufrecht) zu Beifahrersitz (Wegfall des letzten Stabilisierungspfades). Die NTS→RVLM-Kaskade als efferenter Schenkel der autonomen Dysregulation ist durch vier unabhängige Forschungslinien validiert (NTS-Läsion, Neurotoxin, TPH2-Knockout, chronische intermittierende Hypoxie); die pharmakologische Adressierung über I1-Imidazolinrezeptor-Agonisten (Moxonidin) umgeht den NTS und supprimiert die RVLM-Disinhibition direkt.
 
 ---
 
@@ -27,7 +27,7 @@ Die Raphe-Kerne projizieren nicht nur aufsteigend, sondern auch absteigend in de
 
 | Zielstruktur | Serotonerge Modulation |
 | :---- | :---- |
-| **NTS** | Multipel innerviert: **5-HT2A** → tonische RVLM-Hemmung (sympathische Grundsteuerung); **5-HT3** → reflexive Baroreflex-Modulation. Stabile Raphe-Aktivität → stabile NTS-Schwelle für autonome Reflexe (5-HT3) UND stabile sympathovagale Balance (5-HT2A). |
+| **NTS** | 5-HT3-Rezeptoren (afferente Modulation) und 5-HT2A-Rezeptoren (efferente RVLM-Inhibition). Stabile Raphe-Aktivität → stabile NTS-Schwelle für autonome Reflexe + tonische RVLM-Inhibition → kontrollierter sympathischer Grundtonus. Insuffiziente B7-Aktivität → 5-HT2A-Unterbesetzung → RVLM-Disinhibition → sympathische Überaktivität (vgl. §5.7.7). |
 | **Dorsaler Vaguskern** | 5-HT2A-Rezeptoren modulieren Grundtonus des ventralen Vagus. |
 | **Nucleus ambiguus** | Serotonerge Projektionen modulieren kardialen Vagustonus. |
 | **Sympathische Präganglien** | Serotonerge Modulation der sympathischen Grundaktivität. |
@@ -202,3 +202,48 @@ Das erklärt drei bisherige Beobachtungen:
 **Diagnostischer Marker:** Subjektiv ist der Unterschied zwischen „klar und angetrieben" (Kognition + Sympathikus, beide Pfade aktiv) und „klar aber kraftlos" (nur Kognition, NTS-Pfad insuffizient) leicht zugänglich. Abwesenheit des LDX-Peaks bei erhaltener kognitiver Wirkung ist ein alltagstauglicher diagnostischer Marker für NTS-Tonusinsuffizienz.
 
 **Implikation für LDX-Dosierung:** Dosiserhöhung bei fehlendem LDX-Peak adressiert den falschen Engpass — mehr NE am PFC erhöht die PFC-Kapazität, aber wenn der Raphe→NTS-Schenkel insuffizient ist, wird die zusätzliche Kapazität für Kognition verwendet, nicht für Sympathikus-Steuerung (PFC-Priorisierung, vgl. §5.7).
+
+**NTS→RVLM-Kaskade: Literaturvalidierung durch unabhängige Krankheitsmodelle**
+
+Das Modell postuliert: B7-Insuffizienz → reduzierter 5-HT2A-Antrieb am NTS → RVLM-Disinhibition → sympathische Überaktivität. Diese Kaskade ist als eigenständige klinische Entität nicht beschrieben, aber die Einzelkomponenten sind durch vier unabhängige Forschungslinien validiert:
+
+| Modell | Mechanismus | NTS-Rolle | Downstream | Quelle |
+|:-------|:-----------|:----------|:-----------|:-------|
+| **NTS-Läsion (Infarkt)** | Bilaterale strukturelle Zerstörung des NTS bei intaktem RVLM | NTS-Output eliminiert | Baroreflex-Versagen, labile Hypertension, exaggerierte Pressorresponsen | Biaggioni et al. 1994, *Hypertension* |
+| **NTS-Neurotoxin (Saporin)** | Selektive Zerstörung NK1R-positiver NTS-Neurone | NTS-Inhibition auf RVLM entfällt | Kardiale Arrhythmien, Myokardläsionen, plötzlicher Tod (Rattenmodell); Analogie zu Subarachnoidalblutung beim Menschen | Neff et al. 2009, *Am J Physiol* |
+| **TPH2-Knockout** | Genetische Elimination zentralen Serotonins | 5-HT2A am NTS unbesetzt → RVLM disinhibiert; parallel: 5-HT1A am RVLM fehlt → direkte Enthemmung | Neurogene Hypertension durch erhöhten sympathischen Vasotonus; durch α-Blockade (Phentolamin) reversibel | Alenina et al. 2022, *J Neurophysiol* |
+| **Chronische intermittierende Hypoxie (CIH/OSA)** | Repetitive Hypoxie → NTS-Neuroplastizität (erhöhte glutamaterge Exzitabilität) | NTS pathologisch überaktiviert → RVLM-Überaktivität über veränderte Weiterschaltung | Neurogene Hypertension, verstärkte respiratorisch-sympathische Kopplung | Moraes et al. 2013, *Front Physiol* |
+
+**Mechanistische Zuordnung zum Modell:**
+
+Das TPH2-Knockout-Modell ist der nächste publizierte Analogiefall. Die Autoren identifizieren explizit zwei Pfade, über die zentraler 5-HT-Mangel die RVLM disinhibiert: (1) Verlust des 5-HT2A-Antriebs im NTS (identisch mit der Modellkaskade), (2) Verlust der 5-HT1A-Inhibition direkt am RVLM. Das Modell differenziert: Bei B7-Insuffizienz (nicht globalem 5-HT-Mangel) ist primär Pfad (1) betroffen, da der NTS überwiegend B7-innerviert ist, während der RVLM gemischte Afferenzen erhält.
+
+Der CIH/OSA-Befund zeigt die Gegenrichtung: nicht Untermodulation, sondern pathologische Überaktivierung des NTS erzeugt ebenfalls RVLM-Überaktivität — über veränderte Downstream-Schaltung. Gleicher Knotenpunkt, entgegengesetzte Richtung, unterschiedliches Symptomprofil.
+
+**Abgrenzung:** Alle vier Modelle zeigen strukturelle oder genetische NTS-Dysfunktion. Das vorliegende Modell postuliert eine *funktionale*, zustandsabhängige Untermodulation — tonisch insuffizient bei B7-Depletion, episodisch bei B7-Aphasie, nicht bei stabilem B7. Diese Zustandsabhängigkeit erklärt die Variabilität des autonomen Profils über den B7/B8-Zyklus und unterscheidet das Modell von den publizierten Fällen mit fixiertem Defekt.
+
+**Pharmakologische Optionen am NTS→RVLM-Knotenpunkt**
+
+Die NTS-Tonusinsuffizienz (§5.7.4) ist als eigenständige klinische Entität nicht beschrieben und hat keine indikationsspezifische Therapie. Der Downstream-Effekt — zentrale sympathische Überaktivität via RVLM-Disinhibition — wird jedoch durch eine etablierte Wirkstoffklasse adressiert: I1-Imidazolinrezeptor-Agonisten.
+
+**Drei Interventionsebenen:**
+
+| Ebene | Ansatz | Wirkstoff(e) | Mechanismus | Modellbewertung |
+|:------|:-------|:-------------|:-----------|:----------------|
+| **Upstream (Ursache)** | 5-HT2A-Aktivierung am NTS | Kein selektiver Wirkstoff verfügbar | Direkte Kompensation des fehlenden B7-Signals | Pharmakologisch nicht realisierbar: 5-HT2A-Aktivierung am NTS ist sympathoinhibitorisch, am RVLM sympathoexzitatorisch — selektive NTS-Adressierung nicht möglich |
+| **Knotenpunkt (RVLM)** | I1-Imidazolinrezeptor-Agonismus | Moxonidin, Rilmenidin | Direkte Suppression präsympathetischer RVLM-Neurone über I1-Rezeptoren; NTS wird umgangen | Mechanistisch passend: adressiert die RVLM-Disinhibition unabhängig von deren Ursache. Kein DRN-Suppressionseffekt (anders als Guanfacin), keine primäre LC-Interaktion. Nebenwirkungsprofil günstiger als α2-Agonisten (weniger Sedation, kein Mundtrockenheit) |
+| **Downstream (Symptom)** | β1-Blockade, periphere Sympatholyse | Metoprolol, Bisoprolol | Kardiale Endstrecke blockiert | Im Modell kontraindiziert: reduziert PFC→NTS-Kompensationskapazität (§5.6), eliminiert sympathische Gegenregulation bei ANS-Dekompensation |
+
+**Moxonidin im Modellkontext:**
+
+Moxonidin wirkt selektiv auf I1-Imidazolinrezeptoren im RVLM und supprimiert die sympathische Aktivität dosisabhängig. Bei niedrigen Dosen verbessert es zusätzlich die Baroreflex-Sensitivität — mechanistisch relevant, weil die Baroreflexfunktion bei insuffizientem NTS-Tonus ebenfalls beeinträchtigt ist.
+
+Kritische Unterscheidung zu Guanfacin (vgl. Anhang zur Guanfacin-Integration): Guanfacin ist primär α2-Agonist an NTS und RVLM mit DRN-suppressiver Wirkung (hTAAR1, Cichero et al. 2023). Moxonidin wirkt über einen separaten Rezeptortyp (I1) und hat keine dokumentierte DRN-Interaktion. Im Kontext des Modells wäre Moxonidin der sauberere RVLM-selektive Eingriff — ohne die Raphe-Suppression, die bei einem Primärdefekt der Raphe-Regulation kontraproduktiv sein kann.
+
+**Nicht-pharmakologisch: Baroreflex-Aktivierungstherapie (BAT)**
+
+Elektrische Karotissinus-Stimulation aktiviert Barorezeptorafferenzen → NTS → RVLM-Inhibition. Klinisch eingesetzt bei therapierefraktärer Hypertension. Mechanistisch eine externe Kompensation des NTS-Outputs, der modellseitig durch insuffiziente B7-Modulation zu niedrig ist. Im vorliegenden Profil nicht indiziert (keine manifeste Hypertension), aber als Proof-of-Concept relevant: die Wirksamkeit bestätigt, dass der NTS→RVLM-Pfad kausal für die sympathische Überaktivität ist.
+
+**Therapeutisches Defizit:**
+
+Kein verfügbarer Wirkstoff adressiert die Ursache der NTS-Tonusinsuffizienz — die chronisch insuffiziente 5-HT2A-Aktivierung am NTS. SSRIs erhöhen synaptisches 5-HT global und modulieren damit auch NTS-5-HT2A, sind aber kernel-blind (vgl. Anhang D.8). Das strukturelle Problem ist identisch mit dem Raphe-Kern-Defekt selbst: der Knotenpunkt ist bekannt, aber therapeutisch nicht punktgenau erreichbar.
