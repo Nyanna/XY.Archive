@@ -12,11 +12,9 @@ SQLite to keep incremental runs cheap.
 import argparse
 import math
 import os
-import sqlite3
 import sys
 import time
 from datetime import datetime, timezone
-from pathlib import Path
 
 import numpy as np
 import psycopg2
@@ -26,8 +24,6 @@ from psycopg2.extras import execute_values
 from scipy.interpolate import CubicSpline
 from scipy.ndimage import median_filter
 from scipy.signal import welch
-
-DB_PATH = Path(__file__).parent / "Gadgetbridge"
 
 # Postgres target (mirrors cleanup_gadgetbridge.py)
 PG_HOST = os.environ["PGHOST"]
@@ -86,46 +82,38 @@ VAGAL_BALANCE_REF = 0.50
 TOTAL_MIN = 3.0
 
 
-def load_rr_data(db_path, device_id=None, min_ts_ms=None):
-    conn = sqlite3.connect(db_path)
-    cur = conn.cursor()
-    cur.execute(
-        "SELECT name FROM sqlite_master WHERE type='table' AND name='HEART_RR_INTERVAL_SAMPLE'"
-    )
-    if cur.fetchone() is None:
-        print("ERROR: HEART_RR_INTERVAL_SAMPLE table not found", file=sys.stderr)
-        sys.exit(1)
+def load_rr_data(pg_conn, device_id=None, min_ts_ms=None):
+    with pg_conn.cursor() as cur:
+        if device_id is None:
+            cur.execute(
+                'SELECT "DEVICE_ID", COUNT(*) FROM "HEART_RR_INTERVAL_SAMPLE" '
+                'GROUP BY "DEVICE_ID" ORDER BY COUNT(*) DESC'
+            )
+            rows = cur.fetchall()
+            if not rows:
+                print("ERROR: HEART_RR_INTERVAL_SAMPLE is empty", file=sys.stderr)
+                sys.exit(1)
+            device_id = rows[0][0]
 
-    if device_id is None:
-        cur.execute(
-            "SELECT DEVICE_ID, COUNT(*) FROM HEART_RR_INTERVAL_SAMPLE "
-            "GROUP BY DEVICE_ID ORDER BY COUNT(*) DESC"
+        cur.execute('SELECT "NAME" FROM "DEVICE" WHERE "_id" = %s', (device_id,))
+        dev_row = cur.fetchone()
+        device_name = dev_row[0] if dev_row else f"id={device_id}"
+
+        query = (
+            'SELECT (EXTRACT(EPOCH FROM "timestamp_at") * 1000)::bigint, "RR_MILLIS" '
+            'FROM "HEART_RR_INTERVAL_SAMPLE" '
+            'WHERE "DEVICE_ID" = %s'
         )
-        rows = cur.fetchall()
-        if not rows:
-            print("ERROR: HEART_RR_INTERVAL_SAMPLE is empty", file=sys.stderr)
-            sys.exit(1)
-        device_id = rows[0][0]
+        params = [device_id]
+        if min_ts_ms is not None:
+            query += ' AND "timestamp_at" >= %s'
+            params.append(datetime.fromtimestamp(min_ts_ms / 1000.0, tz=timezone.utc))
+        query += ' ORDER BY "timestamp_at", "SEQ"'
 
-    cur.execute("SELECT NAME FROM DEVICE WHERE _id = ?", (device_id,))
-    dev_row = cur.fetchone()
-    device_name = dev_row[0] if dev_row else f"id={device_id}"
+        cur.execute(query, params)
+        raw = cur.fetchall()
 
-    query = (
-        "SELECT TIMESTAMP, RR_MILLIS FROM HEART_RR_INTERVAL_SAMPLE "
-        "WHERE DEVICE_ID = ?"
-    )
-    params = [device_id]
-    if min_ts_ms is not None:
-        query += " AND TIMESTAMP >= ?"
-        params.append(int(min_ts_ms))
-    query += " ORDER BY TIMESTAMP, SEQ"
-
-    cur.execute(query, params)
-    raw = cur.fetchall()
-    conn.close()
-
-    data = [(ts, rr) for ts, rr in raw if MIN_RR <= rr <= MAX_RR]
+    data = [(int(ts), int(rr)) for ts, rr in raw if MIN_RR <= int(rr) <= MAX_RR]
     return data, device_id, device_name
 
 
@@ -728,20 +716,26 @@ def main():
     parser.add_argument("--device-id", type=int, default=None)
     parser.add_argument(
         "--lf-hf",
-        action="store_true",
+        action="store_false",
         help="Enable LF/HF/VLF spectral analysis via cubic-spline resampling + Welch PSD (default: off, slow)",
     )
     parser.add_argument(
         "--dfa",
-        action="store_true",
+        action="store_false",
         help="Enable DFA alpha1 computation (default: off)",
     )
     parser.add_argument(
         "--ulf",
-        action="store_true",
+        action="store_false",
         help="Enable ULF spectral analysis (2 h sliding window, Lomb-Scargle on "
              "irregular RR samples). Outputs ULF_MS2 + ULF1_MS2 + ULF2_MS2. "
              "Default: off (very slow).",
+    )
+    parser.add_argument(
+        "--full",
+        action="store_true",
+        help="Full recompute: load all RR data from SQLite (no incremental "
+             "cutoff) and overwrite all minutes in Postgres (no skip).",
     )
     parser.add_argument(
         "--limit-minutes",
@@ -755,10 +749,6 @@ def main():
     )
     args = parser.parse_args()
 
-    if not DB_PATH.exists():
-        print(f"ERROR: database not found: {DB_PATH}")
-        sys.exit(1)
-
     t_total = time.monotonic()
 
     pg_conn = connect_pg()
@@ -767,18 +757,15 @@ def main():
         existing_minutes = get_existing_minutes(pg_conn)
         print(f"Existing HRV minutes in Postgres: {len(existing_minutes)}")
 
-        # Incremental RR load: when the target already has data, only
-        # read beats within one ULF window (2 h) before the newest stored
-        # minute. Backward-looking windows for any genuinely new minute
-        # still find the beats they need, while SQLite does not have to
-        # return the full history on every run.
         min_ts_ms = None
-        if existing_minutes:
+        if args.full:
+            existing_minutes = set()
+        elif existing_minutes:
             min_ts_ms = max(existing_minutes) - ULF_WINDOW_MS
 
         t0 = time.monotonic()
         rr_data, device_id, device_name = load_rr_data(
-            DB_PATH, args.device_id, min_ts_ms=min_ts_ms,
+            pg_conn, args.device_id, min_ts_ms=min_ts_ms,
         )
         if not rr_data:
             print("No new RR intervals to process.")
