@@ -5,7 +5,7 @@
 
 **Zusammenfassung**
 
-Dieses Kapitel beschreibt die autonome Dysregulation als Downstream-Manifestation des Raphe-Defekts über zwei mechanistisch distinkte Pfade: (1) das reflexive Schwellenmodell — drei neuroanatomisch distinkte afferente NTS-Pfade (orthostatisch, vestibulär, trigeminal), deren Schwelle durch instabile Raphe-Aktivität periodisch abgesenkt wird; (2) den **tonischen NTS-5-HT2A-Pfad** — Raphe→NTS (5-HT2A)→RVLM als zweiter B7-Downstream-Pfad, distinct vom CSD-Pfad (Raphe→Thalamus→Cortex), der die sympathische Grundsteuerung kontrolliert. Die kortikale NTS-Suppression (PFC → PAG → NTS) ist ressourcenintensiv und unter Erschöpfung oder Betablockade fragil. Das Modell prognostiziert einen kompoundierenden Effekt bei LDX + Metoprolol-Entfall über drei unabhängige, additive Pfade: serotonerge NTS-Stabilisierung, noradrenerge PFC-Kapazität und Wiederherstellung der sympathischen Gegenregulation. B7-Aphasie (Feuermuster erhalten, Transmitteroutput stochastisch degradiert) wird als destabilisierendster ANS-Zustand identifiziert. LDX stabilisiert den CSD-Pfad, entblößt aber den NTS-Tonuspfad durch PFC-Priorisierung — NTS-Tonusinsuffizienz (adrenale HR-Kompensation, Flushing, Erschöpfung bei erhaltener Kognition; keine orthostatische Tachykardie) als klinisches Korrelat. Nullphase ist notwendige, nicht hinreichende Bedingung für SWS-Restauration; das Morgenprofil (sympathische Umschaltung) ist der eigentliche Restaurationsmarker. Das PFC→NTS-Erschöpfungsparadox erklärt den klinisch beobachteten Kollaps beim Übergang von aktivem Fahren (PFC-Demand hält NTS-Schwelle aufrecht) zu Beifahrersitz (Wegfall des letzten Stabilisierungspfades). Die NTS→RVLM-Kaskade als efferenter Schenkel der autonomen Dysregulation ist durch vier unabhängige Forschungslinien validiert (NTS-Läsion, Neurotoxin, TPH2-Knockout, chronische intermittierende Hypoxie); die pharmakologische Adressierung über I1-Imidazolinrezeptor-Agonisten (Moxonidin) umgeht den NTS und supprimiert die RVLM-Disinhibition direkt.
+Dieses Kapitel beschreibt die autonome Dysregulation als Downstream-Manifestation des Raphe-Defekts über zwei mechanistisch distinkte Pfade: (1) das reflexive Schwellenmodell — drei neuroanatomisch distinkte afferente NTS-Pfade (orthostatisch, vestibulär, trigeminal), deren Schwelle durch instabile Raphe-Aktivität periodisch abgesenkt wird; (2) den **tonischen NTS-5-HT2A-Pfad** — Raphe→NTS (5-HT2A)→RVLM als zweiter B7-Downstream-Pfad, distinct vom CSD-Pfad (Raphe→Thalamus→Cortex), der die sympathische Grundsteuerung kontrolliert. Die kortikale NTS-Suppression (PFC → PAG → NTS) ist ressourcenintensiv und unter Erschöpfung oder Betablockade fragil. Das Modell prognostiziert einen kompoundierenden Effekt bei LDX + Metoprolol-Entfall über drei unabhängige, additive Pfade: serotonerge NTS-Stabilisierung, noradrenerge PFC-Kapazität und Wiederherstellung der sympathischen Gegenregulation. B7-Aphasie (Feuermuster erhalten, Transmitteroutput stochastisch degradiert) wird als destabilisierendster ANS-Zustand identifiziert. LDX stabilisiert den CSD-Pfad, entblößt aber den NTS-Tonuspfad durch PFC-Priorisierung — NTS-Tonusinsuffizienz (adrenale HR-Kompensation, Flushing, Erschöpfung bei erhaltener Kognition; keine orthostatische Tachykardie) als klinisches Korrelat. Nullphase ist notwendige, nicht hinreichende Bedingung für SWS-Restauration; das Morgenprofil (sympathische Umschaltung) ist der eigentliche Restaurationsmarker. Das PFC→NTS-Erschöpfungsparadox erklärt den klinisch beobachteten Kollaps beim Übergang von aktivem Fahren (PFC-Demand hält NTS-Schwelle aufrecht) zu Beifahrersitz (Wegfall des letzten Stabilisierungspfades). Die NTS→RVLM-Kaskade als efferenter Schenkel der autonomen Dysregulation ist durch vier unabhängige Forschungslinien validiert (NTS-Läsion, Neurotoxin, TPH2-Knockout, chronische intermittierende Hypoxie); die pharmakologische Adressierung über I1-Imidazolinrezeptor-Agonisten (Moxonidin) umgeht den NTS und supprimiert die RVLM-Disinhibition direkt. §5.5 präzisiert die PFC-autonome Regulation als antizipatorische Normalfunktion (~20% des autonomen Outputs) und nicht als Backup-System — die Überbrückungskapazität bei B7-Depletion ist ein Nebenprodukt dieser Architektur. §5.6 wird um den LC-Engpass als eigentliche Erschöpfungsursache (nicht PFC-Depletion, sondern LC-Depletion), die modulatorische Versorgungskette (LC→NE und VTA→DA als Voraussetzung für PFC-sustained-firing), die Phänomenologie des retrobulbären Drucks als metabolisch-vaskulären Effektorpfad, die hemisphärische Asymmetrie der autonomen Regulation (rechts sympathisch, links parasympathisch) als Erklärung für die Rechtslateralisierung, Hitzewellen als demaskierte Brainstem-Dysregulation nach DPH-Kappung sowie die DPH-Dissoziation als subjektiven Proxy der PFC-Kompensationslast erweitert.
 
 ---
 
@@ -108,6 +108,16 @@ Im Intratakt/Intertakt-Rahmen (§2.5.1) ist B7-Aphasie der Zustand, in dem die c
 
 Pharmakologische Interventionen auf der Vesikelökonomie-Ebene sind in 03_pharma/09_vesikeloekonomie_5htp.md dokumentiert.
 
+**PFC-autonome Regulation als Normalfunktion**
+
+Die PFC→Brainstem-Projektionen (vmPFC→Hypothalamus, ACC→PAG, Insula→NTS) sind keine Backup-Systeme, sondern die antizipatorische Komponente der autonomen Regulation. Im Normalbetrieb liefert der PFC ~20% der autonomen Steuerung — die prädiktive Komponente, die Herzfrequenz vor dem Aufstehen anhebt, Vasokonstriktion vor Kälteexposition einleitet, sympathische Aktivierung vor sozialem Konflikt hochfährt. Diese Antizipation kann kein Reflexbogen leisten — sie braucht Kontextmodellierung.
+
+Die Architektur ist für modulatorischen Feinabgleich dimensioniert, nicht für primäre Regulation. Die Leitungen tragen ~20% des autonomen Outputs. Bei B7-Depletion verschiebt sich der relative PFC-Beitrag von ~20% modulatorisch auf annähernd 100% primär — über Leitungen, die für diesen Durchsatz nicht ausgelegt sind.
+
+Die Notfall-Überbrückungsfähigkeit ist kein dediziertes Feature, sondern ein Nebenprodukt einer Architektur, die für antizipatorische Regulation selektiert wurde. Die Fähigkeit, autonome Funktionen bei Brainstem-Ausfall kurzzeitig zu übernehmen, emergiert aus der prädiktiven Koppelung — sie wurde nie selektiert und ist dementsprechend ineffizient.
+
+*Literatur: Benarroch (Central Autonomic Network); Beissner et al. 2013 (Neuroimaging-Metaanalyse CAN)*
+
 ### **5.6 PFC→NTS-Kompensation und deren Erschöpfungsparadox**
 
 Die kortikale NTS-Suppression (5.3) erklärt einen klinisch beobachteten Befund, der konventionell keinen Mechanismus hat:
@@ -117,6 +127,77 @@ Die kortikale NTS-Suppression (5.3) erklärt einen klinisch beobachteten Befund,
 **Mechanismus:** Der PFC kompensiert die B7-Depletion aktiv über den Pfad PFC → PAG → NTS (vgl. 5.3). Solange aufgabengetriebener Arousal den PFC fordert, wird die NTS-Schwelle cortical aufrechterhalten — auch wenn die serotonerge NTS-Modulation (Pfad 1, vgl. 5.4) bereits kollabiert ist. Sobald der PFC-Demand wegfällt (Beifahrersitz), kollabiert auch die kortikale Kompensation.
 
 **Erschöpfungsparadox:** Die PFC→NTS-Kompensation nutzt denselben noradrenergen Pfad, der unter B7-Depletion bereits fragil ist. Die Kompensation funktioniert nur solange, wie externer Demand den PFC aktiv hält — sie ist nicht selbsterhaltend. Das Paradox: Die Kompensation **erschöpft sich schneller**, je länger sie läuft, weil sie noradrenerge Ressourcen verbraucht, die nicht nachgeliefert werden. Die Transition von aktivem Fahren zu Beifahrersitz ist nicht primär ein Aufmerksamkeitswechsel, sondern der Wegfall des einzigen verbleibenden Stabilisierungspfades.
+
+**LC als Engpass**
+
+Der PFC selbst erschöpft sich nicht primär. PFC-Pyramidenzellen benötigen tonische DA- und NE-Modulation aus VTA und LC für sustained firing. LC wird gleichzeitig durch die Raphe-Instabilität beansprucht: inkohärente Anforderungen an Arousal-Anpassung zwingen LC, zwei Krisen parallel zu bedienen — PFC-Support und Raphe-Instabilität-Management.
+
+Die Abulie ist in diesem Rahmen nicht PFC-Depletion, sondern LC-Depletion, die den PFC funktional offline nimmt — der Treibstoff wird abgestellt, nicht der Motor.
+
+DPH schützt indirekt den LC, indem es die PFC-Anforderung an sustained firing reduziert (H1-Blockade → PFC-Demand ↓ → LC-Last ↓). Das ist nicht Raphe-Intervention, nicht primär PFC→NTS-Entkopplung, sondern Netzwerk-Konservierung über den LC-Engpass. [Evidenzgrad V]
+
+**Modulatorische Versorgungskette**
+
+Die PFC-Kompensation hängt von einer dreistufigen Versorgungskette ab:
+
+```
+LC → NE → PFC-Pyramidenzellen (sustained firing)
+VTA → DA → PFC-Pyramidenzellen (Working Memory, Kontextmodell)
+PFC → Glutamat → NTS (autonomer Output)
+```
+
+Jedes Glied ist ein potenzieller Ausfallpunkt: LC-Depletion bricht NE-Versorgung ab → PFC kann sustained firing nicht aufrechterhalten → Abulie. VTA-Insuffizienz senkt DA-Versorgung → PFC-Kontextmodell degradiert → Kompensation wird ungerichtet (streut statt fokussiert zu regulieren). Exzessiver PFC→NTS-Drive erzeugt exzitotoxisches Potential am NTS.
+
+LDX stabilisiert die DA- und NE-Versorgung upstream und verlängert dadurch die Lebensdauer der PFC-Kompensation. DPH reduziert den PFC-Demand und senkt damit den Verbrauch auf der Versorgungskette. Beide wirken an unterschiedlichen Stellen derselben Kette — LDX vergrößert den Vorrat, DPH senkt den Verbrauch (vgl. Anhang F.5).
+
+**Phänomenologie des PFC-Kompensationsdrucks**
+
+Der PFC hat keine sensorische Selbstrepräsentation. Das subjektive Erleben der Kompensationslast ist nicht PFC-Arbeit, sondern der Effektorpfad: Sustained glutamaterger PFC→NTS-Drive erzeugt vasomotorische Instabilität im Versorgungsgebiet der Arteria ophthalmica (V1-Ast Trigeminus, periorbital). Der Druck ist die Arbeit, nicht die Erschöpfung.
+
+Sustained PFC→NTS-Drive erzeugt erhöhte metabolische Nachfrage im aktiven orbitofrontalen Kortex → kompensatorische lokale Vasodilatation → duraler Dehnungsreiz → trigeminale Afferenzen → subjektiver retrobulbärer Druck. Dieser Mechanismus ist nicht identisch mit dem CSD-getriebenen trigeminovaskulären Schmerz (vgl. §4), sondern ein metabolisch-vaskulärer Effektorpfad.
+
+Wenn DPH den PFC aus der autonomen Schleife nimmt und der Druck nachlässt, bestätigt das den PFC→NTS-Drive als aktive Schmerzquelle — Bestätigungsdiagnostik durch therapeutische Intervention. [Evidenzgrad V, Einzelfallbeobachtung]
+
+**Hemisphärische Asymmetrie — rechter orbitaler Lappen**
+
+Die Lateralisierung des retrobulbären Drucks nach rechts ist nicht zufällig, sondern reflektiert die hemisphärische Asymmetrie der autonomen Regulation.
+
+| Befund | Quelle | Implikation |
+|:-------|:-------|:------------|
+| Links-intrakarotidäre Barbiturat-Infusion (Wada) → Tachykardie | Oppenheimer et al. 1990 | Rechte Hemisphäre präferenziell sympathisch |
+| Rechts-intrakarotidäre Infusion → Bradykardie | Oppenheimer et al. 1990 | Linke Hemisphäre präferenziell parasympathisch |
+| Stimulation linker anteriorer Insula → Bradykardie + Blutdruckabfall | Oppenheimer et al. (intraoperativ) | Links = parasympathisch efferent |
+| Stimulation rechter anteriorer Insula → Tachykardie + Pressorantwort | Craig 2005 | Rechts = sympathisch efferent |
+| Rechter Insula-Infarkt → erhöhte Inzidenz plötzlicher Tod, supraventrikuläre Tachyarrhythmien | Tokgözoglu et al. 1999 | Wegfall sympathischer Regulation → kardiale Instabilität |
+| Linker Insula-Infarkt → erhöhte sympathische, verminderte parasympathische Kontrolle | Insular stroke review 2024 | Bestätigung durch Läsionsstudien |
+
+Wenn B7-Depletion die PFC-Kompensationslast erzeugt und diese Kompensation primär sympathisch ist (weil B7-Depletion sympathischen Drive entzieht), fällt die Last überproportional auf den rechten PFC-Insula-Komplex — dort sitzt die sympathische Repräsentation. Der retrobulbäre Druck rechts ist die Downstream-Konsequenz der asymmetrischen Belastung.
+
+Die konsistente Rechtslateralisierung des vertikalen Nystagmus (vgl. Anhang B.20) und des retrobulbären Drucks könnten auf dieselbe architektonische Grundlage zurückgehen: eine individuelle Asymmetrie der B7-Projektionsdichte in rechte vs. linke autonome Kerngebiete. Die Insula-Asymmetrie ist ein populationsweites Muster [Evidenzgrad II]; die Zuordnung zur individuellen B7-Projektionsasymmetrie als Erklärung für die fixe Rechtslateralisierung ist [Evidenzgrad V].
+
+Die hemisphärische Asymmetrie der Insula ist auch für §8.3 (Interozeption) relevant: Bei B7-Depletion fällt der interozeptive Prädiktionsfehler asymmetrisch aus — die rechte Insula (sympathisch) ist relativ überlastet, die linke (parasympathisch) relativ untermoduliert (vgl. §8.3).
+
+**Hitzewellen als Demaskierung**
+
+Wenn DPH die PFC→NTS-Kompensation kappt, werden die Hitzewellen stärker — nicht weil DPH sie erzeugt, sondern weil die vasomotorische Brainstem-Dysregulation ohne kortikale Überlagerung sichtbar wird. Die Hitzewellen nach DPH sind ein Fenster in den reinen B7-Depletionszustand: Vorher war die Dysregulation durch PFC-Kompensation maskiert.
+
+Sequenz: (1) B7 depleted → sympathischer Drive fällt aus. (2) PFC kompensiert über PFC→NTS → retrobulbärer Druck als Effektorpfad-Signal. (3) DPH kappt PFC→NTS → Druck löst, Dissoziation setzt ein. (4) Hitzewellen als nackte Brainstem-Dysregulation ohne kortikale Maskierung. (5) Hitzewellen sind prognostisch günstiger als retrobulbärer Druck — keine zentrale Last, thermoregulatorische Reflexe laufen ohne kortikale Arbitrierung. [Evidenzgrad V, Symptomprotokoll 01.05.2026]
+
+**DPH-Dissoziation als Systemzustandsmarker**
+
+Die H1-Blockade durch DPH ist nicht pathologiespezifisch — sie erzeugt bei jedem Menschen partielle PFC-Entkopplung. Die phänomenologische Konsequenz skaliert mit dem Ausmaß der PFC-Kompensationslast:
+
+| Systemzustand | PFC-autonomer Beitrag | Erleben unter DPH |
+|:-------------|:---------------------|:-----------------|
+| Gesundes System | ~20% (modulatorisch, redundant) | Müdigkeit, keine Dissoziation |
+| Partiell kompensierend | 40–60% | Leichte Dissoziation |
+| Am Limit (B7 depleted) | ~100% (letzte aktive Regelschleife) | Volle Dissoziation |
+
+Die Dissoziation ist ein Prädiktionsfehler: Der PFC erwartet interozetives Feedback, das nicht mehr kommt. Das ist kein Informationsverlust, der unbemerkt bleibt, sondern einer, der aktiv als Fehlen registriert wird — Metakognition detektiert die Lücke in der eigenen Erwartung (vgl. §8.3, Interozeption).
+
+DPH reduziert den Input-Load auf den Thalamus. Die freiwerdende Bandbreite füllt sich nicht mit Nichts, sondern mit der Wahrnehmung des veränderten Zustands. Die Dissoziation ist nicht trotz freier Bandbreite wahrnehmbar, sondern wegen ihr.
+
+Die Stärke der subjektiven Dissoziation unter DPH ist ein subjektiver Proxy für den Grad der PFC-Kompensationslast — ein Biomarker ohne Messhardware. [Evidenzgrad V]
 
 ### **5.7 Tonische sympathovagale Regulation: Raphe→NTS→RVLM als zweiter Downstream-Pfad**
 
