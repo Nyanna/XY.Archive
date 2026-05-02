@@ -74,6 +74,16 @@ Wasserlöslich, sättigbar absorbiert (bei 200 mg ~30–40 %, bei 400 mg ~15–2
 
 Zentral gängiger H1-Antagonist, zusätzlich anticholinerg und CYP2D6-Inhibitor. Histaminerge Afferenzen aus dem TMN innervieren den DRN (B7) dichter als den MRN (B8); H1-Blockade supprimiert daher präferenziell B7 (Crawford et al. 2013). Kurze HWZ (4–8 h). Langzeittauglichkeit disqualifiziert durch anticholinerge Last (Demenzrisiko dosisabhängig, Gray et al. 2015) und H1-Toleranzentwicklung.
 
+**Externe Literaturkonvergenz:**
+
+Die zentral-vs-peripher-Unterscheidung ist in der Migräneliteratur etabliert: periphere H1-Antihistaminika (Cetirizin, Loratadin, Desloratadin) sind als Migränemedikation unwirksam (Alstadhaug 2014); zentral wirksame H1-Antagonisten — Cinnarizin und Cyproheptadin — werden in Übersichtsarbeiten als Migräneprophylaktika geführt (Alstadhaug 2014, Yuan & Silberstein 2018). Trizyklische Antidepressiva (Amitriptylin, Nortriptylin, Doxepin) sind etablierte Migräneprophylaktika, deren Wirkmechanismus neben SERT/NET-Hemmung explizit auch H1-, α1-adrenerge und muskarinische Affinität umfasst (Burch et al. 2023, EHF-Metaanalyse). Bei niedrigdosiertem Doxepin (≤6 mg) dominiert pharmakologisch der H1-Anteil — die Doxepin-Wahl als chronisch einsetzbare H1-selektive Variante (Section 2.4) hat damit externe pharmakologische Stützung.
+
+**Bekannte negative RCT (Friedman et al. 2016):**
+
+Die einzige direkte placebokontrollierte RCT zu DPH bei Migräne (Friedman et al. 2016, Ann Emerg Med, n=208) testete DPH 50 mg IV als Adjuvant zu Metoclopramid 10 mg IV in der ED-Akutversorgung und fand keinen Benefit gegenüber Placebo + Metoclopramid (sustained relief 40% vs. 37%, 95% CI für Differenz: −10% bis +16%). Dieses Ergebnis ist im Modellframework nicht einschlägig: es testet H1-Blockade als IV-Add-On nach bereits propagierter trigeminovaskulärer Aktivierung, in Kombination mit einem D2-Antagonisten, an einer ED-Population — also weder die prodromale Anwendung noch ein B7-dominantes Phänotyp-Subset. Friedman 2016 disqualifiziert DPH als Akutadjuvans, nicht als prodromale B7-Bremse. Diese Unterscheidung muss explizit benannt werden, weil die Studie in der Standardliteratur als „DPH ist nicht wirksam bei Migräne" zitiert wird.
+
+Querverweis: Anhang K.5 (zentrale H1-Antagonisten) und K.6 (Friedman 2016) für die ausführliche Einordnung im Kontext der externen Literaturkonvergenz.
+
 ### 2.4 Doxepin (niedrigdosiert, 3–6 mg)
 
 Trizyklisches Antidepressivum, in hohen Dosen (75–300 mg) breit wirksam. Bei 3–6 mg pharmakologisch nahezu *reiner* H1-Antagonist: NE-Reuptake-Hemmung nicht nachweisbar, anticholinerge Last placebovergleichbar, CYP2D6-Hemmung klinisch nicht relevant. FDA-zugelassen für Insomnie (Silenor). Lange HWZ (Doxepin ~15 h, Nordoxepin ~31 h) ergibt mehrtägige H1-Abdämpfung bei Einmaldosis — kinetisch eher prodromal/repetitiv als strikt akut.

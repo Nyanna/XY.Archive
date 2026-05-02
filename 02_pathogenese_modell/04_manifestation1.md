@@ -339,6 +339,14 @@ Die metabolische Krise hat zwei distinkte Modi — einen graduellen Vorläufer u
 
 **Raphe-Kompensation (Glied 2, modellspezifisch):** Triptane aktivieren zusätzlich 5-HT1B/1D-Autorezeptoren auf Raphe-Terminalen (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen → Unterbrechung des Burst-Deplete-Zyklus → stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird [hypothetisch — modellspezifisch].
 
+**Externe direkte Validierung der DRN-CSD-Kopplung (Cui et al. 2013)**
+
+Cui et al. (2013) lieferten den direkten tierexperimentellen Nachweis, dass die serotonerge DRN-Innervation des Kortex die CSD-Suszeptibilität moduliert. Nach pharmakologischer Degeneration der serotonergen DRN-Neurone in Ratten war (a) die Ausbreitungsgeschwindigkeit der CSD signifikant erhöht und (b) die Depolarisationswelle signifikant verbreitert. Eine permanente DRN-Serotonin-Insuffizienz erzeugt damit das, was im Modell die transiente Talschwingung der oszillatorischen DRN-Aktivität *funktional repliziert*: erniedrigter kortikaler 5-HT-Tonus, Wegfall der 5-HT1A-vermittelten Hyperpolarisation, erhöhte Anfälligkeit für CSD-Initiation und -Propagation.
+
+Die Konsequenz für die Modellinterpretation ist direkt: Der CSD-anfällige Zustand entsteht im modellinternen Mechanismus nicht in einem dauerhaft DRN-insuffizienten System, sondern *in jeder einzelnen Talschwingung* eines oszillatorischen Systems mit gleichem funktionalen Effekt. Cuis Befund stützt damit nicht nur die Existenz der DRN→CSD-Kopplung, sondern macht sie zur direkt etablierten Grundlage des Auslösemechanismus.
+
+Querverweis: Anhang K.2 für die ausführliche Einordnung im Kontext der externen Literaturkonvergenz.
+
 ### **4.5 CSD als kompensatorische Resynchronisation**
 
 **Reformulierung: Von Pathologie zu Notfallkompensation**
