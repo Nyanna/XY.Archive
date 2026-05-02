@@ -48,7 +48,7 @@ Die ursprüngliche Analyse ermittelte die Zeit vom Einschlafen bis zum ersten De
 | P75 | 46 min | 50 min |
 | **SD** | **26,95 min** | **15,30 min** |
 
-Die Medianverschiebung (+10 min) deutete initial auf eine Verschlechterung. Die Halbierung der Standardabweichung (27 → 15) zeigt das Gegenteil: Der PRE-Wert streut massiv, weil er von Rauschartefakten getrieben ist, nicht von einer stabilen früheren Phasenlage.
+Die Medianverschiebung (+10 min) deutete initial auf eine Verschlechterung. Die Halbierung der Standardabweichung (27 $\rightarrow$ 15) zeigt das Gegenteil: Der PRE-Wert streut massiv, weil er von Rauschartefakten getrieben ist, nicht von einer stabilen früheren Phasenlage.
 
 **Epochen-basierte Reanalyse**
 
@@ -64,7 +64,7 @@ Nach Filterung:
 | P25 | 25 min | 29 min |
 | P75 | 47 min | 51 min |
 
-Die PRE-Werte stiegen durch den Filter (P25: 18→25), die POST-Werte blieben stabil — die PRE-„Frühverschiebung" war ein Artefakt der Noise-Fragmente.
+Die PRE-Werte stiegen durch den Filter (P25: 18 $\rightarrow$ 25), die POST-Werte blieben stabil — die PRE-„Frühverschiebung" war ein Artefakt der Noise-Fragmente.
 
 **Reinterpretation: Noise ist Signal**
 
@@ -96,7 +96,7 @@ Normiert auf Schlafdauer:
 | Light Episoden/Stunde | 1,7 | 1,5 | 0,288 |
 | Total Episoden/Stunde | 4,6 | 3,6 | **0,013** |
 
-![Episode per Nacht](<images/Metabase-Episodes per Day-6.4.2026, 10_04_43.png>){width=90%}
+![Episode per Nacht](<images/Metabase-HR-AVG-2026-04-06.png>){width=90%}
 
 **Hierarchie folgt Synchronisationsanforderung**
 
@@ -106,7 +106,7 @@ Die Trennschärfe folgt der Hierarchie der erforderlichen kortikalen Synchronisa
 2. **REM** (p=0,005): Erfordert ebenfalls globale Koordination (Muskelatonie, PGO-Wellen). Stark betroffen.
 3. **Light** (p=0,288): Geringste Synchronisationsanforderung. Nicht signifikant betroffen.
 
-Diese Hierarchie ist eine Modellvorhersage: Wenn der Upstream-Defekt (instabile Raphe → insuffiziente thalamische Modulation) die Fähigkeit zur globalen kortikalen Zustandsübergänge beeinträchtigt, müssen die Zustände mit den höchsten Kohärenzanforderungen am stärksten fragmentiert sein.
+Diese Hierarchie ist eine Modellvorhersage: Wenn der Upstream-Defekt (instabile Raphe $\rightarrow$ insuffiziente thalamische Modulation) die Fähigkeit zur globalen kortikalen Zustandsübergänge beeinträchtigt, müssen die Zustände mit den höchsten Kohärenzanforderungen am stärksten fragmentiert sein.
 
 **Globale Kohärenzmetriken**
 
@@ -116,7 +116,7 @@ Diese Hierarchie ist eine Modellvorhersage: Wenn der Upstream-Defekt (instabile 
 | Mean Episodendauer (min) | 15,2 | 18,8 | — |
 | Median Episodendauer (min) | 12,9 | 16,4 | — |
 
-Die Transitionsdichte (Stadienwechsel pro Stunde Schlaf) ist ein aggregiertes Kohärenzmaß. Die Reduktion um ~23% (4,4 → 3,4) zeigt, dass der Kortex unter LDX Zustände länger stabil hält.
+Die Transitionsdichte (Stadienwechsel pro Stunde Schlaf) ist ein aggregiertes Kohärenzmaß. Die Reduktion um ~23% (4,4 $\rightarrow$ 3,4) zeigt, dass der Kortex unter LDX Zustände länger stabil hält.
 
 **Nacht-zu-Nacht-Stabilität**
 
@@ -141,7 +141,7 @@ Die PRE-SD der Deep-Episodenzahl (13,0 bei Mean 12,7) zeigt, dass einzelne PRE-N
 
 Die Nacht vom 28.03.2026 ist das POST-Maximum und der einzige POST-Datenpunkt, der in PRE-Territorium liegt. Alle anderen Nächte mit ≥50 Transitionen sind PRE-Nächte.
 
-**Kontext der Vornächte:** Die vier vorherigen Nächte zeigten eine monoton steigende, aber niedrige Density: 1,78 → 2,69 → 3,00 → 3,26 Episoden/h. Der Sprung auf 8,99/h ist ein Faktor-2,7-Anstieg innerhalb von 24 Stunden. Deep-Episoden springen von 3–6 auf 21, REM-Episoden von 4–6 auf 11.
+**Kontext der Vornächte:** Die vier vorherigen Nächte zeigten eine monoton steigende, aber niedrige Density: 1,78 $\rightarrow$ 2,69 $\rightarrow$ 3,00 $\rightarrow$ 3,26 Episoden/h. Der Sprung auf 8,99/h ist ein Faktor-2,7-Anstieg innerhalb von 24 Stunden. Deep-Episoden springen von 3–6 auf 21, REM-Episoden von 4–6 auf 11.
 
 **Interpretation:** Dieser Datenpunkt ist der stärkste empirische Hinweis auf einen von der Medikation unabhängigen endogenen Oszillator mit ~4-Tage-Periodizität. Die LDX-Wirkung dämpft die mittlere Fragmentierung (POST-Mean < PRE-Mean), aber der zugrundeliegende Desynchronisationszyklus durchbricht die pharmakologische Stabilisierung periodisch. Das Muster entspricht einer PRE-typischen Nacht unter POST-Bedingungen — der Upstream-Treiber ist nicht eliminiert, sondern moduliert.
 
@@ -173,7 +173,7 @@ Die intakte vagale Kapazität ist davon unberührt: HR-Floor median 50 bpm (PRE)
 
 Point-biserial r (Noise-Fragmente ~ Nap): **r=0,276, p=0,019**
 
-Der Befund ist bemerkenswert: Nächte mit Folge-Nap zeigen 3,5× mehr Noise-Fragmente, aber *höhere* Deep-Gesamtdauer (129 vs. 106 min). Das Band klassifiziert genug Minuten als Deep — die Quantität stimmt, die Qualität nicht. Das Gehirn registriert korrekt: kein restaurativer SWS trotz ausreichender Tracker-Minuten → kompensatorischer Nap.
+Der Befund ist bemerkenswert: Nächte mit Folge-Nap zeigen 3,5× mehr Noise-Fragmente, aber *höhere* Deep-Gesamtdauer (129 vs. 106 min). Das Band klassifiziert genug Minuten als Deep — die Quantität stimmt, die Qualität nicht. Das Gehirn registriert korrekt: kein restaurativer SWS trotz ausreichender Tracker-Minuten $\rightarrow$ kompensatorischer Nap.
 
 **POST-Naps haben anderen Treiber**
 
@@ -202,7 +202,7 @@ Naps treten *vor* Anfällen gehäuft auf, nicht danach — sie sind prodromal, n
 
 POST-Naps haben einen komplett anderen Charakter: Die Nap-Rate ist doppelt so hoch (50% vs. 24%), die Naps korrelieren aber mit *niedrigerer* Density (3,06 vs. 3,75/h) und resetten in 78% erfolgreich. PRE-Naps resetten nur in 38% — sie signalisieren eine Desynchronisation, die der Nap allein nicht kompensieren kann.
 
-**Dreiersequenz: Fragmentierte Nacht → Nap → Anfall:**
+**Dreiersequenz: Fragmentierte Nacht $\rightarrow$ Nap $\rightarrow$ Anfall:**
 
 Wenn einer fragmentierten Nacht (Density ≥5/h) ein Nap folgt, münden 75% (6/8) in einen Anfall: 5/8 am selben Tag, 1/8 am Folgetag. Die Dreiersequenz identifiziert ein Hochrisiko-Fenster, in dem die kompensatorische Kapazität erschöpft ist.
 
@@ -214,9 +214,9 @@ Wenn einer fragmentierten Nacht (Density ≥5/h) ein Nap folgt, münden 75% (6/8
 
 Die Standardinterpretation der CSD (Cortical Spreading Depression) ist pathologisch: ein Fehlereignis, das Schmerz verursacht. Die vorliegende Analyse legt eine funktionelle Reformulierung nahe:
 
-**Konventionell:** Trigger → Schwelle überschritten → CSD → Schmerz → Dysfunktion
+**Konventionell:** Trigger $\rightarrow$ Schwelle überschritten $\rightarrow$ CSD $\rightarrow$ Schmerz $\rightarrow$ Dysfunktion
 
-**Reformuliert:** Progressive kortikale Desynchronisation → Kompensation versagt → CSD als Notfall-Resynchronisation → Schmerz als metabolische Kosten → *kortikale* Kohärenz wiederhergestellt (der autonome Zyklus bleibt unbeeinflusst, vgl. B.13.2)
+**Reformuliert:** Progressive kortikale Desynchronisation $\rightarrow$ Kompensation versagt $\rightarrow$ CSD als Notfall-Resynchronisation $\rightarrow$ Schmerz als metabolische Kosten $\rightarrow$ *kortikale* Kohärenz wiederhergestellt (der autonome Zyklus bleibt unbeeinflusst, vgl. B.13.2)
 
 Die CSD ist eine erzwungene globale kortikale Depolarisationswelle — sie durchläuft den gesamten Kortex und erzwingt einen synchronisierten Neustart. Post-CSD ist das Patchwork aufgelöst, der Kortex startet aus einem synchronisierten Zustand.
 
@@ -230,11 +230,11 @@ Schlaf nach einem Migräneanfall zeigt intensives, erinnerbares Träumen — kon
 
 **2. Naratriptan-Gegenprobe**
 
-Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall → verhindert den Reset → verhindert die REM-Konsolidierung → Traumerinnerung nimmt ab. Die Abnahme bewussten Träumens ist antiproportional zum Naratriptan-Konsum — kausal konsistent.
+Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall $\rightarrow$ verhindert den Reset $\rightarrow$ verhindert die REM-Konsolidierung $\rightarrow$ Traumerinnerung nimmt ab. Die Abnahme bewussten Träumens ist antiproportional zum Naratriptan-Konsum — kausal konsistent.
 
 **3. Betablocker-Paradox (revidiert)**
 
-Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren.
+Unter Metoprolol: weniger Anfälle $\rightarrow$ weniger CSD-Resets $\rightarrow$ chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren.
 
 **Evolutionäre Implikation**
 
@@ -246,17 +246,17 @@ Die ~6,5-Tage-Periodizität (im vorliegenden Fall) ist dann kein Anfallszyklus, 
 
 Reine Migräneprophylaxe ohne Upstream-Adressierung (Betablocker, Triptane, CGRP-Antikörper) unterdrückt den Schutzmechanismus, ohne das Synchronisationsproblem zu lösen. Der Patient wird symptomfrei bei progredient fragmentiertem Kortex.
 
-LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente thalamische Modulation → globale Zustandsübergänge → konsolidierter SWS und REM ohne CSD-Notwendigkeit.
+LDX erreicht die Konsolidierung upstream: stabilisierte Raphe $\rightarrow$ kohärente thalamische Modulation $\rightarrow$ globale Zustandsübergänge $\rightarrow$ konsolidierter SWS und REM ohne CSD-Notwendigkeit.
 
 #### **B.6.2 Vornacht-Fragmentierung als Anfallsprädiktor (t-1 Lag-Korrelation)**
 
 Die CSD-als-Resynchronisation-These macht eine testbare Vorhersage: Wenn Desynchronisation den Anfall triggert, muss die Fragmentierung *vor* dem Anfall maximal sein und *danach* abfallen.
 
-**Lag-Korrelation Density → Anfälle (n=56 Nacht-Folgetag-Paare):**
+**Lag-Korrelation Density $\rightarrow$ Anfälle (n=56 Nacht-Folgetag-Paare):**
 
 | Lag | Korrelation | t-Wert | p |
 |:----|:------------|:-------|:--|
-| t-1 (Vornacht → Folgetag-Anfall) | **r = +0,392** | **t = 3,14** | **≈ 0,003** |
+| t-1 (Vornacht $\rightarrow$ Folgetag-Anfall) | **r = +0,392** | **t = 3,14** | **≈ 0,003** |
 | t0 (Anfall-Nacht selbst) | r = −0,065 | — | n.s. |
 
 **Mittlere Density nach Anfallsstatus:**
@@ -276,12 +276,12 @@ Das Muster ist bidirektional: Fragmentierung baut sich auf (5,96/h in der Vornac
 | ≥7,0/h | 6 | 5 | **83%** |
 | <7,0/h | 50 | 9 | 18% |
 
-5 von 6 Nächten mit einer Density ≥7,0 Episoden/h → Anfall am Folgetag. Die Effektrichtung ist eindeutig und klinisch als Warnsignal brauchbar. Die absolute Fallzahl (n=6) limitiert die Belastbarkeit des Schwellenwerts.
+5 von 6 Nächten mit einer Density ≥7,0 Episoden/h $\rightarrow$ Anfall am Folgetag. Die Effektrichtung ist eindeutig und klinisch als Warnsignal brauchbar. Die absolute Fallzahl (n=6) limitiert die Belastbarkeit des Schwellenwerts.
 
 **Caveats:**
 - n=14 Vornächte vor Anfällen. Drei Ausreißer (13,12; 9,75; 8,54/h) könnten den Korrelationseffekt treiben.
 - Multiples Testen (t-1, t0 sowie Schwellenwertanalyse) ohne formale Korrektur. Der p-Wert von 0,003 überlebt eine Bonferroni-Korrektur für 2 Tests, nicht aber für explorative Schwellenwertsuche.
-- Kausale Richtung (Fragmentierung → Anfall vs. gemeinsamer Upstream-Treiber → beides) ist aus Korrelationsdaten nicht trennbar.
+- Kausale Richtung (Fragmentierung $\rightarrow$ Anfall vs. gemeinsamer Upstream-Treiber $\rightarrow$ beides) ist aus Korrelationsdaten nicht trennbar.
 
 ### **B.7 Das Tracker-Signal: Ein stochastischer Resonanz-Detektor**
 
@@ -295,9 +295,9 @@ Formal: Der Tracker digitalisiert ein kontinuierliches, räumlich inhomogenes Si
 
 Was der Tracker misst:
 
-- **Episodenzahl:** Anzahl der Schwellenübertritte → Proxy für autonome/kortikale Instabilität. Stärkstes Signal (p=0,005 für Deep und REM).
-- **Fragmentverhältnis:** Anteil kurzer Episoden → Proxy für Patchwork-Anteil.
-- **Nacht-zu-Nacht-SD:** Reproduzierbarkeit des Schlafmusters → Proxy für systemische Stabilität.
+- **Episodenzahl:** Anzahl der Schwellenübertritte $\rightarrow$ Proxy für autonome/kortikale Instabilität. Stärkstes Signal (p=0,005 für Deep und REM).
+- **Fragmentverhältnis:** Anteil kurzer Episoden $\rightarrow$ Proxy für Patchwork-Anteil.
+- **Nacht-zu-Nacht-SD:** Reproduzierbarkeit des Schlafmusters $\rightarrow$ Proxy für systemische Stabilität.
 
 Was der Tracker *nicht* misst:
 
@@ -313,13 +313,13 @@ Der Tracker liefert für die vorliegende Fragestellung ein in einem Aspekt über
 
 POST-Beobachtung: Bewussteres, intensiveres Träumen bei gleichzeitig unverändertem REM-Anteil laut Tracker.
 
-**Interpretation:** Der Tracker misst, ob der motorische Kortex sich im REM-typischen Profil befindet. Er misst nicht, ob der REM global konsolidiert ist. Die Traumerinnerung ist das sensitivere Instrument: Sie überlebt den Schlaf-Wach-Übergang nur, wenn die letzte REM-Phase konsolidiert genug war. Fragmentierter REM (PRE) → Traumerinnerung überlebt die Transitionen nicht. Konsolidierter REM (POST) → Erinnerung bleibt erhalten.
+**Interpretation:** Der Tracker misst, ob der motorische Kortex sich im REM-typischen Profil befindet. Er misst nicht, ob der REM global konsolidiert ist. Die Traumerinnerung ist das sensitivere Instrument: Sie überlebt den Schlaf-Wach-Übergang nur, wenn die letzte REM-Phase konsolidiert genug war. Fragmentierter REM (PRE) $\rightarrow$ Traumerinnerung überlebt die Transitionen nicht. Konsolidierter REM (POST) $\rightarrow$ Erinnerung bleibt erhalten.
 
-Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen auf (CSD-erzwungene Resynchronisation → konsolidierter post-iktaler REM). Unter LDX tritt es regulär auf — die pharmakologische Synchronisation ersetzt den CSD-Reset.
+Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen auf (CSD-erzwungene Resynchronisation $\rightarrow$ konsolidierter post-iktaler REM). Unter LDX tritt es regulär auf — die pharmakologische Synchronisation ersetzt den CSD-Reset.
 
 ### **B.9 Nächtliche HR-Trajektorie: Pattern-Klassifikation**
 
-79 Nächte wurden nach dem HR-Verlauf (Entry → Exit) klassifiziert:
+79 Nächte wurden nach dem HR-Verlauf (Entry $\rightarrow$ Exit) klassifiziert:
 
 | Pattern | n (%) | Entry HR | Exit HR | Drop |
 |:--------|:------|:---------|:--------|:-----|
@@ -331,7 +331,7 @@ Konsistenzprüfung: Intensives Träumen trat PRE selektiv nach Migräneanfällen
 
 **Kernbefund:** Alle Nächte konvergieren auf denselben HR-Boden (~60–62 bpm). Die Variation liegt ausschließlich im Einstiegspunkt. Der lineare Abfall über Stunden ist sympathischer Rundown — das System geht mit erhöhtem sympathischem Tonus ins Bett und braucht die halbe Nacht für die parasympathische Übernahme.
 
-**Mechanistische Einordnung:** Kein normales zirkadianes HR-Dipping (geschieht in der ersten Stunde). Der lineare Abfall von ~14 bpm über 7 h reflektiert verzögerte B7-Suppression im Schlaf. DRN feuert maximal bei Wachheit, stellt im Schlaf ein — bei instabiler Abschaltkinetik persistiert der sympathische Tonus über die serotonerge Modulation von LC und autonomen Kernen. FLAT-Nächte: B7 bereits vor dem Einschlafen supprimiert → System startet im parasympathischen Modus → kein Rundown nötig.
+**Mechanistische Einordnung:** Kein normales zirkadianes HR-Dipping (geschieht in der ersten Stunde). Der lineare Abfall von ~14 bpm über 7 h reflektiert verzögerte B7-Suppression im Schlaf. DRN feuert maximal bei Wachheit, stellt im Schlaf ein — bei instabiler Abschaltkinetik persistiert der sympathische Tonus über die serotonerge Modulation von LC und autonomen Kernen. FLAT-Nächte: B7 bereits vor dem Einschlafen supprimiert $\rightarrow$ System startet im parasympathischen Modus $\rightarrow$ kein Rundown nötig.
 
 **PRE/POST-Verteilung:** Nahezu identisch (61% vs. 56% linear) — kein Medikamenteneffekt. Dies ist ein stabiles autonomes Trait.
 
@@ -353,7 +353,7 @@ Die Aussage stützt sich auf mehrere konvergierende Befunde:
 
 **Zirkadiane Interaktion:** Die parasympathische Aktivierung während SWS ist am stärksten, wenn SWS in der ersten Nachthälfte auftritt (Akrophase RRI-SWS: 01:55 ± 00:50), zeitlich übereinstimmend mit der höchsten SWS-Wahrscheinlichkeit bei Tagesorientierten (Boudreau et al., 2013).
 
-**Synthese:** Das gesunde Muster ist schneller Abfall im ersten Zyklus → Minimum in der ersten Nachthälfte → Hängematte → Morgenanstieg. Ein linearer Abfall über die gesamte Nacht ist in keiner dieser Quellen als Normvariante beschrieben. Das Ganznacht-Slope-Muster in den vorliegenden Daten (LINEAR_STARK und LINEAR_MODERAT, zusammen 60% der Nächte) ist demnach pathologisch und spiegelt direkt die in B.2–B.3 dokumentierte SWS-Fragmentierung wider: Das System kann den sympathischen Rundown nicht in einem Zyklus leisten.
+**Synthese:** Das gesunde Muster ist schneller Abfall im ersten Zyklus $\rightarrow$ Minimum in der ersten Nachthälfte $\rightarrow$ Hängematte $\rightarrow$ Morgenanstieg. Ein linearer Abfall über die gesamte Nacht ist in keiner dieser Quellen als Normvariante beschrieben. Das Ganznacht-Slope-Muster in den vorliegenden Daten (LINEAR_STARK und LINEAR_MODERAT, zusammen 60% der Nächte) ist demnach pathologisch und spiegelt direkt die in B.2–B.3 dokumentierte SWS-Fragmentierung wider: Das System kann den sympathischen Rundown nicht in einem Zyklus leisten.
 
 **Konvergenz mit B.10:** Der Slope als autonome Projektion der Fragmentierung erklärt, warum der HR-Drop dieselbe quasi-wöchentliche Periodizität zeigt wie die Fragmentierungsmetriken — es ist dasselbe Signal in einem anderen Messkanal.
 
@@ -389,8 +389,8 @@ Die 7,5-Tage-Periodizität ist strukturell die PRE-Projektion der Intertakt-Drif
 **POST-Daten**
 
 18 Nächte reichen nicht für eine belastbare FFT bei 7-Tage-Perioden. Mindestens 25, idealerweise 40+ Nächte nötig. Zwei Vorhersagen:
-- Option A: Rhythmus taucht auf → LDX ändert nur Amplitude, nicht Frequenz
-- Option B: Rhythmus gestört → τ komprimiert sich unter LDX, Schwebungsperiode verlängert sich massiv
+- Option A: Rhythmus taucht auf $\rightarrow$ LDX ändert nur Amplitude, nicht Frequenz
+- Option B: Rhythmus gestört $\rightarrow$ τ komprimiert sich unter LDX, Schwebungsperiode verlängert sich massiv
 
 ### **B.11 Nap-Outcome-Analyse: Zustand bei Eintritt, nicht Dauer**
 
@@ -418,7 +418,7 @@ Stärkster Diskriminator: Pre-60min HR mean.
 | ≥80 bpm | 85% | 87% |
 | ≥85 bpm | 90% | 93% |
 
-Praktische Regel: Puls ≥80 vor dem Nap → safe. Puls <75 → System bereits destabilisiert, Nap beschleunigt Kaskade.
+Praktische Regel: Puls ≥80 vor dem Nap $\rightarrow$ safe. Puls <75 $\rightarrow$ System bereits destabilisiert, Nap beschleunigt Kaskade.
 
 **PRE vs. POST**
 
@@ -426,7 +426,7 @@ PRE: 10 OK / 14 KASKADE (58% Kaskade). POST: 8 OK / 1 KASKADE (11%). Unter LDX s
 
 **Reinterpretation der Nap-Kaskade**
 
-Bisherige Formulierung in Kapitel 4.3: Nap → patchy Sleep Inertia → trigeminale Sensitisierung → CSD (kausale Kette). Synthese: Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Beides sind Downstream-Effekte desselben Zustands, nicht Ursache und Wirkung. Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig.
+Bisherige Formulierung in Kapitel 4.3: Nap $\rightarrow$ patchy Sleep Inertia $\rightarrow$ trigeminale Sensitisierung $\rightarrow$ CSD (kausale Kette). Synthese: Desynchronisation $\rightarrow$ Nap (kompensatorisch) + Desynchronisation $\rightarrow$ CSD (parallel). Beides sind Downstream-Effekte desselben Zustands, nicht Ursache und Wirkung. Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig.
 
 #### **B.11.1 Mechanistischer Pfad der Nap-Kaskade**
 
@@ -434,12 +434,12 @@ Der Nap regeneriert B7-Potential partiell. Das Outcome hängt davon ab, ob der r
 
 | Pre-Nap-Zustand | B7 nach Regeneration | B7-B8-Verhältnis | Outcome |
 |:----------------|:--------------------|:-----------------|:--------|
-| HR <75 (B7 depleted) | Aphasisch (feuert, aber inkohärent) | B7 stört B8-Takt, kann sich nicht synchronisieren | **Interferenz → CSD** (75% PPV bei <75, B.11) |
+| HR <75 (B7 depleted) | Aphasisch (feuert, aber inkohärent) | B7 stört B8-Takt, kann sich nicht synchronisieren | **Interferenz $\rightarrow$ CSD** (75% PPV bei <75, B.11) |
 | HR ≥80 (B7 kohärent) | Kohärent (ausreichende Amplitude) | Resynchronisation mit B8 gelingt | **Kein CSD** (85% PPV bei ≥80, B.11) |
 
 Der mechanistische Schlüssel ist die Qualität der Regeneration: Bei pre-Nap HR <75 ist B7 bereits so weit depleted (vesikulär, TPH2-limitiert, ATP-grenzwertig — vgl. 2.2.1), dass die partielle Regeneration im Nap nicht für Kohärenz reicht — der regenerierte B7 hat genug Kapazität um B8 zu stören, aber nicht genug um sich zu synchronisieren. Die Vesikelfreisetzung pro Spike ist stochastisch degradiert: Feuermuster erhalten, Transmitteroutput inkonsistent. Das ist das CSD-Fenster (4.7.1).
 
-**LDX-Effekt:** LDX hält B7 intranukleär stabil → der regenerierte B7 nach dem Nap hat höhere Kohärenz → Resynchronisation mit B8 gelingt häufiger → Kaskadenrate sinkt von 58% (PRE) auf 11% (POST, B.11). LDX verschiebt nicht die HR-Schwelle, sondern die Regenerationsqualität.
+**LDX-Effekt:** LDX hält B7 intranukleär stabil $\rightarrow$ der regenerierte B7 nach dem Nap hat höhere Kohärenz $\rightarrow$ Resynchronisation mit B8 gelingt häufiger $\rightarrow$ Kaskadenrate sinkt von 58% (PRE) auf 11% (POST, B.11). LDX verschiebt nicht die HR-Schwelle, sondern die Regenerationsqualität.
 
 #### **B.11.2 Post-exertionale Migräne als Nap-Kaskade mit autonomem Einstiegspfad**
 
@@ -447,12 +447,12 @@ Der Mechanismus der Nap-Kaskade ist identisch mit post-exertionaler Migräne —
 
 | Einstiegspfad | Trigger für Ruhe | B7-Regeneration | Outcome |
 |:--------------|:----------------|:----------------|:--------|
-| **Schlafintrusion (normal)** | Kortikaler Off-State → Nap | Partiell | Aphasischer B7 gegen stabileren B8 → CSD |
-| **ANS-Kollaps (post-exertional)** | Autonome Dekompensation → erzwungene Ruhe | Partiell | Identisch |
+| **Schlafintrusion (normal)** | Kortikaler Off-State $\rightarrow$ Nap | Partiell | Aphasischer B7 gegen stabileren B8 $\rightarrow$ CSD |
+| **ANS-Kollaps (post-exertional)** | Autonome Dekompensation $\rightarrow$ erzwungene Ruhe | Partiell | Identisch |
 
-Post-exertionale Migräne ist kein eigener Triggerpfad — sie ist eine Nap-Kaskade mit autonomem statt kortikalem Einstieg. Der sympathische Maximaltakt während Sport verbraucht B7-Reserven; die anschließende Pause regeneriert B7 partiell; der aphasische B7 interferiert mit stabilem(erem) B8 → CSD. Nicht der Sport ist der Trigger, sondern die Transition danach.
+Post-exertionale Migräne ist kein eigener Triggerpfad — sie ist eine Nap-Kaskade mit autonomem statt kortikalem Einstieg. Der sympathische Maximaltakt während Sport verbraucht B7-Reserven; die anschließende Pause regeneriert B7 partiell; der aphasische B7 interferiert mit stabilem(erem) B8 $\rightarrow$ CSD. Nicht der Sport ist der Trigger, sondern die Transition danach.
 
-**Einzelfallbeleg (07.04.2026, Anhang B.20):** Exertion (75 min, HR 155–170) → B7-Depletion → erzwungene Ruhephase (19:31–20:38, fixierte HR, SD <2, RMSSD <2) → partielle B7-Regeneration (21:00–22:26, B7 online aber instabil) → Kaskade (22:26–23:14, SD progressiv steigend auf 12.3, RMSSD auf 7.5 → aktive Interferenz). Die Pause hat gleichzeitig den ANS-Kollaps temporär gebremst UND die Voraussetzung für CSD geschaffen (B7-Potential wiederhergestellt → Interferenz mit B8 wieder möglich).
+**Einzelfallbeleg (07.04.2026, Anhang B.20):** Exertion (75 min, HR 155–170) $\rightarrow$ B7-Depletion $\rightarrow$ erzwungene Ruhephase (19:31–20:38, fixierte HR, SD <2, RMSSD <2) $\rightarrow$ partielle B7-Regeneration (21:00–22:26, B7 online aber instabil) $\rightarrow$ Kaskade (22:26–23:14, SD progressiv steigend auf 12.3, RMSSD auf 7.5 $\rightarrow$ aktive Interferenz). Die Pause hat gleichzeitig den ANS-Kollaps temporär gebremst UND die Voraussetzung für CSD geschaffen (B7-Potential wiederhergestellt $\rightarrow$ Interferenz mit B8 wieder möglich).
 
 **Epidemiologische Stützung:** Koppen et al. (2013, J Headache Pain): 38% Lebenszeitprävalenz exercise-triggered Migräne, Onset durchschnittlich 160 min nach Belastungsende — konsistent mit dem Regenerations-Interferenz-Fenster.
 
@@ -473,7 +473,7 @@ Median: 2 Tage nach dem Minimum.
 
 **Mechanismus**
 
-Am Minimum: Raphe-Tonus niedrigster, kortikale Fragmentierung maximal, aber System insgesamt gedämpft → kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, aber kortikale Kohärenz noch nicht wiederhergestellt → Diskrepanz zwischen steigendem Arousal-Drive und fragmentiertem Kortex → CSD-Schwelle erreicht.
+Am Minimum: Raphe-Tonus niedrigster, kortikale Fragmentierung maximal, aber System insgesamt gedämpft $\rightarrow$ kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, aber kortikale Kohärenz noch nicht wiederhergestellt $\rightarrow$ Diskrepanz zwischen steigendem Arousal-Drive und fragmentiertem Kortex $\rightarrow$ CSD-Schwelle erreicht.
 
 Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude). **Phasenmodell**, nicht Schwellenmodell.
 
@@ -508,7 +508,7 @@ Die Anfalls-Obergrenze ist absolut scharf, verschiebt sich aber mit dem Medikame
 | PRE (Betablocker) | ≤62 bpm | ≥63 bpm (n=4) | 54,6 | 57,4 |
 | POST (LDX) | ≤60 bpm | ≥61 bpm (n=16) | 58,7 | 61,8 |
 
-Die POST-Verteilung ist um ~4 bpm nach oben verschoben — Betablocker drückt die gesamte HR-Distribution. Die Anfalls-Obergrenze verschiebt sich proportional mit (62→60). Anfälle treten ausschließlich in der unteren ~60% der individuellen Range auf. Der absolute Wert ist medikamentenabhängig, die relative Position ist stabil.
+Die POST-Verteilung ist um ~4 bpm nach oben verschoben — Betablocker drückt die gesamte HR-Distribution. Die Anfalls-Obergrenze verschiebt sich proportional mit (62 $\rightarrow$ 60). Anfälle treten ausschließlich in der unteren ~60% der individuellen Range auf. Der absolute Wert ist medikamentenabhängig, die relative Position ist stabil.
 
 **Höchste Anfallsdichte:**
 
@@ -523,8 +523,8 @@ Die CSD beeinflusst den autonomen Zyklus nicht:
 
 | Richtung | n |
 |:---------|:--|
-| ↓ weiter fallend | 6 |
-| ↑ Rebound | 9 |
+| $\downarrow$ weiter fallend | 6 |
+| $\uparrow$ Rebound | 9 |
 | = gleich | 2 |
 
 Keine systematische Richtung. Der Beat zieht unbeeindruckt seine Bahn. Die CSD resynchronisiert den Kortex (Post-Migräne-Klarheit, konsolidierter REM), aber der autonome Zyklus kümmert sich nicht darum. Dies differenziert zwei bisher vermengte Ebenen:
@@ -536,8 +536,8 @@ Keine systematische Richtung. Der Beat zieht unbeeindruckt seine Bahn. Die CSD r
 
 Der Pre-Nap-HR-Befund (vgl. B.5) bestätigt sich als Zykluspositions-Indikator, nicht als Kausalfaktor:
 
-- Pre-Nap HR ≥80 bpm = safe (85% PPV) → System ist früh im Zyklus, stabil.
-- Pre-Nap HR <75 bpm = Kaskade → System ist auf der absteigenden Flanke, Anfall kommt unabhängig vom Nap.
+- Pre-Nap HR ≥80 bpm = safe (85% PPV) $\rightarrow$ System ist früh im Zyklus, stabil.
+- Pre-Nap HR <75 bpm = Kaskade $\rightarrow$ System ist auf der absteigenden Flanke, Anfall kommt unabhängig vom Nap.
 
 Der Nap verändert den Zyklusverlauf nicht, er ist eine Projektion der aktuellen Zyklusposition.
 
@@ -560,7 +560,7 @@ Die Invarianz des autonomen Zyklus gegenüber der CSD ergibt sich direkt aus der
 | HR_RESTING-Elevation d-1/d-2 vor Anfall | Deskriptiv (dev +1,1/+1,2, n=9/12) | `cortical_coherence_proxy_analysis - HR Resting.csv` |
 | Kein Anfall bei REST ≥63 (PRE) bzw. ≥61 (POST) | Deskriptiv, scharfe Grenze, n=4/16 | Dieselbe Datenquelle |
 | Anfallsdichte 50–54 bpm (PRE): 47% | Deskriptiv | Dieselbe Datenquelle |
-| CSD verändert autonomen Zyklus nicht (6↓ / 9↑ / 2=) | Deskriptiv | Post-Anfall-Verlaufsanalyse |
+| CSD verändert autonomen Zyklus nicht (6 $\downarrow$ / 9 $\uparrow$ / 2=) | Deskriptiv | Post-Anfall-Verlaufsanalyse |
 | HR_RESTING-Schwelle verschiebt sich mit Medikation | Deskriptiv (PRE ≤62, POST ≤60) | Periodengetrennte Analyse |
 | Nap-Outcome ist Zykluspositions-Projektion | Modellinterpretation, konsistent mit Daten | Kreuzreferenz B.5 + B.13 |
 | Kortikale vs. autonome Resynchronisation differenzierbar | Modellinterpretation | Abgeleitet aus Post-Anfall-Verlauf |
@@ -569,17 +569,17 @@ Die Invarianz des autonomen Zyklus gegenüber der CSD ergibt sich direkt aus der
 
 POST: bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nur, ob der motorische Kortex im REM-Profil ist, nicht ob der REM global konsolidiert ist. Traumerinnerung überlebt den Schlaf-Wach-Übergang nur bei konsolidiertem REM.
 
-**PRE-Selektivität:** Intensives Träumen trat PRE selektiv nach Migräneanfällen auf (CSD-erzwungene Resynchronisation → konsolidierter post-iktaler REM). Unter LDX tritt es regulär auf — die pharmakologische Synchronisation ersetzt den CSD-Reset.
+**PRE-Selektivität:** Intensives Träumen trat PRE selektiv nach Migräneanfällen auf (CSD-erzwungene Resynchronisation $\rightarrow$ konsolidierter post-iktaler REM). Unter LDX tritt es regulär auf — die pharmakologische Synchronisation ersetzt den CSD-Reset.
 
-**Betablocker/Naratriptan-Gegenprobe:** Abnahme bewussten Träumens unter Betablocker/Naratriptan: antiproportional zum sub-CSD-Naratriptankonsum. Weniger Anfälle → weniger CSD-Resets → weniger REM-Konsolidierung → weniger Traumerinnerung.
+**Betablocker/Naratriptan-Gegenprobe:** Abnahme bewussten Träumens unter Betablocker/Naratriptan: antiproportional zum sub-CSD-Naratriptankonsum. Weniger Anfälle $\rightarrow$ weniger CSD-Resets $\rightarrow$ weniger REM-Konsolidierung $\rightarrow$ weniger Traumerinnerung.
 
 **Dreifache Dissoziation:**
 
 | Bedingung | Traumerinnerung | Mechanismus |
 |:----------|:----------------|:------------|
 | PRE (ohne Anfall) | Selten | Fragmentierter REM, keine Konsolidierung |
-| PRE (nach CSD) | Intensiv | CSD-erzwungene Resynchronisation → konsolidierter REM |
-| POST (LDX) | Regulär | Pharmakologische Synchronisation → konsolidierter REM ohne CSD |
+| PRE (nach CSD) | Intensiv | CSD-erzwungene Resynchronisation $\rightarrow$ konsolidierter REM |
+| POST (LDX) | Regulär | Pharmakologische Synchronisation $\rightarrow$ konsolidierter REM ohne CSD |
 
 ### **B.15 Sonderanalyse: Migräne-Nacht 30./31.03.2026 mit Sumatriptan-Intervention**
 
@@ -623,7 +623,7 @@ Die HR konvergiert erst 3–4 Stunden nach Sumatriptan-Einnahme auf normale Schl
 
 #### **B.15.1 Interpretation**
 
-Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus → präsynaptische Hemmung der trigeminalen Transmitterfreisetzung → Schmerzblockade; vgl. 4.4.3), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
+Sumatriptan unterbricht die Schmerzkaskade (5-HT₁B/D-Agonismus $\rightarrow$ präsynaptische Hemmung der trigeminalen Transmitterfreisetzung $\rightarrow$ Schmerzblockade; vgl. 4.4.3), adressiert aber nicht die kortikale Desynchronisation. Die CSD ist bereits gelaufen; das Sumatriptan ermöglicht lediglich Schlaf als Medium der Resynchronisation. Die 3–4 Stunden bis zur autonomen Normalisierung entsprechen der Dauer, die der Kortex benötigt, um post-CSD über SWS-Zyklen globale Kohärenz wiederherzustellen.
 
 **Konsistenz mit B.6:** Der Hauptschlaf vor dem Anfall (Phase 1: 2,8/h) war konsolidiert — die Fragmentierung der Vornächte (vgl. B.6.2, t-1 Lag) hatte sich bereits in den Anfall entladen. Post-Sumatriptan beginnt die Resynchronisation von einem post-iktalen Ausgangszustand.
 
@@ -639,12 +639,12 @@ Der Anfall vom 07.04.2026 liefert eine zeitliche Dissoziation zwischen ANS-Kolla
 |:------|:----------------|:---------|:----------|
 | 1: Baseline | 14:00–16:25 | 77–107 | Post-Arbeit, moderate Aktivität, LDX 15 mg morgens |
 | 2: Exertion | 16:28–17:45 | 115–170 | Rasenmähen, sustained HR 155–170 |
-| 3: Sympathikus-Entzug | 17:46–18:37 | 131→113 | Post-exertional, Autofahrt Werkstatt (aktives Fahren) |
-| 4: ANS-Dekompensation | 18:39–19:00 | 113→108 | Beifahrersitz, kein aktiver Drive; vestibuläre Symptome, Stammhirn-Ziehen |
-| 5: Erschöpfungskollaps | 19:01–20:50 | 83→74 | Hinlegen, Tracker klassifiziert als Tiefschlaf|
-| 6: DPH-Fenster | 20:50–22:26 | 74–81 | DPH-Einnahme ~21:00; HR-Nadir 67 bpm um 22:20; PFC→NTS-Kompensation via Atemkontrolle|
-| 7: Volle Kaskade | 22:26–23:11 | 67→104 | ANS-Eskalation, Erbrechen, Kopfschmerz setzt ein; HR-Spike auf 104 |
-| 8: Sumatriptan | 23:10–23:40 | 104→69 | Sumatriptan-Nasal + Paracetamol 1000 mg rektal; initialer HR-Abfall |
+| 3: Sympathikus-Entzug | 17:46–18:37 | 131 $\rightarrow$ 113 | Post-exertional, Autofahrt Werkstatt (aktives Fahren) |
+| 4: ANS-Dekompensation | 18:39–19:00 | 113 $\rightarrow$ 108 | Beifahrersitz, kein aktiver Drive; vestibuläre Symptome, Stammhirn-Ziehen |
+| 5: Erschöpfungskollaps | 19:01–20:50 | 83 $\rightarrow$ 74 | Hinlegen, Tracker klassifiziert als Tiefschlaf|
+| 6: DPH-Fenster | 20:50–22:26 | 74–81 | DPH-Einnahme ~21:00; HR-Nadir 67 bpm um 22:20; PFC $\rightarrow$ NTS-Kompensation via Atemkontrolle|
+| 7: Volle Kaskade | 22:26–23:11 | 67 $\rightarrow$ 104 | ANS-Eskalation, Erbrechen, Kopfschmerz setzt ein; HR-Spike auf 104 |
+| 8: Sumatriptan | 23:10–23:40 | 104 $\rightarrow$ 69 | Sumatriptan-Nasal + Paracetamol 1000 mg rektal; initialer HR-Abfall |
 | 9: Triptan-Plateau | 00:25–03:20 | 80–89 | Sumatriptan-Wirkplateau (trigeminale Transmitterhemmung + sekundäre Vasokonstriktion), HR-Plateau ~82 bpm, keine Konsolidierung |
 | 10: Echtes Nadir | 04:45–06:45 | 58–67 | HR-Minimum 58 bpm (04:55), zweites Minimum 59 bpm (05:37) |
 | 11: Morgen | 07:00–08:00 | 70–84 | Aufwachen, rechtsseitiger Nystagmus |
@@ -655,7 +655,7 @@ Die Tracker-Klassifikation der Nacht ist diagnostisch für die Schwere der Desta
 
 | Metrik | Wert | Einordnung |
 |:-------|:-----|:-----------|
-| Schlaf-Onset (Tracker) | 19:29 | 2+ Stunden vor typischem Onset → Erschöpfungskollaps, kein Schlaf |
+| Schlaf-Onset (Tracker) | 19:29 | 2+ Stunden vor typischem Onset $\rightarrow$ Erschöpfungskollaps, kein Schlaf |
 | Gesamtdauer | 641 min (10,7 h) | Überlang, inklusive Prä-Bett-Kollaps |
 | Deep (Tracker) | 204 min | Absolut hoch, aber nicht konsolidiert |
 | REM (Tracker) | 161 min | |
@@ -672,8 +672,8 @@ Der Anfall entstand durch die zeitliche Konvergenz dreier Kompensationsentzüge:
 | Faktor | Zeitpunkt | Mechanismus |
 |:-------|:----------|:------------|
 | Post-exertionale B7-Depletion (vesikulär + TPH2-limitiert, vgl. 2.2.1) | ab 17:46 | Sympathischer Drive maskierte Raphe-Insuffizienz; Maskierung fällt mit Belastungsende weg |
-| LDX-Abklingen | ab ~18:00 | Wirkdauer 10–12 h, Einnahme morgens → abends insuffizient |
-| SCN-Abendsignal | ab ~19:00 | Normales Herunterfahrsignal via SCN→B8→B7; trifft auf bereits depletierten B7 |
+| LDX-Abklingen | ab ~18:00 | Wirkdauer 10–12 h, Einnahme morgens $\rightarrow$ abends insuffizient |
+| SCN-Abendsignal | ab ~19:00 | Normales Herunterfahrsignal via SCN $\rightarrow$ B8 $\rightarrow$ B7; trifft auf bereits depletierten B7 |
 
 Jeder einzelne Faktor wäre kompensierbar gewesen. Die Dreifach-Konvergenz war es nicht.
 
@@ -686,30 +686,30 @@ Die zentrale Beobachtung: ANS-Symptome (vestibuläre Instabilität, Schwindel, H
 | Onset | 18:39 (Beifahrersitz) | 22:26 (volle Eskalation) |
 | Latenz nach Exertion | ~55 min | ~4,5 h |
 | Architektonische Distanz zu B7 | Monosynaptisch (NTS, RVLM, Ncl. ambiguus) | Polysynaptisch (thalamokortikale Schleife) |
-| Kompensierbarkeit | PFC→NTS-Atemkontrolle (temporär wirksam) | Keine willentliche Kompensation |
+| Kompensierbarkeit | PFC $\rightarrow$ NTS-Atemkontrolle (temporär wirksam) | Keine willentliche Kompensation |
 | Zeitkonstante | Schnell in der Auslösung, lang im Verlauf | Langsam in der Auslösung, schnell im Verlauf |
 
-**Interpretation:** Was klinisch als „Stammhirnaura" beschrieben wird, ist kein CSD-Propagationsphänomen im Hirnstamm, sondern ein eigenständiger B7→ANS-Kern-Kollaps. Ohne LDX überlagern sich beide Prozesse zeitlich und sind klinisch nicht trennbar. LDX erzeugte unbeabsichtigt eine diagnostische Separation, indem es die CSD-Schwelle länger hielt, während der ANS-Kollaps ungehindert ablief.
+**Interpretation:** Was klinisch als „Stammhirnaura" beschrieben wird, ist kein CSD-Propagationsphänomen im Hirnstamm, sondern ein eigenständiger B7 $\rightarrow$ ANS-Kern-Kollaps. Ohne LDX überlagern sich beide Prozesse zeitlich und sind klinisch nicht trennbar. LDX erzeugte unbeabsichtigt eine diagnostische Separation, indem es die CSD-Schwelle länger hielt, während der ANS-Kollaps ungehindert ablief.
 
-**PFC→NTS-Kompensation und deren Erschöpfung**
+**PFC $\rightarrow$ NTS-Kompensation und deren Erschöpfung**
 
 Die bewusste Atemkontrolle (langsames Ausatmen gegen autonome Reflexe) war effektiv gegen:
 - Vestibuläre Instabilität (Schwindel reduziert)
 - Übelkeit (gebremst)
 - Hitzewellen (unterdrückt)
 
-Die Kompensation nutzt den PFC→NTS-Pfad — willentliche Top-down-Kontrolle über autonome Kerne. Dieser Pfad wird gleichzeitig durch dieselben Faktoren destabilisiert, die den ANS-Kollaps treiben (LDX-Abklingen, B7-Depletion). Die Kompensation verbraucht die Ressource, die sie zu ersetzen versucht.
+Die Kompensation nutzt den PFC $\rightarrow$ NTS-Pfad — willentliche Top-down-Kontrolle über autonome Kerne. Dieser Pfad wird gleichzeitig durch dieselben Faktoren destabilisiert, die den ANS-Kollaps treiben (LDX-Abklingen, B7-Depletion). Die Kompensation verbraucht die Ressource, die sie zu ersetzen versucht.
 
-Empirischer Beleg: Aktives Fahren (Phase 3, hoher PFC-Demand) → NTS-Suppression erfolgreich trotz extremer Triggerbelastung. Beifahrersitz (Phase 4, kein PFC-Demand) → Dekompensation innerhalb von Minuten.
+Empirischer Beleg: Aktives Fahren (Phase 3, hoher PFC-Demand) $\rightarrow$ NTS-Suppression erfolgreich trotz extremer Triggerbelastung. Beifahrersitz (Phase 4, kein PFC-Demand) $\rightarrow$ Dekompensation innerhalb von Minuten.
 
 **Triptan-Pharmakokinetik im HR**
 
 | Phase | Zeitraum | HR (bpm) | Mechanismus |
 |:------|:---------|:---------|:------------|
 | Pre-Triptan Nadir | 22:20 | 67 | Maximaler vagaler Tonus bei ANS-Erschöpfung |
-| ANS-Spike | 22:26–23:10 | 67→104 | Volle Kaskade: CSD + Erbrechen |
-| Initialer Triptan-Effekt | 23:10–23:40 | 104→69 | Schmerzblockade → sympathische Deaktivierung |
-| Triptan-Rebound | 00:25–03:20 | 80–89 | 5-HT1B/1D-Wirkplateau (Transmitterhemmung + sekundäre Vasokonstriktion) → sympathische Restaktivierung |
+| ANS-Spike | 22:26–23:10 | 67 $\rightarrow$ 104 | Volle Kaskade: CSD + Erbrechen |
+| Initialer Triptan-Effekt | 23:10–23:40 | 104 $\rightarrow$ 69 | Schmerzblockade $\rightarrow$ sympathische Deaktivierung |
+| Triptan-Rebound | 00:25–03:20 | 80–89 | 5-HT1B/1D-Wirkplateau (Transmitterhemmung + sekundäre Vasokonstriktion) $\rightarrow$ sympathische Restaktivierung |
 | Post-Triptan-Clearance | 04:45–06:45 | 58–67 | Sumatriptan-HWZ ~2h; erst nach Clearance echtes Nadir |
 
 Das Triptan-Plateau (HR ~82 bpm über ~3 Stunden) ist konsistent mit B.15: Die Resynchronisationszeit beträgt 3–4 Stunden, und das Triptan konfundiert den HR-Verlauf über seine Halbwertszeit. Das echte Nadir (58 bpm) tritt erst nach Triptan-Clearance auf — ähnlich wie in B.15.
@@ -733,7 +733,7 @@ Die Konsistenz über multiple Anfälle spricht für die architektonische Variant
 |:--------|:-------------|:-------|
 | ANS-Symptome 3,5 h vor CSD-Kaskade | Einzelfallbeobachtung | Symptomprotokoll + HR-Daten |
 | Tracker klassifiziert Erschöpfungskollaps als Tiefschlaf | Einzelfallbeobachtung | Tracker-Daten (HR 75–83 statt <65 bpm für echten Deep) |
-| PFC→NTS-Kompensation temporär wirksam, dann erschöpft | Einzelfallbeobachtung | Symptomprotokoll (Fahren vs. Beifahrersitz) |
+| PFC $\rightarrow$ NTS-Kompensation temporär wirksam, dann erschöpft | Einzelfallbeobachtung | Symptomprotokoll (Fahren vs. Beifahrersitz) |
 | Dreifach-Konvergenz (post-exertional + LDX-Abklingen + SCN-Signal) | Modellinterpretation, konsistent | Zeitlicher Verlauf + Modellarchitektur |
 | Triptan-Plateau bei HR ~82 über 3 h | Einzelfallbeobachtung | HR-Daten |
 | Echtes HR-Nadir erst nach Triptan-Clearance (58 bpm) | Einzelfallbeobachtung | HR-Daten |
@@ -742,10 +742,10 @@ Die Konsistenz über multiple Anfälle spricht für die architektonische Variant
 
 **Modellimplikation**
 
-Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (MBA) klassifiziert wird, ist kein CSD-Propagationsphänomen, sondern ein eigenständiger B7→ANS-Kern-Kollaps. Die Implikationen:
+Die temporale Dissoziation erzwingt eine Korrektur: Was als „Stammhirnaura" (MBA) klassifiziert wird, ist kein CSD-Propagationsphänomen, sondern ein eigenständiger B7 $\rightarrow$ ANS-Kern-Kollaps. Die Implikationen:
 
 1. **Architektonische Priorität:** ANS-Kerne liegen monosynaptisch an B7 — sie destabilisieren vor dem polysynaptischen thalamokortikalen Pfad. Die Sequenz ist architektonisch determiniert, nicht stochastisch.
-2. **Maskierung ohne LDX:** Ohne LDX eskaliert CSD schneller → ANS-Kollaps und CSD überlagern sich zeitlich → klinisch als einheitliche „Aura" fehlinterpretiert.
+2. **Maskierung ohne LDX:** Ohne LDX eskaliert CSD schneller $\rightarrow$ ANS-Kollaps und CSD überlagern sich zeitlich $\rightarrow$ klinisch als einheitliche „Aura" fehlinterpretiert.
 3. **Brainstem-CSD beim Menschen:** Keine humane Evidenz. Die einzige Grundlage ist das Cacna1a-S218L-Mausmodell (van den Maagdenberg et al.). Die ANS-Kollaps-Reattribution eliminiert die Notwendigkeit dieser unbelegten Hilfshypothese.
 4. **Parsimoniegewinn:** Sämtliche MBA-Symptome folgen aus der architektonischen Proximität der ANS-Kerne zum Raphe-System — ein Mechanismus, der aus dem B7/B8-Interferenzmodell direkt ableitbar ist.
 
@@ -823,25 +823,25 @@ Die HR-Daten ermöglichen eine Trennung der beiden Systeme:
 **B8-Haltemodus als Schutzreaktion**
 Der CSD-Schmerzreiz erzeugt einen Feedback-Loop:
 
-1. CSD → Schmerzreiz → Kortex meldet Aktivität
+1. CSD $\rightarrow$ Schmerzreiz $\rightarrow$ Kortex meldet Aktivität
 2. B8/MRN bleibt aktiv als Schutzreaktion (serotonerge Versorgung des betroffenen Areals)
 3. B8-Aktivität verhindert Clearance (System kommt nicht tief genug)
-4. CSD persistiert → Schmerz bleibt → zurück zu Schritt 2
+4. CSD persistiert $\rightarrow$ Schmerz bleibt $\rightarrow$ zurück zu Schritt 2
 
 Dieser Loop erklärt die Persistenz des Schmerzes über die gesamte Nacht: Er eskaliert nicht (B7 ist stabil, LDX verhindert ANS-Kaskade), aber er geht auch nicht weg (B8 lässt nicht los, solange der Reiz besteht).
 
 **Clearance-Bedingungen**
 Die Auflösung am Morgen erforderte das Durchbrechen des Loops an zwei Stellen gleichzeitig:
 
-- **IBU**: Reduziert den Schmerzreiz (Entzündungskomponente der CSD) → B8 verliert seinen Grund, im Haltemodus zu bleiben.
-- **7,5 mg LDX**: Stabilisiert den B8 direkt → ermöglicht kontrollierten Rückzug statt Haltemodus.
-- **Ergebnis**: B8 kann abschalten → B7 übernimmt → parasympathische Konsolidierung → MHR10 sinkt auf 49,2 bpm → Clearance.
+- **IBU**: Reduziert den Schmerzreiz (Entzündungskomponente der CSD) $\rightarrow$ B8 verliert seinen Grund, im Haltemodus zu bleiben.
+- **7,5 mg LDX**: Stabilisiert den B8 direkt $\rightarrow$ ermöglicht kontrollierten Rückzug statt Haltemodus.
+- **Ergebnis**: B8 kann abschalten $\rightarrow$ B7 übernimmt $\rightarrow$ parasympathische Konsolidierung $\rightarrow$ MHR10 sinkt auf 49,2 bpm $\rightarrow$ Clearance.
 
 **Paradoxe Medikamentenreaktion**
 Die MHR10 von 49,2 bpm unter 7,5 mg LDX ist pharmakologisch paradox: LDX (Lisdexamfetamin) ist ein Sympathomimetikum, das über Dopamin- und Noradrenalin-Freisetzung die HR typischerweise erhöht.
 
 Die Auflösung liegt im Modell:
-- LDX stabilisiert den B8 → B8 lässt los → B7 kann ungehindert konsolidieren.
+- LDX stabilisiert den B8 $\rightarrow$ B8 lässt los $\rightarrow$ B7 kann ungehindert konsolidieren.
 - Die 5-HT-vermittelte parasympathische Dominanz des B7 überschreibt die sympathomimetische Wirkung des LDX vollständig.
 - Das ist kein Versagen der Medikamentenwirkung, sondern eine **Entlarvung der eigentlichen Achse**: Die sympathomimetische Wirkung von LDX ist schwächer als die serotonerge Konsolidierungskraft eines funktionalen B7, der endlich freie Bahn hat.
 
@@ -860,7 +860,7 @@ Die Daten legen eine Inversion des bisherigen Dosierungsschemas nahe:
 - **Bisher**: LDX morgens für den Tag, DPH abends für die Nacht (B7-Suppression).
 - **Neu**: LDX abends zur B8-Stabilisierung in der Nacht, Morgendosis als Erhaltung.
 
-Die Nacht ist nicht der Zeitraum, in dem der B7 supprimiert werden muss, sondern der Zeitraum, in dem der B8 loslassen muss. LDX ermöglicht beides: B8-Stabilisierung (direkter Effekt) → B7-Konsolidierung (indirekter Effekt durch Wegfall des B8-Override).
+Die Nacht ist nicht der Zeitraum, in dem der B7 supprimiert werden muss, sondern der Zeitraum, in dem der B8 loslassen muss. LDX ermöglicht beides: B8-Stabilisierung (direkter Effekt) $\rightarrow$ B7-Konsolidierung (indirekter Effekt durch Wegfall des B8-Override).
 
 **Testbares Vorhersagemodell**
 Abend-LDX an alternierenden Nächten im ON/OFF-Design. Messbare Endpunkte:
@@ -870,7 +870,7 @@ Abend-LDX an alternierenden Nächten im ON/OFF-Design. Messbare Endpunkte:
 - **Morgen-Baseline**: Sollte tiefer liegen als ohne Abend-LDX
 
 **Abgrenzung zum DPH-Protokoll**
-DPH supprimiert den B7 direkt → die Instabilität wird ausgeschaltet, aber auch die Konsolidierung. LDX stabilisiert den B8 → der B7 wird nicht ausgeschaltet, sondern *befreit*. Das ist der Unterschied zwischen Suppression und Ermöglichung.
+DPH supprimiert den B7 direkt $\rightarrow$ die Instabilität wird ausgeschaltet, aber auch die Konsolidierung. LDX stabilisiert den B8 $\rightarrow$ der B7 wird nicht ausgeschaltet, sondern *befreit*. Das ist der Unterschied zwischen Suppression und Ermöglichung.
 
 **Einordnung**
 
@@ -887,7 +887,7 @@ Die bisherigen Einzeltaganalysen in Anhang B zeigen überwiegend kombinierte B7/
 
 **Zwei-Pfad-Konvergenz des Anfalls**
 
-Aus der B7/B8-Differenzierung dieser Episode ergibt sich eine erweiterte Anfallsarchitektur: Der Anfall hat zwei unabhängige Eskalationspfade — B7 (DRN→Sympathikus→thalamische Afferenz) und B8 (MRN→Kortex→thalamische Efferenz) — die im Vollbild konvergieren, aber in der Prodromalphase getrennt auftreten können.
+Aus der B7/B8-Differenzierung dieser Episode ergibt sich eine erweiterte Anfallsarchitektur: Der Anfall hat zwei unabhängige Eskalationspfade — B7 (DRN $\rightarrow$ Sympathikus $\rightarrow$ thalamische Afferenz) und B8 (MRN $\rightarrow$ Kortex $\rightarrow$ thalamische Efferenz) — die im Vollbild konvergieren, aber in der Prodromalphase getrennt auftreten können.
 
 Die Episode vom 11./12. April zeigt ein B8-dominantes Prodrom: CSD-Vorstufe (einseitiger Druck) ohne ANS-Beteiligung. Die Symptome, die im Verlauf zusammenfallen, sind in der Frühphase differenzierbar. Diese Differenzierung ist therapeutisch entscheidend — eine reine B7-Intervention (3 mg LDX) reicht bei B8-dominantem Prodrom nicht aus.
 
@@ -895,8 +895,8 @@ Die Episode vom 11./12. April zeigt ein B8-dominantes Prodrom: CSD-Vorstufe (ein
 
 Die bisherige Modellannahme war: B7 und B8 desynchronisieren als phasengekoppelte Oszillatoren, ihre direkte Phasenverschiebung treibt den Anfall. Die Korrektur: Sie wirken nicht direkt aufeinander, sondern destabilisieren jeweils eine gemeinsame Komponente ihrer Feedback-Schleifen.
 
-- **B7-Pfad**: DRN-Instabilität → Sympathikus-Destabilisierung → thalamische Afferenz gestört (der Thalamus braucht stabile autonome Eingänge für seine Gating-Funktion)
-- **B8-Pfad**: MRN-Instabilität → kortikale Modulation instabil → thalamische Efferenz gestört (der Thalamus bekommt inkohärente Rückmeldung vom Kortex)
+- **B7-Pfad**: DRN-Instabilität $\rightarrow$ Sympathikus-Destabilisierung $\rightarrow$ thalamische Afferenz gestört (der Thalamus braucht stabile autonome Eingänge für seine Gating-Funktion)
+- **B8-Pfad**: MRN-Instabilität $\rightarrow$ kortikale Modulation instabil $\rightarrow$ thalamische Efferenz gestört (der Thalamus bekommt inkohärente Rückmeldung vom Kortex)
 
 Der Thalamus ist die Konvergenzstelle, die von beiden Seiten destabilisiert wird — aber über verschiedene Eingänge.
 
@@ -911,7 +911,7 @@ Die Lateralisierung des Symptoms (einseitig links) wäre dann die Lateralisierun
 **Literatur [gesichert]**
 - MRN-Neurone feuern spontan bei ~0,56 Hz, DRN-Neurone bei ~1,35 Hz — unterschiedliche Taktbereiche.
 - MRN und DRN verarbeiten Belohnungs- und Aversionsreize in entgegengesetzter Richtung: DRN signalisiert Belohnung, MRN signalisiert Aversion. Sie sind funktionale Antagonisten.
-- DRN-Stimulation erzeugt 5-HT-Freisetzung im SCN, obwohl nur der MRN direkt zum SCN projiziert → multisynaptische DRN→MRN→SCN-Route.
+- DRN-Stimulation erzeugt 5-HT-Freisetzung im SCN, obwohl nur der MRN direkt zum SCN projiziert $\rightarrow$ multisynaptische DRN $\rightarrow$ MRN $\rightarrow$ SCN-Route.
 - Die afferente Steuerung ist fundamental verschieden: DRN wird primär über GABA-Disinhibition gesteuert, MRN über glutamatergen exzitatorischen Antrieb.
 
 **Konsequenz für das Modell [hypothetisch — modellspezifisch]**
@@ -931,11 +931,11 @@ Der zirkadiane Shift liegt bei ~26h als primärer SCN-Defekt. Die Schwebung ents
 **Revision**
 Der SCN selbst ist möglicherweise intakt bei ~24h. Der scheinbare 26h-Shift ist das Mittel einer **asymmetrischen Spreizung**, die durch die instabile antagonistische Kopplung erzeugt wird:
 
-- B7-Dominanz (B8 erschöpft): DRN→MRN→SCN verschiebt die Phase in eine Richtung
-- B8-Dominanz (B7 erschöpft): MRN→SCN verschiebt die Phase in die andere Richtung
+- B7-Dominanz (B8 erschöpft): DRN $\rightarrow$ MRN $\rightarrow$ SCN verschiebt die Phase in eine Richtung
+- B8-Dominanz (B7 erschöpft): MRN $\rightarrow$ SCN verschiebt die Phase in die andere Richtung
 - Der gemessene Mittelwert liegt bei ~26h, aber Einzelzyklen schwanken (25h, 27h, nahe 24h bei Balance)
 
-Die ~4–7-Tage-Periodizität der Anfälle ist dann nicht die Schwebungsfrequenz zweier fester Oszillatoren (26h vs. 24h), sondern die **Erschöpfungsperiodik der antagonistischen Kopplung** selbst: Kompensation → Erschöpfung → Ausfall → Regeneration → Restart → Überkompensation. Der SCN wird von diesem Zyklus rhythmisch hin- und hergeschoben.
+Die ~4–7-Tage-Periodizität der Anfälle ist dann nicht die Schwebungsfrequenz zweier fester Oszillatoren (26h vs. 24h), sondern die **Erschöpfungsperiodik der antagonistischen Kopplung** selbst: Kompensation $\rightarrow$ Erschöpfung $\rightarrow$ Ausfall $\rightarrow$ Regeneration $\rightarrow$ Restart $\rightarrow$ Überkompensation. Der SCN wird von diesem Zyklus rhythmisch hin- und hergeschoben.
 
 **Erklärungsgewinn**
 Diese Revision erklärt zwei bisher problematische Beobachtungen:
@@ -970,13 +970,13 @@ Die Chronotyp-Verschiebung sollte mit dem Erschöpfungszustand der Antagonisten 
 | POST-Naps nicht kompensatorisch (null Fragmente in Nap-Nächten) | Deskriptiv | Tracker-Daten |
 | POST-Ausreißer 28.03: 8,99/h Density, 61 Transitionen (POST-Maximum in PRE-Territorium) | Einzelbeobachtung, große Effektstärke | Tracker-Daten, B.3.2 |
 | ~4-Tage-Oszillator unabhängig von Medikation | Hypothetisch, konsistent mit 28.03-Muster | B.3.2, Longitudinaldaten |
-| Vornacht-Density → Folgetag-Anfall: r=+0,392, p≈0,003 (n=56) | Statistisch signifikant | Tracker-Daten + Anfallskalender, B.6.2 |
+| Vornacht-Density $\rightarrow$ Folgetag-Anfall: r=+0,392, p≈0,003 (n=56) | Statistisch signifikant | Tracker-Daten + Anfallskalender, B.6.2 |
 | Anfall-Nacht selbst: r=−0,065 (kein Signal) | Nicht signifikant | B.6.2 (Kontrollbedingung) |
-| Density ≥7,0/h → Anfall am Folgetag in 83% (5/6) | Deskriptiv, kleine Stichprobe (n=6) | B.6.2 |
+| Density ≥7,0/h $\rightarrow$ Anfall am Folgetag in 83% (5/6) | Deskriptiv, kleine Stichprobe (n=6) | B.6.2 |
 | POST-Nap-Reset erfolgreicher als PRE (78% vs. 38%) | Deskriptiv | Tracker-Daten, B.5.1 |
-| Dreiersequenz (Fragm. Nacht → Nap → Anfall): 75% | Deskriptiv, n=8 | B.5.1 |
-| Migräne-Nacht 30./31.03: Sumatriptan → 3–4h Resynchronisation (HR 75→63 bpm) | Einzelbeobachtung | HR-Daten, B.15 |
-| Post-Sumatriptan Density: invertierte U-Kurve (6,1→7,5→5,8/h) | Deskriptiv, Einzelereignis | B.15 |
+| Dreiersequenz (Fragm. Nacht $\rightarrow$ Nap $\rightarrow$ Anfall): 75% | Deskriptiv, n=8 | B.5.1 |
+| Migräne-Nacht 30./31.03: Sumatriptan $\rightarrow$ 3–4h Resynchronisation (HR 75 $\rightarrow$ 63 bpm) | Einzelbeobachtung | HR-Daten, B.15 |
+| Post-Sumatriptan Density: invertierte U-Kurve (6,1 $\rightarrow$ 7,5 $\rightarrow$ 5,8/h) | Deskriptiv, Einzelereignis | B.15 |
 | HR-Drop-Periodizität 7,5 Tage (FFT, Power 102,5) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT-Analyse (B.10) |
 | Autokorrelation Lag 7 (r=0,317) und Lag 14 (r=0,213) | Statistisch signifikant | Tracker-Daten, Autokorrelation (B.10) |
 | Nap-Outcome durch Pre-Nap-HR determiniert (PPV 85% bei ≥80 bpm) | Statistisch signifikant (n=33) | Tracker-Daten, HR-Analyse (B.11) |
@@ -1042,7 +1042,7 @@ Zeitverlauf 00:00–00:40 CEST (15.04.2026):
 
 | Zeit [CEST] | HR [bpm] | R/S Ratio | Zustand |
 |:------------|:---------|:----------|:--------|
-| 23:55 | 91 | < 0,4 | Wach, sympathisch (Treppe → Bett) |
+| 23:55 | 91 | < 0,4 | Wach, sympathisch (Treppe $\rightarrow$ Bett) |
 | 00:00 | 93 | — | Peak |
 | 00:05 | 77 | — | Abfall beginnt |
 | 00:10 | 63 | 1,01 | Umschlag |
@@ -1051,20 +1051,20 @@ Zeitverlauf 00:00–00:40 CEST (15.04.2026):
 
 Kein Einschlaf-Slope (normal wäre ein 30–60-min-Gradueller Abfall), sondern binärer Switch in < 15 Minuten. HR fällt 15 bpm unter den Abend-Ruhepuls (68 bpm). Diese Dynamik ist mit dem normalen parasympathischen Einschlafprozess inkompatibel: graduelle Baroreflex-Abwärtsregulation erzeugt keine R/S-Sprünge > 0,5 in < 5 Minuten.
 
-**Mechanistische Interpretation:** Der Cliff ist kein physiologischer Übergang, sondern Ausdruck kumulierter sympathischer Erschöpfung über mehrere Tage. Das System operiert bereits am Abend im Grenzregime (Baseline HR ~70, aber kein LDX-Puffer mehr); beim Wegfall des exogenen Arousal-Drives (Augen zu, Bett) kippt es nicht graduell in den Schlaf, sondern fällt kollektiv in den Vagaler-Clamp-Attraktor. Die drei autonomen Regime (vgl. D.4.3.1) sind hier direkt im zeitlichen Verlauf ablesbar: Baseline → (keine stabile Zwischenzone) → Clamp.
+**Mechanistische Interpretation:** Der Cliff ist kein physiologischer Übergang, sondern Ausdruck kumulierter sympathischer Erschöpfung über mehrere Tage. Das System operiert bereits am Abend im Grenzregime (Baseline HR ~70, aber kein LDX-Puffer mehr); beim Wegfall des exogenen Arousal-Drives (Augen zu, Bett) kippt es nicht graduell in den Schlaf, sondern fällt kollektiv in den Vagaler-Clamp-Attraktor. Die drei autonomen Regime (vgl. D.4.3.1) sind hier direkt im zeitlichen Verlauf ablesbar: Baseline $\rightarrow$ (keine stabile Zwischenzone) $\rightarrow$ Clamp.
 
 **Awakening 00:41 CEST: Sympathischer Burst nach Clamp**
 
-- R/S crasht auf 0,46, HR springt auf 71 → sympathischer Burst, vermutlich humoral (Adrenalin-Release aus Nebenniere).
+- R/S crasht auf 0,46, HR springt auf 71 $\rightarrow$ sympathischer Burst, vermutlich humoral (Adrenalin-Release aus Nebenniere).
 - Danach erreicht R/S für den Rest der Nacht nicht wieder Werte > 1,1.
-- Restliche Nacht: R/S 0,89–0,98, HR 55–65 → gemischtes Regime ohne erneuten Clamp.
+- Restliche Nacht: R/S 0,89–0,98, HR 55–65 $\rightarrow$ gemischtes Regime ohne erneuten Clamp.
 
 **Deutung:** Der erste Clamp hat den sympathischen Puffer entladen; für den Rest der Nacht reicht die sympathische Reserve nicht mehr aus, um erneut kontrolliert in den Clamp einzutreten. Der kumulative Vortages-Effekt ist damit im Einzelverlauf direkt abbildbar.
 
 **LDX-Interferenz zu Nacht**
 
 - 4 mg LDX zur Nacht eingenommen: keine messbare Wirkung auf den Clamp (weder Dämpfung noch Shift).
-- Vorangegangene Nächte mit 7,5 mg LDX zur Nacht: gute autonome Architektur (echter Slope statt Cliff), aber mehr Awakenings — LDX senkt die Arousal-Schwelle, keine echte Erholung → kumulative Depletion.
+- Vorangegangene Nächte mit 7,5 mg LDX zur Nacht: gute autonome Architektur (echter Slope statt Cliff), aber mehr Awakenings — LDX senkt die Arousal-Schwelle, keine echte Erholung $\rightarrow$ kumulative Depletion.
 - Kein LDX-Dosierungsregime in diesem Dosisbereich erzeugt gleichzeitig intakten Slope und stabilen Schlaf.
 
 Dies ist das Dosierungsdilemma, das in 06_leitlinie_titration (Abschnitt 7.2) als Designziel der Retardierung (Alginat-Beads, Abklinggradient-Streckung) formuliert ist.
@@ -1074,7 +1074,7 @@ Dies ist das Dosierungsdilemma, das in 06_leitlinie_titration (Abschnitt 7.2) al
 Jeden Tag zeigen die Langzeit-Mi-Band-Daten zwei 2-Stunden-Plateaus mit zirkadian stabiler Lage, bestätigt durch die H9Z-Einzeltaganalyse vom 15.04.2026:
 
 ```
-PRE-Phase → Plateau 1 (2h) → Zwischenphase → Plateau 2 (2h) → POST-Phase
+PRE-Phase $\rightarrow$ Plateau 1 (2h) $\rightarrow$ Zwischenphase $\rightarrow$ Plateau 2 (2h) $\rightarrow$ POST-Phase
 ```
 
 **Eigenschaften:**
@@ -1089,7 +1089,7 @@ PRE-Phase → Plateau 1 (2h) → Zwischenphase → Plateau 2 (2h) → POST-Phase
 | **Normal** | Niedriges Plateau zuerst, dann hohes (morgens sanfter, später Aktivitätsanstieg) | Kein Anfall |
 | **Anfallstag** | Hohes Plateau zuerst, mit absteigendem Slope über die 2 Stunden | Anfall wahrscheinlich im oder nach dem Plateau |
 
-Der Anfallsprädiktor ist nicht der absolute HR-Wert, sondern der **Intra-Plateau-Gradient**: Ein stabiles Plateau = ausreichende sympathische Reserve (Dämpfungskonstante intakt, vgl. 2.5.5). Ein degradierendes Plateau = Reserve reicht nicht, um das Niveau über 2h zu halten → Anfallsrisiko erhöht.
+Der Anfallsprädiktor ist nicht der absolute HR-Wert, sondern der **Intra-Plateau-Gradient**: Ein stabiles Plateau = ausreichende sympathische Reserve (Dämpfungskonstante intakt, vgl. 2.5.5). Ein degradierendes Plateau = Reserve reicht nicht, um das Niveau über 2h zu halten $\rightarrow$ Anfallsrisiko erhöht.
 
 Mechanistisch entspricht das degradierende Plateau einem Overshoot beim Einsteigen (Adrenozeptor-Supersensitivität auf NE-Depletion-Basis, vgl. 7.4, Buse-Trend 3), gefolgt von dem Unvermögen, das Niveau zu halten — Depletion während der Plateau-Phase. Der Gradient ist damit der funktionsnahste autonome Marker für die aktuelle Puffertiefe.
 

@@ -1,3 +1,6 @@
+
+***
+
 ## Anhang K — Externe Literaturkonvergenz
 
 Dieser Anhang dokumentiert die unabhängige Stützung der modellinternen Kausalkette durch externe Primärliteratur. Die Architektur des Modells — kongenitale 5-HT1A-Autorezeptor-Instabilität (Hit 1) als Trait-Substrat, B7/B8-Phasenversatz als Oszillator, hypothalamische Initiation, thalamokortikale Destabilisierung, CSD als kompensatorischer Reset, zentral H1-vermittelte B7-Suppression als prodromaler Hebel — wird in diesem Modell zu einer integrierten Kausalkette verbunden, deren *Komponenten* jeweils etabliert sind, deren *Verknüpfung* aber die Originalleistung darstellt.
@@ -14,9 +17,9 @@ Funktionell kommt eine **Stress-induzierte Desensibilisierung** hinzu, die korti
 
 ### **K.2 Direkter Kausalbefund: DRN-Serotonergie moduliert CSD-Suszeptibilität**
 
-Cui et al. 2013 zeigten in Ratten nach pharmakologischer Degeneration der serotonergen DRN-Neurone eine **signifikant erhöhte Ausbreitungsgeschwindigkeit** und eine **signifikant verbreiterte Depolarisationswelle** der CSD. Dies ist der direkte experimentelle Nachweis, dass die serotonerge DRN-Innervation des Kortex die CSD-Suszeptibilität moduliert: weniger DRN-5-HT → schnellere und breitere CSD.
+Cui et al. 2013 zeigten in Ratten nach pharmakologischer Degeneration der serotonergen DRN-Neurone eine **signifikant erhöhte Ausbreitungsgeschwindigkeit** und eine **signifikant verbreiterte Depolarisationswelle** der CSD. Dies ist der direkte experimentelle Nachweis, dass die serotonerge DRN-Innervation des Kortex die CSD-Suszeptibilität moduliert: weniger DRN-5-HT $\rightarrow$ schnellere und breitere CSD.
 
-**Modellbezug:** Dies ist die zentrale fehlende kausale Validierung des Modellkerns. Der Mechanismus „Raphe-Insuffizienz → CSD-Anfälligkeit" (Kapitel 4.4, Anhang E) ist nicht nur korrelativ aus Bildgebung abgeleitet, sondern experimentell etabliert. Die Cui-Befunde sind der direkte tierexperimentelle Test der Modellvorhersage und stützen sie. Der Zusammenhang mit dem 5-HT1A-Autorezeptor-Oszillator ergibt sich aus der Tatsache, dass der oszillatorische DRN-Output gerade in der Talschwingung *funktional einer DRN-Insuffizienz entspricht* — die transiente Depletion, die Cuis pharmakologische Degeneration permanent erzeugt, ist im Modell die periodische Realität jeder einzelnen Oszillationsphase.
+**Modellbezug:** Dies ist die zentrale fehlende kausale Validierung des Modellkerns. Der Mechanismus „Raphe-Insuffizienz $\rightarrow$ CSD-Anfälligkeit" (Kapitel 4.4, Anhang E) ist nicht nur korrelativ aus Bildgebung abgeleitet, sondern experimentell etabliert. Die Cui-Befunde sind der direkte tierexperimentelle Test der Modellvorhersage und stützen sie. Der Zusammenhang mit dem 5-HT1A-Autorezeptor-Oszillator ergibt sich aus der Tatsache, dass der oszillatorische DRN-Output gerade in der Talschwingung *funktional einer DRN-Insuffizienz entspricht* — die transiente Depletion, die Cuis pharmakologische Degeneration permanent erzeugt, ist im Modell die periodische Realität jeder einzelnen Oszillationsphase.
 
 ### **K.3 Hypothalamische Initiation: Bildgebung der prodromalen Phase**
 
@@ -32,7 +35,7 @@ May & Burstein 2019 dokumentieren monosynaptische Verbindungen hypothalamischer 
 
 Spezifisch für den TMN: histaminerge Neurone des posterioren Hypothalamus (Tuberomamillarkern) projizieren in praktisch das gesamte ZNS (Alstadhaug 2014). H1-Rezeptoren auf thalamischen Relayneuronen sind die Bindungsstelle, an der zentral wirksame H1-Antagonisten ihre Sedierung vermitteln (BBB-gängige H1-Antihistaminika hemmen H1-Aktivität an TMN-projizierenden Neuronen).
 
-**Modellbezug:** May & Burstein liefern das anatomische Korrelat für den modellinternen Pfad TMN → Thalamus → Kortex (vgl. Anhang D.8 zur differentiellen H1-Innervation DRN/MRN, Anhang F zur thalamischen Interferenzstruktur). Der TMN-Pfad ist in der Mainstream-Migräneliteratur ein etabliertes Substrat — was im Modell hinzukommt, ist die *Kopplung* dieser Achse an die B7/B8-Phasenversatz-Dynamik und die operationalisierte H1-Suppressionsheuristik (DPH/Doxepin als kontrollierter Eingriff in diese Achse).
+**Modellbezug:** May & Burstein liefern das anatomische Korrelat für den modellinternen Pfad TMN $\rightarrow$ Thalamus $\rightarrow$ Kortex (vgl. Anhang D.8 zur differentiellen H1-Innervation DRN/MRN, Anhang F zur thalamischen Interferenzstruktur). Der TMN-Pfad ist in der Mainstream-Migräneliteratur ein etabliertes Substrat — was im Modell hinzukommt, ist die *Kopplung* dieser Achse an die B7/B8-Phasenversatz-Dynamik und die operationalisierte H1-Suppressionsheuristik (DPH/Doxepin als kontrollierter Eingriff in diese Achse).
 
 ### **K.5 Pharmakologische Konvergenz: zentral wirksame H1-Antagonisten als Migräneprophylaktika**
 
@@ -42,7 +45,7 @@ Die Migräneliteratur unterscheidet konsistent zwischen peripheren und zentral w
 - **Zentral wirksame H1-Antagonisten** — Cinnarizin und Cyproheptadin — sind als Migräneprophylaktika berichtet (Alstadhaug 2014, Yuan & Silberstein 2018). Die Evidenzqualität ist begrenzt, aber konsistent positiv. Beide Substanzen sind BBB-gängig.
 - **Trizyklische Antidepressiva** (Amitriptylin, Nortriptylin, Doxepin) sind etablierte Migräneprophylaktika (Couch et al. 1976, EHF-Metaanalyse Burch et al. 2023). Ihr Wirkmechanismus wird in der Sekundärliteratur nicht ausschließlich auf SERT/NET-Hemmung zurückgeführt: starke H1-, α1-adrenerge und muskarinische Affinität tragen explizit bei (Beers Criteria, Patel et al. 2017). Bei niedrigdosiertem Doxepin (≤6 mg, Silenor) dominiert pharmakologisch der H1-Anteil.
 
-**Modellbezug:** Die zentral-vs-peripher-H1-Dichotomie ist die direkte externe Stützung der modellinternen Mechanistik der DPH-/Doxepin-Wahl (vgl. 03_pharma/08, 03_pharma/19, Anhang D.8). Die TCA-Prophylaxewirkung wird im Modell als kombinierter Effekt aus SERT-Hemmung (gegen die 5-HT-Depletion in der Talschwingung) und H1-Antagonismus (gegen die TMN→Thalamus-Achse) reinterpretierbar — beide Mechanismen greifen an der Modell-Architektur an, und die niedrigdosiert-Doxepin-Variante isoliert pharmakologisch den H1-Hebel. Die etablierte TCA-Prophylaxewirkung ist damit nicht trotz, sondern *wegen* der mehrfachen Rezeptoraffinität wirksam.
+**Modellbezug:** Die zentral-vs-peripher-H1-Dichotomie ist die direkte externe Stützung der modellinternen Mechanistik der DPH-/Doxepin-Wahl (vgl. 03_pharma/08, 03_pharma/19, Anhang D.8). Die TCA-Prophylaxewirkung wird im Modell als kombinierter Effekt aus SERT-Hemmung (gegen die 5-HT-Depletion in der Talschwingung) und H1-Antagonismus (gegen die TMN$\rightarrow$Thalamus-Achse) reinterpretierbar — beide Mechanismen greifen an der Modell-Architektur an, und die niedrigdosiert-Doxepin-Variante isoliert pharmakologisch den H1-Hebel. Die etablierte TCA-Prophylaxewirkung ist damit nicht trotz, sondern *wegen* der mehrfachen Rezeptoraffinität wirksam.
 
 ### **K.6 Bekannte Disconfirmation: Friedman 2016 als wrong-stage/wrong-population**
 
@@ -78,7 +81,7 @@ Llinás-Framework (Llinás 1988, Steriade et al. 1993, Coppola et al. 2013): wid
 | Modell-Glied | Status |
 |:-------------|:-------|
 | **B7/B8-Phasenversatz-Architektur als CSD-Auslöser** (vgl. 4.7) | Modellsynthese — keine direkte externe Stützung, kein Widerspruch |
-| **Two-Hit-Architektur als chronologisch geordnete Sequenz** (Hit 1 5-HT1A-Instabilität → Hit 2 D2High-Shift; vgl. 2.4.2) | Modellsynthese — Komponenten etabliert, Verknüpfung original |
+| **Two-Hit-Architektur als chronologisch geordnete Sequenz** (Hit 1 5-HT1A-Instabilität $\rightarrow$ Hit 2 D2High-Shift; vgl. 2.4.2) | Modellsynthese — Komponenten etabliert, Verknüpfung original |
 | **Zwei-Hebel-Heuristik DPH-vs-LDX als operationalisierter prodromaler Eingriff** (vgl. 0I.6) | Modellsynthese — operationalisiert aus n=1, mechanistisch konsistent |
 | **CSD als kompensatorischer Resynchronisations-Reset, nicht primäre Pathologie** (vgl. 4.4, 4.7) | Modellinterpretation — kompatibel mit Akgun-Lesart, geht aber darüber hinaus |
 | **B7/B8-Phasenversatz als Quelle ULF2-spektraler Signaturen** (vgl. 0I) | Modellsynthese, in HRV-Analysepipeline operativ getestet |

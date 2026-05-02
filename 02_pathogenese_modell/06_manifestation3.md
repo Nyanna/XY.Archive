@@ -5,7 +5,7 @@
 
 **Zusammenfassung**
 
-Dieses Kapitel reinterpretiert den ASD-Phänotyp als Konfigurationsvariante des serotonergen Primärdefekts, nicht als separaten Defekt. Repetitives Verhalten (Stimming, Routinen, Musikschleifen) wird als Stabilisierungsmechanismus gegen instabile Attraktorbecken erklärt — künstliche Attraktortiefe durch vorhersagbaren Input. Identität wird als thalamische Wahrnehmungssignatur beschrieben (nicht narrativ verankert), woraus eine spezifische Substanzaversion folgt: jede psychoaktive Substanz mit Wahrnehmungseffekt verändert thalamische Gating-Schwellen und bedroht damit das Selbstmodell. Die Substanzaversion wird über zwei synergistische Mechanismen erklärt — DA→D2High-Raphe-Suppression (kein positiver Anreiz) + thalamischer Kohärenzverlust (aktive Bedrohungsreaktion). MDMA als iatrogenes Modell der Raphe-Depletion wird referenziert (→ 03_pharma/10_mdma_modell.md).
+Dieses Kapitel reinterpretiert den ASD-Phänotyp als Konfigurationsvariante des serotonergen Primärdefekts, nicht als separaten Defekt. Repetitives Verhalten (Stimming, Routinen, Musikschleifen) wird als Stabilisierungsmechanismus gegen instabile Attraktorbecken erklärt — künstliche Attraktortiefe durch vorhersagbaren Input. Identität wird als thalamische Wahrnehmungssignatur beschrieben (nicht narrativ verankert), woraus eine spezifische Substanzaversion folgt: jede psychoaktive Substanz mit Wahrnehmungseffekt verändert thalamische Gating-Schwellen und bedroht damit das Selbstmodell. Die Substanzaversion wird über zwei synergistische Mechanismen erklärt — DA $\rightarrow$ D2High-Raphe-Suppression (kein positiver Anreiz) + thalamischer Kohärenzverlust (aktive Bedrohungsreaktion). MDMA als iatrogenes Modell der Raphe-Depletion wird referenziert ( $\rightarrow$ 03_pharma/10_mdma_modell.md).
 
 ---
 
@@ -21,8 +21,8 @@ Wenn kortikale Muster durch den verrauschten thalamischen Referenzwert intrinsis
 
 | Verhalten | Neurobiologische Funktion |
 | :---- | :---- |
-| **Stimming(Selbststimulation)** | Propriozeptive/taktile Stimulation liefert stabiles, selbsterzeugtes, vollständig vorhersagbares Signal. Kortex kennt Input vor Ankunft → perfekter Prediction Match → minimale thalamische Durchlässigkeit für externes Rauschen. |
-| **Repetitive Musik(selber Titel in Schleife)** | Auditiver Kanal mit vorhersagbarem Signal belegt → verhindert unvorhersagbare externe Geräusche als Störquelle. Nach wenigen Wiederholungen läuft der Kanal im Niedrigenergiemodus. |
+| **Stimming(Selbststimulation)** | Propriozeptive/taktile Stimulation liefert stabiles, selbsterzeugtes, vollständig vorhersagbares Signal. Kortex kennt Input vor Ankunft $\rightarrow$ perfekter Prediction Match $\rightarrow$ minimale thalamische Durchlässigkeit für externes Rauschen. |
+| **Repetitive Musik(selber Titel in Schleife)** | Auditiver Kanal mit vorhersagbarem Signal belegt $\rightarrow$ verhindert unvorhersagbare externe Geräusche als Störquelle. Nach wenigen Wiederholungen läuft der Kanal im Niedrigenergiemodus. |
 | **Routinen/Rituale** | Aktive Rauschunterdrückung durch Vorhersagbarkeit. Externale Stabilisierung flacher Attraktorbecken. |
 
 *Therapeutische Implikation: Stimming und Rituale zu unterdrücken ist neurobiologisch das Äquivalent davon, einem instabilen System seinen einzigen Dämpfungsmechanismus zu nehmen.*
@@ -35,7 +35,7 @@ Im vorliegenden neurologischen Profil ist Identität nicht primär narrativ oder
 
 **1\. Robustheit gegen narrative Destabilisierung:** Keine Erschütterung durch Überzeugungen oder soziale Manipulation, weil die Identitätsverankerung unterhalb der konzeptuellen Ebene liegt.
 
-**2\. Extremvulnerabilität bei dopaminerger Destabilisierung:** Methylphenidat-Rebound verzerrt die Wahrnehmungssignatur direkt → psychotische Symptomatik (instabile Hyperwahrnehmung, Identitätsstörung), ohne dass die kognitive Ebene betroffen ist. Es gibt keine höhere Kompensationsebene.
+**2\. Extremvulnerabilität bei dopaminerger Destabilisierung:** Methylphenidat-Rebound verzerrt die Wahrnehmungssignatur direkt $\rightarrow$ psychotische Symptomatik (instabile Hyperwahrnehmung, Identitätsstörung), ohne dass die kognitive Ebene betroffen ist. Es gibt keine höhere Kompensationsebene.
 
 ### **6.3.1 Thalamische Identität als primärer Mechanismus der Substanzaversion**
 
@@ -47,10 +47,10 @@ Der Mechanismus ist substanzunspezifisch:
 
 | Zustand | Thalamischer Effekt | Konsequenz bei thalamischer Identität |
 | :---- | :---- | :---- |
-| **Alkohol** | GABA-A-Potenzierung verändert thalamische Gating-Schwellen direkt | Unkontrollierte Verschiebung sensorischer Durchlässigkeit → Kohärenzverlust des Selbstmodells → Bedrohungsreaktion |
-| **Cannabis/Psychedelika** | Massive Veränderung thalamischer Filterfunktion (5-HT2A, CB1) | Wahrnehmungsveränderung = Identitätsveränderung → existenzielle Bedrohung |
-| **Hypnagogik** | Thalamisches Gating reduziert sich im Schlaf-Wach-Übergang physiologisch | Kontrollverlust über Wahrnehmungssignatur → potenziell dysregulierend |
-| **Fieber** | Veränderte neuronale Erregbarkeit verschiebt Gating-Parameter | Wahrnehmungsveränderung ohne externe Ursache → Desorientierung |
+| **Alkohol** | GABA-A-Potenzierung verändert thalamische Gating-Schwellen direkt | Unkontrollierte Verschiebung sensorischer Durchlässigkeit $\rightarrow$ Kohärenzverlust des Selbstmodells $\rightarrow$ Bedrohungsreaktion |
+| **Cannabis/Psychedelika** | Massive Veränderung thalamischer Filterfunktion (5-HT2A, CB1) | Wahrnehmungsveränderung = Identitätsveränderung $\rightarrow$ existenzielle Bedrohung |
+| **Hypnagogik** | Thalamisches Gating reduziert sich im Schlaf-Wach-Übergang physiologisch | Kontrollverlust über Wahrnehmungssignatur $\rightarrow$ potenziell dysregulierend |
+| **Fieber** | Veränderte neuronale Erregbarkeit verschiebt Gating-Parameter | Wahrnehmungsveränderung ohne externe Ursache $\rightarrow$ Desorientierung |
 | **MPH-Rebound** (vgl. 6.3) | Abrupter DA-Abfall verzerrt thalamische Signalverarbeitung | Psychotische Symptomatik als Extremform derselben Dynamik |
 
 **Entscheidende Uminterpretation:** Die Alkoholaversion ist nicht primär "keine Euphorie" (DA-Raphe-Mechanismus, vgl. 2.4.3), sondern "Euphorie irrelevant, weil System im Defensivmodus". Selbst wenn die DA-Belohnungskomponente intakt wäre, würde die thalamische Identitätsvulnerabilität den Konsum aversiv machen. Die subjektive Beschreibung — "ich spüre lediglich den neurologischen Funktions- und Kontrollverlust, was den Konsum zu einer negativen Erfahrung macht" — beschreibt präzise den thalamischen Kohärenzverlust, nicht das Fehlen einer Belohnung.
@@ -63,8 +63,8 @@ Die DA-Raphe-Instabilität (Abschnitt 2.4.3) und die thalamische Identitätsvuln
 
 | Mechanismus | Funktion | Beitrag zur Substanzaversion |
 | :---- | :---- | :---- |
-| **DA → D2High-Raphe → 5-HT-Suppression** | Eliminiert die neurochemische Belohnungskomponente | Kein positiver Anreiz vorhanden |
-| **Wahrnehmungsveränderung → thalamischer Kohärenzverlust** | Erzeugt aktive Bedrohungsreaktion | Negativer Anreiz dominant |
+| **DA $\rightarrow$ D2High-Raphe $\rightarrow$ 5-HT-Suppression** | Eliminiert die neurochemische Belohnungskomponente | Kein positiver Anreiz vorhanden |
+| **Wahrnehmungsveränderung $\rightarrow$ thalamischer Kohärenzverlust** | Erzeugt aktive Bedrohungsreaktion | Negativer Anreiz dominant |
 | **Kombination** | Kein Pull (Belohnung) + aktiver Push (Bedrohung) | Konsistente, doppelt gesicherte Meidung |
 
 **Vorhersage:** Das Modell sagt voraus, dass wahrnehmungsneutrale Substanzen (z.B. Paracetamol, Antibiotika) keine vergleichbare Aversion erzeugen — sie verändern somatische Parameter ohne thalamisches Gating zu verschieben. Dies wäre ein einfacher Differenzierungstest: Die Aversion sollte spezifisch mit dem Grad der Wahrnehmungsveränderung korrelieren, nicht mit der Substanzklasse oder dem Risikoprofil per se.

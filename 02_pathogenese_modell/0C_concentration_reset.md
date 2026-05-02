@@ -197,7 +197,7 @@ Ich habe irgendwann aufgehört, sie zu wecken oder anzusprechen. Es war wirkungs
 
 **Morgendliches Duschen als sensorisches Forcing**
 
-Ich dusche morgens. Nicht aus Gewohnheit, sondern weil ich ohne die Dusche nicht richtig wach werde. Im Modellkontext: Bei partieller Schlafintrusion ist der Übergang Schlaf→Wach kein aktiver Switch, sondern ein gradueller Drift. Ohne externen Forcing bleibt er unvollständig. Massiver somatosensorischer Input — heißes Wasser auf der gesamten Hautoberfläche — erzwingt kortikale Synchronisierung der Areale, die im Intermediärzustand hängengeblieben sind.
+Ich dusche morgens. Nicht aus Gewohnheit, sondern weil ich ohne die Dusche nicht richtig wach werde. Im Modellkontext: Bei partieller Schlafintrusion ist der Übergang Schlaf$\rightarrow$Wach kein aktiver Switch, sondern ein gradueller Drift. Ohne externen Forcing bleibt er unvollständig. Massiver somatosensorischer Input — heißes Wasser auf der gesamten Hautoberfläche — erzwingt kortikale Synchronisierung der Areale, die im Intermediärzustand hängengeblieben sind.
 
 Das ist derselbe Mechanismus wie beim Powernap als Reset, nur in die andere Richtung: Der Nap erzwingt einen globalen Down-State und sauberes Wiederaufwachen. Die Dusche erzwingt einen globalen sensorischen Input, der die noch schlafenden Areale in den Wachzustand zwingt. Beides adressiert das gleiche Problem: Das System kommt nicht von allein in einen kohärenten Zustand.
 
@@ -277,7 +277,7 @@ Lichtempfindlichkeit ist da, ja. Aber es ist NICHT das Gefühl, das ich von der 
 
 Dazu kommt eine leichte räumliche Desorientierung. Nicht Schwindel, nicht Gleichgewichtsverlust — eher eine Unschärfe in der Raumwahrnehmung, die sich aus der visuellen Beeinträchtigung ergibt. Wenn das Sehen unsicher wird, wird der Raum unsicher.
 
-Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom, weil es keine Wellenfront gibt, die sich über den visuellen Kortex schiebt. Die visuelle Störung erklärt sich über den Pulvinar-Pfad: Die thalamische Interferenz (B7/B8-Phasenversatz) destabilisiert den modulatorischen thalamokortikalen Pfad (Pulvinar → visueller Kortex), während der LGN-Driver-Pfad intakt bleibt → daher Rauschen statt Blindheit. Die Gain-Kontrolle ist gestört, aber die Grundübertragung erhalten. Das Rauschen statt des Skotoms ist diagnostisch: Es spricht für Pulvinar-Gating-Versagen, nicht für eine CSD-Propagation im klassischen Sinne.
+Meine Interpretation: Kein propagierendes ionisches Wellenphänomen. Kein Skotom, weil es keine Wellenfront gibt, die sich über den visuellen Kortex schiebt. Die visuelle Störung erklärt sich über den Pulvinar-Pfad: Die thalamische Interferenz (B7/B8-Phasenversatz) destabilisiert den modulatorischen thalamokortikalen Pfad (Pulvinar $\rightarrow$ visueller Kortex), während der LGN-Driver-Pfad intakt bleibt $\rightarrow$ daher Rauschen statt Blindheit. Die Gain-Kontrolle ist gestört, aber die Grundübertragung erhalten. Das Rauschen statt des Skotoms ist diagnostisch: Es spricht für Pulvinar-Gating-Versagen, nicht für eine CSD-Propagation im klassischen Sinne.
 
 **PFC-Klarheit unter LDX während des Anfalls — ein Dissoziationsbefund**
 
@@ -285,7 +285,7 @@ Was mich heute am meisten überrascht: Der PFC war die ganze Zeit geschützt. Tr
 
 Die autonomen Symptome waren heftig. Intensiver Schüttelfrost, dann Hitzewelle, Übelkeit. Die autonomen Stammhirnkerne waren offensichtlich destabilisiert — die vegetativen Zentren waren betroffen, parallel zur kortikalen Kaskade und unabhängig von ihr (vgl. 4.6). Aber der PFC nicht.
 
-Meine Interpretation: Der PFC ist durch die dopaminerge LDX-Stabilisierung des MD-Thalamus-PFC-Loops geschützt. B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär — der Schutz ist pharmakologisch (höhere Kippschwelle unter LDX), nicht architektonisch. LDX stabilisiert die dopaminerge Versorgung des MD-Loops → der PFC-assoziierte thalamokortikale Pfad hält am längsten in der thalamischen Kaskade. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung durch B7→ANS-Kern-Destabilisierung (vgl. 4.6), und gleichzeitig kristallklare frontale Funktion.
+Meine Interpretation: Der PFC ist durch die dopaminerge LDX-Stabilisierung des MD-Thalamus-PFC-Loops geschützt. B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär — der Schutz ist pharmakologisch (höhere Kippschwelle unter LDX), nicht architektonisch. LDX stabilisiert die dopaminerge Versorgung des MD-Loops $\rightarrow$ der PFC-assoziierte thalamokortikale Pfad hält am längsten in der thalamischen Kaskade. Die Dissoziation ist bemerkenswert: Schwere Migräne im Posterior, autonome Entgleisung durch B7$\rightarrow$ANS-Kern-Destabilisierung (vgl. 4.6), und gleichzeitig kristallklare frontale Funktion.
 
 Keine Halluzinationen. Keine visuellen Illusionen jenseits des Rauschens. Keine Denkstörung. Das spricht gegen eine fokale CSD im PFC — wenn die Propagation bis in den Frontalkortex reichen würde, wäre die Klarheit nicht möglich. Der PFC war nicht nur geschützt, er war funktional intakt. Ein Fenster mitten in der Migräne.
 

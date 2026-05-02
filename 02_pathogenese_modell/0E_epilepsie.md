@@ -15,11 +15,11 @@ Epileptische Anfälle können durch experimentelle Manipulationen, die die serot
 
 Das Tiermodell: genetisch epilepsieanfällige Ratten (GEPR) zeigen verringerte 5-HT1A-Rezeptordichte im Hippocampus. Der SSRI Sertralin reduziert dosisabhängig die Intensität audiogener Anfälle, korrelierend mit erhöhter extrazellulärer thalamischer 5-HT-Konzentration (Yan et al. 1995). Neuere Daten zeigen, dass das Anfallsrisiko bei Depression nicht durch SSRIs erhöht wird, sondern durch die zugrundeliegende Serotonin-Defizienz selbst — die Depression ist der Marker, nicht die Ursache (Cardamone et al. 2023).
 
-**Mechanismus: 5-HT → GABAerge Interneuronen → kortikale Inhibition**
+**Mechanismus: 5-HT $\rightarrow$ GABAerge Interneuronen $\rightarrow$ kortikale Inhibition**
 
 Der protektive Mechanismus läuft über den in Anhang D.3 beschriebenen Reset-Puls: Serotonin aktiviert GABAerge Interneuronen im Kortex und Hippocampus über 5-HT3-Rezeptoren (ligandgesteuerte Ionenkanäle, schnelle Depolarisation). Diese Interneuronen hemmen exzitatorische Pyramidenzellen. Jeder Raphe-Puls setzt die kortikale Exzitabilität zurück:
 
-**Raphe feuert → 5-HT-Freisetzung (Volumentransmission) → 5-HT3 auf GABAergen Interneuronen → GABA-Freisetzung → Pyramidenzellen-Hemmung → Exzitabilitäts-Reset**
+**Raphe feuert $\rightarrow$ 5-HT-Freisetzung (Volumentransmission) $\rightarrow$ 5-HT3 auf GABAergen Interneuronen $\rightarrow$ GABA-Freisetzung $\rightarrow$ Pyramidenzellen-Hemmung $\rightarrow$ Exzitabilitäts-Reset**
 
 Fehlt der Puls, feuern die Pyramidenzellen ungebremst weiter. Exzitation akkumuliert. Ohne den periodischen Reset nähert sich der Kortex der Anfallsschwelle.
 
@@ -31,8 +31,8 @@ Die Anfallsschwelle ist nicht binär, sondern ein Kontinuum:
 |:--------------------|:-------------------|:--------------------|
 | Stabil (0,5–5 Hz) | Kohärent synchronisiert | Normales Funktionieren |
 | Instabil (underdämpft) | Moderate Desynchronisation | Lokaler Schlaf, Mind Blanking (vgl. 4.3) |
-| Insuffizient (tiefes Nadir) | Fortschreitende Exzitation | CSD-Schwelle erreicht → Migräneaura |
-| Versagend | Exzitation unkontrolliert | Anfallsschwelle erreicht → epileptischer Anfall |
+| Insuffizient (tiefes Nadir) | Fortschreitende Exzitation | CSD-Schwelle erreicht $\rightarrow$ Migräneaura |
+| Versagend | Exzitation unkontrolliert | Anfallsschwelle erreicht $\rightarrow$ epileptischer Anfall |
 
 ### **E.2 CSD und Epilepsie: Bidirektionale Beziehung**
 
@@ -88,8 +88,8 @@ Wenn das Zündmuster die Topographie der tonischen Destabilisierungswelle reflek
 
 | Epilepsietyp | Tonische Vorgeschichte | Vorhergesagtes EEG-Zündmuster |
 |:-------------|:----------------------|:-----------------------------|
-| **Primäre fokale Epilepsie** | Struktureller Fokus → lokale tonische Destabilisierung | Fokaler Onset mit sekundärer Generalisierung — das klassische Muster. Die Welle breitet sich von einem Punkt aus |
-| **Migräne-assoziierte Epilepsie** | Tonische Destabilisierungswelle über breite kortikale Fläche (vgl. 4.4.1) → diffuse, sequentielle Destabilisierung | Breitflächiges, sequentielles Muster — *nicht* fokal, aber *nicht* simultan. Die Generalisierung folgt der Propagationsgeschichte der tonischen Welle, nicht einem Fokus |
+| **Primäre fokale Epilepsie** | Struktureller Fokus $\rightarrow$ lokale tonische Destabilisierung | Fokaler Onset mit sekundärer Generalisierung — das klassische Muster. Die Welle breitet sich von einem Punkt aus |
+| **Migräne-assoziierte Epilepsie** | Tonische Destabilisierungswelle über breite kortikale Fläche (vgl. 4.4.1) $\rightarrow$ diffuse, sequentielle Destabilisierung | Breitflächiges, sequentielles Muster — *nicht* fokal, aber *nicht* simultan. Die Generalisierung folgt der Propagationsgeschichte der tonischen Welle, nicht einem Fokus |
 
 **Forschungslücke:** Die systematische Suche nach unterschiedlichen Generalisierungsmustern als Funktion der Migräne-Komorbidität existiert in der Literatur nicht. EEG-Klassifikationen unterscheiden fokal vs. generalisiert, aber nicht die *Sequenztopographie* der Generalisierung. Hochauflösende EEG-Analysen (≥128 Kanäle, Quellenlokalisation) bei Epilepsiepatienten mit vs. ohne Migräne-Komorbidität sollten distinkte räumlich-zeitliche Generalisierungsmuster zeigen.
 
@@ -105,7 +105,7 @@ Die konventionelle Interpretation: CGRP wird während der Migräneattacke freige
 
 Die CSD-Welle braucht die trigeminovaskuläre Kaskade für ihre vollständige Propagation:
 
-**Neuronale Depolarisationswelle → CGRP-Freisetzung aus trigeminalen Afferenzen → Vasodilatation → metabolische Versorgung des depolarisierten Gewebes → die Welle kann weiterlaufen → vollständiger kortikaler Reset**
+**Neuronale Depolarisationswelle $\rightarrow$ CGRP-Freisetzung aus trigeminalen Afferenzen $\rightarrow$ Vasodilatation $\rightarrow$ metabolische Versorgung des depolarisierten Gewebes $\rightarrow$ die Welle kann weiterlaufen $\rightarrow$ vollständiger kortikaler Reset**
 
 Ohne CGRP stockt die Welle. Die Depolarisation beginnt, kann sich aber nicht vollständig propagieren. Der Reset bleibt lokal oder bricht ab.
 
@@ -115,7 +115,7 @@ In epileptischen Tiermodellen wird ein ausgeprägter, transienter CGRP-Anstieg n
 
 Die Modellinterpretation: Der CGRP-Anstieg ist das Residuum eines gescheiterten CSD-Versuchs. Das Gehirn hat CGRP freigesetzt, um eine CSD zu propagieren. Die CSD hat nicht gereicht oder war zu langsam. Die Exzitation hat sich stattdessen als Anfall entladen. Das CGRP ist noch im Gewebe messbar — als Spur des gescheiterten Resets, nicht als Antwort auf den Anfall.
 
-Stützend: CGRP-Anstieg wurde nach kainatinduzierten, aber *nicht* nach pentylenetetrazol-induzierten Anfällen beobachtet. Dies ist konsistent mit der Hypothese, wenn Kainat-Anfälle einen CSD-Versuch triggern (glutamaterge Überaktivierung → CSD-ähnliche Depolarisationswelle → scheitert → Anfall) während PTZ-Anfälle (GABAerge Disinhibition) einen anderen Mechanismus nutzen.
+Stützend: CGRP-Anstieg wurde nach kainatinduzierten, aber *nicht* nach pentylenetetrazol-induzierten Anfällen beobachtet. Dies ist konsistent mit der Hypothese, wenn Kainat-Anfälle einen CSD-Versuch triggern (glutamaterge Überaktivierung $\rightarrow$ CSD-ähnliche Depolarisationswelle $\rightarrow$ scheitert $\rightarrow$ Anfall) während PTZ-Anfälle (GABAerge Disinhibition) einen anderen Mechanismus nutzen.
 
 ### **E.5 Pharmakologische Implikationen: Eingriffspunkte in der Fallback-Hierarchie**
 
@@ -131,7 +131,7 @@ Dies ist konsistent mit der beobachteten antikonvulsiven Wirkung von Propranolol
 
 **Anti-CGRP-Antikörper: Blockade des CSD-Propagationsmechanismus (Stufe 2)**
 
-Anti-CGRP-Antikörper (Erenumab, Galcanezumab, Fremanezumab, Eptinezumab) blockieren die CGRP-vermittelte trigeminovaskuläre Kaskade. Im Modell bedeutet das: Blockade des CSD-Propagationsmechanismus. Keine CGRP-Freisetzung → keine vollständige CSD → kein Reset.
+Anti-CGRP-Antikörper (Erenumab, Galcanezumab, Fremanezumab, Eptinezumab) blockieren die CGRP-vermittelte trigeminovaskuläre Kaskade. Im Modell bedeutet das: Blockade des CSD-Propagationsmechanismus. Keine CGRP-Freisetzung $\rightarrow$ keine vollständige CSD $\rightarrow$ kein Reset.
 
 **Konsequenz:** Migräne verschwindet effektiv, weil die CSD nicht mehr propagiert (und damit kein Schmerz). Aber der Preis ist die Eliminierung des Notfall-Resynchronisationsmechanismus (Stufe 2 der Hierarchie). Bei insuffizientem Raphe-Takt (Primärdefekt) akkumuliert Exzitation ohne Entladungspfad.
 
@@ -149,17 +149,17 @@ Die GABAerge Limitierung (vgl. Anhang D.5) fängt die resultierende Rest-Exzitat
 
 | Beobachtung | Erklärung durch inkompletten Reset |
 |:------------|:----------------------------------|
-| Post-Triptan fehlt die Post-CSD-Klarheit | CSD nicht vollständig propagiert → Reset unvollständig |
-| Traumerinnerung antiproportional zu Triptaneinnahme (vgl. 8.4) | Kein vollständiger Reset → kein konsolidierter post-iktaler REM → keine Traumerinnerung |
+| Post-Triptan fehlt die Post-CSD-Klarheit | CSD nicht vollständig propagiert $\rightarrow$ Reset unvollständig |
+| Traumerinnerung antiproportional zu Triptaneinnahme (vgl. 8.4) | Kein vollständiger Reset $\rightarrow$ kein konsolidierter post-iktaler REM $\rightarrow$ keine Traumerinnerung |
 | Kein Triptan-Rebound bei kurzen Anfällen + erhaltener SWS-Kompensation | Residuum nach Triptan-Abbruch klein genug für Overnight-SWS-Ausgleich |
 
 **Triptan-Rebound (Medication Overuse Headache):** Zwei Mechanismen operieren parallel:
 
 **(1) Reset-Akkumulation (bestehende Formulierung):** Bei chronischer Migräne reicht das Intervall zwischen Anfällen nicht für SWS-Nachsynchronisation. Jeder Triptan-Abbruch hinterlässt ein Residuum, das sich kumuliert. Das System hat den Reset nie vollzogen, die Desynchronisation besteht weiter, der nächste CSD-Versuch kommt schneller — und wird wieder mit Triptan abgebrochen.
 
-**(2) 5-HT1B-Autorezeptor-Desensitisierung [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die Triptan-vermittelte 1B/1D-Kompensation des defekten 1A-Feedbacks (vgl. 4.4.3, 4.9.1) durch 1B-Desensitisierung wegfällt, verliert das System seine akut-pharmakologische Bremse → Rückfall in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt. Die kurze Halbwertszeit der Triptane ist damit nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren.
+**(2) 5-HT1B-Autorezeptor-Desensitisierung [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die Triptan-vermittelte 1B/1D-Kompensation des defekten 1A-Feedbacks (vgl. 4.4.3, 4.9.1) durch 1B-Desensitisierung wegfällt, verliert das System seine akut-pharmakologische Bremse $\rightarrow$ Rückfall in den ungebremsten Burst-Modus $\rightarrow$ CSD-Bereitschaft steigt. Die kurze Halbwertszeit der Triptane ist damit nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren.
 
-**(3) Latente Sensitisierung (komplementär, gesichert):** Chronische Triptan-Exposition erhöht CGRP in trigeminalen duralen Afferenzen, persistent nach Absetzen (De Felice et al. 2010). Parallel: 5-HT-Depletion → 5-HT2A-Hochregulation → kortikale Hyperexzitabilität via NO-Pathway (Srikiatkhachorn et al.).
+**(3) Latente Sensitisierung (komplementär, gesichert):** Chronische Triptan-Exposition erhöht CGRP in trigeminalen duralen Afferenzen, persistent nach Absetzen (De Felice et al. 2010). Parallel: 5-HT-Depletion $\rightarrow$ 5-HT2A-Hochregulation $\rightarrow$ kortikale Hyperexzitabilität via NO-Pathway (Srikiatkhachorn et al.).
 
 Der Teufelskreis mündet in Medication Overuse Headache über alle drei Pfade: Reset-Akkumulation, Autorezeptor-Desensitisierung und latente Sensitisierung.
 
@@ -175,7 +175,7 @@ Antiepileptika, die gleichzeitig bei Migräne wirksam sind — Topiramat, Valpro
 
 **Paradoxie:** Diese Substanzen heben die Anfallsschwelle direkt (über Membranstabilisierung, GABA-Verstärkung) und blockieren gleichzeitig den CSD-Resetpfad (über CGRP-Hemmung). Der Nettoeffekt hängt davon ab, welcher Mechanismus stärker ist.
 
-Bei einem Subtyp von Epilepsiepatienten, bei dem Anfälle durch CSD-Insuffizienz getriggert werden (serotonerge Desynchronisation → Exzitation akkumuliert → CSD-Versuch → CSD scheitert → Anfall), blockieren diese Antiepileptika den letzten kompensatorischen Mechanismus. Die Membranstabilisierung reicht, um einzelne Anfälle zu verhindern, aber die Grunddesynchronisation akkumuliert weiter und bricht periodisch durch. Die Anfälle werden seltener, aber schwerer.
+Bei einem Subtyp von Epilepsiepatienten, bei dem Anfälle durch CSD-Insuffizienz getriggert werden (serotonerge Desynchronisation $\rightarrow$ Exzitation akkumuliert $\rightarrow$ CSD-Versuch $\rightarrow$ CSD scheitert $\rightarrow$ Anfall), blockieren diese Antiepileptika den letzten kompensatorischen Mechanismus. Die Membranstabilisierung reicht, um einzelne Anfälle zu verhindern, aber die Grunddesynchronisation akkumuliert weiter und bricht periodisch durch. Die Anfälle werden seltener, aber schwerer.
 
 **Dosisabhängigkeit als Differentialmarker:** Niedrigdosiertes Topiramat (50 mg/Tag) veränderte CGRP-Plasmaspiegel in einer kleinen Migränestudie nicht (Loder et al. 2006), was nahelegt, dass der Topiramat-Effekt in niedriger Dosis unabhängig vom CGRP-Pfad wirken könnte. In niedriger Dosis greift Topiramat möglicherweise nicht in den CSD-Propagationsmechanismus ein — und ist genau deshalb bei Migräne+Epilepsie-Komorbidität besser verträglich als in hoher Dosis.
 
@@ -193,7 +193,7 @@ Chronische Migräne (>15 Tage/Monat) ist im Modell nicht „zu viele Anfälle", 
 | **CSD (Stufe 2)** | Partielle CSDs, die nie vollständig propagieren |
 | **SWS-Konsolidierung** | Fragmentiert durch chronische Desynchronisation (vgl. Anhang B) |
 
-Die partiellen CSDs erzeugen chronische trigeminovaskuläre Inflammation, die ihrerseits den SWS fragmentiert. Der fragmentierte SWS verhindert nächtliche Nachsynchronisation. Die fehlende Nachsynchronisation erzeugt am nächsten Tag erneuten CSD-Bedarf. Ein Deadlock: Reset-Bedarf → partieller Reset-Versuch → Inflammation → fragmentierter SWS → kein Ausgleich → erneuter Reset-Bedarf.
+Die partiellen CSDs erzeugen chronische trigeminovaskuläre Inflammation, die ihrerseits den SWS fragmentiert. Der fragmentierte SWS verhindert nächtliche Nachsynchronisation. Die fehlende Nachsynchronisation erzeugt am nächsten Tag erneuten CSD-Bedarf. Ein Deadlock: Reset-Bedarf $\rightarrow$ partieller Reset-Versuch $\rightarrow$ Inflammation $\rightarrow$ fragmentierter SWS $\rightarrow$ kein Ausgleich $\rightarrow$ erneuter Reset-Bedarf.
 
 #### **E.6.1 Propofol-Narkose als erzwungener Reset: Evidenz**
 
@@ -232,7 +232,7 @@ Die Komorbidität ist bidirektional und quantitativ erheblich:
 
 **Modellinterpretation: Kortikale Hypererregbarkeit als gemeinsame Basis**
 
-Ottman und Lipton (1994) schlugen vor, dass ein Zustand kortikaler Hypererregbarkeit — genetisch oder erworben — das Risiko für sowohl Migräne als auch Epilepsie erhöht. Das Modell präzisiert: der gemeinsame Upstream-Defekt ist die Raphe-Dysregulation (vgl. Kapitel 2). Insuffizienter serotonerger Reset → kortikale Hypererregbarkeit → erhöhtes Risiko für beide Notfallmechanismen (CSD oder Anfall), je nachdem, welche Schwelle zuerst erreicht wird.
+Ottman und Lipton (1994) schlugen vor, dass ein Zustand kortikaler Hypererregbarkeit — genetisch oder erworben — das Risiko für sowohl Migräne als auch Epilepsie erhöht. Das Modell präzisiert: der gemeinsame Upstream-Defekt ist die Raphe-Dysregulation (vgl. Kapitel 2). Insuffizienter serotonerger Reset $\rightarrow$ kortikale Hypererregbarkeit $\rightarrow$ erhöhtes Risiko für beide Notfallmechanismen (CSD oder Anfall), je nachdem, welche Schwelle zuerst erreicht wird.
 
 Welcher Phänotyp resultiert, hängt von Zusatzfaktoren ab:
 
@@ -250,9 +250,9 @@ Die Komorbidität Epilepsie ↔ Dyslexie ist epidemiologisch erheblich und bidir
 - Schachter et al. (1993): 9% Dyslexie-Anamnese bei Epilepsiepatienten vs. 2,3% bei Kontrollen (OR 4,19)
 - Rolandische Epilepsie: OR 5,78 für Lesestörung, OR 2,47 für Speech Sound Disorder (Clarke, Strug & Pal, *Epilepsia*)
 - Idiopathische Epilepsie: ~2× Prävalenz für isolierte Dyslexie vs. Kontrollkinder (Cheng et al. 2022, n=2.282 + 2.371)
-- Bidirektionalität: Dyslexie kann Epilepsiebeginn vorausgehen oder folgen (van Iterson 2023) → gemeinsamer Upstream, nicht Folgeschaden
+- Bidirektionalität: Dyslexie kann Epilepsiebeginn vorausgehen oder folgen (van Iterson 2023) $\rightarrow$ gemeinsamer Upstream, nicht Folgeschaden
 
-**Rolandische Epilepsie** ist besonders modellrelevant: Centrotemporale Spikes betreffen den sensomotorischen Kortex → Überlappung mit phonologischen Verarbeitungsarealen. Modellinterpretation: Rolandische Epilepsie = mildeste Form der tonischen Destabilisierung, lokalisiert im perisylvischen Kortex; LRS entsteht durch chronische subklinische Desynchronisation desselben Areals (vgl. Anhang D, Abschnitt D.7.2).
+**Rolandische Epilepsie** ist besonders modellrelevant: Centrotemporale Spikes betreffen den sensomotorischen Kortex $\rightarrow$ Überlappung mit phonologischen Verarbeitungsarealen. Modellinterpretation: Rolandische Epilepsie = mildeste Form der tonischen Destabilisierung, lokalisiert im perisylvischen Kortex; LRS entsteht durch chronische subklinische Desynchronisation desselben Areals (vgl. Anhang D, Abschnitt D.7.2).
 
 **Thalamische Parallelstruktur:** Der MGB-Befund (Díaz et al. 2012: strukturelle Veränderung des auditorischen Thalamus bei Dyslektikern) bildet die auditorische Parallele zum Pulvinar-Befund bei Migräne (vgl. Anhang F.4.1). Beide thalamischen Kerngruppen empfangen Raphe-Projektionen und sind in der thalamischen Kaskade betroffen — mit modalitätsspezifischen Downstream-Symptomen.
 
@@ -260,17 +260,17 @@ Die Komorbidität Epilepsie ↔ Dyslexie ist epidemiologisch erheblich und bidir
 
 Plötzlicher unerwarteter Tod bei Epilepsie (SUDEP) konvergiert mechanistisch mit dem plötzlichen Kindstod (SIDS): Spreading Depolarization in Hirnstammgeweben, die lebenswichtige Funktionen regulieren, wurde mit SUDEP in Verbindung gebracht, insbesondere bei Dravet-Syndrom (schwere kindliche Epilepsie mit Ionenkanal-Mutationen und erhöhtem SUDEP-Risiko).
 
-Bei SIDS ist der kaudale Raphe-Takt defekt → autonome Regulation versagt → Atemstillstand (Paterson/Kinney, vgl. 2.3). Bei SUDEP versagt der rostrale Raphe-Takt → Anfälle → Spreading Depolarization propagiert in den Hirnstamm → autonome Kaskade → Atemstillstand. Beide Endstrecken sind serotonerge Synchronisationsversagen — in unterschiedlichen Raphe-Subnetzen, zu unterschiedlichen Entwicklungszeitpunkten.
+Bei SIDS ist der kaudale Raphe-Takt defekt $\rightarrow$ autonome Regulation versagt $\rightarrow$ Atemstillstand (Paterson/Kinney, vgl. 2.3). Bei SUDEP versagt der rostrale Raphe-Takt $\rightarrow$ Anfälle $\rightarrow$ Spreading Depolarization propagiert in den Hirnstamm $\rightarrow$ autonome Kaskade $\rightarrow$ Atemstillstand. Beide Endstrecken sind serotonerge Synchronisationsversagen — in unterschiedlichen Raphe-Subnetzen, zu unterschiedlichen Entwicklungszeitpunkten.
 
-**Abgrenzung zu MBA:** Die hier diskutierte Brainstem-SD als SUDEP-Mechanismus ist ein Tiermodell-Befund bei extremen Gain-of-Function-Mutationen (Cacna1a-S218L) unter letalen Anfallsbedingungen. Sie ist nicht zu verwechseln mit der klinischen Diagnose „Migräne mit Hirnstammaura" (MBA, ICHD-3 1.2.2), deren Symptome sich ohne Brainstem-CSD durch den direkten B7→ANS-Kern-Kollaps erklären lassen (vgl. 4.6, 4.7.2).
+**Abgrenzung zu MBA:** Die hier diskutierte Brainstem-SD als SUDEP-Mechanismus ist ein Tiermodell-Befund bei extremen Gain-of-Function-Mutationen (Cacna1a-S218L) unter letalen Anfallsbedingungen. Sie ist nicht zu verwechseln mit der klinischen Diagnose „Migräne mit Hirnstammaura" (MBA, ICHD-3 1.2.2), deren Symptome sich ohne Brainstem-CSD durch den direkten B7$\rightarrow$ANS-Kern-Kollaps erklären lassen (vgl. 4.6, 4.7.2).
 
 **Demarquay-Alternative und deren Grenzen:** Demarquay et al. (2018, Cephalalgia) argumentieren, dass alle MBA-Symptome kortikalen Ursprung haben können — CSD-Propagation über sensorische und motorische Kortexareale erzeuge vestibuläre, auditorische und autonome Symptome durch kortikale Projektion, nicht durch Hirnstamm-CSD. Diese Alternative eliminiert ebenfalls die unbelegte Brainstem-CSD-Hypothese und stützt insofern die Kernaussage des Modells. Für schwere ANS-Symptomatik reicht die Demarquay-Erklärung jedoch nicht aus:
 
 - **Symptomintensität:** Der Kortex kann vestibuläre Wahrnehmung und autonome Parameter *modulieren*, aber keinen Kreislaufkollaps *erzeugen*. Projektives Erbrechen, Bewusstlosigkeit und kardiovaskulärer Kollaps sind autonome Kernfunktionsausfälle — die efferente Kontrolle über Herzrate und Blutdruck liegt nicht kortikal, sondern im NTS/RVLM/Ncl. ambiguus.
-- **Simultaneität:** Bei CSD-Propagation über den Kortex (3 mm/min) müssten Symptome sequentiell auftreten. MBA zeigt simultane, überlappende Symptome, die gleichzeitig eskalieren → gemeinsame Quelle (B7-Depletion auf alle ANS-Kerne simultan).
-- **Vestibulovisueller Mismatch ≠ echtes Vertigo:** Okzipitale CSD erzeugt Tunnelblick → propriozeptive Unsicherheit → wird als „Schwindel" berichtet. Aber echter Vertigo (Raumrotation, Nystagmus, Erbrechen) erfordert vestibuläre Kerndysfunktion. **Differentialmarker:** Schwindel MIT Nystagmus = vestibuläre Kerne = B7-Proximität; Schwindel OHNE Nystagmus = visuell-vestibulärer Mismatch = möglicherweise kortikal (Demarquay).
+- **Simultaneität:** Bei CSD-Propagation über den Kortex (3 mm/min) müssten Symptome sequentiell auftreten. MBA zeigt simultane, überlappende Symptome, die gleichzeitig eskalieren $\rightarrow$ gemeinsame Quelle (B7-Depletion auf alle ANS-Kerne simultan).
+- **Vestibulovisueller Mismatch ≠ echtes Vertigo:** Okzipitale CSD erzeugt Tunnelblick $\rightarrow$ propriozeptive Unsicherheit $\rightarrow$ wird als „Schwindel" berichtet. Aber echter Vertigo (Raumrotation, Nystagmus, Erbrechen) erfordert vestibuläre Kerndysfunktion. **Differentialmarker:** Schwindel MIT Nystagmus = vestibuläre Kerne = B7-Proximität; Schwindel OHNE Nystagmus = visuell-vestibulärer Mismatch = möglicherweise kortikal (Demarquay).
 
-Mögliche Koexistenz: leichte MBA-Symptome möglicherweise kortikal (Demarquay), schwere MBA-Symptome = B7→ANS-Kern-Kollaps. Demarquay erklärt die Symptomtopographie (wo), aber nicht die Symptomintensität (wie stark) und nicht die Symptomqualität (autonom vs. sensorisch).
+Mögliche Koexistenz: leichte MBA-Symptome möglicherweise kortikal (Demarquay), schwere MBA-Symptome = B7$\rightarrow$ANS-Kern-Kollaps. Demarquay erklärt die Symptomtopographie (wo), aber nicht die Symptomintensität (wie stark) und nicht die Symptomqualität (autonom vs. sensorisch).
 
 #### **E.7.3 SUDEP im Schlaf: Vollständig blockierte Fallback-Hierarchie**
 
@@ -321,9 +321,9 @@ Die schwedische landesweite Fall-Kontroll-Studie (Sveinsson et al. 2020; 255 SUD
 | Monotherapie | SUDEP-Risikotrend | Modellinterpretation |
 |:-------------|:-----------------|:--------------------|
 | **Valproat** | Trend zur Risikoreduktion (n.s.) | Starke GABA-Potenzierung + Na-Kanal-Blockade halten Anfallsschwelle hoch trotz CGRP-Hemmung |
-| **Phenytoin** | Trend zur Risikoreduktion (n.s.) | Reiner Na-Kanal-Blocker, kein CGRP-Effekt → CSD-Fallback bleibt verfügbar |
-| **Oxcarbazepin** | Trend zur Risikoreduktion (n.s.) | Reiner Na-Kanal-Blocker, kein CGRP-Effekt → CSD-Fallback bleibt verfügbar |
-| **Topiramat** | **OR 3,32 für erhöhtes SUDEP-Risiko** (n.s., Trend) | Blockiert Stufe 2 (CGRP-Hemmung → CSD-Propagation gestört) UND Stufe 3 (Membranstabilisierung). Beide Fallback-Mechanismen gleichzeitig beeinträchtigt |
+| **Phenytoin** | Trend zur Risikoreduktion (n.s.) | Reiner Na-Kanal-Blocker, kein CGRP-Effekt $\rightarrow$ CSD-Fallback bleibt verfügbar |
+| **Oxcarbazepin** | Trend zur Risikoreduktion (n.s.) | Reiner Na-Kanal-Blocker, kein CGRP-Effekt $\rightarrow$ CSD-Fallback bleibt verfügbar |
+| **Topiramat** | **OR 3,32 für erhöhtes SUDEP-Risiko** (n.s., Trend) | Blockiert Stufe 2 (CGRP-Hemmung $\rightarrow$ CSD-Propagation gestört) UND Stufe 3 (Membranstabilisierung). Beide Fallback-Mechanismen gleichzeitig beeinträchtigt |
 | **Levetiracetam** | Trend zur Risikoreduktion (n.s.) | Einzigartiger Wirkmechanismus (SV2A), kein CGRP-Effekt |
 
 Topiramat ist das einzige Antiepileptikum mit einem Trend zu *erhöhtem* SUDEP-Risiko. Es ist gleichzeitig das Antiepileptikum mit der stärksten dokumentierten CGRP-Hemmung und CSD-Suppressionswirkung. Diese Koinzidenz ist im konventionellen Modell nicht erklärbar — Topiramat ist ein effektives Antiepileptikum, es sollte SUDEP reduzieren, nicht erhöhen. Im Fallback-Modell ist es die erwartete Konsequenz: Topiramat blockiert Stufe 2 und 3 gleichzeitig, und im Schlaf (Stufe 1 auf Minimum) bleibt kein Entladungspfad.
@@ -445,11 +445,11 @@ Die Patientenverfügung bietet einen rechtlichen Rahmen, der die Translation erm
 
 #### **E.7.7 Elektrokrampftherapie als kontrollierter Stufe-3-Reset**
 
-ECT ist pharmakologisch kontrollierter Stufe-3-Reset: Muskelrelaxation, Kurznarkose, kontrollierte Strominduktion → generalisierter Anfall → erzwungene kortikale Resynchronisation → Aufwachen aus synchronisiertem Grundzustand.
+ECT ist pharmakologisch kontrollierter Stufe-3-Reset: Muskelrelaxation, Kurznarkose, kontrollierte Strominduktion $\rightarrow$ generalisierter Anfall $\rightarrow$ erzwungene kortikale Resynchronisation $\rightarrow$ Aufwachen aus synchronisiertem Grundzustand.
 
-**Mechanistische Einordnung:** Depression hat im Modell denselben serotonergen Upstream-Defekt (Raphe-Insuffizienz → Desynchronisation), manifestiert sich jedoch unterhalb der CSD-Schwelle. Kein Migräneschmerz, aber chronische interozeptive Inkohärenz, flacher Affekt, Anhedonie — Downstream-Effekte asynchroner Modulationssysteme (vgl. Kapitel 8). Das System ist desynchronisiert, aber nicht genug für CSD. Es gibt keinen Notfall-Reset, weil die Schwelle nie erreicht wird. Das System bleibt in einem stabilen dysfunktionalen Zustand — derselbe Deadlock wie chronische Migräne, eine Stufe tiefer.
+**Mechanistische Einordnung:** Depression hat im Modell denselben serotonergen Upstream-Defekt (Raphe-Insuffizienz $\rightarrow$ Desynchronisation), manifestiert sich jedoch unterhalb der CSD-Schwelle. Kein Migräneschmerz, aber chronische interozeptive Inkohärenz, flacher Affekt, Anhedonie — Downstream-Effekte asynchroner Modulationssysteme (vgl. Kapitel 8). Das System ist desynchronisiert, aber nicht genug für CSD. Es gibt keinen Notfall-Reset, weil die Schwelle nie erreicht wird. Das System bleibt in einem stabilen dysfunktionalen Zustand — derselbe Deadlock wie chronische Migräne, eine Stufe tiefer.
 
-ECT bricht diesen Deadlock exakt wie ein epileptischer Anfall den Migräne-Deadlock bricht: erzwungene simultane Entladung → Resynchronisation → Neustart aus kohärentem Grundzustand.
+ECT bricht diesen Deadlock exakt wie ein epileptischer Anfall den Migräne-Deadlock bricht: erzwungene simultane Entladung $\rightarrow$ Resynchronisation $\rightarrow$ Neustart aus kohärentem Grundzustand.
 
 **Responderverteilung:** ECT zeigt ~50–70% Responserrate bei therapieresistenter Depression. Die Logik folgt der Propofol-Verteilung (43%/47%/10%, vgl. E.6.1): Responder haben einen Primärdefekt, der durch einmaligen Reset adressierbar ist. Non-Responder haben einen so schweren Raphe-Defekt, dass die Desynchronisation nach Reset sofort reakkumuliert. Die hohe Rückfallrate nach ECT ohne Erhaltungstherapie bestätigt: der Reset bricht den Deadlock, aber ohne Stufe-1-Stabilisierung kehrt die Desynchronisation zurück.
 
@@ -496,15 +496,15 @@ Die Komorbidität zwischen Migräne und Epilepsie ist quantitativ erheblich und 
 | Epilepsieprävalenz bei Migränepatienten: 1–17% (Median 5,9%), vs. 0,5% Allgemeinbevölkerung (~12-facher Anstieg) | Keezer et al. 2015, Wu & Zhuang 2024 |
 | Meta-Analyse: 80% Anstieg der Lebenszeitprävalenz von Epilepsie bei Migräne (OR 1,80, 95% CI 1,43–2,25) | Wu & Zhuang 2024 (13 Studien, n=3.863.625) |
 | Meta-Analyse: 80% Anstieg der Lebenszeitprävalenz von Migräne bei Epilepsie (OR 1,80, 95% CI 1,35–2,40) | Wu & Zhuang 2024 |
-| Epilepsierisiko *vor und nach* Migränebeginn erhöht → unidirektionale Kausalität ausgeschlossen | Ottman & Lipton 1994 |
+| Epilepsierisiko *vor und nach* Migränebeginn erhöht $\rightarrow$ unidirektionale Kausalität ausgeschlossen | Ottman & Lipton 1994 |
 | Kumulative Migräne-Inzidenz bis 40 Jahre: 24% bei Epileptikern, 12% bei Verwandten ohne Epilepsie | Ottman & Lipton 1994 (n=1.948 Probanden + 1.411 Verwandte) |
 | HUNT-Studie (n=65.407): keine erhöhte Migräneprävalenz bei Epileptikern (OR 0,95) | Engstrand et al. 2024 |
 
 Die Diskrepanz zwischen Meta-Analyse (80% Anstieg) und HUNT-Studie (kein Zusammenhang) ist modellkonsistent: in einer unselektierten Population (HUNT) sind die meisten Migräniker milde Fälle mit funktionierendem CSD-Fallback. Klinikbasierte Studien überrepräsentieren schwere Fälle — bei denen die Komorbidität real ist. Die "methodischen Mängel" der klinikbasierten Studien sind kein Artefakt, sondern Selektionseffekte, die die schwere Subpopulation sichtbar machen.
 
-**Imaging-Evidenz: Funktionell → Strukturell als Einbahnstraße**
+**Imaging-Evidenz: Funktionell $\rightarrow$ Strukturell als Einbahnstraße**
 
-Die thalamokortikale Dyskonnektivität bei Migräne und Epilepsie betrifft dieselbe Achse (Thalamus → medialer PFC → DMN), zeigt aber unterschiedliche Schweregrade:
+Die thalamokortikale Dyskonnektivität bei Migräne und Epilepsie betrifft dieselbe Achse (Thalamus $\rightarrow$ medialer PFC $\rightarrow$ DMN), zeigt aber unterschiedliche Schweregrade:
 
 | Dimension | Migräne | Epilepsie (responsiv) | Epilepsie (refraktär) |
 |:----------|:--------|:---------------------|:---------------------|
@@ -516,9 +516,9 @@ Die thalamokortikale Dyskonnektivität bei Migräne und Epilepsie betrifft diese
 
 Quellen: Thalamische Subregionen bei episodischer Migräne (FC-Studie, n=27+30): keine strukturellen Unterschiede, aber selektive funktionelle Hypoconnectivity. Sekundär generalisierte Epilepsie (n=16+16): signifikant reduzierte GM-Dichte im Thalamus und frontalen Gyri, reduzierte FA in bilateraler anteriorer Corona radiata, thalamokortikale FC-Stärke negativ korreliert mit Krankheitsdauer. Refraktäre IGE: Volumenreduktion spezifisch der anterioren Thalamuskerne.
 
-Thalamokortikale Dysrhythmie — hypothetisiert als zugrundeliegende Ursache abnormaler sensorischer Verarbeitung bei Migräne — wurde explizit im mediodorsalen Nukleus des Thalamus verortet. Diese Dysrhythmie umfasst fehlende Habituation auf sensorischen Input zwischen Attacken, gefolgt von Normalisierung während der Attacke. Im Modell: zwischen Attacken dysrhythmisch (Raphe insuffizient → thalamokortikale Desynchronisation → keine Habituation), während der Attacke synchronisiert (CSD = erzwungener Reset → vorübergehende Normalisierung).
+Thalamokortikale Dysrhythmie — hypothetisiert als zugrundeliegende Ursache abnormaler sensorischer Verarbeitung bei Migräne — wurde explizit im mediodorsalen Nukleus des Thalamus verortet. Diese Dysrhythmie umfasst fehlende Habituation auf sensorischen Input zwischen Attacken, gefolgt von Normalisierung während der Attacke. Im Modell: zwischen Attacken dysrhythmisch (Raphe insuffizient $\rightarrow$ thalamokortikale Desynchronisation $\rightarrow$ keine Habituation), während der Attacke synchronisiert (CSD = erzwungener Reset $\rightarrow$ vorübergehende Normalisierung).
 
-Die Synchronisation wird dabei durch konvergierende Neurotransmittersysteme moduliert: Serotonin, Noradrenalin und Glutamat aus dem Hirnstamm, GABA aus dem reticulären Thalamuskern, Dopamin und Orexin aus hypothalamischen Kernen. Der Raphe-Takt (DRN → Thalamus) ist der primäre Modulator dieser Achse.
+Die Synchronisation wird dabei durch konvergierende Neurotransmittersysteme moduliert: Serotonin, Noradrenalin und Glutamat aus dem Hirnstamm, GABA aus dem reticulären Thalamuskern, Dopamin und Orexin aus hypothalamischen Kernen. Der Raphe-Takt (DRN $\rightarrow$ Thalamus) ist der primäre Modulator dieser Achse.
 
 **Kernbefund:** Der Übergang ist von funktionell zu strukturell, nie umgekehrt. Migräne zeigt rein funktionelle Dyskonnektivität bei erhaltener Hardware. Epilepsie addiert progressive strukturelle Schäden. Die Raphe-Insuffizienz selbst ist stationär (kongenital, Hit 1), aber die kumulativen Downstream-Schäden akkumulieren — hippocampale Atrophie bei chronischer Migräne, thalamische Atrophie bei chronischer Epilepsie.
 
@@ -577,7 +577,7 @@ Die Interferenzzone zündet nicht spontan. Sie wird durch die tonische Welle auf
 
 | Population | Anfallsbeginn | Mechanismus | Vorhersagen |
 |:-----------|:-------------|:-----------|:------------|
-| **Population 1: Anfälle MIT Vorhersage/Aura** | Stunden prodromaler Phase, langsamer Aufbau | Tonische Destabilisierungswelle → Interferenzzone erreicht Schwelle → Anfall | Müssten Migräne-Komorbidität zeigen (gemeinsamer Upstream-Mechanismus); Zeitfenster für Intervention; EEG zeigt sequentielles Generalisierungsmuster (vgl. E.3) |
+| **Population 1: Anfälle MIT Vorhersage/Aura** | Stunden prodromaler Phase, langsamer Aufbau | Tonische Destabilisierungswelle $\rightarrow$ Interferenzzone erreicht Schwelle $\rightarrow$ Anfall | Müssten Migräne-Komorbidität zeigen (gemeinsamer Upstream-Mechanismus); Zeitfenster für Intervention; EEG zeigt sequentielles Generalisierungsmuster (vgl. E.3) |
 | **Population 2: Anfälle OHNE Warnung** | Abrupt, kein Prodrom | Akuter Phasensprung (z.B. akute Ionenverschiebung) oder struktureller Fokus mit direkter Entladung | Keine systematische Migräne-Komorbidität; kein Zeitfenster; EEG zeigt fokalen Onset ohne tonische Wellencharakteristik |
 
 **Therapeutische Implikation: Schlechteres Ansprechen bei Migräne-Komorbidität**
@@ -619,8 +619,8 @@ Der Befund von Kendis et al. (2015) liefert eine unabhängige externe Validierun
 
 | Epilepsietyp | Late-Chronotyp-Assoziation | Modellinterpretation |
 |---|---|---|
-| **Generalisierte Epilepsie** | **5-fach erhöht** vs. Kontrollen | Globale Desynchronisation → Late-Chronotyp als Downstream-Marker (konsistent mit ADHD- und Migräne-Assoziation) |
-| **Fokale Epilepsie** | **Kein signifikanter Unterschied** zu Kontrollen | Lokaler Hardwaredefekt → kein Desynchronisationsprofil → normaler Chronotyp |
+| **Generalisierte Epilepsie** | **5-fach erhöht** vs. Kontrollen | Globale Desynchronisation $\rightarrow$ Late-Chronotyp als Downstream-Marker (konsistent mit ADHD- und Migräne-Assoziation) |
+| **Fokale Epilepsie** | **Kein signifikanter Unterschied** zu Kontrollen | Lokaler Hardwaredefekt $\rightarrow$ kein Desynchronisationsprofil $\rightarrow$ normaler Chronotyp |
 | **Gesamtkohorte (alle Epilepsien)** | Kein signifikanter Unterschied | Effekt wird durch fokale Fälle verdünnt — der Synchronisationsmarker ist nur in der stratifizierten Analyse sichtbar |
 
 Diese Dissoziation ist eine Modellvorhersage: Wenn der Late-Chronotyp ein Downstream-Marker globaler Raphe-vermittelter Desynchronisation ist (vgl. 2.5.3, 8.7.1), sollte er spezifisch mit Epilepsieformen segregieren, die globale Synchronisationsstörungen reflektieren — nicht mit fokalen Läsionen. Kendis et al. bestätigen exakt dieses Muster. Der Scoping Review 2024 (11 Studien, 1.167 PWE, 4.657 Kontrollen) repliziert die Assoziation: generalisierte Epilepsie konsistent mit Eveningness assoziiert, fokale Epilepsie nicht.
@@ -644,7 +644,7 @@ Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen pe
 | CGRP-Anstieg nach kainatinduzierten, aber nicht PTZ-induzierten Anfällen | Gesichert | Bhatt et al. 2019, Tiermodell |
 | CGRP als CSD-Propagationsmechanismus (nicht nur Schmerzmediator) | Hypothetisch, mechanistisch konsistent | Abgeleitet aus CSD-Physiologie + CGRP-Freisetzungsdynamik |
 | CGRP-Anstieg nach Anfällen als Residuum gescheiterter CSD-Versuche | Hypothetisch, konsistent | Modellinterpretation, nicht direkt getestet |
-| Anti-CGRP-Antikörper blockieren CSD-Propagation → Anfallsrisiko bei Raphe-Dysregulation | Hypothetisch, ein Einzelfall-Präzedenz | Lehman et al. (Erenumab → Status epilepticus, 2 Tage nach Erstgabe) |
+| Anti-CGRP-Antikörper blockieren CSD-Propagation $\rightarrow$ Anfallsrisiko bei Raphe-Dysregulation | Hypothetisch, ein Einzelfall-Präzedenz | Lehman et al. (Erenumab $\rightarrow$ Status epilepticus, 2 Tage nach Erstgabe) |
 | Topiramat hemmt CGRP-Freisetzung und unterbricht CSD | Gesichert | Akerman & Goadsby 2005, Tiermodell |
 | Valproat supprimiert DRN-5-HT-Neuronen direkt | Gesichert | Pharmakologische Studien |
 | Propranolol antikonvulsiv bei tonisch-klonischen und komplex-partiellen Anfällen | Gesichert | Fischer et al. 1985, Borowicz et al. 2002, Tiermodelle |
@@ -654,7 +654,7 @@ Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen pe
 | Propofol akut wirksam bei Status migrainosus und intraktabler Migräne | Klinische Fallserien | Krusz et al. 2000, Mendes et al. 2002, Soleimanpour et al. 2012, Nascimento et al. 2015 |
 | Migräne-Epilepsie-Komorbidität bidirektional, 2–3-fach erhöht | Gesichert | Ottman & Lipton 1994, Keezer et al. 2015, Meta-Analysen |
 | Gemeinsame kortikale Hypererregbarkeit als Komorbidiätsbasis | Plausibel | Ottman & Lipton 1994 |
-| Spreading Depolarization im Hirnstamm → SUDEP | Plausibel | Dravet-Syndrom-Daten, Ionenkanal-Mutationsstudien |
+| Spreading Depolarization im Hirnstamm $\rightarrow$ SUDEP | Plausibel | Dravet-Syndrom-Daten, Ionenkanal-Mutationsstudien |
 | SUDEP in 69–70% der Fälle im Schlaf (~4,5-facher Risikoanstieg gegenüber Wachanteil) | Gesichert | Ali et al. (Meta-Analyse, n=1025), Lamberts et al. (Fall-Kontroll), MORTEMUS |
 | MORTEMUS: Respiration sistiert vor Kardio in allen Fällen mit Monitoring | Gesichert | Ryvlin et al. 2013 (MORTEMUS), n=16 Todesfälle |
 | Nächtliche GTCS: OR 15,31 für SUDEP; GTCS + allein schlafen: OR 67,10 | Gesichert | Sveinsson et al. 2020 (landesweite Fall-Kontroll-Studie, n=255+1148) |
@@ -666,14 +666,14 @@ Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen pe
 | Polytherapie ≥3 AEDs: OR 0,31 für SUDEP (signifikant protektiv) | Gesichert | Sveinsson et al. 2020 (95% CI 0,14–0,67) |
 | Topiramat als stärkster CGRP-Hemmer unter den AEDs korreliert mit höchstem SUDEP-Signal | Kreuzkorrelation, nicht kausal getestet | Sveinsson et al. 2020 + Akerman & Goadsby 2005 |
 | FAERS-Disproportionalitätsanalyse als Validierungsmethode für substanzspezifisches SUDEP-Signal | Methodischer Vorschlag, nicht durchgeführt | openFDA API öffentlich zugänglich |
-| Brainstem-SD als SUDEP-Mechanismus: kortikal initiierte Anfälle → DC-Shift in dorsaler Medulla → kardiorespiratorischer Arrest | Gesichert (Tiermodell) | Aiba & Noebels 2015 (Sci Transl Med), Kv1.1-KO und Scn1a-Mutanten |
+| Brainstem-SD als SUDEP-Mechanismus: kortikal initiierte Anfälle $\rightarrow$ DC-Shift in dorsaler Medulla $\rightarrow$ kardiorespiratorischer Arrest | Gesichert (Tiermodell) | Aiba & Noebels 2015 (Sci Transl Med), Kv1.1-KO und Scn1a-Mutanten |
 | Brainstem-SD bei nicht-letalen Anfällen spontan reversibel (DC-Potential und Multiunit-Aktivität erholen sich) | Gesichert (Tiermodell) | Loonen et al. 2019 (Brain), Cacna1a-S218L-Mäuse |
 | Mechanische Beatmung 60+ s nach Brainstem-SD-Onset rettet 7/9 Tiere | Gesichert (Tiermodell) | Jansen et al. 2019 (J Neurosci), Cacna1a-S218L-Mäuse |
 | NMDA-Antagonisten (MK-801, Memantin) präventiv verabreicht verhindern Brainstem-SD und letale Ausgänge | Gesichert (Tiermodell) | Jansen et al. 2019 |
 | SD-Propagation über Colliculus superior in Hirnstamm als spezifischer Pfad | Gesichert (Tiermodell) | Cain et al. 2017 (PNAS), 2024 (CURE-Epilepsy-Studie) |
 | Prolongierte mechanische Perfusion als SUDEP-Intervention (Brainstem-SD-Reversibilität) | Hypothetisch, gestützt durch Tiermodell-Daten | Abgeleitet aus Jansen et al. 2019 (7/9 Überlebensrate) |
 | Propofol IV als akuter SD-Terminator bei laufender Brainstem-SD | Hypothetisch, mechanistisch plausibel | GABA-A-Agonismus + NMDA-Antagonismus; Tiermodell-Evidenz für beide Mechanismen einzeln |
-| Sequentielles Dual-Protokoll (ACLS → prolongierte Perfusion + Propofol) als Patientenverfügungs-Option | Methodischer Vorschlag, nicht klinisch getestet | Rechtlich umsetzbar (§1827 BGB); Equipment und Kompetenzen in Rettungsdienst vorhanden |
+| Sequentielles Dual-Protokoll (ACLS $\rightarrow$ prolongierte Perfusion + Propofol) als Patientenverfügungs-Option | Methodischer Vorschlag, nicht klinisch getestet | Rechtlich umsetzbar (§1827 BGB); Equipment und Kompetenzen in Rettungsdienst vorhanden |
 | ECT als kontrollierter Stufe-3-Reset bei therapieresistenter Depression (erzwungene Resynchronisation) | Hypothetisch, mechanistisch konsistent | Modellinterpretation; ECT-Wirksamkeit (~50–70% Responserrate) als Evidenz |
 | ECT-Responderverteilung folgt Propofol-Logik (Reset-Responder vs. Raphe-Defekt zu schwer) | Hypothetisch, konsistent | Parallele zu Propofol-Responderverteilung (E.6.1) |
 | ECT-Amnesie als Zustandsvektor-Sprung: frische Engramme verlieren Zugangspfad, alte überleben | Hypothetisch, konsistent mit klinischem Bild | Abgeleitet aus Anhang D.6.3; ECT-Amnesie-Phänomenologie |
@@ -690,7 +690,7 @@ Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen pe
 | Refraktäre IGE: Anteriore Thalamuskerne spezifisch atrophiert (responsiv: normal) | Gesichert | Probabilistische Segmentierung, IGE refraktär vs. non-refraktär |
 | Thalamokortikale Dysrhythmie als Ursache abnormaler sensorischer Verarbeitung bei Migräne | Plausibel, durch fMRI gestützt | Coppola et al. 2005, 2014; mediodorsaler Nukleus als Hub |
 | Brainstem (medulläre Raphe, PAG, dlPons): fluktuierende Diffusionsänderungen über Migränezyklus | Gesichert | Marciszewski & Meylakh 2019 (DTI, Migränezyklus-Phasen) |
-| Epilepsierisiko vor und nach Migränebeginn erhöht → bidirektional, nicht unidirektional kausal | Gesichert | Ottman & Lipton 1994 (n=1.948+1.411) |
+| Epilepsierisiko vor und nach Migränebeginn erhöht $\rightarrow$ bidirektional, nicht unidirektional kausal | Gesichert | Ottman & Lipton 1994 (n=1.948+1.411) |
 | Epilepsieprävalenz bei Migränepatienten ~5,9% (Median), vs. 0,5% Allgemeinbevölkerung | Gesichert | Keezer et al. 2015 (Meta-Analyse, 10 Studien, n=1.548.967) |
 | Meta-Analyse: 80% Anstieg der Lebenszeitprävalenz beider Erkrankungen bei Vorliegen der jeweils anderen | Gesichert | Wu & Zhuang 2024 (13 Studien, n=3.863.625) |
 | HUNT-Studie (n=65.407): keine erhöhte Migräneprävalenz bei Epileptikern (populationsbasiert) | Gesichert | Engstrand et al. 2024; widerspricht klinikbasierten Studien |
@@ -699,12 +699,12 @@ Zusätzlich bestätigt Manni et al. (2016): Fokale Epilepsie-Patienten zeigen pe
 | CSD-Suppressionstherapie ohne Stufe-1-Intervention potentiell langfristig kontraproduktiv | Hypothetisch, konsistent | Modellvorhersage, gestützt durch Topiramat-SUDEP-Signal (E.7.4) |
 | Epileptischer Anfall als Terminalphase der tonischen Destabilisierungswelle (keine synchrone Massenentladung); Zündmuster reflektiert Kollapspfad | Hypothetisch, mechanistisch konsistent | Modellrevision aus 4.4.1, Querverbindung zu E.3; testbar über hochauflösendes EEG (E.8.15) |
 | Migräne-assoziierte Epilepsie: breitflächiges sequentielles Generalisierungsmuster (distinkt von fokalem Onset) | Hypothetisch, nicht getestet | Modellvorhersage aus E.3; systematische Suche nach Generalisierungsmustern als Funktion der Migräne-Komorbidität existiert nicht |
-| Callosotomie: Auren persistieren, Generalisierung sistiert → intrahemisphärische Quelle, Corpus callosum als Propagationsweg | Gesichert (klinisch) | Callosotomie-Literatur; Spencer et al. 1988 |
+| Callosotomie: Auren persistieren, Generalisierung sistiert $\rightarrow$ intrahemisphärische Quelle, Corpus callosum als Propagationsweg | Gesichert (klinisch) | Callosotomie-Literatur; Spencer et al. 1988 |
 | DTI: Reduzierte fraktionale Anisotropie im Corpus callosum bei Migränepatienten | Gesichert | DTI-Studien; konsistent mit kumulativer tonischer Wellenpropagation |
 | Bilaterale tonische Instabilität durch bilaterale DRN-Projektion; Corpus callosum als Synchronisationspfad (nicht Initiationspfad) | Hypothetisch, konsistent mit Callosotomie-Daten | Modellsynthese aus Anhang F + E.7.10 |
 | Epileptiker mit Anfallsvorhersage als Migräne-Mechanismus-Subgruppe (Population 1 vs. Population 2) | Hypothetisch, testbar | Modellvorhersage aus E.7.11; Stratifizierung nach Vorhersagefähigkeit + Migräne-Komorbidität |
 | Schlechteres AED-Ansprechen bei Migräne-Komorbidität erklärt durch Upstream-Generator (tonische Welle, Stufe 1) | Konsistent mit Evidenz | Velioglu et al. 2005 (schlechtere Prognose bei Komorbidität); Modellinterpretation aus E.7.11 |
-| Dreistufige Fallback-Hierarchie: Raphe-Takt → CSD → Anfall | Hypothetisch, konsistent mit allen Evidenzlinien | Modellsynthese aus Anhang D + E.1–E.4 |
+| Dreistufige Fallback-Hierarchie: Raphe-Takt $\rightarrow$ CSD $\rightarrow$ Anfall | Hypothetisch, konsistent mit allen Evidenzlinien | Modellsynthese aus Anhang D + E.1–E.4 |
 | **Late-Chronotyp segregiert mit generalisierter, nicht fokaler Epilepsie** | Gesichert | Kendis et al. 2015: 5-fach erhöht bei generalisiert, kein Unterschied bei fokal; Scoping Review 2024 (11 Studien) repliziert |
 | **Subjektiver Chronotyp ≠ objektive circadiane Phase bei fokaler Epilepsie** | Gesichert | Manni et al. 2016: Fragebogen ≠ DLMO |
 | **Late-Chronotyp als Downstream-Marker globaler Desynchronisation (Kreuzvalidierung Synchronisations-/Hardwaredefekt-Split)** | Plausibel, externe Validierung | Konvergenz aus Kendis 2015 + ADHD-Chronotyp-Assoziation (Kooij & Bijlenga 2013) + Migräne-Chronotyp (Jung et al. 2025, Baksa et al. 2025) |

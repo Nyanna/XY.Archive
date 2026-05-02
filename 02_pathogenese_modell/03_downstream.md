@@ -5,7 +5,7 @@
 
 **Zusammenfassung**
 
-Dieses Kapitel beschreibt die thalamische Fehlkalibrierung als erste Downstream-Konsequenz des Raphe-Defekts. Ein instabiles fetales Serotoninsignal (22.–26. SSW) kalibriert den Thalamus auf breite statt schmale Signalvarianz — der resultierende Filter ist nicht defekt, sondern korrekt kalibriert für ein inhärent variables Signal. Dies erzeugt einen verrauschten Prediction Error (Predictive-Coding-Rahmen), breitere Attraktorbecken (begünstigte Assoziation, instabile Routinen) und flachere Energielandschaften. ADHS wird als Signal-Rausch-Problem (SNR) reformuliert — unzureichender thalamischer Gain → schwach diskriminierter kortikaler Input → kortikales Rauschen — statt als Aufmerksamkeitsdefizit. Die klinisch beobachtete Dissoziation zwischen thalamischem Gating und basaler sensorischer Schwelle unter LDX wird als Schlüsselevidenz präsentiert, gestützt durch EEG- und fMRI-Literatur (Bluschke 2019, Hearne 2021, MBA-Modell).
+Dieses Kapitel beschreibt die thalamische Fehlkalibrierung als erste Downstream-Konsequenz des Raphe-Defekts. Ein instabiles fetales Serotoninsignal (22.–26. SSW) kalibriert den Thalamus auf breite statt schmale Signalvarianz — der resultierende Filter ist nicht defekt, sondern korrekt kalibriert für ein inhärent variables Signal. Dies erzeugt einen verrauschten Prediction Error (Predictive-Coding-Rahmen), breitere Attraktorbecken (begünstigte Assoziation, instabile Routinen) und flachere Energielandschaften. ADHS wird als Signal-Rausch-Problem (SNR) reformuliert — unzureichender thalamischer Gain $\rightarrow$ schwach diskriminierter kortikaler Input $\rightarrow$ kortikales Rauschen — statt als Aufmerksamkeitsdefizit. Die klinisch beobachtete Dissoziation zwischen thalamischem Gating und basaler sensorischer Schwelle unter LDX wird als Schlüsselevidenz präsentiert, gestützt durch EEG- und fMRI-Literatur (Bluschke 2019, Hearne 2021, MBA-Modell).
 
 ---
 
@@ -21,8 +21,8 @@ Thalamische Neuronen sind Änderungsdetektoren, keine Absolutmesser. Die relevan
 
 | Raphe-Zustand | Thalamische Kalibrierung |
 | :---- | :---- |
-| **Stabile Raphe** | Schmale Varianz → Thalamus kalibriert enge Filterbandbreite → kleine Abweichungen werden ignoriert → effizientes Gating. |
-| **Instabile Raphe** | Breite Varianz → Thalamus kalibriert weite Filterbandbreite → muss alles durchlassen, weil er nicht unterscheiden kann, was Signal und was Rauschen ist → Gating-Insuffizienz. |
+| **Stabile Raphe** | Schmale Varianz $\rightarrow$ Thalamus kalibriert enge Filterbandbreite $\rightarrow$ kleine Abweichungen werden ignoriert $\rightarrow$ effizientes Gating. |
+| **Instabile Raphe** | Breite Varianz $\rightarrow$ Thalamus kalibriert weite Filterbandbreite $\rightarrow$ muss alles durchlassen, weil er nicht unterscheiden kann, was Signal und was Rauschen ist $\rightarrow$ Gating-Insuffizienz. |
 
 **Kernaussage:** Die Gating-Insuffizienz ist nicht Folge eines defekten Filters, sondern eines korrekt kalibrierten Filters für ein inhärent variables Signal. Der Thalamus funktioniert wie vorgesehen – er wurde lediglich auf die falsche Baseline kalibriert.
 
@@ -36,10 +36,10 @@ Bei instabiler Raphe-Kalibrierung rauscht die Baseline des Vergleichsoperators. 
 
 | Eigenschaft | Klinische Auswirkung |
 | :---- | :---- |
-| **Breitere Attraktorbecken** | Mehr verschiedene Inputs lösen dasselbe Muster aus. Generalisierung erhöht, Diskriminierung reduziert → sensorische Hypersensitivität paradoxerweise durch Unschärfe. |
-| **Flachere Energielandschaft** | Kleine Perturbationen kippen das System leichter in benachbarte Zustände → Wahrnehmung fluider, kontextabhängiger, schwerer zu fixieren. |
+| **Breitere Attraktorbecken** | Mehr verschiedene Inputs lösen dasselbe Muster aus. Generalisierung erhöht, Diskriminierung reduziert $\rightarrow$ sensorische Hypersensitivität paradoxerweise durch Unschärfe. |
+| **Flachere Energielandschaft** | Kleine Perturbationen kippen das System leichter in benachbarte Zustände $\rightarrow$ Wahrnehmung fluider, kontextabhängiger, schwerer zu fixieren. |
 | **Begünstigte Assoziation** | Kreative Assoziation, Analogiebildung über entfernte Domänen strukturell begünstigt als direkte Konsequenz der Baseline-Instabilität. |
-| **Instabile Routinen** | Stabile Kategorien erfordern aktive kognitive Arbeit, die neurotypisch automatisch läuft → erklärt Kompensationsbedarf durch repetitive Verhaltensmuster (Stimming). |
+| **Instabile Routinen** | Stabile Kategorien erfordern aktive kognitive Arbeit, die neurotypisch automatisch läuft $\rightarrow$ erklärt Kompensationsbedarf durch repetitive Verhaltensmuster (Stimming). |
 
 **Klinische Evidenz (Läsionsstudien):** Das Dejerine-Roussy-Syndrom nach Thalamusinfarkt demonstriert, dass der intakte Thalamus permanent aktiv inhibiert. Der vorliegende Zustand wäre eine partielle Dejerine-Roussy-Phänomenologie ohne strukturelle Läsion – funktionell dasselbe durch Kalibrierungsdefizit statt Gewebeschaden.
 
@@ -76,7 +76,7 @@ Die Beobachtung unter LDX differenziert dies weiter: Die SNR wurde nicht verbess
 
 **Kausalkette:**
 
-Niedrige Dopamindynamik → geringer thalamischer Gain → schwach diskriminierter kortikaler Input → kortikales Rauschen
+Niedrige Dopamindynamik $\rightarrow$ geringer thalamischer Gain $\rightarrow$ schwach diskriminierter kortikaler Input $\rightarrow$ kortikales Rauschen
 
 Die Kernoperation ist Diskriminierbarkeit, aus zwei oppositen Perspektiven gedacht:
 
@@ -108,7 +108,7 @@ https://www.sciencedirect.com/science/article/abs/pii/S2451902219300801
 
 EEG-Studie (n=29 ADHS, n=32 Kontrollen, juvenil): Kinder mit ADHS zeigten signifikant erhöhtes neurales 1/f-Rauschen im Vergleich zu Kontrollen, insbesondere im Theta-Band während kognitiver Kontrolle (NoGo-Aufgabe). Methylphenidat reduzierte das neurale Rauschen auf Kontrollniveau. Die Abnahme des neuralen Rauschens korrelierte direkt mit der Verbesserung der Verhaltensleistung. Mechanistisch wird dies durch die MPH-induzierte Erhöhung der dopaminergen Neurotransmission erklärt, die das Signal-Rausch-Verhältnis in neuronalen Netzwerken verbessert.
 
-*Einordnung ins Modell:* Was diese Studie als „erhöhtes neurales Rauschen" misst, ist das distale Ende derselben Kausalkette die das vorliegende Modell von proximal beschreibt: unzureichender thalamischer Gain → schwach diskriminierter Input → kortikales Rauschen. Die Studie belegt den Endpunkt (kortikales Rauschen) und seine Modulation durch Dopamin.
+*Einordnung ins Modell:* Was diese Studie als „erhöhtes neurales Rauschen" misst, ist das distale Ende derselben Kausalkette die das vorliegende Modell von proximal beschreibt: unzureichender thalamischer Gain $\rightarrow$ schwach diskriminierter Input $\rightarrow$ kortikales Rauschen. Die Studie belegt den Endpunkt (kortikales Rauschen) und seine Modulation durch Dopamin.
 
 **2. Struktur-Funktions-Entkopplung durch Rausch-Heterogenität (Hearne et al. 2021)**
 
@@ -125,7 +125,7 @@ fMRI-Studie an medikamentennäiven Erwachsenen mit ADHS: Die strukturelle Konnek
 
 Das MBA-Modell beschreibt ADHS als Zustand mit niedrigem tonalem Dopamin, in dem das interne neurale Rauschen unzureichend für stochastische Resonanz ist. In dieser Formulierung ist zu wenig Grundrauschen das Problem — schwache Signale bleiben subthreshold. Das vorliegende Modell integriert dies als komplementäre Perspektive: Was das MBA-Modell als „zu wenig stochastisches Rauschen für Signaldetektion" beschreibt, ist im vorliegenden Modell der zu geringe thalamische Gain, der eine präzise Diskretisierung verhindert. Der Thalamus arbeitet bei ADHS in einem niedrigeren serotonergen Bereich mit weniger Dynamik — also weniger diskretisierbarer Aktivierung. Es handelt sich nicht um ein Amplitudenproblem sondern um ein Auflösungsproblem.
 
-Beide Modelle konvergieren auf dieselbe Kausalkette, beschrieben von unterschiedlichen Beobachterpositionen: niedrige Dopamindynamik → geringer thalamischer Gain → schwach diskriminierter kortikaler Input → kortikales Rauschen.
+Beide Modelle konvergieren auf dieselbe Kausalkette, beschrieben von unterschiedlichen Beobachterpositionen: niedrige Dopamindynamik $\rightarrow$ geringer thalamischer Gain $\rightarrow$ schwach diskriminierter kortikaler Input $\rightarrow$ kortikales Rauschen.
 
 | Aussage | Evidenzniveau |
 | :---- | :---- |

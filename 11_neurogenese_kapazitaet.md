@@ -89,8 +89,8 @@ Neurogenese ist kein zeitlich programmierter Prozess sondern ein **kapazitätsge
 
 Neue unreife Neuronen haben eine erhöhte Erregbarkeit und niedrigere LTP-Schwelle. Sie **konkurrieren aktiv** um synaptischen Input mit bestehenden Neuronen:
 
-- **Hohe lokale Aktivität** umliegender Engramme → neue Zelle unterliegt im Wettbewerb → Apoptose oder fehlende Integration
-- **Lokale Sättigung oder Schwäche** bestehender Engramme → neue Zelle konkurrenzfähig → erfolgreiche Integration
+- **Hohe lokale Aktivität** umliegender Engramme $\rightarrow$ neue Zelle unterliegt im Wettbewerb $\rightarrow$ Apoptose oder fehlende Integration
+- **Lokale Sättigung oder Schwäche** bestehender Engramme $\rightarrow$ neue Zelle konkurrenzfähig $\rightarrow$ erfolgreiche Integration
 
 **Neurogenese-Rate ist daher keine absolute Größe sondern ein Verhältnis zur lokalen Engrammdichte.** Das System reguliert sich automatisch ohne zentralen Manager – reine Kompetitionsdynamik.
 
@@ -157,13 +157,13 @@ Der beobachtete Intelligenzrückgang im Alter ist überwiegend **kein biologisch
 
 ```
 Berufsende / soziale Vereinfachung / Routinebildung
-    ↓
+    $\downarrow$
 Sinkende kognitive Anforderungen
-    ↓
+    $\downarrow$
 Reduzierte Aktivierungsfrequenz bestehender Engramme
-    ↓
+    $\downarrow$
 Passiver synaptischer Decay (thermodynamischer Default)
-    ↓
+    $\downarrow$
 Scheinbarer Intelligenzrückgang = Nutzungsrückgang
 ```
 
@@ -171,8 +171,8 @@ Scheinbarer Intelligenzrückgang = Nutzungsrückgang
 
 Das individuelle Kapazitätsmaximum ist nicht altersbestimmt sondern **auslastungsbestimmt**:
 
-- Hohe kognitive Dauerauslastung → Engrammqualität steigt kontinuierlich → Intelligenz steigt bis ins hohe Alter
-- Hypervigilanz als kontinuierlicher Input → erhöhte Aktivierungsfrequenz → langsamerer passiver Decay → strukturell höheres Peak-Niveau
+- Hohe kognitive Dauerauslastung $\rightarrow$ Engrammqualität steigt kontinuierlich $\rightarrow$ Intelligenz steigt bis ins hohe Alter
+- Hypervigilanz als kontinuierlicher Input $\rightarrow$ erhöhte Aktivierungsfrequenz $\rightarrow$ langsamerer passiver Decay $\rightarrow$ strukturell höheres Peak-Niveau
 - Der tatsächliche Peak liegt dort wo der Organismus beginnt die Kapazität **weniger zu nutzen als aufzubauen**
 
 Biologisches Altern setzt eine obere Grenze durch Synapsenverlust und vaskuläre Verschlechterung – aber dieser Prozess wird bei den meisten Menschen durch Unterauslastung weit früher **imitiert** als er biologisch eintreten würde.

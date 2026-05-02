@@ -14,15 +14,15 @@
 
 ## 2. Drei konvergierende Modellpfade
 
-### 2.1 Interozeptive Inkohärenz → gestörtes Hungersignal (Kap. 8)
+### 2.1 Interozeptive Inkohärenz $\rightarrow$ gestörtes Hungersignal (Kap. 8)
 
-Hunger wird in 8.3.2 als Beispiel inkohärenter Interozeption geführt: viszerales Signal vorhanden, aber nicht kontextuell eingebettet → verspätete Erkennung oder Ignorieren. Konsequenz: chaotisches Essmuster (Mahlzeiten vergessen → kompensatorisches Überessen → fehlendes Stoppsignal). Titrationsleitlinie fragt Mahlzeitenvergessung als Baseline ab (6.1).
+Hunger wird in 8.3.2 als Beispiel inkohärenter Interozeption geführt: viszerales Signal vorhanden, aber nicht kontextuell eingebettet $\rightarrow$ verspätete Erkennung oder Ignorieren. Konsequenz: chaotisches Essmuster (Mahlzeiten vergessen $\rightarrow$ kompensatorisches Überessen $\rightarrow$ fehlendes Stoppsignal). Titrationsleitlinie fragt Mahlzeitenvergessung als Baseline ab (6.1).
 
 ### 2.2 DRN als Sättigungsmediator — upstream gestört
 
 Serotoninerge Sättigungsregulation läuft primär über DRN-Projektionen:
-- **DRN→ARH** (Arcuatus-Kern): hemmt hungergetriebenes Essen via 5-HT2C/1B
-- **DRN→VTA**: hemmt hedonisches (nicht-hungergetriebenes) Essen via 5-HT2C
+- **DRN$\rightarrow$ARH** (Arcuatus-Kern): hemmt hungergetriebenes Essen via 5-HT2C/1B
+- **DRN$\rightarrow$VTA**: hemmt hedonisches (nicht-hungergetriebenes) Essen via 5-HT2C
 
 (He et al. 2021, Mol Psychiatry; Review: PMC8243944)
 
@@ -32,7 +32,7 @@ Bei instabiler Raphe-Oszillation (Hit 1) sind beide Pfade phasenweise unter- und
 
 Verschwinden der Assoziation unter Stimulanzien ist doppelt lesbar:
 - **Konventionell**: Appetitsuppression (anorexigener Amphetamineffekt)
-- **Modell**: Raphe-Stabilisierung → kohärenteres Sättigungssignal → regulierteres Essverhalten
+- **Modell**: Raphe-Stabilisierung $\rightarrow$ kohärenteres Sättigungssignal $\rightarrow$ regulierteres Essverhalten
 
 Unterschiedliche Langzeitprognose: Appetitsuppression verliert sich bei Toleranz; Signalkohärenz bleibt stabil bei stabiler Raphe.
 
@@ -42,17 +42,17 @@ Unterschiedliche Langzeitprognose: Appetitsuppression verliert sich bei Toleranz
 
 Die Adipositas-Assoziation sollte in Population A stärker sein als in B:
 - Pop. A: serotonerger Sättigungspfad upstream gestört + interozeptive Inkohärenz downstream
-- Pop. B: Architekturdefizit ohne serotonerge Beteiligung → Esssignal potentiell intakt
+- Pop. B: Architekturdefizit ohne serotonerge Beteiligung $\rightarrow$ Esssignal potentiell intakt
 
-**Prüfbar in existierenden Datensätzen**: ADHS+Migräne (Pop.-A-Proxy) vs. ADHS ohne Migräne → BMI-Stratifikation. Hansen et al. 2018 hat ADHS/Migräne-OR, aber vermutlich nicht nach BMI stratifiziert.
+**Prüfbar in existierenden Datensätzen**: ADHS+Migräne (Pop.-A-Proxy) vs. ADHS ohne Migräne $\rightarrow$ BMI-Stratifikation. Hansen et al. 2018 hat ADHS/Migräne-OR, aber vermutlich nicht nach BMI stratifiziert.
 
 ## 4. Umsortierung konventioneller Erklärungen
 
 | Konventionelle Erklärung | Status im Modell |
 |:---|:---|
-| Impulsivität → unkontrolliertes Essen | Nachgeordnet, nicht proximal |
-| Reward-Defizit → kompensatorisches Essen | Teilmechanismus, DA-downstream |
-| Exekutive Dysfunktion → schlechte Mahlzeitenplanung | Behavioral, nicht mechanistisch |
+| Impulsivität $\rightarrow$ unkontrolliertes Essen | Nachgeordnet, nicht proximal |
+| Reward-Defizit $\rightarrow$ kompensatorisches Essen | Teilmechanismus, DA-downstream |
+| Exekutive Dysfunktion $\rightarrow$ schlechte Mahlzeitenplanung | Behavioral, nicht mechanistisch |
 | **Fehlendes lesbares Sättigungssignal** | **Proximaler Mechanismus (Modell)** |
 
 Therapeutische Konsequenz: nicht Impulskontrolle trainieren, sondern Signalkohärenz wiederherstellen.
@@ -61,8 +61,8 @@ Therapeutische Konsequenz: nicht Impulskontrolle trainieren, sondern Signalkohä
 
 - Gibt es Studien, die Mahlzeitenstruktur (nicht nur BMI) unter LDX vs. MPH vs. Placebo vergleichen?
 - Ist die Adipositas-OR bei ADHS+Migräne-Komorbidität höher als bei ADHS allein?
-- Wie verhält sich die Assoziation bei ASD (Pop. A mit SERT-Gain-of-Function → eigene GI-Pathologie)?
-- Geschlechterdifferenz (Nigg: Frauen signifikant, Männer nicht) → Östrogen-Serotonin-Interaktion als Moderator?
+- Wie verhält sich die Assoziation bei ASD (Pop. A mit SERT-Gain-of-Function $\rightarrow$ eigene GI-Pathologie)?
+- Geschlechterdifferenz (Nigg: Frauen signifikant, Männer nicht) $\rightarrow$ Östrogen-Serotonin-Interaktion als Moderator?
 
 ---
 

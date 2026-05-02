@@ -123,7 +123,7 @@ Die Plateau-Hierarchie bildet ab, wie diese beiden Oszillatoren interagieren. Be
 
 Die folgende Zuordnung ist hypothetisch und basiert auf einem Modell der Raphe-Dysregulation, nicht auf direkter neurophysiologischer Messung.
 
-**B7 (DRN) als Modulationstiefe.** Der dorsale Raphekern projiziert über den Thalamus in den Kortex und beeinflusst über den Locus coeruleus (LC) den sympathischen Tonus. Die Feuerrate des B7 im Schlaf korreliert mit dem HR-Level: Höhere B7-Aktivität → höherer sympathischer Tonus → höhere HR. Die Nadirs der MHR10-Kurve markieren Momente minimaler B7-Aktivität — die Punkte, an denen die serotonerge Suppression maximal ist und der Parasympathikus dominiert.
+**B7 (DRN) als Modulationstiefe.** Der dorsale Raphekern projiziert über den Thalamus in den Kortex und beeinflusst über den Locus coeruleus (LC) den sympathischen Tonus. Die Feuerrate des B7 im Schlaf korreliert mit dem HR-Level: Höhere B7-Aktivität $\rightarrow$ höherer sympathischer Tonus $\rightarrow$ höhere HR. Die Nadirs der MHR10-Kurve markieren Momente minimaler B7-Aktivität — die Punkte, an denen die serotonerge Suppression maximal ist und der Parasympathikus dominiert.
 
 **Plateau-Niveau als B7-Amplitudenmarker.** Das Niveau eines Plateaus (definiert durch die tiefsten Nadirs der Gruppe) reflektiert, wie tief der B7 die HR drücken kann. Ein tiefes Baseline-Plateau (niedrige MHR10 an den Nadirs) zeigt eine hohe B7-Modulationskapazität — er kann den sympathischen Tonus effektiv suppressen. Ein hohes Baseline-Plateau zeigt reduzierte Modulationskapazität oder B7-Ausfall.
 

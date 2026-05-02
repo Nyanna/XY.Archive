@@ -1,10 +1,11 @@
+
 ***
 
 ## **Anhang J: ME/CFS als klinischer Endpunkt des Pathogenesemodells**
 
 **Zusammenfassung**
 
-Dieser Anhang integriert ME/CFS in das Pathogenesemodell als dekompensierte Endstrecke derselben neurologischen Grundarchitektur, die das Hauptmodell am kompensierten Pol beschreibt. Die zentrale Integrationsachse ist ein Clearance-Defizit über gestörtes SWS, auf das alle anderen Modellachsen (Raphe/Hirnstamm, thalamokortikales Gating, D2-Hypersensitivität, Glukokortikoid-Prägung) mechanistisch konvergieren; Mikrozirkulations- und Endothelbefunde sind Ausdruck derselben Dysfunktion, nicht eigenständige Pathologie. Der Crash wird als Bifurkationsereignis eines präkritischen Systems modelliert (sensorische Überflutung → autonome Entgleisung → zerebrale Minderperfusion → zelluläre Energiekrise → Neuroinflammation). Die Kaskade erzwingt eine Korrektur des CSD-Konzepts (lokale Bifurkationsfelder statt wandernder Welle) und motiviert eine SUDEP-analoge Risikokategorie bei sehr schwer Betroffenen. Therapeutisch folgt ein Dual-Hit auf die Clearance-Achse (retardiertes B2 upstream, retardiertes LPC-DHA am Ausführungsort), ergänzt um LDN, Mastzellstabilisierung, niedrigdosierte Benzodiazepine, NMDA-Antagonismus, zyklische DORA-Gabe als Flip-Flop-Reset sowie bidirektionale Rückübertragung modellkohärenter Interventionen auf die Migräneprophylaxe.
+Dieser Anhang integriert ME/CFS in das Pathogenesemodell als dekompensierte Endstrecke derselben neurologischen Grundarchitektur, die das Hauptmodell am kompensierten Pol beschreibt. Die zentrale Integrationsachse ist ein Clearance-Defizit über gestörtes SWS, auf das alle anderen Modellachsen (Raphe/Hirnstamm, thalamokortikales Gating, D2-Hypersensitivität, Glukokortikoid-Prägung) mechanistisch konvergieren; Mikrozirkulations- und Endothelbefunde sind Ausdruck derselben Dysfunktion, nicht eigenständige Pathologie. Der Crash wird als Bifurkationsereignis eines präkritischen Systems modelliert (sensorische Überflutung $\rightarrow$ autonome Entgleisung $\rightarrow$ zerebrale Minderperfusion $\rightarrow$ zelluläre Energiekrise $\rightarrow$ Neuroinflammation). Die Kaskade erzwingt eine Korrektur des CSD-Konzepts (lokale Bifurkationsfelder statt wandernder Welle) und motiviert eine SUDEP-analoge Risikokategorie bei sehr schwer Betroffenen. Therapeutisch folgt ein Dual-Hit auf die Clearance-Achse (retardiertes B2 upstream, retardiertes LPC-DHA am Ausführungsort), ergänzt um LDN, Mastzellstabilisierung, niedrigdosierte Benzodiazepine, NMDA-Antagonismus, zyklische DORA-Gabe als Flip-Flop-Reset sowie bidirektionale Rückübertragung modellkohärenter Interventionen auf die Migräneprophylaxe.
 
 **Vorbemerkung zur Einordnung**
 
@@ -75,7 +76,7 @@ Diese Achse ergänzt das Hauptmodell und bindet die anderen Achsen zusammen.
 
 **Mechanismus:** Die glymphatische Clearance läuft primär im Slow-Wave-Sleep (SWS). AQP4-vermittelter parenchymaler CSF-Flow entsorgt metabolische Abfälle und neuroinflammatorische Signalstoffe. Bei strukturell defizitärem SWS akkumulieren interstitielle Metaboliten, die nächtlich ausgeräumt werden müssten.
 
-**Selbstverstärkender Zyklus:** Fehlende nächtliche Clearance → perpetuierte Neuroinflammation → weitere Gating-Dysfunktion → weniger und qualitativ schlechteres SWS → weitere Clearance-Lücke.
+**Selbstverstärkender Zyklus:** Fehlende nächtliche Clearance $\rightarrow$ perpetuierte Neuroinflammation $\rightarrow$ weitere Gating-Dysfunktion $\rightarrow$ weniger und qualitativ schlechteres SWS $\rightarrow$ weitere Clearance-Lücke.
 
 **Konvergenz der anderen Achsen auf diese Endstrecke:** Hirnstamm- und Raphe-Dysregulation stört die SWS-Generierung. Thalamokortikale Gating-Insuffizienz verhindert die nötige sensorische Disconnection im Tiefschlaf. Dopaminerge Hypersensitivität macht den Schlafeintritt instabil. Alle Wege führen zu SWS-Defizit und damit zur Clearance-Lücke.
 
@@ -150,7 +151,7 @@ Bei ME/CFS ist die zerebrale Autoregulation gestört (van Campen und Visser per 
 
 Maximal feuernde Neurone verbrauchen massiv ATP (Na/K-ATPase, Ca-ATPase). Mitochondriale Kapazität bei ME/CFS reduziert (Komplex-I-Aktivität, reduzierte oxidative Phosphorylierung, erniedrigtes FAD — Naviaux et al. 2016). Fluge/Mella beschrieben PDH-Hemmung: Eintritt von Pyruvat in den Citratzyklus blockiert. Umstellung auf anaerobe Glykolyse, Laktatanstieg.
 
-Kombiniert mit reduzierter Perfusion: exzitotoxische Bedingungen auf zellulärer Ebene. Extrazelluläres Glutamat akkumuliert (ATP-abhängige astrozytäre Wiederaufnahme versagt). Glutamat → Erregung → ATP-Verbrauch → Versagen → mehr Glutamat: exzitotoxischer Teufelskreis. Calcium-Overload, Mikroglia-Stress, ROS-Anstieg.
+Kombiniert mit reduzierter Perfusion: exzitotoxische Bedingungen auf zellulärer Ebene. Extrazelluläres Glutamat akkumuliert (ATP-abhängige astrozytäre Wiederaufnahme versagt). Glutamat $\rightarrow$ Erregung $\rightarrow$ ATP-Verbrauch $\rightarrow$ Versagen $\rightarrow$ mehr Glutamat: exzitotoxischer Teufelskreis. Calcium-Overload, Mikroglia-Stress, ROS-Anstieg.
 
 **Phase 5 — Neuroinflammatorische Amplifikation (Stunden)**
 
@@ -225,10 +226,10 @@ Sollte die Hypothese zutreffen: Positionierungsempfehlungen (nicht Bauchlage), �
 
 **Rationale:**
 
-- Kofaktor für Komplex I und II der Atmungskette → mitochondriale Unterstützung bei dokumentierter mitochondrialer Dysfunktion
-- FAD ist Kofaktor der Glutathion-Reduktase → direkte Bedeutung für oxidativen Stress bei akkumulierten Clearance-Defiziten
-- Etablierte Migräneprophylaxe (400 mg/d) → adressiert die bifurkations-instabile kortikale Komponente
-- Riboflavin hat bei Bolus-Gabe niedrige Absorptionsrate mit schneller renaler Ausscheidung → Retardierung erlaubt verlängerte Gewebesättigung (ZNS-relevant)
+- Kofaktor für Komplex I und II der Atmungskette $\rightarrow$ mitochondriale Unterstützung bei dokumentierter mitochondrialer Dysfunktion
+- FAD ist Kofaktor der Glutathion-Reduktase $\rightarrow$ direkte Bedeutung für oxidativen Stress bei akkumulierten Clearance-Defiziten
+- Etablierte Migräneprophylaxe (400 mg/d) $\rightarrow$ adressiert die bifurkations-instabile kortikale Komponente
+- Riboflavin hat bei Bolus-Gabe niedrige Absorptionsrate mit schneller renaler Ausscheidung $\rightarrow$ Retardierung erlaubt verlängerte Gewebesättigung (ZNS-relevant)
 
 **Evidenzstatus bei ME/CFS:**
 
@@ -243,9 +244,9 @@ Sollte die Hypothese zutreffen: Positionierungsempfehlungen (nicht Bauchlage), �
 
 - Freies DHA überquert die BBB kaum. Physiologischer Hauptweg ist LPC-DHA über **Mfsd2a** am Endothel (Nguyen et al., Nature 2014)
 - Triglycerid-gebundenes DHA aus Standard-Fischöl nutzt diesen Weg nicht — erklärt, warum DHA-Supplemente peripheres DHA erhöhen, aber Hirn-DHA kaum
-- LPC-DHA strukturell essentiell für neuronale Membranfluidität → direkt relevant für AQP4-Funktion an Astrozytenendfüßen (Clearance-Achse)
+- LPC-DHA strukturell essentiell für neuronale Membranfluidität $\rightarrow$ direkt relevant für AQP4-Funktion an Astrozytenendfüßen (Clearance-Achse)
 - DHA ist Substrat der Resolvin- und Maresin-Biosynthese (spezialisierte pro-resolving mediators) — beenden Neuroinflammation aktiv, nicht nur bremsend. Bei chronischer glymphatischer Clearance-Lücke ist pro-resolutive Kapazität dauerhaft erschöpft
-- Mfsd2a hat eine Doppelfunktion: Transport *und* Unterdrückung caveolärer Transzytose → BBB-Dichtigkeit; akute Entzündung reguliert Mfsd2a herunter → BBB-Leckage
+- Mfsd2a hat eine Doppelfunktion: Transport *und* Unterdrückung caveolärer Transzytose $\rightarrow$ BBB-Dichtigkeit; akute Entzündung reguliert Mfsd2a herunter $\rightarrow$ BBB-Leckage
 - Retardierung vermeidet postprandiale Peaks mit gegenregulatorischer Lipolyse und sorgt für kontinuierliche Mfsd2a-Sättigung auch im SWS-Fenster
 
 **Evidenzstatus:**
@@ -269,8 +270,8 @@ Die Einzelteile sind peer-reviewed belegbar; die Integration als kohärentes the
 
 **Rationale:**
 
-- TLR4-Antagonismus → Mikroglia-Modulation
-- Endorphin-Rebound über temporäre Opioidrezeptor-Blockade → neuroimmunologische Rebalancierung
+- TLR4-Antagonismus $\rightarrow$ Mikroglia-Modulation
+- Endorphin-Rebound über temporäre Opioidrezeptor-Blockade $\rightarrow$ neuroimmunologische Rebalancierung
 
 **Evidenzstatus:**
 
@@ -325,9 +326,9 @@ ME/CFS zeigt konsistent erniedrigte Orexin-A-Spiegel im Liquor (López-Amador 20
 Die Orexin-Depletion ist **Endprodukt einer chronischen Kompensationskaskade**, nicht Primärdefekt. Die Sequenz:
 
 1. Initialer Insult (Infektion, Immunaktivierung, oder Raphe-Instabilität aus dem Grundmodell) erzeugt chronische autonome Hyperaktivierung und thalamokortikale Gating-Insuffizienz.
-2. Der Flip-Flop-Switch (Saper-Modell: VLPO/MnPO vs. Wake-Kerne) kann nicht stabil in Sleep kippen → Gate bleibt offen → nicht-erholsamer Schlaf.
+2. Der Flip-Flop-Switch (Saper-Modell: VLPO/MnPO vs. Wake-Kerne) kann nicht stabil in Sleep kippen $\rightarrow$ Gate bleibt offen $\rightarrow$ nicht-erholsamer Schlaf.
 3. Orexin-Neurone kompensieren: Sie stabilisieren den Wake-Zustand aktiv, weil ohne Orexin der instabile Flip-Flop in einen dysfunktionalen Zwischenzustand fällt statt sauber wach zu bleiben.
-4. Über Monate bis Jahre: Chronische Überaktivierung → Orexin-Neurone depletieren oder downregulieren.
+4. Über Monate bis Jahre: Chronische Überaktivierung $\rightarrow$ Orexin-Neurone depletieren oder downregulieren.
 5. Beide Seiten des Flip-Flop sind nun insuffizient — weder stabil wach noch stabil schlafend.
 6. Klinisches Bild: Erschöpfung (kein stabiler Wake) bei gleichzeitig nicht-erholsamem Schlaf (kein stabiler Sleep). Genau das ME/CFS-Kardinalsymptom.
 
@@ -351,7 +352,7 @@ Orexin-Neurone projizieren direkt auf den DRN und aktivieren serotonerge Neurone
 
 Dauerhafte Gabe wäre kontraproduktiv — der Flip-Flop soll nicht permanent in Sleep verriegelt werden. Das Intervall-Konzept:
 
-- Eine DORA-Nacht produziert echte Nullphasen → glymphatische Clearance → Restoration → Orexin-Neurone werden entlastet (keine Kompensationsarbeit nötig).
+- Eine DORA-Nacht produziert echte Nullphasen $\rightarrow$ glymphatische Clearance $\rightarrow$ Restoration $\rightarrow$ Orexin-Neurone werden entlastet (keine Kompensationsarbeit nötig).
 - Dieser Puffer hält ein bis mehrere Tage. Dann akkumuliert das Clearance-Defizit wieder.
 - Nächste DORA-Nacht, wenn die Nullphasen in unmedizierter Nacht unter einen Schwellenwert fallen.
 
@@ -402,7 +403,7 @@ Systematisch nicht etabliert. Mechanistisch stark begründet: GABA-Potenzierung 
 
 ### **J.8 Bidirektionale Migräne-Rückübertragung**
 
-Der Translationsfluss läuft normalerweise Migräne → ME/CFS. Aus Modellperspektive sind mehrere Interventionen in umgekehrter Richtung unerforscht, aber mechanistisch stark begründet:
+Der Translationsfluss läuft normalerweise Migräne $\rightarrow$ ME/CFS. Aus Modellperspektive sind mehrere Interventionen in umgekehrter Richtung unerforscht, aber mechanistisch stark begründet:
 
 **Benzodiazepine für interiktale Hypersensitivität**
 

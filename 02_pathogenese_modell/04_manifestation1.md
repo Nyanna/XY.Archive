@@ -5,7 +5,7 @@
 
 **Zusammenfassung**
 
-Dieses Kapitel entwickelt Migräne als endogenes Oszillationsphänomen der Raphe-Selbstregulation, nicht als Reaktion auf externe Trigger. Das B7/B8-Interferenzfeld bestimmt die CSD-Empfindlichkeit; alle klinischen Trigger (Stress, Wetter, Schlafentzug etc.) sind Perturbatoren, deren Wirksamkeit vom aktuellen B7/B8-Phasenversatz abhängt. CSD wird als kompensatorischer kortikaler Reset interpretiert — erzwungene Resynchronisation eines desynchronisierten Patchworks, erklärt die post-Migräne-Klarheit. Trigger-Mechanismen werden dreifach differenziert: Nap-Kaskade (Desynchronisation → kompensatorischer Nap + parallele CSD), Sport (B7-Depletion durch sympathischen Maximaltakt), Schlaf-Wach-Übergang. Die Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation (Pan et al. 2022: Amphetamine neutral, Atomoxetin +29%, Guanfacin +43%) wird als unbeabsichtigtes natürliches Experiment interpretiert, das die Modellvorhersagen bestätigt. Dreigliederiger Triptan-Mechanismus, Sumatriptan als Schlaf-Enabler, MBA-Reattribution und Betablocker-Paradox werden diskutiert.
+Dieses Kapitel entwickelt Migräne als endogenes Oszillationsphänomen der Raphe-Selbstregulation, nicht als Reaktion auf externe Trigger. Das B7/B8-Interferenzfeld bestimmt die CSD-Empfindlichkeit; alle klinischen Trigger (Stress, Wetter, Schlafentzug etc.) sind Perturbatoren, deren Wirksamkeit vom aktuellen B7/B8-Phasenversatz abhängt. CSD wird als kompensatorischer kortikaler Reset interpretiert — erzwungene Resynchronisation eines desynchronisierten Patchworks, erklärt die post-Migräne-Klarheit. Trigger-Mechanismen werden dreifach differenziert: Nap-Kaskade (Desynchronisation $\rightarrow$ kompensatorischer Nap + parallele CSD), Sport (B7-Depletion durch sympathischen Maximaltakt), Schlaf-Wach-Übergang. Die Dreifach-Dissoziation der Kopfschmerzraten unter ADHS-Medikation (Pan et al. 2022: Amphetamine neutral, Atomoxetin +29%, Guanfacin +43%) wird als unbeabsichtigtes natürliches Experiment interpretiert, das die Modellvorhersagen bestätigt. Dreigliederiger Triptan-Mechanismus, Sumatriptan als Schlaf-Enabler, MBA-Reattribution und Betablocker-Paradox werden diskutiert.
 
 ---
 
@@ -17,7 +17,7 @@ Die Heterogenität der klinischen Triggerliste (Stress, Wetter, Alkohol, Menstru
 
 | Trigger-Klasse | Eintrittskanal | Kortikaler Mechanismus |
 | :---- | :---- | :---- |
-| **Stress / Adrenalin** | LC (Locus coeruleus) → noradrenerg | PFC-Takt verschiebt sich direkt |
+| **Stress / Adrenalin** | LC (Locus coeruleus) $\rightarrow$ noradrenerg | PFC-Takt verschiebt sich direkt |
 | **Koffein** | Adenosin-Antagonismus | Kortikale Erregbarkeit steigt direkt |
 | **Sensorische Überflutung** | Thalamokortikaler Input | Kortikaler Input steigt direkt |
 | **Schlafentzug** | Homöostatischer Druck (Adenosin-Akkumulation) | Kortikale Oszillationen verschieben sich |
@@ -31,11 +31,11 @@ Die obige Tabelle listet Eintrittskanäle in den Kortex. Die Trigger-Klassen wer
 
 | Trigger | ANS-Komponente | Empirische Anfallsauslösung |
 |:--------|:---------------|:----------------------------|
-| **Hypoglykämie (vergessene Mahlzeit)** | Sympathoadrenale Gegenregulation → NE-Depletion | Bestätigt |
+| **Hypoglykämie (vergessene Mahlzeit)** | Sympathoadrenale Gegenregulation $\rightarrow$ NE-Depletion | Bestätigt |
 | **Schlafentzug** | Kumulative sympathische Erschöpfung (Floor-Verlust, vgl. 2.5.5, 7.4) | Bestätigt |
 | **Wetterumschwung** | Autonome Anpassungslast (Barorezeptoren, Thermoregulation) | Bestätigt |
 | **Körperliche Erschöpfung** | Direkter NE-Verbrauch | Bestätigt |
-| **Sensorische Überflutung** | Erzwungene Polling-Rate-Erhöhung → Raphe-Depletion (vgl. D.3.1) + ANS-Aktivierung | Bestätigt |
+| **Sensorische Überflutung** | Erzwungene Polling-Rate-Erhöhung $\rightarrow$ Raphe-Depletion (vgl. D.3.1) + ANS-Aktivierung | Bestätigt |
 | **Hochkonzentrierte kognitive Arbeit über Stunden** | Keine systematische ANS-Destabilisierung | **Kein Trigger** |
 | **Komplexes Problemlösen, intellektuelle Belastung** | Keine ANS-Komponente | **Kein Trigger** |
 
@@ -68,16 +68,16 @@ Die serotonerge Konvergenz der Prophylaktika adressiert die Empfindlichkeit (Int
 
 | Substanzklasse | Kopfschmerz vs. Placebo | Studien/Teilnehmer | Modellvorhersage |
 | :--- | :--- | :--- | :--- |
-| **Amphetamine (inkl. LDX)** | Kein Unterschied (OR ≈ 1,0) | 10 RCTs, n = 2.672 | ✓ Upstream-Stabilisierung → keine Verschlechterung |
+| **Amphetamine (inkl. LDX)** | Kein Unterschied (OR ≈ 1,0) | 10 RCTs, n = 2.672 | ✓ Upstream-Stabilisierung $\rightarrow$ keine Verschlechterung |
 | **Atomoxetin** | +29 % (signifikant) | 22 RCTs, n = 3.857 | ✓ SERT-Perturbation ohne Stabilisierung |
-| **Guanfacin** | +43 % (signifikant) | 8 RCTs, n = 1.956 | ✓ LC-Dämpfung + TAAR1→DRN-Suppression |
+| **Guanfacin** | +43 % (signifikant) | 8 RCTs, n = 1.956 | ✓ LC-Dämpfung + TAAR1$\rightarrow$DRN-Suppression |
 | **Methylphenidat** | +24 % | 18 RCTs, n = 3.249 | Gemischt (DRN-Modulation nicht upstream-stabilisierend) |
 
 **Interpretation:**
 
 - **Amphetamine** sind die einzige Substanzklasse mit Upstream-Raphe-Stabilisierung (vgl. 2.4, Dopamin-Upstream-Stabilisierung) — und die einzige ohne Kopfschmerzerhöhung. Die Nulldifferenz gegenüber Placebo bei >2.600 Teilnehmern ist ein starkes negatives Signal.
 - **Atomoxetin** hemmt den Noradrenalin-Transporter, perturbiert aber sekundär das serotonerge System (SERT-Affinität) ohne die stabilisierende Upstream-Komponente der Amphetamine (vgl. Anhang D.8, kernblinde SERT-Modulation). Die +29 % Kopfschmerzerhöhung ist modellkongruent.
-- **Guanfacin** dämpft den Locus coeruleus und unterdrückt über TAAR1→DRN die tonische Raphe-Aktivität. Die +43 % Kopfschmerzerhöhung — die höchste aller Klassen — ist konsistent mit einer Raphe-Suppressionshypothese.
+- **Guanfacin** dämpft den Locus coeruleus und unterdrückt über TAAR1$\rightarrow$DRN die tonische Raphe-Aktivität. Die +43 % Kopfschmerzerhöhung — die höchste aller Klassen — ist konsistent mit einer Raphe-Suppressionshypothese.
 - **Methylphenidat** zeigt ein gemischtes Bild (+24 %, Signifikanzschwelle nicht sicher unterschritten), was zur unspezifischen DRN-Modulation ohne upstream-stabilisierende Wirkung passt.
 - Die Dreifach-Dissoziation (Amphetamine neutral / Atomoxetin + / Guanfacin ++) ist ein **unbeabsichtigtes natürliches Experiment**, das nicht zur Prüfung des serotonergen Modells designiert wurde, aber dessen Vorhersagen bestätigt.
 - Die Spezifität der Komorbidität für **Migräne** (nicht Spannungskopfschmerz) stützt die serotonerge Ätiologie zusätzlich.
@@ -99,7 +99,7 @@ Migräne ist in diesem Modell keine Reaktion auf einen externen Trigger, sondern
 | :---- | :---- |
 | **Interiktal (stabil)** | Raphe-Schleife in gedämpfter Oszillation. Serotonin in akzeptabler Bandbreite. Kein Kaskaden-Trigger. |
 | **Prodromal** | Akkumulation destabilisierender Faktoren schiebt die Schleife in Richtung underdämpfter Oszillation. Der dominante Mechanismus ist der zunehmende B7/B8-Phasenversatz im Zyklus (~4 Tage POST, vgl. 2.5.1): Mit steigendem Phasenoffset sinkt die Dämpfungskonstante der Raphe-Schleife, die Oszillationsamplitude steigt. Der Abstand zur Kaskadenschwelle wird progressiv kleiner – nicht durch einen spezifischen Trigger, sondern durch steigende Prädisposition. Klinisch: Müdigkeit, Konzentrationsverlust, Gähnen – Korrelate der zunehmenden Raphe-Instabilität. |
-| **Aufschaukeln** | Schwingung der Raphe-Schleife nimmt zu. Der Zeitpunkt der Schwellenüberschreitung variiert mit der Perturbationsstärke: Starke kortikale Taktperturbation (auf beliebigem nicht-serotonergem Kanal: LC, Adenosin, sensorischer Input, homöostatischer Druck) eskaliert bereits bei moderatem Phasenversatz (Tag 3–4), minimale Perturbation erst bei maximalem Phasenversatz (Tag 6–7). Serotoninspiegel fällt unter kritische Schwelle → trigeminovaskuläre Aktivierung, CSD-Initiation. |
+| **Aufschaukeln** | Schwingung der Raphe-Schleife nimmt zu. Der Zeitpunkt der Schwellenüberschreitung variiert mit der Perturbationsstärke: Starke kortikale Taktperturbation (auf beliebigem nicht-serotonergem Kanal: LC, Adenosin, sensorischer Input, homöostatischer Druck) eskaliert bereits bei moderatem Phasenversatz (Tag 3–4), minimale Perturbation erst bei maximalem Phasenversatz (Tag 6–7). Serotoninspiegel fällt unter kritische Schwelle $\rightarrow$ trigeminovaskuläre Aktivierung, CSD-Initiation. |
 | **Attacke** | Kaskade voll aktiviert: CSD, CGRP-Freisetzung, neurogene Inflammation, Schmerz. Raphe-Entleerung. |
 | **Postdromal/Refraktär** | System in Refractory-Zustand. Autorezeptor-Schleife rekalibriert sich. Klinisch: Erschöpfung, aber Schmerzfreiheit. Dauer = Rekalibrierungszeit. |
 
@@ -119,7 +119,7 @@ Das Triggermodell definiert zwei distinkte therapeutische Achsen:
 
 | Hebel | Mechanismus | Verfügbarkeit | Beispiel |
 | :---- | :---- | :---- | :---- |
-| **Amplitudenmodulation** | B7- oder B8-Amplitude senken → Interferenzprodukt sinkt | Verfügbar (Diphenhydramin, TCAs) | Amplitude_B7 ↓ → weniger thalamische Interferenz |
+| **Amplitudenmodulation** | B7- oder B8-Amplitude senken $\rightarrow$ Interferenzprodukt sinkt | Verfügbar (Diphenhydramin, TCAs) | Amplitude_B7 $\downarrow$ $\rightarrow$ weniger thalamische Interferenz |
 | **Frequenzreparatur** | Inter-Kern-Phasenversatz korrigieren | Nicht möglich — das Reparaturwerkzeug (5-HT1A-Autorezeptor) ist das defekte Teil | Keine aktuelle Substanz |
 
 **LDX und die dritte Achse:** Lisdexamfetamin optimiert auf einer dritten Achse: **Intra-Kern-Stabilisierung** (D2-vermittelte tonische Feuermodulation beider Kerne, vgl. 2.5.1). Diese Achse adressiert weder die Amplitude differentiell (beide Kerne werden stabilisiert, nicht einer selektiv gedämpft) noch die Frequenz (der Inter-Kern-Phasenversatz wird durch LDX gedämpft, aber nicht aufgehoben — vgl. Tracker-Daten: ~4-Tage-Oszillator persistiert POST). LDX senkt die Empfindlichkeit, indem es den Intra-Kern-Takt stabilisiert und damit die Amplitude der Interferenz indirekt reduziert, aber es repariert nicht den Phasenversatz selbst. Die Persistenz des subklinischen CSD-Zyklus unter LDX (Median IBI 4,0 d, Anhang B) ist die direkte Konsequenz dieser Blindstelle.
@@ -132,8 +132,8 @@ Die Raphe-Feuerrate fällt im Schlaf auf Minimum (REM: nahe Null) und muss beim 
 
 | Szenario | Verlauf |
 | :---- | :---- |
-| **Normaler Powernap** | Raphe-Aktivität fällt → steigt beim Aufwachen → Thalamus rekalibriert → Hemmung löst sich → klarer Wachzustand. |
-| **Migräne aus Powernap** | Raphe-Aktivität fällt → Anstieg beim Aufwachen gelingt nicht stabil → Schleife oszilliert statt gleichmäßig anzusteigen → Thalamus kann nicht rekalibrieren → Hemmung bleibt erhalten → manifestiert sich als präfrontaler Kopfschmerz. |
+| **Normaler Powernap** | Raphe-Aktivität fällt $\rightarrow$ steigt beim Aufwachen $\rightarrow$ Thalamus rekalibriert $\rightarrow$ Hemmung löst sich $\rightarrow$ klarer Wachzustand. |
+| **Migräne aus Powernap** | Raphe-Aktivität fällt $\rightarrow$ Anstieg beim Aufwachen gelingt nicht stabil $\rightarrow$ Schleife oszilliert statt gleichmäßig anzusteigen $\rightarrow$ Thalamus kann nicht rekalibrieren $\rightarrow$ Hemmung bleibt erhalten $\rightarrow$ manifestiert sich als präfrontaler Kopfschmerz. |
 | **Prolongierte Schlafträgheit** | Subklinische Variante: Raphe-Reaktivierung dauert über eine Stunde statt 2–20 Minuten. Dieselbe Instabilität wie beim Migränemechanismus, aber Schwelle zur Kaskade wird nicht erreicht. |
 
 Diese Beschreibung erfasst den akuten Schlaf-Wach-Übergang (Abschnitt 4.3.1). Der nachfolgende Abschnitt erweitert den Mechanismus um eine langsamere, über Stunden aufbauende Kaskade, die denselben Endpunkt (CSD) über einen anderen Eintrittsweg erreicht.
@@ -142,9 +142,9 @@ Diese Beschreibung erfasst den akuten Schlaf-Wach-Übergang (Abschnitt 4.3.1). D
 
 Der lokale Schlaf (regionale Off-State-Intrusionen bei globaler Wachheit), die posteriore Vulnerabilität (frontaler Aufwachgradient) und die modalitätsspezifische Asymmetrie der Off-State-Last sind als Konsequenzen des Raphe-Primärdefekts in Abschnitt 2.5.3 beschrieben. Im Migränekontext bilden sie die Voraussetzung für die nachfolgende Kaskade: Posteriore Regionen ohne externen Drive kippen zuerst in Off-States, die thalamokortikale Rückkopplung wird verrauscht, und die CSD-Schwelle sinkt progressiv.
 
-Der Nap ist nicht Auslöser der CSD-Kaskade, sondern — wie die CSD selbst — eine Downstream-Manifestation desselben Desynchronisationszustands. Desynchronisation → Nap (kompensatorisch) + Desynchronisation → CSD (parallel). Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig und nicht initiierend. Der Pre-Nap-HR ist der stärkste verfügbare Zustandsindikator: ≥80 bpm = System stabil, Nap safe; <75 bpm = System bereits destabilisiert, Nap beschleunigt Kaskade (PPV 85% bei ≥80 bpm, Anhang B.11). PRE-Kaskaderate 58%, POST unter LDX nur 11% — die stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
+Der Nap ist nicht Auslöser der CSD-Kaskade, sondern — wie die CSD selbst — eine Downstream-Manifestation desselben Desynchronisationszustands. Desynchronisation $\rightarrow$ Nap (kompensatorisch) + Desynchronisation $\rightarrow$ CSD (parallel). Die Sleep Inertia nach dem Nap kann den Prozess beschleunigen, ist aber nicht notwendig und nicht initiierend. Der Pre-Nap-HR ist der stärkste verfügbare Zustandsindikator: ≥80 bpm = System stabil, Nap safe; <75 bpm = System bereits destabilisiert, Nap beschleunigt Kaskade (PPV 85% bei ≥80 bpm, Anhang B.11). PRE-Kaskaderate 58%, POST unter LDX nur 11% — die stabilere Raphe verhindert die Kaskade unabhängig von Nap-Parametern.
 
-Die mechanistische Abfolge verläuft über mehrere Stunden und ist phänomenologisch von der akuten Raphe-Oszillation (4.3.1) zu unterscheiden. Die Phasen beschreiben nicht eine kausale Kette (Nap → CSD), sondern die zeitliche Entfaltung eines bereits laufenden Destabilisierungsprozesses, in den der Nap als kompensatorischer Versuch eingebettet ist:
+Die mechanistische Abfolge verläuft über mehrere Stunden und ist phänomenologisch von der akuten Raphe-Oszillation (4.3.1) zu unterscheiden. Die Phasen beschreiben nicht eine kausale Kette (Nap $\rightarrow$ CSD), sondern die zeitliche Entfaltung eines bereits laufenden Destabilisierungsprozesses, in den der Nap als kompensatorischer Versuch eingebettet ist:
 
 **Phase 1 — Lokaler Schlaf (pre-Nap):** Externer Arousal-Drive fällt weg (Ende der Arbeit, monotone Situation). Regionen ohne externen Drive kippen asynchron in Off-States, je nach individueller metabolischer Last und Schwelle. Ergebnis: Ein Patchwork aus wachen und schlafenden kortikalen Arealen. Subjektiv: Mind Blanking, Bewusstseinsdruck, Konzentrationsverlust, Starren ohne zu sehen. Die Fähigkeit, in 1–2 Minuten einzuschlafen, ist in diesem Kontext kein Zeichen guter Schlafregulation, sondern der Moment, in dem die letzte Kompensation (sympathischer Tonus) wegfällt und die bereits laufende lokale Intrusion sich global ausbreitet.
 
@@ -168,15 +168,15 @@ Am Thalamus ist das Netto-Ergebnis identisch. In allen drei Kontexten ist der Ko
 
 **Quantitative Stützung (Tracker-Daten, Anhang B.5, B.11):** Nächte mit höherer Fragmentierung (gemessen als Noise-Fragmente <5 min im Deep-Kanal) führen signifikant häufiger zu kompensatorischen Folge-Naps am nächsten Tag (r=0,276, p=0,019, n=79). Der Befund ist paradox: Fragmentierte Nächte zeigen *höhere* Deep-Gesamtdauer (129 vs. 106 min bei Nächten ohne Folge-Nap). Der Tracker klassifiziert genug Minuten als Deep — die Quantität stimmt, die Qualität nicht. Das Gehirn registriert korrekt, dass kein restaurativer SWS stattfand, und triggert kompensatorisches Schlafverhalten.
 
-**Nap-Outcome ist zustandsabhängig, nicht dauerabhängig (Anhang B.11):** 34 Naps zeigen: Dauer ist kein Diskriminator (OK: 50 min vs. KASKADE: 53 min). Der Pre-Nap-HR (60 min vor Nap) trennt die Outcomes: ≥80 bpm → PPV 85% für sicheren Nap; <75 bpm → System bereits destabilisiert. PRE: 58% Kaskade; POST (LDX): nur 11%. Der Nap ist Indikator für den Systemzustand, nicht Auslöser der Kaskade.
+**Nap-Outcome ist zustandsabhängig, nicht dauerabhängig (Anhang B.11):** 34 Naps zeigen: Dauer ist kein Diskriminator (OK: 50 min vs. KASKADE: 53 min). Der Pre-Nap-HR (60 min vor Nap) trennt die Outcomes: ≥80 bpm $\rightarrow$ PPV 85% für sicheren Nap; <75 bpm $\rightarrow$ System bereits destabilisiert. PRE: 58% Kaskade; POST (LDX): nur 11%. Der Nap ist Indikator für den Systemzustand, nicht Auslöser der Kaskade.
 
-Unter LDX ist der kompensatorische Zusammenhang aufgelöst: POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die verbleibenden POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch externe Faktoren motiviert (verkürzte Schlafzeit, spätes Zubettgehen). Die pharmakologische Synchronisation über die Raphe adressiert den Upstream-Defekt: stabilerer serotonerger Tonus → globale kortikale Kohärenz sowohl im Schlaf als auch im Wachzustand → kein kompensatorischer Nap-Bedarf → keine Kaskade.
+Unter LDX ist der kompensatorische Zusammenhang aufgelöst: POST-Nap-Rate (26%) ist nahezu identisch mit PRE (24%), aber POST-Nap-Nächte zeigen null Noise-Fragmente. Die verbleibenden POST-Naps sind nicht kompensatorisch für fragmentierten SWS, sondern durch externe Faktoren motiviert (verkürzte Schlafzeit, spätes Zubettgehen). Die pharmakologische Synchronisation über die Raphe adressiert den Upstream-Defekt: stabilerer serotonerger Tonus $\rightarrow$ globale kortikale Kohärenz sowohl im Schlaf als auch im Wachzustand $\rightarrow$ kein kompensatorischer Nap-Bedarf $\rightarrow$ keine Kaskade.
 
 **Trigeminale Sensitisierung als parallele Kaskade**
 
 Die thalamokortikale Destabilisierung (Phase 4) verläuft parallel zu einer trigeminalen Sensitisierung, die unabhängig die CSD-Schwelle senkt:
 
-Der retrobulbäre Druck nach dem Nap — die bewusste Repräsentation des posterioren Off-State-Rests — geht mit lokalen Perfusionsänderungen einher. Regionen im Off-State behalten schlaftypische Vasodilatation bei, während die umgebenden, bereits wachen Regionen zur Wach-Perfusion zurückkehren. Diese lokale Perfusionsdifferenz reizt perivaskuläre trigeminale Afferenzen mechanisch (Dehnung der Gefäßwand → Nozizeptor-Aktivierung auf meningealen C-Fasern). Progressive trigeminale Sensitisierung: CGRP-Release, meningeale Neuroinflammation, Absenkung der sensorischen Schwellen.
+Der retrobulbäre Druck nach dem Nap — die bewusste Repräsentation des posterioren Off-State-Rests — geht mit lokalen Perfusionsänderungen einher. Regionen im Off-State behalten schlaftypische Vasodilatation bei, während die umgebenden, bereits wachen Regionen zur Wach-Perfusion zurückkehren. Diese lokale Perfusionsdifferenz reizt perivaskuläre trigeminale Afferenzen mechanisch (Dehnung der Gefäßwand $\rightarrow$ Nozizeptor-Aktivierung auf meningealen C-Fasern). Progressive trigeminale Sensitisierung: CGRP-Release, meningeale Neuroinflammation, Absenkung der sensorischen Schwellen.
 
 Das ergibt zwei parallele Kaskaden, die sich gegenseitig verstärken: die eine neuronal über den Thalamus, die andere vaskulär-trigeminal. Beide senken die CSD-Schwelle, aber über verschiedene Mechanismen.
 
@@ -184,13 +184,13 @@ Das ergibt zwei parallele Kaskaden, die sich gegenseitig verstärken: die eine n
 
 **Beobachtung unter Lisdexamfetamin**
 
-LDX eliminiert die gesamte Kette an der Wurzel: Stabilere Raphe → stärkerer tonischer Arousal-Drive → kortikale Regionen bleiben online auch ohne externen Drive → kein Patchwork → kein Nap nötig → keine Sleep Inertia → keine Kaskade.
+LDX eliminiert die gesamte Kette an der Wurzel: Stabilere Raphe $\rightarrow$ stärkerer tonischer Arousal-Drive $\rightarrow$ kortikale Regionen bleiben online auch ohne externen Drive $\rightarrow$ kein Patchwork $\rightarrow$ kein Nap nötig $\rightarrow$ keine Sleep Inertia $\rightarrow$ keine Kaskade.
 
 Powernap unter Substanz möglich ohne Migränekonversion. Aufwachen deutlich erleichtert, prolongierte morgendliche Atonie reduziert. Beide Seiten des Schlaf-Wach-Übergangs profitieren von stabiler Raphe-Baseline – konsistent mit dem Modell.
 
 | Beobachtung | Erklärung durch Arousal-Drive |
 | :---- | :---- |
-| **Wegfall des 2-Stunden-Lochs** | Raphe hält tonischen Tonus nach CAR-Abfall aufrecht → kein posteriorer Off-State-Einbruch |
+| **Wegfall des 2-Stunden-Lochs** | Raphe hält tonischen Tonus nach CAR-Abfall aufrecht $\rightarrow$ kein posteriorer Off-State-Einbruch |
 | **Reduzierter Nap-Bedarf** | Kein Patchwork-Zustand, der Reset-Impuls erfordert |
 | **Klarere Abendmüdigkeit** | Zirkadianes Signal stark genug für bewusste Wahrnehmung; Zustandswechsel wird kohärent statt als Kollaps erlebt |
 | **Subjektiv „schärferes" Bewusstsein** | Kortex synchron und ungedämpft — erstmals der Grundzustand ohne die doppelte Bremse aus noradrenerger Dämpfung (ehemals Metoprolol) und chronischer Desynchronisation |
@@ -209,14 +209,14 @@ Die underdämpfte Raphe-Schleife unterschießt in der Talschwingung. Der Seroton
 
 | Rezeptorsystem | Lokalisation | Effekt bei Serotonin-Abfall |
 | :---- | :---- | :---- |
-| **5-HT1A auf Pyramidenzellen** | Direkt hyperpolarisierend | Hemmung fällt weg → Pyramidenzellen entbremst |
-| **5-HT1A auf GABAergen Interneuronen** | Aktiviert Interneuron → GABA-Freisetzung | Interneuron-Aktivierung fällt weg → GABA-Freisetzung sinkt → Pyramidenzellen disinhibiert |
+| **5-HT1A auf Pyramidenzellen** | Direkt hyperpolarisierend | Hemmung fällt weg $\rightarrow$ Pyramidenzellen entbremst |
+| **5-HT1A auf GABAergen Interneuronen** | Aktiviert Interneuron $\rightarrow$ GABA-Freisetzung | Interneuron-Aktivierung fällt weg $\rightarrow$ GABA-Freisetzung sinkt $\rightarrow$ Pyramidenzellen disinhibiert |
 
 Resultat: Beide inhibitorischen Bremsen lösen sich gleichzeitig. Der Kortex fährt nicht herunter – er lädt sich still auf. Die kortikale Exzitabilität steigt, die Reizschwelle sinkt, ohne dass dies klinisch sichtbar wird. Das Fenster bleibt so lange geöffnet, wie das Serotonin unterhalb der Baseline verbleibt.
 
 **Phase 2 – Rebound (exzitatorischer Impuls):**
 
-Die underdämpfte Oszillation überschießt nach dem Nadir. Serotonin steigt abrupt und trifft auf 5-HT2A-Rezeptoren auf den bereits vollständig disinhibierten Pyramidenzellen. 5-HT2A ist Gq-gekoppelt und exzitatorisch: IP3/DAG-Signalweg → Depolarisation, erhöhte Feuerbereitschaft. Ein exzitatorischer Burst trifft auf einen Kortex, der sich bereits an der Schwelle befindet.
+Die underdämpfte Oszillation überschießt nach dem Nadir. Serotonin steigt abrupt und trifft auf 5-HT2A-Rezeptoren auf den bereits vollständig disinhibierten Pyramidenzellen. 5-HT2A ist Gq-gekoppelt und exzitatorisch: IP3/DAG-Signalweg $\rightarrow$ Depolarisation, erhöhte Feuerbereitschaft. Ein exzitatorischer Burst trifft auf einen Kortex, der sich bereits an der Schwelle befindet.
 
 Der CSD-Trigger ist damit weder der Nadir allein noch der Rebound allein, sondern ihre zeitliche Sequenz: **Disinhibition öffnet das Fenster, Rebound gibt den Impuls.** Die Geschwindigkeit der Oszillation ist dabei entscheidend – nur wenn Phase 2 auf ein noch offenes Phase-1-Fenster trifft, ist die Bedingung erfüllt. Langsame Serotoninschwankungen, wie sie bei stabiler Raphe auftreten, erzeugen keine CSD, weil das Zeitfenster der Disinhibition bereits wieder geschlossen ist, wenn der Serotoninspiegel steigt.
 
@@ -228,10 +228,10 @@ Die synchrone Massendepolarisation initiiert eine selbstpropagierte elektrochemi
 
 | Ereignis | Mechanismus | Konsequenz |
 | :---- | :---- | :---- |
-| **Massenhafte K⁺-Freisetzung** | Neuronen öffnen spannungsgesteuerte K⁺-Kanäle → K⁺ flutet Extrazellulärraum | [K⁺]extrazellulär steigt von ~3 mM auf ~30–60 mM → depolarisiert Nachbarzellen → Welle propagiert |
-| **Glutamat-Ausschüttung** | Depolarisierte Neuronen setzen Glutamat frei → NMDA-Rezeptor-Aktivierung | Verstärkt Depolarisierung der Nachbarzellen → positive Rückkopplung der Wellenausbreitung |
-| **Na⁺/Ca²⁺-Einstrom** | Spannungsgesteuerte Kanäle öffnen → massive Ionenumkehr | Stört osmotisches Gleichgewicht → neuronales Ödem, Volumenverschiebung |
-| **Hinter der Wellenfront** | Neuronen in kompletter Depolarisationslähmung | Können nicht mehr feuern → die eigentliche „Spreading Depression" |
+| **Massenhafte K⁺-Freisetzung** | Neuronen öffnen spannungsgesteuerte K⁺-Kanäle $\rightarrow$ K⁺ flutet Extrazellulärraum | [K⁺]extrazellulär steigt von ~3 mM auf ~30–60 mM $\rightarrow$ depolarisiert Nachbarzellen $\rightarrow$ Welle propagiert |
+| **Glutamat-Ausschüttung** | Depolarisierte Neuronen setzen Glutamat frei $\rightarrow$ NMDA-Rezeptor-Aktivierung | Verstärkt Depolarisierung der Nachbarzellen $\rightarrow$ positive Rückkopplung der Wellenausbreitung |
+| **Na⁺/Ca²⁺-Einstrom** | Spannungsgesteuerte Kanäle öffnen $\rightarrow$ massive Ionenumkehr | Stört osmotisches Gleichgewicht $\rightarrow$ neuronales Ödem, Volumenverschiebung |
+| **Hinter der Wellenfront** | Neuronen in kompletter Depolarisationslähmung | Können nicht mehr feuern $\rightarrow$ die eigentliche „Spreading Depression" |
 
 **Anmerkung zur Wellen-Metapher:** Die hier verwendete Beschreibung der CSD als wandernde
 Depolarisationsfront mit ~3 mm/min ist die klassische Leão-Lesart. Mechanistisch sauberer
@@ -259,7 +259,7 @@ Der entscheidende Unterschied: Die tonische Destabilisierungswelle hinterlässt 
 
 **Sechs-Stunden-Fenster bis ANS-Kollaps:** Parallel zur tonischen kortikalen Destabilisierung läuft ein zweiter, architektonisch determinierter Prozess: Die B7-Depletion — biologisch: vesikuläre Erschöpfung bei TPH2-Kapazitätslimit und grenzwertiger ATP-Reserve, verstärkt durch fehlende Autorezeptor-Bremse (vgl. 2.2.1) — destabilisiert die monosynaptisch innervierten autonomen Stammhirnkerne (NTS, RVLM, Ncl. ambiguus, vestibuläre Kerne) direkt. Dieser Prozess ist schneller als die kortikale Kaskade (monosynaptisch vs. polysynaptisch) und manifestiert sich klinisch als das, was konventionell als „Stammhirnaura" (MBA) klassifiziert wird. Die konventionelle Erklärung — CSD propagiert in den Hirnstamm — hat keine humane Evidenzbasis (vgl. 4.6). Die Stammhirnsymptome sind nicht Resultat einer CSD-Propagation nach kaudal, sondern eines eigenständigen, parallel laufenden ANS-Kollapses. Ohne LDX überlagern sich beide Prozesse zeitlich; unter LDX wird die CSD-Schwelle länger gehalten, und der ANS-Kollaps wird als vorgelagerter, eigenständiger Prozess sichtbar (vgl. Anhang B.20).
 
-Zusätzlich kann die tonische Destabilisierung über Stunden die Raphe-Kerne selbst erreichen. Ab diesem Punkt entsteht ein Teufelskreis: Die Raphe, deren Phaseninstabilität die Welle antreibt, wird selbst destabilisiert → der Phasenoffset wächst → die Welle beschleunigt.
+Zusätzlich kann die tonische Destabilisierung über Stunden die Raphe-Kerne selbst erreichen. Ab diesem Punkt entsteht ein Teufelskreis: Die Raphe, deren Phaseninstabilität die Welle antreibt, wird selbst destabilisiert $\rightarrow$ der Phasenoffset wächst $\rightarrow$ die Welle beschleunigt.
 
 **Eskalationskaskade:**
 
@@ -280,7 +280,7 @@ Die Vesikelökonomie des Raphe-Takts (2.2.1) zeigt: **Intratakt-Fragmentierung e
 **Migränespezifische Konsequenzen:**
 - Die Eskalationskaskade (Tabelle oben) wird granularer — Kontinuum von Kohärenzgraden statt binär synchron/asynchron
 - Erklärt **Migräne ohne Aura bei normalem Intertakt** (~75% der Migräniker): Intratakt-Fragmentierung genügt für tonische Interferenz ohne CSD — konsistent mit der selektiven Tonabersat-Wirksamkeit ausschließlich bei Aura-Migräne (Hauge et al. 2009)
-- Verbindung zum Hit-1-Defekt wird direkter: Instabiler 5-HT1A → Feuerrate schwankt um Regenerationsschwelle → Vesikelfreisetzung stochastisch → Intratakt-Fragmentierung
+- Verbindung zum Hit-1-Defekt wird direkter: Instabiler 5-HT1A $\rightarrow$ Feuerrate schwankt um Regenerationsschwelle $\rightarrow$ Vesikelfreisetzung stochastisch $\rightarrow$ Intratakt-Fragmentierung
 
 **Drei Aura-Phänotypen aus Phasenoffset-Topologie**
 
@@ -290,7 +290,7 @@ Die klinische Heterogenität visueller Auren — von klassischen Fortifikationss
 | :---- | :---- | :---- |
 | **Zickzack/Fortifikationsspektren** | Linear, propagierend | CSD-Welle kreuzt Orientierungssäulen im visuellen Kortex |
 | **Rund/punktförmig** | Fokal, isotrop | Epileptische Entladung — fokale Übererregung ohne Propagation |
-| **Rauschen/diffus** | Global, diffus | Pulvinar-Gating-Versagen: modulatorischer thalamokortikaler Pfad gestört bei intaktem LGN-Driver → gestörte visuelle Integration bei erhaltener Grundübertragung. Rauschen geht dem Skotom voraus (prodromal). |
+| **Rauschen/diffus** | Global, diffus | Pulvinar-Gating-Versagen: modulatorischer thalamokortikaler Pfad gestört bei intaktem LGN-Driver $\rightarrow$ gestörte visuelle Integration bei erhaltener Grundübertragung. Rauschen geht dem Skotom voraus (prodromal). |
 
 Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck verschiedener Stabilitätszustände des Raphe-Phasenoffsets:
 
@@ -302,7 +302,7 @@ Die drei Modi sind keine Varianten desselben Mechanismus, sondern Ausdruck versc
 
 **Tonabersat als entscheidende Evidenz:** Tonabersat (SB-220453), ein Gap-Junction-Blocker, der CSD-Propagation selektiv hemmt, war in klinischen Studien ausschließlich gegen Migräne *mit Aura* wirksam, nicht gegen Migräne ohne Aura (Hauge et al. 2009, *Lancet Neurology*). Wenn CSD der universelle Migränemechanismus wäre, müsste ein CSD-Blocker gegen alle Migräneformen wirken. Die selektive Wirksamkeit bei Aura-Migräne ist das stärkste pharmakologische Argument dafür, dass die ~75% Migräniker ohne Aura einen anderen Primärmechanismus haben — tonische Interferenz, die konventionell als „subklinische CSD" fehlattribuiert wird.
 
-**Hansen et al. — Aura-Variabilität als Indiz gegen CSD als fixen Mechanismus:** Hansen et al. dokumentierten über 1000 visuelle Auren bei einem einzelnen Patienten über 18 Jahre (Hansen et al. 2013, *Brain*). Das zentrale Ergebnis: Die Auren zeigen ein *Spektrum*, kein stereotypes Muster. Form, Größe, Propagationsrichtung und -geschwindigkeit variieren erheblich zwischen Attacken. Wenn CSD ein stereotyper ionischer Prozess wäre — determiniert durch kortikale Architektur und Diffusionsparameter —, müssten die Auren bei demselben Patienten weitgehend identisch sein. Die beobachtete Variabilität ist mit einem tonischen Interferenzmechanismus natürlich erklärbar: Variabler Phasenoffset → variable Interferenztopographie → variables Aura-Muster. Jede Attacke erzeugt ein anderes räumliches Muster der Destabilisierung, abhängig vom aktuellen Zustand des B7/B8-Phasenversatzes.
+**Hansen et al. — Aura-Variabilität als Indiz gegen CSD als fixen Mechanismus:** Hansen et al. dokumentierten über 1000 visuelle Auren bei einem einzelnen Patienten über 18 Jahre (Hansen et al. 2013, *Brain*). Das zentrale Ergebnis: Die Auren zeigen ein *Spektrum*, kein stereotypes Muster. Form, Größe, Propagationsrichtung und -geschwindigkeit variieren erheblich zwischen Attacken. Wenn CSD ein stereotyper ionischer Prozess wäre — determiniert durch kortikale Architektur und Diffusionsparameter —, müssten die Auren bei demselben Patienten weitgehend identisch sein. Die beobachtete Variabilität ist mit einem tonischen Interferenzmechanismus natürlich erklärbar: Variabler Phasenoffset $\rightarrow$ variable Interferenztopographie $\rightarrow$ variables Aura-Muster. Jede Attacke erzeugt ein anderes räumliches Muster der Destabilisierung, abhängig vom aktuellen Zustand des B7/B8-Phasenversatzes.
 
 #### **4.4.2 Intertakt-Drift als zweiter, übergeordneter Fragmentierungsmechanismus**
 
@@ -310,8 +310,8 @@ Die Intratakt-Fragmentierung (§4.4.1) beschreibt stochastische Release-Muster i
 
 Beide Mechanismen sind additiv und konvergieren auf dasselbe CSD-Vorbereitungsprofil:
 
-- **Intratakt-Fragmentierung** erzeugt innerhalb eines einzelnen Takts stochastische Release-Muster → lokale serotonerge Versorgungslücken am postsynaptischen Gewebe.
-- **Intertakt-Drift** erzeugt über Tage ein progressiv ansteigendes Baseline-Defizit → die stochastischen Lücken akkumulieren auf einem immer weniger kompensierbaren Hintergrund; die B7-Intertakt-Phase driftet aus der B8-SCN-gelockten Trägerachse heraus.
+- **Intratakt-Fragmentierung** erzeugt innerhalb eines einzelnen Takts stochastische Release-Muster $\rightarrow$ lokale serotonerge Versorgungslücken am postsynaptischen Gewebe.
+- **Intertakt-Drift** erzeugt über Tage ein progressiv ansteigendes Baseline-Defizit $\rightarrow$ die stochastischen Lücken akkumulieren auf einem immer weniger kompensierbaren Hintergrund; die B7-Intertakt-Phase driftet aus der B8-SCN-gelockten Trägerachse heraus.
 
 Die CSD-Schwelle wird erreicht, wenn beide Prozesse konvergieren: Eine Intratakt-Fragmentierung in einem ungünstigen Takt-Moment, auf einer bereits durch Intertakt-Drift prekären Basis, überschreitet lokal die serotonerge Reparaturkapazität. Die Phasenlage des Anfalls (ansteigende Flanke nach HR-Drop-Minimum, Median 2 Tage post-Minimum, Anhang B.12) ist in diesem Rahmen natürlich: Am Drop-Minimum ist das System maximal gedämpft (niedriger sympathischer Drive auf prekärer Intertakt-Basis); der Anfall kommt, wenn der sympathische Drive zurückkehrt und die Diskrepanz zwischen steigender Nachfrage und erschöpfter Reparaturkapazität maximal wird. Die ANS-Signatur dieses Prozesses ist der aufbauende sympathische Clamp (§2.5.1.1).
 
@@ -319,31 +319,31 @@ Die CSD-Schwelle wird erreicht, wenn beide Prozesse konvergieren: Eine Intratakt
 
 Die metabolische Krise hat zwei distinkte Modi — einen graduellen Vorläufer und eine akute Konsequenz der CSD:
 
-**Modus 1 — Pre-CSD (gradueller Vorläufer):** Die Intratakt-Fragmentierung (4.4.1.1) erzeugt eine schleichende metabolische Belastung *vor* der CSD. Instabiler 5-HT1A → Neuron feuert bevor Vesikel regeneriert → Teilentleerung → ATP wird für dysfunktionale Vesikelrecycling-Zyklen (Endozytose, Refüllung ohne Transmitter) verbraucht → Na⁺/K⁺-ATPase konkurriert um denselben ATP-Pool → **Clearance verliert** → Na⁺ akkumuliert graduell → tonische Destabilisierung → CSD-Schwelle erreicht. Die Na⁺-Akkumulation ist nicht Folge der CSD, sondern ihr gradueller Vorläufer. Die CSD ist der Reset, der die Na⁺-Homöostase durch erzwungene Repolarisation wiederherstellt.
+**Modus 1 — Pre-CSD (gradueller Vorläufer):** Die Intratakt-Fragmentierung (4.4.1.1) erzeugt eine schleichende metabolische Belastung *vor* der CSD. Instabiler 5-HT1A $\rightarrow$ Neuron feuert bevor Vesikel regeneriert $\rightarrow$ Teilentleerung $\rightarrow$ ATP wird für dysfunktionale Vesikelrecycling-Zyklen (Endozytose, Refüllung ohne Transmitter) verbraucht $\rightarrow$ Na⁺/K⁺-ATPase konkurriert um denselben ATP-Pool $\rightarrow$ **Clearance verliert** $\rightarrow$ Na⁺ akkumuliert graduell $\rightarrow$ tonische Destabilisierung $\rightarrow$ CSD-Schwelle erreicht. Die Na⁺-Akkumulation ist nicht Folge der CSD, sondern ihr gradueller Vorläufer. Die CSD ist der Reset, der die Na⁺-Homöostase durch erzwungene Repolarisation wiederherstellt.
 
 **Modus 2 — Post-CSD (akute Konsequenz):** Der ATP-Verbrauch der Depolarisationswelle ist exorbitant. Die Na⁺/K⁺-ATPase muss unter Notfallbedingungen die Ionengradienten wiederherstellen – ein Prozess, der normalerweise kontinuierlich im Gleichgewicht läuft, nun aber massiv im Rückstand ist.
 
 | Metabolische Komponente | Mechanismus | Zeitlicher Verlauf |
 | :---- | :---- | :---- |
-| **Pre-CSD: Na⁺-Akkumulation** | Vesikelrecycling-ATP konkurriert mit Na⁺/K⁺-ATPase → Clearance-Verlust → graduelle Depolarisationsverschiebung | Stunden (tonische Destabilisierungswelle, 4.4.1) |
+| **Pre-CSD: Na⁺-Akkumulation** | Vesikelrecycling-ATP konkurriert mit Na⁺/K⁺-ATPase $\rightarrow$ Clearance-Verlust $\rightarrow$ graduelle Depolarisationsverschiebung | Stunden (tonische Destabilisierungswelle, 4.4.1) |
 | **Post-CSD: ATP-Depletion** | Na⁺/K⁺-ATPase läuft auf Maximum um Ionengradienten wiederherzustellen | Schlagartig an der Wellenfront, anhaltend hinter ihr |
-| **Neurovaskuläre Kopplung** | Neuronale Aktivität signalisiert Mehrbedarf → initiale Vasodilatation als reflexiver Kompensationsversuch: das System versucht, über erhöhten Blutfluss die Na⁺-Clearance und Enzymverfügbarkeit (TPH2-Kofaktoren) wiederherzustellen. Die Kompensation funktioniert minimal über das Limit hinaus, reicht aber nicht in den notwendigen Bereich | Pre-CSD: chronisch unzureichend; Post-CSD: reaktiv an der Wellenfront |
+| **Neurovaskuläre Kopplung** | Neuronale Aktivität signalisiert Mehrbedarf $\rightarrow$ initiale Vasodilatation als reflexiver Kompensationsversuch: das System versucht, über erhöhten Blutfluss die Na⁺-Clearance und Enzymverfügbarkeit (TPH2-Kofaktoren) wiederherzustellen. Die Kompensation funktioniert minimal über das Limit hinaus, reicht aber nicht in den notwendigen Bereich | Pre-CSD: chronisch unzureichend; Post-CSD: reaktiv an der Wellenfront |
 | **Oligämische Phase** | Auf die initiale Vasodilatation folgt Vasokonstriktion – die eigentliche Durchblutungsminderung | Erklärt die visuelle Aura: Okzipitalkortex betroffen, Blutfluss reduziert |
-| **Metabolische Erschöpfung** | Glukose- und Sauerstoffdepletion in der Wellenspur | Neuronen funktionell stumm, können nicht mehr feuern → Spreading Depression |
+| **Metabolische Erschöpfung** | Glukose- und Sauerstoffdepletion in der Wellenspur | Neuronen funktionell stumm, können nicht mehr feuern $\rightarrow$ Spreading Depression |
 
 **Die Post-CSD metabolische Krise ist nicht der Auslöser der CSD, sondern ihre Konsequenz.** Der Versuch des Organismus, die Energieversorgung zu erhöhen (neurovaskuläre Kopplung), kann den Rückstand nicht vollständig ausgleichen, weil die Geschwindigkeit der Ionenumkehr die Regenerationskapazität übersteigt. Hinter der Wellenfront verbleibt ein metabolisch erschöpfter Kortex in Funktionsstille – klinisch als sensorische und motorische Ausfälle der Aura erfahrbar.
 
 **Die Pre-CSD metabolische Krise ist dagegen ein gradueller Vorläufer** — die ATP-Konkurrenz zwischen Vesikelrecycling und Ionenhomöostase akkumuliert über Stunden und senkt die CSD-Schwelle progressiv. Die Vasodilatation als Kompensationsversuch erklärt, warum CSD am Ende einer Destabilisierungssequenz steht, nicht am Anfang: Das System versucht, die Ionenhomöostase vaskulär aufrechtzuerhalten, und die CSD tritt ein, wenn diese Kompensation versagt.
 
-**Triptan-Mechanismus (Präzisierung):** Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) am trigeminalen Terminal — nicht die Feuerrate der peripheren trigeminalen Neurone (Giniatullin 2022, BJP), sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich. Dies erklärt die Triptan-Wirkung präziser als reine Vasokonstriktion: Triptane verschieben die ATP-Allokation zurück zugunsten der Ionenhomöostase [gesichert]. Quantitative Stützung: Elimination der Exozytose verdoppelt den präsynaptischen ATP-Spiegel auf 3,4 mM; Na⁺/K⁺-ATPase allein ist eine geringe Last (Rangaraju et al. 2014, Cell; Bhatt et al. 2021, Science Advances; Attwell & Laughlin 2001, Neuron).
+**Triptan-Mechanismus (Präzisierung):** Triptane (5-HT1B/1D-Agonisten) hemmen die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) am trigeminalen Terminal — nicht die Feuerrate der peripheren trigeminalen Neurone (Giniatullin 2022, BJP), sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS). Weniger Vesikelrecycling $\rightarrow$ weniger ATP-Verbrauch für Endozytose/V-ATPase $\rightarrow$ mehr ATP für Na⁺/K⁺-ATPase $\rightarrow$ Ionenhomöostase erholt sich. Dies erklärt die Triptan-Wirkung präziser als reine Vasokonstriktion: Triptane verschieben die ATP-Allokation zurück zugunsten der Ionenhomöostase [gesichert]. Quantitative Stützung: Elimination der Exozytose verdoppelt den präsynaptischen ATP-Spiegel auf 3,4 mM; Na⁺/K⁺-ATPase allein ist eine geringe Last (Rangaraju et al. 2014, Cell; Bhatt et al. 2021, Science Advances; Attwell & Laughlin 2001, Neuron).
 
-**Raphe-Kompensation (Glied 2, modellspezifisch):** Triptane aktivieren zusätzlich 5-HT1B/1D-Autorezeptoren auf Raphe-Terminalen (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen → Unterbrechung des Burst-Deplete-Zyklus → stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird [hypothetisch — modellspezifisch].
+**Raphe-Kompensation (Glied 2, modellspezifisch):** Triptane aktivieren zusätzlich 5-HT1B/1D-Autorezeptoren auf Raphe-Terminalen (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen $\rightarrow$ Unterbrechung des Burst-Deplete-Zyklus $\rightarrow$ stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird [hypothetisch — modellspezifisch].
 
 **Externe direkte Validierung der DRN-CSD-Kopplung (Cui et al. 2013)**
 
 Cui et al. (2013) lieferten den direkten tierexperimentellen Nachweis, dass die serotonerge DRN-Innervation des Kortex die CSD-Suszeptibilität moduliert. Nach pharmakologischer Degeneration der serotonergen DRN-Neurone in Ratten war (a) die Ausbreitungsgeschwindigkeit der CSD signifikant erhöht und (b) die Depolarisationswelle signifikant verbreitert. Eine permanente DRN-Serotonin-Insuffizienz erzeugt damit das, was im Modell die transiente Talschwingung der oszillatorischen DRN-Aktivität *funktional repliziert*: erniedrigter kortikaler 5-HT-Tonus, Wegfall der 5-HT1A-vermittelten Hyperpolarisation, erhöhte Anfälligkeit für CSD-Initiation und -Propagation.
 
-Die Konsequenz für die Modellinterpretation ist direkt: Der CSD-anfällige Zustand entsteht im modellinternen Mechanismus nicht in einem dauerhaft DRN-insuffizienten System, sondern *in jeder einzelnen Talschwingung* eines oszillatorischen Systems mit gleichem funktionalen Effekt. Cuis Befund stützt damit nicht nur die Existenz der DRN→CSD-Kopplung, sondern macht sie zur direkt etablierten Grundlage des Auslösemechanismus.
+Die Konsequenz für die Modellinterpretation ist direkt: Der CSD-anfällige Zustand entsteht im modellinternen Mechanismus nicht in einem dauerhaft DRN-insuffizienten System, sondern *in jeder einzelnen Talschwingung* eines oszillatorischen Systems mit gleichem funktionalen Effekt. Cuis Befund stützt damit nicht nur die Existenz der DRN$\rightarrow$CSD-Kopplung, sondern macht sie zur direkt etablierten Grundlage des Auslösemechanismus.
 
 Querverweis: Anhang K.2 für die ausführliche Einordnung im Kontext der externen Literaturkonvergenz.
 
@@ -353,9 +353,9 @@ Querverweis: Anhang K.2 für die ausführliche Einordnung im Kontext der externe
 
 Die Standardinterpretation der CSD ist pathologisch: ein Fehlereignis, das Schmerz verursacht und Funktion zerstört. Die im vorliegenden Modell entwickelte Analyse — gestützt durch die Tracker-Datenanalyse in Anhang B — legt eine funktionelle Reformulierung nahe:
 
-**Konventionell:** Trigger → Schwelle überschritten → CSD → Schmerz → Dysfunktion
+**Konventionell:** Trigger $\rightarrow$ Schwelle überschritten $\rightarrow$ CSD $\rightarrow$ Schmerz $\rightarrow$ Dysfunktion
 
-**Reformuliert:** Progressive kortikale Desynchronisation → Kompensation versagt → CSD als Notfall-Resynchronisation → Schmerz als metabolische Kosten → Kohärenz wiederhergestellt
+**Reformuliert:** Progressive kortikale Desynchronisation $\rightarrow$ Kompensation versagt $\rightarrow$ CSD als Notfall-Resynchronisation $\rightarrow$ Schmerz als metabolische Kosten $\rightarrow$ Kohärenz wiederhergestellt
 
 Eine vollständige CSD-Welle depolarisiert den gesamten Kortex einmal durch — jede Region, synchron, von vorne nach hinten. Danach folgt eine Phase kompletter Suppression, dann Repolarisation. Alle Regionen starten gleichzeitig neu. Das Patchwork aus desynchronisierten wachen und schlafenden Arealen wird gelöscht. Die thalamokortikale Schleife rekalibriert sich auf einen sauberen Zustand.
 
@@ -373,23 +373,23 @@ Der Schlaf nach einem Migräneanfall zeigt intensives, erinnerbares Träumen —
 
 **2. Naratriptan-Gegenprobe**
 
-Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall → verhindert den Reset → verhindert die REM-Konsolidierung → Traumerinnerung nimmt ab. Die Abnahme bewussten Träumens ist antiproportional zum Naratriptan-Konsum — kausal konsistent. Wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
+Sub-CSD-Intervention durch Naratriptan verhindert den vollen Anfall $\rightarrow$ verhindert den Reset $\rightarrow$ verhindert die REM-Konsolidierung $\rightarrow$ Traumerinnerung nimmt ab. Die Abnahme bewussten Träumens ist antiproportional zum Naratriptan-Konsum — kausal konsistent. Wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
 
 **3. Betablocker-Paradox**
 
-Unter Metoprolol: weniger Anfälle → weniger CSD-Resets → chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren. (Ausführliche Analyse in 4.5.3.)
+Unter Metoprolol: weniger Anfälle $\rightarrow$ weniger CSD-Resets $\rightarrow$ chronische Subkonsolidierung. Der „Dauerzustand von fast-Migräne, fast-Instabilität" (dokumentiert in Anhang C) ist der Zustand permanenter Fragmentierung ohne periodischen Reset. Die Betablocker entfernen den Kompensationsmechanismus, ohne den Upstream-Defekt zu adressieren. (Ausführliche Analyse in 4.5.3.)
 
 **4. Anfallstiming auf ansteigender Flanke (Phasenmodell, Anhang B.12)**
 
-15 Anfälle (PRE) korrelieren nicht mit dem Minimum des HR-Drop-Rhythmus, sondern mit der **ansteigenden Flanke** danach (Median: 2 Tage post-Minimum). Am Minimum ist die Fragmentierung maximal, aber das System insgesamt gedämpft — kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, kortikale Kohärenz noch nicht wiederhergestellt → Diskrepanz zwischen steigendem Arousal und fragmentiertem Kortex → CSD-Schwelle erreicht. Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude) — **Phasenmodell**, nicht Schwellenmodell. Dies verstärkt die CSD-als-Reset-These: Der Reset erfolgt, wenn das System aus der maximalen Desynchronisation heraus wieder Arousal aufbaut, nicht am Tiefpunkt selbst.
+15 Anfälle (PRE) korrelieren nicht mit dem Minimum des HR-Drop-Rhythmus, sondern mit der **ansteigenden Flanke** danach (Median: 2 Tage post-Minimum). Am Minimum ist die Fragmentierung maximal, aber das System insgesamt gedämpft — kein Trigger. Beim Wiederanstieg: sympathischer Drive kommt zurück, kortikale Kohärenz noch nicht wiederhergestellt $\rightarrow$ Diskrepanz zwischen steigendem Arousal und fragmentiertem Kortex $\rightarrow$ CSD-Schwelle erreicht. Der Anfall korreliert mit dDrop/dt (Änderungsrate), nicht mit Drop (Amplitude) — **Phasenmodell**, nicht Schwellenmodell. Dies verstärkt die CSD-als-Reset-These: Der Reset erfolgt, wenn das System aus der maximalen Desynchronisation heraus wieder Arousal aufbaut, nicht am Tiefpunkt selbst.
 
 **5. Traumerinnerung als subjektiver Kohärenzmarker (Anhang B.14)**
 
-POST zeigt bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nicht, ob der REM global konsolidiert ist — die Traumerinnerung ist das sensitivere Instrument. Dreifache Dissoziation: PRE ohne Anfall → keine Traumerinnerung (fragmentierter REM); PRE nach CSD → intensive Traumerinnerung (CSD-erzwungene Resynchronisation → konsolidierter REM); POST (LDX) → reguläre Traumerinnerung (pharmakologische Synchronisation ersetzt CSD-Reset). Die Abnahme bewussten Träumens unter Betablocker/Naratriptan ist antiproportional zum sub-CSD-Naratriptankonsum — wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
+POST zeigt bewussteres, intensiveres Träumen bei unverändertem REM-Anteil laut Tracker. Der Tracker misst nicht, ob der REM global konsolidiert ist — die Traumerinnerung ist das sensitivere Instrument. Dreifache Dissoziation: PRE ohne Anfall $\rightarrow$ keine Traumerinnerung (fragmentierter REM); PRE nach CSD $\rightarrow$ intensive Traumerinnerung (CSD-erzwungene Resynchronisation $\rightarrow$ konsolidierter REM); POST (LDX) $\rightarrow$ reguläre Traumerinnerung (pharmakologische Synchronisation ersetzt CSD-Reset). Die Abnahme bewussten Träumens unter Betablocker/Naratriptan ist antiproportional zum sub-CSD-Naratriptankonsum — wenn CSD reine Pathologie wäre, dürfte ihre Verhinderung keine Downstream-Verschlechterung der Schlafkonsolidierung produzieren.
 
 **6. NREM-Parasomnien als Manifestation der State-Instabilität**
 
-Somnambulismus und Pavor nocturnus sind NREM-Parasomnien — Standarderklärung: „inkomplettes Arousal aus Tiefschlaf." Im Modell: Raphe-Insuffizienz verhindert kohärentes State-Signal bei hohem Tiefschlaf-Drive → laminare Dissoziation. Verschiedene kortikale/subkortikale Systeme befinden sich gleichzeitig in verschiedenen Schlaf-Wach-Zuständen.
+Somnambulismus und Pavor nocturnus sind NREM-Parasomnien — Standarderklärung: „inkomplettes Arousal aus Tiefschlaf." Im Modell: Raphe-Insuffizienz verhindert kohärentes State-Signal bei hohem Tiefschlaf-Drive $\rightarrow$ laminare Dissoziation. Verschiedene kortikale/subkortikale Systeme befinden sich gleichzeitig in verschiedenen Schlaf-Wach-Zuständen.
 
 Dissoziationsarchitektur bei Pavor nocturnus (Beobachtung, n=1, Tochter mit ASD):
 
@@ -400,10 +400,10 @@ Dissoziationsarchitektur bei Pavor nocturnus (Beobachtung, n=1, Tochter mit ASD)
 | Subkortikaler Drive (limbisch) | Aktiv | Intention persistiert, Angstreaktion |
 | Semantische Bindung (temporo-parietal) | Offline | Hindernisse nicht als solche klassifiziert |
 | Exekutive Sequenzierung (PFC) | Offline | Handlungspläne scheitern jenseits der Initiierung |
-| Episodisches Encoding (Hippocampus) | Offline | Scheitern wird nicht registriert → Zykluswiederholung |
+| Episodisches Encoding (Hippocampus) | Offline | Scheitern wird nicht registriert $\rightarrow$ Zykluswiederholung |
 | Schmerzmodulation des Verhaltens | Offline | Kopfstoßen unterbricht Muster nicht |
 
-Kausalrichtung: Nicht thalamisches Filterleck (passive Gate-Störung), sondern Raphe-Insuffizienz → kein kohärentes State-Signal → Kortex verbleibt partiell aktiv → Differenzsignal zwischen asynchronen Regionen.
+Kausalrichtung: Nicht thalamisches Filterleck (passive Gate-Störung), sondern Raphe-Insuffizienz $\rightarrow$ kein kohärentes State-Signal $\rightarrow$ Kortex verbleibt partiell aktiv $\rightarrow$ Differenzsignal zwischen asynchronen Regionen.
 
 Familiäre Anamnese (Somnambulismus in Jugend, Tochter: Pavor nocturnus + ASD) stützt kongenitale Komponente (Hit 1).
 
@@ -413,13 +413,13 @@ Metoprolol **senkt** die CSD-Schwelle — es macht den Kortex anfälliger für C
 
 Diese Unterscheidung ist entscheidend: Unter Metoprolol ist die CSD-Baseline nicht *weiter entfernt* von der Schwelle, sondern *näher dran*. Die Attacken werden seltener, weil propagierte CSD gedämpft wird — aber die subklinische CSD-Aktivität nimmt zu. Das erklärt den hohen Naratriptan-Verbrauch (10 Dosen/Monat) unter Metoprolol-Prophylaxe: Die Baseline ist chronisch subklinisch-destabilisiert, und minimale Perturbation reicht, um symptomatische Durchbrüche zu erzeugen, die Akutintervention erfordern.
 
-**Iatrogene PRE-Fragmentierung:** Die in Anhang B dokumentierte PRE-Fragmentierung (vor LDX) ist teilweise iatrogen durch Metoprolol verstärkt. Metoprolol senkt die CSD-Schwelle → mehr subklinische CSD-Aktivität → mehr kortikale Mikrodesynchronisationen → stärkere SWS-Fragmentierung. Der vermeintlich protektive Effekt der Prophylaxe verschlechtert die Schlafkohärenz, die ihrerseits die Raphe-Instabilität am nächsten Tag verschärft — ein iatrogener Teufelskreis.
+**Iatrogene PRE-Fragmentierung:** Die in Anhang B dokumentierte PRE-Fragmentierung (vor LDX) ist teilweise iatrogen durch Metoprolol verstärkt. Metoprolol senkt die CSD-Schwelle $\rightarrow$ mehr subklinische CSD-Aktivität $\rightarrow$ mehr kortikale Mikrodesynchronisationen $\rightarrow$ stärkere SWS-Fragmentierung. Der vermeintlich protektive Effekt der Prophylaxe verschlechtert die Schlafkohärenz, die ihrerseits die Raphe-Instabilität am nächsten Tag verschärft — ein iatrogener Teufelskreis.
 
 | Zustand | Ohne Betablocker | Mit Betablocker |
 | :---- | :---- | :---- |
 | **CSD-Schwelle** | Endogen bestimmt | Gesenkt (nicht angehoben!) |
 | **CSD-Propagation** | Ungehemmt | Gedämpft |
-| **Verlauf** | Desynchronisation → Eskalation → volle CSD → harter Reset → sauberer Neustart | Desynchronisation → niedrigere Schwelle → häufigere subklinische CSD → Propagation gedämpft → kein voller Reset |
+| **Verlauf** | Desynchronisation $\rightarrow$ Eskalation $\rightarrow$ volle CSD $\rightarrow$ harter Reset $\rightarrow$ sauberer Neustart | Desynchronisation $\rightarrow$ niedrigere Schwelle $\rightarrow$ häufigere subklinische CSD $\rightarrow$ Propagation gedämpft $\rightarrow$ kein voller Reset |
 | **Akute Krise** | Ja — voller Migräneanfall | Selten (propagationsgehemmt), aber subklinische Aktivität erhöht |
 | **Anschließende Klarheit** | Ja — postiktal resynchronisierter Zustand | Nein — System bleibt in chronischer Sub-CSD-Destabilisierung |
 | **Naratriptan-Bedarf** | Niedrig (klare Attacken, klare Intervalle) | Hoch — 10/Monat, weil Baseline chronisch subklinisch |
@@ -435,18 +435,18 @@ Die Analogie: Fieberkrampf verhindern, aber die Infektion nicht behandeln — un
 
 | Dimension | Metoprolol | Lisdexamfetamin |
 | :---- | :---- | :---- |
-| **Wirkmechanismus** | Symptomatische Downstream-Intervention: *senkt* CSD-Schwelle, dämpft CSD-Propagation und autonome Kaskade | Kausale Upstream-Stabilisierung: dopaminerge Modulation der Raphe → stabiler serotonerger Tonus |
+| **Wirkmechanismus** | Symptomatische Downstream-Intervention: *senkt* CSD-Schwelle, dämpft CSD-Propagation und autonome Kaskade | Kausale Upstream-Stabilisierung: dopaminerge Modulation der Raphe $\rightarrow$ stabiler serotonerger Tonus |
 | **Effekt auf CSD-Schwelle** | Gesenkt — Kortex anfälliger für CSD-Initiation | Indirekt angehoben — stabile Raphe verhindert die Desynchronisation, die CSD auslöst |
 | **Effekt auf CSD-Propagation** | Gedämpft — initiierte CSD breitet sich schlechter aus | Irrelevant — CSD wird upstream verhindert |
-| **Effekt auf Desynchronisation** | Verschärft — gesenkte Schwelle → mehr subklinische CSD → iatrogene Fragmentierung | Beseitigt — tonischer Arousal-Drive hält Kortex synchron (Tracker-Evidenz: Episodenzahl/Stunde Deep p=0,005, REM p=0,005; Anhang B.3) |
-| **Effekt auf Reset-Bedarf** | Volle CSD propagationsgehemmt → kein Reset, aber subklinische Aktivität chronisch erhöht | Macht Reset unnötig → keine Akkumulation |
+| **Effekt auf Desynchronisation** | Verschärft — gesenkte Schwelle $\rightarrow$ mehr subklinische CSD $\rightarrow$ iatrogene Fragmentierung | Beseitigt — tonischer Arousal-Drive hält Kortex synchron (Tracker-Evidenz: Episodenzahl/Stunde Deep p=0,005, REM p=0,005; Anhang B.3) |
+| **Effekt auf Reset-Bedarf** | Volle CSD propagationsgehemmt $\rightarrow$ kein Reset, aber subklinische Aktivität chronisch erhöht | Macht Reset unnötig $\rightarrow$ keine Akkumulation |
 | **Naratriptan-Verbrauch** | Hoch (~10/Monat) — chronisch subklinische Baseline produziert häufige Durchbrüche | Minimal — stabile Baseline ohne Durchbrüche |
-| **Noradrenerge Dämpfung** | Ja — β₁-Blockade reduziert zentralen noradrenergen Tonus → Bewusstseinsschärfe reduziert | Nein — noradrenerge Wirkung bleibt erhalten bzw. wird verstärkt |
+| **Noradrenerge Dämpfung** | Ja — β₁-Blockade reduziert zentralen noradrenergen Tonus $\rightarrow$ Bewusstseinsschärfe reduziert | Nein — noradrenerge Wirkung bleibt erhalten bzw. wird verstärkt |
 | **Netto-Bewusstseinseffekt** | Dreifache Dämpfung: (1) pharmakologisch noradrenerg + (2) strukturell durch chronische Sub-CSD-Desynchronisation + (3) iatrogene SWS-Fragmentierung durch gesenkte CSD-Schwelle | Doppelte Enthemmung: (1) noradrenerge Dämpfung wegfällt + (2) Desynchronisation aufgelöst |
 
-Das subjektive Erleben unter Metoprolol — „wie eine leichte Ibuprofen-Dosis für das Bewusstsein" — ist die Summe aller drei Dämpfungen, wobei die iatrogene Komponente (gesenkte CSD-Schwelle → chronische subklinische Aktivität → SWS-Fragmentierung) bisher nicht als Metoprolol-Effekt erkannt wurde. Das „klarer und schärfer" unter LDX ist nicht LDX-Euphorie, sondern der Grundzustand ohne die dreifache Bremse.
+Das subjektive Erleben unter Metoprolol — „wie eine leichte Ibuprofen-Dosis für das Bewusstsein" — ist die Summe aller drei Dämpfungen, wobei die iatrogene Komponente (gesenkte CSD-Schwelle $\rightarrow$ chronische subklinische Aktivität $\rightarrow$ SWS-Fragmentierung) bisher nicht als Metoprolol-Effekt erkannt wurde. Das „klarer und schärfer" unter LDX ist nicht LDX-Euphorie, sondern der Grundzustand ohne die dreifache Bremse.
 
-LDX erreicht die Konsolidierung upstream: stabilisierte Raphe → kohärente thalamische Modulation → globale Zustandsübergänge → konsolidierter SWS und REM ohne CSD-Notwendigkeit. Der Tracker-Befund bestätigt: POST-Nap-Nächte zeigen null Noise-Fragmente — die pharmakologische Synchronisation ersetzt den CSD-Reset (Anhang B.8).
+LDX erreicht die Konsolidierung upstream: stabilisierte Raphe $\rightarrow$ kohärente thalamische Modulation $\rightarrow$ globale Zustandsübergänge $\rightarrow$ konsolidierter SWS und REM ohne CSD-Notwendigkeit. Der Tracker-Befund bestätigt: POST-Nap-Nächte zeigen null Noise-Fragmente — die pharmakologische Synchronisation ersetzt den CSD-Reset (Anhang B.8).
 
 **Evolutionäre Einordnung**
 
@@ -460,12 +460,12 @@ Der in Abschnitt 2.5.1 beschriebene B7/B8-Phasenversatz interagiert mit dem loka
 
 | Faktor | Beitrag am Punkt maximaler Phasenopposition |
 | :---- | :---- |
-| **SWS-Kohärenz** | Maximale räumliche Fragmentierung → minimale nächtliche Renormalisierung (vgl. Anhang B) |
-| **Raphe-Tagestonus** | Arbeitet komplett gegen externe Zeitstruktur → minimaler endogener Arousal-Drive während sozialer Wachzeit |
+| **SWS-Kohärenz** | Maximale räumliche Fragmentierung $\rightarrow$ minimale nächtliche Renormalisierung (vgl. Anhang B) |
+| **Raphe-Tagestonus** | Arbeitet komplett gegen externe Zeitstruktur $\rightarrow$ minimaler endogener Arousal-Drive während sozialer Wachzeit |
 | **Lokaler Schlaf** | Maximale Anfälligkeit — Regionen ohne externen Drive erfahren maximalen Mismatch zwischen endogener und sozialer Phase |
 | **Sub-CSD-Akkumulation** | Tägliche partielle Destabilisierung akkumuliert über die Woche, weil weder CSD-Reset noch adäquate SWS-Renormalisierung erfolgt |
 
-Die maximale Vulnerabilität liegt jedoch nicht am Tiefpunkt selbst, sondern auf der **ansteigenden Flanke** danach (Anhang B.12): Am Minimum ist das System gedämpft; beim Wiederanstieg des sympathischen Drive entsteht die Diskrepanz zwischen steigendem Arousal und noch fragmentiertem Kortex → CSD-Schwelle erreicht (Median 2 Tage nach Minimum, n=15). Minimale Perturbation reicht auf dieser Flanke. Der Migräneanfall resynchronisiert das System partiell (CSD als Reset), und der Zyklus beginnt erneut.
+Die maximale Vulnerabilität liegt jedoch nicht am Tiefpunkt selbst, sondern auf der **ansteigenden Flanke** danach (Anhang B.12): Am Minimum ist das System gedämpft; beim Wiederanstieg des sympathischen Drive entsteht die Diskrepanz zwischen steigendem Arousal und noch fragmentiertem Kortex $\rightarrow$ CSD-Schwelle erreicht (Median 2 Tage nach Minimum, n=15). Minimale Perturbation reicht auf dieser Flanke. Der Migräneanfall resynchronisiert das System partiell (CSD als Reset), und der Zyklus beginnt erneut.
 
 **Diagnostische Implikation:** Ein einzelnes Schlaf-EEG ist diagnostisch wertlos für dieses Muster, weil es einen zufälligen Punkt im Zyklus erfasst. Aussagekräftig wäre ein 14-Tage-EEG mit spezifischer Analyse der zyklusweisen N3-Position als Funktion der Tage seit dem letzten Migräneanfall. Kein Standardprotokoll misst dies.
 
@@ -506,17 +506,17 @@ Es existiert keine publizierte Studie, die CSD-Propagation in den Hirnstamm beim
 
 Sämtliche MBA-Symptome lassen sich ohne Brainstem-CSD erklären, wenn die architektonische Proximität der betroffenen Kerne zum Raphe-System berücksichtigt wird:
 
-| MBA-Symptom | Konventionell: Brainstem-CSD | Reattribution: B7-Depletion (vgl. 2.2.1) → ANS-Kollaps |
+| MBA-Symptom | Konventionell: Brainstem-CSD | Reattribution: B7-Depletion (vgl. 2.2.1) $\rightarrow$ ANS-Kollaps |
 |:------------|:----------------------------|:------------------------------------------|
 | Schwindel/Vertigo | CSD in vestibulären Kernen | Vestibuläre Kerne monosynaptisch von B7 innerviert; destabilisieren bei Raphe-Depletion direkt |
 | Übelkeit/Erbrechen | CSD in Area postrema/NTS | NTS als primäres B7-Ziel; ANS-Kollaps-Symptom, kein CSD-Symptom |
-| Bewusstseinsstörung | CSD in Retikulärformation | Raphe-Tonus-Verlust → Arousal-Insuffizienz; keine CSD nötig |
-| Dysarthrie | CSD in motorischen Hirnstammkernen | Motorische Koordination unter Raphe-Modulation; Depletion → Koordinationsverlust |
+| Bewusstseinsstörung | CSD in Retikulärformation | Raphe-Tonus-Verlust $\rightarrow$ Arousal-Insuffizienz; keine CSD nötig |
+| Dysarthrie | CSD in motorischen Hirnstammkernen | Motorische Koordination unter Raphe-Modulation; Depletion $\rightarrow$ Koordinationsverlust |
 | Tinnitus/Hypakusis | CSD in Cochleariskernen | Auditorische Verarbeitung über MGB (MRN-innerviert, vgl. D.7.2); Instabilität bei B8-Depletion |
-| Bilaterale Parästhesien | CSD bilateral im Hirnstamm | Bilaterale Raphe-Projektion → bilaterale Symptome ohne bilaterale CSD |
-| Ataxie | CSD im Cerebellum | Cerebellare Raphe-Innervierung gesichert; Depleted → Koordinationsverlust |
+| Bilaterale Parästhesien | CSD bilateral im Hirnstamm | Bilaterale Raphe-Projektion $\rightarrow$ bilaterale Symptome ohne bilaterale CSD |
+| Ataxie | CSD im Cerebellum | Cerebellare Raphe-Innervierung gesichert; Depleted $\rightarrow$ Koordinationsverlust |
 
-**Parsimoniegewinn:** Die Reattribution eliminiert eine unbelegte Hilfshypothese (Brainstem-CSD beim Menschen) und erklärt alle MBA-Symptome aus einem Mechanismus, der bereits im Modell etabliert ist (B7/B8-Interferenz → Downstream-Destabilisierung).
+**Parsimoniegewinn:** Die Reattribution eliminiert eine unbelegte Hilfshypothese (Brainstem-CSD beim Menschen) und erklärt alle MBA-Symptome aus einem Mechanismus, der bereits im Modell etabliert ist (B7/B8-Interferenz $\rightarrow$ Downstream-Destabilisierung).
 
 **Temporale Vorhersage**
 
@@ -526,7 +526,7 @@ Einzelfallbeobachtung (Anhang B.20): ANS-Symptome 3,5 Stunden vor der kortikalen
 
 **Einordnung: Was als „Prodrom" gilt, ist der Primärprozess**
 
-Die MBA-Symptome werden klinisch häufig als „Prodromi" der Migräne beschrieben — Vorboten des eigentlichen Anfalls. Im Modell sind sie das Gegenteil: Sie sind der *primäre* Prozess (B7→ANS-Kern-Destabilisierung), der nur prodromal erscheint, weil die nachfolgende CSD dramatischer ist und das klinische Bild dominiert.
+Die MBA-Symptome werden klinisch häufig als „Prodromi" der Migräne beschrieben — Vorboten des eigentlichen Anfalls. Im Modell sind sie das Gegenteil: Sie sind der *primäre* Prozess (B7$\rightarrow$ANS-Kern-Destabilisierung), der nur prodromal erscheint, weil die nachfolgende CSD dramatischer ist und das klinische Bild dominiert.
 
 Die Analogie zur CSD-Korrektur (4.4) ist direkt: Wie CSD nicht der universelle Migränemechanismus ist (sondern Eskalationsstufe bei maximalem Phasenoffset), so ist MBA nicht Brainstem-CSD (sondern der architektonisch proximale ANS-Kollaps, der zeitlich mit der CSD zusammenfällt).
 
@@ -552,8 +552,8 @@ Drei distinkte Zustände:
 | B7-Zustand | B8-Zustand | Phasenoffset | CSD-Risiko | Begründung |
 |:-----------|:-----------|:-------------|:-----------|:-----------|
 | Depleted (kein Signal) | Stabil | Keiner (nur ein Oszillator aktiv) | Kein CSD | Kein Interferenzpartner; ANS-Kollaps durch Entzug, aber keine kortikale Interferenz |
-| Aphasisch (feuert, aber reduzierte Amplitude, inkonsistenter Delay) | Stabil(er) | Maximal | **Maximal** | B7 stört B8-Takt, kann sich aber nicht synchronisieren → Interferenz → CSD |
-| Synchron | Synchron | Minimal | Kein CSD | Beide Oszillatoren takten kohärent → stabile Modulation |
+| Aphasisch (feuert, aber reduzierte Amplitude, inkonsistenter Delay) | Stabil(er) | Maximal | **Maximal** | B7 stört B8-Takt, kann sich aber nicht synchronisieren $\rightarrow$ Interferenz $\rightarrow$ CSD |
+| Synchron | Synchron | Minimal | Kein CSD | Beide Oszillatoren takten kohärent $\rightarrow$ stabile Modulation |
 
 Das CSD-Risikofenster ist damit schmal und transient: Es öffnet sich bei partieller B7-Regeneration (nach Depletion — biologisch: TPH2 arbeitet die Tryptophan-Pipeline ab, Vesikel werden partiell refüllt, vgl. 2.2.1) und schließt sich entweder durch vollständige Resynchronisation (günstiger Ausgang) oder durch erneute Depletion (ungünstiger Ausgang). Die partielle Regeneration reicht für Feuern, nicht für konsistente Vesikelfreisetzung pro Spike — genau dies erzeugt den aphasischen Zustand.
 
@@ -563,9 +563,9 @@ Die Kombination aus B7- und B8-Zustand determiniert den klinischen Phänotyp. Di
 
 | B7-Zustand | B8-Zustand | Interferenz | ANS-Symptomatik | Klinischer Phänotyp |
 |:-----------|:-----------|:------------|:----------------|:-------------------|
-| Instabil/aphasisch | Stabil(er) | Ja (B7 aphasisch gegen B8-Takt) | Ja (B7→ANS monosynaptisch) | **MBA-Phänotyp:** ANS-Symptome + CSD |
+| Instabil/aphasisch | Stabil(er) | Ja (B7 aphasisch gegen B8-Takt) | Ja (B7$\rightarrow$ANS monosynaptisch) | **MBA-Phänotyp:** ANS-Symptome + CSD |
 | Stabil | Instabil | Ja (B8 aphasisch gegen B7-Takt) | Nein (B8 projiziert nicht primär auf ANS-Kerne) | **Migräne mit Aura ohne ANS-Symptomatik** |
-| Depleted | Stabil | Nein (nur ein aktiver Oszillator) | Ja (Entzug) | **Reine ANS-Symptomatik, keine CSD.** Klinisch: NTS-Tonusinsuffizienz — moderate HR-Elevation (adrenal, nicht neural), Flushing, Erschöpfung bei erhaltener Kognition. Keine orthostatische Tachykardie. Tonischer NTS-5-HT2A-Pfad insuffizient → RVLM unreguliert → HPA-Kompensation (vgl. 5.7). Differentialdiagnostische Überlappung mit POTS bei Flushing und Erschöpfung, aber distinkt durch Fehlen des posturalen Triggers. |
+| Depleted | Stabil | Nein (nur ein aktiver Oszillator) | Ja (Entzug) | **Reine ANS-Symptomatik, keine CSD.** Klinisch: NTS-Tonusinsuffizienz — moderate HR-Elevation (adrenal, nicht neural), Flushing, Erschöpfung bei erhaltener Kognition. Keine orthostatische Tachykardie. Tonischer NTS-5-HT2A-Pfad insuffizient $\rightarrow$ RVLM unreguliert $\rightarrow$ HPA-Kompensation (vgl. 5.7). Differentialdiagnostische Überlappung mit POTS bei Flushing und Erschöpfung, aber distinkt durch Fehlen des posturalen Triggers. |
 | Stabil | Depleted | Nein | Nein | **Zirkadianer Drift, hippocampale Symptome, keine Migräne** |
 
 **Zeile 2** ist klinisch beschrieben aber nie als differentieller Mechanismus erkannt: Migräne mit klassischer Aura ohne Übelkeit, ohne Schwindel, ohne Kreislaufinstabilität — konventionell als „mildere Form" kodiert, im Modell als B8-dominante Instabilität bei stabilem B7.
@@ -582,7 +582,7 @@ LDX stabilisiert B7 intranukleär und erweitert damit den Kohärenzbereich — d
 
 LDX reicht für den polysynaptischen kortikalen Pfad (CSD-Schwelle wird länger gehalten), aber nicht für die monosynaptischen ANS-Kerne unter Extrembelastung. Hierarchie der LDX-Schutzwirkung:
 
-**PFC** (pharmakologisch + architektonisch geschützt, MD-Loop) → **Kortex allgemein** (CSD-Schwelle angehoben, aber endlich) → **ANS-Kerne** (monosynaptisch, kein kortikaler Puffer, fallen zuerst)
+**PFC** (pharmakologisch + architektonisch geschützt, MD-Loop) $\rightarrow$ **Kortex allgemein** (CSD-Schwelle angehoben, aber endlich) $\rightarrow$ **ANS-Kerne** (monosynaptisch, kein kortikaler Puffer, fallen zuerst)
 
 Die CSD-Auslösung am 07.04.2026 korreliert zeitlich nicht mit dem SCN-Abendsignal, sondern mit dem LDX-Abklingen. LDX-Abklingen destabilisiert auch B8 (B8 ist der stabilere, aber auch er ist auf LDX-Unterstützung angewiesen). Der Moment, in dem **auch B8** die Kohärenz verliert, ist der CSD-Trigger — beide Oszillatoren aktiv, beide instabil, maximale Interferenz.
 
@@ -590,17 +590,17 @@ Die CSD-Auslösung am 07.04.2026 korreliert zeitlich nicht mit dem SCN-Abendsign
 
 Die klinische Empfehlung „Sport kann Migräne triggern" (38% Lebenszeitprävalenz bei Migränepatienten, Onset durchschnittlich 160 min nach Belastungsende — Koppen et al. 2013, J Headache Pain) ist empirisch robust aber mechanistisch nie sauber erklärt. Standarderklärung: „erhöhte neuronale Erregbarkeit durch metabolischen Stress" — unspezifisch.
 
-**Modellspezifische Erklärung:** Sport verbraucht B7-Reserven (vgl. 2.2.1) durch sympathischen Maximaltakt. Nicht der Sport ist der Trigger, sondern die Transition danach: Die anschließende Ruhe regeneriert B7 partiell → aphasischer B7 interferiert mit stabilem(erem) B8 → CSD (vgl. 4.7.1).
+**Modellspezifische Erklärung:** Sport verbraucht B7-Reserven (vgl. 2.2.1) durch sympathischen Maximaltakt. Nicht der Sport ist der Trigger, sondern die Transition danach: Die anschließende Ruhe regeneriert B7 partiell $\rightarrow$ aphasischer B7 interferiert mit stabilem(erem) B8 $\rightarrow$ CSD (vgl. 4.7.1).
 
 Der Mechanismus ist identisch mit der Nap-Kaskade (B.5, B.11) — nur der Einstiegspfad unterscheidet sich (vgl. B.11.2):
 
 | Phase | Physiologischer Prozess | B7-Zustand |
 |:------|:----------------------|:-----------|
-| **Exertion** | Sympathischer Maximaltakt (HR 155–170) | B7/B8 synchron am Limit → Reserven werden aufgebraucht |
-| **Transition** | Belastungsende → parasympathischer Rebound | B7 beginnt zu schwanken (SD steigt, Delay inkonsistent) |
-| **Erzwungene Ruhe** | Autonome Dekompensation oder willentliche Pause | B7 depleted → Fixierung (SD/RMSSD niedrig) |
+| **Exertion** | Sympathischer Maximaltakt (HR 155–170) | B7/B8 synchron am Limit $\rightarrow$ Reserven werden aufgebraucht |
+| **Transition** | Belastungsende $\rightarrow$ parasympathischer Rebound | B7 beginnt zu schwanken (SD steigt, Delay inkonsistent) |
+| **Erzwungene Ruhe** | Autonome Dekompensation oder willentliche Pause | B7 depleted $\rightarrow$ Fixierung (SD/RMSSD niedrig) |
 | **Partielle Regeneration** | B7-Potential partiell wiederhergestellt | B7 wieder online, aber aphasisch (vgl. 5.5) |
-| **CSD-Fenster** | Aphasischer B7 interferiert mit B8 | Interferenz → CSD (falls Regeneration für Kohärenz nicht reicht) |
+| **CSD-Fenster** | Aphasischer B7 interferiert mit B8 | Interferenz $\rightarrow$ CSD (falls Regeneration für Kohärenz nicht reicht) |
 
 Die 160-Minuten-Latenz (Koppen et al.) ist konsistent mit dem Regenerations-Interferenz-Fenster: Depletion + Ruhephase + partielle Regeneration + Kaskade.
 
@@ -608,7 +608,7 @@ Die 160-Minuten-Latenz (Koppen et al.) ist konsistent mit dem Regenerations-Inte
 
 **Autonome Begleitsymptomatik** während der post-exertionalen Transition — Kreislaufinstabilität, Übelkeit, Schwindel — ist autonomer Natur und in Kapitel 5 beschrieben (vgl. 5.5, 5.6). Die CSD-Auslösung selbst folgt dem in 4.7 beschriebenen Zwei-Oszillator-Mechanismus.
 
-### **4.9 Sumatriptan-Mechanismus: Schmerzblockade → Schlaf-Enabler → SCN-vermittelte Resynchronisation**
+### **4.9 Sumatriptan-Mechanismus: Schmerzblockade $\rightarrow$ Schlaf-Enabler $\rightarrow$ SCN-vermittelte Resynchronisation**
 
 **Was Sumatriptan tut und was es nicht tut**
 
@@ -618,9 +618,9 @@ Sumatriptan unterbricht den Migräneanfall **nicht**. Der 5-HT1B/1D-Agonismus he
 
 Der therapeutische Effekt entsteht indirekt über eine Drei-Schritt-Kaskade:
 
-1. **Sumatriptan → Schmerzblockade:** Trigeminovaskuläre Weiterleitung stumm geschaltet
-2. **Schmerzfreiheit → Schlaf möglich:** Ohne nozizeptiven Input kann das System in den Schlaf übergehen
-3. **Schlaf → SCN-vermittelte Resynchronisation:** Schlaf entkoppelt den Kortex vom Raphe-Input → der SCN (suprachiasmatischer Nucleus) übernimmt die Taktgebung → über 3–4 Stunden werden die desynchronisierten Modulationssysteme re-aligniert
+1. **Sumatriptan $\rightarrow$ Schmerzblockade:** Trigeminovaskuläre Weiterleitung stumm geschaltet
+2. **Schmerzfreiheit $\rightarrow$ Schlaf möglich:** Ohne nozizeptiven Input kann das System in den Schlaf übergehen
+3. **Schlaf $\rightarrow$ SCN-vermittelte Resynchronisation:** Schlaf entkoppelt den Kortex vom Raphe-Input $\rightarrow$ der SCN (suprachiasmatischer Nucleus) übernimmt die Taktgebung $\rightarrow$ über 3–4 Stunden werden die desynchronisierten Modulationssysteme re-aligniert
 
 **Entscheidend:** Die 3–4 Stunden bis zur klinischen Besserung reflektieren die **SCN-Resynchronisationszeit**, nicht die Sumatriptan-Halbwertszeit. Der Zeitverlauf ist biologisch determiniert durch die Geschwindigkeit, mit der der SCN die driftenden Oszillatoren (Raphe, LC, thalamische Schlafspindel-Generatoren) wieder in Phase bringen kann. Einzelfallbeleg: Anhang B.15 (Migräne-Nacht 30./31.03.2026, Post-Sumatriptan-Drei-Drittel-Analyse).
 
@@ -631,7 +631,7 @@ Das klinisch bekannte limitierte Zeitfenster für Sumatriptan-Wirksamkeit erklä
 | Faktor | Mechanismus | Konsequenz |
 | :---- | :---- | :---- |
 | **Zentrale Sensitivierung** | Nach Etablierung zentraler Sensitivierung (Allodynie-Phase) wird der Schmerz zentral unterhalten, unabhängig von peripherer Trigeminusaktivierung | Periphere 5-HT1B/1D-Blockade greift nicht mehr |
-| **Rezeptordesensitivierung** | 5-HT1B/1D-Rezeptoren desensitivieren unter anhaltendem serotonergen Stress | Reduzierte Bindungsaffinität → Sumatriptan weniger wirksam |
+| **Rezeptordesensitivierung** | 5-HT1B/1D-Rezeptoren desensitivieren unter anhaltendem serotonergen Stress | Reduzierte Bindungsaffinität $\rightarrow$ Sumatriptan weniger wirksam |
 
 Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto geringer die Wirksamkeit — nicht weil der Schmerz „stärker" wird, sondern weil der Schmerz den peripheren Kanal verlässt, auf den Sumatriptan wirkt.
 
@@ -639,14 +639,14 @@ Beide Mechanismen erzeugen dasselbe klinische Bild: Je später die Gabe, desto g
 
 Die vollständige Triptan-Mechanistik im Modell umfasst drei Glieder, die über unterschiedliche Rezeptorpopulationen und mit unterschiedlichen Evidenzgraden operieren:
 
-**Glied 1 — Trigeminales Terminal [gesichert]:** 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) — nicht die Feuerrate, sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP). Weniger Vesikelrecycling → weniger ATP-Verbrauch für Endozytose/V-ATPase → mehr ATP für Na⁺/K⁺-ATPase → Ionenhomöostase erholt sich (vgl. 4.4.3). Quantitative Stützung: Elimination der Exozytose verdoppelt präsynaptischen ATP-Spiegel auf 3,4 mM (Rangaraju et al. 2014, Cell); Vesikelpool ist dominante metabolische Ruhelast am Nerventerminal (Bhatt et al. 2021, Science Advances); synaptisches Energiebudget: Vesikelrecycling > Ionenpumpen (Attwell & Laughlin 2001, Neuron; Harris et al. 2012, Neuron).
+**Glied 1 — Trigeminales Terminal [gesichert]:** 5-HT1B/1D-Agonismus hemmt die präsynaptische Transmitterfreisetzung (CGRP, Substanz P, Glutamat) — nicht die Feuerrate, sondern die Vesikelexozytose pro Spike (Burstein et al. 2004, PNAS; Giniatullin 2022, BJP). Weniger Vesikelrecycling $\rightarrow$ weniger ATP-Verbrauch für Endozytose/V-ATPase $\rightarrow$ mehr ATP für Na⁺/K⁺-ATPase $\rightarrow$ Ionenhomöostase erholt sich (vgl. 4.4.3). Quantitative Stützung: Elimination der Exozytose verdoppelt präsynaptischen ATP-Spiegel auf 3,4 mM (Rangaraju et al. 2014, Cell); Vesikelpool ist dominante metabolische Ruhelast am Nerventerminal (Bhatt et al. 2021, Science Advances); synaptisches Energiebudget: Vesikelrecycling > Ionenpumpen (Attwell & Laughlin 2001, Neuron; Harris et al. 2012, Neuron).
 
-**Glied 2 — Raphe-Terminal [hypothetisch — modellspezifisch]:** 5-HT1B/1D-Autorezeptoren auf DRN/MRN-Terminalen werden durch Triptane aktiviert (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1, vgl. 2.2): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen → Unterbrechung des Burst-Deplete-Zyklus (vgl. 2.2.1) → stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird.
+**Glied 2 — Raphe-Terminal [hypothetisch — modellspezifisch]:** 5-HT1B/1D-Autorezeptoren auf DRN/MRN-Terminalen werden durch Triptane aktiviert (Roberts et al. 2001: Sumatriptan senkt 5-HT-Freisetzung im DRN auf 52% via 5-HT1D; im MRN ebenfalls, dort 5-HT1B-vermittelt; Davidson & Stamford 2000: funktioneller Nachweis). Im Modell kompensiert dies den defekten 5-HT1A-Autorezeptor-Feedback (Hit 1, vgl. 2.2): Die 1B/1D-Bremse verlängert das Minimalintervall zwischen Freisetzungsereignissen $\rightarrow$ Unterbrechung des Burst-Deplete-Zyklus (vgl. 2.2.1) $\rightarrow$ stabilerer Takt, nicht reduzierter Takt. Die Synchronisationskapazität steigt, weil die Depletion verhindert wird.
 
-**Glied 3 — MOH-Mechanismus [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die kompensatorische 1B/1D-Bremse desensitisiert, fällt das System zurück in den ungebremsten Burst-Modus → CSD-Bereitschaft steigt → Medication Overuse Headache. Die kurze Halbwertszeit ist nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren (vgl. E.5).
+**Glied 3 — MOH-Mechanismus [hypothetisch — modellspezifisch]:** Chronische Triptan-Exposition desensitisiert selektiv 5-HT1B-Autorezeptoren, nicht 5-HT1D-Autorezeptoren (Davidson & Stamford 2000). Wenn die kompensatorische 1B/1D-Bremse desensitisiert, fällt das System zurück in den ungebremsten Burst-Modus $\rightarrow$ CSD-Bereitschaft steigt $\rightarrow$ Medication Overuse Headache. Die kurze Halbwertszeit ist nicht die Erklärung der fehlenden Prophylaxewirkung, sondern die Voraussetzung dafür, dass die Autorezeptoren bei intermittierender Gabe nicht desensitisieren (vgl. E.5).
 
 | Glied | Wirkmechanismus | Rezeptor | Evidenzgrad |
 |:------|:---------------|:---------|:------------|
-| **1 — Trigeminal** | Präsynaptische Transmitterhemmung → ATP-Allokationsverschiebung → Ionenhomöostase | 5-HT1B/1D auf trigeminalen Terminalen | Gesichert |
+| **1 — Trigeminal** | Präsynaptische Transmitterhemmung $\rightarrow$ ATP-Allokationsverschiebung $\rightarrow$ Ionenhomöostase | 5-HT1B/1D auf trigeminalen Terminalen | Gesichert |
 | **2 — Raphe-Kompensation** | Autorezeptor-vermittelte Bremse des Burst-Deplete-Zyklus | 5-HT1B/1D auf DRN/MRN-Terminalen | Hypothetisch — modellspezifisch |
-| **3 — MOH** | 1B-Desensitisierung → Verlust der kompensatorischen Bremse → Rückfall in Burst-Modus | 5-HT1B (selektiv desensitisiert) | Hypothetisch — modellspezifisch |
+| **3 — MOH** | 1B-Desensitisierung $\rightarrow$ Verlust der kompensatorischen Bremse $\rightarrow$ Rückfall in Burst-Modus | 5-HT1B (selektiv desensitisiert) | Hypothetisch — modellspezifisch |

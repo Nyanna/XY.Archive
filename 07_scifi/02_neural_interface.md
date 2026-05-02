@@ -72,7 +72,7 @@ But for reading and writing of *imagined content* — the decoded engram in acti
 
 ## 5. The Decoding Dead-End
 
-The dominant paradigm in brain-computer interface research, without exception, follows a single pipeline: signal acquisition → processing and decoding → output → feedback. An external decoder interprets neural activity and translates it into commands.
+The dominant paradigm in brain-computer interface research, without exception, follows a single pipeline: signal acquisition $\rightarrow$ processing and decoding $\rightarrow$ output $\rightarrow$ feedback. An external decoder interprets neural activity and translates it into commands.
 
 This paradigm has two structural limitations that cannot be overcome by technological refinement.
 

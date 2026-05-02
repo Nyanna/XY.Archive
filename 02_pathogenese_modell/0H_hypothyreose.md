@@ -15,10 +15,10 @@ Die Verbindung zwischen Schilddrüsenhormonen und dem serotonergen System ist ro
 
 | Befund | Spezies | Evidenzniveau | Quelle |
 |:-------|:--------|:--------------|:-------|
-| Hypothyreose → reduzierte 5-HT-Responsivität, reversibel unter T4-Substitution | Mensch | Gesichert | Cleare et al. 1995; Duval et al. 1999 |
-| T4-Gabe → Desensitivierung der 5-HT1A-Autorezeptoren in der Raphe → Disinhibition kortikaler/hippocampaler 5-HT-Freisetzung | Ratte | Gesichert (mehrfach repliziert) | Bauer et al. 2002 (Review); Gur et al. 1999 |
-| Hypothyreose → erhöhter 5-HT-Turnover im Hirnstamm bei gleichzeitig erniedrigter kortikaler 5-HT-Konzentration | Ratte | Gesichert | Henley & Vladic 1997; Bauer et al. 2002 |
-| Experimentelle Hypothyreose → 24% Anstieg der peripheren 5-HT-Konzentration | Ratte | Gesichert | De Escobar et al. (zit. in Pinna et al. 2013) |
+| Hypothyreose $\rightarrow$ reduzierte 5-HT-Responsivität, reversibel unter T4-Substitution | Mensch | Gesichert | Cleare et al. 1995; Duval et al. 1999 |
+| T4-Gabe $\rightarrow$ Desensitivierung der 5-HT1A-Autorezeptoren in der Raphe $\rightarrow$ Disinhibition kortikaler/hippocampaler 5-HT-Freisetzung | Ratte | Gesichert (mehrfach repliziert) | Bauer et al. 2002 (Review); Gur et al. 1999 |
+| Hypothyreose $\rightarrow$ erhöhter 5-HT-Turnover im Hirnstamm bei gleichzeitig erniedrigter kortikaler 5-HT-Konzentration | Ratte | Gesichert | Henley & Vladic 1997; Bauer et al. 2002 |
+| Experimentelle Hypothyreose $\rightarrow$ 24% Anstieg der peripheren 5-HT-Konzentration | Ratte | Gesichert | De Escobar et al. (zit. in Pinna et al. 2013) |
 | T3 erhöht 5-HT2-Rezeptorsensitivität im Kortex | Ratte | Hinweisend | Bauer et al. 2002 |
 
 #### H.1.2 Mechanistische Konvergenz mit dem Primärdefekt
@@ -45,12 +45,12 @@ Eine Metaanalyse über 54 Studien (J Integr Neurosci 2025) liefert ein differenz
 
 | Parameter | Richtung bei ADHS | SMD (95% CI) | Interpretation im Modell |
 |:----------|:-----------------|:-------------|:-------------------------|
-| fT3 | ↑ | 0,43 (0,12–0,75) | Kompensatorisch gesteigerte T4→T3-Konversion zur Aufrechterhaltung der serotonergen Modulation |
-| fT4 | ↓ | −0,67 (−0,69 bis −0,64) | Primäres Defizit oder Verbrauch durch erhöhte Konversion |
-| TSH | ↓ | −0,22 (−0,41 bis −0,03) | Zentrale Dysregulation konsistent mit Raphe→TRH-Pfad (H.2) |
-| TPO-AK | ↑ (nur bei ASD) | 0,37 (0,08–0,67) | Autoimmune Achse spezifisch bei ASD, nicht bei ADHS |
+| fT3 | $\uparrow$ | 0,43 (0,12–0,75) | Kompensatorisch gesteigerte T4 $\rightarrow$ T3-Konversion zur Aufrechterhaltung der serotonergen Modulation |
+| fT4 | $\downarrow$ | −0,67 (−0,69 bis −0,64) | Primäres Defizit oder Verbrauch durch erhöhte Konversion |
+| TSH | $\downarrow$ | −0,22 (−0,41 bis −0,03) | Zentrale Dysregulation konsistent mit Raphe $\rightarrow$ TRH-Pfad (H.2) |
+| TPO-AK | $\uparrow$ (nur bei ASD) | 0,37 (0,08–0,67) | Autoimmune Achse spezifisch bei ASD, nicht bei ADHS |
 
-Das fT3↑/fT4↓-Profil ist modellrelevant: Es zeigt nicht einfach Hypothyreose, sondern eine kompensatorisch gesteigerte Konversion — das System priorisiert T3-Verfügbarkeit, vermutlich weil T3 die funktionell relevante Form für die 5-HT1A-Desensitivierung ist (vgl. H.1.1). Dieses Profil könnte bei erschöpfter Konversionskapazität in manifeste Hypothyreose umschlagen — ein Entwicklungspfad, der zeitlich mit der adoleszenten thalamischen Bandbreitenerweiterung zusammenfallen könnte.
+Das fT3$\uparrow$/fT4$\downarrow$-Profil ist modellrelevant: Es zeigt nicht einfach Hypothyreose, sondern eine kompensatorisch gesteigerte Konversion — das System priorisiert T3-Verfügbarkeit, vermutlich weil T3 die funktionell relevante Form für die 5-HT1A-Desensitivierung ist (vgl. H.1.1). Dieses Profil könnte bei erschöpfter Konversionskapazität in manifeste Hypothyreose umschlagen — ein Entwicklungspfad, der zeitlich mit der adoleszenten thalamischen Bandbreitenerweiterung zusammenfallen könnte.
 
 Mütterliche Hypothyreose ist ein eigenständiger Risikofaktor für ADHS beim Kind (Getahun et al. 2020; aHR 1,27; 95% CI 1,15–1,41), mit stärkstem Effekt bei Diagnose im ersten Trimester. Eine Metaanalyse (Ge et al. 2020, 29 Studien) bestätigt die Assoziation (OR 1,14).
 
@@ -104,14 +104,14 @@ Chronische periphere 5-HT-Gabe senkt T3- und T4-Plasmaspiegel unabhängig von de
 
 | Pfad | Richtung | Evidenzniveau |
 |:-----|:---------|:--------------|
-| T3 → 5-HT1A-Desensitivierung in Raphe | SD → Raphe | Gesichert (Tier); hinweisend (Mensch) |
-| 5-HT → TRH-Neurone im PVN | Raphe → SD | Gesichert (neuroanatomisch) |
+| T3 $\rightarrow$ 5-HT1A-Desensitivierung in Raphe | SD $\rightarrow$ Raphe | Gesichert (Tier); hinweisend (Mensch) |
+| 5-HT $\rightarrow$ TRH-Neurone im PVN | Raphe $\rightarrow$ SD | Gesichert (neuroanatomisch) |
 | Raphe-Neurone produzieren TRH | Raphe = SD | Gesichert (neurochemisch) |
-| Peripheres 5-HT → Deiodinase → T3/T4 | 5-HT → SD (peripher) | Gesichert (Tier) |
+| Peripheres 5-HT $\rightarrow$ Deiodinase $\rightarrow$ T3/T4 | 5-HT $\rightarrow$ SD (peripher) | Gesichert (Tier) |
 
 ### H.3 Autoimmune Achse: Hashimoto als parallele Downstream-Manifestation
 
-Das Modell postuliert eine immunmodulatorische Dysfunktion als Downstream-Effekt der Raphe-Dysregulation, die sich klinisch als atopische Dermatitis manifestiert (vgl. 2.3). Die serielle Achsenstruktur (Anhang G.3) beschreibt den Pfad: Raphe-Defekt → Immunmodulationsstörung → atopische Grunderkrankung → GC-Behandlung → Hit 2.
+Das Modell postuliert eine immunmodulatorische Dysfunktion als Downstream-Effekt der Raphe-Dysregulation, die sich klinisch als atopische Dermatitis manifestiert (vgl. 2.3). Die serielle Achsenstruktur (Anhang G.3) beschreibt den Pfad: Raphe-Defekt $\rightarrow$ Immunmodulationsstörung $\rightarrow$ atopische Grunderkrankung $\rightarrow$ GC-Behandlung $\rightarrow$ Hit 2.
 
 Autoimmunthyreoiditis (Hashimoto) passt in dieses Schema als parallele autoimmune Downstream-Manifestation — dasselbe immunmodulatorische Defizit, ein anderes Zielorgan. Diese Zuordnung ist epidemiologisch plausibel:
 
@@ -135,7 +135,7 @@ TSH allein ist für die modellrelevante Fragestellung unzureichend: Ein normwert
 
 | Laborkonstellation | Interpretation | Konsequenz |
 |:-------------------|:---------------|:-----------|
-| fT4 adäquat, fT3 niedrig | Konversionsschwäche (T4→T3) | T4-Dosiserhöhung wirkungslos; T3-Kombipräparat oder Liothyronin-Zusatz |
+| fT4 adäquat, fT3 niedrig | Konversionsschwäche (T4 $\rightarrow$ T3) | T4-Dosiserhöhung wirkungslos; T3-Kombipräparat oder Liothyronin-Zusatz |
 | fT4 niedrig, fT3 niedrig | Unterdosierung | T4-Dosiserhöhung indiziert |
 | fT4 und fT3 adäquat | Kein Handlungsbedarf auf SD-Seite | Raphe-Modulation durch T3 bereits im funktionalen Bereich |
 
@@ -150,7 +150,7 @@ Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die 
 | **H.5.1** | TPO-AK positiv (Hashimoto-Thyreoiditis) | Labordiagnostik | Positiv; erweitert autoimmune Downstream-Achse |
 | **H.5.2** | Optimierung der fT3-Versorgung verbessert Schlafkonsolidierung unabhängig von LDX-Dosis | Prä-/Post-Vergleich der Schlaf-Tracking-Daten (Fragmentierungsrate, Deep-Episoden-Dichte) nach Substitutionsanpassung | Reduktion der Fragmentierungsepisoden/h; Anstieg der Deep-Episodendauer |
 | **H.5.3** | Optimierung der fT3-Versorgung senkt Migränevulnerabilität | Prä-/Post-Vergleich Migränefrequenz über ≥3 Zyklen nach Substitutionsanpassung | Reduktion der Durchbruchereignisse unter LDX |
-| **H.5.4** | Bei gesichertem fT3-Defizit: T3-Supplementation hat stärkeren Effekt auf Schlafkonsolidierung als äquivalente T4-Dosiserhöhung | Sequentieller Vergleich (T4-Erhöhung → Washout → T3-Zusatz), Schlaf-Tracking | fT3-Direktsupplementation zeigt stärkere Verbesserung |
+| **H.5.4** | Bei gesichertem fT3-Defizit: T3-Supplementation hat stärkeren Effekt auf Schlafkonsolidierung als äquivalente T4-Dosiserhöhung | Sequentieller Vergleich (T4-Erhöhung $\rightarrow$ Washout $\rightarrow$ T3-Zusatz), Schlaf-Tracking | fT3-Direktsupplementation zeigt stärkere Verbesserung |
 
 ### H.6 Evidenztabelle
 
@@ -163,10 +163,10 @@ Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die 
 | Migräne-Prävalenz bei SCH 46–62% vs. 13–18% (OR 5,8–7,4) | Gesichert | Rubino et al. 2019; Rainero et al. 2015 |
 | Hashimoto assoziiert mit chronischer Migräne (OR 1,76) | Gesichert | Frontiers Neurol 2024 (n=928) |
 | ADHS-Patienten: erhöhte SD-Dysfunktionsrate (aOR 1,72) | Gesichert | Chen et al. 2018 (Taiwan, n=150.494) |
-| ADHS-Kinder: fT3↑, fT4↓, TSH↓ gegenüber Kontrollen | Gesichert (Metaanalyse, 54 Studien) | J Integr Neurosci 2025 |
-| Mütterliche Hypothyreose → ADHS-Risiko Kind (aHR 1,27) | Gesichert | Getahun et al. 2020; Ge et al. 2020 (Metaanalyse) |
+| ADHS-Kinder: fT3$\uparrow$, fT4$\downarrow$, TSH$\downarrow$ gegenüber Kontrollen | Gesichert (Metaanalyse, 54 Studien) | J Integr Neurosci 2025 |
+| Mütterliche Hypothyreose $\rightarrow$ ADHS-Risiko Kind (aHR 1,27) | Gesichert | Getahun et al. 2020; Ge et al. 2020 (Metaanalyse) |
 | Epilepsie: 7,4% Hypothyreose-Prävalenz (> Kontrollen) | Hinweisend | Asadi-Pooya et al. 2023 |
-| AITD → generalisierte Epilepsie (MR): kein kausaler Zusammenhang nach Korrektur | Hinweisend (Trend) | Frontiers Hum Neurosci 2024 (MR) |
+| AITD $\rightarrow$ generalisierte Epilepsie (MR): kein kausaler Zusammenhang nach Korrektur | Hinweisend (Trend) | Frontiers Hum Neurosci 2024 (MR) |
 | 74,2% der ADHS-Komorbiditäten mit serotonerger Pathophysiologie | Gesichert | Faraone et al. 2025 (Neurosci Biobehav Rev) |
 | Hashimoto als parallele autoimmune Downstream-Manifestation | Plausibel, konsistent | Modellableitung aus Anhang G + epidemiologische Assoziation AD/Hashimoto |
 | T3-Optimierung verbessert LDX-Wirksamkeit | Hypothetisch, mechanistisch ableitbar | Konvergenz zweier Pfade am 5-HT1A-Autorezeptor |
@@ -176,7 +176,7 @@ Aktuelle Kontrolle erforderlich: TSH, fT3, fT4, TPO-Antikörper. TPO klärt die 
 ### H.7 Abgrenzung: Was dieser Anhang nicht behauptet
 
 1. Die Hypothyreose ist nicht Ursache der Raphe-Dysregulation. Der Primärdefekt (Hit 1) ist kongenital und unabhängig von der Schilddrüsenfunktion. Die Hypothyreose ist ein modulierender Kofaktor, kein ätiologischer Faktor.
-2. Die Beziehung T3→5-HT1A ist in Tiermodellen robust, die Übertragbarkeit auf den menschlichen Raphe-Kern in vivo ist hinweisend, nicht gesichert.
+2. Die Beziehung T3 $\rightarrow$ 5-HT1A ist in Tiermodellen robust, die Übertragbarkeit auf den menschlichen Raphe-Kern in vivo ist hinweisend, nicht gesichert.
 3. Die Vorhersage H.5.4 (T3-Supplementation vs. T4-Erhöhung) ist ein n=1-Experiment mit allen Limitationen. Die Differenz könnte zu klein sein, um mit den verfügbaren Tracking-Daten aufgelöst zu werden.
 
 *Literatur:*

@@ -7,8 +7,10 @@ echo Merging Agentic Version
 
 echo Generate PDF version
  
-cat "02_pathogenese_modell.md" |
+ cd 02_pathogenese_modell
+cat "../02_pathogenese_modell.md" |
 sed 's/ℏ/$\\hbar$/g' |
+sed 's/→/$\\to$/g' |
 sed 's/↔/$\\leftrightarrow$/g' |
 sed 's/⇒/$\\Rightarrow$/g' |
 sed 's/⇔/$\\Leftrightarrow$/g' |
@@ -23,10 +25,17 @@ sed 's/𝜅/$\\kappa$/g' |
 sed 's/ϰ/$\\kappa$/g' |
 sed 's/𝜌/$\\rho$/g' |
 sed 's/ϱ/$\\rho$/g' |
-sed 's/→/$\\to$/g' |
-sed 's/↑/$\\textuparrow$/g' |
-sed 's/↓/$\\textdownarrow$/g' |
 sed 's/✓/$\\checkmark$/g' |
-sed 's/✗/$\\texttimes$/g' |
-sed 's/^\*\*\*$/\\pagebreak/' |
-pandoc --output="output/Pathogenese Modell.full.pdf" -s -d scripts/pandoc.yml 
+sed 's/✗/$\\times$/g' |
+sed 's$<images/$<02_pathogenese_modell/images/$g' |
+sed 's/^\*\*\*$/\\pagebreak/' > "../output/02_pathogenese_modell.full.md"
+#pandoc --output="../output/Pathogenese Modell.full.pdf" -s -d ../scripts/pandoc.yml
+
+cd ..
+
+echo --Create TEX
+pandoc "output/02_pathogenese_modell.full.md" --output="output/02_pathogenese_modell.full.tex" -s -d scripts/pandoc.yml
+
+echo --Create PDF
+xelatex -interaction=batchmode -output-directory=output "output/02_pathogenese_modell.full.tex"
+echo Done!

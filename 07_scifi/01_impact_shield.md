@@ -54,13 +54,13 @@ Light, open-cell iron foam at low packing density. The impactor enters a materia
 
 **Established physics:** Whipple shield fragmentation is the baseline analogy. NASA JSC Hypervelocity Impact Technology Facility (HITF) testing has demonstrated that open-cell metallic foam provides continuous fragmentation surfaces rather than a single breakup event: secondary impacts on individual foam ligaments raise the thermal state of projectile fragments, inducing melting and vaporization at lower impact velocities than traditional Whipple configurations [Ryan et al. 2010, Christiansen et al. 2003–2005]. A multi-shock shield using distributed bumper layers showed molten and vapor deposits at 6.3 km/s comparable to those on a Whipple shield at 10 km/s [Ryan et al. 2010].
 
-### Mechanism 2 — Graduated Impedance (Full Depth, φ = 15% → 50–65%)
+### Mechanism 2 — Graduated Impedance (Full Depth, φ = 15% $\rightarrow$ 50–65%)
 
 **Function:** Progressive deceleration through continuous impedance matching.
 
 The density gradient from outer to inner surface creates a continuously increasing shock impedance. Unlike discrete Whipple layers (which produce reflections at each interface), the gradient transmits energy exclusively forward — no wasteful back-reflections. Each density increment acts as a separate fragmentation and deceleration stage.
 
-This is the classical Hugoniot channel. At 10 km/s into Fe foam, the Hugoniot deposits approximately 12.5 MJ/kg at the contact surface, decreasing as the front decelerates. Fermi estimates indicate that 10 cm of gradient foam (φ = 20% → 65%) absorbs 70–90% of a 5 cm/10 km/s impactor's kinetic energy through this mechanism alone.
+This is the classical Hugoniot channel. At 10 km/s into Fe foam, the Hugoniot deposits approximately 12.5 MJ/kg at the contact surface, decreasing as the front decelerates. Fermi estimates indicate that 10 cm of gradient foam (φ = 20% $\rightarrow$ 65%) absorbs 70–90% of a 5 cm/10 km/s impactor's kinetic energy through this mechanism alone.
 
 **Established physics:** Hugoniot shock compression, P-α porous material models (Herrmann 1969). Well-characterized for metallic foams. NASA JSC testing of variable-density foam panels (40 PPI inner / 5 PPI outer Al6101-T6, separated by Nextel/Epoxy intermediate layer) confirmed that graded foam structures provide improved shielding over uniform-density configurations [Ryan et al. 2010]. Hydrocode simulations using CTH (Sandia) and AUTODYN have been validated against these experiments at velocities of 2.2–9.3 km/s and various incidence angles [Ryan et al. 2010, Christiansen et al. 2009].
 
@@ -202,7 +202,7 @@ The performance advantage over a Whipple shield can be estimated by multiplying 
 | Foam Multi-Shock (1,3) | ~1.1–1.2× | 1.1 | 1.2 | NASA JSC HITF validated; 6.3 km/s foam ≈ 10 km/s Whipple |
 | Iron vs. Aluminum (material) | ~0.7–0.8× | 0.7 | 0.8 | **Mass penalty**: Fe is 2.9× denser than Al; per kg, lower latent heat and impedance. This is the cost of enabling EM mechanisms 4–5. |
 | Density Gradient (2) | ~1.2–1.4× | 1.2 | 1.4 | Variable-density panels partially validated at NASA |
-| Integrity Field (5) | ~2–5× | 2.0 | 5.0 | Bending→stretch SEA transition established; EM trigger not tested |
+| Integrity Field (5) | ~2–5× | 2.0 | 5.0 | Bending$\rightarrow$stretch SEA transition established; EM trigger not tested |
 | MHD all phases (4) | ~1.05–1.3× | 1.05 | 1.3 | Individual mechanisms established; superposition not verified |
 | PZT backstop + filtration (6) | ~1.05–1.1× | 1.05 | 1.1 | PZT physics established; HVI application not tested |
 | **Multiplicative total** | | **≈ 2.3×** | **≈ 10×** | |
@@ -258,8 +258,8 @@ The baseline GEIS design uses pure iron foam — the simplest ferromagnetic real
 
 | Optimization | Effect | Factor | Status |
 |---|---|---|---|
-| FeCo alloy (Fe₆₅Co₃₅) | M_s: 1.7→2.4 T, Curie: 770→940°C. Stronger cohesion (F ∝ M²), smaller ferromagnetic gap to melting point. | 1.2–1.5× on Mech. 5 | Standard material in high-performance magnets |
-| CNT/Graphene bridges between ligaments | Solid-foam σ: 10⁴→10⁵–10⁶ S/m. Stronger eddy current braking in solid hot phase (770–1538°C) — the weakest coupling regime in baseline GEIS. No benefit above melt (already σ = 7×10⁵). | 1.1–1.3× on Mech. 4 | CNT-doped metal foams published |
+| FeCo alloy (Fe₆₅Co₃₅) | M_s: 1.7$\rightarrow$2.4 T, Curie: 770$\rightarrow$940°C. Stronger cohesion (F ∝ M²), smaller ferromagnetic gap to melting point. | 1.2–1.5× on Mech. 5 | Standard material in high-performance magnets |
+| CNT/Graphene bridges between ligaments | Solid-foam σ: 10⁴$\rightarrow$10⁵–10⁶ S/m. Stronger eddy current braking in solid hot phase (770–1538°C) — the weakest coupling regime in baseline GEIS. No benefit above melt (already σ = 7×10⁵). | 1.1–1.3× on Mech. 4 | CNT-doped metal foams published |
 | Core-shell particles (Fe core, Cu/Ag shell) | High-conductivity shell guarantees coupling continuity at Curie transition. Insurance, not performance gain. | 1.05–1.1× | Established synthesis routes |
 | Nanostructured ligaments (higher specific surface) | Faster melting/ionization per unit mass. Enhances multi-shock thermal effect. Limited by minimum structural strength. | 1.1–1.2× on Mech. 3 | Metal foam nanostructuring published |
 
@@ -302,7 +302,7 @@ The individual mechanisms are physically well-established. Their combined perfor
 
 ---
 
-*Concept developed through iterative analysis. The electromagnetic coupling chain across all aggregate states (ferromagnetic → eddy current → Lorentz drag → MHD) and the ferroelectric plasma filtration mechanism represent novel contributions not identified in prior literature.*
+*Concept developed through iterative analysis. The electromagnetic coupling chain across all aggregate states (ferromagnetic $\rightarrow$ eddy current $\rightarrow$ Lorentz drag $\rightarrow$ MHD) and the ferroelectric plasma filtration mechanism represent novel contributions not identified in prior literature.*
 
 ---
 

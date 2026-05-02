@@ -5,7 +5,7 @@
 
 **Zusammenfassung**
 
-Dieser Anhang analysiert den ADHS-Prävalenzanstieg als Korrelat iatrogener Hit-2-Exposition (GC + AH1) und erweitert die Hit-Architektur um einen zweiten molekularen Einstiegspunkt. Drei konvergierende Indizien: (1) Der geographische Gradient (USA 8,1% vs. Irak 0,1%) korreliert mit dem pharmazeutischen Profil besser als mit DSM-Adoption; Japan als natürliches Quasi-Experiment (hohe AD, niedrige GC-Compliance, 1% vs. 10% AD→ADHS-Transition). (2) 60–75% aller ASD-Patienten tragen mindestens einen Raphe-Achsen-Marker (Migräne, Epilepsie, Autoimmunerkrankung) — unstratifizierte Studien mitteln Population A (~65%) und B (~35%). (3) Hit-1-Erweiterung: neben 5-HT1A-Autorezeptor-Instabilität (Hit 1a) identifiziert SERT-Gain-of-Function (SLC6A4-Varianten, Hit 1b) als zweiten Einstiegspunkt — phänotypisch rigid-kompulsive Traits, Hyperserotonämie, ENS-Hypoplasie. Beide Hit-1-Varianten produzieren ihre eigene immunologische Sekundärpathologie.
+Dieser Anhang analysiert den ADHS-Prävalenzanstieg als Korrelat iatrogener Hit-2-Exposition (GC + AH1) und erweitert die Hit-Architektur um einen zweiten molekularen Einstiegspunkt. Drei konvergierende Indizien: (1) Der geographische Gradient (USA 8,1% vs. Irak 0,1%) korreliert mit dem pharmazeutischen Profil besser als mit DSM-Adoption; Japan als natürliches Quasi-Experiment (hohe AD, niedrige GC-Compliance, 1% vs. 10% AD $\rightarrow$ ADHS-Transition). (2) 60–75% aller ASD-Patienten tragen mindestens einen Raphe-Achsen-Marker (Migräne, Epilepsie, Autoimmunerkrankung) — unstratifizierte Studien mitteln Population A (~65%) und B (~35%). (3) Hit-1-Erweiterung: neben 5-HT1A-Autorezeptor-Instabilität (Hit 1a) identifiziert SERT-Gain-of-Function (SLC6A4-Varianten, Hit 1b) als zweiten Einstiegspunkt — phänotypisch rigid-kompulsive Traits, Hyperserotonämie, ENS-Hypoplasie. Beide Hit-1-Varianten produzieren ihre eigene immunologische Sekundärpathologie.
 
 *Status: Explorative Analyse, Evidenzniveau V (Arbeitshypothese mit konvergierenden Indizien)*
 
@@ -32,7 +32,7 @@ Die ADHD-Prävalenz variiert geographisch: USA 8,1% bei Kindern (WHO-Daten, höc
 
 **AD+ADHD-Komorbidität Nordamerika vs. Asien:** Bei Kindern mit atopischer Dermatitis hatten 10% in Nordamerika komorbides ADHD, aber nur 1% in Asien (Cai et al. 2023). Dieser 10-fache Unterschied übersteigt, was diagnostische Unterschiede allein erklären können.
 
-**Japan als natürliches Quasi-Experiment:** Japan zeigt hohe AD-Prävalenz (~17% bei 6–7-Jährigen), aber ausgeprägte „Steroidphobie" — historisch geringere GC-Exposition. Bei vergleichbarer AD-Prävalenz sollte Japan niedrigere AD→ADHS-Transitionsraten zeigen, wenn GC der Hit-2-Treiber ist. Die Daten bestätigen dies: 1% AD+ADHD-Komorbidität in Asien vs. 10% in Nordamerika.
+**Japan als natürliches Quasi-Experiment:** Japan zeigt hohe AD-Prävalenz (~17% bei 6–7-Jährigen), aber ausgeprägte „Steroidphobie" — historisch geringere GC-Exposition. Bei vergleichbarer AD-Prävalenz sollte Japan niedrigere AD $\rightarrow$ ADHS-Transitionsraten zeigen, wenn GC der Hit-2-Treiber ist. Die Daten bestätigen dies: 1% AD+ADHD-Komorbidität in Asien vs. 10% in Nordamerika.
 
 **USA-Zeitreihe:** Die US-ADHD-Prävalenz bei Kindern stieg von 6,1% (1997–98) auf 10,2% (2015–16). Der Anstieg setzte sich linear fort über DSM-Kriterienänderungen hinweg (DSM-III 1980, DSM-IV 1994, DSM-5 2013), was gegen einen reinen Diagnose-Schwelleneffekt spricht.
 
@@ -42,18 +42,18 @@ Die ADHD-Prävalenz variiert geographisch: USA 8,1% bei Kindern (WHO-Daten, höc
 
 Wenn der Prävalenzanstieg *nur* diagnostisch wäre, sollte die Migräne-ADHS-Komorbidität historisch stabil bleiben. Falls sie *ebenfalls* ansteigt, spricht das für einen echten Prävalenzanstieg in Population A.
 
-### **G.3 Serielle Achsenstruktur: Autoimmun-Achse → Hit-2-Pfad**
+### **G.3 Serielle Achsenstruktur: Autoimmun-Achse $\rightarrow$ Hit-2-Pfad**
 
-Die Industrialisierung erhöht die AD-Prävalenz über die Autoimmun-/Hygiene-Achse → mehr AD-Kinder werden mit GC behandelt → Hit 2 wird iatrogen aktiviert → Population-A-ADHS steigt. Die Autoimmun-/EDC-Achse (Phthalate, BPA, PFAS) ist nicht der Hit 2 selbst, sondern erhöht den Durchsatz durch den Hit-2-Pfad, indem sie mehr Kinder in die GC-Behandlung bringt.
+Die Industrialisierung erhöht die AD-Prävalenz über die Autoimmun-/Hygiene-Achse $\rightarrow$ mehr AD-Kinder werden mit GC behandelt $\rightarrow$ Hit 2 wird iatrogen aktiviert $\rightarrow$ Population-A-ADHS steigt. Die Autoimmun-/EDC-Achse (Phthalate, BPA, PFAS) ist nicht der Hit 2 selbst, sondern erhöht den Durchsatz durch den Hit-2-Pfad, indem sie mehr Kinder in die GC-Behandlung bringt.
 
 Die zwei Achsen sind seriell geschaltet, nicht parallel:
 
 ```
 Umweltfaktoren (Hygienehypothese, EDC)
-  → Erhöhte Autoimmun-/AD-Prävalenz
-    → Iatrogene Behandlung (GC, AH1)
-      → Hit 2 (D2High-Shift / serotonerge Destabilisierung)
-        → Population-A-ADHS/ASD/Epilepsie
+  $\rightarrow$ Erhöhte Autoimmun-/AD-Prävalenz
+    $\rightarrow$ Iatrogene Behandlung (GC, AH1)
+      $\rightarrow$ Hit 2 (D2High-Shift / serotonerge Destabilisierung)
+        $\rightarrow$ Population-A-ADHS/ASD/Epilepsie
 ```
 
 **Abgrenzung: Antenatale GC als separater Expositionspfad**
@@ -79,7 +79,7 @@ Wenn 60–75% jeder unstratifizierten ASD-Kohorte Population A ist, dann ist jed
 
 **Konsequenz 1:** Biomarker auf der Raphe-/thalamokortikalen Achse müssen in ASD-Studien ein positives Signal zeigen (Richtung erzwungen, Effektgröße gedämpft um Faktor ~0,65).
 
-**Konsequenz 2:** Population-B-spezifische Befunde (strukturelle Defizite) werden durch ~65% Population-A-Beimischung verdünnt → inkonsistente Effektgrößen, fehlende Einzelfalldiskriminierung.
+**Konsequenz 2:** Population-B-spezifische Befunde (strukturelle Defizite) werden durch ~65% Population-A-Beimischung verdünnt $\rightarrow$ inkonsistente Effektgrößen, fehlende Einzelfalldiskriminierung.
 
 **Konsequenz 3:** Rückwärtsrechnung möglich: wahrer Population-A-Effekt ≈ d_gemessen / 0,65.
 
@@ -96,7 +96,7 @@ ASD-Studien, die nach Raphe-Achsen-Markern stratifizieren, zeigen durchgehend st
 
 **Hit 1a: 5-HT1A-Autoreceptor-Feedback-Instabilität**
 
-Der Originalmechanismus des Modells (vgl. Kapitel 2). Kongenitale Instabilität des negativen Feedback am DRN → instabile Raphe-Feuerrate → zyklische Desynchronisation → CSD-Anfälligkeit. Primärer klinischer Marker: Migränezyklizität.
+Der Originalmechanismus des Modells (vgl. Kapitel 2). Kongenitale Instabilität des negativen Feedback am DRN $\rightarrow$ instabile Raphe-Feuerrate $\rightarrow$ zyklische Desynchronisation $\rightarrow$ CSD-Anfälligkeit. Primärer klinischer Marker: Migränezyklizität.
 
 #### **G.5.1 Hit 1b: SERT-Gain-of-Function (SLC6A4-Varianten)**
 
@@ -151,7 +151,7 @@ Die Gegenprobe hat keine Falsifikation produziert. Der schärfste Kandidat (SERT
 
 **Verbleibende methodische Einschränkung**
 
-Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind durch die Blut-Hirn-Schranke vollständig getrennt. Peripheres 5-HT steigt (SERT-Gain-of-Function in Thrombozyten → erhöhte Aufnahme), zentrales 5-HT fällt (derselbe SERT-Gain-of-Function im Gehirn → reduzierte synaptische Verfügbarkeit). Dies ist kein Widerspruch, sondern die erwartete bidirektionale Konsequenz desselben Mechanismus, aber die direkte Messung zentraler Serotoninspiegel beim Menschen ist nicht verfügbar.
+Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind durch die Blut-Hirn-Schranke vollständig getrennt. Peripheres 5-HT steigt (SERT-Gain-of-Function in Thrombozyten $\rightarrow$ erhöhte Aufnahme), zentrales 5-HT fällt (derselbe SERT-Gain-of-Function im Gehirn $\rightarrow$ reduzierte synaptische Verfügbarkeit). Dies ist kein Widerspruch, sondern die erwartete bidirektionale Konsequenz desselben Mechanismus, aber die direkte Messung zentraler Serotoninspiegel beim Menschen ist nicht verfügbar.
 
 ### **G.7 Testbare Vorhersagen**
 
@@ -169,12 +169,12 @@ Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind d
 | Quelle | Design | Befund | Relevanz für das Modell |
 |:-------|:-------|:-------|:----------------------|
 | WHO GBD 2019 (Ayano et al. 2023) | 204 Länder, 1990–2019 | USA: größter ADHD-Anstieg; Finnland: größter Rückgang | Geographischer Gradient konsistent mit GC-Verschreibungsprofil |
-| Xu et al. 2018 (NHIS) | US-Populationssurvey, n=186.457, 1997–2016 | ADHD-Prävalenz 6,1%→10,2%, linearer Anstieg über DSM-Änderungen hinweg | Gegen rein diagnostischen Artefakt |
+| Xu et al. 2018 (NHIS) | US-Populationssurvey, n=186.457, 1997–2016 | ADHD-Prävalenz 6,1% $\rightarrow$ 10,2%, linearer Anstieg über DSM-Änderungen hinweg | Gegen rein diagnostischen Artefakt |
 | Cai et al. 2023 | Metaanalyse AD+ADHD-Komorbidität global | 10% AD+ADHD in Nordamerika vs. 1% in Asien | 10-facher Gradient bei vergleichbarer AD-Prävalenz |
 | Rønnevig et al. 2022 (Norwegen) | Nationale Registerdaten, n=176.458 | 99,2% pädiatrische AD-Patienten erhielten topische GC | Universelle GC-Exposition bei AD-Kindern |
-| Fuhrmann et al. 2020 | Deutsche Geburtskohorte, n=41.484 | AH1-Exposition in früher Kindheit → spätere ADHS-Diagnose | Hit 1b-Kandidat (vgl. Kapitel 5, Abschnitt 9) |
-| Khalife et al. 2013 (Finnland) | Northern Finland Birth Cohort | Antenatale GC → schlechtere psychische Gesundheit mit 8/16 Jahren, mehr ADHD-Symptome | Antenatale GC als separater Hit-2-Pfad |
-| Liang et al. 2022 (Taiwan) | n=1.163.443 | Antenatale GC → erhöhtes ADHS-Risiko (HR 1,13–1,22) | Pränatal + postnatal = zwei GC-Expositionsfenster |
+| Fuhrmann et al. 2020 | Deutsche Geburtskohorte, n=41.484 | AH1-Exposition in früher Kindheit $\rightarrow$ spätere ADHS-Diagnose | Hit 1b-Kandidat (vgl. Kapitel 5, Abschnitt 9) |
+| Khalife et al. 2013 (Finnland) | Northern Finland Birth Cohort | Antenatale GC $\rightarrow$ schlechtere psychische Gesundheit mit 8/16 Jahren, mehr ADHD-Symptome | Antenatale GC als separater Hit-2-Pfad |
+| Liang et al. 2022 (Taiwan) | n=1.163.443 | Antenatale GC $\rightarrow$ erhöhtes ADHS-Risiko (HR 1,13–1,22) | Pränatal + postnatal = zwei GC-Expositionsfenster |
 | Underwood et al. 2019 | ASD-Kohorte Erwachsene | 42,7% Migräne (vs. 20,5% Kontrollen); Migräne-Epilepsie-Assoziation p=0,028 | Kaskadierung auf derselben Achse bei ASD |
 | Comi et al. 1999 | 61 ASD-Familien vs. 46 Kontrollen | 70% regressiver ASD: familiäre Autoimmunerkrankung; 16% Mütter vs. 2% Kontrollen | Autoimmunmarker in regressiver Subgruppe angereichert |
 | Chen et al. 2013 (Taiwan) | n=1.596 ASD + Kontrollen | AD OR 1,52; Asthma OR 1,74; T1DM OR 4,00 bei ASD | Erhöhte Autoimmun-Komorbidität bei ASD |
@@ -189,7 +189,7 @@ Peripheres Serotonin (Blut/Thrombozyten) und zentrales Serotonin (Gehirn) sind d
 
 Die Analyse liefert keinen einzelnen Durchbruch, aber konvergierende Indizien auf drei Ebenen:
 
-1. **Iatrogener Prävalenzanstieg:** Der geographische und historische Gradient der ADHS-Prävalenz korreliert besser mit dem pharmazeutischen Expositionsprofil (GC-Aggressivität + AH1-OTC-Verfügbarkeit) als mit DSM-Adoption allein. Japan (hohe AD, niedrige GC-Compliance, niedrige AD→ADHS-Transition) funktioniert als natürliches Quasi-Experiment.
+1. **Iatrogener Prävalenzanstieg:** Der geographische und historische Gradient der ADHS-Prävalenz korreliert besser mit dem pharmazeutischen Expositionsprofil (GC-Aggressivität + AH1-OTC-Verfügbarkeit) als mit DSM-Adoption allein. Japan (hohe AD, niedrige GC-Compliance, niedrige AD $\rightarrow$ ADHS-Transition) funktioniert als natürliches Quasi-Experiment.
 
 2. **ASD-Populationsgewichtung:** 60–75% aller ASD-Patienten tragen mindestens einen Raphe-Achsen-Marker (Migräne, Epilepsie, Autoimmunerkrankung). Dieser Anteil ist der Proxy für Population A und erlaubt Rückwärtsrechnung existierender Studienergebnisse.
 

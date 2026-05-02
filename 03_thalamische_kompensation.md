@@ -16,11 +16,11 @@ Die Dämpfungskonstante der 5-HT1A-Autorezeptor-Schleife ist keine singuläre Gr
 
 | Komponente | Mechanismus | Konsequenz bei Abweichung |
 | :---- | :---- | :---- |
-| **5-HT1A-Autorezeptordichte** | Anzahl der Autorezeptoren auf Raphe-Neuronen bestimmt Stärke der negativen Rückkopplung | Zu wenig → Feedback zu schwach → Schleife underdämpft |
-| **5-HT1A-Rezeptoraffinität** | Bindungskinetik bestimmt zeitliches Profil des Feedbacks | Veränderte Affinität → Feedback zeitlich verschoben → Phaseninstabilität statt Amplitudeninstabilität |
-| **SERT-Expressionsniveau (SLC6A4)** | Bestimmt Clearance-Rate von Serotonin aus dem synaptischen Spalt und damit Dauer und Intensität der Autorezeptor-Stimulation | Niedrige Expression → Serotonin verbleibt länger → Feedback zeitlich verzerrt; Hohe Expression → zu schnelle Clearance → Feedback zu kurz |
-| **TPH2-Synthesekapazität** | Maximale Serotonin-Produktionsrate der Raphe-Neuronen | Reduzierte Kapazität → System läuft unter Last leer → Nadir wird tiefer, Erholung dauert länger |
-| **Anzahl funktioneller Raphe-Neuronen (Pet1/FEV)** | Gesamtzahl differenzierter serotonerger Neuronen, determiniert durch Transkriptionsfaktor Pet1/FEV | Weniger Neuronen → gleiche Last auf weniger Einheiten → Redundanz fehlt, Kapazitätsgrenze früher erreicht |
+| **5-HT1A-Autorezeptordichte** | Anzahl der Autorezeptoren auf Raphe-Neuronen bestimmt Stärke der negativen Rückkopplung | Zu wenig $\rightarrow$ Feedback zu schwach $\rightarrow$ Schleife underdämpft |
+| **5-HT1A-Rezeptoraffinität** | Bindungskinetik bestimmt zeitliches Profil des Feedbacks | Veränderte Affinität $\rightarrow$ Feedback zeitlich verschoben $\rightarrow$ Phaseninstabilität statt Amplitudeninstabilität |
+| **SERT-Expressionsniveau (SLC6A4)** | Bestimmt Clearance-Rate von Serotonin aus dem synaptischen Spalt und damit Dauer und Intensität der Autorezeptor-Stimulation | Niedrige Expression $\rightarrow$ Serotonin verbleibt länger $\rightarrow$ Feedback zeitlich verzerrt; Hohe Expression $\rightarrow$ zu schnelle Clearance $\rightarrow$ Feedback zu kurz |
+| **TPH2-Synthesekapazität** | Maximale Serotonin-Produktionsrate der Raphe-Neuronen | Reduzierte Kapazität $\rightarrow$ System läuft unter Last leer $\rightarrow$ Nadir wird tiefer, Erholung dauert länger |
+| **Anzahl funktioneller Raphe-Neuronen (Pet1/FEV)** | Gesamtzahl differenzierter serotonerger Neuronen, determiniert durch Transkriptionsfaktor Pet1/FEV | Weniger Neuronen $\rightarrow$ gleiche Last auf weniger Einheiten $\rightarrow$ Redundanz fehlt, Kapazitätsgrenze früher erreicht |
 
 ### 1.1 Polygenetischer Schwellenwerteffekt vs. struktureller Defekt
 
@@ -99,11 +99,11 @@ ASD ist auf neurobiologischer Ebene eine serotonerge Entwicklungsstörung. Wenn 
 **Kausalkette:**
 
 Serotonerge Entwicklungsstörung (Raphe-Dysregulation)
-→ gleichzeitig atypische kortikale Konnektivität (ASD-Phänotyp) **und** Raphe-Instabilität
-→ thalamische Fehlkalibrierung
-→ progressiver Verbrauchsanstieg durch ASD-Konnektivität
-→ Kapazitätserschöpfung
-→ CSD/Migräne
+$\rightarrow$ gleichzeitig atypische kortikale Konnektivität (ASD-Phänotyp) **und** Raphe-Instabilität
+$\rightarrow$ thalamische Fehlkalibrierung
+$\rightarrow$ progressiver Verbrauchsanstieg durch ASD-Konnektivität
+$\rightarrow$ Kapazitätserschöpfung
+$\rightarrow$ CSD/Migräne
 
 Migräne bei ASD ist in diesem Modell nicht komorbid sondern **endogen unvermeidlich** ab dem Punkt, an dem die thalamische Nachfrage die Raphe-Kapazität übersteigt. Migräne ohne ASD existiert – aber über andere Kausalketten zur CSD, die mit diesem Mechanismus nichts zu tun haben.
 
@@ -199,7 +199,7 @@ CYP2D6-Poor-Metabolizer (PM), die bis zu 10% der kaukasischen Population ausmach
 | Fünf Komponenten der Raphe-Dämpfung als unabhängig variable Parameter | Gesichert | Einzelkomponenten pharmakologisch/genetisch etabliert |
 | TPH2-Knockout produziert ASD-Phänotyp im Tiermodell | Gesichert | Kane et al. 2012 (Maus); Scientific Reports 2025 (Ratte) |
 | Tryptophan-Depletion verschlechtert ASD-Symptome | Gesichert | McDougle et al. 1996 (doppelblind, placebokontrolliert, n=20) |
-| Höhere Baseline-Tryptophanspiegel → stärkere Depletion-Reaktion | Gesichert | McDougle et al. 1996 (p < .001) |
+| Höhere Baseline-Tryptophanspiegel $\rightarrow$ stärkere Depletion-Reaktion | Gesichert | McDougle et al. 1996 (p < .001) |
 | Verminderter Tryptophan-Metabolismus bei ASD | Gesichert | Boccuto et al. 2013 (n=87 ASD vs. 78 Kontrollen) |
 | Thalamische Serotonin-Modulation korreliert mit repetitivem Verhalten bei ASD | Gesichert | Daly et al. 2014 (fMRI + akute Tryptophan-Depletion) |
 | Thalamokortikale Hyperkonnektivität bei ASD | Gesichert | ABIDE-Studie (n=456), Woodward et al. 2017; Sun et al. 2021 |

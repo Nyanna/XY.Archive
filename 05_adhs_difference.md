@@ -20,7 +20,7 @@ Drei Gedächtnisebenen werden klinisch unter dem Begriff „Gedächtnisprobleme 
 
 **Kurzzeitgedächtnis** im engeren Sinne ist die passive Haltekapazität (Miller's „7 ± 2") ohne aktive Manipulation. Es nutzt denselben thalamokortikalen Loop, aber ohne den dopaminergen PFC-Boost, der aktive Manipulation ermöglicht. Die Unterscheidung ist klinisch relevant: ein Kind, das sich eine Telefonnummer merken kann (Kurzzeitgedächtnis) aber nicht gleichzeitig kopfrechnen (Arbeitsgedächtnis), hat ein PFC-Dopamin-Problem, kein generelles Gedächtnisdefizit.
 
-**Kontextgedächtnis** (episodisches Gedächtnis) ist hippocampal, nicht PFC-abhängig. Es kodiert nicht *was* erlebt wurde (semantisch), sondern *wo, wann, unter welchen Umständen* (episodisch). Die DG → CA3 → CA1-Schleife des Hippocampus konsolidiert Erlebnisse mit ihrem Kontext. Defizite hier äußern sich nicht als „ich kann mir nichts merken", sondern als „ich weiß, dass ich den Schlüssel hingelegt habe, aber nicht wo." Der Hippocampus wird primär durch serotonerge Projektionen aus dem Nucleus raphe medianus (MRN, B8) moduliert — ein anderes System als die dopaminerge PFC-Modulation.
+**Kontextgedächtnis** (episodisches Gedächtnis) ist hippocampal, nicht PFC-abhängig. Es kodiert nicht *was* erlebt wurde (semantisch), sondern *wo, wann, unter welchen Umständen* (episodisch). Die DG $\rightarrow$ CA3 $\rightarrow$ CA1-Schleife des Hippocampus konsolidiert Erlebnisse mit ihrem Kontext. Defizite hier äußern sich nicht als „ich kann mir nichts merken", sondern als „ich weiß, dass ich den Schlüssel hingelegt habe, aber nicht wo." Der Hippocampus wird primär durch serotonerge Projektionen aus dem Nucleus raphe medianus (MRN, B8) moduliert — ein anderes System als die dopaminerge PFC-Modulation.
 
 Die klinische Relevanz der Unterscheidung: wenn ein ADHS-Patient „vergesslich" ist, kann das drei verschiedene Mechanismen haben, die verschiedene Strukturen betreffen und verschiedene Interventionen erfordern. Die DSM-Diagnose unterscheidet nicht zwischen ihnen.
 
@@ -147,7 +147,7 @@ Neuroimaging-Signatur: kleinerer Thalamus, dünnerer PFC, niedrigere FA — die 
 | **Stimulanzien-Response** | Raphe-Stabilisierung + PFC-Boost: Schlaf besser, Migräne reduziert, kohärente Müdigkeit | Nur PFC-Boost: Aufmerksamkeit besser, Schlaf unverändert |
 | **Prognose unter Therapie** | Normalisierung (Substrat intakt) | Symptomatische Besserung (Substrat defizitär) |
 
-**Epidemiologische Evidenz ADHD ↔ Dyslexie:** Die bidirektionale Komorbidität von 25–40% (McGrath & Stoodley 2019) ist nicht durch gegenseitige Verursachung erklärbar. van Bergen et al. (2025, *Psychological Science*, n=19.125 Zwillinge) zeigten OR 2,1–3,1 für die Zweitdiagnose; Cross-lagged-Modelle bestätigen gemeinsame genetische Einflüsse, nicht kausale Trait-zu-Trait-Effekte. Modellkonsistent: Raphe-Dysregulation als gemeinsamer Generator. 77,3% der Betroffenen haben nur eine Bedingung → Raphe-Schweregrad und thalamische Kompensationstiefe als Branching-Variable (vgl. Kapitel 3, Anhang D, Abschnitt D.7.3).
+**Epidemiologische Evidenz ADHD ↔ Dyslexie:** Die bidirektionale Komorbidität von 25–40% (McGrath & Stoodley 2019) ist nicht durch gegenseitige Verursachung erklärbar. van Bergen et al. (2025, *Psychological Science*, n=19.125 Zwillinge) zeigten OR 2,1–3,1 für die Zweitdiagnose; Cross-lagged-Modelle bestätigen gemeinsame genetische Einflüsse, nicht kausale Trait-zu-Trait-Effekte. Modellkonsistent: Raphe-Dysregulation als gemeinsamer Generator. 77,3% der Betroffenen haben nur eine Bedingung $\rightarrow$ Raphe-Schweregrad und thalamische Kompensationstiefe als Branching-Variable (vgl. Kapitel 3, Anhang D, Abschnitt D.7.3).
 
 ---
 
@@ -210,7 +210,7 @@ Ein standardisierter Fragebogen (Elternversion und Selbstberichtsversion), ausge
 - Dinge getan, aber vergessen wo/wann? (Kontextgedächtnis)
 - Manche Tage gutes Gedächtnis, manche Tage schlechtes — ohne erkennbaren Grund?
 
-Die Auswertung ergibt ein Profil: konsistentes Schlaffragmentierungsmuster + Kind merkt nie von selbst, dass es müde ist + kein gradueller Übergang + aufgabenabhängige Wachheit + fluktuierende Sensorik + zustandsabhängiges Gedächtnis → Population A. Gleichmäßig reduzierte Leistung ohne Schlafauffälligkeiten, Kind merkt selbst, dass es müde wird, gradueller Übergang → Population B.
+Die Auswertung ergibt ein Profil: konsistentes Schlaffragmentierungsmuster + Kind merkt nie von selbst, dass es müde ist + kein gradueller Übergang + aufgabenabhängige Wachheit + fluktuierende Sensorik + zustandsabhängiges Gedächtnis $\rightarrow$ Population A. Gleichmäßig reduzierte Leistung ohne Schlafauffälligkeiten, Kind merkt selbst, dass es müde wird, gradueller Übergang $\rightarrow$ Population B.
 
 ---
 
@@ -229,7 +229,7 @@ Bei Population A ist es problematisch. Das therapeutische Ziel ist nicht der PFC
 Für Population A ist das Titrationsziel nicht Symptomkontrolle, sondern Schlafkonsolidierung. Die Dosis wird erhöht, bis folgende Marker eintreten:
 
 - Kind merkt von selbst, dass es müde ist (sagt „ich bin müde" aus eigenem Antrieb)
-- Übergang zum Schlafen wird graduell (statt binär: wach → weg)
+- Übergang zum Schlafen wird graduell (statt binär: wach $\rightarrow$ weg)
 - Tiefschlaf rückt in die erste Nachthälfte
 - Nap-Bedarf sinkt
 - Traumerinnerung kehrt zurück
@@ -238,7 +238,7 @@ Ab diesem Punkt wird nicht weiter erhöht — auch wenn der Conners-Score noch n
 
 ### 7.3 Der Fragebogen als Titrationsinstrument
 
-Derselbe Fragebogen, der zur Differentialdiagnostik dient (Abschnitt 6.3), wird zum Titrationsinstrument. Er wird vor Therapiebeginn als Baseline erhoben und dann wöchentlich unter Dosissteigerung fortgeführt. Der Vergleich Baseline → Woche 1 → Woche 2 → ... zeigt, wann die Schlafkonsolidierung eintritt. An diesem Punkt ist die Zieldosis erreicht.
+Derselbe Fragebogen, der zur Differentialdiagnostik dient (Abschnitt 6.3), wird zum Titrationsinstrument. Er wird vor Therapiebeginn als Baseline erhoben und dann wöchentlich unter Dosissteigerung fortgeführt. Der Vergleich Baseline $\rightarrow$ Woche 1 $\rightarrow$ Woche 2 $\rightarrow$ ... zeigt, wann die Schlafkonsolidierung eintritt. An diesem Punkt ist die Zieldosis erreicht.
 
 Für Population B ist das Verfahren ebenfalls nützlich: das Ausbleiben jeglicher Schlafveränderung unter Stimulanzien bestätigt die Population-B-Zuordnung und zeigt an, dass der Effekt rein stimulatorisch ist. Die Dosierung kann dann konventionell nach Symptomkontrolle erfolgen — mit dem Bewusstsein, dass es ein symptomatischer Effekt ist, kein kausaler.
 
@@ -264,7 +264,7 @@ Die Late-Chronotyp-Assoziation mit ADHD ist im vorliegenden Modell populationssp
 |---|---|---|
 | Late-Chronotyp-Assoziation ist populationsspezifisch | Population A trägt den Effekt; Population B zeigt Normalverteilung | Stratifizierung nach Migräne-Status: Assoziation sollte verschwinden, wenn Migräne-positive Fälle herausgenommen werden |
 | Chronotyp-Shift unter Stimulanzien | Population A: Shift Richtung Morningness; Population B: kein Shift | MEQ/MCTQ PRE/POST, longitudinal |
-| Generalisierte Epilepsie mit Late-Typ hat höhere Migräne-Komorbidität | Late-Typ = Synchronisationsmarker → Migräne-Rate in Late-Subgruppe der generalisierten Epilepsie höher als in Non-Late-Subgruppe | Retrospektive Analyse bestehender Kohorten |
+| Generalisierte Epilepsie mit Late-Typ hat höhere Migräne-Komorbidität | Late-Typ = Synchronisationsmarker $\rightarrow$ Migräne-Rate in Late-Subgruppe der generalisierten Epilepsie höher als in Non-Late-Subgruppe | Retrospektive Analyse bestehender Kohorten |
 | Fokale Epilepsie + ADHD hat anderen ADHD-Subtyp als generalisierte Epilepsie + ADHD | Fokale: ADHD sekundär (Anfallsfolgen/ASM); Generalisierte: ADHD primär (Synchronisationsdefizit, Population A) | Subtyp-Analyse, Onset-Zeitpunkt ADHD vs. Epilepsie |
 
 Evidenzbasis: Kendis et al. 2015 zeigten 5-fach erhöhte Wahrscheinlichkeit für Late-Chronotyp bei generalisierter Epilepsie vs. Kontrollen; fokale Epilepsie zeigte keinen Unterschied. Die Segregation des Late-Chronotyps spezifisch mit globalen Synchronisationsstörungen (ADHD Population A, Migräne, generalisierte Epilepsie) und nicht mit lokalen Hardwaredefekten (fokale Epilepsie ≈ Population B-Äquivalent) stützt die Zwei-Populationen-Hypothese.
@@ -288,7 +288,7 @@ Der Befund ist bemerkenswert, weil er auch in der Gruppe ohne atopische Dermatit
 Der Befund erlaubt drei mechanistisch unterschiedliche Interpretationen:
 
 **Lesart 1 — Standard (Autoreninterpretation):**
-AH1 passieren die Blut-Hirn-Schranke und stören den REM-Schlaf. Gestörter REM-Schlaf während der kritischen Phase der Hirnreifung (erste 2 Lebensjahre) beeinträchtigt die kortikale und subkortikale Entwicklung → erhöhtes ADHS-Risiko. Der Wirkmechanismus ist schlafabhängig und unspezifisch.
+AH1 passieren die Blut-Hirn-Schranke und stören den REM-Schlaf. Gestörter REM-Schlaf während der kritischen Phase der Hirnreifung (erste 2 Lebensjahre) beeinträchtigt die kortikale und subkortikale Entwicklung $\rightarrow$ erhöhtes ADHS-Risiko. Der Wirkmechanismus ist schlafabhängig und unspezifisch.
 
 **Lesart 2 — Protopathischer Bias:**
 Die Kinder, die AH1 *brauchten*, hatten bereits die Indikation — Schlafprobleme, Pruritus, Unruhe. Diese Symptome sind ihrerseits Ausdruck einer bereits bestehenden Raphe-Dysregulation (Hit 1 im Modell). AH1-Exposition ist nicht Ursache, sondern Surrogat für den Schweregrad der zugrundeliegenden serotonergen Instabilität. Die Assoziation ist real, aber die Kausalrichtung ist umgekehrt.
@@ -304,10 +304,10 @@ Diphenhydramin (DPH) als prototypisches AH1 zeigt altersabhängig gegenteilige E
 
 | Kontext | Mechanismus | Konsequenz |
 |:--------|:-----------|:-----------|
-| **Developmental** (0–2 Jahre) | H1-Blockade im DRN supprimiert B7 während der Kalibrierungsphase | B7/B8-Balance wird dauerhaft in Richtung B7-Insuffizienz verschoben → iatrogener Beitrag zur Inter-Kern-Asymmetrie |
-| **Adult** (Kalibrierung abgeschlossen) | H1-Blockade im DRN supprimiert B7 → weniger B7-Interferenz in thalamischer Kaskade | Interferenzprodukt sinkt → symptomatische Besserung (Sedierung, reduzierte sensorische Überflutung) |
+| **Developmental** (0–2 Jahre) | H1-Blockade im DRN supprimiert B7 während der Kalibrierungsphase | B7/B8-Balance wird dauerhaft in Richtung B7-Insuffizienz verschoben $\rightarrow$ iatrogener Beitrag zur Inter-Kern-Asymmetrie |
+| **Adult** (Kalibrierung abgeschlossen) | H1-Blockade im DRN supprimiert B7 $\rightarrow$ weniger B7-Interferenz in thalamischer Kaskade | Interferenzprodukt sinkt $\rightarrow$ symptomatische Besserung (Sedierung, reduzierte sensorische Überflutung) |
 
-Derselbe pharmakologische Effekt (B7↓) hat gegenteilige klinische Konsequenzen, weil das System in der Entwicklung kalibriert und im Adult-Zustand operiert. In der Kalibrierungsphase wird die Sollgröße verschoben; im operativen Zustand wird die Amplitude moduliert, ohne die Sollgröße zu ändern.
+Derselbe pharmakologische Effekt (B7$\downarrow$) hat gegenteilige klinische Konsequenzen, weil das System in der Entwicklung kalibriert und im Adult-Zustand operiert. In der Kalibrierungsphase wird die Sollgröße verschoben; im operativen Zustand wird die Amplitude moduliert, ohne die Sollgröße zu ändern.
 
 ### 9.4 Evidenztabelle — AH1-Exposition und ADHS
 
@@ -327,8 +327,8 @@ Methylphenidat (MPH) und Lisdexamfetamin (LDX) werden klinisch als austauschbare
 
 | Substanz | B7 (DRN) | B8 (MRN) | Konsequenz für Population A |
 |:---------|:---------|:---------|:---------------------------|
-| **MPH** | ↑↑ (DA/GABA-vermittelt) | ↔ (kaum Effekt) | **Kern-asymmetrisch:** B7-Amplitude steigt → thalamisches Interferenzprodukt steigt → potentiell interferenzverstärkend für Migräne |
-| **LDX** | ↑ (SERT-Reversal) | ↑ (SERT-Reversal) | **Kernblind:** proportionale Erhöhung → Intra-Kern-Takt stabilisiert, Interferenz-Versatz bleibt unverändert → neutral |
+| **MPH** | $\uparrow\uparrow$ (DA/GABA-vermittelt) | ↔ (kaum Effekt) | **Kern-asymmetrisch:** B7-Amplitude steigt $\rightarrow$ thalamisches Interferenzprodukt steigt $\rightarrow$ potentiell interferenzverstärkend für Migräne |
+| **LDX** | $\uparrow$ (SERT-Reversal) | $\uparrow$ (SERT-Reversal) | **Kernblind:** proportionale Erhöhung $\rightarrow$ Intra-Kern-Takt stabilisiert, Interferenz-Versatz bleibt unverändert $\rightarrow$ neutral |
 
 ### 10.2 Mechanistische Grundlage
 
@@ -344,7 +344,7 @@ Amphetamin-basierte Substanzen (Dexamphetamin, LDX nach hepatischer Lyse) wirken
 ### 10.3 Klinische Konsequenzen für Population A
 
 **MPH und Migräne:**
-Wenn Population A durch Inter-Kern-Asymmetrie (B7 > B8 am Interferenz-Output) charakterisiert ist, verstärkt MPH diese Asymmetrie: B7↑↑ bei B8↔. Das thalamische Interferenzprodukt steigt und propagiert über die thalamokortikale Kaskade. Klinisch: **MPH verschlimmert Migräne bei komorbiden Patienten.**
+Wenn Population A durch Inter-Kern-Asymmetrie (B7 > B8 am Interferenz-Output) charakterisiert ist, verstärkt MPH diese Asymmetrie: B7$\uparrow\uparrow$ bei B8↔. Das thalamische Interferenzprodukt steigt und propagiert über die thalamokortikale Kaskade. Klinisch: **MPH verschlimmert Migräne bei komorbiden Patienten.**
 
 **MPH und Epilepsie-Risiko:**
 Man et al. (2020) zeigten in einer großen Kohortenstudie ein **4-fach erhöhtes Anfallsrisiko in den ersten 30 Tagen nach MPH-Beginn** (IRR 4,01). Nach 30 Tagen normalisiert sich das Risiko. Die Interpretation im Modell: die akute B7-Amplitudenerhöhung durch MPH überschreitet die Schwelle für thalamokortikale Paroxysmalität. Nach ~30 Tagen greift die Autorezeptor-Adaptation (5-HT1A-Desensibilisierung am DRN) und bringt die B7-Amplitude auf ein neues, adaptiertes Plateau zurück.
@@ -365,9 +365,9 @@ Für Population B ist die Unterscheidung weniger relevant — beide Substanzen w
 | Tang & Dafny 2013 | Tiermodell (Ratte), DRN-Elektrophysiologie unter MPH | MPH erhöht Feuerrate in Mehrheit der DRN-Neurone | IV (präklinisch) |
 | Kharas et al. 2017 | Tiermodell (Ratte), DRN-Elektrophysiologie unter MPH | 88% der responsiven DRN-Neurone: erhöhte Feuerrate | IV (präklinisch) |
 | Man et al. 2020 | Bevölkerungskohorte (UK), Epilepsie-Risiko unter MPH | IRR 4,01 (erste 30 Tage), danach Normalisierung | III (Kohortenstudie) |
-| MPH → HPLC Serotonin | Präklinisch, diverse Studien | MPH senkt 5-HT in PFC, Striatum, Hippocampus | IV (präklinisch) |
-| LDX → SERT-Reversal | Pharmakologisch etabliert | Amphetamin kehrt SERT-Transportrichtung um, nicht kern-selektiv | II (etablierte Pharmakologie) |
-| Modell-Interpretation: MPH kern-asymmetrisch, LDX kernblind | Mechanistische Synthese | MPH: B7↑↑/B8↔; LDX: B7↑/B8↑ → differenzielle Interferenz-Konsequenz | V (Arbeitshypothese) |
+| MPH $\rightarrow$ HPLC Serotonin | Präklinisch, diverse Studien | MPH senkt 5-HT in PFC, Striatum, Hippocampus | IV (präklinisch) |
+| LDX $\rightarrow$ SERT-Reversal | Pharmakologisch etabliert | Amphetamin kehrt SERT-Transportrichtung um, nicht kern-selektiv | II (etablierte Pharmakologie) |
+| Modell-Interpretation: MPH kern-asymmetrisch, LDX kernblind | Mechanistische Synthese | MPH: B7$\uparrow\uparrow$/B8↔; LDX: B7$\uparrow$/B8$\uparrow$ $\rightarrow$ differenzielle Interferenz-Konsequenz | V (Arbeitshypothese) |
 
 ---
 

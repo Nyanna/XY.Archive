@@ -19,7 +19,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Dopamin-Hypersensitivität bei Migraineurs | Gesichert | Kontrollierte Provokationsstudien, Metaanalysen |
 | Serotonerge Konvergenz aller Migräneprophylaktika | Gesichert | Pharmakologische Wirkmechanismen etabliert |
 | Migräne als Raphe-Oszillationsstörung | Plausibel, nicht direkt belegt | Extrapoliert aus bekannten Mechanismen, konsistent mit Periodizität |
-| Fetale Raphe-Instabilität → thalamische Fehlkalibrierung | Plausibel, teilweise tierexperimentell gestützt | SERT-KO-Modelle, serotonerge Entwicklungsbiologie |
+| Fetale Raphe-Instabilität $\rightarrow$ thalamische Fehlkalibrierung | Plausibel, teilweise tierexperimentell gestützt | SERT-KO-Modelle, serotonerge Entwicklungsbiologie |
 | ASD, Migräne, Gating-Insuffizienz als Einheitsdefekt | Hypothetisch, konsistent | Selbstbeobachtung + epidemiologische Ko-Inzidenz |
 | Migränefreiheit unter Stimulanzien | Vorläufig klinisch | Retrospektive Studie (n=73), eigene Beobachtung |
 | Upstream-Stabilisierung als Therapiestrategie | Hypothetisch, nie direkt adressiert | Eigene Interpretation existierender Datenpunkte |
@@ -41,7 +41,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Lokale Slow Waves korrelieren mit Mind Blanking und Mind Wandering, regionsspezifisch | Gesichert | Andrillon et al. 2021 (Nature Comms, n=49), iEEG |
 | Frontal-first, posterior-last Aufwachgradient nach NREM | Gesichert | Pigorini et al. 2025 (Current Biology), Mensen et al. 2026 (bioRxiv) |
 | ADHD-Kernsymptome als Ausdruck lokaler Schlaf-Intrusion | Plausibel | Andrillon et al. 2019 (Front Neurosci), Bernardi et al. 2015, Konzeptpaper |
-| Insuffizienter Raphe-Tonus → asynchrone kortikale Off-State-Intrusion | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus Raphe-Projektionsmuster + lokaler Schlaf-Literatur |
+| Insuffizienter Raphe-Tonus $\rightarrow$ asynchrone kortikale Off-State-Intrusion | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus Raphe-Projektionsmuster + lokaler Schlaf-Literatur |
 | Räumliche SWS-Fragmentierung bei erhaltenem Quantum (Deep-Episoden/h: 1,6 PRE vs. 1,1 POST, p=0,005; Hierarchie Deep > REM > Light) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3) |
 | LDX konsolidiert Schlafarchitektur (Transitionsdichte −23%, p=0,011; Deep-SD ×3 reduziert; Nap-Korrelation r=0,276, p=0,019) | Statistisch signifikant (n=79, Consumer-Tracker) | Tracker-Daten, Mann-Whitney U (Anhang B.3, B.5) |
 | Quasi-wöchentliche Periodizität im nächtlichen HR-Drop (FFT: 7,5 Tage, Power 102,5; Autokorrelation Lag 7 r=0,317) | Statistisch signifikant (n=60 Nächte) | Tracker-Daten, FFT + Autokorrelation (Anhang B.10) |
@@ -52,17 +52,17 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Fragmentierte Nächte zeigen höhere Deep-Gesamtdauer (129 vs. 106 min) — Quantität ≠ Qualität | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten (Anhang B.5) |
 | Betablocker-Invarianz der Schlaffragmentierung als negatives Differentialkriterium | Deskriptiv (n=79, Consumer-Tracker) | Tracker-Daten, PRE unter Metoprolol zeigt identische Fragmentierung (Anhang B.4) |
 | Migräneprophylaxe ohne Upstream-Adressierung = Unterdrückung des Schutzmechanismus | Modellvorhersage | Abgeleitet aus B.6, konsistent mit Betablocker-Phänomenologie (Anhang C) |
-| Kortikale Insuffizienz (lokaler Schlaf) → sekundäre thalamische Destabilisierung über Rückkopplungsschleife | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus thalamokortikaler Rückkopplungsarchitektur + lokaler Schlaf |
-| Nap-Kaskade: Desynchronisation → Nap (kompensatorisch) + CSD (parallel); Sleep Inertia als Beschleuniger, nicht Initiator | Hypothetisch, konsistent, quantitativ gestützt | Selbstbeobachtung + Tracker-Daten (r=0,276, p=0,019, Anhang B.5; Nap-Outcome: Anhang B.11) |
+| Kortikale Insuffizienz (lokaler Schlaf) $\rightarrow$ sekundäre thalamische Destabilisierung über Rückkopplungsschleife | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus thalamokortikaler Rückkopplungsarchitektur + lokaler Schlaf |
+| Nap-Kaskade: Desynchronisation $\rightarrow$ Nap (kompensatorisch) + CSD (parallel); Sleep Inertia als Beschleuniger, nicht Initiator | Hypothetisch, konsistent, quantitativ gestützt | Selbstbeobachtung + Tracker-Daten (r=0,276, p=0,019, Anhang B.5; Nap-Outcome: Anhang B.11) |
 | CSD als kortikaler Reset-Mechanismus (erzwungene Resynchronisation) | Hypothetisch, konsistent mit drei konvergenten Beobachtungslinien | Post-Migräne-Klarheit + konsolidierter REM; Naratriptan-Gegenprobe (antiproportional zu Traumerinnerung); Betablocker-Paradox (Anhang B.6) |
-| Betablocker-Paradox: Schwellenerhöhung ohne CSD-Reset → chronische Sub-CSD-Destabilisierung | Hypothetisch | Modellvorhersage, konsistent mit klinischer Beobachtung unter Metoprolol |
+| Betablocker-Paradox: Schwellenerhöhung ohne CSD-Reset $\rightarrow$ chronische Sub-CSD-Destabilisierung | Hypothetisch | Modellvorhersage, konsistent mit klinischer Beobachtung unter Metoprolol |
 | Doppeldämpfung unter Metoprolol: β₁-Blockade (noradrenerg) + fehlender CSD-Reset (strukturell) | Hypothetisch | Modellvorhersage, konsistent mit Selbstbeobachtung |
-| Powernap als kortikale Resynchronisation (globaler Down-State → symmetrische Reaktivierung), nicht als Erholung | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch konsistent mit Schlafphysiologie |
+| Powernap als kortikale Resynchronisation (globaler Down-State $\rightarrow$ symmetrische Reaktivierung), nicht als Erholung | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch konsistent mit Schlafphysiologie |
 | Schlaflatenz <2 min als Marker für bereits laufende lokale Schlaf-Intrusion, nicht für gesunden Schlaf | Einzelfallbeobachtung | Selbstbeobachtung, MSLT-Referenz (<5 min = pathologisch) |
-| Maximale circadiane Desynchronisation → maximale lokale Schlaf-Anfälligkeit → Migräne-Zyklusperiodizität | Hypothetisch, konsistent | Verbindung 2.5 (circadiane Drift) + lokaler Schlaf + CSD-Reset-Mechanismus + SWS-Fragmentierung |
+| Maximale circadiane Desynchronisation $\rightarrow$ maximale lokale Schlaf-Anfälligkeit $\rightarrow$ Migräne-Zyklusperiodizität | Hypothetisch, konsistent | Verbindung 2.5 (circadiane Drift) + lokaler Schlaf + CSD-Reset-Mechanismus + SWS-Fragmentierung |
 | Arbeit/Aufgabenfokus als externer kortikaler Synchronisator (kompensiert insuffizienten Raphe-Tonus) | Hypothetisch, konsistent | Selbstbeobachtung, mechanistisch ableitbar aus stimulusgetriebenem vs. tonischem Arousal |
-| SCN↔B8↔B7 serielle Architektur (MRN als einziger direkter SCN-Afferent) | Gesichert | Meyer-Bernstein et al. 1996 (retrograde Tracing), Glass et al. 2000 (DRN→MRN→SCN), Dudley et al. 1999 |
-| DRN→MRN Glutamat-Verbindung unidirektional | Gesichert | Mokler et al. 2009 |
+| SCN↔B8↔B7 serielle Architektur (MRN als einziger direkter SCN-Afferent) | Gesichert | Meyer-Bernstein et al. 1996 (retrograde Tracing), Glass et al. 2000 (DRN$\rightarrow$MRN$\rightarrow$SCN), Dudley et al. 1999 |
+| DRN$\rightarrow$MRN Glutamat-Verbindung unidirektional | Gesichert | Mokler et al. 2009 |
 | Differentielle afferente Regulation: DRN GABAerg, MRN glutamaterg | Gesichert | Crawford et al. 2003 |
 | H1-Blockade supprimiert selektiv DRN-5-HT, kein MRN-Effekt | Gesichert | Crawford et al. 2013 (Mirtazapin-Studie) |
 | SSRIs und 5-HT1A-Agonisten kernblind (identische Potenz DRN/MRN) | Gesichert | Tao et al. 2003 |
@@ -72,9 +72,9 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | MPH bei Epilepsie: 4-fach erhöhtes Anfallsrisiko in ersten 30 Tagen | Gesichert (Register) | Man et al. 2020 (IRR 4,01) |
 | ADHS-Medikation: 27% Anfallsreduktion langfristig | Gesichert (Register) | Brikell et al. 2019 |
 | 5-HT1A-Autorezeptor-Instabilität am MRN als singulärer Flaschenhals für Intra- UND Inter-Kern-Desync | Hypothetisch, mechanistisch zwingend | Abgeleitet aus serieller Architektur (Meyer-Bernstein 1996) + Autorezeptor-Modell (2.2) |
-| LDX wirkt nicht auf SCN direkt, sondern über B8-Stabilisierung → SCN-Input verbessert | Hypothetisch, konsistent | Mechanistisch abgeleitet; keine direkte DAT/NET-Expression am SCN |
-| MPH kern-asymmetrisch (B7>>B8), LDX kernblind → MPH potentiell interferenzverstärkend | Hypothetisch, konsistent | DRN-Elektrophysiologie (Tang 2013) + MRN-Extrapolation |
-| Diphenhydramin als B7-Amplitudenmodulator → weniger thalamische Interferenz | Hypothetisch, testbar | Crawford et al. 2013 + Interferenzmodell (Anhang F) |
+| LDX wirkt nicht auf SCN direkt, sondern über B8-Stabilisierung $\rightarrow$ SCN-Input verbessert | Hypothetisch, konsistent | Mechanistisch abgeleitet; keine direkte DAT/NET-Expression am SCN |
+| MPH kern-asymmetrisch (B7>>B8), LDX kernblind $\rightarrow$ MPH potentiell interferenzverstärkend | Hypothetisch, konsistent | DRN-Elektrophysiologie (Tang 2013) + MRN-Extrapolation |
+| Diphenhydramin als B7-Amplitudenmodulator $\rightarrow$ weniger thalamische Interferenz | Hypothetisch, testbar | Crawford et al. 2013 + Interferenzmodell (Anhang F) |
 | Migräne-Trigger wirken über kortikale Taktperturbation, nicht über Raphe-Destabilisierung | Hypothetisch, konsistent | Revision April 2026; erklärt Triggerheterogenität und -inkonsistenz |
 | AH1-Exposition in Entwicklung als potentieller Hit 1b (iatrogene B7-Suppression) | Spekulativ | Dritte Lesart von Fuhrmann et al. 2020 |
 | Zwei-Phasen-Protokoll LDX + DPH-HCl als komplementäres Design | Spekulativ, n=1-Experiment | Theoretische Ableitung (08_zwei_phasen_protokoll.md) |
@@ -82,16 +82,16 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | Laminare Dissoziation bei Pavor: primäre Sensorik + Striatum aktiv, PFC + Hippocampus + semantische Bindung offline | Einzelfallbeobachtung, mechanistisch konsistent | Phänomenologische Beobachtung (Anhang C) |
 | Stimming während Pavor nocturnus als subkortikal generiertes Muster ohne bewusstes Erleben | Einzelfallbeobachtung | Phänomenologische Beobachtung (Anhang C) |
 | Morgendliches Duschen als sensorisches Forcing bei inkomplettem Schlaf-Wach-Übergang | Einzelfallbeobachtung, mechanistisch konsistent | Selbstbeobachtung |
-| MBA-Symptome erklärbar durch B7→ANS-Kern-Proximität ohne Brainstem-CSD | Modellvorhersage, parsimoniöser als konventionelle Erklärung | ICHD-3 1.2.2 (Symptomtopographie); Anhang F (Innervierungsanatomie); Anhang B.20 (temporale Dissoziation) |
+| MBA-Symptome erklärbar durch B7$\rightarrow$ANS-Kern-Proximität ohne Brainstem-CSD | Modellvorhersage, parsimoniöser als konventionelle Erklärung | ICHD-3 1.2.2 (Symptomtopographie); Anhang F (Innervierungsanatomie); Anhang B.20 (temporale Dissoziation) |
 | Keine humane Evidenz für Brainstem-CSD; einzige Grundlage Cacna1a-S218L-Mausmodell | Evidenzlücke | Literaturreview: Aiba & Noebels 2015, Loonen et al. 2019, Jansen et al. 2019 — ausschließlich Tiermodell |
 | ANS-Symptome temporal vor kortikaler CSD (Einzelfall, LDX-bedingte Separation) | Einzelfallbeobachtung | Anhang B.20 |
 | CSD benötigt zwei aktive, desynchronisierte Oszillatoren; einzelner supprimierter Oszillator erzeugt keine Interferenz | Modellvorhersage, konsistent mit HR-Spreading-Daten | Anhang B.20, Differentialphänotypologie (4.7) |
 | Post-exertionale Migräne als Nap-Kaskade mit autonomem Einstiegspfad | Modellvorhersage, unifiziert zwei Beobachtungskategorien | Anhang B.20 + B.5/B.11 |
 | B7-Aphasie (reduzierte Amplitude, inkonsistenter Delay) als ANS-Destabilisierungsmechanismus | Einzelfallbeobachtung, HR-Spreading-Daten | Anhang B.20 |
 | Sport als Migränetrigger: B7-Depletion durch sympathischen Maximaltakt, CSD durch post-exertionale Regeneration (4.8) | Modellvorhersage, epidemiologisch gestützt | Koppen et al. 2013 (38% ETM-Prävalenz, 160 min Latenz) |
-| Differentielle Phänotypologie: B7-Instabilität → MBA + CSD; B8-Instabilität → Aura ohne ANS; B7-Depletion → reine ANS; B8-Depletion → kein Migränephänotyp | Modellvorhersage, klinisch plausibel, nicht direkt getestet | Abgeleitet aus Innervierungsanatomie (Anhang F), Differentialtabelle (4.7.2) |
+| Differentielle Phänotypologie: B7-Instabilität $\rightarrow$ MBA + CSD; B8-Instabilität $\rightarrow$ Aura ohne ANS; B7-Depletion $\rightarrow$ reine ANS; B8-Depletion $\rightarrow$ kein Migränephänotyp | Modellvorhersage, klinisch plausibel, nicht direkt getestet | Abgeleitet aus Innervierungsanatomie (Anhang F), Differentialtabelle (4.7.2) |
 | 5-HT2A-Aktivierung im NTS hemmt RVLM-Sympathikus tonisch (nicht nur reflexiv) | Gesichert | Sévoz-Couche et al. 2004/2006, Tiermodell, reproduziert |
-| PFC→Hypothalamus→Raphe→NTS 5-HT2A als Baroreflex-Fazilitationspfad | Gesichert | Sévoz-Couche et al. 2006, Tiermodell |
+| PFC$\rightarrow$Hypothalamus$\rightarrow$Raphe$\rightarrow$NTS 5-HT2A als Baroreflex-Fazilitationspfad | Gesichert | Sévoz-Couche et al. 2006, Tiermodell |
 | NTS-Tonusinsuffizienz bei B7-Insuffizienz (adrenale HR-Kompensation + Flushing + Erschöpfung bei erhaltener Kognition, keine orthostatische Tachykardie) | Einzelfallbeobachtung, mechanistisch konsistent | HRV-Daten 29.04.2026; POTS-Literatur als Differentialdiagnose (Raj 2006, Circulation 2013) |
 | LDX schützt CSD-Pfad, entblößt NTS-Tonuspfad durch PFC-Priorisierung | Hypothetisch, konsistent | Modellvorhersage aus PFC-Ressourcenkonkurrenz |
 | Nullphase als notwendige, nicht hinreichende Bedingung für SWS-Restauration | Einzelfallbeobachtung | DPH-Vergleich: Nullphase ohne Morgenumschaltung (29.04.2026) |
@@ -99,8 +99,8 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | LDX-Sympathikus-Effekt (HR-Rechteck-Puls) läuft über NTS-Pfad, nicht peripher-katecholaminerg | Einzelfallbeobachtung, mechanistisch konsistent | Dissoziation Kognition/Sympathikus unter LDX am 29.04.2026; Rechteck-Kinetik (Anhang D) konsistent mit zentraler Umschaltung |
 | Abwesenheit des LDX-Peaks bei erhaltener Kognition als diagnostischer Marker für NTS-Tonusinsuffizienz | Einzelfallbeobachtung | 29.04.2026 — LDX kognitiv wirksam, sympathischer Drive absent |
 | LDX-Dosiserhöhung bei NTS-Insuffizienz adressiert falschen Engpass (PFC-Priorisierung) | Hypothetisch, mechanistisch ableitbar | Modellvorhersage aus PFC-Ressourcenkonkurrenz + NTS-Pfad-Abhängigkeit |
-| NTS→RVLM-Kaskade bei B7-Insuffizienz als Mechanismus der sympathischen Überaktivität; TPH2-KO als nächster Analogiefall, Moxonidin als RVLM-selektive Interventionsoption | Literaturgestützt, mechanistisch konsistent | Biaggioni et al. 1994 (NTS-Läsion); Alenina et al. 2022 (TPH2-KO); Moraes et al. 2013 (CIH); Neff et al. 2009 (Saporin); Ernsberger et al. 1993 (Moxonidin RVLM-Selektivität) |
-| 95% der MBA-Patienten haben auch typische Aura → konsistent mit variablem B7-Zustand, nicht fixem Phänotyp | Literaturgestützt | Eriksen et al. (MedLink Neurology) |
+| NTS$\rightarrow$RVLM-Kaskade bei B7-Insuffizienz als Mechanismus der sympathischen Überaktivität; TPH2-KO als nächster Analogiefall, Moxonidin als RVLM-selektive Interventionsoption | Literaturgestützt, mechanistisch konsistent | Biaggioni et al. 1994 (NTS-Läsion); Alenina et al. 2022 (TPH2-KO); Moraes et al. 2013 (CIH); Neff et al. 2009 (Saporin); Ernsberger et al. 1993 (Moxonidin RVLM-Selektivität) |
+| 95% der MBA-Patienten haben auch typische Aura $\rightarrow$ konsistent mit variablem B7-Zustand, nicht fixem Phänotyp | Literaturgestützt | Eriksen et al. (MedLink Neurology) |
 | Schwindel mit Nystagmus = vestibuläre Kerne (B7); Schwindel ohne Nystagmus = möglicherweise kortikal (Demarquay) | Vorgeschlagener klinischer Differentialmarker | Abgeleitet, nicht validiert |
 | Demarquay-Alternative (kortikaler Ursprung) erklärt Symptomtopographie, nicht Symptomintensität | Literaturkritik | Demarquay et al. 2018 (Cephalalgia) |
 | Temporale Sequenz: Literatur beschreibt visuelle Aura vor Hirnstammsymptomen; Modell sagt ANS zuerst; Auflösung über Detektions-Bias plausibel, nicht gesichert | Potenziell falsifizierend, Auflösung hypothetisch | ICHD-3, Einzelfallbeobachtung B.20 |
@@ -131,7 +131,7 @@ Dieses Modell ist eine Arbeitshypothese. Die Evidenzbasis variiert erheblich zwi
 | SUDEP-analoge Risikokategorie bei sehr schwerem ME/CFS | Hypothetisch, mechanistisch zu erwarten, epidemiologisch unzureichend erfasst | Chu, Jason et al. 2018; Anhang J.6 |
 | Dual-Hit auf Clearance-Achse (retardiertes B2 + retardiertes LPC-DHA) als kohärente therapeutische Strategie | Hypothetisch, Einzelteile peer-reviewed, Integration nicht publiziert | Anhang J.7.1–J.7.3 |
 | Bidirektionale Rückübertragung modellkohärenter Interventionen auf Migräneprophylaxe (LDN, Mastzellstabilisierung, niedrigdosierte Benzodiazepine, Pyridostigmin) | Hypothetisch, mechanistisch begründet, klinisch unerforscht | Anhang J.8 |
-| DPH 12,5 mg als PFC-Entlastung bei manifester NTS-Insuffizienz (Klarheit↑, ULF↓, Sympathikus unverändert) | Einzelfallbeobachtung | 29.04.2026 — diagnostischer Trigger validiert, Wirkmechanismus konsistent |
+| DPH 12,5 mg als PFC-Entlastung bei manifester NTS-Insuffizienz (Klarheit$\uparrow$, ULF$\downarrow$, Sympathikus unverändert) | Einzelfallbeobachtung | 29.04.2026 — diagnostischer Trigger validiert, Wirkmechanismus konsistent |
 | DPH-Rollenumkehr: SWS-Clearance disqualifiziert (zustandsblind + NTS-Risiko), ANS-Akuteinsatz erhalten (zustandsgeprüft + NTS-Risiko irrelevant) | Einzelfallbeobachtung, mechanistisch ableitbar | 29.04.2026 + NTS-Pfad-Modell (§5.7) |
 | LDX-Peak absent als diagnostischer Marker für NTS-Insuffizienz und Einsatztrigger für DPH-PFC-Entlastung | Einzelfallbeobachtung | 29.04.2026 |
 
@@ -163,7 +163,7 @@ Die folgenden Fragen sind aus dem bisherigen Modellierungsprozess hervorgegangen
 
 | Nr. | Frage | These / Hintergrund | Operationalisierung | Status |
 | :---- | :---- | :---- | :---- | :---- |
-| 1 | **Raphe-Depletionshypothese** | LDX stabilisiert die Raphe pro Kern, aber über ~28–30 Tage könnte die 5-HT-Synthese das Ceiling erreichen — TPH2-Kapazitätslimit + vesikuläre Erschöpfung → Depletion trotz verfügbarem Dopamin (vgl. 2.2.1 für biologisches Substrat) | Monitoring über 2–3 weitere Zyklen ohne Metoprolol-Konfundierung | 3 Wochen post-Metoprolol zu kurz für Isolation; 10 Tage zwischen den beiden LDX-Durchbrüchen könnten Rebound, Depletion oder Baseline sein |
-| 2 | **Exakte Inter-Raphe-Kopplung** | Läuft die Inter-Kern-Synchronisation ausschließlich über SCN oder gibt es direkte B7↔B8-Projektionen? Wenn ausschließlich über SCN: LDX kann pro-Kern-Takt stabilisieren, aber den Phasenversatz nicht korrigieren → erklärt den persistierenden ~4-Tage-Zyklus | Literaturrecherche zu direkten DR→MR-Verbindungen | Offen |
+| 1 | **Raphe-Depletionshypothese** | LDX stabilisiert die Raphe pro Kern, aber über ~28–30 Tage könnte die 5-HT-Synthese das Ceiling erreichen — TPH2-Kapazitätslimit + vesikuläre Erschöpfung $\rightarrow$ Depletion trotz verfügbarem Dopamin (vgl. 2.2.1 für biologisches Substrat) | Monitoring über 2–3 weitere Zyklen ohne Metoprolol-Konfundierung | 3 Wochen post-Metoprolol zu kurz für Isolation; 10 Tage zwischen den beiden LDX-Durchbrüchen könnten Rebound, Depletion oder Baseline sein |
+| 2 | **Exakte Inter-Raphe-Kopplung** | Läuft die Inter-Kern-Synchronisation ausschließlich über SCN oder gibt es direkte B7↔B8-Projektionen? Wenn ausschließlich über SCN: LDX kann pro-Kern-Takt stabilisieren, aber den Phasenversatz nicht korrigieren $\rightarrow$ erklärt den persistierenden ~4-Tage-Zyklus | Literaturrecherche zu direkten DR$\rightarrow$MR-Verbindungen | Offen |
 | 3 | **Corpus-callosum-Propagation der tonischen Welle** | Geschwindigkeit und Symmetrie der transhemisphärischen Propagation über das Corpus callosum; Callosotomie-Befund (Auren persistieren, Generalisierung unterbunden) stützt intrahemisphärischen Ursprung | Literaturrecherche zu callosaler CSD/tonischer Wellen-Propagation | Offen |
 | 4 | **Retrobulbärer Druck — Anatomische Zuordnung** | Trigeminale Konvergenz? Orbitale Vaskulatur? Direkte thalamische Repräsentation? Der retrobulbäre Druck ist konsistent das früheste Symptom — aber sein anatomisches Substrat ist unklar | Literaturrecherche zu retrobulbärer Schmerzrepräsentation bei Migräne | Offen |

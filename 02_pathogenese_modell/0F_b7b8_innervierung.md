@@ -7,7 +7,7 @@
 
 Dieser Anhang kartiert die Projektionszonen der beiden aufsteigenden Raphe-Kerne — B7 (Nucleus raphes dorsalis, DRN) und B8 (Nucleus raphes medianus, MRN) — und identifiziert zwei anatomisch definierte *Interferenzstrukturen*, in denen beide Kerne konvergieren: den **Thalamus** (primäre Interferenzquelle mit maximaler B7/B8-Überlappung) und den **Hippocampus** (zelluläre B7/B8-Segregation). Diese Strukturen bilden den mechanistischen Kern des in Kapitel 4 (Migräne/CSD) und Anhang E (Epilepsie) entwickelten Modells. Inter-Kern-Desynchronisation (vgl. Abschnitt 2.5.1) erzeugt an diesen Konvergenzpunkten destruktive Interferenz — der serotonerge Takt wird lokal inkohärent, mit regional spezifischen Konsequenzen.
 
-**Zentrale These:** Die klinische Topographie von Migräneaura, Epilepsiefoki und thalamischer Dysregulation folgt nicht aus einer diffusen serotonergen Unterversorgung, sondern aus der *anatomischen Geometrie der dualen Raphe-Innervierung*. B7 und B8 innervieren den gesamten menschlichen Kortex dual laminär (äußere vs. innere Schichten, Charnay & Leger 2010) — es gibt keine kortikale Region mit Single-Source-Innervierung. Die Interferenz ist primär thalamisch; die kortikale Symptomtopographie folgt aus der thalamischen Kaskade mit lastabhängigem Kipppunkt. Der Thalamus ist die einzige Struktur, in der maximale B7/B8-Überlappung gesichert belegt ist. Der Hippocampus zeigt belegte zelluläre Segregation (DRN→Pyramidenzellen, MRN→GABAerge Interneurone). Der Kortex zeigt ubiquitäre duale Innervierung ohne regionale Schutzzone.
+**Zentrale These:** Die klinische Topographie von Migräneaura, Epilepsiefoki und thalamischer Dysregulation folgt nicht aus einer diffusen serotonergen Unterversorgung, sondern aus der *anatomischen Geometrie der dualen Raphe-Innervierung*. B7 und B8 innervieren den gesamten menschlichen Kortex dual laminär (äußere vs. innere Schichten, Charnay & Leger 2010) — es gibt keine kortikale Region mit Single-Source-Innervierung. Die Interferenz ist primär thalamisch; die kortikale Symptomtopographie folgt aus der thalamischen Kaskade mit lastabhängigem Kipppunkt. Der Thalamus ist die einzige Struktur, in der maximale B7/B8-Überlappung gesichert belegt ist. Der Hippocampus zeigt belegte zelluläre Segregation (DRN$\rightarrow$Pyramidenzellen, MRN$\rightarrow$GABAerge Interneurone). Der Kortex zeigt ubiquitäre duale Innervierung ohne regionale Schutzzone.
 
 ### **F.1 Projektionsmuster: B7 (DRN) vs. B8 (MRN)**
 
@@ -17,7 +17,7 @@ Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al
 | :---- | :---- | :---- | :---- |
 | **Präfrontaler Kortex (PFC)** | **++++** (dominant) | + (minimal) | Gering in Tierdaten, beim Menschen duale laminäre Innervierung belegt (Charnay & Leger 2010) |
 | **Parieto-temporo-okzipitaler Neokortex** | + (moderat, Vertes 1991 Ratte) | ± (fraglich) | Beim Menschen duale laminäre Innervierung wie gesamter Kortex |
-| **Hippocampus** | ++ (Hilus, Molekularschicht) | +++ (Str. lacunosum-moleculare, Str. oriens) | **Hoch, zellulär segregiert** → *Zelluläre Interferenzstruktur* — B7/B8-Zielzellspezifität gesichert |
+| **Hippocampus** | ++ (Hilus, Molekularschicht) | +++ (Str. lacunosum-moleculare, Str. oriens) | **Hoch, zellulär segregiert** $\rightarrow$ *Zelluläre Interferenzstruktur* — B7/B8-Zielzellspezifität gesichert |
 | **Midline-/Intralaminärer Thalamus** | +++ | +++ | **Primäre Interferenzquelle** — maximale B7/B8-Überlappung gesichert |
 | **Basalganglien (Striatum)** | ++++ | + | Gering |
 | **Amygdala** | +++ | ++ | Moderat |
@@ -26,9 +26,9 @@ Die anterograde Tracing-Literatur (Muzerelle et al. 2014; Vertes 1991; Ren et al
 
 ### **F.2 Kortikale Innervierung: Ubiquitäre duale laminäre Versorgung**
 
-B7 und B8 innervieren den gesamten menschlichen Kortex dual laminär. Für den menschlichen Kortex gilt, dass oberflächliche Schichten mehr serotonerge Axone erhalten als tiefe, wobei zwei distinkte Axon-Morphologien nachgewiesen sind (Charnay & Leger 2010). Eine regionale Schutzzone (Single-Source-Innervierung) existiert beim Menschen nicht — auch der PFC erhält duale laminäre Innervierung. Die kernspezifische Zuordnung (B7→innere vs. B8→äußere Schichten) ist aus publizierten Daten nicht eindeutig belegbar; Tierdaten (Muzerelle et al. 2014) zeigen regionale Varianz, sind aber nicht direkt auf den Menschen übertragbar.
+B7 und B8 innervieren den gesamten menschlichen Kortex dual laminär. Für den menschlichen Kortex gilt, dass oberflächliche Schichten mehr serotonerge Axone erhalten als tiefe, wobei zwei distinkte Axon-Morphologien nachgewiesen sind (Charnay & Leger 2010). Eine regionale Schutzzone (Single-Source-Innervierung) existiert beim Menschen nicht — auch der PFC erhält duale laminäre Innervierung. Die kernspezifische Zuordnung (B7$\rightarrow$innere vs. B8$\rightarrow$äußere Schichten) ist aus publizierten Daten nicht eindeutig belegbar; Tierdaten (Muzerelle et al. 2014) zeigen regionale Varianz, sind aber nicht direkt auf den Menschen übertragbar.
 
-**Konsequenz:** Der Kortex ist kein primärer Interferenzort. Die kortikale Symptomtopographie (okzipitale CSD-Initiation, visuelle Aura) erklärt sich nicht über lokale kortikale B7/B8-Überlappung, sondern über die thalamische Kaskade (→ F.4): Thalamische Interferenz propagiert über spezifische thalamokortikale Projektionspfade in den Kortex, wobei der Pulvinar-Pfad zum visuellen Kortex die niedrigste Kompensationsreserve aufweist und zuerst kippt.
+**Konsequenz:** Der Kortex ist kein primärer Interferenzort. Die kortikale Symptomtopographie (okzipitale CSD-Initiation, visuelle Aura) erklärt sich nicht über lokale kortikale B7/B8-Überlappung, sondern über die thalamische Kaskade ($\rightarrow$ F.4): Thalamische Interferenz propagiert über spezifische thalamokortikale Projektionspfade in den Kortex, wobei der Pulvinar-Pfad zum visuellen Kortex die niedrigste Kompensationsreserve aufweist und zuerst kippt.
 
 **Pulvinar-Pfad: Thalamische Projektion zum visuellen Kortex**
 
@@ -37,7 +37,7 @@ Der Pulvinar (posteriorer Thalamus) erhält beim Menschen nachweislich erhöhte 
 - **LGN (Corpus geniculatum laterale):** Driver-Pfad — überträgt retinale Information. Anatomisch robust, hohe Redundanz.
 - **Pulvinar:** Modulatorischer Higher-Order-Pfad — moduliert visuelle Integration, Aufmerksamkeit, kontextabhängige Verarbeitung. Niedrigere Kompensationsreserve.
 
-Bei thalamischer B7/B8-Interferenz (→ F.4) kippt der Pulvinar-Pfad zuerst, weil modulatorische Pfade empfindlicher auf Kohärenzverlust reagieren als Driver-Pfade. Die Symptomqualität folgt aus dieser Differenz: Gestörte visuelle *Integration* bei erhaltener visueller *Übertragung* — Rauschen statt Skotom als Prodrom. Das Skotom (CSD) entsteht erst bei weiterer Eskalation, wenn die Destabilisierung auf den Kortex selbst propagiert.
+Bei thalamischer B7/B8-Interferenz ($\rightarrow$ F.4) kippt der Pulvinar-Pfad zuerst, weil modulatorische Pfade empfindlicher auf Kohärenzverlust reagieren als Driver-Pfade. Die Symptomqualität folgt aus dieser Differenz: Gestörte visuelle *Integration* bei erhaltener visueller *Übertragung* — Rauschen statt Skotom als Prodrom. Das Skotom (CSD) entsteht erst bei weiterer Eskalation, wenn die Destabilisierung auf den Kortex selbst propagiert.
 
 Die visuelle Aura (Skotome, Fortifikationsspektren) ist damit nicht Symptom einer „kortikalen Übererregbarkeit", sondern Downstream-Manifestation der thalamischen Interferenz über den Pulvinar-Pfad.
 
@@ -48,7 +48,7 @@ Die hippocampale Innervierung zeigt ein laminär *und* zellulär differenziertes
 | Schicht | Dominanter Raphe-Kern | Funktion |
 | :---- | :---- | :---- |
 | **Stratum lacunosum-moleculare** | B8 (MRN) | Entorhinal-hippocampale Eingänge (Temporoammonic Pathway) |
-| **Stratum oriens** | B8 (MRN) | Basale Dendriten der Pyramidenzellen, CA3→CA1-Rückkopplung |
+| **Stratum oriens** | B8 (MRN) | Basale Dendriten der Pyramidenzellen, CA3$\rightarrow$CA1-Rückkopplung |
 | **Hilus (Gyrus dentatus)** | B7 (DRN) | Mossy-Fiber-System, Pattern Separation |
 | **Molekularschicht (Gyrus dentatus)** | B7 (DRN), partiell | Perforant-Path-Eingänge |
 
@@ -63,25 +63,25 @@ Der funktional entscheidende Separationsmechanismus ist jedoch nicht laminär, s
 
 Die zelluläre Zielspezifität ist experimentell gesichert: Circuit-Tracing mit AAV/Retro identifiziert den kaudalen DRN (B6) als Quelle hippocampaler Projektionen zu CaMKII-positiven Pyramidenzellen in dCA1 — *nicht* zu GAD67-positiven Interneuronen (Translational Neurodegeneration 2024, PMC11267773). Die MRN-Zielzellspezifität auf GABAerge Interneurone war bereits durch Freund (1992) etabliert.
 
-Die funktionale Dissoziation ist ebenfalls experimentell bestätigt: DRN→vHip-Aktivierung reduziert reaktive Aggression über 5-HT1B-Rezeptoren, während MRN→vHip-Aktivierung depressionsähnliches Verhalten moduliert, aber keinen Effekt auf Aggression zeigt (Chemogenetik/Optogenetik, ScienceDirect 2024).
+Die funktionale Dissoziation ist ebenfalls experimentell bestätigt: DRN$\rightarrow$vHip-Aktivierung reduziert reaktive Aggression über 5-HT1B-Rezeptoren, während MRN$\rightarrow$vHip-Aktivierung depressionsähnliches Verhalten moduliert, aber keinen Effekt auf Aggression zeigt (Chemogenetik/Optogenetik, ScienceDirect 2024).
 
 #### F.3.1 Separationsmechanismus und Vulnerabilität
 
 Der Hippocampus (3-Schichten-Architektur) kann DRN und MRN nicht räumlich/laminär voneinander isolieren, wie es der 6-Schichten-Neokortex tut. Stattdessen löst er das Interferenzproblem über **zelluläre Separation**: verschiedene Zellpopulationen als Empfänger. Diese Separation ist unter Normalbedingungen funktional äquivalent zu laminärer Trennung, aber sie hat eine spezifische Vulnerabilität:
 
-- MRN-Fasern bilden synaptische Kontakte → punktgenaue, robuste Signalübertragung
-- DRN-Fasern nutzen Volume Transmission → 5-HT wird in den Extrazellulärraum freigesetzt
+- MRN-Fasern bilden synaptische Kontakte $\rightarrow$ punktgenaue, robuste Signalübertragung
+- DRN-Fasern nutzen Volume Transmission $\rightarrow$ 5-HT wird in den Extrazellulärraum freigesetzt
 
-Bei SERT-Dysfunktion oder Autoreceptor-Versagen diffundiert das DRN-Signal (Volume Transmission) über den Extrazellulärraum zu den MRN-Zielneuronen (Interneurone) → **pharmakologischer Spillover**. Die zelluläre Separation bricht nicht mechanisch, sondern pharmakologisch zusammen.
+Bei SERT-Dysfunktion oder Autoreceptor-Versagen diffundiert das DRN-Signal (Volume Transmission) über den Extrazellulärraum zu den MRN-Zielneuronen (Interneurone) $\rightarrow$ **pharmakologischer Spillover**. Die zelluläre Separation bricht nicht mechanisch, sondern pharmakologisch zusammen.
 
 #### F.3.2 Pathomechanismus: Inkonsistente Engramm-Kodierung
 
-Bei Spillover überlagert das DRN-Signal das MRN-Signal auf den Interneuronen. Die zwei unabhängigen Modulationspfade — Timing-Kontrolle (MRN→Interneurone→Theta-Phase) und Plastizitätskontrolle (DRN→Pyramidenzellen→LTP) — verlieren ihre Unabhängigkeit.
+Bei Spillover überlagert das DRN-Signal das MRN-Signal auf den Interneuronen. Die zwei unabhängigen Modulationspfade — Timing-Kontrolle (MRN$\rightarrow$Interneurone$\rightarrow$Theta-Phase) und Plastizitätskontrolle (DRN$\rightarrow$Pyramidenzellen$\rightarrow$LTP) — verlieren ihre Unabhängigkeit.
 
 Bei circadian driftendem B7/B8-Phasenversatz (vgl. Abschnitt 2.5.1) erzeugt dies ein wanderndes Fenster der Interferenz: Engramme werden unter variablem 5-HT-Milieu kodiert. Die Kodierungsbedingungen sind bei jedem Konsolidierungszeitpunkt andere — nicht weil der Hippocampus defekt ist, sondern weil die zwei Modulationssysteme, die normalerweise unabhängig operieren, pharmakokinetisch verkoppelt werden.
 
 **Evidenzstatus:**
-- Zelluläre Zielspezifität (DRN→CaMKII+ Pyramidenzellen, MRN→GABAerge Interneurone): **experimentell belegt** (Circuit-Tracing 2024, PMC11267773; Freund 1992)
+- Zelluläre Zielspezifität (DRN$\rightarrow$CaMKII+ Pyramidenzellen, MRN$\rightarrow$GABAerge Interneurone): **experimentell belegt** (Circuit-Tracing 2024, PMC11267773; Freund 1992)
 - Funktionale Dissoziation DRN/MRN im Hippocampus: **experimentell belegt** (Chemogenetik/Optogenetik 2024)
 - Spillover-Mechanismus bei SERT-Dysfunktion als Ursache der Entdifferenzierung: **plausible Herleitung, nicht direkt getestet**
 - Inkonsistente Engramm-Kodierung als Downstream-Effekt: **Modellvorhersage**, konsistent mit D.6/D.7
@@ -94,7 +94,7 @@ Der Thalamus ist die singuläre primäre Interferenzquelle des Modells. Der Midl
 
 **Mechanismus:** B7/B8-Phasenversatz produziert hier *maximale destruktive Interferenz im Thalamus selbst*. Der Phasenversatz ist — unter LDX-stabilisiertem B8-SCN-Lock — primär ein Intertakt-Offset: Die B7-Intertakt-Phase driftet gegen den SCN-gelockten B8-Träger. Der ML/IL-Komplex erhält einen serotonergen Modulationstonus, dessen DRN-Anteil zyklisch aus der MRN-Trägerachse herausläuft — je weiter der Drift, desto inkohärenter das Gesamtsignal am Relais. Die kortikalen Effekte (CSD, Anfälle) sind in diesem Rahmen *sekundär* — sie resultieren aus dem thalamischen Kohärenzverlust, nicht umgekehrt.
 
-**Bezug zum Zentralmodell (→ Kapitel 8, Abschnitt 2.5.1):** Die thalamische Kalibrierung — zentraler Mechanismus des Pathogenesemodells — ist direkt betroffen. Der Thalamus fungiert als *Relaisstation und Integrator*; ein serotonerges Interferenzmuster an dieser Stelle propagiert über die thalamokortikale Kaskade in alle nachgeschalteten Schleifen.
+**Bezug zum Zentralmodell ($\rightarrow$ Kapitel 8, Abschnitt 2.5.1):** Die thalamische Kalibrierung — zentraler Mechanismus des Pathogenesemodells — ist direkt betroffen. Der Thalamus fungiert als *Relaisstation und Integrator*; ein serotonerges Interferenzmuster an dieser Stelle propagiert über die thalamokortikale Kaskade in alle nachgeschalteten Schleifen.
 
 **Intrathalamische Differenzierung**
 
@@ -102,36 +102,36 @@ Der „ML/IL-Komplex" ist eine funktionelle Gruppierung, keine anatomische Einhe
 
 Die Kippreihenfolge der einzelnen Kerne ist eine offene empirische Frage. Bekannt ist:
 
-- **Reuniens** → Hippocampus/PFC-Kopplung (Vertes 2004)
-- **Centromedianus/Parafascicularis** → striatale und kortikale Arousal-Modulation
-- **Centralis lateralis** → breit kortikale Projektion, Schmerzmodulation
-- **Pulvinar** → visueller Kortex (modulatorisch)
-- **MD (Nucleus mediodorsalis)** → PFC-Projektion
+- **Reuniens** $\rightarrow$ Hippocampus/PFC-Kopplung (Vertes 2004)
+- **Centromedianus/Parafascicularis** $\rightarrow$ striatale und kortikale Arousal-Modulation
+- **Centralis lateralis** $\rightarrow$ breit kortikale Projektion, Schmerzmodulation
+- **Pulvinar** $\rightarrow$ visueller Kortex (modulatorisch)
+- **MD (Nucleus mediodorsalis)** $\rightarrow$ PFC-Projektion
 
 #### F.4.1 Zwei Projektionsrichtungen der thalamischen Kaskade
 
 Die thalamische Interferenz propagiert über zwei Hauptpfade mit unterschiedlicher Schwelle:
 
-**Projektionsrichtung 1 — Pulvinar → visueller Kortex:**
-Der Pulvinar-Pfad ist modulatorisch (Higher-Order-Relay) und hat eine niedrigere Kompensationsreserve als Driver-Pfade. Er kippt bei thalamischer Interferenz zuerst. Klinisches Korrelat: Visuelle Prodromi (Rauschen, Fokussierungsschwierigkeiten, gestörte visuelle Integration bei erhaltener Grundübertragung über LGN). Bei Eskalation: CSD-Initiation im visuellen Kortex (→ Kap. 4.4).
+**Projektionsrichtung 1 — Pulvinar $\rightarrow$ visueller Kortex:**
+Der Pulvinar-Pfad ist modulatorisch (Higher-Order-Relay) und hat eine niedrigere Kompensationsreserve als Driver-Pfade. Er kippt bei thalamischer Interferenz zuerst. Klinisches Korrelat: Visuelle Prodromi (Rauschen, Fokussierungsschwierigkeiten, gestörte visuelle Integration bei erhaltener Grundübertragung über LGN). Bei Eskalation: CSD-Initiation im visuellen Kortex ($\rightarrow$ Kap. 4.4).
 
-**Projektionsrichtung 2 — MD und andere Kerne → Kortex:**
-Der MD-Thalamus-PFC-Loop hat unter LDX eine höhere Schwelle, weil LDX die dopaminerge Transmission im mesokortikalen System stabilisiert. Der PFC kippt daher zuletzt in der Kaskade. Andere thalamokortikale Pfade (centralis lateralis → somatosensorisch, centromedianus → striatal) kippen in einer lastabhängigen Reihenfolge.
+**Projektionsrichtung 2 — MD und andere Kerne $\rightarrow$ Kortex:**
+Der MD-Thalamus-PFC-Loop hat unter LDX eine höhere Schwelle, weil LDX die dopaminerge Transmission im mesokortikalen System stabilisiert. Der PFC kippt daher zuletzt in der Kaskade. Andere thalamokortikale Pfade (centralis lateralis $\rightarrow$ somatosensorisch, centromedianus $\rightarrow$ striatal) kippen in einer lastabhängigen Reihenfolge.
 
 **Lastabhängiger Kipppunkt**
 
 Der Erstversagenspunkt in der thalamischen Kaskade ist nicht anatomisch fixiert, sondern ergibt sich aus: **B7/B8-Innervierungsdichte × aktuelle Verarbeitungslast** des jeweiligen thalamokortikalen Pfads. Ein thalamischer Kern unter hoher Last verbraucht mehr modulatorische Reserve und kippt früher.
 
 Dies erklärt:
-- **Triggervariabilität:** Verschiedene Trigger belasten verschiedene thalamokortikale Pfade → unterschiedliche Erstversagenspunkte → unterschiedliche Prodromalprofile
+- **Triggervariabilität:** Verschiedene Trigger belasten verschiedene thalamokortikale Pfade $\rightarrow$ unterschiedliche Erstversagenspunkte $\rightarrow$ unterschiedliche Prodromalprofile
 - **Aura-Polymorphismus:** Die Aura-Topographie variiert zwischen Attacken, weil der prä-iktale Lastzustand variiert
-- **Modalitätsspezifische Prodromi:** Visuelles Arbeiten belastet Pulvinar-Pfad → visuelle Prodromi. Auditorische/somatosensorische Last → andere Erstversagenspunkte
+- **Modalitätsspezifische Prodromi:** Visuelles Arbeiten belastet Pulvinar-Pfad $\rightarrow$ visuelle Prodromi. Auditorische/somatosensorische Last $\rightarrow$ andere Erstversagenspunkte
 
 ### **F.5 PFC-Protektion: Pharmakologisch, nicht architektonisch**
 
 B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär (Charnay & Leger 2010). Eine architektonische Protektion durch Single-Source-Innervierung existiert nicht. Die klinisch beobachtete PFC-Klarheit unter Anfall erklärt sich pharmakologisch:
 
-**Mechanismus:** Der MD-Thalamus-PFC-Loop ist unter LDX dopaminerg stabilisiert. LDX erhöht tonisch Dopamin im mesokortikalen System → die dopaminerge Modulation des MD-Thalamus-PFC-Pfads erhöht dessen Kippschwelle in der thalamischen Kaskade (→ F.4.1). Der PFC kippt daher zuletzt — nicht weil er architektonisch geschützt ist, sondern weil sein thalamischer Input-Pfad pharmakologisch stabilisiert wird.
+**Mechanismus:** Der MD-Thalamus-PFC-Loop ist unter LDX dopaminerg stabilisiert. LDX erhöht tonisch Dopamin im mesokortikalen System $\rightarrow$ die dopaminerge Modulation des MD-Thalamus-PFC-Pfads erhöht dessen Kippschwelle in der thalamischen Kaskade ($\rightarrow$ F.4.1). Der PFC kippt daher zuletzt — nicht weil er architektonisch geschützt ist, sondern weil sein thalamischer Input-Pfad pharmakologisch stabilisiert wird.
 
 **Implikationen:**
 
@@ -141,7 +141,7 @@ B7 und B8 innervieren den PFC wie den gesamten Kortex dual laminär (Charnay & L
 
 **Klinisches Korrelat:** Subjektive PFC-Klarheit unter LDX während eines Anfalls (Beobachtung 31.03.2026) — die exekutiven Funktionen bleiben intakt, während posteriore und thalamische Funktionen gestört sind. Dies ist konsistent mit dem pharmakologischen Schutzmodell: Der MD-PFC-Loop hält unter LDX-Stabilisierung am längsten in der thalamischen Kaskade.
 
-**MPH-Beobachtung (Einzelfall):** Unter Methylphenidat (8 Tage) wurde PFC-Kribbeln/Euphorie berichtet — eine phänomenologische Signatur, die unter LDX nicht auftritt. MPH erhöht die B7-Feuerrate asymmetrisch (88 % der responsiven DRN-Neurone zeigen erhöhte Feuerrate unter akutem MPH; Tang & Dafny 2013, Kharas et al. 2017). Revidierte Interpretation: MPH erhöht B7 asymmetrisch → das Interferenzprodukt im PFC-assoziierten Thalamus (MD) steigt → das Kribbeln ist möglicherweise Korrelat der MD-Interferenz. Unter LDX (kernblind, SERT-Reversal in B7 und B8 proportional) entsteht diese Asymmetrie nicht → PFC-Klarheit ohne Kribbeln. *(Offene Frage: Die MD-Interferenz-Interpretation des Kribbelns ist mechanistisch plausibel, aber nicht direkt testbar. Alternative Erklärungen — z.B. direkte dopaminerge Überstimulation des PFC durch MPH — sind nicht ausgeschlossen.)*
+**MPH-Beobachtung (Einzelfall):** Unter Methylphenidat (8 Tage) wurde PFC-Kribbeln/Euphorie berichtet — eine phänomenologische Signatur, die unter LDX nicht auftritt. MPH erhöht die B7-Feuerrate asymmetrisch (88 % der responsiven DRN-Neurone zeigen erhöhte Feuerrate unter akutem MPH; Tang & Dafny 2013, Kharas et al. 2017). Revidierte Interpretation: MPH erhöht B7 asymmetrisch $\rightarrow$ das Interferenzprodukt im PFC-assoziierten Thalamus (MD) steigt $\rightarrow$ das Kribbeln ist möglicherweise Korrelat der MD-Interferenz. Unter LDX (kernblind, SERT-Reversal in B7 und B8 proportional) entsteht diese Asymmetrie nicht $\rightarrow$ PFC-Klarheit ohne Kribbeln. *(Offene Frage: Die MD-Interferenz-Interpretation des Kribbelns ist mechanistisch plausibel, aber nicht direkt testbar. Alternative Erklärungen — z.B. direkte dopaminerge Überstimulation des PFC durch MPH — sind nicht ausgeschlossen.)*
 
 Evidenzstatus: Einzelbeobachtung. Die pharmakologische Interpretation (MD-Loop-Stabilisierung) ist mechanistisch konsistenter als die architektonische (Single-Source), da letztere auf einer für den Menschen nicht belegten Prämisse beruht.
 
@@ -152,10 +152,10 @@ Die zwei Interferenzstrukturen bilden ein kohärentes anatomisches Substrat für
 | Struktur | Anatomie | Interferenztyp | Klinische Manifestation |
 | :---- | :---- | :---- | :---- |
 | **Thalamus** | Maximale B7/B8-Überlappung (gesichert) | Primäre Interferenzquelle | Kaskade mit lastabhängigem Kipppunkt |
-| — Pulvinar → visueller Kortex | Modulatorischer Higher-Order-Pfad | Niedrige Kompensationsreserve, kippt zuerst | Visuelle Prodromi (Rauschen, Fokussierungsverlust), dann CSD-Initiation (→ Kap. 4.4) |
-| — MD → PFC | Thalamokortikaler Pfad | Unter LDX dopaminerg stabilisiert | PFC kippt zuletzt; pharmakologischer Schutz |
-| — Andere Kerne → Kortex | Modalitätsspezifische Pfade | Lastabhängig | Symptomtopographie folgt prä-iktalem Lastprofil |
-| **Hippocampus** | Zelluläre B7/B8-Segregation (gesichert): DRN→Pyramidenzellen, MRN→Interneurone | Pharmakologischer Spillover → inkonsistente Engramm-Kodierung | State-dependent encoding, iktale Amnesie |
+| — Pulvinar $\rightarrow$ visueller Kortex | Modulatorischer Higher-Order-Pfad | Niedrige Kompensationsreserve, kippt zuerst | Visuelle Prodromi (Rauschen, Fokussierungsverlust), dann CSD-Initiation ($\rightarrow$ Kap. 4.4) |
+| — MD $\rightarrow$ PFC | Thalamokortikaler Pfad | Unter LDX dopaminerg stabilisiert | PFC kippt zuletzt; pharmakologischer Schutz |
+| — Andere Kerne $\rightarrow$ Kortex | Modalitätsspezifische Pfade | Lastabhängig | Symptomtopographie folgt prä-iktalem Lastprofil |
+| **Hippocampus** | Zelluläre B7/B8-Segregation (gesichert): DRN$\rightarrow$Pyramidenzellen, MRN$\rightarrow$Interneurone | Pharmakologischer Spillover $\rightarrow$ inkonsistente Engramm-Kodierung | State-dependent encoding, iktale Amnesie |
 
 Die thalamische Kaskade erklärt, warum Migräne, Epilepsie und kognitive Dysfunktion *nicht zufällig komorbid* sind, sondern dieselbe anatomische Grundlage teilen (vgl. Anhang E). Die Unterschiede in der klinischen Manifestation ergeben sich aus der jeweiligen Schwellencharakteristik der betroffenen thalamokortikalen Pfade und dem prä-iktalen Lastprofil — nicht aus unterschiedlichen Pathomechanismen.
 
@@ -165,17 +165,17 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 
 | Substanz | B7 (DRN) | B8 (MRN) | Interferenz-Effekt | Evidenzniveau |
 | :---- | :---- | :---- | :---- | :---- |
-| **LDX** | ↑ (SERT-Reversal) | ↑ (SERT-Reversal) | Proportional → Intra-Kern-Takt stabilisiert, Versatz bleibt | Mechanistisch ableitbar |
-| **MPH** | ↑↑ (indirekt, DA/GABA) | ↔ (kaum Effekt) | Asymmetrisch → Amplitude_B7 steigt → mehr Interferenz | Gesichert (DRN-Elektrophysiologie); MRN extrapoliert |
-| **Diphenhydramin** | ↓ (H1-Blockade) | ↔ (kein H1-Effekt) | Asymmetrisch → Amplitude_B7 sinkt → weniger Interferenz | Gesichert (Crawford et al. 2013) |
-| **SSRIs** | ↑ (SERT-Blockade) | ↑ (SERT-Blockade) | Kernblind → kein differentieller Effekt | Gesichert (Tao et al. 2003) |
-| **TCAs (Amitriptylin)** | ↑ SERT + ↓ H1 + ↓ NET | ↑ SERT | Gemischt → B7 netto ↓ relativ zu B8 → Interferenz sinkt | Mechanistisch ableitbar |
+| **LDX** | $\uparrow$ (SERT-Reversal) | $\uparrow$ (SERT-Reversal) | Proportional $\rightarrow$ Intra-Kern-Takt stabilisiert, Versatz bleibt | Mechanistisch ableitbar |
+| **MPH** | $\uparrow\uparrow$ (indirekt, DA/GABA) | ↔ (kaum Effekt) | Asymmetrisch $\rightarrow$ Amplitude_B7 steigt $\rightarrow$ mehr Interferenz | Gesichert (DRN-Elektrophysiologie); MRN extrapoliert |
+| **Diphenhydramin** | $\downarrow$ (H1-Blockade) | ↔ (kein H1-Effekt) | Asymmetrisch $\rightarrow$ Amplitude_B7 sinkt $\rightarrow$ weniger Interferenz | Gesichert (Crawford et al. 2013) |
+| **SSRIs** | $\uparrow$ (SERT-Blockade) | $\uparrow$ (SERT-Blockade) | Kernblind $\rightarrow$ kein differentieller Effekt | Gesichert (Tao et al. 2003) |
+| **TCAs (Amitriptylin)** | $\uparrow$ SERT + $\downarrow$ H1 + $\downarrow$ NET | $\uparrow$ SERT | Gemischt $\rightarrow$ B7 netto $\downarrow$ relativ zu B8 $\rightarrow$ Interferenz sinkt | Mechanistisch ableitbar |
 
 **Interpretation:**
 
 - MPH und Diphenhydramin sind pharmakologische *Gegenexperimente am selben Kern*: MPH dreht B7 lauter, Diphenhydramin dreht B7 leiser.
-- MPH dreht B7 lauter → klinisch: Migräne verschlimmert sich bei komorbiden Patienten.
-- Diphenhydramin dreht B7 leiser → Vorhersage: Migräne besser (Experiment steht aus).
+- MPH dreht B7 lauter $\rightarrow$ klinisch: Migräne verschlimmert sich bei komorbiden Patienten.
+- Diphenhydramin dreht B7 leiser $\rightarrow$ Vorhersage: Migräne besser (Experiment steht aus).
 - TCAs (Amitriptylin) wirken nicht *trotz* ihrer „Nebenwirkungen" als Migräneprophylaktikum — die H1-Blockade, anticholinerge Sedierung und noradrenerge Dämpfung SIND der Migränemechanismus.
 - Interferenzstärke ∝ Amplitude_B7 × Amplitude_B8 × cos(Phasenversatz): Amplitudenreduktion senkt das Produkt unabhängig von der Phasenrichtung.
 
@@ -185,15 +185,15 @@ Die folgende Tabelle fasst die differentielle Wirkung gängiger Substanzen auf d
 | :---- | :---- | :---- |
 | B7 (DRN) projiziert dominant in PFC, B8 (MRN) minimal | Gesichert | Muzerelle et al. 2014 (anterograde Tracing, Maus); Vertes 1991 (Ratte) |
 | Posteriorer Neokortex: duale B7/B8-Innervierung mit laminärer Spezifität | Hypothetisch, Tierdaten | Muzerelle et al. 2014 (Maus, anterograd): B7v projiziert nicht substanziell in posterioren/okzipitalen Kortex; B8 kortikale Projektion auf mediale PFC und anterioren Kortex beschränkt, lateraler Kortex ausgespart. Ren et al. 2018: DRN-Subsysteme Amygdala vs. frontaler Kortex — kein Bezug zu posteriorem Kortex oder laminärer Spezifität. Humane Daten (Charnay & Leger 2010, PMC3181988): beide Kerne projizieren in menschlichen Kortex und Hippocampus, zwei Axon-Morphologien nachgewiesen. Regionale Dichte im posterioren Kortex und Kernzuordnung für Okzipitallappen: nicht publiziert. |
-| Hippocampus: laminär segregierte B7/B8-Innervierung (MRN → Str. lac.-mol./oriens; DRN → Hilus) | Gesichert | Vertes et al. 1999; Muzerelle et al. 2014 |
+| Hippocampus: laminär segregierte B7/B8-Innervierung (MRN $\rightarrow$ Str. lac.-mol./oriens; DRN $\rightarrow$ Hilus) | Gesichert | Vertes et al. 1999; Muzerelle et al. 2014 |
 | DRN (kaudaler B6) projiziert zu CaMKII+ Pyramidenzellen in dCA1, nicht zu GAD67+ Interneuronen | Gesichert | Translational Neurodegeneration 2024, PMC11267773 (AAV/Retro Circuit-Tracing) |
-| DRN→vHip reduziert reaktive Aggression über 5-HT1B; MRN→vHip moduliert Depression, kein Aggressionseffekt | Gesichert | ScienceDirect 2024 (Chemogenetik/Optogenetik) |
-| Zelluläre Separation (DRN→Pyramidenzellen, MRN→Interneurone) als hippocampaler Interferenzschutz | Gesichert (Anatomie), Funktionszuordnung inferiert | PMC11267773 + Freund 1992 |
+| DRN$\rightarrow$vHip reduziert reaktive Aggression über 5-HT1B; MRN$\rightarrow$vHip moduliert Depression, kein Aggressionseffekt | Gesichert | ScienceDirect 2024 (Chemogenetik/Optogenetik) |
+| Zelluläre Separation (DRN$\rightarrow$Pyramidenzellen, MRN$\rightarrow$Interneurone) als hippocampaler Interferenzschutz | Gesichert (Anatomie), Funktionszuordnung inferiert | PMC11267773 + Freund 1992 |
 | Pharmakologischer Spillover bei SERT-Dysfunktion bricht zelluläre Separation | Hypothetisch, mechanistisch plausibel | Abgeleitet aus Volume-Transmission-Mechanik + zellulärer Zielspezifität |
 | Inkonsistente Engramm-Kodierung durch Spillover-induzierte Verkopplung von Timing- und Plastizitätskontrolle | Modellvorhersage | Abgeleitet aus F.3.3 |
 | Midline-/Intralaminärer Thalamus: volle B7/B8-Überlappung | Gesichert | Vertes 1991; Muzerelle et al. 2014 |
 | Inter-Kern-Desync erzeugt destruktive Interferenz in Überlappungszonen | Hypothetisch, mechanistisch plausibel | Abgeleitet aus Tracing-Anatomie + Modell (Abschnitt 2.5.1) |
-| CSD-Initiation okzipital über Pulvinar-Kaskade (thalamische Interferenz → Pulvinar → visueller Kortex) | Hypothetisch, mechanistisch plausibel | Pulvinar als modulatorischer Higher-Order-Pfad mit niedrigerer Kompensationsreserve; Oke et al. 1997 (erhöhte 5-HT im Pulvinar); Muzerelle et al. 2014 stützt direkte kortikale Überlappung nicht. |
+| CSD-Initiation okzipital über Pulvinar-Kaskade (thalamische Interferenz $\rightarrow$ Pulvinar $\rightarrow$ visueller Kortex) | Hypothetisch, mechanistisch plausibel | Pulvinar als modulatorischer Higher-Order-Pfad mit niedrigerer Kompensationsreserve; Oke et al. 1997 (erhöhte 5-HT im Pulvinar); Muzerelle et al. 2014 stützt direkte kortikale Überlappung nicht. |
 | State-dependent encoding durch zelluläre hippocampale Interferenz (Spillover-Mechanismus) | Hypothetisch, spekulativ | Abgeleitet aus zellulärer Zielspezifität (PMC11267773, Freund 1992) + Spillover-Modell (F.3.1); direkte Evidenz fehlt |
 | Thalamische Interferenz als primärer Mechanismus, kortikale Effekte sekundär | Hypothetisch, modellkonsistent | Abgeleitet aus maximaler thalamischer Überlappung + Zentralmodell (Kap. 8) |
 | PFC-Protektion unter LDX: pharmakologisch (MD-Thalamus-Loop dopaminerg stabilisiert), nicht architektonisch | Hypothetisch, mechanistisch plausibel | Humane Daten: duale laminäre Innervierung des gesamten Kortex inkl. PFC (Charnay & Leger 2010); LDX-Effekt auf mesokortikales DA-System gesichert; MD-Loop-Stabilisierung abgeleitet |

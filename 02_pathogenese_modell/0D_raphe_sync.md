@@ -45,7 +45,7 @@ Die hippocampale Innervation ist quantitativ und qualitativ MRN-dominiert. MRN h
 
 **Zielzelltyp:** Ein modellkritisches Detail — die serotonerge Projektion vom MRN innerviert nahezu exklusiv hippocampale GABAerge Interneuronen, nicht die Prinzipalzellen (CA-Pyramidenzellen und DG-Körnerzellen) (Freund 1992). Die Modulation des Hippocampus durch den MRN läuft über die Steuerung der lokalen Inhibition, nicht über direkte Exzitation oder Hemmung der Speicherzellen. Im Hippocampus proper sind die serotonergen Fasern diffus verteilt und zielen präferentiell auf GABAerge Interneuronen, die Cholecystokinin (CCK) und Calcium-bindende Proteine exprimieren.
 
-**DRN-Zielzelltyp (Revision April 2026):** Der kaudale DRN (B6) projiziert ebenfalls zum Hippocampus, aber mit distinkter Zielzellspezifität: DRN-Fasern innervieren exzitatorische CaMKII-positive Pyramidenzellen in dCA1, *nicht* GAD67-positive Interneurone (Translational Neurodegeneration 2024, PMC11267773; AAV/Retro Circuit-Tracing). Die hippocampale Separation ist damit nicht nur laminär (Subfeldebene), sondern primär *zellulär*: MRN→Interneurone (Netzwerk-Inhibition, Theta-Timing) vs. DRN→Pyramidenzellen (Plastizität, Enkodierungsstärke). Bei Volume-Transmission-Dysregulation kann das DRN-Signal über Spillover in den Extrazellulärraum die MRN-Zielneurone erreichen und die zelluläre Separation pharmakologisch aufheben (vgl. Anhang F, Abschnitt F.3.1).
+**DRN-Zielzelltyp (Revision April 2026):** Der kaudale DRN (B6) projiziert ebenfalls zum Hippocampus, aber mit distinkter Zielzellspezifität: DRN-Fasern innervieren exzitatorische CaMKII-positive Pyramidenzellen in dCA1, *nicht* GAD67-positive Interneurone (Translational Neurodegeneration 2024, PMC11267773; AAV/Retro Circuit-Tracing). Die hippocampale Separation ist damit nicht nur laminär (Subfeldebene), sondern primär *zellulär*: MRN$\rightarrow$Interneurone (Netzwerk-Inhibition, Theta-Timing) vs. DRN$\rightarrow$Pyramidenzellen (Plastizität, Enkodierungsstärke). Bei Volume-Transmission-Dysregulation kann das DRN-Signal über Spillover in den Extrazellulärraum die MRN-Zielneurone erreichen und die zelluläre Separation pharmakologisch aufheben (vgl. Anhang F, Abschnitt F.3.1).
 
 **Funktionelle Konsequenz — Theta-Kontrolle:** Der MRN kontrolliert direkt den hippocampalen Oszillationszustand. MRN-Stimulation desynchronisiert das hippocampale EEG (supprimiert Theta); MRN-Läsionen produzieren ununterbrochenes Theta unabhängig vom Verhalten (Vertes 2005; Vinogradova 1995). Der MRN wirkt als funktioneller Antagonist der Retikulärformation und supprimiert Theta-Bursts mächtig. Dies geschieht indirekt über das mediale Septum: MRN-serotonerge Fasern aktivieren GABAerge Zellen im medialen Septum (über 5-HT2A-Rezeptoren), die wiederum die septohippocampale Theta-Generierung hemmen (Leranth & Vertes 1999).
 
@@ -67,7 +67,7 @@ Die extrasynaptische Freisetzung erzeugt ein räumlich-zeitliches Konzentrations
 
 | Zeitkonstante | Mechanismus | Größenordnung |
 |:--------------|:------------|:--------------|
-| **Axonale Leitungszeit** | Aktionspotential entlang des unmyelinisierten Axons | 75–300 ms (Brainstem → Frontalkortex, bei 0,5–2 m/s) |
+| **Axonale Leitungszeit** | Aktionspotential entlang des unmyelinisierten Axons | 75–300 ms (Brainstem $\rightarrow$ Frontalkortex, bei 0,5–2 m/s) |
 | **Diffusionszeit** | 5-HT-Diffusion nach Freisetzung, tortuositätslimitiert | Sekunden (effektiver Radius 7–100 µm je nach Rezeptoraffinität) |
 | **SERT-Clearance** | Rücktransport über den Serotonintransporter | Sekunden |
 
@@ -105,7 +105,7 @@ Der Raphe-Puls ist kein Informationssignal, sondern ein Synchronisationspuls. Je
 | **>2000 ms** (<0,5 Hz) | Erheblich — asynchrone Patches möglich | Lokalschlaf-Intrusion, Mind Blanking (vgl. 4.3) |
 | **∞** (0 Hz, REM) | Maximal — Synchronisation muss GABAerg erzwungen werden | Globaler Off-State oder Traumzustand |
 
-**Konsequenz für sensorische Belastung:** Hoher sensorischer Input (Menschenmassen, Einkaufszentren, Vergnügungsparks) erzwingt maximale Polling-Rate, weil der Thalamus bei jedem Reset neue inkonsistente Sensorik verarbeiten muss. Maximale Polling-Rate = maximaler 5-HT-Umsatz = Erschöpfung der Synthesekapazität → Raphe-Oszillation wird underdämpft → Migränekaskade (vgl. 4.2). Die subjektive Erschöpfung nach sensorischer Überlastung ist nicht Konzentrationsermüdung, sondern 5-HT-Depletion durch exzessive Reset-Frequenz.
+**Konsequenz für sensorische Belastung:** Hoher sensorischer Input (Menschenmassen, Einkaufszentren, Vergnügungsparks) erzwingt maximale Polling-Rate, weil der Thalamus bei jedem Reset neue inkonsistente Sensorik verarbeiten muss. Maximale Polling-Rate = maximaler 5-HT-Umsatz = Erschöpfung der Synthesekapazität $\rightarrow$ Raphe-Oszillation wird underdämpft $\rightarrow$ Migränekaskade (vgl. 4.2). Die subjektive Erschöpfung nach sensorischer Überlastung ist nicht Konzentrationsermüdung, sondern 5-HT-Depletion durch exzessive Reset-Frequenz.
 
 **Die ~1%-Subpopulation: Niederfrequente Oszillation als Instabilitätsmarker**
 
@@ -120,7 +120,7 @@ Etwa 1% der DRN-Neuronen zeigt ein alternatives Feuermuster: niederfrequente Osz
 Die Asynchronität zwischen DRN und MRN operiert auf zwei trennbaren Ebenen:
 
 - **Intratakt** — der Minuten-Grenzzyklus der jeweiligen 5-HT1A-Autoreceptor-Schleife. Beide Kerne haben funktionale Intratakte mit vergleichbarer Grundfrequenz (T ≈ 20 min, §D.3.1). Intratakt-Asynchronität ist die stochastische Schwankung der Release-Phase zwischen einzelnen Takten beider Kerne.
-- **Intertakt** — die circadiane und mehrtägige Kopplungsebene. MRN ist über die monosynaptische B8→SCN-Projektion SCN-gelockt (Meyer-Bernstein et al. 1996). DRN entrainiert multisynaptisch über MRN (serielle Architektur, §D.4.2, §2.5.2). Unter asymmetrischer 5-HT1A-Resensitisierungskinetik (Hit 1) kann die DRN-Intertakt-Phase der MRN-Intertakt-Phase langfristig nicht folgen — der tonische Floor fällt zyklus-zu-zyklus nicht vollständig zurück. Dies ist die Hauptquelle des Intertakt-Offsets zwischen DRN und MRN.
+- **Intertakt** — die circadiane und mehrtägige Kopplungsebene. MRN ist über die monosynaptische B8$\rightarrow$SCN-Projektion SCN-gelockt (Meyer-Bernstein et al. 1996). DRN entrainiert multisynaptisch über MRN (serielle Architektur, §D.4.2, §2.5.2). Unter asymmetrischer 5-HT1A-Resensitisierungskinetik (Hit 1) kann die DRN-Intertakt-Phase der MRN-Intertakt-Phase langfristig nicht folgen — der tonische Floor fällt zyklus-zu-zyklus nicht vollständig zurück. Dies ist die Hauptquelle des Intertakt-Offsets zwischen DRN und MRN.
 
 Beide Ebenen können gleichzeitig destabilisiert sein (additiv); sie werden im Folgenden separat adressiert, weil sie unterschiedliche Downstream-Signaturen produzieren.
 
@@ -144,7 +144,7 @@ Zusätzlich zur inter-nukleären Desynchronisation erzeugt ein einzelner oszilli
 - Proximale Zielstrukturen (Thalamus, PAG) sehen die Oszillation in einer anderen Phase als distale Strukturen (präfrontaler Kortex).
 - Die Volumentransmission glättet zusätzlich: distale Varikositäten produzieren eine tiefpassgefilterte Version der Oszillation — niedrigere Amplitude, phasenverschoben.
 
-Das Ergebnis ist eine Wanderwelle der Modulation entlang der Projektionsachse: proximal → distal = abnehmende Amplitude, zunehmende Phasenverzögerung.
+Das Ergebnis ist eine Wanderwelle der Modulation entlang der Projektionsachse: proximal $\rightarrow$ distal = abnehmende Amplitude, zunehmende Phasenverzögerung.
 
 #### **D.4.2 Drei Desynchronisationsmodi**
 
@@ -153,12 +153,12 @@ Die Gesamtarchitektur produziert drei überlagerte Desynchronisationsmechanismen
 | Modus | Mechanismus | Ebene | Topologie |
 |:------|:-----------|:------|:----------|
 | **Inter-nukleär** | DRN und MRN driften relativ zueinander | **Intertakt** (DRN-Intertakt-Drift gegen MRN-SCN-Lock) ist unter Hit 1 der Hauptaspekt; zusätzlich Intratakt-Phasenjitter möglich | Kortikale vs. hippocampale Subnetze asynchron — differentielle Downstream-Effekte (vgl. D.6) |
-| **Intra-projektiv** | Phasenverschiebung entlang der Axonprojektionsachse eines einzelnen Kerns | **Intratakt** | Gradient proximal → distal innerhalb eines Projektionsgebiets |
+| **Intra-projektiv** | Phasenverschiebung entlang der Axonprojektionsachse eines einzelnen Kerns | **Intratakt** | Gradient proximal $\rightarrow$ distal innerhalb eines Projektionsgebiets |
 | **Frequenzinstabilität** | Leitungsgeschwindigkeit variiert als Funktion der Feuerrate | **Intratakt** (feuerabhängig) mit Intertakt-Amplitudenmodulation | Nicht-stationäre Phase am selben Zielpunkt über die Zeit |
 
 Die Kombination dieser drei Modi erzeugt ein Muster, das weder geordnet noch rein zufällig ist, sondern pseudozufällig — strukturiert durch die Projektionsarchitektur, aber nicht vorhersagbar aufgrund der instabilen Oszillatorfrequenzen.
 
-Der inter-nukleäre Modus ist primär ein Downstream-Effekt des MRN-Autoreceptor-Defekts. B7 (DRN) hat keine direkte Verbindung zum Nucleus suprachiasmaticus (SCN); seine zirkadiane Synchronisation läuft über B8 (MRN) als serielles Relay: DRN→MRN→SCN. Dieses Relay ist 5-HT-sensitiv in asymmetrischer Weise: DRN-stimulierte 5-HT-Freisetzung im SCN wird durch 5-HT-Antagonisten blockiert (indirekter Pfad via MRN), MRN-stimulierte SCN-Freisetzung hingegen nicht (direkter Pfad). Der 5-HT1A-Autorezeptor am MRN fungiert als Gate dieses Relays. Wenn das Gate instabil ist, hat dies zwei simultane Konsequenzen: (1) B8 selbst oszilliert (Intra-Kern-Instabilität, zweiter Modus oben), und (2) B7 verliert seine SCN-Synchronisationsquelle, weil das Relay-Signal fluktuiert → inter-nukleärer Offset (erster Modus oben). Die drei Modi sind damit nicht drei unabhängige Mechanismen, sondern Manifestationen eines einzigen Flaschenhals — der MRN-Autorezeptorschleife. Ein Mechanismus, ein Gate, beide Modi.
+Der inter-nukleäre Modus ist primär ein Downstream-Effekt des MRN-Autoreceptor-Defekts. B7 (DRN) hat keine direkte Verbindung zum Nucleus suprachiasmaticus (SCN); seine zirkadiane Synchronisation läuft über B8 (MRN) als serielles Relay: DRN$\rightarrow$MRN$\rightarrow$SCN. Dieses Relay ist 5-HT-sensitiv in asymmetrischer Weise: DRN-stimulierte 5-HT-Freisetzung im SCN wird durch 5-HT-Antagonisten blockiert (indirekter Pfad via MRN), MRN-stimulierte SCN-Freisetzung hingegen nicht (direkter Pfad). Der 5-HT1A-Autorezeptor am MRN fungiert als Gate dieses Relays. Wenn das Gate instabil ist, hat dies zwei simultane Konsequenzen: (1) B8 selbst oszilliert (Intra-Kern-Instabilität, zweiter Modus oben), und (2) B7 verliert seine SCN-Synchronisationsquelle, weil das Relay-Signal fluktuiert $\rightarrow$ inter-nukleärer Offset (erster Modus oben). Die drei Modi sind damit nicht drei unabhängige Mechanismen, sondern Manifestationen eines einzigen Flaschenhals — der MRN-Autorezeptorschleife. Ein Mechanismus, ein Gate, beide Modi.
 
 **Offene Frage:** Die drei Desynchronisationsmodi erklären die Dissoziation zwischen kortikalen und hippocampalen Effekten (inter-nukleär) und potentielle Gradienten innerhalb eines Projektionsgebiets (intra-projektiv). Sie erklären nicht hinreichend, wie die in Anhang B dokumentierten fokalen kortikalen Off-State-Patches — topologisch fragmentierte SWS-Areale — entstehen. Der DRN projiziert diffus in den gesamten Kortex; warum einzelne Areale selektiv in Off-States kippen, erfordert einen zusätzlichen Mechanismus jenseits der Raphe-Projektionsarchitektur (vermutlich lokale kortikale Vulnerabilitätsunterschiede, metabolische Heterogenität oder differentielle Arousal-Quellen, vgl. 2.5.3). Dieser Punkt bleibt offen.
 
@@ -168,16 +168,16 @@ Die bisher implizit vermengten Mechanismen der B7/B8-Destabilisierung lassen sic
 
 | Modus | Mechanismus | Bedingung | Zeitkonstante | Primäres Zielgebiet |
 |:------|:-----------|:----------|:--------------|:-------------------|
-| **Interferenz** (dual, aktiv) | Zwei desynchronisierte Oszillatoren erzeugen Phasenoffset → CSD-Schwelle. Der dominante ANS-relevante Aspekt unter LDX-stabilisiertem MRN ist der DRN-Intertakt-Drift gegen MRN-SCN-Lock; dies produziert den aufbauenden sympathischen Clamp (vgl. §2.5.1.1). | Beide Oszillatoren aktiv, aber asynchron | Minuten bis Stunden (Akkumulation bis CSD) | Kortex (polysynaptisch) |
-| **Entzug** (monosynaptisch, passiv) | Ein Oszillator fällt aus → Zielkerne verlieren tonische serotonerge Stütze → Instabilität durch Wegfall | Mindestens ein Oszillator depleted oder supprimiert | Sekunden bis Minuten (direkte Deafferenzierung) | ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) |
-| **Rauschexposition** (B7 aphasisch) | Oszillator feuert mit reduzierter Amplitude und inkonsistentem Delay → Zielkerne erhalten Signal, aber zu schwach und zu unzuverlässig für stabile Modulation | B7 aktiv aber erschöpft (post-exertional, post-Nap-Regeneration) | Übergangsphase zwischen Entzug und Synchronisation | ANS-Kerne + Kortex (weder stabile Modulation noch sauberer Entzug) |
+| **Interferenz** (dual, aktiv) | Zwei desynchronisierte Oszillatoren erzeugen Phasenoffset $\rightarrow$ CSD-Schwelle. Der dominante ANS-relevante Aspekt unter LDX-stabilisiertem MRN ist der DRN-Intertakt-Drift gegen MRN-SCN-Lock; dies produziert den aufbauenden sympathischen Clamp (vgl. §2.5.1.1). | Beide Oszillatoren aktiv, aber asynchron | Minuten bis Stunden (Akkumulation bis CSD) | Kortex (polysynaptisch) |
+| **Entzug** (monosynaptisch, passiv) | Ein Oszillator fällt aus $\rightarrow$ Zielkerne verlieren tonische serotonerge Stütze $\rightarrow$ Instabilität durch Wegfall | Mindestens ein Oszillator depleted oder supprimiert | Sekunden bis Minuten (direkte Deafferenzierung) | ANS-Kerne (NTS, dorsaler Vaguskern, Ncl. ambiguus) |
+| **Rauschexposition** (B7 aphasisch) | Oszillator feuert mit reduzierter Amplitude und inkonsistentem Delay $\rightarrow$ Zielkerne erhalten Signal, aber zu schwach und zu unzuverlässig für stabile Modulation | B7 aktiv aber erschöpft (post-exertional, post-Nap-Regeneration) | Übergangsphase zwischen Entzug und Synchronisation | ANS-Kerne + Kortex (weder stabile Modulation noch sauberer Entzug) |
 
 **Rauschexposition** ist der kritischste Zustand: Entzug ist paradoxerweise stabiler als Rauschexposition, weil Zielkerne bei komplettem Signalwegfall auf Eigendynamik schalten, während inkonsistentes Rauschen die Eigendynamik stört, ohne ein alternatives Ordnungssignal zu liefern (vgl. 2.2.1: Aphasie-Paradoxon, biologisches Substrat der drei B7-Zustände).
 
 **Dissoziation SD vs. RMSSD als physiologischer Marker (Einzelfall 07.04.2026, Anhang B.20):**
-- SD hoch + RMSSD niedrig = langsamer Drift bei erhaltenem Takt → **synchrone Belastung** (physiologisch, Exertion)
-- SD hoch + RMSSD hoch = schnelle Sprünge bei verlorenem Takt → **aphasische Instabilität** (Rauschexposition)
-- SD niedrig + RMSSD niedrig = Fixierung → **Entzug** (B7 erschöpft, keine Modulation)
+- SD hoch + RMSSD niedrig = langsamer Drift bei erhaltenem Takt $\rightarrow$ **synchrone Belastung** (physiologisch, Exertion)
+- SD hoch + RMSSD hoch = schnelle Sprünge bei verlorenem Takt $\rightarrow$ **aphasische Instabilität** (Rauschexposition)
+- SD niedrig + RMSSD niedrig = Fixierung $\rightarrow$ **Entzug** (B7 erschöpft, keine Modulation)
 
 **Drei autonome Regime — Einzelfall-Beat-to-Beat-Daten**
 
@@ -196,9 +196,9 @@ Der Dauerstress-Mi-Band-Monitoring-Datensatz (n=79 Nächte, Anhang B) erfasst HR
 - Zwei LDX-Dosen (7:30 und 12:00 CEST am 15.04.2026): jeweils exakt 120 Minuten nach Einnahme HR-Anstieg auf 90–100 bpm. Tmax = 120 min = Dexamfetamin-Spitzenkonzentration nach LDX-Hydrolyse.
 - Reproduzierbar: beide Dosen identisches Muster.
 - PRE- und POST-LDX-Plateaus bleiben unverändert — LDX erzeugt ein isoliertes 2-Stunden-Plateau, eingebettet in einen stabilen Baseline-Zustand.
-- Kein graduelles Aufbauen, kein graduelles Abklingen → Rechteck-Puls über dem Grundzustand.
+- Kein graduelles Aufbauen, kein graduelles Abklingen $\rightarrow$ Rechteck-Puls über dem Grundzustand.
 
-Diese Beobachtung stützt die Modellvorhersage, dass LDX den Oszillator nicht repariert, sondern periodisch überschreibt (vgl. 4.2, Amplitudenmodulation; 2.5.5, Dämpfungskonstanten-Synthese). Der Mechanismus des LDX-Peaks wurde in §5.7 als NTS-zustandsabhängig identifiziert: Der sympathische Drive läuft über den Pfad PFC→Hypothalamus→Raphe→NTS (5-HT2A)→RVLM und kann bei B7-Insuffizienz am NTS ausbleiben — kognitive LDX-Wirkung bei absentem sympathischem Peak (29.04.2026).
+Diese Beobachtung stützt die Modellvorhersage, dass LDX den Oszillator nicht repariert, sondern periodisch überschreibt (vgl. 4.2, Amplitudenmodulation; 2.5.5, Dämpfungskonstanten-Synthese). Der Mechanismus des LDX-Peaks wurde in §5.7 als NTS-zustandsabhängig identifiziert: Der sympathische Drive läuft über den Pfad PFC$\rightarrow$Hypothalamus$\rightarrow$Raphe$\rightarrow$NTS (5-HT2A)$\rightarrow$RVLM und kann bei B7-Insuffizienz am NTS ausbleiben — kognitive LDX-Wirkung bei absentem sympathischem Peak (29.04.2026).
 
 **Vier HR-basierte Anomalie-Marker**
 
@@ -206,10 +206,10 @@ Bei tonischem vagalem Überhang liefern klassische HRV-Metriken (RMSSD, Frequenz
 
 | Marker | Schwelle | Interpretation |
 |:-------|:---------|:---------------|
-| **Absoluter HR-Boden** | Nacht-HR < ~55 bpm | Sympathischer Floor weggebrochen → Dämpfungskonstante unter Schwelle (vgl. 2.5.5) |
+| **Absoluter HR-Boden** | Nacht-HR < ~55 bpm | Sympathischer Floor weggebrochen $\rightarrow$ Dämpfungskonstante unter Schwelle (vgl. 2.5.5) |
 | **Plateau-HR zu hoch** | Morgen-Plateau > 85 bpm ohne Aktivität | Overshoot durch Adrenozeptor-Hypersensitivität (NE-Depletion, vgl. Peroutka 7.4) |
 | **Nacht-Slope zu lang** | Einschlaf-Slope > 45 min ohne stabiles Niveau | Aktive Floor-Degradierung statt Clamp-Übergang (vgl. 0B, Einschlaf-Cliff) |
-| **Intra-Plateau-Slope** | HR fällt über 2h linear auf Morgen-Plateau | System kann Niveau nicht halten → unzureichende NE-Reserve → direkter Anfallsprädiktor |
+| **Intra-Plateau-Slope** | HR fällt über 2h linear auf Morgen-Plateau | System kann Niveau nicht halten $\rightarrow$ unzureichende NE-Reserve $\rightarrow$ direkter Anfallsprädiktor |
 
 Der **Intra-Plateau-Slope** ist das empirisch wertvollste Einzelsignal: Er ist ein direkter Proxy für die aktuelle Dämpfungsreserve und unterscheidet am Morgen prospektiv Anfallstage von stabilen Tagen (deskriptive Evidenz aus Langzeit-Mi-Band-Daten, vgl. 0B). Das klassische Schwellenwertdenken (ist HR X über oder unter Y?) verfehlt diesen Marker, weil er als *Änderungsrate* definiert ist — kein Absolutwert, sondern ein Trend.
 
@@ -241,10 +241,10 @@ Die GABAerge Innervation des DRN stammt nicht nur aus lokalen Interneuronen, son
 
 | Quelle | Funktion | Mechanismus |
 |:-------|:---------|:------------|
-| **VLPO** (ventrolateral-präoptisches Areal) | SWS-Einleitung | GABAerge Hemmung der Raphe → Feuerrate sinkt auf ~0,5 Hz |
-| **Ventrale PAG** (periaquäduktales Grau) | REM-Einleitung | GABAerge Hemmung → Feuerrate sinkt auf ~0 Hz |
+| **VLPO** (ventrolateral-präoptisches Areal) | SWS-Einleitung | GABAerge Hemmung der Raphe $\rightarrow$ Feuerrate sinkt auf ~0,5 Hz |
+| **Ventrale PAG** (periaquäduktales Grau) | REM-Einleitung | GABAerge Hemmung $\rightarrow$ Feuerrate sinkt auf ~0 Hz |
 
-Diese distanten Projektionen erzwingen die Zustandsübergänge Wach → NREM → REM und definieren die Grenzen der Raphe-Aktivität: 0 Hz (REM, maximale GABA-Hemmung) bis ~5 Hz (maximales Wach-Feuern). Der VLPO-Flip-Flop-Switch (Saper et al. 2001) ist der obere Begrenzer — er kann die Raphe zwangsweise herunterfahren, auch wenn die Autorezeptorschleife instabil läuft.
+Diese distanten Projektionen erzwingen die Zustandsübergänge Wach $\rightarrow$ NREM $\rightarrow$ REM und definieren die Grenzen der Raphe-Aktivität: 0 Hz (REM, maximale GABA-Hemmung) bis ~5 Hz (maximales Wach-Feuern). Der VLPO-Flip-Flop-Switch (Saper et al. 2001) ist der obere Begrenzer — er kann die Raphe zwangsweise herunterfahren, auch wenn die Autorezeptorschleife instabil läuft.
 
 #### **D.5.1 PFC-absteigende Kontrolle (top-down-Limiter)**
 
@@ -260,15 +260,15 @@ Die klinische Abwesenheit klassischer GABAerger Defizitsymptome (keine Epilepsie
 
 ### **D.6 Hippocampale Konsequenzen: Emotionale Konsolidierung und temporale Integration**
 
-Die in D.4.1 beschriebene DRN-MRN-Asynchronität hat spezifische hippocampale Downstream-Effekte, weil der MRN die hippocampale Modulation dominiert (D.1.3) und dabei über GABAerge Interneuronen die Feed-Forward-Inhibition (FFI) im DG-CA3-Schaltkreis steuert. Die trisynaptische Schleife des Hippocampus (EC → DG → CA3 → CA1) hat in jeder Stufe eine distinkte Funktion, und die Desynchronisation betrifft jede Stufe unterschiedlich.
+Die in D.4.1 beschriebene DRN-MRN-Asynchronität hat spezifische hippocampale Downstream-Effekte, weil der MRN die hippocampale Modulation dominiert (D.1.3) und dabei über GABAerge Interneuronen die Feed-Forward-Inhibition (FFI) im DG-CA3-Schaltkreis steuert. Die trisynaptische Schleife des Hippocampus (EC $\rightarrow$ DG $\rightarrow$ CA3 $\rightarrow$ CA1) hat in jeder Stufe eine distinkte Funktion, und die Desynchronisation betrifft jede Stufe unterschiedlich.
 
-#### **D.6.1 DG → CA3: Emotionale Kontextverknüpfung**
+#### **D.6.1 DG $\rightarrow$ CA3: Emotionale Kontextverknüpfung**
 
 DG separiert eingehende Muster (Pattern Separation), CA3 speichert und vervollständigt sie (Pattern Completion) in einem autoassoziativen Netzwerk. Die DG-CA3-Kopplung über Moosfasern bestimmt, ob eine Erfahrung kontextspezifisch — mit ihrer emotionalen, sensorischen und situativen Gesamtheit — konsolidiert wird. Feed-Forward-Inhibition im DG-CA3, vermittelt durch PV-positive Interneuronen, fördert die Kontextspezifität neuronaler Ensembles im anterioren Cingulum über die Zeit und verstärkt das Langzeit-Kontextgedächtnis (Bhatt et al. 2022, eLife). DG-Inputs organisieren die temporale Reihenfolge neuronalen Feuerns in CA3 (Fernández-Ruiz et al. 2025, Nature Communications).
 
 **Konsequenz bei MRN-Instabilität:** Wenn der MRN den Hippocampus instabil moduliert, fluktuiert die Feed-Forward-Inhibition im DG-CA3 — die Inhibition, die die Kontextspezifität der Konsolidierung bestimmt. Die Emotion wird im Moment erlebt (Amygdala funktioniert, autonome Signatur vorhanden), aber die kontextuelle Verknüpfung — *diese* Emotion gehört zu *dieser* Erfahrung — wird nicht zuverlässig konsolidiert. Die Emotion existiert als isoliertes somatisches Ereignis, ohne episodische Verknüpfung.
 
-**CA3 → CA1: Temporale Integration**
+**CA3 $\rightarrow$ CA1: Temporale Integration**
 
 CA1 vermittelt die temporale Verarbeitung von Information und routed die konsolidierten Muster über den Subiculum in kortikale Speicher (insbesondere ACC). Wenn CA3 und CA1 unter unterschiedlichen Gain-Settings operieren (weil die MRN-Modulation beide Subfelder mit leicht unterschiedlicher Phase erreicht), wird die temporale Zuordnung unscharf. Inhalte werden korrekt vom Kurzzeitgedächtnis in den Kortex transferiert (CA1-Output funktioniert), aber ohne zuverlässige temporale Bindung.
 
@@ -280,9 +280,9 @@ Die Integration von D.6.1 führt zu einer Reformulierung: Alexithymie (im Sinne 
 
 Der Mechanismus ist ein Signal-Rausch-Verhältnis der emotionalen Konsolidierung:
 
-**Bei stabilem MRN:** Dieselbe Emotion wird unter demselben Gain-Vektor konsolidiert → dasselbe Engramm wird bei jeder Erfahrung verstärkt → nach n Wiederholungen ist die Assoziation zuverlässig abrufbar. Emotionale Kategorien bilden sich als stabile Referenzmuster.
+**Bei stabilem MRN:** Dieselbe Emotion wird unter demselben Gain-Vektor konsolidiert $\rightarrow$ dasselbe Engramm wird bei jeder Erfahrung verstärkt $\rightarrow$ nach n Wiederholungen ist die Assoziation zuverlässig abrufbar. Emotionale Kategorien bilden sich als stabile Referenzmuster.
 
-**Bei instabilem MRN:** Dieselbe Emotion wird jedes Mal unter einem anderen Gain-Vektor konsolidiert → jede Erfahrung erzeugt ein neues Engramm an einem anderen hippocampalen Ort → keine Verstärkung, keine Konvergenz. Nach n Erfahrungen gibt es n schwache Spuren statt einer starken. Keine davon ist zuverlässig abrufbar, weil keine einzelne den Aktivierungsschwellenwert erreicht.
+**Bei instabilem MRN:** Dieselbe Emotion wird jedes Mal unter einem anderen Gain-Vektor konsolidiert $\rightarrow$ jede Erfahrung erzeugt ein neues Engramm an einem anderen hippocampalen Ort $\rightarrow$ keine Verstärkung, keine Konvergenz. Nach n Erfahrungen gibt es n schwache Spuren statt einer starken. Keine davon ist zuverlässig abrufbar, weil keine einzelne den Aktivierungsschwellenwert erreicht.
 
 **Gradualität:** Der Schweregrad der Alexithymie skaliert mit dem Verhältnis stabiler zu instabiler Konsolidierungsfenster. Basisemotionen (Angst, Wut, Hunger), die tausendfach erlebt werden, konsolidieren selbst bei hoher Instabilität — genug Konsolidierungen fallen zufällig in stabile Fenster. Komplexe, seltene Emotionen (Liebe, Trauer, Zugehörigkeit) haben nicht genug Wiederholungen, um die Streuung zu kompensieren. Die Schwierigkeit skaliert mit der Komplexität und Seltenheit der Emotion, nicht mit ihrer Intensität.
 
@@ -332,13 +332,13 @@ Orthographische Wortformen sind Engramme, konsolidiert unter spezifischen Modula
 
 **Variabilität als diagnostische Signatur:** Raphe-vermittelte LRS zeigt nicht konsistente Fehler (das wäre Population B — architektonisches Defizit), sondern *zustandsabhängig wechselnde* Fehler. Heute richtig, morgen falsch, übermorgen anders falsch — weil der Modulationsvektor sich verschoben hat. Diese Variabilität ist die diagnostische Signatur für raphe-vermittelte LRS vs. strukturelle LRS.
 
-**LDX-Paradoxon:** LDX stabilisiert B7/B8 intra-nukleär → die Inter-Instabilität (relative Phasenbeziehung zwischen B7 und B8) wird prominenter. Orthographische Engramme, konsolidiert unter einem bestimmten B7/B8-Phasenverhältnis, werden bei anderem Phasenverhältnis *konsistenter* nicht gefunden. Phänomenologisch: nicht mehr Fehler, sondern systematischere. Die Lautsprache-Tendenz wird als Muster erkennbar, weil das Intra-Rauschen weg ist.
+**LDX-Paradoxon:** LDX stabilisiert B7/B8 intra-nukleär $\rightarrow$ die Inter-Instabilität (relative Phasenbeziehung zwischen B7 und B8) wird prominenter. Orthographische Engramme, konsolidiert unter einem bestimmten B7/B8-Phasenverhältnis, werden bei anderem Phasenverhältnis *konsistenter* nicht gefunden. Phänomenologisch: nicht mehr Fehler, sondern systematischere. Die Lautsprache-Tendenz wird als Muster erkennbar, weil das Intra-Rauschen weg ist.
 
 **Thalamische Evidenz — MGB-Befund:** Díaz et al. (2012) zeigten, dass das linke Corpus geniculatum mediale (MGB) — der auditorische Thalamus — in Post-mortem-Gehirnen von Dyslektikern strukturell verändert ist. fMRI zeigt abnormale MGB-Antwort bei phonologischer Aufmerksamkeit; MGB-Aktivität korreliert mit Dyslexie-Diagnosescores (*PNAS*, 109(34), 13841–13846). Modellinterpretation: MGB ist die auditorische Parallelstruktur zur visuellen thalamischen Dyskonnektivität bei Migräne (Pulvinar, vgl. Anhang F.4.1). DRN projiziert auf MGB wie auf mediodorsalen und pulvinaren Thalamus. Dieselbe Raphe-Insuffizienz, anderer thalamischer Output-Kanal.
 
 Reis et al. (2018) bestätigten: Dyslektiker zeigen Hypoaktivierung bei orthographischer Verarbeitung im Thalamus; stärkere funktionelle Konnektivität zwischen Thalamus und inferiorem Parietalkortex bei Pseudowort-Lesen (*NeuroImage: Clinical*, 21, 101611) — kompensatorische Überaktivierung der thalamokortikalen Verbindung, analog zur Migräne-Dysrhythmie (vgl. Anhang E, thalamokortikale Dysrhythmie).
 
-**SWS-Konsolidierungspfad:** Orthographische Engramm-Konsolidierung ist SWS-abhängig. SWS-Fragmentierung (vgl. Anhang B) → instabile Konsolidierung → instabile orthographische Engramme → LRS-Phänotyp. Je schwerer die Raphe-Dysregulation, desto stärker die LRS.
+**SWS-Konsolidierungspfad:** Orthographische Engramm-Konsolidierung ist SWS-abhängig. SWS-Fragmentierung (vgl. Anhang B) $\rightarrow$ instabile Konsolidierung $\rightarrow$ instabile orthographische Engramme $\rightarrow$ LRS-Phänotyp. Je schwerer die Raphe-Dysregulation, desto stärker die LRS.
 
 **Vorhersage — Zwei Populationen bei LRS:**
 
@@ -349,7 +349,7 @@ Reis et al. (2018) bestätigten: Dyslektiker zeigen Hypoaktivierung bei orthogra
 | ADHD-Komorbidität | Erhöht (gemeinsamer Upstream) | Unabhängig (falls komorbid: separater Mechanismus) |
 | SWS-Architektur | Fragmentiert | Normal |
 | LDX-Effekt auf Schreiben | Systematischere Fehler (Inter-Instabilität wird sichtbar) | Keine Veränderung oder Besserung durch Aufmerksamkeit |
-| Stimulanzien-Response auf Lesen | Leseflüssigkeit ↑ (PFC-Boost), Orthographie ↔ oder ↓ | Leseflüssigkeit ↑, Orthographie ↑ |
+| Stimulanzien-Response auf Lesen | Leseflüssigkeit $\uparrow$ (PFC-Boost), Orthographie ↔ oder $\downarrow$ | Leseflüssigkeit $\uparrow$, Orthographie $\uparrow$ |
 
 **Thalamische Kompensation als Kohärenzfilter**
 
@@ -381,7 +381,7 @@ Klinische Daten bestätigen die serotonerge Wirkkomponente: Atomoxetin senkt Vol
 
 Ohmura & Nagayasu (2025) dokumentierten in einem systematischen Review, dass DRN und MRN Belohnungs- und Aversionsinformation in entgegengesetzter Richtung verarbeiten. Diese funktionelle Diversität beider Kerne ist nicht durch kernblinde Pharmakologie adressierbar, sondern erfordert kern-selektive Interventionen. Die Autoren schlagen die Identifikation von „druggable genes" vor — Rezeptoren und Transporter mit differentieller Expression zwischen DRN und MRN — als Grundlage für zukünftige kern-selektive Pharmakologie.
 
-Mokler et al. (2009) identifizierten eine unidirektionale glutamaterge Verbindung DRN→MRN, die eine hierarchische Beziehung zwischen beiden Kernen nahelegt und mit dem in D.4.2 beschriebenen seriellen Relay-Mechanismus konsistent ist.
+Mokler et al. (2009) identifizierten eine unidirektionale glutamaterge Verbindung DRN$\rightarrow$MRN, die eine hierarchische Beziehung zwischen beiden Kernen nahelegt und mit dem in D.4.2 beschriebenen seriellen Relay-Mechanismus konsistent ist.
 
 **Konsequenz für Pharmakologie**
 
@@ -410,7 +410,7 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 **DPH-Mechanismus (via H1 + SERT + ACh):**
 
 - **H1-Antagonismus:** DPH blockiert den histaminergen excitatorischen Input auf B7 vom Tuberomammillärkern. Das eliminiert eine DRN-spezifische afferente Antriebsquelle (vgl. D.8: H1-Blockade senkt DRN-5-HT, MRN-Effekt null). Kern-selektive Suppression.
-- **Schwache SERT-Inhibition:** 5-HT steigt im gesamten Raphe-Bereich → 5-HT1A-Autorezeptoren werden stärker belegt → DRN-Feedback-Hemmung verstärkt sich. Wirkt kernblind (vgl. Tao et al. 2003), aber das zusätzliche H1-Signal kippt die Netto-Bilanz asymmetrisch in Richtung DRN-Suppression. Historischer Kontext: DPH wurde in den 1960ern als schwacher SRI identifiziert und war der strukturelle Vorläufer der SSRI-Entwicklung (Fluoxetin).
+- **Schwache SERT-Inhibition:** 5-HT steigt im gesamten Raphe-Bereich $\rightarrow$ 5-HT1A-Autorezeptoren werden stärker belegt $\rightarrow$ DRN-Feedback-Hemmung verstärkt sich. Wirkt kernblind (vgl. Tao et al. 2003), aber das zusätzliche H1-Signal kippt die Netto-Bilanz asymmetrisch in Richtung DRN-Suppression. Historischer Kontext: DPH wurde in den 1960ern als schwacher SRI identifiziert und war der strukturelle Vorläufer der SSRI-Entwicklung (Fluoxetin).
 - **Anticholinerg:** Reduziert cholinergen Drive auf das Arousal-System insgesamt, globale Dämpfung von B7 (und B8, und kortikaler Aktivität).
 
 **Vergleich:**
@@ -418,7 +418,7 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 | Dimension | LDX | DPH |
 |:----------|:----|:----|
 | **Kern-Selektivität der B7-Suppression** | Über D2-Supersensitivität (Hit-2-spezifisch) | Über H1-Blockade (kern-selektiv per Afferenz-Asymmetrie) |
-| **Zustand bei Wirkung** | Wach, funktional, alertness ↑ | Sediert, kognitiv gedämpft |
+| **Zustand bei Wirkung** | Wach, funktional, alertness $\uparrow$ | Sediert, kognitiv gedämpft |
 | **Autonomes Profil am Peak** | Reiner sympathischer Drive (PNN50 ≈ 0, HR 90–100) | Globale Dämpfung, gemischtes Regime |
 | **Dauer der Anfallsprävention** | 2h-Fenster pro Dosis (Tmax = 120 min) | Längerer Überhang durch H1-Bindung |
 | **Therapeutische Bewertung** | Selektiv, kognitiv erhaltend, aber autonome Extreme | Unsauber, sedierend, aber anfallsfrei |
@@ -439,7 +439,7 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 | Atomoxetin erreicht in vivo >85% SERT-Okkupanz (PET, Rhesusaffen) | Gesichert | Ding et al. 2014 |
 | Atomoxetin +29% Kopfschmerz vs. Placebo (Meta-Analyse) | Gesichert | Pan et al. 2022 |
 | DRN und MRN verarbeiten Belohnung/Aversion gegenläufig | Gesichert | Ohmura & Nagayasu 2025 |
-| Unidirektionale glutamaterge Verbindung DRN→MRN | Gesichert | Mokler et al. 2009 |
+| Unidirektionale glutamaterge Verbindung DRN$\rightarrow$MRN | Gesichert | Mokler et al. 2009 |
 | Kern-selektive Pharmakologie über „druggable genes" als zukünftiger Ansatz | Hypothetisch, vorgeschlagen | Ohmura & Nagayasu 2025 |
 
 ### **D.10 Evidenzstatus**
@@ -455,7 +455,7 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 | MRN-Fasern im Hippocampus terminieren in DG (Molekular-/Körnerzellschicht) und CA1/CA3 (Stratum lacunosum-moleculare) | Gesichert | Azmitia & Segal 1978, Vertes 2005 |
 | MRN innerviert nahezu exklusiv hippocampale GABAerge Interneuronen, nicht Prinzipalzellen | Gesichert | Freund 1992 |
 | DRN (B6) innerviert CaMKII+ Pyramidenzellen in dCA1, nicht GAD67+ Interneurone | Gesichert | Translational Neurodegeneration 2024, PMC11267773 |
-| DRN→vHip und MRN→vHip funktional dissoziiert (Aggression vs. Depression) | Gesichert | ScienceDirect 2024 (Chemogenetik/Optogenetik) |
+| DRN$\rightarrow$vHip und MRN$\rightarrow$vHip funktional dissoziiert (Aggression vs. Depression) | Gesichert | ScienceDirect 2024 (Chemogenetik/Optogenetik) |
 | MRN kontrolliert hippocampalen Theta-/Desynchronisationszustand direkt | Gesichert | Vertes 2005, Vinogradova 1995 |
 | MRN-Theta-Kontrolle läuft über GABAerge Zellen im medialen Septum (5-HT2A) | Gesichert | Leranth & Vertes 1999 |
 | ~8–12% der MRN-Neuronen senden Kollateralen zu Septum und Hippocampus gleichzeitig | Gesichert | Retrograde Tracer-Studien |
@@ -479,11 +479,11 @@ Die afferente Dissoziation (D.8) erklärt einen empirischen Einzelfallbefund, de
 | Temporales Integrationsdefizit durch desynchronisierte CA3-CA1-Modulation | Hypothetisch, konsistent | Abgeleitet aus CA1-Temporalfunktion + MRN-Subfeldinnervation + Selbstbeobachtung |
 | Alexithymie als Konsolidierungsgradient (Signal-Rausch-Verhältnis stabiler/instabiler Fenster) | Hypothetisch, konsistent | Eigenformulierung, konsistent mit Typ-II-Alexithymie-Profil und hippocampaler Mechanik |
 | Kreuzfunktionale Engramm-Architektur als kumulative Konsequenz der Desynchronisation | Hypothetisch, konsistent | Abgeleitet aus state-dependent memory + pseudozufälliger Modulation |
-| Orthographische Engramm-Instabilität als LRS-Mechanismus (zustandsabhängiger Abruf → phonologischer Fallback) | Hypothetisch, konsistent | Abgeleitet aus D.7.1 + D.7.2; MGB-Befund (Díaz et al. 2012) als thalamische Parallelstruktur |
+| Orthographische Engramm-Instabilität als LRS-Mechanismus (zustandsabhängiger Abruf $\rightarrow$ phonologischer Fallback) | Hypothetisch, konsistent | Abgeleitet aus D.7.1 + D.7.2; MGB-Befund (Díaz et al. 2012) als thalamische Parallelstruktur |
 | LRS Population A (raphe-vermittelt) vs. Population B (architektonisch): variable vs. konsistente Fehler | Modellvorhersage | Abgeleitet aus D.7.2; keine externe Validierung |
 | ADHD ↔ Dyslexie Komorbidität (OR 2,1–3,1) durch gemeinsamen Raphe-Upstream | Epidemiologisch gesichert, Mechanismus hypothetisch | van Bergen et al. 2025 (n=19.125); McGrath & Stoodley 2019 |
 | Raphe-Takt als Reset-Oszillator (nicht Informationskanal) | Hypothetisch, konsistent | Abgeleitet aus Volumentransmissions-Mechanik + phänomenologischer Korrelation |
-| Zustandsabhängiger Abruf bei instabilen Modulationsvektoren → Gedächtnisinstabilität | Hypothetisch, konsistent mit state-dependent memory-Literatur | Abgeleitet aus D.4 + D.6 |
+| Zustandsabhängiger Abruf bei instabilen Modulationsvektoren $\rightarrow$ Gedächtnisinstabilität | Hypothetisch, konsistent mit state-dependent memory-Literatur | Abgeleitet aus D.4 + D.6 |
 | Musik als externer Taktsubstitut für hippocampale Konsolidierung | Hypothetisch, konsistent | Abgeleitet aus auditorischem Entrainment + Modulationsvektor-Instabilität; phänomenologische Bestätigung (Anhang C) |
 | Relationale Kodierung als modulationsvektorinvariante Kompensation | Hypothetisch, konsistent | Abgeleitet aus D.7 (kreuzfunktionale Architektur) + Zustandsinvarianz struktureller Relationen |
 | ECT-Amnesie als Zustandsvektor-Sprung (frische Engramme verlieren Zugangspfad, alte überleben) | Hypothetisch, konsistent mit klinischem Bild | Abgeleitet aus D.6.3; ECT-Amnesie-Literatur als Modellvalidierung |

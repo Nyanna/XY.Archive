@@ -56,7 +56,7 @@ Dorsaler Vagalkomplex (DVC) als neurales Substrat. Motorische Inhibition, Rigidi
 ### Trigeminokardiovaskulärer Reflex (TCR)
 Klassifiziert in der Fachliteratur als phylogenetischer Stammhirnreflex. In der Chirurgie bekannt als perioperativer Notfall bei Trigeminusreizung. Auslösung zwingend: Bradykardie, Hypotonie, Apnoe als definiertes Trias – kein gradueller Effekt sondern Alles-oder-Nichts-Reflex.
 
-Neuroanatomie: Trigeminale Afferenzen → Nucleus tractus solitarius (NTS) → dorsaler Vaguskern → kardiale und respiratorische Efferenz. Der M. tensor tympani wird motorisch vom N. trigeminus V3 innerviert – seine Anspannung ist messbarer Frühindikator derselben Hirnstammaktivierung, nicht Ursache.
+Neuroanatomie: Trigeminale Afferenzen $\rightarrow$ Nucleus tractus solitarius (NTS) $\rightarrow$ dorsaler Vaguskern $\rightarrow$ kardiale und respiratorische Efferenz. Der M. tensor tympani wird motorisch vom N. trigeminus V3 innerviert – seine Anspannung ist messbarer Frühindikator derselben Hirnstammaktivierung, nicht Ursache.
 Nach ERC-Leitlinien 2021 ist Atropin überholt und nur noch bei symptomatischer Bradykardie indiziert, nicht bei Asystolie.
 
 #### Zwei-Zonen-Modell des vestibulär ausgelösten Reflexes
@@ -68,7 +68,7 @@ Der vestibuläre Pfad produziert nicht ein einheitliches Bild, sondern zwei phyl
 | **Tonisch (Schutzreflex)** | Sturzschutz: Muskeltonuserhöhung zur Stabilisierung bei antizipierten Lageänderungen | Rigidität, Muskelkrampf, Atemstopp durch Zwerchfellspasmus, Tensor-tympani-Anspannung | Vestibuläre Überlast oder Inkonsistenz wird als drohender Sturz/Kontrollverlust interpretiert | Krampfen, Erstarren, Apnoe |
 | **Atonisch (Immobilisationsreflex)** | Dorsal-vagaler Shutdown: Tonusverlust als terminale Verteidigungsreaktion bei wahrgenommener Unentrinnbarkeit | Muskelatonie, Dissoziation, Bradykardie, Synkope über dorsalen Vagalkomplex (DVC) | Prolongierte oder unüberwindbare vestibuläre Überlast wird als unentrinnbare Bedrohung interpretiert | Erschlaffen, Bewusstlosigkeit, Dissoziation |
 
-**Sequenz:** Die tonische Zone ist typischerweise die initiale Antwort — sie tritt bei niedrigerer Schwelle auf. Hält der vestibuläre Stressor an oder eskaliert, folgt der Übergang in die atonische Zone: Rigidität → Dissoziation → Synkope. Die Intensität und Dauer des Stressors bestimmen, ob der Reflex in der tonischen Zone bleibt (kurzer Schreck, abortive Episode) oder in die atonische Zone eskaliert (prolongierte Exposition, sensorische Überlast).
+**Sequenz:** Die tonische Zone ist typischerweise die initiale Antwort — sie tritt bei niedrigerer Schwelle auf. Hält der vestibuläre Stressor an oder eskaliert, folgt der Übergang in die atonische Zone: Rigidität $\rightarrow$ Dissoziation $\rightarrow$ Synkope. Die Intensität und Dauer des Stressors bestimmen, ob der Reflex in der tonischen Zone bleibt (kurzer Schreck, abortive Episode) oder in die atonische Zone eskaliert (prolongierte Exposition, sensorische Überlast).
 
 **Phylogenetische Parallelen:** Die Zwei-Zonen-Struktur entspricht einer konservierten Verteidigungshierarchie:
 
@@ -94,7 +94,7 @@ Kortikale Spreading Depression mit Hirnstammpropagation hinterlässt Fenster erh
 
 **Indikation:** Migräneprophylaxe. Selektiver Beta-1-Blocker, primär kardiale Wirkung.
 
-**Protektiver Effekt:** Reduktion der ANS-Kollapsepisoden von progressiv auf 1–2 pro Jahr. Unterbrechung des degenerativen Kreislaufs: ANS-Kollaps → autonome Sensibilisierung → niedrigere Reflexschwelle → häufigere Episoden. Metoprolol ist damit nicht nur Migräneprophylaxe sondern aktiver Schutz gegen progressive autonome Sensibilisierung. Diese Funktion ist klinisch nicht ersetzbar ohne erhebliches Progressionsrisiko.
+**Protektiver Effekt:** Reduktion der ANS-Kollapsepisoden von progressiv auf 1–2 pro Jahr. Unterbrechung des degenerativen Kreislaufs: ANS-Kollaps $\rightarrow$ autonome Sensibilisierung $\rightarrow$ niedrigere Reflexschwelle $\rightarrow$ häufigere Episoden. Metoprolol ist damit nicht nur Migräneprophylaxe sondern aktiver Schutz gegen progressive autonome Sensibilisierung. Diese Funktion ist klinisch nicht ersetzbar ohne erhebliches Progressionsrisiko.
 
 **Antagonistische Implikation auf den Sympathikus:** Metoprolol dämpft die kardiale Sympathikusantwort – den einzigen verfügbaren Gegenregulator gegen den dorsalen Vagus-Shutdown. Der Vagusreflex läuft dadurch ungehinderter durch. Die beobachtete Schwellenverschiebung des Reflexes seit Therapiebeginn ist pharmakologisch plausibel erklärbar durch diese Gegenregulationsschwächung.
 
@@ -104,13 +104,13 @@ Kortikale Spreading Depression mit Hirnstammpropagation hinterlässt Fenster erh
 
 ### Alpha-1-Antagonisten (Prazosin, Doxazosin, Terazosin) — analoges Problem
 
-**Pharmakologisches Profil:** Prazosin und verwandte Substanzen blockieren postsynaptische α1-Rezeptoren → periphere Vasodilatation → Blutdrucksenkung. In der Literatur ist Prazosin bei post-TBI-Kopfschmerz mit einer Responder-Rate von ca. 70 % dokumentiert (Mayer et al. 2023, *Headache*, RCT) — mechanistisch konsistent mit Peroutkas SNS-Theorie (Blutdrucksenker-Klasseneffekt, vgl. Pathogenesemodell 7.4.3, T\*MGR 2024).
+**Pharmakologisches Profil:** Prazosin und verwandte Substanzen blockieren postsynaptische α1-Rezeptoren $\rightarrow$ periphere Vasodilatation $\rightarrow$ Blutdrucksenkung. In der Literatur ist Prazosin bei post-TBI-Kopfschmerz mit einer Responder-Rate von ca. 70 % dokumentiert (Mayer et al. 2023, *Headache*, RCT) — mechanistisch konsistent mit Peroutkas SNS-Theorie (Blutdrucksenker-Klasseneffekt, vgl. Pathogenesemodell 7.4.3, T\*MGR 2024).
 
 **Warum dennoch kontraindiziert bei diesem Profil:**
 
-- Hauptnebenwirkung ist orthostatische Hypotension → verschlimmert den ohnehin niedrigen sympathischen Floor.
+- Hauptnebenwirkung ist orthostatische Hypotension $\rightarrow$ verschlimmert den ohnehin niedrigen sympathischen Floor.
 - Die in der Studie eingesetzte Abenddosis (20 mg) würde den nächtlichen vagalen Clamp (vgl. Pathogenesemodell 0B.21) theoretisch verschärfen: Der ohnehin binäre Einschlaf-Cliff würde zusätzlich durch pharmakologische Sympathikusblockade verstärkt, die Kompensationsfähigkeit der restlichen Nacht (sympathischer Burst bei 00:41) könnte pharmakologisch unterbunden werden.
-- Das Risikoprofil entspricht strukturell Metoprolol: Overshoot ↓, aber Floor ↓↓. Die populationsweite Wirksamkeit in RCTs ist kein Schutz gegen die individuelle Kontraindikation bei bereits marginalem Floor.
+- Das Risikoprofil entspricht strukturell Metoprolol: Overshoot $\downarrow$, aber Floor $\downarrow\downarrow$. Die populationsweite Wirksamkeit in RCTs ist kein Schutz gegen die individuelle Kontraindikation bei bereits marginalem Floor.
 
 **Modellkonsistenz:** Der RCT-Befund bestätigt die Sympathetic Theory indirekt — senkt man Blutdruck über jeden beliebigen Mechanismus, reduziert sich die Anfallshäufigkeit. Für den vorliegenden Phänotyp führt diese populationsbasierte Logik jedoch in die Irre, weil die Intervention den Grund-Defekt verstärkt statt kompensiert. Die identische Evidenzlogik gilt für andere Antihypertensiva (Candesartan, Lisinopril) — alle wirksam als Migräneprophylaxe, alle potenziell problematisch bei chronisch niedrigem Floor.
 
@@ -124,9 +124,9 @@ Kortikale Spreading Depression mit Hirnstammpropagation hinterlässt Fenster erh
 
 **Schwellenmodulation über zwei Pfade:**
 
-Pfad 1 – Indirekt serotonerge Stabilisierung: Dopaminerge Upstream-Stabilisierung der Raphe → stabilere serotonerge NTS-Schwelle → Reflexschwelle folgt nicht mehr dem Migränezyklus. Effekt ist an Migräneprophylaxe gekoppelt.
+Pfad 1 – Indirekt serotonerge Stabilisierung: Dopaminerge Upstream-Stabilisierung der Raphe $\rightarrow$ stabilere serotonerge NTS-Schwelle $\rightarrow$ Reflexschwelle folgt nicht mehr dem Migränezyklus. Effekt ist an Migräneprophylaxe gekoppelt.
 
-Pfad 2 – Direkt noradrenerge Supplementierung: LDX erhöht zentrales noradrenerges Arousal über Locus-coeruleus-Stimulation. Noradrenalin ist der primäre Modulator der präfrontalen Suppressionskapazität (PFC → PAG → NTS). LDX stärkt damit die aktive kortikale Reflexunterdrückung, die unter Metoprolol noradrenerg geschwächt war.
+Pfad 2 – Direkt noradrenerge Supplementierung: LDX erhöht zentrales noradrenerges Arousal über Locus-coeruleus-Stimulation. Noradrenalin ist der primäre Modulator der präfrontalen Suppressionskapazität (PFC $\rightarrow$ PAG $\rightarrow$ NTS). LDX stärkt damit die aktive kortikale Reflexunterdrückung, die unter Metoprolol noradrenerg geschwächt war.
 
 **Interaktion mit Metoprolol-Entfall:** Bei Entfall der Betablockade unter LDX-Stabilisierung konvergieren drei Effekte: stabilere Schwelle, stärkere kortikale Suppression, wiederhergestellte sympathische Gegenregulation. Das Modell sagt eine überproportionale Verbesserung der autonomen Reflexanfälligkeit vorher (siehe Pathogenesemodell 5.4).
 
@@ -139,9 +139,9 @@ Pfad 2 – Direkt noradrenerge Supplementierung: LDX erhöht zentrales noradrene
 
 **Bradykardie + Blutdrucksenkung:** Guanfacin als selektiver α2A-Agonist senkt Herzfrequenz und Blutdruck – identische Wirkrichtung wie Metoprolol auf die sympathische Reserve. Die sympathische Gegenregulation ist der einzige verfügbare Antagonist gegen den dorsalen Vagus-Shutdown (vgl. Pathogenetisches Modell 5.3, 5.4). Guanfacin schwächt diesen Gegenregulator über denselben Endpunkt wie Metoprolol: reduzierte kardiale Sympathikusantwort.
 
-**α2A-präsynaptische LC-Suppression:** Guanfacin supprimiert über präsynaptische α2A-Autorezeptoren die Feuerrate des Locus coeruleus (LC). Der Suppressionspfad PFC→PAG→NTS (Pfad 2 des Drei-Pfade-Modells, vgl. Pathogenetisches Modell 5.4) ist noradrenerg-abhängig – die präfrontale Suppressionskapazität gegen den vestibuloautonomen Reflex erfordert intakte noradrenerge PFC-Versorgung durch den LC. LC-Suppression durch Guanfacin schwächt diesen Pfad direkt. Das ist das pharmakologische Äquivalent zur erschöpfungsbedingten Suppression nach wiederholten Reflexzyklen.
+**α2A-präsynaptische LC-Suppression:** Guanfacin supprimiert über präsynaptische α2A-Autorezeptoren die Feuerrate des Locus coeruleus (LC). Der Suppressionspfad PFC$\rightarrow$PAG$\rightarrow$NTS (Pfad 2 des Drei-Pfade-Modells, vgl. Pathogenetisches Modell 5.4) ist noradrenerg-abhängig – die präfrontale Suppressionskapazität gegen den vestibuloautonomen Reflex erfordert intakte noradrenerge PFC-Versorgung durch den LC. LC-Suppression durch Guanfacin schwächt diesen Pfad direkt. Das ist das pharmakologische Äquivalent zur erschöpfungsbedingten Suppression nach wiederholten Reflexzyklen.
 
-**Doppelte Schwächung:** Guanfacin erzeugt eine simultane Schwächung auf zwei Ebenen: peripher (Bradykardie über α2A-vermittelte Herzfrequenzsenkung → reduzierte sympathische Gegenregulation gegen Vagusreflex) und zentral (LC-Suppression → noradrenerge PFC-Versorgung reduziert → PFC→PAG→NTS Suppressionskapazität gegen den Reflex geschwächt). Beide Mechanismen sind unabhängig voneinander wirksam und kompoundieren das Risiko.
+**Doppelte Schwächung:** Guanfacin erzeugt eine simultane Schwächung auf zwei Ebenen: peripher (Bradykardie über α2A-vermittelte Herzfrequenzsenkung $\rightarrow$ reduzierte sympathische Gegenregulation gegen Vagusreflex) und zentral (LC-Suppression $\rightarrow$ noradrenerge PFC-Versorgung reduziert $\rightarrow$ PFC$\rightarrow$PAG$\rightarrow$NTS Suppressionskapazität gegen den Reflex geschwächt). Beide Mechanismen sind unabhängig voneinander wirksam und kompoundieren das Risiko.
 
 **Explizite Gegenindikation im Modellkontext:** Guanfacin ist bei vorbestehender vestibuloautonomer Reflexvulnerabilität kontraindiziert. Die Kombination aus peripherer sympathischer Suppression und zentraler noradrenerger Dämpfung erzeugt dasselbe Risikoprofil wie Metoprolol — mit dem entscheidenden Unterschied, dass Guanfacin zusätzlich die zentrale Suppressionskapazität (Pfad 2) schwächt. Metoprolol wirkt primär peripher; Guanfacin wirkt peripher und zentral. Das Netto-Risikoprofil unter Guanfacin ist damit im Modellkontext ungünstiger als unter Metoprolol, ohne den protektiven Effekt der Migräneprophylaxe zu bieten.
 

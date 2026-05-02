@@ -23,7 +23,7 @@ Dieses Kapitel dokumentiert den kontrollierten pharmakologischen Selbstversuch m
 
 | Parameter                       | Befund                                                                                                                                                                                               |
 | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Dosis**                       | 15 mg (halbe 30-mg-Kapsel in Lösung) → ca. 4–5 mg aktives Dexamfetamin. Ziel: Reduktion auf 7,5 mg.                                                                                                  |
+| **Dosis**                       | 15 mg (halbe 30-mg-Kapsel in Lösung) $\rightarrow$ ca. 4–5 mg aktives Dexamfetamin. Ziel: Reduktion auf 7,5 mg.                                                                                                  |
 | **Wirkmechanismus vs. Ritalin** | Releasing Agent (aktive Monoaminfreisetzung) statt Reuptake-Hemmung. Zusätzliche schwache SERT-Aktivität (Serotoninfreisetzung). Glattes Freisetzungsprofil durch Prodrug-Hydrolyse in Erythrozyten. |
 | **Wahrnehmungsqualität**        | Konzentrierter, nicht müde, wenig abgelenkt. Diffusität geringer als bei Ritalin. Phosphene/visuelle Wellen bewusster wahrnehmbar.                                                                   |
 | **Schlaf-Wach-Übergang**        | Powernap unter Substanz möglich (bei Neurotypischen pharmakologisch ungewöhnlich). Aufwachen erleichtert, prolongierte Atonie fehlend.                                                               |
@@ -67,7 +67,7 @@ Buse (*PubMed 29476276*) extrahiert aus der Komorbiditätsliteratur drei konsist
 
 | Trend | Beobachtung | Modellinterpretation |
 |:------|:------------|:---------------------|
-| **1** | Migräne mit Aura → stärkere autonome Dysfunktion als ohne Aura | Aura-Population liegt näher am B7/B8-Entdämpfungsregime; autonome Fragilität korreliert mit CSD-Häufigkeit |
+| **1** | Migräne mit Aura $\rightarrow$ stärkere autonome Dysfunktion als ohne Aura | Aura-Population liegt näher am B7/B8-Entdämpfungsregime; autonome Fragilität korreliert mit CSD-Häufigkeit |
 | **2** | Sympathische Beeinträchtigung häufiger als parasympathische | Konsistent mit Floor-Defizit als primärem Angriffspunkt; Parasympathikus durch LDX/vagalen Clamp nur sekundär betroffen |
 | **3** | Sympathische Beeinträchtigung interiktal verbreitet, sympathische Hyperresponsivität iktal | Adrenozeptor-Hypersensitivität als direkte Folge chronischer NE-Depletion — erklärt den Morgen-Plateau-Overshoot |
 

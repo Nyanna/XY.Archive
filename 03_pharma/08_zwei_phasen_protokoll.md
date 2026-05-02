@@ -96,7 +96,7 @@ Diphenhydramin ist nicht nur ein H1-Antagonist, sondern auch anticholinerg. Acet
 - Monitoring: REM-Ratio, subjektive Schlafqualität, morgendliche Kohärenz
 
 **Initiale Beobachtungen (Phase A, laufend):**
-Erste Nächte zeigen eine Transitionsdichte deutlich unterhalb des POST-Means (2,4/h vs. POST 3,6/h, PRE 4,6/h), niedrigen HR-Einstieg und flachen HR-Verlauf über die Nacht. Das Hypnogramm erscheint subjektiv stabiler als unter LDX allein. Die Effektrichtung ist konsistent mit der Modellvorhersage (B7-Suppression → reduzierte Interferenz → verbesserte Schlafkonsolidierung). Die Effektstärke übersteigt den LDX-Durchschnitt, was bemerkenswert ist, da der Wirkmechanismus orthogonal angreift (H1→selektive B7-Suppression vs. DA→indirekte Raphe-Stabilisierung).
+Erste Nächte zeigen eine Transitionsdichte deutlich unterhalb des POST-Means (2,4/h vs. POST 3,6/h, PRE 4,6/h), niedrigen HR-Einstieg und flachen HR-Verlauf über die Nacht. Das Hypnogramm erscheint subjektiv stabiler als unter LDX allein. Die Effektrichtung ist konsistent mit der Modellvorhersage (B7-Suppression $\rightarrow$ reduzierte Interferenz $\rightarrow$ verbesserte Schlafkonsolidierung). Die Effektstärke übersteigt den LDX-Durchschnitt, was bemerkenswert ist, da der Wirkmechanismus orthogonal angreift (H1$\rightarrow$selektive B7-Suppression vs. DA$\rightarrow$indirekte Raphe-Stabilisierung).
 
 **Caveat:** Sehr frühe Daten, Placebo- und Neuheitseffekte nicht ausschließbar. Bewertung erst nach ≥2 vollständigen erwarteten Zyklen möglich.
 
@@ -207,9 +207,9 @@ Einsatzprofil bleibt erhalten:
 sympathischer LDX-Peak absent, Hitzewellen, subjektive Erschöpfung
 ohne Kraft).
 
-**Mechanismus:** H1-Blockade reduziert histaminerge Interferenz am PFC →
-PFC-Filteraufwand sinkt → freigewordene Kapazität wird für Kognition
-verwendet. Der NTS-Entzug durch H1→DRN-Suppression ist in diesem
+**Mechanismus:** H1-Blockade reduziert histaminerge Interferenz am PFC $\rightarrow$
+PFC-Filteraufwand sinkt $\rightarrow$ freigewordene Kapazität wird für Kognition
+verwendet. Der NTS-Entzug durch H1$\rightarrow$DRN-Suppression ist in diesem
 Zustand ohne zusätzliche Konsequenz, weil der NTS-Tonuspfad bereits
 insuffizient ist.
 
@@ -224,7 +224,7 @@ unzureichende PFC-Reserve (Hypothese war falsch, keine Wiederholung).
 
 **Limitierung:** Anticholinerge Last bleibt bestehen. Bei häufigem
 Bedarf ist die ANS-Eskalationsfrequenz das therapeutische Ziel, nicht
-die DPH-Frequenz. Häufiger Bedarf → Doxepin-SWS-Clearance optimieren
+die DPH-Frequenz. Häufiger Bedarf $\rightarrow$ Doxepin-SWS-Clearance optimieren
 oder Upstream-Stabilisierung (LDX-Regime) anpassen.
 
 ---
@@ -233,7 +233,7 @@ oder Upstream-Stabilisierung (LDX-Regime) anpassen.
 
 ### 8.1 Befund
 
-Die HR-Plateau-Analyse zeigt unter DPH-Nächten eine veränderte Plateau-Signatur: gleichmäßigere Level-Abstände (spacing_cv ↓, z=−1.41), steileren nadir_slope und stabilere Hierarchie. Diese Effekte wurden initial als H1-vermittelte B7-Suppression interpretiert.
+Die HR-Plateau-Analyse zeigt unter DPH-Nächten eine veränderte Plateau-Signatur: gleichmäßigere Level-Abstände (spacing_cv $\downarrow$, z=−1.41), steileren nadir_slope und stabilere Hierarchie. Diese Effekte wurden initial als H1-vermittelte B7-Suppression interpretiert.
 
 Eine pharmakokinetische Analyse deckt einen Confounder auf: **DPH ist ein CYP2D6-Inhibitor.** CYP2D6-vermittelte Hydroxylierung ist der Hauptabbauweg von d-Amphetamin (dem aktiven Metaboliten von LDX). Die abendliche DPH-Einnahme verlangsamt die d-Amphetamin-Elimination und verlängert damit den LDX-Effekt pharmakologisch in die Nacht.
 
@@ -241,14 +241,14 @@ Eine pharmakokinetische Analyse deckt einen Confounder auf: **DPH ist ein CYP2D6
 
 Die DPH-Nacht-Signatur hat zwei nicht trennbare Ursachen:
 
-1. **H1-Mechanismus (Intertakt):** DPH suppressiert B7 über H1-Blockade → reduzierte B7/B8-Interferenz → sauberere Plateau-Architektur
-2. **CYP2D6-Mechanismus (Intratakt):** DPH verlängert d-AMP-Exposition → D2-Stabilisierung hält über die Nacht → Intratakt-Kompensation stabilisiert die Architektur downstream
+1. **H1-Mechanismus (Intertakt):** DPH suppressiert B7 über H1-Blockade $\rightarrow$ reduzierte B7/B8-Interferenz $\rightarrow$ sauberere Plateau-Architektur
+2. **CYP2D6-Mechanismus (Intratakt):** DPH verlängert d-AMP-Exposition $\rightarrow$ D2-Stabilisierung hält über die Nacht $\rightarrow$ Intratakt-Kompensation stabilisiert die Architektur downstream
 
 Im D2High-Kontext (1–2 mg LDX klinisch wirksam) könnte bereits eine minimale Spiegelverlängerung funktional sein. Die DPH-Daten belegen damit den Pathway, erlauben aber keine Zuordnung zum Wirkmechanismus.
 
 ### 8.3 Konsequenz
 
-Die Konfundierung macht eine Dreifach-Diskrimination notwendig, bevor die kombinierte Nacht-Einnahme evaluiert werden kann (→ Abschnitt 9).
+Die Konfundierung macht eine Dreifach-Diskrimination notwendig, bevor die kombinierte Nacht-Einnahme evaluiert werden kann ($\rightarrow$ Abschnitt 9).
 
 ---
 
@@ -285,9 +285,9 @@ Doxepin 3 mg erzeugt **keine CYP2D6-Hemmung** bei therapeutischen Konzentratione
 
 | Beobachtung | Interpretation |
 |---|---|
-| Plateau-Signatur tritt auf (spacing_cv ↓, nadir_slope ↓) | D2-Effekt ist der Träger → Intratakt-Kompensation wirkt über die Nacht |
+| Plateau-Signatur tritt auf (spacing_cv $\downarrow$, nadir_slope $\downarrow$) | D2-Effekt ist der Träger $\rightarrow$ Intratakt-Kompensation wirkt über die Nacht |
 | Keine Signatur, keine Schlafstörung | D2-Dosis ist zu niedrig oder der Effekt braucht H1-Achse |
-| Keine Signatur, Schlafstörung | Dosis überschreitet Arousal-Schwelle → Dosisreduktion |
+| Keine Signatur, Schlafstörung | Dosis überschreitet Arousal-Schwelle $\rightarrow$ Dosisreduktion |
 
 **Sicherheit:** Die LDX-Mikrodosis liegt bei ~2–3% der therapeutischen Standarddosis. Die Prodrug-Konversion über RBC-Peptidasen ist nicht CYP-abhängig; keine Interaktion mit laufender Morgen-LDX-Dosis. Die d-Amphetamin-Halbwertszeit (9–13h) bedeutet, dass bei morgendlicher Einnahme (z.B. 8:00) und abendlicher Mikrodosis (z.B. 22:00) die Spiegel sich nicht klinisch relevant addieren. Urin-pH beeinflusst die Elimination — konsistente Ernährung und Hydration halten diesen Faktor konstant.
 
@@ -295,9 +295,9 @@ Doxepin 3 mg erzeugt **keine CYP2D6-Hemmung** bei therapeutischen Konzentratione
 
 **Rationale:** Doxepin 3 mg testet die reine H1-vermittelte B7-Suppression ohne CYP2D6-Konfundierung. Im Vergleich zu DPH bietet Doxepin:
 
-- Keine CYP2D6-Hemmung → kein LDX-Carry-over
-- Keine anticholinerge Last bei 3 mg → keine REM-Suppression
-- Längere Halbwertszeit (t½ ~15h, Nordoxepin ~31h) → stabile Nacht-Abdeckung ohne Late-Night-Wirkverlust
+- Keine CYP2D6-Hemmung $\rightarrow$ kein LDX-Carry-over
+- Keine anticholinerge Last bei 3 mg $\rightarrow$ keine REM-Suppression
+- Längere Halbwertszeit (t½ ~15h, Nordoxepin ~31h) $\rightarrow$ stabile Nacht-Abdeckung ohne Late-Night-Wirkverlust
 
 **Durchführung:**
 
@@ -312,9 +312,9 @@ Doxepin 3 mg erzeugt **keine CYP2D6-Hemmung** bei therapeutischen Konzentratione
 
 | Beobachtung | Interpretation |
 |---|---|
-| Plateau-Signatur wie unter DPH | H1-Mechanismus bestätigt → Intertakt-Effekt real |
+| Plateau-Signatur wie unter DPH | H1-Mechanismus bestätigt $\rightarrow$ Intertakt-Effekt real |
 | Schwächere Signatur als DPH | H1-Effekt real, aber DPH-CYP2D6-Carry-over trug bei |
-| Keine Signatur | DPH-Effekt war primär CYP2D6-vermittelt → H1-Achse unzureichend |
+| Keine Signatur | DPH-Effekt war primär CYP2D6-vermittelt $\rightarrow$ H1-Achse unzureichend |
 
 **Pharmakokinetische Besonderheit:** Der aktive Metabolit Nordoxepin (t½ ~31h) akkumuliert bei täglicher Gabe. Steady-State wird nach ~5 Tagen erreicht. Die erste Nacht ist daher nicht direkt mit DPH-Nacht-1 vergleichbar; die Bewertung sollte auf Nacht 3–7 fokussieren.
 
@@ -335,8 +335,8 @@ Doxepin 3 mg erzeugt **keine CYP2D6-Hemmung** bei therapeutischen Konzentratione
 
 Wenn beide Einzelexperimente (9.2, 9.3) jeweils einen Teil der Plateau-Signatur erzeugen, adressiert die Kombination beide Achsen gleichzeitig:
 
-- **LDX-Mikrodosis:** D2-Stabilisierung → Intratakt-Kompensation
-- **Doxepin 3 mg:** H1-Blockade → B7-Amplitudenreduktion → Intertakt-Interferenzreduktion
+- **LDX-Mikrodosis:** D2-Stabilisierung $\rightarrow$ Intratakt-Kompensation
+- **Doxepin 3 mg:** H1-Blockade $\rightarrow$ B7-Amplitudenreduktion $\rightarrow$ Intertakt-Interferenzreduktion
 
 Das entspricht dem ursprünglichen Zwei-Achsen-Design (Abschnitt 1.5), aber mit sauberer Pharmakologie: keine CYP2D6-Konfundierung, keine anticholinerge Last, keine Toleranzentwicklung bei Niedrigdosis-Doxepin.
 

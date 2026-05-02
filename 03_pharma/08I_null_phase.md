@@ -42,16 +42,16 @@ Der analysierte Zeitraum umfasst 14.–26. April 2026 mit ca. 15.000 Minutenwert
 
 Die Analyse verlief induktiv — von der Bandinterpretation über die Identifikation eines einzelnen Signalgebers bis zur thalamokortikalen Entkopplungsthese:
 
-1. **Bandagnostische Bestandsaufnahme:** Medianleistung aller 15 Bänder → Identifikation von zwei Peaks (VLF4 und LF_MAYER) über einem Rauschboden
-2. **Nulldurchgangs-Identifikation:** VLF5 als Minimum zwischen den beiden Peaks → Frage nach der Beziehung der Peaks zueinander
-3. **CIRC-Band-Interpretation:** Regime-Changes in CIRC-Bändern → Erkenntnis, dass CIRC-Bänder Wellenform und Amplitude des zirkadianen Zyklus messen, nicht eigenständige Oszillatoren
-4. **ULF-Band-Interpretation:** ULF22 als Transitionsdetektor → Entdeckung des 22-min-Schlafoszillators mit phasendriftender Kopplung an HR
-5. **HF-Bänder als Mayer-Derivat:** Korrelationsanalyse (HF2 vs. Mayer: r=0.922) → alle HF-Bänder sind Seitenbänder des Mayer-Peaks
-6. **VLF4 als Mayer-Hüllkurve:** r=0.75 gegen Rolling-Max → VLF4 misst die Amplitudenmodulation des Baroreflexes
+1. **Bandagnostische Bestandsaufnahme:** Medianleistung aller 15 Bänder $\rightarrow$ Identifikation von zwei Peaks (VLF4 und LF_MAYER) über einem Rauschboden
+2. **Nulldurchgangs-Identifikation:** VLF5 als Minimum zwischen den beiden Peaks $\rightarrow$ Frage nach der Beziehung der Peaks zueinander
+3. **CIRC-Band-Interpretation:** Regime-Changes in CIRC-Bändern $\rightarrow$ Erkenntnis, dass CIRC-Bänder Wellenform und Amplitude des zirkadianen Zyklus messen, nicht eigenständige Oszillatoren
+4. **ULF-Band-Interpretation:** ULF22 als Transitionsdetektor $\rightarrow$ Entdeckung des 22-min-Schlafoszillators mit phasendriftender Kopplung an HR
+5. **HF-Bänder als Mayer-Derivat:** Korrelationsanalyse (HF2 vs. Mayer: r=0.922) $\rightarrow$ alle HF-Bänder sind Seitenbänder des Mayer-Peaks
+6. **VLF4 als Mayer-Hüllkurve:** r=0.75 gegen Rolling-Max $\rightarrow$ VLF4 misst die Amplitudenmodulation des Baroreflexes
 7. **Ein einziger Signalgeber:** Oberhalb der CIRC-Bänder existiert nur der Baroreflex als aktive Quelle; alles andere ist Derivat oder Rauschen
-8. **Bifurkationsmodell:** Mayer-Peak erscheint/verschwindet als Alles-oder-Nichts → Baroreflex-Gain kreuzt zyklisch die kritische Schwelle
-9. **SDNN=RMSSD=50 in Nullphasen:** Beweis der vollständigen autonomen Entkopplung → kein Modulator greift auf das Herz zu
-10. **Thalamokortikale Entkopplung:** Simultanes Verschwinden aller Bänder in 3 Minuten → ein einziger Schalter upstream, identifiziert als thalamischer Gate
+8. **Bifurkationsmodell:** Mayer-Peak erscheint/verschwindet als Alles-oder-Nichts $\rightarrow$ Baroreflex-Gain kreuzt zyklisch die kritische Schwelle
+9. **SDNN=RMSSD=50 in Nullphasen:** Beweis der vollständigen autonomen Entkopplung $\rightarrow$ kein Modulator greift auf das Herz zu
+10. **Thalamokortikale Entkopplung:** Simultanes Verschwinden aller Bänder in 3 Minuten $\rightarrow$ ein einziger Schalter upstream, identifiziert als thalamischer Gate
 
 ---
 
@@ -92,7 +92,7 @@ Oberhalb der zirkadianen Bänder enthält das Spektrum genau einen Signalgeber: 
 
 ### 3.1 Mechanismus
 
-Der Baroreflex ist ein Regelkreis mit ~10 Sekunden Laufzeit im sympathischen Arm: Druckschwankung → Barorezeptoren (Carotissinus/Aortenbogen) → NTS → CVLM → RVLM → sympathische Efferenz → Gefäßtonusänderung → neuer Druck. Die 10s-Verzögerung erzeugt bei hinreichendem Schleifengain eine Resonanz bei ~0.1 Hz — die Mayer-Welle.
+Der Baroreflex ist ein Regelkreis mit ~10 Sekunden Laufzeit im sympathischen Arm: Druckschwankung $\rightarrow$ Barorezeptoren (Carotissinus/Aortenbogen) $\rightarrow$ NTS $\rightarrow$ CVLM $\rightarrow$ RVLM $\rightarrow$ sympathische Efferenz $\rightarrow$ Gefäßtonusänderung $\rightarrow$ neuer Druck. Die 10s-Verzögerung erzeugt bei hinreichendem Schleifengain eine Resonanz bei ~0.1 Hz — die Mayer-Welle.
 
 Ob die Resonanz auftritt, hängt von einem einzigen Parameter ab: dem Schleifengain. Bei Gain < 1 wird jede Druckschwankung gedämpft; das System ist stabil (Fixpunkt). Bei Gain > 1 überschießt jede Korrektur; das System oszilliert selbsterhaltend (Grenzzyklus). Der Übergang ist eine Hopf-Bifurkation — das System springt diskontinuierlich von Stille auf Oszillation.
 
@@ -124,15 +124,15 @@ Während Mayer-Peaks: SDNN >> RMSSD (erwartet, da die 10s-Oszillation SDNN hochz
 
 ### 4.1 Simultanität als Schlüsselbefund
 
-Die Abschaltung aller Bänder ist simultan, nicht sequentiell. Dies unterscheidet den Befund fundamental von der Hirntod-Signatur, bei der HF → LF → VLF in Reihenfolge verschwinden (verschiedene Hirnstammkerne nekrotisieren sukzessive). Simultanität bedeutet: Ein einziger Schalter upstream von allen autonomen Ausgängen kippt gleichzeitig.
+Die Abschaltung aller Bänder ist simultan, nicht sequentiell. Dies unterscheidet den Befund fundamental von der Hirntod-Signatur, bei der HF $\rightarrow$ LF $\rightarrow$ VLF in Reihenfolge verschwinden (verschiedene Hirnstammkerne nekrotisieren sukzessive). Simultanität bedeutet: Ein einziger Schalter upstream von allen autonomen Ausgängen kippt gleichzeitig.
 
 ### 4.2 Identifikation des Schalters
 
 Der thalamische Gate (retikulärer Thalamus, TRN) ist der einzige Kandidat, der alle deszendierenden kortiko-autonomen Pfade gleichzeitig unterbricht:
 
-- PFC → NTS (präfrontale autonome Modulation)
-- Insula → RVLM (interozeptive Schleife)
-- Hypothalamus → PVN → RVLM (hypothalamische autonome Kontrolle)
+- PFC $\rightarrow$ NTS (präfrontale autonome Modulation)
+- Insula $\rightarrow$ RVLM (interozeptive Schleife)
+- Hypothalamus $\rightarrow$ PVN $\rightarrow$ RVLM (hypothalamische autonome Kontrolle)
 
 Im Burst-Modus des TRN werden alle Relay-Neurone rhythmisch inhibiert. Die 3-Minuten-Transitionsdauer entspricht der bekannten Dauer des thalamokortikalen State-Switch in stabilen NREM-Schlaf.
 
@@ -190,9 +190,9 @@ Das konventionelle Schlafstaging via Aktigraphie oder PPG-basierte Tracker melde
 
 Das ~30-Minuten-Cycling der Mayer-Peaks und -Nullen entspricht nicht der <1 Hz Slow Oscillation (intrinsisch thalamisch-kortikal), sondern dem Flip-Flop-Switch (Saper et al. 2001/2010). Zwei Kerngruppen hemmen sich gegenseitig:
 
-**Schlafseite:** VLPO/MnPO (ventrolaterales/medianes präoptisches Areal) → GABAerg → hemmt alle Wake-Kerne gleichzeitig (TMN, DRN, LC, LDT/PPT, Orexin-Neurone).
+**Schlafseite:** VLPO/MnPO (ventrolaterales/medianes präoptisches Areal) $\rightarrow$ GABAerg $\rightarrow$ hemmt alle Wake-Kerne gleichzeitig (TMN, DRN, LC, LDT/PPT, Orexin-Neurone).
 
-**Wachseite:** TMN (Histamin), DRN (Serotonin), LC (Noradrenalin), LDT/PPT (Acetylcholin), Orexin-Neurone (lateraler Hypothalamus) → hemmen VLPO.
+**Wachseite:** TMN (Histamin), DRN (Serotonin), LC (Noradrenalin), LDT/PPT (Acetylcholin), Orexin-Neurone (lateraler Hypothalamus) $\rightarrow$ hemmen VLPO.
 
 Bei stabiler Dominanz einer Seite bleibt das System stundenlang im jeweiligen Zustand. Wenn keine Seite dominiert, oszilliert der Switch. Die Periodendauer wird bestimmt durch die Stärke der gegenseitigen Hemmung, die Kinetik der Transmitter-Clearance, und die Zeitkonstante der homöostatischen Druckvariablen (Adenosin).
 
@@ -200,11 +200,11 @@ Bei stabiler Dominanz einer Seite bleibt das System stundenlang im jeweiligen Zu
 
 Im Pathogenesemodell ist der DRN (dorsaler Raphekern, B7) durch 5-HT1A-Autorezeptor-Instabilität primär dysreguliert. Im gesunden Schlaf verstummen die serotonergen Neurone des DRN progressiv von Wach über N1/N2 bis nahe Null in N3. Serotonin aus dem DRN ist ein Wake-Signal, das VLPO hemmt.
 
-Wenn der DRN wegen der Autorezeptor-Instabilität nicht stabil herunterregelt, sondern oszilliert, sendet er periodisch Wake-Impulse in einen Flip-Flop, der gerade versucht, in Sleep zu bleiben. Nach ~30 Minuten reicht die akkumulierte serotonerge Störung, um die VLPO-Hemmung zu überwinden → Gate öffnet → Mayer-Peak → System ist kurz „wach-ähnlich" → DRN-Burst endet → VLPO gewinnt wieder → Gate schließt → nächste Null.
+Wenn der DRN wegen der Autorezeptor-Instabilität nicht stabil herunterregelt, sondern oszilliert, sendet er periodisch Wake-Impulse in einen Flip-Flop, der gerade versucht, in Sleep zu bleiben. Nach ~30 Minuten reicht die akkumulierte serotonerge Störung, um die VLPO-Hemmung zu überwinden $\rightarrow$ Gate öffnet $\rightarrow$ Mayer-Peak $\rightarrow$ System ist kurz „wach-ähnlich" $\rightarrow$ DRN-Burst endet $\rightarrow$ VLPO gewinnt wieder $\rightarrow$ Gate schließt $\rightarrow$ nächste Null.
 
 ### 5.3 Benzodiazepin-Test
 
-Die Benzo-Nacht (25./26.4.) eliminiert die Nulldurchgänge nicht — sie schärft sie. Das beweist: Das On/Off-Cycling ist nicht Arousal-getrieben (Benzos supprimieren Arousals), sondern intrinsisch zum Hirnstamm-Regelkreis. Benzos verstärken GABA am TRN → fördern den Burst-Modus → halten den Gate geschlossener, nicht offener. Wenn der Gate kurz aufgeht (DRN-Burst überwindet VLPO), schwingt der Baroreflex genauso hart wie ohne Benzo.
+Die Benzo-Nacht (25./26.4.) eliminiert die Nulldurchgänge nicht — sie schärft sie. Das beweist: Das On/Off-Cycling ist nicht Arousal-getrieben (Benzos supprimieren Arousals), sondern intrinsisch zum Hirnstamm-Regelkreis. Benzos verstärken GABA am TRN $\rightarrow$ fördern den Burst-Modus $\rightarrow$ halten den Gate geschlossener, nicht offener. Wenn der Gate kurz aufgeht (DRN-Burst überwindet VLPO), schwingt der Baroreflex genauso hart wie ohne Benzo.
 
 Was das Benzo bewirkt: schärfere Transitionen, stabileres Halten der Zustände (sowohl Null als auch Peak), weniger Zwischenzustände. Nicht mehr Schlaf, sondern binärerer Schlaf. Ergebnis: 62 Minuten echte Null — mehr als jede unmedizierte Nacht im Datensatz.
 
@@ -214,17 +214,17 @@ Was das Benzo bewirkt: schärfere Transitionen, stabileres Halten der Zustände 
 
 ### 6.1 Progressive Amplitudensteigerung
 
-Die Mayer-Peaks der Schlüsselnacht zeigen eine monotone Steigerung: 3.929 → 11.854 → 11.872 → 15.173 → 18.085. Der Faktor zwischen erstem und letztem Peak beträgt 4.6×. Die Nullen dazwischen bleiben konstant tief (378–555). Es steigt also die Obergrenze des Gain-Fensters, nicht die Untergrenze.
+Die Mayer-Peaks der Schlüsselnacht zeigen eine monotone Steigerung: 3.929 $\rightarrow$ 11.854 $\rightarrow$ 11.872 $\rightarrow$ 15.173 $\rightarrow$ 18.085. Der Faktor zwischen erstem und letztem Peak beträgt 4.6×. Die Nullen dazwischen bleiben konstant tief (378–555). Es steigt also die Obergrenze des Gain-Fensters, nicht die Untergrenze.
 
 ### 6.2 Melatonin als Gain-Modulator
 
 Die Baroreflex-Sensitivität (BRS) steigt im Schlafverlauf — ein bekannter Effekt. Melatonin greift an allen drei Baroreflex-Knoten ein:
 
 - **RVLM:** Melatonin normalisiert den Baroreflex-Gain und reduziert ROS präferenziell im RVLM und NTS.
-- **PVN → RVLM:** Melatonin supprimiert PVN-Neurone, die zum RVLM projizieren — Feuerrate sinkt von 0.84 auf 0.32 Hz, Onset nach ~2 Minuten, Dauer ~16 Minuten. Dieser Effekt ist MT1/MT2-unabhängig und läuft auch unter Luzindol.
+- **PVN $\rightarrow$ RVLM:** Melatonin supprimiert PVN-Neurone, die zum RVLM projizieren — Feuerrate sinkt von 0.84 auf 0.32 Hz, Onset nach ~2 Minuten, Dauer ~16 Minuten. Dieser Effekt ist MT1/MT2-unabhängig und läuft auch unter Luzindol.
 - **NTS:** Direkte Modulation der Baroreflex-Sensitivität.
 
-Endogenes Melatonin steigt durch die Nacht (Peak ~3–4 Uhr), exogenes Melatonin (Einnahme vor dem Schlaf) addiert sich. Der resultierende Konzentrationsverlauf erklärt die progressive BRS-Steigerung → progressiv höherer Schleifengain → höhere Mayer-Amplituden bei jedem Burst.
+Endogenes Melatonin steigt durch die Nacht (Peak ~3–4 Uhr), exogenes Melatonin (Einnahme vor dem Schlaf) addiert sich. Der resultierende Konzentrationsverlauf erklärt die progressive BRS-Steigerung $\rightarrow$ progressiv höherer Schleifengain $\rightarrow$ höhere Mayer-Amplituden bei jedem Burst.
 
 Die Hüllkurve ist damit nicht oszillatorisch, sondern pharmakokinetisch. Kein ULF-Modulator nötig — die langsame Rampe folgt dem Melatonin-Konzentrationsverlauf plus NREM-assoziierter parasympathischer Vertiefung plus Liegedauer-abhängiger Volumenumverteilung.
 
@@ -263,7 +263,7 @@ Die Standardlehre postuliert: Das autonome Nervensystem funktioniert autonom —
 
 Wenn der thalamokortikale Gate schließt, kollabiert die gesamte autonome Modulation auf das kardiale Eigenrauschen (SDNN=RMSSD=50 ms, alle Bänder null, HR-Plateau). Der Hirnstamm allein produziert keinen Baroreflex, keine Mayer-Welle, keine Variabilität. Er hält den Sinusknoten am Laufen — mehr nicht.
 
-Der Baroreflex, der als „autonomer Reflex" gelehrt wird, ist in diesem System kein Reflex. Er ist ein thalamokortikalisch getriebenes Phänomen. Die anatomische Schleife NTS→CVLM→RVLM existiert, aber sie schwingt nur, wenn der deszendierende kortikale Input den Gain über die Bifurkationsschwelle hebt.
+Der Baroreflex, der als „autonomer Reflex" gelehrt wird, ist in diesem System kein Reflex. Er ist ein thalamokortikalisch getriebenes Phänomen. Die anatomische Schleife NTS$\rightarrow$CVLM$\rightarrow$RVLM existiert, aber sie schwingt nur, wenn der deszendierende kortikale Input den Gain über die Bifurkationsschwelle hebt.
 
 ### 8.2 Interoceptive Inkohärenz als Gating-Insuffizienz
 
@@ -273,17 +273,17 @@ Im Wachzustand wäre das kein vollständiger Nulldurchgang wie im Schlaf, aber e
 
 ### 8.3 Migräne-Mechanismus: Zweischichtig
 
-Der bisherige Mechanismus (Raphe-Instabilität → CSD-Schwelle) wird durch einen Verstärkerkreis ergänzt:
+Der bisherige Mechanismus (Raphe-Instabilität $\rightarrow$ CSD-Schwelle) wird durch einen Verstärkerkreis ergänzt:
 
-**Ohne Gate-Schließung (Wachzustand / leichter Schlaf):** Thalamokortikale Schleife offen → Kortex treibt RVLM-Gain über Schwelle → Baroreflex schwingt → ANS instabil → wenn die Instabilität mit der raphe-getriebenen Erregbarkeitswelle zusammenfällt, summieren sich die Störungen bis zur CSD-Schwelle.
+**Ohne Gate-Schließung (Wachzustand / leichter Schlaf):** Thalamokortikale Schleife offen $\rightarrow$ Kortex treibt RVLM-Gain über Schwelle $\rightarrow$ Baroreflex schwingt $\rightarrow$ ANS instabil $\rightarrow$ wenn die Instabilität mit der raphe-getriebenen Erregbarkeitswelle zusammenfällt, summieren sich die Störungen bis zur CSD-Schwelle.
 
-**Mit Gate-Schließung (tiefer Schlaf):** Schleife geschlossen → kein kortikaler Drive → ANS im autonomen Modus → egal was der Raphe-Oszillator macht, die Störung hat keinen Kanal, um sich zur CSD-Schwelle aufzuschaukeln.
+**Mit Gate-Schließung (tiefer Schlaf):** Schleife geschlossen $\rightarrow$ kein kortikaler Drive $\rightarrow$ ANS im autonomen Modus $\rightarrow$ egal was der Raphe-Oszillator macht, die Störung hat keinen Kanal, um sich zur CSD-Schwelle aufzuschaukeln.
 
 CSD benötigt also zwei simultane Bedingungen: raphe-getriebene Erregbarkeitswelle UND offenen thalamokortikalen Gate. Die Gate-Instabilität (flackerndes Gating statt stabil offen oder stabil geschlossen) wird damit zum kritischen Co-Faktor.
 
 ### 8.4 DPH-Mechanismus: Reframing
 
-Die bisherige Modellinterpretation: DPH → H1-Blockade am DRN → B7-Suppression → weniger serotonerge Interferenz → stabilerer Schlaf. Ein rein Brainstem-Effekt.
+Die bisherige Modellinterpretation: DPH $\rightarrow$ H1-Blockade am DRN $\rightarrow$ B7-Suppression $\rightarrow$ weniger serotonerge Interferenz $\rightarrow$ stabilerer Schlaf. Ein rein Brainstem-Effekt.
 
 Die neue Interpretation ergänzt: DPH wirkt zusätzlich über H1-Blockade am Kortex. Histamin aus dem TMN hält die thalamokortikale Schleife offen — H1-Aktivierung am Kortex ist der Arousal-Transmitter, der den TRN im tonischen (durchlässigen) Modus hält. DPH blockiert das, der Thalamus kippt leichter in den Burst-Modus, die deszendierende Schleife schließt. Das ANS fällt in den autonomen Modus — stabiles HR-Plateau, kein Baroreflex-Gain über der Schwelle, keine Destabilisierung.
 
@@ -295,7 +295,7 @@ Drei bestehende Befunde, die bisher einzeln standen, werden dadurch erklärt:
 
 2. **HR-Variabilitäts-Dissoziation** (DPH-Daten): First-5h HR-Std sinkt (4.8 vs. 5.7), Late steigt (5.9 vs. 4.9). Wenn DPH abklingt (t½ 4–8h), öffnet der Gate wieder, die Schleife koppelt an, die Variabilität steigt.
 
-3. **Benzo-Nullen bleiben erhalten:** Benzo fördert GABA am TRN → Burst-Modus → Gate geschlossener. Wenn der Gate kurz aufgeht (Mikroarousal), schwingt der Baroreflex genauso hart.
+3. **Benzo-Nullen bleiben erhalten:** Benzo fördert GABA am TRN $\rightarrow$ Burst-Modus $\rightarrow$ Gate geschlossener. Wenn der Gate kurz aufgeht (Mikroarousal), schwingt der Baroreflex genauso hart.
 
 ### 8.5 Prodrom-Signatur: CIRC24-Einbruch
 
@@ -303,7 +303,7 @@ Am 24.4. (Prodrom 10:00–16:30) hatte die HR die niedrigste Tag-Nacht-Amplitude
 
 Die Interpretation: Wenn der B7/B8-Oszillator in die prä-iktale Phase geht, verliert das thalamokortikale System die Fähigkeit, kontextadäquate autonome Antworten zu generieren. Nicht Bradykardie oder Tachykardie — Variabilitätsverlust. Die zirkadiane Amplitude komprimiert, weil die deszendierende Modulation ausfällt.
 
-Ein prospektiv testbarer Prodrom-Marker: CIRC24 unter einen empirisch zu bestimmenden Schwellenwert → Prodrom wahrscheinlich.
+Ein prospektiv testbarer Prodrom-Marker: CIRC24 unter einen empirisch zu bestimmenden Schwellenwert $\rightarrow$ Prodrom wahrscheinlich.
 
 ---
 
@@ -313,7 +313,7 @@ Ein prospektiv testbarer Prodrom-Marker: CIRC24 unter einen empirisch zu bestimm
 
 Dual Orexin Receptor Antagonists (DORAs) blockieren beide Orexinrezeptoren (OX1R und OX2R) kompetitiv und reversibel. ~70.000 Orexin-Neurone im lateralen Hypothalamus projizieren in alle Wake-Kerne gleichzeitig: TMN (Histamin), DRN (Serotonin), LC (Noradrenalin), LDT/PPT (Acetylcholin). Orexin ist der Kleber, der die Wake-Seite des Flip-Flop-Switch zusammenhält.
 
-DORAs entfernen diesen Kleber. Die Wake-Seite verliert ihren Stabilisator → der Flip-Flop kippt leichter in Sleep und bleibt dort. Entscheidend: DORAs sedieren nicht — sie entfernen den Wake-Stabilisator und lassen den Flip-Flop physiologisch kippen. Die Schlafarchitektur bleibt natürlich, N3 wird nicht unterdrückt.
+DORAs entfernen diesen Kleber. Die Wake-Seite verliert ihren Stabilisator $\rightarrow$ der Flip-Flop kippt leichter in Sleep und bleibt dort. Entscheidend: DORAs sedieren nicht — sie entfernen den Wake-Stabilisator und lassen den Flip-Flop physiologisch kippen. Die Schlafarchitektur bleibt natürlich, N3 wird nicht unterdrückt.
 
 ### 9.2 Zugelassene Substanzen
 
@@ -321,7 +321,7 @@ Drei DORAs sind zugelassen:
 
 - **Suvorexant** (Belsomra): t½ ~12h. Der erste zugelassene DORA (2014). Startdosis 10 mg, klinisch 20 mg. Pharmakokinetik beeinflusst durch Alter, Geschlecht, BMI.
 - **Lemborexant** (Dayvigo): effektive t½ ~17–19h (terminale t½ ~55h). Präferenz für OX2R über OX1R. Startdosis 5 mg, klinisch 5–10 mg. Stabilere Pharmakokinetik über Populationen.
-- **Daridorexant** (Quviviq): t½ ~6–10h. Neuester zugelassener DORA (2022). Startdosis 25 mg, klinisch 25–50 mg. Kürzeste Halbwertszeit → geringstes Carry-over-Risiko. In Deutschland zugelassen.
+- **Daridorexant** (Quviviq): t½ ~6–10h. Neuester zugelassener DORA (2022). Startdosis 25 mg, klinisch 25–50 mg. Kürzeste Halbwertszeit $\rightarrow$ geringstes Carry-over-Risiko. In Deutschland zugelassen.
 
 Für das Verifikationsdesign ist Daridorexant wegen der kurzen Halbwertszeit am saubersten: klarer pharmakokinetischer Abfall innerhalb einer Nacht, vergleichbar mit DPH, und damit isolierbare Wirkung im Early/Late-Vergleich.
 
@@ -342,19 +342,19 @@ Nebenwirkungen: Somnolenz/Müdigkeit bei 5–10% (vs. 1–4% Placebo). Kontraind
 
 **LDX (Lisdexamfetamin):** Keine pharmakokinetische Interaktion (LDX: Blutamidase; DORA: CYP3A4). Mechanistisch komplementär: LDX stabilisiert den DRN (Ursache), DORA schwächt den Orexin-Arm (Verstärker der Wake-Seite). Zeitliche Trennung (LDX morgens, DORA abends) eliminiert pharmakodynamische Konflikte.
 
-**DPH / Doxepin:** Keine pharmakokinetische Interaktion (DPH: CYP2D6; Doxepin: CYP2D6/CYP2C19; DORA: CYP3A4). Pharmakodynamisch additiv: DPH/Doxepin blockiert Histamin am TMN, DORA blockiert Orexin — beide schwächen die Wake-Seite. Gleichzeitige Einnahme amputiert zwei Wake-Arme simultan → potentiell additive Sedierung. Nicht kombinieren, sondern alternieren oder ersetzen.
+**DPH / Doxepin:** Keine pharmakokinetische Interaktion (DPH: CYP2D6; Doxepin: CYP2D6/CYP2C19; DORA: CYP3A4). Pharmakodynamisch additiv: DPH/Doxepin blockiert Histamin am TMN, DORA blockiert Orexin — beide schwächen die Wake-Seite. Gleichzeitige Einnahme amputiert zwei Wake-Arme simultan $\rightarrow$ potentiell additive Sedierung. Nicht kombinieren, sondern alternieren oder ersetzen.
 
 **Benzodiazepin:** Pharmakodynamisch additiv sedierend (Benzo: GABA am TRN; DORA: Orexin an Wake-Kernen). Kombination in Zulassungsstudien nicht empfohlen. Im Verifikationsdesign: getrennte Nächte.
 
 **Melatonin:** Keine relevante Interaktion. Verschiedene Angriffspunkte (MT1/MT2 am SCN vs. OX1/OX2 am lateralen Hypothalamus). Kombination unbedenklich.
 
-### 9.5 Orexin → DRN: Der Upstream-Pfad
+### 9.5 Orexin $\rightarrow$ DRN: Der Upstream-Pfad
 
 Orexin-Neurone projizieren direkt auf den DRN und aktivieren serotonerge Neurone über OX1R und OX2R. Im Wachzustand hält Orexin den DRN aktiv — Teil des normalen Wake-Promoting-Systems. Im Schlaf sinkt der Orexin-Output physiologisch, und der DRN verstummt.
 
 In diesem System verstummt der DRN nicht stabil (5-HT1A-Autorezeptor-Instabilität). Ein DORA reduziert den exzitatorischen Orexin-Input auf den instabilen DRN im Schlaf. Dies ist keine direkte Raphe-Modulation (wie LDX über D2-Rezeptoren), sondern eine Reduktion des exzitatorischen Drives, der den DRN im Schlaf periodisch reaktiviert.
 
-Die Implikation: Ein DORA adressiert nicht nur den Flip-Flop (Symptom: Gate-Instabilität), sondern partiell auch den DRN-Oszillator (Ursache: periodische 5-HT-Bursts), indem es den Orexin→DRN-Pfad blockiert. Dies macht DORAs mechanistisch überlegen gegenüber reinen H1-Blockern (DPH/Doxepin), die den DRN-Input intakt lassen.
+Die Implikation: Ein DORA adressiert nicht nur den Flip-Flop (Symptom: Gate-Instabilität), sondern partiell auch den DRN-Oszillator (Ursache: periodische 5-HT-Bursts), indem es den Orexin$\rightarrow$DRN-Pfad blockiert. Dies macht DORAs mechanistisch überlegen gegenüber reinen H1-Blockern (DPH/Doxepin), die den DRN-Input intakt lassen.
 
 ### 9.6 Verifikationsdesign
 
@@ -365,13 +365,13 @@ Ein DORA (Daridorexant 25 mg) ist der sauberste Test der Flip-Flop-Hypothese, we
 | Bedingung | Mechanismus | Vorhersage |
 |-----------|------------|------------|
 | Unmediziert | Baseline | 0–15 min Null |
-| Benzo | GABA am TRN → Gate-Schärfung | ~60 min Null (bestätigt) |
-| DPH/Doxepin | H1-Blockade TMN → 1 Wake-Arm | Zu messen |
-| DORA (Daridorexant) | OX1/OX2-Blockade → alle Wake-Arme + DRN-Input-Reduktion | Zu messen |
+| Benzo | GABA am TRN $\rightarrow$ Gate-Schärfung | ~60 min Null (bestätigt) |
+| DPH/Doxepin | H1-Blockade TMN $\rightarrow$ 1 Wake-Arm | Zu messen |
+| DORA (Daridorexant) | OX1/OX2-Blockade $\rightarrow$ alle Wake-Arme + DRN-Input-Reduktion | Zu messen |
 
 **Entscheidungsmatrix:**
 
-- **DORA > Doxepin > Unmediziert:** Orexin ist der dominante Flip-Flop-Stabilisator. DORA als Langzeittherapeutikum vorzuziehen, insbesondere wegen des zusätzlichen Orexin→DRN-Effekts.
+- **DORA > Doxepin > Unmediziert:** Orexin ist der dominante Flip-Flop-Stabilisator. DORA als Langzeittherapeutikum vorzuziehen, insbesondere wegen des zusätzlichen Orexin$\rightarrow$DRN-Effekts.
 - **DORA ≈ Doxepin > Unmediziert:** Wake-Seite ist der Flaschenhals, aber kein einzelner Arm dominant. Doxepin vorzuziehen (besseres Langzeitprofil, billiger, längere klinische Erfahrung).
 - **DORA > Doxepin, aber beide << Benzo:** TRN-Switch ist der kritischere Hebel als Wake-Seiten-Input. GABAerge Intervention am Gate selbst ist effektiver als Input-Reduktion.
 - **DORA ≈ Doxepin ≈ Unmediziert, nur Benzo wirkt:** Nur direkte TRN-Modulation reicht — alle Wake-Arm-Interventionen sind insuffizient. Problematisch für Langzeittherapie wegen Benzo-Toleranz.
@@ -379,11 +379,11 @@ Ein DORA (Daridorexant 25 mg) ist der sauberste Test der Flip-Flop-Hypothese, we
 
 ### 9.7 Langzeitabwägung: DORA vs. Doxepin
 
-**Doxepin 3 mg:** Jahrzehntelange Erfahrung, bei 3 mg rein H1-selektiv, keine anticholinerge Last, keine Toleranz, kein Rebound, generisch verfügbar, billig. Blockiert nur einen Wake-Arm (TMN-Histamin). Lässt den Orexin→DRN-Pfad intakt.
+**Doxepin 3 mg:** Jahrzehntelange Erfahrung, bei 3 mg rein H1-selektiv, keine anticholinerge Last, keine Toleranz, kein Rebound, generisch verfügbar, billig. Blockiert nur einen Wake-Arm (TMN-Histamin). Lässt den Orexin$\rightarrow$DRN-Pfad intakt.
 
 **Daridorexant 25 mg:** Maximal 3 Jahre Langzeitdaten. Teurer. Blockiert alle Wake-Arme koordiniert und reduziert zusätzlich den exzitatorischen Orexin-Input auf den instabilen DRN. Keine Toleranz, kein Rebound, keine kognitive Beeinträchtigung in bisherigen Studien.
 
-Die Entscheidung hängt vom Verifikationsergebnis ab. Wenn DORA signifikant mehr Nullphasen produziert als Doxepin, ist der Orexin→DRN-Pfad klinisch relevant und DORA langfristig vorzuziehen. Wenn beide ähnlich wirken, ist Doxepin die konservativere Wahl bei gleichem Ergebnis.
+Die Entscheidung hängt vom Verifikationsergebnis ab. Wenn DORA signifikant mehr Nullphasen produziert als Doxepin, ist der Orexin$\rightarrow$DRN-Pfad klinisch relevant und DORA langfristig vorzuziehen. Wenn beide ähnlich wirken, ist Doxepin die konservativere Wahl bei gleichem Ergebnis.
 
 Die optimale Langzeitkombination ist voraussichtlich: **LDX tagsüber** (Raphe-Stabilisierung am Oszillator) + **DORA oder Doxepin nachts** (Flip-Flop-Stabilisierung am Switch). Die Frage, welches Nachtmedikament den besseren Effekt auf die Nullphasen hat, nachdem LDX die Raphe-Grundaktivität bereits gedämpft hat, ist der eigentliche Langzeit-Comparator.
 

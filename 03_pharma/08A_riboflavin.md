@@ -36,9 +36,9 @@ FAD und FMN sind geschwindigkeitsbestimmend in der oxidativen Phosphorylierung. 
 
 Die konventionelle Erklärung für Riboflavin in der Migräneprophylaxe ist unspezifisch: „verbesserte mitochondriale Energiemetabolik im Gehirn". Das Modell erlaubt eine präzisere Zuordnung:
 
-**Konventionell:** Riboflavin → bessere Mitochondrien → weniger Migräne (irgendwie).
+**Konventionell:** Riboflavin $\rightarrow$ bessere Mitochondrien $\rightarrow$ weniger Migräne (irgendwie).
 
-**Modellspezifisch:** Riboflavin → erhöhte FAD/FMN-Verfügbarkeit in DRN-Neuronen → höhere maximale ATP-Regenerationsrate → B7 kann länger unter Hochfrequenz-Last feuern bevor Potentialkapazität erschöpft ist → Erschöpfungsschwelle steigt → größerer Puffer vor B7-Aphasie → post-exertionale Kaskade wird seltener ausgelöst.
+**Modellspezifisch:** Riboflavin $\rightarrow$ erhöhte FAD/FMN-Verfügbarkeit in DRN-Neuronen $\rightarrow$ höhere maximale ATP-Regenerationsrate $\rightarrow$ B7 kann länger unter Hochfrequenz-Last feuern bevor Potentialkapazität erschöpft ist $\rightarrow$ Erschöpfungsschwelle steigt $\rightarrow$ größerer Puffer vor B7-Aphasie $\rightarrow$ post-exertionale Kaskade wird seltener ausgelöst.
 
 Das adressiert nicht den Primärdefekt (Hit 1: 5-HT1A-Autorezeptor-Instabilität) und nicht die Interferenz (Phasenversatz B7/B8), sondern die **Toleranz gegenüber Extrembelastung**. Es hebt die Schwelle an, ab der die Kaskade beginnt.
 
@@ -48,7 +48,7 @@ Das adressiert nicht den Primärdefekt (Hit 1: 5-HT1A-Autorezeptor-Instabilität
 |:-------------|:------|:-----------|
 | LDX | Feuerrate-Ökonomie | Reduziert B7-Verbrauch durch dopaminerge Stabilisierung |
 | DPH-HCl | B7-Ruhephase | Erzwingt Regenerationsfenster über H1-Blockade |
-| **Riboflavin** | Regenerationskapazität | Erhöht die maximale ATP-Produktionsrate → schnellere und vollständigere Regeneration |
+| **Riboflavin** | Regenerationskapazität | Erhöht die maximale ATP-Produktionsrate $\rightarrow$ schnellere und vollständigere Regeneration |
 
 LDX schont den Tank. DPH gibt Zeit zum Nachtanken. Riboflavin vergrößert die Tankstelle. Alle drei sind orthogonal und potentiell additiv.
 
@@ -96,7 +96,7 @@ Die niedrige Bioverfügbarkeit bei 400 mg ist kein Problem, sondern ein eingebau
 ### 3.2 Konversion zu FAD/FMN
 
 ```
-Riboflavin → (Riboflavinkinase, ATP-abhängig) → FMN → (FAD-Synthetase, ATP-abhängig) → FAD
+Riboflavin $\rightarrow$ (Riboflavinkinase, ATP-abhängig) $\rightarrow$ FMN $\rightarrow$ (FAD-Synthetase, ATP-abhängig) $\rightarrow$ FAD
 ```
 
 Beide Konversionsschritte benötigen ATP und sind enzymkinetisch limitiert. Die Konversion ist nicht instantan — die Hochregulation der mitochondrialen FAD/FMN-Pools benötigt eine Anflutungsperiode.
@@ -155,7 +155,7 @@ Riboflavin ändert keine akuten Metriken. Die Erfolgsmessung läuft über die be
 | IBI (Inter-Anfall-Intervall) | Verlängerung | Ab Monat 2–3 |
 | Post-exertionale Toleranz | Höhere Belastungsschwelle vor ANS-Dekompensation | Ab Monat 2–3 |
 | HR-Spreading nach Belastung | Geringerer SD-Anstieg post-exertional | Ab Monat 2–3 |
-| Nächtlicher HR-Drop (τ) | Schnellerer Abfall → effizientere B7-Suppression im Schlaf | Ab Monat 1–2 |
+| Nächtlicher HR-Drop (τ) | Schnellerer Abfall $\rightarrow$ effizientere B7-Suppression im Schlaf | Ab Monat 1–2 |
 | Nap-Kaskadenrate | Weitere Reduktion unter POST-Baseline | Ab Monat 3 |
 
 ### 5.2 Differentialmarker: Riboflavin-Effekt vs. Spontanverlauf
@@ -170,7 +170,7 @@ Alle drei Supplements (Riboflavin, CoQ10, Magnesium) sind in der Migräneprophyl
 
 | Supplement | Mitochondrialer Angriffspunkt | Modellrelevanz |
 |:-----------|:-----------------------------|:---------------|
-| **Riboflavin** | FAD/FMN → Komplex I + II (Eingang der Elektronentransportkette) | Höchste — geschwindigkeitsbestimmender Schritt; erhöht maximale ATP-Produktionsrate |
+| **Riboflavin** | FAD/FMN $\rightarrow$ Komplex I + II (Eingang der Elektronentransportkette) | Höchste — geschwindigkeitsbestimmender Schritt; erhöht maximale ATP-Produktionsrate |
 | CoQ10 | Elektronencarrier zwischen Komplex I/II und Komplex III | Hoch — erhöht Elektronentransportkapazität; downstream von FAD |
 | Magnesium | Kofaktor der ATP-Synthase (Komplex V); NMDA-Antagonismus | Mittel — breiterer Wirkmechanismus, weniger spezifisch für B7-Kapazität |
 
@@ -185,7 +185,7 @@ Falls B2 allein einen messbaren Effekt zeigt, ist die Hinzunahme von CoQ10 der n
 | Aussage | Evidenzniveau |
 |:--------|:-------------|
 | 400 mg/d Riboflavin reduziert Migränefrequenz (NNT 2,3) | Level B (AAN), RCT-gestützt |
-| Mechanismus über FAD/FMN → Komplex I/II | Gesichert (Biochemie), MR-Spektroskopie-gestützt |
+| Mechanismus über FAD/FMN $\rightarrow$ Komplex I/II | Gesichert (Biochemie), MR-Spektroskopie-gestützt |
 | 2–3 Monate Latenz bis klinischer Effekt | Gesichert (alle Studien konsistent) |
 | Split-Dosis 2×200 mg > 1×400 mg Absorption | Pharmakokinetisch plausibel, nicht direkt in Migräne-RCTs getestet |
 | Spezifischer Effekt auf B7-Erschöpfungsschwelle | Modellvorhersage, nicht untersucht |

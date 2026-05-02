@@ -13,7 +13,7 @@
 
 ADHS ist keine Störung der Frontallappen-Leistung per se, sondern eine Dysfunktion des **thalamokortikalen Gatings**: Der Thalamus filtert afferente Signale unzureichend, was zu defizitärer kortikaler Selektion und Verarbeitungsrauschen führt. Die wahrnehmbare Symptomatik ist Folge, nicht Ort des Defizits.
 
-Die primäre Modulation des thalamokortikalen Rhythmus erfolgt über **serotonerge Bahnen** (Raphe-Kerne → Thalamus). Dopamin ist nachgelagert relevant (Salienz, Motivation), nicht der primäre Wirkort der therapeutischen Stimulanzwirkung.
+Die primäre Modulation des thalamokortikalen Rhythmus erfolgt über **serotonerge Bahnen** (Raphe-Kerne $\rightarrow$ Thalamus). Dopamin ist nachgelagert relevant (Salienz, Motivation), nicht der primäre Wirkort der therapeutischen Stimulanzwirkung.
 
 **Erweiterung: Interozeptive Inkohärenz als Kerndefizit (vgl. Abschnitt 8 des Pathogenetischen Modells)**
 
@@ -25,7 +25,7 @@ Diese Reformulierung hat direkte Konsequenzen für die Titration: **Das therapeu
 
 | Effekt | Mechanismus | Therapeutischer Wert |
 |---|---|---|
-| **Synchronisierungseffekt** | Dopaminerge Stabilisierung bringt Modulationssysteme in Phase → kohärente Zustandssignale → thalamokortikale Filterfunktion wiederhergestellt | Hoch — entspricht der organischen Basislinie |
+| **Synchronisierungseffekt** | Dopaminerge Stabilisierung bringt Modulationssysteme in Phase $\rightarrow$ kohärente Zustandssignale $\rightarrow$ thalamokortikale Filterfunktion wiederhergestellt | Hoch — entspricht der organischen Basislinie |
 | **Arousal-/Leistungssteigerungseffekt** | Mesolimbische Dopaminausschüttung, künstlicher Peak | Keiner — pharmakologischer Überschuss |
 
 **Differenzierungstest:** Synchronisierung verbessert *sowohl* Wachheit *als auch* Schlafqualität. Arousal-Steigerung verbessert Wachheit, aber *verschlechtert* Schlafübergänge. Wenn unter Medikation die Abendmüdigkeit kohärenter wird und hypnagoge Dissoziationen abnehmen, ist der Synchronisierungseffekt dominant. Wenn die Einschlaflatenz steigt, dominiert der Arousal-Effekt — die Dosis ist zu hoch oder die Einnahmezeit suboptimal.
@@ -52,7 +52,7 @@ Die Nicht-Stimulanzien Guanfacin und Atomoxetin werden als ADHS-Therapiealternat
 
 #### 1.5.1 Guanfacin
 
-- **α2A-PFC-Stärkung:** Guanfacin hemmt cAMP-PKA-K⁺-Signaling an dendritischen Spines → stärkt rekurrente PFC-Netzwerkkonnektivität (Arnsten 2020). Dieser Mechanismus adressiert Pfad 2 (PFC→PAG→NTS, vgl. 5.4) und verbessert die top-down-Regulationskapazität des PFC selektiv.
+- **α2A-PFC-Stärkung:** Guanfacin hemmt cAMP-PKA-K⁺-Signaling an dendritischen Spines $\rightarrow$ stärkt rekurrente PFC-Netzwerkkonnektivität (Arnsten 2020). Dieser Mechanismus adressiert Pfad 2 (PFC$\rightarrow$PAG$\rightarrow$NTS, vgl. 5.4) und verbessert die top-down-Regulationskapazität des PFC selektiv.
 - **TAAR1-Vollagonismus (EC50=20 nM, Cichero et al. 2023):** TAAR1 ist dicht im DRN exprimiert. TAAR1-Agonismus supprimiert DRN-5-HT-Neurone (Revel et al. 2011). Dieser Vektor ist gegenläufig zur Raphe-Stabilisierung — Guanfacin schwächt die serotonerge Raphe-Funktion statt sie zu stärken.
 - **Keine Migräneprophylaxe erwartet:** Nur eine kleine Studie (Elkind et al. 1989) untersuchte α2-Agonisten in der Migräneprophylaxe; α2-Agonisten sind insgesamt „minimally efficacious" (Tfelt-Hansen 2014). Dies ist modellkonsistent: ohne Raphe-Stabilisierung kein migräneprophylaktischer Effekt.
 - **Autonomes Risikoprofil:** Bradykardie + Blutdrucksenkung = identische Richtung wie Metoprolol. LC-Suppression schwächt noradrenerge Arousal-Kapazität. Explizite Gegenindikation bei vestibuloautonomer Reflexvulnerabilität (vgl. autonomes Profil, 5.3–5.4).
@@ -64,16 +64,16 @@ Die Nicht-Stimulanzien Guanfacin und Atomoxetin werden als ADHS-Therapiealternat
 - **SERT-Okkupanz in vivo:** >85 % bei klinischen Dosen (Ding et al. 2014, PET Rhesus). Die In-vivo-Selektivität NET:SERT beträgt 3:1, nicht 15:1 wie in vitro. Atomoxetin ist damit ein **dualer NET/SERT-Inhibitor**.
 - **SERT-Blockade ist kernblind** (identisch zu SSRIs, vgl. Tao et al. 2003, Anhang D.8) — downstream-puffernd, nicht Raphe-stabilisierend. Die 5-HT-Wiederaufnahmehemmung erhöht den synaptischen 5-HT-Spiegel an allen Projektionsorten gleichförmig, ohne die pathologische Raphe-Oszillation zu adressieren.
 - **NMDA-Blockade (Ludolph et al. 2010):** Möglicher CSD-Schwelleneffekt — könnte die Cortical-Spreading-Depression-Schwelle anheben und damit einen partiellen migräneprophylaktischen Beitrag leisten.
-- **CYP2D6-Polymorphismus:** 10 % der Kaukasier sind Poor Metabolizer → dramatisch höhere AUC → Verschiebung in Richtung voller SERT-Blockade. Die interindividuelle Variabilität ist damit erheblich höher als bei Stimulanzien.
+- **CYP2D6-Polymorphismus:** 10 % der Kaukasier sind Poor Metabolizer $\rightarrow$ dramatisch höhere AUC $\rightarrow$ Verschiebung in Richtung voller SERT-Blockade. Die interindividuelle Variabilität ist damit erheblich höher als bei Stimulanzien.
 - **Differenzierungstest:** Unklar — die SERT-Komponente könnte die Schlafarchitektur beeinflussen, aber die Richtung ist nicht vorhersagbar.
 
 #### 1.5.3 Vergleichstabelle
 
 | Dimension | LDX | Guanfacin | Atomoxetin |
 |:---|:---|:---|:---|
-| **Raphe-Stabilisierung** | Ja (upstream, DA→DRN) | Nein (TAAR1 supprimiert DRN) | Partiell (downstream, SERT-Pufferung, kernblind) |
+| **Raphe-Stabilisierung** | Ja (upstream, DA$\rightarrow$DRN) | Nein (TAAR1 supprimiert DRN) | Partiell (downstream, SERT-Pufferung, kernblind) |
 | **Migräneprophylaxe** | Ja | Nein | Möglich (SERT + NMDA), aber insuffizient |
-| **PFC-Konnektivität** | Ja (NE/DA systemisch) | Ja (α2A-selektiv) | Ja (NET-Block → NE + DA im PFC) |
+| **PFC-Konnektivität** | Ja (NE/DA systemisch) | Ja (α2A-selektiv) | Ja (NET-Block $\rightarrow$ NE + DA im PFC) |
 | **Interozeptive Kohärenz** | Ja (5-System-Synchronisierung) | Partiell (PFC-selektiv) | Partiell (NE + partiell 5-HT) |
 | **Autonomes Profil** | Neutral bis positiv | Negativ (Bradykardie, sympath. Suppression) | Neutral |
 | **Differenzierungstest Schlaf** | Kohärentere Abendmüdigkeit | Sedierung ohne Kohärenzgewinn | Unklar |
@@ -114,7 +114,7 @@ Symptombasierte Titration (Fremd- und Selbstrating, z. B. ADHD-RS, CGI) ist:
 
 - Euphorie und Leistungspeak werden nicht als Überschreitungssignal erkannt
 - Systematische Überdosierung ist inhärent
-- Höhere Dosen → stärkerer Rebound, höheres Toleranzpotenzial
+- Höhere Dosen $\rightarrow$ stärkerer Rebound, höheres Toleranzpotenzial
 - Mesolimbische Verstärkung als unerkanntes Behandlungsziel
 
 ### 2.3 Entwicklungspsychologische Konsequenzen bei Kindern
@@ -157,10 +157,10 @@ Euphorie oder erlebte Leistungssteigerung signalisieren mesolimbische Aktivierun
 
 | Beobachtung | Interpretation |
 |---|---|
-| Wachheit ↑ UND Schlafqualität ↑ | Synchronisierung — therapeutischer Korridor |
-| Wachheit ↑ UND Schlafqualität ↓ oder = | Arousal-Dominanz — Dosis zu hoch oder Einnahmezeit suboptimal |
-| Koffeinbedarf ↓ UND Abendmüdigkeit kohärent | Synchronisierung — Koffein als Kompensation entfällt |
-| Koffeinbedarf ↓ ABER Schlaf unverändert | Arousal-Substitution — kein qualitativer Gewinn |
+| Wachheit $\uparrow$ UND Schlafqualität $\uparrow$ | Synchronisierung — therapeutischer Korridor |
+| Wachheit $\uparrow$ UND Schlafqualität $\downarrow$ oder = | Arousal-Dominanz — Dosis zu hoch oder Einnahmezeit suboptimal |
+| Koffeinbedarf $\downarrow$ UND Abendmüdigkeit kohärent | Synchronisierung — Koffein als Kompensation entfällt |
+| Koffeinbedarf $\downarrow$ ABER Schlaf unverändert | Arousal-Substitution — kein qualitativer Gewinn |
 
 **Steigerungsprotokoll:**  
 Subgraduelle Dosiserhöhung. Zieldosis ist die niedrigste Dosis mit kohärenter Zustandswahrnehmung ohne euphone Komponente. Die interozeptive Kohärenz tritt vor der Leistungssteigerung auf — wenn sie fehlt, aber „Konzentration" sich verbessert, ist das ein Warnsignal für Arousal-Dominanz.
@@ -191,7 +191,7 @@ Bei Kindern und Jugendlichen in entwicklungskritischen Phasen ist das kohärenzb
 
 ### 4.2 Lisdexamfetamin (LDX)
 
-- Prodrug mit enzymatischer Aktivierung → langsamerer Anstieg, flachere Peakdynamik
+- Prodrug mit enzymatischer Aktivierung $\rightarrow$ langsamerer Anstieg, flachere Peakdynamik
 - Therapeutischer Korridor schwerer abzugrenzen da Euphorie subtiler
 - Effektive therapeutische Dosen liegen potenziell deutlich unter Standarddosierungen (Erfahrungswert: 15 mg als wirksame Stabilisierungsdosis möglich, 10 mg an pharmakologischer Untergrenze)
 - Geringeres Missbrauchspotenzial durch Prodrug-Mechanismus begünstigt vorsichtige Titration
@@ -261,13 +261,13 @@ Die folgenden Fragen operationalisieren die kohärenzbasierte Titration als klin
 
 | Frage | Ziel | Therapeutische Implikation |
 |---|---|---|
-| „Merken Sie abends, wann Sie müde werden? Hat sich daran etwas verändert?" | Kohärenz der Abendmüdigkeit | Verbesserung → Synchronisierung; keine Veränderung → Dosis insuffizient oder Arousal-dominant |
-| „Wie schlafen Sie ein — besser, schlechter, anders?" | Schlaf-Wach-Übergangsqualität | Besser → Synchronisierung; schlechter → Arousal-Dominanz → Dosis zu hoch |
-| „Hat sich Ihr Kaffee-/Mate-Bedarf verändert?" | Kompensationsbedarf | Reduktion + besserer Schlaf → Synchronisierung; Reduktion allein → Arousal-Substitution |
-| „Nehmen Sie neue Körpersignale wahr, die Sie vorher nicht kannten?" | Interozeptive Integration | Ja, bereichernd → therapeutischer Korridor; Ja, bedrohlich → Vulnerabilitätssignal |
-| „Fühlen Sie sich wie Sie selbst unter der Medikation?" | Selbstkongruenz | Ja, aber „klarer" → Korridor; Nein, „anders/fremd" → Überschreitung oder Vulnerabilität |
-| „Gibt es Momente von gehobener Stimmung oder das Gefühl, besonders leistungsfähig zu sein?" | Euphorie-Screening | Ja → mesolimbische Aktivierung → Dosis reduzieren |
-| „Wann am Tag fühlen Sie sich am leistungsfähigsten? Hat sich das seit Medikationsbeginn verändert?" | Chronotyp-Kompensationsprofil | Shift von „abends" → „gleichmäßiger/vormittags" → Synchronisierung (Population A); kein Shift → echter Chronotyp oder insuffiziente Dosis; Shift zu „noch später abends" → Arousal-Overshoot, Dosisreduktion prüfen |
+| „Merken Sie abends, wann Sie müde werden? Hat sich daran etwas verändert?" | Kohärenz der Abendmüdigkeit | Verbesserung $\rightarrow$ Synchronisierung; keine Veränderung $\rightarrow$ Dosis insuffizient oder Arousal-dominant |
+| „Wie schlafen Sie ein — besser, schlechter, anders?" | Schlaf-Wach-Übergangsqualität | Besser $\rightarrow$ Synchronisierung; schlechter $\rightarrow$ Arousal-Dominanz $\rightarrow$ Dosis zu hoch |
+| „Hat sich Ihr Kaffee-/Mate-Bedarf verändert?" | Kompensationsbedarf | Reduktion + besserer Schlaf $\rightarrow$ Synchronisierung; Reduktion allein $\rightarrow$ Arousal-Substitution |
+| „Nehmen Sie neue Körpersignale wahr, die Sie vorher nicht kannten?" | Interozeptive Integration | Ja, bereichernd $\rightarrow$ therapeutischer Korridor; Ja, bedrohlich $\rightarrow$ Vulnerabilitätssignal |
+| „Fühlen Sie sich wie Sie selbst unter der Medikation?" | Selbstkongruenz | Ja, aber „klarer" $\rightarrow$ Korridor; Nein, „anders/fremd" $\rightarrow$ Überschreitung oder Vulnerabilität |
+| „Gibt es Momente von gehobener Stimmung oder das Gefühl, besonders leistungsfähig zu sein?" | Euphorie-Screening | Ja $\rightarrow$ mesolimbische Aktivierung $\rightarrow$ Dosis reduzieren |
+| „Wann am Tag fühlen Sie sich am leistungsfähigsten? Hat sich das seit Medikationsbeginn verändert?" | Chronotyp-Kompensationsprofil | Shift von „abends" $\rightarrow$ „gleichmäßiger/vormittags" $\rightarrow$ Synchronisierung (Population A); kein Shift $\rightarrow$ echter Chronotyp oder insuffiziente Dosis; Shift zu „noch später abends" $\rightarrow$ Arousal-Overshoot, Dosisreduktion prüfen |
 
 ### 6.3 Verlaufsdokumentation
 
@@ -277,7 +277,7 @@ Die Antworten sollten longitudinal dokumentiert werden. Die diagnostisch relevan
 - **Woche 3–6:** Integration oder Entfremdung (prognostisches Fenster)
 - **Ab Woche 6:** Stabilisierung — Zustandssignale werden als eigen erlebt, Schlaf-Wach-Profil hat sich eingependelt, Koffeinbedarf ist stabil
 
-Wenn in Woche 3–6 keine Integration eintritt, ist die Dosis zu überprüfen (zu hoch → Arousal statt Kohärenz) oder die thalamische Integrationskapazität als limitierender Faktor zu evaluieren.
+Wenn in Woche 3–6 keine Integration eintritt, ist die Dosis zu überprüfen (zu hoch $\rightarrow$ Arousal statt Kohärenz) oder die thalamische Integrationskapazität als limitierender Faktor zu evaluieren.
 
 ### 6.4 Chronotyp-Fragebogen als zusätzlicher Verlaufsmarker
 
@@ -287,9 +287,9 @@ Ergänzend zur kohärenzbasierten Verlaufsdokumentation kann ein standardisierte
 
 | Befund | Interpretation | Konsequenz |
 |---|---|---|
-| Shift Richtung Morningness unter Stimulanzien | Kompensationsartefakt aufgelöst → Population A (Raphe-Achse) bestätigt | Zieldosis über Schlafkonsolidierung titrieren |
+| Shift Richtung Morningness unter Stimulanzien | Kompensationsartefakt aufgelöst $\rightarrow$ Population A (Raphe-Achse) bestätigt | Zieldosis über Schlafkonsolidierung titrieren |
 | Kein Chronotyp-Shift | Echter Chronotyp oder Population B (Architekturdefizit) | Konventionelle Titration nach Symptomkontrolle |
-| Shift + kohärente Abendmüdigkeit + verbesserte Schlafqualität | Dreifache Konvergenz → Synchronisierungsmechanismus dominant | Optimale therapeutische Konfiguration erreicht |
+| Shift + kohärente Abendmüdigkeit + verbesserte Schlafqualität | Dreifache Konvergenz $\rightarrow$ Synchronisierungsmechanismus dominant | Optimale therapeutische Konfiguration erreicht |
 
 **Erhebungszeitpunkte:** Baseline (vor Therapiebeginn), Woche 4, Woche 8. Der MEQ/MCTQ ist ein 15–20-minütiger Selbstberichtsfragebogen und erzeugt keinen relevanten Mehraufwand. Die diagnostisch relevanteste Information liegt im Prä-Post-Vergleich, nicht im absoluten Score.
 
@@ -322,10 +322,10 @@ Eine Einzelfall-Titration über mehrere Wochen hat das folgende Dilemma offengel
 
 | Nacht-Dosis LDX | Autonome Architektur (Einschlaf-Slope) | Schlafqualität | Bewertung |
 |:----------------|:---------------------------------------|:---------------|:----------|
-| **7,5 mg abends** | Intakt (echter Slope statt Cliff) | Vermehrte Awakenings (LDX senkt Arousal-Schwelle) | Architektur gerettet, aber keine Erholung → kumulative Depletion |
+| **7,5 mg abends** | Intakt (echter Slope statt Cliff) | Vermehrte Awakenings (LDX senkt Arousal-Schwelle) | Architektur gerettet, aber keine Erholung $\rightarrow$ kumulative Depletion |
 | **4 mg abends** | Nicht verbessert gegenüber 0 mg | Nicht verbessert | Dosisabhängigkeitsgrenze nach unten erreicht |
 | **0 mg abends (nur 12-Uhr-Tagesdosis)** | Cliff, kein Slope | Vagaler Clamp, kumulative Depletion nicht kompensiert | Residual (~2 mg-Äquivalent um Mitternacht) reicht nicht für Floor-Stabilisierung |
-| **8 mg Tagesdosis (Peak)** | — | — | PNN50 ≈ 0 am Peak → zu starke B7-Suppression, autonomes Extremregime |
+| **8 mg Tagesdosis (Peak)** | — | — | PNN50 ≈ 0 am Peak $\rightarrow$ zu starke B7-Suppression, autonomes Extremregime |
 
 **Das Grundproblem:** Der Rechteck-Puls-Charakter der aktuellen Formulierung (graduelle Freisetzung *ja*, aber über nur 2h; danach abrupter Rückfall in Baseline) bedeutet, dass *jede* ausreichend hohe Dosis einen scharfen Abklinggradienten hat. Der scharfe Abfall am Ende der Wirkdauer ist es, der B7 als Rebound in die Oszillation zurückschießt — nicht der Peak selbst.
 
@@ -379,7 +379,7 @@ Der Befund ist kompatibel mit einer **subklinischen Migräne**: Die CSD-Schwelle
 
 **Postulierter Wirkpfad der LDX-Nachdosierung:**
 
-LDX → dopaminerger Tonus ↑ → Selbstregulationskapazität (PFC) ↑ → stabilisiert Raphe top-down → Raphe-Output normalisiert → thalamisches Gating rekalibriert → trigeminovaskuläre Unterschwellenaktivierung terminiert
+LDX $\rightarrow$ dopaminerger Tonus $\uparrow$ $\rightarrow$ Selbstregulationskapazität (PFC) $\uparrow$ $\rightarrow$ stabilisiert Raphe top-down $\rightarrow$ Raphe-Output normalisiert $\rightarrow$ thalamisches Gating rekalibriert $\rightarrow$ trigeminovaskuläre Unterschwellenaktivierung terminiert
 
 Der Nap war der autonome Bypass (Bottom-up-Resynchronisation), die Nachdosierung der pharmakologische Bypass (Top-down-Stabilisierung). Dass der Nap allein nicht ausreichte, aber die Kombination aus Nap + Nachdosierung erfolgreich war, spricht für eine Schwellendynamik: der Nap brachte das System nahe an den Resynchronisationspunkt, die Nachdosierung lieferte den fehlenden dopaminergen Beitrag.
 

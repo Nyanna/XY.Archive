@@ -37,10 +37,10 @@ Die Blut-Hirn-Schranke (BHS) besitzt mit Mfsd2a einen spezifischen Transporter, 
 
 | Quelle | DHA-Form im Produkt | Verdauung | Absorption | Zielgewebe |
 |--------|---------------------|-----------|------------|------------|
-| **Fischöl** | Triglycerid (TAG-DHA) | Pankreas-Lipase → freies DHA | Als TAG in Chylomikronen | Fettgewebe, Herz, Leber — **nicht Gehirn** |
-| **Standard-Krill-Öl** | Phosphatidylcholin (PC-DHA an sn-2) | Pankreas-PLA2 spaltet sn-2 → freies DHA | Als TAG in Chylomikronen | Wie Fischöl — **nicht Gehirn** |
+| **Fischöl** | Triglycerid (TAG-DHA) | Pankreas-Lipase $\rightarrow$ freies DHA | Als TAG in Chylomikronen | Fettgewebe, Herz, Leber — **nicht Gehirn** |
+| **Standard-Krill-Öl** | Phosphatidylcholin (PC-DHA an sn-2) | Pankreas-PLA2 spaltet sn-2 $\rightarrow$ freies DHA | Als TAG in Chylomikronen | Wie Fischöl — **nicht Gehirn** |
 | **Lysoveta™ (lipasebehandeltes Krill-Öl)** | LPC-DHA (sn-1-Lipase spaltet Palmitat ab, DHA bleibt an sn-2) | Lipase/Phospholipase können LPC nicht weiter spalten | Als LPC in HDL-Phospholipiden | **Gehirn** via Mfsd2a |
-| **Lachsrogen (Ikura)** | ~40–70% als PC-DHA | Teilweise Konversion zu LPC-DHA im Darm | Mischung: Teil als LPC (→ Gehirn), Teil als TAG (→ Peripherie) | **Teilweise Gehirn** |
+| **Lachsrogen (Ikura)** | ~40–70% als PC-DHA | Teilweise Konversion zu LPC-DHA im Darm | Mischung: Teil als LPC ($\rightarrow$ Gehirn), Teil als TAG ($\rightarrow$ Peripherie) | **Teilweise Gehirn** |
 
 **Kernaussage:** Standard-Krill-Öl hat keinen Vorteil gegenüber Fischöl für die zerebrale DHA-Anreicherung. Der häufig zitierte Phospholipid-Vorteil von Krill-Öl betrifft nur die allgemeine Bioverfügbarkeit, nicht die Gehirn-Spezifität.
 
@@ -61,8 +61,8 @@ Die Blut-Hirn-Schranke (BHS) besitzt mit Mfsd2a einen spezifischen Transporter, 
 | Prozess | Halbwertszeit | Bedeutung |
 |---------|---------------|-----------|
 | Intrazerebrale Deacylierung/Reacylierung (Lands-Zyklus) | Minuten bis Stunden | Reines Recycling, kein Nettoeinbau |
-| Plasma → Gehirn Ersatz (via NEFA-Pool) | ~65 ± 12 Tage (Ratte) | Relevante Kinetik für Supplementierung |
-| Plasma → Gehirn Ersatz (via LPC-Pool) | ~676 ± 122 Tage (Ratte) | Langsamer, aber spezifischer |
+| Plasma $\rightarrow$ Gehirn Ersatz (via NEFA-Pool) | ~65 ± 12 Tage (Ratte) | Relevante Kinetik für Supplementierung |
+| Plasma $\rightarrow$ Gehirn Ersatz (via LPC-Pool) | ~676 ± 122 Tage (Ratte) | Langsamer, aber spezifischer |
 | Depletions-Repletion (Makake) | 17–21 Tage | Schneller bei vorheriger Depletion |
 
 ### 3.2 Praktische Abschätzung Wirkeintritt
@@ -158,7 +158,7 @@ Die Evidenz deutet darauf hin, dass das Omega-6/Omega-3-Verhältnis wichtiger is
 
 ### 7.3 Konfoundierende Variablen
 
-- Saisonale Lichtexposition (April → Sommer: natürliche Chronotherapie-Verstärkung)
+- Saisonale Lichtexposition (April $\rightarrow$ Sommer: natürliche Chronotherapie-Verstärkung)
 - Laufende DPH-Intervention (Interaktion mit Membraneffekten möglich)
 - Riboflavin-Supplementierung (additive Wirkung auf Raphe-Metabolismus)
 

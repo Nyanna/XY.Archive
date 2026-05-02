@@ -108,7 +108,7 @@ The seven-day window is neonatally specific. It corresponds precisely to the per
 
 The "auspicious signs on the body" that simultaneously indicated holiness and lethality are consistent with the visible manifestations of neonatal seizures: rhythmic eye movements, lip-smacking, pedaling motions, tonic posturing, color changes (cyanosis, pallor, flushing). In a culture that reads bodily marks as *lakṣaṇa*, these involuntary movement patterns and skin color changes would be classified as extraordinary signs — readable as both sacred and terminal depending on the interpretive frame.
 
-The graduated offering structure (ordinary people → Brahmins → monks) with corresponding time extensions (7 days → 7 months → 7 years) encodes escalating levels of care and community mobilization for a chronically fragile child.
+The graduated offering structure (ordinary people $\rightarrow$ Brahmins $\rightarrow$ monks) with corresponding time extensions (7 days $\rightarrow$ 7 months $\rightarrow$ 7 years) encodes escalating levels of care and community mobilization for a chronically fragile child.
 
 **Sources:**
 

@@ -27,8 +27,8 @@ Die Amygdala erhält emotional relevanten Input über zwei anatomisch distinkte 
 
 | Pfad | Route | Eigenschaft |
 | :---- | :---- | :---- |
-| **Thalamo-amygdalär (Low Road)** | Sensorischer Input → Thalamus → Amygdala (direkt) | Schnell, einstufig, kein Fehlerbudget. Signal wird ungefiltert weitergeleitet. |
-| **Kortiko-amygdalär (High Road)** | Sensorischer Input → Thalamus → Kortex → (mehrstufige Verarbeitung) → Amygdala | Langsam, mehrstufig. Der Kortex bereinigt verrauschten Input über mehrere Verarbeitungsstufen, bevor er die Amygdala erreicht. |
+| **Thalamo-amygdalär (Low Road)** | Sensorischer Input $\rightarrow$ Thalamus $\rightarrow$ Amygdala (direkt) | Schnell, einstufig, kein Fehlerbudget. Signal wird ungefiltert weitergeleitet. |
+| **Kortiko-amygdalär (High Road)** | Sensorischer Input $\rightarrow$ Thalamus $\rightarrow$ Kortex $\rightarrow$ (mehrstufige Verarbeitung) $\rightarrow$ Amygdala | Langsam, mehrstufig. Der Kortex bereinigt verrauschten Input über mehrere Verarbeitungsstufen, bevor er die Amygdala erreicht. |
 
 Diese Pfaddifferenzierung ist entscheidend für das vorliegende Modell. Bei instabiler Raphe ist der serotonerge Tonus auf den Thalamus chronisch unzuverlässig. Der thalamo-amygdaläre Direktpfad hat keine Möglichkeit zur Fehlerkorrektur – das verrauschte thalamische Signal erreicht die Amygdala ungefiltert. Der kortiko-amygdaläre Pfad dagegen ist mehrstufig und fungiert als sein eigener Fehlerfilter: selbst verrauschter thalamischer Input wird kortikal über mehrere Verarbeitungsebenen bereinigt, bevor er die Amygdala erreicht.
 
@@ -43,7 +43,7 @@ Für den thalamo-amygdalären Pfad folgt daraus eine entwicklungsbiologische Seq
 1. **Pränatal/früh postnatal:** Der instabile serotonerge Tonus erzeugt ein chronisch inkonsistentes Signal am thalamischen Relay zur Amygdala.
 2. **Hebbianisches Lernen (invers):** Synapsen, die inkonsistent feuern, werden geschwächt. Der thalamo-amygdaläre Pfad liefert unzuverlässig korrelierten Input – die Amygdala lernt entwicklungsbiologisch, diesem Kanal nicht zu vertrauen.
 3. **Synaptisches Pruning:** Die Gewichtung des thalamischen Direktpfads wird während kritischer Entwicklungsfenster dauerhaft reduziert – möglicherweise bis zur funktionalen Diskonnektion.
-4. **Kortikaler Pfad überlebt:** Der mehrstufige kortikale Umweg kann das Rauschen über Verarbeitungsstufen bereinigen und liefert konsistentes Signal → bleibt synaptisch erhalten und wird zum primären emotionalen Eingangskanal.
+4. **Kortikaler Pfad überlebt:** Der mehrstufige kortikale Umweg kann das Rauschen über Verarbeitungsstufen bereinigen und liefert konsistentes Signal $\rightarrow$ bleibt synaptisch erhalten und wird zum primären emotionalen Eingangskanal.
 
 **Wichtig:** Dies ist kein adaptives Gating im Erwachsenenalter, sondern eine entwicklungsbiologisch fixierte architektonische Variante. Die Hardware steht nach Abschluss der kritischen Phase. Der aktuelle Serotoninspiegel ist für diese Architektur nicht mehr kausal relevant – er hat den Schalter gebaut, steuert ihn aber nicht mehr.
 
@@ -95,11 +95,11 @@ Eine ergänzende Beobachtung differenziert die somatische Ebene weiter: Somatisc
 
 **Interpretation:** Die somatische Ebene fungiert nicht als permanenter Bewertungskanal (wie in Damásios Modell für neurotypische Verarbeitung), sondern als *Platzhalter für fehlendes Verstehen*. Sie aktiviert sich, wenn die kognitive Ebene noch kein Modell hat, und koppelt aus, sobald eines existiert. Dies ist konsistent mit dem binären Gating-Profil: entweder Somatik (kein Modell) oder Kognition (Modell vorhanden), nie beides gleichzeitig.
 
-**Abgrenzung von Damásio:** Damásios Somatic Marker Hypothesis postuliert somatische Marker als permanenten Parallelkanal zur kognitiven Bewertung – beide koexistieren und informieren Entscheidungen gemeinsam. Dies setzt den Sigmoid-Übergangsbereich in der PFC-Amygdala-Kopplung voraus. Bei binärem Gating existiert dieser Bereich nicht. Damásios Modell beschreibt einen spezifischen Architekturtyp korrekt, nicht ein universelles Prinzip. Sein Befund (Patient Elliot: vmPFC-Läsion → katastrophale Entscheidungen trotz intakter Logik) zeigt, dass ein *auf somatische Marker kalibriertes* System bei deren Wegfall zusammenbricht – nicht, dass Rationalität somatische Marker *prinzipiell* erfordert. Ein System, das Entscheidungsgewichtung primär kognitiv implementiert hat, ist von diesem Defizit nicht betroffen.
+**Abgrenzung von Damásio:** Damásios Somatic Marker Hypothesis postuliert somatische Marker als permanenten Parallelkanal zur kognitiven Bewertung – beide koexistieren und informieren Entscheidungen gemeinsam. Dies setzt den Sigmoid-Übergangsbereich in der PFC-Amygdala-Kopplung voraus. Bei binärem Gating existiert dieser Bereich nicht. Damásios Modell beschreibt einen spezifischen Architekturtyp korrekt, nicht ein universelles Prinzip. Sein Befund (Patient Elliot: vmPFC-Läsion $\rightarrow$ katastrophale Entscheidungen trotz intakter Logik) zeigt, dass ein *auf somatische Marker kalibriertes* System bei deren Wegfall zusammenbricht – nicht, dass Rationalität somatische Marker *prinzipiell* erfordert. Ein System, das Entscheidungsgewichtung primär kognitiv implementiert hat, ist von diesem Defizit nicht betroffen.
 
 #### **A.2.7 Stabilisierung unter Lisdexamfetamin – differenzierte Wirkung**
 
-Lisdexamfetamin stabilisiert die Raphe-Aktivität upstream über dopaminerge Modulation → gleichmäßigerer serotonerger Tonus auf den Thalamus → Signal-Rausch-Verhältnis am thalamischen Relay verbessert sich.
+Lisdexamfetamin stabilisiert die Raphe-Aktivität upstream über dopaminerge Modulation $\rightarrow$ gleichmäßigerer serotonerger Tonus auf den Thalamus $\rightarrow$ Signal-Rausch-Verhältnis am thalamischen Relay verbessert sich.
 
 Die Wirkung auf die emotionale Verarbeitung ist jedoch durch die entwicklungsbiologische Architektur begrenzt:
 
@@ -107,10 +107,10 @@ Die Wirkung auf die emotionale Verarbeitung ist jedoch durch die entwicklungsbio
 | :---- | :---- |
 | **Thalamisches Gating (sensorisch)** | Verbesserung – aktuelles SNR steigt, sensorische Verarbeitung wird klarer |
 | **Thalamo-amygdalärer Direktpfad** | Begrenzt – die entwicklungsbiologische Desensibilisierung ist strukturell fixiert, nicht akut modulierbar. Teilweise Reaktivierung bei dauerhaft verbessertem SNR möglich, aber nicht gesichert. |
-| **Kortiko-amygdalärer Pfad** | Indirekt – saubererer kortikaler Input durch verbessertes thalamisches Relay → potenziell reichere kortikale Modelle → differenziertere Amygdala-Aktivierung über den intakten Pfad |
+| **Kortiko-amygdalärer Pfad** | Indirekt – saubererer kortikaler Input durch verbessertes thalamisches Relay $\rightarrow$ potenziell reichere kortikale Modelle $\rightarrow$ differenziertere Amygdala-Aktivierung über den intakten Pfad |
 | **Somatische Schleife** | Beobachtete Verbesserung: Emotionen propagieren stärker in somatische Resonanz. Mechanismus vermutlich über verbesserten kortiko-amygdalären Input, nicht über Reaktivierung des Direktpfads. |
 
-Die unter Substanz beobachtete verstärkte somatische Resonanz lässt sich also erklären, ohne eine Reaktivierung des thalamo-amygdalären Direktpfads anzunehmen: Ein saubereres kortikales Signal erreicht die Amygdala mit höherer Konsistenz → die Amygdala-Aktivierung über den intakten Pfad wird stärker und zuverlässiger → die Schwelle zur somatischen Kaskade wird häufiger überschritten.
+Die unter Substanz beobachtete verstärkte somatische Resonanz lässt sich also erklären, ohne eine Reaktivierung des thalamo-amygdalären Direktpfads anzunehmen: Ein saubereres kortikales Signal erreicht die Amygdala mit höherer Konsistenz $\rightarrow$ die Amygdala-Aktivierung über den intakten Pfad wird stärker und zuverlässiger $\rightarrow$ die Schwelle zur somatischen Kaskade wird häufiger überschritten.
 
 | Zustand | Thalamo-amygdalärer Pfad | Kortiko-amygdalärer Pfad | Somatische Schleife | Subjektives Erleben |
 | :---- | :---- | :---- | :---- | :---- |

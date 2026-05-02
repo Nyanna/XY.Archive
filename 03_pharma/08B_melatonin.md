@@ -29,7 +29,7 @@ Melatonin adressiert weder Hit 1 noch Hit 2, weder B7-Verbrauch noch B7-Regenera
 ### 1.2 Wo Melatonin ansetzt
 
 **MT1-Rezeptoren:**
-- SCN: akute Suppression der circadianen Alerting-Komponente → subjektive Müdigkeit, Einschlafverkürzung
+- SCN: akute Suppression der circadianen Alerting-Komponente $\rightarrow$ subjektive Müdigkeit, Einschlafverkürzung
 - Robustere Rezeptoraktivität, langsamere Desensibilisierung
 
 **MT2-Rezeptoren:**
@@ -45,7 +45,7 @@ Die Modellvorhersage für den beobachteten Phasenwechsel (prä-LDX: unwirksam; u
 
 Melatonin hat kleine, präzise Effekte. Prä-LDX ist das System durch instabile Raphe-Baseline, oszillierende 5-HT1A-Autorezeptor-Dynamik und kompensatorische Arousal-Konvergenz am circadianen Alerting-Maximum so stark verrauscht, dass das schwache MT-Signal keinen stabilen Untergrund findet.
 
-Unter LDX-induzierter tonischer Stabilisierung sinkt der Arousal-Floor, die Raphe-Baseline glättet sich. Melatonin selbst wird nicht potenter — **das System wird erstmals ansprechbar**. Das ist im Modell keine Nebenerscheinung, sondern vorhersagbare Kaskade: upstream-Stabilisierung (LDX) → downstream-Werkzeuge (MT-Rezeptor-Signal) werden funktional.
+Unter LDX-induzierter tonischer Stabilisierung sinkt der Arousal-Floor, die Raphe-Baseline glättet sich. Melatonin selbst wird nicht potenter — **das System wird erstmals ansprechbar**. Das ist im Modell keine Nebenerscheinung, sondern vorhersagbare Kaskade: upstream-Stabilisierung (LDX) $\rightarrow$ downstream-Werkzeuge (MT-Rezeptor-Signal) werden funktional.
 
 ### 1.4 Phasenanker-Hypothese (hypothetisch)
 
@@ -129,7 +129,7 @@ Falls zukünftig strukturelle Validierung priorisiert wird, wären die folgenden
 | Schneller Oszillator (15–40 min) unverändert | Hoch | Testet Selektivität für circadiane Achse |
 | Prodromale sympathische Erosion gedämpft | Niedrig | Erfordert lange Beobachtungsserie |
 
-**Nullhypothesen-Szenario:** Erster Nadir früher/tiefer, aber Folgezyklen, Inter-Night-Varianz und schneller Oszillator unverändert → Melatonin wirkt als akute Sedation, subjektive Nachtverbesserung ist Konsolidierungs-Artefakt. In diesem Fall schwache Langzeitindikation.
+**Nullhypothesen-Szenario:** Erster Nadir früher/tiefer, aber Folgezyklen, Inter-Night-Varianz und schneller Oszillator unverändert $\rightarrow$ Melatonin wirkt als akute Sedation, subjektive Nachtverbesserung ist Konsolidierungs-Artefakt. In diesem Fall schwache Langzeitindikation.
 
 ---
 
