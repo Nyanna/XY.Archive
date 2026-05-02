@@ -7304,7 +7304,7 @@ Der Dual-Hit auf die Clearance-Achse (retardiertes B2 upstream, retardiertes LPC
 
 ***
 
-## Anhang K — Externe Literaturkonvergenz
+## **Anhang K — Externe Literaturkonvergenz**
 
 Dieser Anhang dokumentiert die unabhängige Stützung der modellinternen Kausalkette durch externe Primärliteratur. Die Architektur des Modells — kongenitale 5-HT1A-Autorezeptor-Instabilität (Hit 1) als Trait-Substrat, B7/B8-Phasenversatz als Oszillator, hypothalamische Initiation, thalamokortikale Destabilisierung, CSD als kompensatorischer Reset, zentral H1-vermittelte B7-Suppression als prodromaler Hebel — wird in diesem Modell zu einer integrierten Kausalkette verbunden, deren *Komponenten* jeweils etabliert sind, deren *Verknüpfung* aber die Originalleistung darstellt.
 
