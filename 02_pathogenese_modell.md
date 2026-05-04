@@ -6466,9 +6466,9 @@ Die methodische Einfachheit der Transformation — zwei Divisionen aus Standardp
 
 ---
 
-### **I.6 Empirische HRV-Datenanalyse — April 2026**
+### **I.6 Empirische HRV-Datenanalyse — April / Mai 2026**
 
-Dieser Teil analysiert sechs IBI-basierte HRV-Datensätze (vier Nächte, zwei Tage) aus dem Zeitraum 16.–20. April 2026. Die Aufzeichnungen stammen von einem Coospo H9Z-Brustgurt mit Beat-to-Beat-Auflösung; die Spektralanalyse erfolgte in gleitenden 5-Minuten-Fenstern. Die Analyse testet Vorhersagen des pathogenetischen Modells zur B7-Amplitudeninstabilität, zur pharmakologischen Modulation durch DPH und Naratriptan, und zur Dissoziation von Tiefschlaf-Staging und autonomer Modulationsqualität.
+Dieser Teil analysiert acht IBI-basierte HRV-Datensätze (vier Nächte, vier Tage) aus dem Zeitraum 16. April – 4. Mai 2026. Die Aufzeichnungen stammen von einem Coospo H9Z-Brustgurt mit Beat-to-Beat-Auflösung; die Spektralanalyse erfolgte in gleitenden 5-Minuten-Fenstern. Die Analyse testet Vorhersagen des pathogenetischen Modells zur B7-Amplitudeninstabilität, zur pharmakologischen Modulation durch DPH und Naratriptan, zur Dissoziation von Tiefschlaf-Staging und autonomer Modulationsqualität, sowie zur Differentialsemiotik B7-getriebener, B8-getriebener und phasen-lock-defizienter Tage.
 
 **Methodik**
 
@@ -6717,6 +6717,116 @@ Die Hypothese: Der MRN (B8) war diesmal der dominante Oszillator. Die Interferen
 3. Hätte eine LDX-Erhöhung um 10:00 (statt DPH) die tonische Progression abgefangen?
 4. Ist die LC-Burst-Qualität (elektrisch, Mittelhirn-lokalisiert vs. unspezifischer Hypnic Jerk) semiologisch spezifisch für B8-Interferenz?
 5. Erklärt die B8-Hypothese retrospektiv andere Anfälle mit atypischer Topographie (keine Aura, kein Okzipitalschwerpunkt)?
+
+#### **Tag 4. Mai 2026 — Trägerwellen-Entkopplung nach fragmentierter Nacht**
+
+**Kontext:** Vorabend ohne Prodromsignale, kein DPH, keine akute Symptomatik. Einschlafen 00:00. Nacht subjektiv stark gestört mit ausgeprägtem Traumerleben und mehrfachen Aufwachepisoden trotz erhaltenen Null-Phasen-Resets. Aufwachen 07:19. LDX 13.3 mg um 07:30 und 12:00 Uhr (Standardprotokoll). Nap 12:45–13:02 mit subjektiv schnellem Einschlafen (<2min) und klarerem Aufwachen. Mehrere Hitzewellen über den Nachmittag verteilt, ohne sympathischen Cluster und ohne DPH-typisches Profil. Subjektives Tagesprofil: diffuse Trübung, Vergenz-Defokus-Präferenz (Schielen statt fokussierter Blick), Konzentrationsanstrengung schwer aufrechtzuerhalten. Keine Kopfschmerzen, keine sensorische Überflutung, keine Eskalation. Aufzeichnung 23:55–15:20 Uhr.
+
+**Deskriptive Statistik (Gesamtaufzeichnung):**
+
+| Parameter | Wert |
+|---|---|
+| HR mean | 77.7 bpm |
+| HR min / max | 43.6 / 132.0 bpm |
+| VLF% | 47.9 (über 42%-Baseline) |
+| LF% | 25.0 |
+| HF% | 27.2 |
+| Dominanz mean (Wachstunden) | −0.611 (std 0.171) |
+| Interferenz mean | 0.46 (Nacht 0.41, Tag 0.52) |
+| ULF1 mean | 2443 (Peak: 9600) |
+| ULF2 mean | 1467 (Peak: 8130) |
+| PNN50 mean | 24.4% |
+| DFA mean | 1.15 (Wachphase 1.44–1.50) |
+| b7_exposure ($\theta$ = −0.6) | 29.9 (251 von 412 Wachminuten) |
+| Null-Phasen Nacht (Runs ≥3min) | 8 Runs, total 61 min |
+| LC-Burst-Signaturen (ΔHR > 10 bpm/min) | 37 (Nacht), 32 (Tag) |
+
+**Befundmuster — Verlauf in fünf Phasen:**
+
+**Phase 1 — Stabile erste Nachthälfte (00:00–03:29).** HR mean 61.1, Dominanz +0.32 (parasympathisch), Interferenz 0.38, PNN50 47.9%. Profil entspricht den N1/N2-Referenznächten — saubere B8-Plateaus, niedrige B7-Aktivität, geordnete Vesikelökonomie. ULF1/ULF2 moderat, kein Anstieg. Erste Null-Phasen-Cluster bei 00:17–26 und 01:39–45 (insgesamt 15 min).
+
+**Phase 2 — Fragmentierte zweite Nachthälfte (03:30–07:19).** HR mean 59.4, Dominanz auf +0.11 abgesunken, Interferenz steigt auf 0.43, PNN50 45.3%. Vagale Kapazität bleibt erhalten, aber die Steuerung wird inkohärent — das Profil ähnelt dem Übergang in der zweiten Hälfte des 24. April (Dominanz-Kollaps bei erhaltener vagaler Aktivität), aber ohne ULF-Explosion und ohne LC-Burst-Eskalation.
+
+Charakteristisch: drei weitere Null-Phasen-Runs ≥7min (02:02–14, 04:49–05:00, 05:17–26), insgesamt 8 Runs ≥3min mit 61 min Gesamt-Null-Zeit. Diese Zahl liegt im oberen Bereich der bisherigen Nachtaufzeichnungen — die B7-Gate-Funktion (thalamokortikales Schließen, Anhang J) ist mehrfach erfolgreich vollzogen worden. Was fehlt, ist die Konsolidierung in zusammenhängende Zyklen: 8 Resets bedeuten 8 Re-Initialisierungen der B7/B8-Phasenbeziehung, keine davon dauerhaft etabliert.
+
+**Phase 3 — Wach prä-Nap mit Trägerwellenabwesenheit (07:20–12:44).** HR mean 97.0, Dominanz −0.633 (std 0.18), Interferenz 0.48, DFA 1.50, PNN50 1.9%. Diagnostisch ungewöhnliches Profil: hohe Sympathikus-Last *ohne* erhöhten Mayer-Envelope (VLF mean 1458). Der sympathische Clamp ist da, aber die Trägerwelle, die ihn normalerweise als rhythmische LDX-Modulation begleitet, fehlt. Die Dominanz-Kompression ist extrem (std 0.18, vergleichbar mit Tag 19. April 0.24), aber die VLF-Hüllkurve folgt nicht.
+
+Dies ist die spektrale Signatur der subjektiv erlebten „Trübung": Die einzelnen Frequenzbänder feuern, aber ihre Phasenbeziehung produziert keine kohärente Trägerwelle für die kortikale Integration. Modellbild: B7 und B8 als zwei Zylinder eines V-Twin-Aggregats, die beide volle Arbeit leisten, aber ohne stabilen Phasenversatz keine glatte Kurbelwellenrotation erzeugen — Vibration ohne Vortrieb. Der Vergenz-Defokus (subjektiv: Schielen-Präferenz, unscharfes Sehen bevorzugt) ist die visuelle Spur dieser Substratverknappung: binokulare Fusion verlangt tonisch-kortikales Substrat (PFC/FEF → mediale Recti, gekoppelt mit Akkommodation), das ohne B7/B8-Phasenlock nicht aufrechterhalten werden kann.
+
+![Phasenkopplung](<images/b7_b8_phasenkopplung_locked_vs_fragmentiert.svg>){width=90%}
+
+**Phase 4 — Nap als Mono-Zyklus-Phasen-Reset (12:45–13:02).** HR mean 87.5, Dominanz −0.42, Interferenz 0.52, VLF mean 1230. Subjektiv: Einschlafen <2min, Aufwachen klarer als zuvor. Minutenstruktur:
+
+- **12:45–46 Eintritt:** HR 99–98, Dom −0.78 — sympathischer Eintritt mit hohem HR, konsistent mit dem etablierten „sicheren hohen HR-Eintritt".
+- **12:47–49 Abstieg:** Bänder kollabieren synchron, Interferenz fällt auf 0.3.
+- **12:50–54 Trog:** HR 82, alle Bänder niedrig, VLF 270–430 — echter B7-Akt mit Gate-Schluss, Dom-Vorzeichen wandert Richtung Null.
+- **12:55–13:01 Ausstieg:** VLF explodiert: 540 → 795 → 1270 → 1940 → 2630 → **3140 → 3280**. Eine Mayer-Wave-Wiedereinschalt-Signatur von ungewöhnlicher Amplitude für einen 17-Minuten-Nap. **Die VLF-Spitze beim Nap-Ausstieg ist 2× so hoch wie die prä-Nap-Baseline.**
+
+Dies ist die spektrale Signatur eines erzwungenen Mono-Zyklus-Phasen-Resets: ein einziger sauberer B7-Trog gefolgt von einer kraftvollen B8-Reaktivierung, in der die Phasenbeziehung kurzzeitig wieder etabliert wird. Der subjektive Klärungseffekt nach dem Nap ist die Wahrnehmung dieses einen wiederhergestellten Phasenversatzes.
+
+**Phase 5 — Periodische Trägerwellen-Entkopplungs-Pulse (13:03–15:20).** HR mean 93.8, Dominanz −0.568, Interferenz 0.59 (höher als prä-Nap). Bemerkenswert: post-Nap zeigen sich diskrete 1–3-Minuten-Episoden mit kollabierter Interferenz (≤0.4) ohne korrespondierenden HR-Spike. 8 solche Episoden in 2 Stunden 17 Minuten, mittlere Frequenz ~17 min, Cluster zwischen 14:24–14:37 (drei Episoden in 13min):
+
+| Zeit | Int | HR | VLF | Dom |
+|---|---|---|---|---|
+| 13:43–44 | 0.40 | 93 | 504 | −0.38 |
+| 14:00–01 | 0.40 | 87 | 760 | −0.64 |
+| 14:09–10 | 0.40 | 92 | 1500 | −0.67 |
+| 14:24–26 | 0.37 | 88 | 1323 | −0.69 |
+| 14:31–32 | 0.35 | 92 | 828 | −0.77 |
+| 14:36–37 | 0.40 | 92 | 632 | −0.75 |
+| 14:57–59 | 0.27 | 97 | 1417 | −0.65 |
+| 15:07 | 0.40 | 94 | 1040 | −0.74 |
+
+In den niedrigsten Interferenz-Minuten (14:57–59) ist die LF-Power maximal (4150 ms²) — die einzelnen Bänder feuern unverändert oder verstärkt, kollabiert ist *nicht* die Amplitude, sondern die Phasenbeziehung zwischen den Bändern. Die subjektiven Hitzewellen verteilen sich über den Nachmittag in Frequenz und Charakter konsistent mit diesen Fenstern. Die Hitze-Episoden zeigen weder das LDX-typische sympathische Aufschwingen (HR-Spike) noch das DPH-typische anticholinerge Profil — sie wirken phänomenologisch „nackt".
+
+**Differentialmerkmale gegenüber B7- und B8-Eskalationsprofilen:**
+
+| Merkmal | B7-Profil (19./20.4.) | B8-Profil (24.4.) | Heutiges Profil (4.5.) |
+|---|---|---|---|
+| Sympathischer Clamp | Ja (Dom −0.68, std 0.24) | Nein (Dom −0.29, std 0.35) | Ja (Dom −0.61, std 0.17) |
+| Dominanz-Kompression | Stark | Moderat | Sehr stark (engste std) |
+| VLF% | 42–45% | 52.7% | 47.9% |
+| Trägerwellen-Kohärenz | Aktiv (Int 0.55–0.60 Tag) | ULF2-getrieben | **Periodisch entkoppelt (8 Pulse/2h)** |
+| ULF2-Führung | Nein | Ja | Nein |
+| Sensorische Überflutung | Ja | Nein | Nein |
+| Abulie | Gering | Ausgeprägt | Moderat (Trübung, Vergenz-Defokus) |
+| Verdauung | Supprimiert | Aktiv | Unauffällig |
+| Hitzewellen-Charakter | Sympathisch-synchron | Nicht dokumentiert | „Nackt", weder LDX- noch DPH-Profil |
+| Nap-Ausgang VLF-Spike | Nicht typisch | n.v. | 3280 (2× Baseline) |
+| CSD/Migräne-Eskalation | Ja | Ja | Nein |
+| DPH-Einnahme | Variabel | Ja (versagt) | Nein |
+
+**Interpretation:**
+
+Dieser Datensatz dokumentiert einen vierten Phänotyp, der weder dem B7- noch dem B8-Eskalationsprofil entspricht: **Phasen-Lock-Verlust ohne Amplitudenausfall.** Die Kernbeobachtung ist die Dissoziation zwischen erhaltener Bandaktivität und kollabierter Trägerwellen-Kohärenz. Im Phasenraum (Anhang I.5) entspricht dies einer extremen Dominanz-Kompression (std 0.17 — niedriger als am prodromalen 19. April) bei moderater Interferenz (mean 0.48 statt der prodromalen 0.55–0.60). Die Wachstunden-Variation läuft fast ausschließlich auf der Interferenz-Achse, jedoch in einem niedrigeren Range als bei den B7-Eskalationstagen — das System hat *einen* effektiven Freiheitsgrad, aber dieser ist nicht die VLF-Hüllkurve, sondern die intermittente Trägerwellen-Entkopplung.
+
+Die Hypothese: Die fragmentierte Nacht (8 Null-Phasen-Resets) hat B7 und B8 jeweils ihre vollen Arbeitstakte gegönnt — die Amplituden sind regenerationsfähig — aber jeder Reset hat die etablierte Phasenbeziehung wieder zerstört, bevor sie konsolidieren konnte. Beim Aufwachen stehen beide Kerne ohne stabile Phasenreferenz da: kortikaler Tonus nicht abrufbar, Trägerwelle nicht aufgebaut. Der diagnostische Unterschied zu „B8 nicht regeneriert" ist über den Mono-Zyklus-Nap differenzierbar — wäre B8 substratlos, hätte der Nap keinen Klärungseffekt erzeugen können. Dass er es tut (mit auffallender VLF-Ausstiegs-Amplitude), beweist, dass das Defizit ein Phasenproblem ist, kein Substanzproblem.
+
+**Mechanismus der „nackten" Hitzewellen:** B7 → preoptische Region / DMH läuft über subkortikale Bahnen, die keine kortikale Vermittlung benötigen. Thermischer Output proceeds also unabhängig vom Trägerwellenzustand. Was *fehlt*, ist die kortikal-autonome Integration, die normalerweise eine thermische Episode zur koordinierten Wärmeregulationsschleife (gezielte Vasodilation, Schweiß) schließt. Die post-Nap-Episoden sind Brainstem-Thermal-Leaks ohne kortikale Reflexion — daher das Fehlen sowohl der LDX-typischen Sympathikus-Spitze (braucht kortikalen Trigger) als auch des DPH-typischen anticholinergen Profils (heute keine M-Blockade).
+
+**Vergenz-Defokus als Modellsignal:** Die subjektive Präferenz für Divergenz/Defokus ist die visuelle Spur des fehlenden tonischen Substrats. Binokulare Fusion verlangt PFC/FEF-getriebene mediale-Recti-Konvergenz, gekoppelt an cholinerge Akkommodation. Ohne B7/B8-Phasenlock fehlt der kortikale Tonus für diese Daueranforderung; das System lässt die Vergenz fallen. Es ist nicht Augenmüdigkeit, sondern Substratverknappung.
+
+**Interventionslogik — Rückblick:** Ein zweiter Nap-Versuch ist post-Nap nicht möglich (Arousal zu hoch, LDX hat „Boden"). Die einzige verfügbare Korrektur ist eine ungestörte Folgenacht — kumulative Konsolidierung über mehrere zusammenhängende B7/B8-Zyklen. DPH wäre heute kontraindiziert: die Trägerwellen-Entkopplung entsteht nicht aus B7-Übergain, sondern aus fehlendem Phasenversatz; H1-Blockade hat hier keinen Hebel.
+
+**Diagnostische Konsequenz:** Das Tagesprofil erweitert die Differentialsemiotik um einen dritten Modus. Die Diskriminierung B7 / B8 / Phasen-Lock-Verlust erfordert das Trio aus Spektralprofil, Dominanz-Varianz und Interferenz-Dynamik:
+
+| Modus | Spektral | Dominanz-std | Interferenz-Dynamik |
+|---|---|---|---|
+| B7-getrieben | VLF 42–45%, ULF moderat | 0.20–0.25 | Kontinuierlich erhöht (0.55–0.60) |
+| B8-getrieben | VLF >50%, ULF2 führt | 0.30–0.35 | Mittel mit ULF2-Peak |
+| **Phasen-Lock-Verlust** | **VLF >45% bei intakter LF-Amplitude** | **<0.20** | **Periodische Entkopplungs-Pulse (Int<0.4 ohne HR-Spike)** |
+
+Die intermittenten Carrier-Breakdown-Episoden (Int<0.4 bei nicht-spitzendem HR) sind ein Kandidat für einen direkten Phasenlock-Marker, komplementär zu den existierenden Dominanz/Interferenz-Metriken.
+
+**Evidenzniveau:** Einzelbeobachtung (n=1), phänomenologisch detailliert, mechanistisch konsistent mit dem Dual-Source-Modell und dem Null-Phasen-Konzept (Anhang J). Die Phasen-Lock-Verlust-Attribution stützt sich auf drei konvergente Befunde: (1) extreme Dominanz-Kompression bei *moderater* Interferenz, (2) Mono-Zyklus-Nap mit klärendem Effekt und überproportionalem VLF-Ausstiegs-Spike (Phasen-Reset-Signatur), (3) periodische Trägerwellen-Entkopplungs-Pulse post-Nap mit korrespondierender „nackter" Hitzewellen-Phänomenologie. Prospektive Validierung erfordert weitere fragmentierte Nächte mit dem revidierten Erwartungsprofil.
+
+**Offene Fragen:**
+
+1. Korreliert die Anzahl der Null-Phasen-Resets in einer fragmentierten Nacht prospektiv mit der Tiefe der Trägerwellen-Entkopplung am Folgetag, unabhängig von der Gesamtschlafzeit?
+2. Sind die intermittenten Carrier-Breakdown-Episoden (Int<0.4 ohne HR-Spike) bei B7- und B8-Eskalationstagen auch nachweisbar, oder sind sie spezifisch für den Phasen-Lock-Verlust-Modus?
+3. Können die subjektiven Hitzewellen prospektiv-zeitstempelig auf die Carrier-Breakdown-Minuten abgebildet werden? Treffer würde die Brainstem-Thermal-Leak-Hypothese stützen.
+4. Skaliert die VLF-Ausstiegs-Amplitude eines Mono-Zyklus-Naps invers mit dem Phasen-Lock-Status — d. h. zeigt ein Folge-Nap am gleichen Tag eine kleinere Spitze, weil das Lock teilweise etabliert ist?
+5. Lässt sich der Vergenz-Defokus als objektivierbares Korrelat (Pupillometrie, Konvergenz-Latenzmessung) mit der Dominanz-Kompression korrelieren?
 
 #### **Synthese: Verknüpfung der Daten mit dem Modell**
 
