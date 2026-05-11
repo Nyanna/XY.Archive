@@ -13,3 +13,7 @@
 
 
 [26. April besseres Profil, hoher HR ↗](https://grafana.xyan.icu/d/adlmsqp/hrv-data?kiosk=true&orgId=1&from=2026-04-25T22:02:53.888Z&to=2026-04-26T05:29:21.338Z&timezone=browser)
+
+
+[24. April fehlender sympathischer Drive ↗](https://grafana.xyan.icu/d/adlmsqp/hrv-data?kiosk=true&orgId=1&from=2026-04-24T05:00:17.546Z&to=2026-04-24T17:39:20.785Z&timezone=browser)
+
