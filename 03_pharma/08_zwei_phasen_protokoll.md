@@ -1,9 +1,13 @@
 # Therapeutisches Zwei-Phasen-Protokoll
-### LDX (Tag) + Diphenhydramin-HCl (Nacht)
+### LDX (Tag) + Doxepin (Nacht)
 
-> **Status:** Phase A aktiv — n=1-Experiment, nicht klinisch validiert. Initiale Beobachtungen richtungskonsistent mit der Modellvorhersage.  
-> Grundlage: B7/B8-Interferenzmodell (Pathogenetisches Modell, Anhang F), differentielle afferente Regulation DRN vs. MRN (Anhang D.8).  
-> Ziel: Experimentelle Überprüfung der Amplitudenmodulations-Hypothese.
+> **Status:** Phase A (Anflutung Doxepin 3 mg) abgeschlossen — vier Nächte Mai 2026, Nordoxepin-Steady-State erreicht. Phase B (alternierende Pausenarchitektur, geplante Reduktion auf 1 mg) in Vorbereitung. n=1-Experiment, nicht klinisch validiert.
+>
+> **Grundlage:** B7/B8-Interferenzmodell (Pathogenetisches Modell, Anhang F), differentielle afferente Regulation DRN vs. MRN (Anhang D.8).
+>
+> **Ziel:** Komplementäre pharmakologische Stützung beider Raphe-Achsen — Intratakt-Stabilisierung am Tag (LDX), Intertakt-Suppression in der Nacht (Doxepin).
+>
+> **Historischer Hinweis:** Phase A wurde ursprünglich mit DPH 25 mg konzipiert. NTS-Tonuspfad-Disqualifikation (siehe 08H) und CYP2D6-Konfundierung haben DPH für die nächtliche Standardanwendung disqualifiziert. Doxepin 3 mg ist die aktuelle Realisierung derselben H1-Wirkachse mit zusätzlichem Mehrwert durch chronische Steady-State-Belegung. Details der historischen DPH-Erprobung in §7–§8.
 
 ---
 
@@ -15,11 +19,13 @@ LDX stabilisiert den **Intra-Kern-Takt** über D2-Stabilisierung, kompensiert zi
 
 ### 1.2 Was LDX nicht adressiert
 
-LDX hat keinen direkten Zugriff auf den **Inter-Kern-Phasenversatz** zwischen B7 (DRN) und B8 (MRN). Ebenso bleibt der ~4-Tage-CSD-Oszillator durch dopaminerge Intervention unberührt. LDX moduliert die Amplitude beider Raphe-Kerne nicht differentiell — es fehlt ein Hebel an der Interferenzquelle.
+LDX hat keinen direkten Zugriff auf den **Inter-Kern-Phasenversatz** zwischen B7 (DRN) und B8 (MRN). Der ~4-Tage-CSD-Oszillator bleibt durch dopaminerge Intervention unberührt. LDX moduliert die Amplitude beider Raphe-Kerne nicht differentiell — es fehlt ein Hebel an der Interferenzquelle.
 
-### 1.3 Diphenhydramin-HCl als selektiver B7-Suppressor
+### 1.3 Doxepin als selektiver B7-Suppressor
 
-Diphenhydramin-HCl ist ein zentral gängiger H1-Antagonist. Histaminerge Afferenzen aus dem TMN (Tuberomammillärkern) innervieren den DRN (B7) dichter als den MRN (B8). H1-Blockade supprimiert daher **selektiv die B7-Aktivität**, ohne B8 substantiell zu beeinflussen (Crawford et al. 2013, vgl. Anhang D.8).
+Doxepin ist bei Niedrigdosis (1–6 mg) pharmakologisch primär ein zentral gängiger H1-Antagonist mit niedriger SERT-Komponente; NE-Reuptake-Hemmung und anticholinerge Last sind in diesem Dosisbereich klinisch nicht relevant (Roth 2007, Krystal 2010, Silenor-Fachinformation).
+
+Histaminerge Afferenzen aus dem TMN (Tuberomammillärkern) innervieren den DRN (B7) dichter als den MRN (B8). H1-Blockade supprimiert daher **selektiv die B7-Aktivität**, ohne B8 substantiell zu beeinflussen (Crawford et al. 2013, vgl. Anhang D.8). Doxepin teilt diesen Wirkpfad mit DPH; die Selektivitätsbasis ist dieselbe.
 
 ### 1.4 Interferenzprodukt und Amplitudenlogik
 
@@ -31,21 +37,51 @@ Wenn der Phasenversatz pharmakologisch nicht direkt korrigierbar ist, bleibt die
 
 ### 1.5 Komplementäres Zwei-Achsen-Design
 
-LDX kompensiert exakt das, was DPH kostet: Die B7-Reduktion senkt serotonergen PFC-Input — LDX stützt die PFC-Funktion dopaminerg. DPH adressiert, was LDX nicht kann: die Inter-Kern-Interferenz. Beide Interventionen greifen an orthogonalen Achsen an.
+LDX kompensiert exakt das, was Doxepin kostet: Die B7-Reduktion senkt serotonergen PFC-Input — LDX stützt die PFC-Funktion dopaminerg. Doxepin adressiert, was LDX nicht kann: die Inter-Kern-Interferenz. Beide Interventionen greifen an orthogonalen Achsen an.
+
+### 1.6 Mehrwert chronischer Steady-State-Belegung
+
+Über die akute H1-Blockade hinaus erzeugt Doxepin durch die lange HWZ des aktiven Metaboliten Nordoxepin (~31 h) ein tonisches Plateau ab Tag 4–5. Drei mechanistische Konsequenzen ergeben sich aus dieser Dauerbelegung, die DPH nicht leistet:
+
+**(a) DRN-Suppression chronisch statt phasisch.** Kein nächtlicher Entzug-Folgetag-Zyklus. Die NTS-Konsequenz, die jede DPH-Einzeldosis am Folgetag manifestiert (08H), wird strukturell vermieden — der Rezeptor ist durchgehend belegt, kein Wechsel zwischen Blockade und Renormalisierung. Die SERT-Komponente (Ki ~68 nM) puffert die verbleibende 5-HT2A-NTS-Frage zusätzlich partiell.
+
+**(b) Reizfilter im Thalamus.** Histamin wirkt pro-exzitatorisch auf pyramidale kortikale Zellen. Die tuberomamillären H1-Projektionen sind ein etablierter Vigilanz-/Aufmerksamkeitsregler (Haas/Panula). Chronische tonische H1-Belegung dämpft die Vigilanz-getriebene Kortexerregbarkeit. Für den vorliegenden Phänotyp (Hypervigilanz als Sekundärfolge der B7/B8-Interferenz) bedeutet das: Senkung der Hypervigilanz als Tagesphänomen — eine Wirkung, die jenseits der Nachtphase liegt und die Akut-H1-Blockade nicht produziert.
+
+**(c) CSD-Schutz durch sensorisches Gating.** Migräneattacken werden prodromal durch sensorische und hypothalamische Last initiiert (Maniyar 2014). Tonisch belegte H1-Rezeptoren dämpfen die thalamokortikale Reizweiterleitung kontinuierlich, vor CSD-Initiierung. Die Mainstream-Migräneforschung hat den H1-Pfad mit peripher-selektiven Zweitgenerations-H1-Blockern (Cetirizin, Loratadin) widerlegt — methodisch verzerrt, weil diese Substanzen ZNS-arm bleiben. Die ZNS-gängigen H1-Affinen mit langer Belegungszeit (Pizotifen, Cyproheptadin, sedierende TCAs) sind als Migräneprophylaktika anerkannt, werden in der Literatur regelhaft aber über 5-HT2B/2C-Antagonismus erklärt.
+
+Diese drei Mehrwerte sind der Hauptgrund, warum die Substanzwahl von DPH auf Doxepin gewechselt wurde, jenseits der DPH-Disqualifikation.
 
 ---
 
-## 2. Verbindungswahl
+## 2. Substanzwahl: Warum Doxepin
 
-Die Wahl der Diphenhydramin-Verbindung ist nicht trivial. Begleitsubstanzen können das dopaminerge System perturbieren und die LDX-Titration konfundieren.
+### 2.1 Pharmakokinetisches Profil
 
-| Verbindung | Wirkstoff | Bewertung |
-|---|---|---|
-| **Diphenhydramin-HCl** | Rein | ✓ Empfohlen — keine aktiven Begleitsubstanzen, beste Dosiskontrolle |
-| **Diphenhydramin-Citrat** | Rein, anderes Salz | ✗ Niedrigere molare Wirkstoffdichte, kein Vorteil |
-| **Dimenhydrinat** | DPH + 8-Chlorotheophyllin | ✗ Kontraindiziert — Xanthinderivat (Adenosin-Antagonist) konfundiert D2High-Shift, unkontrollierter dopaminerger Perturbator |
+| Parameter | Wert |
+|---|---|
+| Doxepin t½ | ~15 h |
+| Nordoxepin (aktiver Metabolit) t½ | ~31 h |
+| Steady-State | ~5 Tage |
+| Onset (Akutwirkung) | 1–2 h |
+| CYP2D6-Hemmung bei ≤6 mg | Klinisch nicht relevant (anders als DPH; keine Konfundierung der LDX-Pharmakokinetik) |
 
-**Begründung der Dimenhydrinat-Kontraindikation:** 8-Chlorotheophyllin ist ein Adenosin-Rezeptor-Antagonist. Adenosin-Antagonismus verschiebt das D2-Gleichgewicht in Richtung D2High und erzeugt einen unkontrollierten dopaminergen Push — exakt das Gegenteil der kontrollierten Titration, die LDX liefern soll (vgl. Titrationsleitlinie, Abschnitt 1.4 zur Koffein-Kohärenz-Dissoziation).
+### 2.2 Selektivitätsprofil bei Niedrigdosis (1–6 mg)
+
+| Achse | Bewertung |
+|---|---|
+| H1 (Ki ~0,24 nM) | Primärwirkung |
+| SERT (Ki ~68 nM) | Niedrige Affinität, partielle NTS-Pufferung |
+| NE-Reuptake | Klinisch nicht relevant |
+| Anticholinerg | In RCTs placebovergleichbar |
+| 5-HT2A/2C | Zusätzlicher Antagonismus, erklärt aggressivere kortikale Dämpfung bei höheren Dosen (siehe §4) |
+
+### 2.3 Bezug in DE
+
+Silenor (3/6 mg) ist in Deutschland nicht zugelassen. Optionen: magistrale Zubereitung in der Apotheke (Doxepin als Wirkstoff verschreibungspflichtig verfügbar), Import. Höher dosierte Aponal-Tabletten (10/25/50 mg) lassen sich nicht zuverlässig auf 1 oder 3 mg teilen — magistrale Zubereitung ist die saubere Lösung.
+
+### 2.4 Warnkategorie TCA + Amphetamin
+
+Medscape listet die Kombination Doxepin + d-Amphetamin als "avoid or use alternate drug", dosisblind. Die Klassifikation stützt sich auf antidepressive TCA-Dosen (75–300 mg), bei denen NE-Reuptake-Hemmung die sympathomimetische Wirkung potenziert. Bei Doxepin ≤6 mg pharmakologisch nicht einschlägig; bei ärztlicher Kommunikation transparent zu machen.
 
 ---
 
@@ -53,350 +89,170 @@ Die Wahl der Diphenhydramin-Verbindung ist nicht trivial. Begleitsubstanzen kön
 
 ### 3.1 Startdosis
 
-**25 mg Diphenhydramin-HCl** abends, circa 60 Minuten vor geplantem Schlafbeginn.
+**3 mg Doxepin** abends, 30 min vor geplantem Schlafbeginn, nicht innerhalb 3 h nach Mahlzeit (Bioverfügbarkeit).
 
-### 3.2 Rationale
+### 3.2 Reduktionsziel 1 mg
 
-Ziel ist B7-Suppression ohne Vollsedierung. Die Dosis soll den histaminergen DRN-Input reduzieren, nicht das gesamte Arousal-System abschalten. 25 mg liegt am unteren Ende der OTC-Schlafhilfe-Dosierung und dürfte ausreichen, um die H1-vermittelte DRN-Fazilitierung signifikant zu dämpfen.
+RCT-Datenlage stützt 1 mg als wirksam: in Roth et al. 2007 (n=67, 18–64 J.) erreichte WASO bei 1 mg P=0,009; bei 3 und 6 mg P<0,0001. Krystal et al. 2010 (n=240, ≥65 J., 12 Wochen) zeigte Signifikanz für WASO, TST und SE bei beiden Dosen (1 und 3 mg) an mehreren Zeitpunkten. Kein Rebound, keine anticholinergen Effekte, keine Gewichtszunahme bei keiner der Dosen.
 
-### 3.3 REM als Dosislimit
+Der praktische Anlass für die Reduktion ist die in Phase A beobachtete **Übereffektivität** (siehe §4) — 4–8 min Nullphasen im 15-min-Takt überschreiten den physiologischen Bereich. Ob die Reduktion auf 1 mg die Übereffektivität auf physiologisch normale ~3 min Nullphasen herunter titriert, ist empirisch zu prüfen. Die zusätzliche 5-HT2A/2C-Komponente skaliert anders als die H1-Wirkung, der Effekt der Drittelung der Dosis ist deshalb nicht linear vorhersagbar.
 
-Diphenhydramin ist nicht nur ein H1-Antagonist, sondern auch anticholinerg. Acetylcholin ist essenziell für die REM-Generierung (pedunkulopontine und laterodorsale tegmentale Kerne). Zu hohe Dosen supprimieren REM.
+### 3.3 REM-Ratio als Sicherheitsmetrik
 
-**Operationalisierung:** Die REM-Ratio im Schlaftracker dient als Sicherheitsmetrik.
-
-- Bei **intakter REM-Ratio** (stabil relativ zur POST-Baseline): Dosis fortsetzen.
-- Bei **REM-Einbruch** (absolute oder relative Reduktion gegenüber POST-Baseline): Dosis ist zu hoch — Reduktion oder Absetzung.
+Bei 1–6 mg Doxepin ist keine relevante anticholinerge REM-Suppression zu erwarten (RCT-Daten). Die REM-Ratio bleibt aber als Routine-Sicherheitsmetrik erfasst.
 
 ---
 
-## 4. Tracker-Endpunkte
+## 4. Phase-A-Empirie (Mai 2026, n=1)
 
-| Endpunkt | Metrik | Erwartung |
-|---|---|---|
-| **Primär** | Median Inter-Anfall-Intervall (IBI) | Verlängerung (>4.0 d) |
-| **Primär** | Transitionsdichte ON vs. OFF-Blöcke | Signifikante Trennung |
-| **Sekundär** | Transitionsdichte (Stadienwechsel/h) | Reduktion (gesamt) |
-| **Sekundär** | Deep/REM-Ratio | Stabil (REM darf nicht einbrechen) |
-| **Sicherheit** | REM-Episoden/Nacht | ≥ POST-Baseline |
-| **Diskriminanz** | IBI-Verlängerung relativ zum ON-Anteil | Überproportional = Interferenz; proportional = Sedierung |
-| **Diskriminanz** | Carry-over: Transitionsdichte OFF-Nacht 1 vs. OFF-Nacht 3–5 | Gradient = partieller Carry-over |
-| **Exploratorisch** | Autokorrelation Lag 4 | Abschwächung des Oszillationsmusters |
+### 4.1 Anflutung und Steady-State
 
-**Interpretation:** Das alternierende Design erlaubt eine Dreifach-Diskriminierung: (1) Wenn das IBI sich verlängert und gleichzeitig die Autokorrelation bei Lag 4 abschwächt, spricht das für echte Interferenzreduktion. (2) Wenn nur die ON-Nächte besser aussehen bei gleichbleibendem IBI und Oszillator, dominiert der Sedierungseffekt. (3) Wenn ON-Nächte besser sind und ein Carry-over in frühe OFF-Nächte sichtbar ist, liegt ein partieller Interferenzeffekt mit abklingender Zeitkonstante vor.
+Vier Nächte Doxepin 3 mg konsekutiv. Nordoxepin erreicht Steady-State nach ~5 Tagen; die ersten drei Nächte sind submaximale Anflutung. Bewertung ab Nacht 4.
 
----
+### 4.2 Einschlaflatenz
 
-## 5. Protokoll
+Verschiebung von ~2 min (pathologisch, Narkolepsie-Range, Ausdruck akkumulierten Schlafdrucks) auf ~15 min (Populationsstandard 10–20 min).
 
-### Phase A — Baseline-Vergleichsperiode (Woche 1)
+Der scheinbare Widerspruch — Schlafmittel verlängert das Einschlafen — löst sich über die Ebenen: Doxepin ist in diesem Kontext kein Sedativum, sondern ein Schlafqualitätsmittel. Die Substanz entfernt den histaminergen Wake-Input am TMN, sodass der Saper-Flip-Flop-Switch sauberer kippen kann. Das beschleunigt nicht den Eintritt, sondern stabilisiert den Zustand nach dem Eintritt. Die verlängerte Latenz indiziert Abbau des Schlafdrucküberschusses und ist damit ein positives Zeichen.
 
-- **25 mg DPH-HCl** abends, tägliche Tracker-Erfassung
-- Vergleichsbasis: POST-Baseline (LDX-stabilisierte Werte ohne DPH)
-- Monitoring: REM-Ratio, subjektive Schlafqualität, morgendliche Kohärenz
+### 4.3 Nullphasen-Architektur
 
-**Initiale Beobachtungen (Phase A, laufend):**
-Erste Nächte zeigen eine Transitionsdichte deutlich unterhalb des POST-Means (2,4/h vs. POST 3,6/h, PRE 4,6/h), niedrigen HR-Einstieg und flachen HR-Verlauf über die Nacht. Das Hypnogramm erscheint subjektiv stabiler als unter LDX allein. Die Effektrichtung ist konsistent mit der Modellvorhersage (B7-Suppression $\rightarrow$ reduzierte Interferenz $\rightarrow$ verbesserte Schlafkonsolidierung). Die Effektstärke übersteigt den LDX-Durchschnitt, was bemerkenswert ist, da der Wirkmechanismus orthogonal angreift (H1$\rightarrow$selektive B7-Suppression vs. DA$\rightarrow$indirekte Raphe-Stabilisierung).
+Doxepin erzeugt überproportionale Nullphasen mit auffälliger Periodizität:
 
-**Caveat:** Sehr frühe Daten, Placebo- und Neuheitseffekte nicht ausschließbar. Bewertung erst nach ≥2 vollständigen erwarteten Zyklen möglich.
-
-### Phase B — Alternierendes ON/OFF-Design (ab Woche 2)
-
-Statt kontinuierlicher DPH-Gabe: **3 Nächte ON / 3–5 Nächte OFF**, wiederholt über 6–8 Wochen.
-
-**Rationale:**
-
-1. **Toleranzvermeidung.** DPH-Halbwertszeit ~4–8h, nach 24h vollständig ausgewaschen. 3–5 Tage OFF reichen für H1-Rezeptor-Renormalisierung. Die DRN-Selektivität bleibt über die gesamte Beobachtungsperiode erhalten.
-2. **Anticholinerge Kumulation entfällt.** Das kumulative Demenzrisiko (Gray et al. 2015) skaliert mit Gesamtexposition. Intermittierende Gabe (~3 von 8 Nächten) reduziert die Gesamtexposition auf unter 40%.
-3. **Within-subject ON/OFF-Vergleich.** Repeated-measures innerhalb derselben Person unter identischen Kontextbedingungen (LDX, Schlafumgebung, Tagesrhythmus). Über 6–8 Wochen entstehen 6+ ON/OFF-Zyklen — genug für deskriptive Verteilungstrennung.
-
-**Ablauf:**
-
-| Block | Nächte | DPH | Monitoring |
-|---|---|---|---|
-| ON | 3 konsekutiv | 25 mg DPH-HCl abends | Transitionsdichte, HR-Profil, REM-Ratio |
-| OFF | 3–5 konsekutiv | Kein DPH | Identische Tracker-Erfassung |
-| *Wiederholen* | *6–8 Wochen* | | |
-
-Die OFF-Länge (3–5 Nächte) kann an den individuellen Zyklusverlauf angepasst werden, sollte aber innerhalb der Beobachtungsperiode konsistent gehalten werden.
-
-### Phase B — Diskriminanztest: Sedierung vs. Interferenz
-
-Das alternierende Design ermöglicht eine Schlüsselunterscheidung, die bei Dauereinnahme nicht möglich wäre:
-
-| Beobachtung | Interpretation |
+| Beobachtung | Charakteristik |
 |---|---|
-| Transitionsdichte sinkt **nur in ON-Nächten**, Oszillator und IBI unverändert | **Sedierungseffekt** — DPH verbessert lokale Schlafqualität, ohne die Upstream-Interferenz zu adressieren |
-| IBI verlängert sich **überproportional** zum ON-Anteil, Oszillator-Amplitude gedämpft | **Interferenzreduktion** — B7-Suppression während ansteigender Phase verschiebt CSD-Schwelle für den gesamten Zyklus |
-| Transitionsdichte sinkt in ON-Nächten **und Carry-over in erste OFF-Nächte** | **Gemischter Effekt** — partielle Interferenzreduktion mit abklingendem Profil |
+| Nullphasen-Dauer | 4–8 min (vs. physiologisch erwartete ~3 min) |
+| Inter-Null-Intervall | ~15 min |
+| VLF zwischen Nullphasen | Rampe bis >10K, dann abrupt supprimiert |
+| Initiale Anflutungsphase | 26 min Sustained Suppression (00:20–01:01) |
+| 90-min-Architektur (REM/NREM) | Aufmoduliert, intakt |
 
-Der zweite Fall wäre die stärkste Bestätigung des Interferenzmodells: Wenn 3 DPH-Nächte den IBI-Effekt über den gesamten ~8-Tage-Zyklus verschieben, ist der Mechanismus nicht Sedierung (die mit der Pharmakokinetik ausgewaschen wäre), sondern tatsächlich Amplitudenmodulation am Interferenz-Produkt.
+Das 15-min-Cycling ist kein physiologischer Rhythmus, sondern pharmakologisches Gate-Forcing mit festem Takt. Die Übereffektivität ist plausibel über den zusätzlichen 5-HT2A/2C-Antagonismus (über die reine H1-Wirkung hinaus): aggressivere kortikale Dämpfung → längeres und schärferes Gate-Closure. Die zugrundeliegende 90-min-Architektur bleibt erhalten — das Cycling ist eine Aufmodulation, kein Ersatz.
 
-### Auswertung
+### 4.4 Subjektiver Tiefschlaf-Indikator (LC-Qualia)
 
-**Primäre Analyse:**
-- Vergleich Transitionsdichte ON vs. OFF-Blöcke (Median, IQR)
-- IBI-Verlängerung relativ zum ON/OFF-Anteil (Proportionalitätstest)
-- Carry-over-Analyse: Transitionsdichte OFF-Nacht 1 vs. OFF-Nacht 3–5
+Am Morgen über LC-Vermittlung wahrnehmbar als Trägheit/Entspannung. SWS supprimiert LC-Feuerrate maximal; gedämpfter NE-Tonus = Sleep Inertia, deren Intensität direkt mit SWS-Dauer korreliert. Bei diesem Phänotyp mit chronisch erhöhter LC-Baseline ist der Kontrast zwischen "genug SWS" und "zu wenig SWS" schärfer wahrnehmbar als bei normaler Serotonintonus-Baseline. Damit existiert ein direktes subjektives Feedback-Signal für die Dosisbewertung.
 
-**Sekundäre Analyse:**
-- Vergleich: Median IBI, Transitionsdichte, subjektive Anfallsschwere gegen POST-Baseline
-- Autokorrelation Lag 4 der Nacht-zu-Nacht-Density: Abschwächung als Interferenzreduktions-Marker
+### 4.5 Bewertung
 
-- Statistische Einschränkung: n=1-Design erlaubt keine Inferenzstatistik; Effektgrößen werden deskriptiv gegen die intraindividuelle Varianz der POST-Baseline eingeordnet
+Phase A bestätigt den Mechanismus: chronische tonische H1-Belegung produziert die mechanistisch vorhergesagte Gate-Closure mit Nullphasen-Forcing. Die Übereffektivität motiviert die in Phase B vorgesehene Dosisreduktion und die alternierende Architektur.
 
 ---
 
-## 6. Evidenzstatus
+## 5. Phase B — Alternierende Pausenarchitektur
+
+### 5.1 Rationale
+
+Doxepin kann grundsätzlich permanent eingenommen werden — die 12-Wochen-RCTs zeigen weder Toleranz noch Rebound bei Niedrigdosis. Die Entscheidung für ein alternierendes Modell hat drei eigenständige Begründungen:
+
+1. **Durchbruch des natürlichen Zustands.** Permanente pharmakologische Klammerung verhindert, dass die Eigenarchitektur des Schlafs sichtbar wird. OFF-Nächte zeigen den unmedizierten Zustand und erlauben eine fortlaufende Baseline-Beobachtung. Das ist die Voraussetzung für die folgenden beiden Punkte.
+
+2. **Erhaltung der Zyklusbestimmung.** Die ~4-Tage-CSD-Oszillator-Periodik und die individuelle Architektur lassen sich nur an unmedizierten Nächten sauber detektieren. ON-Nächte sind durch das Gate-Forcing überprägt; OFF-Nächte tragen die Zyklusinformation.
+
+3. **Beobachtung von Langzeit-Adaptation und Effekten jenseits 12 Wochen.** Die Doxepin-RCTs reichen maximal 12 Wochen — über diesen Zeitraum hinaus existiert keine systematische Evidenz zu Wirkpersistenz, Rezeptoradaptation oder kumulativen Effekten. Die alternierende Architektur erlaubt es, langfristige Adaptation an den OFF-Nächten zu detektieren (verändert sich die Eigenarchitektur über Monate?). Diese Beobachtungs-Achse ist in der Studienlage strukturell abwesend.
+
+### 5.2 Trade-off Steady-State vs. Auswaschung
+
+Nordoxepin-HWZ ~31 h. Nach 1 OFF-Nacht ~50 % Restspiegel, nach 2 OFF-Nächten ~25 %, nach 3 OFF-Nächten ~12 %, nach 5 OFF-Nächten <5 %. Steady-State-Wiederaufbau nach erneuter ON-Periode braucht 3–5 Nächte.
+
+Die Wahl der ON/OFF-Ratio steuert, welche der beiden Beobachtungsachsen priorisiert wird:
+
+| Ratio | ON-Tage Steady-State | OFF-Tage Auswaschung | Charakter |
+|---|---|---|---|
+| 6 ON / 1 OFF | Stabil | Minimal (~50 % Rest) | Pharmakologisch dominiert, OFF-Nacht zeigt Pseudo-OFF |
+| 5 ON / 2 OFF | Stabil | Partial (~25 % Rest) | Wöchentlicher Rhythmus, schwacher Durchbruch |
+| 3 ON / 3 OFF | Stabil mit Wiederaufbau | Substantiell (~12 % Rest) | Balanciert, klarer Durchbruch |
+| 2 ON / 5 OFF | Submaximal | Vollständig | Eigenarchitektur dominiert, ON als Akut-Eingriff |
+
+Empfehlung als Startwert: **3 ON / 3 OFF**, da hier OFF-Nächte 3 und länger einen substantiellen Auswaschzustand erreichen und ON-Wiederaufbau noch Steady-State erlaubt. Die Ratio ist nach Empirie anpassbar.
+
+### 5.3 Auswertung
+
+**ON-Nacht-Analyse (Phase B Steady-State):**
+- Nullphasen-Dauer und -Periodizität (Vergleich mit Phase-A-Charakteristik)
+- LC-Qualia am Morgen
+- Einschlaflatenz
+
+**OFF-Nacht-Analyse (Eigenarchitektur):**
+- Transitionsdichte, HR-Profil, Schlafstadienverteilung
+- Zyklusphase im ~4-Tage-Oszillator
+- IBI (Inter-Anfall-Intervall) zwischen Migräne-Ereignissen
+
+**Längsschnitt:**
+- Verändert sich die OFF-Nacht-Architektur über Wochen und Monate? (Langzeit-Adaptation)
+- Verändert sich die ON-Nacht-Übereffektivität unter wiederholter Anflutung? (Rezeptor-Toleranz)
+
+---
+
+## 6. Tracker-Endpunkte
+
+| Endpunkt | Metrik | Funktion |
+|---|---|---|
+| **Primär** | Mayer-Nullphasen-Dauer und -Periodizität | Direkter Marker des Gate-Forcings; Indikator für Über-/Unter-Effektivität |
+| **Primär** | Inter-Anfall-Intervall (IBI) | Langzeit-Wirksamkeitsmarker |
+| **Sekundär** | LC-Qualia am Morgen (Trägheit) | Subjektives SWS-Feedback |
+| **Sekundär** | Einschlaflatenz | Schlafdruck-Indikator |
+| **Sekundär** | Schlafstadienverteilung | Konsistenzmarker (REM ≥ Baseline) |
+| **Differentiell** | ON vs. OFF-Nacht-Vergleich | Zyklusbestimmung, Eigenarchitektur-Erhaltung |
+| **Sicherheit** | REM-Ratio | Bei Niedrigdosis kein Limit erwartet, Routine-Erfassung |
+
+---
+
+## 7. Historische Erprobung mit DPH (Phase A v1, März–April 2026)
+
+Die ursprüngliche Phase A wurde mit Diphenhydramin-HCl 25 mg konzipiert und durchgeführt. Drei Gründe haben zu einem Substanzwechsel auf Doxepin geführt:
+
+**1. NTS-Tonuspfad-Disqualifikation (Befund 29.04.2026, Details in 08H).** DPH suppressiert B7 via H1-Blockade und entzieht damit dem NTS den 5-HT2A-Input für die tonische RVLM-Hemmung. Folge: Verlust der sympathischen Morgenumschaltung am Folgetag, iatrogene autonome Dysregulation bei *jeder* Einzeldosis — nicht erst chronisch. Empirisch dokumentiert: Spitzenwert-Nullphase bei gleichzeitigem Totalausfall der sympathischen Tagesfunktion (Dominanz -0,43 bis -0,66, RMSSD 12–19 ms, ULF2 bis 4597 als HPA-Kompensation).
+
+**2. Anticholinerge Kumulationslast.** Gray et al. 2015 (Indiana-Kohorte) zeigen dosisabhängig erhöhtes Demenzrisiko bei kumulativer DPH-Exposition. Für chronischen Einsatz disqualifizierend.
+
+**3. H1-Toleranz unter chronischer Blockade.** Bei DPH-Schlafmitteln gut dokumentierte Wirkabschwächung innerhalb Tagen bis Wochen. Die DRN-Selektivität würde abschwächen.
+
+Doxepin teilt die H1-Wirkachse, vermeidet aber alle drei Limitationen: kein NTS-Worst-Case durch Steady-State + SERT-Pufferung, anticholinerge Last placebovergleichbar bei ≤6 mg, keine dokumentierte Toleranz in 12-Wochen-RCTs. Zusätzlich produziert Doxepin die in §1.6 beschriebenen Mehrwerte chronischer Steady-State-Belegung, die DPH strukturell nicht leisten kann.
+
+DPH bleibt als Notfallreserve für extreme Akutereignisse erhalten — die Kombination aus breitem Wirkprofil und kurzer HWZ ist eine Eigenschaft, die Doxepin pharmakokinetisch nicht hat (mehrtägige Wirkung verbietet sich als Akut-Notbehelf). Eine systematische Weiterentwicklung des DPH-Pfades wird voraussichtlich nicht erfolgen.
+
+---
+
+## 8. Historische Beobachtung: DPH-Nullphasen-Durchbrüche im Eskalationskontext
+
+Die HR-Plateau-Analyse zeigt unter DPH-Nächten eine veränderte Plateau-Signatur: gleichmäßigere Level-Abstände (spacing_cv↓, z=−1,41), steileren nadir_slope, stabilere Hierarchie. Initial wurde dies als reine H1-vermittelte B7-Suppression interpretiert.
+
+Zwei Beobachtungen haben die Lesart präzisiert:
+
+**(a) CYP2D6-Konfundierung.** DPH ist CYP2D6-Inhibitor. CYP2D6-Hydroxylierung ist der Hauptabbauweg von d-Amphetamin (aktivem Metaboliten von LDX). Die abendliche DPH-Einnahme verlangsamt die d-AMP-Elimination und verlängert den LDX-Effekt pharmakologisch in die Nacht. Die DPH-Nacht-Signatur hat damit zwei nicht trennbare Ursachen: H1-vermittelte B7-Suppression (Intertakt) plus CYP2D6-vermittelte D2-Stabilisierung (Intratakt). Die Daten belegen den Pathway, erlauben aber keine saubere Mechanismus-Zuordnung.
+
+**(b) DPH-Wirkung an die Eskalationsbedingung gebunden.** Die nächtlichen DPH-Effekte waren strukturell nicht zuverlässig — sie traten überwiegend auf, wenn das System bereits auf dem Eskalationspfad war (akkumulierter Schlafdruck, prodromale Architektur). Bei wenig belastetem Ausgangszustand blieb die Nullphasen-Generierung schwach. DPH funktionierte als Reset-Werkzeug auf einem laufenden Eskalationsprozess, nicht als zuverlässiger Schlafarchitektur-Modulator über die Breite verschiedener Ausgangszustände.
+
+Beides erklärt, warum die nächtliche DPH-Anwendung empirisch nicht in das langfristige Regime überführbar war: weder mechanistisch sauber interpretierbar, noch zustandsstabil wirksam. Doxepin liefert beides — Steady-State-Belegung ist zustandsunabhängig, und das Nullphasen-Forcing ist in Phase A reproduzierbar produziert worden.
+
+---
+
+## 9. Aufgegebene Validierungsdesigns
+
+**Dreifach-Diskrimination (LDX-Nacht / Doxepin-Nacht / Kombination).** Ursprünglich entworfen, um die H1-Achse von der CYP2D6-Achse zu trennen. Die direkte Doxepin-Empirie (Phase A) hat den Pathway anders bestätigt. Keine neuen Daten in dieser Richtung; das Design ist nicht Teil des aktuellen Regimes.
+
+**LDX-Nacht-Mikrodosis (1–2 mg).** Empirisch nicht zielführend: Einschlafen unter LDX-Mikrodosis war zwar möglich, aber ausschließlich getragen durch akkumulierten Schlafdruck und Schlaflast, nicht durch eine gerichtete pharmakologische Zustandsänderung. LDX verändert den Schlafzustand in keine spezifische Richtung — weder pro-noch antagonistisch zur Gate-Closure. Damit fehlt die Hebelwirkung, die das Design vorausgesetzt hatte. Nicht weiterverfolgt.
+
+---
+
+## 10. Evidenzstatus
 
 | Aussage | Evidenzniveau |
 |---|---|
-| H1-Blockade supprimiert selektiv DRN-5-HT | Gesichert (Crawford et al. 2013) |
-| DPH passiert Blut-Hirn-Schranke | Gesichert |
-| B7-Amplitudenreduktion senkt Interferenzprodukt | Hypothetisch, mechanistisch ableitbar; initiale Tracker-Daten richtungskonsistent |
-| Zwei-Phasen-Design komplementär | Hypothetisch; initiale Beobachtungen zeigen Effekte jenseits LDX-Baseline |
-| Alternierendes ON/OFF diskriminiert Sedierung von Interferenz | Methodisch begründet, nicht getestet |
-| Doxepin 3 mg als langzeitfähige H1-Alternative | Pharmakologisch plausibel, DRN-Selektivität unter Chronizität nicht untersucht |
-| Gesamtprotokoll | Spekulativ, n=1-Experiment; Phase A aktiv, erste Daten richtungskonsistent |
+| H1-Blockade supprimiert selektiv DRN-5-HT (akut) | Gesichert (Crawford et al. 2013) |
+| Doxepin bei 1–6 mg primär H1-selektiv | Gesichert (Roth 2007, Krystal 2010, Silenor-Fachinformation) |
+| Doxepin 3 mg passiert BHS, akkumuliert über Nordoxepin zu Steady-State | Gesichert (Pharmakokinetik) |
+| Doxepin 3 mg produziert überproportionale Nullphasen mit 15-min-Cycling | n=1, vier Nächte Mai 2026 |
+| Einschlaflatenz physiologisiert unter Doxepin-Steady-State | n=1, vier Nächte Mai 2026 |
+| Zwei-Achsen-Design LDX (Tag) + Doxepin (Nacht) komplementär | Mechanistisch ableitbar; Phase A Empirie richtungskonsistent |
+| Chronische H1-Steady-State-Belegung als kortikaler Reizfilter | Mechanistisch plausibel (Haas/Panula); nicht spezifisch validiert |
+| Migräneprophylaxe via sensorisches CSD-Gating durch tonische H1-Belegung | Mechanistisch konsistent mit Lassen 1995, Crawford 2013, Cui 2013; literarische Stützung indirekt |
+| 1-mg-Dosis ausreichend für Standardendpunkte | RCT-gestützt (Roth, Krystal); für den hier dominanten Nullphasen-Mechanismus nicht eigen-validiert |
+| Alternierende Pausenarchitektur erlaubt Langzeit-Adaptation-Beobachtung | Methodisch begründet, nicht getestet |
+| DRN-Selektivität der H1-Blockade unter chronischer Steady-State-Belegung | Crawford zeigte Selektivität unter Akut-Gabe; chronische Stabilität nicht direkt untersucht. Vier Nächte ohne Hinweis auf Selektivitätsverlust |
+| Gesamtprotokoll | Spekulativ, n=1; Phase A abgeschlossen, Phase B in Vorbereitung |
 
 ---
 
-## 7. Langzeitperspektive: Diphenhydramin vs. Doxepin
-
-### 7.1 Diphenhydramin ist kein Langzeitkandidat
-
-Diphenhydramin-HCl eignet sich als Proof-of-Concept, nicht als Dauertherapie. Zwei Limitationen sind disqualifizierend:
-
-1. **Anticholinerge Last.** Diphenhydramin ist stark anticholinerg. Epidemiologische Daten (Gray et al. 2015, Indiana-Kohorte) zeigen dosisabhängig erhöhtes Demenzrisiko bei kumulativer Exposition. Die anticholinerge Begleitwirkung ist bei OTC-Dosen klinisch relevant und bei chronischem Einsatz nicht akzeptabel.
-
-2. **H1-Toleranz.** H1-Rezeptor-Upregulation unter chronischer Blockade ist gut dokumentiert. Die Zeitkonstante bei Schlafmitteln liegt typischerweise im Bereich von Tagen bis wenigen Wochen. Die DRN-selektive Suppression würde abschwächen.
-
-3. **NTS-Tonuspfad-Entzug (akut).** DPH suppressiert B7 via H1-Blockade (Crawford et al. 2013). Dies entzieht dem NTS den serotonergen 5-HT2A-Input, der die tonische RVLM-Hemmung steuert (Sévoz-Couche et al. 2004/2006). Konsequenz: Verlust der neuralen sympathischen Grundsteuerung am Folgetag. Empirisch bestätigt am 29.04.2026 — Spitzenwert-Nullphase bei gleichzeitigem Totalausfall der sympathischen Morgenumschaltung (Dominanz -0.43 bis -0.66 über den gesamten Tag, RMSSD 12–19ms, ULF2 bis 4597 als HPA-Kompensation). Dieser Effekt tritt bei jeder Einzeldosis auf, nicht erst bei chronischer Anwendung, und erzeugt ein NTS-Tonusinsuffizienz (adrenale HR-Kompensation, Flushing, Erschöpfung bei erhaltener Kognition; keine orthostatische Tachykardie). Siehe Pathogenesemodell §5.7.
-
-### 7.2 Niedrigdosiertes Doxepin als chronisch einsetzbare Alternative
-
-**Doxepin 3 mg** (Silenor) ist FDA-zugelassen für Kurz- und Langzeit-Insomnie und funktioniert in diesem Dosisbereich als nahezu reiner H1-Antagonist:
-
-| Eigenschaft | Diphenhydramin 25 mg | Doxepin 3 mg |
-|---|---|---|
-| H1-Selektivität | Mäßig | Hoch (bei ≤6 mg) |
-| Anticholinerge Last | Hoch | Nicht nachweisbar (placebovergleichbar) |
-| Gedächtnisbeeinträchtigung | Möglich | Nicht nachweisbar |
-| Rebound bei Absetzen | Möglich | Nicht berichtet |
-| Studiendauer | — | Bis 3 Monate (3 mg) |
-| Toleranzentwicklung | Tage–Wochen | Nicht systematisch untersucht |
-| NTS-5-HT2A-Entzug | Vollständig (kein SERT-Effekt) | Partiell kompensiert (SERT-Blockade hält 5-HT im Spalt) |
-
-**NTS-Kompensation via SERT:** Doxepin besitzt SERT-Affinität (Ki ~68nM), DPH nicht. Bei H1-vermittelter B7-Suppression reduziert sich der Raphe-Output zum NTS. DPH: weniger Output + normale Clearance = doppelter Verlust am 5-HT2A. Doxepin: weniger Output + verlangsamte synaptische Clearance = partielle Kompensation. Bei 3mg Doxepin (Silenor-Bereich) dominiert H1 (Ki ~0.24nM) stark über SERT; ob die SERT-Besetzung für eine funktional relevante NTS-Kompensation ausreicht, ist nicht gesichert. Bei 10–25mg wäre die SERT-Komponente stärker, aber anticholinerge Effekte steigen. Die optimale Dosis liegt möglicherweise bei 3–6mg — maximale H1-Selektivität bei gerade ausreichender SERT-Kompensation.
-
-**Offene Frage:** Die DRN-Selektivität der H1-Blockade (Crawford et al. 2013) wurde unter akuter Gabe gezeigt. Ob die differentielle H1-Rezeptordichte am DRN vs. MRN unter chronischer Blockade erhalten bleibt, ist nicht untersucht. Falls die H1-Upregulation am DRN stärker ausfällt als am MRN, könnte die Selektivität unter Langzeitgabe paradoxerweise zunehmen — oder sich nivellieren.
-
-### 7.3 Konsequenz für das Protokoll
-
-Falls das alternierende ON/OFF-Design eine stabile Interferenzreduktion bestätigt — insbesondere den überproportionalen IBI-Effekt (Abschnitt 5, Diskriminanztest) — ist der nächste Schritt der Wechsel auf Doxepin 3 mg. Das DPH-Experiment validiert den Pathway; Doxepin wäre das klinisch vertretbare Vehikel für die chronische Anwendung.
-
-Das alternierende Design hat den zusätzlichen Vorteil, dass es die Toleranzfrage vorab klärt: Wenn der DPH-Effekt über 6–8 Wochen ON/OFF stabil bleibt, spricht das für erhaltene H1-Sensitivität bei intermittierender Gabe — und liefert gleichzeitig eine Entscheidungsgrundlage, ob die chronische Variante (Doxepin) überhaupt intermittierend dosiert werden muss oder ob die niedrigere anticholinerge Last eine Dauergabe rechtfertigt.
-
-### 7.4 DPH als Akutmedikament bei ANS-Eskalation
-
-Die Disqualifikation von DPH für die SWS-Clearance (§7.1) eliminiert
-DPH nicht vollständig aus dem Protokoll. Ein zustandsgeprüftes
-Einsatzprofil bleibt erhalten:
-
-**Indikation:** Manifeste NTS-Tonusinsuffizienz (LDX kognitiv wirksam,
-sympathischer LDX-Peak absent, Hitzewellen, subjektive Erschöpfung
-ohne Kraft).
-
-**Mechanismus:** H1-Blockade reduziert histaminerge Interferenz am PFC $\rightarrow$
-PFC-Filteraufwand sinkt $\rightarrow$ freigewordene Kapazität wird für Kognition
-verwendet. Der NTS-Entzug durch H1$\rightarrow$DRN-Suppression ist in diesem
-Zustand ohne zusätzliche Konsequenz, weil der NTS-Tonuspfad bereits
-insuffizient ist.
-
-**Abgrenzung zum SWS-Einsatz:** Der SWS-Einsatz war prophylaktisch
-(zustandsblind, abends). Der ANS-Einsatz ist reaktiv (zustandsgeprüft,
-tagsüber). Der diagnostische Marker (LDX-Peak absent) ist der
-Zustandsprädiktor, der dem SWS-Einsatz fehlte.
-
-**Dosierung:** 12,5 mg (halbe OTC-Standarddosis). Evaluationszeitraum
-30 min — Klarheit zeigt PFC-Entlastung, Sedierung zeigt
-unzureichende PFC-Reserve (Hypothese war falsch, keine Wiederholung).
-
-**Limitierung:** Anticholinerge Last bleibt bestehen. Bei häufigem
-Bedarf ist die ANS-Eskalationsfrequenz das therapeutische Ziel, nicht
-die DPH-Frequenz. Häufiger Bedarf $\rightarrow$ Doxepin-SWS-Clearance optimieren
-oder Upstream-Stabilisierung (LDX-Regime) anpassen.
-
----
-
-## 8. CYP2D6-Konfundierung der DPH-Daten
-
-### 8.1 Befund
-
-Die HR-Plateau-Analyse zeigt unter DPH-Nächten eine veränderte Plateau-Signatur: gleichmäßigere Level-Abstände (spacing_cv $\downarrow$, z=−1.41), steileren nadir_slope und stabilere Hierarchie. Diese Effekte wurden initial als H1-vermittelte B7-Suppression interpretiert.
-
-Eine pharmakokinetische Analyse deckt einen Confounder auf: **DPH ist ein CYP2D6-Inhibitor.** CYP2D6-vermittelte Hydroxylierung ist der Hauptabbauweg von d-Amphetamin (dem aktiven Metaboliten von LDX). Die abendliche DPH-Einnahme verlangsamt die d-Amphetamin-Elimination und verlängert damit den LDX-Effekt pharmakologisch in die Nacht.
-
-### 8.2 Implikation
-
-Die DPH-Nacht-Signatur hat zwei nicht trennbare Ursachen:
-
-1. **H1-Mechanismus (Intertakt):** DPH suppressiert B7 über H1-Blockade $\rightarrow$ reduzierte B7/B8-Interferenz $\rightarrow$ sauberere Plateau-Architektur
-2. **CYP2D6-Mechanismus (Intratakt):** DPH verlängert d-AMP-Exposition $\rightarrow$ D2-Stabilisierung hält über die Nacht $\rightarrow$ Intratakt-Kompensation stabilisiert die Architektur downstream
-
-Im D2High-Kontext (1–2 mg LDX klinisch wirksam) könnte bereits eine minimale Spiegelverlängerung funktional sein. Die DPH-Daten belegen damit den Pathway, erlauben aber keine Zuordnung zum Wirkmechanismus.
-
-### 8.3 Konsequenz
-
-Die Konfundierung macht eine Dreifach-Diskrimination notwendig, bevor die kombinierte Nacht-Einnahme evaluiert werden kann ($\rightarrow$ Abschnitt 9).
-
----
-
-## 9. Dreifach-Diskriminationsprotokoll
-
-### 9.1 Design
-
-Drei sequentielle Experimente isolieren die Wirkmechanismen:
-
-| Experiment | D2-Nacht | H1-Blockade | CYP2D6-Konfund | Isoliert |
-|---|---|---|---|---|
-| DPH 25 mg (gelaufen) | Indirekt via CYP2D6 | Ja | Ja | Nichts sauber |
-| **LDX Nacht-Mikrodosis** | **Direkt** | **Nein** | **Nein** | **Intratakt** |
-| **Doxepin 3 mg** | **Nein** | **Ja** | **Nein** | **Intertakt** |
-
-Doxepin 3 mg erzeugt **keine CYP2D6-Hemmung** bei therapeutischen Konzentrationen (Silenor-Fachinformation: Plasmaspiegel ~0.9 ng/mL bei 6 mg, keine CYP-Inhibition nachweisbar). Die CYP2D6-Interaktion mit LDX entfällt vollständig. Gleichzeitig wird Doxepin selbst über CYP2D6 metabolisiert, aber LDX zeigt keine klinisch relevante CYP2D6-Hemmung — die Interaktion ist in beiden Richtungen neutral.
-
-### 9.2 Experiment 1: LDX Nacht-Mikrodosis (isoliert Intratakt)
-
-**Rationale:** LDX-Mikrodosis (1–2 mg) abends testet, ob die D2-Stabilisierung allein — ohne H1-Blockade — die Plateau-Signatur erzeugt. Im D2High-Kontext liegt die wirksame Dosis unter der Arousal-Schwelle; Schlafstörung ist nicht zu erwarten.
-
-**Durchführung:**
-
-| Parameter | Wert |
-|---|---|
-| Substanz | LDX (Elvanse), Kapselinhalt gewichtsdosiert |
-| Dosis | 1–2 mg, identisch zur etablierten Tagesdosis-Untergrenze |
-| Zeitpunkt | 60–90 min vor Schlafbeginn |
-| Dauer | 4–6 konsekutive Nächte |
-| Monitoring | HR-Plateau-Analyse, Einschlaflatenz, Tracker-Hypnogramm |
-| Abbruchkriterium | Einschlaflatenz >45 min oder subjektive Schlafstörung an 2+ Nächten |
-
-**Erwartete Ergebnisse:**
-
-| Beobachtung | Interpretation |
-|---|---|
-| Plateau-Signatur tritt auf (spacing_cv $\downarrow$, nadir_slope $\downarrow$) | D2-Effekt ist der Träger $\rightarrow$ Intratakt-Kompensation wirkt über die Nacht |
-| Keine Signatur, keine Schlafstörung | D2-Dosis ist zu niedrig oder der Effekt braucht H1-Achse |
-| Keine Signatur, Schlafstörung | Dosis überschreitet Arousal-Schwelle $\rightarrow$ Dosisreduktion |
-
-**Sicherheit:** Die LDX-Mikrodosis liegt bei ~2–3% der therapeutischen Standarddosis. Die Prodrug-Konversion über RBC-Peptidasen ist nicht CYP-abhängig; keine Interaktion mit laufender Morgen-LDX-Dosis. Die d-Amphetamin-Halbwertszeit (9–13h) bedeutet, dass bei morgendlicher Einnahme (z.B. 8:00) und abendlicher Mikrodosis (z.B. 22:00) die Spiegel sich nicht klinisch relevant addieren. Urin-pH beeinflusst die Elimination — konsistente Ernährung und Hydration halten diesen Faktor konstant.
-
-### 9.3 Experiment 2: Doxepin 3 mg (isoliert Intertakt)
-
-**Rationale:** Doxepin 3 mg testet die reine H1-vermittelte B7-Suppression ohne CYP2D6-Konfundierung. Im Vergleich zu DPH bietet Doxepin:
-
-- Keine CYP2D6-Hemmung $\rightarrow$ kein LDX-Carry-over
-- Keine anticholinerge Last bei 3 mg $\rightarrow$ keine REM-Suppression
-- Längere Halbwertszeit (t½ ~15h, Nordoxepin ~31h) $\rightarrow$ stabile Nacht-Abdeckung ohne Late-Night-Wirkverlust
-
-**Durchführung:**
-
-| Parameter | Wert |
-|---|---|
-| Substanz | Doxepin 3 mg (Silenor-Äquivalent) |
-| Zeitpunkt | 30 min vor Schlafbeginn, nicht innerhalb von 3h nach Mahlzeit |
-| Dauer | 5–7 konsekutive Nächte |
-| Monitoring | HR-Plateau-Analyse, REM-Ratio, Transitionsdichte |
-
-**Erwartete Ergebnisse:**
-
-| Beobachtung | Interpretation |
-|---|---|
-| Plateau-Signatur wie unter DPH | H1-Mechanismus bestätigt $\rightarrow$ Intertakt-Effekt real |
-| Schwächere Signatur als DPH | H1-Effekt real, aber DPH-CYP2D6-Carry-over trug bei |
-| Keine Signatur | DPH-Effekt war primär CYP2D6-vermittelt $\rightarrow$ H1-Achse unzureichend |
-
-**Pharmakokinetische Besonderheit:** Der aktive Metabolit Nordoxepin (t½ ~31h) akkumuliert bei täglicher Gabe. Steady-State wird nach ~5 Tagen erreicht. Die erste Nacht ist daher nicht direkt mit DPH-Nacht-1 vergleichbar; die Bewertung sollte auf Nacht 3–7 fokussieren.
-
-### 9.4 Interpretationsmatrix
-
-| LDX-Nacht | Doxepin | Schlussfolgerung | Konsequenz |
-|---|---|---|---|
-| Signatur ✓ | Signatur ✓ | Beide Achsen wirksam, orthogonal | Kombinierte Gabe maximal wirksam |
-| Signatur ✓ | Signatur ✗ | Intratakt dominiert | LDX-Nacht allein ausreichend |
-| Signatur ✗ | Signatur ✓ | Intertakt dominiert | Doxepin allein ausreichend |
-| Signatur ✗ | Signatur ✗ | DPH-Effekt war CYP2D6-Artefakt | Gesamtansatz überdenken |
-
----
-
-## 10. Kombinierte Nacht-Einnahme: LDX-Mikrodosis + Doxepin 3 mg
-
-### 10.1 Rationale
-
-Wenn beide Einzelexperimente (9.2, 9.3) jeweils einen Teil der Plateau-Signatur erzeugen, adressiert die Kombination beide Achsen gleichzeitig:
-
-- **LDX-Mikrodosis:** D2-Stabilisierung $\rightarrow$ Intratakt-Kompensation
-- **Doxepin 3 mg:** H1-Blockade $\rightarrow$ B7-Amplitudenreduktion $\rightarrow$ Intertakt-Interferenzreduktion
-
-Das entspricht dem ursprünglichen Zwei-Achsen-Design (Abschnitt 1.5), aber mit sauberer Pharmakologie: keine CYP2D6-Konfundierung, keine anticholinerge Last, keine Toleranzentwicklung bei Niedrigdosis-Doxepin.
-
-### 10.2 Interaktionsprofil LDX + Doxepin 3 mg
-
-| Parameter | Bewertung |
-|---|---|
-| CYP2D6 | Doxepin 3 mg: keine Inhibition. LDX: keine klinisch relevante Inhibition. Neutral in beide Richtungen. |
-| Serotonin-Syndrom | Doxepin 3 mg: keine relevante 5-HT-Reuptake-Hemmung. LDX-Mikrodosis: minimale monoaminerge Wirkung. Risiko nicht über Baseline. |
-| NE-Reuptake | Doxepin 3 mg: nicht nachweisbar (erst ab ~25 mg relevant). Keine Potenzierung der sympathomimetischen LDX-Wirkung. |
-| Anticholinerg | Doxepin 3 mg: placebovergleichbar. Keine REM-Suppression. |
-| QTc-Verlängerung | Doxepin 3 mg: nicht berichtet. LDX: nicht berichtet. Kein additives Risiko. |
-| Sedierung | Doxepin: sedierend (H1). LDX-Mikrodosis: unter Arousal-Schwelle. Kein Antagonismus erwartet. |
-
-**Formale Warnkategorie:** Medscape listet TCA + Amphetamin als "Avoid or Use Alternate Drug". Diese Klassifikation ist dosisblind und bezieht sich auf antidepressive TCA-Dosen (75–300 mg), bei denen NE-Reuptake-Hemmung die sympathomimetische Amphetamin-Wirkung potenziert. Bei Doxepin 3 mg (Silenor-Dosierung) ist die NE-Reuptake-Hemmung pharmakologisch nicht nachweisbar — die Warnung ist für diese Kombination nicht valide, muss aber bei ärztlicher Kommunikation transparent gemacht werden.
-
-### 10.3 Durchführung
-
-| Parameter | Wert |
-|---|---|
-| Substanzen | LDX 1–2 mg + Doxepin 3 mg |
-| Zeitpunkt | Gemeinsam 30–60 min vor Schlafbeginn |
-| Voraussetzung | Beide Einzelexperimente (9.2, 9.3) abgeschlossen |
-| Dauer | 7–10 konsekutive Nächte |
-| Monitoring | HR-Plateau-Analyse, Transitionsdichte, IBI |
-
-**Bewertung:** Vergleich der Plateau-Signatur gegen die drei Referenzen:
-
-| Referenz | Erwartung bei Additivität |
-|---|---|
-| POST-Baseline (LDX Tag, kein Nacht-Supplement) | Signatur stärker |
-| LDX-Nacht allein (Experiment 9.2) | Signatur stärker oder gleich |
-| Doxepin allein (Experiment 9.3) | Signatur stärker oder gleich |
-
-Überadditivität (Signatur stärker als Summe der Einzeleffekte) wäre ein Hinweis auf synergistische Mechanismen. Subadditivität (schwächer als erwartet) könnte auf kompetitive Interaktion auf Ebene der Raphe-Modulation hindeuten.
-
-### 10.4 Pharmakokinetische Überlegungen
-
-**LDX-Mikrodosis bei abendlicher Einnahme:** Die Prodrug-Konversion (RBC-Peptidasen, t½ < 1h) ist CYP-unabhängig. d-Amphetamin erreicht t_max nach ~3.5h, also um ~01:30 bei Einnahme um 22:00. Die d-Amphetamin-Elimination (t½ 9–13h) ist bei Doxepin 3 mg nicht verlängert (keine CYP2D6-Hemmung). Verbleibende d-AMP-Konzentration am Morgen: ~50% der Nacht-Mikrodosis + Rest der Morgen-Standarddosis.
-
-**Doxepin-Akkumulation:** Nordoxepin (t½ ~31h) akkumuliert bei täglicher Gabe. Steady-State nach ~5 Tagen. Die H1-Blockade wird mit jeder Nacht stärker bis zum Plateau. Bewertung der Kombination sollte auf Nacht 5–10 fokussieren.
-
-**Morgen-LDX-Interaktion:** Die morgendliche LDX-Standarddosis wird durch die nächtliche Mikrodosis nicht klinisch relevant beeinflusst. Bei 1–2 mg Nacht + z.B. 30 mg Morgen ist der Nacht-Anteil <7% der Gesamtexposition. Doxepin 3 mg hat keinen Einfluss auf die LDX-Kinetik.
-
----
-
-## 11. Evidenzstatus (aktualisiert)
-
-| Aussage | Evidenzniveau |
-|---|---|
-| H1-Blockade supprimiert selektiv DRN-5-HT | Gesichert (Crawford et al. 2013) |
-| DPH passiert Blut-Hirn-Schranke | Gesichert |
-| DPH hemmt CYP2D6 | Gesichert |
-| CYP2D6 ist Hauptabbauweg von d-Amphetamin | Gesichert |
-| DPH-Nacht-Signatur ist CYP2D6-konfundiert | Mechanistisch zwingend, Effektgröße unbekannt |
-| Doxepin 3 mg hemmt CYP2D6 nicht | Gesichert (Silenor-Fachinformation) |
-| Doxepin 3 mg hat keine anticholinerge Wirkung | Gesichert (placebovergleichbar in RCTs) |
-| LDX-Mikrodosis unter Arousal-Schwelle | Einzelfallbeobachtung (D2High-Kontext), nicht generalisierbar |
-| Dreifach-Diskrimination trennt Intra-/Intertakt | Methodisch begründet, nicht getestet |
-| Kombinierte Nacht-Einnahme LDX + Doxepin 3 mg sicher | Pharmakologisch plausibel bei Mikrodosierung, keine klinischen Daten |
-| Gesamtprotokoll | Spekulativ, n=1-Experiment |
-
-> **Disclaimer:** Dieses Protokoll ist ein theoretisches Konstrukt im Rahmen eines individuellen Arbeitshypothesen-Archivs. Es handelt sich nicht um eine klinische Empfehlung. Die mechanistische Begründung ist plausibel, aber nicht validiert. Jede Umsetzung erfolgt als n=1-Selbstexperiment unter eigener Verantwortung und sollte idealerweise ärztlich begleitet werden.
+*Disclaimer: Dieses Protokoll dokumentiert ein individuelles Arbeitsregime und stellt keine klinische Empfehlung dar. Jede Umsetzung sollte ärztlich begleitet werden. Die TCA-Amphetamin-Warnkategorie (Medscape) ist bei Doxepin ≤6 mg pharmakologisch nicht einschlägig, muss aber bei ärztlicher Kommunikation transparent gemacht werden.*

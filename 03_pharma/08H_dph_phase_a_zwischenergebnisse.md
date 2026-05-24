@@ -192,3 +192,18 @@ erwartungsgemäß, da dies nicht das Ziel war.
 Einsatzfrequenz: selten, nur bei manifester ANS-Eskalation.
 Anticholinerge Kumulationsrisiken bleiben bestehen und limitieren
 die Einsatzhäufigkeit.
+
+---
+
+## Update Mai 2026: Rollenumkehr partiell durch Doxepin-Chronikum abgelöst
+
+Die in der vorhergehenden Sektion dokumentierte Rollenumkehr (DPH 12,5 mg als akut-reaktives PFC-Entlastungsmedikament bei manifester NTS-Insuffizienz) bleibt empirisch valide für den Befund vom 29.04.2026 — DPH kappte die histaminerge PFC-Belastung bei bereits ausgefallenem NTS-Pfad, mit dem erwarteten Klarheits-Effekt ohne weitere autonome Konsequenz.
+
+Was sich seit Mai 2026 geändert hat: Doxepin wurde in vier Nächten empirisch evaluiert (siehe 08 §3). Die chronische tonische H1-Belegung durch Nordoxepin-Steady-State adressiert die PFC-Filterlast **strukturell**, nicht nur reaktiv. Damit verschiebt sich die DPH-Indikation:
+
+- **Vorher:** DPH 12,5 mg als wiederholbares Standardwerkzeug bei wiederkehrender ANS-Eskalation.
+- **Jetzt:** DPH als Reserve für Extremfälle, in denen das chronische Doxepin-Regime nicht ausreicht UND die Eintagswirkung von DPH (kurze HWZ) explizit gebraucht wird. Doxepin's Nordoxepin (t½ ~31 h) ist als Akut-Notfall pharmakokinetisch kontraindiziert — eine Einzeldosis wirkt über mehrere Tage, was bei einem punktuellen Eskalationsereignis ein zu langer Footprint ist.
+
+Die Reduktion der DPH-Anwendungsfrequenz ist eine direkte Folge der chronischen Reizfilterung durch Doxepin. Häufiger DPH-Bedarf ist jetzt als Indikator für unzureichende Doxepin-Wirkung oder Upstream-LDX-Optimierungsbedarf zu lesen, nicht als Routinekomponente.
+
+*Querverweis: 08 §4.2 (DPH-Reserve-Indikation), 08 §2.3 (Mechanismus der chronischen H1-Belegung).*

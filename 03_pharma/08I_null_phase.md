@@ -421,6 +421,6 @@ Eine formale Revision des Pathogenesemodells ist vorzeitig, bis die DORA-Verifik
 
 - **Kapitel 04/05 (Manifestation):** Interoceptive Inkohärenz als Gating-Insuffizienz im Wachzustand — dasselbe Mechanismus-Spektrum wie die Nullphasen im Schlaf, aber auf der subkritischen Seite.
 
-- **Kapitel 08 (Zwei-Phasen-Protokoll):** DORA als dritte Substanzklasse neben DPH/Doxepin (Phase A) und LDX (Phase B). Verifikationsprotokoll als Anhang.
+- **Kapitel 08 (H1-Protokoll):** DORA als alternative oder ergänzende Substanzklasse neben Doxepin-Chronikum. Vergleichende Empirie (Doxepin vs. DORA bezüglich Nullphasen-Architektur, Reizfilterung, Migräneprophylaxe) noch ausstehend. Verifikationsprotokoll als Anhang.
 
 - **Neues Kapitel:** Autonomes Profil als diagnostisches Werkzeug — Mayer-Nullphasen als quantitativer Biomarker für Tiefschlafqualität, CIRC24-Einbruch als Prodrom-Marker, Flip-Flop-Stabilität als Therapie-Endpunkt.
