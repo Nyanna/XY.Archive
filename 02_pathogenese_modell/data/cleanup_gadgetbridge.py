@@ -42,7 +42,7 @@ from psycopg2.extras import execute_values
 
 # --- Source -----------------------------------------------------------
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
-DB_REMOTE_URL = "https://drive.google.com/uc?id=1NwUmQ_v7WOQIe5tYm2GixOQYm5HSt-xh"
+DB_REMOTE_URL = "https://drive.google.com/file/d/1r3v-AVrg8Uis0H2_uQ8_cmv-JqrfI0o9/view?usp=sharing"
 EXPIRY_SECONDS = 1 * 3600
 
 # --- Postgres target --------------------------------------------------
