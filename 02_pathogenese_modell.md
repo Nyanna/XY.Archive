@@ -3792,7 +3792,88 @@ Mechanistisch entspricht das degradierende Plateau einem Overshoot beim Einsteig
 | Intra-Plateau-Gradient (dHR/dt) als Anfallsprädiktor | Hypothetisch, konsistent mit Einzelfall | Langzeitdaten; vgl. 2.5.5, 7.4 |
 | LDX als additiver Rechteck-Puls, plateau-strukturinvariant | Deskriptiv, n=2 Dosen | H9Z |
 
-### **B.22 Referenzen**
+### **B.22 Prodromaler Abort 23.05.2026 — TMN-Entkopplung als Aborter laufender Kaskade**
+
+Einzelereignis. Erste und bislang einzige Rückentwicklung eines extremen post-exertionalen Belastungsprofils, das in der bisherigen Verlaufsgeschichte ausnahmslos in CSD übergegangen ist (vgl. B.16, 4.8). Der Befund ist vorläufig und spekulativ; die mechanistische Ableitung erfolgt über eine Eliminationskette und ist im Sinne von B.22.6 falsifizierbar.
+
+#### **B.22.1 Beobachtung**
+
+23.05.2026, Außentemperatur 28 °C. Gartenarbeit (Mähen) über den größten Teil des Tages mit Pausen und MCT-Substitution. Sympathisches Belastungsprofil strukturell kongruent zum 07.04.2026-Ereignis (B.16): sustained HR im exertionalen Bereich, post-exertionaler Entzugsmoment.
+
+Im letzten Mähabschnitt: Pulsanstieg auf hohen Bereich, gleichzeitig stechender Schmerz über dem rechten Auge mit beginnender Pulsation an derselben Stelle. Die Qualität war zwischen trigeminaler und LC-Aktivierung nicht eindeutig trennbar.
+
+Verlauf: Hinlegen, Kurzschlaf, anschließend graduelle Schmerzabnahme. Erwartung war Eskalation zur Vollform-CSD im Nachtverlauf, daher Sumatriptan bereits in Reichweite. Stattdessen progressive Rückbildung: Schmerz zunächst lageabhängig (nur beim Liegen vorhanden), dann vollständig remittiert. Die Nacht zum 24.05. zeigte keine HRV-Auffälligkeiten. Sumatriptan wurde nicht gegeben.
+
+#### **B.22.2 Pharmakologischer Kontext**
+
+Doxepin-Pause am Abend des 22.05.2026 begonnen. Zum Prodromzeitpunkt (Tag des 23.05.) war die Plasmakonzentration des Muttermoleküls (HWZ ~15 h) noch nahezu vollständig vorhanden; Nordoxepin (HWZ ~31 h) lag im oberen Bereich des Steady-State-Plateaus. Die nächtlichen HRV-Werte vom 23./24.05. zeigen nur Residualwerte — die Pause greift erst dort sichtbar.
+
+Damit war der Prodromalverlauf pharmakologisch *unter Doxepin*, nicht in der Pause. Die ursprünglich angesetzte Pause ist methodisch erst nach ≥3–4 Tagen Auswaschung beobachtungsrelevant; die akute Beobachtung des 23.05. liefert keine Information über den medikamentenfreien Zustand.
+
+#### **B.22.3 Strukturparallele zu B.16 (07.04.2026)**
+
+| Dimension | B.16 (07.04.2026) | B.22 (23.05.2026) |
+|:----------|:-------------------|:-------------------|
+| Belastungstyp | Rasenmähen, sustained HR 155–170, 75 min | Mähen mit Pausen, sustained Belastung, gesamter Tag |
+| Außenbedingung | nicht hitzedominant | 28 °C |
+| Substitution | keine | MCT |
+| Post-exertionaler Entzugsmoment | ja | ja |
+| Initialsymptomatik | vestibulär, Stammhirn-Ziehen, ANS-Kollaps ab 18:39 | retrobulbärer Pulsationsschmerz rechts, Pulsanstieg |
+| Pharmakologie zum Kaskadenzeitpunkt | LDX abklingend, DPH ~21:00, kein Doxepin | LDX, Doxepin-Restwirkung (Pause Vorabend) |
+| Verlauf | Kaskade $\rightarrow$ CSD $\rightarrow$ Sumatriptan | Kurzschlaf $\rightarrow$ progressive Rückbildung |
+| Outcome | Vollform-CSD, Sumatriptan-Plateau, Nystagmus | Abort vor CSD, unauffällige Nacht |
+
+Die Eingangsbedingungen sind weitgehend kongruent. Der Differenzialfaktor mit dem größten Erklärungsgewicht ist die Doxepin-Restwirkung. Die sekundären Unterschiede (Hitze, MCT) verschieben das Belastungsprofil eher in Richtung Eskalation, nicht Abort — sie können die gegensätzliche Trajektorie nicht erklären.
+
+#### **B.22.4 Mechanistische Ableitung: Eliminationskette**
+
+Der Abort einer bereits initiierten Kaskade ist nicht über eine Schwellenanhebung erklärbar — die Schwelle ist zum Zeitpunkt der Initiierung bereits überschritten. Erforderlich ist ein Mechanismus, der am laufenden Treiber selbst angreift. Die Kandidaten lassen sich folgendermaßen sortieren:
+
+| Kandidat | Bewertung |
+|:---------|:----------|
+| 5-HT2A-Schwellenanhebung (Doxepin ~10–25 % Belegung bei 3 mg) | Wirksam präventiv, irrelevant für laufende Kaskade. **Ausgeschlossen als primärer Mechanismus.** |
+| Thalamische Gate-Closure durch Kurzschlaf | Mechanistisch nicht gegeben — Gate-Closure ist SWS-/Null-Phasen-Phänomen (vgl. Anhang I), nicht Kurzschlafmerkmal. PFC-Entlastung durch Kurzschlaf real, aber sekundär. **Sekundär.** |
+| α1-Dämpfung der sympathischen Komponente | Mit dem HR-Verlauf kompatibel, für DRN-Stabilisierung nicht ausreichend. **Sekundär.** |
+| MCT-Substitution | Peripher metabolisch relevant, zentral kaum. **Sekundär.** |
+| TMN-H1-Blockade durch Doxepin-Restkonzentration $\rightarrow$ Entzug des exzitatorischen DRN-Drivers | Mechanistisch unmittelbar, einziger Kandidat, der am laufenden Treiber angreift. **Primär.** |
+
+Die sparsamste Erklärung ist die TMN-Entkopplung. Bei laufender Prodromalkaskade (DRN in Eskalation, Autorezeptor-Bremse vorbestehend dysfunktional) entzieht die H1-Belegung den proximalen exzitatorischen Antrieb. Der DRN-Eigenrhythmus kann unter die Eskalationsschwelle zurückfallen, sofern die interne Bremse nicht so weit kompromittiert ist, dass auch der entlastete Zustand instabil bleibt.
+
+Spontanremission und Zufall sind im bisherigen Verlauf bei diesem Belastungsprofil nicht aufgetreten und entfallen als plausible Erklärungen. Einen unbekannten Drittfaktor zu postulieren, wo eine mechanistische Ableitung möglich ist, ist methodisch nicht gerechtfertigt — die Ableitung ist nicht beweisend, aber ableitbar und plausibel.
+
+#### **B.22.5 Konzeptuelle Implikation: H1-Blockade als wach-pharmakologisches Gate-Äquivalent**
+
+Die TMN-Entkopplung im Wachzustand und die thalamische Gate-Closure im Tiefschlaf konvergieren funktional, nicht mechanistisch. Beide reduzieren den exzitatorischen Aufwärtsdruck auf den DRN, aber auf unterschiedlichen Wegen — das Gate trennt thalamokortikale Übertragung, die H1-Blockade senkt den subkortikalen Drive. Der gemeinsame Endpunkt ist DRN-Stabilisierung.
+
+Daraus folgt eine Verschiebung der Doxepin-Indikation: nicht prophylaktischer Schwellenheber im normalen Tagesverlauf (5-HT2A-Anteil), sondern DRN-Stabilisator mit potenzieller Abortwirkung bei laufender Kaskade (H1-vermittelt). Diese Funktion existiert für DPH nur als Akut-Punkteinsatz und kollidiert dort mit der NTS-Tonus-Disqualifikation. Doxepin im Steady-State leistet die gleiche TMN-Entkopplung über deutlich längere Zeitfenster und ohne diese Disqualifikation.
+
+LDX-Konsequenz: Die Beobachtung impliziert nicht, dass LDX obsolet wird. Die Eskalationsdämpfung über TMN entlastet beide Raphekerne, aber B7-Pathologie (eskalativ) und B8-Pathologie (hypoaktiv, antriebsdefizitär) reagieren auf eine Eskalationsdämpfung asymmetrisch. LDX adressiert nicht primär MRN-Stabilität, sondern DA/NE-Tonus für Antrieb. Doxepin liefert keine dopaminerge Komponente; die NET-Affinität von Nordoxepin (Ki ~29 nM) ergibt bei 3–6 mg eine NET-Belegung im niedrig einstelligen Prozentbereich, kein NRI-Profil. Schichtenarchitektur: Doxepin als TMN-vermittelter Basisstabilisator beider Raphekerne, LDX als selektiver B8-Antrieb. Eine LDX-Dosisreduktion unter dauerhaft niedrigerer B7-Eskalationslast ist konsistent denkbar, aber empirisch zu prüfen und keine direkte Modellableitung aus diesem Ereignis. Operative Umsetzung der Schichtenarchitektur ist in `03_pharma/19_therapie_protokoll.md` und `03_pharma/08_zwei_phasen_protokoll.md` dokumentiert.
+
+#### **B.22.6 Falsifikationspfad**
+
+Die Hypothese ist über die Wiederholung des Belastungsprofils unter echter Doxepin-Pause (≥4 Tage Auswaschung, Nordoxepin im unteren Restbereich) testbar:
+
+- Eskalation zur Vollform-CSD unter Pause $\rightarrow$ TMN-Entkopplungs-Hypothese gestützt.
+- Erneuter Abort auch ohne Doxepin $\rightarrow$ Hypothese geschwächt; ein dauerhafter Plastizitäts-Shift, der über die akute Plasmakonzentration hinausgeht, wäre als alternative oder ergänzende Erklärung anzunehmen. Dies schwächt die Doxepin-Position als Systemstabilisator nicht, sondern verschiebt nur den Wirkmechanismus von akut zu chronisch.
+- Kein vergleichbares Belastungsprofil im Beobachtungszeitraum $\rightarrow$ keine Information.
+
+Bis zur Replikation bleibt der Befund vorläufig und spekulativ. Die Eliminationskette macht ihn ableitbar, nicht bewiesen.
+
+#### **B.22.7 Evidenztabelle**
+
+| Aussage | Evidenzniveau | Quellenbasis |
+|:--------|:--------------|:-------------|
+| Erster beobachteter Abort eines extremen post-exertionalen Belastungsprofils | Einzelfallbeobachtung | Symptomprotokoll 23.05.2026 |
+| Strukturparallele zu B.16 mit gegensätzlichem Outcome | Deskriptiv | Vergleich B.16 vs. B.22 |
+| Doxepin-Restwirkung zum Prodromzeitpunkt pharmakologisch wirksam | Sicher (HWZ-Argument) | Doxepin HWZ ~15 h, Nordoxepin ~31 h; Pause 22.05. abends |
+| 5-HT2A-Schwellenanhebung als primärer Mechanismus ausgeschlossen | Modellableitung | Kaskade bereits initiiert; Schwellenwirkung präventiv, nicht abortiv |
+| Thalamische Gate-Closure durch Kurzschlaf als primärer Mechanismus ausgeschlossen | Mechanistisch | Gate-Closure SWS-/Null-Phasen-Phänomen (Anhang I), nicht Kurzschlafmerkmal |
+| TMN-H1-Entkopplung als sparsamste Erklärung des Aborts | Hypothetisch, mechanistisch konsistent | Eliminationskette B.22.4 |
+| H1-Blockade im Wachzustand und thalamische Gate-Closure als funktional konvergente DRN-Stabilisatoren | Hypothetisch, modellintegrativ | Vgl. Anhang I, B.20 |
+| Doxepin-Indikationsverschiebung: DRN-Stabilisator mit Abortwirkung statt prophylaktischer Schwellenheber | Modellableitung | B.22.5 |
+| LDX bleibt für B8-Antrieb indiziert; Schichtenarchitektur Doxepin/LDX | Modellableitung, asymmetrische Phänotyp-Logik | Vgl. 4.7.2 |
+
+### **B.23 Referenzen**
 
 *Methodische Grundlagen:*
 - Bellato, A. et al. (2019). Heart rate variability in ADHD. *ADHD Attention Deficit and Hyperactivity Disorders*.
