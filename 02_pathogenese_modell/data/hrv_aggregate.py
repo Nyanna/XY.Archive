@@ -54,9 +54,8 @@ DFA_WINDOW = 200
 DFA_BOXES_ALL = [4, 6, 8, 10, 12, 16, 20, 24, 32, 48, 64]
 DFA_BOXES_ALPHA1 = {4, 6, 8, 10, 12, 16}
 
-FS_CPC = 2.0                   # Hz for CPC resampling (Thomas et al. 2005)
-CPC_WINDOW_MS = 7 * 60 * 1000  # 7-min window centered on minute marker
-CPC_MIN_BEATS = 60             # minimum beats required in CPC window
+FS_CPC = 2.0         # Hz for CPC resampling (Thomas et al. 2005)
+CPC_MIN_BEATS = 60  # minimum beats required in CPC window
 CPC_NPERSEG = 256              # Welch segment length (128 s at 2 Hz)
 CPC_GAP_THRESHOLD_MS = 2000    # gaps > 2 s get linear (not cubic) interpolation
 CPC_MAX_GAP_FRACTION = 0.30    # reject window if >30% of duration is in gaps
@@ -654,9 +653,9 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
         _hf_peak_freq = None
         if enable_cpc:
             t_cpc = time.monotonic()
-            half_win = CPC_WINDOW_MS // 2
-            i_cpc_lo = int(np.searchsorted(all_ts, minute_start - half_win, side="left"))
-            i_cpc_hi = int(np.searchsorted(all_ts, minute_start + half_win, side="left"))
+            # [T-3min, T+4min): center T+30s, matching LF/HF/VLF convention
+            i_cpc_lo = int(np.searchsorted(all_ts, minute_start - 3 * 60 * 1000, side="left"))
+            i_cpc_hi = int(np.searchsorted(all_ts, minute_start + 4 * 60 * 1000, side="left"))
             if (i_cpc_hi - i_cpc_lo) >= CPC_MIN_BEATS:
                 cpc_lfc_ratio, _hf_peak_freq = compute_cpc_metrics(
                     all_ts[i_cpc_lo:i_cpc_hi], all_rr[i_cpc_lo:i_cpc_hi]
@@ -769,15 +768,15 @@ def compute_cpc_only(rr_data, target_minutes_ms):
     all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_total)
 
     target_sorted = sorted(target_minutes_ms)
-    half_win = CPC_WINDOW_MS // 2
     total = len(target_sorted)
     log_interval = max(1, total // 20)
     t0 = time.monotonic()
 
     rows = []
     for i, minute_start in enumerate(target_sorted):
-        i_lo = int(np.searchsorted(all_ts, minute_start - half_win, side="left"))
-        i_hi = int(np.searchsorted(all_ts, minute_start + half_win, side="left"))
+        # [T-3min, T+4min): center T+30s, matching LF/HF/VLF convention
+        i_lo = int(np.searchsorted(all_ts, minute_start - 3 * 60 * 1000, side="left"))
+        i_hi = int(np.searchsorted(all_ts, minute_start + 4 * 60 * 1000, side="left"))
 
         cpc_lfc_ratio, hf_peak_freq = None, None
         if (i_hi - i_lo) >= CPC_MIN_BEATS:
