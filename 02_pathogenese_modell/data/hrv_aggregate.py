@@ -23,7 +23,7 @@ from psycopg2 import sql as pgsql
 from psycopg2.extras import execute_values
 from scipy.interpolate import CubicSpline
 from scipy.ndimage import median_filter
-from scipy.signal import welch
+from scipy.signal import butter, csd, filtfilt, hilbert, welch
 
 # Postgres target (mirrors cleanup_gadgetbridge.py)
 PG_HOST = os.environ["PGHOST"]
@@ -53,6 +53,14 @@ ULF_N_FREQ = 512
 DFA_WINDOW = 200
 DFA_BOXES_ALL = [4, 6, 8, 10, 12, 16, 20, 24, 32, 48, 64]
 DFA_BOXES_ALPHA1 = {4, 6, 8, 10, 12, 16}
+
+FS_CPC = 2.0                   # Hz for CPC resampling (Thomas et al. 2005)
+CPC_WINDOW_MS = 7 * 60 * 1000  # 7-min window centered on minute marker
+CPC_MIN_BEATS = 60             # minimum beats required in CPC window
+CPC_NPERSEG = 256              # Welch segment length (128 s at 2 Hz)
+CPC_GAP_THRESHOLD_MS = 2000    # gaps > 2 s get linear (not cubic) interpolation
+CPC_MAX_GAP_FRACTION = 0.30    # reject window if >30% of duration is in gaps
+CPC_HALF_WIN_STABILITY_MS = 150_000  # ±2.5 min for HF_PEAK_STABILITY rolling SD
 
 # Artifact correction (PSD path and VAGAL_BALANCE; base metrics such as
 # RMSSD/pNN50/SDNN stay on the raw gap-filtered values to preserve
@@ -199,6 +207,134 @@ def correct_artifacts(rr: np.ndarray) -> np.ndarray | None:
     return rr
 
 
+def _resample_rr_2hz(ts_ms, rr_ms):
+    """Resample artifact-corrected RR series to FS_CPC Hz uniform grid.
+
+    Returns (t_uniform_s, y_uniform) or None if window is degenerate.
+    Large gaps (> CPC_GAP_THRESHOLD_MS) are filled with linear interpolation;
+    the window is rejected if gaps exceed CPC_MAX_GAP_FRACTION of duration.
+    """
+    ts = np.asarray(ts_ms, dtype=np.float64)
+    rr = np.asarray(rr_ms, dtype=np.float64)
+
+    rr = correct_artifacts(rr)
+    if rr is None or len(rr) < 20:
+        return None
+
+    t_rel = (ts - ts[0]) / 1000.0
+    duration = float(t_rel[-1])
+    if duration < 30.0:
+        return None
+
+    ts_diffs_ms = np.diff(ts)
+    gap_mask = ts_diffs_ms > CPC_GAP_THRESHOLD_MS
+    if gap_mask.any():
+        gap_s = float(ts_diffs_ms[gap_mask].sum()) / 1000.0
+        if gap_s / duration > CPC_MAX_GAP_FRACTION:
+            return None
+
+    n_uniform = max(2, int(duration * FS_CPC))
+    t_uniform = np.linspace(0.0, duration, n_uniform)
+    y_linear = np.interp(t_uniform, t_rel, rr)
+
+    try:
+        cs = CubicSpline(t_rel, rr)
+        y = cs(t_uniform)
+    except Exception:
+        return t_uniform, y_linear
+
+    if gap_mask.any():
+        for gi in np.flatnonzero(gap_mask):
+            g_start = t_rel[gi]
+            g_end = t_rel[gi + 1]
+            in_gap = (t_uniform > g_start) & (t_uniform < g_end)
+            if in_gap.any():
+                y[in_gap] = y_linear[in_gap]
+
+    return t_uniform, y
+
+
+def compute_cpc_metrics(ts_ms, rr_ms):
+    """Compute CPC LFC-ratio and HF peak frequency from an RR window.
+
+    Cardiopulmonary Coupling per Thomas et al. 2005, with RSA amplitude
+    envelope as EDR surrogate (Pinna et al. 2007).
+
+    Returns (cpc_lfc_ratio, hf_peak_freq_hz):
+      cpc_lfc_ratio: LFC/(LFC+HFC) in [0,1]; high=REM/unstable, low=stable NREM.
+      hf_peak_freq_hz: dominant 0.15–0.4 Hz peak with parabolic interpolation;
+          used by caller to build HF_PEAK_STABILITY rolling SD.
+    Both None on degenerate input; cpc_lfc_ratio may be None even when
+    hf_peak_freq_hz is valid (degenerate CPC but valid spectrum).
+    """
+    result = _resample_rr_2hz(ts_ms, rr_ms)
+    if result is None:
+        return None, None
+    _t, r = result
+    n = len(r)
+
+    nyq = FS_CPC / 2.0
+    bp_lo = 0.15 / nyq
+    bp_hi = min(0.40 / nyq, 0.999)
+    try:
+        b, a = butter(3, [bp_lo, bp_hi], btype='bandpass')
+        r_bp = filtfilt(b, a, r)
+        e = np.abs(hilbert(r_bp))
+    except Exception:
+        return None, None
+
+    nperseg = min(CPC_NPERSEG, n // 4)
+    if nperseg < 32:
+        return None, None
+
+    try:
+        f, srr = welch(r, fs=FS_CPC, nperseg=nperseg, window='hann',
+                       scaling='density', detrend='constant')
+        _, see = welch(e, fs=FS_CPC, nperseg=nperseg, window='hann',
+                       scaling='density', detrend='constant')
+        _, sre = csd(r, e, fs=FS_CPC, nperseg=nperseg, window='hann',
+                     scaling='density', detrend='constant')
+    except Exception:
+        return None, None
+
+    with np.errstate(divide='ignore', invalid='ignore'):
+        denom = srr * see
+        gamma2 = np.where(denom > 0.0, np.abs(sre) ** 2 / denom, 0.0)
+
+    cpc_f = gamma2 * np.abs(sre)
+
+    lfc_mask = (f >= 0.01) & (f <= 0.10)
+    hfc_mask = (f >= 0.10) & (f <= 0.40)
+    lfc = float(_TRAPZ(cpc_f[lfc_mask], f[lfc_mask])) if lfc_mask.any() else 0.0
+    hfc = float(_TRAPZ(cpc_f[hfc_mask], f[hfc_mask])) if hfc_mask.any() else 0.0
+
+    total_cpc = lfc + hfc
+    cpc_lfc_ratio = lfc / total_cpc if total_cpc > 0.0 else None
+
+    # HF peak with parabolic interpolation for sub-bin resolution
+    hf_peak_freq = None
+    hf_mask = (f >= 0.15) & (f <= 0.40)
+    if hf_mask.any():
+        hf_srr = srr[hf_mask]
+        hf_f = f[hf_mask]
+        peak_i = int(np.argmax(hf_srr))
+        if 0 < peak_i < len(hf_srr) - 1:
+            y0 = hf_srr[peak_i - 1]
+            y1 = hf_srr[peak_i]
+            y2 = hf_srr[peak_i + 1]
+            df_bin = (hf_f[-1] - hf_f[0]) / max(len(hf_f) - 1, 1)
+            denom2 = y0 + y2 - 2.0 * y1
+            if denom2 != 0.0 and df_bin > 0.0:
+                delta = 0.5 * (y0 - y2) / denom2
+                hf_peak_freq = float(hf_f[peak_i] + delta * df_bin)
+            else:
+                hf_peak_freq = float(hf_f[peak_i])
+        else:
+            hf_peak_freq = float(hf_f[peak_i])
+
+    return cpc_lfc_ratio, hf_peak_freq
+
+
 def compute_band_power(rr_values, freq_ranges, detrend="constant"):
     """Compute integrated band power via cubic-spline resampling + Welch PSD.
 
@@ -320,7 +456,7 @@ def compute_ulf_power(t_ms: np.ndarray, rr: np.ndarray) -> dict | None:
     }
 
 
-def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable_ulf=False, limit_minutes=None, skip_minutes=None):
+def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable_ulf=False, enable_cpc=False, limit_minutes=None, skip_minutes=None):
     """Aggregate HRV metrics per minute.
 
     limit_minutes: if set, only the first N minute bins are processed.
@@ -369,6 +505,7 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
     time_vlf = 0.0
     time_ulf = 0.0
     time_dfa = 0.0
+    time_cpc = 0.0
     t_loop_start = time.monotonic()
     log_interval = max(1, total_minutes // 20)  # ~20 progress updates
 
@@ -510,8 +647,21 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
             t_dfa = time.monotonic()
             start_idx = hi - DFA_WINDOW if hi >= DFA_WINDOW else 0
             dfa_alpha1 = compute_dfa_alpha1(all_rr[start_idx:hi])
-
             time_dfa += time.monotonic() - t_dfa
+
+        # CPC: 7-min window centered on minute_start (optional)
+        cpc_lfc_ratio = None
+        _hf_peak_freq = None
+        if enable_cpc:
+            t_cpc = time.monotonic()
+            half_win = CPC_WINDOW_MS // 2
+            i_cpc_lo = int(np.searchsorted(all_ts, minute_start - half_win, side="left"))
+            i_cpc_hi = int(np.searchsorted(all_ts, minute_start + half_win, side="left"))
+            if (i_cpc_hi - i_cpc_lo) >= CPC_MIN_BEATS:
+                cpc_lfc_ratio, _hf_peak_freq = compute_cpc_metrics(
+                    all_ts[i_cpc_lo:i_cpc_hi], all_rr[i_cpc_lo:i_cpc_hi]
+                )
+            time_cpc += time.monotonic() - t_cpc
 
         if (mi + 1) % log_interval == 0 or mi == total_minutes - 1:
             elapsed = time.monotonic() - t_loop_start
@@ -520,7 +670,8 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
                 f"  Progress: {mi + 1}/{total_minutes} ({pct:.0f}%) | "
                 f"elapsed {elapsed:.1f}s | "
                 f"basic {time_basic:.1f}s  lf {time_lf:.1f}s  hf {time_hf:.1f}s  "
-                f"vlf {time_vlf:.1f}s  ulf {time_ulf:.1f}s  dfa {time_dfa:.1f}s"
+                f"vlf {time_vlf:.1f}s  ulf {time_ulf:.1f}s  dfa {time_dfa:.1f}s  "
+                f"cpc {time_cpc:.1f}s"
             )
 
         results.append({
@@ -549,7 +700,29 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
             "b7b8_dom": b7b8_dom,
             "b7b8_off": b7b8_off,
             "dfa_alpha1": dfa_alpha1,
+            "cpc_lfc_ratio": cpc_lfc_ratio,
+            "hf_peak_stability": None,   # filled in post-loop pass
+            "_hf_peak_freq": _hf_peak_freq,
         })
+
+    # HF_PEAK_STABILITY: rolling SD of per-minute HF peak over ±2.5 min window
+    if enable_cpc and results:
+        ts_arr = np.array([r["timestamp_ms"] for r in results], dtype=np.int64)
+        peak_arr = np.array(
+            [r["_hf_peak_freq"] if r["_hf_peak_freq"] is not None else np.nan
+             for r in results],
+            dtype=float,
+        )
+        for r in results:
+            t_ms = r["timestamp_ms"]
+            in_win = np.abs(ts_arr - t_ms) <= CPC_HALF_WIN_STABILITY_MS
+            vals = peak_arr[in_win]
+            valid = vals[~np.isnan(vals)]
+            r["hf_peak_stability"] = float(np.std(valid, ddof=0)) if len(valid) >= 2 else None
+            del r["_hf_peak_freq"]
+    else:
+        for r in results:
+            r.pop("_hf_peak_freq", None)
 
     elapsed_total = time.monotonic() - t0
     print(f"  --- Timing summary ---")
@@ -569,6 +742,10 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
         print(f"  DFA alpha1:              {time_dfa:.2f}s")
     else:
         print(f"  DFA alpha1:              disabled")
+    if enable_cpc:
+        print(f"  CPC (7-min win, 2 Hz):   {time_cpc:.2f}s")
+    else:
+        print(f"  CPC:                     disabled")
     print(f"  Loop total:              {time.monotonic() - t_loop_start:.2f}s")
     print(f"  compute_minute_metrics:  {elapsed_total:.2f}s")
     if n_skipped:
@@ -577,12 +754,72 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
     return results
 
 
+def compute_cpc_only(rr_data, target_minutes_ms):
+    """Compute only CPC metrics for the specified minute markers.
+
+    Backfill path: processes all target minutes without skipping any.
+    Returns rows with {timestamp_ms, cpc_lfc_ratio, hf_peak_stability}
+    for use with update_cpc_results().
+    """
+    if not rr_data or not target_minutes_ms:
+        return []
+
+    n_total = len(rr_data)
+    all_ts = np.fromiter((r[0] for r in rr_data), dtype=np.int64, count=n_total)
+    all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_total)
+
+    target_sorted = sorted(target_minutes_ms)
+    half_win = CPC_WINDOW_MS // 2
+    total = len(target_sorted)
+    log_interval = max(1, total // 20)
+    t0 = time.monotonic()
+
+    rows = []
+    for i, minute_start in enumerate(target_sorted):
+        i_lo = int(np.searchsorted(all_ts, minute_start - half_win, side="left"))
+        i_hi = int(np.searchsorted(all_ts, minute_start + half_win, side="left"))
+
+        cpc_lfc_ratio, hf_peak_freq = None, None
+        if (i_hi - i_lo) >= CPC_MIN_BEATS:
+            cpc_lfc_ratio, hf_peak_freq = compute_cpc_metrics(
+                all_ts[i_lo:i_hi], all_rr[i_lo:i_hi]
+            )
+
+        rows.append({
+            "timestamp_ms": minute_start,
+            "cpc_lfc_ratio": cpc_lfc_ratio,
+            "_hf_peak_freq": hf_peak_freq,
+        })
+
+        if (i + 1) % log_interval == 0 or i == total - 1:
+            print(f"  CPC backfill: {i + 1}/{total} ({(i+1)/total*100:.0f}%) "
+                  f"[{time.monotonic() - t0:.1f}s]")
+
+    # Rolling HF_PEAK_STABILITY over ±2.5 min
+    ts_arr = np.array([r["timestamp_ms"] for r in rows], dtype=np.int64)
+    peak_arr = np.array(
+        [r["_hf_peak_freq"] if r["_hf_peak_freq"] is not None else np.nan
+         for r in rows],
+        dtype=float,
+    )
+    for r in rows:
+        t_ms = r["timestamp_ms"]
+        in_win = np.abs(ts_arr - t_ms) <= CPC_HALF_WIN_STABILITY_MS
+        vals = peak_arr[in_win]
+        valid = vals[~np.isnan(vals)]
+        r["hf_peak_stability"] = float(np.std(valid, ddof=0)) if len(valid) >= 2 else None
+        del r["_hf_peak_freq"]
+
+    return rows
+
+
 PG_COLUMNS = [
     "N_BEATS", "HR_BPM", "AVG_RR_MS", "MIN_RR_MS", "MAX_RR_MS",
     "STDDEV_RR_MS", "RMSSD_MS", "LN_RMSSD", "VAGAL_INDEX", "RMSSD_PCT", "SDNN_MS",
     "RMSSD_SDNN_RATIO", "VAGAL_BALANCE", "PNN50",
     "VLF_MS2", "LF_MS2", "HF_MS2", "ULF_MS2", "ULF1_MS2", "ULF2_MS2",
     "LF_HF_RATIO", "B7B8_DOM", "B7B8_OFF", "DFA_ALPHA1",
+    "CPC_LFC_RATIO", "HF_PEAK_STABILITY",
 ]
 PG_AT_COLUMN = "timestamp_ms_at"
 
@@ -621,11 +858,22 @@ def ensure_hrv_table(pg_conn):
             "LF_HF_RATIO"      REAL,
             "B7B8_DOM"         REAL,
             "B7B8_OFF"         REAL,
-            "DFA_ALPHA1"       REAL
+            "DFA_ALPHA1"       REAL,
+            "CPC_LFC_RATIO"    REAL,
+            "HF_PEAK_STABILITY" REAL
         )
     '''
     with pg_conn.cursor() as cur:
         cur.execute(ddl)
+        # Migrate existing tables: idempotent column additions
+        cur.execute(
+            f'ALTER TABLE "{PG_SCHEMA}"."{PG_TABLE}" '
+            f'ADD COLUMN IF NOT EXISTS "CPC_LFC_RATIO" REAL'
+        )
+        cur.execute(
+            f'ALTER TABLE "{PG_SCHEMA}"."{PG_TABLE}" '
+            f'ADD COLUMN IF NOT EXISTS "HF_PEAK_STABILITY" REAL'
+        )
     pg_conn.commit()
 
 
@@ -680,6 +928,7 @@ def write_results_pg(pg_conn, rows):
             r["vlf_ms2"], r["lf_ms2"], r["hf_ms2"],
             r["ulf_ms2"], r["ulf1_ms2"], r["ulf2_ms2"],
             r["lf_hf_ratio"], r["b7b8_dom"], r["b7b8_off"], r["dfa_alpha1"],
+            r.get("cpc_lfc_ratio"), r.get("hf_peak_stability"),
         )
         for r in rows
     ]
@@ -711,6 +960,34 @@ def write_results_pg(pg_conn, rows):
     pg_conn.commit()
     return total, sample
 
+
+def update_cpc_results(pg_conn, rows):
+    """UPDATE CPC_LFC_RATIO and HF_PEAK_STABILITY for existing rows.
+
+    Used by --cpc-only backfill mode; leaves all other columns untouched.
+    Returns number of updated rows.
+    """
+    if not rows:
+        return 0
+    update_stmt = (
+        f'UPDATE "{PG_SCHEMA}"."{PG_TABLE}" '
+        f'SET "CPC_LFC_RATIO" = %s, "HF_PEAK_STABILITY" = %s '
+        f'WHERE "{PG_AT_COLUMN}" = %s'
+    )
+    tuples = [
+        (
+            r["cpc_lfc_ratio"],
+            r["hf_peak_stability"],
+            datetime.fromtimestamp(r["timestamp_ms"] / 1000.0, tz=timezone.utc),
+        )
+        for r in rows
+    ]
+    with pg_conn.cursor() as cur:
+        cur.executemany(update_stmt, tuples)
+    pg_conn.commit()
+    return len(rows)
+
+
 def main():
     parser = argparse.ArgumentParser(description="HRV minute aggregation")
     parser.add_argument("--device-id", type=int, default=None)
@@ -738,6 +1015,24 @@ def main():
              "cutoff) and overwrite all minutes in Postgres (no skip).",
     )
     parser.add_argument(
+        "--cpc",
+        action="store_true",
+        help=(
+            "Enable CPC (Cardiopulmonary Coupling) metrics: CPC_LFC_RATIO and "
+            "HF_PEAK_STABILITY. Uses a 7-min sliding window resampled to 2 Hz. "
+            "Default: off."
+        ),
+    )
+    parser.add_argument(
+        "--cpc-only",
+        action="store_true",
+        help=(
+            "Backfill mode: recompute only CPC_LFC_RATIO and HF_PEAK_STABILITY "
+            "for all existing rows. Does not touch other columns. "
+            "Loads full RR history (ignores incremental cutoff)."
+        ),
+    )
+    parser.add_argument(
         "--limit-minutes",
         type=int,
         default=None,
@@ -754,6 +1049,31 @@ def main():
     pg_conn = connect_pg()
     try:
         ensure_hrv_table(pg_conn)
+
+        if args.cpc_only:
+            existing_minutes = get_existing_minutes(pg_conn)
+            print(f"CPC backfill: {len(existing_minutes)} existing rows to update")
+            t0 = time.monotonic()
+            rr_data, device_id, device_name = load_rr_data(
+                pg_conn, args.device_id, min_ts_ms=None,
+            )
+            if not rr_data:
+                print("No RR data found.")
+                print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
+                return
+            print(
+                f"Loaded {len(rr_data)} RR intervals from device "
+                f"{device_id} ({device_name}) [{time.monotonic() - t0:.2f}s]"
+            )
+            t0 = time.monotonic()
+            rows = compute_cpc_only(rr_data, existing_minutes)
+            print(f"CPC metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
+            t0 = time.monotonic()
+            n_updated = update_cpc_results(pg_conn, rows)
+            print(f"Updated {n_updated} rows [{time.monotonic() - t0:.2f}s]")
+            print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
+            return
+
         existing_minutes = get_existing_minutes(pg_conn)
         print(f"Existing HRV minutes in Postgres: {len(existing_minutes)}")
 
@@ -791,6 +1111,7 @@ def main():
             enable_lf_hf=args.lf_hf,
             enable_dfa=args.dfa,
             enable_ulf=args.ulf,
+            enable_cpc=args.cpc,
             limit_minutes=args.limit_minutes,
             skip_minutes=existing_minutes,
         )
