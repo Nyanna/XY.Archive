@@ -1015,7 +1015,7 @@ def main():
     )
     parser.add_argument(
         "--cpc",
-        action="store_true",
+        action="store_false",
         help=(
             "Enable CPC (Cardiopulmonary Coupling) metrics: CPC_LFC_RATIO and "
             "HF_PEAK_STABILITY. Uses a 7-min sliding window resampled to 2 Hz. "
