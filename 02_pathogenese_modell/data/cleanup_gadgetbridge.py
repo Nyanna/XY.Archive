@@ -42,7 +42,7 @@ from psycopg2.extras import execute_values
 
 # --- Source -----------------------------------------------------------
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
-DB_REMOTE_URL = "https://drive.google.com/file/d/1r3v-AVrg8Uis0H2_uQ8_cmv-JqrfI0o9/view?usp=sharing"
+DB_REMOTE_URL = "https://drive.google.com/file/d/1Hc2rhGosiw4uFAGidXbwXdfe-R2PzQX-/view?usp=sharing"
 EXPIRY_SECONDS = 1 * 3600
 
 # --- Postgres target --------------------------------------------------
@@ -54,6 +54,17 @@ PG_PASSWORD = os.environ["PGPASSWORD"]
 PG_SCHEMA = "public"
 
 BATCH_SIZE = 5000
+
+# Tables excluded from replication (noisy, large, or irrelevant for analysis)
+SYNC_EXCLUDE = {
+    "ALARM",
+    "BATTERY_LEVEL",
+    "DEVICE_ATTRIBUTES",
+    "USER",
+    "USER_ATTRIBUTES",
+    "XIAOMI_MANUAL_SAMPLE",
+    "HEART_PULSE_SAMPLE",
+}
 
 # --- Timestamp column detection --------------------------------------
 TIMESTAMP_PATTERNS = [
@@ -523,7 +534,10 @@ def main():
         ensure_schema(pg_conn)
 
         tables = get_user_tables(sqlite_conn)
-        non_empty = [t for t in tables if table_row_count(sqlite_conn, t) > 0]
+        non_empty = [
+            t for t in tables
+            if t not in SYNC_EXCLUDE and table_row_count(sqlite_conn, t) > 0
+        ]
         mode_label = "FORCE full" if args.force else "incremental"
         print(
             f"\nReplicating {len(non_empty)} non-empty tables to "
