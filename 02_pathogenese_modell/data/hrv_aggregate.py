@@ -89,39 +89,22 @@ VAGAL_BALANCE_REF = 0.50
 TOTAL_MIN = 3.0
 
 
-def load_rr_data(pg_conn, device_id=None, min_ts_ms=None):
+def load_rr_data(pg_conn, min_ts_ms=None):
     with pg_conn.cursor() as cur:
-        if device_id is None:
-            cur.execute(
-                'SELECT "DEVICE_ID", COUNT(*) FROM "HEART_RR_INTERVAL_SAMPLE" '
-                'GROUP BY "DEVICE_ID" ORDER BY COUNT(*) DESC'
-            )
-            rows = cur.fetchall()
-            if not rows:
-                print("ERROR: HEART_RR_INTERVAL_SAMPLE is empty", file=sys.stderr)
-                sys.exit(1)
-            device_id = rows[0][0]
-
-        cur.execute('SELECT "NAME" FROM "DEVICE" WHERE "_id" = %s', (device_id,))
-        dev_row = cur.fetchone()
-        device_name = dev_row[0] if dev_row else f"id={device_id}"
-
         query = (
             'SELECT (EXTRACT(EPOCH FROM "timestamp_at") * 1000)::bigint, "RR_MILLIS" '
-            'FROM "HEART_RR_INTERVAL_SAMPLE" '
-            'WHERE "DEVICE_ID" = %s'
+            'FROM "HEART_RR_INTERVAL_SAMPLE"'
         )
-        params = [device_id]
+        params = []
         if min_ts_ms is not None:
-            query += ' AND "timestamp_at" >= %s'
+            query += ' WHERE "timestamp_at" >= %s'
             params.append(datetime.fromtimestamp(min_ts_ms / 1000.0, tz=timezone.utc))
         query += ' ORDER BY "timestamp_at", "SEQ"'
 
         cur.execute(query, params)
         raw = cur.fetchall()
 
-    data = [(int(ts), int(rr)) for ts, rr in raw if MIN_RR <= int(rr) <= MAX_RR]
-    return data, device_id, device_name
+    return [(int(ts), int(rr)) for ts, rr in raw if MIN_RR <= int(rr) <= MAX_RR]
 
 
 def compute_dfa_alpha1(rr_values):
@@ -876,22 +859,68 @@ def ensure_hrv_table(pg_conn):
     pg_conn.commit()
 
 
-def get_existing_minutes(pg_conn):
-    """Return set of minute starts (ms epoch, int) already stored.
+def get_max_source_rr_ts(pg_conn):
+    """Return MAX(timestamp_at) of the source RR table as ms epoch int."""
+    with pg_conn.cursor() as cur:
+        cur.execute('SELECT MAX("timestamp_at") FROM "HEART_RR_INTERVAL_SAMPLE"')
+        row = cur.fetchone()
+    if row and row[0] is not None:
+        return int(row[0].timestamp() * 1000)
+    return None
 
-    Internal logic still keys minutes by integer ms; the on-disk PK is a
-    timestamptz, so we project epoch-ms via EXTRACT.
-    """
+
+def get_max_stored_minute(pg_conn):
+    """Return the MAX timestamp_ms_at as an int (ms epoch), or None if table empty."""
     with pg_conn.cursor() as cur:
         cur.execute(
-            pgsql.SQL(
-                'SELECT (EXTRACT(EPOCH FROM {}) * 1000)::bigint FROM {}.{}'
-            ).format(
+            pgsql.SQL('SELECT MAX({}) FROM {}.{}').format(
                 pgsql.Identifier(PG_AT_COLUMN),
                 pgsql.Identifier(PG_SCHEMA),
                 pgsql.Identifier(PG_TABLE),
             )
         )
+        row = cur.fetchone()
+    if row and row[0] is not None:
+        return int(row[0].timestamp() * 1000)
+    return None
+
+
+def get_existing_minutes(pg_conn, since_ms=None):
+    """Return set of minute starts (ms epoch, int) already stored.
+
+    since_ms: if given, only return minutes >= that timestamp (ms epoch).
+    For normal incremental runs pass the RR load cutoff so the result set
+    covers only the overlap window (≤ largest analysis window), not the
+    full history.  Pass None for --cpc-only backfill which must cover all
+    stored rows.
+
+    Internal logic still keys minutes by integer ms; the on-disk PK is a
+    timestamptz, so we project epoch-ms via EXTRACT.
+    """
+    with pg_conn.cursor() as cur:
+        if since_ms is not None:
+            cur.execute(
+                pgsql.SQL(
+                    'SELECT (EXTRACT(EPOCH FROM {col}) * 1000)::bigint '
+                    'FROM {schema}.{table} WHERE {col} >= %s'
+                ).format(
+                    col=pgsql.Identifier(PG_AT_COLUMN),
+                    schema=pgsql.Identifier(PG_SCHEMA),
+                    table=pgsql.Identifier(PG_TABLE),
+                ),
+                (datetime.fromtimestamp(since_ms / 1000.0, tz=timezone.utc),),
+            )
+        else:
+            cur.execute(
+                pgsql.SQL(
+                    'SELECT (EXTRACT(EPOCH FROM {col}) * 1000)::bigint '
+                    'FROM {schema}.{table}'
+                ).format(
+                    col=pgsql.Identifier(PG_AT_COLUMN),
+                    schema=pgsql.Identifier(PG_SCHEMA),
+                    table=pgsql.Identifier(PG_TABLE),
+                )
+            )
         return {int(r[0]) for r in cur.fetchall()}
 
 
@@ -989,7 +1018,6 @@ def update_cpc_results(pg_conn, rows):
 
 def main():
     parser = argparse.ArgumentParser(description="HRV minute aggregation")
-    parser.add_argument("--device-id", type=int, default=None)
     parser.add_argument(
         "--lf-hf",
         action="store_false",
@@ -1053,17 +1081,12 @@ def main():
             existing_minutes = get_existing_minutes(pg_conn)
             print(f"CPC backfill: {len(existing_minutes)} existing rows to update")
             t0 = time.monotonic()
-            rr_data, device_id, device_name = load_rr_data(
-                pg_conn, args.device_id, min_ts_ms=None,
-            )
+            rr_data = load_rr_data(pg_conn)
             if not rr_data:
                 print("No RR data found.")
                 print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
                 return
-            print(
-                f"Loaded {len(rr_data)} RR intervals from device "
-                f"{device_id} ({device_name}) [{time.monotonic() - t0:.2f}s]"
-            )
+            print(f"Loaded {len(rr_data)} RR intervals [{time.monotonic() - t0:.2f}s]")
             t0 = time.monotonic()
             rows = compute_cpc_only(rr_data, existing_minutes)
             print(f"CPC metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
@@ -1073,29 +1096,43 @@ def main():
             print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
             return
 
-        existing_minutes = get_existing_minutes(pg_conn)
-        print(f"Existing HRV minutes in Postgres: {len(existing_minutes)}")
+        t0 = time.monotonic()
+        max_stored_ms = get_max_stored_minute(pg_conn)
 
         min_ts_ms = None
-        if args.full:
+        if args.full or max_stored_ms is None:
             existing_minutes = set()
-        elif existing_minutes:
-            min_ts_ms = max(existing_minutes) - ULF_WINDOW_MS
+        else:
+            max_source_ms = get_max_source_rr_ts(pg_conn)
+            if max_source_ms is not None and (max_source_ms // 60000) * 60000 <= max_stored_ms:
+                print(
+                    f"Max stored HRV minute: "
+                    f"{datetime.fromtimestamp(max_stored_ms / 1000.0, tz=timezone.utc).isoformat()} | "
+                    f"source up to date, nothing to do [{time.monotonic() - t0:.2f}s]"
+                )
+                print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
+                return
+            min_ts_ms = max_stored_ms - ULF_WINDOW_MS
+            existing_minutes = get_existing_minutes(pg_conn, since_ms=min_ts_ms)
+
+        max_stored_str = (
+            datetime.fromtimestamp(max_stored_ms / 1000.0, tz=timezone.utc).isoformat()
+            if max_stored_ms is not None else "none"
+        )
+        print(
+            f"Max stored HRV minute: {max_stored_str} | "
+            f"overlap window skip-set: {len(existing_minutes)} minutes [{time.monotonic() - t0:.2f}s]"
+        )
 
         t0 = time.monotonic()
-        rr_data, device_id, device_name = load_rr_data(
-            pg_conn, args.device_id, min_ts_ms=min_ts_ms,
-        )
+        rr_data = load_rr_data(pg_conn, min_ts_ms=min_ts_ms)
         if not rr_data:
             print("No new RR intervals to process.")
             print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
             return
 
         span = f" (from ts >= {min_ts_ms})" if min_ts_ms is not None else ""
-        print(
-            f"Loaded {len(rr_data)} RR intervals{span} from device "
-            f"{device_id} ({device_name}) [{time.monotonic() - t0:.2f}s]"
-        )
+        print(f"Loaded {len(rr_data)} RR intervals{span} [{time.monotonic() - t0:.2f}s]")
         t_start = datetime.fromtimestamp(rr_data[0][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
         t_end = datetime.fromtimestamp(rr_data[-1][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
         print(f"Time range: {t_start} - {t_end}")

@@ -42,7 +42,7 @@ from psycopg2.extras import execute_values
 
 # --- Source -----------------------------------------------------------
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
-DB_REMOTE_URL = "https://drive.google.com/file/d/1Hc2rhGosiw4uFAGidXbwXdfe-R2PzQX-/view?usp=sharing"
+DB_REMOTE_URL = "https://drive.google.com/file/d/1yropB-j0couqP8f-XItaAJm3dVsfgc1t/view?usp=sharing"
 EXPIRY_SECONDS = 1 * 3600
 
 # --- Postgres target --------------------------------------------------
@@ -54,6 +54,7 @@ PG_PASSWORD = os.environ["PGPASSWORD"]
 PG_SCHEMA = "public"
 
 BATCH_SIZE = 5000
+PROGRESS_MIN_ROWS = BATCH_SIZE  # show per-batch progress for tables at least this large
 
 # Tables excluded from replication (noisy, large, or irrelevant for analysis)
 SYNC_EXCLUDE = {
@@ -469,8 +470,17 @@ def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
     if watermark_col is not None:
         select_query += f" WHERE [{watermark_col}] >= ?"
         select_params = (watermark_sqlite,)
+    # Pre-count with the same WHERE condition so progress shows a denominator
+    count_q = f"SELECT COUNT(*) FROM [{table_name}]"
+    if watermark_col is not None:
+        count_q += f" WHERE [{watermark_col}] >= ?"
+    count_row = sqlite_conn.execute(count_q, select_params).fetchone()
+    expected_total = count_row[0] if count_row else None
+    show_progress = expected_total is not None and expected_total >= PROGRESS_MIN_ROWS
+
     cur = sqlite_conn.execute(select_query, select_params)
 
+    t_rep_start = time.monotonic()
     total = 0
     batch = []
     with pg_conn.cursor() as pcur:
@@ -481,6 +491,15 @@ def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
             execute_values(pcur, insert_stmt, batch, page_size=BATCH_SIZE)
             total += len(batch)
             batch = []
+            if show_progress:
+                elapsed = time.monotonic() - t_rep_start
+                pct = total / expected_total * 100
+                print(
+                    f"\r  {table_name:38s}"
+                    f" {total:>8,}/{expected_total:,} ({pct:3.0f}%)"
+                    f" [{elapsed:.0f}s]",
+                    end="", flush=True,
+                )
 
         while True:
             row = cur.fetchone()
@@ -551,7 +570,7 @@ def main():
             )
             dt = time.monotonic() - t_start
             extra = f"  [+{len(ts)} _at]" if ts else ""
-            print(f"  {t:38s} rows={n:<8} mode={mode} ({dt:.1f}s){extra}")
+            print(f"\r  {t:38s} rows={n:<8} mode={mode} ({dt:.1f}s){extra}")
 
     finally:
         sqlite_conn.close()
