@@ -46,7 +46,8 @@ import psycopg2
 from astropy.timeseries import LombScargle
 from psycopg2 import sql as pgsql
 from psycopg2.extras import execute_values
-from scipy.ndimage import median_filter
+
+from rr_quality import correct_artifacts, quality_mask
 
 # --- Postgres -------------------------------------------------------
 PG_HOST = os.environ["PGHOST"]
@@ -62,10 +63,10 @@ DEVICE_ID = 2  # H9Z 40647
 MIN_RR = 300
 MAX_RR = 2000
 
-# --- Local-median artifact correction -------------------------------
-ARTIFACT_MEDIAN_HALFWIDTH = 4
-ARTIFACT_THRESHOLD_MS = 500
-MAX_ARTIFACT_FRACTION = 0.05
+# Artifact handling is shared via rr_quality: Layer 1 (correct_artifacts,
+# local-median point-ectopic correction, per window) and Layer 2
+# (quality_mask block exclusion of strap-slip corruption, applied once in
+# load_rr_data). Lomb-Scargle tolerates the resulting gaps natively.
 
 # --- Band definitions -----------------------------------------------
 # Each band: (column_name, f_low_hz, f_high_hz, center_hz_for_grid)
@@ -115,29 +116,8 @@ _TRAPZ = getattr(np, "trapezoid", np.trapz)
 
 
 # -------------------------------------------------------------------
-# Artifact correction
+# Spectral helpers
 # -------------------------------------------------------------------
-def correct_artifacts(rr):
-    n = len(rr)
-    if n < 2:
-        return None
-    rr = rr.astype(float, copy=True)
-    win = 2 * ARTIFACT_MEDIAN_HALFWIDTH + 1
-    local_median = median_filter(rr, size=win, mode="nearest")
-    artifact_mask = np.abs(rr - local_median) > ARTIFACT_THRESHOLD_MS
-    if artifact_mask.sum() / n > MAX_ARTIFACT_FRACTION:
-        return None
-    if artifact_mask.any():
-        valid_idx = np.flatnonzero(~artifact_mask)
-        if valid_idx.size < 2:
-            return None
-        all_idx = np.arange(n)
-        rr[artifact_mask] = np.interp(
-            all_idx[artifact_mask], valid_idx, rr[valid_idx]
-        )
-    return rr
-
-
 def lombscargle_psd(t_sec, rr_corr, freqs):
     """Detrended Lomb-Scargle PSD in ms²/Hz (factor 2 → Parseval)."""
     slope, intercept = np.polyfit(t_sec, rr_corr, 1)
@@ -215,7 +195,15 @@ def load_rr_data(pg_conn, min_ts_ms=None):
         return None, None
     ts = np.fromiter((r[0] for r in rows), dtype=np.int64, count=len(rows))
     rr = np.fromiter((r[1] for r in rows), dtype=np.float64, count=len(rows))
-    return ts, rr
+
+    # Layer 2: exclude sustained corruption blocks (strap slip) before
+    # binning; removed beats become gaps, which Lomb-Scargle tolerates.
+    keep, info = quality_mask(ts, rr)
+    if info["n_removed"]:
+        pct = info["n_removed"] / info["n_total"] * 100.0
+        print(f"Quality filter: removed {info['n_removed']:,}/{info['n_total']:,} "
+              f"beats ({pct:.1f}%) in {info['n_blocks']} block(s)")
+    return ts[keep], rr[keep]
 
 
 # -------------------------------------------------------------------

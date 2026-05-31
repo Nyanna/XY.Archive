@@ -22,8 +22,9 @@ from astropy.timeseries import LombScargle
 from psycopg2 import sql as pgsql
 from psycopg2.extras import execute_values
 from scipy.interpolate import CubicSpline
-from scipy.ndimage import median_filter
 from scipy.signal import butter, csd, filtfilt, hilbert, welch
+
+from rr_quality import correct_artifacts, nn_time_domain, quality_mask
 
 # Postgres target (mirrors cleanup_gadgetbridge.py)
 PG_HOST = os.environ["PGHOST"]
@@ -61,19 +62,17 @@ CPC_GAP_THRESHOLD_MS = 2000    # gaps > 2 s get linear (not cubic) interpolation
 CPC_MAX_GAP_FRACTION = 0.30    # reject window if >30% of duration is in gaps
 CPC_HALF_WIN_STABILITY_MS = 150_000  # ±2.5 min for HF_PEAK_STABILITY rolling SD
 
-# Artifact correction (PSD path and VAGAL_BALANCE; base metrics such as
-# RMSSD/pNN50/SDNN stay on the raw gap-filtered values to preserve
-# comparability with existing queries).
-#
-# Local-median detector (not Malik): ESC/NASPE 1996 Task Force leaves the
-# detection rule open, only the 5% window-reject and the interpolation
-# requirement are fixed. Nearest-neighbor rules (Malik) misclassify
-# physiological RSA swings -- especially during REM-dominated second half
-# of night -- as artifacts. A local median smooths across RSA oscillations
-# so only true spikes (ectopics / missed beats) produce a large deviation.
-ARTIFACT_MEDIAN_HALFWIDTH = 4   # 9-beat window (i-4 .. i+4)
-ARTIFACT_THRESHOLD_MS = 500     # |RR - local_median| > 500 ms -> artifact
-MAX_ARTIFACT_FRACTION = 0.05    # reject window if exceeded (Task Force 5%)
+# Artifact handling lives in the shared rr_quality module:
+#   Layer 1 (correct_artifacts): local-median point-ectopic correction,
+#     now applied to the time-domain base metrics (RMSSD/pNN50/SDNN) as
+#     well, not only the PSD path.
+#   Layer 2 (apply_quality_filter, in load_rr_data): block exclusion of
+#     sustained signal corruption (strap slip) before any binning.
+# The local-median detector (not Malik) is deliberate: ESC/NASPE 1996
+# leaves the detection rule open; nearest-neighbor (Malik) rules misclassify
+# physiological RSA swings -- especially in the REM-dominated second half of
+# night -- as artifacts, whereas a local median smooths across RSA so only
+# true spikes (ectopics / missed beats) deviate.
 
 # VAGAL_BALANCE normalization: RMSSD/SDNN of healthy adults at rest
 # (Shaffer & Ginsberg 2017, Front Public Health, 5-min windows).
@@ -104,7 +103,25 @@ def load_rr_data(pg_conn, min_ts_ms=None):
         cur.execute(query, params)
         raw = cur.fetchall()
 
-    return [(int(ts), int(rr)) for ts, rr in raw if MIN_RR <= int(rr) <= MAX_RR]
+    sane = [(int(ts), int(rr)) for ts, rr in raw if MIN_RR <= int(rr) <= MAX_RR]
+    if not sane:
+        return sane
+
+    # Layer 2: exclude sustained corruption blocks (strap slip) up front,
+    # so every downstream window sees only quality-validated beats. Removed
+    # beats become time gaps, which all metrics tolerate.
+    ts_arr = np.fromiter((s[0] for s in sane), dtype=np.int64, count=len(sane))
+    rr_arr = np.fromiter((s[1] for s in sane), dtype=np.int64, count=len(sane))
+    keep, info = quality_mask(ts_arr, rr_arr)
+    if info["n_removed"]:
+        pct = info["n_removed"] / info["n_total"] * 100.0
+        print(
+            f"  Quality filter: removed {info['n_removed']:,}/{info['n_total']:,} "
+            f"beats ({pct:.1f}%) in {info['n_blocks']} block(s)"
+        )
+    ts_k = ts_arr[keep].tolist()
+    rr_k = rr_arr[keep].tolist()
+    return list(zip(ts_k, rr_k))
 
 
 def compute_dfa_alpha1(rr_values):
@@ -145,48 +162,6 @@ def compute_dfa_alpha1(rr_values):
 
 FS_RESAMPLE = 4.0  # Hz, Task Force (1996) recommendation for RR-tachogram resampling
 _TRAPZ = getattr(np, "trapezoid", np.trapz)
-
-
-def correct_artifacts(rr: np.ndarray) -> np.ndarray | None:
-    """Local-median artifact correction with linear interpolation.
-
-    For each beat i, compute the median over a 9-beat window centered on i
-    and flag the beat as artifactual when |RR[i] - local_median| exceeds
-    ARTIFACT_THRESHOLD_MS (300 ms). Flagged beats are replaced by linear
-    interpolation between the nearest non-artifactual neighbors. The window
-    is rejected entirely if the artifact fraction exceeds
-    MAX_ARTIFACT_FRACTION (5%), per ESC/NASPE 1996 Task Force.
-
-    Rationale: the nearest-neighbor (Malik) rule conflates physiological
-    RSA swings with ectopic beats -- especially in REM-dominated sleep,
-    where beat-to-beat changes of >20% can be normal. A local median is
-    insensitive to smooth RSA oscillations but still isolates true spikes
-    (PVC, missed beat, compensatory pause).
-
-    PSD path only; base metrics (RMSSD, pNN50, ...) keep the raw
-    gap-filtered values.
-    """
-    n = len(rr)
-    if n < 2:
-        return rr.astype(float, copy=True)
-    rr = rr.astype(float, copy=True)
-
-    window_size = 2 * ARTIFACT_MEDIAN_HALFWIDTH + 1
-    local_median = median_filter(rr, size=window_size, mode="nearest")
-    artifact_mask = np.abs(rr - local_median) > ARTIFACT_THRESHOLD_MS
-
-    n_artifacts = int(artifact_mask.sum())
-    if n_artifacts / n > MAX_ARTIFACT_FRACTION:
-        return None
-    if n_artifacts == 0:
-        return rr
-
-    valid_idx = np.flatnonzero(~artifact_mask)
-    if valid_idx.size < 2:
-        return None
-    all_idx = np.arange(n)
-    rr[artifact_mask] = np.interp(all_idx[artifact_mask], valid_idx, rr[valid_idx])
-    return rr
 
 
 def _resample_rr_2hz(ts_ms, rr_ms):
@@ -459,14 +434,6 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
     all_ts = np.fromiter((r[0] for r in rr_data), dtype=np.int64, count=n_total)
     all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_total)
 
-    # Successive differences (vectorized, with gap filter)
-    # diff at index k = rr[k+1] - rr[k], belongs to the beat at index k+1
-    ts_gaps = np.diff(all_ts)
-    rr_diffs = np.diff(all_rr).astype(float)
-    valid_diff_mask = ts_gaps <= GAP_THRESHOLD_MS
-
-    print(f"  Successive diffs computed: {time.monotonic() - t0:.2f}s")
-
     # Minute binning: data is sorted by TIMESTAMP -> contiguous slices per minute
     minute_of_beat = (all_ts // 60000) * 60000
     sorted_minutes, minute_lo, minute_counts = np.unique(
@@ -507,54 +474,39 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
 
         t_step = time.monotonic()
         rr = all_rr[lo:hi].astype(float)
+        ts_minute = all_ts[lo:hi]
+        # Raw descriptors of what was actually measured this minute.
         mean_rr = float(rr.mean())
         hr_bpm = 60000.0 / mean_rr if mean_rr > 0 else None
         min_rr = int(rr.min())
         max_rr = int(rr.max())
-        std_rr = float(rr.std(ddof=0))  # population stddev
+        std_rr = float(rr.std(ddof=0))  # population stddev, raw
 
-        # Diffs for beats in [lo, hi): diff array indices [max(0, lo-1), hi-1)
-        diff_lo = lo - 1 if lo > 0 else 0
-        diff_hi = hi - 1
-        if diff_hi > diff_lo:
-            valid = valid_diff_mask[diff_lo:diff_hi]
-            d = rr_diffs[diff_lo:diff_hi][valid]
-            if d.size:
-                rmssd = float(math.sqrt(np.mean(d ** 2)))
-                pnn50 = float(np.sum(np.abs(d) > 50) / d.size * 100.0)
-            else:
-                rmssd = 0.0
-                pnn50 = None
+        # Time-domain HRV metrics on normal-to-normal intervals
+        # (rr_quality.nn_time_domain): suspicious beats (implausible RR /
+        # non-physiological jumps) and the difference pairs touching them
+        # are excluded, and the whole minute is NULLed when too corrupt to
+        # trust. This removes the residual signal-corruption peaks in
+        # RMSSD/pNN50/SDNN that Layer 2 (block) and the ±500 ms median rule
+        # do not catch. NULL (None) when the minute fails the quality gate.
+        rmssd, sdnn, pnn50 = nn_time_domain(ts_minute, rr)
+
+        if rmssd is not None:
+            ln_rmssd = math.log(rmssd) if rmssd > 0 else None
+            vagal_index = (
+                ln_rmssd / math.log(mean_rr)
+                if (ln_rmssd is not None and mean_rr > 1)
+                else None
+            )
+            rmssd_pct = rmssd / mean_rr * 100.0 if mean_rr > 0 else None
+            rmssd_sdnn_ratio = rmssd / sdnn if sdnn and sdnn > 0 else None
+            vagal_balance = (
+                (rmssd / sdnn) / VAGAL_BALANCE_REF
+                if (sdnn and sdnn > 0 and rmssd > 0) else None
+            )
         else:
-            rmssd = 0.0
-            pnn50 = None
-
-        ln_rmssd = math.log(rmssd) if rmssd > 0 else None
-        vagal_index = (
-            ln_rmssd / math.log(mean_rr)
-            if (ln_rmssd is not None and mean_rr > 1)
-            else None
-        )
-        rmssd_pct = rmssd / mean_rr * 100.0 if mean_rr > 0 else None
-        sdnn = std_rr  # equivalent to population stddev
-        rmssd_sdnn_ratio = rmssd / sdnn if sdnn > 0 else None
-
-        # VAGAL_BALANCE: Task-Force-konform auf NN-Intervallen nach Artefakt-
-        # Korrektur. NULL bei RR-Gap > GAP_THRESHOLD_MS in der Minute, bei
-        # Artefakt-Anteil > 5% (correct_artifacts liefert dann None) oder bei
-        # degenerierten RMSSD/SDNN.
-        vagal_balance = None
-        ts_minute = all_ts[lo:hi]
-        has_gap = ts_minute.size > 1 and int(np.diff(ts_minute).max()) > GAP_THRESHOLD_MS
-        if not has_gap:
-            rr_nn = correct_artifacts(rr)
-            if rr_nn is not None and rr_nn.size >= 2:
-                d_nn = np.diff(rr_nn)
-                if d_nn.size > 0:
-                    rmssd_nn = float(math.sqrt(np.mean(d_nn ** 2)))
-                    sdnn_nn = float(rr_nn.std(ddof=0))
-                    if rmssd_nn > 0 and sdnn_nn > 0:
-                        vagal_balance = (rmssd_nn / sdnn_nn) / VAGAL_BALANCE_REF
+            ln_rmssd = vagal_index = rmssd_pct = None
+            rmssd_sdnn_ratio = vagal_balance = None
 
         time_basic += time.monotonic() - t_step
 
