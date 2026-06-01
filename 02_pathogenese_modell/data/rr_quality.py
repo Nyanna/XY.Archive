@@ -43,12 +43,19 @@ MAX_ARTIFACT_FRACTION = 0.05    # reject window above this (Task Force 5 %)
 
 # --- Layer 2: block exclusion (strap-slip / gross corruption) ---------
 # Physiological plausibility band, from this recording's HR envelope:
-#   HR 160 bpm -> RR 375 ms ; HR  47 bpm -> RR 1277 ms (both rare extremes).
+#   HR 162 bpm -> RR 370 ms ; HR  35 bpm -> RR 1700 ms (both rare extremes).
+# The upper bound is deliberately wide: this sleeper reaches sustained deep
+# bradycardia (observed RR clusters to 1626 ms / 37 bpm in vagal RSA troughs),
+# and the RR distribution has a CLEAN GAP above ~1650 ms with nothing in the
+# 1.8–2.3 s "doubled-beat" region — so a tighter ceiling (the old 1300 ms /
+# 46 bpm) clipped genuine bradycardia, not artifacts. A missed beat doubles
+# the local RR (>~2 s here) and is caught both by value and as an isolated
+# apex; sustained low-HR beats are neither doubled nor isolated.
 # A small margin is added so genuine boundary beats are not counted as
 # suspicious; isolated near-boundary beats never trigger exclusion on
 # their own — only a sustained CLUSTER (rolling fraction) does.
 BLOCK_RR_LO_MS = 370            # < this (>162 bpm) is implausible
-BLOCK_RR_HI_MS = 1300           # > this (<46 bpm) is implausible
+BLOCK_RR_HI_MS = 1700           # > this (<35 bpm) is implausible
 # A beat-to-beat |ΔRR| above this is non-physiological for nocturnal RR
 # (RMSSD is typically tens of ms; the slip signature jumps ~600–1000 ms).
 BLOCK_DIFF_THRESHOLD_MS = 300
@@ -75,7 +82,12 @@ GAP_THRESHOLD_MS = 5000
 # therefore computed on normal-to-normal intervals: beats marked suspicious
 # (implausible RR or a non-physiological >300 ms beat-to-beat jump) and the
 # successive-difference pairs touching them are excluded. If a minute is too
-# corrupt to trust even on its surviving beats, the metrics are NULLed.
+# corrupt to trust even on its surviving beats, the metrics are NULLed — but
+# the NULL gate measures CORE corruption (core_corruption_mask: implausible
+# RR + isolated-spike apex), not the raw suspicious fraction. The jump rule
+# flags both neighbours of every point artifact, so gating on the raw
+# fraction trebles each isolated spike and NULLs minutes that still carry
+# plenty of clean beats (e.g. a regime-change minute with a few missed beats).
 #
 # A >300 ms jump rule would be too aggressive for the SPECTRAL path (it
 # could clip genuine REM RSA, which is why that path keeps median-only
@@ -138,6 +150,31 @@ def suspicious_mask(ts_ms, rr_ms, gap_threshold_ms=GAP_THRESHOLD_MS):
     return susp
 
 
+def core_corruption_mask(ts_ms, rr_ms, gap_threshold_ms=GAP_THRESHOLD_MS):
+    """Beats whose own value is untrustworthy — for the time-domain GATE only.
+
+    Core-corrupt = physiologically implausible RR, OR the apex of an isolated
+    spike/drop (a >BLOCK_DIFF_THRESHOLD_MS jump INTO the beat and an
+    opposite-sign jump OUT of it: the signature of a single missed/extra beat).
+    The two innocent neighbours of such a spike are NOT core-corrupt — they
+    keep only the plain ``suspicious_mask`` flag so the difference pairs
+    touching the spike are dropped. Counting those neighbours in the gate (as
+    a raw ``suspicious_mask`` fraction would) trebles every point artifact and
+    spuriously NULLs minutes that still have abundant clean beats. Gross
+    corruption still trips this gate: a strap-slip collapses beats onto the RR
+    floor (implausible) or alternates every other beat (an apex on each one).
+    """
+    ts = np.asarray(ts_ms, dtype=np.int64)
+    rr = np.asarray(rr_ms, dtype=np.float64)
+    core = (rr < BLOCK_RR_LO_MS) | (rr > BLOCK_RR_HI_MS)
+    if rr.size >= 3:
+        d = np.diff(rr)
+        big = (np.abs(d) > BLOCK_DIFF_THRESHOLD_MS) & (np.diff(ts) <= gap_threshold_ms)
+        apex = big[:-1] & big[1:] & (np.sign(d[:-1]) != np.sign(d[1:]))
+        core[1:-1] |= apex
+    return core
+
+
 def nn_time_domain(ts_ms, rr_ms, gap_threshold_ms=GAP_THRESHOLD_MS):
     """Time-domain HRV metrics on normal-to-normal intervals.
 
@@ -155,7 +192,12 @@ def nn_time_domain(ts_ms, rr_ms, gap_threshold_ms=GAP_THRESHOLD_MS):
         return None, None, None
 
     susp = suspicious_mask(ts, rr, gap_threshold_ms)
-    if susp.mean() > TIME_DOMAIN_MAX_SUSPECT_FRACTION:
+    # Gate on core corruption (implausible RR + isolated-spike apex), NOT the
+    # raw suspicious fraction: the jump rule flags both neighbours of every
+    # point artifact, so a raw fraction trebles each one and NULLs minutes
+    # that still have plenty of clean beats. `susp` is kept below for pair
+    # exclusion (the differences touching a spike must still be dropped).
+    if core_corruption_mask(ts, rr, gap_threshold_ms).mean() > TIME_DOMAIN_MAX_SUSPECT_FRACTION:
         return None, None, None
 
     normal = rr[~susp]
