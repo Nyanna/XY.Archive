@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "eclipse-ide": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/eclipse-ide",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "duck-duck-search": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/duck-duck-search",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "time": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/time",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "webpage-reader": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/webpage-reader",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "memory": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/memory",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "eclipse-coder": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/eclipse-coder",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "eclipse-runner": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/eclipse-runner",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "eclipse-context": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/eclipse-context",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "eclipse-git": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/eclipse-git",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    },
+    "eclipse-pde": {
+      "type": "http",
+      "url": "http://localhost:18080/mcp/eclipse-pde",
+      "headers": { "Authorization": "Bearer ${ECLIPSE_MCP_BEARER}" }
+    }
+  }
+}
