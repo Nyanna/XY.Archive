@@ -586,6 +586,15 @@ def main():
     finally:
         sys.argv = saved_argv
 
+    spectral_path = str(Path(__file__).parent / "spectral_bands_aggregate.py")
+    print(f"\nRunning spectral_bands_aggregate.py  [args: {forwarded}]")
+    saved_argv = sys.argv
+    try:
+        sys.argv = [spectral_path, *passthrough_args]
+        runpy.run_path(spectral_path, run_name="__main__")
+    finally:
+        sys.argv = saved_argv
+
 
 if __name__ == "__main__":
     main()
