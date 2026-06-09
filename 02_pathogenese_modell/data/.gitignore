@@ -6,3 +6,4 @@
 /Gadgetbridge.bak
 /__pycache__/
 /deep_sleep_phases.db
+/.env

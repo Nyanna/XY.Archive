@@ -1,0 +1,9 @@
+# Nur requirements.txt + die im Dockerfile genannten .py landen im Image.
+# Alles andere (riesige Binaer-/Daten-Artefakte) aus dem Build-Kontext halten.
+*
+!requirements.txt
+!run_pipeline.py
+!gadgetbridge_migrate.py
+!hrv_aggregate.py
+!spectral_bands_aggregate.py
+!rr_quality.py
