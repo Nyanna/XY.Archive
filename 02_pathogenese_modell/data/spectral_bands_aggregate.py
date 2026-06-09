@@ -323,15 +323,19 @@ def process_minutes(pg, ts, rr, existing, sorted_minutes, minute_counts,
         total_minutes = min(total_minutes, limit_minutes)
         print(f"NOTE: limited to first {total_minutes} minutes")
 
-    print(f"Processing up to {total_minutes:,} minute bins "
-          f"({len(existing):,} skipped)...")
+    n_effective = sum(1 for i in range(total_minutes)
+                      if int(sorted_minutes[i]) not in existing)
+    print(f"Processing {n_effective:,} minute bins "
+          f"({total_minutes - n_effective:,} skipped)...")
 
     rows_buffer = []
     n_done = 0
     n_skipped = 0
     n_written = 0
-    log_interval = max(1, total_minutes // 20)
+    log_interval = max(1, n_effective // 20)
     t_loop = time.monotonic()
+
+    print(f"  Progress: 0/{n_effective} (0%) | elapsed 0.0s")
 
     for mi in range(total_minutes):
         minute_start = int(sorted_minutes[mi])
@@ -349,15 +353,10 @@ def process_minutes(pg, ts, rr, existing, sorted_minutes, minute_counts,
         rows_buffer.append(row)
         n_done += 1
 
-        if (mi + 1) % log_interval == 0 or mi == total_minutes - 1:
+        if n_done % log_interval == 0 or mi == total_minutes - 1:
             elapsed = time.monotonic() - t_loop
-            pct = (mi + 1) / total_minutes * 100
-            rate = (mi + 1) / elapsed if elapsed > 0 else 0
-            eta = (total_minutes - mi - 1) / rate if rate else 0
-            print(f"  {mi + 1:,}/{total_minutes:,} ({pct:.0f}%) "
-                  f"| {elapsed:.0f}s elapsed | "
-                  f"{rate:.0f} min/s | ETA {eta:.0f}s | "
-                  f"computed {n_done:,}, buffered {len(rows_buffer):,}")
+            pct = n_done / n_effective * 100 if n_effective else 100.0
+            print(f"  Progress: {n_done:,}/{n_effective:,} ({pct:.0f}%) | elapsed {elapsed:.0f}s")
 
         if len(rows_buffer) >= FLUSH_EVERY:
             n_written += write_rows(pg, rows_buffer)

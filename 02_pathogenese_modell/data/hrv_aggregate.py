@@ -12,9 +12,9 @@ SQLite to keep incremental runs cheap.
 import argparse
 import math
 import os
-import sys
 import time
 from datetime import datetime, timezone
+from typing import NamedTuple
 
 import numpy as np
 import psycopg2
@@ -62,6 +62,10 @@ CPC_GAP_THRESHOLD_MS = 2000    # gaps > 2 s get linear (not cubic) interpolation
 CPC_MAX_GAP_FRACTION = 0.30    # reject window if >30% of duration is in gaps
 CPC_WINDOW_MS = 7 * 60 * 1000       # total CPC analysis window
 CPC_HALF_WIN_STABILITY_MS = 150_000  # ±2.5 min for HF_PEAK_STABILITY rolling SD
+# Minutes of forward context needed before a row's HF_PEAK_STABILITY can be
+# finalized (= half-window rounded up to whole minutes). Drives both the
+# per-batch deferred tail and the cross-run boundary correction.
+STABILITY_OVERLAP = max(1, CPC_HALF_WIN_STABILITY_MS // 60000 + 1)
 
 # Artifact handling lives in the shared rr_quality module:
 #   Layer 1 (correct_artifacts): local-median point-ectopic correction,
@@ -556,63 +560,51 @@ def _compute_cpc_minute(
     return compute_cpc_metrics(all_ts[i_lo:i_hi], all_rr[i_lo:i_hi])
 
 
-def _finalize_hf_peak_stability(results: list, half_win_ms: int) -> None:
-    """Compute HF_PEAK_STABILITY in-place as rolling SD over ±half_win_ms.
+def _finalize_hf_peak_stability(
+    target_rows: list,
+    peak_context: list,
+    half_win_ms: int,
+) -> None:
+    """Compute HF_PEAK_STABILITY in-place for target_rows.
 
-    Reads _hf_peak_freq from each result row, fills hf_peak_stability,
-    and removes the temporary _hf_peak_freq key.
+    peak_context: list of (timestamp_ms, hf_peak_freq|None) tuples covering
+        the full window range including any lookahead. Reads _hf_peak_freq from
+        target_rows, fills hf_peak_stability, and removes _hf_peak_freq.
     """
-    ts_arr = np.array([r["timestamp_ms"] for r in results], dtype=np.int64)
+    ts_ctx = np.array([t for t, _ in peak_context], dtype=np.int64)
     peak_arr = np.array(
-        [r["_hf_peak_freq"] if r["_hf_peak_freq"] is not None else np.nan
-         for r in results],
+        [f if f is not None else np.nan for _, f in peak_context],
         dtype=float,
     )
-    for r in results:
-        in_win = np.abs(ts_arr - r["timestamp_ms"]) <= half_win_ms
+    for r in target_rows:
+        in_win = np.abs(ts_ctx - r["timestamp_ms"]) <= half_win_ms
         valid = peak_arr[in_win]
         valid = valid[~np.isnan(valid)]
         r["hf_peak_stability"] = float(np.std(valid, ddof=0)) if len(valid) >= 2 else None
         del r["_hf_peak_freq"]
 
 
-def compute_minute_metrics(rr_data, limit_minutes=None, skip_minutes=None):
-    """Aggregate HRV metrics per minute.
+def compute_minute_metrics(
+    all_ts, all_rr,
+    sorted_minutes, minute_lo, minute_hi, minute_counts,
+    skip_minutes=None,
+):
+    """Process a slice of minute bins. Returns (rows, perf_dict).
 
-    Iterates over minute bins, delegates all metric computation to helpers,
-    and assembles the result list.
-
-    limit_minutes: if set, only the first N minute bins are processed.
-    skip_minutes: optional set of minute-start timestamps (ms) to skip.
+    all_ts/all_rr: full RR arrays (needed for windowed spectral/ULF/CPC).
+    sorted_minutes/minute_lo/minute_hi/minute_counts: pre-sliced index arrays.
+    Rows are returned with _hf_peak_freq populated and hf_peak_stability=None;
+    the caller is responsible for running _finalize_hf_peak_stability.
+    skip_minutes: set of minute-start timestamps (ms) to skip.
     """
-    if not rr_data:
-        return []
     skip_minutes = skip_minutes or set()
-
     t0 = time.monotonic()
-    n_total = len(rr_data)
-    all_ts = np.fromiter((r[0] for r in rr_data), dtype=np.int64, count=n_total)
-    all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_total)
-
-    minute_of_beat = (all_ts // 60000) * 60000
-    sorted_minutes, minute_lo, minute_counts = np.unique(
-        minute_of_beat, return_index=True, return_counts=True
-    )
-    minute_hi = minute_lo + minute_counts
-    print(f"  Minute binning done ({len(sorted_minutes)} bins): {time.monotonic() - t0:.2f}s")
-
-    total_minutes = len(sorted_minutes)
-    if limit_minutes is not None and limit_minutes > 0:
-        total_minutes = min(total_minutes, int(limit_minutes))
-        print(f"  NOTE: processing limited to first {total_minutes} minute bins (--limit-minutes)")
-
     t_basic = t_spectral = t_ulf = t_dfa = t_cpc = 0.0
-    t_loop_start = time.monotonic()
-    log_interval = max(1, total_minutes // 20)
     n_skipped = 0
     results = []
 
-    for mi in range(total_minutes):
+    n_bins = len(sorted_minutes)
+    for mi in range(n_bins):
         minute_start = int(sorted_minutes[mi])
         if minute_start in skip_minutes:
             n_skipped += 1
@@ -651,18 +643,8 @@ def compute_minute_metrics(rr_data, limit_minutes=None, skip_minutes=None):
         )
         t_cpc += time.monotonic() - t
 
-        if (mi + 1) % log_interval == 0 or mi == total_minutes - 1:
-            elapsed = time.monotonic() - t_loop_start
-            pct = (mi + 1) / total_minutes * 100
-            print(
-                f"  Progress: {mi + 1}/{total_minutes} ({pct:.0f}%) | "
-                f"elapsed {elapsed:.1f}s | "
-                f"basic {t_basic:.1f}s  spectral {t_spectral:.1f}s  "
-                f"ulf {t_ulf:.1f}s  dfa {t_dfa:.1f}s  cpc {t_cpc:.1f}s"
-            )
-
         results.append({
-            "timestamp_ms":  int(minute_start),
+            "timestamp_ms":   minute_start,
             "n_beats":        n_beats,
             **basic,
             "vlf_ms2":        vlf,
@@ -680,22 +662,16 @@ def compute_minute_metrics(rr_data, limit_minutes=None, skip_minutes=None):
             "_hf_peak_freq":  hf_peak_freq,
         })
 
-    if results:
-        _finalize_hf_peak_stability(results, CPC_HALF_WIN_STABILITY_MS)
-
-    elapsed_total = time.monotonic() - t0
-    print(f"  --- Timing summary ---")
-    print(f"  Basic metrics:            {t_basic:.2f}s")
-    print(f"  Spectral (LF/HF/VLF):    {t_spectral:.2f}s")
-    print(f"  ULF (Lomb-Scargle, 2h):  {t_ulf:.2f}s")
-    print(f"  DFA alpha1:               {t_dfa:.2f}s")
-    print(f"  CPC (7-min win, 2 Hz):    {t_cpc:.2f}s")
-    print(f"  Loop total:               {time.monotonic() - t_loop_start:.2f}s")
-    print(f"  compute_minute_metrics:   {elapsed_total:.2f}s")
-    if n_skipped:
-        print(f"  Skipped (already in target): {n_skipped}")
-
-    return results
+    perf = {
+        "t_basic":    t_basic,
+        "t_spectral": t_spectral,
+        "t_ulf":      t_ulf,
+        "t_dfa":      t_dfa,
+        "t_cpc":      t_cpc,
+        "t_loop":     time.monotonic() - t0,
+        "n_skipped":  n_skipped,
+    }
+    return results, perf
 
 
 
@@ -891,8 +867,51 @@ def write_results_pg(pg_conn, rows):
     return total, sample
 
 
+def update_hf_peak_stability_pg(pg_conn, updates):
+    """UPDATE hf_peak_stability for a list of (timestamp_ms, value) pairs.
 
-def main():
+    Used to correct boundary rows from a previous run without overwriting
+    the other columns (which are not available for already-skipped minutes).
+    """
+    if not updates:
+        return
+    stmt = pgsql.SQL(
+        'UPDATE {}.{} SET "HF_PEAK_STABILITY" = %s WHERE {} = %s'
+    ).format(
+        pgsql.Identifier(PG_SCHEMA),
+        pgsql.Identifier(PG_TABLE),
+        pgsql.Identifier(PG_AT_COLUMN),
+    )
+    with pg_conn.cursor() as cur:
+        cur.executemany(
+            stmt,
+            [
+                (stab, datetime.fromtimestamp(ts_ms / 1000.0, tz=timezone.utc))
+                for ts_ms, stab in updates
+            ],
+        )
+    pg_conn.commit()
+
+
+class MinuteBins(NamedTuple):
+    """RR samples grouped into per-minute bins for windowed processing.
+
+    all_ts/all_rr: full int64 RR arrays (windowed metrics index into them).
+    sorted_minutes: unique minute-start timestamps (ms), ascending.
+    minute_lo/minute_hi: [lo, hi) slice bounds into all_ts/all_rr per bin.
+    minute_counts: beat count per bin.
+    total_minutes: number of bins to process (after any --limit-minutes cap).
+    """
+    all_ts: np.ndarray
+    all_rr: np.ndarray
+    sorted_minutes: np.ndarray
+    minute_lo: np.ndarray
+    minute_hi: np.ndarray
+    minute_counts: np.ndarray
+    total_minutes: int
+
+
+def parse_args():
     parser = argparse.ArgumentParser(description="HRV minute aggregation")
     parser.add_argument(
         "--full",
@@ -910,79 +929,284 @@ def main():
             "slice of the data; omit for full production runs."
         ),
     )
-    args = parser.parse_args()
+    return parser.parse_args()
 
-    t_total = time.monotonic()
+
+def plan_incremental_load(pg_conn, full):
+    """Decide the RR-load cutoff and skip-set for this run.
+
+    Returns (min_ts_ms, existing_minutes), where min_ts_ms is the SQLite load
+    cutoff (None = load everything) and existing_minutes is the set of minute
+    starts already stored within the overlap window. Returns None when the
+    source RR table holds no minutes newer than what is already stored
+    (caller should treat None as "nothing to do").
+    """
+    t0 = time.monotonic()
+    max_stored_ms = get_max_stored_minute(pg_conn)
+
+    min_ts_ms = None
+    if full or max_stored_ms is None:
+        existing_minutes = set()
+    else:
+        max_source_ms = get_max_source_rr_ts(pg_conn)
+        if max_source_ms is not None and (max_source_ms // 60000) * 60000 <= max_stored_ms:
+            print(
+                f"Max stored HRV minute: "
+                f"{datetime.fromtimestamp(max_stored_ms / 1000.0, tz=timezone.utc).isoformat()} | "
+                f"source up to date, nothing to do [{time.monotonic() - t0:.2f}s]"
+            )
+            return None
+        min_ts_ms = max_stored_ms - ULF_WINDOW_MS
+        existing_minutes = get_existing_minutes(pg_conn, since_ms=min_ts_ms)
+
+    max_stored_str = (
+        datetime.fromtimestamp(max_stored_ms / 1000.0, tz=timezone.utc).isoformat()
+        if max_stored_ms is not None else "none"
+    )
+    print(
+        f"Max stored HRV minute: {max_stored_str} | "
+        f"overlap window skip-set: {len(existing_minutes)} minutes [{time.monotonic() - t0:.2f}s]"
+    )
+    return min_ts_ms, existing_minutes
+
+
+def load_rr_window(pg_conn, min_ts_ms):
+    """Load RR intervals (incremental cutoff applied) and report the range.
+
+    Returns the rr_data list of (ts_ms, rr_ms) tuples; empty if there is
+    nothing new to process.
+    """
+    t0 = time.monotonic()
+    rr_data = load_rr_data(pg_conn, min_ts_ms=min_ts_ms)
+    if not rr_data:
+        print("No new RR intervals to process.")
+        return rr_data
+
+    span = f" (from ts >= {min_ts_ms})" if min_ts_ms is not None else ""
+    print(f"Loaded {len(rr_data)} RR intervals{span} [{time.monotonic() - t0:.2f}s]")
+    t_start = datetime.fromtimestamp(rr_data[0][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+    t_end = datetime.fromtimestamp(rr_data[-1][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Time range: {t_start} - {t_end}")
+    return rr_data
+
+
+def build_minute_bins(rr_data, n_existing=0, limit_minutes=None) -> MinuteBins:
+    """Bin loaded RR samples by minute. See MinuteBins for the fields.
+
+    n_existing is only used for the progress line (count already in target).
+    """
+    t0 = time.monotonic()
+    n_rr = len(rr_data)
+    all_ts = np.fromiter((r[0] for r in rr_data), dtype=np.int64, count=n_rr)
+    all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_rr)
+    minute_of_beat = (all_ts // 60000) * 60000
+    sorted_minutes, minute_lo, minute_counts = np.unique(
+        minute_of_beat, return_index=True, return_counts=True
+    )
+    minute_hi = minute_lo + minute_counts
+    total_minutes = len(sorted_minutes)
+    if limit_minutes and limit_minutes > 0:
+        total_minutes = min(total_minutes, limit_minutes)
+        print(f"  NOTE: processing limited to first {total_minutes} minute bins (--limit-minutes)")
+    print(
+        f"Minute binning done ({total_minutes} bins, "
+        f"{n_existing} already in target -> skipped) "
+        f"[{time.monotonic() - t0:.2f}s]"
+    )
+    return MinuteBins(
+        all_ts, all_rr, sorted_minutes, minute_lo, minute_hi, minute_counts, total_minutes
+    )
+
+
+def compute_cross_run_peaks(bins: MinuteBins, existing_minutes):
+    """CPC HF-peak frequencies for stored boundary minutes inside the loaded
+    RR range.
+
+    These are the last STABILITY_OVERLAP already-stored minutes that overlap
+    the freshly loaded RR data; their HF_PEAK_STABILITY was computed in a
+    prior run without forward context and is corrected once the first batch
+    provides it. Returns a list of (timestamp_ms, hf_peak_freq) tuples.
+    """
+    rr_min_ms = int(bins.all_ts[0])
+    boundary = sorted(m for m in existing_minutes if m >= rr_min_ms)[-STABILITY_OVERLAP:]
+    peaks = []
+    for minute_ms in boundary:
+        _, hf_peak_freq = _compute_cpc_minute(
+            bins.all_ts, bins.all_rr, minute_ms, CPC_WINDOW_MS
+        )
+        peaks.append((minute_ms, hf_peak_freq))
+    if peaks:
+        print(f"  Cross-run boundary: {len(peaks)} minutes queued for stability update")
+    return peaks
+
+
+def process_batches(pg_conn, bins: MinuteBins, existing_minutes, cross_run_peaks):
+    """Run the batched compute -> finalize -> write pipeline.
+
+    HF_PEAK_STABILITY needs forward context, so each batch's tail
+    (STABILITY_OVERLAP minutes) is deferred and written only once the next
+    batch has extended peak_context. cross_run_peaks are corrected after the
+    first batch. Returns a stats dict for print_summary.
+    """
+    total_minutes = bins.total_minutes
+    all_ts, all_rr = bins.all_ts, bins.all_rr
+    batch_size = max(1, total_minutes // 20)
+
+    acc_perf = {"t_basic": 0.0, "t_spectral": 0.0, "t_ulf": 0.0,
+                "t_dfa": 0.0, "t_cpc": 0.0, "t_loop": 0.0}
+    n_skipped_total = 0
+    t_db_total = 0.0
+    total_rows = 0
+    last_total_db = 0
+    last_sample = None
+    # (timestamp_ms, hf_peak_freq) tuples — grows across all batches; seeded
+    # with the cross-run boundary peaks so their stability can be recomputed.
+    peak_context = list(cross_run_peaks)
+    # Unfinalized rows from the previous batch (written only after the next
+    # batch extends peak_context with future values)
+    prev_tail = []
+    t_outer_start = time.monotonic()
+
+    print(f"  Progress: 0/{total_minutes} (0%) | elapsed 0.0s | db 0.0s")
+
+    for batch_start in range(0, total_minutes, batch_size):
+        batch_end = min(batch_start + batch_size, total_minutes)
+
+        rows, perf = compute_minute_metrics(
+            all_ts, all_rr,
+            bins.sorted_minutes[batch_start:batch_end],
+            bins.minute_lo[batch_start:batch_end],
+            bins.minute_hi[batch_start:batch_end],
+            bins.minute_counts[batch_start:batch_end],
+            skip_minutes=existing_minutes,
+        )
+
+        # Extend context before finalizing prev_tail so it sees current batch
+        peak_context.extend((r["timestamp_ms"], r["_hf_peak_freq"]) for r in rows)
+
+        t_db = time.monotonic()
+
+        # Finalize and write the previous batch's deferred tail now that
+        # current batch rows are in peak_context
+        if prev_tail:
+            _finalize_hf_peak_stability(prev_tail, peak_context, CPC_HALF_WIN_STABILITY_MS)
+            last_total_db, sample = write_results_pg(pg_conn, prev_tail)
+            total_rows += len(prev_tail)
+            if sample:
+                last_sample = sample
+
+        # Correct cross-run boundary rows using the now-extended context
+        if cross_run_peaks:
+            cr_rows = [{"timestamp_ms": ts, "_hf_peak_freq": f}
+                       for ts, f in cross_run_peaks]
+            _finalize_hf_peak_stability(cr_rows, peak_context, CPC_HALF_WIN_STABILITY_MS)
+            update_hf_peak_stability_pg(
+                pg_conn,
+                [(r["timestamp_ms"], r["hf_peak_stability"]) for r in cr_rows],
+            )
+            cross_run_peaks = []
+
+        t_db = time.monotonic() - t_db
+
+        # Split current batch: finalize core now, defer tail to next iteration
+        tail_size = min(STABILITY_OVERLAP, len(rows))
+        core_rows = rows[:len(rows) - tail_size]
+        prev_tail = rows[len(rows) - tail_size:]
+
+        if core_rows:
+            _finalize_hf_peak_stability(core_rows, peak_context, CPC_HALF_WIN_STABILITY_MS)
+            t_db_core = time.monotonic()
+            last_total_db, sample = write_results_pg(pg_conn, core_rows)
+            t_db += time.monotonic() - t_db_core
+            total_rows += len(core_rows)
+            if sample:
+                last_sample = sample
+
+        t_db_total += t_db
+        n_skipped_total += perf["n_skipped"]
+        for k in acc_perf:
+            acc_perf[k] += perf[k]
+
+        elapsed = time.monotonic() - t_outer_start
+        pct = batch_end / total_minutes * 100
+        print(
+            f"  Progress: {batch_end}/{total_minutes} ({pct:.0f}%) | "
+            f"elapsed {elapsed:.1f}s | db {t_db:.1f}s"
+        )
+
+    # Finalize the last batch's tail — no future context available
+    if prev_tail:
+        _finalize_hf_peak_stability(prev_tail, peak_context, CPC_HALF_WIN_STABILITY_MS)
+        t_db = time.monotonic()
+        last_total_db, sample = write_results_pg(pg_conn, prev_tail)
+        t_db = time.monotonic() - t_db
+        t_db_total += t_db
+        total_rows += len(prev_tail)
+        if sample:
+            last_sample = sample
+
+    return {
+        "acc_perf":        acc_perf,
+        "n_skipped_total": n_skipped_total,
+        "t_db_total":      t_db_total,
+        "total_rows":      total_rows,
+        "last_total_db":   last_total_db,
+        "last_sample":     last_sample,
+        "t_outer_start":   t_outer_start,
+    }
+
+
+def print_summary(stats):
+    """Print the timing summary and upsert sample from a process_batches result."""
+    acc_perf = stats["acc_perf"]
+    print(f"  --- Timing summary ---")
+    print(f"  Basic metrics:            {acc_perf['t_basic']:.2f}s")
+    print(f"  Spectral (LF/HF/VLF):    {acc_perf['t_spectral']:.2f}s")
+    print(f"  ULF (Lomb-Scargle, 2h):  {acc_perf['t_ulf']:.2f}s")
+    print(f"  DFA alpha1:               {acc_perf['t_dfa']:.2f}s")
+    print(f"  CPC (7-min win, 2 Hz):    {acc_perf['t_cpc']:.2f}s")
+    print(f"  Compute total:            {acc_perf['t_loop']:.2f}s")
+    print(f"  DB write total:           {stats['t_db_total']:.2f}s")
+    if stats["n_skipped_total"]:
+        print(f"  Skipped (already in target): {stats['n_skipped_total']}")
+    print(
+        f"Upserted {stats['total_rows']} rows into {PG_SCHEMA}.\"{PG_TABLE}\" "
+        f"(total now {stats['last_total_db']}) [{time.monotonic() - stats['t_outer_start']:.2f}s]"
+    )
+    last_sample = stats["last_sample"]
+    if last_sample:
+        ts, n, hr, rmssd, lfhf, dfa = last_sample
+        hr_str = f"{hr:.1f}" if hr is not None else "None"
+        rmssd_str = f"{rmssd:.1f}" if rmssd is not None else "None"
+        print(
+            f"Sample (max RMSSD): ts={ts} n_beats={n} hr={hr_str} "
+            f"rmssd={rmssd_str} lf_hf={lfhf} dfa_alpha1={dfa}"
+        )
+
+
+def main():
+    args = parse_args()
 
     pg_conn = connect_pg()
     try:
         ensure_hrv_table(pg_conn)
 
-        t0 = time.monotonic()
-        max_stored_ms = get_max_stored_minute(pg_conn)
+        plan = plan_incremental_load(pg_conn, args.full)
+        if plan is None:
+            return
+        min_ts_ms, existing_minutes = plan
 
-        min_ts_ms = None
-        if args.full or max_stored_ms is None:
-            existing_minutes = set()
-        else:
-            max_source_ms = get_max_source_rr_ts(pg_conn)
-            if max_source_ms is not None and (max_source_ms // 60000) * 60000 <= max_stored_ms:
-                print(
-                    f"Max stored HRV minute: "
-                    f"{datetime.fromtimestamp(max_stored_ms / 1000.0, tz=timezone.utc).isoformat()} | "
-                    f"source up to date, nothing to do [{time.monotonic() - t0:.2f}s]"
-                )
-                return
-            min_ts_ms = max_stored_ms - ULF_WINDOW_MS
-            existing_minutes = get_existing_minutes(pg_conn, since_ms=min_ts_ms)
-
-        max_stored_str = (
-            datetime.fromtimestamp(max_stored_ms / 1000.0, tz=timezone.utc).isoformat()
-            if max_stored_ms is not None else "none"
-        )
-        print(
-            f"Max stored HRV minute: {max_stored_str} | "
-            f"overlap window skip-set: {len(existing_minutes)} minutes [{time.monotonic() - t0:.2f}s]"
-        )
-
-        t0 = time.monotonic()
-        rr_data = load_rr_data(pg_conn, min_ts_ms=min_ts_ms)
+        rr_data = load_rr_window(pg_conn, min_ts_ms)
         if not rr_data:
-            print("No new RR intervals to process.")
             return
 
-        span = f" (from ts >= {min_ts_ms})" if min_ts_ms is not None else ""
-        print(f"Loaded {len(rr_data)} RR intervals{span} [{time.monotonic() - t0:.2f}s]")
-        t_start = datetime.fromtimestamp(rr_data[0][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
-        t_end = datetime.fromtimestamp(rr_data[-1][0] / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
-        print(f"Time range: {t_start} - {t_end}")
-
-        minute_count = len({(ts // 60000) for ts, _ in rr_data})
-        print(f"Processing up to {minute_count} minute bins "
-              f"({len(existing_minutes)} already in target -> skipped)...")
-
-        t0 = time.monotonic()
-        rows = compute_minute_metrics(
-            rr_data,
-            limit_minutes=args.limit_minutes,
-            skip_minutes=existing_minutes,
+        bins = build_minute_bins(
+            rr_data, n_existing=len(existing_minutes), limit_minutes=args.limit_minutes
         )
-        print(f"Minute metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
 
-        t0 = time.monotonic()
-        total, sample = write_results_pg(pg_conn, rows)
-        print(
-            f"Upserted {len(rows)} rows into {PG_SCHEMA}.\"{PG_TABLE}\" "
-            f"(total now {total}) [{time.monotonic() - t0:.2f}s]"
-        )
-        if sample:
-            ts, n, hr, rmssd, lfhf, dfa = sample
-            hr_str = f"{hr:.1f}" if hr is not None else "None"
-            rmssd_str = f"{rmssd:.1f}" if rmssd is not None else "None"
-            print(
-                f"Sample (max RMSSD): ts={ts} n_beats={n} hr={hr_str} "
-                f"rmssd={rmssd_str} lf_hf={lfhf} dfa_alpha1={dfa}"
-            )
+        cross_run_peaks = compute_cross_run_peaks(bins, existing_minutes)
+        stats = process_batches(pg_conn, bins, existing_minutes, cross_run_peaks)
+        print_summary(stats)
     finally:
         pg_conn.close()
 
