@@ -4,7 +4,7 @@ Gadgetbridge SQLite -> Postgres Replication
 --------------------------------------------
 Downloads the Gadgetbridge SQLite database if missing or stale, refreshes
 the derived HRV_MINUTE_AGGREGATED table, and replicates every non-empty
-SQLite table into a local Postgres instance. The source SQLite database
+SQLite table into a Postgres instance. The source SQLite database
 is never modified by this script.
 
 Column names and types are preserved verbatim from the source (INTEGER
@@ -17,8 +17,8 @@ is replaced in Postgres by a single TIMESTAMPTZ column named
 `<original_lowercase>_at`. The bigint variant is not replicated, so
 the target schema only carries the canonical timestamptz form. The
 unit (ms vs. seconds) is detected from the raw value's magnitude:
-values <= 10^11 are treated as seconds (covers BATTERY_LEVEL,
-XIAOMI_ACTIVITY_SAMPLE), larger values as milliseconds.
+values <= 10^11 are treated as seconds (covers XIAOMI_ACTIVITY_SAMPLE),
+larger values as milliseconds.
 
 Idempotent: database / schema / tables / columns are created on demand,
 rows are upserted via INSERT ... ON CONFLICT on each table's primary key.
@@ -28,22 +28,18 @@ Tables without a primary key are fully replaced (TRUNCATE + INSERT).
 import argparse
 import os
 import re
-import runpy
 import sqlite3
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import gdown
 import psycopg2
 from psycopg2 import sql
 from psycopg2.extras import execute_values
 
 # --- Source -----------------------------------------------------------
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
-DB_REMOTE_URL = "https://drive.google.com/file/d/1yropB-j0couqP8f-XItaAJm3dVsfgc1t/view?usp=sharing"
-EXPIRY_SECONDS = 1 * 3600
 
 # --- Postgres target --------------------------------------------------
 PG_HOST = os.environ["PGHOST"]
@@ -171,11 +167,6 @@ def epoch_to_ts(v):
 
 def ts_at_name(col_name):
     return f"{col_name.lower()}_at"
-
-
-# --- Download --------------------------------------------------------
-def download_db():
-    gdown.download(DB_REMOTE_URL, str(DB_PATH), quiet=False)
 
 
 # --- SQLite introspection --------------------------------------------
@@ -529,7 +520,6 @@ def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
 def main():
     parser = argparse.ArgumentParser(
         description="Replicate Gadgetbridge SQLite into Postgres.",
-        epilog="Unknown flags are forwarded to hrv_aggregate.py.",
     )
     parser.add_argument(
         "--force",
@@ -537,14 +527,7 @@ def main():
         help="Ignore per-table watermarks and fully re-upsert every row. "
              "Use when source rows below the target max have changed.",
     )
-    args, passthrough_args = parser.parse_known_args()
-
-    if not DB_PATH.exists() or (time.time() - DB_PATH.stat().st_ctime) > EXPIRY_SECONDS:
-        download_db()
-
-    if not DB_PATH.exists():
-        print(f"ERROR: database not found: {DB_PATH}")
-        sys.exit(1)
+    args, _ = parser.parse_known_args()
 
     ensure_database()
     sqlite_conn = sqlite3.connect(str(DB_PATH))
@@ -559,7 +542,7 @@ def main():
         ]
         mode_label = "FORCE full" if args.force else "incremental"
         print(
-            f"\nReplicating {len(non_empty)} non-empty tables to "
+            f"Replicating {len(non_empty)} non-empty tables to "
             f"{PG_USER}@{PG_HOST}:{PG_PORT}/{PG_DB}.{PG_SCHEMA}  [{mode_label}]"
         )
 
@@ -576,24 +559,7 @@ def main():
         sqlite_conn.close()
         pg_conn.close()
 
-    hrv_path = str(Path(__file__).parent / "hrv_aggregate.py")
-    forwarded = " ".join(passthrough_args) if passthrough_args else "(none)"
-    print(f"\nReplication done. Running hrv_aggregate.py  [args: {forwarded}]")
-    saved_argv = sys.argv
-    try:
-        sys.argv = [hrv_path, *passthrough_args]
-        runpy.run_path(hrv_path, run_name="__main__")
-    finally:
-        sys.argv = saved_argv
-
-    spectral_path = str(Path(__file__).parent / "spectral_bands_aggregate.py")
-    print(f"\nRunning spectral_bands_aggregate.py  [args: {forwarded}]")
-    saved_argv = sys.argv
-    try:
-        sys.argv = [spectral_path, *passthrough_args]
-        runpy.run_path(spectral_path, run_name="__main__")
-    finally:
-        sys.argv = saved_argv
+    print("Replication done.")
 
 
 if __name__ == "__main__":

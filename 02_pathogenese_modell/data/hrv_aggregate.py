@@ -60,6 +60,7 @@ CPC_MIN_BEATS = 60  # minimum beats required in CPC window
 CPC_NPERSEG = 256              # Welch segment length (128 s at 2 Hz)
 CPC_GAP_THRESHOLD_MS = 2000    # gaps > 2 s get linear (not cubic) interpolation
 CPC_MAX_GAP_FRACTION = 0.30    # reject window if >30% of duration is in gaps
+CPC_WINDOW_MS = 7 * 60 * 1000       # total CPC analysis window
 CPC_HALF_WIN_STABILITY_MS = 150_000  # ±2.5 min for HF_PEAK_STABILITY rolling SD
 
 # Artifact handling lives in the shared rr_quality module:
@@ -413,52 +414,204 @@ def compute_ulf_power(t_ms: np.ndarray, rr: np.ndarray) -> dict | None:
     }
 
 
-def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable_ulf=False, enable_cpc=False, limit_minutes=None, skip_minutes=None):
+def _compute_basic(rr: np.ndarray, ts_minute: np.ndarray) -> dict:
+    """Time-domain and vagal metrics for one minute slice.
+
+    rr: float array of RR intervals (ms) for the minute
+    ts_minute: int64 array of beat timestamps (ms) for the minute
+    """
+    mean_rr = float(rr.mean())
+    rmssd, sdnn, pnn50 = nn_time_domain(ts_minute, rr)
+
+    if rmssd is not None:
+        ln_rmssd = math.log(rmssd) if rmssd > 0 else None
+        vagal_index = (
+            ln_rmssd / math.log(mean_rr)
+            if (ln_rmssd is not None and mean_rr > 1) else None
+        )
+        rmssd_pct = rmssd / mean_rr * 100.0 if mean_rr > 0 else None
+        rmssd_sdnn_ratio = rmssd / sdnn if sdnn and sdnn > 0 else None
+        vagal_balance = (
+            (rmssd / sdnn) / VAGAL_BALANCE_REF
+            if (sdnn and sdnn > 0 and rmssd > 0) else None
+        )
+    else:
+        ln_rmssd = vagal_index = rmssd_pct = rmssd_sdnn_ratio = vagal_balance = None
+
+    return {
+        "hr_bpm":          60000.0 / mean_rr if mean_rr > 0 else None,
+        "avg_rr_ms":       mean_rr,
+        "min_rr_ms":       int(rr.min()),
+        "max_rr_ms":       int(rr.max()),
+        "stddev_rr_ms":    float(rr.std(ddof=0)),
+        "rmssd_ms":        rmssd,
+        "ln_rmssd":        ln_rmssd,
+        "vagal_index":     vagal_index,
+        "rmssd_pct":       rmssd_pct,
+        "sdnn_ms":         sdnn,
+        "rmssd_sdnn_ratio": rmssd_sdnn_ratio,
+        "vagal_balance":   vagal_balance,
+        "pnn50":           pnn50,
+    }
+
+
+def _compute_spectral(
+    all_ts: np.ndarray,
+    all_rr: np.ndarray,
+    minute_start: int,
+    lf_hf_win_ms: int,
+    vlf_win_ms: int,
+) -> tuple:
+    """LF, HF, VLF band power + LF/HF ratio + B7B8 axes.
+
+    LF and HF share one Welch PSD on lf_hf_win_ms (centered at T+30s,
+    i.e. 2/5 before, 3/5 after minute_start). VLF uses vlf_win_ms with
+    the same T+30s convention (7/15 before, 8/15 after). B7B8 axes are
+    derived from the three bands internally.
+
+    Returns (lf, hf, vlf, lfhf, b7b8_dom, b7b8_off) — all may be None.
+    """
+    lf_hf_before = lf_hf_win_ms * 2 // 5
+    i_lo = int(np.searchsorted(all_ts, minute_start - lf_hf_before, side="left"))
+    i_hi = int(np.searchsorted(all_ts, minute_start + (lf_hf_win_ms - lf_hf_before), side="left"))
+
+    lf = hf = lfhf = None
+    if (i_hi - i_lo) >= LFHF_MIN_BEATS:
+        bands = compute_band_power(
+            all_rr[i_lo:i_hi], [('lf', 0.04, 0.15), ('hf', 0.15, 0.40)]
+        )
+        lf, hf = bands['lf'], bands['hf']
+        lfhf = lf / hf if (lf is not None and hf is not None and hf > 0) else None
+
+    vlf_before = vlf_win_ms * 7 // 15
+    i15_lo = int(np.searchsorted(all_ts, minute_start - vlf_before, side="left"))
+    i15_hi = int(np.searchsorted(all_ts, minute_start + (vlf_win_ms - vlf_before), side="left"))
+
+    vlf = None
+    if (i15_hi - i15_lo) >= VLF_MIN_BEATS:
+        vlf = compute_band_power(
+            all_rr[i15_lo:i15_hi], [('vlf', 0.0033, 0.04)], detrend="linear"
+        )['vlf']
+
+    b7b8_dom = b7b8_off = None
+    if lf is not None and hf is not None and vlf is not None:
+        total_power = lf + hf + vlf
+        if total_power >= TOTAL_MIN:
+            lf_plus_hf = lf + hf
+            b7b8_dom = 0.0 if lf_plus_hf == 0 else (hf - lf) / lf_plus_hf
+            b7b8_off = vlf / total_power
+
+    return lf, hf, vlf, lfhf, b7b8_dom, b7b8_off
+
+
+def _compute_ulf(
+    all_ts: np.ndarray,
+    all_rr: np.ndarray,
+    minute_start: int,
+    win_ms: int,
+) -> tuple:
+    """ULF band powers from a symmetric window around minute_start.
+
+    Returns (ulf_ms2, ulf1_ms2, ulf2_ms2) — all may be None.
+    """
+    half = win_ms // 2
+    i_lo = int(np.searchsorted(all_ts, minute_start - half, side="left"))
+    i_hi = int(np.searchsorted(all_ts, minute_start + half, side="left"))
+
+    if (i_hi - i_lo) < ULF_MIN_BEATS:
+        return None, None, None
+
+    res = compute_ulf_power(
+        all_ts[i_lo:i_hi].astype(np.int64),
+        all_rr[i_lo:i_hi].astype(float),
+    )
+    if res is None:
+        return None, None, None
+    return res["ulf_ms2"], res["ulf1_ms2"], res["ulf2_ms2"]
+
+
+def _compute_dfa(all_rr: np.ndarray, hi: int, win_beats: int) -> float | None:
+    """DFA alpha1 from the last win_beats RR intervals ending at index hi."""
+    start = hi - win_beats if hi >= win_beats else 0
+    return compute_dfa_alpha1(all_rr[start:hi])
+
+
+def _compute_cpc_minute(
+    all_ts: np.ndarray,
+    all_rr: np.ndarray,
+    minute_start: int,
+    win_ms: int,
+) -> tuple:
+    """CPC LFC-ratio and HF peak frequency from a window centered at T+30s.
+
+    Window placement: 3/7 before, 4/7 after minute_start.
+    Returns (cpc_lfc_ratio, hf_peak_freq) — both may be None.
+    """
+    before = win_ms * 3 // 7
+    i_lo = int(np.searchsorted(all_ts, minute_start - before, side="left"))
+    i_hi = int(np.searchsorted(all_ts, minute_start + (win_ms - before), side="left"))
+
+    if (i_hi - i_lo) < CPC_MIN_BEATS:
+        return None, None
+    return compute_cpc_metrics(all_ts[i_lo:i_hi], all_rr[i_lo:i_hi])
+
+
+def _finalize_hf_peak_stability(results: list, half_win_ms: int) -> None:
+    """Compute HF_PEAK_STABILITY in-place as rolling SD over ±half_win_ms.
+
+    Reads _hf_peak_freq from each result row, fills hf_peak_stability,
+    and removes the temporary _hf_peak_freq key.
+    """
+    ts_arr = np.array([r["timestamp_ms"] for r in results], dtype=np.int64)
+    peak_arr = np.array(
+        [r["_hf_peak_freq"] if r["_hf_peak_freq"] is not None else np.nan
+         for r in results],
+        dtype=float,
+    )
+    for r in results:
+        in_win = np.abs(ts_arr - r["timestamp_ms"]) <= half_win_ms
+        valid = peak_arr[in_win]
+        valid = valid[~np.isnan(valid)]
+        r["hf_peak_stability"] = float(np.std(valid, ddof=0)) if len(valid) >= 2 else None
+        del r["_hf_peak_freq"]
+
+
+def compute_minute_metrics(rr_data, limit_minutes=None, skip_minutes=None):
     """Aggregate HRV metrics per minute.
 
-    limit_minutes: if set, only the first N minute bins are processed.
-    Purpose: performance and integrity test runs on a small slice of the
-    data, without having to crunch through the full dataset. Production: None.
+    Iterates over minute bins, delegates all metric computation to helpers,
+    and assembles the result list.
 
-    skip_minutes: optional set of minute-start timestamps (ms) already
-    present in the target; those bins are skipped so the script only
-    recomputes new minutes.
+    limit_minutes: if set, only the first N minute bins are processed.
+    skip_minutes: optional set of minute-start timestamps (ms) to skip.
     """
     if not rr_data:
         return []
     skip_minutes = skip_minutes or set()
 
     t0 = time.monotonic()
-
     n_total = len(rr_data)
     all_ts = np.fromiter((r[0] for r in rr_data), dtype=np.int64, count=n_total)
     all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_total)
 
-    # Minute binning: data is sorted by TIMESTAMP -> contiguous slices per minute
     minute_of_beat = (all_ts // 60000) * 60000
     sorted_minutes, minute_lo, minute_counts = np.unique(
         minute_of_beat, return_index=True, return_counts=True
     )
     minute_hi = minute_lo + minute_counts
-
     print(f"  Minute binning done ({len(sorted_minutes)} bins): {time.monotonic() - t0:.2f}s")
 
-    results = []
     total_minutes = len(sorted_minutes)
     if limit_minutes is not None and limit_minutes > 0:
         total_minutes = min(total_minutes, int(limit_minutes))
         print(f"  NOTE: processing limited to first {total_minutes} minute bins (--limit-minutes)")
-    time_basic = 0.0
-    time_lf = 0.0
-    time_hf = 0.0
-    time_vlf = 0.0
-    time_ulf = 0.0
-    time_dfa = 0.0
-    time_cpc = 0.0
-    t_loop_start = time.monotonic()
-    log_interval = max(1, total_minutes // 20)  # ~20 progress updates
 
+    t_basic = t_spectral = t_ulf = t_dfa = t_cpc = 0.0
+    t_loop_start = time.monotonic()
+    log_interval = max(1, total_minutes // 20)
     n_skipped = 0
+    results = []
+
     for mi in range(total_minutes):
         minute_start = int(sorted_minutes[mi])
         if minute_start in skip_minutes:
@@ -472,130 +625,31 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
         lo = int(minute_lo[mi])
         hi = int(minute_hi[mi])
 
-        t_step = time.monotonic()
-        rr = all_rr[lo:hi].astype(float)
-        ts_minute = all_ts[lo:hi]
-        # Raw descriptors of what was actually measured this minute.
-        mean_rr = float(rr.mean())
-        hr_bpm = 60000.0 / mean_rr if mean_rr > 0 else None
-        min_rr = int(rr.min())
-        max_rr = int(rr.max())
-        std_rr = float(rr.std(ddof=0))  # population stddev, raw
+        t = time.monotonic()
+        basic = _compute_basic(all_rr[lo:hi].astype(float), all_ts[lo:hi])
+        t_basic += time.monotonic() - t
 
-        # Time-domain HRV metrics on normal-to-normal intervals
-        # (rr_quality.nn_time_domain): suspicious beats (implausible RR /
-        # non-physiological jumps) and the difference pairs touching them
-        # are excluded, and the whole minute is NULLed when too corrupt to
-        # trust. This removes the residual signal-corruption peaks in
-        # RMSSD/pNN50/SDNN that Layer 2 (block) and the ±500 ms median rule
-        # do not catch. NULL (None) when the minute fails the quality gate.
-        rmssd, sdnn, pnn50 = nn_time_domain(ts_minute, rr)
+        t = time.monotonic()
+        lf, hf, vlf, lfhf, b7b8_dom, b7b8_off = _compute_spectral(
+            all_ts, all_rr, minute_start, LFHF_WINDOW_MS, VLF_WINDOW_MS
+        )
+        t_spectral += time.monotonic() - t
 
-        if rmssd is not None:
-            ln_rmssd = math.log(rmssd) if rmssd > 0 else None
-            vagal_index = (
-                ln_rmssd / math.log(mean_rr)
-                if (ln_rmssd is not None and mean_rr > 1)
-                else None
-            )
-            rmssd_pct = rmssd / mean_rr * 100.0 if mean_rr > 0 else None
-            rmssd_sdnn_ratio = rmssd / sdnn if sdnn and sdnn > 0 else None
-            vagal_balance = (
-                (rmssd / sdnn) / VAGAL_BALANCE_REF
-                if (sdnn and sdnn > 0 and rmssd > 0) else None
-            )
-        else:
-            ln_rmssd = vagal_index = rmssd_pct = None
-            rmssd_sdnn_ratio = vagal_balance = None
+        t = time.monotonic()
+        ulf_ms2, ulf1_ms2, ulf2_ms2 = _compute_ulf(
+            all_ts, all_rr, minute_start, ULF_WINDOW_MS
+        )
+        t_ulf += time.monotonic() - t
 
-        time_basic += time.monotonic() - t_step
+        t = time.monotonic()
+        dfa_alpha1 = _compute_dfa(all_rr, hi, DFA_WINDOW)
+        t_dfa += time.monotonic() - t
 
-        # LF/HF: 5-min window; VLF: 15-min window (band-specific resolution)
-        vlf, lf, hf, lfhf = None, None, None, None
-        if enable_lf_hf:
-            # --- LF from 5-min window (searchsorted: O(log N) instead of O(N) mask) ---
-            win5_start = minute_start - 2 * 60 * 1000
-            win5_end = minute_start + 3 * 60 * 1000
-            i5_lo = int(np.searchsorted(all_ts, win5_start, side="left"))
-            i5_hi = int(np.searchsorted(all_ts, win5_end, side="left"))
-            win5_ok = (i5_hi - i5_lo) >= LFHF_MIN_BEATS
-            rr_5min = all_rr[i5_lo:i5_hi] if win5_ok else None
-
-            t_lf = time.monotonic()
-            if win5_ok:
-                lf = compute_band_power(rr_5min, [('lf', 0.04, 0.15)])['lf']
-            time_lf += time.monotonic() - t_lf
-
-            t_hf = time.monotonic()
-            if win5_ok:
-                hf = compute_band_power(rr_5min, [('hf', 0.15, 0.40)])['hf']
-            time_hf += time.monotonic() - t_hf
-
-            # --- VLF from 15-min window ---
-            t_vlf = time.monotonic()
-            win15_start = minute_start - 7 * 60 * 1000
-            win15_end = minute_start + 8 * 60 * 1000
-            i15_lo = int(np.searchsorted(all_ts, win15_start, side="left"))
-            i15_hi = int(np.searchsorted(all_ts, win15_end, side="left"))
-            if (i15_hi - i15_lo) >= VLF_MIN_BEATS:
-                vlf = compute_band_power(
-                    all_rr[i15_lo:i15_hi], [('vlf', 0.0033, 0.04)],
-                    detrend="linear",
-                )['vlf']
-            time_vlf += time.monotonic() - t_vlf
-
-            lfhf = lf / hf if (lf is not None and hf is not None and hf > 0) else None
-
-        # B7/B8 state axes (from existing 5-min LF/HF + 15-min VLF window).
-        # Both NULL if any band missing or total power below TOTAL_MIN.
-        b7b8_dom, b7b8_off = None, None
-        if lf is not None and hf is not None and vlf is not None:
-            total_power = lf + hf + vlf
-            if total_power >= TOTAL_MIN:
-                lf_plus_hf = lf + hf
-                b7b8_dom = 0.0 if lf_plus_hf == 0 else (hf - lf) / lf_plus_hf
-                b7b8_off = vlf / total_power
-
-        # ULF: 120-min sliding window, Lomb-Scargle on irregular RR samples
-        ulf_ms2, ulf1_ms2, ulf2_ms2 = None, None, None
-        if enable_ulf:
-            t_ulf = time.monotonic()
-            win_ulf_start = minute_start - 60 * 60 * 1000
-            win_ulf_end = minute_start + 60 * 60 * 1000
-            i_ulf_lo = int(np.searchsorted(all_ts, win_ulf_start, side="left"))
-            i_ulf_hi = int(np.searchsorted(all_ts, win_ulf_end, side="left"))
-            if (i_ulf_hi - i_ulf_lo) >= ULF_MIN_BEATS:
-                ulf_res = compute_ulf_power(
-                    all_ts[i_ulf_lo:i_ulf_hi].astype(np.int64),
-                    all_rr[i_ulf_lo:i_ulf_hi].astype(float),
-                )
-                if ulf_res is not None:
-                    ulf_ms2 = ulf_res["ulf_ms2"]
-                    ulf1_ms2 = ulf_res["ulf1_ms2"]
-                    ulf2_ms2 = ulf_res["ulf2_ms2"]
-            time_ulf += time.monotonic() - t_ulf
-
-        # DFA: last 200 RR before the end of the minute (optional)
-        dfa_alpha1 = None
-        if enable_dfa:
-            t_dfa = time.monotonic()
-            start_idx = hi - DFA_WINDOW if hi >= DFA_WINDOW else 0
-            dfa_alpha1 = compute_dfa_alpha1(all_rr[start_idx:hi])
-            time_dfa += time.monotonic() - t_dfa
-
-        # CPC: 7-min window centered on minute_start (optional)
-        cpc_lfc_ratio = None
-        _hf_peak_freq = None
-        if enable_cpc:
-            t_cpc = time.monotonic()
-            # [T-3min, T+4min): center T+30s, matching LF/HF/VLF convention
-            i_cpc_lo = int(np.searchsorted(all_ts, minute_start - 3 * 60 * 1000, side="left"))
-            i_cpc_hi = int(np.searchsorted(all_ts, minute_start + 4 * 60 * 1000, side="left"))
-            if (i_cpc_hi - i_cpc_lo) >= CPC_MIN_BEATS:
-                cpc_lfc_ratio, _hf_peak_freq = compute_cpc_metrics(
-                    all_ts[i_cpc_lo:i_cpc_hi], all_rr[i_cpc_lo:i_cpc_hi]
-                )
-            time_cpc += time.monotonic() - t_cpc
+        t = time.monotonic()
+        cpc_lfc_ratio, hf_peak_freq = _compute_cpc_minute(
+            all_ts, all_rr, minute_start, CPC_WINDOW_MS
+        )
+        t_cpc += time.monotonic() - t
 
         if (mi + 1) % log_interval == 0 or mi == total_minutes - 1:
             elapsed = time.monotonic() - t_loop_start
@@ -603,148 +657,46 @@ def compute_minute_metrics(rr_data, enable_lf_hf=False, enable_dfa=False, enable
             print(
                 f"  Progress: {mi + 1}/{total_minutes} ({pct:.0f}%) | "
                 f"elapsed {elapsed:.1f}s | "
-                f"basic {time_basic:.1f}s  lf {time_lf:.1f}s  hf {time_hf:.1f}s  "
-                f"vlf {time_vlf:.1f}s  ulf {time_ulf:.1f}s  dfa {time_dfa:.1f}s  "
-                f"cpc {time_cpc:.1f}s"
+                f"basic {t_basic:.1f}s  spectral {t_spectral:.1f}s  "
+                f"ulf {t_ulf:.1f}s  dfa {t_dfa:.1f}s  cpc {t_cpc:.1f}s"
             )
 
         results.append({
-            "timestamp_ms": int(minute_start),
-            "n_beats": int(n_beats),
-            "hr_bpm": hr_bpm,
-            "avg_rr_ms": mean_rr,
-            "min_rr_ms": min_rr,
-            "max_rr_ms": max_rr,
-            "stddev_rr_ms": std_rr,
-            "rmssd_ms": rmssd,
-            "ln_rmssd": ln_rmssd,
-            "vagal_index": vagal_index,
-            "rmssd_pct": rmssd_pct,
-            "sdnn_ms": sdnn,
-            "rmssd_sdnn_ratio": rmssd_sdnn_ratio,
-            "vagal_balance": vagal_balance,
-            "pnn50": pnn50,
-            "vlf_ms2": vlf,
-            "lf_ms2": lf,
-            "hf_ms2": hf,
-            "ulf_ms2": ulf_ms2,
-            "ulf1_ms2": ulf1_ms2,
-            "ulf2_ms2": ulf2_ms2,
-            "lf_hf_ratio": lfhf,
-            "b7b8_dom": b7b8_dom,
-            "b7b8_off": b7b8_off,
-            "dfa_alpha1": dfa_alpha1,
-            "cpc_lfc_ratio": cpc_lfc_ratio,
-            "hf_peak_stability": None,   # filled in post-loop pass
-            "_hf_peak_freq": _hf_peak_freq,
+            "timestamp_ms":  int(minute_start),
+            "n_beats":        n_beats,
+            **basic,
+            "vlf_ms2":        vlf,
+            "lf_ms2":         lf,
+            "hf_ms2":         hf,
+            "ulf_ms2":        ulf_ms2,
+            "ulf1_ms2":       ulf1_ms2,
+            "ulf2_ms2":       ulf2_ms2,
+            "lf_hf_ratio":    lfhf,
+            "b7b8_dom":       b7b8_dom,
+            "b7b8_off":       b7b8_off,
+            "dfa_alpha1":     dfa_alpha1,
+            "cpc_lfc_ratio":  cpc_lfc_ratio,
+            "hf_peak_stability": None,
+            "_hf_peak_freq":  hf_peak_freq,
         })
 
-    # HF_PEAK_STABILITY: rolling SD of per-minute HF peak over ±2.5 min window
-    if enable_cpc and results:
-        ts_arr = np.array([r["timestamp_ms"] for r in results], dtype=np.int64)
-        peak_arr = np.array(
-            [r["_hf_peak_freq"] if r["_hf_peak_freq"] is not None else np.nan
-             for r in results],
-            dtype=float,
-        )
-        for r in results:
-            t_ms = r["timestamp_ms"]
-            in_win = np.abs(ts_arr - t_ms) <= CPC_HALF_WIN_STABILITY_MS
-            vals = peak_arr[in_win]
-            valid = vals[~np.isnan(vals)]
-            r["hf_peak_stability"] = float(np.std(valid, ddof=0)) if len(valid) >= 2 else None
-            del r["_hf_peak_freq"]
-    else:
-        for r in results:
-            r.pop("_hf_peak_freq", None)
+    if results:
+        _finalize_hf_peak_stability(results, CPC_HALF_WIN_STABILITY_MS)
 
     elapsed_total = time.monotonic() - t0
     print(f"  --- Timing summary ---")
-    print(f"  Prep (diffs + binning):  included above")
-    print(f"  Basic metrics total:     {time_basic:.2f}s")
-    if enable_lf_hf:
-        print(f"  LF  (Welch, 5-min win):  {time_lf:.2f}s")
-        print(f"  HF  (Welch, 5-min win):  {time_hf:.2f}s")
-        print(f"  VLF (Welch, 15-min win): {time_vlf:.2f}s")
-    else:
-        print(f"  LF/HF/VLF (Welch):       disabled")
-    if enable_ulf:
-        print(f"  ULF (Lomb-Scargle, 2h):  {time_ulf:.2f}s")
-    else:
-        print(f"  ULF (Lomb-Scargle):      disabled")
-    if enable_dfa:
-        print(f"  DFA alpha1:              {time_dfa:.2f}s")
-    else:
-        print(f"  DFA alpha1:              disabled")
-    if enable_cpc:
-        print(f"  CPC (7-min win, 2 Hz):   {time_cpc:.2f}s")
-    else:
-        print(f"  CPC:                     disabled")
-    print(f"  Loop total:              {time.monotonic() - t_loop_start:.2f}s")
-    print(f"  compute_minute_metrics:  {elapsed_total:.2f}s")
+    print(f"  Basic metrics:            {t_basic:.2f}s")
+    print(f"  Spectral (LF/HF/VLF):    {t_spectral:.2f}s")
+    print(f"  ULF (Lomb-Scargle, 2h):  {t_ulf:.2f}s")
+    print(f"  DFA alpha1:               {t_dfa:.2f}s")
+    print(f"  CPC (7-min win, 2 Hz):    {t_cpc:.2f}s")
+    print(f"  Loop total:               {time.monotonic() - t_loop_start:.2f}s")
+    print(f"  compute_minute_metrics:   {elapsed_total:.2f}s")
     if n_skipped:
         print(f"  Skipped (already in target): {n_skipped}")
 
     return results
 
-
-def compute_cpc_only(rr_data, target_minutes_ms):
-    """Compute only CPC metrics for the specified minute markers.
-
-    Backfill path: processes all target minutes without skipping any.
-    Returns rows with {timestamp_ms, cpc_lfc_ratio, hf_peak_stability}
-    for use with update_cpc_results().
-    """
-    if not rr_data or not target_minutes_ms:
-        return []
-
-    n_total = len(rr_data)
-    all_ts = np.fromiter((r[0] for r in rr_data), dtype=np.int64, count=n_total)
-    all_rr = np.fromiter((r[1] for r in rr_data), dtype=np.int64, count=n_total)
-
-    target_sorted = sorted(target_minutes_ms)
-    total = len(target_sorted)
-    log_interval = max(1, total // 20)
-    t0 = time.monotonic()
-
-    rows = []
-    for i, minute_start in enumerate(target_sorted):
-        # [T-3min, T+4min): center T+30s, matching LF/HF/VLF convention
-        i_lo = int(np.searchsorted(all_ts, minute_start - 3 * 60 * 1000, side="left"))
-        i_hi = int(np.searchsorted(all_ts, minute_start + 4 * 60 * 1000, side="left"))
-
-        cpc_lfc_ratio, hf_peak_freq = None, None
-        if (i_hi - i_lo) >= CPC_MIN_BEATS:
-            cpc_lfc_ratio, hf_peak_freq = compute_cpc_metrics(
-                all_ts[i_lo:i_hi], all_rr[i_lo:i_hi]
-            )
-
-        rows.append({
-            "timestamp_ms": minute_start,
-            "cpc_lfc_ratio": cpc_lfc_ratio,
-            "_hf_peak_freq": hf_peak_freq,
-        })
-
-        if (i + 1) % log_interval == 0 or i == total - 1:
-            print(f"  CPC backfill: {i + 1}/{total} ({(i+1)/total*100:.0f}%) "
-                  f"[{time.monotonic() - t0:.1f}s]")
-
-    # Rolling HF_PEAK_STABILITY over ±2.5 min
-    ts_arr = np.array([r["timestamp_ms"] for r in rows], dtype=np.int64)
-    peak_arr = np.array(
-        [r["_hf_peak_freq"] if r["_hf_peak_freq"] is not None else np.nan
-         for r in rows],
-        dtype=float,
-    )
-    for r in rows:
-        t_ms = r["timestamp_ms"]
-        in_win = np.abs(ts_arr - t_ms) <= CPC_HALF_WIN_STABILITY_MS
-        vals = peak_arr[in_win]
-        valid = vals[~np.isnan(vals)]
-        r["hf_peak_stability"] = float(np.std(valid, ddof=0)) if len(valid) >= 2 else None
-        del r["_hf_peak_freq"]
-
-    return rows
 
 
 PG_COLUMNS = [
@@ -841,10 +793,8 @@ def get_existing_minutes(pg_conn, since_ms=None):
     """Return set of minute starts (ms epoch, int) already stored.
 
     since_ms: if given, only return minutes >= that timestamp (ms epoch).
-    For normal incremental runs pass the RR load cutoff so the result set
-    covers only the overlap window (≤ largest analysis window), not the
-    full history.  Pass None for --cpc-only backfill which must cover all
-    stored rows.
+    For incremental runs pass the RR load cutoff so the result set covers
+    only the overlap window (≤ largest analysis window), not the full history.
 
     Internal logic still keys minutes by integer ms; the on-disk PK is a
     timestamptz, so we project epoch-ms via EXTRACT.
@@ -941,75 +891,14 @@ def write_results_pg(pg_conn, rows):
     return total, sample
 
 
-def update_cpc_results(pg_conn, rows):
-    """UPDATE CPC_LFC_RATIO and HF_PEAK_STABILITY for existing rows.
-
-    Used by --cpc-only backfill mode; leaves all other columns untouched.
-    Returns number of updated rows.
-    """
-    if not rows:
-        return 0
-    update_stmt = (
-        f'UPDATE "{PG_SCHEMA}"."{PG_TABLE}" '
-        f'SET "CPC_LFC_RATIO" = %s, "HF_PEAK_STABILITY" = %s '
-        f'WHERE "{PG_AT_COLUMN}" = %s'
-    )
-    tuples = [
-        (
-            r["cpc_lfc_ratio"],
-            r["hf_peak_stability"],
-            datetime.fromtimestamp(r["timestamp_ms"] / 1000.0, tz=timezone.utc),
-        )
-        for r in rows
-    ]
-    with pg_conn.cursor() as cur:
-        cur.executemany(update_stmt, tuples)
-    pg_conn.commit()
-    return len(rows)
-
 
 def main():
     parser = argparse.ArgumentParser(description="HRV minute aggregation")
-    parser.add_argument(
-        "--lf-hf",
-        action="store_false",
-        help="Enable LF/HF/VLF spectral analysis via cubic-spline resampling + Welch PSD (default: off, slow)",
-    )
-    parser.add_argument(
-        "--dfa",
-        action="store_false",
-        help="Enable DFA alpha1 computation (default: off)",
-    )
-    parser.add_argument(
-        "--ulf",
-        action="store_false",
-        help="Enable ULF spectral analysis (2 h sliding window, Lomb-Scargle on "
-             "irregular RR samples). Outputs ULF_MS2 + ULF1_MS2 + ULF2_MS2. "
-             "Default: off (very slow).",
-    )
     parser.add_argument(
         "--full",
         action="store_true",
         help="Full recompute: load all RR data from SQLite (no incremental "
              "cutoff) and overwrite all minutes in Postgres (no skip).",
-    )
-    parser.add_argument(
-        "--cpc",
-        action="store_false",
-        help=(
-            "Enable CPC (Cardiopulmonary Coupling) metrics: CPC_LFC_RATIO and "
-            "HF_PEAK_STABILITY. Uses a 7-min sliding window resampled to 2 Hz. "
-            "Default: off."
-        ),
-    )
-    parser.add_argument(
-        "--cpc-only",
-        action="store_true",
-        help=(
-            "Backfill mode: recompute only CPC_LFC_RATIO and HF_PEAK_STABILITY "
-            "for all existing rows. Does not touch other columns. "
-            "Loads full RR history (ignores incremental cutoff)."
-        ),
     )
     parser.add_argument(
         "--limit-minutes",
@@ -1029,25 +918,6 @@ def main():
     try:
         ensure_hrv_table(pg_conn)
 
-        if args.cpc_only:
-            existing_minutes = get_existing_minutes(pg_conn)
-            print(f"CPC backfill: {len(existing_minutes)} existing rows to update")
-            t0 = time.monotonic()
-            rr_data = load_rr_data(pg_conn)
-            if not rr_data:
-                print("No RR data found.")
-                print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
-                return
-            print(f"Loaded {len(rr_data)} RR intervals [{time.monotonic() - t0:.2f}s]")
-            t0 = time.monotonic()
-            rows = compute_cpc_only(rr_data, existing_minutes)
-            print(f"CPC metrics computed: {len(rows)} rows [{time.monotonic() - t0:.2f}s]")
-            t0 = time.monotonic()
-            n_updated = update_cpc_results(pg_conn, rows)
-            print(f"Updated {n_updated} rows [{time.monotonic() - t0:.2f}s]")
-            print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
-            return
-
         t0 = time.monotonic()
         max_stored_ms = get_max_stored_minute(pg_conn)
 
@@ -1062,7 +932,6 @@ def main():
                     f"{datetime.fromtimestamp(max_stored_ms / 1000.0, tz=timezone.utc).isoformat()} | "
                     f"source up to date, nothing to do [{time.monotonic() - t0:.2f}s]"
                 )
-                print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
                 return
             min_ts_ms = max_stored_ms - ULF_WINDOW_MS
             existing_minutes = get_existing_minutes(pg_conn, since_ms=min_ts_ms)
@@ -1080,7 +949,6 @@ def main():
         rr_data = load_rr_data(pg_conn, min_ts_ms=min_ts_ms)
         if not rr_data:
             print("No new RR intervals to process.")
-            print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
             return
 
         span = f" (from ts >= {min_ts_ms})" if min_ts_ms is not None else ""
@@ -1096,10 +964,6 @@ def main():
         t0 = time.monotonic()
         rows = compute_minute_metrics(
             rr_data,
-            enable_lf_hf=args.lf_hf,
-            enable_dfa=args.dfa,
-            enable_ulf=args.ulf,
-            enable_cpc=args.cpc,
             limit_minutes=args.limit_minutes,
             skip_minutes=existing_minutes,
         )
@@ -1111,8 +975,6 @@ def main():
             f"Upserted {len(rows)} rows into {PG_SCHEMA}.\"{PG_TABLE}\" "
             f"(total now {total}) [{time.monotonic() - t0:.2f}s]"
         )
-        print(f"Total runtime: {time.monotonic() - t_total:.2f}s")
-
         if sample:
             ts, n, hr, rmssd, lfhf, dfa = sample
             hr_str = f"{hr:.1f}" if hr is not None else "None"

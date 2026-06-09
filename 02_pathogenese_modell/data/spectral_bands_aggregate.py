@@ -58,6 +58,7 @@ PG_PASSWORD = os.environ["PGPASSWORD"]
 PG_SCHEMA = "public"
 PG_TABLE = "HRV_SPECTRAL_BANDS_MINUTE"
 DEVICE_ID = 2  # H9Z 40647
+FLUSH_EVERY = 2000
 
 # --- IBI sanity (matches hrv_aggregate.py) --------------------------
 MIN_RR = 300
@@ -298,6 +299,77 @@ def write_rows(pg_conn, rows):
 
 
 # -------------------------------------------------------------------
+# Pipeline helpers
+# -------------------------------------------------------------------
+def build_freq_grids():
+    """Precompute per-tier frequency grids and band-edge lookups from constants."""
+    band_dict = {b[0]: (b[1], b[2]) for b in BANDS}
+    tier_freq_grids = []
+    tier_band_indices = []
+    for (_, _, fmin, fmax, nfreq, _, band_names) in TIER_WINDOWS:
+        tier_freq_grids.append(np.linspace(fmin, fmax, nfreq))
+        tier_band_indices.append({n: band_dict[n] for n in band_names})
+    return tier_freq_grids, tier_band_indices
+
+
+def process_minutes(pg, ts, rr, existing, sorted_minutes, minute_counts,
+                    tier_freq_grids, tier_band_indices, limit_minutes=None):
+    """Compute band power for each new minute and upsert into Postgres.
+
+    Returns (n_done, n_skipped, n_written).
+    """
+    total_minutes = len(sorted_minutes)
+    if limit_minutes:
+        total_minutes = min(total_minutes, limit_minutes)
+        print(f"NOTE: limited to first {total_minutes} minutes")
+
+    print(f"Processing up to {total_minutes:,} minute bins "
+          f"({len(existing):,} skipped)...")
+
+    rows_buffer = []
+    n_done = 0
+    n_skipped = 0
+    n_written = 0
+    log_interval = max(1, total_minutes // 20)
+    t_loop = time.monotonic()
+
+    for mi in range(total_minutes):
+        minute_start = int(sorted_minutes[mi])
+        if minute_start in existing:
+            n_skipped += 1
+            continue
+        n_beats = int(minute_counts[mi])
+
+        band_values = compute_minute(
+            ts, rr, minute_start,
+            tier_freq_grids, tier_band_indices, n_beats,
+        )
+        row = {"timestamp_ms": minute_start, "n_beats": n_beats}
+        row.update(band_values)
+        rows_buffer.append(row)
+        n_done += 1
+
+        if (mi + 1) % log_interval == 0 or mi == total_minutes - 1:
+            elapsed = time.monotonic() - t_loop
+            pct = (mi + 1) / total_minutes * 100
+            rate = (mi + 1) / elapsed if elapsed > 0 else 0
+            eta = (total_minutes - mi - 1) / rate if rate else 0
+            print(f"  {mi + 1:,}/{total_minutes:,} ({pct:.0f}%) "
+                  f"| {elapsed:.0f}s elapsed | "
+                  f"{rate:.0f} min/s | ETA {eta:.0f}s | "
+                  f"computed {n_done:,}, buffered {len(rows_buffer):,}")
+
+        if len(rows_buffer) >= FLUSH_EVERY:
+            n_written += write_rows(pg, rows_buffer)
+            rows_buffer = []
+
+    if rows_buffer:
+        n_written += write_rows(pg, rows_buffer)
+
+    return n_done, n_skipped, n_written
+
+
+# -------------------------------------------------------------------
 # Main
 # -------------------------------------------------------------------
 def main():
@@ -306,8 +378,6 @@ def main():
                     help="Limit processing to N minute bins (test mode)")
     ap.add_argument("--full", action="store_true",
                     help="Recompute all minutes (ignore existing rows)")
-    ap.add_argument("--flush-every", type=int, default=2000,
-                    help="Upsert in batches of N rows (default 2000)")
     args = ap.parse_args()
 
     t_total = time.monotonic()
@@ -319,7 +389,6 @@ def main():
         print(f'Existing rows in "{PG_TABLE}": {len(existing):,}'
               f'{" (ignored, --full)" if args.full else ""}')
 
-        # Incremental RR load
         min_ts_ms = None
         if existing:
             min_ts_ms = max(existing) - MAX_WINDOW_MS
@@ -330,88 +399,26 @@ def main():
         if ts is None:
             print("No RR samples in range — nothing to do.")
             return
-        print(f"Loaded {ts.size:,} RR samples "
-              f"[{time.monotonic()-t0:.1f}s]")
-        t_first = datetime.fromtimestamp(int(ts[0]) / 1000.0).strftime(
-            "%Y-%m-%d %H:%M:%S")
-        t_last = datetime.fromtimestamp(int(ts[-1]) / 1000.0).strftime(
-            "%Y-%m-%d %H:%M:%S")
+        print(f"Loaded {ts.size:,} RR samples [{time.monotonic()-t0:.1f}s]")
+        t_first = datetime.fromtimestamp(int(ts[0]) / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+        t_last  = datetime.fromtimestamp(int(ts[-1]) / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
         print(f"Time range: {t_first} – {t_last}")
 
-        # Precompute frequency grids and band index lookup per tier
-        tier_freq_grids = []
-        tier_band_indices = []
-        for (_, _, fmin, fmax, nfreq, _, band_names) in TIER_WINDOWS:
-            tier_freq_grids.append(np.linspace(fmin, fmax, nfreq))
-            band_dict = {b[0]: (b[1], b[2]) for b in BANDS}
-            tier_band_indices.append({n: band_dict[n] for n in band_names})
+        tier_freq_grids, tier_band_indices = build_freq_grids()
 
-        # Minute binning
         minute_of_beat = (ts // 60_000) * 60_000
         sorted_minutes, _, minute_counts = np.unique(
             minute_of_beat, return_index=True, return_counts=True
         )
-        total_minutes = len(sorted_minutes)
-        if args.limit_minutes:
-            total_minutes = min(total_minutes, args.limit_minutes)
-            print(f"NOTE: limited to first {total_minutes} minutes")
 
-        print(f"Processing up to {total_minutes:,} minute bins "
-              f"({len(existing):,} skipped)...")
+        n_done, n_skipped, n_written = process_minutes(
+            pg, ts, rr, existing, sorted_minutes, minute_counts,
+            tier_freq_grids, tier_band_indices,
+            limit_minutes=args.limit_minutes,
+        )
 
-        rows_buffer = []
-        n_done = 0
-        n_skipped = 0
-        n_written = 0
-        log_interval = max(1, total_minutes // 20)
-        t_loop = time.monotonic()
-
-        for mi in range(total_minutes):
-            minute_start = int(sorted_minutes[mi])
-            if minute_start in existing:
-                n_skipped += 1
-                continue
-            n_beats = int(minute_counts[mi])
-
-            band_values = compute_minute(
-                ts, rr, minute_start,
-                tier_freq_grids, tier_band_indices, n_beats,
-            )
-            row = {"timestamp_ms": minute_start, "n_beats": n_beats}
-            row.update(band_values)
-            rows_buffer.append(row)
-            n_done += 1
-
-            if (mi + 1) % log_interval == 0 or mi == total_minutes - 1:
-                elapsed = time.monotonic() - t_loop
-                pct = (mi + 1) / total_minutes * 100
-                rate = (mi + 1) / elapsed if elapsed > 0 else 0
-                eta = (total_minutes - mi - 1) / rate if rate else 0
-                print(f"  {mi + 1:,}/{total_minutes:,} ({pct:.0f}%) "
-                      f"| {elapsed:.0f}s elapsed | "
-                      f"{rate:.0f} min/s | ETA {eta:.0f}s | "
-                      f"computed {n_done:,}, buffered {len(rows_buffer):,}")
-
-            if len(rows_buffer) >= args.flush_every:
-                n_written += write_rows(pg, rows_buffer)
-                rows_buffer = []
-
-        if rows_buffer:
-            n_written += write_rows(pg, rows_buffer)
-
-        with pg.cursor() as cur:
-            cur.execute(
-                pgsql.SQL('SELECT COUNT(*) FROM {}.{}').format(
-                    pgsql.Identifier(PG_SCHEMA),
-                    pgsql.Identifier(PG_TABLE),
-                )
-            )
-            total_target = cur.fetchone()[0]
-
-        print(f"\nWrote {n_written:,} new minute rows  "
-              f"(target now {total_target:,})  "
+        print(f"Wrote {n_written:,} new minute rows  "
               f"[skipped {n_skipped:,} existing]")
-        print(f"Total runtime: {time.monotonic() - t_total:.1f}s")
     finally:
         pg.close()
 
