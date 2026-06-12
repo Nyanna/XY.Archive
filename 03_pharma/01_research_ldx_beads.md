@@ -26,7 +26,7 @@ Ein weiterer Vorteil der Bead-Formulierung: Im Steady-State dominiert nicht mehr
 
 ## Designparameter
 
-Zwei Stellschrauben kontrollieren die Auflösungsgeschwindigkeit:
+Zwei primäre Stellschrauben kontrollieren die Auflösungsgeschwindigkeit, eine dritte (mukoadhäsive Additive) adressiert die Verweildauer im Absorptionsfenster:
 
 ### 1. Scheibendicke (dominanter Faktor)
 
@@ -53,6 +53,26 @@ Standardansatz: 2% (2g Natriumalginat auf 100ml Wasser).
 
 Der Vernetzungsgrad wird durch das CaCO₃/GDL-Verhältnis in der internen Gelierung bestimmt (siehe Herstellungsprotokoll) und ist keine unabhängige Stellschraube.
 
+### 3. Mukoadhäsive Additive (optional)
+
+Ein limitierender Faktor der reinen Alginat-Matrix: Die Gelstücke werden durch intestinale Motilität aus dem proximalen Absorptionsfenster (Duodenum/Jejunum, Sitz der RFVT- und Peptidtransporter) transportiert, bevor sie vollständig erodiert sind. Die verbleibende Erosion findet distal statt — vorbei an den relevanten Transportern.
+
+Mukoadhäsive Polymere fixieren die Gelstücke an der intestinalen Mukusschicht und halten sie im Absorptionsfenster, sodass Erosionszeit und Absorptionsort kongruent bleiben. Der Mukus-Turnover im Dünndarm liegt bei ~4–5h — das setzt die obere Grenze der Adhäsionsdauer und sollte auf die Erosionsrate der Matrix abgestimmt werden.
+
+**Kompatibilitäts-Constraint:** Die Alginat-CaCO₃-GDL-Gelierung erfordert nichtionische Additive. Anionische Polymere (Pektin, Xanthan, Carrageen) konkurrieren mit Alginat um Ca²⁺-Vernetzung. Kationische Polymere (Chitosan) bilden vor der Gelierung einen Polyelectrolyte-Komplex mit Alginat und zerstören die Matrixhomogenität.
+
+Zwei kompatible Optionen:
+
+**HPMC (Hydroxypropylmethylcellulose, E464)** — Mukoadhäsion über Hydroxylgruppen-Wasserstoffbrücken und Kettenverschlaufung mit Mucin-Glycoproteinen. Nichtionisch, keine Interaktion mit der Ca²⁺-Gelierung. Bringt doppelten Nutzen: Mukoadhäsion *und* zusätzliche Erosionskontrolle durch eigene Hydrogel-Schichtbildung an der Erosionsfront. Thermisch stabil bei 37°C (Gelierungspunkt 60–80°C). Pharmazeutischer Goldstandard für Retardmatrices. Grade K4M oder K15M empfohlen (niedriger viskos, bessere Mischbarkeit mit Alginatlösung vor Gelierung).
+
+**Guarkernmehl (E412)** — Mukoadhäsion über Wasserstoffbrücken und chain entanglement (neutrales Galactomannan). Schwächer als HPMC, aber formulierungstechnisch trivial: direkt in die Lösung einrühren, keine Vorbehandlung nötig. Geringere Viskositätserhöhung der Ausgangslösung, daher längeres Arbeitsfenster vor Gelierung. Als einfachere Alternative zu HPMC geeignet, wenn maximale Adhäsionsstärke nicht erforderlich ist.
+
+| Additiv | Mukoadhäsionsstärke | Retardbeitrag | Formulierungsaufwand | Verfügbarkeit |
+|---------|-------------------|---------------|---------------------|---------------|
+| Ohne (Baseline) | — | — | Minimal | — |
+| HPMC K4M/K15M | Stark | Ja (Gelschicht) | Mittel (Vorquellen) | Apotheke, Online |
+| Guarkernmehl | Moderat | Gering | Minimal | Supermarkt, Online |
+
 ## Materialien
 
 | Material | Spezifikation | Bezugsquelle | Kosten |
@@ -63,8 +83,10 @@ Der Vernetzungsgrad wird durch das CaCO₃/GDL-Verhältnis in der internen Gelie
 | Taurin-Pulver | 1000mg Kapseln oder loses Pulver | Amazon / Apotheke | ~5€ / 100 Kapseln |
 | pH-Streifen | Bereich 1–14 | Amazon / Apotheke | ~3€ |
 | Flache Silikonform | Eiswürfelform oder flache Backform | Küchenbedarf | ~5€ |
+| HPMC (optional) | E464, K4M oder K15M Grade | Apotheke / Online (Fagron, Caelo) | ~8–12€ / 100g |
+| Guarkernmehl (optional) | E412, Lebensmittelqualität | Supermarkt / Amazon | ~3–5€ / 100g |
 
-**Gesamtinvestition:** < 30€
+**Gesamtinvestition:** < 30€ (Basisformulierung), < 45€ (mit HPMC)
 
 ## Phase 1: Herstellungsprotokoll mit Taurin
 
@@ -80,16 +102,25 @@ Natriumalginat, CaCO₃ und GDL im festen Verhältnis abwiegen und als Portionsb
 | CaCO₃ | 0,5 g | Ca²⁺-Quelle (interne Gelierung) |
 | GDL | 1 g | Säuerungsmittel (setzt Ca²⁺ aus CaCO₃ frei) |
 
-Das Verhältnis ist ein Startpunkt — in Phase 2 wird das Gelierverhalten optimiert. Die Trockenmischung ist unbegrenzt haltbar.
+**Mukoadhäsive Additive (separat lagern, nicht in der Trockenmischung):**
+
+| Additiv | Menge pro Portion | Hinweis |
+|---------|-------------------|---------|
+| HPMC K4M/K15M (optional) | 0,5–1 g | Vor der Trockenmischung in Wasser hydratisieren (siehe 1.2) |
+| Guarkernmehl (optional) | 0,5–1 g | Kann auch direkt in die Lösung eingerührt werden |
+
+HPMC *oder* Guar verwenden, nicht beides gleichzeitig — die Wirkung der einzelnen Komponente muss isoliert bewertbar bleiben. Die Trockenmischung ist unbegrenzt haltbar.
 
 ### 1.2 Zubereitung (täglich/wöchentlich)
 
 1. 1000–2000 mg Taurin-Pulver in 100 ml Wasser lösen
-2. Trockenmischung (1 Portionsbeutel) einrühren bis homogen
-3. In flache Silikonform gießen (Arbeitsfenster ca. 5–15 min vor Beginn der Gelierung)
-4. 15–30 min gelieren lassen (Form nicht bewegen)
-5. Aus Form lösen
-6. Mit Messer in gewünschte Portionen schneiden — **Schnittdicke bestimmt Freisetzungsdauer, Fläche bestimmt Dosis**
+2. **Falls HPMC verwendet:** HPMC-Pulver unter Rühren in die kalte Lösung einstreuen und 10–15 min quellen lassen, bis eine klare, leicht viskose Lösung entsteht. HPMC löst sich in kaltem Wasser, benötigt aber Hydratationszeit. Alternativ: In heißes Wasser (~80°C) dispergieren, dann auf Raumtemperatur abkühlen lassen — beschleunigt die Hydratation.
+   **Falls Guar verwendet:** Guarkernmehl direkt einrühren, 5 min quellen lassen. Hydratisiert schneller als HPMC, neigt aber zur Klumpenbildung — langsam einstreuen.
+3. Trockenmischung (1 Portionsbeutel: Alginat + CaCO₃ + GDL) einrühren bis homogen
+4. In flache Silikonform gießen (Arbeitsfenster ca. 5–15 min vor Beginn der Gelierung; **Hinweis:** HPMC/Guar erhöhen die Ausgangsviskosität und können das Arbeitsfenster leicht verkürzen)
+5. 15–30 min gelieren lassen (Form nicht bewegen)
+6. Aus Form lösen
+7. Mit Messer in gewünschte Portionen schneiden — **Schnittdicke bestimmt Freisetzungsdauer, Fläche bestimmt Dosis**
 
 ### 1.3 Nachbehandlung
 
@@ -104,10 +135,14 @@ Fünf aufeinanderfolgende Versuchstage, jeweils mit identischem Tagesrhythmus (g
 | Tag | Konfiguration | Ziel |
 |-----|--------------|------|
 | 1 | 1000mg Taurin als Kapsel (Referenz) | Baseline: Subjektiver Effekt, Onset, Dauer |
-| 2 | Dünne Scheiben (~3mm) | Schnelle Freisetzung validieren |
-| 3 | Dicke Scheiben (~8mm) | Langsame Freisetzung validieren |
-| 4 | Mittlere Dicke (~5mm) | Ziel-Profil |
-| 5 | Optimierte Dicke basierend auf Tag 1–4 | Iteration |
+| 2 | Dünne Scheiben (~3mm), ohne Additiv | Schnelle Freisetzung validieren |
+| 3 | Dicke Scheiben (~8mm), ohne Additiv | Langsame Freisetzung validieren |
+| 4 | Mittlere Dicke (~5mm), ohne Additiv | Ziel-Profil Baseline |
+| 5 | Optimierte Dicke basierend auf Tag 1–4 | Iteration Baseline |
+| 6 | Beste Dicke aus Tag 2–5, mit HPMC | Mukoadhäsions-Effekt quantifizieren |
+| 7 | Beste Dicke aus Tag 2–5, mit Guar | Guar vs. HPMC vergleichen |
+
+Tag 6–7 sind optional und nur sinnvoll, wenn die Baseline-Formulierung (Tag 2–5) die gewünschte Tail-Verlängerung nicht erreicht oder wenn die Dünndarm-Transitzeit als limitierender Faktor identifiziert wird (d.h. Erosion dauert länger als die Verweildauer im Absorptionsfenster).
 
 ### 2.2 Dokumentation pro Versuchstag
 
@@ -128,6 +163,8 @@ Für jeden Tag dokumentieren:
 - **Tag 2 (dünn, 3mm):** Ähnlich wie Referenz, ggf. leicht verzögerter Onset durch Matrixfreisetzung
 - **Tag 3 (dick, 8mm):** Deutlich verzögerter Onset (~2h), abgeflachter Peak, verlängerte Dauer (~6–8h)
 - **Tag 4 (mittel, 5mm):** Onset ~1h, moderater Peak, Dauer ~4–6h — Kandidat für Ziel-Profil
+- **Tag 6 (HPMC-Variante):** Vergleich mit bestem Ergebnis aus Tag 2–5: Erwartung ist gleicher oder leicht verzögerter Onset, aber verlängerter Tail durch Mukoadhäsion im Absorptionsfenster. Die HPMC-Gelschicht kann zusätzlich die Erosionsrate reduzieren.
+- **Tag 7 (Guar-Variante):** Schwächerer Mukoadhäsionseffekt als HPMC, aber ggf. gleichmäßigere Geltextur. Dient als Kontrollvergleich für den HPMC-Effekt.
 
 ## Phase 3: Parametrische Optimierung
 
@@ -138,6 +175,7 @@ Basierend auf Phase-2-Ergebnissen Stellschrauben anpassen:
 - Schnittdicke erhöhen (z.B. 10mm statt 8mm)
 - Alginat-Konzentration auf 3% erhöhen (dichtere Matrix)
 - CaCO₃/GDL-Verhältnis anpassen für stärkere Vernetzung
+- **Mukoadhäsives Additiv einführen:** Wenn die Erosionszeit der Matrix bereits ausreichend lang ist, aber der subjektive Effekt trotzdem zu früh abklingt, ist die wahrscheinliche Ursache eine zu schnelle Transitzeit aus dem Absorptionsfenster. In diesem Fall HPMC (0,5–1g/Portion) zur Formulierung hinzufügen — verlängert die Verweildauer im proximalen Dünndarm und addiert eigene Erosionskontrolle. Bei unzureichendem Effekt HPMC-Anteil auf bis zu 1,5g erhöhen, bevor auf Guar als einfachere Alternative gewechselt wird.
 
 ### 3.2 Wenn der Onset zu langsam ist:
 
@@ -161,7 +199,7 @@ Erst nach validiertem Taurin-Profil, das eine Wirkdauer von >10h mit gleichmäß
 
 - Validiertes Gelrezept aus Phase 2/3
 - Gültige ärztliche Verordnung für LDX
-- Dokumentierte Konfiguration (Schnittdicke, Alginat-%, CaCO₃/GDL-Verhältnis)
+- Dokumentierte Konfiguration (Schnittdicke, Alginat-%, CaCO₃/GDL-Verhältnis, ggf. HPMC/Guar-Anteil)
 
 ### 4.2 Anpassung
 
@@ -184,7 +222,7 @@ Die Elvanse-Kapsel darf laut Fachinformation geöffnet und der Inhalt in Nahrung
 Die gleichmäßig dicke Form ergibt bei gleich großen Schnittstücken gleiche Dosen — ein Vorteil gegenüber dem früheren Tropfverfahren. Homogenität der Taurin/LDX-Verteilung in der Alginatlösung weiterhin durch gründliches Rühren vor dem Gießen sicherstellen.
 
 ### Lagerstabilität
-Zu unterscheiden: Die **Trockenmischung** (Alginat + CaCO₃ + GDL) ist unbegrenzt haltbar und kann als Portionsbeutel auf Vorrat vorbereitet werden. **Fertige Gelstücke** sind tagesfrisch bis wenige Tage im Kühlschrank haltbar — Wirkstoff diffundiert über Zeit aus der Matrix.
+Zu unterscheiden: Die **Trockenmischung** (Alginat + CaCO₃ + GDL, ggf. + Guar) ist unbegrenzt haltbar und kann als Portionsbeutel auf Vorrat vorbereitet werden. **HPMC** sollte separat gelagert und erst bei Zubereitung in die Lösung eingebracht werden (Hydratationsschritt). **Fertige Gelstücke** sind tagesfrisch bis wenige Tage im Kühlschrank haltbar — Wirkstoff diffundiert über Zeit aus der Matrix. HPMC-haltige Gele können etwas stabiler sein (zusätzliche Hydrogelschicht verlangsamt Diffusion), aber das Prinzip der zeitnahen Verwendung bleibt bestehen.
 
 ### GI-Variabilität
 Trotz stabilem Tagesrhythmus gibt es unvermeidliche Variabilität (Stress, Krankheit, abweichende Mahlzeiten). Das Profil ist reproduzierbar, aber nicht exakt.
