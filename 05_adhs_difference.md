@@ -224,7 +224,17 @@ Bei Population B ist das logisch — der PFC-Boost ist der einzige Wirkungspfad.
 
 Bei Population A ist es problematisch. Das therapeutische Ziel ist nicht der PFC-Peak, sondern die Stabilisierung der serotonergen Modulation über die Raphe-Achse. Dieser Effekt tritt bei niedrigeren Dosen ein als der PFC-Peak. Konventionelle Titration überschießt den Raphe-Zielpunkt und landet im Stimulanzienbereich — das Ergebnis ist nicht Stabilisierung, sondern Antrieb. Der Unterschied ist klinisch relevant: ein stabilisiertes Kind kann sich selbst zusammenhalten. Ein angetriebenes Kind wird zusammengehalten. Das eine ist therapeutisch, das andere ist wesensverändernd.
 
-### 7.2 Titration nach Schlafkonsolidierung
+#### **7.2 Schlafarchitektur als unabhängiger kognitiver Modulator bei Population A**
+
+Die Raphe-Stabilisierung über Stimulanzien-Mikrodosierung (7.1) adressiert den proximalen Defekt: instabiler serotonerger Tonus → thalamische Gating-Insuffizienz → kortikales Rauschen. Parallel dazu existiert ein distaler Effekt über die Schlafarchitektur, der spezifisch für Population A ist und Population B nicht betrifft (→ 03, 3.5):
+
+Der TRN produziert bei serotonerger Fehlkalibrierung einen binären Gate-Switch statt der gesunden Sub-Sekunden-Alternierung im N3 (08I, 4.3). Die resultierende Nullphasenanomalie — minutenlanger Vollschluss ohne Up-States — eliminiert drei SWS-Kernfunktionen: synaptisches Downscaling (Rauschpegel am nächsten Morgen), deklarative Konsolidierung (Spindel-Ripple-Kopplung) und glymphatische Clearance (oszillatorischer CSF-Transport).
+
+Für Population A bedeutet das: Die ADHS-Symptomatik hat neben der statischen Komponente (fetale Kalibrierung) eine dynamische Komponente (letzte Nachtqualität), die sich täglich ändert und über Wochen akkumulieren kann. Das Titrationsziel „Schlafkonsolidierung" (7.2) adressiert die Raphe-Seite dieses Problems — die TRN-Schaltcharakteristik bleibt aber auch unter optimaler Stimulanziendosis als eigenständige Limitierung bestehen.
+
+**Testbare Vorhersage:** Population A zeigt reduzierte Schlafspindeldichte und spezifisch reduzierte schlafabhängige deklarative (nicht prozedurale) Konsolidierung; Population B zeigt keine schlafarchitektonische Anomalie und keinen selektiven Konsolidierungsunterschied. Diese Dissoziation ist als Differentialmerkmal zwischen den Populationen nutzbar (Ringli et al. 2013, Prehn-Kristensen et al. 2013 als Referenz für die Gesamtpopulation; populationsgetrennte Replikation steht aus).
+
+### 7.3 Titration nach Schlafkonsolidierung
 
 Für Population A ist das Titrationsziel nicht Symptomkontrolle, sondern Schlafkonsolidierung. Die Dosis wird erhöht, bis folgende Marker eintreten:
 
@@ -236,7 +246,7 @@ Für Population A ist das Titrationsziel nicht Symptomkontrolle, sondern Schlafk
 
 Ab diesem Punkt wird nicht weiter erhöht — auch wenn der Conners-Score noch nicht optimal ist. Der verbleibende Symptomrest verbessert sich über Wochen und Monate durch kumulative Downstream-Effekte der stabilisierten Schlafarchitektur: bessere Konsolidierung, weniger kompensatorische Wachhaltemechanismen am Tag, geringere sensorische Überflutung.
 
-### 7.3 Der Fragebogen als Titrationsinstrument
+### 7.4 Der Fragebogen als Titrationsinstrument
 
 Derselbe Fragebogen, der zur Differentialdiagnostik dient (Abschnitt 6.3), wird zum Titrationsinstrument. Er wird vor Therapiebeginn als Baseline erhoben und dann wöchentlich unter Dosissteigerung fortgeführt. Der Vergleich Baseline $\rightarrow$ Woche 1 $\rightarrow$ Woche 2 $\rightarrow$ ... zeigt, wann die Schlafkonsolidierung eintritt. An diesem Punkt ist die Zieldosis erreicht.
 

@@ -104,6 +104,8 @@ PRE trat intensives Träumen selektiv nach Migräneanfällen auf — post-CSD-er
 
 **Konvergenz:** Die Schlafkonsolidierung ist kein eigenständiger LDX-Effekt neben der interozeptiven Kohärenz, sondern *derselbe Mechanismus in einem anderen Zeitskalenbereich*. Tagsüber manifestiert sich die Synchronisierung als kohärente Zustandssignale (8.4.1); nachts als Fähigkeit zu globalen kortikalen Zustandsübergängen. Beide sind Downstream-Effekte stabilisierter Raphe $\rightarrow$ kohärenter thalamischer Modulation.
 
+**Nullphasen-Mechanismus und Konsolidierungsdefizit (Querverweis 08I, 4.3; 03, 3.5).** Die HRV-Analyse (08I) identifiziert den zugrundeliegenden Mechanismus: Der TRN produziert bei fehlkalibrierter Schaltcharakteristik einen binären Vollschluss statt der gesunden Sub-Sekunden-Alternierung zwischen Up- und Down-States. Die Up-States im gesunden N3 sind die Arbeitsfenster für Spindel-Ripple-Kopplung (deklarative Konsolidierung), synaptisches Downscaling (SHY) und oszillatorisch angetriebene glymphatische Clearance. Vollschluss eliminiert alle drei gleichzeitig. Die Schlafkonsolidierung unter LDX (Reduktion der Episodenfragmentierung, 8.4.2, Anhang B) adressiert die Raphe-Stabilität upstream, verändert aber nicht die TRN-Schaltcharakteristik — die Nullphasen bleiben binär (08I, 5.4). Die kognitive Implikation: Auch unter optimaler pharmakologischer Stabilisierung bleibt das dynamische Downscaling-Defizit bestehen, solange der TRN keine Zwischenzustände produzieren kann (→ 03, 3.5 für kognitive Konsequenzen).
+
 ### **8.5 Reformulierung des ADHS-Kerndefizits**
 
 #### **8.5.1 „Konzentration" als Fehlattribution**
@@ -171,6 +173,14 @@ Die Selbstmedikation mit Koffein/Mate bei ADHS folgt einer erkennbaren Logik: Ad
 | REM-Konsolidierung $\rightarrow$ reguläre Traumerinnerung unter LDX | Einzelfallbeobachtung, konsistent | Selbstbeobachtung + Tracker-Daten, Anhang B, B.8 |
 | Traumerinnerung PRE selektiv post-iktal (CSD-Reset); POST regulär (pharmakologische Synchronisation) | Einzelfallbeobachtung | Selbstbeobachtung, Anhang B, B.8 |
 | Schlafkonsolidierung und interozeptive Kohärenz als identischer Mechanismus auf verschiedenen Zeitskalen | Hypothetisch, konsistent | Modellableitung aus 8.4.1 + 8.4.2 |
+| TRN-Bifurkation: binärer Vollschluss statt Sub-Sekunden-Alternierung im N3 | n=1, empirisch (HRV-Daten April–Juni 2026) | 08I, 4.3; HR-Plateau 71–72 bpm ±1, SDNN=RMSSD=50 ms, alle Bänder null |
+| Binärer TRN-Switch als Hardwareeigenschaft, nicht pharmakologisch modifizierbar | Hypothetisch, mechanistisch ableitbar | Abgeleitet aus T-Typ-Ca²⁺-Kanal-Kinetik; Kippschwelle verschiebbar, Übergangsschärfe nicht |
+| Vollschluss eliminiert drei SWS-Kernfunktionen (Downscaling, Konsolidierung, Clearance) | Mechanistisch etabliert (Einzelfunktionen); Anwendung auf Nullphasen hypothetisch | Tononi & Cirelli 2014 (SHY); Staresina et al. 2015 (Spindel-Ripple); Xie et al. 2013, Fultz et al. 2019 (glymphatisch) |
+| Dynamische SNR-Komponente: nächtliches Downscaling-Quantum als variabler Rauschpegel-Modulator | Hypothetisch, mechanistisch konsistent | Abgeleitet aus SHY + Nullphasenanalyse; erklärt Tagesvariabilität ADHS |
+| Deklaratives Konsolidierungsdefizit bei ADHS selektiv (prozedural erhalten) | Gesichert | Prehn-Kristensen et al. 2013 (kontrolliert); Dissoziation spindelabhängig/striatumbasiert |
+| Reduzierte Schlafspindeldichte bei ADHS | Gesichert | Ringli et al. 2013 (Pädiatrie) |
+| DRN-Bifurkation als Parallele zur TRN-Bifurkation; erklärt Dosisaufteilungs-Attackenfrequenz | Hypothetisch, empirisch gestützt (n=1) | Nullphasen unverändert bei erhöhter Attackenfrequenz unter LDX-Split → zwei getrennte Observablen |
+| Kumulative Clearance-Last als degenerativer Feedbackloop (Clearance-Defizit → Neuroinflammation → Raphe-Destabilisierung → weitere Clearance-Reduktion) | Hypothetisch, konsistent | Abgeleitet aus Anhang J (ME/CFS-Clearance-Achse) + Nullphasen-Mechanismus |
 
 #### **8.8.1 Kreuzkorrelation ADHD–Migräne–Epilepsie–Late-Chronotyp als konvergierende Evidenz**
 

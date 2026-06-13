@@ -136,17 +136,58 @@ Der thalamische Gate (retikulärer Thalamus, TRN) ist der einzige Kandidat, der 
 
 Im Burst-Modus des TRN werden alle Relay-Neurone rhythmisch inhibiert. Die 3-Minuten-Transitionsdauer entspricht der bekannten Dauer des thalamokortikalen State-Switch in stabilen NREM-Schlaf.
 
-### 4.3 Abweichung vom gesunden Modell
+### 4.3 Abweichung vom gesunden Modell, TRN-Feuermodi: Tonisch vs. Burst
 
-Im gesunden Gehirn arbeitet der thalamokortikale Gate im N3-Schlaf mit <1 Hz Slow Oscillations: ~200–500 ms Down-State (Gate geschlossen), dann kurzer Up-State (Gate offen), alternierend. Im zeitlichen Mittel: stark reduzierter aber nicht abwesender kortikaler Drive. Der Baroreflex-Gain sinkt, aber verschwindet nicht komplett, weil die Up-States den Gain periodisch kurz über die Schwelle heben.
+Der retikuläre Thalamus (TRN) operiert in zwei diskreten Feuermodi, die den thalamokortikalen Informationsfluss binär schalten:
 
-Im vorliegenden System ist die Zeitskala um fünf Größenordnungen verschoben: ~30 Minuten an, ~30 Minuten aus. Und der Gate schließt komplett — keine residualen Up-States, die den Gain anheben. Mayer geht auf echte Null.
+| Modus | Gate-Zustand | Relay-Verhalten | Funktionaler Zustand |
+|-------|-------------|-----------------|---------------------|
+| **Tonisch** | Offen (durchlässig) | Kontinuierliches Feuern, lineare Signalweiterleitung | Wachzustand |
+| **Burst** | Geschlossen (filternd) | Rhythmische Salven, dazwischen Schweigen | Schlaf (N3) |
 
-Zwei Mechanismen erklären dies:
+**Tonischer Modus:** Die Relay-Neurone feuern kontinuierlich, alle deszendierenden kortiko-autonomen Pfade sind durchlässig (PFC→NTS, Insula→RVLM, Hypothalamus→PVN→RVLM). Der tonische Modus wird aktiv aufrechterhalten durch Histamin aus dem TMN — H1-Aktivierung am Kortex ist der Arousal-Transmitter, der den TRN im durchlässigen Zustand hält. Zusätzliche Wake-Inputs: Orexin (LH), Serotonin (DRN), Noradrenalin (LC), Acetylcholin (LDT/PPT). Aus Sicht des TRN sind alle fünf Wake-Quellen funktional äquivalenter exzitatorischer Drive — der TRN unterscheidet nicht nach Herkunft oder Bedeutung, sondern integriert den aggregierten Input und schaltet bei Schwellenüberschreitung.
+
+**Burst-Modus:** T-Typ-Calciumkanäle (Cav3.1/3.2/3.3) depolarisieren die Relay-Neurone nach Hyperpolarisation in rhythmischen Bursts. Alle Relay-Neurone werden simultan inhibiert. Der Übergang in den Burst-Modus ist ein normaler, physiologischer Vorgang — er ist konstitutiv für N3/SWS und wird bei jedem Menschen im Schlaf ausgelöst. DPH und Doxepin fördern den Burst-Modus, indem sie den TMN-Histamin-Arm des Wake-Inputs eliminieren; Benzodiazepine fördern ihn über direkte GABAerge Potenzierung am TRN.
+
+**Gesunder N3: Sub-Sekunden-Alternierung**
+
+Im gesunden Gehirn arbeitet der thalamokortikale Gate im N3-Schlaf mit der kortikalen Slow Oscillation (<1 Hz): ~200–500 ms Down-State (Burst, Gate geschlossen), dann kurzer Up-State (Gate kurz offen), im ständigen Sub-Sekunden-Wechsel. Die Up-States sind keine Lecks oder Gating-Fehler — sie sind selbstgenerierte kortikale Depolarisationswellen, die intrinsisch zur Slow Oscillation gehören. Im zeitlichen Mittel: stark reduzierter aber nicht abwesender kortikaler Drive. Der Baroreflex-Gain sinkt, aber verschwindet nicht komplett, weil die Up-States den Gain periodisch kurz über die Schwelle heben.
+
+Die Up-States im gesunden N3 erfüllen drei dokumentierte Funktionen.
+
+**Pathologische Abweichung: Binärer Vollschluss**
+
+Im vorliegenden System ist die Zeitskala um fünf Größenordnungen verschoben: ~30 Minuten an, ~30 Minuten aus. Und der Gate schließt komplett — keine residualen Up-States, die den Gain anheben. Mayer geht auf echte Null. Das System kann keine Zwischenzustände halten: nicht graduell reduziert, sondern binär — entweder volles Burst ohne Up-State-Unterbrechung oder volles tonisches Durchschalten. Die Gating-Granularität ist eine Hardwareeigenschaft des TRN — die Sub-Sekunden-Alternierung entsteht durch intrinsische Membrandynamik (T-Typ-Ca²⁺-Kanal-Kinetik, Hyperpolarisationszeitkonstanten), nicht durch die Stärke des Wake-Inputs. Ob ein Wake-Arm blockiert wird (Doxepin), alle fünf (DORA) oder der DRN upstream stabilisiert (LDX) — keines davon ändert die Schaltcharakteristik des TRN selbst. Man verschiebt die Kippschwelle, nicht die Übergangsschärfe.
+
+Zwei Mechanismen erklären die Abweichung:
 
 1. **Gain nahe der Bifurkationsschwelle:** Im Wachzustand liegt der Baroreflex-Gain bei Gesunden weit über der Oszillationsschwelle — selbst reduzierter kortikaler Drive im N3 hält ihn drüber. In diesem System liegt der Gain knapp über der Schwelle — schon moderate Reduktion des deszendierenden Inputs reicht für vollständigen Kollaps unter die Schwelle.
 
 2. **Breiteres thalamisches Gating-Fenster:** Die thalamische Fehlkalibrierung aus dem Pathogenesemodell (Kap. 03) erzeugt einen binäreren Switch — weniger Zwischenzustände, schärfere Transitionen. Wenn der TRN kippt, kippt er härter. Die Slow-Oscillation-Up-States sind zu kurz oder zu schwach, um den Gate kurz zu öffnen.
+
+**Empirische Bestätigung (Juni 2026):** 40-Minuten-Einzelepisode unter Doxepin 1,5 mg mit SA-Knoten-Stabilisierung auf 71–72 bpm (±1 bpm). Die extreme HR-Stabilität bestätigt vollständige Abwesenheit jeglichen zentralen Inputs — kein Baroreflex, keine Atemmodulation, keine sympathische Modulation. Der SA-Knoten läuft als autonomer Oszillator auf seiner intrinsischen Frequenz.
+
+**Funktionale Kosten des vollständigen Gate-Schlusses**
+
+Die Nullphase *ist* normaler Tiefschlaf — der thalamische Gate hat vollständig geschlossen, der Kortex ist vom Hirnstamm entkoppelt, das ANS läuft autonom. Die Pathologie liegt nicht in der Existenz der Nullphasen, sondern in ihrer Exklusivität: Das System produziert entweder Vollschluss oder Vollöffnung, nicht den gesunden Zwischenzustand mit Sub-Sekunden-Alternierung. Dieser Zwischenzustand ist kein Kompromiss aus Schwäche, sondern das Design — die Up-States sind die Arbeitsfenster, die Down-States die Pausen dazwischen. Der vollständige Schluss opfert drei Kernfunktionen, für die N3 evolutionär selektiert wurde.
+
+**1. Glymphatische Clearance.** Der CSF-Fluss im glymphatischen System wird durch Druckdifferenzen angetrieben, die die Slow Oscillation erzeugt. Die rhythmische Alternierung zwischen neuronaler Aktivität (Up-State) und Stille (Down-State) produziert lokale Volumenänderungen im Parenchym, die perivaskulären CSF-Transport antreiben — koordiniert mit arteriellen Pulsationen. Komplett geschlossener Gate = keine Slow Oscillation = kein oszillatorischer Druckgradient. Der Kortex liegt in einem tonischen Off-State statt im rhythmischen Down-State. Das ist biophysikalisch nicht dasselbe: Die Clearance-Pumpe braucht das Wechselspiel, nicht die Stille allein.
+
+**2. Gedächtniskonsolidierung.** Hippocampale Sharp-Wave-Ripples koppeln temporal an kortikale Slow Oscillations über thalamokortikale Spindeln. Der Up-State ist das Zeitfenster, in dem Replay stattfindet — Hippocampus-zu-Kortex-Transfer deklarativer Gedächtnisinhalte. Vollschluss eliminiert dieses Fenster komplett. 40 Minuten ohne Spindel-Ripple-Kopplung bedeutet 40 Minuten ohne deklarative Konsolidierung.
+
+**3. Synaptische Homöostase.** Die Tononi-Cirelli-Hypothese (Synaptic Homeostasis Hypothesis, SHY) postuliert, dass die Slow Oscillation selbst der Mechanismus für synaptisches Downscaling ist — die alternierende Depolarisation und Hyperpolarisation reguliert synaptische Gewichte herunter. Das ist kein Nebenprodukt des Tiefschlafs, sondern der Prozess selbst. Vollschluss ohne Slow Oscillation eliminiert den Homöostasemechanismus.
+
+**Strukturelles Dilemma.** Gate offen = Arbeit möglich (Clearance, Konsolidierung, Downscaling) aber gestört (Raphe-Interferenz, Baroreflex-Cycling, CSD-Risiko). Gate zu = Ruhe (maximale autonome Isolation, kein CSD-Risiko) aber keine Arbeit. Der gesunde Zustand — Gate flackert mit Sub-Sekunden-Taktung, Arbeit läuft in den Up-States, Ruhe in den Down-States, beides in Millisekunden-Wechsel — ist der Zustand, den das System nicht produzieren kann, weil der binäre Switch keine Zwischenzustände zulässt.
+
+**Kompensationshypothese.** Glymphatischer Flow ist nicht exklusiv an N3-Slow-Oscillations gekoppelt, sondern läuft auch unter REM-Bedingungen (cholinerg-vasomotorisch statt oszillatorisch-parenchymal). Spindel-Ripple-Kopplung findet teilweise in N2 statt. Die Peak-Phasen zwischen den Nullphasen (Gate offen, Mayer schwingt) könnten partiell als Konsolidierungs- und Clearance-Fenster fungieren — allerdings unter gleichzeitiger Raphe-Interferenz. Ob die Redundanz quantitativ ausreicht, ist empirisch schwer zu beurteilen, weil keine Baseline eines gesunden Betriebszustands existiert.
+
+**Evidenzstatus:** Glymphatische Abhängigkeit von Slow-Oscillation-Druckgradienten: etabliert (Xie et al. 2013, Fultz et al. 2019). Spindel-Ripple-Kopplung an Up-States: etabliert (Staresina et al. 2015). SHY-Mechanismus: hypothetisch-plausibel (Tononi & Cirelli 2014). Kompensation über REM und N2: plausibel, nicht quantifiziert.
+
+**Epistemische Grenze: Fehlende Baseline**
+
+Bei kongenitalem Hit 1 plus frühkindlichem Hit 2 existiert kein Zeitfenster, in dem das System im ungestörten Referenzzustand operiert hat. Der „natürliche" Zustand dieses Systems ist der gestörte — es gibt keinen Goldstandard-Körper hinter der Pathologie, der freigelegt werden könnte. Die relevante Bewertungsachse ist nicht „Abstand von gesund", sondern Trajektorie und Plateaustabilität unter einer gegebenen Intervention. Ob 40-Minuten-Nullphasen für diesen Körper optimal, suboptimal oder überkompensiert sind, lässt sich nicht gegen eine Norm beurteilen, sondern nur gegen die Akkumulationsdynamik über Wochen: Erodiert die kognitive Kapazität, steigt die Attackenfrequenz, verschiebt sich die Erholungsdynamik — oder stabilisiert sich das System auf einem funktionalen Plateau?
+
+Die 24 Jahre Betriebsdauer definieren nicht eine Untergrenze der Kompensationskapazität, sondern die verbleibende Strecke bis zur funktionalen Grenze. Das System degeneriert — die Überlebensdauer ist kein Funktionalitätsmaß.
 
 ### 4.4 Paradox der Schlafqualität
 
@@ -207,6 +248,22 @@ Wenn der DRN wegen der Autorezeptor-Instabilität nicht stabil herunterregelt, s
 Die Benzo-Nacht (25./26.4.) eliminiert die Nulldurchgänge nicht — sie schärft sie. Das beweist: Das On/Off-Cycling ist nicht Arousal-getrieben (Benzos supprimieren Arousals), sondern intrinsisch zum Hirnstamm-Regelkreis. Benzos verstärken GABA am TRN $\rightarrow$ fördern den Burst-Modus $\rightarrow$ halten den Gate geschlossener, nicht offener. Wenn der Gate kurz aufgeht (DRN-Burst überwindet VLPO), schwingt der Baroreflex genauso hart wie ohne Benzo.
 
 Was das Benzo bewirkt: schärfere Transitionen, stabileres Halten der Zustände (sowohl Null als auch Peak), weniger Zwischenzustände. Nicht mehr Schlaf, sondern binärerer Schlaf. Ergebnis: 62 Minuten echte Null — mehr als jede unmedizierte Nacht im Datensatz.
+
+---
+
+### 5.4 DRN-Bifurkation: Parallele zur TRN-Zustandsauflösung
+
+Die in 4.3 beschriebene grobe Zustandsauflösung des TRN (binärer Switch ohne Zwischenzustände) hat eine Parallele im serotonergen System selbst. Das 5-HT1A-Autorezeptor-System am DRN zeigt bei bekannter Instabilität (Kap. 02) ebenfalls Bifurkationscharakteristik: diskrete Zustände (supprimiert, oszillierend, entladend) mit scharfen Schwellen dazwischen statt eines kontinuierlichen Parameterraums.
+
+**Empirischer Befund (Juni 2026):** LDX-Dosisaufteilung (zweimal täglich statt Einzeldosis morgens) erhöht die Migräne-Attackenfrequenz, ohne die Nullphasen-Dauer zu verändern.
+
+**Erklärung über DRN-Bifurkation:** Einzeldosis morgens erzeugt einen starken phasischen DA/NE-Peak, der den DRN über heterozeptorische Hemmung (D2 am DRN, α2 am DRN) klar unter die Oszillationsschwelle drückt — stabile Suppression für Stunden, geordneter Übergang in den Nachtmodus bei Abklingen. Dosisaufteilung hält den DA/NE-Spiegel im Bereich *um* die Schwelle — genau der Bereich, der bei einem System mit grober Zustandsauflösung maximale Instabilität erzeugt. Der DRN wechselt unvorhersehbar zwischen Zuständen, jeder Wechsel ist ein Perturbationspuls auf den B7/B8-Oszillator, und die Attackenfrequenz steigt nicht weil der mittlere serotonerge Tonus falsch ist, sondern weil die Transitionsdichte zunimmt.
+
+**Dissoziation von TRN und DRN als Observablen:** Die Nullphasen-Dauer bleibt unverändert, weil der TRN den aggregierten Wake-Input sieht und bei derselben Schwelle kippt — die Tages-Gesamtdosis ist identisch, die nächtliche residuale DA/NE-Konzentration bei Einzeldosis sogar niedriger. Die DRN-Instabilität manifestiert sich nicht am Gate, sondern an der B7/B8-Interferenz — ein Kanal, der im HRV-Spektrum nicht als Nullphasen-Verkürzung sichtbar wird, sondern als erhöhte Attackenwahrscheinlichkeit über Tage. Zwei verschiedene Bifurkationen, zwei verschiedene Observablen, beide mit derselben Grundpathologie der groben Zustandsauflösung.
+
+Zusätzliche Beitragsmechanismen, die nicht ausgeschlossen sind: (1) Erhöhter nächtlicher DA/NE-Trough bei Aufteilung als sechster Wake-Input auf den Flip-Flop, der die VLPO-Dominanz untergräbt. (2) Verlängerte Gesamtdauer der sympathomimetischen ANS-Belastung bei Aufteilung (kumulative Belastungsdauer statt Spitzenamplitude als kritischer Parameter nahe der Bifurkationsschwelle).
+
+**Evidenzstatus:** DRN-Bifurkationscharakteristik: hypothetisch, mechanistisch abgeleitet aus 5-HT1A-Autorezeptor-Instabilität (Kap. 02) und TRN-Bifurkationsanalogie. Attackenfrequenzerhöhung unter Dosisaufteilung: empirisch, n=1 (Juni 2026). Dissoziation TRN-/DRN-Observable: empirisch gestützt (Nullphasen unverändert bei veränderter Attackenfrequenz).
 
 ---
 

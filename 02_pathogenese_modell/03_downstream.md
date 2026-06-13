@@ -135,3 +135,45 @@ Beide Modelle konvergieren auf dieselbe Kausalkette, beschrieben von unterschied
 | Thalamischer Gain als zentraler Diskriminierungsmechanismus | Plausibel, konsistent mit Datenlage |
 | Dissoziation Gating/Schwelle unter LDX | Einzelfallbeobachtung, mechanistisch konsistent |
 | Subkortikales Rauschen als unbewusste kortikale Last | Hypothetisch, konsistent mit klinischer Beobachtung |
+
+### **3.5 Dynamische SNR-Komponente: Nächtliches Downscaling-Defizit**
+
+Die Abschnitte 3.2–3.4 beschreiben das SNR-Problem als statische Konsequenz der fetalen Fehlkalibrierung — einmalig, pränatal, strukturell fixiert. Diese statische Komponente bestimmt den architektonischen Floor: den Mindest-Rauschpegel, unter den das System auch unter optimalen Bedingungen nicht sinken kann.
+
+Die Nullphasenanalyse (08I) offenbart eine zusätzliche *dynamische* Komponente: Die Schlafarchitektur moduliert den Rauschpegel von Nacht zu Nacht. Das ADHS-SNR-Problem hat damit zwei Quellen — eine fixe (Kalibrierung) und eine variable (letzte Nachtqualität).
+
+#### **3.5.1 Mechanismus: Drei additive Pfade**
+
+Im gesunden N3 alterniert der thalamische Gate mit Sub-Sekunden-Taktung zwischen Down-States (Gate geschlossen) und Up-States (Gate kurz offen). Diese Alternierung ist nicht nur Schlafphänomen, sondern der Mechanismus für drei Kernfunktionen (Details → 08I, 4.3):
+
+**1. Synaptisches Downscaling (SHY).** Die Slow Oscillation reguliert synaptische Gewichte herunter (Tononi & Cirelli 2014). Bei defizitärem Downscaling akkumulieren synaptische Gewichte über Tage. Der Rauschpegel am nächsten Morgen ist dann nicht nur durch die statische Kalibrierung bestimmt, sondern auch durch die Menge an Downscaling, die letzte Nacht stattgefunden hat. Gute Nacht = mehr Downscaling = niedrigerer Rauschpegel = besseres SNR = weniger ADHS-Symptome. Schlechte Nacht = akkumulierte Gewichte = höherer Rauschpegel = schlechtere Diskriminierbarkeit.
+
+Dieser Mechanismus erklärt die Tagesvariabilität der ADHS-Symptomatik, die in der klinischen Literatur dokumentiert aber schlecht erklärt ist. Die konventionelle Erklärung — variable Motivation, Schlafmenge, Tagesform — wird durch einen konkreten neurophysiologischen Mechanismus ersetzt: das nächtliche Downscaling-Quantum als variabler Gain-Modulator.
+
+**2. Deklaratives Konsolidierungsdefizit.** Hippocampale Sharp-Wave-Ripples koppeln an kortikale Slow Oscillations über thalamokortikale Spindeln; der Up-State ist das Zeitfenster für Hippocampus-zu-Kortex-Transfer (Staresina et al. 2015). Fehlen die Up-States (Vollschluss), fehlt das Konsolidierungsfenster.
+
+Das klinische Bild bei ADHS — intaktes Verstehen, defizitärer Abruf am nächsten Tag, das Gefühl des „Durchsiebens" von Gelerntem (vgl. Anhang C) — passt exakt zu einem Konsolidierungsdefizit bei intakter Enkodierung. Dies wird konventionell als Aufmerksamkeitsdefizit bei der Enkodierung attribuiert, ist aber im Modell primär ein Schlafarchitektur-Problem. Die Dissoziation ist spezifisch: prozedurale Konsolidierung (weniger spindelabhängig, stärker striatumbasiert) bleibt relativ erhalten, deklarative Konsolidierung (spindelabhängig, hippocampo-kortikal) ist selektiv betroffen.
+
+**Kompensatorische Wachkonsolidierung.** Das Fehlen des N3-Konsolidierungskanals erzwingt systemische Adaptation: Das Gedächtnis baut über Jahre kompensatorisch auf Wachzustandsstrategien um — externe Ankersysteme (Musik, Gerüche, Schlüsselworte), relationale statt chronologische Kodierung, kontextuelle Rekonstruktion statt direktem Abruf (→ Anhang C; Anhang D, D.6.3, D.7). Diese Strategien sind keine bewussten Entscheidungen, sondern emergente Adaptationen an einen defekten Nachtkanal. Funktional substituieren sie den hippocampo-kortikalen Transfer, der im gesunden System über Schlafspindeln läuft, durch wachzustandsbasiertes Replay über externe Trigger. Die Tatsache, dass das Gedächtnis trotzdem funktioniert — wenn auch mit höherem Aufwand und geringerer Zuverlässigkeit — zeigt, dass der Wachzustandskanal als Kompensationspfad tragfähig ist, aber das System ist auf diesen einzelnen Kanal angewiesen statt auf die normale Redundanz beider Pfade.
+
+**3. Kumulative Clearance-Last.** Reduzierte glymphatische Clearance über Jahre akkumuliert neuroinflammatorische Metaboliten. Serotonerge Neurone sind hochsensibel für inflammatorische Signale (vgl. Anhang J). Das erzeugt einen Feedbackloop: akkumulierte Metaboliten destabilisieren die Raphe weiter → Schlafarchitektur verschlechtert sich → Clearance sinkt weiter. Dies ist der langsamste der drei Pfade, aber potenziell der destruktivste, weil er die statische Komponente (Kalibrierung) über Jahre progressiv verschlechtert.
+
+#### **3.5.2 Modellvorhersagen und externe Evidenz**
+
+Die dynamische SNR-Hypothese erzeugt spezifische Vorhersagen für die ADHS-Population (Population A im Sinne von Kap. 5):
+
+| Vorhersage | Evidenzstatus | Quelle |
+| :---- | :---- | :---- |
+| ADHS-Populationen zeigen reduzierte Schlafspindeldichte | Gesichert | Ringli et al. 2013 (Pädiatrie); Saletin et al. |
+| ADHS zeigt spezifisch reduzierte schlafabhängige *deklarative* Konsolidierung | Gesichert | Prehn-Kristensen et al. 2013 (kontrolliert) |
+| *Prozedurale* Konsolidierung bei ADHS relativ erhalten | Gesichert | Prehn-Kristensen et al. 2013 (Dissoziation deklarativ/prozedural) |
+| ADHS-Symptomstärke korreliert intraindividuell mit Vorschlafqualität | Plausibel, klinisch berichtet | Klinische Beobachtung; systematische Studien inkonsistent |
+| Intervention an der Schlafarchitektur verbessert ADHS-Kognition unabhängig von Stimulanziendosis | Hypothetisch, mechanistisch ableitbar | Modellvorhersage; kongruent mit LDX-Schlafkonsolidierung (08, Anhang B) |
+
+Die Dissoziation deklarativ/prozedural ist besonders informativ: Sie wird durch die spezifische Spindel-Slow-Oscillation-Kopplung vorhergesagt, nicht durch ein generisches „Schlaf ist wichtig für Gedächtnis"-Argument. Die Tatsache, dass Prehn-Kristensen et al. genau diese Dissoziation finden, stützt den spezifischen Mechanismus, nicht nur die allgemeine Richtung.
+
+#### **3.5.3 Verknüpfung zur statischen Komponente**
+
+Die dynamische und die statische Komponente sind nicht unabhängig, sondern multiplikativ verknüpft: Ein System mit breiterer Filterbandbreite (statisch, 3.2) hat weniger Toleranz für zusätzliches Rauschen aus defizitärem Downscaling (dynamisch). Das erklärt, warum schlafgestörte Neurotypische zwar kognitive Einbußen zeigen, aber nicht die volle ADHS-Symptomatik entwickeln — ihr statischer Floor ist niedrig genug, um das zusätzliche dynamische Rauschen zu absorbieren. Im vorliegenden System addiert sich das dynamische Rauschen auf einen bereits hohen statischen Floor, und die Summe überschreitet die Schwelle zur funktionalen Beeinträchtigung früher.
+
+**Evidenzstatus:** Synaptische Homöostase-Hypothese (SHY): hypothetisch-plausibel (Tononi & Cirelli 2014, nicht falsifiziert). Spindel-Ripple-Kopplung an Up-States: gesichert (Staresina et al. 2015). Glymphatische Clearance-Abhängigkeit von Slow Oscillation: gesichert (Xie et al. 2013, Fultz et al. 2019). Reduzierte Spindeldichte und selektives deklaratives Konsolidierungsdefizit bei ADHS: gesichert (Ringli et al. 2013, Prehn-Kristensen et al. 2013). Multiplikative Verknüpfung statisch/dynamisch: hypothetisch, mechanistisch ableitbar.

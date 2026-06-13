@@ -235,6 +235,18 @@ Ich habe mir später eine elegante Erklärung ausgedacht — dass ich mein Gedä
 
 Ich habe nichts entschieden. Ich habe einen Weg gefunden, der funktioniert.
 
+**Mechanistisches Reframing (Juni 2026)**
+
+Die oben beschriebene Gedächtnisstruktur — Musikanker statt chronologischer Ablage, assoziative Verknüpfungen statt direkter Kopien, kontextuelle Rekonstruktion statt sequentiellem Abruf — ist kein idiosynkratischer kognitiver Stil. Sie ist die architektonische Konsequenz einer spezifischen Schlafanomalie.
+
+Im gesunden N3 alterniert der thalamische Gate mit Sub-Sekunden-Taktung zwischen Down-States und Up-States. Die Up-States sind das Zeitfenster, in dem hippocampale Sharp-Wave-Ripples über thalamokortikale Spindeln an den Kortex koppeln — der Mechanismus für deklarative Gedächtniskonsolidierung (Hippocampus-zu-Kortex-Transfer). Im vorliegenden System schließt der Gate komplett: minutenlanger Vollschluss ohne Up-States, keine Spindel-Ripple-Kopplung, kein nächtliches Konsolidierungsfenster (→ 08I, 4.3; 03, 3.5).
+
+Das „Gedächtnis, das nicht hält" — die tägliche Variabilität des Abrufs, das Gefühl des Durchsiebens, die Panik vor der Zeit — ist exakt das, was ein System produziert, das auf Enkodierung ohne nächtliche Konsolidierung angewiesen ist. Tagsüber wird scharf enkodiert (intaktes hippocampales Encoding), aber der Overnight-Transfer in kortikale Langzeitspeicher fehlt. Am nächsten Tag sind die Spuren hippocampal noch vorhanden, aber fragil und zustandsabhängig — sie konkurrieren mit neuem Input und werden nicht durch Schlaf stabilisiert.
+
+Die Musikanker sind funktional Ersatz-Spindeln: externe Trigger, die den Hippocampus-zu-Kortex-Transfer im Wachzustand erzwingen. Musik rekonstruiert den Modulationszustand (→ Anhang D, D.6.3) und erzeugt damit einen reproduzierbaren Zugriffsvektor, den die Schlafarchitektur nicht liefert. Die Generalisierung auf Gerüche, Symbole und Schlüsselworte erweitert das Ankersystem, kompensiert aber denselben Grunddefekt.
+
+Die frühere Überzeugung, Konsolidierung finde für dieses System primär tagsüber statt, war empirisch korrekt — nicht weil N3-Konsolidierung generell überbewertet wäre, sondern weil der spezifische Mechanismus hardwareseitig nicht verfügbar ist. Das System hat den einzigen verbleibenden Kanal maximiert. Die relationale Gedächtnisarchitektur (Anhang D, D.7) ist das Endprodukt dieser Adaptation: Relationen sind modulationsvektorinvariant und damit schlafunabhängig konsolidierbar.
+
 **State-Dependent Memory — Anfallsengramme im Desync**
 
 Zwanzig Jahre Migräneanfälle. Zwanzig Jahre, in denen ich die gesamte Phänomenologie eines Anfalls durchlebt habe — den Aufbau, die Aura, den Schmerz, die autonomen Symptome, das Danach. Und zwanzig Jahre, in denen ich mich zwischen den Anfällen kaum daran erinnern konnte. Nicht verdrängt. Nicht vergessen. Nicht abrufbar.
