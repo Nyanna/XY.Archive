@@ -57,7 +57,6 @@ PG_USER = os.environ.get("PGUSER", "gadgetbridge")
 PG_PASSWORD = os.environ["PGPASSWORD"]
 PG_SCHEMA = "public"
 PG_TABLE = "HRV_SPECTRAL_BANDS_MINUTE"
-DEVICE_ID = 2  # H9Z 40647
 FLUSH_EVERY = 2000
 
 # --- IBI sanity (matches hrv_aggregate.py) --------------------------
@@ -181,10 +180,9 @@ def load_rr_data(pg_conn, min_ts_ms=None):
         'SELECT (EXTRACT(EPOCH FROM timestamp_at) * 1000)::bigint, '
         '       "RR_MILLIS" '
         'FROM "HEART_RR_INTERVAL_SAMPLE" '
-        'WHERE "DEVICE_ID" = %s '
-        '  AND "RR_MILLIS" BETWEEN %s AND %s'
+        'WHERE "RR_MILLIS" BETWEEN %s AND %s'
     )
-    params = [DEVICE_ID, MIN_RR, MAX_RR]
+    params = [MIN_RR, MAX_RR]
     if min_ts_ms is not None:
         query += ' AND timestamp_at >= to_timestamp(%s)'
         params.append(int(min_ts_ms) / 1000.0)
