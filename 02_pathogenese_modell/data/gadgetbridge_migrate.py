@@ -52,6 +52,12 @@ PG_SCHEMA = "public"
 BATCH_SIZE = 5000
 PROGRESS_MIN_ROWS = BATCH_SIZE  # show per-batch progress for tables at least this large
 
+# Columns excluded per table (already removed from target, must not be recreated)
+COLUMN_EXCLUDE: dict[str, set[str]] = {
+    "HEART_RR_INTERVAL_SAMPLE":  {"DEVICE_ID", "USER_ID"},
+    "GENERIC_HEART_RATE_SAMPLE": {"DEVICE_ID", "USER_ID"},
+}
+
 # Tables excluded from replication (noisy, large, or irrelevant for analysis)
 SYNC_EXCLUDE = {
     "ALARM",
@@ -345,6 +351,9 @@ def get_target_max(pg_conn, table_name, col_name):
 
 def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
     columns = get_columns(sqlite_conn, table_name)
+    excluded_cols = COLUMN_EXCLUDE.get(table_name, set())
+    if excluded_cols:
+        columns = [c for c in columns if c[1] not in excluded_cols]
     pk_cols = get_primary_key(columns)
     ts_cols = [
         c[1] for c in columns
