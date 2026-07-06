@@ -17,3 +17,8 @@
 	* Magniusium/mangel
 	* Q10 Ubiqiinol
 	* sympathische wellen
+* warum gibt es in studien nur anfallsreduktionen aber nie heilugnen?
+* drei phänomene zum abgrenzen
+	* parasympathische wellen
+	* PHM entspannt auch den nacken
+	* Naratriptan beseitigt die symptome und stellt die perfusion wieder her
