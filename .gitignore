@@ -3,3 +3,4 @@
 .idea
 /XY.Archiv.iml
 /.claude/settings.local.json
+/.claude/logs/*.json
