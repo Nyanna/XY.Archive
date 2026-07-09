@@ -20,3 +20,4 @@
 	* parasympathische wellen
 	* PHM entspannt auch den nacken
 	* Naratriptan beseitigt die symptome und stellt die perfusion wieder her
+* VictoriaMetrics mit als Prometheus in Grafana für Zeitreihen  
