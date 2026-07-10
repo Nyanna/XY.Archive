@@ -1,4 +1,3 @@
-
 # Aufgestiegene Wesen und die Grenzen des Mitgefühls: Eine philosophische Argumentation
 
 ## Kapitel 1: Die Ausgangsthese – Der Bedeutungsverlust des Menschen
