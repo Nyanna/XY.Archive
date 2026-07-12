@@ -1,9 +1,5 @@
 # TODO
 
-* Beobachtung wenn menschen das vom Leben anderer erfahren setzen sie es zu ihrem in Beziehung und haben den drang zu helfen. Das ergebnis ist eine vielleicht biologisch betrieber ambivalenzdrang der überlebenschangen. In einfach helfen und mitgefühl. Das so große Ungleichheit ind er Welt herscht ist demnach kein Mangel an mitgefühl sondern des In beziehung setzen.
-Man hört von Leben eines Brasilianischen jungen und möchte ihm helfen und spendet. Das ist ein in beziehung setzen seines lebens mit dem eigenen. Selbst wenn der junge sich nicht als arm sieht oder leidet verursacht dieses "in beziehung treten" diesen impuls des helfen wollen.
-DIe Implikation daraus ist das privatsphäre das in beziehung setzten verhidnert, distanz erlaubt und so ungleichheit schafft. 
-
 ## 02 Pathogenesemodell
 
 * warum hilft DPH bei retribulären schmerzen und nackenstefiheit
