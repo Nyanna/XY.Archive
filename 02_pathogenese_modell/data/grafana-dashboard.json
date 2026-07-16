@@ -1,0 +1,4728 @@
+{
+  "apiVersion": "dashboard.grafana.app/v2",
+  "kind": "Dashboard",
+  "metadata": {
+    "name": "adlmsqp",
+    "namespace": "default",
+    "uid": "5cf15c58-9744-4d26-bf29-789aef294f95",
+    "resourceVersion": "1782563450616780",
+    "generation": 43,
+    "creationTimestamp": "2026-04-27T20:13:53Z",
+    "labels": {
+      "grafana.app/deprecatedInternalID": "4223962559680512"
+    },
+    "annotations": {
+      "grafana.app/createdBy": "user:ffkduy42jbpc0f",
+      "grafana.app/folder": "",
+      "grafana.app/saved-from-ui": "Grafana v13.0.1 (a100054f)",
+      "grafana.app/updatedBy": "user:ffkduy42jbpc0f",
+      "grafana.app/updatedTimestamp": "2026-06-27T12:30:50Z"
+    }
+  },
+  "spec": {
+    "annotations": [
+      {
+        "kind": "AnnotationQuery",
+        "spec": {
+          "query": {
+            "kind": "DataQuery",
+            "group": "grafana",
+            "version": "v0",
+            "datasource": {
+              "name": "-- Grafana --"
+            },
+            "spec": {}
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "builtIn": true
+        }
+      }
+    ],
+    "cursorSync": "Tooltip",
+    "editable": true,
+    "elements": {
+      "panel-1": {
+        "kind": "Panel",
+        "spec": {
+          "id": 1,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "builder",
+                        "format": "table",
+                        "rawSql": "SELECT $__timeGroup(timestamp_ms_at,$__interval), AVG(\"HR_BPM\") AS \"HR\" FROM \"HRV_MINUTE_AGGREGATED\" WHERE $__timeFilter(timestamp_ms_at) GROUP BY $__timeGroup(timestamp_ms_at, $__interval) ORDER BY $__timeGroup(timestamp_ms_at, $__interval) LIMIT 144000 ",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_ms_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HR\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"HR_BPM\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 144000,
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "b8bb9a9a-cdef-4012-b456-719dba9fc92f",
+                                "properties": {
+                                  "field": "timestamp_ms_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b9ab9a98-0123-4456-b89a-b19dba95ef3b",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_ms_at)"
+                        },
+                        "table": "\"HRV_MINUTE_AGGREGATED\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "builder",
+                        "format": "table",
+                        "rawSql": "SELECT $__timeGroup(timestamp_at,$__interval), AVG(\"HEART_RATE\") AS \"HRX\" FROM \"XIAOMI_ACTIVITY_SAMPLE\" WHERE $__timeFilter(timestamp_at) GROUP BY $__timeGroup(timestamp_at, $__interval) ORDER BY $__timeGroup(timestamp_at, $__interval) LIMIT 144000 ",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HRX\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"HEART_RATE\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_at, $__interval)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 144000,
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_at, $__interval)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "8b98a9aa-89ab-4cde-b012-319dbc4a7d78",
+                                "properties": {
+                                  "field": "timestamp_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b9ab9a98-0123-4456-b89a-b19dba95ef3b",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_at)"
+                        },
+                        "table": "\"XIAOMI_ACTIVITY_SAMPLE\""
+                      }
+                    },
+                    "refId": "B",
+                    "hidden": false
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT timestamp_at, 0::float AS \"spacer\"\nFROM \"XIAOMI_ACTIVITY_SAMPLE\"\nWHERE $__timeFilter(timestamp_at)\nLIMIT 1",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      }
+                    },
+                    "refId": "C",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "HR AVG 10",
+                      "mode": "windowFunctions",
+                      "reduce": {
+                        "reducer": "sum"
+                      },
+                      "window": {
+                        "field": "HR",
+                        "reducer": "mean",
+                        "windowAlignment": "centered",
+                        "windowSize": 10,
+                        "windowSizeMode": "fixed"
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "HRX AVG 10",
+                      "mode": "windowFunctions",
+                      "reduce": {
+                        "reducer": "sum"
+                      },
+                      "window": {
+                        "field": "HRX",
+                        "reducer": "mean",
+                        "windowAlignment": "centered",
+                        "windowSize": 10,
+                        "windowSizeMode": "fixed"
+                      }
+                    }
+                  }
+                }
+              ],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "timeseries",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 120
+                },
+                "timezone": [
+                  "browser"
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "min": 40,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "transparent"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "HR / BMP",
+                    "axisPlacement": "auto",
+                    "axisWidth": 50,
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineStyle": {
+                      "fill": "solid"
+                    },
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "dashed"
+                    }
+                  }
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "HR AVG 10"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      },
+                      {
+                        "id": "custom.axisWidth",
+                        "value": 50
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "HR"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "thresholds",
+                        "value": {
+                          "mode": "absolute",
+                          "steps": [
+                            {
+                              "color": "transparent",
+                              "value": 0
+                            },
+                            {
+                              "color": "super-light-blue",
+                              "value": 50
+                            },
+                            {
+                              "color": "super-light-yellow",
+                              "value": 100
+                            },
+                            {
+                              "color": "super-light-red",
+                              "value": 150
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "time"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "hidden"
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "HRX"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "HRX AVG 10"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 1.5
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "spacer"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "min",
+                        "value": 0
+                      },
+                      {
+                        "id": "max",
+                        "value": 1
+                      },
+                      {
+                        "id": "decimals",
+                        "value": 0
+                      },
+                      {
+                        "id": "displayName",
+                        "value": "."
+                      }
+                    ]
+                  },
+                  {
+                    "__systemRef": "hideSeriesFrom",
+                    "matcher": {
+                      "id": "byNames",
+                      "options": {
+                        "mode": "exclude",
+                        "names": [
+                          "HR",
+                          "HR AVG 10"
+                        ],
+                        "prefix": "All except:",
+                        "readOnly": true
+                      }
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.hideFrom",
+                        "value": {
+                          "legend": false,
+                          "tooltip": true,
+                          "viz": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "panel-14": {
+        "kind": "Panel",
+        "spec": {
+          "id": 14,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "builder",
+                        "format": "table",
+                        "rawSql": "SELECT $__timeGroup(timestamp_ms_at,$__interval), AVG(\"PNN50\") AS \"PNN50\", AVG(\"RMSSD_MS\") AS \"RMSSD\", AVG(\"SDNN_MS\") AS \"SDNN\" FROM \"HRV_MINUTE_AGGREGATED\" WHERE $__timeFilter(timestamp_ms_at) GROUP BY $__timeGroup(timestamp_ms_at, $__interval) ORDER BY $__timeGroup(timestamp_ms_at, $__interval) LIMIT 144000 ",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_ms_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"PNN50\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"PNN50\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"RMSSD\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"RMSSD_MS\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"SDNN\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"SDNN_MS\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 144000,
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "b8bb9a9a-cdef-4012-b456-719dba9fc92f",
+                                "properties": {
+                                  "field": "timestamp_ms_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b9ab9a98-0123-4456-b89a-b19dba95ef3b",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_ms_at)"
+                        },
+                        "table": "\"HRV_MINUTE_AGGREGATED\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "PNN50 AVG 10",
+                      "mode": "windowFunctions",
+                      "reduce": {
+                        "reducer": "sum"
+                      },
+                      "window": {
+                        "field": "PNN50",
+                        "reducer": "mean",
+                        "windowAlignment": "centered",
+                        "windowSize": 0.03,
+                        "windowSizeMode": "percentage"
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "RMSSD/SDNN",
+                      "binary": {
+                        "left": {
+                          "matcher": {
+                            "id": "byName",
+                            "options": "RMSSD"
+                          }
+                        },
+                        "operator": "/",
+                        "right": {
+                          "matcher": {
+                            "id": "byName",
+                            "options": "SDNN"
+                          }
+                        }
+                      },
+                      "mode": "binary",
+                      "reduce": {
+                        "reducer": "sum"
+                      }
+                    }
+                  }
+                }
+              ],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "timeseries",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 120
+                },
+                "timezone": [
+                  "browser"
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "unit": "short",
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "transparent"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "RMSSD / SDNN",
+                    "axisPlacement": "auto",
+                    "axisWidth": 50,
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineStyle": {
+                      "fill": "solid"
+                    },
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "dashed"
+                    }
+                  },
+                  "fieldMinMax": false
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "PNN50"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "PNN50"
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "RMSSD"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "green",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "RMSSD / SDNN"
+                      },
+                      {
+                        "id": "thresholds",
+                        "value": {
+                          "mode": "absolute",
+                          "steps": [
+                            {
+                              "color": "green",
+                              "value": 0
+                            },
+                            {
+                              "color": "yellow",
+                              "value": 25
+                            },
+                            {
+                              "color": "orange",
+                              "value": 50
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "time"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "hidden"
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "SDNN"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "PNN50 AVG 10"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      },
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "PNN50"
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "scope": "series",
+                      "options": "RMSSD/SDNN"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      }
+                    ]
+                  },
+                  {
+                    "__systemRef": "hideSeriesFrom",
+                    "matcher": {
+                      "id": "byNames",
+                      "options": {
+                        "mode": "exclude",
+                        "names": [
+                          "PNN50",
+                          "RMSSD",
+                          "SDNN",
+                          "PNN50 AVG 10"
+                        ],
+                        "prefix": "All except:",
+                        "readOnly": true
+                      }
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.hideFrom",
+                        "value": {
+                          "legend": false,
+                          "tooltip": true,
+                          "viz": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "panel-15": {
+        "kind": "Panel",
+        "spec": {
+          "id": 15,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "builder",
+                        "format": "table",
+                        "rawSql": "SELECT $__timeGroup(timestamp_ms_at,$__interval), AVG(\"CPC_LFC_RATIO\") AS \"CPC\", AVG(\"HF_PEAK_STABILITY\") AS \"HF Peak\" FROM \"HRV_MINUTE_AGGREGATED\" WHERE $__timeFilter(timestamp_ms_at) GROUP BY $__timeGroup(timestamp_ms_at, $__interval) ORDER BY $__timeGroup(timestamp_ms_at, $__interval) LIMIT 144000 ",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_ms_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"CPC\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"CPC_LFC_RATIO\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HF Peak\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"HF_PEAK_STABILITY\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 144000,
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "b8bb9a9a-cdef-4012-b456-719dba9fc92f",
+                                "properties": {
+                                  "field": "timestamp_ms_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b9ab9a98-0123-4456-b89a-b19dba95ef3b",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_ms_at)"
+                        },
+                        "table": "\"HRV_MINUTE_AGGREGATED\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "CPC AVR 5",
+                      "mode": "windowFunctions",
+                      "reduce": {
+                        "reducer": "sum"
+                      },
+                      "window": {
+                        "field": "CPC",
+                        "reducer": "mean",
+                        "windowAlignment": "centered",
+                        "windowSize": 0.03,
+                        "windowSizeMode": "percentage"
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "HF Peak AVR 5",
+                      "mode": "windowFunctions",
+                      "reduce": {
+                        "reducer": "sum"
+                      },
+                      "window": {
+                        "field": "HF Peak",
+                        "reducer": "mean",
+                        "windowAlignment": "centered",
+                        "windowSize": 0.03,
+                        "windowSizeMode": "percentage"
+                      }
+                    }
+                  }
+                }
+              ],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "timeseries",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 120
+                },
+                "timezone": [
+                  "browser"
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "unit": "short",
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "transparent"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "CPC",
+                    "axisPlacement": "auto",
+                    "axisWidth": 50,
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineStyle": {
+                      "fill": "solid"
+                    },
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "dashed"
+                    }
+                  },
+                  "fieldMinMax": false
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "scope": "series",
+                      "options": "HF Peak"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "HF Peak"
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "scope": "series",
+                      "options": "CPC"
+                    },
+                    "properties": [
+                      {
+                        "id": "thresholds",
+                        "value": {
+                          "mode": "absolute",
+                          "steps": [
+                            {
+                              "color": "green",
+                              "value": 0
+                            },
+                            {
+                              "color": "#6ED0E0",
+                              "value": 0.3
+                            },
+                            {
+                              "color": "#EAB839",
+                              "value": 0.5
+                            },
+                            {
+                              "color": "red",
+                              "value": 0.8
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "CPC AVR 5"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "blue",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "HF Peak AVR 5"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "HF Peak"
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "panel-16": {
+        "kind": "Panel",
+        "spec": {
+          "id": 16,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "builder",
+                        "format": "table",
+                        "rawSql": "SELECT $__timeGroup(timestamp_at,$__interval), AVG(\"RR_MILLIS\") AS \"RR\", MAX(\"RR_MILLIS\") AS \"Max\", MIN(\"RR_MILLIS\") AS \"Min\" FROM \"HEART_RR_INTERVAL_SAMPLE\" WHERE $__timeFilter(timestamp_at) GROUP BY $__timeGroup(timestamp_at, $__interval) ORDER BY $__timeGroup(timestamp_at, $__interval) LIMIT 2000 ",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"RR\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"RR_MILLIS\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"Max\"",
+                              "name": "MAX",
+                              "parameters": [
+                                {
+                                  "name": "\"RR_MILLIS\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"Min\"",
+                              "name": "MIN",
+                              "parameters": [
+                                {
+                                  "name": "\"RR_MILLIS\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_at, $__interval)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 2000,
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_at, $__interval)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "b9988b9b-cdef-4012-b456-719e82ce95a1",
+                                "properties": {
+                                  "field": "timestamp_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b889aa8b-0123-4456-b89a-b19e82ccb30f",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_at)"
+                        },
+                        "table": "\"HEART_RR_INTERVAL_SAMPLE\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "WITH beats AS (\n  SELECT\n    timestamp_at,\n    \"RR_MILLIS\" AS rr,\n    SUM(\"RR_MILLIS\") OVER (\n      PARTITION BY timestamp_at\n      ORDER BY \"SEQ\"                 -- bzw. \"RR_MILLIS\", falls SEQ kein Intra-Paket-Zähler\n      ROWS UNBOUNDED PRECEDING\n    ) AS c\n  FROM \"HEART_RR_INTERVAL_SAMPLE\"\n  WHERE $__timeFilter(timestamp_at)\n),\nrecon AS (\n  SELECT\n    timestamp_at\n      + ( ( c - ( MIN(c) OVER (PARTITION BY timestamp_at)\n                + MAX(c) OVER (PARTITION BY timestamp_at) ) / 2.0 )\n          * interval '1 millisecond' ) AS beat_ts,\n    rr\n  FROM beats\n)\nSELECT\n  $__timeGroup(beat_ts, $__interval) AS \"time\",\n  AVG(rr) AS \"RR\"\nFROM recon\nGROUP BY $__timeGroup(beat_ts, $__interval)\nORDER BY 1\nLIMIT 2000",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      }
+                    },
+                    "refId": "B",
+                    "hidden": true
+                  }
+                }
+              ],
+              "transformations": [
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "Spread",
+                      "binary": {
+                        "left": {
+                          "matcher": {
+                            "id": "byName",
+                            "options": "Max"
+                          }
+                        },
+                        "operator": "-",
+                        "right": {
+                          "matcher": {
+                            "id": "byName",
+                            "options": "Min"
+                          }
+                        }
+                      },
+                      "mode": "binary",
+                      "reduce": {
+                        "include": [
+                          "Max",
+                          "Min"
+                        ],
+                        "reducer": "stdDev"
+                      },
+                      "replaceFields": false
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "Spread Rel",
+                      "binary": {
+                        "left": {
+                          "matcher": {
+                            "id": "byName",
+                            "options": "Spread"
+                          }
+                        },
+                        "operator": "/",
+                        "right": {
+                          "matcher": {
+                            "id": "byName",
+                            "options": "RR"
+                          }
+                        }
+                      },
+                      "mode": "binary",
+                      "reduce": {
+                        "reducer": "sum"
+                      }
+                    }
+                  }
+                }
+              ],
+              "queryOptions": {
+                "maxDataPoints": 1000,
+                "interval": "1ms"
+              }
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "timeseries",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 120
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "green"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "RR",
+                    "axisPlacement": "auto",
+                    "axisWidth": 50,
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  }
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "scope": "series",
+                      "options": "RR"
+                    },
+                    "properties": [
+                      {
+                        "id": "thresholds",
+                        "value": {
+                          "mode": "absolute",
+                          "steps": [
+                            {
+                              "color": "green",
+                              "value": 0
+                            },
+                            {
+                              "color": "red",
+                              "value": 500
+                            },
+                            {
+                              "color": "red",
+                              "value": 1700
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "custom.thresholdsStyle",
+                        "value": {
+                          "mode": "dashed"
+                        }
+                      },
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "min",
+                        "value": 400
+                      },
+                      {
+                        "id": "max",
+                        "value": 1800
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "scope": "series",
+                      "options": "Spread Rel"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "scope": "series",
+                      "options": "time"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "hidden"
+                      }
+                    ]
+                  },
+                  {
+                    "__systemRef": "hideSeriesFrom",
+                    "matcher": {
+                      "id": "byNames",
+                      "options": {
+                        "mode": "exclude",
+                        "names": [
+                          "RR",
+                          "Spread Rel"
+                        ],
+                        "prefix": "All except:",
+                        "readOnly": true
+                      }
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.hideFrom",
+                        "value": {
+                          "legend": false,
+                          "tooltip": true,
+                          "viz": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "panel-2": {
+        "kind": "Panel",
+        "spec": {
+          "id": 2,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT timestamp_at, \"STAGE\"\nFROM \"XIAOMI_SLEEP_STAGE_SAMPLE\"\nWHERE $__timeFilter(timestamp_at)\n\nUNION ALL\n\nSELECT DISTINCT s.wakeup_time_at AS timestamp_at, 6 AS \"STAGE\"  -- 5 = Awake\nFROM \"XIAOMI_SLEEP_TIME_SAMPLE\" s\nWHERE $__timeFilter(s.wakeup_time_at)\n\nORDER BY timestamp_at\nLIMIT 5000",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [
+                                {
+                                  "name": "timestamp_at",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "parameters": [
+                                {
+                                  "name": "\"STAGE\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 500,
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "8999b8ab-0123-4456-b89a-b19dbab99213",
+                                "properties": {
+                                  "field": "timestamp_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b9ab9a98-0123-4456-b89a-b19dba95ef3b",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_at)"
+                        },
+                        "table": "\"XIAOMI_SLEEP_STAGE_SAMPLE\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "state-timeline",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "alignValue": "center",
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 120
+                },
+                "mergeValues": false,
+                "rowHeight": 1,
+                "showValue": "always",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "displayName": "Stage",
+                  "mappings": [
+                    {
+                      "type": "value",
+                      "options": {
+                        "0": {
+                          "text": "Awake",
+                          "color": "transparent",
+                          "index": 4
+                        },
+                        "1": {
+                          "text": "Awake",
+                          "index": 3
+                        },
+                        "2": {
+                          "text": "Deep . . . . . . . . . . . . . . .",
+                          "color": "dark-blue",
+                          "index": 2
+                        },
+                        "3": {
+                          "text": "Light",
+                          "color": "super-light-blue",
+                          "index": 1
+                        },
+                        "4": {
+                          "text": "REM",
+                          "color": "super-light-red",
+                          "index": 0
+                        },
+                        "5": {
+                          "text": "Awake",
+                          "color": "super-light-yellow",
+                          "index": 5
+                        },
+                        "6": {
+                          "text": "Awake",
+                          "color": "#f0f0f0",
+                          "index": 6
+                        }
+                      }
+                    }
+                  ],
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "transparent"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisPlacement": "auto",
+                    "axisWidth": 70,
+                    "fillOpacity": 60,
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineWidth": 1,
+                    "spanNulls": false
+                  },
+                  "fieldMinMax": false
+                },
+                "overrides": []
+              }
+            }
+          }
+        }
+      },
+      "panel-3": {
+        "kind": "Panel",
+        "spec": {
+          "id": 3,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "builder",
+                        "format": "table",
+                        "rawSql": "SELECT $__timeGroup(timestamp_ms_at,$__interval), AVG(\"B7B8_DOM\") AS \"Dominance\", AVG(\"B7B8_OFF\") AS \"Interference\" FROM \"HRV_MINUTE_AGGREGATED\" WHERE $__timeFilter(timestamp_ms_at) GROUP BY $__timeGroup(timestamp_ms_at, $__interval) ORDER BY $__timeGroup(timestamp_ms_at, $__interval) LIMIT 144000 ",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_ms_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"Dominance\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"B7B8_DOM\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"Interference\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"B7B8_OFF\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 144000,
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "b8bb9a9a-cdef-4012-b456-719dba9fc92f",
+                                "properties": {
+                                  "field": "timestamp_ms_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b9ab9a98-0123-4456-b89a-b19dba95ef3b",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_ms_at)"
+                        },
+                        "table": "\"HRV_MINUTE_AGGREGATED\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "Dom. AVG 10",
+                      "mode": "windowFunctions",
+                      "reduce": {
+                        "reducer": "sum"
+                      },
+                      "window": {
+                        "field": "Dominance",
+                        "reducer": "mean",
+                        "windowAlignment": "centered",
+                        "windowSize": 0.01,
+                        "windowSizeMode": "percentage"
+                      }
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "Inter. AVG 10",
+                      "mode": "windowFunctions",
+                      "reduce": {
+                        "reducer": "sum"
+                      },
+                      "window": {
+                        "field": "Interference",
+                        "reducer": "mean",
+                        "windowAlignment": "centered",
+                        "windowSize": 0.01,
+                        "windowSizeMode": "percentage"
+                      }
+                    }
+                  }
+                }
+              ],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "timeseries",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 120
+                },
+                "timezone": [
+                  "browser"
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "min": -1,
+                  "max": 1,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "transparent"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "< Sympathikus | Vagal >",
+                    "axisPlacement": "auto",
+                    "axisWidth": 50,
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "smooth",
+                    "lineStyle": {
+                      "fill": "solid"
+                    },
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "dashed"
+                    }
+                  }
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "time"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "hidden"
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Dominance"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-blue",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "thresholds",
+                        "value": {
+                          "mode": "absolute",
+                          "steps": [
+                            {
+                              "color": "green",
+                              "value": 0
+                            },
+                            {
+                              "color": "red",
+                              "value": 0
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Interference"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "#FFEE52",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "Interference Level"
+                      },
+                      {
+                        "id": "min",
+                        "value": 0
+                      },
+                      {
+                        "id": "max",
+                        "value": 1
+                      },
+                      {
+                        "id": "decimals",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Dom. AVG 10"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-purple",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      },
+                      {
+                        "id": "custom.fillOpacity",
+                        "value": 20
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Inter. AVG 10"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-yellow",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      },
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "Interference Level"
+                      },
+                      {
+                        "id": "min",
+                        "value": 0
+                      },
+                      {
+                        "id": "max",
+                        "value": 1
+                      },
+                      {
+                        "id": "decimals",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "panel-4": {
+        "kind": "Panel",
+        "spec": {
+          "id": 4,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "builder",
+                        "format": "table",
+                        "rawSql": "SELECT $__timeGroup(timestamp_ms_at,$__interval,0), AVG(\"HF_MS2\") AS \"HF\", AVG(\"LF_MS2\") AS \"LF\", AVG(\"VLF_MS2\") AS \"VLF\", AVG(\"ULF1_MS2\") AS \"ULF1\", AVG(\"ULF2_MS2\") AS \"ULF2\", AVG(\"DFA_ALPHA1\") AS \"DFA\" FROM \"HRV_MINUTE_AGGREGATED\" WHERE $__timeFilter(timestamp_ms_at) GROUP BY $__timeGroup(timestamp_ms_at, $__interval, 0) ORDER BY $__timeGroup(timestamp_ms_at, $__interval, 0) LIMIT 144000 ",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_ms_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "0",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HF\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"HF_MS2\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"LF\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"LF_MS2\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"VLF\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"VLF_MS2\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"ULF1\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"ULF1_MS2\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"ULF2\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"ULF2_MS2\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"DFA\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"DFA_ALPHA1\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_ms_at, $__interval, 0)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 144000,
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_ms_at, $__interval, 0)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "b8bb9a9a-cdef-4012-b456-719dba9fc92f",
+                                "properties": {
+                                  "field": "timestamp_ms_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b9ab9a98-0123-4456-b89a-b19dba95ef3b",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_ms_at)"
+                        },
+                        "table": "\"HRV_MINUTE_AGGREGATED\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [
+                {
+                  "kind": "Transformation",
+                  "group": "calculateField",
+                  "spec": {
+                    "options": {
+                      "alias": "DFA AVG",
+                      "mode": "windowFunctions",
+                      "reduce": {
+                        "reducer": "sum"
+                      },
+                      "window": {
+                        "field": "DFA",
+                        "reducer": "mean",
+                        "windowAlignment": "centered",
+                        "windowSize": 0.01,
+                        "windowSizeMode": "percentage"
+                      }
+                    }
+                  }
+                }
+              ],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "timeseries",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 120
+                },
+                "timezone": [
+                  "browser"
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "unit": "short",
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "transparent"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "VLF | LF | HF - ms²",
+                    "axisPlacement": "auto",
+                    "axisWidth": 50,
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineStyle": {
+                      "fill": "solid"
+                    },
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "dashed"
+                    }
+                  },
+                  "fieldMinMax": false
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "time"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "hidden"
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "ULF1"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "VLF"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "super-light-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "ULF2"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "scope": "series",
+                      "options": "DFA"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "yellow",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "DFA_a1"
+                      },
+                      {
+                        "id": "thresholds",
+                        "value": {
+                          "mode": "absolute",
+                          "steps": [
+                            {
+                              "color": "green",
+                              "value": 0
+                            },
+                            {
+                              "color": "red",
+                              "value": 0.8
+                            },
+                            {
+                              "color": "yellow",
+                              "value": 1
+                            },
+                            {
+                              "color": "light-blue",
+                              "value": 1.2
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "custom.thresholdsStyle",
+                        "value": {
+                          "mode": "dashed"
+                        }
+                      },
+                      {
+                        "id": "min",
+                        "value": 0.6
+                      },
+                      {
+                        "id": "max",
+                        "value": 1.6
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "scope": "series",
+                      "options": "DFA AVG"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "custom.axisLabel",
+                        "value": "DFA_a1"
+                      },
+                      {
+                        "id": "min",
+                        "value": 0.6
+                      },
+                      {
+                        "id": "max",
+                        "value": 1.6
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 2
+                      },
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-yellow",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "panel-6": {
+        "kind": "Panel",
+        "spec": {
+          "id": 6,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT $__timeGroup(timestamp_ms_at,$__interval), SUM(\"B7B8_DOM\" + 0.5) AS \"Sympathic Dominance Time under threshold\" FROM \"HRV_MINUTE_AGGREGATED\" WHERE \"B7B8_DOM\" < -0.5 GROUP BY $__timeGroup(timestamp_ms_at, $__interval) ORDER BY $__timeGroup(timestamp_ms_at, $__interval)",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_ms_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"Dominance\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"B7B8_DOM\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 2000,
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "9bba89ab-4567-489a-bcde-f19dbbbba40b",
+                                "properties": {
+                                  "field": "timestamp_ms_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              },
+                              {
+                                "id": "ab8aa99a-4567-489a-bcde-f19dbbc94cc3",
+                                "properties": {
+                                  "field": "\"B7B8_DOM\"",
+                                  "fieldSrc": "field",
+                                  "operator": "less",
+                                  "value": [
+                                    0
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "number"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "b9ab9a98-0123-4456-b89a-b19dba95ef3b",
+                            "type": "group"
+                          },
+                          "whereString": "($__timeFilter(timestamp_ms_at) AND \"B7B8_DOM\" < 0)"
+                        },
+                        "table": "\"HRV_MINUTE_AGGREGATED\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [],
+              "queryOptions": {
+                "timeFrom": "14d",
+                "interval": "1d"
+              }
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "xychart",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "mapping": "manual",
+                "series": [
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 0
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "Sympathic Dominance Time under threshold"
+                      }
+                    }
+                  }
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "green"
+                      },
+                      {
+                        "value": 80,
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 50,
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "pointShape": "circle",
+                    "pointSize": {
+                      "fixed": 5
+                    },
+                    "pointStrokeWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "show": "points+lines"
+                  }
+                },
+                "overrides": []
+              }
+            }
+          }
+        }
+      },
+      "panel-7": {
+        "kind": "Panel",
+        "spec": {
+          "id": 7,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT date_trunc('day', s.wakeup_time_at) AS time,\n       COUNT(*) AS Phases,\n       to_char(s.wakeup_time_at, 'DD.MM.YY') AS tag\nFROM \"XIAOMI_SLEEP_STAGE_SAMPLE\" stage\nJOIN \"XIAOMI_SLEEP_TIME_SAMPLE\" s\n  ON stage.timestamp_at >= s.timestamp_at\n AND stage.timestamp_at <= s.wakeup_time_at\n AND s.timestamp_at < '2026-01-01'::timestamp\nGROUP BY 1,3\nORDER BY 1",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      }
+                    },
+                    "refId": "Phases",
+                    "hidden": false
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT date_trunc('day', s.wakeup_time_at) AS time,\n       COUNT(*) AS Deep\nFROM \"XIAOMI_SLEEP_STAGE_SAMPLE\" stage\nJOIN \"XIAOMI_SLEEP_TIME_SAMPLE\" s\n  ON stage.timestamp_at >= s.timestamp_at\n AND stage.timestamp_at < s.wakeup_time_at\n AND s.timestamp_at < '2026-01-01'::timestamp\n AND stage.\"STAGE\" = 2\nGROUP BY 1\nORDER BY 1",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      }
+                    },
+                    "refId": "Deep",
+                    "hidden": false
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT date_trunc('day', s.wakeup_time_at) AS time,\n       COUNT(*) AS REM\nFROM \"XIAOMI_SLEEP_STAGE_SAMPLE\" stage\nJOIN \"XIAOMI_SLEEP_TIME_SAMPLE\" s\n  ON stage.timestamp_at >= s.timestamp_at\n AND stage.timestamp_at < s.wakeup_time_at\n AND s.timestamp_at < '2026-01-01'::timestamp\n AND stage.\"STAGE\" = 4\nGROUP BY 1\nORDER BY 1",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      }
+                    },
+                    "refId": "REM",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [
+                {
+                  "kind": "Transformation",
+                  "group": "regression",
+                  "spec": {
+                    "options": {
+                      "degree": 3,
+                      "modelType": "linear",
+                      "predictionCount": 2,
+                      "xFieldName": "time",
+                      "yFieldName": "phases"
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "regression",
+                  "spec": {
+                    "options": {
+                      "predictionCount": 2,
+                      "xFieldName": "time",
+                      "yFieldName": "deep"
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "regression",
+                  "spec": {
+                    "options": {
+                      "modelType": "linear",
+                      "predictionCount": 2,
+                      "xFieldName": "time",
+                      "yFieldName": "rem"
+                    }
+                  }
+                }
+              ],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "xychart",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "mapping": "manual",
+                "series": [
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 0
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "phases"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 1
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "deep"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 2
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "rem"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 3
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "Linear regression phases"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 4
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "Linear regression deep"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 5
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "Linear regression rem"
+                      }
+                    }
+                  }
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "min": 0,
+                  "max": 80,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "green"
+                      },
+                      {
+                        "value": 80,
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 50,
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 2,
+                    "pointShape": "circle",
+                    "pointSize": {
+                      "fixed": 5
+                    },
+                    "pointStrokeWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "show": "points+lines"
+                  }
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "phases"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "green",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "deep"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "blue",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "rem"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Linear regression phases"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "green",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 51
+                      },
+                      {
+                        "id": "custom.lineStyle",
+                        "value": {
+                          "dash": [
+                            10,
+                            10
+                          ],
+                          "fill": "dash"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Linear regression deep"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "blue",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      },
+                      {
+                        "id": "custom.lineStyle",
+                        "value": {
+                          "dash": [
+                            10,
+                            10
+                          ],
+                          "fill": "dash"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Linear regression rem"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      },
+                      {
+                        "id": "custom.lineStyle",
+                        "value": {
+                          "dash": [
+                            10,
+                            10
+                          ],
+                          "fill": "dash"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "panel-8": {
+        "kind": "Panel",
+        "spec": {
+          "id": 8,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT date_trunc('day', s.wakeup_time_at) AS time,\n       COUNT(*) AS Phases,\n       to_char(s.wakeup_time_at, 'DD.MM.YY') AS tag\nFROM \"XIAOMI_SLEEP_STAGE_SAMPLE\" stage\nJOIN \"XIAOMI_SLEEP_TIME_SAMPLE\" s\n  ON stage.timestamp_at >= s.timestamp_at\n AND stage.timestamp_at <= s.wakeup_time_at\n AND s.timestamp_at > '2026-01-01'::timestamp\nGROUP BY 1,3\nORDER BY 1",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      }
+                    },
+                    "refId": "Phases",
+                    "hidden": false
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT date_trunc('day', s.wakeup_time_at) AS time,\n       COUNT(*) AS Deep\nFROM \"XIAOMI_SLEEP_STAGE_SAMPLE\" stage\nJOIN \"XIAOMI_SLEEP_TIME_SAMPLE\" s\n  ON stage.timestamp_at >= s.timestamp_at\n AND stage.timestamp_at < s.wakeup_time_at\n AND s.timestamp_at > '2026-01-01'::timestamp\n AND stage.\"STAGE\" = 2\nGROUP BY 1\nORDER BY 1",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      }
+                    },
+                    "refId": "Deep",
+                    "hidden": false
+                  }
+                },
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "code",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT date_trunc('day', s.wakeup_time_at) AS time,\n       COUNT(*) AS REM\nFROM \"XIAOMI_SLEEP_STAGE_SAMPLE\" stage\nJOIN \"XIAOMI_SLEEP_TIME_SAMPLE\" s\n  ON stage.timestamp_at >= s.timestamp_at\n AND stage.timestamp_at < s.wakeup_time_at\n AND s.timestamp_at > '2026-01-01'::timestamp\n AND stage.\"STAGE\" = 4\nGROUP BY 1\nORDER BY 1",
+                        "sql": {
+                          "columns": [
+                            {
+                              "parameters": [],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "limit": 50
+                        }
+                      }
+                    },
+                    "refId": "REM",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [
+                {
+                  "kind": "Transformation",
+                  "group": "regression",
+                  "spec": {
+                    "options": {
+                      "degree": 3,
+                      "modelType": "linear",
+                      "predictionCount": 2,
+                      "xFieldName": "time",
+                      "yFieldName": "phases"
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "regression",
+                  "spec": {
+                    "options": {
+                      "predictionCount": 2,
+                      "xFieldName": "time",
+                      "yFieldName": "deep"
+                    }
+                  }
+                },
+                {
+                  "kind": "Transformation",
+                  "group": "regression",
+                  "spec": {
+                    "options": {
+                      "modelType": "linear",
+                      "predictionCount": 2,
+                      "xFieldName": "time",
+                      "yFieldName": "rem"
+                    }
+                  }
+                }
+              ],
+              "queryOptions": {}
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "xychart",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "mapping": "manual",
+                "series": [
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 0
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "phases"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 1
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "deep"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 2
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "rem"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 3
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "Linear regression phases"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 4
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "Linear regression deep"
+                      }
+                    }
+                  },
+                  {
+                    "frame": {
+                      "matcher": {
+                        "id": "byIndex",
+                        "options": 5
+                      }
+                    },
+                    "x": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "time"
+                      }
+                    },
+                    "y": {
+                      "matcher": {
+                        "id": "byName",
+                        "options": "Linear regression rem"
+                      }
+                    }
+                  }
+                ],
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "min": 0,
+                  "max": 80,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "green"
+                      },
+                      {
+                        "value": 80,
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "right",
+                    "fillOpacity": 50,
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "pointShape": "circle",
+                    "pointSize": {
+                      "fixed": 5
+                    },
+                    "pointStrokeWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "show": "points+lines"
+                  }
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "phases"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "green",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "deep"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "blue",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "rem"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Linear regression phases"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "green",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 51
+                      },
+                      {
+                        "id": "custom.lineStyle",
+                        "value": {
+                          "dash": [
+                            10,
+                            10
+                          ],
+                          "fill": "dash"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Linear regression deep"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "blue",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      },
+                      {
+                        "id": "custom.lineStyle",
+                        "value": {
+                          "dash": [
+                            10,
+                            10
+                          ],
+                          "fill": "dash"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Linear regression rem"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "red",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "max",
+                        "value": 50
+                      },
+                      {
+                        "id": "custom.lineStyle",
+                        "value": {
+                          "dash": [
+                            10,
+                            10
+                          ],
+                          "fill": "dash"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "panel-9": {
+        "kind": "Panel",
+        "spec": {
+          "id": 9,
+          "title": "",
+          "description": "",
+          "links": [],
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "query": {
+                      "kind": "DataQuery",
+                      "group": "grafana-postgresql-datasource",
+                      "version": "v0",
+                      "datasource": {
+                        "name": "afkdvhx0hiozkf"
+                      },
+                      "spec": {
+                        "dataset": "gadgetbridge",
+                        "editorMode": "builder",
+                        "format": "table",
+                        "rawQuery": true,
+                        "rawSql": "SELECT $__timeGroup(timestamp_ms_at,$__interval,0), AVG(\"N_BEATS\") AS \"HR\", AVG(\"CIRC_24H\") AS \"CIRC24\", AVG(\"CIRC_11H\") AS \"CIRC11\", AVG(\"CIRC_6H\") AS \"CIRC6\", AVG(\"CIRC_5H\") AS \"CIRC5\", AVG(\"CIRC_4H\") AS \"CIRC4\", AVG(\"ULF_22MIN\") AS \"ULF22\", AVG(\"ULF_10MIN\") AS \"ULF10\", AVG(\"ULF_8MIN\") AS \"ULF8\", AVG(\"VLF_5MIN\") AS \"VLF5\", AVG(\"VLF_4MIN\") AS \"VLF4\", AVG(\"LF_MAYER_10S\") AS \"LF_MAYER\", AVG(\"HF_BREATH_5S\") AS \"HF5\", AVG(\"HF_BREATH_4S\") AS \"HF4\", AVG(\"HF_BREATH_3S\") AS \"HF3\", AVG(\"HF_BREATH_2S\") AS \"HF2\" FROM \"HRV_SPECTRAL_BANDS_MINUTE\" WHERE $__timeFilter(timestamp_ms_at) GROUP BY $__timeGroup(timestamp_ms_at, $__interval) ORDER BY $__timeGroup(timestamp_ms_at, $__interval) ",
+                        "sql": {
+                          "columns": [
+                            {
+                              "name": "$__timeGroup",
+                              "parameters": [
+                                {
+                                  "name": "timestamp_ms_at",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "$__interval",
+                                  "type": "functionParameter"
+                                },
+                                {
+                                  "name": "0",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HR\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"N_BEATS\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"CIRC24\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"CIRC_24H\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"CIRC11\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"CIRC_11H\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"CIRC6\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"CIRC_6H\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"CIRC5\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"CIRC_5H\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"CIRC4\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"CIRC_4H\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"ULF22\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"ULF_22MIN\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"ULF10\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"ULF_10MIN\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"ULF8\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"ULF_8MIN\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"VLF5\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"VLF_5MIN\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"VLF4\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"VLF_4MIN\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"LF_MAYER\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"LF_MAYER_10S\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HF5\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"HF_BREATH_5S\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HF4\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"HF_BREATH_4S\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HF3\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"HF_BREATH_3S\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            },
+                            {
+                              "alias": "\"HF2\"",
+                              "name": "AVG",
+                              "parameters": [
+                                {
+                                  "name": "\"HF_BREATH_2S\"",
+                                  "type": "functionParameter"
+                                }
+                              ],
+                              "type": "function"
+                            }
+                          ],
+                          "groupBy": [
+                            {
+                              "property": {
+                                "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                                "type": "string"
+                              },
+                              "type": "groupBy"
+                            }
+                          ],
+                          "orderBy": {
+                            "property": {
+                              "name": "$__timeGroup(timestamp_ms_at, $__interval)",
+                              "type": "string"
+                            },
+                            "type": "property"
+                          },
+                          "whereJsonTree": {
+                            "children1": [
+                              {
+                                "id": "9889bb9a-89ab-4cde-b012-319f090d2955",
+                                "properties": {
+                                  "field": "timestamp_ms_at",
+                                  "fieldSrc": "field",
+                                  "operator": "macros",
+                                  "value": [
+                                    "timeFilter"
+                                  ],
+                                  "valueError": [
+                                    null
+                                  ],
+                                  "valueSrc": [
+                                    "value"
+                                  ],
+                                  "valueType": [
+                                    "datetime"
+                                  ]
+                                },
+                                "type": "rule"
+                              }
+                            ],
+                            "id": "99ba8ba9-0123-4456-b89a-b19f08f87fa3",
+                            "type": "group"
+                          },
+                          "whereString": "$__timeFilter(timestamp_ms_at)"
+                        },
+                        "table": "\"HRV_SPECTRAL_BANDS_MINUTE\""
+                      }
+                    },
+                    "refId": "A",
+                    "hidden": false
+                  }
+                }
+              ],
+              "transformations": [],
+              "queryOptions": {
+                "maxDataPoints": 1440,
+                "interval": "1m"
+              }
+            }
+          },
+          "vizConfig": {
+            "kind": "VizConfig",
+            "group": "timeseries",
+            "version": "13.0.1",
+            "spec": {
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 120
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
+              },
+              "fieldConfig": {
+                "defaults": {
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "value": 0,
+                        "color": "green"
+                      },
+                      {
+                        "value": 80,
+                        "color": "red"
+                      }
+                    ]
+                  },
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": true,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "Power",
+                    "axisPlacement": "auto",
+                    "axisWidth": 50,
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  }
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "HR"
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.axisPlacement",
+                        "value": "right"
+                      },
+                      {
+                        "id": "custom.lineStyle",
+                        "value": {
+                          "fill": "solid"
+                        }
+                      },
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "#fdced4",
+                          "mode": "fixed"
+                        }
+                      },
+                      {
+                        "id": "custom.lineWidth",
+                        "value": 0.5
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "layout": {
+      "kind": "RowsLayout",
+      "spec": {
+        "rows": [
+          {
+            "kind": "RowsLayoutRow",
+            "spec": {
+              "title": "Main",
+              "collapse": false,
+              "layout": {
+                "kind": "GridLayout",
+                "spec": {
+                  "items": [
+                    {
+                      "kind": "GridLayoutItem",
+                      "spec": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 24,
+                        "height": 9,
+                        "element": {
+                          "kind": "ElementReference",
+                          "name": "panel-1"
+                        }
+                      }
+                    },
+                    {
+                      "kind": "GridLayoutItem",
+                      "spec": {
+                        "x": 0,
+                        "y": 9,
+                        "width": 24,
+                        "height": 2,
+                        "element": {
+                          "kind": "ElementReference",
+                          "name": "panel-2"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "kind": "RowsLayoutRow",
+            "spec": {
+              "title": "Typical",
+              "collapse": false,
+              "fillScreen": false,
+              "layout": {
+                "kind": "GridLayout",
+                "spec": {
+                  "items": [
+                    {
+                      "kind": "GridLayoutItem",
+                      "spec": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 24,
+                        "height": 5,
+                        "element": {
+                          "kind": "ElementReference",
+                          "name": "panel-3"
+                        }
+                      }
+                    },
+                    {
+                      "kind": "GridLayoutItem",
+                      "spec": {
+                        "x": 0,
+                        "y": 5,
+                        "width": 24,
+                        "height": 8,
+                        "element": {
+                          "kind": "ElementReference",
+                          "name": "panel-14"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "kind": "RowsLayoutRow",
+            "spec": {
+              "title": "Extended",
+              "collapse": false,
+              "layout": {
+                "kind": "TabsLayout",
+                "spec": {
+                  "tabs": [
+                    {
+                      "kind": "TabsLayoutTab",
+                      "spec": {
+                        "title": "DFA",
+                        "layout": {
+                          "kind": "AutoGridLayout",
+                          "spec": {
+                            "maxColumnCount": 3,
+                            "columnWidthMode": "standard",
+                            "rowHeightMode": "standard",
+                            "items": [
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-4"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "kind": "TabsLayoutTab",
+                      "spec": {
+                        "title": "Frequencies",
+                        "layout": {
+                          "kind": "AutoGridLayout",
+                          "spec": {
+                            "maxColumnCount": 3,
+                            "columnWidthMode": "standard",
+                            "rowHeightMode": "standard",
+                            "items": [
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-9"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "kind": "TabsLayoutTab",
+                      "spec": {
+                        "title": "Overall",
+                        "layout": {
+                          "kind": "AutoGridLayout",
+                          "spec": {
+                            "maxColumnCount": 3,
+                            "columnWidthMode": "standard",
+                            "rowHeightMode": "standard",
+                            "items": [
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-6"
+                                  }
+                                }
+                              },
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-7"
+                                  }
+                                }
+                              },
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-8"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "kind": "TabsLayoutTab",
+                      "spec": {
+                        "title": "REM",
+                        "layout": {
+                          "kind": "AutoGridLayout",
+                          "spec": {
+                            "maxColumnCount": 3,
+                            "columnWidthMode": "standard",
+                            "rowHeightMode": "standard",
+                            "items": [
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-15"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "kind": "TabsLayoutTab",
+                      "spec": {
+                        "title": "RR",
+                        "layout": {
+                          "kind": "AutoGridLayout",
+                          "spec": {
+                            "maxColumnCount": 3,
+                            "columnWidthMode": "standard",
+                            "rowHeightMode": "standard",
+                            "items": [
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-16"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "links": [],
+    "liveNow": false,
+    "preload": false,
+    "tags": [],
+    "timeSettings": {
+      "timezone": "browser",
+      "from": "now-24h",
+      "to": "now",
+      "autoRefresh": "",
+      "autoRefreshIntervals": [
+        "1d"
+      ],
+      "hideTimepicker": false,
+      "fiscalYearStartMonth": 0
+    },
+    "title": "HRV Data",
+    "variables": []
+  }
+}
