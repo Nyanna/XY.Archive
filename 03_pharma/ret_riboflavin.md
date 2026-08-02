@@ -84,6 +84,17 @@ Für maximale Magenverweilzeit (statt nur pH-getimter Freisetzung) alternativ od
 - In-vitro-Freisetzung (zweistufig: 2 h bei pH 1,2, danach pH 6,8) – Ziel: geringe Freisetzung im Sauren, rascher Anstieg im Neutralen.
 - Photostabilität (durchgehender Lichtschutz), mikrobiologische Reinheit.
 
+
 ## 8. Regulatorischer Hinweis
 
 Formulierungstechnische Entwicklungsempfehlung; konkrete Konzentrationen, Dosis und Freisetzungsprofile sind experimentell zu verifizieren. Fällt regulatorisch i. d. R. unter Nahrungsergänzungsmittel-/Lebensmittelrecht.
+
+## 9. Erste Charge – Praxisbefund (Abweichung vom Modell)
+
+- Messung: Riboflavin (B2) noch **16 h nach Einnahme nachweisbar** – deutlich länger als die für die Dünndarm-Passage typische Transitzeit (~3–5 h) und länger als im Design (Abschnitt 4, pH-getimte Freisetzung am proximalen Fenster) angenommen.
+- Beobachtung: Die HPMC/Alginat-Flocken (unregelmäßige Kornform, ggf. außerhalb der Zielfraktion 0,7–1,4 mm aus 4.7) scheinen sich ungewöhnlich lange im Dünndarm zu halten – stärkere Mukoadhäsion als für HPMC allein angenommen, evtl. formfaktorbedingt (Flocken statt gerundetes Granulat).
+- Offene Fragen zur Klärung in Folgechargen:
+  - Handelt es sich um echte verlängerte GI-Verweilzeit oder um einen renalen Eliminations-Tail (abhängig von Messmatrix: Plasma vs. Urin)?
+  - Ist der Effekt an die Flockenform/-größe gekoppelt (Vergleich mit gesiebter 0,7–1,4-mm-Fraktion nötig)?
+  - Reproduzierbarkeit über mehrere Chargen prüfen, bevor als Designmerkmal übernommen.
+- Vorläufige Einordnung: positiver Befund, potenziell vorteilhaft für die Zielsetzung (verlängerte Fenster-Exposition am RFVT3-Transporter), aber mechanistisch noch nicht durch das Modell in Abschnitt 2/4 erklärt – Protokoll insofern noch nicht anzupassen, nur zu dokumentieren.

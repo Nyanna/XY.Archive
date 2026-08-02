@@ -65,3 +65,15 @@ Faustregel: HPMC-Anteil möglichst nicht unter 50 % der Trockenmasse, sonst wird
 ## 7. Regulatorischer Hinweis
 
 Dies ist eine Rezepturempfehlung zur Eigenanwendung im Nahrungsergänzungsbereich, kein zugelassenes Arzneimittel. Elementare Mg-Zieldosis bewusst an der EFSA-Zufuhrobergrenze (250 mg/Tag als Supplement) ausgerichtet, um osmotisch-laxative Nebenwirkungen zu vermeiden.
+
+## 8. Erste Charge – Herstellungsproblem und unerwarteter Nebenbefund
+
+- Problem: Die Masse war beim Mischen zu dickflüssig – "Einbringen" in das gelierte HPMC war so nicht möglich.
+- Abhilfe: Einsatz eines Mixers zur Mischung/Verflüssigung/Homogenisierung.
+- Nebeneffekt: Der Mixer hat einen voluminösen Schaum erzeugt (Lufteinschluss) – widerspricht Schritt 3 ("blasenfrei verarbeiten") und Abschnitt 2 (Floating war bewusst verworfen).
+- Beobachtung: Das geschäumte Xerogel zeigt ausgeprägte Floating-Eigenschaften.
+- Einordnung: unbeabsichtigtes Ergebnis, das dem in Abschnitt 2 gewählten Design (Fed-State-Magenentleerung statt Floating) widerspricht. Vor Übernahme in den Prozess zu klären:
+  - Ist der Schaum-/Blasenanteil reproduzierbar steuerbar (Mixdauer/-geschwindigkeit) oder Zufallsprodukt?
+  - Wie verändert sich die Freisetzungskinetik (Higuchi-Annahme aus Abschnitt 2 basiert auf kompakter, nicht geschäumter Matrix)?
+  - Bleibt die Blasenstruktur nach Trocknung (Schritt 5) und Mahlen (Schritt 7) erhalten oder kollabiert sie?
+- Für Folgechargen: Konsistenz vor dem Guss gezielt einstellen (z. B. mehr Wasser/geringere Trockenmasse-Konzentration oder anderer HPMC-Grad), um den Mixer-Schritt und damit den ungewollten Schaum zu vermeiden – **es sei denn**, das Floating-Verhalten soll gezielt als eigenständige Variante weiterverfolgt werden (dann als separates Rezepturkapitel führen, nicht in die Fed-State-Rationale von Abschnitt 2 mischen).
