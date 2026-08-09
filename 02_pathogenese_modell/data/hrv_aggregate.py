@@ -94,8 +94,9 @@ TOTAL_MIN = 3.0
 def load_rr_data(min_ts_ms=None):
     """Load RR intervals from Victoria Metrics as (ts_ms, rr) tuples.
 
-    rr_interval_ms is stored as separate seq-labelled series; vm_io merges
-    and lexsorts them by (timestamp, seq) so the ordering matches the
+    rr_interval_ms is a single series with unique, time-resolved per-beat
+    timestamps (gadgetbridge_migrate.py lays each SEQ packet out around its
+    device TIMESTAMP), so ascending timestamp order already reproduces the
     original device sequence.
     """
     ts_all, rr_all = vm_io.load_rr_intervals(min_ts_ms=min_ts_ms)

@@ -16,12 +16,20 @@ Write:  VMWriter batches samples per (metric, labels) series and POSTs
 Read:   export() streams series back via /api/v1/export.
         latest_timestamp_ms() returns the newest sample timestamp for a
         PromQL selector (used as an incremental watermark).
+
+Performance
+-----------
+- All HTTP goes through a single module-level requests.Session so TCP+TLS
+  and keep-alive are reused across the many small watermark/flush calls.
+- Import payloads are serialized with orjson (bytes, no whitespace).
+- export() reads 1 MiB byte chunks and decodes each NDJSON line with
+  orjson.loads directly on bytes (no per-line unicode sniffing).
 """
 
-import json
 import os
 import time
 
+import orjson
 import requests
 
 VM_URL = os.environ.get("VM_URL", "http://localhost:8428").rstrip("/")
@@ -34,14 +42,21 @@ DEFAULT_BATCH_SAMPLES = 200_000
 
 _HTTP_TIMEOUT = (10, 300)  # (connect, read) seconds
 
+# 1 MiB read chunks for /export: far fewer syscalls than the 512 B default.
+_EXPORT_CHUNK = 1 << 20
 
-def _auth_kwargs() -> dict:
-    kwargs: dict = {}
+
+def _make_session() -> requests.Session:
+    s = requests.Session()
     if VM_TOKEN:
-        kwargs["headers"] = {"Authorization": f"Bearer {VM_TOKEN}"}
+        s.headers["Authorization"] = f"Bearer {VM_TOKEN}"
     elif VM_USER is not None:
-        kwargs["auth"] = (VM_USER, VM_PASSWORD or "")
-    return kwargs
+        s.auth = (VM_USER, VM_PASSWORD or "")
+    return s
+
+
+# Shared keep-alive session for every request in this module.
+_SESSION = _make_session()
 
 
 def import_url() -> str:
@@ -49,12 +64,11 @@ def import_url() -> str:
 
 
 def _post_import(payload: bytes) -> None:
-    resp = requests.post(
+    resp = _SESSION.post(
         import_url(),
         data=payload,
-        headers={"Content-Type": "application/x-ndjson", **_auth_kwargs().get("headers", {})},
+        headers={"Content-Type": "application/x-ndjson"},
         timeout=_HTTP_TIMEOUT,
-        **{k: v for k, v in _auth_kwargs().items() if k != "headers"},
     )
     if resp.status_code not in (200, 204):
         raise RuntimeError(
@@ -95,11 +109,9 @@ class VMWriter:
     def flush(self) -> None:
         if not self._buf:
             return
-        lines = [
-            json.dumps(entry, separators=(",", ":"))
-            for entry in self._buf.values()
-        ]
-        payload = ("\n".join(lines) + "\n").encode("utf-8")
+        payload = b"\n".join(
+            orjson.dumps(entry) for entry in self._buf.values()
+        ) + b"\n"
         _post_import(payload)
         self.total += self._pending
         self._buf = {}
@@ -113,10 +125,9 @@ def force_flush() -> bool:
     searchable after -inmemoryDataFlushInterval (default 5s).
     """
     try:
-        resp = requests.get(
+        resp = _SESSION.get(
             f"{VM_URL}/internal/force_flush",
             timeout=_HTTP_TIMEOUT,
-            **_auth_kwargs(),
         )
         return resp.status_code == 200
     except requests.RequestException:
@@ -133,11 +144,10 @@ def latest_timestamp_ms(selector: str, lookback: str = "3650d") -> int | None:
     across the returned per-series scalars is the watermark.
     """
     query = f"tlast_over_time({selector}[{lookback}])"
-    resp = requests.get(
+    resp = _SESSION.get(
         f"{VM_URL}/api/v1/query",
         params={"query": query, "time": str(int(time.time()))},
         timeout=_HTTP_TIMEOUT,
-        **_auth_kwargs(),
     )
     resp.raise_for_status()
     data = resp.json()
@@ -159,11 +169,10 @@ def delete_series(match: str) -> None:
     -dedup.minScrapeInterval is set, output series must be wiped before a
     full re-write to avoid duplicate points.
     """
-    resp = requests.post(
+    resp = _SESSION.post(
         f"{VM_URL}/api/v1/admin/tsdb/delete_series",
         params={"match[]": match},
         timeout=_HTTP_TIMEOUT,
-        **_auth_kwargs(),
     )
     if resp.status_code not in (200, 204):
         raise RuntimeError(
@@ -172,33 +181,33 @@ def delete_series(match: str) -> None:
 
 
 def load_rr_intervals(min_ts_ms: int | None = None, max_ts_ms: int | None = None):
-    """Load rr_interval_ms globally ordered by (timestamp, seq).
+    """Load rr_interval_ms globally ordered by timestamp.
 
-    Returns (ts_ms, rr) as numpy arrays. RR intervals sharing a timestamp
-    are stored as separate seq-labelled series; they are merged here and
-    lexsorted so the caller sees the exact source ordering. Empty arrays
-    when the range holds no samples.
+    Returns (ts_ms, rr) as numpy arrays. RR intervals are now stored as a
+    single series with a unique, physically-reconstructed per-beat
+    timestamp (see gadgetbridge_migrate.py), so the device ordering is the
+    plain ascending-timestamp order — no seq merge required. VM may split a
+    large series across several export blocks, so the concatenation is
+    stable-sorted by timestamp to be safe. Empty arrays when the range
+    holds no samples.
     """
     import numpy as np
 
-    ts_chunks, rr_chunks, seq_chunks = [], [], []
-    for labels, timestamps, values in export(
+    ts_chunks, rr_chunks = [], []
+    for _labels, timestamps, values in export(
         "rr_interval_ms", start_ms=min_ts_ms, end_ms=max_ts_ms
     ):
         if not timestamps:
             continue
-        seq = int(labels.get("seq", "0"))
         ts_chunks.append(np.asarray(timestamps, dtype=np.int64))
         rr_chunks.append(np.asarray(values, dtype=np.float64))
-        seq_chunks.append(np.full(len(timestamps), seq, dtype=np.int64))
 
     if not ts_chunks:
         return np.empty(0, dtype=np.int64), np.empty(0, dtype=np.float64)
 
     ts = np.concatenate(ts_chunks)
     rr = np.concatenate(rr_chunks)
-    sq = np.concatenate(seq_chunks)
-    order = np.lexsort((sq, ts))  # primary: ts, secondary: seq
+    order = np.argsort(ts, kind="stable")
     return ts[order], rr[order]
 
 
@@ -208,25 +217,24 @@ def export(match: str, start_ms: int | None = None, end_ms: int | None = None):
     Yields (labels_dict, timestamps_ms_list, values_list) per series. The
     series ordering and intra-series sample ordering follow VM's export
     (ascending timestamps); callers needing a global order across series
-    (e.g. RR by (timestamp, seq)) must merge/sort themselves.
+    must merge/sort themselves.
     """
     params = {"match[]": match}
     if start_ms is not None:
         params["start"] = str(int(start_ms))
     if end_ms is not None:
         params["end"] = str(int(end_ms))
-    with requests.get(
+    with _SESSION.get(
         f"{VM_URL}/api/v1/export",
         params=params,
         stream=True,
         timeout=_HTTP_TIMEOUT,
-        **_auth_kwargs(),
     ) as resp:
         resp.raise_for_status()
-        for line in resp.iter_lines(decode_unicode=True):
+        for line in resp.iter_lines(chunk_size=_EXPORT_CHUNK):
             if not line:
                 continue
-            obj = json.loads(line)
+            obj = orjson.loads(line)
             metric = obj.get("metric", {})
             labels = {k: v for k, v in metric.items() if k != "__name__"}
             yield labels, obj.get("timestamps", []), obj.get("values", [])

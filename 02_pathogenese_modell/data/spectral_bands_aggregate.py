@@ -142,8 +142,9 @@ def get_existing_minutes(since_ms=None):
 def load_rr_data(min_ts_ms=None):
     """Load RR samples from VM as (ts_ms, rr) numpy arrays, or (None, None).
 
-    rr_interval_ms is stored as separate seq-labelled series; vm_io merges
-    and lexsorts them by (timestamp, seq) to reproduce the device ordering.
+    rr_interval_ms is a single series with unique, time-resolved per-beat
+    timestamps (see gadgetbridge_migrate.py), so ascending timestamp order
+    already reproduces the device ordering.
     """
     ts, rr = vm_io.load_rr_intervals(min_ts_ms=min_ts_ms)
     if ts.size == 0:

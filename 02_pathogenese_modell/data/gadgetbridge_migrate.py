@@ -28,9 +28,24 @@ time) is preserved as a separate data series `sleep_timestamp`.
 
 RR sequence semantics
 --------------------
-Several RR intervals may share one TIMESTAMP (SEQ 0..8 orders them). Since
-a VM series requires unique timestamps, SEQ is carried as a label so each
-sub-sequence becomes its own series; readers merge by (timestamp, seq).
+Several RR intervals may share one TIMESTAMP (SEQ 0..8 orders them). Rather
+than exploding these into up to 9 seq-labelled sub-series (9x the series
+index + export lines), each packet is *resolved in time*: the beats of a
+packet are laid out around the packet timestamp using their own RR
+distances (cumulative offsets, mean-centered on TIMESTAMP), so every beat
+gets a unique, physically meaningful timestamp and the packet ends up
+centered in its window. The spread is clamped to half the gap to the
+preceding/following packet, bounding the jitter symmetrically in both
+directions and guaranteeing that beats of adjacent packets never cross.
+The result is a single rr_interval_ms series with strictly increasing
+timestamps whose ascending order reproduces the exact device (TIMESTAMP,
+SEQ) order — no client-side seq merge needed. See _reconstruct_beat_times.
+
+Because a packet's layout depends on its next neighbor, the very last
+packet of an import is held back (its next gap is not yet known) and
+re-imported once a following packet exists; incremental runs reload a
+small RR_REIMPORT_MARGIN_MS overlap so interior packets reconstruct
+identically and VM deduplicates the re-written points.
 
 Incremental & idempotent
 -----------------------
@@ -127,6 +142,15 @@ MAPPINGS = [
 
 PROGRESS_EVERY = 500_000
 
+# RR reconstruction (see module docstring / _reconstruct_beat_times).
+# Fallback half-window when a neighboring packet gap is unknown (very first
+# packet of all data, or an isolated packet after a long recording gap).
+RR_DEFAULT_GAP_MS = 60_000
+# Incremental RR re-scan overlap: reload this much source history before the
+# stored watermark so the boundary packets reconstruct with the same
+# neighbors as the prior run (idempotent via VM's identical-(series,ts) dedup).
+RR_REIMPORT_MARGIN_MS = 60_000
+
 
 def _selector(series: dict) -> str:
     """PromQL selector matching a series' metric name + static labels."""
@@ -144,6 +168,166 @@ def _to_ms(raw, ts_unit: str) -> int:
 def _from_ms_native(ms: int, ts_unit: str) -> int:
     """Convert a ms watermark back into the source column's native unit."""
     return ms // 1000 if ts_unit == "s" else ms
+
+
+def _reconstruct_beat_times(
+    ts_ms: int,
+    rr_list: list,
+    gap_prev_ms: int | None,
+    gap_next_ms: int | None,
+) -> list:
+    """Assign each beat of one packet a unique timestamp around ts_ms.
+
+    A packet reports up to 9 RR intervals (SEQ order) sharing a single
+    device TIMESTAMP. We reconstruct the beats' real times by taking their
+    cumulative RR offsets, mean-centering them on ts_ms (so the packet sits
+    in the middle of its window), and clamping the spread to half the gap
+    to the preceding/following packet. This bounds the jitter symmetrically
+    and guarantees adjacent packets' beats never overlap, so the ascending
+    timestamp order equals the original (TIMESTAMP, SEQ) order.
+
+    Returns a list of strictly increasing int timestamps (ms), one per beat.
+    """
+    m = len(rr_list)
+    if m == 1:
+        return [ts_ms]
+
+    cum = []
+    acc = 0
+    for r in rr_list:
+        acc += r
+        cum.append(acc)
+    mean = acc / m  # acc == cum[-1] == total span
+    offsets = [c - mean for c in cum]  # ascending; offsets[0] < 0 < offsets[-1]
+
+    gp = gap_prev_ms if gap_prev_ms is not None else (
+        gap_next_ms if gap_next_ms is not None else RR_DEFAULT_GAP_MS)
+    gn = gap_next_ms if gap_next_ms is not None else (
+        gap_prev_ms if gap_prev_ms is not None else RR_DEFAULT_GAP_MS)
+
+    max_fwd = offsets[-1]
+    max_back = -offsets[0]
+    scale = 1.0
+    if max_fwd > 0:
+        scale = min(scale, (gn / 2.0) / max_fwd)
+    if max_back > 0:
+        scale = min(scale, (gp / 2.0) / max_back)
+
+    beats = []
+    last = None
+    for o in offsets:
+        b = int(round(ts_ms + scale * o))
+        if last is not None and b <= last:
+            b = last + 1  # keep strictly increasing after rounding/clamping
+        beats.append(b)
+        last = b
+    return beats
+
+
+def _iter_rr_packets(cursor, ts_unit: str, counter: list):
+    """Yield (ts_ms, rr_list) per device packet from a (TIMESTAMP, SEQ)-ordered
+    cursor. rr_list is in SEQ order. counter[0] tracks rows read.
+    """
+    cur_ts = None
+    cur_rr: list = []
+    for ts_raw, _seq, rr in cursor:
+        counter[0] += 1
+        if ts_raw is None or rr is None:
+            continue
+        if cur_ts is None:
+            cur_ts, cur_rr = ts_raw, [rr]
+        elif ts_raw == cur_ts:
+            cur_rr.append(rr)
+        else:
+            yield _to_ms(cur_ts, ts_unit), cur_rr
+            cur_ts, cur_rr = ts_raw, [rr]
+    if cur_ts is not None:
+        yield _to_ms(cur_ts, ts_unit), cur_rr
+
+
+def replicate_rr_mapping(sqlite_conn, writer: VMWriter, mapping: dict, force: bool):
+    """RR-specific replication: resolve each SEQ packet into a single
+    rr_interval_ms series with unique per-beat timestamps.
+
+    A 1-packet lookahead supplies each packet's next-neighbor gap; the very
+    last packet is held back (next gap unknown) and picked up by the next
+    run's overlap re-scan.
+    """
+    table = mapping["table"]
+    ts_col = mapping["ts_col"]
+    ts_unit = mapping["ts_unit"]
+    series = mapping["series"][0]
+    metric = series["metric"]
+    value_col = series["value_col"]
+    seq_col = series["seq_label"]
+
+    watermark_ms = None
+    if not force:
+        watermark_ms = latest_timestamp_ms(metric)
+
+    where = ""
+    params: tuple = ()
+    if watermark_ms is not None:
+        lo_native = _from_ms_native(
+            watermark_ms - RR_REIMPORT_MARGIN_MS, ts_unit
+        )
+        where = f" WHERE [{ts_col}] >= ?"
+        params = (lo_native,)
+
+    total_rows = sqlite_conn.execute(
+        f"SELECT COUNT(*) FROM [{table}]" + where, params
+    ).fetchone()[0]
+
+    select_sql = (
+        f"SELECT [{ts_col}], [{seq_col}], [{value_col}] FROM [{table}]"
+        + where
+        + f" ORDER BY [{ts_col}], [{seq_col}]"
+    )
+    cur = sqlite_conn.execute(select_sql, params)
+
+    counter = [0]
+    packets = _iter_rr_packets(cur, ts_unit, counter)
+    n_written = 0
+    n_held_back = 0
+    t0 = time.monotonic()
+
+    def _emit(ts_ms, rr_list, gap_prev, gap_next):
+        nonlocal n_written
+        beats = _reconstruct_beat_times(ts_ms, rr_list, gap_prev, gap_next)
+        for b, rr in zip(beats, rr_list):
+            writer.add(metric, {}, b, float(rr))
+            n_written += 1
+
+    prev_ts = None
+    cur_pk = next(packets, None)
+    if cur_pk is not None:
+        for nxt in packets:
+            cur_ts, cur_rr = cur_pk
+            gap_prev = (cur_ts - prev_ts) if prev_ts is not None else None
+            gap_next = nxt[0] - cur_ts
+            _emit(cur_ts, cur_rr, gap_prev, gap_next)
+            prev_ts = cur_ts
+            cur_pk = nxt
+
+            if counter[0] % PROGRESS_EVERY == 0:
+                pct = (counter[0] / total_rows * 100) if total_rows else 100.0
+                print(
+                    f"\r  {table:30s} {counter[0]:>9,}/{total_rows:,} ({pct:3.0f}%)"
+                    f" [{time.monotonic() - t0:.0f}s]",
+                    end="", flush=True,
+                )
+        # cur_pk is the final packet: its next-neighbor gap is unknown, so
+        # hold it back for the next run's overlap re-scan.
+        n_held_back = len(cur_pk[1])
+
+    writer.flush()
+    mode = (
+        f"incremental (>= ms {watermark_ms - RR_REIMPORT_MARGIN_MS})"
+        if watermark_ms is not None else "full"
+    )
+    if n_held_back:
+        mode += f", held back {n_held_back} boundary beat(s)"
+    return counter[0], n_written, mode
 
 
 def replicate_mapping(sqlite_conn, writer: VMWriter, mapping: dict, force: bool):
@@ -250,7 +434,13 @@ def main():
     try:
         for mapping in MAPPINGS:
             t_start = time.monotonic()
-            n_read, n_written, mode = replicate_mapping(
+            # RR packets (any series carrying a seq_label) need the
+            # timestamp-resolving path; everything else is a plain column map.
+            if any("seq_label" in s for s in mapping["series"]):
+                replicate = replicate_rr_mapping
+            else:
+                replicate = replicate_mapping
+            n_read, n_written, mode = replicate(
                 sqlite_conn, writer, mapping, force=args.force,
             )
             dt = time.monotonic() - t_start
