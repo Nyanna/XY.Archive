@@ -32,6 +32,8 @@ import time
 import orjson
 import requests
 import urllib3
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -41,25 +43,69 @@ VM_PASSWORD = os.environ.get("VM_PASSWORD")
 VM_TOKEN = os.environ.get("VM_TOKEN")
 
 # ~200k samples per import request, memory against HTTP overhead
-DEFAULT_BATCH_SAMPLES = 200_000
+DEFAULT_BATCH_SAMPLES = 20_000
 
-_HTTP_TIMEOUT = (10, 300)  # (connect, read) seconds
+_HTTP_TIMEOUT = (10, 600)  # (connect, read) seconds
 
 # 1 MiB read chunks for /export: far fewer syscalls than the 512 B default.
 _EXPORT_CHUNK = 1 << 20
 
+_WRITE_RETRY = Retry(
+    total=5,
+    connect=5,
+    read=5,
+    status=5,
+    backoff_factor=2.0,          # 2s, 4s, 8s, 16s, 32s
+    status_forcelist=(429, 500, 502, 503, 504),
+    allowed_methods=frozenset({"POST"}),
+    raise_on_status=False,
+)
 
-def _make_session() -> requests.Session:
+
+def _make_session(retries=None, pool_size: int = 1) -> requests.Session:
     s = requests.Session()
     if VM_TOKEN:
         s.headers["Authorization"] = f"Bearer {VM_TOKEN}"
     elif VM_USER is not None:
         s.auth = (VM_USER, VM_PASSWORD or "")
+    adapter = HTTPAdapter(
+        pool_connections=pool_size,
+        pool_maxsize=pool_size,
+        max_retries=retries or 0,
+    )
+    s.mount("http://", adapter)
+    s.mount("https://", adapter)
     return s
 
 
-# Shared keep-alive session for every request in this module.
+# Read session: queries/exports are frequent and cheap, keep-alive reuse
+# across many small requests is a net win here, so it stays a plain
+# long-lived session (default pool, no forced retries).
 _SESSION = _make_session()
+
+# Write session: used only for /write and /api/v1/import. Fresh connection
+# per request (see _WRITE_HEADERS_EXTRA below) + automatic retry-with-new-
+# socket on connect/read/write failure or 5xx/429.
+_WRITE_SESSION = _make_session(retries=_WRITE_RETRY)
+_WRITE_HEADERS_EXTRA = {"Connection": "close"}
+
+
+def _raise_for_status(resp: requests.Response, what: str) -> None:
+    """Like resp.raise_for_status(), but includes the response body.
+
+    Plain raise_for_status() only gives "400 Bad Request for url: ...",
+    which hides *why* -- e.g. vmauth's "unsupported path" text when a
+    route is missing from its url_map. Surface that body (bounded) so a
+    misconfigured proxy route shows up in the traceback instead of just a
+    bare status code.
+    """
+    if resp.ok:
+        return
+    body = resp.text[:500]
+    raise requests.exceptions.HTTPError(
+        f"{what} failed: HTTP {resp.status_code} for {resp.url!r}: {body}",
+        response=resp,
+    )
 
 
 def import_url() -> str:
@@ -67,10 +113,10 @@ def import_url() -> str:
 
 
 def _post_import(payload: bytes) -> None:
-    resp = _SESSION.post(
+    resp = _WRITE_SESSION.post(
         import_url(),
         data=payload,
-        headers={"Content-Type": "application/x-ndjson"},
+        headers={"Content-Type": "application/x-ndjson", **_WRITE_HEADERS_EXTRA},
         timeout=_HTTP_TIMEOUT, verify=False
     )
     if resp.status_code not in (200, 204):
@@ -105,11 +151,14 @@ def _lp_tag_part(k: str, v: str) -> str:
 
 
 def _post_write(payload: bytes) -> None:
-    resp = _SESSION.post(
+    resp = _WRITE_SESSION.post(
         f"{VM_URL}/write",
         params={"precision": "ms"},
         data=payload,
-        headers={"Content-Type": "text/plain; charset=utf-8"},
+        headers={
+            "Content-Type": "text/plain; charset=utf-8",
+            **_WRITE_HEADERS_EXTRA,
+        },
         timeout=_HTTP_TIMEOUT, verify=False
     )
     if resp.status_code not in (200, 204):
@@ -175,8 +224,9 @@ def force_flush() -> bool:
     searchable after -inmemoryDataFlushInterval (default 5s).
     """
     try:
-        resp = _SESSION.get(
+        resp = _WRITE_SESSION.get(
             f"{VM_URL}/internal/force_flush",
+            headers=_WRITE_HEADERS_EXTRA,
             timeout=_HTTP_TIMEOUT, verify=False
         )
         return resp.status_code == 200
@@ -238,9 +288,10 @@ def delete_series(match: str) -> None:
     -dedup.minScrapeInterval is set, output series must be wiped before a
     full re-write to avoid duplicate points.
     """
-    resp = _SESSION.post(
+    resp = _WRITE_SESSION.post(
         f"{VM_URL}/api/v1/admin/tsdb/delete_series",
         params={"match[]": _stored_selector(match)},
+        headers=_WRITE_HEADERS_EXTRA,
         timeout=_HTTP_TIMEOUT, verify=False
     )
     if resp.status_code not in (200, 204):
@@ -278,7 +329,7 @@ def export_csv_series(match: str, start_ms: int | None = None, end_ms: int | Non
     resp = _SESSION.get(
         f"{VM_URL}/api/v1/export/csv", params=params, timeout=_HTTP_TIMEOUT, verify=False
     )
-    resp.raise_for_status()
+    _raise_for_status(resp, "VM export/csv")
 
     data = np.loadtxt(
         io.BytesIO(resp.content), delimiter=",", skiprows=1, dtype=np.float64,
@@ -328,7 +379,13 @@ def export(match: str, start_ms: int | None = None, end_ms: int | None = None):
         stream=True,
         timeout=_HTTP_TIMEOUT, verify=False
     ) as resp:
-        resp.raise_for_status()
+        if not resp.ok:
+            # Force the body to be read now (stream=True defers it) --
+            # resp.content pulls the rest of the response into memory,
+            # otherwise resp.text inside _raise_for_status would be empty
+            # once the `with` block's connection is released.
+            _ = resp.content
+            _raise_for_status(resp, "VM export")
         for line in resp.iter_lines(chunk_size=_EXPORT_CHUNK):
             if not line:
                 continue
