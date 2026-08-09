@@ -1,574 +1,270 @@
 #!/usr/bin/env python3
 """
-Gadgetbridge SQLite -> Postgres Replication
---------------------------------------------
-Downloads the Gadgetbridge SQLite database if missing or stale, refreshes
-the derived HRV_MINUTE_AGGREGATED table, and replicates every non-empty
-SQLite table into a Postgres instance. The source SQLite database
-is never modified by this script.
+Gadgetbridge SQLite -> Victoria Metrics replication
+===================================================
 
-Column names and types are preserved verbatim from the source (INTEGER
-is mapped to BIGINT because Postgres INTEGER is 32-bit and would
-overflow on millisecond timestamps; REAL is mapped to DOUBLE PRECISION
-and BLOB to BYTEA for semantic equivalence).
+Reads the local Gadgetbridge SQLite database (never modified) and imports
+a curated subset of its samples into Victoria Metrics as time series.
 
-Every INTEGER column that holds a point in time (Unix epoch, ms or s)
-is replaced in Postgres by a single TIMESTAMPTZ column named
-`<original_lowercase>_at`. The bigint variant is not replicated, so
-the target schema only carries the canonical timestamptz form. The
-unit (ms vs. seconds) is detected from the raw value's magnitude:
-values <= 10^11 are treated as seconds (covers XIAOMI_ACTIVITY_SAMPLE),
-larger values as milliseconds.
+Mapping (source table.column -> VM metric{labels})
+--------------------------------------------------
+GENERIC_HEART_RATE_SAMPLE.HEART_RATE  -> heart_rate{source="generic"}
+XIAOMI_ACTIVITY_SAMPLE.HEART_RATE     -> heart_rate{source="xiaomi_activity"}
+HEART_RR_INTERVAL_SAMPLE.RR_MILLIS    -> rr_interval_ms{seq="<SEQ>"}
+XIAOMI_SLEEP_STAGE_SAMPLE.STAGE       -> sleep_stage
+XIAOMI_SLEEP_TIME_SAMPLE.*            -> sleep_is_awake, sleep_total_duration,
+                                         sleep_deep_sleep_duration,
+                                         sleep_light_sleep_duration,
+                                         sleep_rem_sleep_duration,
+                                         sleep_awake_duration, sleep_timestamp
 
-Idempotent: database / schema / tables / columns are created on demand,
-rows are upserted via INSERT ... ON CONFLICT on each table's primary key.
-Tables without a primary key are fully replaced (TRUNCATE + INSERT).
+Timestamp semantics
+-------------------
+Every series' timestamp is the source row's time column converted to ms.
+GENERIC_HEART_RATE / RR / SLEEP_STAGE store ms already; XIAOMI_ACTIVITY
+stores seconds (scaled x1000). For XIAOMI_SLEEP_TIME the *wakeup* time
+(WAKEUP_TIME) is the series timestamp, while the row's own TIMESTAMP (bed
+time) is preserved as a separate data series `sleep_timestamp`.
+
+RR sequence semantics
+--------------------
+Several RR intervals may share one TIMESTAMP (SEQ 0..8 orders them). Since
+a VM series requires unique timestamps, SEQ is carried as a label so each
+sub-sequence becomes its own series; readers merge by (timestamp, seq).
+
+Incremental & idempotent
+-----------------------
+Per series the newest sample timestamp already in VM is used as a
+watermark; only source rows at/after it are re-imported. VM deduplicates
+repeated (series, timestamp) samples, so boundary re-imports are harmless.
+Use --force to ignore watermarks and re-import everything.
 """
 
 import argparse
-import os
-import re
 import sqlite3
-import sys
 import time
-from datetime import datetime, timezone
 from pathlib import Path
 
-import psycopg2
-from psycopg2 import sql
-from psycopg2.extras import execute_values
+from vm_io import VMWriter, force_flush, latest_timestamp_ms
 
 # --- Source -----------------------------------------------------------
 DB_PATH = Path(__file__).parent / "Gadgetbridge"
 
-# --- Postgres target --------------------------------------------------
-PG_HOST = os.environ["PGHOST"]
-PG_PORT = int(os.environ.get("PGPORT", "5432"))
-PG_DB = os.environ["PGDATABASE"]
-PG_USER = os.environ.get("PGUSER", "gadgetbridge")
-PG_PASSWORD = os.environ["PGPASSWORD"]
-PG_SCHEMA = "public"
+# Heart-rate readings of 0 are a "no measurement" sentinel in
+# XIAOMI_ACTIVITY_SAMPLE (and never legitimately 0 elsewhere); drop them.
+HR_MIN_VALID = 1
 
-BATCH_SIZE = 5000
-PROGRESS_MIN_ROWS = BATCH_SIZE  # show per-batch progress for tables at least this large
-
-# Columns excluded per table (already removed from target, must not be recreated)
-COLUMN_EXCLUDE: dict[str, set[str]] = {
-    "HEART_RR_INTERVAL_SAMPLE":  {"DEVICE_ID", "USER_ID"},
-    "GENERIC_HEART_RATE_SAMPLE": {"DEVICE_ID", "USER_ID"},
-}
-
-# Tables excluded from replication (noisy, large, or irrelevant for analysis)
-SYNC_EXCLUDE = {
-    "ALARM",
-    "BATTERY_LEVEL",
-    "DEVICE_ATTRIBUTES",
-    "USER",
-    "USER_ATTRIBUTES",
-    "XIAOMI_MANUAL_SAMPLE",
-    "HEART_PULSE_SAMPLE",
-}
-
-# --- Timestamp column detection --------------------------------------
-TIMESTAMP_PATTERNS = [
-    r"^TIMESTAMP$",
-    r"^TIMESTAMP_MS$",
-    r"^TIMESTAMP_FROM$",
-    r"^TIMESTAMP_TO$",
-    r".*_TIMESTAMP$",
-    r"^DOWNLOAD_TIMESTAMP$",
-    r"^FILE_TIMESTAMP$",
-    r"^LAST_SYNC_TIMESTAMP$",
-    r"^START_TIME$",
-    r"^END_TIME$",
-    r"^WAKEUP_TIME$",
-    r"^BED_TIME$",
-    r"^RISING_TIME$",
-    r"^PREPARE_SLEEP_TIME$",
-    r"^LAST_UPDATE_CHECK$",
-    r"^LAST_TIMESTAMP$",
-    r"^OTHER_TIMESTAMP$",
-    r"^DATE$",
-    r"^END_TIMESTAMP$",
-    r"^START_TIMESTAMP$",
-    r"^MODIFY_TIMESTAMP$",
+# --- Mapping ----------------------------------------------------------
+# Each mapping describes one source table and the VM series derived from
+# it. A "series" pulls one value column into one metric; `labels` are
+# static, `seq_label` (RR only) turns a column into a per-value label.
+#   ts_unit: 's' or 'ms' — native unit of ts_col in SQLite.
+#   min_value: optional inclusive lower bound applied to the value.
+MAPPINGS = [
+    {
+        "table": "GENERIC_HEART_RATE_SAMPLE",
+        "ts_col": "TIMESTAMP",
+        "ts_unit": "ms",
+        "series": [
+            {
+                "metric": "heart_rate",
+                "labels": {"source": "generic"},
+                "value_col": "HEART_RATE",
+                "min_value": HR_MIN_VALID,
+            },
+        ],
+    },
+    {
+        "table": "XIAOMI_ACTIVITY_SAMPLE",
+        "ts_col": "TIMESTAMP",
+        "ts_unit": "s",
+        "series": [
+            {
+                "metric": "heart_rate",
+                "labels": {"source": "xiaomi_activity"},
+                "value_col": "HEART_RATE",
+                "min_value": HR_MIN_VALID,
+            },
+        ],
+    },
+    {
+        "table": "HEART_RR_INTERVAL_SAMPLE",
+        "ts_col": "TIMESTAMP",
+        "ts_unit": "ms",
+        "series": [
+            {
+                "metric": "rr_interval_ms",
+                "labels": {},
+                "value_col": "RR_MILLIS",
+                "seq_label": "SEQ",
+            },
+        ],
+    },
+    {
+        "table": "XIAOMI_SLEEP_STAGE_SAMPLE",
+        "ts_col": "TIMESTAMP",
+        "ts_unit": "ms",
+        "series": [
+            {"metric": "sleep_stage", "labels": {}, "value_col": "STAGE"},
+        ],
+    },
+    {
+        "table": "XIAOMI_SLEEP_TIME_SAMPLE",
+        "ts_col": "WAKEUP_TIME",
+        "ts_unit": "ms",
+        "series": [
+            {"metric": "sleep_is_awake",             "value_col": "IS_AWAKE"},
+            {"metric": "sleep_total_duration",       "value_col": "TOTAL_DURATION"},
+            {"metric": "sleep_deep_sleep_duration",  "value_col": "DEEP_SLEEP_DURATION"},
+            {"metric": "sleep_light_sleep_duration", "value_col": "LIGHT_SLEEP_DURATION"},
+            {"metric": "sleep_rem_sleep_duration",   "value_col": "REM_SLEEP_DURATION"},
+            {"metric": "sleep_awake_duration",       "value_col": "AWAKE_DURATION"},
+            # TIMESTAMP (bed time) is a data field here, not the series ts.
+            {"metric": "sleep_timestamp",            "value_col": "TIMESTAMP"},
+        ],
+    },
 ]
 
-EXCLUDE_PATTERNS = [
-    r".*_MINUTES$",
-    r"^TIMEZONE$",
-    r"^TIME_LOW$",
-    r"^TIME_MODERATE$",
-    r"^TIME_HIGH$",
-    r"^TOTAL_TIME$",
-    r"^RECOVERY_TIME$",
-    r"^GROUND_CONTACT_TIME$",
-    r"^HANG_TIME$",
-    r"^DIVING_UNDERWATER_TIME$",
-    r"^DIVING_BREAK_TIME$",
-    r"^TIME_DELTA$",
-    r"^RUN_PACE_ZONE\d+_TIME$",
-    r"^UPDATE_AVAILABLE$",
-    r"^TIME$",
-]
+PROGRESS_EVERY = 500_000
 
 
-def is_timestamp_column(col_name: str) -> bool:
-    name = col_name.upper()
-    for pat in EXCLUDE_PATTERNS:
-        if re.match(pat, name):
-            return False
-    for pat in TIMESTAMP_PATTERNS:
-        if re.match(pat, name):
-            return True
-    return False
+def _selector(series: dict) -> str:
+    """PromQL selector matching a series' metric name + static labels."""
+    labels = series.get("labels", {})
+    if not labels:
+        return series["metric"]
+    parts = ",".join(f'{k}="{v}"' for k, v in sorted(labels.items()))
+    return f'{series["metric"]}{{{parts}}}'
 
 
-# --- Type mapping SQLite -> Postgres ---------------------------------
-SQLITE_TO_PG = {
-    "INTEGER": "BIGINT",
-    "INT": "BIGINT",
-    "BIGINT": "BIGINT",
-    "SMALLINT": "SMALLINT",
-    "TINYINT": "SMALLINT",
-    "TEXT": "TEXT",
-    "VARCHAR": "TEXT",
-    "CHAR": "TEXT",
-    "CLOB": "TEXT",
-    "STRING": "TEXT",
-    "REAL": "DOUBLE PRECISION",
-    "DOUBLE": "DOUBLE PRECISION",
-    "FLOAT": "DOUBLE PRECISION",
-    "NUMERIC": "NUMERIC",
-    "DECIMAL": "NUMERIC",
-    "BOOLEAN": "BOOLEAN",
-    "BLOB": "BYTEA",
-    "DATE": "DATE",
-    "DATETIME": "TIMESTAMPTZ",
-    "TIMESTAMP": "TIMESTAMPTZ",
-}
+def _to_ms(raw, ts_unit: str) -> int:
+    return int(raw) * 1000 if ts_unit == "s" else int(raw)
 
 
-def sqlite_type_to_pg(sqlite_type: str) -> str:
-    if not sqlite_type:
-        return "TEXT"
-    base = re.match(r"^([A-Za-z]+)", sqlite_type.strip())
-    if not base:
-        return "TEXT"
-    return SQLITE_TO_PG.get(base.group(1).upper(), "TEXT")
+def _from_ms_native(ms: int, ts_unit: str) -> int:
+    """Convert a ms watermark back into the source column's native unit."""
+    return ms // 1000 if ts_unit == "s" else ms
 
 
-# Unix-epoch values <= 10^11 are seconds (year 5138 max), values
-# above are milliseconds (lower bound year 2001). All Gadgetbridge
-# raw timestamps fall comfortably outside the ambiguous band.
-_EPOCH_MS_THRESHOLD = 100_000_000_000
+def replicate_mapping(sqlite_conn, writer: VMWriter, mapping: dict, force: bool):
+    table = mapping["table"]
+    ts_col = mapping["ts_col"]
+    ts_unit = mapping["ts_unit"]
+    series_defs = mapping["series"]
 
+    # Watermark: newest ts already stored for the first series of the
+    # mapping (all series of a mapping share the same row timestamps).
+    watermark_ms = None
+    if not force:
+        watermark_ms = latest_timestamp_ms(_selector(series_defs[0]))
 
-def epoch_to_ts(v):
-    if v is None:
-        return None
-    secs = v / 1000.0 if v >= _EPOCH_MS_THRESHOLD else float(v)
-    return datetime.fromtimestamp(secs, tz=timezone.utc)
+    # Build the SELECT: ts column + every distinct value/seq column.
+    value_cols = []
+    for s in series_defs:
+        for col in (s["value_col"], s.get("seq_label")):
+            if col and col not in value_cols:
+                value_cols.append(col)
+    select_cols = [ts_col] + value_cols
+    col_index = {c: i for i, c in enumerate(select_cols)}
 
+    where = ""
+    params: tuple = ()
+    if watermark_ms is not None:
+        where = f" WHERE [{ts_col}] >= ?"
+        params = (_from_ms_native(watermark_ms, ts_unit),)
 
-def ts_at_name(col_name):
-    return f"{col_name.lower()}_at"
-
-
-# --- SQLite introspection --------------------------------------------
-def get_user_tables(conn):
-    rows = conn.execute(
-        "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
-    ).fetchall()
-    return [r[0] for r in rows if not r[0].startswith("sqlite_")]
-
-
-def table_row_count(conn, table):
-    return conn.execute(f"SELECT COUNT(*) FROM [{table}]").fetchone()[0]
-
-
-def get_columns(conn, table):
-    # (cid, name, type, notnull, dflt_value, pk)
-    return conn.execute(f"PRAGMA table_info([{table}])").fetchall()
-
-
-def get_primary_key(columns):
-    pks = [c for c in columns if c[5] > 0]
-    return [c[1] for c in sorted(pks, key=lambda c: c[5])]
-
-
-# --- Postgres helpers ------------------------------------------------
-def ensure_database():
-    conn = psycopg2.connect(
-        host=PG_HOST, port=PG_PORT, user=PG_USER, password=PG_PASSWORD,
-        dbname=PG_DB, sslmode="require",
-    )
-    conn.autocommit = True
-    try:
-        cur = conn.cursor()
-        cur.execute("SELECT 1 FROM pg_database WHERE datname = %s", (PG_DB,))
-        if cur.fetchone() is None:
-            cur.execute(
-                sql.SQL("CREATE DATABASE {}").format(sql.Identifier(PG_DB))
-            )
-            print(f"Created Postgres database: {PG_DB}")
-    finally:
-        conn.close()
-
-
-def connect_target():
-    return psycopg2.connect(
-        host=PG_HOST, port=PG_PORT, user=PG_USER, password=PG_PASSWORD,
-        dbname=PG_DB, sslmode="require",
+    select_sql = (
+        "SELECT " + ", ".join(f"[{c}]" for c in select_cols)
+        + f" FROM [{table}]" + where
     )
 
+    total_rows = sqlite_conn.execute(
+        f"SELECT COUNT(*) FROM [{table}]" + where, params
+    ).fetchone()[0]
 
-def ensure_schema(pg_conn):
-    with pg_conn.cursor() as cur:
-        cur.execute(
-            sql.SQL("CREATE SCHEMA IF NOT EXISTS {}").format(
-                sql.Identifier(PG_SCHEMA)
-            )
-        )
-    pg_conn.commit()
+    cur = sqlite_conn.execute(select_sql, params)
+    n_read = 0
+    n_written = 0
+    t0 = time.monotonic()
+    while True:
+        row = cur.fetchone()
+        if row is None:
+            break
+        n_read += 1
+        ts_raw = row[col_index[ts_col]]
+        if ts_raw is None:
+            continue
+        ts_ms = _to_ms(ts_raw, ts_unit)
 
-
-def ensure_table(pg_conn, table_name, columns, pk_cols, ts_cols):
-    """Create or extend the target table.
-
-    Bigint timestamp columns (members of `ts_cols`) are NOT replicated
-    as raw integers; instead a TIMESTAMPTZ `<col>_at` column is created
-    and used as the canonical timestamp. PK references to a ts_col are
-    rewritten to its `_at` counterpart.
-    """
-    ts_set = set(ts_cols)
-    pk_set = set(pk_cols)
-    pg_pk_cols = [ts_at_name(c) if c in ts_set else c for c in pk_cols]
-    pg_pk_set = set(pg_pk_cols)
-
-    col_defs = []
-    for c in columns:
-        name = c[1]
-        if name in ts_set:
-            continue   # bigint ts columns are no longer materialised
-        notnull = c[3]
-        pg_type = sqlite_type_to_pg(c[2])
-        parts = [sql.Identifier(name), sql.SQL(pg_type)]
-        # PK columns are implicitly NOT NULL in PG; avoid redundant clause.
-        if notnull and name not in pg_pk_set:
-            parts.append(sql.SQL("NOT NULL"))
-        col_defs.append(sql.SQL(" ").join(parts))
-
-    for ts_col in ts_cols:
-        at_name = ts_at_name(ts_col)
-        # Source bigint was NOT NULL for every observed ts column; PK ts
-        # cols are implicitly NOT NULL. Mark non-PK explicitly.
-        parts = [sql.Identifier(at_name), sql.SQL("TIMESTAMPTZ")]
-        if at_name not in pg_pk_set:
-            parts.append(sql.SQL("NOT NULL"))
-        col_defs.append(sql.SQL(" ").join(parts))
-
-    if pg_pk_cols:
-        col_defs.append(
-            sql.SQL("PRIMARY KEY ({})").format(
-                sql.SQL(", ").join(sql.Identifier(c) for c in pg_pk_cols)
-            )
-        )
-
-    create_stmt = sql.SQL("CREATE TABLE IF NOT EXISTS {}.{} ({})").format(
-        sql.Identifier(PG_SCHEMA),
-        sql.Identifier(table_name),
-        sql.SQL(", ").join(col_defs),
-    )
-
-    with pg_conn.cursor() as cur:
-        cur.execute(create_stmt)
-
-        # Handle schema drift: add any missing columns (without NOT NULL).
-        # information_schema.columns.column_name preserves case for quoted
-        # identifiers, so compare case-sensitively.
-        cur.execute(
-            """
-            SELECT column_name FROM information_schema.columns
-            WHERE table_schema = %s AND table_name = %s
-            """,
-            (PG_SCHEMA, table_name),
-        )
-        existing = {r[0] for r in cur.fetchall()}
-
-        for c in columns:
-            name = c[1]
-            if name in ts_set or name in existing:
+        for s in series_defs:
+            value = row[col_index[s["value_col"]]]
+            if value is None:
                 continue
-            pg_type = sqlite_type_to_pg(c[2])
-            cur.execute(
-                sql.SQL("ALTER TABLE {}.{} ADD COLUMN {} {}").format(
-                    sql.Identifier(PG_SCHEMA),
-                    sql.Identifier(table_name),
-                    sql.Identifier(name),
-                    sql.SQL(pg_type),
-                )
-            )
-            existing.add(name)
-
-        for ts_col in ts_cols:
-            at_name = ts_at_name(ts_col)
-            if at_name in existing:
+            min_value = s.get("min_value")
+            if min_value is not None and value < min_value:
                 continue
-            cur.execute(
-                sql.SQL(
-                    "ALTER TABLE {}.{} ADD COLUMN {} TIMESTAMPTZ"
-                ).format(
-                    sql.Identifier(PG_SCHEMA),
-                    sql.Identifier(table_name),
-                    sql.Identifier(at_name),
-                )
+            labels = dict(s.get("labels", {}))
+            seq_col = s.get("seq_label")
+            if seq_col is not None:
+                seq_val = row[col_index[seq_col]]
+                if seq_val is None:
+                    continue
+                labels["seq"] = str(int(seq_val))
+            writer.add(s["metric"], labels, ts_ms, float(value))
+            n_written += 1
+
+        if n_read % PROGRESS_EVERY == 0:
+            pct = (n_read / total_rows * 100) if total_rows else 100.0
+            print(
+                f"\r  {table:30s} {n_read:>9,}/{total_rows:,} ({pct:3.0f}%)"
+                f" [{time.monotonic() - t0:.0f}s]",
+                end="", flush=True,
             )
-            existing.add(at_name)
-    pg_conn.commit()
 
-
-def get_target_max(pg_conn, table_name, col_name):
-    """Max value of a target column, or None if target is empty/missing.
-    Errors (missing table, missing column) are swallowed so first-run
-    semantics fall back to a full load.
-    """
-    try:
-        with pg_conn.cursor() as cur:
-            cur.execute(
-                sql.SQL("SELECT MAX({}) FROM {}.{}").format(
-                    sql.Identifier(col_name),
-                    sql.Identifier(PG_SCHEMA),
-                    sql.Identifier(table_name),
-                )
-            )
-            row = cur.fetchone()
-            return row[0] if row else None
-    except psycopg2.Error:
-        pg_conn.rollback()
-        return None
-
-
-def replicate_table(sqlite_conn, pg_conn, table_name, force=False):
-    columns = get_columns(sqlite_conn, table_name)
-    excluded_cols = COLUMN_EXCLUDE.get(table_name, set())
-    if excluded_cols:
-        columns = [c for c in columns if c[1] not in excluded_cols]
-    pk_cols = get_primary_key(columns)
-    ts_cols = [
-        c[1] for c in columns
-        if (c[2] or "").upper().startswith("INT")
-        and is_timestamp_column(c[1])
-    ]
-    ts_set = set(ts_cols)
-
-    ensure_table(pg_conn, table_name, columns, pk_cols, ts_cols)
-
-    # PG-side PK: bigint ts cols are stored as their _at counterpart.
-    pg_pk_cols = [ts_at_name(c) if c in ts_set else c for c in pk_cols]
-
-    # Incremental watermark: if the first PK column was a bigint
-    # timestamp, query MAX(<col>_at) on the target (timestamptz). The
-    # SQLite source still stores the raw integer; convert the datetime
-    # back into the source's native unit for the WHERE filter. `>=`
-    # ensures boundary rows (composite PK ties) are re-upserted.
-    watermark_col = None       # SQLite source column
-    watermark_sqlite = None    # value in SQLite source unit (int)
-    watermark_dt = None        # datetime, for log output
-    if not force and pk_cols:
-        first = pk_cols[0]
-        first_info = next(c for c in columns if c[1] == first)
-        first_type = (first_info[2] or "").upper()
-        if first_type.startswith("INT") and is_timestamp_column(first):
-            target_max = get_target_max(
-                pg_conn, table_name, ts_at_name(first)
-            )
-            if target_max is not None:
-                watermark_col = first
-                watermark_dt = target_max
-                # Probe one row to detect SQLite's native unit (ms vs s).
-                probe = sqlite_conn.execute(
-                    f"SELECT [{first}] FROM [{table_name}] "
-                    f"WHERE [{first}] IS NOT NULL LIMIT 1"
-                ).fetchone()
-                if probe is None:
-                    watermark_col = None
-                else:
-                    sample = probe[0]
-                    epoch_ms = int(target_max.timestamp() * 1000)
-                    if sample >= _EPOCH_MS_THRESHOLD:
-                        watermark_sqlite = epoch_ms
-                    else:
-                        watermark_sqlite = epoch_ms // 1000
-
-    # Postgres-side column order: non-ts source columns followed by
-    # the derived _at columns. The bigint ts cols themselves are
-    # dropped from the projection.
-    keep_indices = [i for i, c in enumerate(columns) if c[1] not in ts_set]
-    keep_names = [columns[i][1] for i in keep_indices]
-    at_names = [ts_at_name(t) for t in ts_cols]
-    ts_indices = [next(i for i, c in enumerate(columns) if c[1] == t)
-                  for t in ts_cols]
-
-    # SQLite stores BOOLEAN columns as 0/1 integers; Postgres bool is
-    # strict and rejects integer literals, so convert in Python.
-    bool_indices = [
-        i for i, c in enumerate(columns)
-        if (c[2] or "").upper().startswith("BOOL")
-    ]
-    bool_keep_positions = [
-        keep_indices.index(i) for i in bool_indices if i in keep_indices
-    ]
-
-    all_cols = keep_names + at_names
-    insert_cols = sql.SQL(", ").join(sql.Identifier(c) for c in all_cols)
-
-    if pg_pk_cols:
-        pk_set = set(pg_pk_cols)
-        update_cols = [c for c in all_cols if c not in pk_set]
-        if update_cols:
-            set_clause = sql.SQL(", ").join(
-                sql.SQL("{col} = EXCLUDED.{col}").format(
-                    col=sql.Identifier(c)
-                )
-                for c in update_cols
-            )
-            on_conflict = sql.SQL(
-                "ON CONFLICT ({pk}) DO UPDATE SET {upd}"
-            ).format(
-                pk=sql.SQL(", ").join(sql.Identifier(p) for p in pg_pk_cols),
-                upd=set_clause,
-            )
-        else:
-            on_conflict = sql.SQL("ON CONFLICT ({pk}) DO NOTHING").format(
-                pk=sql.SQL(", ").join(sql.Identifier(p) for p in pg_pk_cols)
-            )
-    else:
-        # No PK: full replace.
-        with pg_conn.cursor() as cur:
-            cur.execute(
-                sql.SQL("TRUNCATE TABLE {}.{}").format(
-                    sql.Identifier(PG_SCHEMA),
-                    sql.Identifier(table_name),
-                )
-            )
-        on_conflict = sql.SQL("")
-
-    insert_stmt = sql.SQL(
-        "INSERT INTO {}.{} ({}) VALUES %s {}"
-    ).format(
-        sql.Identifier(PG_SCHEMA),
-        sql.Identifier(table_name),
-        insert_cols,
-        on_conflict,
-    )
-
-    src_col_names = [c[1] for c in columns]
-    select_cols = ", ".join(f"[{n}]" for n in src_col_names)
-    select_query = f"SELECT {select_cols} FROM [{table_name}]"
-    select_params = ()
-    if watermark_col is not None:
-        select_query += f" WHERE [{watermark_col}] >= ?"
-        select_params = (watermark_sqlite,)
-    # Pre-count with the same WHERE condition so progress shows a denominator
-    count_q = f"SELECT COUNT(*) FROM [{table_name}]"
-    if watermark_col is not None:
-        count_q += f" WHERE [{watermark_col}] >= ?"
-    count_row = sqlite_conn.execute(count_q, select_params).fetchone()
-    expected_total = count_row[0] if count_row else None
-    show_progress = expected_total is not None and expected_total >= PROGRESS_MIN_ROWS
-
-    cur = sqlite_conn.execute(select_query, select_params)
-
-    t_rep_start = time.monotonic()
-    total = 0
-    batch = []
-    with pg_conn.cursor() as pcur:
-        def flush():
-            nonlocal batch, total
-            if not batch:
-                return
-            execute_values(pcur, insert_stmt, batch, page_size=BATCH_SIZE)
-            total += len(batch)
-            batch = []
-            if show_progress:
-                elapsed = time.monotonic() - t_rep_start
-                pct = total / expected_total * 100
-                print(
-                    f"\r  {table_name:38s}"
-                    f" {total:>8,}/{expected_total:,} ({pct:3.0f}%)"
-                    f" [{elapsed:.0f}s]",
-                    end="", flush=True,
-                )
-
-        while True:
-            row = cur.fetchone()
-            if row is None:
-                break
-            row = list(row)
-            for pos in bool_keep_positions:
-                src_idx = keep_indices[pos]
-                if row[src_idx] is not None:
-                    row[src_idx] = bool(row[src_idx])
-            kept = [row[i] for i in keep_indices]
-            ts_values = [epoch_to_ts(row[i]) for i in ts_indices]
-            batch.append(tuple(kept + ts_values))
-            if len(batch) >= BATCH_SIZE:
-                flush()
-        flush()
-
-    pg_conn.commit()
+    writer.flush()
     mode = (
-        f"incremental (>= {watermark_dt.isoformat()})"
-        if watermark_col is not None
-        else ("full (no pk, truncate+insert)" if not pk_cols else "full")
+        f"incremental (>= ms {watermark_ms})"
+        if watermark_ms is not None else "full"
     )
-    return total, ts_cols, mode
+    return n_read, n_written, mode
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Replicate Gadgetbridge SQLite into Postgres.",
+        description="Replicate a Gadgetbridge SQLite subset into Victoria Metrics.",
     )
     parser.add_argument(
         "--force",
         action="store_true",
-        help="Ignore per-table watermarks and fully re-upsert every row. "
-             "Use when source rows below the target max have changed.",
+        help="Ignore per-series watermarks and re-import every source row.",
     )
     args, _ = parser.parse_known_args()
 
-    ensure_database()
+    if not DB_PATH.exists():
+        raise SystemExit(f"ERROR: source database not found: {DB_PATH}")
+
     sqlite_conn = sqlite3.connect(str(DB_PATH))
-    pg_conn = connect_target()
+    writer = VMWriter()
+    mode_label = "FORCE full" if args.force else "incremental"
+    print(f"Importing Gadgetbridge subset into Victoria Metrics  [{mode_label}]")
     try:
-        ensure_schema(pg_conn)
-
-        tables = get_user_tables(sqlite_conn)
-        non_empty = [
-            t for t in tables
-            if t not in SYNC_EXCLUDE and table_row_count(sqlite_conn, t) > 0
-        ]
-        mode_label = "FORCE full" if args.force else "incremental"
-        print(
-            f"Replicating {len(non_empty)} non-empty tables to "
-            f"{PG_USER}@{PG_HOST}:{PG_PORT}/{PG_DB}.{PG_SCHEMA}  [{mode_label}]"
-        )
-
-        for t in non_empty:
+        for mapping in MAPPINGS:
             t_start = time.monotonic()
-            n, ts, mode = replicate_table(
-                sqlite_conn, pg_conn, t, force=args.force,
+            n_read, n_written, mode = replicate_mapping(
+                sqlite_conn, writer, mapping, force=args.force,
             )
             dt = time.monotonic() - t_start
-            extra = f"  [+{len(ts)} _at]" if ts else ""
-            print(f"\r  {t:38s} rows={n:<8} mode={mode} ({dt:.1f}s){extra}")
-
+            print(
+                f"\r  {mapping['table']:30s} rows={n_read:<9,} "
+                f"samples={n_written:<9,} mode={mode} ({dt:.1f}s)"
+            )
     finally:
         sqlite_conn.close()
-        pg_conn.close()
 
-    print("Replication done.")
+    flushed = force_flush()
+    print(
+        f"Import done. {writer.total:,} samples written to Victoria Metrics."
+    )
 
 
 if __name__ == "__main__":

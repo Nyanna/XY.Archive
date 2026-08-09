@@ -3,7 +3,7 @@
 Per-minute HRV band power aggregator (Lomb-Scargle, individualized bands)
 =========================================================================
 
-Fills the Postgres table HRV_SPECTRAL_BANDS_MINUTE with one row per
+Fills the metrics with one row per
 minute. Each row holds the integrated power (ms²) of the 15 frequency
 bands derived from the user-specific spectral fingerprint
 (spectral_fingerprint.py, snapshot 2026-04-25). Band edges are the
@@ -30,33 +30,28 @@ Standalone & incremental
 Not called from cleanup_gadgetbridge.py. The target's existing
 timestamp_ms_at values define a skip-set (converted internally to
 minute-start ms) so only new minutes are computed. RR samples older
-than (max(target) - 48 h) are not loaded from Postgres on
+than (max(target) - 48 h) are not loaded on
 incremental runs.
 """
 
 import argparse
-import os
-import sys
 import time
-from datetime import datetime, timezone
-from pathlib import Path
+from datetime import datetime
 
 import numpy as np
-import psycopg2
 from astropy.timeseries import LombScargle
-from psycopg2 import sql as pgsql
-from psycopg2.extras import execute_values
 
 from rr_quality import correct_artifacts, quality_mask
+import vm_io
 
-# --- Postgres -------------------------------------------------------
-PG_HOST = os.environ["PGHOST"]
-PG_PORT = int(os.environ.get("PGPORT", "5432"))
-PG_DB = os.environ["PGDATABASE"]
-PG_USER = os.environ.get("PGUSER", "gadgetbridge")
-PG_PASSWORD = os.environ["PGPASSWORD"]
-PG_SCHEMA = "public"
-PG_TABLE = "HRV_SPECTRAL_BANDS_MINUTE"
+# --- Victoria Metrics I/O ------------------------------------------
+# Source series written by gadgetbridge_migrate.py.
+RR_METRIC = "rr_interval_ms"
+# Output: one metric per band, prefixed hrv_band_. hrv_band_n_beats is
+# written for every stored minute and doubles as the presence marker for
+# the incremental skip-set. Series timestamp = minute-start (ms).
+OUT_PREFIX = "hrv_band_"
+PRESENCE_METRIC = OUT_PREFIX + "n_beats"
 FLUSH_EVERY = 2000
 
 # --- IBI sanity (matches hrv_aggregate.py) --------------------------
@@ -114,10 +109,6 @@ MAX_WINDOW_MS = max(t[1] for t in TIER_WINDOWS) * 1000
 
 _TRAPZ = getattr(np, "trapezoid", np.trapz)
 
-
-# -------------------------------------------------------------------
-# Spectral helpers
-# -------------------------------------------------------------------
 def lombscargle_psd(t_sec, rr_corr, freqs):
     """Detrended Lomb-Scargle PSD in ms²/Hz (factor 2 → Parseval)."""
     slope, intercept = np.polyfit(t_sec, rr_corr, 1)
@@ -127,73 +118,41 @@ def lombscargle_psd(t_sec, rr_corr, freqs):
     )
     return pgram * 2.0
 
-
-# -------------------------------------------------------------------
-# Postgres
-# -------------------------------------------------------------------
-def connect_pg():
-    return psycopg2.connect(
-        host=PG_HOST, port=PG_PORT, user=PG_USER, password=PG_PASSWORD,
-        dbname=PG_DB, sslmode="require",
-    )
+def delete_output_series():
+    """Wipe all hrv_band_* output series (used by --full to avoid duplicates)."""
+    vm_io.delete_series(PRESENCE_METRIC)
+    for name in BAND_NAMES:
+        vm_io.delete_series(OUT_PREFIX + name.lower())
 
 
-def ensure_table(pg_conn):
-    cols = ',\n            '.join(
-        f'"{name}" REAL' for name in BAND_NAMES
-    )
-    ddl = f'''
-        CREATE TABLE IF NOT EXISTS "{PG_SCHEMA}"."{PG_TABLE}" (
-            timestamp_ms_at TIMESTAMPTZ NOT NULL PRIMARY KEY,
-            "N_BEATS"      SMALLINT NOT NULL,
-            {cols}
-        )
-    '''
-    with pg_conn.cursor() as cur:
-        cur.execute(ddl)
-    pg_conn.commit()
+def get_existing_minutes(since_ms=None):
+    """Return set of minute starts (ms epoch, int) already stored in VM.
 
-
-def get_existing_minutes(pg_conn):
-    with pg_conn.cursor() as cur:
-        cur.execute(
-            pgsql.SQL(
-                'SELECT (EXTRACT(EPOCH FROM timestamp_ms_at) * 1000)::bigint '
-                'FROM {}.{}'
-            ).format(
-                pgsql.Identifier(PG_SCHEMA),
-                pgsql.Identifier(PG_TABLE),
-            )
-        )
-        return {int(r[0]) for r in cur.fetchall()}
-
-
-def load_rr_data(pg_conn, min_ts_ms=None):
-    """Load RR samples projected to (epoch-ms, RR_MILLIS).
-
-    HEART_RR_INTERVAL_SAMPLE no longer carries a bigint TIMESTAMP; the
-    canonical timestamp is timestamp_at (timestamptz). We project back
-    to integer ms for the existing minute-binning logic.
+    Presence is read from PRESENCE_METRIC (hrv_band_n_beats). since_ms
+    restricts the export to the overlap window on incremental runs.
     """
-    cur = pg_conn.cursor()
-    query = (
-        'SELECT (EXTRACT(EPOCH FROM timestamp_at) * 1000)::bigint, '
-        '       "RR_MILLIS" '
-        'FROM "HEART_RR_INTERVAL_SAMPLE" '
-        'WHERE "RR_MILLIS" BETWEEN %s AND %s'
-    )
-    params = [MIN_RR, MAX_RR]
-    if min_ts_ms is not None:
-        query += ' AND timestamp_at >= to_timestamp(%s)'
-        params.append(int(min_ts_ms) / 1000.0)
-    query += ' ORDER BY timestamp_at, "SEQ"'
-    cur.execute(query, params)
-    rows = cur.fetchall()
-    cur.close()
-    if not rows:
+    existing = set()
+    for _labels, timestamps, _values in vm_io.export(
+        PRESENCE_METRIC, start_ms=since_ms
+    ):
+        existing.update(int(t) for t in timestamps)
+    return existing
+
+
+def load_rr_data(min_ts_ms=None):
+    """Load RR samples from VM as (ts_ms, rr) numpy arrays, or (None, None).
+
+    rr_interval_ms is stored as separate seq-labelled series; vm_io merges
+    and lexsorts them by (timestamp, seq) to reproduce the device ordering.
+    """
+    ts, rr = vm_io.load_rr_intervals(min_ts_ms=min_ts_ms)
+    if ts.size == 0:
         return None, None
-    ts = np.fromiter((r[0] for r in rows), dtype=np.int64, count=len(rows))
-    rr = np.fromiter((r[1] for r in rows), dtype=np.float64, count=len(rows))
+    sane = (rr >= MIN_RR) & (rr <= MAX_RR)
+    ts = ts[sane]
+    rr = rr[sane]
+    if ts.size == 0:
+        return None, None
 
     # Layer 2: exclude sustained corruption blocks (strap slip) before
     # binning; removed beats become gaps, which Lomb-Scargle tolerates.
@@ -204,10 +163,6 @@ def load_rr_data(pg_conn, min_ts_ms=None):
               f"beats ({pct:.1f}%) in {info['n_blocks']} block(s)")
     return ts[keep], rr[keep]
 
-
-# -------------------------------------------------------------------
-# Per-minute computation
-# -------------------------------------------------------------------
 def integrate_band(freqs, psd, f_lo, f_hi):
     mask = (freqs >= f_lo) & (freqs <= f_hi)
     if mask.sum() < 2:
@@ -260,45 +215,25 @@ def compute_minute(ts_all, rr_all, minute_start_ms,
     return out
 
 
-def write_rows(pg_conn, rows):
+def write_rows(writer, rows):
+    """Emit each row's band powers as VM samples at the minute timestamp.
+
+    None band values are skipped (absence = gap). Callers must never
+    re-write an existing minute, since VM does not deduplicate identical
+    (series, timestamp) samples.
+    """
     if not rows:
         return 0
-    all_cols = ["timestamp_ms_at", "N_BEATS"] + BAND_NAMES
-    col_list = pgsql.SQL(", ").join(pgsql.Identifier(c) for c in all_cols)
-    update_cols = [c for c in all_cols if c != "timestamp_ms_at"]
-    set_clause = pgsql.SQL(", ").join(
-        pgsql.SQL("{c} = EXCLUDED.{c}").format(c=pgsql.Identifier(c))
-        for c in update_cols
-    )
-    insert_stmt = pgsql.SQL(
-        "INSERT INTO {}.{} ({}) VALUES %s "
-        "ON CONFLICT ({}) DO UPDATE SET {}"
-    ).format(
-        pgsql.Identifier(PG_SCHEMA),
-        pgsql.Identifier(PG_TABLE),
-        col_list,
-        pgsql.Identifier("timestamp_ms_at"),
-        set_clause,
-    )
-
-    tuples = []
     for r in rows:
-        tup = (
-            datetime.fromtimestamp(r["timestamp_ms"] / 1000.0,
-                                   tz=timezone.utc),
-            r["n_beats"],
-            *[r[name] for name in BAND_NAMES],
-        )
-        tuples.append(tup)
-    with pg_conn.cursor() as cur:
-        execute_values(cur, insert_stmt, tuples, page_size=2000)
-    pg_conn.commit()
-    return len(tuples)
+        ts_ms = r["timestamp_ms"]
+        writer.add(PRESENCE_METRIC, {}, ts_ms, float(r["n_beats"]))
+        for name in BAND_NAMES:
+            value = r[name]
+            if value is None:
+                continue
+            writer.add(OUT_PREFIX + name.lower(), {}, ts_ms, float(value))
+    return len(rows)
 
-
-# -------------------------------------------------------------------
-# Pipeline helpers
-# -------------------------------------------------------------------
 def build_freq_grids():
     """Precompute per-tier frequency grids and band-edge lookups from constants."""
     band_dict = {b[0]: (b[1], b[2]) for b in BANDS}
@@ -310,9 +245,9 @@ def build_freq_grids():
     return tier_freq_grids, tier_band_indices
 
 
-def process_minutes(pg, ts, rr, existing, sorted_minutes, minute_counts,
+def process_minutes(writer, ts, rr, existing, sorted_minutes, minute_counts,
                     tier_freq_grids, tier_band_indices, limit_minutes=None):
-    """Compute band power for each new minute and upsert into Postgres.
+    """Compute band power for each new minute and upsert into.
 
     Returns (n_done, n_skipped, n_written).
     """
@@ -357,18 +292,15 @@ def process_minutes(pg, ts, rr, existing, sorted_minutes, minute_counts,
             print(f"  Progress: {n_done:,}/{n_effective:,} ({pct:.0f}%) | elapsed {elapsed:.0f}s")
 
         if len(rows_buffer) >= FLUSH_EVERY:
-            n_written += write_rows(pg, rows_buffer)
+            n_written += write_rows(writer, rows_buffer)
             rows_buffer = []
 
     if rows_buffer:
-        n_written += write_rows(pg, rows_buffer)
+        n_written += write_rows(writer, rows_buffer)
 
+    writer.flush()
     return n_done, n_skipped, n_written
 
-
-# -------------------------------------------------------------------
-# Main
-# -------------------------------------------------------------------
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--limit-minutes", type=int, default=None,
@@ -379,45 +311,50 @@ def main():
 
     t_total = time.monotonic()
 
-    pg = connect_pg()
-    try:
-        ensure_table(pg)
-        existing = set() if args.full else get_existing_minutes(pg)
-        print(f'Existing rows in "{PG_TABLE}": {len(existing):,}'
-              f'{" (ignored, --full)" if args.full else ""}')
+    if args.full:
+        print("Full recompute: deleting existing hrv_band_* output series in VM...")
+        delete_output_series()
 
-        min_ts_ms = None
-        if existing:
-            min_ts_ms = max(existing) - MAX_WINDOW_MS
-            print(f"Incremental load: timestamp_at >= ms {min_ts_ms}")
+    min_ts_ms = None
+    existing = set()
+    if not args.full:
+        # Cheap watermark first; only fetch the (potentially large) skip-set
+        # for the overlap window when something is already stored.
+        max_stored = vm_io.latest_timestamp_ms(PRESENCE_METRIC)
+        if max_stored is not None:
+            min_ts_ms = max_stored - MAX_WINDOW_MS
+            existing = get_existing_minutes(since_ms=min_ts_ms)
+            print(f"Incremental load: timestamp >= ms {min_ts_ms}")
+    print(f"Existing minutes in overlap window: {len(existing):,}"
+          f'{" (ignored, --full)" if args.full else ""}')
 
-        t0 = time.monotonic()
-        ts, rr = load_rr_data(pg, min_ts_ms=min_ts_ms)
-        if ts is None:
-            print("No RR samples in range — nothing to do.")
-            return
-        print(f"Loaded {ts.size:,} RR samples [{time.monotonic()-t0:.1f}s]")
-        t_first = datetime.fromtimestamp(int(ts[0]) / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
-        t_last  = datetime.fromtimestamp(int(ts[-1]) / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
-        print(f"Time range: {t_first} – {t_last}")
+    t0 = time.monotonic()
+    ts, rr = load_rr_data(min_ts_ms=min_ts_ms)
+    if ts is None:
+        print("No RR samples in range — nothing to do.")
+        return
+    print(f"Loaded {ts.size:,} RR samples [{time.monotonic()-t0:.1f}s]")
+    t_first = datetime.fromtimestamp(int(ts[0]) / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+    t_last  = datetime.fromtimestamp(int(ts[-1]) / 1000.0).strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Time range: {t_first} – {t_last}")
 
-        tier_freq_grids, tier_band_indices = build_freq_grids()
+    tier_freq_grids, tier_band_indices = build_freq_grids()
 
-        minute_of_beat = (ts // 60_000) * 60_000
-        sorted_minutes, _, minute_counts = np.unique(
-            minute_of_beat, return_index=True, return_counts=True
-        )
+    minute_of_beat = (ts // 60_000) * 60_000
+    sorted_minutes, _, minute_counts = np.unique(
+        minute_of_beat, return_index=True, return_counts=True
+    )
 
-        n_done, n_skipped, n_written = process_minutes(
-            pg, ts, rr, existing, sorted_minutes, minute_counts,
-            tier_freq_grids, tier_band_indices,
-            limit_minutes=args.limit_minutes,
-        )
+    n_done, n_skipped, n_written = process_minutes(
+        vm_io.VMWriter(), ts, rr, existing, sorted_minutes, minute_counts,
+        tier_freq_grids, tier_band_indices,
+        limit_minutes=args.limit_minutes,
+    )
 
-        print(f"Wrote {n_written:,} new minute rows  "
-              f"[skipped {n_skipped:,} existing]")
-    finally:
-        pg.close()
+    print(f"Wrote {n_written:,} new minute rows  "
+          f"[skipped {n_skipped:,} existing]")
+
+    vm_io.force_flush()
 
 
 if __name__ == "__main__":

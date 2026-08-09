@@ -13,6 +13,8 @@ from pathlib import Path
 
 import gdown
 
+import vm_io
+
 HERE = Path(__file__).parent
 DB_PATH = HERE / "Gadgetbridge"
 DB_REMOTE_URL = "https://drive.google.com/file/d/1yropB-j0couqP8f-XItaAJm3dVsfgc1t/view?usp=sharing"
@@ -79,6 +81,8 @@ def main() -> None:
         print(f"Download time: {t_download:.1f}s")
 
     run("gadgetbridge_migrate.py", passthrough_args)
+    vm_io.force_flush()
+
     run("hrv_aggregate.py",        passthrough_args)
     run("spectral_bands_aggregate.py", passthrough_args)
 
