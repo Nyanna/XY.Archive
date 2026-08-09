@@ -31,6 +31,9 @@ import time
 
 import orjson
 import requests
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 VM_URL = os.environ.get("VM_URL", "http://localhost:8428").rstrip("/")
 VM_USER = os.environ.get("VM_USER")
@@ -68,7 +71,7 @@ def _post_import(payload: bytes) -> None:
         import_url(),
         data=payload,
         headers={"Content-Type": "application/x-ndjson"},
-        timeout=_HTTP_TIMEOUT,
+        timeout=_HTTP_TIMEOUT, verify=False
     )
     if resp.status_code not in (200, 204):
         raise RuntimeError(
@@ -107,7 +110,7 @@ def _post_write(payload: bytes) -> None:
         params={"precision": "ms"},
         data=payload,
         headers={"Content-Type": "text/plain; charset=utf-8"},
-        timeout=_HTTP_TIMEOUT,
+        timeout=_HTTP_TIMEOUT, verify=False
     )
     if resp.status_code not in (200, 204):
         raise RuntimeError(
@@ -174,7 +177,7 @@ def force_flush() -> bool:
     try:
         resp = _SESSION.get(
             f"{VM_URL}/internal/force_flush",
-            timeout=_HTTP_TIMEOUT,
+            timeout=_HTTP_TIMEOUT, verify=False
         )
         return resp.status_code == 200
     except requests.RequestException:
@@ -213,7 +216,7 @@ def latest_timestamp_ms(selector: str, lookback: str = "3650d") -> int | None:
     resp = _SESSION.get(
         f"{VM_URL}/api/v1/query",
         params={"query": query, "time": str(int(time.time()))},
-        timeout=_HTTP_TIMEOUT,
+        timeout=_HTTP_TIMEOUT, verify=False
     )
     resp.raise_for_status()
     data = resp.json()
@@ -238,7 +241,7 @@ def delete_series(match: str) -> None:
     resp = _SESSION.post(
         f"{VM_URL}/api/v1/admin/tsdb/delete_series",
         params={"match[]": _stored_selector(match)},
-        timeout=_HTTP_TIMEOUT,
+        timeout=_HTTP_TIMEOUT, verify=False
     )
     if resp.status_code not in (200, 204):
         raise RuntimeError(
@@ -273,7 +276,7 @@ def export_csv_series(match: str, start_ms: int | None = None, end_ms: int | Non
         params["end"] = str(int(end_ms))
 
     resp = _SESSION.get(
-        f"{VM_URL}/api/v1/export/csv", params=params, timeout=_HTTP_TIMEOUT,
+        f"{VM_URL}/api/v1/export/csv", params=params, timeout=_HTTP_TIMEOUT, verify=False
     )
     resp.raise_for_status()
 
@@ -323,7 +326,7 @@ def export(match: str, start_ms: int | None = None, end_ms: int | None = None):
         f"{VM_URL}/api/v1/export",
         params=params,
         stream=True,
-        timeout=_HTTP_TIMEOUT,
+        timeout=_HTTP_TIMEOUT, verify=False
     ) as resp:
         resp.raise_for_status()
         for line in resp.iter_lines(chunk_size=_EXPORT_CHUNK):

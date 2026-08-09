@@ -6,6 +6,7 @@ Prints per-script and total runtimes on completion.
 """
 
 import argparse
+import shutil
 import subprocess
 import sys
 import time
@@ -71,22 +72,54 @@ def run(script: str, args: list[str]) -> None:
     print(f"Runtime [{script}]: {elapsed:.1f}s")
 
 
-def main() -> None:
-    _, passthrough_args = argparse.ArgumentParser(add_help=False).parse_known_args()
+def use_local_db(db_file: Path) -> None:
+    """Copy a local SQLite file into place as the working DB (no download)."""
+    if not db_file.exists():
+        print(f"ERROR: database file not found: {db_file}")
+        sys.exit(1)
+    print(f"Using local database: {db_file}")
+    shutil.copy2(db_file, DB_PATH)
 
-    t_total = time.monotonic()
 
-    t_download = ensure_db()
-    if t_download > 0:
-        print(f"Download time: {t_download:.1f}s")
-
+def run_pipeline_once(passthrough_args: list[str]) -> None:
     run("gadgetbridge_migrate.py", passthrough_args)
     vm_io.force_flush()
 
     run("hrv_aggregate.py",        passthrough_args)
     run("spectral_bands_aggregate.py", passthrough_args)
 
-    print(f"Total time: {time.monotonic() - t_total:.1f}s")
+
+def main() -> None:
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument(
+        "--db",
+        nargs="+",
+        type=Path,
+        metavar="DB_FILE",
+        help=(
+            "Process one or more local Gadgetbridge SQLite files in sequence "
+            "instead of the default DB (supports shell wildcards, e.g. "
+            "--db /path/to/*.db). Skips the remote download step."
+        ),
+    )
+    args, passthrough_args = parser.parse_known_args()
+
+    t_total = time.monotonic()
+
+    if args.db:
+        db_files = sorted(args.db)
+        print(f"Processing {len(db_files)} local database file(s), download skipped.")
+        for i, db_file in enumerate(db_files, start=1):
+            print(f"\n=== [{i}/{len(db_files)}] {db_file} ===")
+            use_local_db(db_file)
+            run_pipeline_once(passthrough_args)
+    else:
+        t_download = ensure_db()
+        if t_download > 0:
+            print(f"Download time: {t_download:.1f}s")
+        run_pipeline_once(passthrough_args)
+
+    print(f"\nTotal time: {time.monotonic() - t_total:.1f}s")
 
 
 if __name__ == "__main__":
