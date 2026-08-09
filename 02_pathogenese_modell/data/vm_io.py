@@ -76,8 +76,48 @@ def _post_import(payload: bytes) -> None:
         )
 
 
+# --- InfluxDB Line Protocol write path --------------------------------
+# Used by VMWriter instead of /api/v1/import (JSON): building line-protocol
+# text is plain string formatting (no per-sample Python object graph like
+# orjson.dumps of nested dict/list), and VM's line-protocol parser is a
+# first-class, actively maintained ingestion path (not a JSON round trip).
+# A field named exactly "value" is mapped by VM directly to the metric name
+# (no "<measurement>_value" suffix), so plain "measurement[,tags] value=X ts"
+# round-trips to the same series shape the JSON path produced.
+
+_LP_ESCAPE_COMMA_SPACE = str.maketrans({
+    "\\": "\\\\", ",": "\\,", " ": "\\ ",
+})
+_LP_ESCAPE_KEY = str.maketrans({
+    "\\": "\\\\", ",": "\\,", " ": "\\ ", "=": "\\=",
+})
+
+
+def _lp_measurement(name: str) -> str:
+    return name.translate(_LP_ESCAPE_COMMA_SPACE)
+
+
+def _lp_tag_part(k: str, v: str) -> str:
+    return f"{k.translate(_LP_ESCAPE_KEY)}={str(v).translate(_LP_ESCAPE_KEY)}"
+
+
+def _post_write(payload: bytes) -> None:
+    resp = _SESSION.post(
+        f"{VM_URL}/write",
+        params={"precision": "ms"},
+        data=payload,
+        headers={"Content-Type": "text/plain; charset=utf-8"},
+        timeout=_HTTP_TIMEOUT,
+    )
+    if resp.status_code not in (200, 204):
+        raise RuntimeError(
+            f"VM influx write failed: HTTP {resp.status_code}: {resp.text[:500]}"
+        )
+
+
 class VMWriter:
-    """Accumulates samples per series and flushes NDJSON to /api/v1/import.
+    """Accumulates samples per series and flushes as InfluxDB Line Protocol
+    to /write (precision=ms).
 
     Usage:
         w = VMWriter()
@@ -88,7 +128,7 @@ class VMWriter:
 
     def __init__(self, batch_samples: int = DEFAULT_BATCH_SAMPLES):
         self.batch_samples = batch_samples
-        self._buf: dict = {}          # series_key -> {"metric":..,"values":..,"timestamps":..}
+        self._buf: dict = {}          # series_key -> {"measurement":..,"values":..,"timestamps":..}
         self._pending = 0             # samples buffered but not yet POSTed
         self.total = 0                # samples POSTed over the writer's lifetime
 
@@ -96,9 +136,13 @@ class VMWriter:
         key = (name, tuple(sorted(labels.items())))
         entry = self._buf.get(key)
         if entry is None:
-            metric = {"__name__": name}
-            metric.update(labels)
-            entry = {"metric": metric, "values": [], "timestamps": []}
+            tag_str = "".join(
+                f",{_lp_tag_part(k, v)}" for k, v in sorted(labels.items())
+            )
+            entry = {
+                "measurement": _lp_measurement(name) + tag_str,
+                "values": [], "timestamps": [],
+            }
             self._buf[key] = entry
         entry["values"].append(value)
         entry["timestamps"].append(int(ts_ms))
@@ -109,10 +153,13 @@ class VMWriter:
     def flush(self) -> None:
         if not self._buf:
             return
-        payload = b"\n".join(
-            orjson.dumps(entry) for entry in self._buf.values()
-        ) + b"\n"
-        _post_import(payload)
+        lines = []
+        for entry in self._buf.values():
+            prefix = entry["measurement"]
+            for ts, val in zip(entry["timestamps"], entry["values"]):
+                lines.append(f"{prefix} value={val!r} {ts}")
+        payload = ("\n".join(lines) + "\n").encode("utf-8")
+        _post_write(payload)
         self.total += self._pending
         self._buf = {}
         self._pending = 0
@@ -136,6 +183,24 @@ def force_flush() -> bool:
         )
 
 
+def _stored_selector(selector: str) -> str:
+    """Map a logical metric-name selector to its actual VM series name.
+
+    VMWriter writes every sample as InfluxDB Line Protocol with a field
+    literally named "value". Without -influxSkipSingleField (not set on
+    this deployment), VM's influx endpoint unconditionally names the
+    resulting series "<measurement>_<field>" -- so every metric written
+    through this module is physically stored as "<name>_value", never
+    "<name>". All read-side lookups therefore need this suffix inserted
+    right after the metric name, before any label-matcher braces (e.g.
+    "heart_rate{source=\"generic\"}" -> "heart_rate_value{source=\"generic\"}").
+    """
+    brace = selector.find("{")
+    if brace == -1:
+        return f"{selector}_value"
+    return f"{selector[:brace]}_value{selector[brace:]}"
+
+
 def latest_timestamp_ms(selector: str, lookback: str = "3650d") -> int | None:
     """Newest sample timestamp (ms) matching a PromQL selector, or None.
 
@@ -143,6 +208,7 @@ def latest_timestamp_ms(selector: str, lookback: str = "3650d") -> int | None:
     yields the timestamp (seconds) of each series' last raw sample; the max
     across the returned per-series scalars is the watermark.
     """
+    selector = _stored_selector(selector)
     query = f"tlast_over_time({selector}[{lookback}])"
     resp = _SESSION.get(
         f"{VM_URL}/api/v1/query",
@@ -171,7 +237,7 @@ def delete_series(match: str) -> None:
     """
     resp = _SESSION.post(
         f"{VM_URL}/api/v1/admin/tsdb/delete_series",
-        params={"match[]": match},
+        params={"match[]": _stored_selector(match)},
         timeout=_HTTP_TIMEOUT,
     )
     if resp.status_code not in (200, 204):
@@ -180,33 +246,62 @@ def delete_series(match: str) -> None:
         )
 
 
+def export_csv_series(match: str, start_ms: int | None = None, end_ms: int | None = None):
+    """Export one unlabeled metric as (timestamps_ms, values) via /export/csv.
+
+    Only meaningful for a metric with no relevant labels (rr_interval_ms has
+    none): the requested CSV columns are just __timestamp__/__value__, so
+    labels are not represented. This avoids the JSON round trip of
+    /api/v1/export (VM formatting every raw float as JSON text, client
+    orjson-decoding + boxing every value back into a Python object) --
+    CSV is parsed straight into a numpy array in C via np.loadtxt.
+
+    VM always emits one header line (the echoed `format` string) before the
+    data rows; that line is skipped. Returns empty int64/float64 arrays if
+    the range holds no samples.
+    """
+    import io
+    import numpy as np
+
+    params = {
+        "match[]": _stored_selector(match),
+        "format": "__timestamp__:unix_ms,__value__",
+    }
+    if start_ms is not None:
+        params["start"] = str(int(start_ms))
+    if end_ms is not None:
+        params["end"] = str(int(end_ms))
+
+    resp = _SESSION.get(
+        f"{VM_URL}/api/v1/export/csv", params=params, timeout=_HTTP_TIMEOUT,
+    )
+    resp.raise_for_status()
+
+    data = np.loadtxt(
+        io.BytesIO(resp.content), delimiter=",", skiprows=1, dtype=np.float64,
+    )
+    if data.size == 0:
+        return np.empty(0, dtype=np.int64), np.empty(0, dtype=np.float64)
+    data = data.reshape(-1, 2)
+    return data[:, 0].astype(np.int64), data[:, 1]
+
+
 def load_rr_intervals(min_ts_ms: int | None = None, max_ts_ms: int | None = None):
     """Load rr_interval_ms globally ordered by timestamp.
 
     Returns (ts_ms, rr) as numpy arrays. RR intervals are now stored as a
     single series with a unique, physically-reconstructed per-beat
     timestamp (see gadgetbridge_migrate.py), so the device ordering is the
-    plain ascending-timestamp order — no seq merge required. VM may split a
-    large series across several export blocks, so the concatenation is
-    stable-sorted by timestamp to be safe. Empty arrays when the range
-    holds no samples.
+    plain ascending-timestamp order — no seq merge required. Uses the CSV
+    export path (see export_csv_series) since this is the highest-volume
+    read in the pipeline. Sorted by timestamp to be safe. Empty arrays when
+    the range holds no samples.
     """
     import numpy as np
 
-    ts_chunks, rr_chunks = [], []
-    for _labels, timestamps, values in export(
-        "rr_interval_ms", start_ms=min_ts_ms, end_ms=max_ts_ms
-    ):
-        if not timestamps:
-            continue
-        ts_chunks.append(np.asarray(timestamps, dtype=np.int64))
-        rr_chunks.append(np.asarray(values, dtype=np.float64))
-
-    if not ts_chunks:
-        return np.empty(0, dtype=np.int64), np.empty(0, dtype=np.float64)
-
-    ts = np.concatenate(ts_chunks)
-    rr = np.concatenate(rr_chunks)
+    ts, rr = export_csv_series("rr_interval_ms", start_ms=min_ts_ms, end_ms=max_ts_ms)
+    if ts.size == 0:
+        return ts, rr
     order = np.argsort(ts, kind="stable")
     return ts[order], rr[order]
 
@@ -219,7 +314,7 @@ def export(match: str, start_ms: int | None = None, end_ms: int | None = None):
     (ascending timestamps); callers needing a global order across series
     must merge/sort themselves.
     """
-    params = {"match[]": match}
+    params = {"match[]": _stored_selector(match)}
     if start_ms is not None:
         params["start"] = str(int(start_ms))
     if end_ms is not None:
