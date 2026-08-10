@@ -42,9 +42,9 @@ import numpy as np
 from astropy.timeseries import LombScargle
 
 from rr_quality import correct_artifacts, quality_mask
-import vm_io
+import hive_io as vm_io
 
-# --- Victoria Metrics I/O ------------------------------------------
+# --- Hive (DuckDB/Parquet) I/O ------------------------------------
 # Source series written by gadgetbridge_migrate.py.
 RR_METRIC = "rr_interval_ms"
 # Output: one metric per band, prefixed hrv_band_. hrv_band_n_beats is
@@ -313,7 +313,7 @@ def main():
     t_total = time.monotonic()
 
     if args.full:
-        print("Full recompute: deleting existing hrv_band_* output series in VM...")
+        print("Full recompute: deleting existing hrv_band_* output series in the Hive...")
         delete_output_series()
 
     min_ts_ms = None

@@ -21,9 +21,9 @@ from scipy.interpolate import CubicSpline
 from scipy.signal import butter, csd, filtfilt, hilbert, welch
 
 from rr_quality import correct_artifacts, nn_time_domain, quality_mask
-import vm_io
+import hive_io as vm_io
 
-# --- Victoria Metrics I/O ------------------------------------------
+# --- Hive (DuckDB/Parquet) I/O ------------------------------------
 # Source series written by gadgetbridge_migrate.py.
 RR_METRIC = "rr_interval_ms"
 # Output: one metric per derived column, prefixed hrv_. Every stored
@@ -962,7 +962,7 @@ def print_summary(stats):
     if stats["n_held_back"]:
         print(f"  Held back (awaiting context): {stats['n_held_back']}")
     print(
-        f"Wrote {stats['total_rows']} minute(s) to Victoria Metrics "
+        f"Wrote {stats['total_rows']} minute(s) to the local Hive "
         f"({OUT_PREFIX}* series) [{time.monotonic() - stats['t_outer_start']:.2f}s]"
     )
 
@@ -971,7 +971,7 @@ def main():
     args = parse_args()
 
     if args.full:
-        print("Full recompute: deleting existing hrv_* output series in VM...")
+        print("Full recompute: deleting existing hrv_* output series in the Hive...")
         delete_output_series()
 
     plan = plan_incremental_load(args.full)

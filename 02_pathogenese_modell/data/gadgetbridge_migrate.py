@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Gadgetbridge SQLite -> Victoria Metrics replication
-===================================================
+Gadgetbridge SQLite -> Hive (DuckDB/Parquet) replication
+========================================================
 
 Reads the local Gadgetbridge SQLite database (never modified) and imports
-a curated subset of its samples into Victoria Metrics as time series.
+a curated subset of its samples into the local Hive (segment=raw) as time
+series. The Hive is later synced to the server with rsync.
 
-Mapping (source table.column -> VM metric{labels})
+Mapping (source table.column -> metric{labels})
 --------------------------------------------------
 GENERIC_HEART_RATE_SAMPLE.HEART_RATE  -> heart_rate{source="generic"}
 XIAOMI_ACTIVITY_SAMPLE.HEART_RATE     -> heart_rate{source="xiaomi_activity"}
@@ -45,14 +46,15 @@ Because a packet's layout depends on its next neighbor, the very last
 packet of an import is held back (its next gap is not yet known) and
 re-imported once a following packet exists; incremental runs reload a
 small RR_REIMPORT_MARGIN_MS overlap so interior packets reconstruct
-identically and VM deduplicates the re-written points.
+identically and the Hive deduplicates the re-written points.
 
 Incremental & idempotent
 -----------------------
-Per series the newest sample timestamp already in VM is used as a
-watermark; only source rows at/after it are re-imported. VM deduplicates
-repeated (series, timestamp) samples, so boundary re-imports are harmless.
-Use --force to ignore watermarks and re-import everything.
+Per series the newest sample timestamp already in the Hive is used as a
+watermark; only source rows at/after it are re-imported. The Hive's
+merge-on-write deduplicates repeated (ts, labels) samples, so boundary
+re-imports are harmless.
+Use --full to ignore watermarks and re-import everything.
 """
 
 import argparse
@@ -60,10 +62,13 @@ import sqlite3
 import time
 from pathlib import Path
 
-from vm_io import VMWriter, force_flush, latest_timestamp_ms
+from hive_io import HiveWriter as VMWriter, force_flush, latest_timestamp_ms
 
 # --- Source -----------------------------------------------------------
-DB_PATH = Path(__file__).parent / "Gadgetbridge"
+# Default working DB (the file run_pipeline.py downloads to). The concrete
+# source file is normally passed explicitly via --db, so no run is pinned
+# to a constant snapshot.
+DEFAULT_DB_PATH = Path(__file__).parent / "Gadgetbridge"
 
 # Heart-rate readings of 0 are a "no measurement" sentinel in
 # XIAOMI_ACTIVITY_SAMPLE (and never legitimately 0 elsewhere); drop them.
@@ -415,22 +420,34 @@ def replicate_mapping(sqlite_conn, writer: VMWriter, mapping: dict, force: bool)
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Replicate a Gadgetbridge SQLite subset into Victoria Metrics.",
+        description="Replicate a Gadgetbridge SQLite subset into the local Hive.",
     )
     parser.add_argument(
-        "--force",
+        "--db",
+        type=Path,
+        default=DEFAULT_DB_PATH,
+        metavar="DB_FILE",
+        help="Path to the source Gadgetbridge SQLite database to import "
+             "(default: %(default)s).",
+    )
+    parser.add_argument(
+        "--full",
+        dest="force",
         action="store_true",
-        help="Ignore per-series watermarks and re-import every source row.",
+        help="Ignore per-series watermarks and re-import every source row "
+             "(same flag name as the aggregators, so the pipeline forwards it "
+             "to every stage).",
     )
     args, _ = parser.parse_known_args()
 
-    if not DB_PATH.exists():
-        raise SystemExit(f"ERROR: source database not found: {DB_PATH}")
+    db_path = args.db
+    if not db_path.exists():
+        raise SystemExit(f"ERROR: source database not found: {db_path}")
 
-    sqlite_conn = sqlite3.connect(str(DB_PATH))
+    sqlite_conn = sqlite3.connect(str(db_path))
     writer = VMWriter()
     mode_label = "FORCE full" if args.force else "incremental"
-    print(f"Importing Gadgetbridge subset into Victoria Metrics  [{mode_label}]")
+    print(f"Importing Gadgetbridge subset into the local Hive  [{mode_label}]")
     try:
         for mapping in MAPPINGS:
             t_start = time.monotonic()
@@ -453,7 +470,7 @@ def main():
 
     flushed = force_flush()
     print(
-        f"Import done. {writer.total:,} samples written to Victoria Metrics."
+        f"Import done. {writer.total:,} samples written to the local Hive."
     )
 
 

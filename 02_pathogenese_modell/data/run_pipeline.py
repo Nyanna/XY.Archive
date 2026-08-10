@@ -6,7 +6,6 @@ Prints per-script and total runtimes on completion.
 """
 
 import argparse
-import shutil
 import subprocess
 import sys
 import time
@@ -14,7 +13,7 @@ from pathlib import Path
 
 import gdown
 
-import vm_io
+import hive_io as vm_io
 
 HERE = Path(__file__).parent
 DB_PATH = HERE / "Gadgetbridge"
@@ -72,17 +71,16 @@ def run(script: str, args: list[str]) -> None:
     print(f"Runtime [{script}]: {elapsed:.1f}s")
 
 
-def use_local_db(db_file: Path) -> None:
-    """Copy a local SQLite file into place as the working DB (no download)."""
-    if not db_file.exists():
-        print(f"ERROR: database file not found: {db_file}")
-        sys.exit(1)
-    print(f"Using local database: {db_file}")
-    shutil.copy2(db_file, DB_PATH)
+def run_pipeline_once(db_file: Path, passthrough_args: list[str]) -> None:
+    """Import one source DB and run the aggregators over the resulting Hive.
 
-
-def run_pipeline_once(passthrough_args: list[str]) -> None:
-    run("gadgetbridge_migrate.py", passthrough_args)
+    The concrete source file is passed straight to gadgetbridge_migrate via
+    --db (no copy to a constant working path). The aggregators then operate
+    on the Hive that this import produced. Every stage shares the same --full
+    flag name, so passthrough args (e.g. --full, --limit-minutes) are simply
+    forwarded to all stages unchanged.
+    """
+    run("gadgetbridge_migrate.py", ["--db", str(db_file), *passthrough_args])
     vm_io.force_flush()
 
     run("hrv_aggregate.py",        passthrough_args)
@@ -111,13 +109,15 @@ def main() -> None:
         print(f"Processing {len(db_files)} local database file(s), download skipped.")
         for i, db_file in enumerate(db_files, start=1):
             print(f"\n=== [{i}/{len(db_files)}] {db_file} ===")
-            use_local_db(db_file)
-            run_pipeline_once(passthrough_args)
+            if not db_file.exists():
+                print(f"ERROR: database file not found: {db_file}")
+                sys.exit(1)
+            run_pipeline_once(db_file, passthrough_args)
     else:
         t_download = ensure_db()
         if t_download > 0:
             print(f"Download time: {t_download:.1f}s")
-        run_pipeline_once(passthrough_args)
+        run_pipeline_once(DB_PATH, passthrough_args)
 
     print(f"\nTotal time: {time.monotonic() - t_total:.1f}s")
 
