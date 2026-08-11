@@ -7,11 +7,12 @@ Reads the local Gadgetbridge SQLite database (never modified) and imports
 a curated subset of its samples into the local Hive (segment=raw) as time
 series. The Hive is later synced to the server with rsync.
 
-Mapping (source table.column -> metric{labels})
+Mapping (source table.column -> metric)
 --------------------------------------------------
-GENERIC_HEART_RATE_SAMPLE.HEART_RATE  -> heart_rate{source="generic"}
-XIAOMI_ACTIVITY_SAMPLE.HEART_RATE     -> heart_rate{source="xiaomi_activity"}
-HEART_RR_INTERVAL_SAMPLE.RR_MILLIS    -> rr_interval_ms{seq="<SEQ>"}
+GENERIC_HEART_RATE_SAMPLE.HEART_RATE  -> heart_rate_generic
+XIAOMI_ACTIVITY_SAMPLE.HEART_RATE     -> heart_rate_xiaomi_activity
+HEART_RR_INTERVAL_SAMPLE.RR_MILLIS    -> rr_interval_ms (SEQ resolved into a
+                                         unique per-beat timestamp, see below)
 XIAOMI_SLEEP_STAGE_SAMPLE.STAGE       -> sleep_stage
 XIAOMI_SLEEP_TIME_SAMPLE.*            -> sleep_is_awake, sleep_total_duration,
                                          sleep_deep_sleep_duration,
@@ -52,7 +53,7 @@ Incremental & idempotent
 -----------------------
 Per series the newest sample timestamp already in the Hive is used as a
 watermark; only source rows at/after it are re-imported. The Hive's
-merge-on-write deduplicates repeated (ts, labels) samples, so boundary
+merge-on-write deduplicates repeated (metric, ts) samples, so boundary
 re-imports are harmless.
 Use --full to ignore watermarks and re-import everything.
 """
@@ -72,12 +73,13 @@ DEFAULT_DB_PATH = Path(__file__).parent / "Gadgetbridge"
 
 # Heart-rate readings of 0 are a "no measurement" sentinel in
 # XIAOMI_ACTIVITY_SAMPLE (and never legitimately 0 elsewhere); drop them.
-HR_MIN_VALID = 1
+HR_MIN_VALID = 30
 
 # --- Mapping ----------------------------------------------------------
-# Each mapping describes one source table and the VM series derived from
-# it. A "series" pulls one value column into one metric; `labels` are
-# static, `seq_label` (RR only) turns a column into a per-value label.
+# Each mapping describes one source table and the Hive series derived from
+# it. A "series" pulls one value column into one metric; `seq_label` (RR
+# only) names the column that orders same-timestamp rows for the
+# timestamp-resolving RR path (see replicate_rr_mapping).
 #   ts_unit: 's' or 'ms' — native unit of ts_col in SQLite.
 #   min_value: optional inclusive lower bound applied to the value.
 MAPPINGS = [
@@ -87,8 +89,7 @@ MAPPINGS = [
         "ts_unit": "ms",
         "series": [
             {
-                "metric": "heart_rate",
-                "labels": {"source": "generic"},
+                "metric": "heart_rate_generic",
                 "value_col": "HEART_RATE",
                 "min_value": HR_MIN_VALID,
             },
@@ -100,8 +101,7 @@ MAPPINGS = [
         "ts_unit": "s",
         "series": [
             {
-                "metric": "heart_rate",
-                "labels": {"source": "xiaomi_activity"},
+                "metric": "heart_rate_xiaomi_activity",
                 "value_col": "HEART_RATE",
                 "min_value": HR_MIN_VALID,
             },
@@ -114,7 +114,6 @@ MAPPINGS = [
         "series": [
             {
                 "metric": "rr_interval_ms",
-                "labels": {},
                 "value_col": "RR_MILLIS",
                 "seq_label": "SEQ",
             },
@@ -125,7 +124,7 @@ MAPPINGS = [
         "ts_col": "TIMESTAMP",
         "ts_unit": "ms",
         "series": [
-            {"metric": "sleep_stage", "labels": {}, "value_col": "STAGE"},
+            {"metric": "sleep_stage", "value_col": "STAGE"},
         ],
     },
     {
@@ -155,15 +154,6 @@ RR_DEFAULT_GAP_MS = 60_000
 # stored watermark so the boundary packets reconstruct with the same
 # neighbors as the prior run (idempotent via VM's identical-(series,ts) dedup).
 RR_REIMPORT_MARGIN_MS = 60_000
-
-
-def _selector(series: dict) -> str:
-    """PromQL selector matching a series' metric name + static labels."""
-    labels = series.get("labels", {})
-    if not labels:
-        return series["metric"]
-    parts = ",".join(f'{k}="{v}"' for k, v in sorted(labels.items()))
-    return f'{series["metric"]}{{{parts}}}'
 
 
 def _to_ms(raw, ts_unit: str) -> int:
@@ -300,7 +290,7 @@ def replicate_rr_mapping(sqlite_conn, writer: VMWriter, mapping: dict, force: bo
         nonlocal n_written
         beats = _reconstruct_beat_times(ts_ms, rr_list, gap_prev, gap_next)
         for b, rr in zip(beats, rr_list):
-            writer.add(metric, {}, b, float(rr))
+            writer.add(metric, b, float(rr))
             n_written += 1
 
     prev_ts = None
@@ -345,14 +335,13 @@ def replicate_mapping(sqlite_conn, writer: VMWriter, mapping: dict, force: bool)
     # mapping (all series of a mapping share the same row timestamps).
     watermark_ms = None
     if not force:
-        watermark_ms = latest_timestamp_ms(_selector(series_defs[0]))
+        watermark_ms = latest_timestamp_ms(series_defs[0]["metric"])
 
-    # Build the SELECT: ts column + every distinct value/seq column.
+    # Build the SELECT: ts column + every distinct value column.
     value_cols = []
     for s in series_defs:
-        for col in (s["value_col"], s.get("seq_label")):
-            if col and col not in value_cols:
-                value_cols.append(col)
+        if s["value_col"] not in value_cols:
+            value_cols.append(s["value_col"])
     select_cols = [ts_col] + value_cols
     col_index = {c: i for i, c in enumerate(select_cols)}
 
@@ -392,14 +381,7 @@ def replicate_mapping(sqlite_conn, writer: VMWriter, mapping: dict, force: bool)
             min_value = s.get("min_value")
             if min_value is not None and value < min_value:
                 continue
-            labels = dict(s.get("labels", {}))
-            seq_col = s.get("seq_label")
-            if seq_col is not None:
-                seq_val = row[col_index[seq_col]]
-                if seq_val is None:
-                    continue
-                labels["seq"] = str(int(seq_val))
-            writer.add(s["metric"], labels, ts_ms, float(value))
+            writer.add(s["metric"], ts_ms, float(value))
             n_written += 1
 
         if n_read % PROGRESS_EVERY == 0:

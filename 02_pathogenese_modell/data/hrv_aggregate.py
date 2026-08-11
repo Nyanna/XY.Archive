@@ -705,12 +705,8 @@ def get_existing_minutes(since_ms=None):
     stored minute. since_ms restricts the export to the overlap window so
     incremental runs need not read the full history.
     """
-    existing = set()
-    for _labels, timestamps, _values in vm_io.export(
-        PRESENCE_METRIC, start_ms=since_ms
-    ):
-        existing.update(int(t) for t in timestamps)
-    return existing
+    timestamps, _values = vm_io.export(PRESENCE_METRIC, start_ms=since_ms)
+    return {int(t) for t in timestamps}
 
 
 def write_results_vm(writer, rows):
@@ -726,7 +722,7 @@ def write_results_vm(writer, rows):
             value = r.get(field)
             if value is None:
                 continue
-            writer.add(OUT_PREFIX + field, {}, ts_ms, float(value))
+            writer.add(OUT_PREFIX + field, ts_ms, float(value))
     return len(rows)
 
 

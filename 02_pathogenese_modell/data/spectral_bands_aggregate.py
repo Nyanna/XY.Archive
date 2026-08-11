@@ -131,12 +131,8 @@ def get_existing_minutes(since_ms=None):
     Presence is read from PRESENCE_METRIC (hrv_band_n_beats). since_ms
     restricts the export to the overlap window on incremental runs.
     """
-    existing = set()
-    for _labels, timestamps, _values in vm_io.export(
-        PRESENCE_METRIC, start_ms=since_ms
-    ):
-        existing.update(int(t) for t in timestamps)
-    return existing
+    timestamps, _values = vm_io.export(PRESENCE_METRIC, start_ms=since_ms)
+    return {int(t) for t in timestamps}
 
 
 def load_rr_data(min_ts_ms=None):
@@ -227,12 +223,12 @@ def write_rows(writer, rows):
         return 0
     for r in rows:
         ts_ms = r["timestamp_ms"]
-        writer.add(PRESENCE_METRIC, {}, ts_ms, float(r["n_beats"]))
+        writer.add(PRESENCE_METRIC, ts_ms, float(r["n_beats"]))
         for name in BAND_NAMES:
             value = r[name]
             if value is None:
                 continue
-            writer.add(OUT_PREFIX + name.lower(), {}, ts_ms, float(value))
+            writer.add(OUT_PREFIX + name.lower(), ts_ms, float(value))
     return len(rows)
 
 def build_freq_grids():
