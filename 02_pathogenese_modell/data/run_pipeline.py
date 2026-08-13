@@ -26,82 +26,72 @@ HIVE_SSH_KEY = Path("/home/user/.ssh/hivebee")
 HIVE_SSH_USER = "hivebee"
 HIVE_SSH_HOST = "proxy.xyan.icu"
 HIVE_REMOTE_DIR = "/home/admin/hive"
-HIVE_RCLONE_REMOTE_NAME = "hivebee"
-# No path suffix: server_command below already anchors the served fs at
-# HIVE_REMOTE_DIR, so the remote root *is* the Hive dir.
-HIVE_RCLONE_REMOTE = f"{HIVE_RCLONE_REMOTE_NAME}:"
-# Define the sftp remote purely via env vars (no rclone.conf entry needed).
-# Only the `rclone` binary is permitted to run on the remote side (no plain
-# ssh/sftp-subsystem/rsync access there anymore), so instead of the regular
-# SSH "sftp" subsystem we run `rclone serve sftp --stdio` as the remote
-# command over the SSH exec channel — the rclone equivalent of how rsync
-# spawns a remote `rsync --server` and talks to it over stdin/stdout.
-# The installed rclone version (1.53.3) also doesn't support on-the-fly
-# ":sftp,host=...:" connection strings, so RCLONE_CONFIG_<NAME>_* env vars
-# are used instead. Merged into the subprocess env in sync_hive().
-HIVE_RCLONE_ENV = {
-    "RCLONE_CONFIG_HIVEBEE_TYPE": "sftp",
-    "RCLONE_CONFIG_HIVEBEE_HOST": HIVE_SSH_HOST,
-    "RCLONE_CONFIG_HIVEBEE_USER": HIVE_SSH_USER,
-    "RCLONE_CONFIG_HIVEBEE_KEY_FILE": str(HIVE_SSH_KEY),
-    "RCLONE_CONFIG_HIVEBEE_SERVER_COMMAND": f"rclone serve sftp --stdio {HIVE_REMOTE_DIR}",
-}
-# Only sync the Hive partitions (segment=*), never the remote user's home-dir
-# clutter (.bash_history, .ssh, ...) that happens to live in the same dir.
-HIVE_RCLONE_FILTERS = ["--filter=+ segment=*/**", "--filter=- *"]
-# Strictly sequential, single-connection transfer to keep RAM usage minimal:
-# one file in flight at a time, no parallel checkers/listers, small buffer
-# (default is 16M per transfer; 1M keeps footprint tiny since we never run
-# more than one transfer at once anyway).
-HIVE_RCLONE_LOWMEM_FLAGS = [
-    "--transfers=1",
-    "--checkers=1",
-    "--buffer-size=1M",
-    "--use-mmap",
-]
-# Progress reporting: "--progress" redraws a single line via carriage-return
-# cursor control, which only makes sense on an interactive terminal — when
-# the pipeline runs unattended (cron/systemd timer, output redirected to a
-# logfile), that turns into an unreadable wall of \r-separated garbage. So we
-# pick the flavour based on whether stdout is actually a terminal.
-HIVE_RCLONE_PROGRESS_FLAGS = (
-    ["--progress"] if sys.stdout.isatty() else ["--stats=15s", "--stats-one-line"]
-)
+HIVE_GIT_BRANCH = "master"
+# scp-like syntax so git tunnels the transfer over ssh (same key/host as the
+# previous rsync/rclone setup); the remote side only permits running `git`
+# (no plain shell/sftp/rsync anymore).
+HIVE_GIT_REMOTE_URL = f"{HIVE_SSH_USER}@{HIVE_SSH_HOST}:{HIVE_REMOTE_DIR}"
+# All git<->remote traffic (fetch/pull/push, plus the explicit remote
+# worktree update below) goes through this ssh invocation with the dedicated
+# key. Merged into the subprocess env for every git call in sync_hive().
+HIVE_GIT_ENV = {**os.environ, "GIT_SSH_COMMAND": f"ssh -i {HIVE_SSH_KEY}"}
+
+
+def _git(args: list[str]) -> None:
+    """Run a git command against the local Hive repo, abort pipeline on error."""
+    result = subprocess.run(["git", "-C", str(HIVE_PATH), *args], env=HIVE_GIT_ENV)
+    if result.returncode != 0:
+        print(f"ERROR: git {' '.join(args)} exited with code {result.returncode}. Aborting pipeline.")
+        sys.exit(result.returncode)
+
+
+def _ensure_hive_repo() -> None:
+    """Make sure the local Hive dir is a git repo with `origin` set correctly."""
+    HIVE_PATH.mkdir(parents=True, exist_ok=True)
+    if not (HIVE_PATH / ".git").exists():
+        _git(["init", "-b", HIVE_GIT_BRANCH])
+
+    remote = subprocess.run(
+        ["git", "-C", str(HIVE_PATH), "remote", "get-url", "origin"],
+        env=HIVE_GIT_ENV, capture_output=True, text=True,
+    )
+    if remote.returncode != 0:
+        _git(["remote", "add", "origin", HIVE_GIT_REMOTE_URL])
+    elif remote.stdout.strip() != HIVE_GIT_REMOTE_URL:
+        _git(["remote", "set-url", "origin", HIVE_GIT_REMOTE_URL])
 
 
 def sync_hive(direction: str) -> None:
-    """Sync the local Hive with the remote copy via rclone (sequential, low-RAM).
+    """Sync the local Hive with the remote Git repo over ssh.
 
-    direction="pull": remote -> local (fetch the latest Hive before running).
-    direction="push": local -> remote (upload the changes made by this run).
-
-    Uses `rclone copy` (not `sync`) to mirror the previous `rsync -a` behaviour:
-    files are copied/updated but nothing is deleted on the destination.
+    direction="pull": fetch + fast-forward the local Hive before running.
+    direction="push": commit local changes and push them. HIVE_REMOTE_DIR is
+    a non-bare checkout on the server with receive.denyCurrentBranch set to
+    updateInstead, so `git push` alone already updates its worktree to match
+    the new HEAD — no separate remote checkout step is needed.
     """
-    HIVE_PATH.mkdir(parents=True, exist_ok=True)
-    local = str(HIVE_PATH)
+    _ensure_hive_repo()
+    print(f"Syncing Hive ({direction}) via git: {HIVE_PATH} <-> {HIVE_GIT_REMOTE_URL}")
+    t = time.monotonic()
+
     if direction == "pull":
-        src, dst = HIVE_RCLONE_REMOTE, local
+        _git(["pull", "--ff-only", "origin", HIVE_GIT_BRANCH])
     elif direction == "push":
-        src, dst = local, HIVE_RCLONE_REMOTE
+        _git(["add", "-A"])
+        status = subprocess.run(
+            ["git", "-C", str(HIVE_PATH), "status", "--porcelain"],
+            env=HIVE_GIT_ENV, capture_output=True, text=True,
+        )
+        if status.stdout.strip():
+            _git(["commit", "-m", f"pipeline sync {time.strftime('%Y-%m-%d %H:%M:%S')}"])
+        else:
+            print("No local Hive changes to commit.")
+        _git(["push", "origin", HIVE_GIT_BRANCH])
     else:
         raise ValueError(f"invalid direction: {direction}")
 
-    cmd = [
-        "rclone", "copy",
-        *HIVE_RCLONE_FILTERS,
-        *HIVE_RCLONE_LOWMEM_FLAGS,
-        *HIVE_RCLONE_PROGRESS_FLAGS,
-        src, dst,
-    ]
-    print(f"Syncing Hive ({direction}) via rclone: {src} -> {dst}")
-    t = time.monotonic()
-    result = subprocess.run(cmd, env={**os.environ, **HIVE_RCLONE_ENV})
     elapsed = time.monotonic() - t
-    if result.returncode != 0:
-        print(f"ERROR: rclone ({direction}) exited with code {result.returncode}. Aborting pipeline.")
-        sys.exit(result.returncode)
-    print(f"Runtime [rclone {direction}]: {elapsed:.1f}s")
+    print(f"Runtime [git {direction}]: {elapsed:.1f}s")
 
 
 class _SameSize(Exception):
@@ -187,7 +177,7 @@ def main() -> None:
 
     t_total = time.monotonic()
 
-    #sync_hive("pull")
+    sync_hive("pull")
 
     if args.db:
         db_files = sorted(args.db)
