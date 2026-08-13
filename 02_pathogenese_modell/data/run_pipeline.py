@@ -6,6 +6,7 @@ Prints per-script and total runtimes on completion.
 """
 
 import argparse
+import os
 import subprocess
 import sys
 import time
@@ -19,6 +20,88 @@ HERE = Path(__file__).parent
 DB_PATH = HERE / "Gadgetbridge"
 DB_REMOTE_URL = "https://drive.google.com/file/d/1yropB-j0couqP8f-XItaAJm3dVsfgc1t/view?usp=sharing"
 DB_TMP_PATH = DB_PATH.with_suffix(".tmp")
+
+HIVE_PATH = HERE / "hive"
+HIVE_SSH_KEY = Path("/home/user/.ssh/hivebee")
+HIVE_SSH_USER = "hivebee"
+HIVE_SSH_HOST = "proxy.xyan.icu"
+HIVE_REMOTE_DIR = "/home/admin/hive"
+HIVE_RCLONE_REMOTE_NAME = "hivebee"
+# No path suffix: server_command below already anchors the served fs at
+# HIVE_REMOTE_DIR, so the remote root *is* the Hive dir.
+HIVE_RCLONE_REMOTE = f"{HIVE_RCLONE_REMOTE_NAME}:"
+# Define the sftp remote purely via env vars (no rclone.conf entry needed).
+# Only the `rclone` binary is permitted to run on the remote side (no plain
+# ssh/sftp-subsystem/rsync access there anymore), so instead of the regular
+# SSH "sftp" subsystem we run `rclone serve sftp --stdio` as the remote
+# command over the SSH exec channel — the rclone equivalent of how rsync
+# spawns a remote `rsync --server` and talks to it over stdin/stdout.
+# The installed rclone version (1.53.3) also doesn't support on-the-fly
+# ":sftp,host=...:" connection strings, so RCLONE_CONFIG_<NAME>_* env vars
+# are used instead. Merged into the subprocess env in sync_hive().
+HIVE_RCLONE_ENV = {
+    "RCLONE_CONFIG_HIVEBEE_TYPE": "sftp",
+    "RCLONE_CONFIG_HIVEBEE_HOST": HIVE_SSH_HOST,
+    "RCLONE_CONFIG_HIVEBEE_USER": HIVE_SSH_USER,
+    "RCLONE_CONFIG_HIVEBEE_KEY_FILE": str(HIVE_SSH_KEY),
+    "RCLONE_CONFIG_HIVEBEE_SERVER_COMMAND": f"rclone serve sftp --stdio {HIVE_REMOTE_DIR}",
+}
+# Only sync the Hive partitions (segment=*), never the remote user's home-dir
+# clutter (.bash_history, .ssh, ...) that happens to live in the same dir.
+HIVE_RCLONE_FILTERS = ["--filter=+ segment=*/**", "--filter=- *"]
+# Strictly sequential, single-connection transfer to keep RAM usage minimal:
+# one file in flight at a time, no parallel checkers/listers, small buffer
+# (default is 16M per transfer; 1M keeps footprint tiny since we never run
+# more than one transfer at once anyway).
+HIVE_RCLONE_LOWMEM_FLAGS = [
+    "--transfers=1",
+    "--checkers=1",
+    "--buffer-size=1M",
+    "--use-mmap",
+]
+# Progress reporting: "--progress" redraws a single line via carriage-return
+# cursor control, which only makes sense on an interactive terminal — when
+# the pipeline runs unattended (cron/systemd timer, output redirected to a
+# logfile), that turns into an unreadable wall of \r-separated garbage. So we
+# pick the flavour based on whether stdout is actually a terminal.
+HIVE_RCLONE_PROGRESS_FLAGS = (
+    ["--progress"] if sys.stdout.isatty() else ["--stats=15s", "--stats-one-line"]
+)
+
+
+def sync_hive(direction: str) -> None:
+    """Sync the local Hive with the remote copy via rclone (sequential, low-RAM).
+
+    direction="pull": remote -> local (fetch the latest Hive before running).
+    direction="push": local -> remote (upload the changes made by this run).
+
+    Uses `rclone copy` (not `sync`) to mirror the previous `rsync -a` behaviour:
+    files are copied/updated but nothing is deleted on the destination.
+    """
+    HIVE_PATH.mkdir(parents=True, exist_ok=True)
+    local = str(HIVE_PATH)
+    if direction == "pull":
+        src, dst = HIVE_RCLONE_REMOTE, local
+    elif direction == "push":
+        src, dst = local, HIVE_RCLONE_REMOTE
+    else:
+        raise ValueError(f"invalid direction: {direction}")
+
+    cmd = [
+        "rclone", "copy",
+        *HIVE_RCLONE_FILTERS,
+        *HIVE_RCLONE_LOWMEM_FLAGS,
+        *HIVE_RCLONE_PROGRESS_FLAGS,
+        src, dst,
+    ]
+    print(f"Syncing Hive ({direction}) via rclone: {src} -> {dst}")
+    t = time.monotonic()
+    result = subprocess.run(cmd, env={**os.environ, **HIVE_RCLONE_ENV})
+    elapsed = time.monotonic() - t
+    if result.returncode != 0:
+        print(f"ERROR: rclone ({direction}) exited with code {result.returncode}. Aborting pipeline.")
+        sys.exit(result.returncode)
+    print(f"Runtime [rclone {direction}]: {elapsed:.1f}s")
 
 
 class _SameSize(Exception):
@@ -104,6 +187,8 @@ def main() -> None:
 
     t_total = time.monotonic()
 
+    #sync_hive("pull")
+
     if args.db:
         db_files = sorted(args.db)
         print(f"Processing {len(db_files)} local database file(s), download skipped.")
@@ -118,6 +203,8 @@ def main() -> None:
         if t_download > 0:
             print(f"Download time: {t_download:.1f}s")
         run_pipeline_once(DB_PATH, passthrough_args)
+
+    sync_hive("push")
 
     print(f"\nTotal time: {time.monotonic() - t_total:.1f}s")
 
