@@ -2,14 +2,8 @@
 
 The Hive is streamed directly from disk on every query. We explicitly:
 
-* disable the object cache (``enable_object_cache=false``) so nothing is
-  cached between requests,
-* cap ``memory_limit`` to keep RAM usage minimal,
-* never copy the data into DuckDB (no ``CREATE TABLE``); ``read_parquet`` reads
-  the source files lazily and only the row-groups matching the predicate.
-
 Results are handed out as Arrow tables/IPC so the browser can consume them via
-apache-arrow without an intermediate JSON round-trip.
+apache-arrow.
 """
 from __future__ import annotations
 
@@ -40,9 +34,6 @@ class HiveStore:
         # We never need row ordering to be preserved across scans -> less RAM.
         con.execute("SET preserve_insertion_order=false")
 
-    # ------------------------------------------------------------------
-    # Series query
-    # ------------------------------------------------------------------
     def series(
         self,
         segment: str,

@@ -1,13 +1,11 @@
 """HR Viewer application -- entry class on top of the stdlib HTTP server.
 
-Two responsibilities, two endpoints:
+Two endpoints:
 
 * **Statics**  -- ``GET /<file>`` serves the file of that name from the
-  statics directory (plain, no index mapping).
+  statics directory.
 * **DB query** -- ``POST /api/query`` runs a single read-only DuckDB request
-  and returns the result as an Apache Arrow IPC stream (or JSON).
-
-No web framework is used; the standard library is enough here.
+  and returns the result as an Apache Arrow IPC stream.
 """
 from __future__ import annotations
 
@@ -23,7 +21,6 @@ from urllib.parse import urlparse
 from .config import Config
 from .db import HiveStore, table_to_ipc
 
-# Default series shown by the dashboard.
 DEFAULT_SEGMENT = "raw"
 DEFAULT_METRIC = "heart_rate_generic"
 
@@ -38,13 +35,7 @@ class HrViewer:
         self.store = HiveStore(self.config)
         self.statics_dir = Path(self.config.statics_dir)
 
-    # ------------------------------------------------------------------
-    # Routing
-    # ------------------------------------------------------------------
     def handle_get(self, handler: "_Handler") -> None:
-        # Plain static file serving: the URL path maps 1:1 to a file of the
-        # same name inside the statics directory. No index mapping -- "/" is
-        # not a file and therefore yields 404.
         rel = urlparse(handler.path).path.lstrip("/")
         self._serve_static(handler, rel)
 
@@ -54,9 +45,6 @@ class HrViewer:
         else:
             handler.send_error(HTTPStatus.NOT_FOUND, "Not found")
 
-    # ------------------------------------------------------------------
-    # DB query endpoint
-    # ------------------------------------------------------------------
     def _api_query(self, handler: "_Handler") -> None:
         length = int(handler.headers.get("Content-Length", 0) or 0)
         body = handler.rfile.read(length) if length else b""
@@ -95,9 +83,6 @@ class HrViewer:
         else:
             self._send_bytes(handler, table_to_ipc(table), ARROW_MIME, cache="no-store")
 
-    # ------------------------------------------------------------------
-    # Static files
-    # ------------------------------------------------------------------
     def _serve_static(self, handler: "_Handler", rel: str) -> None:
         base = self.statics_dir.resolve()
         target = (base / rel).resolve()
@@ -119,9 +104,6 @@ class HrViewer:
         with path.open("rb") as f:
             shutil.copyfileobj(f, handler.wfile)  # streamed, low RAM
 
-    # ------------------------------------------------------------------
-    # Low-level responders
-    # ------------------------------------------------------------------
     def _send_bytes(
         self, handler: "_Handler", payload: bytes, ctype: str, cache: str | None = None
     ) -> None:
@@ -136,9 +118,6 @@ class HrViewer:
     def _send_json(self, handler: "_Handler", obj) -> None:
         self._send_bytes(handler, json.dumps(obj).encode("utf-8"), "application/json")
 
-    # ------------------------------------------------------------------
-    # Lifecycle
-    # ------------------------------------------------------------------
     def run(self) -> None:
         cfg = self.config
         httpd = _Server((cfg.host, cfg.port), _Handler)
