@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HR Viewer</title>
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Local vendored assets (no CDN) -->
+  <script src="/echarts.min.js"></script>
+  <script src="/Arrow.es2015.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>HR Viewer</h1>
+    <div class="controls">
+      <label>Range
+        <select id="range">
+          <option value="3600000">Last 1h</option>
+          <option value="21600000">Last 6h</option>
+          <option value="43200000">Last 12h</option>
+          <option value="86400000" selected>Last 24h</option>
+          <option value="259200000">Last 3d</option>
+          <option value="604800000">Last 7d</option>
+          <option value="2592000000">Last 30d</option>
+        </select>
+      </label>
+      <button id="reload">Reload</button>
+      <span id="status" class="status"></span>
+    </div>
+  </header>
+
+  <main>
+    <div id="chart" class="chart"></div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Start the HR Viewer. Run from the project root. Args (e.g. --port 9000) pass through.
+cd "$(dirname "$0")"
+PYTHONPATH=src python3 -m xy.hrv.viewer "$@"
