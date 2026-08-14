@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HRV Data</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="echarts.min.js"></script>
+  <script src="Arrow.es2015.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>HRV&nbsp;Data</h1>
+
+    <div class="controls">
+      <label class="quick">Range
+        <select id="quickRange">
+          <option value="3600000">Last 1h</option>
+          <option value="21600000">Last 6h</option>
+          <option value="43200000">Last 12h</option>
+          <option value="86400000" selected>Last 24h</option>
+          <option value="259200000">Last 3d</option>
+          <option value="604800000">Last 7d</option>
+          <option value="2592000000">Last 30d</option>
+          <option value="7776000000">Last 90d</option>
+          <option value="custom">Custom</option>
+        </select>
+      </label>
+
+      <div class="timesel">
+        <button id="shiftBack"  title="Zeitraum rückwärts verschieben">&laquo;</button>
+        <label>From <input type="datetime-local" id="fromInput" step="1" /></label>
+        <label>To <input type="datetime-local" id="toInput" step="1" /></label>
+        <button id="shiftFwd"   title="Zeitraum vorwärts verschieben">&raquo;</button>
+      </div>
+
+      <button id="apply">Apply</button>
+      <button id="resetZoom" title="Synchronisierten Zoom zurücksetzen">Reset Zoom</button>
+      <span id="status" class="status"></span>
+    </div>
+  </header>
+
+  <main id="board"></main>
+
+  <script src="dashboard.config.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

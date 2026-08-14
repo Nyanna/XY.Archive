@@ -51,33 +51,39 @@ class HrViewer:
         req = json.loads(body or b"{}")
 
         now_ms = _now_ms()
-        segment = req.get("segment", DEFAULT_SEGMENT)
-        metric = req.get("metric", DEFAULT_METRIC)
+        kind = str(req.get("kind", "series")).lower()
         start_ms = int(req.get("start", now_ms - 24 * 3600 * 1000))  # default: 24h
         end_ms = int(req.get("end", now_ms))
         max_points = req.get("max_points")
         max_points = int(max_points) if max_points is not None else None
         fmt = str(req.get("format", "arrow")).lower()
 
-        table = self.store.series(
-            segment=segment,
-            metric=metric,
-            start_ms=start_ms,
-            end_ms=end_ms,
-            max_points=max_points,
-        )
+        if kind == "dominance_daily":
+            table = self.store.dominance_daily(start_ms, end_ms)
+        elif kind == "sleep_daily":
+            table = self.store.sleep_daily(
+                start_ms, end_ms, session=str(req.get("session", "after"))
+            )
+        else:  # "series"
+            table = self.store.series(
+                segment=req.get("segment", DEFAULT_SEGMENT),
+                metric=req.get("metric", DEFAULT_METRIC),
+                start_ms=start_ms,
+                end_ms=end_ms,
+                max_points=max_points,
+                agg=str(req.get("agg", "avg")),
+            )
 
         if fmt == "json":
             cols = table.to_pydict()
             self._send_json(
                 handler,
                 {
-                    "segment": segment,
-                    "metric": metric,
                     "start": start_ms,
                     "end": end_ms,
-                    "rows": len(cols.get("ts", [])),
-                    "data": list(zip(cols.get("ts", []), cols.get("value", []))),
+                    "rows": table.num_rows,
+                    "columns": table.column_names,
+                    "data": cols,
                 },
             )
         else:
