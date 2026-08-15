@@ -1,19 +1,12 @@
-/* HRV Data dashboard -- reproduction of the Grafana dashboard.
+/* Generic ECharts dashboard renderer, driven entirely by a `window.DASHBOARD`
+ * config (see dashboard.config.js). Not tied to any specific metrics or
+ * domain -- a new dashboard only needs its own config file, selected via
+ * dashboard.html's `?config=` URL parameter.
  *
- * Implemented features:
- *   - globally synchronised zoom and hover cursor across all panels, matched
- *     by axis value (not data index) so panels with differing point densities
- *     stay aligned, plus late-join zoom replay,
- *   - a time selector with start/end date+time inputs and shift buttons that
- *     move the selected window backward/forward by its own span,
- *   - lazy panel loading: a panel only queries data once it becomes visible
- *     (collapsed groups and inactive tabs stay unloaded),
- *   - selectable aggregate per query (avg / none / relative spread),
- *   - thresholds drawn as marker lines,
- *   - dual Y-axes with independent min/max (and transparent stacked fills),
- *   - a legend to toggle individual metric series,
- *   - collapsible panel groups and a combined tab-panel,
- *   - metrics shown under their short label, with axis labels.
+ * Features: synced zoom/hover cursor across panels (by axis value, not data
+ * index, plus late-join replay), a time selector with quick ranges + shift
+ * buttons, lazy (visibility-based) panel loading, thresholds, dual Y-axes,
+ * a toggleable legend, collapsible rows and a tab layout.
  */
 (function () {
   "use strict";
@@ -40,12 +33,10 @@
     setStatus(pending > 0 ? "Loading … (" + pending + ")" : "Ready");
   }
 
-  /* ---- cross-panel sync BY AXIS VALUE --------------------------------- *
-   * `echarts.connect` links the tooltip/axisPointer by *data index*, which
-   * misaligns panels whose series have different point counts (dense HR vs.
-   * sparse sleep_stage). We therefore sync zoom and the hover cursor manually,
-   * by time value. The Overall-tab daily line charts (daily aggregates, own
-   * X-axis) are excluded. */
+  /* ---- cross-panel sync BY AXIS VALUE ----------------------------------
+   * `echarts.connect` links by *data index*, which misaligns panels whose
+   * series have different point counts. We sync zoom/hover manually instead,
+   * by time value. Panels of type "daily" (own X-axis) are excluded. */
   const syncable = (p) => p.chart && p.cfg.type !== "daily";
 
   function broadcastShowAtValue(t) {
@@ -81,16 +72,12 @@
   }
   const parseLocal = (s) => new Date(s).getTime();
 
-  /* ---- fixed per-panel query window ----------------------------------- *
-   * The Overall-tab daily panels aggregate by calendar day and therefore need
-   * their own, wider time window -- independent of the global range (which may
-   * be as short as 1h and would collapse a daily GROUP BY to a single point).
-   * A panel opts in via `cfg.range`:
-   *   { days: N }            -> rolling window [now - N days, now]
-   *   { from: X, to: Y }     -> absolute bounds; each of X/Y may be
-   *                             "now", an epoch-ms number, or an ISO string
-   *                             (e.g. "2026-01-01T00:00:00Z").
-   * Panels without `cfg.range` use the global [fromMs, toMs] window. */
+  /* ---- fixed per-panel query window -------------------------------------
+   * Panels that aggregate by calendar day need their own, wider window,
+   * independent of the (possibly short) global range. Opt in via `cfg.range`:
+   *   { days: N }          -> rolling window [now - N days, now]
+   *   { from: X, to: Y }   -> absolute bounds; X/Y: "now" | epoch ms | ISO
+   * Panels without `cfg.range` use the global [fromMs, toMs]. */
   function resolveTime(v, dflt) {
     if (v == null) return dflt;
     if (v === "now") return Date.now();
@@ -140,10 +127,8 @@
     return trimNum(v);
   }
 
-  /* The shared time X-axis. Tick labels are only rendered on panels that
-   * request them (`cfg.timeAxis`), since every timeseries/state panel is
-   * pinned to the exact same window -- one visible axis (Sleep Stage) suffices
-   * for the whole stack, with the panels' own Y-axis labels naming each plot. */
+  /* Shared time X-axis; tick labels only render where `cfg.timeAxis` is set,
+   * since every timeseries/state panel is pinned to the same window. */
   function timeXAxis(cfg) {
     const show = !!cfg.timeAxis;
     return {
@@ -289,15 +274,10 @@
         selected: legendSelected,
         textStyle: { color: AXIS, fontWeight: "bold" }, icon: "roundRect",
       } : undefined,
-      // Keep the plot geometry identical across every timeseries/state panel
-      // (constant left/right margins) so that, with the shared X-axis range,
-      // a given timestamp maps to the same pixel X in every panel. Otherwise
-      // panels without a right axis (HR, Sleep Stage) would be wider than the
-      // rest and the connected hover axisPointer/tooltip would be offset.
+      // Fixed left/right margins on every timeseries/state panel, so a given
+      // timestamp maps to the same pixel X everywhere (needed for the synced
+      // hover cursor), regardless of whether a panel has a right axis.
       grid: { left: 64, right: 64, top: GRID_TOP, bottom: GRID_BOTTOM },
-      // Pin the axis to the selected query window so every timeseries/state
-      // panel shares the exact same X-axis; tick labels only render on the
-      // panel that requests them (`cfg.timeAxis`).
       xAxis: timeXAxis(cfg),
       yAxis: baseYAxis(cfg),
       dataZoom: insideZoom(),
@@ -305,27 +285,17 @@
     };
   }
 
-  /* ---- Sleep-stage state band (Grafana-style state timeline) ---------- *
-   * `sleep_stage` is a categorical signal. Instead of a step line we render a
-   * single-row colour band: runs of the same stage become coloured rectangles
-   * that span their time range, each labelled with the stage name.
-   * Value mapping mirrors the Grafana dashboard (grafana-dashboard.duckdb.json);
-   * the four "Awake" codes (1/5/6, and transparent 0) are unified, code 0
-   * ("not asleep") is left blank. */
-  const STAGE = {
-    0: null,                                             // Awake / transparent -> blank
-    1: { label: "Awake", color: "#fff899", text: "#5a4b00" },
-    2: { label: "Deep",  color: "#1f60c4", text: "#ffffff" },
-    3: { label: "Light", color: "#c0d8ff", text: "#1f2328" },
-    4: { label: "REM",   color: "#ffa6b0", text: "#7a0010" },
-    5: { label: "Awake", color: "#fff899", text: "#5a4b00" },
-    6: { label: "Awake", color: "#fff899", text: "#5a4b00" },
-  };
+  /* ---- categorical "state" band (e.g. sleep stage) ----------------------
+   * Renders a categorical series as a single-row colour band: runs of the
+   * same value become labelled, coloured rectangles spanning their time
+   * range. The code -> { label, color, text } mapping is domain-specific, so
+   * it comes from the panel config (`cfg.series[0].states`), keeping this
+   * renderer generic; a missing code renders as a gap. */
 
-  /* Collapse the [ts,value] points into [start, end, code] segments, breaking
+  /* Collapse [ts,value] points into [start, end, code] segments, breaking
    * runs across long gaps (e.g. between separate nights) so no rectangle is
-   * stretched over daytime with no data. */
-  function buildStageSegments(xy) {
+   * stretched over a period with no data. */
+  function buildStageSegments(xy, states) {
     const pts = (xy || []).filter((p) => p[1] != null);
     const n = pts.length;
     if (!n) return [];
@@ -348,43 +318,47 @@
       const lastTs = pts[j - 1][0];
       const nextTs = j < n ? pts[j][0] : lastTs + med;
       const end = Math.min(nextTs, lastTs + gapCap);
-      if (STAGE[code] && end > start) segs.push([start, end, code]);
+      if (states[code] && end > start) segs.push([start, end, code]);
       i = j;
     }
     return segs;
   }
 
-  /* Custom renderItem: draw one clipped, labelled rectangle per stage run. */
-  function renderStageItem(params, api) {
-    const m = STAGE[api.value(2)];
-    if (!m) return;
-    const cs = params.coordSys;                   // { x, y, width, height }
-    const left = cs.x, right = cs.x + cs.width;
-    let x0 = api.coord([api.value(0), 0])[0];
-    let x1 = api.coord([api.value(1), 0])[0];
-    x0 = Math.max(x0, left); x1 = Math.min(x1, right);
-    const w = x1 - x0;
-    if (w <= 0) return;
-    const children = [{
-      type: "rect",
-      shape: { x: x0, y: cs.y, width: w, height: cs.height },
-      style: { fill: m.color, stroke: "#ffffff", lineWidth: 0.5 },
-    }];
-    if (w >= 34) {
-      children.push({
-        type: "text",
-        style: {
-          text: m.label, x: x0 + w / 2, y: cs.y + cs.height / 2,
-          textAlign: "center", textVerticalAlign: "middle",
-          fill: m.text, fontSize: 10, width: w - 6,
-          overflow: "truncate", ellipsis: "",
-        },
-      });
-    }
-    return { type: "group", children };
+  /* Custom renderItem factory: draw one clipped, labelled rectangle per run,
+   * coloured/labelled via the panel's `states` map. */
+  function makeStageRenderer(states) {
+    return function renderStageItem(params, api) {
+      const m = states[api.value(2)];
+      if (!m) return;
+      const cs = params.coordSys;                   // { x, y, width, height }
+      const left = cs.x, right = cs.x + cs.width;
+      let x0 = api.coord([api.value(0), 0])[0];
+      let x1 = api.coord([api.value(1), 0])[0];
+      x0 = Math.max(x0, left); x1 = Math.min(x1, right);
+      const w = x1 - x0;
+      if (w <= 0) return;
+      const children = [{
+        type: "rect",
+        shape: { x: x0, y: cs.y, width: w, height: cs.height },
+        style: { fill: m.color, stroke: "#ffffff", lineWidth: 0.5 },
+      }];
+      if (w >= 34) {
+        children.push({
+          type: "text",
+          style: {
+            text: m.label, x: x0 + w / 2, y: cs.y + cs.height / 2,
+            textAlign: "center", textVerticalAlign: "middle",
+            fill: m.text, fontSize: 10, width: w - 6,
+            overflow: "truncate", ellipsis: "",
+          },
+        });
+      }
+      return { type: "group", children };
+    };
   }
 
   function buildStateBand(cfg, xy) {
+    const states = (cfg.series[0] && cfg.series[0].states) || {};
     const fmt = (ms) => {
       const d = new Date(ms);
       return pad(d.getHours()) + ":" + pad(d.getMinutes());
@@ -397,7 +371,7 @@
         formatter: (ps) => {
           const it = ps && ps[0];
           if (!it || !it.value) return "";
-          const v = it.value, m = STAGE[v[2]];
+          const v = it.value, m = states[v[2]];
           const dur = Math.round((v[1] - v[0]) / 60000);
           return "<b>" + (m ? m.label : v[2]) + "</b><br/>" +
             fmt(v[0]) + " – " + fmt(v[1]) + " · " + dur + " min";
@@ -414,17 +388,15 @@
       },
       dataZoom: insideZoom(),
       series: [{
-        type: "custom", renderItem: renderStageItem,
+        type: "custom", renderItem: makeStageRenderer(states),
         encode: { x: [0, 1] }, clip: true,
-        data: buildStageSegments(xy),
+        data: buildStageSegments(xy, states),
       }],
     };
   }
 
-  /* The Overall-tab daily panels are Grafana `xychart` visualisations with
-   * `show: "points+lines"` -- i.e. line charts with visible points and a
-   * translucent area fill (fillOpacity 50), time on the X-axis. They are
-   * rendered as line charts (not bars). */
+  /* Type "daily" panels: line charts with visible points and a translucent
+   * area fill, plotted from a pre-aggregated table (own time X-axis). */
   function buildDaily(cfg, table, legendSelected) {
     const legendData = [], series = [];
     cfg.series.forEach((sc) => {
@@ -484,8 +456,7 @@
       if (this.chart) return;
       this.chart = echarts.init(this.chartEl);
 
-      // The Overall-tab daily line charts keep their own independent X-axis and
-      // are not part of the cross-panel cursor/zoom synchronisation.
+      // "daily" panels keep their own X-axis, outside the cross-panel sync.
       if (this.cfg.type === "daily") return;
 
       // --- zoom sync (by axis value) ---
@@ -514,16 +485,13 @@
       });
       zr.on("mouseout", broadcastHide);
 
-      // --- Grafana-style drag interaction ---
       this.attachDragZoom();
     }
 
-    /* Grafana-like mouse interaction on the plot:
-     *   - LEFT button + drag  -> highlight a region; on release its time span
-     *     becomes the new query window (data is re-fetched, i.e. the zoom comes
-     *     with a genuine resolution increase, not just a visual rescale),
-     *   - RIGHT button + drag -> pan the currently shown window; the view
-     *     follows live and the panned window is re-fetched on release. */
+    /* Mouse interaction on the plot:
+     *   - LEFT + drag  -> highlight a region; on release it becomes the new
+     *     query window (re-fetched at full resolution, not just rescaled),
+     *   - RIGHT + drag -> live-pan the current window; re-fetched on release. */
     attachDragZoom() {
       const chart = this.chart, el = this.chartEl;
       el.addEventListener("contextmenu", (e) => e.preventDefault());
@@ -804,6 +772,8 @@
   /* ---- wire up -------------------------------------------------------- */
   function init() {
     document.title = DASHBOARD.title;
+    const titleEl = document.getElementById("pageTitle");
+    if (titleEl) titleEl.textContent = DASHBOARD.title;
     DASHBOARD.rows.forEach((r) => boardEl.appendChild(buildRow(r)));
     panels.forEach((p) => { p.host.__panel = p; observer.observe(p.host); });
 

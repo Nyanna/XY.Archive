@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="topbar">
-    <h1>HRV&nbsp;Data</h1>
+    <h1 id="pageTitle">HRV&nbsp;Data</h1>
 
     <div class="controls">
       <label class="quick">Range
@@ -42,7 +42,39 @@
 
   <main id="board"></main>
 
-  <script src="dashboard.config.js"></script>
-  <script src="dashboard.js"></script>
+  <script>
+    /* Pick the dashboard config to load. `?config=<name>` loads
+     * "dashboard.config.<name>.js"; with no (or an invalid) parameter, the
+     * default "dashboard.config.js" is used. This is how dashboard.js -- a
+     * generic renderer -- gets reused for multiple dashboards. */
+    (function () {
+      "use strict";
+      var raw = new URLSearchParams(location.search).get("config");
+      var name = raw && /^[a-zA-Z0-9_-]+$/.test(raw) ? raw : null;
+      var configSrc = name ? "dashboard.config." + name + ".js" : "dashboard.config.js";
+
+      function loadScript(src) {
+        return new Promise(function (resolve, reject) {
+          var s = document.createElement("script");
+          s.src = src;
+          s.onload = resolve;
+          s.onerror = function () { reject(new Error("failed to load " + src)); };
+          document.head.appendChild(s);
+        });
+      }
+
+      Promise.resolve()
+        .then(function () { return loadScript(configSrc); })
+        .catch(function () {
+          return configSrc === "dashboard.config.js"
+            ? Promise.reject()
+            : loadScript("dashboard.config.js"); // unknown config -> fall back to default
+        })
+        .then(function () { return loadScript("dashboard.js"); })
+        .catch(function (e) {
+          document.getElementById("status").textContent = "Config error: " + (e && e.message || e);
+        });
+    })();
+  </script>
 </body>
 </html>

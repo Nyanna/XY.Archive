@@ -1,13 +1,14 @@
-/* Dashboard configuration -- a faithful reproduction of the Grafana dashboard
+/* Default dashboard config, consumed by the generic renderer in dashboard.js.
+ * Loaded by default; select an alternate config via dashboard.html's
+ * `?config=<name>` URL parameter (-> dashboard.config.<name>.js).
+ *
+ * Layout: rows are collapsible panel groups; a row of type "tabs" combines
+ * panels into a tab strip. Each panel declares its series (metric + aggregate
+ * + styling), Y-axes, thresholds and legend behaviour; metrics are rendered
+ * under their short label (HR, RR, RMSSD, ...).
+ *
+ * This particular config reproduces the Grafana dashboard
  * `grafana-dashboard.duckdb.json` ("HRV Data").
- *
- * The layout mirrors the Grafana RowsLayout / TabsLayout / GridLayout:
- *   - rows are collapsible panel groups,
- *   - a row of type "tabs" combines panels into a tab-panel,
- *   - each panel declares its series (metric + aggregate + styling),
- *     dual Y-axes, min/max, thresholds, axis labels and legend behaviour.
- *
- * Metrics are rendered under their short label (HR, RR, RMSSD, ...).
  */
 (function () {
   "use strict";
@@ -58,7 +59,11 @@
     ],
   };
 
-  /* ---- Panel 2 -- Sleep stage (Grafana-style coloured state band) ---- */
+  /* ---- Panel 2 -- Sleep stage (coloured state band) ----
+   * `states` maps the raw `sleep_stage` codes to label/color/text for the
+   * "state" panel renderer; code 0 ("not asleep") is left out -> blank.
+   * The three "Awake" codes (1/5/6) are unified under one label/colour. */
+  const AWAKE = { label: "Awake", color: "#fff899", text: "#5a4b00" };
   const panel2 = {
     id: 2, type: "state", title: "Sleep Stage", height: 120,
     axisLeft: { label: "STAGE" },
@@ -66,7 +71,13 @@
     legend: true,
     series: [
       { label: "STAGE", segment: RAW, metric: "sleep_stage", agg: "none",
-        color: col("dark-purple"), width: 1, fillOpacity: 40 },
+        color: col("dark-purple"), width: 1, fillOpacity: 40,
+        states: {
+          1: AWAKE, 5: AWAKE, 6: AWAKE,
+          2: { label: "Deep",  color: "#1f60c4", text: "#ffffff" },
+          3: { label: "Light", color: "#c0d8ff", text: "#1f2328" },
+          4: { label: "REM",   color: "#ffa6b0", text: "#7a0010" },
+        } },
     ],
   };
 
@@ -197,14 +208,11 @@
     ],
   };
 
-  /* ---- Panels 6/7/8 -- daily line charts (special backend queries) ----
-   * Grafana `xychart` panels with `show: "points+lines"`: line charts with
-   * visible points and a translucent area fill over a daily time X-axis. */
+  /* ---- Panels 6/7/8 -- daily line charts (pre-aggregated backend queries) */
   const panel6 = {
     id: 6, type: "daily", title: "Sympathic Dominance Time under threshold",
     height: 320, kind: "dominance_daily",
-    // Own fixed window: Grafana `timeFrom: "14d"` (rolling last 14 days).
-    range: { days: 14 },
+    range: { days: 14 },      // rolling last 14 days, independent of the global range
     axisLeft: { label: "Σ (value + 0.5)" }, legend: true,
     series: [
       { label: "Dominance Time", column: "value", color: col("green"),
