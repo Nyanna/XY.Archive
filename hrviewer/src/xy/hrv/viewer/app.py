@@ -14,7 +14,7 @@ import mimetypes
 import shutil
 from datetime import datetime, timezone
 from http import HTTPStatus
-from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -143,10 +143,10 @@ class HrViewer:
             self.store.close()
 
 
-class _Server(ThreadingHTTPServer):
-    """Threaded HTTP server holding a reference to the owning HrViewer."""
+class _Server(HTTPServer):
+    """Sequential HTTP server (one request at a time) holding a reference
+    to the owning HrViewer."""
 
-    daemon_threads = True
     allow_reuse_address = True
     viewer: HrViewer
 

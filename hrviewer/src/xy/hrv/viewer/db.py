@@ -22,13 +22,27 @@ class HiveStore:
     def __init__(self, config: Config):
         self._cfg = config
         self._lock = threading.Lock()
-        self._con = duckdb.connect(database=":memory:")
+        # Defensive: cap PyArrow's own CPU/IO thread pools too.
+        pa.set_cpu_count(max(1, self._cfg.threads))
+        pa.set_io_thread_count(max(1, self._cfg.threads))
+        # `import duckdb` also brings up a separate, hidden module-level
+        # `default_connection` (backing the top-level convenience API,
+        duckdb.default_connection().execute(
+            f"SET threads={max(1, self._cfg.threads)}"
+        )
+        # Pass `threads` in via the connect-time config
+        self._con = duckdb.connect(
+            database=":memory:",
+            config={
+                "threads": str(self._cfg.threads),
+                "autoload_known_extensions": "false",
+                },
+            )
         self._configure()
 
     def _configure(self) -> None:
         con = self._con
         con.execute(f"SET memory_limit='{self._cfg.memory_limit}'")
-        con.execute(f"SET threads={self._cfg.threads}")
         # No caching: read straight from disk every time.
         con.execute("SET enable_object_cache=false")
         # We never need row ordering to be preserved across scans -> less RAM.
