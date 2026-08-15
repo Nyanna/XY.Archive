@@ -62,6 +62,7 @@
   const panel2 = {
     id: 2, type: "state", title: "Sleep Stage", height: 120,
     axisLeft: { label: "STAGE" },
+    timeAxis: true,          // only this panel renders the (shared) X time axis
     legend: true,
     series: [
       { label: "STAGE", segment: RAW, metric: "sleep_stage", agg: "none",
@@ -113,7 +114,7 @@
   /* ---- Panel 4 -- Frequency bands + DFA (dual axis, thresholds) ---- */
   const panel4 = {
     id: 4, type: "timeseries", title: "Frequency Power / DFA", height: 320,
-    axisLeft:  { label: "VLF | LF | HF - ms²" },
+    axisLeft:  { label: "VLF | LF | HF - ms²", abbrev: true },
     axisRight: { label: "DFA_a1", min: 0.6, max: 1.6, show: true },
     legend: true,
     series: [
@@ -196,10 +197,14 @@
     ],
   };
 
-  /* ---- Panels 6/7/8 -- daily bar charts (special backend queries) ---- */
+  /* ---- Panels 6/7/8 -- daily line charts (special backend queries) ----
+   * Grafana `xychart` panels with `show: "points+lines"`: line charts with
+   * visible points and a translucent area fill over a daily time X-axis. */
   const panel6 = {
-    id: 6, type: "bar", title: "Sympathic Dominance Time under threshold",
+    id: 6, type: "daily", title: "Sympathic Dominance Time under threshold",
     height: 320, kind: "dominance_daily",
+    // Own fixed window: Grafana `timeFrom: "14d"` (rolling last 14 days).
+    range: { days: 14 },
     axisLeft: { label: "Σ (value + 0.5)" }, legend: true,
     series: [
       { label: "Dominance Time", column: "value", color: col("green"),
@@ -212,14 +217,18 @@
     { label: "rem",    column: "rem",    color: col("red"),   max: 50 },
   ];
   const panel7 = {
-    id: 7, type: "bar", title: "Sleep Phases (bed < 2026-01-01)",
+    id: 7, type: "daily", title: "Sleep Phases (bed < 2026-01-01)",
     height: 320, kind: "sleep_daily", session: "before",
+    // Own fixed window: all sleep sessions up to the 2026-01-01 split.
+    range: { from: "2000-01-01T00:00:00Z", to: "2026-01-01T00:00:00Z" },
     axisLeft: { label: "count", min: 0, max: 50 }, legend: true,
     series: sleepSeries,
   };
   const panel8 = {
-    id: 8, type: "bar", title: "Sleep Phases (bed > 2026-01-01)",
+    id: 8, type: "daily", title: "Sleep Phases (bed > 2026-01-01)",
     height: 320, kind: "sleep_daily", session: "after",
+    // Own fixed window: all sleep sessions from the 2026-01-01 split onward.
+    range: { from: "2026-01-01T00:00:00Z", to: "now" },
     axisLeft: { label: "count", min: 0, max: 50 }, legend: true,
     series: sleepSeries,
   };

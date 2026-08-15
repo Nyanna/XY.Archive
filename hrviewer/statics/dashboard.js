@@ -44,9 +44,9 @@
    * `echarts.connect` links the tooltip/axisPointer by *data index*, which
    * misaligns panels whose series have different point counts (dense HR vs.
    * sparse sleep_stage). We therefore sync zoom and the hover cursor manually,
-   * by time value. The Overall-tab bar charts (daily aggregates, own X-axis)
-   * are excluded. */
-  const syncable = (p) => p.chart && p.cfg.type !== "bar";
+   * by time value. The Overall-tab daily line charts (daily aggregates, own
+   * X-axis) are excluded. */
+  const syncable = (p) => p.chart && p.cfg.type !== "daily";
 
   function broadcastShowAtValue(t) {
     panels.forEach((p) => {
@@ -80,6 +80,91 @@
       "T" + pad(d.getHours()) + ":" + pad(d.getMinutes()) + ":" + pad(d.getSeconds());
   }
   const parseLocal = (s) => new Date(s).getTime();
+
+  /* ---- fixed per-panel query window ----------------------------------- *
+   * The Overall-tab daily panels aggregate by calendar day and therefore need
+   * their own, wider time window -- independent of the global range (which may
+   * be as short as 1h and would collapse a daily GROUP BY to a single point).
+   * A panel opts in via `cfg.range`:
+   *   { days: N }            -> rolling window [now - N days, now]
+   *   { from: X, to: Y }     -> absolute bounds; each of X/Y may be
+   *                             "now", an epoch-ms number, or an ISO string
+   *                             (e.g. "2026-01-01T00:00:00Z").
+   * Panels without `cfg.range` use the global [fromMs, toMs] window. */
+  function resolveTime(v, dflt) {
+    if (v == null) return dflt;
+    if (v === "now") return Date.now();
+    if (typeof v === "number") return v;
+    return new Date(v).getTime();
+  }
+  function panelRange(cfg) {
+    const r = cfg.range;
+    if (!r) return { start: fromMs, end: toMs };
+    const end = resolveTime(r.to, Date.now());
+    const start = r.days != null
+      ? end - r.days * 86400000
+      : resolveTime(r.from, end - 14 * 86400000);
+    return { start, end };
+  }
+
+  /* ---- shared plot geometry & axis helpers ---------------------------- */
+  const GRID_TOP = 16, GRID_BOTTOM = 44;
+
+  /* High-resolution time-axis tick labels: HH:MM (with :SS when relevant),
+   * and a bold day marker on midnight boundaries. */
+  function axisTimeFormatter(val) {
+    const d = new Date(val);
+    const H = pad(d.getHours()), M = pad(d.getMinutes()), S = pad(d.getSeconds());
+    if (H === "00" && M === "00" && S === "00")
+      return "{d|" + pad(d.getDate()) + "." + pad(d.getMonth() + 1) + ".}";
+    return S !== "00" ? H + ":" + M + ":" + S : H + ":" + M;
+  }
+
+  /* Tooltip value formatter: show at most 2 decimals for non-zero values
+   * (integers and 0 stay unchanged, e.g. 0, 72, 72.53). */
+  function fmtTip(v) {
+    if (v == null || v === "") return "";
+    const n = Number(v);
+    if (!isFinite(n)) return String(v);
+    if (n === 0) return "0";
+    return String(Math.round(n * 100) / 100);
+  }
+
+  /* Abbreviate large axis numbers, e.g. 1000 -> "1k", 2_500_000 -> "2.5M". */
+  const trimNum = (x) => String(Math.round(x * 100) / 100);
+  function abbrevNum(v) {
+    const a = Math.abs(v);
+    if (a >= 1e9) return trimNum(v / 1e9) + "G";
+    if (a >= 1e6) return trimNum(v / 1e6) + "M";
+    if (a >= 1e3) return trimNum(v / 1e3) + "k";
+    return trimNum(v);
+  }
+
+  /* The shared time X-axis. Tick labels are only rendered on panels that
+   * request them (`cfg.timeAxis`), since every timeseries/state panel is
+   * pinned to the exact same window -- one visible axis (Sleep Stage) suffices
+   * for the whole stack, with the panels' own Y-axis labels naming each plot. */
+  function timeXAxis(cfg) {
+    const show = !!cfg.timeAxis;
+    return {
+      type: "time", min: fromMs, max: toMs,
+      axisLine: { lineStyle: { color: BORDER } },
+      axisTick: { show },
+      splitNumber: 12,
+      axisLabel: show ? {
+        color: AXIS, hideOverlap: true, showMinLabel: false, showMaxLabel: false,
+        formatter: axisTimeFormatter,
+        rich: { d: { fontWeight: "bold", color: AXIS } },
+      } : { show: false },
+    };
+  }
+
+  /* Inside-only zoom: the slider overview bar is intentionally omitted; wheel
+   * zoom stays, drag-pan is handled by our own right-drag interaction. */
+  const insideZoom = () => [{
+    type: "inside", throttle: 60,
+    zoomOnMouseWheel: true, moveOnMouseMove: false, moveOnMouseWheel: false,
+  }];
 
   function syncInputs() {
     fromIn.value = fmtLocal(fromMs);
@@ -130,7 +215,11 @@
       name: cfg.axisLeft && cfg.axisLeft.label || "",
       nameLocation: "middle", nameGap: 42, nameTextStyle: { color: AXIS },
       min: cfg.axisLeft && cfg.axisLeft.min, max: cfg.axisLeft && cfg.axisLeft.max,
-      axisLabel: { color: AXIS }, splitLine: { lineStyle: { color: GRID } },
+      axisLabel: {
+        color: AXIS,
+        formatter: cfg.axisLeft && cfg.axisLeft.abbrev ? abbrevNum : undefined,
+      },
+      splitLine: { lineStyle: { color: GRID } },
     }];
     if (cfg.axisRight && cfg.axisRight.show) {
       y.push({
@@ -159,7 +248,7 @@
 
   /* Build the ECharts option for a timeseries / state panel from fetched data.
    * `fetched` maps a series config -> its [[ts,val], ...] array. */
-  function buildTimeseries(cfg, fetched) {
+  function buildTimeseries(cfg, fetched, legendSelected) {
     const legendData = [];
     const series = [];
     cfg.series.forEach((sc) => {
@@ -194,32 +283,24 @@
     return {
       backgroundColor: "transparent", animation: false,
       textStyle: { color: "#1f2328" },
-      tooltip: { trigger: "axis", axisPointer: { type: "line" } },
+      tooltip: { trigger: "axis", axisPointer: { type: "line" }, valueFormatter: fmtTip },
       legend: cfg.legend ? {
-        type: "scroll", bottom: 0, data: legendData, textStyle: { color: AXIS },
-        icon: "roundRect",
+        type: "scroll", bottom: 0, data: legendData,
+        selected: legendSelected,
+        textStyle: { color: AXIS, fontWeight: "bold" }, icon: "roundRect",
       } : undefined,
       // Keep the plot geometry identical across every timeseries/state panel
       // (constant left/right margins) so that, with the shared X-axis range,
       // a given timestamp maps to the same pixel X in every panel. Otherwise
       // panels without a right axis (HR, Sleep Stage) would be wider than the
       // rest and the connected hover axisPointer/tooltip would be offset.
-      grid: { left: 64, right: 64, top: 16, bottom: 52 },
-      xAxis: {
-        // Pin the axis to the selected query window so every timeseries/state
-        // panel shares the exact same X-axis (e.g. the sparse `sleep_stage`
-        // data no longer auto-scales to its own narrow span and stays aligned
-        // with the other panels). The Overall-tab bar charts use `buildBar`
-        // and keep their own daily-aggregate X-axis.
-        type: "time", min: fromMs, max: toMs,
-        axisLine: { lineStyle: { color: BORDER } },
-        axisLabel: { color: AXIS },
-      },
+      grid: { left: 64, right: 64, top: GRID_TOP, bottom: GRID_BOTTOM },
+      // Pin the axis to the selected query window so every timeseries/state
+      // panel shares the exact same X-axis; tick labels only render on the
+      // panel that requests them (`cfg.timeAxis`).
+      xAxis: timeXAxis(cfg),
       yAxis: baseYAxis(cfg),
-      dataZoom: [
-        { type: "inside", throttle: 60 },
-        { type: "slider", height: 16, bottom: 30 },
-      ],
+      dataZoom: insideZoom(),
       series,
     };
   }
@@ -322,12 +403,8 @@
             fmt(v[0]) + " – " + fmt(v[1]) + " · " + dur + " min";
         },
       },
-      grid: { left: 64, right: 64, top: 16, bottom: 52 },
-      xAxis: {
-        type: "time", min: fromMs, max: toMs,
-        axisLine: { lineStyle: { color: BORDER } },
-        axisLabel: { color: AXIS },
-      },
+      grid: { left: 64, right: 64, top: GRID_TOP, bottom: GRID_BOTTOM },
+      xAxis: timeXAxis(cfg),
       yAxis: {
         type: "value", min: 0, max: 1,
         name: (cfg.axisLeft && cfg.axisLeft.label) || "",
@@ -335,10 +412,7 @@
         axisLine: { show: false }, axisTick: { show: false },
         axisLabel: { show: false }, splitLine: { show: false },
       },
-      dataZoom: [
-        { type: "inside", throttle: 60 },
-        { type: "slider", height: 16, bottom: 30 },
-      ],
+      dataZoom: insideZoom(),
       series: [{
         type: "custom", renderItem: renderStageItem,
         encode: { x: [0, 1] }, clip: true,
@@ -347,27 +421,40 @@
     };
   }
 
-  function buildBar(cfg, table) {
+  /* The Overall-tab daily panels are Grafana `xychart` visualisations with
+   * `show: "points+lines"` -- i.e. line charts with visible points and a
+   * translucent area fill (fillOpacity 50), time on the X-axis. They are
+   * rendered as line charts (not bars). */
+  function buildDaily(cfg, table, legendSelected) {
     const legendData = [], series = [];
     cfg.series.forEach((sc) => {
       legendData.push(sc.label);
       series.push({
-        name: sc.label, type: "bar", data: toXY(table, sc.column),
-        itemStyle: { color: sc.color }, barMaxWidth: 14,
+        name: sc.label, type: "line", data: toXY(table, sc.column),
+        showSymbol: true, symbol: "circle", symbolSize: 6,
+        lineStyle: { width: 2, color: sc.color },
+        itemStyle: { color: sc.color },
+        areaStyle: { opacity: 0.5, color: sc.color },
         markLine: thresholdMarkLine(sc),
       });
     });
     return {
       backgroundColor: "transparent", animation: false,
-      tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
-      legend: cfg.legend ? { bottom: 0, data: legendData, textStyle: { color: AXIS } } : undefined,
-      grid: { left: 56, right: 24, top: 16, bottom: 52 },
-      xAxis: { type: "time", axisLabel: { color: AXIS }, axisLine: { lineStyle: { color: BORDER } } },
+      tooltip: { trigger: "axis", axisPointer: { type: "line" }, valueFormatter: fmtTip },
+      legend: cfg.legend
+        ? {
+            type: "scroll", bottom: 0, data: legendData, selected: legendSelected,
+            textStyle: { color: AXIS, fontWeight: "bold" }, icon: "roundRect",
+          }
+        : undefined,
+      grid: { left: 56, right: 24, top: 16, bottom: 44 },
+      xAxis: {
+        type: "time", axisLabel: { color: AXIS },
+        axisLine: { lineStyle: { color: BORDER } },
+        splitLine: { show: false },
+      },
       yAxis: baseYAxis(cfg),
-      dataZoom: [
-        { type: "inside", throttle: 60 },
-        { type: "slider", height: 16, bottom: 30 },
-      ],
+      dataZoom: insideZoom(),
       series,
     };
   }
@@ -384,12 +471,10 @@
       const host = document.createElement("div");
       host.className = "panel";
       host.style.height = (cfg.height || 280) + "px";
-      const title = document.createElement("div");
-      title.className = "panel-title";
-      title.textContent = cfg.title || "";
+      // No panel heading -- each plot's Y-axis label already names its content.
       const chartEl = document.createElement("div");
       chartEl.className = "panel-chart";
-      host.appendChild(title);
+      chartEl.style.position = "relative";   // anchor for the drag-select overlay
       host.appendChild(chartEl);
       this.host = host;
       this.chartEl = chartEl;
@@ -399,9 +484,9 @@
       if (this.chart) return;
       this.chart = echarts.init(this.chartEl);
 
-      // The Overall-tab bar charts keep their own independent X-axis and are
-      // not part of the cross-panel cursor/zoom synchronisation.
-      if (this.cfg.type === "bar") return;
+      // The Overall-tab daily line charts keep their own independent X-axis and
+      // are not part of the cross-panel cursor/zoom synchronisation.
+      if (this.cfg.type === "daily") return;
 
       // --- zoom sync (by axis value) ---
       // Capture zoom changes, remember them (to replay onto panels that load
@@ -428,11 +513,101 @@
         broadcastShowAtValue(t);
       });
       zr.on("mouseout", broadcastHide);
+
+      // --- Grafana-style drag interaction ---
+      this.attachDragZoom();
+    }
+
+    /* Grafana-like mouse interaction on the plot:
+     *   - LEFT button + drag  -> highlight a region; on release its time span
+     *     becomes the new query window (data is re-fetched, i.e. the zoom comes
+     *     with a genuine resolution increase, not just a visual rescale),
+     *   - RIGHT button + drag -> pan the currently shown window; the view
+     *     follows live and the panned window is re-fetched on release. */
+    attachDragZoom() {
+      const chart = this.chart, el = this.chartEl;
+      el.addEventListener("contextmenu", (e) => e.preventDefault());
+
+      const sel = document.createElement("div");
+      sel.className = "zoom-select";
+      sel.style.display = "none";
+      el.appendChild(sel);
+
+      const pxOf = (e) => e.clientX - el.getBoundingClientRect().left;
+      let drag = null, raf = 0;
+
+      // Pointer Events + pointer capture: once the drag starts, every
+      // pointermove/pointerup is delivered to this element even when the cursor
+      // leaves it, so we never lose the move/up phase (which was the bug with
+      // document-level mouse listeners on top of the ECharts canvas).
+      el.addEventListener("pointerdown", (e) => {
+        if (e.button !== 0 && e.button !== 2) return;
+        const rect = el.getBoundingClientRect();
+        const startPx = e.clientX - rect.left, startPy = e.clientY - rect.top;
+        if (!chart.containPixel("grid", [startPx, startPy])) return;
+        drag = {
+          button: e.button, startPx, curPx: startPx,
+          startT: chart.convertFromPixel({ xAxisIndex: 0 }, startPx),
+          moved: false, off: 0,
+        };
+        if (e.button === 0) {
+          sel.style.left = startPx + "px";
+          sel.style.top = GRID_TOP + "px";
+          sel.style.width = "0px";
+          sel.style.height = Math.max(0, chart.getHeight() - GRID_TOP - GRID_BOTTOM) + "px";
+          sel.style.display = "block";
+        }
+        try { el.setPointerCapture(e.pointerId); } catch (_) {}
+        e.preventDefault();
+      });
+
+      el.addEventListener("pointermove", (e) => {
+        if (!drag) return;
+        const px = pxOf(e);
+        drag.curPx = px;
+        if (Math.abs(px - drag.startPx) > 2) drag.moved = true;
+        if (drag.button === 0) {                 // left: grow the selection band
+          sel.style.left = Math.min(drag.startPx, px) + "px";
+          sel.style.width = Math.abs(px - drag.startPx) + "px";
+        } else {                                 // right: live-pan the window
+          drag.off = drag.startT - chart.convertFromPixel({ xAxisIndex: 0 }, px);
+          if (!raf) raf = requestAnimationFrame(() => {
+            raf = 0;
+            if (drag && drag.button === 2) livePan(drag.off);
+          });
+        }
+      });
+
+      const end = (e) => {
+        if (!drag) return;
+        const d = drag; drag = null;
+        try { el.releasePointerCapture(e.pointerId); } catch (_) {}
+        sel.style.display = "none";
+        if (!d.moved) return;
+        if (d.button === 0) {                    // adopt the selected span
+          const a = chart.convertFromPixel({ xAxisIndex: 0 }, Math.min(d.startPx, d.curPx));
+          const b = chart.convertFromPixel({ xAxisIndex: 0 }, Math.max(d.startPx, d.curPx));
+          adoptWindow(Math.max(fromMs, Math.min(a, b)), Math.min(toMs, Math.max(a, b)));
+        } else if (d.off) {                      // adopt the panned window
+          adoptWindow(fromMs + d.off, toMs + d.off);
+        }
+      };
+      el.addEventListener("pointerup", end);
+      el.addEventListener("pointercancel", end);
     }
 
     markDirty() {
       this.dirty = true;
       if (this.visible) this.load();
+    }
+
+    /* Current legend on/off selection of the live chart, so it survives a
+     * reload (e.g. when only the time range changes). */
+    legendSelection() {
+      if (!this.chart) return undefined;
+      const opt = this.chart.getOption();
+      const lg = opt && opt.legend && opt.legend[0];
+      return lg && lg.selected ? lg.selected : undefined;
     }
 
     async load() {
@@ -444,12 +619,15 @@
       bump(1);
       try {
         const cfg = this.cfg;
-        if (cfg.type === "bar") {
+        // Remember the legend on/off state so toggles persist across reloads.
+        const legendSel = this.legendSelection();
+        if (cfg.type === "daily") {
+          const { start, end } = panelRange(cfg);
           const table = await fetchTable({
             kind: cfg.kind, session: cfg.session,
-            start: fromMs, end: toMs, max_points: 2000,
+            start, end, max_points: 2000,
           });
-          this.chart.setOption(buildBar(cfg, table), true);
+          this.chart.setOption(buildDaily(cfg, table, legendSel), true);
         } else {
           const map = new Map();
           await Promise.all(cfg.series.map(async (sc) => {
@@ -462,7 +640,8 @@
           if (cfg.type === "state") {
             this.chart.setOption(buildStateBand(cfg, map.get(cfg.series[0])), true);
           } else {
-            this.chart.setOption(buildTimeseries(cfg, { get: (k) => map.get(k) }), true);
+            this.chart.setOption(
+              buildTimeseries(cfg, { get: (k) => map.get(k) }, legendSel), true);
           }
         }
         this.loaded = true;
@@ -601,6 +780,26 @@
       if (p.chart) p.chart.dispatchAction({ type: "dataZoom", start: 0, end: 100 });
     });
   }
+
+  /* Live pan feedback: shift the X window of every synced, loaded panel by an
+   * offset (ms) without re-querying -- used while a right-drag is in flight. */
+  function livePan(off) {
+    panels.forEach((p) => {
+      if (syncable(p) && p.loaded)
+        p.chart.setOption({ xAxis: { min: fromMs + off, max: toMs + off } });
+    });
+  }
+
+  /* Adopt a new [start,end] window (ms) as the query range and re-fetch. */
+  function adoptWindow(start, end) {
+    if (!(end - start > 1000)) return;       // ignore accidental micro-drags
+    fromMs = start; toMs = end;
+    syncInputs();
+    quickSel.value = "custom";
+    applyRange();                            // resets zoom + reloads at new res.
+  }
+
+
 
   /* ---- wire up -------------------------------------------------------- */
   function init() {

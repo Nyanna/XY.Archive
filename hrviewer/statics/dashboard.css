@@ -115,17 +115,21 @@ main { padding: 1rem 1.25rem; }
   border-radius: 8px;
   overflow: hidden;
 }
-.panel-title {
-  padding: 0.4rem 0.75rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--muted);
-  border-bottom: 1px solid var(--border);
-}
 .panel-chart {
   flex: 1;
   width: 100%;
   min-height: 80px;
+  cursor: crosshair;          /* hint the drag-to-zoom interaction */
+}
+
+/* Grafana-style drag-to-zoom selection band. */
+.zoom-select {
+  position: absolute;
+  background: rgba(58, 116, 217, 0.15);
+  border-left: 1px solid rgba(58, 116, 217, 0.7);
+  border-right: 1px solid rgba(58, 116, 217, 0.7);
+  pointer-events: none;
+  z-index: 5;
 }
 
 /* ---- tabs ------------------------------------------------------------ */
