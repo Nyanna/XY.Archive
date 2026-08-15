@@ -1,4 +1,5 @@
 # TODO
+* smarthome grafana zu echarts umbauen, oder remote dashboard mit iobroker toggle
 * vm_io umbenennen
 * check powernap sleep time on 12:30 10.8. einschlafzeit, => sehr schnell
 * screenshots für HF band power mit Dox
