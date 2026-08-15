@@ -241,9 +241,25 @@
     series: sleepSeries,
   };
 
+  /* ---- Static time annotations --------------------------------------------
+   * A labelled, dashed vertical line drawn at a fixed point in time, on
+   * every synced timeseries/state panel (not on the "daily" panels, which
+   * run on their own independent, day-aggregated time axis).
+   *   time:  "now" | epoch ms | ISO/parseable date string (local, no "Z" ->
+   *          interpreted in the browser's local time zone)
+   *   label: short text shown on the line
+   *   color: optional, defaults to a shared purple */
+  const annotations = [
+    { time: "2026-05-19T22:00:00", label: "Doxepin 3mg" },
+	{ time: "2026-05-24T22:00:00", label: "Doxepin 1mg" },
+	{ time: "2026-06-11T22:00:00", label: "Doxepin 2mg" },
+    // { time: "2026-08-15T07:30:00", label: "Coffee", color: "#e02f44" },
+  ];
+
   /* ---- Dashboard layout (rows + tabs) ---- */
   window.DASHBOARD = {
     title: "HRV Data",
+    annotations,
     rows: [
       { title: "Main",     type: "grid", collapse: false, panels: [panel1, panel2] },
       { title: "Typical",  type: "grid", collapse: false, panels: [panel3, panel14] },

@@ -6,7 +6,8 @@
  * Features: synced zoom/hover cursor across panels (by axis value, not data
  * index, plus late-join replay), a time selector with quick ranges + shift
  * buttons, lazy (visibility-based) panel loading, thresholds, dual Y-axes,
- * a toggleable legend, collapsible rows and a tab layout.
+ * a toggleable legend, collapsible rows, a tab layout and labelled, static
+ * time annotations shown across all synced panels.
  */
 (function () {
   "use strict";
@@ -95,7 +96,13 @@
   }
 
   /* ---- shared plot geometry & axis helpers ---------------------------- */
-  const GRID_TOP = 16, GRID_BOTTOM = 44;
+  const GRID_TOP = 16, GRID_BOTTOM = 44, GRID_BOTTOM_NOAXIS = 10;
+
+  /* Bottom grid margin: only the one panel per group that actually renders
+   * the shared x-axis tick labels (`cfg.timeAxis`) needs the full margin;
+   * every other panel would otherwise carry that space as dead padding
+   * (the legend no longer lives down there -- it floats over the plot). */
+  const gridBottom = (cfg) => (cfg.timeAxis ? GRID_BOTTOM : GRID_BOTTOM_NOAXIS);
 
   /* High-resolution time-axis tick labels: HH:MM (with :SS when relevant),
    * and a bold day marker on midnight boundaries. */
@@ -231,16 +238,79 @@
     };
   }
 
+  /* ---- static annotations (config-driven, `DASHBOARD.annotations`) -----
+   * A labelled, dashed vertical line drawn at a fixed point in time, on
+   * every synced timeseries/state panel (not on "daily" panels, which run
+   * on their own independent, day-aggregated time axis). Purely declarative
+   * -- set in the dashboard config, see dashboard.config.js; there's no
+   * interactive "add annotation" UI. */
+  const ANNOTATION_COLOR = "#8250df";
+  function resolvedAnnotations() {
+    return (DASHBOARD.annotations || [])
+      .map((a) => ({ t: resolveTime(a.time, NaN), label: a.label, color: a.color }))
+      .filter((a) => isFinite(a.t) && a.t >= fromMs && a.t <= toMs);
+  }
+  function annotationMarkLine() {
+    const list = resolvedAnnotations();
+    if (!list.length) return undefined;
+    return {
+      symbol: "none", silent: true, animation: false,
+      label: {
+        formatter: "{b}", position: "insideEndTop",
+        color: "#ffffff", fontSize: 10, fontWeight: "bold",
+        backgroundColor: ANNOTATION_COLOR, padding: [2, 5], borderRadius: 3,
+      },
+      lineStyle: { type: "dashed", width: 1, color: ANNOTATION_COLOR },
+      data: list.map((a) => ({
+        name: a.label, xAxis: a.t,
+        lineStyle: { color: a.color || ANNOTATION_COLOR },
+        label: { backgroundColor: a.color || ANNOTATION_COLOR },
+      })),
+    };
+  }
+  /* An invisible, empty carrier series purely to host the annotation
+   * markLine -- works uniformly regardless of a panel's own series (e.g. a
+   * "state" panel's single custom-rendered band). */
+  function annotationSeries() {
+    const markLine = annotationMarkLine();
+    return markLine
+      ? [{ type: "line", data: [], silent: true, showSymbol: false, markLine }]
+      : [];
+  }
+
+  /* Floating, semi-transparent legend(s), drawn directly over the plot area
+   * instead of taking up their own row. With a right Y-axis in play, series
+   * are split into two legend components by axis affiliation: left-axis
+   * series top-left, right-axis series top-right. `selected` is shared --
+   * each piece only looks up the names it owns, so toggling one doesn't
+   * touch the other. No wrapping/scrolling: panels are wide enough. */
+  const LEGEND_BG = "rgba(255,255,255,0.72)";
+  function legendPiece(names, side, selected) {
+    if (!names.length) return null;
+    return {
+      data: names, selected, top: 4, [side]: 8,
+      backgroundColor: LEGEND_BG, borderRadius: 4, padding: [3, 8],
+      textStyle: { color: AXIS, fontWeight: "bold" }, icon: "roundRect",
+    };
+  }
+  function floatingLegend(leftNames, rightNames, selected) {
+    const pieces = [
+      legendPiece(leftNames, "left", selected),
+      legendPiece(rightNames, "right", selected),
+    ].filter(Boolean);
+    return pieces.length ? pieces : undefined;
+  }
+
   /* Build the ECharts option for a timeseries / state panel from fetched data.
    * `fetched` maps a series config -> its [[ts,val], ...] array. */
   function buildTimeseries(cfg, fetched, legendSelected) {
-    const legendData = [];
+    const leftNames = [], rightNames = [];
     const series = [];
     cfg.series.forEach((sc) => {
       const yIdx = sc.axis === "right" && cfg.axisRight && cfg.axisRight.show ? 1 : 0;
       const data = fetched.get(sc);
       const step = cfg.type === "state" ? "end" : false;
-      legendData.push(sc.label);
+      (yIdx ? rightNames : leftNames).push(sc.label);
       series.push({
         name: sc.label, type: "line", yAxisIndex: yIdx,
         showSymbol: false, sampling: "lttb", smooth: !!sc.smooth, step,
@@ -254,7 +324,7 @@
       if (sc.movavg) {
         const m = sc.movavg;
         const mIdx = m.axis === "right" && cfg.axisRight && cfg.axisRight.show ? 1 : 0;
-        legendData.push(m.label);
+        (mIdx ? rightNames : leftNames).push(m.label);
         series.push({
           name: m.label, type: "line", yAxisIndex: mIdx,
           showSymbol: false, smooth: true,
@@ -265,19 +335,16 @@
         });
       }
     });
+    series.push(...annotationSeries());
     return {
       backgroundColor: "transparent", animation: false,
       textStyle: { color: "#1f2328" },
       tooltip: { trigger: "axis", axisPointer: { type: "line" }, valueFormatter: fmtTip },
-      legend: cfg.legend ? {
-        type: "scroll", bottom: 0, data: legendData,
-        selected: legendSelected,
-        textStyle: { color: AXIS, fontWeight: "bold" }, icon: "roundRect",
-      } : undefined,
+      legend: cfg.legend ? floatingLegend(leftNames, rightNames, legendSelected) : undefined,
       // Fixed left/right margins on every timeseries/state panel, so a given
       // timestamp maps to the same pixel X everywhere (needed for the synced
       // hover cursor), regardless of whether a panel has a right axis.
-      grid: { left: 64, right: 64, top: GRID_TOP, bottom: GRID_BOTTOM },
+      grid: { left: 64, right: 64, top: GRID_TOP, bottom: gridBottom(cfg) },
       xAxis: timeXAxis(cfg),
       yAxis: baseYAxis(cfg),
       dataZoom: insideZoom(),
@@ -377,7 +444,7 @@
             fmt(v[0]) + " – " + fmt(v[1]) + " · " + dur + " min";
         },
       },
-      grid: { left: 64, right: 64, top: GRID_TOP, bottom: GRID_BOTTOM },
+      grid: { left: 64, right: 64, top: GRID_TOP, bottom: gridBottom(cfg) },
       xAxis: timeXAxis(cfg),
       yAxis: {
         type: "value", min: 0, max: 1,
@@ -391,7 +458,7 @@
         type: "custom", renderItem: makeStageRenderer(states),
         encode: { x: [0, 1] }, clip: true,
         data: buildStageSegments(xy, states),
-      }],
+      }, ...annotationSeries()],
     };
   }
 
@@ -413,12 +480,7 @@
     return {
       backgroundColor: "transparent", animation: false,
       tooltip: { trigger: "axis", axisPointer: { type: "line" }, valueFormatter: fmtTip },
-      legend: cfg.legend
-        ? {
-            type: "scroll", bottom: 0, data: legendData, selected: legendSelected,
-            textStyle: { color: AXIS, fontWeight: "bold" }, icon: "roundRect",
-          }
-        : undefined,
+      legend: cfg.legend ? floatingLegend(legendData, [], legendSelected) : undefined,
       grid: { left: 56, right: 24, top: 16, bottom: 44 },
       xAxis: {
         type: "time", axisLabel: { color: AXIS },
@@ -522,7 +584,7 @@
           sel.style.left = startPx + "px";
           sel.style.top = GRID_TOP + "px";
           sel.style.width = "0px";
-          sel.style.height = Math.max(0, chart.getHeight() - GRID_TOP - GRID_BOTTOM) + "px";
+          sel.style.height = Math.max(0, chart.getHeight() - GRID_TOP - gridBottom(this.cfg)) + "px";
           sel.style.display = "block";
         }
         try { el.setPointerCapture(e.pointerId); } catch (_) {}
@@ -574,8 +636,12 @@
     legendSelection() {
       if (!this.chart) return undefined;
       const opt = this.chart.getOption();
-      const lg = opt && opt.legend && opt.legend[0];
-      return lg && lg.selected ? lg.selected : undefined;
+      const legends = (opt && opt.legend) || [];
+      let merged;
+      legends.forEach((lg) => {
+        if (lg && lg.selected) merged = Object.assign(merged || {}, lg.selected);
+      });
+      return merged;
     }
 
     async load() {
@@ -645,7 +711,11 @@
     container.appendChild(grid);
   }
 
-  function buildTabs(container, tabs) {
+  /* The tab bar itself lives in the row header (next to the title), so it
+   * doesn't cost its own vertical row above the panel grid; only the tab
+   * bodies go into `bodyContainer`. Clicks on tabs stop propagating so they
+   * don't also trigger the header's collapse toggle. */
+  function buildTabs(headEl, bodyContainer, tabs) {
     const bar = document.createElement("div");
     bar.className = "tabbar";
     const bodies = [];
@@ -657,7 +727,8 @@
       body.className = "tab-body";
       body.style.display = i === 0 ? "" : "none";
       buildGrid(body, tab.panels);
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
         bar.querySelectorAll(".tab").forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
         bodies.forEach((b) => (b.style.display = "none"));
@@ -666,10 +737,10 @@
         requestAnimationFrame(() => panels.forEach((p) => p.resize()));
       });
       bar.appendChild(btn);
+      bodyContainer.appendChild(body);
       bodies.push(body);
     });
-    container.appendChild(bar);
-    bodies.forEach((b) => container.appendChild(b));
+    headEl.appendChild(bar);
   }
 
   function buildRow(rowCfg) {
@@ -687,7 +758,7 @@
 
     const content = document.createElement("div");
     content.className = "row-content";
-    if (rowCfg.type === "tabs") buildTabs(content, rowCfg.tabs);
+    if (rowCfg.type === "tabs") buildTabs(head, content, rowCfg.tabs);
     else buildGrid(content, rowCfg.panels);
 
     head.addEventListener("click", () => {
