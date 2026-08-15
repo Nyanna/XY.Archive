@@ -20,6 +20,7 @@
   const quickSel = document.getElementById("quickRange");
   const fromIn = document.getElementById("fromInput");
   const toIn = document.getElementById("toInput");
+  const maxPointsIn = document.getElementById("maxPointsInput");
 
   /* ---- global time window state --------------------------------------- */
   let fromMs, toMs;
@@ -161,6 +162,15 @@
   function syncInputs() {
     fromIn.value = fmtLocal(fromMs);
     toIn.value = fmtLocal(toMs);
+  }
+
+  /* ---- global "max_points" override -------------------------------------
+   * Overrides the per-query aggregation resolution sent to the API for
+   * *every* panel. Empty (default) leaves each query's own default (see
+   * `dflt` fallback below) untouched. */
+  function maxPointsOverride(dflt) {
+    const v = parseInt(maxPointsIn.value, 10);
+    return Number.isFinite(v) && v > 0 ? v : dflt;
   }
 
   /* ---- Apache Arrow decoding ------------------------------------------ */
@@ -659,7 +669,7 @@
           const { start, end } = panelRange(cfg);
           const table = await fetchTable({
             kind: cfg.kind, session: cfg.session,
-            start, end, max_points: 2000,
+            start, end, max_points: maxPointsOverride(2000),
           });
           this.chart.setOption(buildDaily(cfg, table, legendSel), true);
         } else {
@@ -667,7 +677,8 @@
           await Promise.all(cfg.series.map(async (sc) => {
             const table = await fetchTable({
               kind: "series", segment: sc.segment, metric: sc.metric,
-              agg: sc.agg || "avg", start: fromMs, end: toMs, max_points: 3000,
+              agg: sc.agg || "avg", start: fromMs, end: toMs,
+              max_points: maxPointsOverride(3000),
             });
             map.set(sc, toXY(table, "value"));
           }));
@@ -856,6 +867,9 @@
       quickSel.value = "custom"; applyRange();
     });
     document.getElementById("resetZoom").addEventListener("click", resetZoom);
+    maxPointsIn.addEventListener("change", () => {
+      panels.forEach((p) => p.markDirty());
+    });
     document.getElementById("shiftBack").addEventListener("click", () => shift(-1));
     document.getElementById("shiftFwd").addEventListener("click", () => shift(1));
     [fromIn, toIn].forEach((el) => el.addEventListener("change", () => (quickSel.value = "custom")));

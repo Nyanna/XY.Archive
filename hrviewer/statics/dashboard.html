@@ -34,6 +34,10 @@
         <button id="shiftFwd"   title="Zeitraum vorwärts verschieben">&raquo;</button>
       </div>
 
+      <label class="quick" title="Überschreibt die serverseitige Aggregationsauflösung (max_points) für alle Panels. Leer = Panel-Default.">Max points
+        <input type="number" id="maxPointsInput" min="1" step="1" placeholder="auto" />
+      </label>
+
       <button id="apply">Apply</button>
       <button id="resetZoom" title="Synchronisierten Zoom zurücksetzen">Reset Zoom</button>
       <span id="status" class="status"></span>
