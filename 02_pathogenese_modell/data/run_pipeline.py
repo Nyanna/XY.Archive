@@ -34,12 +34,19 @@ HIVE_GIT_REMOTE_URL = f"{HIVE_SSH_USER}@{HIVE_SSH_HOST}:{HIVE_REMOTE_DIR}"
 # All git<->remote traffic (fetch/pull/push, plus the explicit remote
 # worktree update below) goes through this ssh invocation with the dedicated
 # key. Merged into the subprocess env for every git call in sync_hive().
-HIVE_GIT_ENV = {**os.environ, "GIT_SSH_COMMAND": f"ssh -i {HIVE_SSH_KEY}"}
+HIVE_GIT_ENV = {
+    **os.environ,
+    "GIT_SSH_COMMAND": f"ssh -i {HIVE_SSH_KEY} -o SendEnv=GIT_PROTOCOL",
+    "GIT_PROTOCOL": "version=2",
+}
 
 
 def _git(args: list[str]) -> None:
     """Run a git command against the local Hive repo, abort pipeline on error."""
-    result = subprocess.run(["git", "-C", str(HIVE_PATH), *args], env=HIVE_GIT_ENV)
+    result = subprocess.run(
+        ["git", "-c", "protocol.version=2", "-C", str(HIVE_PATH), *args],
+        env=HIVE_GIT_ENV,
+    )
     if result.returncode != 0:
         print(f"ERROR: git {' '.join(args)} exited with code {result.returncode}. Aborting pipeline.")
         sys.exit(result.returncode)
