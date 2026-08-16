@@ -42,7 +42,7 @@ import numpy as np
 from astropy.timeseries import LombScargle
 
 from rr_quality import correct_artifacts, quality_mask
-import hive_io as vm_io
+import hive_io as be_io
 
 # --- Hive (DuckDB/Parquet) I/O ------------------------------------
 # Source series written by gadgetbridge_migrate.py.
@@ -120,9 +120,9 @@ def lombscargle_psd(t_sec, rr_corr, freqs):
 
 def delete_output_series():
     """Wipe all hrv_band_* output series (used by --full to avoid duplicates)."""
-    vm_io.delete_series(PRESENCE_METRIC)
+    be_io.delete_series(PRESENCE_METRIC)
     for name in BAND_NAMES:
-        vm_io.delete_series(OUT_PREFIX + name.lower())
+        be_io.delete_series(OUT_PREFIX + name.lower())
 
 
 def get_existing_minutes(since_ms=None):
@@ -131,7 +131,7 @@ def get_existing_minutes(since_ms=None):
     Presence is read from PRESENCE_METRIC (hrv_band_n_beats). since_ms
     restricts the export to the overlap window on incremental runs.
     """
-    timestamps, _values = vm_io.export(PRESENCE_METRIC, start_ms=since_ms)
+    timestamps, _values = be_io.export(PRESENCE_METRIC, start_ms=since_ms)
     return {int(t) for t in timestamps}
 
 
@@ -142,7 +142,7 @@ def load_rr_data(min_ts_ms=None):
     timestamps (see gadgetbridge_migrate.py), so ascending timestamp order
     already reproduces the device ordering.
     """
-    ts, rr = vm_io.load_rr_intervals(min_ts_ms=min_ts_ms)
+    ts, rr = be_io.load_rr_intervals(min_ts_ms=min_ts_ms)
     if ts.size == 0:
         return None, None
     sane = (rr >= MIN_RR) & (rr <= MAX_RR)
@@ -317,7 +317,7 @@ def main():
     if not args.full:
         # Cheap watermark first; only fetch the (potentially large) skip-set
         # for the overlap window when something is already stored.
-        max_stored = vm_io.latest_timestamp_ms(PRESENCE_METRIC)
+        max_stored = be_io.latest_timestamp_ms(PRESENCE_METRIC)
         if max_stored is not None:
             min_ts_ms = max_stored - MAX_WINDOW_MS
             existing = get_existing_minutes(since_ms=min_ts_ms)
@@ -343,7 +343,7 @@ def main():
     )
 
     n_done, n_skipped, n_written = process_minutes(
-        vm_io.VMWriter(), ts, rr, existing, sorted_minutes, minute_counts,
+        be_io.VMWriter(), ts, rr, existing, sorted_minutes, minute_counts,
         tier_freq_grids, tier_band_indices,
         limit_minutes=args.limit_minutes,
     )
@@ -351,7 +351,7 @@ def main():
     print(f"Wrote {n_written:,} new minute rows  "
           f"[skipped {n_skipped:,} existing]")
 
-    vm_io.force_flush()
+    be_io.force_flush()
 
 
 if __name__ == "__main__":

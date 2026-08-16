@@ -14,7 +14,7 @@ from pathlib import Path
 
 import gdown
 
-import hive_io as vm_io
+import hive_io as be_io
 
 HERE = Path(__file__).parent
 DB_PATH = HERE / "Gadgetbridge"
@@ -161,7 +161,7 @@ def run_pipeline_once(db_file: Path, passthrough_args: list[str]) -> None:
     forwarded to all stages unchanged.
     """
     run("gadgetbridge_migrate.py", ["--db", str(db_file), *passthrough_args])
-    vm_io.force_flush()
+    be_io.force_flush()
 
     run("hrv_aggregate.py",        passthrough_args)
     run("spectral_bands_aggregate.py", passthrough_args)

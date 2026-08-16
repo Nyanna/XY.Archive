@@ -21,7 +21,7 @@ from scipy.interpolate import CubicSpline
 from scipy.signal import butter, csd, filtfilt, hilbert, welch
 
 from rr_quality import correct_artifacts, nn_time_domain, quality_mask
-import hive_io as vm_io
+import hive_io as be_io
 
 # --- Hive (DuckDB/Parquet) I/O ------------------------------------
 # Source series written by gadgetbridge_migrate.py.
@@ -99,7 +99,7 @@ def load_rr_data(min_ts_ms=None):
     device TIMESTAMP), so ascending timestamp order already reproduces the
     original device sequence.
     """
-    ts_all, rr_all = vm_io.load_rr_intervals(min_ts_ms=min_ts_ms)
+    ts_all, rr_all = be_io.load_rr_intervals(min_ts_ms=min_ts_ms)
     if ts_all.size == 0:
         return []
 
@@ -685,17 +685,17 @@ OUT_FIELDS = [
 def delete_output_series():
     """Wipe all hrv_* output series (used by --full to avoid duplicates)."""
     for field in OUT_FIELDS:
-        vm_io.delete_series(OUT_PREFIX + field)
+        be_io.delete_series(OUT_PREFIX + field)
 
 
 def get_max_source_rr_ts():
     """Return the newest RR sample timestamp in VM as ms epoch int, or None."""
-    return vm_io.latest_timestamp_ms(RR_METRIC)
+    return be_io.latest_timestamp_ms(RR_METRIC)
 
 
 def get_max_stored_minute():
     """Return MAX stored minute (ms epoch int) from VM, or None if empty."""
-    return vm_io.latest_timestamp_ms(PRESENCE_METRIC)
+    return be_io.latest_timestamp_ms(PRESENCE_METRIC)
 
 
 def get_existing_minutes(since_ms=None):
@@ -705,7 +705,7 @@ def get_existing_minutes(since_ms=None):
     stored minute. since_ms restricts the export to the overlap window so
     incremental runs need not read the full history.
     """
-    timestamps, _values = vm_io.export(PRESENCE_METRIC, start_ms=since_ms)
+    timestamps, _values = be_io.export(PRESENCE_METRIC, start_ms=since_ms)
     return {int(t) for t in timestamps}
 
 
@@ -983,11 +983,11 @@ def main():
         rr_data, n_existing=len(existing_minutes), limit_minutes=args.limit_minutes
     )
 
-    writer = vm_io.VMWriter()
+    writer = be_io.VMWriter()
     stats = process_batches(writer, bins, existing_minutes)
     print_summary(stats)
 
-    vm_io.force_flush()
+    be_io.force_flush()
 
 
 if __name__ == "__main__":
