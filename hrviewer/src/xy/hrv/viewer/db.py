@@ -80,20 +80,21 @@ class HiveStore:
         """
         agg = (agg or "avg").lower()
         glob = self._cfg.hive_glob(segment, metric)
-        start_date = _ms_to_date(start_ms)
-        end_date = _ms_to_date(end_ms)
+        tp = self._cfg.time_part
+        start_part = self._cfg.part_value(start_ms)
+        end_part = self._cfg.part_value(end_ms)
 
         if agg == "none":
             max_points = max_points or self._cfg.max_points
-            sql = """
+            sql = f"""
                 SELECT ts, value
                 FROM read_parquet(?, hive_partitioning=true)
-                WHERE dt BETWEEN ? AND ?
+                WHERE {tp} BETWEEN ? AND ?
                   AND ts BETWEEN ? AND ?
                 ORDER BY ts
                 LIMIT ?
             """
-            params = [glob, start_date, end_date, start_ms, end_ms,
+            params = [glob, start_part, end_part, start_ms, end_ms,
                       max(1, int(max_points))]
             with self._lock:
                 return self._con.execute(sql, params).fetch_arrow_table()
@@ -108,12 +109,12 @@ class HiveStore:
                 CAST((ts / {bucket}) AS BIGINT) * {bucket} AS ts,
                 {expr}                                     AS value
             FROM read_parquet(?, hive_partitioning=true)
-            WHERE dt BETWEEN ? AND ?
+            WHERE {tp} BETWEEN ? AND ?
               AND ts BETWEEN ? AND ?
             GROUP BY 1
             ORDER BY 1
         """
-        params = [glob, start_date, end_date, start_ms, end_ms]
+        params = [glob, start_part, end_part, start_ms, end_ms]
         with self._lock:
             return self._con.execute(sql, params).fetch_arrow_table()
 

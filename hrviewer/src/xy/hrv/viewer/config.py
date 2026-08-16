@@ -6,7 +6,9 @@ from __future__ import annotations
 
 import os
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from pathlib import Path
+from typing import ClassVar
 
 # The server is always started from the project root.
 STATICS_DIR: Path = Path("statics")
@@ -38,19 +40,43 @@ class Config:
     # Query defaults
     max_points: int = field(default_factory=lambda: int(_env("HRV_MAX_POINTS", "5000")))
 
+    # ------------------------------------------------------------------
+    # Partition scheme.
+    #
+    # A Hive addresses a single logical series by two *selector* partitions
+    # (the first picks the top level, the second the metric) followed by one
+    # *time* partition. The HR-Viewer's own Hive is laid out as
+    # ``segment=<s>/metric=<m>/dt=<YYYY-MM-DD>/``. Subclasses (e.g. the
+    # MQTT-Duck sensor Hive ``sensor=<s>/metric=<m>/month=<YYYY-MM>/``) only
+    # override these three names + ``part_value`` and inherit every query.
+    part_names: ClassVar[tuple[str, str]] = ("segment", "metric")
+    time_part: ClassVar[str] = "dt"
+
     @property
     def statics_dir(self) -> Path:
         return (Path.cwd() / STATICS_DIR).resolve()
 
-    def hive_glob(self, segment: str, metric: str) -> str:
-        """Return the parquet glob for a single (segment, metric) pair.
+    def hive_glob(self, selector: str, metric: str) -> str:
+        """Return the parquet glob for a single (selector, metric) pair.
 
-        The Hive layout is ``segment=<s>/metric=<m>/dt=<date>/data.parquet``.
+        The generic Hive layout is
+        ``<p0>=<selector>/<p1>=<metric>/<time>=<value>/*.parquet`` where the
+        partition names come from :attr:`part_names` / :attr:`time_part`.
         """
+        p0, p1 = self.part_names
         return os.path.join(
             self.hive_path,
-            f"segment={segment}",
-            f"metric={metric}",
+            f"{p0}={selector}",
+            f"{p1}={metric}",
             "*",
             "*.parquet",
         )
+
+    def part_value(self, ms: int):
+        """Map an epoch-ms timestamp to the value of the time partition.
+
+        Returned so that lexical/temporal ``BETWEEN`` filtering over the
+        partition column bounds the file scan. The default (daily) scheme
+        returns a ``date``; monthly schemes return a ``YYYY-MM`` string.
+        """
+        return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).date()

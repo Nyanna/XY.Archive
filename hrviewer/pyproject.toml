@@ -18,8 +18,15 @@ dependencies = [
     "pyarrow>=14.0",
 ]
 
+# MQTT-Duck adds the MQTT ingestion side on top of the read-only viewer.
+[project.optional-dependencies]
+mqtt = [
+    "paho-mqtt>=2.0",
+]
+
 [project.scripts]
 hrv = "xy.hrv.viewer.__main__:main"
+mqtt-duck = "xy.mqttduck.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

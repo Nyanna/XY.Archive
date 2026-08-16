@@ -124,6 +124,13 @@ class HrViewer:
     def _send_json(self, handler: "_Handler", obj) -> None:
         self._send_bytes(handler, json.dumps(obj).encode("utf-8"), "application/json")
 
+    # Lifecycle hooks -- subclasses
+    def on_start(self) -> None:  # pragma: no cover - default no-op
+        pass
+
+    def on_stop(self) -> None:  # pragma: no cover - default no-op
+        pass
+
     def run(self) -> None:
         cfg = self.config
         httpd = _Server((cfg.host, cfg.port), _Handler)
@@ -133,6 +140,7 @@ class HrViewer:
             f"(hive={cfg.hive_path})",
             flush=True,
         )
+        self.on_start()
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
@@ -140,6 +148,7 @@ class HrViewer:
         finally:
             httpd.shutdown()
             httpd.server_close()
+            self.on_stop()
             self.store.close()
 
 
