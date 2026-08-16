@@ -165,16 +165,12 @@
     toIn.value = fmtLocal(toMs);
   }
 
-  /* ---- global "max_points" override -------------------------------------
-   * Overrides the per-query aggregation resolution sent to the API for
-   * *every* panel. Empty (default) leaves each query's own default (see
-   * `dflt` fallback below) untouched. */
+  /* Global "max_points" override for all panels; empty leaves each query's default untouched. */
   function maxPointsOverride(dflt) {
     const v = parseInt(maxPointsIn.value, 10);
     return Number.isFinite(v) && v > 0 ? v : dflt;
   }
 
-  /* ---- Apache Arrow decoding ------------------------------------------ */
   async function fetchTable(body) {
     const res = await fetch("/api/query", {
       method: "POST",
@@ -186,15 +182,8 @@
     return Arrow.tableFromIPC(new Uint8Array(buf));
   }
 
-  /* ---- shared query cache ---------------------------------------------
-   * Identical queries (same request body) are issued only once and the
-   * resulting table (promise) is shared across every panel/series that asks
-   * for it. This lets several panels build on the same raw signal without
-   * re-fetching it: e.g. a set of derived panels (absolute/relative humidity,
-   * dew point, enthalpy, a ventilation flag) that all consume the same raw
-   * Temperature/Humidity series trigger only one network request per series.
-   * The key includes the time window + max_points (both part of the body), so
-   * the cache is simply cleared whenever the range or resolution changes. */
+  /* Shared query cache: identical queries are fetched once, with results
+   * shared across panels. Cache is cleared when range/resolution changes. */
   const queryCache = new Map();
   function cachedFetchTable(body) {
     const key = JSON.stringify(body);
@@ -205,7 +194,6 @@
     }
     return p;
   }
-  /* Build [[tsMs, value], ...] from an Arrow table's `ts` + value column. */
   function toXY(table, valueName) {
     const tsCol = table.getChild("ts");
     const vCol = table.getChild(valueName);
@@ -231,19 +219,8 @@
     return out;
   }
 
-  /* ---- generic series resolution (raw or derived/transformed) ----------
-   * A series config is resolved to its [[ts,val], ...] array in one of two
-   * ways:
-   *   - raw:        { segment, metric, agg }         -> one cached query.
-   *   - transformed:{ inputs:[{key,segment,metric,agg}...], transform(row) }
-   *                 -> each input is fetched (through the shared cache) and the
-   *                    `transform` function derives the output value point by
-   *                    point. Inputs are aligned onto the first input's
-   *                    timestamps; the remaining inputs carry their last known
-   *                    value forward, so signals sampled at slightly different
-   *                    times (and a shared reference series) combine cleanly.
-   * Because every input goes through `cachedFetchTable`, a raw signal reused
-   * by many derived panels is fetched only once. */
+  /* Series resolution: raw (simple query) or transformed (derived from inputs).
+   * Transformed inputs are aligned to first input's timestamps. */
   function seriesQueryBody(q) {
     return {
       kind: "series", segment: q.segment, metric: q.metric,
@@ -274,12 +251,7 @@
     }
     return out;
   }
-  /* Fetch one metric as [[ts,val], ...]. A sensor/metric with no matching data
-   * (backend reports "No files found" -> HTTP 500) or any other transient query
-   * failure yields an *empty* series rather than failing the whole panel, so a
-   * single missing sensor is simply omitted (like Grafana drops absent series).
-   * The failed query is not cached (see cachedFetchTable), so it is retried on
-   * the next reload -- data that appears later will show up. */
+  /* Fetch metric; missing data yields empty series (not cached, so retried later). */
   async function fetchSeriesXY(q) {
     try {
       return toXY(await cachedFetchTable(seriesQueryBody(q)), "value");
@@ -413,12 +385,7 @@
     };
   }
 
-  /* ---- static annotations (config-driven, `DASHBOARD.annotations`) -----
-   * A labelled, dashed vertical line drawn at a fixed point in time, on
-   * every synced timeseries/state panel (not on "daily" panels, which run
-   * on their own independent, day-aggregated time axis). Purely declarative
-   * -- set in the dashboard config, see dashboard.config.js; there's no
-   * interactive "add annotation" UI. */
+  /* Static annotations: labelled vertical lines at fixed times (config-driven). */
   const ANNOTATION_COLOR = "#8250df";
   function resolvedAnnotations() {
     return (DASHBOARD.annotations || [])
@@ -443,9 +410,7 @@
       })),
     };
   }
-  /* An invisible, empty carrier series purely to host the annotation
-   * markLine -- works uniformly regardless of a panel's own series (e.g. a
-   * "state" panel's single custom-rendered band). */
+  /* Empty series to host annotation markLines. */
   function annotationSeries() {
     const markLine = annotationMarkLine();
     return markLine
@@ -453,12 +418,7 @@
       : [];
   }
 
-  /* Floating, semi-transparent legend(s), drawn directly over the plot area
-   * instead of taking up their own row. With a right Y-axis in play, series
-   * are split into two legend components by axis affiliation: left-axis
-   * series top-left, right-axis series top-right. `selected` is shared --
-   * each piece only looks up the names it owns, so toggling one doesn't
-   * touch the other. No wrapping/scrolling: panels are wide enough. */
+  /* Floating legend(s) over plot area; split by axis with dual Y-axes. */
   const LEGEND_BG = "rgba(255,255,255,0.72)";
   function legendPiece(names, side, selected) {
     if (!names.length) return null;
@@ -476,16 +436,7 @@
     return pieces.length ? pieces : undefined;
   }
 
-  /* ---- axis-trigger tooltip: value under the cursor, not the nearest point
-   * -------------------------------------------------------------------------
-   * ECharts' own axis-trigger tooltip shows, per series, whichever data
-   * point happens to be nearest to the hovered time -- with many series of
-   * differing/irregular sampling that can be a noticeably "stale" or
-   * "future" value, not what's actually under the cursor. Instead: for each
-   * series, compute the value exactly at the hovered time by linearly
-   * interpolating between its two surrounding points (matching the straight
-   * line ECharts itself draws between samples); past either edge of the
-   * series (or with a null neighbour), hold the nearest known value instead. */
+  /* Interpolate value at exact hovered time (not nearest data point). */
   function valueAt(xy, t) {
     if (!xy || !xy.length) return null;
     const n = xy.length;
@@ -506,11 +457,7 @@
     return pad(d.getDate()) + "." + pad(d.getMonth() + 1) + "." + d.getFullYear() + " " +
       pad(d.getHours()) + ":" + pad(d.getMinutes()) + ":" + pad(d.getSeconds());
   }
-  /* Default line palette, used to explicitly colour every series that
-   * doesn't specify its own `color` -- this mirrors ECharts' own built-in
-   * default theme palette, so the *look* doesn't change, but we now know
-   * each series' colour ourselves (needed for the tooltip below, which no
-   * longer relies on ECharts telling us which series are "present"). */
+  /* Default palette mirrors ECharts theme; allows custom tooltip handling. */
   const DEFAULT_PALETTE = [
     "#5470c6", "#91cc75", "#fac858", "#ee6666", "#73c0de",
     "#3ba272", "#fc8452", "#9a60b4", "#ea7ccc", "#37a2da",
@@ -518,16 +465,7 @@
     "#fb7293", "#e7bcf3", "#8378ea",
   ];
 
-  /* `seriesInfo` maps a rendered series' `name` -> { data, color } (see
-   * buildTimeseries below). Deliberately NOT driven by ECharts' own tooltip
-   * `params`: for an "axis" trigger on a continuous time axis, ECharts only
-   * lists series for which it found a data point it considers "current" --
-   * with many independently, irregularly sampled series (sensors that only
-   * report on change, so point spacing varies a lot per series) that quietly
-   * drops most series from the tooltip instead of just showing a stale
-   * value. Iterating our own known series list side-steps that entirely:
-   * every series configured for this panel gets a row, always, using our own
-   * interpolated/held value (see `valueAt`) at the hovered time. */
+  /* Custom tooltip formatter: shows every configured series with interpolated values. */
   function axisTooltipFormatter(seriesInfo) {
     return (params) => {
       if (!Array.isArray(params) || !params.length) return "";
@@ -601,9 +539,7 @@
         formatter: axisTooltipFormatter(seriesInfo),
       },
       legend: cfg.legend ? floatingLegend(leftNames, rightNames, legendSelected) : undefined,
-      // Fixed left/right margins on every timeseries/state panel, so a given
-      // timestamp maps to the same pixel X everywhere (needed for the synced
-      // hover cursor), regardless of whether a panel has a right axis.
+      // Fixed margins for synced hover cursor alignment across panels
       grid: { left: 64, right: 64, top: GRID_TOP, bottom: gridBottom(cfg) },
       xAxis: timeXAxis(cfg),
       yAxis: baseYAxis(cfg),
@@ -612,16 +548,9 @@
     };
   }
 
-  /* ---- categorical "state" band (e.g. sleep stage) ----------------------
-   * Renders a categorical series as a single-row colour band: runs of the
-   * same value become labelled, coloured rectangles spanning their time
-   * range. The code -> { label, color, text } mapping is domain-specific, so
-   * it comes from the panel config (`cfg.series[0].states`), keeping this
-   * renderer generic; a missing code renders as a gap. */
+  /* Categorical state band renderer: converts series to time-range segments. */
 
-  /* Collapse [ts,value] points into [start, end, code] segments, breaking
-   * runs across long gaps (e.g. between separate nights) so no rectangle is
-   * stretched over a period with no data. */
+  /* Collapse runs of same value into segments, breaking across data gaps. */
   function buildStageSegments(xy, states) {
     const pts = (xy || []).filter((p) => p[1] != null);
     const n = pts.length;
@@ -651,8 +580,7 @@
     return segs;
   }
 
-  /* Custom renderItem factory: draw one clipped, labelled rectangle per run,
-   * coloured/labelled via the panel's `states` map. */
+  /* Custom renderItem: clipped, labelled rectangles per segment. */
   function makeStageRenderer(states) {
     return function renderStageItem(params, api) {
       const m = states[api.value(2)];
@@ -722,8 +650,7 @@
     };
   }
 
-  /* Type "daily" panels: line charts with visible points and a translucent
-   * area fill, plotted from a pre-aggregated table (own time X-axis). */
+  /* Type "daily": pre-aggregated daily data with visible points. */
   function buildDaily(cfg, table, legendSelected) {
     const legendData = [], series = [];
     cfg.series.forEach((sc) => {
@@ -781,12 +708,8 @@
       if (this.chart) return;
       this.chart = echarts.init(this.chartEl);
 
-      // "daily" panels keep their own X-axis, outside the cross-panel sync.
-      if (this.cfg.type === "daily") return;
-
-      // --- zoom sync (by axis value) ---
-      // Capture zoom changes, remember them (to replay onto panels that load
-      // later) and broadcast them to the other panels.
+      if (this.cfg.type === "daily") return;  // keep own X-axis
+      
       this.chart.on("datazoom", () => {
         if (syncing) return;
         const dz = (this.chart.getOption().dataZoom || [])[0];
@@ -795,10 +718,6 @@
         broadcastZoom(this.chart);
       });
 
-      // --- hover cursor sync (by axis value) ---
-      // Convert the pointer to a time value on this panel and re-project it to
-      // each other panel's pixel position, so the vertical hover line lines up
-      // regardless of differing point densities.
       const zr = this.chart.getZr();
       zr.on("mousemove", (ev) => {
         if (!this.chart.containPixel("grid", [ev.offsetX, ev.offsetY])) {
@@ -813,10 +732,7 @@
       this.attachDragZoom();
     }
 
-    /* Mouse interaction on the plot:
-     *   - LEFT + drag  -> highlight a region; on release it becomes the new
-     *     query window (re-fetched at full resolution, not just rescaled),
-     *   - RIGHT + drag -> live-pan the current window; re-fetched on release. */
+    /* LEFT drag: zoom to region; RIGHT drag: pan window. */
     attachDragZoom() {
       const chart = this.chart, el = this.chartEl;
       el.addEventListener("contextmenu", (e) => e.preventDefault());
@@ -829,10 +745,6 @@
       const pxOf = (e) => e.clientX - el.getBoundingClientRect().left;
       let drag = null, raf = 0;
 
-      // Pointer Events + pointer capture: once the drag starts, every
-      // pointermove/pointerup is delivered to this element even when the cursor
-      // leaves it, so we never lose the move/up phase (which was the bug with
-      // document-level mouse listeners on top of the ECharts canvas).
       el.addEventListener("pointerdown", (e) => {
         if (e.button !== 0 && e.button !== 2) return;
         const rect = el.getBoundingClientRect();
@@ -843,7 +755,7 @@
           startT: chart.convertFromPixel({ xAxisIndex: 0 }, startPx),
           moved: false, off: 0,
         };
-        if (e.button === 0) {
+        if (e.button === 0) {  // left: show selection band
           sel.style.left = startPx + "px";
           sel.style.top = GRID_TOP + "px";
           sel.style.width = "0px";
@@ -859,10 +771,10 @@
         const px = pxOf(e);
         drag.curPx = px;
         if (Math.abs(px - drag.startPx) > 2) drag.moved = true;
-        if (drag.button === 0) {                 // left: grow the selection band
+        if (drag.button === 0) {  // left: grow selection
           sel.style.left = Math.min(drag.startPx, px) + "px";
           sel.style.width = Math.abs(px - drag.startPx) + "px";
-        } else {                                 // right: live-pan the window
+        } else {                  // right: live-pan
           drag.off = drag.startT - chart.convertFromPixel({ xAxisIndex: 0 }, px);
           if (!raf) raf = requestAnimationFrame(() => {
             raf = 0;
@@ -877,11 +789,11 @@
         try { el.releasePointerCapture(e.pointerId); } catch (_) {}
         sel.style.display = "none";
         if (!d.moved) return;
-        if (d.button === 0) {                    // adopt the selected span
+        if (d.button === 0) {         // adopt selected span
           const a = chart.convertFromPixel({ xAxisIndex: 0 }, Math.min(d.startPx, d.curPx));
           const b = chart.convertFromPixel({ xAxisIndex: 0 }, Math.max(d.startPx, d.curPx));
           adoptWindow(Math.max(fromMs, Math.min(a, b)), Math.min(toMs, Math.max(a, b)));
-        } else if (d.off) {                      // adopt the panned window
+        } else if (d.off) {           // adopt panned window
           adoptWindow(fromMs + d.off, toMs + d.off);
         }
       };
@@ -963,16 +875,7 @@
       }
     }
 
-    /* ---- "tiles" panel: small overview cards (name + value + optional
-     * addon widget) ------------------------------------------------------
-     * Generic and reusable across dashboards: the renderer only owns the
-     * card shell, its layout and the (optional) "latest value of a series"
-     * rendering. Anything dashboard-specific -- e.g. a live WebSocket-driven
-     * toggle -- is injected by the config via `tile.addon(el, ctx)`, a small
-     * content-provider hook. The addon is mounted exactly once, on the
-     * tile's first load, and left untouched on every later reload (time
-     * range change, autorefresh, ...), so it may own long-lived state (like
-     * an open WebSocket) without being torn down/reconnected constantly. */
+    /* Build tile cards; addons mounted once and reused across reloads. */
     buildTilesShell() {
       const wrap = document.createElement("div");
       wrap.className = "tiles";
@@ -1037,10 +940,7 @@
     container.appendChild(grid);
   }
 
-  /* The tab bar itself lives in the row header (next to the title), so it
-   * doesn't cost its own vertical row above the panel grid; only the tab
-   * bodies go into `bodyContainer`. Clicks on tabs stop propagating so they
-   * don't also trigger the header's collapse toggle. */
+  /* Tab bar in header; bodies in container. */
   function buildTabs(headEl, bodyContainer, tabs) {
     const bar = document.createElement("div");
     bar.className = "tabbar";
@@ -1156,7 +1056,6 @@
     });
   }
 
-  /* Adopt a new [start,end] window (ms) as the query range and re-fetch. */
   function adoptWindow(start, end) {
     if (!(end - start > 1000)) return;       // ignore accidental micro-drags
     fromMs = start; toMs = end;
@@ -1167,10 +1066,7 @@
 
 
 
-  /* ---- global header links (config-driven, generic) --------------------
-   * Any dashboard may expose a set of external links (`DASHBOARD.links`),
-   * shown in the top bar next to the title -- e.g. links to related admin
-   * UIs. Purely declarative; see the dashboard config. */
+  /* Render external links in top bar (config-driven). */
   function renderHeaderLinks() {
     const links = DASHBOARD.links || [];
     const topbar = document.querySelector(".topbar");
@@ -1190,11 +1086,7 @@
     else topbar.appendChild(nav);
   }
 
-  /* ---- auto-refresh -----------------------------------------------------
-   * While enabled (the "Auto-Refresh" checkbox) and the range is a rolling
-   * "Last *" selection (quick range, not "custom"), keep the view live by
-   * advancing the window to `now` on a fixed interval. A manual/custom range
-   * is left untouched. Skips work while the tab is hidden. */
+  /* Auto-refresh: advance rolling windows on interval; skips when tab hidden. */
   const AUTO_REFRESH_MS = 15000;
   function startAutoRefresh() {
     setInterval(() => {

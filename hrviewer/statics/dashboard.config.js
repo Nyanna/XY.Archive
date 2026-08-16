@@ -38,7 +38,6 @@
   const HRV = "hrv";
   const RAW = "raw";
 
-  /* ---- Panel 1 -- Heart rate (dual axis, thresholds, moving average) ---- */
   const panel1 = {
     id: 1, type: "timeseries", title: "Heart Rate", height: 300,
     axisLeft: { label: "HR / BMP", min: 40 },
@@ -59,10 +58,7 @@
     ],
   };
 
-  /* ---- Panel 2 -- Sleep stage (coloured state band) ----
-   * `states` maps the raw `sleep_stage` codes to label/color/text for the
-   * "state" panel renderer; code 0 ("not asleep") is left out -> blank.
-   * The three "Awake" codes (1/5/6) are unified under one label/colour. */
+  /* Sleep stage: states map raw codes to labels; code 0 is blank. */
   const AWAKE = { label: "Awake", color: "#fff899", text: "#5a4b00" };
   const panel2 = {
     id: 2, type: "state", title: "Sleep Stage", height: 120,
@@ -81,7 +77,6 @@
     ],
   };
 
-  /* ---- Panel 3 -- Dominance / Interference (dual axis, smooth) ---- */
   const panel3 = {
     id: 3, type: "timeseries", title: "Autonomic Balance", height: 240,
     axisLeft:  { label: "< Sympathikus | Vagal >", min: -1, max: 1 },
@@ -100,7 +95,6 @@
     ],
   };
 
-  /* ---- Panel 14 -- Vagal tone (dual axis, thresholds) ---- */
   const panel14 = {
     id: 14, type: "timeseries", title: "Vagal Tone", height: 260,
     axisLeft:  { label: "RMSSD / SDNN" },
@@ -122,7 +116,6 @@
     ],
   };
 
-  /* ---- Panel 4 -- Frequency bands + DFA (dual axis, thresholds) ---- */
   const panel4 = {
     id: 4, type: "timeseries", title: "Frequency Power / DFA", height: 320,
     axisLeft:  { label: "VLF | LF | HF - ms²", abbrev: true },
@@ -145,7 +138,6 @@
     ],
   };
 
-  /* ---- Panel 9 -- Band circadian power (many series, HR on right) ---- */
   const bands = [
     ["CIRC24", "hrv_band_circ_24h"], ["CIRC11", "hrv_band_circ_11h"],
     ["CIRC6", "hrv_band_circ_6h"],   ["CIRC5", "hrv_band_circ_5h"],
@@ -169,7 +161,6 @@
     }))),
   };
 
-  /* ---- Panel 15 -- CPC / HF-Peak (dual axis, thresholds, moving average) ---- */
   const panel15 = {
     id: 15, type: "timeseries", title: "Cardiopulmonary Coupling", height: 320,
     axisLeft:  { label: "CPC" },
@@ -190,7 +181,6 @@
     ],
   };
 
-  /* ---- Panel 16 -- RR interval + relative spread (dual axis, thresholds) ---- */
   const panel16 = {
     id: 16, type: "timeseries", title: "RR Interval", height: 320,
     axisLeft:  { label: "RR", min: 400, max: 1800 },
@@ -208,7 +198,6 @@
     ],
   };
 
-  /* ---- Panels 6/7/8 -- daily line charts (pre-aggregated backend queries) */
   const panel6 = {
     id: 6, type: "daily", title: "Sympathic Dominance Time under threshold",
     height: 320, kind: "dominance_daily",
@@ -241,14 +230,7 @@
     series: sleepSeries,
   };
 
-  /* ---- Static time annotations --------------------------------------------
-   * A labelled, dashed vertical line drawn at a fixed point in time, on
-   * every synced timeseries/state panel (not on the "daily" panels, which
-   * run on their own independent, day-aggregated time axis).
-   *   time:  "now" | epoch ms | ISO/parseable date string (local, no "Z" ->
-   *          interpreted in the browser's local time zone)
-   *   label: short text shown on the line
-   *   color: optional, defaults to a shared purple */
+  /* Static time annotations: time, label, optional color. */
   const annotations = [
     { time: "2026-05-19T22:00:00", label: "Doxepin 3mg" },
 	{ time: "2026-05-24T22:00:00", label: "Doxepin 1mg" },
@@ -316,7 +298,6 @@
 	{ time: "2026-08-01T22:00:00", label: "Anfall", color: "#e02f44" },
 	{ time: "2026-08-03T22:00:00", label: "Anfall", color: "#e02f44" },
 	{ time: "2026-08-11T22:00:00", label: "Anfall", color: "#e02f44" },
-    // { time: "2026-08-15T22:00:00", label: "Coffee", color: "#e02f44" },
   ];
 
   /* ---- Dashboard layout (rows + tabs) ---- */
