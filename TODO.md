@@ -1,9 +1,12 @@
 # TODO
 * smarthome grafana zu echarts umbauen, oder remote dashboard mit iobroker toggle, ladezeit
-* check powernap sleep time on 12:30 10.8. einschlafzeit, => sehr schnell
-* screenshots für HF band power mit Dox
-* Hr jumps LC kontrollprobleme 11.8 12:45, bestätigt
-* mqtt2prometheus ändern auf duckdb approach -> saves memory
+	* mqtt2prometheus ändern auf duckdb approach -> saves memory
+	
+vm 103, vm agent 15, mqtt2prometheus 13, vmauth 5 => 136m
+- delta kodierung für sensoren und konvertierung, event nur wenn geändert
+	
+	
+* projet folder bearbeiten
 
 ## 02 Pathogenesemodell
 
