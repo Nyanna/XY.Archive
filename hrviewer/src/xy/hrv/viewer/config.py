@@ -12,7 +12,7 @@ from pathlib import Path
 STATICS_DIR: Path = Path("statics")
 
 # Default location of the Parquet Hive.
-DEFAULT_HIVE_PATH = "/home/user/xyan/XY.Archiv/02_pathogenese_modell/data/hive"
+DEFAULT_HIVE_PATH = "/home/user/xyan/XY.Archiv/hrviewer/hive"
 
 
 def _env(name: str, default: str) -> str:
