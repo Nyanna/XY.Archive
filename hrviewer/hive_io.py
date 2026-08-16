@@ -247,7 +247,7 @@ class HiveWriter:
                 FROM u
               )
               SELECT ts, value FROM d WHERE rn = 1 ORDER BY ts
-            ) TO '{tmp.as_posix()}' (FORMAT PARQUET);
+            ) TO '{tmp.as_posix()}' (FORMAT PARQUET, PARQUET_VERSION V2, COMPRESSION ZSTD);
             """,
             [segment, metric, dt],
         )
