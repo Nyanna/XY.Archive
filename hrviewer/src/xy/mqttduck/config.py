@@ -105,7 +105,7 @@ class MqttConfig(Config):
     # one merge. ``flush_max_samples`` is only a safety cap that forces an
     # earlier flush should throughput ever spike, bounding the writer's RAM.
     flush_interval_s: float = field(
-        default_factory=lambda: float(_env("SMD_FLUSH_INTERVAL_S", "300"))
+        default_factory=lambda: float(_env("SMD_FLUSH_INTERVAL_S", "30"))
     )
     flush_max_samples: int = field(
         default_factory=lambda: int(_env("SMD_FLUSH_MAX_SAMPLES", "500"))
@@ -189,4 +189,7 @@ DEFAULT_METRICS: tuple[Metric, ...] = (
     # tasmota esp main power meter
     Metric("Power_curr", ".Power_curr"),
     Metric("Total_in", ".Total_in"),
+    # heating relay
+    Metric("Power", "power"),
+    Metric("Current", "current"),
 )

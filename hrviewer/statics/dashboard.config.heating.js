@@ -99,7 +99,7 @@
     series: [
       { label: "Warmwasser", segment: "0xa4c1383c7d3c4cb5", metric: "Temperature",
         agg: "avg", color: "#e02f44", width: 2 },
-      { label: "Strom", segment: "0xa4c138edbd20f773", metric: "power",
+      { label: "Strom", segment: "0xa4c138edbd20f773", metric: "Current",
         agg: "avg", color: "#ff9830", width: 1, axis: "right" },
     ],
   };
@@ -186,8 +186,7 @@
 
   /* Heater control via zigbee2mqtt MQTT-over-WebSocket bridge. */
   const HEATER_WS_URL = "ws://dietpi:9090/api";
-  // TODO: swap for real boiler device id
-  const HEATER_ID = "0xa4c1380d5aeeffff";
+  const HEATER_ID = "0xa4c138edbd20f773";
 
   function heaterToggleAddon(el) {
     const wrap = document.createElement("label");

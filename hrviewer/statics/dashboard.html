@@ -79,7 +79,7 @@
             ? Promise.reject()
             : loadScript("dashboard.config.js"); // unknown config -> fall back to default
         })
-        .then(function () { return loadScript("dashboard.js"); })
+        .then(function () { return import("./dashboard.js"); })
         .catch(function (e) {
           document.getElementById("status").textContent = "Config error: " + (e && e.message || e);
         });
