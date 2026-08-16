@@ -309,6 +309,46 @@
     for (let i = xy.length - 1; i >= 0; i--) if (xy[i][1] != null) return xy[i][1];
     return null;
   }
+
+  /* Small helper context handed to "tiles" panel addons (see the Panel class
+   * below): lets a dashboard-specific addon -- e.g. a live WebSocket toggle
+   * -- reuse the generic query engine for an occasional "latest value" read
+   * without the renderer having to know anything about the addon itself. */
+  const TILE_CTX = {
+    fetchLatest: async (sc) => latestValue(await seriesData(sc)),
+    fmtTip,
+  };
+
+  /* Deterministic, maintenance-free per-tile colour: derived from a cheap
+   * hash of the tile's label, so e.g. "Büro" always gets the same tint on
+   * every load without any hand-maintained label -> colour table. Purely a
+   * recognition aid (build muscle memory for "my tile lives over there, the
+   * reddish one") -- not meant to encode any value/state.
+   *   - hue: one hash component, ROUNDED onto a fixed grid of steps (a
+   *     discrete "spectrum") so any two tiles land at least one step apart
+   *     -- no near-identical, hard-to-tell-apart hues;
+   *   - saturation/lightness: two further, independent hash components,
+   *     varied continuously (fairly strong/saturated) so tiles that happen
+   *     to share a hue step still look distinguishable. */
+  function labelHash(label) {
+    let h = 5381;
+    const s = String(label || "");
+    for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0; // djb2
+    return h >>> 0;
+  }
+  const HUE_STEPS = 18;                    // 360°/18 = 20° apart -> clearly distinct hues
+  function tileAccent(label) {
+    const h = labelHash(label);
+    const hue = (h % HUE_STEPS) * (360 / HUE_STEPS);          // rounded onto the hue grid
+    const sat = 58 + (Math.floor(h / HUE_STEPS) % 25);        // 58-82%
+    const lit = 68 + (Math.floor(h / (HUE_STEPS * 25)) % 14); // 68-81%
+    return {
+      background: "linear-gradient(135deg, hsl(" + hue + " " + sat + "% " + lit + "%), hsl(" +
+        hue + " " + Math.max(sat - 10, 35) + "% " + Math.min(lit + 13, 97) + "%))",
+      borderColor: "hsl(" + hue + " " + Math.min(sat + 12, 92) + "% " + Math.max(lit - 32, 38) + "%)",
+    };
+  }
+
   function renderFlagPanel(el, cfg, results) {
     const stateFn = (cfg.flag && cfg.flag.state) ||
       ((v) => ({ text: fmtTip(v), color: "#e6e6e6" }));
@@ -436,37 +476,115 @@
     return pieces.length ? pieces : undefined;
   }
 
+  /* ---- axis-trigger tooltip: value under the cursor, not the nearest point
+   * -------------------------------------------------------------------------
+   * ECharts' own axis-trigger tooltip shows, per series, whichever data
+   * point happens to be nearest to the hovered time -- with many series of
+   * differing/irregular sampling that can be a noticeably "stale" or
+   * "future" value, not what's actually under the cursor. Instead: for each
+   * series, compute the value exactly at the hovered time by linearly
+   * interpolating between its two surrounding points (matching the straight
+   * line ECharts itself draws between samples); past either edge of the
+   * series (or with a null neighbour), hold the nearest known value instead. */
+  function valueAt(xy, t) {
+    if (!xy || !xy.length) return null;
+    const n = xy.length;
+    if (t <= xy[0][0]) return xy[0][1];
+    if (t >= xy[n - 1][0]) return xy[n - 1][1];
+    let lo = 0, hi = n - 1;
+    while (hi - lo > 1) {
+      const mid = (lo + hi) >> 1;
+      if (xy[mid][0] <= t) lo = mid; else hi = mid;
+    }
+    const [t0, v0] = xy[lo], [t1, v1] = xy[hi];
+    if (v0 == null || v1 == null) return v0 != null ? v0 : v1; // hold the known side
+    if (t1 === t0) return v0;
+    return v0 + (v1 - v0) * ((t - t0) / (t1 - t0));
+  }
+  function fmtDateTime(ms) {
+    const d = new Date(ms);
+    return pad(d.getDate()) + "." + pad(d.getMonth() + 1) + "." + d.getFullYear() + " " +
+      pad(d.getHours()) + ":" + pad(d.getMinutes()) + ":" + pad(d.getSeconds());
+  }
+  /* Default line palette, used to explicitly colour every series that
+   * doesn't specify its own `color` -- this mirrors ECharts' own built-in
+   * default theme palette, so the *look* doesn't change, but we now know
+   * each series' colour ourselves (needed for the tooltip below, which no
+   * longer relies on ECharts telling us which series are "present"). */
+  const DEFAULT_PALETTE = [
+    "#5470c6", "#91cc75", "#fac858", "#ee6666", "#73c0de",
+    "#3ba272", "#fc8452", "#9a60b4", "#ea7ccc", "#37a2da",
+    "#32c5e9", "#67e0e3", "#9fe6b8", "#ffdb5c", "#ff9f7f",
+    "#fb7293", "#e7bcf3", "#8378ea",
+  ];
+
+  /* `seriesInfo` maps a rendered series' `name` -> { data, color } (see
+   * buildTimeseries below). Deliberately NOT driven by ECharts' own tooltip
+   * `params`: for an "axis" trigger on a continuous time axis, ECharts only
+   * lists series for which it found a data point it considers "current" --
+   * with many independently, irregularly sampled series (sensors that only
+   * report on change, so point spacing varies a lot per series) that quietly
+   * drops most series from the tooltip instead of just showing a stale
+   * value. Iterating our own known series list side-steps that entirely:
+   * every series configured for this panel gets a row, always, using our own
+   * interpolated/held value (see `valueAt`) at the hovered time. */
+  function axisTooltipFormatter(seriesInfo) {
+    return (params) => {
+      if (!Array.isArray(params) || !params.length) return "";
+      const t = params[0].axisValue;
+      const rows = [];
+      seriesInfo.forEach(({ data, color }, name) => {
+        const v = valueAt(data, t);
+        const marker = '<span style="display:inline-block;margin-right:6px;' +
+          "width:9px;height:9px;border-radius:50%;background:" + color + ';"></span>';
+        rows.push('<div style="display:flex;justify-content:space-between;gap:14px;">' +
+          "<span>" + marker + name + "</span>" +
+          '<span style="font-weight:600;margin-left:auto">' + fmtTip(v) + "</span></div>");
+      });
+      if (!rows.length) return "";
+      return '<div style="font-weight:600;margin-bottom:3px;">' + fmtDateTime(t) + "</div>" + rows.join("");
+    };
+  }
+
   /* Build the ECharts option for a timeseries / state panel from fetched data.
    * `fetched` maps a series config -> its [[ts,val], ...] array. */
   function buildTimeseries(cfg, fetched, legendSelected) {
     const leftNames = [], rightNames = [];
     const series = [];
+    const seriesInfo = new Map();
+    let paletteIdx = 0;
+    const nextColor = () => DEFAULT_PALETTE[paletteIdx++ % DEFAULT_PALETTE.length];
     cfg.series.forEach((sc) => {
       const yIdx = sc.axis === "right" && cfg.axisRight && cfg.axisRight.show ? 1 : 0;
       const data = fetched.get(sc);
       const step = cfg.type === "state" ? "end" : false;
+      const color = sc.color || nextColor();
       (yIdx ? rightNames : leftNames).push(sc.label);
+      seriesInfo.set(sc.label, { data, color });
       series.push({
         name: sc.label, type: "line", yAxisIndex: yIdx,
         showSymbol: false, sampling: "lttb", smooth: !!sc.smooth, step,
         connectNulls: false,
-        lineStyle: { width: sc.width == null ? 1 : sc.width, color: sc.color, type: sc.dash || "solid" },
-        itemStyle: { color: sc.color },
-        areaStyle: sc.fillOpacity ? { opacity: sc.fillOpacity / 100, color: sc.color } : undefined,
+        lineStyle: { width: sc.width == null ? 1 : sc.width, color, type: sc.dash || "solid" },
+        itemStyle: { color },
+        areaStyle: sc.fillOpacity ? { opacity: sc.fillOpacity / 100, color } : undefined,
         markLine: thresholdMarkLine(sc),
         data,
       });
       if (sc.movavg) {
         const m = sc.movavg;
         const mIdx = m.axis === "right" && cfg.axisRight && cfg.axisRight.show ? 1 : 0;
+        const mColor = m.color || nextColor();
         (mIdx ? rightNames : leftNames).push(m.label);
+        const mData = movingAverage(data, m.size);
+        seriesInfo.set(m.label, { data: mData, color: mColor });
         series.push({
           name: m.label, type: "line", yAxisIndex: mIdx,
           showSymbol: false, smooth: true,
-          lineStyle: { width: m.width || 2, color: m.color },
-          itemStyle: { color: m.color },
-          areaStyle: m.fillOpacity ? { opacity: m.fillOpacity / 100, color: m.color } : undefined,
-          data: movingAverage(data, m.size),
+          lineStyle: { width: m.width || 2, color: mColor },
+          itemStyle: { color: mColor },
+          areaStyle: m.fillOpacity ? { opacity: m.fillOpacity / 100, color: mColor } : undefined,
+          data: mData,
         });
       }
     });
@@ -474,7 +592,14 @@
     return {
       backgroundColor: "transparent", animation: false,
       textStyle: { color: "#1f2328" },
-      tooltip: { trigger: "axis", axisPointer: { type: "line" }, valueFormatter: fmtTip },
+      // snap: false -- ECharts snaps the axis pointer (and thus `axisValue`
+      // in the tooltip formatter) to the nearest *data point* by default on
+      // a continuous time axis; that defeats the whole point of computing
+      // our own interpolated/held value below the actual cursor position.
+      tooltip: {
+        trigger: "axis", axisPointer: { type: "line", snap: false },
+        formatter: axisTooltipFormatter(seriesInfo),
+      },
       legend: cfg.legend ? floatingLegend(leftNames, rightNames, legendSelected) : undefined,
       // Fixed left/right margins on every timeseries/state panel, so a given
       // timestamp maps to the same pixel X everywhere (needed for the synced
@@ -636,10 +761,13 @@
       this.loaded = false;
       this.dirty = true;
       this.visible = false;
+      this.tileEls = null;   // "tiles" panels: persistent per-tile DOM refs, survive reloads
 
       const host = document.createElement("div");
-      host.className = "panel";
-      host.style.height = (cfg.height || 280) + "px";
+      host.className = "panel" + (cfg.type === "tiles" ? " panel-tiles" : "");
+      // "tiles" panels size to their content (a wrapping row of cards)
+      // instead of the fixed chart height every other panel type uses.
+      host.style.height = cfg.type === "tiles" ? "auto" : (cfg.height || 280) + "px";
       // No panel heading -- each plot's Y-axis label already names its content.
       const chartEl = document.createElement("div");
       chartEl.className = "panel-chart";
@@ -784,8 +912,8 @@
       this._busy = true;
       this.dirty = false;
       const cfg = this.cfg;
-      // A "flag" panel renders plain DOM badges, not an ECharts canvas.
-      if (cfg.type !== "flag") { this.ensureChart(); this.chart.resize(); }
+      // A "flag" or "tiles" panel renders plain DOM, not an ECharts canvas.
+      if (cfg.type !== "flag" && cfg.type !== "tiles") { this.ensureChart(); this.chart.resize(); }
       bump(1);
       try {
         // Remember the legend on/off state so toggles persist across reloads.
@@ -794,6 +922,8 @@
           const results = await Promise.all(cfg.series.map(async (sc) =>
             ({ sc, data: await seriesData(sc) })));
           renderFlagPanel(this.chartEl, cfg, results);
+        } else if (cfg.type === "tiles") {
+          await this.loadTiles();
         } else if (cfg.type === "daily") {
           const { start, end } = panelRange(cfg);
           const table = await cachedFetchTable({
@@ -831,6 +961,63 @@
         this._busy = false;
         if (this.dirty && this.visible) this.load();
       }
+    }
+
+    /* ---- "tiles" panel: small overview cards (name + value + optional
+     * addon widget) ------------------------------------------------------
+     * Generic and reusable across dashboards: the renderer only owns the
+     * card shell, its layout and the (optional) "latest value of a series"
+     * rendering. Anything dashboard-specific -- e.g. a live WebSocket-driven
+     * toggle -- is injected by the config via `tile.addon(el, ctx)`, a small
+     * content-provider hook. The addon is mounted exactly once, on the
+     * tile's first load, and left untouched on every later reload (time
+     * range change, autorefresh, ...), so it may own long-lived state (like
+     * an open WebSocket) without being torn down/reconnected constantly. */
+    buildTilesShell() {
+      const wrap = document.createElement("div");
+      wrap.className = "tiles";
+      this.tileEls = this.cfg.tiles.map((t) => {
+        const card = document.createElement("div");
+        card.className = "tile";
+        const accent = tileAccent(t.label);
+        card.style.background = accent.background;
+        card.style.borderColor = accent.borderColor;
+        const name = document.createElement("div");
+        name.className = "tile-name";
+        name.textContent = t.label;
+        card.appendChild(name);
+        let valueEl = null;
+        if (t.series) {
+          valueEl = document.createElement("div");
+          valueEl.className = "tile-value";
+          valueEl.textContent = "…";
+          card.appendChild(valueEl);
+        }
+        if (t.addon) {
+          const addonEl = document.createElement("div");
+          addonEl.className = "tile-addon";
+          card.appendChild(addonEl);
+          try { t.addon(addonEl, TILE_CTX); } catch (e) { console.warn("tile addon failed:", e); }
+        }
+        wrap.appendChild(card);
+        return { valueEl };
+      });
+      this.chartEl.innerHTML = "";
+      this.chartEl.appendChild(wrap);
+    }
+    async loadTiles() {
+      if (!this.tileEls) this.buildTilesShell();
+      await Promise.all(this.cfg.tiles.map(async (t, i) => {
+        const valueEl = this.tileEls[i].valueEl;
+        if (!valueEl) return;
+        try {
+          const v = latestValue(await seriesData(t.series));
+          valueEl.textContent = v == null ? "—" :
+            (t.format ? t.format(v) : fmtTip(v) + (t.unit ? " " + t.unit : ""));
+        } catch (e) {
+          valueEl.textContent = "—";
+        }
+      }));
     }
 
     resize() { if (this.chart) this.chart.resize(); }

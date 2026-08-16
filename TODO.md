@@ -1,5 +1,5 @@
 # TODO
-* smarthome grafana zu echarts umbauen, oder remote dashboard mit iobroker toggle, ladezeit
+* smarthome grafana zu echarts umbauen, oder remote dashboard mit iobroker toggle
 * projet folder bearbeiten
 
 ## 02 Pathogenesemodell

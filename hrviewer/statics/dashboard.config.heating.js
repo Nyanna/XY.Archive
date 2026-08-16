@@ -32,13 +32,13 @@
     "0x00124b002a6d6fd8": "Keller",
     "0x00124b0022d5a1f7": "Waschraum",
     "0x00124b00252be376": "Hobby",
-    "0x00124b00290fb077": "Buero",
+    "0x00124b00290fb077": "Büro",
     "0xf0d1b8be2409fc48": "Werkstatt",
-    "0x00124b002a50c50a": "Gaestebad",
+    "0x00124b002a50c50a": "Gästebad",
     "0x00124b00292b470a": "Kira",
-    "0x00124b002a6d3c44": "Yuna Neu",
+    "0x00124b002a6d3c44": "Yuna",
     "0x44e2f8fffe27e73c": "Aura",
-    "0x94deb8fffe41e3c0": "Gaestesensor",
+    "0x94deb8fffe41e3c0": "Kimi",
     // --- non-climate / special-purpose sensors (used by dedicated panels) ---
     "0xa4c1383c7d3c4cb5": "WW Tank",         // hot-water tank temperature
     "0xa4c138edbd20f773": "Heizung",         // heating power draw
@@ -46,16 +46,16 @@
     "0x60a423fffe803811": "Büroschalter",
     "0x60a423fffe833581": "Garderobenschalter",
     "0xa4c138a66cdb21ae": "Garage Wendy",
-    "0xa4c1387253897923": "Gaestedose",
+    "0xa4c1387253897923": "Kimi Hifi",
     "0x00124b00292afee5": "Yuna Alt",
-    "0x00124b00292f6152": "Aura!!!",
-    "0xa4c1384225a2fdc6": "Bad!!!",
+    "0x00124b00292f6152": "Aura Alt",
+    "0xa4c1384225a2fdc6": "Bad Alt",
     "0xa4c1380d85a6455f": "Espresso",
     "0xbc33acfffe5d27d5": "Fernbedienung",
     "0x00124b0026b82cce": "Netzwerk",
     "0x001788010ea481b2": "Philips",
-    "0x00124b00252be456": "Buero X",
-    "0x00124b002a50c346": "0x00124b002a50c346",
+    "0x00124b00252be456": "Xyan",
+    "0x00124b002a50c346": "Kellerfenster",
   };
   const label = (id) => SENSORS[id] || id;
 
@@ -133,6 +133,16 @@
     ],
   };
 
+  const ENERGY_SENSOR = "tasmota_6D858C";
+  const panelStrom = {
+    id: 40, type: "timeseries", title: "Stromverbrauch", height: 300,
+    axisLeft: { label: "W" }, timeAxis: true, legend: true,
+    series: [
+      { label: "Stromverbrauch", segment: ENERGY_SENSOR, metric: "Power_curr",
+        agg: "avg", color: "#fade2a", width: 1 },
+    ],
+  };
+
   /* Relative humidity -- raw Humidity per sensor. */
   const panelRelHum = {
     id: 26, type: "timeseries", title: "Rel. Feuchte", height: 300,
@@ -174,8 +184,8 @@
       (r) => ventilate(r.T, r.H, r.Tr, r.Hr)),
     flag: {
       state: (v) => v >= 0.999
-        ? { text: "Lüften", color: "#56a64b", fg: "#ffffff" }
-        : { text: "zu lassen", color: "#eef0f2", fg: "#57606a" },
+        ? { text: "lüften", color: "#56a64b", fg: "#ffffff" }
+        : { text: "zulassen", color: "#eef0f2", fg: "#57606a" },
     },
   };
 
@@ -197,6 +207,109 @@
     series: rawSeries(Object.keys(SENSORS), "Linkquality"),
   };
 
+  /* ---- Übersicht: per-room overview tiles + Wasser/Strom -----------------
+   * Uses the generic "tiles" panel type (dashboard.js): the renderer only
+   * owns the card shell + the "latest value of a series" read-out; anything
+   * dashboard-specific is injected via a tile's `addon(el, ctx)` hook.
+   * Room tiles: name + current temperature (indoor sensors only, same
+   * order as the Temperature panel, outdoor "Garten" excluded -- it's not a
+   * room). */
+  const tileRooms = INDOOR.map((id) => ({
+    label: label(id),
+    series: { segment: id, metric: "Temperature", agg: "avg" },
+    unit: "°C",
+  }));
+
+  /* Strom tile (position 2): current household power draw, same source as
+   * the "Strom" row's line chart above. */
+  const tileStrom = {
+    label: "Strom",
+    series: { segment: ENERGY_SENSOR, metric: "Power_curr", agg: "avg" },
+    unit: "W",
+  };
+
+  /* ---- Wasser tile (position 1): current hot-water tank temperature, plus
+   * a live ON/OFF toggle for the heating's operating state -----------------
+   * The toggle is the "addon": dashboard-specific content mounted into an
+   * otherwise generic tile, driven by zigbee2mqtt's raw MQTT-over-WebSocket
+   * bridge (ws://dietpi:9090/api) instead of the historical query engine
+   * every other panel/tile uses, since it needs to be live and writable.
+   *
+   * Wire protocol, as observed against the live bridge (no formal docs were
+   * available):
+   *   - right after connecting, the bridge replays the full retained state
+   *     of every zigbee2mqtt entity as individual {topic, payload} messages,
+   *     `topic` being the *bare* entity id (no "zigbee2mqtt/" prefix) -- so
+   *     no explicit "get" request is needed, the current state arrives
+   *     unprompted, and every later state change is pushed the same way;
+   *   - to control a device, send {topic: "<id>/set", payload: {...}}, with
+   *     `payload` as a genuine JSON *object* (not a JSON-encoded string),
+   *     and again without the "zigbee2mqtt/" prefix on `topic`. */
+  const HEATER_WS_URL = "ws://dietpi:9090/api";
+  // NOTE: id as specified for this toggle; currently resolves to "Aura
+  // Computer" in zigbee2mqtt, not the actual boiler switch -- to be swapped
+  // for the real device id once available.
+  const HEATER_ID = "0xa4c1380d5aeeffff";
+
+  function heaterToggleAddon(el) {
+    const wrap = document.createElement("label");
+    wrap.className = "toggle-switch";
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.disabled = true;                 // enabled once the real state is known
+    const slider = document.createElement("span");
+    slider.className = "toggle-slider";
+    wrap.appendChild(input);
+    wrap.appendChild(slider);
+    const text = document.createElement("span");
+    text.className = "toggle-label";
+    text.textContent = "…";
+    el.appendChild(wrap);
+    el.appendChild(text);
+
+    let ws = null, known = null;
+    const setText = (on) => { text.textContent = on == null ? "—" : (on ? "An" : "Aus"); };
+
+    function connect() {
+      try { ws = new WebSocket(HEATER_WS_URL); } catch (e) { setText(null); return; }
+      ws.addEventListener("open", () => { input.disabled = false; });
+      ws.addEventListener("message", (ev) => {
+        let msg;
+        try { msg = JSON.parse(ev.data); } catch (e) { return; }
+        if (msg.topic !== HEATER_ID || !msg.payload || typeof msg.payload.state !== "string") return;
+        known = msg.payload.state.toUpperCase() === "ON";
+        input.checked = known;
+        setText(known);
+      });
+      ws.addEventListener("close", () => {
+        input.disabled = true;
+        setText(null);
+        setTimeout(connect, 5000);          // auto-reconnect
+      });
+      ws.addEventListener("error", () => { try { ws.close(); } catch (_) { /* ignore */ } });
+    }
+    connect();
+
+    input.addEventListener("change", () => {
+      const want = input.checked;
+      if (!ws || ws.readyState !== WebSocket.OPEN) { input.checked = !!known; return; }
+      ws.send(JSON.stringify({ topic: HEATER_ID + "/set", payload: { state: want ? "ON" : "OFF" } }));
+      setText(want);                         // optimistic; reconciled by the next state push
+    });
+  }
+
+  const tileWasser = {
+    label: "Wasser",
+    series: { segment: "0xa4c1383c7d3c4cb5", metric: "Temperature", agg: "avg" },
+    unit: "°C",
+    addon: heaterToggleAddon,
+  };
+
+  const panelOverview = {
+    id: 50, type: "tiles",
+    tiles: [tileWasser, tileStrom, ...tileRooms],
+  };
+
   /* ---- season: the "Lüften" row is only expanded in summer (May–Sep) ----- */
   const month = new Date().getMonth() + 1;
   const isSummer = month >= 5 && month <= 9;
@@ -211,7 +324,9 @@
       { label: "Fritz!Box", url: "http://fritz.box" },
     ],
     rows: [
-      { title: "Allgemein", type: "grid", collapse: false, panels: [panelTemp, panelWW] },
+      { title: "Übersicht", type: "grid", collapse: false, panels: [panelOverview] },
+      { title: "Allgemein", type: "grid", collapse: true, panels: [panelTemp, panelWW] },
+      { title: "Strom",     type: "grid", collapse: true, panels: [panelStrom] },
       { title: "Feuchte",   type: "grid", collapse: true,  panels: [panelRelHum, panelAbsHum, panelFenster] },
       { title: "Lüften",    type: "grid", collapse: !isSummer, panels: [panelLuften] },
       { title: "Enthalpie / Taupunkt", type: "grid", collapse: true, panels: [panelEnthalpy, panelDewpoint] },
