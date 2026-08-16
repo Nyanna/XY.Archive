@@ -152,6 +152,7 @@ DEFAULT_METRICS: tuple[Metric, ...] = (
     Metric("Temperature", "temperature"),
     Metric("Humidity", "humidity"),
     Metric("Battery", "battery"),
+    Metric("Linkquality", "linkquality"),
     # tasmota esp main power meter
     Metric("Power_curr", ".Power_curr"),
     Metric("Total_in", ".Total_in"),

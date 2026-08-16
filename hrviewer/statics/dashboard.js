@@ -21,6 +21,7 @@
   const fromIn = document.getElementById("fromInput");
   const toIn = document.getElementById("toInput");
   const maxPointsIn = document.getElementById("maxPointsInput");
+  const autoRefreshIn = document.getElementById("autoRefresh");
 
   /* ---- global time window state --------------------------------------- */
   let fromMs, toMs;
@@ -184,6 +185,26 @@
     const buf = await res.arrayBuffer();
     return Arrow.tableFromIPC(new Uint8Array(buf));
   }
+
+  /* ---- shared query cache ---------------------------------------------
+   * Identical queries (same request body) are issued only once and the
+   * resulting table (promise) is shared across every panel/series that asks
+   * for it. This lets several panels build on the same raw signal without
+   * re-fetching it: e.g. a set of derived panels (absolute/relative humidity,
+   * dew point, enthalpy, a ventilation flag) that all consume the same raw
+   * Temperature/Humidity series trigger only one network request per series.
+   * The key includes the time window + max_points (both part of the body), so
+   * the cache is simply cleared whenever the range or resolution changes. */
+  const queryCache = new Map();
+  function cachedFetchTable(body) {
+    const key = JSON.stringify(body);
+    let p = queryCache.get(key);
+    if (!p) {
+      p = fetchTable(body).catch((e) => { queryCache.delete(key); throw e; });
+      queryCache.set(key, p);
+    }
+    return p;
+  }
   /* Build [[tsMs, value], ...] from an Arrow table's `ts` + value column. */
   function toXY(table, valueName) {
     const tsCol = table.getChild("ts");
@@ -208,6 +229,110 @@
       out[i] = [xy[i][0], cnt ? sum / cnt : null];
     }
     return out;
+  }
+
+  /* ---- generic series resolution (raw or derived/transformed) ----------
+   * A series config is resolved to its [[ts,val], ...] array in one of two
+   * ways:
+   *   - raw:        { segment, metric, agg }         -> one cached query.
+   *   - transformed:{ inputs:[{key,segment,metric,agg}...], transform(row) }
+   *                 -> each input is fetched (through the shared cache) and the
+   *                    `transform` function derives the output value point by
+   *                    point. Inputs are aligned onto the first input's
+   *                    timestamps; the remaining inputs carry their last known
+   *                    value forward, so signals sampled at slightly different
+   *                    times (and a shared reference series) combine cleanly.
+   * Because every input goes through `cachedFetchTable`, a raw signal reused
+   * by many derived panels is fetched only once. */
+  function seriesQueryBody(q) {
+    return {
+      kind: "series", segment: q.segment, metric: q.metric,
+      agg: q.agg || "avg", start: fromMs, end: toMs,
+      max_points: maxPointsOverride(3000),
+    };
+  }
+  function applyTransform(fn, keys, arrays) {
+    const n = arrays.length;
+    if (!n) return [];
+    const base = arrays[0];
+    const ptr = new Array(n).fill(0), cur = new Array(n).fill(null);
+    const out = new Array(base.length);
+    for (let bi = 0; bi < base.length; bi++) {
+      const ts = base[bi][0];
+      for (let k = 0; k < n; k++) {
+        const a = arrays[k];
+        while (ptr[k] < a.length && a[ptr[k]][0] <= ts) { cur[k] = a[ptr[k]][1]; ptr[k]++; }
+      }
+      let v = null;
+      if (cur.every((x) => x != null)) {
+        const row = {};
+        for (let k = 0; k < n; k++) row[keys[k]] = cur[k];
+        const r = Number(fn(row));
+        v = isFinite(r) ? r : null;
+      }
+      out[bi] = [ts, v];
+    }
+    return out;
+  }
+  /* Fetch one metric as [[ts,val], ...]. A sensor/metric with no matching data
+   * (backend reports "No files found" -> HTTP 500) or any other transient query
+   * failure yields an *empty* series rather than failing the whole panel, so a
+   * single missing sensor is simply omitted (like Grafana drops absent series).
+   * The failed query is not cached (see cachedFetchTable), so it is retried on
+   * the next reload -- data that appears later will show up. */
+  async function fetchSeriesXY(q) {
+    try {
+      return toXY(await cachedFetchTable(seriesQueryBody(q)), "value");
+    } catch (e) {
+      console.warn("query failed (treated as empty series):",
+        q.segment, q.metric, (e && e.message) || e);
+      return [];
+    }
+  }
+  async function seriesData(sc) {
+    if (sc.transform && sc.inputs) {
+      const keys = sc.inputs.map((q) => q.key);
+      const arrays = await Promise.all(sc.inputs.map(fetchSeriesXY));
+      return applyTransform(sc.transform, keys, arrays);
+    }
+    return fetchSeriesXY(sc);
+  }
+
+  /* ---- "flag" panel: momentary binary indicator ------------------------
+   * A flag panel does not plot a line. It reduces each series to its most
+   * recent (last non-null) value and renders it as a labelled badge. The
+   * mapping value -> { text, color, fg } is domain-specific and supplied by
+   * the panel config as `cfg.flag.state(value)`, keeping the renderer generic
+   * (e.g. a window contact "open/closed", or a computed "ventilate now" flag
+   * derived from the latest sample of a transformed series). */
+  function latestValue(xy) {
+    for (let i = xy.length - 1; i >= 0; i--) if (xy[i][1] != null) return xy[i][1];
+    return null;
+  }
+  function renderFlagPanel(el, cfg, results) {
+    const stateFn = (cfg.flag && cfg.flag.state) ||
+      ((v) => ({ text: fmtTip(v), color: "#e6e6e6" }));
+    const wrap = document.createElement("div");
+    wrap.className = "flags";
+    results.forEach(({ sc, data }) => {
+      const v = latestValue(data);
+      const st = v == null ? { text: "—", color: "#eef0f2", fg: "#8b949e" } : stateFn(v);
+      const cell = document.createElement("div");
+      cell.className = "flag";
+      cell.style.background = st.color;
+      if (st.fg) cell.style.color = st.fg;
+      const name = document.createElement("div");
+      name.className = "flag-name";
+      name.textContent = sc.label;
+      const val = document.createElement("div");
+      val.className = "flag-value";
+      val.textContent = st.text;
+      cell.appendChild(name);
+      cell.appendChild(val);
+      wrap.appendChild(cell);
+    });
+    el.innerHTML = "";
+    el.appendChild(wrap);
   }
 
   /* ---- ECharts option builders ---------------------------------------- */
@@ -325,7 +450,7 @@
         name: sc.label, type: "line", yAxisIndex: yIdx,
         showSymbol: false, sampling: "lttb", smooth: !!sc.smooth, step,
         connectNulls: false,
-        lineStyle: { width: sc.width == null ? 1 : sc.width, color: sc.color },
+        lineStyle: { width: sc.width == null ? 1 : sc.width, color: sc.color, type: sc.dash || "solid" },
         itemStyle: { color: sc.color },
         areaStyle: sc.fillOpacity ? { opacity: sc.fillOpacity / 100, color: sc.color } : undefined,
         markLine: thresholdMarkLine(sc),
@@ -658,16 +783,20 @@
       if (!this.dirty || this._busy) return;
       this._busy = true;
       this.dirty = false;
-      this.ensureChart();
-      this.chart.resize();
+      const cfg = this.cfg;
+      // A "flag" panel renders plain DOM badges, not an ECharts canvas.
+      if (cfg.type !== "flag") { this.ensureChart(); this.chart.resize(); }
       bump(1);
       try {
-        const cfg = this.cfg;
         // Remember the legend on/off state so toggles persist across reloads.
-        const legendSel = this.legendSelection();
-        if (cfg.type === "daily") {
+        const legendSel = this.chart ? this.legendSelection() : undefined;
+        if (cfg.type === "flag") {
+          const results = await Promise.all(cfg.series.map(async (sc) =>
+            ({ sc, data: await seriesData(sc) })));
+          renderFlagPanel(this.chartEl, cfg, results);
+        } else if (cfg.type === "daily") {
           const { start, end } = panelRange(cfg);
-          const table = await fetchTable({
+          const table = await cachedFetchTable({
             kind: cfg.kind, session: cfg.session,
             start, end, max_points: maxPointsOverride(2000),
           });
@@ -675,12 +804,7 @@
         } else {
           const map = new Map();
           await Promise.all(cfg.series.map(async (sc) => {
-            const table = await fetchTable({
-              kind: "series", segment: sc.segment, metric: sc.metric,
-              agg: sc.agg || "avg", start: fromMs, end: toMs,
-              max_points: maxPointsOverride(3000),
-            });
-            map.set(sc, toXY(table, "value"));
+            map.set(sc, await seriesData(sc));
           }));
           if (cfg.type === "state") {
             this.chart.setOption(buildStateBand(cfg, map.get(cfg.series[0])), true);
@@ -691,13 +815,17 @@
         }
         this.loaded = true;
         // Replay the current synced zoom onto this freshly-loaded panel.
-        if (zoomWindow) {
+        if (zoomWindow && this.chart) {
           this.chart.dispatchAction({
             type: "dataZoom", startValue: zoomWindow.s, endValue: zoomWindow.e,
           });
         }
       } catch (e) {
-        this.chart.setOption({ title: { text: "Error: " + e.message, left: "center", top: "middle", textStyle: { color: "#e02f44", fontSize: 12 } } });
+        if (this.chart) {
+          this.chart.setOption({ title: { text: "Error: " + e.message, left: "center", top: "middle", textStyle: { color: "#e02f44", fontSize: 12 } } });
+        } else {
+          this.chartEl.innerHTML = '<div class="flag-error">Error: ' + e.message + "</div>";
+        }
       } finally {
         bump(-1);
         this._busy = false;
@@ -806,6 +934,7 @@
     toMs = parseLocal(toIn.value);
     if (!(fromMs < toMs)) { setStatus("Invalid range"); return; }
     zoomWindow = null;                       // fresh data -> reset synced zoom
+    queryCache.clear();                      // drop shared query results for the old window
     panels.forEach((p) => p.markDirty());    // visible ones reload immediately
   }
 
@@ -851,11 +980,50 @@
 
 
 
+  /* ---- global header links (config-driven, generic) --------------------
+   * Any dashboard may expose a set of external links (`DASHBOARD.links`),
+   * shown in the top bar next to the title -- e.g. links to related admin
+   * UIs. Purely declarative; see the dashboard config. */
+  function renderHeaderLinks() {
+    const links = DASHBOARD.links || [];
+    const topbar = document.querySelector(".topbar");
+    if (!links.length || !topbar) return;
+    const nav = document.createElement("nav");
+    nav.className = "links";
+    links.forEach((l) => {
+      const a = document.createElement("a");
+      a.href = l.url;
+      a.textContent = l.label;
+      a.target = l.target || "_blank";
+      a.rel = "noopener noreferrer";
+      nav.appendChild(a);
+    });
+    const titleEl = document.getElementById("pageTitle");
+    if (titleEl && titleEl.parentNode === topbar) topbar.insertBefore(nav, titleEl.nextSibling);
+    else topbar.appendChild(nav);
+  }
+
+  /* ---- auto-refresh -----------------------------------------------------
+   * While enabled (the "Auto-Refresh" checkbox) and the range is a rolling
+   * "Last *" selection (quick range, not "custom"), keep the view live by
+   * advancing the window to `now` on a fixed interval. A manual/custom range
+   * is left untouched. Skips work while the tab is hidden. */
+  const AUTO_REFRESH_MS = 15000;
+  function startAutoRefresh() {
+    setInterval(() => {
+      if (autoRefreshIn && !autoRefreshIn.checked) return;
+      if (document.hidden) return;
+      if (quickSel.value === "custom") return;
+      setQuickRange(parseInt(quickSel.value, 10));
+    }, AUTO_REFRESH_MS);
+  }
+
   /* ---- wire up -------------------------------------------------------- */
   function init() {
     document.title = DASHBOARD.title;
     const titleEl = document.getElementById("pageTitle");
     if (titleEl) titleEl.textContent = DASHBOARD.title;
+    renderHeaderLinks();
     DASHBOARD.rows.forEach((r) => boardEl.appendChild(buildRow(r)));
     panels.forEach((p) => { p.host.__panel = p; observer.observe(p.host); });
 
@@ -868,6 +1036,7 @@
     });
     document.getElementById("resetZoom").addEventListener("click", resetZoom);
     maxPointsIn.addEventListener("change", () => {
+      queryCache.clear();                    // resolution changed -> re-query
       panels.forEach((p) => p.markDirty());
     });
     document.getElementById("shiftBack").addEventListener("click", () => shift(-1));
@@ -878,6 +1047,9 @@
 
     // Initial window: last 24h.
     setQuickRange(86400000);
+
+    // Keep rolling "Last *" ranges live (every 15s).
+    startAutoRefresh();
   }
 
   init();

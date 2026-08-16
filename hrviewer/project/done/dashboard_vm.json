@@ -1,0 +1,2999 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "Duerenwettersbacher",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 5,
+  "links": [],
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 35,
+      "panels": [],
+      "title": "General",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Heizung",
+            "axisPlacement": "auto",
+            "axisSoftMin": 20,
+            "axisWidth": 60,
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "showValues": false,
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "decimals": 0,
+          "mappings": [],
+          "max": 50,
+          "min": 20,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Strom"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "watt"
+              },
+              {
+                "id": "min",
+                "value": 0
+              },
+              {
+                "id": "max",
+                "value": 135
+              },
+              {
+                "id": "custom.axisPlacement",
+                "value": "hidden"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 21,
+        "x": 0,
+        "y": 1
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "width": 250
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "disableTextWrap": false,
+          "editorMode": "builder",
+          "expr": "Temperature{sensor=\"0xa4c1383c7d3c4cb5\"}",
+          "fullMetaSearch": false,
+          "hide": false,
+          "includeNullMetadata": true,
+          "legendFormat": "Warmwasser",
+          "range": true,
+          "refId": "B",
+          "useBackend": false
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "disableTextWrap": false,
+          "editorMode": "builder",
+          "expr": "power{sensor=\"0xa4c138edbd20f773\"}",
+          "fullMetaSearch": true,
+          "hide": false,
+          "includeNullMetadata": true,
+          "legendFormat": "Strom",
+          "range": true,
+          "refId": "F",
+          "useBackend": false
+        }
+      ],
+      "title": "",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 8
+              }
+            ]
+          },
+          "unit": "litre"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 21,
+        "y": 1
+      },
+      "id": 6,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "diff"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "text": {},
+        "textMode": "value",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.3.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "disableTextWrap": false,
+          "editorMode": "builder",
+          "expr": "getBrennerStunden1{sensor=\"Viessmann\"} * 2.4",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
+          "legendFormat": " ",
+          "range": true,
+          "refId": "A",
+          "useBackend": false
+        }
+      ],
+      "title": "Verbrauch",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "Temperature",
+            "axisPlacement": "auto",
+            "axisSoftMax": 20,
+            "axisWidth": 60,
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "smooth",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "always",
+            "showValues": false,
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "dashed"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "transparent",
+                "value": 0
+              },
+              {
+                "color": "blue",
+                "value": 12
+              },
+              {
+                "color": "red",
+                "value": 18
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Garten"
+            },
+            "properties": [
+              {
+                "id": "custom.lineWidth",
+                "value": 3
+              },
+              {
+                "id": "custom.lineStyle",
+                "value": {
+                  "dash": [
+                    0,
+                    10
+                  ],
+                  "fill": "dot"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Time"
+            },
+            "properties": [
+              {
+                "id": "custom.axisPlacement",
+                "value": "hidden"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 21,
+        "x": 0,
+        "y": 5
+      },
+      "id": 25,
+      "options": {
+        "legend": {
+          "calcs": [
+            "last"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Last",
+          "sortDesc": true,
+          "width": 250
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "disableTextWrap": false,
+          "editorMode": "builder",
+          "expr": "Temperature",
+          "fullMetaSearch": false,
+          "includeNullMetadata": true,
+          "legendFormat": "{{sensor}}",
+          "range": true,
+          "refId": "A",
+          "useBackend": false
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x60a423fffe803811",
+            "renamePattern": "Büroschalter"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c138a66cdb21ae",
+            "renamePattern": "Garage Wendy"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292abb11",
+            "renamePattern": "Wohnzimmer"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c1387253897923",
+            "renamePattern": "Gaestedose"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292fc600",
+            "renamePattern": "Schlafzimmer"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292afee5",
+            "renamePattern": "Yuna Alt"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292f6152",
+            "renamePattern": "Aura!!!"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c1384225a2fdc6",
+            "renamePattern": "Bad!!!"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292b470a",
+            "renamePattern": "Kira"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c138ef06c68248",
+            "renamePattern": "Badfenster"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x60a423fffe833581",
+            "renamePattern": "Garderobenschalter"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c1380d85a6455f",
+            "renamePattern": "Espresso"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c138edbd20f773",
+            "renamePattern": "Heizung"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xf0d1b8be2409fc48",
+            "renamePattern": "Werkstatt"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xbc33acfffe5d27d5",
+            "renamePattern": "Fernbedienung"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00290fb077",
+            "renamePattern": "Buero"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x44e2f8fffe27e73c",
+            "renamePattern": "Aura"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x44e2f8fffe33bcad",
+            "renamePattern": "Bad"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c1383c7d3c4cb5",
+            "renamePattern": "WW Tank"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b0026b82cce",
+            "renamePattern": "Netzwerk"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b002a6d3c44",
+            "renamePattern": "Yuna Neu"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b002a6d6fd8",
+            "renamePattern": "Keller"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x94deb8fffe41e3c0",
+            "renamePattern": "Gaestesensor"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x001788010ea481b2",
+            "renamePattern": "Philips"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b002a50c50a",
+            "renamePattern": "Gaestebad"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00158d00087be14f",
+            "renamePattern": "Garten"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00252be456",
+            "renamePattern": "Buero X"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00252be376",
+            "renamePattern": "Hobby"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b0022d5a1f7",
+            "renamePattern": "Waschraum"
+          }
+        },
+        {
+          "id": "filterFieldsByName",
+          "options": {
+            "include": {
+              "names": [
+                "Time",
+                "Hobby",
+                "Buero X",
+                "Buero",
+                "Wohnzimmer",
+                "Kira",
+                "Schlafzimmer",
+                "0x00124b002a50c346",
+                "Gaestebad",
+                "Yuna Neu",
+                "Keller",
+                "Garten",
+                "Aura",
+                "Bad",
+                "Gaestesensor",
+                "Waschraum"
+              ]
+            }
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 3,
+        "x": 21,
+        "y": 5
+      },
+      "id": 23,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "# [Zigbee](http://dietpi:9090)\n# [IOBroker](http://dietpi:8081)\n# [Fritz!Box](http://fritz.box)\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "12.3.3",
+      "title": "Links",
+      "type": "text"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 12
+      },
+      "id": 32,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "Rel. Feuchte",
+                "axisPlacement": "auto",
+                "axisWidth": 60,
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "smooth",
+                "lineStyle": {
+                  "fill": "solid"
+                },
+                "lineWidth": 1,
+                "pointSize": 1,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "always",
+                "showValues": false,
+                "spanNulls": true,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "dashed"
+                }
+              },
+              "fieldMinMax": false,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "transparent",
+                    "value": 0
+                  },
+                  {
+                    "color": "blue",
+                    "value": 12
+                  },
+                  {
+                    "color": "red",
+                    "value": 18
+                  }
+                ]
+              },
+              "unit": "humidity"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Garten"
+                },
+                "properties": [
+                  {
+                    "id": "custom.lineWidth",
+                    "value": 3
+                  },
+                  {
+                    "id": "custom.lineStyle",
+                    "value": {
+                      "dash": [
+                        0,
+                        10
+                      ],
+                      "fill": "dot"
+                    }
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Time"
+                },
+                "properties": [
+                  {
+                    "id": "custom.axisPlacement",
+                    "value": "hidden"
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 7,
+            "w": 21,
+            "x": 0,
+            "y": 13
+          },
+          "id": 26,
+          "options": {
+            "legend": {
+              "calcs": [
+                "last"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Last",
+              "sortDesc": true,
+              "width": 250
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "12.3.3",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+              },
+              "disableTextWrap": false,
+              "editorMode": "builder",
+              "expr": "Humidity",
+              "fullMetaSearch": false,
+              "includeNullMetadata": true,
+              "legendFormat": "{{sensor}}",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "",
+          "transformations": [
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe803811",
+                "renamePattern": "Büroschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138a66cdb21ae",
+                "renamePattern": "Garage Wendy"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292abb11",
+                "renamePattern": "Wohnzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1387253897923",
+                "renamePattern": "Gaestedose"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292fc600",
+                "renamePattern": "Schlafzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292afee5",
+                "renamePattern": "Yuna Alt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292f6152",
+                "renamePattern": "Aura!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1384225a2fdc6",
+                "renamePattern": "Bad!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292b470a",
+                "renamePattern": "Kira"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138ef06c68248",
+                "renamePattern": "Badfenster"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe833581",
+                "renamePattern": "Garderobenschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1380d85a6455f",
+                "renamePattern": "Espresso"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138edbd20f773",
+                "renamePattern": "Heizung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xf0d1b8be2409fc48",
+                "renamePattern": "Werkstatt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xbc33acfffe5d27d5",
+                "renamePattern": "Fernbedienung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00290fb077",
+                "renamePattern": "Buero"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe27e73c",
+                "renamePattern": "Aura"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe33bcad",
+                "renamePattern": "Bad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1383c7d3c4cb5",
+                "renamePattern": "WW Tank"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0026b82cce",
+                "renamePattern": "Netzwerk"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d3c44",
+                "renamePattern": "Yuna Neu"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d6fd8",
+                "renamePattern": "Keller"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x94deb8fffe41e3c0",
+                "renamePattern": "Gaestesensor"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x001788010ea481b2",
+                "renamePattern": "Philips"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a50c50a",
+                "renamePattern": "Gaestebad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00158d00087be14f",
+                "renamePattern": "Garten"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be456",
+                "renamePattern": "Buero X"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be376",
+                "renamePattern": "Hobby"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0022d5a1f7",
+                "renamePattern": "Waschraum"
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "mappings": [
+                {
+                  "options": {
+                    "0": {
+                      "index": 0,
+                      "text": "Open"
+                    },
+                    "1": {
+                      "index": 1,
+                      "text": "Closed"
+                    }
+                  },
+                  "type": "value"
+                }
+              ],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "red",
+                    "value": 0
+                  },
+                  {
+                    "color": "green",
+                    "value": 1
+                  }
+                ]
+              },
+              "unit": "bool_on_off"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 7,
+            "w": 3,
+            "x": 21,
+            "y": 13
+          },
+          "id": 22,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "auto",
+            "orientation": "auto",
+            "percentChangeColorMode": "standard",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "showPercentChange": false,
+            "text": {
+              "titleSize": 22,
+              "valueSize": 22
+            },
+            "textMode": "value_and_name",
+            "wideLayout": true
+          },
+          "pluginVersion": "12.3.3",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+              },
+              "editorMode": "builder",
+              "expr": "contact{sensor=\"0xa4c138ef06c68248\", job=\"mqtt2prometheus\"}",
+              "legendFormat": "Bad",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "Fenster",
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "Abs. Feuchte",
+                "axisPlacement": "auto",
+                "axisWidth": 60,
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "stepBefore",
+                "lineStyle": {
+                  "fill": "solid"
+                },
+                "lineWidth": 1,
+                "pointSize": 1,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "always",
+                "showValues": false,
+                "spanNulls": true,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "dashed"
+                }
+              },
+              "fieldMinMax": false,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "transparent",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "congm3"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Time"
+                },
+                "properties": [
+                  {
+                    "id": "custom.axisPlacement",
+                    "value": "hidden"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Garten"
+                },
+                "properties": [
+                  {
+                    "id": "custom.lineStyle",
+                    "value": {
+                      "dash": [
+                        0,
+                        10
+                      ],
+                      "fill": "dot"
+                    }
+                  },
+                  {
+                    "id": "custom.lineWidth",
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 7,
+            "w": 21,
+            "x": 0,
+            "y": 20
+          },
+          "id": 27,
+          "options": {
+            "legend": {
+              "calcs": [
+                "last"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Name",
+              "sortDesc": false,
+              "width": 250
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "12.3.3",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(sensor)((6.112 * exp((17.67 * Temperature) / (Temperature + 243.5)) * Humidity * 2.1674)/(273.15 + Temperature))",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "",
+          "transformations": [
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe803811",
+                "renamePattern": "Büroschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138a66cdb21ae",
+                "renamePattern": "Garage Wendy"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292abb11",
+                "renamePattern": "Wohnzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1387253897923",
+                "renamePattern": "Gaestedose"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292fc600",
+                "renamePattern": "Schlafzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292afee5",
+                "renamePattern": "Yuna Alt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292f6152",
+                "renamePattern": "Aura!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1384225a2fdc6",
+                "renamePattern": "Bad!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292b470a",
+                "renamePattern": "Kira"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138ef06c68248",
+                "renamePattern": "Badfenster"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe833581",
+                "renamePattern": "Garderobenschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1380d85a6455f",
+                "renamePattern": "Espresso"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138edbd20f773",
+                "renamePattern": "Heizung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xf0d1b8be2409fc48",
+                "renamePattern": "Werkstatt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xbc33acfffe5d27d5",
+                "renamePattern": "Fernbedienung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00290fb077",
+                "renamePattern": "Buero"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe27e73c",
+                "renamePattern": "Aura"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe33bcad",
+                "renamePattern": "Bad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1383c7d3c4cb5",
+                "renamePattern": "WW Tank"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0026b82cce",
+                "renamePattern": "Netzwerk"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d3c44",
+                "renamePattern": "Yuna Neu"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d6fd8",
+                "renamePattern": "Keller"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x94deb8fffe41e3c0",
+                "renamePattern": "Gaestesensor"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x001788010ea481b2",
+                "renamePattern": "Philips"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a50c50a",
+                "renamePattern": "Gaestebad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00158d00087be14f",
+                "renamePattern": "Garten"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be456",
+                "renamePattern": "Buero X"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be376",
+                "renamePattern": "Hobby"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0022d5a1f7",
+                "renamePattern": "Waschraum"
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "description": "",
+          "fieldConfig": {
+            "defaults": {},
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 7,
+            "w": 3,
+            "x": 21,
+            "y": 20
+          },
+          "id": 19,
+          "options": {
+            "code": {
+              "language": "plaintext",
+              "showLineNumbers": false,
+              "showMiniMap": false
+            },
+            "content": "<img _ngcontent-ng-c1652298196=\"\" class=\"image\" src=\"https://images.ctfassets.net/4ivszygz9914/3VXUPEfbyownyTBPW8jjHE/cd3880ba5cc4be9c5e588669ce465a9a/taupunktkurve.png?fm=webp\" alt=\"Taupunkt Taupunktkurve maximale Luftfeuchte\" title=\"Bild: ergänzt von WetterOnline, Original: Wikimedia Commons / Retemirabile\">\n",
+            "mode": "html"
+          },
+          "pluginVersion": "12.3.3",
+          "title": "",
+          "type": "text"
+        }
+      ],
+      "title": "Humidity",
+      "type": "row"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 13
+      },
+      "id": 30,
+      "panels": [],
+      "title": "Lüften",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisGridShow": false,
+            "axisLabel": "Lüften",
+            "axisPlacement": "auto",
+            "axisWidth": 60,
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "stepBefore",
+            "lineStyle": {
+              "fill": "solid"
+            },
+            "lineWidth": 1,
+            "pointSize": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "always",
+            "showValues": false,
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "dashed"
+            }
+          },
+          "decimals": 1,
+          "fieldMinMax": false,
+          "mappings": [
+            {
+              "options": {
+                "1": {
+                  "color": "green",
+                  "index": 0,
+                  "text": "Ja/Yes"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "max": 1,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "transparent",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Time"
+            },
+            "properties": [
+              {
+                "id": "custom.axisPlacement",
+                "value": "hidden"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Garten"
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": true,
+                  "tooltip": true,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 21,
+        "x": 0,
+        "y": 14
+      },
+      "id": 34,
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true,
+          "sortBy": "Last *",
+          "sortDesc": true,
+          "width": 250
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.3",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "disableTextWrap": false,
+          "editorMode": "code",
+          "expr": "sum by(sensor)(\nclamp_max(\n  6.112*exp(17.67*Temperature/(Temperature+243.5))\n  / (scalar(exp(17.67*Temperature{sensor=\"0x00158d00087be14f\"}/(Temperature{sensor=\"0x00158d00087be14f\"}+243.5)))*6.112*scalar(Humidity{sensor=\"0x00158d00087be14f\"})/100)\n, 1)\n*\nclamp_max(\n  (\n    1.006*Temperature\n    + 0.62198*(6.112*exp(17.67*Temperature/(Temperature+243.5))*Humidity/100)\n      /(1013.25 - 6.112*exp(17.67*Temperature/(Temperature+243.5))*Humidity/100)\n      *(2501+1.86*Temperature)\n  )\n  / (\n    1.006*scalar(Temperature{sensor=\"0x00158d00087be14f\"})\n    + 0.62198*(scalar(exp(17.67*Temperature{sensor=\"0x00158d00087be14f\"}/(Temperature{sensor=\"0x00158d00087be14f\"}+243.5)))*6.112*scalar(Humidity{sensor=\"0x00158d00087be14f\"})/100)\n      /(1013.25 - scalar(exp(17.67*Temperature{sensor=\"0x00158d00087be14f\"}/(Temperature{sensor=\"0x00158d00087be14f\"}+243.5)))*6.112*scalar(Humidity{sensor=\"0x00158d00087be14f\"})/100)\n      *(2501+1.86*scalar(Temperature{sensor=\"0x00158d00087be14f\"}))\n  )\n, 1)\n*\nclamp_max(\n  (Temperature+273.15)/(scalar(Temperature{sensor=\"0x00158d00087be14f\"})+273.15)\n, 1)\n)",
+          "fullMetaSearch": false,
+          "hide": false,
+          "includeNullMetadata": true,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A",
+          "useBackend": false
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x60a423fffe803811",
+            "renamePattern": "Büroschalter"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c138a66cdb21ae",
+            "renamePattern": "Garage Wendy"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292abb11",
+            "renamePattern": "Wohnzimmer"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c1387253897923",
+            "renamePattern": "Gaestedose"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292fc600",
+            "renamePattern": "Schlafzimmer"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292afee5",
+            "renamePattern": "Yuna Alt"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292f6152",
+            "renamePattern": "Aura!!!"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c1384225a2fdc6",
+            "renamePattern": "Bad!!!"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00292b470a",
+            "renamePattern": "Kira"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c138ef06c68248",
+            "renamePattern": "Badfenster"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x60a423fffe833581",
+            "renamePattern": "Garderobenschalter"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c1380d85a6455f",
+            "renamePattern": "Espresso"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c138edbd20f773",
+            "renamePattern": "Heizung"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xf0d1b8be2409fc48",
+            "renamePattern": "Werkstatt"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xbc33acfffe5d27d5",
+            "renamePattern": "Fernbedienung"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00290fb077",
+            "renamePattern": "Buero"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x44e2f8fffe27e73c",
+            "renamePattern": "Aura"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x44e2f8fffe33bcad",
+            "renamePattern": "Bad"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0xa4c1383c7d3c4cb5",
+            "renamePattern": "WW Tank"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b0026b82cce",
+            "renamePattern": "Netzwerk"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b002a6d3c44",
+            "renamePattern": "Yuna Neu"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b002a6d6fd8",
+            "renamePattern": "Keller"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x94deb8fffe41e3c0",
+            "renamePattern": "Gaestesensor"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x001788010ea481b2",
+            "renamePattern": "Philips"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b002a50c50a",
+            "renamePattern": "Gaestebad"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00158d00087be14f",
+            "renamePattern": "Garten"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00252be456",
+            "renamePattern": "Buero X"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b00252be376",
+            "renamePattern": "Hobby"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "0x00124b0022d5a1f7",
+            "renamePattern": "Waschraum"
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 21
+      },
+      "id": 29,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "Enthalpie",
+                "axisPlacement": "auto",
+                "axisWidth": 60,
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "stepBefore",
+                "lineStyle": {
+                  "fill": "solid"
+                },
+                "lineWidth": 1,
+                "pointSize": 1,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "always",
+                "showValues": false,
+                "spanNulls": true,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "dashed"
+                }
+              },
+              "fieldMinMax": false,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "transparent",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "kJ/kg"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Time"
+                },
+                "properties": [
+                  {
+                    "id": "custom.axisPlacement",
+                    "value": "hidden"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Garten"
+                },
+                "properties": [
+                  {
+                    "id": "custom.lineStyle",
+                    "value": {
+                      "dash": [
+                        0,
+                        10
+                      ],
+                      "fill": "dot"
+                    }
+                  },
+                  {
+                    "id": "custom.lineWidth",
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 7,
+            "w": 21,
+            "x": 0,
+            "y": 22
+          },
+          "id": 31,
+          "options": {
+            "legend": {
+              "calcs": [
+                "last"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Last",
+              "sortDesc": false,
+              "width": 250
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "12.3.3",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(sensor)(\n  1.006 * Temperature\n  + 0.62198\n    * (6.112 * exp((17.67 * Temperature) / (Temperature + 243.5)) * Humidity / 100)\n    / (1013.25 - (6.112 * exp((17.67 * Temperature) / (Temperature + 243.5)) * Humidity / 100))\n    * (2501 + 1.86 * Temperature)\n)",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "",
+          "transformations": [
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe803811",
+                "renamePattern": "Büroschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138a66cdb21ae",
+                "renamePattern": "Garage Wendy"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292abb11",
+                "renamePattern": "Wohnzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1387253897923",
+                "renamePattern": "Gaestedose"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292fc600",
+                "renamePattern": "Schlafzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292afee5",
+                "renamePattern": "Yuna Alt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292f6152",
+                "renamePattern": "Aura!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1384225a2fdc6",
+                "renamePattern": "Bad!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292b470a",
+                "renamePattern": "Kira"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138ef06c68248",
+                "renamePattern": "Badfenster"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe833581",
+                "renamePattern": "Garderobenschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1380d85a6455f",
+                "renamePattern": "Espresso"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138edbd20f773",
+                "renamePattern": "Heizung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xf0d1b8be2409fc48",
+                "renamePattern": "Werkstatt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xbc33acfffe5d27d5",
+                "renamePattern": "Fernbedienung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00290fb077",
+                "renamePattern": "Buero"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe27e73c",
+                "renamePattern": "Aura"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe33bcad",
+                "renamePattern": "Bad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1383c7d3c4cb5",
+                "renamePattern": "WW Tank"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0026b82cce",
+                "renamePattern": "Netzwerk"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d3c44",
+                "renamePattern": "Yuna Neu"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d6fd8",
+                "renamePattern": "Keller"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x94deb8fffe41e3c0",
+                "renamePattern": "Gaestesensor"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x001788010ea481b2",
+                "renamePattern": "Philips"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a50c50a",
+                "renamePattern": "Gaestebad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00158d00087be14f",
+                "renamePattern": "Garten"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be456",
+                "renamePattern": "Buero X"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be376",
+                "renamePattern": "Hobby"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0022d5a1f7",
+                "renamePattern": "Waschraum"
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "description": "",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "Taupunkt",
+                "axisPlacement": "auto",
+                "axisWidth": 60,
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "stepBefore",
+                "lineStyle": {
+                  "fill": "solid"
+                },
+                "lineWidth": 1,
+                "pointSize": 1,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "always",
+                "showValues": false,
+                "spanNulls": true,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "dashed"
+                }
+              },
+              "fieldMinMax": false,
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "transparent",
+                    "value": 0
+                  }
+                ]
+              },
+              "unit": "celsius"
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Time"
+                },
+                "properties": [
+                  {
+                    "id": "custom.axisPlacement",
+                    "value": "hidden"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Garten"
+                },
+                "properties": [
+                  {
+                    "id": "custom.lineStyle",
+                    "value": {
+                      "dash": [
+                        0,
+                        10
+                      ],
+                      "fill": "dot"
+                    }
+                  },
+                  {
+                    "id": "custom.lineWidth",
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 7,
+            "w": 21,
+            "x": 0,
+            "y": 29
+          },
+          "id": 33,
+          "options": {
+            "legend": {
+              "calcs": [
+                "last"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Last",
+              "sortDesc": false,
+              "width": 250
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "12.3.3",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+              },
+              "disableTextWrap": false,
+              "editorMode": "code",
+              "expr": "sum by(sensor)(\n  243.5 * (ln(Humidity/100) + (17.67*Temperature)/(Temperature+243.5))\n  / (17.67 - (ln(Humidity/100) + (17.67*Temperature)/(Temperature+243.5)))\n)",
+              "fullMetaSearch": false,
+              "hide": false,
+              "includeNullMetadata": true,
+              "legendFormat": "__auto",
+              "range": true,
+              "refId": "A",
+              "useBackend": false
+            }
+          ],
+          "title": "",
+          "transformations": [
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe803811",
+                "renamePattern": "Büroschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138a66cdb21ae",
+                "renamePattern": "Garage Wendy"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292abb11",
+                "renamePattern": "Wohnzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1387253897923",
+                "renamePattern": "Gaestedose"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292fc600",
+                "renamePattern": "Schlafzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292afee5",
+                "renamePattern": "Yuna Alt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292f6152",
+                "renamePattern": "Aura!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1384225a2fdc6",
+                "renamePattern": "Bad!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292b470a",
+                "renamePattern": "Kira"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138ef06c68248",
+                "renamePattern": "Badfenster"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe833581",
+                "renamePattern": "Garderobenschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1380d85a6455f",
+                "renamePattern": "Espresso"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138edbd20f773",
+                "renamePattern": "Heizung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xf0d1b8be2409fc48",
+                "renamePattern": "Werkstatt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xbc33acfffe5d27d5",
+                "renamePattern": "Fernbedienung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00290fb077",
+                "renamePattern": "Buero"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe27e73c",
+                "renamePattern": "Aura"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe33bcad",
+                "renamePattern": "Bad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1383c7d3c4cb5",
+                "renamePattern": "WW Tank"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0026b82cce",
+                "renamePattern": "Netzwerk"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d3c44",
+                "renamePattern": "Yuna Neu"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d6fd8",
+                "renamePattern": "Keller"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x94deb8fffe41e3c0",
+                "renamePattern": "Gaestesensor"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x001788010ea481b2",
+                "renamePattern": "Philips"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a50c50a",
+                "renamePattern": "Gaestebad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00158d00087be14f",
+                "renamePattern": "Garten"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be456",
+                "renamePattern": "Buero X"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be376",
+                "renamePattern": "Hobby"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0022d5a1f7",
+                "renamePattern": "Waschraum"
+              }
+            }
+          ],
+          "type": "timeseries"
+        }
+      ],
+      "title": "Enthalpy",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 22
+      },
+      "id": 28,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+          },
+          "description": "Link Quality",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisBorderShow": false,
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "Signal Level",
+                "axisPlacement": "left",
+                "axisWidth": 60,
+                "barAlignment": 0,
+                "barWidthFactor": 0.6,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "insertNulls": false,
+                "lineInterpolation": "smooth",
+                "lineStyle": {
+                  "fill": "solid"
+                },
+                "lineWidth": 0.5,
+                "pointSize": 1,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "always",
+                "showValues": false,
+                "spanNulls": true,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "fieldMinMax": false,
+              "mappings": [],
+              "max": 160,
+              "min": 0,
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": 0
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Time"
+                },
+                "properties": [
+                  {
+                    "id": "custom.axisPlacement",
+                    "value": "hidden"
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 21,
+            "x": 0,
+            "y": 37
+          },
+          "id": 17,
+          "options": {
+            "legend": {
+              "calcs": [
+                "last",
+                "mean"
+              ],
+              "displayMode": "table",
+              "placement": "right",
+              "showLegend": true,
+              "sortBy": "Mean",
+              "sortDesc": true,
+              "width": 250
+            },
+            "tooltip": {
+              "hideZeros": false,
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "12.3.3",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "ef983daa-6ae7-437e-8959-b5663b63affe"
+              },
+              "editorMode": "builder",
+              "expr": "Linkquality",
+              "legendFormat": "{{sensor}}",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "",
+          "transformations": [
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe803811",
+                "renamePattern": "Büroschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138a66cdb21ae",
+                "renamePattern": "Garage Wendy"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292abb11",
+                "renamePattern": "Wohnzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1387253897923",
+                "renamePattern": "Gaestedose"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292fc600",
+                "renamePattern": "Schlafzimmer"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292afee5",
+                "renamePattern": "Yuna Alt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292f6152",
+                "renamePattern": "Aura!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1384225a2fdc6",
+                "renamePattern": "Bad!!!"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00292b470a",
+                "renamePattern": "Kira"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138ef06c68248",
+                "renamePattern": "Badfenster"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00158d00087be14f",
+                "renamePattern": "Garten"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x60a423fffe833581",
+                "renamePattern": "Garderobenschalter"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1380d85a6455f",
+                "renamePattern": "Espresso"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c138edbd20f773",
+                "renamePattern": "Heizung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xf0d1b8be2409fc48",
+                "renamePattern": "Werkstatt"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xbc33acfffe5d27d5",
+                "renamePattern": "Fernbedienung"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00290fb077",
+                "renamePattern": "Buero"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe27e73c",
+                "renamePattern": "Aura"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x44e2f8fffe33bcad",
+                "renamePattern": "Bad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0xa4c1383c7d3c4cb5",
+                "renamePattern": "WW Tank"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0026b82cce",
+                "renamePattern": "Netzwerk"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d3c44",
+                "renamePattern": "Yuna Neu"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a6d6fd8",
+                "renamePattern": "Keller"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x94deb8fffe41e3c0",
+                "renamePattern": "Gaestesensor"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x001788010ea481b2",
+                "renamePattern": "Philips"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b002a50c50a",
+                "renamePattern": "Gaestebad"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be456",
+                "renamePattern": "Buero X"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b00252be376",
+                "renamePattern": "Hobby"
+              }
+            },
+            {
+              "id": "renameByRegex",
+              "options": {
+                "regex": "0x00124b0022d5a1f7",
+                "renamePattern": "Waschraum"
+              }
+            }
+          ],
+          "type": "timeseries"
+        },
+        {
+          "description": "",
+          "fieldConfig": {
+            "defaults": {},
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 3,
+            "x": 21,
+            "y": 37
+          },
+          "id": 20,
+          "options": {
+            "code": {
+              "language": "plaintext",
+              "showLineNumbers": false,
+              "showMiniMap": false
+            },
+            "content": "<img _ngcontent-ng-c1652298196=\"\" class=\"image\" src=\"https://puuinfo.fi/wp-content/uploads/2020/09/kosteus-de-1024x797.png\" alt=\"Taupunkt Taupunktkurve maximale Luftfeuchte\" title=\"Bild: ergänzt von WetterOnline, Original: Wikimedia Commons / Retemirabile\">",
+            "mode": "html"
+          },
+          "pluginVersion": "12.3.3",
+          "title": "",
+          "type": "text"
+        }
+      ],
+      "title": "Sensors",
+      "type": "row"
+    }
+  ],
+  "preload": false,
+  "refresh": "30s",
+  "schemaVersion": 42,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "30s",
+      "1m",
+      "5m"
+    ]
+  },
+  "timezone": "",
+  "title": "Heating",
+  "uid": "fervykrhtlbswe",
+  "version": 84
+}
