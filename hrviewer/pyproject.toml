@@ -23,6 +23,10 @@ dependencies = [
 mqtt = [
     "paho-mqtt>=2.0",
 ]
+# `--backfill` streams historical data from VictoriaMetrics' CSV export.
+backfill = [
+    "requests>=2.31",
+]
 
 [project.scripts]
 hrv = "xy.hrv.viewer.__main__:main"

@@ -116,6 +116,39 @@ class MqttConfig(Config):
     subscriptions: list[Subscription] = field(default_factory=list)
     metrics: list[Metric] = field(default_factory=list)
 
+    # ---- VictoriaMetrics backfill source (historical data pre-dating the
+    # Hive; the whole reason MQTT-Duck exists is that we *left* VM for the
+    # live path, but its export endpoint is still the source of truth for
+    # everything older than the Hive) ----
+    vm_scheme: str = field(default_factory=lambda: _env("SMD_VM_SCHEME", "http"))
+    vm_host: str = field(default_factory=lambda: _env("SMD_VM_HOST", "proxy.xyan.icu"))
+    vm_port: int = field(default_factory=lambda: int(_env("SMD_VM_PORT", "9090")))
+    vm_export_path: str = field(
+        default_factory=lambda: _env("SMD_VM_EXPORT_PATH", "/api/v1/export/csv")
+    )
+    vm_user: str = field(default_factory=lambda: _env("SMD_VM_USER", "vm_writer"))
+    vm_password: str = field(
+        default_factory=lambda: _env(
+            "SMD_VM_PASSWORD", "tkQa6XahTPi2S7IIpRrDlkYyYY/Vwv5Y7FRnW8cMzcM="
+        )
+    )
+
+    # ---- Backfill walk tuning ----
+    # How many consecutive *empty* days (VM returned nothing) are tolerated
+    # before a series is considered exhausted (no older history exists).
+    backfill_empty_stop_days: int = field(
+        default_factory=lambda: int(_env("SMD_BACKFILL_EMPTY_STOP_DAYS", "14"))
+    )
+    # Hard safety cap on how many days a single series walks back, regardless
+    # of the empty-day streak (bounds worst-case runtime).
+    backfill_max_days: int = field(
+        default_factory=lambda: int(_env("SMD_BACKFILL_MAX_DAYS", "7"))
+    )
+
+    @property
+    def vm_export_url(self) -> str:
+        return f"{self.vm_scheme}://{self.vm_host}:{self.vm_port}{self.vm_export_path}"
+
     def __post_init__(self) -> None:
         if not self.subscriptions:
             self.subscriptions = list(DEFAULT_SUBSCRIPTIONS)

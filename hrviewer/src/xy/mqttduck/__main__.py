@@ -7,7 +7,7 @@ from .app import MqttDuck
 from .config import MqttConfig
 
 
-def build_config(argv: list[str] | None = None) -> MqttConfig:
+def build_config(argv: list[str] | None = None) -> tuple[MqttConfig, argparse.Namespace]:
     cfg = MqttConfig()  # env-based defaults + smarthome mapping
     p = argparse.ArgumentParser(
         prog="mqtt-duck",
@@ -29,6 +29,27 @@ def build_config(argv: list[str] | None = None) -> MqttConfig:
     # Writer
     p.add_argument("--flush-interval", type=float, default=cfg.flush_interval_s)
     p.add_argument("--flush-max", type=int, default=cfg.flush_max_samples)
+    # Backfill (one-shot: fetch missing history from VictoriaMetrics, then
+    # exit -- does not start the MQTT client or the HTTP server).
+    p.add_argument(
+        "--backfill",
+        action="store_true",
+        help="Backfill missing days from VictoriaMetrics export and exit.",
+    )
+    p.add_argument("--vm-host", default=cfg.vm_host)
+    p.add_argument("--vm-port", type=int, default=cfg.vm_port)
+    p.add_argument(
+        "--backfill-empty-stop-days",
+        type=int,
+        default=cfg.backfill_empty_stop_days,
+        help="Consecutive empty VM days before a series is considered exhausted.",
+    )
+    p.add_argument(
+        "--backfill-max-days",
+        type=int,
+        default=cfg.backfill_max_days,
+        help="Hard cap on days walked back per series.",
+    )
     args = p.parse_args(argv)
 
     cfg.host = args.host
@@ -44,11 +65,21 @@ def build_config(argv: list[str] | None = None) -> MqttConfig:
     cfg.mqtt_client_id = args.mqtt_client_id
     cfg.flush_interval_s = args.flush_interval
     cfg.flush_max_samples = args.flush_max
-    return cfg
+    cfg.vm_host = args.vm_host
+    cfg.vm_port = args.vm_port
+    cfg.backfill_empty_stop_days = args.backfill_empty_stop_days
+    cfg.backfill_max_days = args.backfill_max_days
+    return cfg, args
 
 
 def main(argv: list[str] | None = None) -> None:
-    MqttDuck(build_config(argv)).run()
+    cfg, args = build_config(argv)
+    if args.backfill:
+        from .backfill import run_backfill
+
+        run_backfill(cfg)
+        return
+    MqttDuck(cfg).run()
 
 
 if __name__ == "__main__":

@@ -11,6 +11,7 @@ Package layout::
     transform.py  -- MQTT topic/payload -> (sensor, metric, ts, value) samples
     writer.py     -- buffer + writer thread + monthly merge-on-write Hive sink
     client.py     -- paho-mqtt client wiring
+    backfill.py   -- ``--backfill``: fill Hive gaps from VictoriaMetrics export
     app.py        -- MqttDuck(HrViewer): server + ingestion supervisor
     __main__.py   -- CLI entry point
 """
