@@ -48,7 +48,7 @@
     "0x00124b002a6d6fd8", "0x00124b0022d5a1f7", "0x00124b00252be376",
     "0x00124b00290fb077", "0xf0d1b8be2409fc48", "0x00124b002a50c50a",
     "0x00124b00292b470a", "0x00124b002a6d3c44", "0x44e2f8fffe27e73c",
-    "0x94deb8fffe41e3c0",
+    "0x94deb8fffe41e3c0", "0x00124b00252be456",
   ];
   /* Indoor sensors only (for the ventilation flag): all climate minus outdoor. */
   const INDOOR = CLIMATE.filter((id) => id !== REF);
@@ -170,7 +170,7 @@
   };
 
   /* Overview tiles: per-room cards + utilities (Wasser/Strom). */
-  const tileRooms = INDOOR.map((id) => ({
+  const tileRooms = CLIMATE.map((id) => ({
     label: label(id),
     series: { segment: id, metric: "Temperature", agg: "avg" },
     unit: "°C",
