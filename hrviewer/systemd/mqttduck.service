@@ -1,0 +1,16 @@
+[Unit]
+Description=MQTT Duck
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/mqttduck/hrviewer
+Environment=PYTHONPATH=src
+Environment=OMP_NUM_THREADS=1
+ExecStart=/usr/bin/python3 -m xy.mqttduck --port 80 --hive /root/mqttduck/hive --mqtt-user clientabc123 --mqtt-password publicabc123
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

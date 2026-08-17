@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 from .config import Metric, Subscription
 
 
-@dataclass(slots=True, frozen=True)
+@dataclass(frozen=True)
 class Sample:
     sensor: str
     metric: str

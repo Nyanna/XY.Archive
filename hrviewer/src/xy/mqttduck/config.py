@@ -23,7 +23,7 @@ from xy.hrv.viewer.config import Config, _env
 DEFAULT_SM_HIVE_PATH = "/home/user/xyan/XY.Archiv/hrviewer/hive.sm"
 
 
-@dataclass(slots=True, frozen=True)
+@dataclass(frozen=True)
 class Subscription:
     """One MQTT topic to subscribe to plus how to derive the sensor label.
 
@@ -49,7 +49,7 @@ class Subscription:
             return None
 
 
-@dataclass(slots=True, frozen=True)
+@dataclass(frozen=True)
 class Metric:
     """A value to extract from a payload and the metric name to store it under.
 
@@ -73,7 +73,7 @@ class Metric:
         return self.mqtt_name.startswith(".")
 
 
-@dataclass(slots=True)
+@dataclass
 class MqttConfig(Config):
     """MQTT-Duck runtime configuration (extends the HR-Viewer Config)."""
 

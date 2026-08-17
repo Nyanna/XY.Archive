@@ -1,0 +1,16 @@
+[Unit]
+Description=HR Viewer
+After=network.target
+
+[Service]
+Type=simple
+User=hivebee
+WorkingDirectory=/home/admin/hrviewer/hrviewer
+Environment=PYTHONPATH=src
+Environment=OMP_NUM_THREADS=1
+ExecStart=/usr/bin/python3 -m xy.hrv.viewer --port 3000 --hive /home/admin/hive
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
