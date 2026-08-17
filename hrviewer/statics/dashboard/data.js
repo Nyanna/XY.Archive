@@ -10,7 +10,7 @@
 const ARROW_MIME = "application/vnd.apache.arrow.stream";
 
 async function fetchTable(body) {
-  const res = await fetch("/api/query", {
+  const res = await fetch("api/query", {
     method: "POST",
     headers: { "Content-Type": "application/json", "Accept": ARROW_MIME },
     body: JSON.stringify(body),
