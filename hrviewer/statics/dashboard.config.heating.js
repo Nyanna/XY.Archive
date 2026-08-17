@@ -13,7 +13,7 @@
     "0x00124b0022d5a1f7": "Waschraum",
     "0x00124b00252be376": "Hobby",
     "0x00124b00290fb077": "Büro",
-    "0xf0d1b8be2409fc48": "Werkstatt",
+    "0xf0d1b8be2409fc48": "Gasmelder",
     "0x00124b002a50c50a": "Gästebad",
     "0x00124b00292b470a": "Kira",
     "0x00124b002a6d3c44": "Yuna",
@@ -46,7 +46,7 @@
     REF,
     "0x00124b00292abb11", "0x00124b00292fc600", "0x44e2f8fffe33bcad",
     "0x00124b002a6d6fd8", "0x00124b0022d5a1f7", "0x00124b00252be376",
-    "0x00124b00290fb077", "0xf0d1b8be2409fc48", "0x00124b002a50c50a",
+    "0x00124b00290fb077", "0x00124b002a50c50a",
     "0x00124b00292b470a", "0x00124b002a6d3c44", "0x44e2f8fffe27e73c",
     "0x94deb8fffe41e3c0", "0x00124b00252be456",
   ];
