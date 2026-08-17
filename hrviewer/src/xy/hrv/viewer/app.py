@@ -50,6 +50,13 @@ class HrViewer:
         body = handler.rfile.read(length) if length else b""
         req = json.loads(body or b"{}")
 
+        # From here on nothing more is read from the client. Drop the
+        # request-timeout
+        try:
+            handler.connection.settimeout(300)
+        except OSError:
+            pass
+
         now_ms = _now_ms()
         kind = str(req.get("kind", "series")).lower()
         start_ms = int(req.get("start", now_ms - 24 * 3600 * 1000))  # default: 24h
@@ -102,6 +109,7 @@ class HrViewer:
         if not path.is_file():
             handler.send_error(HTTPStatus.NOT_FOUND, "Not found")
             return
+        self._rearm_write_timeout(handler)
         ctype = mimetypes.guess_type(str(path))[0] or "application/octet-stream"
         handler.send_response(HTTPStatus.OK)
         handler.send_header("Content-Type", ctype)
@@ -113,6 +121,7 @@ class HrViewer:
     def _send_bytes(
         self, handler: "_Handler", payload: bytes, ctype: str, cache: str | None = None
     ) -> None:
+        self._rearm_write_timeout(handler)
         handler.send_response(HTTPStatus.OK)
         handler.send_header("Content-Type", ctype)
         handler.send_header("Content-Length", str(len(payload)))
@@ -123,6 +132,15 @@ class HrViewer:
 
     def _send_json(self, handler: "_Handler", obj) -> None:
         self._send_bytes(handler, json.dumps(obj).encode("utf-8"), "application/json")
+
+    @staticmethod
+    def _rearm_write_timeout(handler: "_Handler", seconds: float = 15.0) -> None:
+        """Bound the time spent writing the response to a stalled client,
+        without limiting the (unrelated) time spent computing it."""
+        try:
+            handler.connection.settimeout(seconds)
+        except OSError:
+            pass
 
     # Lifecycle hooks -- subclasses
     def on_start(self) -> None:  # pragma: no cover - default no-op
@@ -162,6 +180,12 @@ class _Server(HTTPServer):
 
 class _Handler(BaseHTTPRequestHandler):
     server_version = "HrViewer/0.1"
+    timeout = 15
+
+    def handle_timeout(self) -> None:
+        # Called by socketserver when `self.timeout` elapses while waiting
+        # for the client. Just drop the connection instead of hanging.
+        self.close_connection = True
 
     def do_GET(self) -> None:  # noqa: N802 (stdlib naming)
         self._guard(self.server.viewer.handle_get)
@@ -174,6 +198,10 @@ class _Handler(BaseHTTPRequestHandler):
             fn(self)
         except BrokenPipeError:
             pass
+        except TimeoutError:
+            # Client stopped sending (read timeout) or stopped reading
+            # (write timeout, see _rearm_write_timeout). Just drop it.
+            self.close_connection = True
         except Exception as exc:  # keep the server alive on request errors
             self.send_error(HTTPStatus.INTERNAL_SERVER_ERROR, str(exc))
 
