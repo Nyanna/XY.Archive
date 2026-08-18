@@ -3,7 +3,7 @@
  * ECharts series (`type: "custom"`). */
 "use strict";
 import { pad } from "./time.js";
-import { AXIS, GRID_TOP, gridBottom, timeXAxis, insideZoom, annotationSeries } from "./charts.common.js";
+import { AXIS, GRID_TOP, gridBottom, timeXAxis, insideZoom, annotationSeries, tooltipPosition } from "./charts.common.js";
 
 /* Collapse runs of same value into segments, breaking across data gaps. */
 function buildStageSegments(xy, states) {
@@ -79,6 +79,7 @@ export function buildStateBand(cfg, xy, range) {
     textStyle: { color: "#1f2328" },
     tooltip: {
       trigger: "axis", axisPointer: { type: "line" },
+      position: tooltipPosition(gridBottom(cfg)),
       formatter: (ps) => {
         const it = ps && ps[0];
         if (!it || !it.value) return "";

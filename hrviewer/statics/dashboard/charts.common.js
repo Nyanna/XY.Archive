@@ -175,6 +175,27 @@ export const DEFAULT_PALETTE = [
   "#fb7293", "#e7bcf3", "#8378ea",
 ];
 
+/* Tooltip vertical position is pinned to the panel's bottom edge (just
+ * above the X-axis, or where it would be for axis-less panels), regardless
+ * of tooltip content size -- keeps large/multi-row tooltips readable
+ * instead of covering the cursor or spilling past the plot. Horizontal
+ * position still tracks the cursor/point (flipped near the right edge) so
+ * it stays close to what's being hovered. `bottomMargin` = the panel's
+ * grid `bottom` value (e.g. from `gridBottom(cfg)`). */
+export function tooltipPosition(bottomMargin) {
+  return function (point, params, dom, rect, size) {
+    const pad = 10;
+    const cw = size.contentSize[0], ch = size.contentSize[1];
+    const vw = size.viewSize[0], vh = size.viewSize[1];
+    let left = point[0] + 14;
+    if (left + cw + pad > vw) left = point[0] - cw - 14;
+    left = Math.max(pad, Math.min(left, vw - cw - pad));
+    let top = vh - bottomMargin - ch - pad;
+    top = Math.max(pad, top);
+    return [left, top];
+  };
+}
+
 /* Custom tooltip formatter: shows every configured series with interpolated values. */
 export function axisTooltipFormatter(seriesInfo) {
   return (params) => {

@@ -6,7 +6,7 @@ import { movingAverage } from "./data.js";
 import {
   GRID_TOP, gridBottom, timeXAxis, insideZoom, baseYAxis,
   thresholdMarkLine, annotationSeries, floatingLegend,
-  DEFAULT_PALETTE, axisTooltipFormatter,
+  DEFAULT_PALETTE, axisTooltipFormatter, tooltipPosition,
 } from "./charts.common.js";
 
 /* Build the ECharts option for a timeseries / state panel from fetched data.
@@ -62,6 +62,7 @@ export function buildTimeseries(cfg, fetched, legendSelected, range) {
     // our own interpolated/held value below the actual cursor position.
     tooltip: {
       trigger: "axis", axisPointer: { type: "line", snap: false },
+      position: tooltipPosition(gridBottom(cfg)),
       formatter: axisTooltipFormatter(seriesInfo),
     },
     legend: cfg.legend ? floatingLegend(leftNames, rightNames, legendSelected) : undefined,
