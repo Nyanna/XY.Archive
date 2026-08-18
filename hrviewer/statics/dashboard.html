@@ -21,7 +21,7 @@
     </h1>
 
     <div class="controls">
-      <label class="quick">Range
+      <label class="quick">
         <select id="quickRange">
           <option value="3600000">Last 1h</option>
           <option value="21600000">Last 6h</option>
@@ -37,20 +37,20 @@
 
       <div class="timesel">
         <button id="shiftBack"  title="Zeitraum rückwärts verschieben">&laquo;</button>
-        <label>From <input type="datetime-local" id="fromInput" step="1" /></label>
-        <label>To <input type="datetime-local" id="toInput" step="1" /></label>
+        <label><input type="datetime-local" id="fromInput" step="1" /></label>
+        <label>to <input type="datetime-local" id="toInput" step="1" /></label>
         <button id="shiftFwd"   title="Zeitraum vorwärts verschieben">&raquo;</button>
       </div>
 
-      <label class="quick" title="Überschreibt die serverseitige Aggregationsauflösung (max_points) für alle Panels. Leer = Panel-Default.">Max points
-        <input type="number" id="maxPointsInput" min="1" step="1" placeholder="auto" />
+      <label class="quick" title="Aggregationsauflösung für alle Panels.">
+        <input type="number" id="maxPointsInput" min="10" step="100" placeholder="points" />
       </label>
 
       <button id="apply">Apply</button>
-      <button id="resetZoom" title="Synchronisierten Zoom zurücksetzen">Reset Zoom</button>
+      <button id="resetZoom" title="Synchronisierten Zoom zurücksetzen">Reset</button>
 
       <label class="quick" title="Bei einem 'Last *'-Bereich das Fenster alle 15s auf jetzt nachführen">
-        <input type="checkbox" id="autoRefresh" checked /> Auto-Refresh
+        <input type="checkbox" id="autoRefresh" checked /> Update
       </label>
 
       <span id="status" class="status"></span>
