@@ -11,8 +11,12 @@ import {
 
 /* Build the ECharts option for a timeseries / state panel from fetched data.
  * `fetched.get(sc)` returns the [[ts,val], ...] array for a series config;
- * `range` = { start, end } in epoch ms (the panel's current query window). */
-export function buildTimeseries(cfg, fetched, legendSelected, range) {
+ * `range` = { start, end } in epoch ms (the panel's current query window).
+ * `chart` = the panel's live echarts instance, so the tooltip formatter can
+ * always read the *current* legend on/off selection (see charts.common.js
+ * `legendSelectedMap`), not just the selection at the time this option was
+ * built. */
+export function buildTimeseries(cfg, fetched, legendSelected, range, chart) {
   const leftNames = [], rightNames = [];
   const series = [];
   const seriesInfo = new Map();
@@ -63,7 +67,7 @@ export function buildTimeseries(cfg, fetched, legendSelected, range) {
     tooltip: {
       trigger: "axis", axisPointer: { type: "line", snap: false },
       position: tooltipPosition(gridBottom(cfg)),
-      formatter: axisTooltipFormatter(seriesInfo),
+      formatter: axisTooltipFormatter(seriesInfo, chart),
     },
     legend: cfg.legend ? floatingLegend(leftNames, rightNames, legendSelected) : undefined,
     // Fixed margins for synced hover cursor alignment across panels

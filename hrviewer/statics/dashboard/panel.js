@@ -194,7 +194,7 @@ export class Panel {
           this.chart.setOption(buildStateBand(cfg, map.get(cfg.series[0]), range), true);
         } else {
           this.chart.setOption(
-            buildTimeseries(cfg, { get: (k) => map.get(k) }, legendSel, range), true);
+            buildTimeseries(cfg, { get: (k) => map.get(k) }, legendSel, range, this.chart), true);
         }
       }
       this.loaded = true;

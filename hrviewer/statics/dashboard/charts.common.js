@@ -175,13 +175,7 @@ export const DEFAULT_PALETTE = [
   "#fb7293", "#e7bcf3", "#8378ea",
 ];
 
-/* Tooltip vertical position is pinned to the panel's bottom edge (just
- * above the X-axis, or where it would be for axis-less panels), regardless
- * of tooltip content size -- keeps large/multi-row tooltips readable
- * instead of covering the cursor or spilling past the plot. Horizontal
- * position still tracks the cursor/point (flipped near the right edge) so
- * it stays close to what's being hovered. `bottomMargin` = the panel's
- * grid `bottom` value (e.g. from `gridBottom(cfg)`). */
+/* Tooltip vertical position is pinned */
 export function tooltipPosition(bottomMargin) {
   return function (point, params, dom, rect, size) {
     const pad = 10;
@@ -196,13 +190,27 @@ export function tooltipPosition(bottomMargin) {
   };
 }
 
-/* Custom tooltip formatter: shows every configured series with interpolated values. */
-export function axisTooltipFormatter(seriesInfo) {
+/* Current legend on/off selection read live off the chart instance*/
+export function legendSelectedMap(chart) {
+  if (!chart) return null;
+  const opt = chart.getOption();
+  const legends = (opt && opt.legend) || [];
+  let merged;
+  legends.forEach((lg) => {
+    if (lg && lg.selected) merged = Object.assign(merged || {}, lg.selected);
+  });
+  return merged;
+}
+
+/* Custom tooltip formatter*/
+export function axisTooltipFormatter(seriesInfo, chart) {
   return (params) => {
     if (!Array.isArray(params) || !params.length) return "";
     const t = params[0].axisValue;
+    const selected = legendSelectedMap(chart);
     const rows = [];
     seriesInfo.forEach(({ data, color }, name) => {
+      if (selected && selected[name] === false) return;
       const v = valueAt(data, t);
       const marker = '<span style="display:inline-block;margin-right:6px;' +
         "width:9px;height:9px;border-radius:50%;background:" + color + ';"></span>';
