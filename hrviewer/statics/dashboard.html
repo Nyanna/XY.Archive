@@ -4,13 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HRV Data</title>
+  <!-- Fixed for every dashboard (not part of the per-dashboard config). -->
+  <link rel="icon" type="image/png" sizes="16x16" href="xyou_chai_16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="xyou_chai_32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="xyou_chai_64.png" />
+  <link rel="apple-touch-icon" href="xyou_chai_64.png" />
   <link rel="stylesheet" href="dashboard.css" />
   <script src="echarts.min.js"></script>
   <script src="Arrow.es2015.min.js"></script>
 </head>
 <body>
   <header class="topbar">
-    <h1 id="pageTitle">HRV&nbsp;Data</h1>
+    <h1 id="pageTitle">
+      <img class="logo" src="xyou_chai_32.png" alt="" />
+      <span id="pageTitleText">HRV&nbsp;Data</span>
+    </h1>
 
     <div class="controls">
       <label class="quick">Range

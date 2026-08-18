@@ -21,8 +21,11 @@ const boardEl = document.getElementById("board");
 
 function init() {
   document.title = DASHBOARD.title;
-  const titleEl = document.getElementById("pageTitle");
-  if (titleEl) titleEl.textContent = DASHBOARD.title;
+  // The logo image lives inside #pageTitle (see dashboard.html); prefer the
+  // dedicated text span so it's updated without clobbering the logo. Falls
+  // back to the heading itself for older/plain markup.
+  const titleTextEl = document.getElementById("pageTitleText") || document.getElementById("pageTitle");
+  if (titleTextEl) titleTextEl.textContent = DASHBOARD.title;
   renderHeaderLinks();
   DASHBOARD.rows.forEach((r) => boardEl.appendChild(buildRow(r)));
   initControls();   // wires range/zoom/auto-refresh controls, sets initial window

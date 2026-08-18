@@ -1,5 +1,5 @@
 # TODO
-* smarthome grafana zu echarts umbauen, oder remote dashboard mit iobroker toggle
+* dashboard auf dietpi deployen?!
 * projet folder bearbeiten
 
 ## 02 Pathogenesemodell

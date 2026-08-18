@@ -38,6 +38,13 @@
   const HRV = "hrv";
   const RAW = "raw";
 
+  const bpmFromRR = {
+    label: "BPM", inputs: [{ key: "RR", segment: RAW, metric: "rr_interval_ms", agg: "avg" }],
+    transform: (r) => 60000 / r.RR,
+    color: col("green"), width: 1,
+    movavg: { size: 10, label: "BPM AVG 10", color: col("dark-green"), width: 2 },
+  };
+
   const panel1 = {
     id: 1, type: "timeseries", title: "Heart Rate", height: 300,
     axisLeft: { label: "HR / BMP", min: 40 },
@@ -55,6 +62,7 @@
       { label: "HRX", segment: RAW, metric: "heart_rate_xiaomi_activity", agg: "avg",
         color: col("super-light-red"), width: 1,
         movavg: { size: 10, label: "HRX AVG 10", color: col("light-red"), width: 1.5 } },
+      bpmFromRR,
     ],
   };
 
