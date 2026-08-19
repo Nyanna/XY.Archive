@@ -126,6 +126,12 @@ class MqttConfig(Config):
     vm_export_path: str = field(
         default_factory=lambda: _env("SMD_VM_EXPORT_PATH", "/api/v1/export/csv")
     )
+    # Series-discovery endpoint: used by the backfill to find out which
+    # sensors VM actually holds data for, per configured metric -- this is
+    # what lets the backfill run against a completely empty Hive.
+    vm_series_path: str = field(
+        default_factory=lambda: _env("SMD_VM_SERIES_PATH", "/api/v1/series")
+    )
     vm_user: str = field(default_factory=lambda: _env("SMD_VM_USER", "vm_writer"))
     vm_password: str = field(
         default_factory=lambda: _env(
@@ -148,6 +154,10 @@ class MqttConfig(Config):
     @property
     def vm_export_url(self) -> str:
         return f"{self.vm_scheme}://{self.vm_host}:{self.vm_port}{self.vm_export_path}"
+
+    @property
+    def vm_series_url(self) -> str:
+        return f"{self.vm_scheme}://{self.vm_host}:{self.vm_port}{self.vm_series_path}"
 
     def __post_init__(self) -> None:
         if not self.subscriptions:

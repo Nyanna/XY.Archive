@@ -2,14 +2,14 @@
 
 Before MQTT-Duck existed, samples were scraped (via ``mqtt2prometheus``) into
 VictoriaMetrics. That instance is still reachable and still holds everything
-older than the Hive. This module walks the Hive *backwards* one day at a time,
-per already-known (sensor, metric) series, and streams the missing days in
-from VM's CSV export endpoint (``/api/v1/export/csv``).
+older than the Hive. This module walks *backwards* one day at a time, per
+series, and streams the missing days in from VM's CSV export endpoint
+(``/api/v1/export/csv``). Which series exist is looked up per configured
+metric via VM's ``/api/v1/series`` endpoint, so the walk needs no pre-existing
+Hive content to start from.
 
 Idempotent & efficient by construction:
 
-* Only *series already present in the Hive* are considered (a series is
-  "known" once the live MQTT path has created its first partition).
 * Per series, days are walked backwards starting the day before "today". As
   soon as a day already has at least one local sample it is considered
   complete -- everything older was necessarily backfilled (or live-ingested)
@@ -92,6 +92,21 @@ class VmExportClient:
                 samples.append(Sample(sensor=sensor, metric=metric, ts_ms=ts, value=value))
         return samples
 
+    def list_sensors(self, metric: str) -> list[str]:
+        """Return every ``sensor`` label VM has recorded for ``metric``."""
+        resp = self._session.get(
+            self._cfg.vm_series_url,
+            params={"match[]": f'{{__name__="{metric}"}}'},
+            timeout=60,
+        )
+        resp.raise_for_status()
+        sensors = {
+            series["sensor"]
+            for series in resp.json().get("data", [])
+            if "sensor" in series
+        }
+        return sorted(sensors)
+
 
 class Backfiller:
     """Walks every known series backwards, day by day, filling gaps from VM."""
@@ -107,19 +122,12 @@ class Backfiller:
 
     # -- discovery -------------------------------------------------------
     def discover_series(self) -> list[tuple[str, str]]:
-        """Every ``(sensor, metric)`` pair already known to the Hive."""
-        p0, p1 = self._cfg.part_names
+        """Every ``(sensor, metric)`` pair, for the metrics in ``cfg.metrics``,
+        that VM has recorded at least one sample for."""
         out: list[tuple[str, str]] = []
-        if not self._hive.is_dir():
-            return out
-        for sensor_dir in sorted(self._hive.glob(f"{p0}=*")):
-            if not sensor_dir.is_dir():
-                continue
-            sensor = sensor_dir.name.split("=", 1)[1]
-            for metric_dir in sorted(sensor_dir.glob(f"{p1}=*")):
-                if not metric_dir.is_dir():
-                    continue
-                out.append((sensor, metric_dir.name.split("=", 1)[1]))
+        for metric in self._cfg.metrics:
+            for sensor in self._vm.list_sensors(metric.name):
+                out.append((sensor, metric.name))
         return out
 
     # -- per-day completeness ---------------------------------------------
@@ -187,7 +195,7 @@ class Backfiller:
     # -- everything -------------------------------------------------------
     def run(self, log=print) -> None:
         series = self.discover_series()
-        log(f"[backfill] {len(series)} known series in {self._hive}", flush=True)
+        log(f"[backfill] {len(series)} series found in VM", flush=True)
         total_days = 0
         total_samples = 0
         for sensor, metric in series:
