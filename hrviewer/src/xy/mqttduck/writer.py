@@ -23,35 +23,34 @@ by its lock, so ingestion and queries share one instance over one Hive.
 """
 from __future__ import annotations
 
+import glob as _glob
 import os
 import queue
 import threading
+from abc import ABC, abstractmethod
 from pathlib import Path
 
-import pyarrow as pa
+import pandas as pd
 
 from .config import MqttConfig
 from .transform import Sample
 
 
-class HiveSink:
+class Sink(ABC):
     """Monthly merge-on-write persistence into the sensor Hive.
 
-    Uses the DuckDB connection + lock owned by the HR-Viewer ``HiveStore`` so
-    reads and writes go through one instance. Each ``write`` groups the batch
-    by (sensor, metric, month) and rewrites only the touched ``data.parquet``
-    files as ``existing UNION new`` deduplicated on ``ts`` (new wins).
+    Two interchangeable implementations exist, selected by ``config.backend``
+    (see :func:`create_sink`): :class:`DuckDbSink` (default, main server) and
+    :class:`FastparquetSink` (pure-Python mirror). Both group a batch by
+    (sensor, metric, month) and rewrite only the touched ``data.parquet`` files
+    as ``existing + new`` deduplicated on ``ts`` (new wins).
     """
 
-    def __init__(self, cfg: MqttConfig, con, lock: threading.Lock):
+    def __init__(self, cfg: MqttConfig):
         self._cfg = cfg
-        self._con = con
-        self._lock = lock
         self._hive = Path(cfg.hive_path)
-        with self._lock:
-            self._con.execute("SET TimeZone='UTC'")
 
-    # -- paths ---------------------------------------------------------
+    # -- paths (shared) ------------------------------------------------
     def _part_dir(self, sensor: str, metric: str, month: str) -> Path:
         return (
             self._hive
@@ -69,22 +68,11 @@ class HiveSink:
             / "*.parquet"
         )
 
-    # -- reads ---------------------------------------------------------
+    # -- interface -----------------------------------------------------
+    @abstractmethod
     def latest_value(self, sensor: str, metric: str) -> float | None:
         """Newest stored value for a series, or None if it has no files."""
-        import glob as _glob
 
-        if not _glob.glob(self._series_glob(sensor, metric)):
-            return None
-        sql = (
-            "SELECT value FROM read_parquet(?, hive_partitioning=true) "
-            "ORDER BY ts DESC LIMIT 1"
-        )
-        with self._lock:
-            row = self._con.execute(sql, [self._series_glob(sensor, metric)]).fetchone()
-        return float(row[0]) if row and row[0] is not None else None
-
-    # -- writes --------------------------------------------------------
     def write(self, samples: list[Sample]) -> int:
         """Merge a batch of samples into their monthly partitions.
 
@@ -100,10 +88,43 @@ class HiveSink:
             groups.setdefault((s.sensor, s.metric, month), {})[s.ts_ms] = s.value
 
         written = 0
-        with self._lock:
-            for (sensor, metric, month), rows in groups.items():
-                written += self._merge_partition(sensor, metric, month, rows)
+        for (sensor, metric, month), rows in groups.items():
+            written += self._merge_partition(sensor, metric, month, rows)
         return written
+
+    @abstractmethod
+    def _merge_partition(
+        self, sensor: str, metric: str, month: str, rows: dict[int, float]
+    ) -> int:
+        ...
+
+
+class DuckDbSink(Sink):
+    """Merge-on-write via DuckDB, sharing the read path's connection + lock."""
+
+    def __init__(self, cfg: MqttConfig, con, lock: threading.Lock):
+        super().__init__(cfg)
+        self._con = con
+        self._lock = lock
+        with self._lock:
+            self._con.execute("SET TimeZone='UTC'")
+
+    def latest_value(self, sensor: str, metric: str) -> float | None:
+        if not _glob.glob(self._series_glob(sensor, metric)):
+            return None
+        sql = (
+            "SELECT value FROM read_parquet(?, hive_partitioning=true) "
+            "ORDER BY ts DESC LIMIT 1"
+        )
+        with self._lock:
+            row = self._con.execute(sql, [self._series_glob(sensor, metric)]).fetchone()
+        return float(row[0]) if row and row[0] is not None else None
+
+    def write(self, samples: list[Sample]) -> int:
+        if not samples:
+            return 0
+        with self._lock:
+            return super().write(samples)
 
     def _merge_partition(
         self, sensor: str, metric: str, month: str, rows: dict[int, float]
@@ -113,9 +134,11 @@ class HiveSink:
         final = pdir / "data.parquet"
         tmp = pdir / "data.parquet.tmp"
 
+        # Hand the new rows to DuckDB as a pandas frame (natively supported --
+        # no PyArrow dependency needed for the write path either).
         ts_list = list(rows.keys())
-        val_list = [rows[t] for t in ts_list]
-        batch = pa.table({"ts": ts_list, "value": val_list})
+        batch = pd.DataFrame({"ts": ts_list, "value": [rows[t] for t in ts_list]})
+        batch = batch.astype({"ts": "int64", "value": "float64"})
         self._con.register("_smd_new", batch)
 
         existing = ""
@@ -147,6 +170,81 @@ class HiveSink:
             self._con.unregister("_smd_new")
         os.replace(tmp, final)
         return len(rows)
+
+
+class FastparquetSink(Sink):
+    """Merge-on-write via pandas + fastparquet (no DuckDB).
+
+    Reads the touched ``data.parquet`` (if any), unions it with the new rows
+    (new wins on duplicate ``ts``), dedups + sorts and rewrites the file
+    atomically. Reads only its own fastparquet-written files.
+    """
+
+    def latest_value(self, sensor: str, metric: str) -> float | None:
+        files = sorted(_glob.glob(self._series_glob(sensor, metric)))
+        if not files:
+            return None
+        import fastparquet
+
+        latest_ts: int | None = None
+        latest_val: float | None = None
+        for f in files:
+            df = fastparquet.ParquetFile(f).to_pandas(columns=["ts", "value"])
+            if df.empty:
+                continue
+            i = int(df["ts"].values.argmax())
+            ts = int(df["ts"].values[i])
+            if latest_ts is None or ts > latest_ts:
+                latest_ts = ts
+                latest_val = float(df["value"].values[i])
+        return latest_val
+
+    def _merge_partition(
+        self, sensor: str, metric: str, month: str, rows: dict[int, float]
+    ) -> int:
+        import fastparquet
+
+        pdir = self._part_dir(sensor, metric, month)
+        pdir.mkdir(parents=True, exist_ok=True)
+        final = pdir / "data.parquet"
+        tmp = pdir / "data.parquet.tmp"
+
+        merged: dict[int, float] = {}
+        if final.exists():
+            old = fastparquet.ParquetFile(str(final)).to_pandas(columns=["ts", "value"])
+            for ts, val in zip(old["ts"].tolist(), old["value"].tolist()):
+                merged[int(ts)] = float(val)
+        # New rows win on duplicate ts.
+        for ts, val in rows.items():
+            merged[int(ts)] = float(val)
+
+        ts_sorted = sorted(merged)
+        out = pd.DataFrame(
+            {"ts": ts_sorted, "value": [merged[t] for t in ts_sorted]}
+        ).astype({"ts": "int64", "value": "float64"})
+        fastparquet.write(str(tmp), out, compression="ZSTD", write_index=False)
+        os.replace(tmp, final)
+        return len(rows)
+
+
+def create_sink(cfg: MqttConfig, store) -> Sink:
+    """Instantiate the write backend matching ``cfg.backend``.
+
+    The DuckDB sink shares the read store's connection + lock; the fastparquet
+    sink is self-contained.
+    """
+    backend = (getattr(cfg, "backend", "duckdb") or "duckdb").lower()
+    if backend == "duckdb":
+        return DuckDbSink(cfg, store._con, store._lock)
+    if backend == "fastparquet":
+        return FastparquetSink(cfg)
+    raise ValueError(
+        f"unknown backend {backend!r} (expected 'duckdb' or 'fastparquet')"
+    )
+
+
+# Backwards-compatible alias (the class used to be called ``HiveSink``).
+HiveSink = DuckDbSink
 
 
 class SampleBuffer:
@@ -181,7 +279,7 @@ class WriterThread(threading.Thread):
     series; the cache is seeded lazily from the Hive on first encounter.
     """
 
-    def __init__(self, cfg: MqttConfig, buffer: SampleBuffer, sink: HiveSink):
+    def __init__(self, cfg: MqttConfig, buffer: SampleBuffer, sink: Sink):
         super().__init__(name="mqtt-duck-writer", daemon=True)
         self._cfg = cfg
         self._buf = buffer

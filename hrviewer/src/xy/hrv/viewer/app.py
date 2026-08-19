@@ -18,13 +18,12 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
+from .arrow_ipc import ARROW_MIME
 from .config import Config
-from .db import HiveStore, table_to_ipc
+from .store import create_store
 
 DEFAULT_SEGMENT = "raw"
 DEFAULT_METRIC = "heart_rate_generic"
-
-ARROW_MIME = "application/vnd.apache.arrow.stream"
 
 
 class HrViewer:
@@ -32,7 +31,7 @@ class HrViewer:
 
     def __init__(self, config: Config | None = None):
         self.config = config or Config()
-        self.store = HiveStore(self.config)
+        self.store = create_store(self.config)
         self.statics_dir = Path(self.config.statics_dir)
 
     def handle_get(self, handler: "_Handler") -> None:
@@ -66,13 +65,13 @@ class HrViewer:
         fmt = str(req.get("format", "arrow")).lower()
 
         if kind == "dominance_daily":
-            table = self.store.dominance_daily(start_ms, end_ms)
+            result = self.store.dominance_daily(start_ms, end_ms)
         elif kind == "sleep_daily":
-            table = self.store.sleep_daily(
+            result = self.store.sleep_daily(
                 start_ms, end_ms, session=str(req.get("session", "after"))
             )
         else:  # "series"
-            table = self.store.series(
+            result = self.store.series(
                 segment=req.get("segment", DEFAULT_SEGMENT),
                 metric=req.get("metric", DEFAULT_METRIC),
                 start_ms=start_ms,
@@ -82,19 +81,22 @@ class HrViewer:
             )
 
         if fmt == "json":
-            cols = table.to_pydict()
+            cols = result.to_pydict()
+            rows = len(next(iter(cols.values()))) if cols else 0
             self._send_json(
                 handler,
                 {
                     "start": start_ms,
                     "end": end_ms,
-                    "rows": table.num_rows,
-                    "columns": table.column_names,
+                    "rows": rows,
+                    "columns": list(cols.keys()),
                     "data": cols,
                 },
             )
         else:
-            self._send_bytes(handler, table_to_ipc(table), ARROW_MIME, cache="no-store")
+            self._send_bytes(
+                handler, result.to_ipc(), ARROW_MIME, cache="no-store"
+            )
 
     def _serve_static(self, handler: "_Handler", rel: str) -> None:
         base = self.statics_dir.resolve()

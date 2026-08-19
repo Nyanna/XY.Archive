@@ -33,6 +33,11 @@ class Config:
         default_factory=lambda: _env("HRV_HIVE_PATH", DEFAULT_HIVE_PATH)
     )
 
+    # Storage backend for the read path: "duckdb" (default, main server) or
+    # "fastparquet" (pure-Python mirror, e.g. the NanoPi where DuckDB is
+    # unavailable). Selected at startup via env/CLI; see store.create_store.
+    backend: str = field(default_factory=lambda: _env("HRV_BACKEND", "duckdb"))
+
     # DuckDB tuning
     memory_limit: str = field(default_factory=lambda: _env("HRV_MEMORY_LIMIT", "64MB"))
     threads: int = field(default_factory=lambda: int(_env("HRV_THREADS", "1")))

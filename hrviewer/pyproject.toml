@@ -15,13 +15,21 @@ keywords = ["hrv"]
 # The HTTP server is built purely on the standard library (http.server).
 dependencies = [
     "duckdb>=1.0",
-    "pyarrow>=14.0",
+    "nanoarrow>=0.5",
+    "numpy>=1.24",
 ]
 
 # MQTT-Duck adds the MQTT ingestion side on top of the read-only viewer.
 [project.optional-dependencies]
 mqtt = [
     "paho-mqtt>=2.0",
+    "pandas>=2.0",
+]
+# The `fastparquet` backend: a pure-Python read+write stack for hosts without
+# DuckDB (e.g. the NanoPi mirror). Select it with `--backend fastparquet`.
+mirror = [
+    "fastparquet>=2024.2",
+    "pandas>=2.0",
 ]
 # `--backfill` streams historical data from VictoriaMetrics' CSV export.
 backfill = [

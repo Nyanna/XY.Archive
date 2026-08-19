@@ -16,6 +16,12 @@ def build_config(argv: list[str] | None = None) -> Config:
     parser.add_argument("--host", default=cfg.host, help="Bind host")
     parser.add_argument("--port", type=int, default=cfg.port, help="Bind port")
     parser.add_argument("--hive", default=cfg.hive_path, help="Parquet Hive path")
+    parser.add_argument(
+        "--backend",
+        default=cfg.backend,
+        choices=["duckdb", "fastparquet"],
+        help="Read backend (duckdb=main server, fastparquet=DuckDB-less mirror)",
+    )
     parser.add_argument("--memory-limit", default=cfg.memory_limit)
     parser.add_argument("--threads", type=int, default=cfg.threads)
     parser.add_argument("--max-points", type=int, default=cfg.max_points)
@@ -25,6 +31,7 @@ def build_config(argv: list[str] | None = None) -> Config:
     cfg.host = args.host
     cfg.port = args.port
     cfg.hive_path = args.hive
+    cfg.backend = args.backend
     cfg.memory_limit = args.memory_limit
     cfg.threads = args.threads
     cfg.max_points = args.max_points

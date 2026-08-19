@@ -17,6 +17,12 @@ def build_config(argv: list[str] | None = None) -> tuple[MqttConfig, argparse.Na
     p.add_argument("--host", default=cfg.host)
     p.add_argument("--port", type=int, default=cfg.port)
     p.add_argument("--hive", default=cfg.hive_path, help="Sensor Hive path")
+    p.add_argument(
+        "--backend",
+        default=cfg.backend,
+        choices=["duckdb", "fastparquet"],
+        help="Storage backend: duckdb (main server) or fastparquet (mirror).",
+    )
     p.add_argument("--memory-limit", default=cfg.memory_limit)
     p.add_argument("--threads", type=int, default=cfg.threads)
     p.add_argument("--max-points", type=int, default=cfg.max_points)
@@ -55,6 +61,7 @@ def build_config(argv: list[str] | None = None) -> tuple[MqttConfig, argparse.Na
     cfg.host = args.host
     cfg.port = args.port
     cfg.hive_path = args.hive
+    cfg.backend = args.backend
     cfg.memory_limit = args.memory_limit
     cfg.threads = args.threads
     cfg.max_points = args.max_points

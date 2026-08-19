@@ -84,6 +84,10 @@ class MqttConfig(Config):
     part_names: ClassVar[tuple[str, str]] = ("sensor", "metric")
     time_part: ClassVar[str] = "month"
 
+    # ---- Storage backend (overrides the base HRV_BACKEND env name) ----
+    # "duckdb" on the main server, "fastparquet" on the NanoPi mirror.
+    backend: str = field(default_factory=lambda: _env("SMD_BACKEND", "duckdb"))
+
     # ---- HTTP server (distinct default port so it can run beside hrv) ----
     port: int = field(default_factory=lambda: int(_env("SMD_PORT", "8081")))
 

@@ -1,9 +1,10 @@
 """DuckDB data access layer.
 
-The Hive is streamed directly from disk on every query. We explicitly:
-
-Results are handed out as Arrow tables/IPC so the browser can consume them via
-apache-arrow.
+The Hive is streamed directly from disk on every query. Queries are built as
+parameterised DuckDB *relations* (``con.sql(sql, params=...)``): relations are
+injection-safe and expose the Arrow C stream interface natively, so results are
+handed to the browser as zero-copy Arrow IPC via nanoarrow -- no PyArrow, no
+intermediate table materialisation.
 """
 from __future__ import annotations
 
@@ -11,20 +12,59 @@ import threading
 from datetime import datetime, timezone
 
 import duckdb
-import pyarrow as pa
+import numpy as np
 
+from .arrow_ipc import QueryResult, stream_to_ipc
 from .config import Config
+from .store import Store
 
 
-class HiveStore:
+class RelationResult(QueryResult):
+    """A lazy DuckDB relation wrapped as a backend-neutral query result.
+
+    Execution happens when the result is serialised, guarded by the shared
+    connection lock (the HTTP server is sequential; the only other user of the
+    connection is the MQTT-Duck writer thread). The relation exposes the Arrow
+    C stream interface, so ``to_ipc`` streams straight to IPC bytes.
+    """
+
+    def __init__(self, relation, lock: threading.Lock):
+        self._rel = relation
+        self._lock = lock
+
+    def to_ipc(self) -> bytes:
+        with self._lock:
+            return stream_to_ipc(self._rel)
+
+    def to_pydict(self) -> dict[str, list]:
+        with self._lock:
+            cols = self._rel.fetchnumpy()
+        out: dict[str, list] = {}
+        for name, values in cols.items():
+            if np.ma.isMaskedArray(values):
+                out[name] = [
+                    None if m else _py(v) for v, m in zip(values.data, values.mask)
+                ]
+            else:
+                out[name] = [_py(v) for v in values]
+        return out
+
+
+def _py(v):
+    if isinstance(v, np.floating):
+        f = float(v)
+        return None if f != f else f
+    if isinstance(v, np.integer):
+        return int(v)
+    return v
+
+
+class DuckDbStore(Store):
     """Read-only, streaming access to the Parquet Hive via DuckDB."""
 
     def __init__(self, config: Config):
         self._cfg = config
         self._lock = threading.Lock()
-        # Defensive: cap PyArrow's own CPU/IO thread pools too.
-        pa.set_cpu_count(max(1, self._cfg.threads))
-        pa.set_io_thread_count(max(1, self._cfg.threads))
         # `import duckdb` also brings up a separate, hidden module-level
         # `default_connection` (backing the top-level convenience API,
         duckdb.default_connection().execute(
@@ -48,6 +88,12 @@ class HiveStore:
         # We never need row ordering to be preserved across scans -> less RAM.
         con.execute("SET preserve_insertion_order=false")
 
+    def _sql(self, sql: str, params: list) -> RelationResult:
+        """Build a parameterised relation under the lock, wrap it as a result."""
+        with self._lock:
+            rel = self._con.sql(sql, params=params)
+        return RelationResult(rel, self._lock)
+
     # ------------------------------------------------------------------
     # Aggregate expressions selectable via the ``agg`` request parameter.
     #
@@ -68,8 +114,8 @@ class HiveStore:
         end_ms: int,
         max_points: int | None = None,
         agg: str = "avg",
-    ) -> pa.Table:
-        """Return a time series as an Arrow table (``ts``, ``value``).
+    ) -> QueryResult:
+        """Return a time series as an Arrow result (``ts``, ``value``).
 
         ``ts`` is epoch milliseconds (UTC). ``agg`` selects the aggregate
         function applied inside uniform time buckets:
@@ -96,8 +142,7 @@ class HiveStore:
             """
             params = [glob, start_part, end_part, start_ms, end_ms,
                       max(1, int(max_points))]
-            with self._lock:
-                return self._con.execute(sql, params).fetch_arrow_table()
+            return self._sql(sql, params)
 
         expr = self._AGG_EXPR.get(agg, self._AGG_EXPR["avg"])
         max_points = max_points or self._cfg.max_points
@@ -106,7 +151,7 @@ class HiveStore:
 
         sql = f"""
             SELECT
-                CAST((ts / {bucket}) AS BIGINT) * {bucket} AS ts,
+                (ts // {bucket}) * {bucket}                AS ts,
                 {expr}                                     AS value
             FROM read_parquet(?, hive_partitioning=true)
             WHERE {tp} BETWEEN ? AND ?
@@ -115,11 +160,10 @@ class HiveStore:
             ORDER BY 1
         """
         params = [glob, start_part, end_part, start_ms, end_ms]
-        with self._lock:
-            return self._con.execute(sql, params).fetch_arrow_table()
+        return self._sql(sql, params)
 
     # ------------------------------------------------------------------
-    def dominance_daily(self, start_ms: int, end_ms: int) -> pa.Table:
+    def dominance_daily(self, start_ms: int, end_ms: int) -> QueryResult:
         """Daily sympathetic-dominance time below the -0.5 threshold.
 
         Reproduces the Grafana "Sympathic Dominance Time under threshold"
@@ -140,12 +184,11 @@ class HiveStore:
         """
         params = [glob, _ms_to_date(start_ms), _ms_to_date(end_ms),
                   start_ms, end_ms]
-        with self._lock:
-            return self._con.execute(sql, params).fetch_arrow_table()
+        return self._sql(sql, params)
 
     def sleep_daily(
         self, start_ms: int, end_ms: int, session: str = "after"
-    ) -> pa.Table:
+    ) -> QueryResult:
         """Daily sleep-phase counts per sleep session (Grafana panels 7/8).
 
         A session spans ``bed_ms`` (value of ``sleep_timestamp``) to
@@ -187,8 +230,7 @@ class HiveStore:
         """
         params = [sess_glob, start_ms, end_ms,
                   stage_glob, stage_lo, stage_hi]
-        with self._lock:
-            return self._con.execute(sql, params).fetch_arrow_table()
+        return self._sql(sql, params)
 
     # ------------------------------------------------------------------
     def close(self) -> None:
@@ -196,13 +238,9 @@ class HiveStore:
             self._con.close()
 
 
+# Backwards-compatible alias (the class used to be called ``HiveStore``).
+HiveStore = DuckDbStore
+
+
 def _ms_to_date(ms: int):
     return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).date()
-
-
-def table_to_ipc(table: pa.Table) -> bytes:
-    """Serialise an Arrow table to a self-contained IPC stream."""
-    sink = pa.BufferOutputStream()
-    with pa.ipc.new_stream(sink, table.schema) as writer:
-        writer.write_table(table)
-    return sink.getvalue().to_pybytes()

@@ -17,7 +17,7 @@ from xy.hrv.viewer.app import HrViewer
 
 from .client import MqttClient
 from .config import MqttConfig
-from .writer import HiveSink, SampleBuffer, WriterThread
+from .writer import SampleBuffer, WriterThread, create_sink
 
 
 class MqttDuck(HrViewer):
@@ -25,9 +25,11 @@ class MqttDuck(HrViewer):
         super().__init__(config or MqttConfig())
         cfg: MqttConfig = self.config  # type: ignore[assignment]
 
-        # Share the read path's DuckDB connection + lock for writes.
+        # Read + write go through the same backend (duckdb | fastparquet); the
+        # DuckDB sink shares the read store's connection + lock, the
+        # fastparquet sink is self-contained.
         self.buffer = SampleBuffer(maxsize=cfg.queue_max)
-        self.sink = HiveSink(cfg, self.store._con, self.store._lock)
+        self.sink = create_sink(cfg, self.store)
         self.writer = WriterThread(cfg, self.buffer, self.sink)
         self.mqtt = MqttClient(cfg, self.buffer)
 
