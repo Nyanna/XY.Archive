@@ -1,6 +1,8 @@
 # TODO
-* dashboard auf dietpi deployen?!
+* dashboard auf dietpi deployen?!, andere backends pyarrow duckdb
+* iobroker mit blockly ersetzen
 * projet folder bearbeiten
+* evidenz für dph alzheimer/demenz
 
 ## 02 Pathogenesemodell
 
