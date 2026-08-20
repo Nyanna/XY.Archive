@@ -108,7 +108,9 @@ class MqttConfig(Config):
         default_factory=lambda: int(_env("SMD_MQTT_KEEPALIVE", "60"))
     )
     mqtt_client_id: str = field(
-        default_factory=lambda: _env("SMD_MQTT_CLIENT_ID", "mqtt-duck")
+        default_factory=lambda: _env(
+            "SMD_MQTT_CLIENT_ID", f"mqtt-duck-{os.urandom(4).hex()}"
+        )
     )
 
     # ---- Writer thread tuning ----
