@@ -45,6 +45,11 @@ class Config:
     # Query defaults
     max_points: int = field(default_factory=lambda: int(_env("HRV_MAX_POINTS", "5000")))
 
+    # Optional redirect target for the static root ("/").
+    root_redirect: str = field(
+        default_factory=lambda: _env("HRV_ROOT_REDIRECT", "dashboard.html")
+    )
+
     # ------------------------------------------------------------------
     # Partition scheme.
     #

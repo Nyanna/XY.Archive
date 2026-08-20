@@ -35,7 +35,11 @@ class HrViewer:
         self.statics_dir = Path(self.config.statics_dir)
 
     def handle_get(self, handler: "_Handler") -> None:
-        rel = urlparse(handler.path).path.lstrip("/")
+        path = urlparse(handler.path).path
+        rel = path.lstrip("/")
+        if rel == "" and self.config.root_redirect:
+            self._send_redirect(handler, self.config.root_redirect)
+            return
         self._serve_static(handler, rel)
 
     def handle_post(self, handler: "_Handler") -> None:
@@ -119,6 +123,15 @@ class HrViewer:
         handler.end_headers()
         with path.open("rb") as f:
             shutil.copyfileobj(f, handler.wfile)  # streamed, low RAM
+
+    def _send_redirect(
+        self, handler: "_Handler", url: str, status: HTTPStatus = HTTPStatus.FOUND
+    ) -> None:
+        self._rearm_write_timeout(handler)
+        handler.send_response(status)
+        handler.send_header("Location", url)
+        handler.send_header("Content-Length", "0")
+        handler.end_headers()
 
     def _send_bytes(
         self, handler: "_Handler", payload: bytes, ctype: str, cache: str | None = None

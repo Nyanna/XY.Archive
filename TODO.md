@@ -1,8 +1,6 @@
 # TODO
-* dashboard auf dietpi deployen?!, andere backends pyarrow duckdb
 * iobroker mit blockly ersetzen
 * projet folder bearbeiten
-* autoprompt beim cache 5min das eine warten nachricht schickt 20 sek for timeout
 
 ## 02 Pathogenesemodell
 

@@ -91,6 +91,14 @@ class MqttConfig(Config):
     # ---- HTTP server (distinct default port so it can run beside hrv) ----
     port: int = field(default_factory=lambda: int(_env("SMD_PORT", "8081")))
 
+    # Static root ("/") redirect target -- points to the heating dashboard
+    # view by default.
+    root_redirect: str = field(
+        default_factory=lambda: _env(
+            "SMD_ROOT_REDIRECT", "dashboard.html?config=heating"
+        )
+    )
+
     # ---- MQTT broker (Mosquitto) ----
     mqtt_host: str = field(default_factory=lambda: _env("SMD_MQTT_HOST", "127.0.0.1"))
     mqtt_port: int = field(default_factory=lambda: int(_env("SMD_MQTT_PORT", "1883")))
