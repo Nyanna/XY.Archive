@@ -173,24 +173,27 @@ class HiveWriter:
 
     def _stage(self) -> None:
         if self._buf:
-            # Vectorized bulk insert via a zero-copy Arrow table. Plain
-            # executemany() with no explicit transaction lets DuckDB commit
-            # each row individually (~1ms/row -> ~50s per 50k-row batch,
-            # i.e. minutes of dead silence before the caller's coarse
-            # PROGRESS_EVERY print ever fires, looking exactly like a
-            # hang). Arrow insertion is a single columnar statement and is
-            # >100x faster for batches in the tens-of-thousands.
-            import pyarrow as pa
+            # Vectorized bulk insert via a pandas frame, natively supported
+            # by DuckDB (no PyArrow/nanoarrow dependency needed for the
+            # write path -- same pattern as mqttduck.writer.DuckDbSink).
+            # Plain executemany() with no explicit transaction lets DuckDB
+            # commit each row individually (~1ms/row -> ~50s per 50k-row
+            # batch, i.e. minutes of dead silence before the caller's coarse
+            # PROGRESS_EVERY print ever fires, looking exactly like a hang).
+            # A single columnar insert is >100x faster for batches in the
+            # tens-of-thousands.
+            import pandas as pd
 
             segment, metric, ts, value = zip(*self._buf)
-            batch = pa.table(
+            batch = pd.DataFrame(
                 {
                     "segment": segment,
                     "metric": metric,
                     "ts": ts,
                     "value": value,
                 }
-            )
+            ).astype({"segment": "string", "metric": "string",
+                      "ts": "int64", "value": "float64"})
             self._con.register(f"{self._stg}_arrow", batch)
             self._con.execute(
                 f"INSERT INTO {self._stg} SELECT * FROM {self._stg}_arrow"
@@ -340,17 +343,22 @@ def load_rr_intervals_chunks(
         params.append(int(max_ts_ms))
     where_sql = ("WHERE " + " AND ".join(where)) if where else ""
 
-    reader = _connect().execute(
+    con = _connect()
+    con.execute(
         f"SELECT ts, value FROM read_parquet('{_metric_glob('rr_interval_ms')}') "
         f"{where_sql} ORDER BY ts",
         params,
-    ).fetch_record_batch(chunk_rows)
-
-    for batch in reader:
-        if batch.num_rows == 0:
-            continue
-        ts = batch.column("ts").to_numpy(zero_copy_only=False).astype(np.int64)
-        rr = batch.column("value").to_numpy(zero_copy_only=False).astype(np.float64)
+    )
+    # Chunked pandas fetch (no PyArrow dependency for the read path either).
+    # DuckDB hands out chunks in units of its internal vector size (2048
+    # rows), so approximate the requested chunk_rows in those units.
+    vectors_per_chunk = max(1, chunk_rows // 2048)
+    while True:
+        df = con.fetch_df_chunk(vectors_per_chunk)
+        if df.empty:
+            break
+        ts = df["ts"].to_numpy(dtype=np.int64, copy=False)
+        rr = df["value"].to_numpy(dtype=np.float64, copy=False)
         yield ts, rr
 
 

@@ -22,7 +22,7 @@ DB_PATH = Path(os.environ.get("HRV_DB_PATH", str(HERE / "Gadgetbridge")))
 DB_REMOTE_URL = "https://drive.google.com/file/d/1yropB-j0couqP8f-XItaAJm3dVsfgc1t/view?usp=sharing"
 DB_TMP_PATH = DB_PATH.with_suffix(".tmp")
 
-HIVE_PATH = Path(os.environ.get("HRV_HIVE_PATH", str(HERE / "hive")))
+HIVE_PATH = Path(os.environ.get("HIVE_PATH", str(HERE / "hive")))
 HIVE_SSH_KEY = Path("/home/user/.ssh/hivebee")
 HIVE_SSH_USER = "hivebee"
 HIVE_SSH_HOST = "proxy.xyan.icu"
@@ -222,7 +222,7 @@ def run_pipeline_once(db_file: Path, passthrough_args: list[str]) -> None:
 
 
 def main() -> None:
-    global DB_PATH, DB_TMP_PATH, HIVE_REMOTE_DIR, HIVE_GIT_REMOTE_URL
+    global DB_PATH, DB_TMP_PATH, HIVE_REMOTE_DIR, HIVE_GIT_REMOTE_URL, HIVE_PATH
 
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument(
@@ -254,6 +254,18 @@ def main() -> None:
             "local Hive working dir, to detect server-side operation."
         ),
     )
+    parser.add_argument(
+        "--hive-path",
+        type=Path,
+        metavar="PATH",
+        help=(
+            "Local Hive working directory (overrides HIVE_PATH / the default "
+            "'hive' next to this script). Also exported as HIVE_PATH into the "
+            "environment so every pipeline stage (gadgetbridge_migrate.py, "
+            "hrv_aggregate.py, spectral_bands_aggregate.py), which import "
+            "hive_io.py in their own subprocess, read the same Hive."
+        ),
+    )
     args, passthrough_args = parser.parse_known_args()
 
     if args.db_path:
@@ -262,6 +274,9 @@ def main() -> None:
     if args.hive_remote_dir:
         HIVE_REMOTE_DIR = args.hive_remote_dir
         HIVE_GIT_REMOTE_URL = f"{HIVE_SSH_USER}@{HIVE_SSH_HOST}:{HIVE_REMOTE_DIR}"
+    if args.hive_path:
+        HIVE_PATH = args.hive_path
+        os.environ["HIVE_PATH"] = str(HIVE_PATH)
 
     t_total = time.monotonic()
 
