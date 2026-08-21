@@ -1,10 +1,7 @@
-"""HTTP glue for the single SmartHome script.
+"""HTTP glue for the SmartHome script + status.
 
-Two routes, both under ``/api/smarthome/script``:
-
-* ``GET``  -> the native Blockly XML (plus any last script error).
-* ``POST`` -> ``{"xml": ..., "python": ...}``; persists both files, then
-  hot-reloads the engine against the new Python.
+* ``GET``/``POST`` ``/api/smarthome/script`` -> Blockly XML load/save.
+* ``GET`` ``/api/smarthome/status`` -> :meth:`SmartHomeEngine.metrics`.
 
 The functions return ``True`` when they handled the request, so the host app
 can fall through to its inherited routes otherwise.
@@ -19,10 +16,15 @@ from urllib.parse import urlparse
 from .engine import SmartHomeEngine
 
 _ROUTE = "/api/smarthome/script"
+_STATUS_ROUTE = "/api/smarthome/status"
 
 
 def handle_get(viewer, engine: SmartHomeEngine, handler) -> bool:
-    if urlparse(handler.path).path != _ROUTE:
+    path = urlparse(handler.path).path
+    if path == _STATUS_ROUTE:
+        viewer._send_json(handler, engine.metrics())  # noqa: SLF001
+        return True
+    if path != _ROUTE:
         return False
     xml = _read(engine.cfg.native_path)
     viewer._send_json(  # noqa: SLF001 - intentional reuse of base helpers

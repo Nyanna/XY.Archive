@@ -74,13 +74,21 @@ class Facade:
 
     # registration (called at script load time)
     def schedule(self, cron: str, cb) -> None:
-        self._e._schedules.append(_Schedule(CronSpec(cron), cb))
+        spec = CronSpec(cron)
+        self._e._schedules.append(_Schedule(spec, cb))
+        print(f"[smarthome] cron job registered: '{cron}'", flush=True)
 
     def on(self, oid: str, condition: str, cb) -> None:
         parsed = _parse_oid(oid)
         if parsed:
             device, prop = parsed
-            self._e._triggers.append(_Trigger(device, prop, (condition or "true").lower(), cb))
+            cond = (condition or "true").lower()
+            self._e._triggers.append(_Trigger(device, prop, cond, cb))
+            print(
+                f"[smarthome] trigger registered: oid={oid} device={device} "
+                f"prop={prop} cond={cond}",
+                flush=True,
+            )
 
     # actions (called at runtime)
     def control(self, oid: str, value) -> None:
@@ -121,6 +129,16 @@ class SmartHomeEngine:
         self._stop = threading.Event()
         self._sched_thread: threading.Thread | None = None
         self._script_error: str | None = None
+        self._started_at = time.time()
+        self._mqtt_connected = False
+
+        # -- metrics (monotonic counters, protected by self._lock) -----
+        self._metrics = {
+            "triggers_consumed": 0,
+            "schedules_fired": 0,
+            "commands_sent": 0,
+            "timers_started": 0,
+        }
 
         self._client = mqtt.Client(
             callback_api_version=mqtt.CallbackAPIVersion.VERSION2,
@@ -130,6 +148,7 @@ class SmartHomeEngine:
         if cfg.mqtt_user:
             self._client.username_pw_set(cfg.mqtt_user, cfg.mqtt_password or None)
         self._client.on_connect = self._on_connect
+        self._client.on_disconnect = self._on_disconnect
         self._client.on_message = self._on_message
 
     # -- lifecycle -----------------------------------------------------
@@ -196,14 +215,37 @@ class SmartHomeEngine:
     def script_error(self) -> str | None:
         return self._script_error
 
+    # -- status / metrics ------------------------------------------------
+    def metrics(self) -> dict:
+        """Snapshot of current status + counters for the JSON status endpoint."""
+        with self._lock:
+            return {
+                "mqtt_connected": self._mqtt_connected,
+                "uptime_seconds": round(time.time() - self._started_at, 1),
+                "triggers_registered": len(self._triggers),
+                "schedules_registered": len(self._schedules),
+                "active_timers": len(self._timeouts),
+                "active_timer_names": sorted(self._timeouts.keys()),
+                "triggers_consumed_total": self._metrics["triggers_consumed"],
+                "schedules_fired_total": self._metrics["schedules_fired"],
+                "commands_sent_total": self._metrics["commands_sent"],
+                "timers_started_total": self._metrics["timers_started"],
+                "script_error": self._script_error,
+            }
+
     # -- MQTT ----------------------------------------------------------
     def _on_connect(self, client, userdata, flags, reason_code, properties=None):
         if reason_code != 0:
             print(f"[smarthome] connect failed: {reason_code}", flush=True)
             return
+        self._mqtt_connected = True
         topic = f"{self.cfg.base_topic}/+"
         client.subscribe(topic)
         print(f"[smarthome] subscribed: {topic}", flush=True)
+
+    def _on_disconnect(self, client, userdata, *args, **kwargs):
+        self._mqtt_connected = False
+        print("[smarthome] mqtt disconnected", flush=True)
 
     def _on_message(self, client, userdata, msg):
         prefix = self.cfg.base_topic + "/"
@@ -228,6 +270,13 @@ class SmartHomeEngine:
         action = payload.get("action")
         for trig in triggers:
             if self._fires(trig, payload, old, action):
+                with self._lock:
+                    self._metrics["triggers_consumed"] += 1
+                print(
+                    f"[smarthome] trigger consumed: device={trig.device} "
+                    f"prop={trig.prop} cond={trig.cond} payload={payload}",
+                    flush=True,
+                )
                 self._safe_call(trig.cb)
 
     def _fires(self, trig: _Trigger, payload: dict, old: dict, action) -> bool:
@@ -262,7 +311,11 @@ class SmartHomeEngine:
         else:
             out = value
         topic = f"{self.cfg.base_topic}/{device}/set"
-        self._client.publish(topic, json.dumps({prop: out}))
+        body = json.dumps({prop: out})
+        self._client.publish(topic, body)
+        with self._lock:
+            self._metrics["commands_sent"] += 1
+        print(f"[smarthome] mqtt command sent: topic={topic} payload={body}", flush=True)
 
     def get_value(self, oid: str, attr: str = "val"):
         parsed = _parse_oid(oid)
@@ -302,7 +355,9 @@ class SmartHomeEngine:
             t = threading.Timer(max(0.0, float(seconds)), _fire)
             t.daemon = True
             self._timeouts[name] = t
+            self._metrics["timers_started"] += 1
             t.start()
+        print(f"[smarthome] timer started: name={name!r} in {seconds}s", flush=True)
 
     def clear_timeout(self, name: str) -> None:
         with self._lock:
@@ -320,6 +375,9 @@ class SmartHomeEngine:
                 with self._lock:
                     due = [s for s in self._schedules if s.spec.matches(now)]
                 for s in due:
+                    with self._lock:
+                        self._metrics["schedules_fired"] += 1
+                    print(f"[smarthome] cron job fired: '{s.spec.expr}'", flush=True)
                     self._safe_call(s.cb)
             self._stop.wait(2.0)
 

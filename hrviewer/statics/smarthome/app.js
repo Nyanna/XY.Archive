@@ -4,7 +4,20 @@
   "use strict";
 
   var ENDPOINT = "/api/smarthome/script";
+  var STATUS_ENDPOINT = "/api/smarthome/status";
   var ws = null;
+
+  function refreshStatus() {
+    fetch(STATUS_ENDPOINT)
+      .then(function (r) { return r.json(); })
+      .then(function (m) {
+        document.getElementById("mTriggers").textContent = m.triggers_registered;
+        document.getElementById("mSchedules").textContent = m.schedules_registered;
+        document.getElementById("mTimers").textContent = m.active_timers;
+        document.getElementById("mqttDot").className = "dot" + (m.mqtt_connected ? " on" : "");
+      })
+      .catch(function () { /* transient network hiccup, next poll retries */ });
+  }
 
   function xmlTextToDom(text) {
     if (Blockly.utils && Blockly.utils.xml && Blockly.utils.xml.textToDom) {
@@ -64,12 +77,15 @@
   window.addEventListener("load", function () {
     ws = Blockly.inject("blocklyDiv", {
       toolbox: document.getElementById("toolbox"),
+      theme: window.SMARTHOME_THEME,
       trashcan: true,
       zoom: { controls: true, wheel: true, startScale: 0.9 },
-      grid: { spacing: 20, length: 3, colour: "#eee", snap: true },
+      grid: { spacing: 20, length: 3, colour: "#d0d7de", snap: true },
     });
     document.getElementById("save").addEventListener("click", save);
     document.getElementById("reload").addEventListener("click", load);
     load();
+    refreshStatus();
+    setInterval(refreshStatus, 5000);
   });
 })();

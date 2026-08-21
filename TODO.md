@@ -1,8 +1,4 @@
 # TODO
-* iobroker mit blockly ersetzen
-	* prüfen ob timer unterstützt wird
-	* statusanzeige mit registrierten timer und registrierten events
-	* logging einbauen wann trigger gestartet und kommandos ausgegeben werden
 * projet folder bearbeiten
 
 ## 02 Pathogenesemodell
