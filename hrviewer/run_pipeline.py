@@ -134,11 +134,11 @@ def sync_hive(direction: str) -> None:
     elif direction == "push":
         _git(["add", "-A"])
         status = subprocess.run(
-            ["git", "-C", str(HIVE_PATH), "status", "--porcelain"],
+            ["git", "-C", str(HIVE_PATH), "status", "--porcelain" ],
             env=HIVE_GIT_ENV, capture_output=True, text=True,
         )
         if status.stdout.strip():
-            _git(["commit", "-m", f"pipeline sync {time.strftime('%Y-%m-%d %H:%M:%S')}"])
+            _git(["commit", "-c", "user.name=srv", "-c", "user.email=<>", "-m", f"pipeline sync {time.strftime('%Y-%m-%d %H:%M:%S')}"])
         else:
             print("No local Hive changes to commit.")
 
