@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartHome</title>
+  <style>
+    html, body { margin: 0; height: 100%; font-family: sans-serif; }
+    body { display: flex; flex-direction: column; }
+    .topbar {
+      display: flex; align-items: center; gap: 12px;
+      padding: 8px 14px; background: #263238; color: #fff;
+    }
+    .topbar h1 { font-size: 18px; margin: 0; font-weight: 600; }
+    .topbar button {
+      padding: 6px 14px; border: 0; border-radius: 4px; cursor: pointer;
+      background: #4caf50; color: #fff; font-size: 14px;
+    }
+    .topbar button#reload { background: #607d8b; }
+    .status { margin-left: auto; font-size: 13px; opacity: 0.9; }
+    .status.error { color: #ff8a80; }
+    #blocklyDiv { flex: 1 1 auto; }
+  </style>
+  <script src="blockly/blockly_compressed.js"></script>
+  <script src="blockly/blocks_compressed.js"></script>
+  <script src="blockly/python_compressed.js"></script>
+  <script src="blockly/de.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>SmartHome</h1>
+    <button id="save">Speichern</button>
+    <button id="reload">Neu laden</button>
+    <span id="status" class="status"></span>
+  </header>
+
+  <div id="blocklyDiv"></div>
+
+  <xml id="toolbox" style="display: none">
+    <category name="Trigger" colour="20">
+      <block type="schedule"><field name="SCHEDULE">0 0 * * *</field></block>
+      <block type="on"></block>
+    </category>
+    <category name="Aktionen" colour="290">
+      <block type="control"></block>
+      <block type="get_value"></block>
+    </category>
+    <category name="Timer" colour="60">
+      <block type="timeouts_settimeout"></block>
+      <block type="timeouts_cleartimeout"></block>
+    </category>
+    <category name="Zeit" colour="120">
+      <block type="time_get"></block>
+    </category>
+    <category name="Logik" colour="210">
+      <block type="controls_if"></block>
+      <block type="logic_compare"></block>
+      <block type="logic_operation"></block>
+      <block type="logic_negate"></block>
+      <block type="logic_boolean"></block>
+    </category>
+    <category name="Werte" colour="230">
+      <block type="math_number"><field name="NUM">0</field></block>
+      <block type="math_arithmetic"></block>
+      <block type="text"></block>
+      <block type="debug"></block>
+      <block type="comment"></block>
+    </category>
+    <category name="Funktionen" colour="290" custom="PROCEDURE"></category>
+  </xml>
+
+  <script src="smarthome/blocks.js"></script>
+  <script src="smarthome/generators.js"></script>
+  <script src="smarthome/app.js"></script>
+</body>
+</html>

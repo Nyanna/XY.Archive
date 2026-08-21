@@ -14,6 +14,8 @@ The writer persists through the *same* DuckDB connection the read path uses.
 from __future__ import annotations
 
 from xy.hrv.viewer.app import HrViewer
+from xy.smarthome import SmartHomeConfig, SmartHomeEngine
+from xy.smarthome import web as sh_web
 
 from .client import MqttClient
 from .config import MqttConfig
@@ -33,6 +35,20 @@ class MqttDuck(HrViewer):
         self.writer = WriterThread(cfg, self.buffer, self.sink)
         self.mqtt = MqttClient(cfg, self.buffer)
 
+        # SmartHome automation: own MQTT client, same broker + credentials.
+        self.smarthome = SmartHomeEngine(SmartHomeConfig.from_mqtt(cfg))
+
+    # -- routing: intercept SmartHome API, else inherited surface -------
+    def handle_get(self, handler) -> None:
+        if sh_web.handle_get(self, self.smarthome, handler):
+            return
+        super().handle_get(handler)
+
+    def handle_post(self, handler) -> None:
+        if sh_web.handle_post(self, self.smarthome, handler):
+            return
+        super().handle_post(handler)
+
     # -- ingestion lifecycle (bracketing the HTTP serve loop) ----------
     def on_start(self) -> None:
         cfg: MqttConfig = self.config  # type: ignore[assignment]
@@ -43,6 +59,7 @@ class MqttDuck(HrViewer):
         )
         self.writer.start()
         self.mqtt.start()
+        self.smarthome.start()
 
     def on_stop(self) -> None:
         print(
@@ -50,6 +67,7 @@ class MqttDuck(HrViewer):
             f"deduped={self.writer.deduped}, dropped={self.buffer.dropped})",
             flush=True,
         )
+        self.smarthome.stop()
         # Stop the source first so no new samples race the final flush.
         self.mqtt.stop()
         self.writer.stop()
