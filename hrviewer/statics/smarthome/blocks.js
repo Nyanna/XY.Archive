@@ -6,6 +6,43 @@
 (function () {
   "use strict";
 
+  // Category colours mirror dashboard.css (Primer-style palette: blue
+  // accent, plus green/purple/orange/red/grey for the remaining groups).
+  var COLOUR = {
+    trigger: "#0969da",
+    action: "#8250df",
+    timer: "#9a6700",
+    time: "#1a7f37",
+    value: "#57606a",
+  };
+  window.SMARTHOME_COLOUR = COLOUR;
+
+  window.SMARTHOME_THEME = Blockly.Theme.defineTheme("smarthome", {
+    base: Blockly.Themes.Classic,
+    componentStyles: {
+      workspaceBackgroundColour: "#f5f6f8",
+      toolboxBackgroundColour: "#ffffff",
+      toolboxForegroundColour: "#1f2328",
+      flyoutBackgroundColour: "#ffffff",
+      flyoutForegroundColour: "#1f2328",
+      flyoutOpacity: 1,
+      scrollbarColour: "#d0d7de",
+      insertionMarkerColour: COLOUR.trigger,
+      insertionMarkerOpacity: 0.3,
+      markerColour: COLOUR.trigger,
+      cursorColour: COLOUR.trigger,
+    },
+    blockStyles: {
+      logic_blocks: { colourPrimary: "#cf222e" },
+      loop_blocks: { colourPrimary: "#cf222e" },
+      math_blocks: { colourPrimary: COLOUR.value },
+      text_blocks: { colourPrimary: COLOUR.value },
+      procedure_blocks: { colourPrimary: COLOUR.action },
+      variable_blocks: { colourPrimary: COLOUR.value },
+      list_blocks: { colourPrimary: COLOUR.value },
+    },
+  });
+
   Blockly.defineBlocksWithJsonArray([
     {
       type: "comment",
@@ -13,7 +50,7 @@
       args0: [{ type: "field_input", name: "COMMENT", text: "comment" }],
       previousStatement: null,
       nextStatement: null,
-      colour: 160,
+      colour: COLOUR.value,
     },
     {
       type: "schedule",
@@ -23,7 +60,7 @@
       args1: [{ type: "input_statement", name: "STATEMENT" }],
       previousStatement: null,
       nextStatement: null,
-      colour: 210,
+      colour: COLOUR.trigger,
     },
     {
       type: "on",
@@ -50,7 +87,7 @@
       args1: [{ type: "input_statement", name: "STATEMENT" }],
       previousStatement: null,
       nextStatement: null,
-      colour: 20,
+      colour: COLOUR.trigger,
     },
     {
       type: "debug",
@@ -70,7 +107,7 @@
       ],
       previousStatement: null,
       nextStatement: null,
-      colour: 230,
+      colour: COLOUR.value,
     },
     {
       type: "control",
@@ -83,7 +120,7 @@
       previousStatement: null,
       nextStatement: null,
       inputsInline: true,
-      colour: 290,
+      colour: COLOUR.action,
     },
     {
       type: "get_value",
@@ -102,7 +139,7 @@
         { type: "field_input", name: "OID", text: "zigbee2mqtt.0.<device>.temperature" },
       ],
       output: null,
-      colour: 290,
+      colour: COLOUR.action,
     },
     {
       type: "time_get",
@@ -123,7 +160,7 @@
         },
       ],
       output: "Number",
-      colour: 120,
+      colour: COLOUR.time,
     },
     {
       type: "timeouts_settimeout",
@@ -146,7 +183,7 @@
       args1: [{ type: "input_statement", name: "STATEMENT" }],
       previousStatement: null,
       nextStatement: null,
-      colour: 60,
+      colour: COLOUR.timer,
     },
     {
       type: "timeouts_cleartimeout",
@@ -154,7 +191,7 @@
       args0: [{ type: "field_input", name: "NAME", text: "timer" }],
       previousStatement: null,
       nextStatement: null,
-      colour: 60,
+      colour: COLOUR.timer,
     },
   ]);
 })();

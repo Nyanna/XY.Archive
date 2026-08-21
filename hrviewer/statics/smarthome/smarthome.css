@@ -1,0 +1,37 @@
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; }
+
+.topbar button {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+.topbar button:hover { color: #fff; opacity: 0.9; }
+.topbar button#reload {
+  background: var(--panel);
+  color: var(--fg);
+  border-color: var(--border);
+}
+.topbar button#reload:hover { color: var(--accent); opacity: 1; }
+
+.status.error { color: #e02f44; }
+
+.metrics {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+}
+.metrics .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+  background: #e02f44;
+}
+.metrics .dot.on { background: #56a64b; }
+
+#blocklyDiv { flex: 1 1 auto; }
