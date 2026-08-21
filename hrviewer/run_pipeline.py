@@ -138,7 +138,7 @@ def sync_hive(direction: str) -> None:
             env=HIVE_GIT_ENV, capture_output=True, text=True,
         )
         if status.stdout.strip():
-            _git(["commit", "-c", "user.name=srv", "-c", "user.email=<>", "-m", f"pipeline sync {time.strftime('%Y-%m-%d %H:%M:%S')}"])
+            _git(["-c", "user.name=srv", "-c", "user.email=<>", "commit", "-m", f"pipeline sync {time.strftime('%Y-%m-%d %H:%M:%S')}"])
         else:
             print("No local Hive changes to commit.")
 
