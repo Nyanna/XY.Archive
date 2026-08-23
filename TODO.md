@@ -1,5 +1,4 @@
 # TODO
-* projet folder bearbeiten
 
 ## 02 Pathogenesemodell
 
