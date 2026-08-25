@@ -1,4 +1,5 @@
 # TODO
+-wie LC stabilisiewren, literatur, LC löst flipflop aus
 
 ## 02 Pathogenesemodell
 
