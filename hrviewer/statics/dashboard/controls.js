@@ -12,11 +12,58 @@ const fromIn = document.getElementById("fromInput");
 const toIn = document.getElementById("toInput");
 const maxPointsIn = document.getElementById("maxPointsInput");
 const autoRefreshIn = document.getElementById("autoRefresh");
+const historyBtn = document.getElementById("historyBack");
 
 let fromMs, toMs;
 let zoomWindow = null;          // {s,e} in ms -- current synced zoom, or null
 let syncing = false;            // re-entrancy guard for zoom broadcasting
 let pending = 0;
+
+/* ---- navigation history -----------------------------------------------
+ * Every explicit range/resolution/selection-zoom change pushes the state it
+ * replaces onto a stack; `historyBack()` pops and restores it. Auto-refresh
+ * and the "Reset" zoom button don't push (they're not user navigation). */
+const historyStack = [];
+let prevSnapshot = null;        // settings as of the last commit(), i.e. "current"
+
+function snapshot() {
+  return {
+    fromMs, toMs, quick: quickSel.value, maxPoints: maxPointsIn.value,
+    zoomWindow: zoomWindow ? { s: zoomWindow.s, e: zoomWindow.e } : null,
+  };
+}
+/* Call once a change has been fully applied, so the next pushHistory() has
+ * an accurate "state before this change" to save. */
+function commit() { prevSnapshot = snapshot(); }
+
+function updateHistoryButton() {
+  if (historyBtn) historyBtn.disabled = historyStack.length === 0;
+}
+
+/* Call right before starting a user-triggered range/resolution/zoom change. */
+function pushHistory() {
+  if (!prevSnapshot) return;
+  historyStack.push(prevSnapshot);
+  updateHistoryButton();
+}
+
+function restoreSnapshot(s) {
+  fromMs = s.fromMs; toMs = s.toMs;
+  quickSel.value = s.quick;
+  maxPointsIn.value = s.maxPoints;
+  syncInputs();
+  zoomWindow = s.zoomWindow ? { s: s.zoomWindow.s, e: s.zoomWindow.e } : null;
+  clearQueryCache();
+  panels.forEach((p) => p.markDirty());
+  commit();
+}
+
+export function historyBack() {
+  const s = historyStack.pop();
+  if (!s) return;
+  updateHistoryButton();
+  restoreSnapshot(s);
+}
 
 export const panels = [];       // all Panel instances
 export function registerPanel(p) { panels.push(p); }
@@ -81,6 +128,7 @@ export function applyRange() {
   zoomWindow = null;                       // fresh data -> reset synced zoom
   clearQueryCache();                       // drop shared query results for the old window
   panels.forEach((p) => p.markDirty());    // visible ones reload immediately
+  commit();
 }
 
 export function setQuickRange(spanMs) {
@@ -103,6 +151,7 @@ export function resetZoom() {
   panels.forEach((p) => {
     if (p.chart) p.chart.dispatchAction({ type: "dataZoom", start: 0, end: 100 });
   });
+  commit();                                // keep bookkeeping accurate, but not a history entry
 }
 
 /* Live pan feedback: shift the X window of every synced, loaded panel by an
@@ -116,6 +165,7 @@ export function livePan(off) {
 
 export function adoptWindow(start, end) {
   if (!(end - start > 1000)) return;       // ignore accidental micro-drags
+  pushHistory();                           // remember the window this selection-zoom replaces
   fromMs = start; toMs = end;
   syncInputs();
   quickSel.value = "custom";
@@ -137,18 +187,23 @@ function startAutoRefresh() {
 export function initControls() {
   quickSel.addEventListener("change", () => {
     if (quickSel.value === "custom") return;
+    pushHistory();
     setQuickRange(parseInt(quickSel.value, 10));
   });
   document.getElementById("apply").addEventListener("click", () => {
+    pushHistory();
     quickSel.value = "custom"; applyRange();
   });
   document.getElementById("resetZoom").addEventListener("click", resetZoom);
+  if (historyBtn) historyBtn.addEventListener("click", historyBack);
   maxPointsIn.addEventListener("change", () => {
+    pushHistory();
     clearQueryCache();                     // resolution changed -> re-query
     panels.forEach((p) => p.markDirty());
+    commit();
   });
-  document.getElementById("shiftBack").addEventListener("click", () => shift(-1));
-  document.getElementById("shiftFwd").addEventListener("click", () => shift(1));
+  document.getElementById("shiftBack").addEventListener("click", () => { pushHistory(); shift(-1); });
+  document.getElementById("shiftFwd").addEventListener("click", () => { pushHistory(); shift(1); });
   [fromIn, toIn].forEach((el) => el.addEventListener("change", () => (quickSel.value = "custom")));
 
   window.addEventListener("resize", () => panels.forEach((p) => p.resize()));
