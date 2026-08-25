@@ -35,6 +35,13 @@ def build_config(argv: list[str] | None = None) -> tuple[MqttConfig, argparse.Na
     # Writer
     p.add_argument("--flush-interval", type=float, default=cfg.flush_interval_s)
     p.add_argument("--flush-max", type=int, default=cfg.flush_max_samples)
+    p.add_argument(
+        "--smarthome",
+        dest="smarthome",
+        action="store_true",
+        default=cfg.smarthome_enabled,
+        help="Enable the SmartHome automation engine.",
+    )
     # Backfill (one-shot: fetch missing history from VictoriaMetrics, then
     # exit -- does not start the MQTT client or the HTTP server).
     p.add_argument(
@@ -72,6 +79,7 @@ def build_config(argv: list[str] | None = None) -> tuple[MqttConfig, argparse.Na
     cfg.mqtt_client_id = args.mqtt_client_id
     cfg.flush_interval_s = args.flush_interval
     cfg.flush_max_samples = args.flush_max
+    cfg.smarthome_enabled = args.smarthome
     cfg.vm_host = args.vm_host
     cfg.vm_port = args.vm_port
     cfg.backfill_empty_stop_days = args.backfill_empty_stop_days

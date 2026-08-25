@@ -126,6 +126,11 @@ class MqttConfig(Config):
     )
     queue_max: int = field(default_factory=lambda: int(_env("SMD_QUEUE_MAX", "100000")))
 
+    smarthome_enabled: bool = field(
+        default_factory=lambda: _env("SMD_SMARTHOME", "").lower()
+        in ("1", "true", "yes")
+    )
+
     # ---- Subscriptions & metrics (mirrors smarthome.yaml) ----
     subscriptions: list[Subscription] = field(default_factory=list)
     metrics: list[Metric] = field(default_factory=list)

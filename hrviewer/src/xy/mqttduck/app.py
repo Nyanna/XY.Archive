@@ -36,16 +36,20 @@ class MqttDuck(HrViewer):
         self.mqtt = MqttClient(cfg, self.buffer)
 
         # SmartHome automation: own MQTT client, same broker + credentials.
-        self.smarthome = SmartHomeEngine(SmartHomeConfig.from_mqtt(cfg))
+        self.smarthome = (
+            SmartHomeEngine(SmartHomeConfig.from_mqtt(cfg))
+            if cfg.smarthome_enabled
+            else None
+        )
 
     # -- routing: intercept SmartHome API, else inherited surface -------
     def handle_get(self, handler) -> None:
-        if sh_web.handle_get(self, self.smarthome, handler):
+        if self.smarthome and sh_web.handle_get(self, self.smarthome, handler):
             return
         super().handle_get(handler)
 
     def handle_post(self, handler) -> None:
-        if sh_web.handle_post(self, self.smarthome, handler):
+        if self.smarthome and sh_web.handle_post(self, self.smarthome, handler):
             return
         super().handle_post(handler)
 
@@ -59,7 +63,8 @@ class MqttDuck(HrViewer):
         )
         self.writer.start()
         self.mqtt.start()
-        self.smarthome.start()
+        if self.smarthome:
+            self.smarthome.start()
 
     def on_stop(self) -> None:
         print(
@@ -67,7 +72,8 @@ class MqttDuck(HrViewer):
             f"deduped={self.writer.deduped}, dropped={self.buffer.dropped})",
             flush=True,
         )
-        self.smarthome.stop()
+        if self.smarthome:
+            self.smarthome.stop()
         # Stop the source first so no new samples race the final flush.
         self.mqtt.stop()
         self.writer.stop()
