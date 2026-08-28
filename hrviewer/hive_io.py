@@ -61,7 +61,7 @@ from pathlib import Path
 import duckdb
 
 # --- Configuration ----------------------------------------------------
-HIVE_PATH = Path(os.environ.get("HIVE_PATH", Path(__file__).parent / "hive"))
+HIVE_PATH = Path(os.environ.get("HIVE_PATH", Path(__file__).parent / ".hive"))
 
 DEFAULT_BATCH_SAMPLES = 50_000        # Python-side buffer before staging
 _MERGE_THRESHOLD = 1_000_000          # staged rows before an auto-merge
