@@ -3,5 +3,5 @@
 .claude/logs
 /Gadgetbridge
 /.env
-/hive
-/hive.sm
+/.hive
+/.hive.sm

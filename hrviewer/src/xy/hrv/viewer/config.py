@@ -14,7 +14,7 @@ from typing import ClassVar
 STATICS_DIR: Path = Path("statics")
 
 # Default location of the Parquet Hive.
-DEFAULT_HIVE_PATH = "/home/user/xyan/XY.Archiv/hrviewer/hive"
+DEFAULT_HIVE_PATH = "/home/user/xyan/XY.Archiv/hrviewer/.hive"
 
 
 def _env(name: str, default: str) -> str:

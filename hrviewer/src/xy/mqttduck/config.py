@@ -20,7 +20,7 @@ from typing import ClassVar
 from xy.hrv.viewer.config import Config, _env
 
 # Default location of the MQTT sensor Hive (sibling of the HR-Viewer Hive).
-DEFAULT_SM_HIVE_PATH = "/home/user/xyan/XY.Archiv/hrviewer/hive.sm"
+DEFAULT_SM_HIVE_PATH = "/home/user/xyan/XY.Archiv/hrviewer/.hive.sm"
 
 
 @dataclass(frozen=True)

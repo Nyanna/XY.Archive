@@ -22,7 +22,7 @@ DB_PATH = Path(os.environ.get("HRV_DB_PATH", str(HERE / "Gadgetbridge")))
 DB_REMOTE_URL = "https://drive.google.com/file/d/1yropB-j0couqP8f-XItaAJm3dVsfgc1t/view?usp=sharing"
 DB_TMP_PATH = DB_PATH.with_suffix(".tmp")
 
-HIVE_PATH = Path(os.environ.get("HIVE_PATH", str(HERE / "hive")))
+HIVE_PATH = Path(os.environ.get("HIVE_PATH", str(HERE / ".hive")))
 HIVE_SSH_KEY = Path("/home/user/.ssh/hivebee")
 HIVE_SSH_USER = "hivebee"
 HIVE_SSH_HOST = "proxy.xyan.icu"
