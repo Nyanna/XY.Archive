@@ -10,7 +10,7 @@ import {
 } from "./controls.js";
 import { seriesData, cachedFetchTable, latestValue } from "./data.js";
 import { panelRange } from "./time.js";
-import { GRID_TOP, gridBottom, fmtTip } from "./charts.common.js";
+import { GRID_TOP, gridBottom, fmtTip, ALL_LEGEND_LABEL } from "./charts.common.js";
 import { buildTimeseries } from "./charts.timeseries.js";
 import { buildStateBand } from "./charts.stateband.js";
 import { buildDaily } from "./charts.daily.js";
@@ -46,6 +46,8 @@ export class Panel {
     if (this.chart) return;
     this.chart = echarts.init(this.chartEl);
 
+    this.chart.on("legendselectchanged", (params) => this.syncAllLegendEntry(params));
+
     if (this.cfg.type === "daily") return;  // keep own X-axis
 
     this.chart.on("datazoom", () => {
@@ -68,6 +70,33 @@ export class Panel {
     zr.on("mouseout", broadcastHide);
 
     this.attachDragZoom();
+  }
+
+  /* Two-way sync for the pseudo "All" legend */
+  syncAllLegendEntry(params) {
+    if (this._legendSyncing) return;
+    const names = [];
+    (this.chart.getOption().legend || []).forEach((lg) =>
+      (lg.data || []).forEach((n) => { if (n !== ALL_LEGEND_LABEL) names.push(n); }));
+    if (!names.length) return;
+    this._legendSyncing = true;
+    try {
+      if (params.name === ALL_LEGEND_LABEL) {
+        const turnOn = params.selected[ALL_LEGEND_LABEL];
+        names.forEach((n) => {
+          if ((params.selected[n] !== false) !== turnOn) {
+            this.chart.dispatchAction({ type: turnOn ? "legendSelect" : "legendUnSelect", name: n });
+          }
+        });
+      } else if (ALL_LEGEND_LABEL in params.selected) {
+        const allOn = names.every((n) => params.selected[n] !== false);
+        if ((params.selected[ALL_LEGEND_LABEL] !== false) !== allOn) {
+          this.chart.dispatchAction({ type: allOn ? "legendSelect" : "legendUnSelect", name: ALL_LEGEND_LABEL });
+        }
+      }
+    } finally {
+      this._legendSyncing = false;
+    }
   }
 
   /* LEFT drag: zoom to region; RIGHT drag: pan window. */

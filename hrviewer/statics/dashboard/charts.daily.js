@@ -2,7 +2,7 @@
  * visible points, own (unsynced) X-axis. */
 "use strict";
 import { toXY } from "./data.js";
-import { AXIS, BORDER, baseYAxis, insideZoom, thresholdMarkLine, floatingLegend, fmtTip, tooltipPosition } from "./charts.common.js";
+import { AXIS, BORDER, baseYAxis, insideZoom, thresholdMarkLine, floatingLegend, legendSelectedWithAll, legendAllGhostSeries, fmtTip, tooltipPosition } from "./charts.common.js";
 
 export function buildDaily(cfg, table, legendSelected) {
   const legendData = [], series = [];
@@ -17,13 +17,16 @@ export function buildDaily(cfg, table, legendSelected) {
       markLine: thresholdMarkLine(sc),
     });
   });
+  if (cfg.legend) series.push(...legendAllGhostSeries());
   return {
     backgroundColor: "transparent", animation: false,
     tooltip: {
       trigger: "axis", axisPointer: { type: "line" }, valueFormatter: fmtTip,
       position: tooltipPosition(44),
     },
-    legend: cfg.legend ? floatingLegend(legendData, [], legendSelected) : undefined,
+    legend: cfg.legend
+      ? floatingLegend(legendData, [], legendSelectedWithAll(legendData, legendSelected))
+      : undefined,
     grid: { left: 56, right: 24, top: 16, bottom: 44 },
     xAxis: {
       type: "time", axisLabel: { color: AXIS },

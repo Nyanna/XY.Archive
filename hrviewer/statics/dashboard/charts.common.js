@@ -132,8 +132,25 @@ export function annotationSeries(range) {
     : [];
 }
 
-/* Floating legend(s) over plot area; split by axis with dual Y-axes. */
 const LEGEND_BG = "rgba(255,255,255,0.72)";
+export const ALL_LEGEND_LABEL = "All";
+
+/* ECharts drops any legend.data entry that has no matching series */
+export function legendAllGhostSeries() {
+  return [{
+    name: ALL_LEGEND_LABEL, type: "line", data: [], showSymbol: false,
+    silent: true, legendHoverLink: false, animation: false,
+    lineStyle: { color: "#8b949e" }, itemStyle: { color: "#8b949e" },
+  }];
+}
+
+export function legendSelectedWithAll(names, selected) {
+  const sel = Object.assign({}, selected);
+  sel[ALL_LEGEND_LABEL] = names.every((n) => sel[n] !== false);
+  return sel;
+}
+
+/* Floating legend(s) over plot area; split by axis with dual Y-axes. */
 function legendPiece(names, side, selected) {
   if (!names.length) return null;
   return {
@@ -143,6 +160,11 @@ function legendPiece(names, side, selected) {
   };
 }
 export function floatingLegend(leftNames, rightNames, selected) {
+  // "All" rides along with whichever side actually has entries (left
+  // preferred), toggling every series across both sides.
+  if (leftNames.length || rightNames.length) {
+    (leftNames.length ? leftNames : rightNames).push(ALL_LEGEND_LABEL);
+  }
   const pieces = [
     legendPiece(leftNames, "left", selected),
     legendPiece(rightNames, "right", selected),

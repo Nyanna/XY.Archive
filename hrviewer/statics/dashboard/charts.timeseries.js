@@ -5,7 +5,7 @@
 import { movingAverage } from "./data.js";
 import {
   GRID_TOP, gridBottom, timeXAxis, insideZoom, baseYAxis,
-  thresholdMarkLine, annotationSeries, floatingLegend,
+  thresholdMarkLine, annotationSeries, floatingLegend, legendSelectedWithAll, legendAllGhostSeries,
   DEFAULT_PALETTE, axisTooltipFormatter, tooltipPosition,
 } from "./charts.common.js";
 
@@ -57,6 +57,7 @@ export function buildTimeseries(cfg, fetched, legendSelected, range, chart) {
     }
   });
   series.push(...annotationSeries(range));
+  if (cfg.legend) series.push(...legendAllGhostSeries());
   return {
     backgroundColor: "transparent", animation: false,
     textStyle: { color: "#1f2328" },
@@ -69,7 +70,9 @@ export function buildTimeseries(cfg, fetched, legendSelected, range, chart) {
       position: tooltipPosition(gridBottom(cfg)),
       formatter: axisTooltipFormatter(seriesInfo, chart),
     },
-    legend: cfg.legend ? floatingLegend(leftNames, rightNames, legendSelected) : undefined,
+    legend: cfg.legend
+      ? floatingLegend(leftNames, rightNames, legendSelectedWithAll(leftNames.concat(rightNames), legendSelected))
+      : undefined,
     // Fixed margins for synced hover cursor alignment across panels
     grid: { left: 64, right: 64, top: GRID_TOP, bottom: gridBottom(cfg) },
     xAxis: timeXAxis(cfg, range),
