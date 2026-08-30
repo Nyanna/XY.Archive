@@ -24,7 +24,10 @@ async function fetchTable(body) {
  * shared across panels. Cleared explicitly (see clearQueryCache) whenever
  * the global range/resolution changes. */
 const queryCache = new Map();
-export function clearQueryCache() { queryCache.clear(); }
+export function clearQueryCache() {
+	//disabled not needed for most usecases
+	//queryCache.clear();
+}
 export function cachedFetchTable(body) {
   const key = JSON.stringify(body);
   let p = queryCache.get(key);
