@@ -292,7 +292,7 @@
     /* Global header links (formerly the Grafana "Links" text panel). */
     links: [
       { label: "Zigbee", url: "http://dietpi:9090" },
-      { label: "IOBroker", url: "http://dietpi:8081/smarthome.html" },
+      { label: "IOBroker", url: "http://dietpi/smarthome.html" },
       { label: "Fritz!Box", url: "http://fritz.box" },
     ],
     rows: [
