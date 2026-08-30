@@ -9,8 +9,8 @@ from dataclasses import dataclass, field
 
 from xy.hrv.viewer.config import _env
 
-DEFAULT_NATIVE_PATH = "/home/user/xyan/XY.Archiv/hrviewer/smarthome/smarthome.xml"
-DEFAULT_PY_PATH = "/home/user/xyan/XY.Archiv/hrviewer/smarthome/smarthome_generated.py"
+DEFAULT_NATIVE_PATH = "../smarthome/smarthome.xml"
+DEFAULT_PY_PATH = "../smarthome/smarthome_generated.py"
 
 
 @dataclass
