@@ -48,7 +48,7 @@
     "0x00124b002a6d6fd8", "0x00124b0022d5a1f7", "0x00124b00252be376",
     "0x00124b00290fb077", "0x00124b002a50c50a",
     "0x00124b00292b470a", "0x00124b002a6d3c44", "0x44e2f8fffe27e73c",
-    "0x00124b002a50c346", "0x00124b00252be456", "0x94deb8fffe41e3c0",
+    "0x00124b002a50c346", "0x00124b00252be456",
   ];
   /* Psychrometric functions (Magnus formula): T in °C, H in %RH. */
   const satP = (T) => 6.112 * Math.exp((17.67 * T) / (T + 243.5)); // sat. vapour pressure [hPa]
