@@ -35,7 +35,7 @@
     "0x00124b0026b82cce": "Netzwerk",
     "0x001788010ea481b2": "Philips",
     "0x00124b00252be456": "Xyan",
-    "0x00124b002a50c346": "Kimi 2",
+    "0x00124b002a50c346": "Kimi",
   };
   const label = (id) => SENSORS[id] || id;
 
