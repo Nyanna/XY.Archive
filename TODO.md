@@ -1,5 +1,11 @@
 # TODO
--wie LC stabilisiewren, literatur, LC löst flipflop aus
+- Central logserver für alle AP und MAC gerätetracking, in assets mac eintragen
+- wie LC stabilisiewren, literatur, LC löst flipflop aus
+	! consensus für LC research verwenden und einbauen
+	- LC großes project repo zuerst ausbauen dann colgrep aks prefil, dann abfrage
+	- LC zurücksetzung mit hochdosis LDX alle 2 wochen (wie der pilz heini)?
+- LC Kopplung an iris Fokus?, wenn bei anfall keine sehschärfe, ist iris indikator so wie verspannung im nacken, wie kontrolliert LC scharfstellen? schlafdruck macht scharf stellen anstrengend
+- Literatur mit si design aufarbeiten, mönch mit leuchteaugen
 
 ## 02 Pathogenesemodell
 
