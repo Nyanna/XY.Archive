@@ -1,4 +1,5 @@
 # TODO
+- HRV Panel Export, Bild CSV Rows/Cols, ne gewählte serien, kleines export kontextmenü
 - Central logserver für alle AP und MAC gerätetracking, in assets mac eintragen
 - wie LC stabilisiewren, literatur, LC löst flipflop aus
 	! consensus für LC research verwenden und einbauen

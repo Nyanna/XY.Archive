@@ -6,3 +6,5 @@
 /.claude/logs/*.json
 /project/done
 .colgrep/
+/.claude/
+/.github/
