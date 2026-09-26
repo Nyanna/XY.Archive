@@ -178,24 +178,43 @@ export function exportCsv() {
   const allTs = new Set();
 
   panels.forEach((p) => {
-    if (p.cfg.type !== "timeseries" || !p.visible || !p.chart) return;
+    if (!p.visible || !p.chart) return;
     if (p.host.offsetParent === null) return;   // hidden via collapsed row / inactive tab
     const opt = p.chart.getOption();
-    const names = new Set();
-    (opt.legend || []).forEach((lg) => (lg.data || []).forEach((n) => {
-      if (n !== ALL_LEGEND_LABEL) names.add(n);
-    }));
-    const selected = p.legendSelection() || {};
-    (opt.series || []).forEach((s) => {
-      if (!names.has(s.name) || selected[s.name] === false) return;
-      const byTs = new Map();
-      (s.data || []).forEach(([t, v]) => {
-        if (t < start || t > end || v == null) return;
-        byTs.set(t, v);
-        allTs.add(t);
+
+    if (p.cfg.type === "timeseries") {
+      const names = new Set();
+      (opt.legend || []).forEach((lg) => (lg.data || []).forEach((n) => {
+        if (n !== ALL_LEGEND_LABEL) names.add(n);
+      }));
+      const selected = p.legendSelection() || {};
+      (opt.series || []).forEach((s) => {
+        if (!names.has(s.name) || selected[s.name] === false) return;
+        const byTs = new Map();
+        (s.data || []).forEach(([t, v]) => {
+          if (t < start || t > end || v == null) return;
+          byTs.set(t, v);
+          allTs.add(t);
+        });
+        columns.push({ label: p.cfg.title + " / " + s.name, byTs });
       });
-      columns.push({ label: p.cfg.title + " / " + s.name, byTs });
-    });
+    } else if (p.cfg.type === "state") {
+      // No per-series legend toggle here (one categorical series); resample
+      // the [start,end,code] segments onto a per-minute grid instead.
+      const sc = p.cfg.series[0];
+      const states = sc.states || {};
+      const segments = (opt.series && opt.series[0] && opt.series[0].data) || [];
+      const byTs = new Map();
+      segments.forEach(([segStart, segEnd, code]) => {
+        const label = (states[code] && states[code].label) || String(code);
+        const from = Math.max(segStart, start), to = Math.min(segEnd, end);
+        for (let t = Math.ceil(from / 60000) * 60000; t < to; t += 60000) {
+          byTs.set(t, label);
+          allTs.add(t);
+        }
+      });
+      if (byTs.size) columns.push({ label: p.cfg.title + " / " + sc.label, byTs });
+    }
   });
 
   if (!columns.length) {
