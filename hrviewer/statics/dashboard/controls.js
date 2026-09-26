@@ -4,6 +4,7 @@
  * other module reads/receives it through the functions exported here. */
 "use strict";
 import { fmtLocal, parseLocal } from "./time.js";
+import { ALL_LEGEND_LABEL } from "./charts.common.js";
 import { clearQueryCache } from "./data.js";
 
 const statusEl = document.getElementById("status");
@@ -162,6 +163,70 @@ export function resetZoom() {
   commit();                                // keep bookkeeping accurate, but not a history entry
 }
 
+/* ---- CSV export -------------------------------------------------------
+ * Only visible, open (not collapsed/inactive-tab) "timeseries" panels are
+ * included, and within each only the series currently toggled on in its
+ * legend (the pseudo "All" entry is not a real series and is skipped). */
+function csvEscape(v) {
+  const s = String(v);
+  return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+
+export function exportCsv() {
+  const { start, end } = getRange();
+  const columns = [];
+  const allTs = new Set();
+
+  panels.forEach((p) => {
+    if (p.cfg.type !== "timeseries" || !p.visible || !p.chart) return;
+    if (p.host.offsetParent === null) return;   // hidden via collapsed row / inactive tab
+    const opt = p.chart.getOption();
+    const names = new Set();
+    (opt.legend || []).forEach((lg) => (lg.data || []).forEach((n) => {
+      if (n !== ALL_LEGEND_LABEL) names.add(n);
+    }));
+    const selected = p.legendSelection() || {};
+    (opt.series || []).forEach((s) => {
+      if (!names.has(s.name) || selected[s.name] === false) return;
+      const byTs = new Map();
+      (s.data || []).forEach(([t, v]) => {
+        if (t < start || t > end || v == null) return;
+        byTs.set(t, v);
+        allTs.add(t);
+      });
+      columns.push({ label: p.cfg.title + " / " + s.name, byTs });
+    });
+  });
+
+  if (!columns.length) {
+    setStatus("CSV export: keine sichtbaren Serien.");
+    return;
+  }
+
+  const timestamps = Array.from(allTs).sort((a, b) => a - b);
+  const header = ["timestamp", ...columns.map((c) => c.label)];
+  const lines = [header.map(csvEscape).join(",")];
+  timestamps.forEach((t) => {
+    const row = [fmtLocal(t)];
+    columns.forEach((c) => {
+      const v = c.byTs.get(t);
+      row.push(v == null ? "" : String(v));
+    });
+    lines.push(row.map(csvEscape).join(","));
+  });
+
+  const blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = ("dashboard_" + fmtLocal(start) + "_" + fmtLocal(end) + ".csv").replace(/:/g, "-");
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+
 /* Live pan feedback: shift the X window of every synced, loaded panel by an
  * offset (ms) without re-querying -- used while a right-drag is in flight. */
 export function livePan(off) {
@@ -203,6 +268,7 @@ export function initControls() {
     quickSel.value = "custom"; applyRange();
   });
   document.getElementById("resetZoom").addEventListener("click", resetZoom);
+  document.getElementById("exportCsv").addEventListener("click", exportCsv);
   if (historyBtn) historyBtn.addEventListener("click", historyBack);
   maxPointsIn.addEventListener("change", () => {
     pushHistory();
