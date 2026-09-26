@@ -146,6 +146,14 @@ export function shift(dir) {
   applyRange();
 }
 
+export function shiftDay(dir) {
+  const DAY_MS = 86400000;
+  fromMs += dir * DAY_MS;
+  toMs += dir * DAY_MS;
+  syncInputs();
+  applyRange();
+}
+
 export function resetZoom() {
   zoomWindow = null;
   panels.forEach((p) => {
@@ -204,6 +212,8 @@ export function initControls() {
   });
   document.getElementById("shiftBack").addEventListener("click", () => { pushHistory(); shift(-1); });
   document.getElementById("shiftFwd").addEventListener("click", () => { pushHistory(); shift(1); });
+  document.getElementById("dayBack").addEventListener("click", () => { pushHistory(); shiftDay(-1); });
+  document.getElementById("dayFwd").addEventListener("click", () => { pushHistory(); shiftDay(1); });
   [fromIn, toIn].forEach((el) => el.addEventListener("change", () => (quickSel.value = "custom")));
 
   window.addEventListener("resize", () => panels.forEach((p) => p.resize()));
