@@ -26,6 +26,12 @@
   --cliff-500: #b02a40;   /* Klippe, Hauptakzent */
   --cliff-400: #d9536a;   /* Akzent auf dunklem Grund (Hover, Fokus) */
 
+  /* --- Palette: Dämmerung (Scroll-Fortschritt) --------------------------- */
+  --dawn-top:    var(--night-800);
+  --dawn-mid:    var(--cliff-600);
+  --dawn-low:    var(--cliff-500);
+  --dawn-horizon: var(--star-gold);
+
   /* --- Semantische Rollen (dunkles Thema ist Standard) ------------------ */
   --bg:            var(--night-900);
   --bg-elevated:   var(--night-800);
@@ -189,6 +195,21 @@ input:focus, textarea:focus, select:focus { border-color: var(--surf-300); }
 }
 
 /* Sternenfeld ohne Bilddatei */
+/* Scroll-driven dawn: --scroll-progress (0..1) is written by dawn-scroll.js
+   and fades a warm sunrise gradient in behind the stars as the reader
+   scrolls towards the end of the page. */
+.sky-dawn {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: linear-gradient(180deg,
+    var(--dawn-top) 0%, var(--dawn-mid) 45%, var(--dawn-low) 75%, var(--dawn-horizon) 100%);
+  opacity: var(--scroll-progress, 0);
+  transition: opacity 0.2s linear;
+}
+
+
 .starfield {
   /* Star layer lives on a fixed pseudo-element so it never overrides the
      host's own background-image (e.g. the sky gradient on <body>). */

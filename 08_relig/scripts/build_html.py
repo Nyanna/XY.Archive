@@ -1,4 +1,17 @@
-'Compile the markdown essays in 08_relig into standalone HTML pages.\n\nEvery ``*.md`` file directly inside the source directory is rendered with the\nshared "Hokaido Night" design system (hokaido-theme.css) and written as a\nstandalone HTML file into the output directory, next to an index.html\noverview. The design targets comfortable, atmospheric reading on mobile,\ntablet and laptop screens.\n\nThe markdown content stays in its original language; this script and all\ngenerated markup/UI strings are English.\n\nUsage:\n    python3 build_html.py\n'
+"""Compile the markdown essays in 08_relig into standalone HTML pages.
+
+Every ``*.md`` file directly inside the source directory is rendered with the
+shared "Hokaido Night" design system (hokaido-theme.css) and written as a
+standalone HTML file into the output directory, next to an index.html
+overview. The design targets comfortable, atmospheric reading on mobile,
+tablet and laptop screens.
+
+The markdown content stays in its original language; this script and all
+generated markup/UI strings are English.
+
+Usage:
+    python3 build_html.py
+"""
 from __future__ import annotations
 import html
 import re
@@ -8,6 +21,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 SOURCE_DIR = SCRIPT_DIR.parent
 OUTPUT_DIR = SOURCE_DIR.parent / 'docs' / 'phil'
 CSS_FILENAME = 'hokaido-theme.css'
+JS_FILENAME = 'dawn-scroll.js'
 SITE_TITLE = 'Contemplations'
 SITE_TAGLINE = 'Essays and letters on suffering, compassion and enlightenment — a small collection for quiet reading.'
 '# --------------------------------------------------------------------------'
@@ -155,11 +169,11 @@ def detect_language(text: str) -> str:
 
 def render_article_page(title_html: str, title_plain: str, lang: str, body_html: str) -> str:
     return f'<!doctype html>\n<html lang="{lang}">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>{
-        html.escape(title_plain)} — {SITE_TITLE}</title>\n<link rel="stylesheet" href="{CSS_FILENAME}">\n</head>\n<body class="starfield">\n<header class="site-header container">\n<a class="back-link" href="index.html">← Overview</a>\n</header>\n<main class="container article">\n<article class="card">\n<h1>{title_html}</h1>\n{body_html}\n</article>\n</main>\n<footer class="site-footer container">\n<small>{SITE_TITLE}</small>\n</footer>\n</body>\n</html>\n'
+        html.escape(title_plain)} — {SITE_TITLE}</title>\n<link rel="stylesheet" href="{CSS_FILENAME}">\n</head>\n<body class="starfield">\n<div class="sky-dawn" aria-hidden="true"></div>\n<header class="site-header container">\n<a class="back-link" href="index.html">← Overview</a>\n</header>\n<main class="container article">\n<article class="card">\n<h1>{title_html}</h1>\n{body_html}\n</article>\n</main>\n<footer class="site-footer container">\n<small>{SITE_TITLE}</small>\n</footer>\n<script src="{JS_FILENAME}" defer></script>\n</body>\n</html>\n'
 
 def render_index_page(cards_html: str) -> str:
-    return f'<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>{SITE_TITLE}</title>\n<link rel="stylesheet" href="{CSS_FILENAME}">\n</head>\n<body class="starfield">\n<header class="site-header container">\n<h1>{SITE_TITLE}</h1>\n<p class="tagline">{
-        html.escape(SITE_TAGLINE)}</p>\n</header>\n<main class="container">\n<div class="index-grid">\n{cards_html}\n</div>\n</main>\n<footer class="site-footer container">\n<small>{SITE_TITLE}</small>\n</footer>\n</body>\n</html>\n'
+    return f'<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>{SITE_TITLE}</title>\n<link rel="stylesheet" href="{CSS_FILENAME}">\n</head>\n<body class="starfield">\n<div class="sky-dawn" aria-hidden="true"></div>\n<header class="site-header container">\n<h1>{SITE_TITLE}</h1>\n<p class="tagline">{
+        html.escape(SITE_TAGLINE)}</p>\n</header>\n<main class="container">\n<div class="index-grid">\n{cards_html}\n</div>\n</main>\n<footer class="site-footer container">\n<small>{SITE_TITLE}</small>\n</footer>\n<script src="{JS_FILENAME}" defer></script>\n</body>\n</html>\n'
 
 def render_index_card(slug: str, title_plain: str, excerpt: str) -> str:
     return f'<a class="index-card card" href="{slug}.html"><h2>{
