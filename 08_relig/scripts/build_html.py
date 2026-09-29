@@ -19,6 +19,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 SOURCE_DIR = SCRIPT_DIR.parent
+SOURCE_DIRS = [SOURCE_DIR, SOURCE_DIR.parent / '01_me']
 OUTPUT_DIR = SOURCE_DIR.parent / 'docs' / 'phil'
 CSS_FILENAME = 'hokaido-theme.css'
 JS_FILENAME = 'dawn-scroll.js'
@@ -187,9 +188,9 @@ def build() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     if not (OUTPUT_DIR / CSS_FILENAME).exists():
         print(f'Warning: {CSS_FILENAME} not found in {OUTPUT_DIR}')
-    md_files = sorted(SOURCE_DIR.glob('*.md'))
+    md_files = sorted((p for src_dir in SOURCE_DIRS for p in src_dir.glob('*.md')), key=lambda p: p.name)
     if not md_files:
-        print(f'No markdown files found in {SOURCE_DIR}')
+        print(f'No markdown files found in {SOURCE_DIRS}')
         return
     cards: list[str] = []
     for md_path in md_files:
