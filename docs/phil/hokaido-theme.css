@@ -190,6 +190,19 @@ input:focus, textarea:focus, select:focus { border-color: var(--surf-300); }
 
 /* Sternenfeld ohne Bilddatei */
 .starfield {
+  /* Star layer lives on a fixed pseudo-element so it never overrides the
+     host's own background-image (e.g. the sky gradient on <body>). */
+  position: relative;
+}
+
+.starfield::before,
+.starfield::after {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: repeat;
   background-image:
     radial-gradient(1px 1px at 12% 18%, var(--star-100) 50%, transparent 51%),
     radial-gradient(1px 1px at 34% 62%, var(--star-gold) 50%, transparent 51%),
@@ -197,6 +210,20 @@ input:focus, textarea:focus, select:focus { border-color: var(--surf-300); }
     radial-gradient(1px 1px at 76% 74%, var(--star-gold) 50%, transparent 51%),
     radial-gradient(1px 1px at 90% 12%, var(--star-100) 50%, transparent 51%);
   background-size: 320px 320px;
+  animation: twinkle 6s ease-in-out infinite;
+}
+
+.starfield::after {
+  background-position: 45px 70px;
+  background-size: 260px 260px;
+  animation-duration: 8s;
+  animation-delay: -3s;
+  opacity: 0.6;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.35; }
+  50%      { opacity: 0.9; }
 }
 
 /* --- Prose elements not yet covered above ---------------------------------- */
@@ -246,6 +273,12 @@ li { margin-bottom: var(--space-2); }
 .article .card { padding: var(--space-6); }
 .article .card h1 { margin-bottom: var(--space-5); }
 
+.article .card > * {
+  max-width: 66ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .index-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
@@ -274,4 +307,5 @@ li { margin-bottom: var(--space-2); }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+  .starfield::before, .starfield::after { animation: none !important; opacity: 0.6; }
 }
