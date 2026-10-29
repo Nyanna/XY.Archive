@@ -1,4 +1,5 @@
 # TODO
+- die flushes gehen vom LC aus, der LC steuert das difuse abgleiten in diskursives denken und fokussiertheit, das diskursive denken ist die brücke zum ADHS im LC, am LC liegt auch der sinnustöne der gehirnfunktionen, der schlafdruck kommt vom LC
 - Central logserver für alle AP und MAC gerätetracking, in assets mac eintragen
 - wie LC stabilisiewren, literatur, LC löst flipflop aus
 	! consensus für LC research verwenden und einbauen
