@@ -213,8 +213,8 @@ class Tracker:
     def _render(self, d: Device, now: float) -> dict:
         cfg = self.cfg
         mapping = self.cfg.mappings.get(d.mac)
-        interface = (mapping.interface if mapping else None) or (
-            'wlan' if d.seen_on_ap else 'lan' if d.seen_dhcp else None)
+        wifi_mapped = mapping is not None and (mapping.interface or '').lower() == 'wlan'
+        interface = 'wlan' if wifi_mapped or d.seen_on_ap else 'lan'
         location = None
         if d.ap_ip:
             ap = self._aps.get(d.ap_ip)
