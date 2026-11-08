@@ -1,0 +1,63 @@
+{
+  "access_points": [
+    {"ip": "192.168.1.251", "mac": "C4:E9:0A:19:87:10", "name": "AP-251", "floor": "DG", "room": "Yuna"},
+		{"ip": "192.168.1.252", "mac": "10:62:EB:A7:D9:50", "name": "AP-252", "floor": "EG", "room": "Kitchen"},
+    {"ip": "192.168.1.253", "mac": "58:D5:6E:05:E9:B0", "name": "AP-253", "floor": "OD", "room": "Garden"},
+    {"ip": "192.168.1.254", "mac": "80:26:89:77:7A:80", "name": "AP-254", "floor": "OG", "room": "Buero"}
+  ],
+  "mappings": {
+    "F4:F5:E8:19:46:5C": {"type": "device", "interface": "wlan", "name": "Chromecast 1", "owner": "Unknown"},
+		"F4:F5:E8:19:46:5C": {"type": "device", "interface": "wlan", "name": "Chromecast 4", "owner": "Unknown"},
+		"D0:C9:07:9E:A3:06": {"type": "device", "interface": "wlan", "name": "D0C9079EA306", "owner": "Unknown"},
+		"98:17:3C:05:F0:C2": {"type": "device", "interface": "wlan", "name": "PC 1", "owner": "Unknown"},
+		"98:17:3C:0A:F0:F4": {"type": "device", "interface": "wlan", "name": "PC 4", "owner": "Unknown"},
+		"B6:88:66:FF:5F:82": {"type": "device", "interface": "wlan", "name": "Aura S10 ??", "owner": "Unknown"},
+		
+		"B8:8A:EC:F5:E9:ED": {"type": "device", "interface": "wlan", "name": "Switch Family", "owner": "All"},
+		"08:9E:08:42:A4:AB": {"type": "device", "interface": "wlan", "name": "Family Chromecast", "owner": "All"},
+		
+		"A4:F9:21:1C:F3:D6": {"type": "device", "interface": "wlan", "name": "Kimi IPhone", "owner": "Kimi"},
+		"B2:CD:07:C9:8A:A5": {"type": "device", "interface": "wlan", "name": "Kimi IPad", "owner": "Kimi"},
+		"84:94:37:D1:EB:0E": {"type": "device", "interface": "lan", "name": "Kimi Air (LAN)", "owner": "Kimi"},
+		"CC:5B:31:B5:E6:DA": {"type": "device", "interface": "wlan", "name": "Kimi Switch", "owner": "Kimi"},
+		
+				
+		
+		"88:75:98:90:D9:2E": {"type": "device", "interface": "wlan", "name": "Aura Handy A3", "owner": "Aura"},
+		"94:7B:E7:FA:CA:51": {"type": "device", "interface": "wlan", "name": "Aura Handy A3 (WLAN)", "owner": "Aura"},
+		"08:AE:D6:29:86:5B": {"type": "device", "interface": "wlan", "name": "Aura Tab S4", "owner": "Aura"},
+		"80:C1:6E:E7:47:68": {"type": "device", "interface": "wlan", "name": "Aura PC", "owner": "Aura"},
+		"D4:59:44:22:B7:1F": {"type": "device", "interface": "wlan", "name": "Tonybox", "owner": "Aura"},
+		
+		"66:69:7E:91:82:50": {"type": "device", "interface": "wlan", "name": "Kira Phone", "owner": "Kira"},
+		"1A:9A:57:4C:3F:C3": {"type": "device", "interface": "wlan", "name": "Kira Tab S4", "owner": "Kira"},
+		"B4:2E:99:1B:BE:3D": {"type": "device", "interface": "wlan", "name": "Kira PC", "owner": "Kira"},
+		"54:60:09:4A:B7:EC": {"type": "device", "interface": "wlan", "name": "Kira Chromecast", "owner": "Kira"},
+		
+		"80:65:6D:3E:51:E9": {"type": "device", "interface": "wlan", "name": "Xyan Tab S3", "owner": "Xyan"},
+		"04:7C:16:B8:7A:FA": {"type": "device", "interface": "lan", "name": "Xyan PC", "owner": "Xyan"},
+		"90:A9:F7:55:6B:35": {"type": "device", "interface": "wlan", "name": "Xyan SMini", "owner": "Xyan"},
+		
+		"88:9F:6F:3B:77:1C": {"type": "device", "interface": "wlan", "name": "Yuna Tab S4", "owner": "Yuna"},
+		"50:3E:AA:BF:48:DB": {"type": "device", "interface": "wlan", "name": "Yuna PC", "owner": "Yuna"},
+		"EC:28:D3:9A:0B:F2": {"type": "device", "interface": "wlan", "name": "Yuna IPhone", "owner": "Yuna"},
+		"98:41:5C:01:E3:E6": {"type": "device", "interface": "wlan", "name": "Yuna Switch 1", "owner": "Yuna"},
+		"40:44:F7:0C:35:47": {"type": "device", "interface": "wlan", "name": "Yuna Switch 2", "owner": "Yuna"},
+		
+		"04:ED:33:DC:2E:DB": {"type": "device", "interface": "wlan", "name": "Wendy Laptop", "owner": "Wendy"},
+		"F0:CD:31:37:13:10": {"type": "device", "interface": "wlan", "name": "Wendy Phone", "owner": "Wendy"},
+		
+		"C4:E9:0A:19:87:10": {"type": "device", "interface": "wlan", "name": "DAP DG", "owner": "System"},
+		"10:62:EB:A7:D9:50": {"type": "device", "interface": "wlan", "name": "DAP Kitchen", "owner": "System"},
+		"58:D5:6E:05:E9:B0": {"type": "device", "interface": "wlan", "name": "DAP Garden", "owner": "System"},
+		"80:26:89:77:7A:80": {"type": "device", "interface": "wlan", "name": "DAP Beuro", "owner": "System"},
+		
+		"F2:FB:F0:B1:1D:6C": {"type": "device", "interface": "lan", "name": "DietPI", "owner": "System"},
+		"58:05:D9:41:9B:C4": {"type": "device", "interface": "wlan", "name": "Printer Epson", "owner": "System"},
+		"98:E7:F4:9C:1F:E3": {"type": "device", "interface": "wlan", "name": "Printer HP", "owner": "System"},
+		"DC:4F:22:6D:85:8C": {"type": "device", "interface": "wlan", "name": "Stromzähler", "owner": "System"}
+  },
+  "snmp_hosts": ["192.168.1.251", "192.168.1.252", "192.168.1.253", "192.168.1.254"],
+  "syslog_port": 514,
+  "band_index_5ghz": [2]
+}

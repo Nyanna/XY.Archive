@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Geräte</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="xyou_chai_32.png" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="stylesheet" href="devices.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>
+      <img class="logo" src="xyou_chai_32.png" alt="" />
+      <span id="pageTitleText">Geräte</span>
+    </h1>
+    <div class="controls">
+      <input type="search" id="filter" placeholder="Filter (Name, MAC, IP, Besitzer)" />
+      <label class="quick"><input type="checkbox" id="onlyConnected" /> nur verbunden</label>
+      <button id="reload">Neu laden</button>
+      <label class="quick"><input type="checkbox" id="autoRefresh" checked /> Update</label>
+      <span id="status" class="status"></span>
+    </div>
+  </header>
+
+  <main id="board"></main>
+
+  <script src="devices.config.js"></script>
+  <script src="devices.js"></script>
+</body>
+</html>
