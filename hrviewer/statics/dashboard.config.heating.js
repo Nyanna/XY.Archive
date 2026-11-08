@@ -294,7 +294,7 @@
       { label: "Zigbee", url: "http://dietpi:9090" },
       { label: "Smarthome", url: "http://dietpi/smarthome.html" },
       { label: "Fritz!Box", url: "http://fritz.box" },
-			{ label: "Devices", url: "/devices.html" },
+			{ label: "Devices", target: "_self", url: "/devices.html" },
     ],
     rows: [
       { title: "Übersicht", type: "grid", collapse: false, panels: [panelOverview] },
