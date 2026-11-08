@@ -157,14 +157,10 @@ class SmartHomeEngine:
             except Exception:
                 traceback.print_exc()
         print(
-            f'[smarthome] engine up (mqtt://{
-                self.cfg.mqtt_host}:{
-                    self.cfg.mqtt_port}, schedules={
-                        len(
-                            self._schedules)}, triggers={
-                                len(
-                                    self._triggers)})',
-            flush=True)
+            '[smarthome] engine up (mqtt://%s:%s, schedules=%d, triggers=%d)' %
+            (self.cfg.mqtt_host, self.cfg.mqtt_port, len(
+                self._schedules), len(
+                    self._triggers)), flush=True)
 
     def stop(self) -> None:
         self._stop.set()
@@ -277,12 +273,8 @@ class SmartHomeEngine:
             if self._fires(trig, payload, old, action):
                 with self._lock:
                     self._metrics['triggers_consumed'] += 1
-                print(
-                    f'[smarthome] trigger consumed: device={
-                        trig.device} prop={
-                            trig.prop} cond={
-                                trig.cond} payload={payload}',
-                    flush=True)
+                print('[smarthome] trigger consumed: device=%s prop=%s cond=%s payload=%s' %
+                      (trig.device, trig.prop, trig.cond, payload), flush=True)
                 self._safe_call(trig.cb)
 
     def _fires(self, trig: _Trigger, payload: dict, old: dict, action) -> bool:
