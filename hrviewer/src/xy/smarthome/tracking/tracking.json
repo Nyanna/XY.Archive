@@ -18,17 +18,19 @@
 		
 		"A4:F9:21:1C:F3:D6": {"type": "device", "interface": "wlan", "name": "Kimi IPhone", "owner": "Kimi"},
 		"B2:CD:07:C9:8A:A5": {"type": "device", "interface": "wlan", "name": "Kimi IPad", "owner": "Kimi"},
-		"84:94:37:D1:EB:0E": {"type": "device", "interface": "lan", "name": "Kimi Air (LAN)", "owner": "Kimi"},
+		"84:94:37:D1:EB:0E": {"type": "device", "interface": "lan", "name": "Kimi Air 2,4G", "owner": "Kimi"},
 		"CC:5B:31:B5:E6:DA": {"type": "device", "interface": "wlan", "name": "Kimi Switch", "owner": "Kimi"},
 		
 		"88:75:98:90:D9:2E": {"type": "device", "interface": "wlan", "name": "Aura Handy A3", "owner": "Aura"},
-		"94:7B:E7:FA:CA:51": {"type": "device", "interface": "wlan", "name": "Aura Handy A3 (WLAN)", "owner": "Aura"},
+		"94:7B:E7:FA:CA:51": {"type": "device", "interface": "wlan", "name": "Aura Handy A3 5G", "owner": "Aura"},
 		"08:AE:D6:29:86:5B": {"type": "device", "interface": "wlan", "name": "Aura Tab S4", "owner": "Aura"},
 		"80:C1:6E:E7:47:68": {"type": "device", "interface": "lan", "name": "Aura PC", "owner": "Aura"},
 		"D4:59:44:22:B7:1F": {"type": "device", "interface": "wlan", "name": "Tonybox", "owner": "Aura"},
 		
 		"66:69:7E:91:82:50": {"type": "device", "interface": "wlan", "name": "Kira Phone", "owner": "Kira"},
 		"B6:88:66:FF:5F:82": {"type": "device", "interface": "wlan", "name": "Kira S10", "owner": "Kira"},
+		"66:D3:C1:59:73:9A": {"type": "device", "interface": "wlan", "name": "Kira S10 (5G)", "owner": "Kira"},
+				
 		"88:9F:6F:5E:0B:EA": {"type": "device", "interface": "wlan", "name": "Kira Tab S4", "owner": "Kira"},
 		"B4:2E:99:1B:BE:3D": {"type": "device", "interface": "lan", "name": "Kira PC", "owner": "Kira"},
 		"54:60:09:4A:B7:EC": {"type": "device", "interface": "wlan", "name": "Kira Chromecast", "owner": "Kira"},
