@@ -1,0 +1,9 @@
+-- file: RFC-1212.my 
+-- changes:
+--      Removed IMPORTS.
+--      Commented out OBJECT-TYPE macro definition and replaced
+--        with SMIC directive to enable it.
+-- dperkins@scruznet.com
+
+
+

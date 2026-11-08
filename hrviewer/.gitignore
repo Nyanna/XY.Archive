@@ -6,3 +6,5 @@
 /.hive
 /.hive.sm
 /.claude/
+/scripts/logs
+/scripts/dumps
