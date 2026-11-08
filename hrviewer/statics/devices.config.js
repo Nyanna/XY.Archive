@@ -33,9 +33,7 @@
     endpoint: "api/smarthome/devices",
     refreshMs: 15000,
     links: [
-      { label: "SmartHome", url: "smarthome.html" },
       { label: "Heizung", url: "dashboard.html?config=heating" },
-      { label: "Fritz!Box", url: "http://fritz.box" },
     ],
 
     /* Section order: access points first (as returned by the API), LAN last. */
