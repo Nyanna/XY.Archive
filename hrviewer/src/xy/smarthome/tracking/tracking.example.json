@@ -1,0 +1,14 @@
+{
+  "access_points": [
+    {"ip": "192.168.1.251", "mac": "C4:E9:0A:19:87:10", "name": "AP-251", "floor": "EG", "room": "Wohnzimmer"},
+    {"ip": "192.168.1.252", "mac": "10:62:EB:A7:D9:50", "name": "AP-252", "floor": "OG", "room": "Flur"},
+    {"ip": "192.168.1.254", "mac": "80:26:89:77:7A:80", "name": "AP-254", "floor": "DG", "room": "Büro"}
+  ],
+  "mappings": {
+    "50:3e:aa:bf:48:db": {"type": "device", "interface": "wlan", "name": "Yuna PC", "owner": "Yuna"},
+    "08:ae:d6:29:86:5b": {"type": "device", "interface": "wlan", "name": "Galaxy Tab S4", "owner": "Familie"}
+  },
+  "snmp_hosts": ["192.168.1.251", "192.168.1.252", "192.168.1.253", "192.168.1.254"],
+  "syslog_port": 514,
+  "band_index_5ghz": [2]
+}

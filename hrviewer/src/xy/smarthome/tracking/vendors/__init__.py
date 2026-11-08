@@ -1,0 +1,1 @@
+"""Vendor specific access point integrations (syslog + SNMP)."""
