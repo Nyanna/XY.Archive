@@ -55,6 +55,7 @@ class Tracker:
             if dev is None:
                 return
             dev.seen_dhcp = True
+            dev.last_dhcp = ts
             dev.last_active = ts
             if hostname:
                 dev.hostname = hostname
@@ -232,7 +233,12 @@ class Tracker:
                 'link_rate_mbps': d.link_rate_mbps,
                 'updated': _iso(
                     d.located_at)}
-        connected = d.connected if interface == 'wlan' else None
+        if interface == 'wlan':
+            connected = d.connected
+        elif interface == 'lan':
+            connected = d.last_dhcp is not None and now - d.last_dhcp < cfg.lan_connected_s
+        else:
+            connected = None
         since_move = None if d.last_moved is None else now - d.last_moved
         return {
             'mac': d.mac,

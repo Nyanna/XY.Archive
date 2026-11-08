@@ -14,6 +14,7 @@ class TrackingConfig:
     mappings: dict[str, Mapping] = field(default_factory=dict)
     dhcp_enabled: bool = True
     dhcp_iface: str | None = None
+    lan_connected_s: float = 8 * 3600.0
     syslog_enabled: bool = True
     syslog_bind: str = '0.0.0.0'
     syslog_port: int = 514

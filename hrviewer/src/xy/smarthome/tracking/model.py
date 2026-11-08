@@ -70,6 +70,7 @@ class Device:
     ip: str | None = None
     seen_on_ap: bool = False
     seen_dhcp: bool = False
+    last_dhcp: float | None = None
     connected: bool = False
     disconnected_at: float | None = None
     last_active: float | None = None
