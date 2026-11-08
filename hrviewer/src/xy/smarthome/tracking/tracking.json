@@ -29,7 +29,7 @@
 		
 		"66:69:7E:91:82:50": {"type": "device", "interface": "wlan", "name": "Kira Phone", "owner": "Kira"},
 		"B6:88:66:FF:5F:82": {"type": "device", "interface": "wlan", "name": "Kira S10", "owner": "Kira"},
-		"1A:9A:57:4C:3F:C3": {"type": "device", "interface": "wlan", "name": "Kira Tab S4", "owner": "Kira"},
+		"88:9F:6F:5E:0B:EA": {"type": "device", "interface": "wlan", "name": "Kira Tab S4", "owner": "Kira"},
 		"B4:2E:99:1B:BE:3D": {"type": "device", "interface": "lan", "name": "Kira PC", "owner": "Kira"},
 		"54:60:09:4A:B7:EC": {"type": "device", "interface": "wlan", "name": "Kira Chromecast", "owner": "Kira"},
 		

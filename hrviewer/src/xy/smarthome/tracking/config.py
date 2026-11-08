@@ -4,6 +4,7 @@ import json
 import os
 from dataclasses import dataclass, field, fields
 from .model import AccessPoint, Mapping, norm_mac
+DEFAULT_CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tracking.json')
 
 def _default_aps() -> list[AccessPoint]:
     return [AccessPoint(ip=f'192.168.1.{n}') for n in range(251, 255)]
@@ -71,7 +72,7 @@ class TrackingConfig:
 
     @classmethod
     def from_env(cls) -> 'TrackingConfig':
-        path = os.environ.get('SMH_TRACK_CONFIG')
+        path = os.environ.get('SMH_TRACK_CONFIG', DEFAULT_CONFIG_PATH)
         cfg = cls.from_file(path) if path else cls()
         if os.environ.get('SMH_TRACK_DHCP_IFACE'):
             cfg.dhcp_iface = os.environ['SMH_TRACK_DHCP_IFACE']
