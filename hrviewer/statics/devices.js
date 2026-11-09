@@ -138,6 +138,41 @@
       .some((v) => v && String(v).toLowerCase().includes(q));
   }
 
+    /* Stable ordering: initial order is "first seen"; a device that changes
+   * section gets a fresh sequence number and therefore moves to the end. */
+  const placement = new Map();
+  const sequence = new Map();
+  let seqCounter = 0;
+
+  function sectionKey(d) {
+    const apIp = d.location && d.location.ap_ip;
+    return apIp && d.interface !== "lan" ? apIp : null;
+  }
+
+  function applyDelta(devices) {
+    const firstSeen = (d) => {
+      const t = d.first_seen ? new Date(d.first_seen).getTime() : NaN;
+      return isNaN(t) ? Infinity : t;
+    };
+    const present = new Set();
+    [...devices]
+      .sort((a, b) => firstSeen(a) - firstSeen(b) || a.display_name.localeCompare(b.display_name, "de"))
+      .forEach((d) => {
+        present.add(d.mac);
+        const key = sectionKey(d);
+        if (!sequence.has(d.mac) || placement.get(d.mac) !== key) {
+          placement.set(d.mac, key);
+          sequence.set(d.mac, ++seqCounter);
+        }
+      });
+    for (const mac of [...sequence.keys()]) {
+      if (!present.has(mac)) {
+        sequence.delete(mac);
+        placement.delete(mac);
+      }
+    }
+  }
+
   function render() {
     if (!snapshot) return;
     const q = filterEl.value.trim().toLowerCase();
@@ -147,8 +182,8 @@
     snapshot.access_points.forEach((ap) => byAp.set(ap.ip, { ap, devices: [] }));
     const lan = [];
     devices.forEach((d) => {
-      const apIp = d.location && d.location.ap_ip;
-      if (apIp && d.interface !== "lan") {
+      const apIp = sectionKey(d);
+      if (apIp) {
         if (!byAp.has(apIp)) {
           const l = d.location;
           byAp.set(apIp, { ap: { ip: apIp, mac: l.ap_mac, name: l.ap_name, floor: l.floor, room: l.room }, devices: [] });
@@ -159,7 +194,7 @@
       }
     });
 
-    const byName = (a, b) => a.display_name.localeCompare(b.display_name, "de");
+    const byName = (a, b) => sequence.get(a.mac) - sequence.get(b.mac);
     const frag = document.createDocumentFragment();
     byAp.forEach(({ ap, devices: list }) => {
       frag.appendChild(buildSection("ap:" + ap.ip, CFG.apTitle(ap), CFG.apSubtitle(ap), list.sort(byName)));
@@ -172,7 +207,8 @@
     try {
       const r = await fetch(CFG.endpoint, { cache: "no-store" });
       if (!r.ok) throw new Error("HTTP " + r.status);
-      snapshot = await r.json();
+            snapshot = await r.json();
+      applyDelta(snapshot.devices);
       statusEl.classList.remove("error");
       statusEl.textContent = "Stand " + new Date(snapshot.generated_at).toLocaleTimeString("de-DE");
       render();
