@@ -12,12 +12,15 @@
 		"98:17:3C:05:F0:C2": {"type": "device", "interface": "lan", "name": "Unknown 1", "owner": "Unknown"},
 		"98:17:3C:0A:F0:F4": {"type": "device", "interface": "lan", "name": "Unknown 4", "owner": "Unknown"},
 		"78:6c:84:66:3b:5f": {"type": "device", "interface": "lan", "name": "Unknown 5", "owner": "Unknown"},
+		"00:A0:96:F5:AE:0A": {"type": "device", "interface": "lan", "name": "Unknown 6 2.4G", "owner": "Unknown"},
 		
 		"B8:8A:EC:F5:E9:ED": {"type": "device", "interface": "wlan", "name": "Switch Family", "owner": "All"},
 		"08:9E:08:42:A4:AB": {"type": "device", "interface": "wlan", "name": "Family Chromecast", "owner": "All"},
 		
 		"A4:F9:21:1C:F3:D6": {"type": "device", "interface": "wlan", "name": "Kimi IPhone", "owner": "Kimi"},
 		"B2:CD:07:C9:8A:A5": {"type": "device", "interface": "wlan", "name": "Kimi IPad", "owner": "Kimi"},
+		"EA:9E:EC:65:F4:C2": {"type": "device", "interface": "wlan", "name": "Kimi IPhone 2.4G", "owner": "Kimi"},
+		"7A:54:99:25:91:63": {"type": "device", "interface": "wlan", "name": "Kimi IPad 2.4G", "owner": "Kimi"},
 		"84:94:37:D1:EB:0E": {"type": "device", "interface": "lan", "name": "Kimi Air 2,4G", "owner": "Kimi"},
 		"CC:5B:31:B5:E6:DA": {"type": "device", "interface": "wlan", "name": "Kimi Switch", "owner": "Kimi"},
 		
