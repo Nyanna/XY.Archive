@@ -33,6 +33,11 @@ function labelHash(label) {
   return h >>> 0;
 }
 const HUE_STEPS = 18;                    // 360°/18 = 20° apart -> clearly distinct hues
+/* Line colour for chart series: the tile's border colour, so a series has
+ * the same hue as its tile/device everywhere. */
+export function seriesColor(label) {
+  return tileAccent(label).borderColor;
+}
 export function tileAccent(label) {
   const h = labelHash(label);
   const hue = (h % HUE_STEPS) * (360 / HUE_STEPS);          // rounded onto the hue grid

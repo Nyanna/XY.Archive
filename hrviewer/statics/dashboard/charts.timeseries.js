@@ -3,6 +3,7 @@
  * axis). */
 "use strict";
 import { movingAverage } from "./data.js";
+import { seriesColor } from "./panels.flags.js";
 import {
   GRID_TOP, gridBottom, timeXAxis, insideZoom, baseYAxis,
   thresholdMarkLine, annotationSeries, floatingLegend, legendSelectedWithAll, legendAllGhostSeries,
@@ -26,7 +27,7 @@ export function buildTimeseries(cfg, fetched, legendSelected, range, chart) {
     const yIdx = sc.axis === "right" && cfg.axisRight && cfg.axisRight.show ? 1 : 0;
     const data = fetched.get(sc);
     const step = cfg.type === "state" ? "end" : false;
-    const color = sc.color || nextColor();
+    const color = sc.color || seriesColor(sc.label);
     (yIdx ? rightNames : leftNames).push(sc.label);
     seriesInfo.set(sc.label, { data, color });
     series.push({
