@@ -42,6 +42,8 @@
 		"04:7C:16:B8:7A:FA": {"type": "device", "interface": "lan", "name": "Xyan PC", "owner": "Xyan"},
 		"90:A9:F7:55:6B:35": {"type": "device", "interface": "wlan", "name": "Xyan SMini", "owner": "Xyan"},
 		"5C:AC:3D:E3:C6:31": {"type": "device", "interface": "wlan", "name": "Xyan A14", "owner": "Xyan"},
+		"7B:6C:84:66:3B:5F": {"type": "device", "interface": "wlan", "name": "Xyan Kindle", "owner": "Xyan"},
+				
 		
 		"88:9F:6F:3B:77:1C": {"type": "device", "interface": "wlan", "name": "Yuna Tab S4", "owner": "Yuna"},
 		"50:3E:AA:BF:48:DB": {"type": "device", "interface": "wlan", "name": "Yuna PC", "owner": "Yuna"},
