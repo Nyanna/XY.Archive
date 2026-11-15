@@ -280,6 +280,7 @@
     "Wendy Schreibtisch":"0x00124b0026b82cce",
     "Espresso":          "0xa4c1380d85a6455f",
     "Hifi":              "0xa4c1387253897923",
+		"Aura Lampe":        "0xa4c1388f3e414c90",
   };
   const panelLampen = {
     id: 51, type: "tiles",

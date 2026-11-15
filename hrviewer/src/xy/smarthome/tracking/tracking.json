@@ -7,7 +7,6 @@
   ],
   "mappings": {
     "F4:F5:E8:19:46:5C": {"type": "device", "interface": "wlan", "name": "Chromecast 1", "owner": "Unknown"},
-		"F4:F5:E8:19:46:5C": {"type": "device", "interface": "wlan", "name": "Chromecast 4", "owner": "Unknown"},
 		"D0:C9:07:9E:A3:06": {"type": "device", "interface": "lan", "name": "Unknown D0C9079EA306", "owner": "Unknown"},
 		"98:17:3C:05:F0:C2": {"type": "device", "interface": "lan", "name": "Unknown 1", "owner": "Unknown"},
 		"98:17:3C:0A:F0:F4": {"type": "device", "interface": "lan", "name": "Unknown 4", "owner": "Unknown"},
@@ -50,9 +49,12 @@
 		"EC:28:D3:9A:0B:F2": {"type": "device", "interface": "wlan", "name": "Yuna IPhone", "owner": "Yuna"},
 		"98:41:5C:01:E3:E6": {"type": "device", "interface": "wlan", "name": "Yuna Switch 1", "owner": "Yuna"},
 		"40:44:F7:0C:35:47": {"type": "device", "interface": "wlan", "name": "Yuna Switch 2", "owner": "Yuna"},
+		"F4:F5:E8:19:46:5C": {"type": "device", "interface": "wlan", "name": "Yuna Chromecast", "owner": "Yuna"},
 		
 		"04:ED:33:DC:2E:DB": {"type": "device", "interface": "lan", "name": "Wendy Laptop", "owner": "Wendy"},
 		"F0:CD:31:37:13:10": {"type": "device", "interface": "wlan", "name": "Wendy Phone", "owner": "Wendy"},
+		"30:05:9E:DC:BA:37": {"type": "device", "interface": "wlan", "name": "Wendy Projector", "owner": "Wendy"},
+		
 		
 		"C4:E9:0A:19:87:10": {"type": "device", "interface": "lan", "name": "DAP DG", "owner": "System"},
 		"10:62:EB:A7:D9:50": {"type": "device", "interface": "lan", "name": "DAP Kitchen", "owner": "System"},
