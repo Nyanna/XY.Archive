@@ -2,7 +2,7 @@
  * visible points, own (unsynced) X-axis. */
 "use strict";
 import { toXY } from "./data.js";
-import { AXIS, BORDER, baseYAxis, insideZoom, thresholdMarkLine, floatingLegend, legendSelectedWithAll, legendAllGhostSeries, fmtTip, tooltipPosition } from "./charts.common.js";
+import { AXIS, BORDER, baseYAxis, insideZoom, thresholdMarkLine, floatingLegend, legendSelectedWithAll, legendAllGhostSeries, lineEmphasis, fmtTip, tooltipPosition } from "./charts.common.js";
 
 export function buildDaily(cfg, table, legendSelected) {
   const legendData = [], series = [];
@@ -13,6 +13,7 @@ export function buildDaily(cfg, table, legendSelected) {
       showSymbol: true, symbol: "circle", symbolSize: 6,
       lineStyle: { width: 2, color: sc.color },
       itemStyle: { color: sc.color },
+      emphasis: lineEmphasis(2),
       areaStyle: { opacity: 0.5, color: sc.color },
       markLine: thresholdMarkLine(sc),
     });

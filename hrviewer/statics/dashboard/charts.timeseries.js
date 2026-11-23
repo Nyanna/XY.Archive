@@ -6,7 +6,7 @@ import { movingAverage } from "./data.js";
 import { seriesColor } from "./panels.flags.js";
 import {
   GRID_TOP, gridBottom, timeXAxis, insideZoom, baseYAxis,
-  thresholdMarkLine, annotationSeries, floatingLegend, legendSelectedWithAll, legendAllGhostSeries,
+  thresholdMarkLine, annotationSeries, floatingLegend, legendSelectedWithAll, legendAllGhostSeries, lineEmphasis,
   DEFAULT_PALETTE, axisTooltipFormatter, tooltipPosition,
 } from "./charts.common.js";
 
@@ -36,6 +36,7 @@ export function buildTimeseries(cfg, fetched, legendSelected, range, chart) {
       connectNulls: false,
       lineStyle: { width: sc.width == null ? 1 : sc.width, color, type: sc.dash || "solid" },
       itemStyle: { color },
+      emphasis: lineEmphasis(sc.width == null ? 1 : sc.width),
       areaStyle: sc.fillOpacity ? { opacity: sc.fillOpacity / 100, color } : undefined,
       markLine: thresholdMarkLine(sc),
       data,
@@ -52,6 +53,7 @@ export function buildTimeseries(cfg, fetched, legendSelected, range, chart) {
         showSymbol: false, smooth: true,
         lineStyle: { width: m.width || 2, color: mColor },
         itemStyle: { color: mColor },
+        emphasis: lineEmphasis(m.width || 2),
         areaStyle: m.fillOpacity ? { opacity: m.fillOpacity / 100, color: mColor } : undefined,
         data: mData,
       });

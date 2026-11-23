@@ -136,6 +136,16 @@ const LEGEND_BG = "rgba(255,255,255,0.72)";
 export const ALL_LEGEND_LABEL = "All";
 
 /* ECharts drops any legend.data entry that has no matching series */
+/* Legend/series hover: thicken the hovered line and fade the others. Explicit
+ * widths -- ECharts' default "bolder" can make thin lines vanish. */
+export function lineEmphasis(width) {
+  return {
+    focus: "series", blurScope: "coordinateSystem",
+    lineStyle: { width: Math.max(width, 1) + 2 },
+  };
+}
+
+
 export function legendAllGhostSeries() {
   return [{
     name: ALL_LEGEND_LABEL, type: "line", data: [], showSymbol: false,
