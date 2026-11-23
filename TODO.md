@@ -1,11 +1,13 @@
 # TODO
 - die flushes gehen vom LC aus, der LC steuert das difuse abgleiten in diskursives denken und fokussiertheit, das diskursive denken ist die brücke zum ADHS im LC, am LC liegt auch der sinnustöne der gehirnfunktionen, der schlafdruck kommt vom LC
+	- Die flushes korrelieren nach 8 stunden mit dem nachlassen des LDX
 - wie LC stabilisiewren, literatur, LC löst flipflop aus
 	! consensus für LC research verwenden und einbauen
 	- LC großes project repo zuerst ausbauen dann colgrep aks prefil, dann abfrage
 	- LC zurücksetzung mit hochdosis LDX alle 2 wochen (wie der pilz heini)?
 - LC Kopplung an iris Fokus?, wenn bei anfall keine sehschärfe, ist iris indikator so wie verspannung im nacken, wie kontrolliert LC scharfstellen? schlafdruck macht scharf stellen anstrengend
 - Nikotin bei ME/CFS
+- Taylor und Westlund (2017), The Noradrenergic Locus Coeruleus as a Chronic Pain Generator,
 
 ## 02 Pathogenesemodell
 
