@@ -1013,4 +1013,13 @@ arguments:
   reason: Pass explicit color and opacity to the emphasis state so the hovered series stays visible
 ```
 /answer 5638-1e-0 allow
-[xy.ai.req:ClaudeCode:9c604894-dedf-4e1a-b052-7875aebad835]
+Result Stats: id=0a285b6c-8fe1-4b52-9f5d-ecc9ac9e820e, total: 26832, in: 16, out: 4504, reason: 0, read: 93599, write: 22312, start: 1795426116334, end: 1795426120624, time: 4226, total: 39986, io: 0, control: 64, sent: 0, recv: 105
+Ich habe die Hervorhebung geändert, aber nicht im Browser getestet. Die genaue Ursache habe ich nicht gefunden. Das ist ein Versuch.
+
+`lineEmphasis(width, color)` setzt beim Hover jetzt die Linienfarbe der Serie und `opacity: 1` ausdrücklich. Auch die Punktfarbe (`itemStyle.color`) setzt es. Die drei Aufrufe in `charts.timeseries.js` (Serie und gleitender Mittelwert) und `charts.daily.js` übergeben dafür die jeweilige Serienfarbe. Im Code habe ich keinen Hover-Handler gefunden, der die Serie ausblendet. Die Mausbewegung in `panel.js` synchronisiert nur den Cursor zwischen den Panels.
+
+Bitte lade das Dashboard hart neu (Strg+F5) und teste den Hover. Falls die Serie weiter verschwindet, sind zwei Dinge hilfreich:
+- die Browser-Konsole (F12) und die ECharts-Version, die du einbindest;
+- die Angabe, ob es beim Hover über die Legende oder über die Linie im Chart passiert.
+
+Als Rückfall kann ich `emphasis` komplett entfernen. Dann ist das Verhalten wie vor meiner Änderung. Alternativ baue ich die Hervorhebung über die Legenden-Events selbst, ohne ECharts' Emphasis-Zustand.
