@@ -138,10 +138,11 @@ export const ALL_LEGEND_LABEL = "All";
 /* ECharts drops any legend.data entry that has no matching series */
 /* Legend/series hover: thicken the hovered line and fade the others. Explicit
  * widths -- ECharts' default "bolder" can make thin lines vanish. */
-export function lineEmphasis(width) {
+export function lineEmphasis(width, color) {
   return {
     focus: "none",
-    lineStyle: { width: Math.max(width, 1) + 2 },
+    lineStyle: { width: Math.max(width, 1) + 2, color, opacity: 1 },
+    itemStyle: { color },
   };
 }
 

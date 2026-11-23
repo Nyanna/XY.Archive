@@ -36,7 +36,7 @@ export function buildTimeseries(cfg, fetched, legendSelected, range, chart) {
       connectNulls: false,
       lineStyle: { width: sc.width == null ? 1 : sc.width, color, type: sc.dash || "solid" },
       itemStyle: { color },
-      emphasis: lineEmphasis(sc.width == null ? 1 : sc.width),
+      emphasis: lineEmphasis(sc.width == null ? 1 : sc.width, color),
       areaStyle: sc.fillOpacity ? { opacity: sc.fillOpacity / 100, color } : undefined,
       markLine: thresholdMarkLine(sc),
       data,
@@ -53,7 +53,7 @@ export function buildTimeseries(cfg, fetched, legendSelected, range, chart) {
         showSymbol: false, smooth: true,
         lineStyle: { width: m.width || 2, color: mColor },
         itemStyle: { color: mColor },
-        emphasis: lineEmphasis(m.width || 2),
+        emphasis: lineEmphasis(m.width || 2, mColor),
         areaStyle: m.fillOpacity ? { opacity: m.fillOpacity / 100, color: mColor } : undefined,
         data: mData,
       });

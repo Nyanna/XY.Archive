@@ -13,7 +13,7 @@ export function buildDaily(cfg, table, legendSelected) {
       showSymbol: true, symbol: "circle", symbolSize: 6,
       lineStyle: { width: 2, color: sc.color },
       itemStyle: { color: sc.color },
-      emphasis: lineEmphasis(2),
+      emphasis: lineEmphasis(2, sc.color),
       areaStyle: { opacity: 0.5, color: sc.color },
       markLine: thresholdMarkLine(sc),
     });
