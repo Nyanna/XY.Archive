@@ -597,3 +597,147 @@ Ich habe die Hervorhebung beim Legenden-Hover geändert. Getestet habe ich es ni
 Dunkler wird die Linie nicht. ECharts hebt Farben beim Hover nicht von selbst an. Das Abblenden der anderen Linien verstärkt den Kontrast aber. Wenn du zusätzlich eine dunklere Farbe willst, kann ich sie über `emphasis.lineStyle.color` ergänzen.
 
 Bitte lade das Dashboard neu und teste den Hover. Wenn die Linie weiter verschwindet, sag mir Bescheid. Dann liegt die Ursache an anderer Stelle, etwa in der ECharts-Version.
+Hm jetzt verschwinden alle Linien
+
+SystemInit:  id=0a285b6c-8fe1-4b52-9f5d-ecc9ac9e820e, cwd=/home/user/xyan/XY.Archiv/hrviewer, model=claude-sonnet-5-5
+Text:
+ Ich sehe mir zuerst die Stellen an, die ich geändert habe.
+ReasoningToken: 170
+Control Request:
+```yaml
+id: 5638-15-0
+toolName: ast_retrieve
+arguments:
+  search:
+  - directory:
+    - /home/user/xyan/XY.Archiv/hrviewer/statics/dashboard
+    pattern: lineEmphasis|^import
+    include:
+    - charts.*.js
+    exclude:
+    - node_modules/**
+    intent: locate_error
+    limit: 30
+  reason: "Check lineEmphasis definition, usage and imports for errors causing the charts to disappear"
+```
+/answer 5638-15-0 allow
+Control Request:
+```yaml
+id: 5638-16-15
+result:
+  structuredContent:
+    search:
+      results:
+      - directory:
+        - /home/user/xyan/XY.Archiv/hrviewer/statics/dashboard
+        matches:
+        - path: charts.daily.js
+          nodes:
+          - id: JgHh9c|UXBood
+            matches:
+            - "import { toXY } from \"./data.js\";"
+            - "import { AXIS, BORDER, baseYAxis, insideZoom, thresholdMarkLine, floatingLegend, legendSelectedWithAll, legendAllGhostSeries, lineEmphasis, fmtTip, tooltipPosition } from \"./charts.common.js\";"
+          - id: buildDaily
+            matches:
+            - "emphasis: lineEmphasis(2),"
+        - path: charts.common.js
+          nodes:
+          - id: Gdpf3L|x1gDiq
+            matches:
+            - "import { pad, axisTimeFormatter, fmtDateTime, resolveTime } from \"./time.js\";"
+          - id: lineEmphasis
+            matches:
+            - "export function lineEmphasis(width) {"
+        - path: charts.stateband.js
+          nodes:
+          - id: ZWEu0s|lC01OW
+            matches:
+            - "import { pad } from \"./time.js\";"
+            - "import { AXIS, GRID_TOP, gridBottom, timeXAxis, insideZoom, annotationSeries, tooltipPosition } from \"./charts.common.js\";"
+        - path: charts.timeseries.js
+          nodes:
+          - id: mICnBU|htIrpz
+            matches:
+            - "import { movingAverage } from \"./data.js\";"
+            - "import { seriesColor } from \"./panels.flags.js\";"
+            - "import {"
+            - "thresholdMarkLine, annotationSeries, floatingLegend, legendSelectedWithAll, legendAllGhostSeries, lineEmphasis,"
+          - id: buildTimeseries
+            matches:
+            - "emphasis: lineEmphasis(sc.width == null ? 1 : sc.width),"
+            - "emphasis: lineEmphasis(m.width || 2),"
+```
+/answer 5638-16-15 allow
+ReasoningToken: 193
+Control Request:
+```yaml
+id: 5638-17-0
+toolName: ast_retrieve
+arguments:
+  find:
+  - paths:
+    - /home/user/xyan/XY.Archiv/hrviewer/statics/dashboard/charts.common.js
+    name: legendAllGhostSeries
+  - paths:
+    - /home/user/xyan/XY.Archiv/hrviewer/statics/dashboard/charts.common.js
+    name: lineEmphasis
+  reason: Inspect ghost series and the new helper
+```
+/answer 5638-17-0 allow
+Control Request:
+```yaml
+id: 5638-18-17
+result:
+  structuredContent:
+    find:
+      results:
+      - path: /home/user/xyan/XY.Archiv/hrviewer/statics/dashboard/charts.common.js
+        nodes:
+        - id: legendAllGhostSeries
+          code: |-
+            export function legendAllGhostSeries() {
+              return [{
+                name: ALL_LEGEND_LABEL, type: "line", data: [], showSymbol: false,
+                silent: true, legendHoverLink: false, animation: false,
+                lineStyle: { color: "#8b949e" }, itemStyle: { color: "#8b949e" },
+              }];
+            }
+      - path: /home/user/xyan/XY.Archiv/hrviewer/statics/dashboard/charts.common.js
+        nodes:
+        - id: lineEmphasis
+          code: |-
+            export function lineEmphasis(width) {
+              return {
+                focus: "series", blurScope: "coordinateSystem",
+                lineStyle: { width: Math.max(width, 1) + 2 },
+              };
+            }
+```
+/answer 5638-18-17 allow
+Thinking:
+Das Abblenden kommt wahrscheinlich von `focus: "series"`, das beim Hover auf „Alle“ alle echten Linien ausblendet. Ich entferne `focus` und `blurScope` und behalte nur die breitere Linie.
+
+
+ReasoningToken: 113
+Control Request:
+```yaml
+id: 5638-19-0
+toolName: ast_edit
+arguments:
+  edit_block:
+  - id: lineEmphasis
+    path: /home/user/xyan/XY.Archiv/hrviewer/statics/dashboard/charts.common.js
+    old_text: |2
+          focus: "series", blurScope: "coordinateSystem",
+    new_text: |2
+          focus: "none",
+  reason: Remove blur-inducing focus from emphasis so lines are not faded out
+```
+/answer 5638-19-0 allow
+
+Result Stats: id=0a285b6c-8fe1-4b52-9f5d-ecc9ac9e820e, total: 13463, in: 8, out: 1685, reason: 0, read: 30718, write: 11770, start: 1795426012594, end: 1795426016380, time: 3723, total: 16735, io: 0, control: 63, sent: 0, recv: 87
+Ich habe das Abblenden entfernt. `lineEmphasis` setzt jetzt `focus: "none"` und macht beim Hover nur noch die Linie 2 px breiter. Die anderen Serien bleiben unverändert. Getestet habe ich es nicht, bitte lade das Dashboard neu (Strg+F5, wegen des Browser-Caches).
+
+Dass das Abblenden schuld war, ist meine Vermutung. Ich habe es nicht im Browser nachgestellt. Die Imports und die Aufrufe in den drei Dateien habe ich geprüft und keinen Fehler gefunden.
+
+Falls die Linien weiter verschwinden, sag mir bitte, ob das schon beim Laden passiert oder erst beim Hover. Kannst du außerdem die Fehlermeldung aus der Browser-Konsole (F12) schicken? Dann suche ich gezielt weiter. Als Test kann ich auch `emphasis` ganz entfernen, um das Verhalten wie vor meiner Änderung zu bekommen.

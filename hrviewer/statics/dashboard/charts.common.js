@@ -140,7 +140,7 @@ export const ALL_LEGEND_LABEL = "All";
  * widths -- ECharts' default "bolder" can make thin lines vanish. */
 export function lineEmphasis(width) {
   return {
-    focus: "series", blurScope: "coordinateSystem",
+    focus: "none",
     lineStyle: { width: Math.max(width, 1) + 2 },
   };
 }
